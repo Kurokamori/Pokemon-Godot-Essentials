@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ydyqa"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_suxjl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_18vjy"]
+
+[sub_resource type="Resource" id="Resource_xor5o"]
+script = ExtResource("1_ydyqa")
+species = &"VIKAVOLT"
+method = &"Item"
+parameter = "THUNDERSTONE"
+
+[sub_resource type="Resource" id="Resource_4gwv2"]
+script = ExtResource("1_ydyqa")
+species = &"VIKAVOLT"
+method = &"LocationFlag"
+parameter = "Magnetic"
+
+[sub_resource type="Resource" id="Resource_cdkct"]
+script = ExtResource("1_ydyqa")
+species = &"GRUBBIN"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_iyj15"]
+script = ExtResource("2_suxjl")
+level = 0
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_jleby"]
+script = ExtResource("2_suxjl")
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_h3w3a"]
+script = ExtResource("2_suxjl")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_ol0xb"]
+script = ExtResource("2_suxjl")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_3tl8d"]
+script = ExtResource("2_suxjl")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_lv6f0"]
+script = ExtResource("2_suxjl")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_1tyih"]
+script = ExtResource("2_suxjl")
+level = 23
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_cc2l2"]
+script = ExtResource("2_suxjl")
+level = 29
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_60dn7"]
+script = ExtResource("2_suxjl")
+level = 36
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_6wdke"]
+script = ExtResource("2_suxjl")
+level = 43
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ifort"]
+script = ExtResource("2_suxjl")
+level = 50
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_42efg"]
+script = ExtResource("2_suxjl")
+level = 57
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_n1kuo"]
+script = ExtResource("2_suxjl")
+level = 64
+move = &"DISCHARGE"
+
+[resource]
+resource_name = "CHARJABUG"
+script = ExtResource("3_18vjy")
+species = &"CHARJABUG"
+category = "Battery"
+pokedex_entry = "It buries itself in fallen leaves and barely moves, munching away on humus. If you accidentally step on one, you'll get a shock!"
+types = Array[StringName]([&"BUG", &"ELECTRIC"])
+base_hp = 57
+base_attack = 82
+base_defense = 95
+base_special_attack = 55
+base_special_defense = 75
+base_speed = 36
+ev_defense = 2
+base_exp = 140
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_suxjl")]([SubResource("Resource_iyj15"), SubResource("Resource_jleby"), SubResource("Resource_h3w3a"), SubResource("Resource_ol0xb"), SubResource("Resource_3tl8d"), SubResource("Resource_lv6f0"), SubResource("Resource_1tyih"), SubResource("Resource_cc2l2"), SubResource("Resource_60dn7"), SubResource("Resource_6wdke"), SubResource("Resource_ifort"), SubResource("Resource_42efg"), SubResource("Resource_n1kuo")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BUGBITE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"VOLTSWITCH", &"WILDCHARGE", &"XSCISSOR"])
+abilities = Array[StringName]([&"BATTERY"])
+wild_item_uncommon = Array[StringName]([&"CELLBATTERY"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ydyqa")]([SubResource("Resource_xor5o"), SubResource("Resource_4gwv2"), SubResource("Resource_cdkct")])
+height = 5
+weight = 105
+color = &"Green"
+shape = &"Serpentine"
+generation = 7
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 36)
+id = &"CHARJABUG"
+display_name = "Charjabug"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_0d4pc"]
+
+[resource]
+resource_name = "POISONPOINT"
+script = ExtResource("1_0d4pc")
+description = "Contact with the Pokémon may poison the attacker."
+id = &"POISONPOINT"
+display_name = "Poison Point"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_q74ni"]
+
+[resource]
+resource_name = "LATIASITE"
+script = ExtResource("1_q74ni")
+name_plural = "Latiasites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Latias hold it, and it will be able to Mega Evolve."
+id = &"LATIASITE"
+display_name = "Latiasite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

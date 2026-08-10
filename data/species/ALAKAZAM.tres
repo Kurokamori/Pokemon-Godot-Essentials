@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_varah"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_t8uea"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n0xyo"]
+
+[sub_resource type="Resource" id="Resource_ke12g"]
+script = ExtResource("1_varah")
+species = &"KADABRA"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_q0fpj"]
+script = ExtResource("2_t8uea")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_ufjj2"]
+script = ExtResource("2_t8uea")
+move = &"KINESIS"
+
+[sub_resource type="Resource" id="Resource_t1q8c"]
+script = ExtResource("2_t8uea")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_8rdh7"]
+script = ExtResource("2_t8uea")
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_011n0"]
+script = ExtResource("2_t8uea")
+level = 5
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_w7cds"]
+script = ExtResource("2_t8uea")
+level = 10
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_o5io7"]
+script = ExtResource("2_t8uea")
+level = 15
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_k0qod"]
+script = ExtResource("2_t8uea")
+level = 20
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_6o1md"]
+script = ExtResource("2_t8uea")
+level = 25
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_ml5rs"]
+script = ExtResource("2_t8uea")
+level = 30
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_hqyn5"]
+script = ExtResource("2_t8uea")
+level = 35
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_um2sh"]
+script = ExtResource("2_t8uea")
+level = 40
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_8scri"]
+script = ExtResource("2_t8uea")
+level = 45
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_834m8"]
+script = ExtResource("2_t8uea")
+level = 50
+move = &"CALMMIND"
+
+[resource]
+resource_name = "ALAKAZAM"
+script = ExtResource("3_n0xyo")
+species = &"ALAKAZAM"
+category = "Psi"
+pokedex_entry = "While it has strong psychic abilities and high intelligence, an Alakazam's muscles are very weak. It uses psychic power to move its body."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 55
+base_attack = 50
+base_defense = 45
+base_special_attack = 135
+base_special_defense = 95
+base_speed = 120
+ev_special_attack = 3
+base_exp = 250
+growth_rate = &"Parabolic"
+gender_ratio = &"Female25Percent"
+catch_rate = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_t8uea")]([SubResource("Resource_q0fpj"), SubResource("Resource_ufjj2"), SubResource("Resource_t1q8c"), SubResource("Resource_8rdh7"), SubResource("Resource_011n0"), SubResource("Resource_w7cds"), SubResource("Resource_o5io7"), SubResource("Resource_k0qod"), SubResource("Resource_6o1md"), SubResource("Resource_ml5rs"), SubResource("Resource_hqyn5"), SubResource("Resource_um2sh"), SubResource("Resource_8scri"), SubResource("Resource_834m8")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EMBARGO", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IMPRISON", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPEEDSWAP", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SYNCHRONIZE", &"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"MAGICGUARD"])
+wild_item_uncommon = Array[StringName]([&"TWISTEDSPOON"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_varah")]([SubResource("Resource_ke12g")])
+height = 15
+weight = 480
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 20)
+id = &"ALAKAZAM"
+display_name = "Alakazam"

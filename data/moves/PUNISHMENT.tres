@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_c76ti"]
+
+[resource]
+resource_name = "PUNISHMENT"
+script = ExtResource("1_c76ti")
+type = &"DARK"
+category = 0
+power = 1
+function_code = &"PowerHigherWithTargetPositiveStatStages"
+description = "This attack's power increases the more the target has powered up with stat changes."
+id = &"PUNISHMENT"
+display_name = "Punishment"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kftna"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fsnkx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xglba"]
+
+[sub_resource type="Resource" id="Resource_m0ebx"]
+script = ExtResource("1_kftna")
+species = &"REMORAID"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0cd0v"]
+script = ExtResource("2_fsnkx")
+level = 0
+move = &"OCTAZOOKA"
+
+[sub_resource type="Resource" id="Resource_8yp2v"]
+script = ExtResource("2_fsnkx")
+move = &"GUNKSHOT"
+
+[sub_resource type="Resource" id="Resource_vs5go"]
+script = ExtResource("2_fsnkx")
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_dni4p"]
+script = ExtResource("2_fsnkx")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_v0p3y"]
+script = ExtResource("2_fsnkx")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_3xe88"]
+script = ExtResource("2_fsnkx")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_57dg4"]
+script = ExtResource("2_fsnkx")
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_oqneh"]
+script = ExtResource("2_fsnkx")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_qyhe7"]
+script = ExtResource("2_fsnkx")
+level = 12
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_6keqk"]
+script = ExtResource("2_fsnkx")
+level = 16
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_l6bt7"]
+script = ExtResource("2_fsnkx")
+level = 20
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_oneuf"]
+script = ExtResource("2_fsnkx")
+level = 24
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_7x365"]
+script = ExtResource("2_fsnkx")
+level = 30
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_ifsgy"]
+script = ExtResource("2_fsnkx")
+level = 36
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_0101q"]
+script = ExtResource("2_fsnkx")
+level = 42
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_1vjti"]
+script = ExtResource("2_fsnkx")
+level = 48
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_ims63"]
+script = ExtResource("2_fsnkx")
+level = 54
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "OCTILLERY"
+script = ExtResource("3_xglba")
+species = &"OCTILLERY"
+category = "Jet"
+pokedex_entry = "It ensnares its foe with its suction- cupped tentacles before delivering the finishing blow. If the foe turns out to be too strong, it spews ink to escape."
+types = Array[StringName]([&"WATER"])
+base_hp = 75
+base_attack = 105
+base_defense = 75
+base_special_attack = 105
+base_special_defense = 75
+base_speed = 45
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 168
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fsnkx")]([SubResource("Resource_0cd0v"), SubResource("Resource_8yp2v"), SubResource("Resource_vs5go"), SubResource("Resource_dni4p"), SubResource("Resource_v0p3y"), SubResource("Resource_3xe88"), SubResource("Resource_57dg4"), SubResource("Resource_oqneh"), SubResource("Resource_qyhe7"), SubResource("Resource_6keqk"), SubResource("Resource_l6bt7"), SubResource("Resource_oneuf"), SubResource("Resource_7x365"), SubResource("Resource_ifsgy"), SubResource("Resource_0101q"), SubResource("Resource_1vjti"), SubResource("Resource_ims63")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BIND", &"BLIZZARD", &"BOUNCE", &"BRINE", &"BULLETSEED", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASHCANNON", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"LIQUIDATION", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"STRINGSHOT", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDERWAVE", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SUCTIONCUPS", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"MOODY"])
+egg_groups = Array[StringName]([&"Water1", &"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kftna")]([SubResource("Resource_m0ebx")])
+height = 9
+weight = 285
+shape = &"Multiped"
+habitat = &"Sea"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 31)
+shadow_size = 3
+id = &"OCTILLERY"
+display_name = "Octillery"

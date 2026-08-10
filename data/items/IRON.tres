@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xqfl2"]
+
+[resource]
+resource_name = "IRON"
+script = ExtResource("1_xqfl2")
+name_plural = "Irons"
+portion_name = "bottle of Iron"
+portion_name_plural = "bottles of Iron"
+pocket = 2
+price = 10000
+sell_price = 5000
+field_use = 1
+description = "A nutritious drink for Pokémon. It raises the base Defense stat of a single Pokémon."
+id = &"IRON"
+display_name = "Iron"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_slpog"]
+
+[resource]
+resource_name = "THUNDERSHOCK"
+script = ExtResource("1_slpog")
+type = &"ELECTRIC"
+category = 1
+power = 40
+total_pp = 30
+function_code = &"ParalyzeTarget"
+effect_chance = 10
+description = "A jolt of electricity is hurled at the foe to inflict damage. It may also leave the target with paralysis."
+id = &"THUNDERSHOCK"
+display_name = "Thunder Shock"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

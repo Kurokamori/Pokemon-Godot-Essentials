@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_cmss3"]
+
+[resource]
+resource_name = "MAGMASTORM"
+script = ExtResource("1_cmss3")
+type = &"FIRE"
+category = 1
+power = 100
+accuracy = 75
+function_code = &"BindTarget"
+description = "The target becomes trapped within a maelstrom of fire that rages for four to five turns."
+id = &"MAGMASTORM"
+display_name = "Magma Storm"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

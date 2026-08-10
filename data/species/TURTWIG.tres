@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mg2gx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_666av"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_12uvs"]
+
+[sub_resource type="Resource" id="Resource_42p1k"]
+script = ExtResource("1_mg2gx")
+species = &"GROTLE"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_loyy4"]
+script = ExtResource("2_666av")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_i6f6l"]
+script = ExtResource("2_666av")
+level = 5
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_cnwdv"]
+script = ExtResource("2_666av")
+level = 6
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_my32l"]
+script = ExtResource("2_666av")
+level = 10
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_o6fap"]
+script = ExtResource("2_666av")
+level = 13
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_21nqw"]
+script = ExtResource("2_666av")
+level = 17
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_udi1l"]
+script = ExtResource("2_666av")
+level = 21
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_hjbu2"]
+script = ExtResource("2_666av")
+level = 25
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_hq7my"]
+script = ExtResource("2_666av")
+level = 29
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_dmf3d"]
+script = ExtResource("2_666av")
+level = 33
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_51dbp"]
+script = ExtResource("2_666av")
+level = 37
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_d1qno"]
+script = ExtResource("2_666av")
+level = 41
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_jsymk"]
+script = ExtResource("2_666av")
+level = 45
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "TURTWIG"
+script = ExtResource("3_12uvs")
+species = &"TURTWIG"
+category = "Tiny Leaf"
+pokedex_entry = "Made from soil, the shell on its back hardens when it drinks water. It lives along lakes."
+types = Array[StringName]([&"GRASS"])
+base_hp = 55
+base_attack = 68
+base_defense = 64
+base_special_attack = 45
+base_special_defense = 55
+base_speed = 31
+ev_attack = 1
+base_exp = 64
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_666av")]([SubResource("Resource_loyy4"), SubResource("Resource_i6f6l"), SubResource("Resource_cnwdv"), SubResource("Resource_my32l"), SubResource("Resource_o6fap"), SubResource("Resource_21nqw"), SubResource("Resource_udi1l"), SubResource("Resource_hjbu2"), SubResource("Resource_hq7my"), SubResource("Resource_dmf3d"), SubResource("Resource_51dbp"), SubResource("Resource_d1qno"), SubResource("Resource_jsymk")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"HEADBUTT", &"HIDDENPOWER", &"IRONTAIL", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORKUP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AMNESIA", &"BODYSLAM", &"DOUBLEEDGE", &"EARTHPOWER", &"GRASSYTERRAIN", &"GROWTH", &"HEAVYSLAM", &"SANDTOMB", &"SEEDBOMB", &"SPITUP", &"STOCKPILE", &"SUPERPOWER", &"SWALLOW", &"THRASH", &"TICKLE", &"WIDEGUARD", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"SHELLARMOR"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mg2gx")]([SubResource("Resource_42p1k")])
+height = 4
+weight = 102
+color = &"Green"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 30)
+shadow_size = 1
+id = &"TURTWIG"
+display_name = "Turtwig"

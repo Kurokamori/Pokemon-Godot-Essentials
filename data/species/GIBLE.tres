@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tkjf4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a8eda"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_g4hkc"]
+
+[sub_resource type="Resource" id="Resource_ccmns"]
+script = ExtResource("1_tkjf4")
+species = &"GABITE"
+method = &"Level"
+parameter = "24"
+
+[sub_resource type="Resource" id="Resource_jrqfv"]
+script = ExtResource("2_a8eda")
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_v3ise"]
+script = ExtResource("2_a8eda")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_xjoc2"]
+script = ExtResource("2_a8eda")
+level = 6
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_nx7df"]
+script = ExtResource("2_a8eda")
+level = 12
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_ayjag"]
+script = ExtResource("2_a8eda")
+level = 18
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_8tfi6"]
+script = ExtResource("2_a8eda")
+level = 25
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_1o4k4"]
+script = ExtResource("2_a8eda")
+level = 30
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_8dhfm"]
+script = ExtResource("2_a8eda")
+level = 36
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_sq0s7"]
+script = ExtResource("2_a8eda")
+level = 42
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_u25l8"]
+script = ExtResource("2_a8eda")
+level = 48
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_m5dwg"]
+script = ExtResource("2_a8eda")
+level = 54
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_d0y8r"]
+script = ExtResource("2_a8eda")
+level = 60
+move = &"DRAGONRUSH"
+
+[resource]
+resource_name = "GIBLE"
+script = ExtResource("3_g4hkc")
+species = &"GIBLE"
+category = "Land Shark"
+pokedex_entry = "It nests in small, horizontal holes in cave walls. It pounces to catch prey that stray too close."
+types = Array[StringName]([&"DRAGON", &"GROUND"])
+base_hp = 58
+base_attack = 70
+base_defense = 45
+base_special_attack = 40
+base_special_defense = 45
+base_speed = 42
+ev_attack = 1
+base_exp = 60
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_a8eda")]([SubResource("Resource_jrqfv"), SubResource("Resource_v3ise"), SubResource("Resource_xjoc2"), SubResource("Resource_nx7df"), SubResource("Resource_ayjag"), SubResource("Resource_8tfi6"), SubResource("Resource_1o4k4"), SubResource("Resource_8dhfm"), SubResource("Resource_sq0s7"), SubResource("Resource_u25l8"), SubResource("Resource_m5dwg"), SubResource("Resource_d0y8r")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALESHOT", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TWISTER"])
+egg_moves = Array[StringName]([&"BODYSLAM", &"DOUBLEEDGE", &"DRAGONBREATH", &"IRONHEAD", &"METALCLAW", &"MUDSHOT", &"OUTRAGE", &"SANDTOMB", &"SCARYFACE", &"THRASH", &"TWISTER"])
+abilities = Array[StringName]([&"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"ROUGHSKIN"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_tkjf4")]([SubResource("Resource_ccmns")])
+height = 7
+weight = 205
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(-2, 27)
+shadow_size = 1
+id = &"GIBLE"
+display_name = "Gible"

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_eeym1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xauhn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_f8avo"]
+
+[sub_resource type="Resource" id="Resource_acmqv"]
+script = ExtResource("1_eeym1")
+species = &"GROVYLE"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_pa7kf"]
+script = ExtResource("2_xauhn")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_exj0m"]
+script = ExtResource("2_xauhn")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_hoc72"]
+script = ExtResource("2_xauhn")
+level = 3
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_dunrv"]
+script = ExtResource("2_xauhn")
+level = 6
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_rodxg"]
+script = ExtResource("2_xauhn")
+level = 9
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_co0f2"]
+script = ExtResource("2_xauhn")
+level = 12
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_gouvg"]
+script = ExtResource("2_xauhn")
+level = 15
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_wmcr5"]
+script = ExtResource("2_xauhn")
+level = 18
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_x6vu4"]
+script = ExtResource("2_xauhn")
+level = 21
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_7q0m0"]
+script = ExtResource("2_xauhn")
+level = 24
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_8l168"]
+script = ExtResource("2_xauhn")
+level = 27
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_7g5g1"]
+script = ExtResource("2_xauhn")
+level = 30
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_y5hwq"]
+script = ExtResource("2_xauhn")
+level = 33
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_pf0ac"]
+script = ExtResource("2_xauhn")
+level = 36
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_u1hcg"]
+script = ExtResource("2_xauhn")
+level = 39
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "TREECKO"
+script = ExtResource("3_f8avo")
+species = &"TREECKO"
+category = "Wood Gecko"
+pokedex_entry = "It makes its nest in a giant tree in the forest. It ferociously guards against anything nearing its territory. It is said to be the protector of the trees."
+types = Array[StringName]([&"GRASS"])
+base_hp = 40
+base_attack = 45
+base_defense = 35
+base_special_attack = 65
+base_special_defense = 55
+base_speed = 70
+ev_speed = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xauhn")]([SubResource("Resource_pa7kf"), SubResource("Resource_exj0m"), SubResource("Resource_hoc72"), SubResource("Resource_dunrv"), SubResource("Resource_rodxg"), SubResource("Resource_co0f2"), SubResource("Resource_gouvg"), SubResource("Resource_wmcr5"), SubResource("Resource_x6vu4"), SubResource("Resource_7q0m0"), SubResource("Resource_8l168"), SubResource("Resource_7g5g1"), SubResource("Resource_y5hwq"), SubResource("Resource_pf0ac"), SubResource("Resource_u1hcg")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HIDDENPOWER", &"IRONTAIL", &"LEAFSTORM", &"LOWKICK", &"MAGICALLEAF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"THUNDERPUNCH", &"WORKUP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"ABSORB", &"CRUNCH", &"CRUSHCLAW", &"DOUBLEKICK", &"DRAGONBREATH", &"ENDEAVOR", &"GRASSYTERRAIN", &"LEAFSTORM", &"LEECHSEED", &"MAGICALLEAF", &"NIGHTSLASH", &"SLASH", &"SYNTHESIS", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"UNBURDEN"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_eeym1")]([SubResource("Resource_acmqv")])
+height = 5
+weight = 50
+color = &"Green"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 28)
+shadow_size = 1
+id = &"TREECKO"
+display_name = "Treecko"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_g065j"]
+
+[resource]
+resource_name = "CELLBATTERY"
+script = ExtResource("1_g065j")
+name_plural = "Cell Batteries"
+price = 4000
+sell_price = 2000
+bp_price = 10
+description = "A consumable battery. If the holder is hit by an Electric-type move, its Attack will rise."
+id = &"CELLBATTERY"
+display_name = "Cell Battery"
+flags = Array[StringName]([&"Fling_30"])

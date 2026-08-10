@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4eyp5"]
+
+[resource]
+resource_name = "PROTEIN"
+script = ExtResource("1_4eyp5")
+name_plural = "Proteins"
+portion_name = "bottle of Protein"
+portion_name_plural = "bottles of Protein"
+pocket = 2
+price = 10000
+sell_price = 5000
+field_use = 1
+description = "A nutritious drink for Pokémon. It raises the base Attack stat of a single Pokémon."
+id = &"PROTEIN"
+display_name = "Protein"
+flags = Array[StringName]([&"Fling_30"])

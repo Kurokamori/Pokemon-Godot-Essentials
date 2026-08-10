@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ub3xk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pblfv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_o5awc"]
+
+[sub_resource type="Resource" id="Resource_bwgwx"]
+script = ExtResource("1_ub3xk")
+species = &"STARAVIA"
+method = &"Level"
+parameter = "14"
+
+[sub_resource type="Resource" id="Resource_oc17w"]
+script = ExtResource("2_pblfv")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_agayb"]
+script = ExtResource("2_pblfv")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_nqvl5"]
+script = ExtResource("2_pblfv")
+level = 5
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_vtox6"]
+script = ExtResource("2_pblfv")
+level = 9
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_luuv6"]
+script = ExtResource("2_pblfv")
+level = 13
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_n2mwm"]
+script = ExtResource("2_pblfv")
+level = 17
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_lt50v"]
+script = ExtResource("2_pblfv")
+level = 21
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_qsb62"]
+script = ExtResource("2_pblfv")
+level = 25
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_bs1yy"]
+script = ExtResource("2_pblfv")
+level = 29
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_d82m7"]
+script = ExtResource("2_pblfv")
+level = 33
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_hqnov"]
+script = ExtResource("2_pblfv")
+level = 37
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_vy8ws"]
+script = ExtResource("2_pblfv")
+level = 41
+move = &"FINALGAMBIT"
+
+[resource]
+resource_name = "STARLY"
+script = ExtResource("3_o5awc")
+species = &"STARLY"
+category = "Starling"
+pokedex_entry = "They flock in great numbers. Though small, they flap their wings with great power."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 40
+base_attack = 55
+base_defense = 30
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 60
+ev_speed = 1
+base_exp = 49
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pblfv")]([SubResource("Resource_oc17w"), SubResource("Resource_agayb"), SubResource("Resource_nqvl5"), SubResource("Resource_vtox6"), SubResource("Resource_luuv6"), SubResource("Resource_n2mwm"), SubResource("Resource_lt50v"), SubResource("Resource_qsb62"), SubResource("Resource_bs1yy"), SubResource("Resource_d82m7"), SubResource("Resource_hqnov"), SubResource("Resource_vy8ws")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"ASTONISH", &"DETECT", &"DOUBLEEDGE", &"FEATHERDANCE", &"FURYATTACK", &"REVENGE", &"SANDATTACK", &"UPROAR"])
+abilities = Array[StringName]([&"KEENEYE"])
+hidden_abilities = Array[StringName]([&"RECKLESS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ub3xk")]([SubResource("Resource_bwgwx")])
+height = 3
+weight = 20
+color = &"Brown"
+shape = &"Winged"
+generation = 4
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(1, 32)
+shadow_size = 1
+id = &"STARLY"
+display_name = "Starly"

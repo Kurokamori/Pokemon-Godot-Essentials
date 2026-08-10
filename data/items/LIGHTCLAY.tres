@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_clk7t"]
+
+[resource]
+resource_name = "LIGHTCLAY"
+script = ExtResource("1_clk7t")
+name_plural = "Light Clays"
+portion_name = "lump of Light Clay"
+portion_name_plural = "lumps of Light Clay"
+price = 4000
+sell_price = 2000
+bp_price = 15
+description = "An item to be held by a Pokémon. Protective moves like Light Screen and Reflect will be effective longer."
+id = &"LIGHTCLAY"
+display_name = "Light Clay"
+flags = Array[StringName]([&"Fling_30"])

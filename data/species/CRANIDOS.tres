@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xnxjj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x1cdq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_diwng"]
+
+[sub_resource type="Resource" id="Resource_kgddm"]
+script = ExtResource("1_xnxjj")
+species = &"RAMPARDOS"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_c00ab"]
+script = ExtResource("2_x1cdq")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_2kfox"]
+script = ExtResource("2_x1cdq")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_jgocv"]
+script = ExtResource("2_x1cdq")
+level = 6
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_b5o63"]
+script = ExtResource("2_x1cdq")
+level = 10
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_iv2vo"]
+script = ExtResource("2_x1cdq")
+level = 15
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_4th34"]
+script = ExtResource("2_x1cdq")
+level = 19
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_lhjo8"]
+script = ExtResource("2_x1cdq")
+level = 24
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_8wqwu"]
+script = ExtResource("2_x1cdq")
+level = 28
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_b20s7"]
+script = ExtResource("2_x1cdq")
+level = 33
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_0k6b8"]
+script = ExtResource("2_x1cdq")
+level = 37
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_0qdjm"]
+script = ExtResource("2_x1cdq")
+level = 42
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_1i6bf"]
+script = ExtResource("2_x1cdq")
+level = 46
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "CRANIDOS"
+script = ExtResource("3_diwng")
+species = &"CRANIDOS"
+category = "Head Butt"
+pokedex_entry = "It lived in jungles around 100 million years ago. Its skull is as hard as iron."
+types = Array[StringName]([&"ROCK"])
+base_hp = 67
+base_attack = 125
+base_defense = 40
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 58
+ev_attack = 1
+base_exp = 70
+growth_rate = &"Erratic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_x1cdq")]([SubResource("Resource_c00ab"), SubResource("Resource_2kfox"), SubResource("Resource_jgocv"), SubResource("Resource_b5o63"), SubResource("Resource_iv2vo"), SubResource("Resource_4th34"), SubResource("Resource_lhjo8"), SubResource("Resource_8wqwu"), SubResource("Resource_b20s7"), SubResource("Resource_0k6b8"), SubResource("Resource_0qdjm"), SubResource("Resource_1i6bf")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DRAGONPULSE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SPITE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"UPROAR", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CRUNCH", &"CURSE", &"DOUBLEEDGE", &"HAMMERARM", &"IRONHEAD", &"LEER", &"SLAM", &"STOMP", &"THRASH", &"WHIRLWIND"])
+abilities = Array[StringName]([&"MOLDBREAKER"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_xnxjj")]([SubResource("Resource_kgddm")])
+height = 9
+weight = 315
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 45)
+front_sprite_offset = Vector2i(0, 23)
+shadow_size = 1
+id = &"CRANIDOS"
+display_name = "Cranidos"

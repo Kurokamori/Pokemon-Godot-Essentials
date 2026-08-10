@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1jdqi"]
+
+[resource]
+resource_name = "SPITE"
+script = ExtResource("1_1jdqi")
+type = &"GHOST"
+total_pp = 10
+function_code = &"LowerPPOfTargetLastMoveBy4"
+description = "The user unleashes its grudge on the move last used by the target by cutting 4 PP from it."
+id = &"SPITE"
+display_name = "Spite"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

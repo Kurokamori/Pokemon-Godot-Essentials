@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_a5mdn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_uvww8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mglmd"]
+
+[sub_resource type="Resource" id="Resource_w8igx"]
+script = ExtResource("1_a5mdn")
+species = &"PALPITOAD"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_po1ul"]
+script = ExtResource("2_uvww8")
+level = 0
+move = &"DRAINPUNCH"
+
+[sub_resource type="Resource" id="Resource_m4opi"]
+script = ExtResource("2_uvww8")
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_aheu6"]
+script = ExtResource("2_uvww8")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_eka57"]
+script = ExtResource("2_uvww8")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_e0okx"]
+script = ExtResource("2_uvww8")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_kuhn1"]
+script = ExtResource("2_uvww8")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_64gm2"]
+script = ExtResource("2_uvww8")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_um1gr"]
+script = ExtResource("2_uvww8")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_nwlhq"]
+script = ExtResource("2_uvww8")
+level = 20
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_tw062"]
+script = ExtResource("2_uvww8")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_7dy60"]
+script = ExtResource("2_uvww8")
+level = 30
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_fc28j"]
+script = ExtResource("2_uvww8")
+level = 39
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_duhc4"]
+script = ExtResource("2_uvww8")
+level = 46
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_ub8lv"]
+script = ExtResource("2_uvww8")
+level = 54
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_pxah6"]
+script = ExtResource("2_uvww8")
+level = 62
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_0tnq7"]
+script = ExtResource("2_uvww8")
+level = 70
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "SEISMITOAD"
+script = ExtResource("3_mglmd")
+species = &"SEISMITOAD"
+category = "Vibration"
+pokedex_entry = "It increases the power of its punches by vibrating the bumps on its fists. It can turn a boulder to rubble with one punch."
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 105
+base_attack = 95
+base_defense = 75
+base_special_attack = 85
+base_special_defense = 75
+base_speed = 74
+ev_hp = 3
+base_exp = 255
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_uvww8")]([SubResource("Resource_po1ul"), SubResource("Resource_m4opi"), SubResource("Resource_aheu6"), SubResource("Resource_eka57"), SubResource("Resource_e0okx"), SubResource("Resource_kuhn1"), SubResource("Resource_64gm2"), SubResource("Resource_um1gr"), SubResource("Resource_nwlhq"), SubResource("Resource_tw062"), SubResource("Resource_7dy60"), SubResource("Resource_fc28j"), SubResource("Resource_duhc4"), SubResource("Resource_ub8lv"), SubResource("Resource_pxah6"), SubResource("Resource_0tnq7")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BOUNCE", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DIVE", &"DOUBLETEAM", &"DRAINPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGAIMPACT", &"GRASSKNOT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEPUNCH", &"ICYWIND", &"INFESTATION", &"KNOCKOFF", &"LIQUIDATION", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"POWERWHIP", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"UPROAR", &"VENOMDRENCH", &"VENOSHOCK", &"WATERPULSE", &"WEATHERBALL"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"POISONTOUCH"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_a5mdn")]([SubResource("Resource_w8igx")])
+height = 15
+weight = 620
+color = &"Blue"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(-2, 54)
+front_sprite_offset = Vector2i(-2, 16)
+id = &"SEISMITOAD"
+display_name = "Seismitoad"

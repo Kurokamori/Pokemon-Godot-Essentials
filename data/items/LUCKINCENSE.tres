@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6upco"]
+
+[resource]
+resource_name = "LUCKINCENSE"
+script = ExtResource("1_6upco")
+name_plural = "Luck Incenses"
+portion_name = "jar of Luck Incense"
+portion_name_plural = "jars of Luck Incense"
+price = 11000
+sell_price = 5500
+description = "An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in."
+id = &"LUCKINCENSE"
+display_name = "Luck Incense"
+flags = Array[StringName]([&"Fling_10"])

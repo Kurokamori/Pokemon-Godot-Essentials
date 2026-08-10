@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5yhl0"]
+
+[resource]
+resource_name = "SILPHSCOPE"
+script = ExtResource("1_5yhl0")
+name_plural = "Silph Scopes"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A scope that makes unseeable Pokémon visible. It is made by Silph Co."
+id = &"SILPHSCOPE"
+display_name = "Silph Scope"
+flags = Array[StringName]([&"KeyItem"])

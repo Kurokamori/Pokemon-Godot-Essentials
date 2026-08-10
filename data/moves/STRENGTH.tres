@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_y0g8o"]
+
+[resource]
+resource_name = "STRENGTH"
+script = ExtResource("1_y0g8o")
+category = 0
+power = 80
+total_pp = 15
+description = "The target is slugged with a punch thrown at maximum power. It can also be used to move heavy boulders."
+id = &"STRENGTH"
+display_name = "Strength"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

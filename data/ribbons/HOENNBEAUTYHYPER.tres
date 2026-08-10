@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_3h5ih"]
+
+[resource]
+resource_name = "HOENNBEAUTYHYPER"
+script = ExtResource("1_3h5ih")
+icon_position = 6
+description = "Hoenn Beauty Contest Hyper Rank winner!"
+id = &"HOENNBEAUTYHYPER"
+display_name = "Beauty Ribbon Hyper"

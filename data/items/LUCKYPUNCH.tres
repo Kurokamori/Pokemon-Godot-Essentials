@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_lfnln"]
+
+[resource]
+resource_name = "LUCKYPUNCH"
+script = ExtResource("1_lfnln")
+name_plural = "Lucky Punches"
+price = 1000
+sell_price = 500
+bp_price = 7
+description = "An item to be held by Chansey. It is a pair of gloves that boosts Chansey's critical-hit ratio."
+id = &"LUCKYPUNCH"
+display_name = "Lucky Punch"
+flags = Array[StringName]([&"Fling_40"])

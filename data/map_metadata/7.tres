@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_mk4go"]
+
+[resource]
+resource_name = "7"
+script = ExtResource("1_mk4go")
+map_id = 7
+outdoor_map = true
+announce_location = true
+town_map_position = Array[int]([0, 13, 10])
+town_map_size = Array[int]([2, 11])
+id = &"7"
+display_name = "Cedolan City"

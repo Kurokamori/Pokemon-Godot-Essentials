@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_52msk"]
+
+[resource]
+resource_name = "BLIZZARD"
+script = ExtResource("1_52msk")
+type = &"ICE"
+category = 1
+power = 110
+accuracy = 70
+target = &"AllNearFoes"
+function_code = &"FreezeTargetAlwaysHitsInHail"
+effect_chance = 10
+description = "A howling blizzard is summoned to strike the opposing team. It may also freeze them solid."
+id = &"BLIZZARD"
+display_name = "Blizzard"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

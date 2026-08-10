@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lj8af"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_23w3j"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_h4pvf"]
+
+[sub_resource type="Resource" id="Resource_pul5r"]
+script = ExtResource("2_23w3j")
+move = &"POISONTAIL"
+
+[sub_resource type="Resource" id="Resource_s0g1f"]
+script = ExtResource("2_23w3j")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_7bh5r"]
+script = ExtResource("2_23w3j")
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_vkflq"]
+script = ExtResource("2_23w3j")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_6i6l1"]
+script = ExtResource("2_23w3j")
+level = 8
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_2h5ao"]
+script = ExtResource("2_23w3j")
+level = 16
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_1o4on"]
+script = ExtResource("2_23w3j")
+level = 24
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_j2w0b"]
+script = ExtResource("2_23w3j")
+level = 32
+move = &"CROSSPOISON"
+
+[sub_resource type="Resource" id="Resource_ojtgi"]
+script = ExtResource("2_23w3j")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_kisf3"]
+script = ExtResource("2_23w3j")
+level = 48
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_hsc6u"]
+script = ExtResource("2_23w3j")
+level = 56
+move = &"DYNAMAXCANNON"
+
+[sub_resource type="Resource" id="Resource_5pdo3"]
+script = ExtResource("2_23w3j")
+level = 64
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_fohnp"]
+script = ExtResource("2_23w3j")
+level = 72
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_o1lav"]
+script = ExtResource("2_23w3j")
+level = 80
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_movmh"]
+script = ExtResource("2_23w3j")
+level = 88
+move = &"ETERNABEAM"
+
+[resource]
+resource_name = "ETERNATUS"
+script = ExtResource("3_h4pvf")
+species = &"ETERNATUS"
+category = "Gigantic"
+pokedex_entry = "The core on its chest absorbs energy emanating from the lands of the Galar region. This energy is what allows Eternatus to stay active."
+types = Array[StringName]([&"POISON", &"DRAGON"])
+base_hp = 140
+base_attack = 85
+base_defense = 95
+base_special_attack = 145
+base_special_defense = 95
+base_speed = 130
+ev_hp = 3
+base_exp = 345
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_23w3j")]([SubResource("Resource_pul5r"), SubResource("Resource_s0g1f"), SubResource("Resource_7bh5r"), SubResource("Resource_vkflq"), SubResource("Resource_6i6l1"), SubResource("Resource_2h5ao"), SubResource("Resource_1o4on"), SubResource("Resource_j2w0b"), SubResource("Resource_ojtgi"), SubResource("Resource_kisf3"), SubResource("Resource_hsc6u"), SubResource("Resource_5pdo3"), SubResource("Resource_fohnp"), SubResource("Resource_o1lav"), SubResource("Resource_movmh")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"BRUTALSWING", &"CONFIDE", &"COSMICPOWER", &"CROSSPOISON", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONDANCE", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FLAMETHROWER", &"FLASHCANNON", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"METEORBEAM", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK"])
+abilities = Array[StringName]([&"PRESSURE"])
+hatch_steps = 30720
+height = 200
+weight = 9500
+color = &"Purple"
+shape = &"Winged"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 4)
+shadow_size = 3
+id = &"ETERNATUS"
+display_name = "Eternatus"
+flags = Array[StringName]([&"Legendary"])

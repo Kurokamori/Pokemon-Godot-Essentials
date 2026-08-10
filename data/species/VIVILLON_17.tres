@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3s0eo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_60mn8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3drwu"]
+
+[sub_resource type="Resource" id="Resource_b1k2n"]
+script = ExtResource("1_3s0eo")
+species = &"SPEWPA"
+method = &"Level"
+parameter = "12"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_apnls"]
+script = ExtResource("2_60mn8")
+level = 0
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_qj67q"]
+script = ExtResource("2_60mn8")
+move = &"POWDER"
+
+[sub_resource type="Resource" id="Resource_jtsso"]
+script = ExtResource("2_60mn8")
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_hgk2k"]
+script = ExtResource("2_60mn8")
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_kkp0x"]
+script = ExtResource("2_60mn8")
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_xxmi3"]
+script = ExtResource("2_60mn8")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_imewv"]
+script = ExtResource("2_60mn8")
+level = 12
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_glk2m"]
+script = ExtResource("2_60mn8")
+level = 17
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_0drwj"]
+script = ExtResource("2_60mn8")
+level = 21
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_8etjb"]
+script = ExtResource("2_60mn8")
+level = 25
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_2tdjc"]
+script = ExtResource("2_60mn8")
+level = 31
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_0ulph"]
+script = ExtResource("2_60mn8")
+level = 35
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_jo1gt"]
+script = ExtResource("2_60mn8")
+level = 41
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_td847"]
+script = ExtResource("2_60mn8")
+level = 45
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_fl87t"]
+script = ExtResource("2_60mn8")
+level = 50
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_7ospv"]
+script = ExtResource("2_60mn8")
+level = 55
+move = &"POWDER"
+
+[resource]
+resource_name = "VIVILLON_17"
+script = ExtResource("3_3drwu")
+species = &"VIVILLON"
+form = 17
+form_name = "Tundra Pattern"
+category = "Scale"
+pokedex_entry = "Vivillon with many different patterns are found all over the world. These patterns are affected by the climate of their habitat."
+pokedex_form = 17
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 80
+base_attack = 52
+base_defense = 50
+base_special_attack = 90
+base_special_defense = 50
+base_speed = 89
+ev_hp = 1
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 206
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_60mn8")]([SubResource("Resource_apnls"), SubResource("Resource_qj67q"), SubResource("Resource_jtsso"), SubResource("Resource_hgk2k"), SubResource("Resource_kkp0x"), SubResource("Resource_xxmi3"), SubResource("Resource_imewv"), SubResource("Resource_glk2m"), SubResource("Resource_0drwj"), SubResource("Resource_8etjb"), SubResource("Resource_2tdjc"), SubResource("Resource_0ulph"), SubResource("Resource_jo1gt"), SubResource("Resource_td847"), SubResource("Resource_fl87t"), SubResource("Resource_7ospv")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BUGBITE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DREAMEATER", &"ELECTROWEB", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAILWIND", &"THIEF", &"TOXIC", &"UTURN"])
+abilities = Array[StringName]([&"SHIELDDUST", &"COMPOUNDEYES"])
+hidden_abilities = Array[StringName]([&"FRIENDGUARD"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_3s0eo")]([SubResource("Resource_b1k2n")])
+height = 12
+weight = 170
+color = &"White"
+shape = &"MultiWinged"
+generation = 6
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 6)
+id = &"VIVILLON_17"
+display_name = "Vivillon"

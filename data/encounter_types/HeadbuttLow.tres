@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EncounterTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_type_data.gd" id="1_yoncj"]
+
+[resource]
+resource_name = "HeadbuttLow"
+script = ExtResource("1_yoncj")
+kind = 0
+id = &"HeadbuttLow"
+display_name = "HeadbuttLow"

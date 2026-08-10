@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cyklf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7xd8s"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cd7e3"]
+
+[sub_resource type="Resource" id="Resource_nnrsq"]
+script = ExtResource("1_cyklf")
+species = &"RUFFLET"
+method = &"Level"
+parameter = "54"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3spth"]
+script = ExtResource("2_7xd8s")
+level = 0
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_1aqa1"]
+script = ExtResource("2_7xd8s")
+move = &"SKYATTACK"
+
+[sub_resource type="Resource" id="Resource_uo20q"]
+script = ExtResource("2_7xd8s")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_l83c1"]
+script = ExtResource("2_7xd8s")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_uc32g"]
+script = ExtResource("2_7xd8s")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_ivw1i"]
+script = ExtResource("2_7xd8s")
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_uwnmq"]
+script = ExtResource("2_7xd8s")
+level = 18
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_e1ai2"]
+script = ExtResource("2_7xd8s")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_o8d6a"]
+script = ExtResource("2_7xd8s")
+level = 30
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_tsv8i"]
+script = ExtResource("2_7xd8s")
+level = 36
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_evym4"]
+script = ExtResource("2_7xd8s")
+level = 42
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_qb8va"]
+script = ExtResource("2_7xd8s")
+level = 48
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_0x3nl"]
+script = ExtResource("2_7xd8s")
+level = 57
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_tsow4"]
+script = ExtResource("2_7xd8s")
+level = 64
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_xuxps"]
+script = ExtResource("2_7xd8s")
+level = 72
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_et1de"]
+script = ExtResource("2_7xd8s")
+level = 80
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "BRAVIARY"
+script = ExtResource("3_cd7e3")
+species = &"BRAVIARY"
+category = "Valiant"
+pokedex_entry = "The more scars they have, the more respect these brave soldiers of the sky get from their peers."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 100
+base_attack = 123
+base_defense = 75
+base_special_attack = 57
+base_special_defense = 75
+base_speed = 80
+ev_attack = 2
+base_exp = 179
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7xd8s")]([SubResource("Resource_3spth"), SubResource("Resource_1aqa1"), SubResource("Resource_uo20q"), SubResource("Resource_l83c1"), SubResource("Resource_uc32g"), SubResource("Resource_ivw1i"), SubResource("Resource_uwnmq"), SubResource("Resource_e1ai2"), SubResource("Resource_o8d6a"), SubResource("Resource_tsv8i"), SubResource("Resource_evym4"), SubResource("Resource_qb8va"), SubResource("Resource_0x3nl"), SubResource("Resource_tsow4"), SubResource("Resource_xuxps"), SubResource("Resource_et1de")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BRAVEBIRD", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYPERBEAM", &"IRONHEAD", &"LASERFOCUS", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TOXIC", &"UTURN", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"KEENEYE", &"SHEERFORCE"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_cyklf")]([SubResource("Resource_nnrsq")])
+height = 15
+weight = 410
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(-5, 38)
+front_sprite_offset = Vector2i(2, 5)
+id = &"BRAVIARY"
+display_name = "Braviary"

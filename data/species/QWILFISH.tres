@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7ls3p"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ly4d4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_t5cg5"]
+
+[sub_resource type="Resource" id="Resource_3cwsw"]
+script = ExtResource("2_ly4d4")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_o17uh"]
+script = ExtResource("2_ly4d4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ki3n8"]
+script = ExtResource("2_ly4d4")
+level = 4
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_p1imd"]
+script = ExtResource("2_ly4d4")
+level = 8
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_vfuqw"]
+script = ExtResource("2_ly4d4")
+level = 12
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_tnxrs"]
+script = ExtResource("2_ly4d4")
+level = 16
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_pmdc3"]
+script = ExtResource("2_ly4d4")
+level = 20
+move = &"SPIKES"
+
+[sub_resource type="Resource" id="Resource_u0jgl"]
+script = ExtResource("2_ly4d4")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_nykp2"]
+script = ExtResource("2_ly4d4")
+level = 28
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_ba0ce"]
+script = ExtResource("2_ly4d4")
+level = 32
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_vy5gw"]
+script = ExtResource("2_ly4d4")
+level = 36
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_hksth"]
+script = ExtResource("2_ly4d4")
+level = 40
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_77ci6"]
+script = ExtResource("2_ly4d4")
+level = 44
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_loyoa"]
+script = ExtResource("2_ly4d4")
+level = 44
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_l7ecr"]
+script = ExtResource("2_ly4d4")
+level = 48
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_0674p"]
+script = ExtResource("2_ly4d4")
+level = 52
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_ulwmc"]
+script = ExtResource("2_ly4d4")
+level = 56
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_honeq"]
+script = ExtResource("2_ly4d4")
+level = 60
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_l5ju1"]
+script = ExtResource("2_ly4d4")
+level = 66
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "QWILFISH"
+script = ExtResource("3_t5cg5")
+species = &"QWILFISH"
+category = "Balloon"
+pokedex_entry = "A Qwilfish uses the pressure of water it swallows to shoot toxic quills all at once from all over its body. It finds swimming to be somewhat challenging."
+types = Array[StringName]([&"WATER", &"POISON"])
+base_hp = 65
+base_attack = 95
+base_defense = 85
+base_special_attack = 55
+base_special_defense = 55
+base_speed = 85
+ev_attack = 1
+base_exp = 88
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ly4d4")]([SubResource("Resource_3cwsw"), SubResource("Resource_o17uh"), SubResource("Resource_ki3n8"), SubResource("Resource_p1imd"), SubResource("Resource_vfuqw"), SubResource("Resource_tnxrs"), SubResource("Resource_pmdc3"), SubResource("Resource_u0jgl"), SubResource("Resource_nykp2"), SubResource("Resource_ba0ce"), SubResource("Resource_vy5gw"), SubResource("Resource_hksth"), SubResource("Resource_77ci6"), SubResource("Resource_loyoa"), SubResource("Resource_l7ecr"), SubResource("Resource_0674p"), SubResource("Resource_ulwmc"), SubResource("Resource_honeq"), SubResource("Resource_l5ju1")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FRUSTRATION", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROLLOUT", &"ROUND", &"SCALD", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPIKES", &"STEELROLLER", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THROATCHOP", &"THUNDERWAVE", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"ACIDSPRAY", &"AQUAJET", &"ASTONISH", &"BUBBLEBEAM", &"FLAIL", &"HAZE", &"SUPERSONIC", &"WATERPULSE"])
+abilities = Array[StringName]([&"POISONPOINT", &"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"INTIMIDATE"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+height = 5
+weight = 39
+color = &"Gray"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"QWILFISH"
+display_name = "Qwilfish"

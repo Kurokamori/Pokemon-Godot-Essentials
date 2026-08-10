@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_yp6qn"]
+
+[resource]
+resource_name = "ILLUMINATE"
+script = ExtResource("1_yp6qn")
+description = "Raises the likelihood of meeting wild Pokémon."
+id = &"ILLUMINATE"
+display_name = "Illuminate"

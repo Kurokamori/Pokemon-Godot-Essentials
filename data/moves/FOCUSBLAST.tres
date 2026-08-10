@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1x4tg"]
+
+[resource]
+resource_name = "FOCUSBLAST"
+script = ExtResource("1_1x4tg")
+type = &"FIGHTING"
+category = 1
+power = 120
+accuracy = 70
+function_code = &"LowerTargetSpDef1"
+effect_chance = 10
+description = "The user heightens its mental focus and unleashes its power. It may also lower the target's Sp. Def."
+id = &"FOCUSBLAST"
+display_name = "Focus Blast"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ef37l"]
+
+[resource]
+resource_name = "PRESENT"
+script = ExtResource("1_ef37l")
+category = 0
+power = 1
+accuracy = 90
+total_pp = 15
+function_code = &"RandomlyDamageOrHealTarget"
+description = "The user attacks by giving the target a gift with a hidden trap. It restores HP sometimes, however."
+id = &"PRESENT"
+display_name = "Present"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

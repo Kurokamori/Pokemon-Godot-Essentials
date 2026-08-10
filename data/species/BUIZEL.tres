@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6ie81"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hgbyq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ngt4c"]
+
+[sub_resource type="Resource" id="Resource_7knan"]
+script = ExtResource("1_6ie81")
+species = &"FLOATZEL"
+method = &"Level"
+parameter = "26"
+
+[sub_resource type="Resource" id="Resource_bckvl"]
+script = ExtResource("2_hgbyq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_mfd8x"]
+script = ExtResource("2_hgbyq")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_kv7p3"]
+script = ExtResource("2_hgbyq")
+level = 7
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_wf1vk"]
+script = ExtResource("2_hgbyq")
+level = 11
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_l0px5"]
+script = ExtResource("2_hgbyq")
+level = 15
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_nt533"]
+script = ExtResource("2_hgbyq")
+level = 18
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_02yf4"]
+script = ExtResource("2_hgbyq")
+level = 21
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_m8edf"]
+script = ExtResource("2_hgbyq")
+level = 24
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_0wm41"]
+script = ExtResource("2_hgbyq")
+level = 27
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_25heb"]
+script = ExtResource("2_hgbyq")
+level = 31
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_4a66i"]
+script = ExtResource("2_hgbyq")
+level = 35
+move = &"WATERFALL"
+
+[sub_resource type="Resource" id="Resource_qwy7p"]
+script = ExtResource("2_hgbyq")
+level = 38
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_gnpir"]
+script = ExtResource("2_hgbyq")
+level = 41
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_bms62"]
+script = ExtResource("2_hgbyq")
+level = 45
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "BUIZEL"
+script = ExtResource("3_ngt4c")
+species = &"BUIZEL"
+category = "Sea Weasel"
+pokedex_entry = "It has a flotation sac that is like an inflatable collar. It floats on water with its head out."
+types = Array[StringName]([&"WATER"])
+base_hp = 55
+base_attack = 65
+base_defense = 35
+base_special_attack = 60
+base_special_defense = 30
+base_speed = 85
+ev_speed = 1
+base_exp = 66
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hgbyq")]([SubResource("Resource_bckvl"), SubResource("Resource_mfd8x"), SubResource("Resource_kv7p3"), SubResource("Resource_wf1vk"), SubResource("Resource_l0px5"), SubResource("Resource_nt533"), SubResource("Resource_02yf4"), SubResource("Resource_m8edf"), SubResource("Resource_0wm41"), SubResource("Resource_25heb"), SubResource("Resource_4a66i"), SubResource("Resource_qwy7p"), SubResource("Resource_gnpir"), SubResource("Resource_bms62")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BRICKBREAK", &"BRINE", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FOCUSPUNCH", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AQUARING", &"AQUATAIL", &"BATONPASS", &"FURYCUTTER", &"FURYSWIPES", &"HEADBUTT", &"HELPINGHAND", &"MUDSLAP", &"SLASH", &"SOAK", &"SWITCHEROO"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"WATERVEIL"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6ie81")]([SubResource("Resource_7knan")])
+height = 7
+weight = 295
+color = &"Brown"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(-5, 48)
+front_sprite_offset = Vector2i(4, 25)
+shadow_size = 1
+id = &"BUIZEL"
+display_name = "Buizel"

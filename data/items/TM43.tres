@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_fcyql"]
+
+[resource]
+resource_name = "TM43"
+script = ExtResource("1_fcyql")
+name_plural = "TM43s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"VOLTSWITCH"
+description = "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+id = &"TM43"
+display_name = "TM43"
+flags = Array[StringName]([&"Fling_70"])

@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pxlve"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_eke7b"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_50odo"]
+
+[sub_resource type="Resource" id="Resource_o2npf"]
+script = ExtResource("1_pxlve")
+species = &"DRAGONAIR"
+method = &"Level"
+parameter = "55"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_5fo5g"]
+script = ExtResource("2_eke7b")
+level = 0
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_5abrb"]
+script = ExtResource("2_eke7b")
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_2qm2a"]
+script = ExtResource("2_eke7b")
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_nnwbd"]
+script = ExtResource("2_eke7b")
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_mjb32"]
+script = ExtResource("2_eke7b")
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_q4mgq"]
+script = ExtResource("2_eke7b")
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_yp2ry"]
+script = ExtResource("2_eke7b")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_ep6ud"]
+script = ExtResource("2_eke7b")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_elsn7"]
+script = ExtResource("2_eke7b")
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_1q1fi"]
+script = ExtResource("2_eke7b")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_yxb33"]
+script = ExtResource("2_eke7b")
+level = 15
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_0ppm6"]
+script = ExtResource("2_eke7b")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_4vqwi"]
+script = ExtResource("2_eke7b")
+level = 25
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_sntu7"]
+script = ExtResource("2_eke7b")
+level = 33
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_ftjmx"]
+script = ExtResource("2_eke7b")
+level = 39
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_c175t"]
+script = ExtResource("2_eke7b")
+level = 41
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_cnt50"]
+script = ExtResource("2_eke7b")
+level = 46
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_gh0l1"]
+script = ExtResource("2_eke7b")
+level = 53
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_1pwhm"]
+script = ExtResource("2_eke7b")
+level = 62
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_qblct"]
+script = ExtResource("2_eke7b")
+level = 80
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "DRAGONITE"
+script = ExtResource("3_50odo")
+species = &"DRAGONITE"
+category = "Dragon"
+pokedex_entry = "It can circle the globe in just 16 hours. It is a kindhearted Pokémon that leads lost and foundering ships in a storm to the safety of land."
+types = Array[StringName]([&"DRAGON", &"FLYING"])
+base_hp = 91
+base_attack = 134
+base_defense = 95
+base_special_attack = 100
+base_special_defense = 100
+base_speed = 80
+ev_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_eke7b")]([SubResource("Resource_5fo5g"), SubResource("Resource_5abrb"), SubResource("Resource_2qm2a"), SubResource("Resource_nnwbd"), SubResource("Resource_mjb32"), SubResource("Resource_q4mgq"), SubResource("Resource_yp2ry"), SubResource("Resource_ep6ud"), SubResource("Resource_elsn7"), SubResource("Resource_1q1fi"), SubResource("Resource_yxb33"), SubResource("Resource_0ppm6"), SubResource("Resource_4vqwi"), SubResource("Resource_sntu7"), SubResource("Resource_ftjmx"), SubResource("Resource_c175t"), SubResource("Resource_cnt50"), SubResource("Resource_gh0l1"), SubResource("Resource_1pwhm"), SubResource("Resource_qblct")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"AQUATAIL", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DEFOG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMETHROWER", &"FLING", &"FLY", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LIGHTSCREEN", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALESHOT", &"SECRETPOWER", &"SHOCKWAVE", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"MULTISCALE"])
+wild_item_uncommon = Array[StringName]([&"DRAGONSCALE"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_pxlve")]([SubResource("Resource_o2npf")])
+height = 22
+weight = 2100
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(6, 13)
+id = &"DRAGONITE"
+display_name = "Dragonite"

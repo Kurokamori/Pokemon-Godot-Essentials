@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ht3a8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ahk0o"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_m20sd"]
+
+[sub_resource type="Resource" id="Resource_lrc8p"]
+script = ExtResource("2_ahk0o")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_ob0og"]
+script = ExtResource("2_ahk0o")
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_1of81"]
+script = ExtResource("2_ahk0o")
+level = 4
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_1f443"]
+script = ExtResource("2_ahk0o")
+level = 6
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_wpq7s"]
+script = ExtResource("2_ahk0o")
+level = 9
+move = &"POISONTAIL"
+
+[sub_resource type="Resource" id="Resource_kun2w"]
+script = ExtResource("2_ahk0o")
+level = 11
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_4m5ie"]
+script = ExtResource("2_ahk0o")
+level = 14
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_87hyo"]
+script = ExtResource("2_ahk0o")
+level = 16
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_3bfyt"]
+script = ExtResource("2_ahk0o")
+level = 19
+move = &"GLARE"
+
+[sub_resource type="Resource" id="Resource_0bq1e"]
+script = ExtResource("2_ahk0o")
+level = 21
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_3ofg7"]
+script = ExtResource("2_ahk0o")
+level = 24
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_q0xdj"]
+script = ExtResource("2_ahk0o")
+level = 26
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_i3tmf"]
+script = ExtResource("2_ahk0o")
+level = 29
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_jxra3"]
+script = ExtResource("2_ahk0o")
+level = 31
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_lj7e1"]
+script = ExtResource("2_ahk0o")
+level = 34
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_wxl3d"]
+script = ExtResource("2_ahk0o")
+level = 36
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_r8xs2"]
+script = ExtResource("2_ahk0o")
+level = 39
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_wrvhj"]
+script = ExtResource("2_ahk0o")
+level = 41
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_o5yt2"]
+script = ExtResource("2_ahk0o")
+level = 44
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_c48p2"]
+script = ExtResource("2_ahk0o")
+level = 46
+move = &"SLUDGEBOMB"
+
+[resource]
+resource_name = "SEVIPER"
+script = ExtResource("3_m20sd")
+species = &"SEVIPER"
+category = "Fang Snake"
+pokedex_entry = "Seviper and Zangoose are eternal rivals. It counters a Zangoose's dazzling agility with its swordlike tail, which also oozes a horrible poison."
+types = Array[StringName]([&"POISON"])
+base_hp = 73
+base_attack = 100
+base_defense = 60
+base_special_attack = 100
+base_special_defense = 60
+base_speed = 65
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 160
+growth_rate = &"Fluctuating"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ahk0o")]([SubResource("Resource_lrc8p"), SubResource("Resource_ob0og"), SubResource("Resource_1of81"), SubResource("Resource_1f443"), SubResource("Resource_wpq7s"), SubResource("Resource_kun2w"), SubResource("Resource_4m5ie"), SubResource("Resource_87hyo"), SubResource("Resource_3bfyt"), SubResource("Resource_0bq1e"), SubResource("Resource_3ofg7"), SubResource("Resource_q0xdj"), SubResource("Resource_i3tmf"), SubResource("Resource_jxra3"), SubResource("Resource_lj7e1"), SubResource("Resource_wxl3d"), SubResource("Resource_r8xs2"), SubResource("Resource_wrvhj"), SubResource("Resource_o5yt2"), SubResource("Resource_c48p2")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BIND", &"BODYSLAM", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONTAIL", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLAMETHROWER", &"FRUSTRATION", &"FURYCUTTER", &"GASTROACID", &"GIGADRAIN", &"HEADBUTT", &"HIDDENPOWER", &"INFESTATION", &"IRONTAIL", &"KNOCKOFF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"VENOSHOCK", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"ASSURANCE", &"BODYSLAM", &"FINALGAMBIT", &"NIGHTSLASH", &"SCARYFACE", &"SPITUP", &"STOCKPILE", &"SWALLOW", &"SWITCHEROO"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+wild_item_uncommon = Array[StringName]([&"SHEDSHELL"])
+egg_groups = Array[StringName]([&"Field", &"Dragon"])
+hatch_steps = 5120
+height = 27
+weight = 525
+color = &"Black"
+shape = &"Serpentine"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(6, 22)
+shadow_size = 3
+id = &"SEVIPER"
+display_name = "Seviper"

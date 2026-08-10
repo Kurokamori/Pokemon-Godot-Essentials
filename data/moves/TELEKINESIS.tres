@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0jvn2"]
+
+[resource]
+resource_name = "TELEKINESIS"
+script = ExtResource("1_0jvn2")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 15
+function_code = &"StartTargetAirborneAndAlwaysHitByMoves"
+description = "The user makes the target float with its psychic power. The target is easier to hit for three turns."
+id = &"TELEKINESIS"
+display_name = "Telekinesis"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

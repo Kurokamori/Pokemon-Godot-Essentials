@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_mqvo4"]
+
+[resource]
+resource_name = "TRUANT"
+script = ExtResource("1_mqvo4")
+description = "Pokémon can't attack on consecutive turns."
+id = &"TRUANT"
+display_name = "Truant"

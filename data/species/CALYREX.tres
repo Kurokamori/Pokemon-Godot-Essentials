@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2gd0n"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1xhis"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8rfdt"]
+
+[sub_resource type="Resource" id="Resource_rhfsp"]
+script = ExtResource("2_1xhis")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_pnful"]
+script = ExtResource("2_1xhis")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ydxku"]
+script = ExtResource("2_1xhis")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_8euo6"]
+script = ExtResource("2_1xhis")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_g0b0k"]
+script = ExtResource("2_1xhis")
+level = 8
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_loikh"]
+script = ExtResource("2_1xhis")
+level = 16
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ynys4"]
+script = ExtResource("2_1xhis")
+level = 24
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_5ymq4"]
+script = ExtResource("2_1xhis")
+level = 32
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_6hr4x"]
+script = ExtResource("2_1xhis")
+level = 40
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_62on0"]
+script = ExtResource("2_1xhis")
+level = 48
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_nlxe1"]
+script = ExtResource("2_1xhis")
+level = 56
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_67fiu"]
+script = ExtResource("2_1xhis")
+level = 64
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_k4bln"]
+script = ExtResource("2_1xhis")
+level = 72
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_gd1p1"]
+script = ExtResource("2_1xhis")
+level = 80
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_lf5nd"]
+script = ExtResource("2_1xhis")
+level = 88
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "CALYREX"
+script = ExtResource("3_8rfdt")
+species = &"CALYREX"
+category = "King"
+pokedex_entry = "Calyrex is a merciful Pokémon, capable of providing healing and blessings. It reigned over the Galar region in times of yore."
+types = Array[StringName]([&"PSYCHIC", &"GRASS"])
+base_hp = 100
+base_attack = 80
+base_defense = 80
+base_special_attack = 80
+base_special_defense = 80
+base_speed = 80
+ev_hp = 3
+base_exp = 250
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_1xhis")]([SubResource("Resource_rhfsp"), SubResource("Resource_pnful"), SubResource("Resource_ydxku"), SubResource("Resource_8euo6"), SubResource("Resource_g0b0k"), SubResource("Resource_loikh"), SubResource("Resource_ynys4"), SubResource("Resource_5ymq4"), SubResource("Resource_6hr4x"), SubResource("Resource_62on0"), SubResource("Resource_nlxe1"), SubResource("Resource_67fiu"), SubResource("Resource_k4bln"), SubResource("Resource_gd1p1"), SubResource("Resource_lf5nd")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"BATONPASS", &"BULLETSEED", &"CALMMIND", &"CONFIDE", &"DOUBLETEAM", &"DRAININGKISS", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYTERRAIN", &"GUARDSWAP", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICROOM", &"METRONOME", &"MIMIC", &"NATURALGIFT", &"PAYDAY", &"POLLENPUFF", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SPEEDSWAP", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TOXIC", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"UNNERVE"])
+hatch_steps = 30720
+height = 11
+weight = 77
+color = &"Green"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(2, 9)
+shadow_size = 1
+id = &"CALYREX"
+display_name = "Calyrex"
+flags = Array[StringName]([&"Legendary"])

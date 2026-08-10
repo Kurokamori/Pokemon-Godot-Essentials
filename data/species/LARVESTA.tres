@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_80170"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3emm8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_q51vm"]
+
+[sub_resource type="Resource" id="Resource_j5x8r"]
+script = ExtResource("1_80170")
+species = &"VOLCARONA"
+method = &"Level"
+parameter = "59"
+
+[sub_resource type="Resource" id="Resource_bl5q8"]
+script = ExtResource("2_3emm8")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_4xgy8"]
+script = ExtResource("2_3emm8")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_63fok"]
+script = ExtResource("2_3emm8")
+level = 6
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_oxcmn"]
+script = ExtResource("2_3emm8")
+level = 12
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_8mena"]
+script = ExtResource("2_3emm8")
+level = 18
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_0yn4y"]
+script = ExtResource("2_3emm8")
+level = 24
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_l51v4"]
+script = ExtResource("2_3emm8")
+level = 30
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_q4knb"]
+script = ExtResource("2_3emm8")
+level = 36
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_lnccy"]
+script = ExtResource("2_3emm8")
+level = 42
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_m2enw"]
+script = ExtResource("2_3emm8")
+level = 48
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_fsa7b"]
+script = ExtResource("2_3emm8")
+level = 54
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_tmgpb"]
+script = ExtResource("2_3emm8")
+level = 60
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_maymx"]
+script = ExtResource("2_3emm8")
+level = 66
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "LARVESTA"
+script = ExtResource("3_q51vm")
+species = &"LARVESTA"
+category = "Torch"
+pokedex_entry = "The base of volcanoes is where they make their homes. They shoot fire from their five horns to repel attacking enemies."
+types = Array[StringName]([&"BUG", &"FIRE"])
+base_hp = 55
+base_attack = 85
+base_defense = 55
+base_special_attack = 50
+base_special_defense = 55
+base_speed = 60
+ev_attack = 1
+base_exp = 72
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3emm8")]([SubResource("Resource_bl5q8"), SubResource("Resource_4xgy8"), SubResource("Resource_63fok"), SubResource("Resource_oxcmn"), SubResource("Resource_8mena"), SubResource("Resource_0yn4y"), SubResource("Resource_l51v4"), SubResource("Resource_q4knb"), SubResource("Resource_lnccy"), SubResource("Resource_m2enw"), SubResource("Resource_fsa7b"), SubResource("Resource_tmgpb"), SubResource("Resource_maymx")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AMNESIA", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"GIGADRAIN", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TOXIC", &"UTURN", &"WILDCHARGE", &"WILLOWISP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ABSORB", &"HARDEN", &"THRASH"])
+abilities = Array[StringName]([&"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"SWARM"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_80170")]([SubResource("Resource_j5x8r")])
+height = 11
+weight = 288
+color = &"White"
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 30)
+id = &"LARVESTA"
+display_name = "Larvesta"

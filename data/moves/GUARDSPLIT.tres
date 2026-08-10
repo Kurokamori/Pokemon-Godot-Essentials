@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_umg58"]
+
+[resource]
+resource_name = "GUARDSPLIT"
+script = ExtResource("1_umg58")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+function_code = &"UserTargetAverageBaseDefSpDef"
+description = "The user employs its psychic power to average its Defense and Sp. Def stats with those of its target."
+id = &"GUARDSPLIT"
+display_name = "Guard Split"
+flags = Array[StringName]([&"CanProtect"])

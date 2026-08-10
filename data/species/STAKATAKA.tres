@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_t8l3d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wewbw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0yjf1"]
+
+[sub_resource type="Resource" id="Resource_kykor"]
+script = ExtResource("2_wewbw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ivsn5"]
+script = ExtResource("2_wewbw")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_jyfrr"]
+script = ExtResource("2_wewbw")
+level = 5
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_4c2cn"]
+script = ExtResource("2_wewbw")
+level = 10
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_chfrp"]
+script = ExtResource("2_wewbw")
+level = 15
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_eenii"]
+script = ExtResource("2_wewbw")
+level = 20
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_ao1sl"]
+script = ExtResource("2_wewbw")
+level = 25
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_8stbb"]
+script = ExtResource("2_wewbw")
+level = 30
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_n8x8c"]
+script = ExtResource("2_wewbw")
+level = 35
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_pdwhq"]
+script = ExtResource("2_wewbw")
+level = 40
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_iipjw"]
+script = ExtResource("2_wewbw")
+level = 45
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_0c1yr"]
+script = ExtResource("2_wewbw")
+level = 50
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_bx4kd"]
+script = ExtResource("2_wewbw")
+level = 55
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_64x2t"]
+script = ExtResource("2_wewbw")
+level = 60
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_nmirr"]
+script = ExtResource("2_wewbw")
+level = 65
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_6hh8f"]
+script = ExtResource("2_wewbw")
+level = 70
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "STAKATAKA"
+script = ExtResource("3_0yjf1")
+species = &"STAKATAKA"
+category = "Rampart"
+pokedex_entry = "When stone walls started moving and attacking, the brute's true identity was this mysterious life-form, which brings to mind an Ultra Beast."
+types = Array[StringName]([&"ROCK", &"STEEL"])
+base_hp = 61
+base_attack = 131
+base_defense = 211
+base_special_attack = 53
+base_special_defense = 101
+base_speed = 13
+ev_defense = 3
+base_exp = 285
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 30
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_wewbw")]([SubResource("Resource_kykor"), SubResource("Resource_ivsn5"), SubResource("Resource_jyfrr"), SubResource("Resource_4c2cn"), SubResource("Resource_chfrp"), SubResource("Resource_eenii"), SubResource("Resource_ao1sl"), SubResource("Resource_8stbb"), SubResource("Resource_n8x8c"), SubResource("Resource_pdwhq"), SubResource("Resource_iipjw"), SubResource("Resource_0c1yr"), SubResource("Resource_bx4kd"), SubResource("Resource_64x2t"), SubResource("Resource_nmirr"), SubResource("Resource_6hh8f")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"BIND", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRUTALSWING", &"BULLDOZE", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"GYROBALL", &"HEATCRASH", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"INFESTATION", &"IRONDEFENSE", &"IRONHEAD", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MAGNETRISE", &"MEGAKICK", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SKILLSWAP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUPERPOWER", &"TELEKINESIS", &"TOXIC", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"BEASTBOOST"])
+hatch_steps = 30720
+height = 55
+weight = 8200
+color = &"Gray"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-4, 6)
+shadow_size = 3
+id = &"STAKATAKA"
+display_name = "Stakataka"
+flags = Array[StringName]([&"UltraBeast"])

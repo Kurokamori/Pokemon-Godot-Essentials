@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_sviua"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ngqay"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_832gv"]
+
+[sub_resource type="Resource" id="Resource_cgp6i"]
+script = ExtResource("1_sviua")
+species = &"ROSERADE"
+method = &"Item"
+parameter = "SHINYSTONE"
+
+[sub_resource type="Resource" id="Resource_whpli"]
+script = ExtResource("1_sviua")
+species = &"BUDEW"
+method = &"HappinessDay"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_eyjeq"]
+script = ExtResource("2_ngqay")
+level = 0
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_oswq4"]
+script = ExtResource("2_ngqay")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_k5t5q"]
+script = ExtResource("2_ngqay")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_030mh"]
+script = ExtResource("2_ngqay")
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_ow6ia"]
+script = ExtResource("2_ngqay")
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_jjd2s"]
+script = ExtResource("2_ngqay")
+level = 5
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ay63g"]
+script = ExtResource("2_ngqay")
+level = 10
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_jbl7d"]
+script = ExtResource("2_ngqay")
+level = 15
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_b2kdt"]
+script = ExtResource("2_ngqay")
+level = 20
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_dnht5"]
+script = ExtResource("2_ngqay")
+level = 25
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_efcfk"]
+script = ExtResource("2_ngqay")
+level = 30
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ghrq7"]
+script = ExtResource("2_ngqay")
+level = 35
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_a0oir"]
+script = ExtResource("2_ngqay")
+level = 40
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_1venr"]
+script = ExtResource("2_ngqay")
+level = 45
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_xbfu2"]
+script = ExtResource("2_ngqay")
+level = 50
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_yu652"]
+script = ExtResource("2_ngqay")
+level = 55
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_5jfq8"]
+script = ExtResource("2_ngqay")
+level = 60
+move = &"PETALDANCE"
+
+[resource]
+resource_name = "ROSELIA"
+script = ExtResource("3_832gv")
+species = &"ROSELIA"
+category = "Thorn"
+pokedex_entry = "A Roselia that drinks nutritionally rich springwater blooms with lovely flowers. The fragrance of its flowers has the effect of making its foes careless."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 50
+base_attack = 60
+base_defense = 45
+base_special_attack = 100
+base_special_defense = 80
+base_speed = 65
+ev_special_attack = 2
+base_exp = 140
+growth_rate = &"Parabolic"
+catch_rate = 150
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ngqay")]([SubResource("Resource_eyjeq"), SubResource("Resource_oswq4"), SubResource("Resource_k5t5q"), SubResource("Resource_030mh"), SubResource("Resource_ow6ia"), SubResource("Resource_jjd2s"), SubResource("Resource_ay63g"), SubResource("Resource_jbl7d"), SubResource("Resource_b2kdt"), SubResource("Resource_dnht5"), SubResource("Resource_efcfk"), SubResource("Resource_ghrq7"), SubResource("Resource_a0oir"), SubResource("Resource_1venr"), SubResource("Resource_xbfu2"), SubResource("Resource_yu652"), SubResource("Resource_5jfq8")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"HIDDENPOWER", &"LEAFSTORM", &"MAGICALLEAF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PINMISSILE", &"POISONJAB", &"POWERWHIP", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SPIKES", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"TOXICSPIKES", &"UPROAR", &"VENOSHOCK", &"WEATHERBALL", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"COTTONSPORE", &"EXTRASENSORY", &"LEAFSTORM", &"LIFEDEW", &"MINDREADER", &"PINMISSILE", &"POWERWHIP", &"RAZORLEAF", &"SEEDBOMB", &"SLEEPPOWDER", &"SPIKES", &"SYNTHESIS"])
+abilities = Array[StringName]([&"NATURALCURE", &"POISONPOINT"])
+hidden_abilities = Array[StringName]([&"LEAFGUARD"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Fairy", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_sviua")]([SubResource("Resource_cgp6i"), SubResource("Resource_whpli")])
+height = 3
+weight = 20
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 28)
+shadow_size = 1
+id = &"ROSELIA"
+display_name = "Roselia"

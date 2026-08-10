@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4cnec"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_sd378"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xe0ce"]
+
+[sub_resource type="Resource" id="Resource_78k80"]
+script = ExtResource("1_4cnec")
+species = &"NINETALES"
+method = &"Item"
+parameter = "FIRESTONE"
+
+[sub_resource type="Resource" id="Resource_ghcs3"]
+script = ExtResource("2_sd378")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_00s2b"]
+script = ExtResource("2_sd378")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_p3sbm"]
+script = ExtResource("2_sd378")
+level = 4
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_orjik"]
+script = ExtResource("2_sd378")
+level = 8
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_qjmd0"]
+script = ExtResource("2_sd378")
+level = 12
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_n5h7c"]
+script = ExtResource("2_sd378")
+level = 16
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_qfsvf"]
+script = ExtResource("2_sd378")
+level = 20
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_qvjr0"]
+script = ExtResource("2_sd378")
+level = 24
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_0s8f7"]
+script = ExtResource("2_sd378")
+level = 28
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_4fx5t"]
+script = ExtResource("2_sd378")
+level = 32
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_m14y1"]
+script = ExtResource("2_sd378")
+level = 36
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_ad1ls"]
+script = ExtResource("2_sd378")
+level = 40
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_7lo6p"]
+script = ExtResource("2_sd378")
+level = 44
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_errhd"]
+script = ExtResource("2_sd378")
+level = 48
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_r6gg2"]
+script = ExtResource("2_sd378")
+level = 52
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_b6beq"]
+script = ExtResource("2_sd378")
+level = 56
+move = &"FIREBLAST"
+
+[resource]
+resource_name = "VULPIX"
+script = ExtResource("3_xe0ce")
+species = &"VULPIX"
+category = "Fox"
+pokedex_entry = "It can freely control fire, making fiery orbs fly like will-o'-the-wisps. Just before evolution, its six tails grow hot as if on fire."
+types = Array[StringName]([&"FIRE"])
+base_hp = 38
+base_attack = 41
+base_defense = 40
+base_special_attack = 50
+base_special_defense = 65
+base_speed = 65
+ev_speed = 1
+base_exp = 60
+gender_ratio = &"Female75Percent"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_sd378")]([SubResource("Resource_ghcs3"), SubResource("Resource_00s2b"), SubResource("Resource_p3sbm"), SubResource("Resource_orjik"), SubResource("Resource_qjmd0"), SubResource("Resource_n5h7c"), SubResource("Resource_qfsvf"), SubResource("Resource_qvjr0"), SubResource("Resource_0s8f7"), SubResource("Resource_4fx5t"), SubResource("Resource_m14y1"), SubResource("Resource_ad1ls"), SubResource("Resource_7lo6p"), SubResource("Resource_errhd"), SubResource("Resource_r6gg2"), SubResource("Resource_b6beq")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BODYSLAM", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FOULPLAY", &"FRUSTRATION", &"HEADBUTT", &"HEATWAVE", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OMINOUSWIND", &"OVERHEAT", &"PAINSPLIT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHUP", &"REST", &"RETURN", &"ROAR", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"WEATHERBALL", &"WILLOWISP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BABYDOLLEYES", &"DISABLE", &"EXTRASENSORY", &"FLAIL", &"FLAMECHARGE", &"FLAREBLITZ", &"HEATWAVE", &"HEX", &"HOWL", &"HYPNOSIS", &"MEMENTO", &"POWERSWAP", &"ROAR", &"SPITE"])
+abilities = Array[StringName]([&"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"DROUGHT"])
+wild_item_uncommon = Array[StringName]([&"CHARCOAL"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4cnec")]([SubResource("Resource_78k80")])
+height = 6
+weight = 99
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 59)
+front_sprite_offset = Vector2i(0, 26)
+id = &"VULPIX"
+display_name = "Vulpix"

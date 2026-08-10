@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_k2401"]
+
+[resource]
+resource_name = "GRASSKNOT"
+script = ExtResource("1_k2401")
+type = &"GRASS"
+category = 1
+power = 1
+total_pp = 20
+function_code = &"PowerHigherWithTargetWeight"
+description = "The user snares the target with grass and trips it. The heavier the target, the greater the damage."
+id = &"GRASSKNOT"
+display_name = "Grass Knot"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

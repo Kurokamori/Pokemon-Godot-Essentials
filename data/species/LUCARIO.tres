@@ -1,0 +1,174 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_75wm8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dqmwi"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_y6g66"]
+
+[sub_resource type="Resource" id="Resource_bxip0"]
+script = ExtResource("1_75wm8")
+species = &"RIOLU"
+method = &"HappinessDay"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7wxy6"]
+script = ExtResource("2_dqmwi")
+level = 0
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_a1qgn"]
+script = ExtResource("2_dqmwi")
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_pln32"]
+script = ExtResource("2_dqmwi")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_gp1c5"]
+script = ExtResource("2_dqmwi")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_ebgso"]
+script = ExtResource("2_dqmwi")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_qtk2v"]
+script = ExtResource("2_dqmwi")
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_8vatq"]
+script = ExtResource("2_dqmwi")
+move = &"FORCEPALM"
+
+[sub_resource type="Resource" id="Resource_kpko0"]
+script = ExtResource("2_dqmwi")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_rt1v4"]
+script = ExtResource("2_dqmwi")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_m7s8w"]
+script = ExtResource("2_dqmwi")
+move = &"FINALGAMBIT"
+
+[sub_resource type="Resource" id="Resource_damqr"]
+script = ExtResource("2_dqmwi")
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_d8u31"]
+script = ExtResource("2_dqmwi")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ymeht"]
+script = ExtResource("2_dqmwi")
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_de6rl"]
+script = ExtResource("2_dqmwi")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_7xg3k"]
+script = ExtResource("2_dqmwi")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_5g3n4"]
+script = ExtResource("2_dqmwi")
+level = 12
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_dp1kf"]
+script = ExtResource("2_dqmwi")
+level = 16
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_q08g0"]
+script = ExtResource("2_dqmwi")
+level = 20
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_7vmy2"]
+script = ExtResource("2_dqmwi")
+level = 24
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_s67px"]
+script = ExtResource("2_dqmwi")
+level = 28
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_ujxj7"]
+script = ExtResource("2_dqmwi")
+level = 32
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_5ft4p"]
+script = ExtResource("2_dqmwi")
+level = 36
+move = &"BONERUSH"
+
+[sub_resource type="Resource" id="Resource_yjccq"]
+script = ExtResource("2_dqmwi")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_qioo6"]
+script = ExtResource("2_dqmwi")
+level = 44
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_0l5cx"]
+script = ExtResource("2_dqmwi")
+level = 48
+move = &"METEORMASH"
+
+[sub_resource type="Resource" id="Resource_swuyg"]
+script = ExtResource("2_dqmwi")
+level = 52
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_2rbhk"]
+script = ExtResource("2_dqmwi")
+level = 56
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_3bh36"]
+script = ExtResource("2_dqmwi")
+level = 60
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "LUCARIO"
+script = ExtResource("3_y6g66")
+species = &"LUCARIO"
+category = "Aura"
+pokedex_entry = "It has the ability to sense the auras of all things. It understands human speech."
+types = Array[StringName]([&"FIGHTING", &"STEEL"])
+base_hp = 70
+base_attack = 110
+base_defense = 70
+base_special_attack = 115
+base_special_defense = 70
+base_speed = 90
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 184
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dqmwi")]([SubResource("Resource_7wxy6"), SubResource("Resource_a1qgn"), SubResource("Resource_pln32"), SubResource("Resource_gp1c5"), SubResource("Resource_ebgso"), SubResource("Resource_qtk2v"), SubResource("Resource_8vatq"), SubResource("Resource_kpko0"), SubResource("Resource_rt1v4"), SubResource("Resource_m7s8w"), SubResource("Resource_damqr"), SubResource("Resource_d8u31"), SubResource("Resource_ymeht"), SubResource("Resource_de6rl"), SubResource("Resource_7xg3k"), SubResource("Resource_5g3n4"), SubResource("Resource_dp1kf"), SubResource("Resource_q08g0"), SubResource("Resource_7vmy2"), SubResource("Resource_s67px"), SubResource("Resource_ujxj7"), SubResource("Resource_5ft4p"), SubResource("Resource_yjccq"), SubResource("Resource_qioo6"), SubResource("Resource_0l5cx"), SubResource("Resource_swuyg"), SubResource("Resource_2rbhk"), SubResource("Resource_3bh36")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"AURASPHERE", &"BLAZEKICK", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEPUNCH", &"IRONDEFENSE", &"IRONTAIL", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TERRAINPULSE", &"THUNDERPUNCH", &"VACUUMWAVE", &"WATERPULSE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"STEADFAST", &"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"JUSTIFIED"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_75wm8")]([SubResource("Resource_bxip0")])
+height = 12
+weight = 540
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(1, 19)
+id = &"LUCARIO"
+display_name = "Lucario"

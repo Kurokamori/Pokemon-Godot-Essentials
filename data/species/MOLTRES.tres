@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_c3xk5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_v4k44"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_erblf"]
+
+[sub_resource type="Resource" id="Resource_0uqqy"]
+script = ExtResource("2_v4k44")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_y5gex"]
+script = ExtResource("2_v4k44")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_w63d4"]
+script = ExtResource("2_v4k44")
+level = 5
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_am024"]
+script = ExtResource("2_v4k44")
+level = 10
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_6egx5"]
+script = ExtResource("2_v4k44")
+level = 15
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_eq4ky"]
+script = ExtResource("2_v4k44")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_pmytj"]
+script = ExtResource("2_v4k44")
+level = 25
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_vyd5a"]
+script = ExtResource("2_v4k44")
+level = 30
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_ni0q7"]
+script = ExtResource("2_v4k44")
+level = 35
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_1bf8o"]
+script = ExtResource("2_v4k44")
+level = 40
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_fufmg"]
+script = ExtResource("2_v4k44")
+level = 45
+move = &"HEATWAVE"
+
+[sub_resource type="Resource" id="Resource_rggr7"]
+script = ExtResource("2_v4k44")
+level = 50
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_k0pae"]
+script = ExtResource("2_v4k44")
+level = 55
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_qpiwj"]
+script = ExtResource("2_v4k44")
+level = 60
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_a688m"]
+script = ExtResource("2_v4k44")
+level = 65
+move = &"BURNUP"
+
+[sub_resource type="Resource" id="Resource_13y0s"]
+script = ExtResource("2_v4k44")
+level = 70
+move = &"SKYATTACK"
+
+[resource]
+resource_name = "MOLTRES"
+script = ExtResource("3_erblf")
+species = &"MOLTRES"
+category = "Flame"
+pokedex_entry = "Moltres is a legendary bird Pokémon that can control fire. If injured, it is said to dip its body in the molten magma of a volcano to burn and heal itself."
+types = Array[StringName]([&"FIRE", &"FLYING"])
+base_hp = 90
+base_attack = 100
+base_defense = 90
+base_special_attack = 125
+base_special_defense = 85
+base_speed = 90
+ev_special_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_v4k44")]([SubResource("Resource_0uqqy"), SubResource("Resource_y5gex"), SubResource("Resource_w63d4"), SubResource("Resource_am024"), SubResource("Resource_6egx5"), SubResource("Resource_eq4ky"), SubResource("Resource_pmytj"), SubResource("Resource_vyd5a"), SubResource("Resource_ni0q7"), SubResource("Resource_1bf8o"), SubResource("Resource_fufmg"), SubResource("Resource_rggr7"), SubResource("Resource_k0pae"), SubResource("Resource_qpiwj"), SubResource("Resource_a688m"), SubResource("Resource_13y0s")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"ANCIENTPOWER", &"BRAVEBIRD", &"BURNINGJEALOUSY", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"INCINERATE", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"OMINOUSWIND", &"OVERHEAT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROOST", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCORCHINGSANDS", &"SECRETPOWER", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TWISTER", &"UTURN", &"WEATHERBALL", &"WILLOWISP"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"FLAMEBODY"])
+hatch_steps = 20480
+height = 20
+weight = 600
+color = &"Yellow"
+shape = &"Winged"
+habitat = &"Rare"
+generation = 1
+back_sprite_offset = Vector2i(16, 50)
+front_sprite_offset = Vector2i(9, 8)
+shadow_size = 3
+id = &"MOLTRES"
+display_name = "Moltres"
+flags = Array[StringName]([&"Legendary"])

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_tbslb"]
+
+[resource]
+resource_name = "LOPUNNITE"
+script = ExtResource("1_tbslb")
+name_plural = "Lopunnites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Lopunny hold it, and it will be able to Mega Evolve."
+id = &"LOPUNNITE"
+display_name = "Lopunnite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

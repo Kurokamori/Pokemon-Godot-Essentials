@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_we0bs"]
+
+[resource]
+resource_name = "GHOST"
+script = ExtResource("1_we0bs")
+icon_position = 7
+weaknesses = Array[StringName]([&"GHOST", &"DARK"])
+resistances = Array[StringName]([&"POISON", &"BUG"])
+immunities = Array[StringName]([&"NORMAL", &"FIGHTING"])
+id = &"GHOST"
+display_name = "Ghost"

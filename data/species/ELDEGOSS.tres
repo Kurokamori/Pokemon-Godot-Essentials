@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wbm47"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_v7t3e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ct218"]
+
+[sub_resource type="Resource" id="Resource_dl4jt"]
+script = ExtResource("1_wbm47")
+species = &"GOSSIFLEUR"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_bbu6k"]
+script = ExtResource("2_v7t3e")
+level = 0
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_7ej1t"]
+script = ExtResource("2_v7t3e")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_idoki"]
+script = ExtResource("2_v7t3e")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_fmmsl"]
+script = ExtResource("2_v7t3e")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_2fcqe"]
+script = ExtResource("2_v7t3e")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_wpvif"]
+script = ExtResource("2_v7t3e")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_hdn7b"]
+script = ExtResource("2_v7t3e")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_c05ja"]
+script = ExtResource("2_v7t3e")
+level = 23
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_2ukk2"]
+script = ExtResource("2_v7t3e")
+level = 28
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_j8mm2"]
+script = ExtResource("2_v7t3e")
+level = 34
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_5ef4t"]
+script = ExtResource("2_v7t3e")
+level = 40
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_oevaw"]
+script = ExtResource("2_v7t3e")
+level = 46
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_o70a4"]
+script = ExtResource("2_v7t3e")
+level = 52
+move = &"COTTONGUARD"
+
+[resource]
+resource_name = "ELDEGOSS"
+script = ExtResource("3_ct218")
+species = &"ELDEGOSS"
+category = "Cotton Bloom"
+pokedex_entry = "The seeds attached to its cotton fluff are full of nutrients. It spreads them on the wind so that plants and other Pokémon can benefit from them."
+types = Array[StringName]([&"GRASS"])
+base_hp = 60
+base_attack = 50
+base_defense = 90
+base_special_attack = 80
+base_special_defense = 120
+base_speed = 60
+ev_special_defense = 2
+base_exp = 161
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_v7t3e")]([SubResource("Resource_bbu6k"), SubResource("Resource_7ej1t"), SubResource("Resource_idoki"), SubResource("Resource_fmmsl"), SubResource("Resource_2fcqe"), SubResource("Resource_wpvif"), SubResource("Resource_hdn7b"), SubResource("Resource_c05ja"), SubResource("Resource_2ukk2"), SubResource("Resource_j8mm2"), SubResource("Resource_5ef4t"), SubResource("Resource_oevaw"), SubResource("Resource_o70a4")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"POLLENPUFF", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TOXIC", &"WEATHERBALL"])
+abilities = Array[StringName]([&"COTTONDOWN", &"REGENERATOR"])
+hidden_abilities = Array[StringName]([&"EFFECTSPORE"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_wbm47")]([SubResource("Resource_dl4jt")])
+height = 5
+weight = 25
+color = &"Green"
+shape = &"HeadBase"
+generation = 8
+back_sprite_offset = Vector2i(0, 47)
+front_sprite_offset = Vector2i(2, 17)
+shadow_size = 1
+id = &"ELDEGOSS"
+display_name = "Eldegoss"

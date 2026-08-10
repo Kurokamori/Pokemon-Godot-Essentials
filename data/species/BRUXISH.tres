@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0xt47"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hk5fo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qy35f"]
+
+[sub_resource type="Resource" id="Resource_it76d"]
+script = ExtResource("2_hk5fo")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_vnt1j"]
+script = ExtResource("2_hk5fo")
+level = 4
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_b33n8"]
+script = ExtResource("2_hk5fo")
+level = 9
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_5c1ne"]
+script = ExtResource("2_hk5fo")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_3ttpg"]
+script = ExtResource("2_hk5fo")
+level = 17
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_idwpp"]
+script = ExtResource("2_hk5fo")
+level = 20
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_oy0uo"]
+script = ExtResource("2_hk5fo")
+level = 25
+move = &"PSYWAVE"
+
+[sub_resource type="Resource" id="Resource_60g3a"]
+script = ExtResource("2_hk5fo")
+level = 28
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_lwi7l"]
+script = ExtResource("2_hk5fo")
+level = 33
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_3g8eo"]
+script = ExtResource("2_hk5fo")
+level = 36
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_1ufq4"]
+script = ExtResource("2_hk5fo")
+level = 41
+move = &"PSYCHICFANGS"
+
+[sub_resource type="Resource" id="Resource_qdtyr"]
+script = ExtResource("2_hk5fo")
+level = 44
+move = &"SYNCHRONOISE"
+
+[resource]
+resource_name = "BRUXISH"
+script = ExtResource("3_qy35f")
+species = &"BRUXISH"
+category = "Gnash Teeth"
+pokedex_entry = "When it unleashes its psychic power from the protuberance on its head, the grating sound of grinding teeth echoes through the area."
+types = Array[StringName]([&"WATER", &"PSYCHIC"])
+base_hp = 68
+base_attack = 105
+base_defense = 70
+base_special_attack = 70
+base_special_defense = 70
+base_speed = 92
+ev_attack = 2
+base_exp = 166
+catch_rate = 80
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hk5fo")]([SubResource("Resource_it76d"), SubResource("Resource_vnt1j"), SubResource("Resource_b33n8"), SubResource("Resource_5c1ne"), SubResource("Resource_3ttpg"), SubResource("Resource_idwpp"), SubResource("Resource_oy0uo"), SubResource("Resource_60g3a"), SubResource("Resource_lwi7l"), SubResource("Resource_3g8eo"), SubResource("Resource_1ufq4"), SubResource("Resource_qdtyr")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ALLYSWITCH", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BULKUP", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLING", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"ICEBEAM", &"IRONTAIL", &"LIGHTSCREEN", &"LIQUIDATION", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TELEKINESIS", &"TORMENT", &"TOXIC", &"TRICKROOM", &"UPROAR", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE", &"WONDERROOM"])
+egg_moves = Array[StringName]([&"ICEFANG", &"POISONFANG", &"RAGE", &"WATERPULSE"])
+abilities = Array[StringName]([&"DAZZLING", &"STRONGJAW"])
+hidden_abilities = Array[StringName]([&"WONDERSKIN"])
+wild_item_uncommon = Array[StringName]([&"RAZORFANG"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 3840
+height = 9
+weight = 190
+color = &"Pink"
+shape = &"Finned"
+generation = 7
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(1, 20)
+id = &"BRUXISH"
+display_name = "Bruxish"

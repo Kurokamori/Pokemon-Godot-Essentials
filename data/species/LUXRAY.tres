@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hyjb8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_l1qfj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_w4l8s"]
+
+[sub_resource type="Resource" id="Resource_neee6"]
+script = ExtResource("1_hyjb8")
+species = &"LUXIO"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_p0hsu"]
+script = ExtResource("2_l1qfj")
+move = &"ELECTRICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_hdo26"]
+script = ExtResource("2_l1qfj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_tuhk5"]
+script = ExtResource("2_l1qfj")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_nmms0"]
+script = ExtResource("2_l1qfj")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_6ixdm"]
+script = ExtResource("2_l1qfj")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_mksn0"]
+script = ExtResource("2_l1qfj")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_5bmqk"]
+script = ExtResource("2_l1qfj")
+level = 18
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_wai7p"]
+script = ExtResource("2_l1qfj")
+level = 24
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_137gk"]
+script = ExtResource("2_l1qfj")
+level = 33
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_06de5"]
+script = ExtResource("2_l1qfj")
+level = 40
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_b6tsm"]
+script = ExtResource("2_l1qfj")
+level = 48
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_65n11"]
+script = ExtResource("2_l1qfj")
+level = 56
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_g75hs"]
+script = ExtResource("2_l1qfj")
+level = 64
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_lwo40"]
+script = ExtResource("2_l1qfj")
+level = 72
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_ipid0"]
+script = ExtResource("2_l1qfj")
+level = 80
+move = &"WILDCHARGE"
+
+[resource]
+resource_name = "LUXRAY"
+script = ExtResource("3_w4l8s")
+species = &"LUXRAY"
+category = "Gleam Eyes"
+pokedex_entry = "It has eyes that can see through anything. It spots and captures prey hiding behind objects."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 80
+base_attack = 120
+base_defense = 79
+base_special_attack = 95
+base_special_defense = 79
+base_speed = 70
+ev_attack = 3
+base_exp = 262
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_l1qfj")]([SubResource("Resource_p0hsu"), SubResource("Resource_hdo26"), SubResource("Resource_tuhk5"), SubResource("Resource_nmms0"), SubResource("Resource_6ixdm"), SubResource("Resource_mksn0"), SubResource("Resource_5bmqk"), SubResource("Resource_wai7p"), SubResource("Resource_137gk"), SubResource("Resource_06de5"), SubResource("Resource_b6tsm"), SubResource("Resource_65n11"), SubResource("Resource_g75hs"), SubResource("Resource_lwo40"), SubResource("Resource_ipid0")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREFANG", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEFANG", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROAR", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"RIVALRY", &"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"GUTS"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_hyjb8")]([SubResource("Resource_neee6")])
+height = 14
+weight = 420
+color = &"Blue"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(5, 20)
+id = &"LUXRAY"
+display_name = "Luxray"

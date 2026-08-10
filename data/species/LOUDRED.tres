@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6dgyj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bb2vf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_csl55"]
+
+[sub_resource type="Resource" id="Resource_60x7e"]
+script = ExtResource("1_6dgyj")
+species = &"EXPLOUD"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_ph5hv"]
+script = ExtResource("1_6dgyj")
+species = &"WHISMUR"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ndeea"]
+script = ExtResource("2_bb2vf")
+level = 0
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ftx52"]
+script = ExtResource("2_bb2vf")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_3n5e5"]
+script = ExtResource("2_bb2vf")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_xln2u"]
+script = ExtResource("2_bb2vf")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_lybep"]
+script = ExtResource("2_bb2vf")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_8jfe7"]
+script = ExtResource("2_bb2vf")
+level = 15
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_flblr"]
+script = ExtResource("2_bb2vf")
+level = 15
+move = &"SLEEPTALK"
+
+[sub_resource type="Resource" id="Resource_r612h"]
+script = ExtResource("2_bb2vf")
+level = 23
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_bm5v3"]
+script = ExtResource("2_bb2vf")
+level = 29
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_sqb81"]
+script = ExtResource("2_bb2vf")
+level = 36
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_2trrx"]
+script = ExtResource("2_bb2vf")
+level = 43
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_tkmf1"]
+script = ExtResource("2_bb2vf")
+level = 50
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_cr24h"]
+script = ExtResource("2_bb2vf")
+level = 57
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "LOUDRED"
+script = ExtResource("3_csl55")
+species = &"LOUDRED"
+category = "Big Voice"
+pokedex_entry = "It positions the round speakers on its head to assail foes with ultrasonic waves at massive volume. It builds power by stomping the ground."
+base_hp = 84
+base_attack = 71
+base_defense = 43
+base_special_attack = 71
+base_special_defense = 43
+base_speed = 48
+ev_hp = 2
+base_exp = 126
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bb2vf")]([SubResource("Resource_ndeea"), SubResource("Resource_ftx52"), SubResource("Resource_3n5e5"), SubResource("Resource_xln2u"), SubResource("Resource_lybep"), SubResource("Resource_8jfe7"), SubResource("Resource_flblr"), SubResource("Resource_r612h"), SubResource("Resource_bm5v3"), SubResource("Resource_sqb81"), SubResource("Resource_2trrx"), SubResource("Resource_tkmf1"), SubResource("Resource_cr24h")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THUNDERPUNCH", &"TORMENT", &"UPROAR", &"WATERPULSE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SOUNDPROOF"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6dgyj")]([SubResource("Resource_60x7e"), SubResource("Resource_ph5hv")])
+height = 10
+weight = 405
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 22)
+id = &"LOUDRED"
+display_name = "Loudred"

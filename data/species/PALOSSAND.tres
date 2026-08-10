@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6fhrx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nwko5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p36by"]
+
+[sub_resource type="Resource" id="Resource_uijsq"]
+script = ExtResource("1_6fhrx")
+species = &"SANDYGAST"
+method = &"Level"
+parameter = "42"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_tlqax"]
+script = ExtResource("2_nwko5")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_qro7i"]
+script = ExtResource("2_nwko5")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_l28rl"]
+script = ExtResource("2_nwko5")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_nw6wh"]
+script = ExtResource("2_nwko5")
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_n375k"]
+script = ExtResource("2_nwko5")
+level = 15
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_wmdw6"]
+script = ExtResource("2_nwko5")
+level = 20
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_eml4w"]
+script = ExtResource("2_nwko5")
+level = 25
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_lf80n"]
+script = ExtResource("2_nwko5")
+level = 30
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_2noo7"]
+script = ExtResource("2_nwko5")
+level = 35
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_mvp6q"]
+script = ExtResource("2_nwko5")
+level = 40
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_q567o"]
+script = ExtResource("2_nwko5")
+level = 47
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_p51ik"]
+script = ExtResource("2_nwko5")
+level = 54
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_yplit"]
+script = ExtResource("2_nwko5")
+level = 61
+move = &"SHOREUP"
+
+[sub_resource type="Resource" id="Resource_oovoh"]
+script = ExtResource("2_nwko5")
+level = 68
+move = &"SANDSTORM"
+
+[resource]
+resource_name = "PALOSSAND"
+script = ExtResource("3_p36by")
+species = &"PALOSSAND"
+category = "Sand Castle"
+pokedex_entry = "Buried beneath the castle are masses of dried-up bones from those whose vitality it has drained."
+types = Array[StringName]([&"GHOST", &"GROUND"])
+base_hp = 85
+base_attack = 75
+base_defense = 110
+base_special_attack = 100
+base_special_defense = 75
+base_speed = 35
+ev_defense = 2
+base_exp = 168
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nwko5")]([SubResource("Resource_tlqax"), SubResource("Resource_qro7i"), SubResource("Resource_l28rl"), SubResource("Resource_nw6wh"), SubResource("Resource_n375k"), SubResource("Resource_wmdw6"), SubResource("Resource_eml4w"), SubResource("Resource_lf80n"), SubResource("Resource_2noo7"), SubResource("Resource_mvp6q"), SubResource("Resource_q567o"), SubResource("Resource_p51ik"), SubResource("Resource_yplit"), SubResource("Resource_oovoh")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"BLOCK", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRAVITY", &"HIDDENPOWER", &"INFESTATION", &"IRONDEFENSE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"QUASH", &"RECYCLE", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SPITE", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TERRAINPULSE", &"TOXIC", &"TRICK"])
+abilities = Array[StringName]([&"WATERCOMPACTION"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_6fhrx")]([SubResource("Resource_uijsq")])
+height = 13
+weight = 2500
+color = &"Brown"
+shape = &"Serpentine"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 3
+id = &"PALOSSAND"
+display_name = "Palossand"

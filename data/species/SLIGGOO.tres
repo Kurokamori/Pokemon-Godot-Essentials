@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rgwx0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_woekw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jaes6"]
+
+[sub_resource type="Resource" id="Resource_bfr2s"]
+script = ExtResource("1_rgwx0")
+species = &"GOODRA"
+method = &"LevelRain"
+parameter = "50"
+
+[sub_resource type="Resource" id="Resource_ug1ye"]
+script = ExtResource("1_rgwx0")
+species = &"GOOMY"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_eue3e"]
+script = ExtResource("2_woekw")
+level = 0
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_4rjew"]
+script = ExtResource("2_woekw")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_gv3qe"]
+script = ExtResource("2_woekw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_qa6nf"]
+script = ExtResource("2_woekw")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ti2ka"]
+script = ExtResource("2_woekw")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_rlt3f"]
+script = ExtResource("2_woekw")
+level = 15
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_jside"]
+script = ExtResource("2_woekw")
+level = 20
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_4pjb5"]
+script = ExtResource("2_woekw")
+level = 25
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_6gx2t"]
+script = ExtResource("2_woekw")
+level = 30
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_rrqtb"]
+script = ExtResource("2_woekw")
+level = 35
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_24v1x"]
+script = ExtResource("2_woekw")
+level = 43
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_5tgbi"]
+script = ExtResource("2_woekw")
+level = 49
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_1p2kj"]
+script = ExtResource("2_woekw")
+level = 56
+move = &"MUDDYWATER"
+
+[resource]
+resource_name = "SLIGGOO"
+script = ExtResource("3_jaes6")
+species = &"SLIGGOO"
+category = "Soft Tissue"
+pokedex_entry = "This Pokémon's mucous can dissolve anything. Toothless, it sprays mucous on its prey. Once they're nicely dissolved, it slurps them up."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 68
+base_attack = 75
+base_defense = 53
+base_special_attack = 83
+base_special_defense = 113
+base_speed = 60
+ev_special_defense = 2
+base_exp = 158
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_woekw")]([SubResource("Resource_eue3e"), SubResource("Resource_4rjew"), SubResource("Resource_gv3qe"), SubResource("Resource_qa6nf"), SubResource("Resource_ti2ka"), SubResource("Resource_rlt3f"), SubResource("Resource_jside"), SubResource("Resource_4pjb5"), SubResource("Resource_6gx2t"), SubResource("Resource_rrqtb"), SubResource("Resource_24v1x"), SubResource("Resource_5tgbi"), SubResource("Resource_1p2kj")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"ICEBEAM", &"INFESTATION", &"IRONTAIL", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERBOLT", &"TOXIC", &"WATERPULSE"])
+abilities = Array[StringName]([&"SAPSIPPER", &"HYDRATION"])
+hidden_abilities = Array[StringName]([&"GOOEY"])
+wild_item_uncommon = Array[StringName]([&"SHEDSHELL"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_rgwx0")]([SubResource("Resource_bfr2s"), SubResource("Resource_ug1ye")])
+height = 8
+weight = 175
+color = &"Purple"
+shape = &"Serpentine"
+generation = 6
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(2, 22)
+id = &"SLIGGOO"
+display_name = "Sliggoo"

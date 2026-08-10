@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5rrvs"]
+
+[resource]
+resource_name = "WORRYSEED"
+script = ExtResource("1_5rrvs")
+type = &"GRASS"
+total_pp = 10
+function_code = &"SetTargetAbilityToInsomnia"
+description = "A seed that causes worry is planted on the foe. It prevents sleep by making its Ability Insomnia."
+id = &"WORRYSEED"
+display_name = "Worry Seed"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

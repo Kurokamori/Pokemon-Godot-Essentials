@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_j1aly"]
+
+[resource]
+resource_name = "GRUDGE"
+script = ExtResource("1_j1aly")
+type = &"GHOST"
+accuracy = 0
+target = &"User"
+function_code = &"SetAttackerMovePPTo0IfUserFaints"
+description = "If the user faints, the user's grudge fully depletes the PP of the foe's move that knocked it out."
+id = &"GRUDGE"
+display_name = "Grudge"

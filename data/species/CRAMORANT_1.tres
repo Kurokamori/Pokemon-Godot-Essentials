@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4icj2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8k0ea"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tsvl5"]
+
+[sub_resource type="Resource" id="Resource_iqia3"]
+script = ExtResource("2_8k0ea")
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_ejemg"]
+script = ExtResource("2_8k0ea")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_tyuyt"]
+script = ExtResource("2_8k0ea")
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_fhe7w"]
+script = ExtResource("2_8k0ea")
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_ockh6"]
+script = ExtResource("2_8k0ea")
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_d22g7"]
+script = ExtResource("2_8k0ea")
+level = 7
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_t8q30"]
+script = ExtResource("2_8k0ea")
+level = 14
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_my7ah"]
+script = ExtResource("2_8k0ea")
+level = 21
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_bvbax"]
+script = ExtResource("2_8k0ea")
+level = 28
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_s2e2q"]
+script = ExtResource("2_8k0ea")
+level = 35
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_8kkan"]
+script = ExtResource("2_8k0ea")
+level = 42
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_t2yub"]
+script = ExtResource("2_8k0ea")
+level = 49
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_iomuu"]
+script = ExtResource("2_8k0ea")
+level = 56
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "CRAMORANT_1"
+script = ExtResource("3_tsvl5")
+species = &"CRAMORANT"
+form = 1
+form_name = "Gulping Form"
+category = "Gulp"
+pokedex_entry = "Cramorant's gluttony led it to try to swallow an Arrokuda whole, which in turn led to Cramorant getting an Arrokuda stuck in its throat."
+pokedex_form = 1
+types = Array[StringName]([&"FLYING", &"WATER"])
+base_hp = 70
+base_attack = 85
+base_defense = 55
+base_special_attack = 85
+base_special_defense = 95
+base_speed = 85
+ev_special_defense = 2
+base_exp = 166
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8k0ea")]([SubResource("Resource_iqia3"), SubResource("Resource_ejemg"), SubResource("Resource_tyuyt"), SubResource("Resource_fhe7w"), SubResource("Resource_ockh6"), SubResource("Resource_d22g7"), SubResource("Resource_t8q30"), SubResource("Resource_my7ah"), SubResource("Resource_bvbax"), SubResource("Resource_s2e2q"), SubResource("Resource_8kkan"), SubResource("Resource_t2yub"), SubResource("Resource_iomuu")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"THIEF", &"THROATCHOP", &"TOXIC", &"UPROAR", &"WEATHERBALL", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AERIALACE", &"AQUARING", &"DEFOG", &"FEATHERDANCE", &"ROOST"])
+abilities = Array[StringName]([&"GULPMISSILE"])
+egg_groups = Array[StringName]([&"Water1", &"Flying"])
+hatch_steps = 5120
+height = 8
+weight = 180
+color = &"Blue"
+shape = &"Winged"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-6, 14)
+id = &"CRAMORANT_1"
+display_name = "Cramorant"

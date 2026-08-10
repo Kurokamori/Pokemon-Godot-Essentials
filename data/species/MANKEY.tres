@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_klg0r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_knynq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vx55g"]
+
+[sub_resource type="Resource" id="Resource_eicgi"]
+script = ExtResource("1_klg0r")
+species = &"PRIMEAPE"
+method = &"Level"
+parameter = "28"
+
+[sub_resource type="Resource" id="Resource_jlksi"]
+script = ExtResource("2_knynq")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_btb6x"]
+script = ExtResource("2_knynq")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_21gju"]
+script = ExtResource("2_knynq")
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_3l3j4"]
+script = ExtResource("2_knynq")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_qtf36"]
+script = ExtResource("2_knynq")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_dxiuf"]
+script = ExtResource("2_knynq")
+level = 5
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_hi81y"]
+script = ExtResource("2_knynq")
+level = 8
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_hjj1i"]
+script = ExtResource("2_knynq")
+level = 12
+move = &"SEISMICTOSS"
+
+[sub_resource type="Resource" id="Resource_i4064"]
+script = ExtResource("2_knynq")
+level = 15
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_hg50k"]
+script = ExtResource("2_knynq")
+level = 19
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_se1ls"]
+script = ExtResource("2_knynq")
+level = 22
+move = &"CROSSCHOP"
+
+[sub_resource type="Resource" id="Resource_r5kxl"]
+script = ExtResource("2_knynq")
+level = 26
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_3nfu5"]
+script = ExtResource("2_knynq")
+level = 29
+move = &"SKULLBASH"
+
+[sub_resource type="Resource" id="Resource_sag7x"]
+script = ExtResource("2_knynq")
+level = 33
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_pgyr6"]
+script = ExtResource("2_knynq")
+level = 36
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_j7cmh"]
+script = ExtResource("2_knynq")
+level = 40
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6lfup"]
+script = ExtResource("2_knynq")
+level = 43
+move = &"STOMPINGTANTRUM"
+
+[sub_resource type="Resource" id="Resource_h56n2"]
+script = ExtResource("2_knynq")
+level = 47
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_voqfx"]
+script = ExtResource("2_knynq")
+level = 50
+move = &"FINALGAMBIT"
+
+[resource]
+resource_name = "MANKEY"
+script = ExtResource("3_vx55g")
+species = &"MANKEY"
+category = "Pig Monkey"
+pokedex_entry = "When it starts shaking and its nasal breathing turns rough, it's a sure sign of anger. However, since this happens instantly, there is no time to flee."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 40
+base_attack = 80
+base_defense = 35
+base_special_attack = 35
+base_special_defense = 45
+base_speed = 70
+ev_attack = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_knynq")]([SubResource("Resource_jlksi"), SubResource("Resource_btb6x"), SubResource("Resource_21gju"), SubResource("Resource_3l3j4"), SubResource("Resource_qtf36"), SubResource("Resource_dxiuf"), SubResource("Resource_hi81y"), SubResource("Resource_hjj1i"), SubResource("Resource_i4064"), SubResource("Resource_hg50k"), SubResource("Resource_se1ls"), SubResource("Resource_r5kxl"), SubResource("Resource_3nfu5"), SubResource("Resource_sag7x"), SubResource("Resource_pgyr6"), SubResource("Resource_j7cmh"), SubResource("Resource_6lfup"), SubResource("Resource_h56n2"), SubResource("Resource_voqfx")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GUNKSHOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"ICEPUNCH", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SPITE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"UPROAR", &"UTURN", &"VACUUMWAVE", &"WORKUP"])
+egg_moves = Array[StringName]([&"BEATUP", &"CLOSECOMBAT", &"COUNTER", &"ENCORE", &"NIGHTSLASH", &"REVENGE", &"REVERSAL"])
+abilities = Array[StringName]([&"VITALSPIRIT", &"ANGERPOINT"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_klg0r")]([SubResource("Resource_eicgi")])
+height = 5
+weight = 280
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-5, 27)
+shadow_size = 1
+id = &"MANKEY"
+display_name = "Mankey"

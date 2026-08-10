@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xkc52"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k8hfa"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_831ly"]
+
+[sub_resource type="Resource" id="Resource_061lb"]
+script = ExtResource("1_xkc52")
+species = &"SCYTHER"
+method = &"TradeItem"
+parameter = "METALCOAT"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_1fucw"]
+script = ExtResource("2_k8hfa")
+level = 0
+move = &"BULLETPUNCH"
+
+[sub_resource type="Resource" id="Resource_fcdlt"]
+script = ExtResource("2_k8hfa")
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_01wsp"]
+script = ExtResource("2_k8hfa")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_4ufb6"]
+script = ExtResource("2_k8hfa")
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_ejhec"]
+script = ExtResource("2_k8hfa")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_3bfxb"]
+script = ExtResource("2_k8hfa")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_j7pao"]
+script = ExtResource("2_k8hfa")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_l2ln5"]
+script = ExtResource("2_k8hfa")
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_4rrom"]
+script = ExtResource("2_k8hfa")
+level = 12
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_oaa3u"]
+script = ExtResource("2_k8hfa")
+level = 16
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_u36a8"]
+script = ExtResource("2_k8hfa")
+level = 20
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_bl4pq"]
+script = ExtResource("2_k8hfa")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_n1pdv"]
+script = ExtResource("2_k8hfa")
+level = 28
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_a4i5c"]
+script = ExtResource("2_k8hfa")
+level = 32
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_oibkp"]
+script = ExtResource("2_k8hfa")
+level = 36
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_xb1eu"]
+script = ExtResource("2_k8hfa")
+level = 40
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_j3022"]
+script = ExtResource("2_k8hfa")
+level = 44
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_dtxn6"]
+script = ExtResource("2_k8hfa")
+level = 48
+move = &"SWORDSDANCE"
+
+[resource]
+resource_name = "SCIZOR"
+script = ExtResource("3_831ly")
+species = &"SCIZOR"
+category = "Pincer"
+pokedex_entry = "A Scizor has a body with the hardness of steel. It is not easily fazed by ordinary sorts of attacks. It flaps its wings to regulate its body temperature."
+types = Array[StringName]([&"BUG", &"STEEL"])
+base_hp = 70
+base_attack = 130
+base_defense = 100
+base_special_attack = 55
+base_special_defense = 80
+base_speed = 65
+ev_attack = 2
+base_exp = 175
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k8hfa")]([SubResource("Resource_1fucw"), SubResource("Resource_fcdlt"), SubResource("Resource_01wsp"), SubResource("Resource_4ufb6"), SubResource("Resource_ejhec"), SubResource("Resource_3bfxb"), SubResource("Resource_j7pao"), SubResource("Resource_l2ln5"), SubResource("Resource_4rrom"), SubResource("Resource_oaa3u"), SubResource("Resource_u36a8"), SubResource("Resource_bl4pq"), SubResource("Resource_n1pdv"), SubResource("Resource_a4i5c"), SubResource("Resource_oibkp"), SubResource("Resource_xb1eu"), SubResource("Resource_j3022"), SubResource("Resource_dtxn6")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BRICKBREAK", &"BRUTALSWING", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CROSSPOISON", &"CUT", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FLING", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHOCUT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROCKSMASH", &"ROOST", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"STEELWING", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"THIEF", &"UTURN", &"VENOSHOCK", &"XSCISSOR"])
+abilities = Array[StringName]([&"SWARM", &"TECHNICIAN"])
+hidden_abilities = Array[StringName]([&"LIGHTMETAL"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_xkc52")]([SubResource("Resource_061lb")])
+height = 18
+weight = 1180
+shape = &"MultiWinged"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-4, 12)
+id = &"SCIZOR"
+display_name = "Scizor"

@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xtxcl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_sr5fd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sku8t"]
+
+[sub_resource type="Resource" id="Resource_c4xvk"]
+script = ExtResource("1_xtxcl")
+species = &"JOLTIK"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ss1vk"]
+script = ExtResource("2_sr5fd")
+level = 0
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_87bo4"]
+script = ExtResource("2_sr5fd")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_qvta7"]
+script = ExtResource("2_sr5fd")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_ocm4s"]
+script = ExtResource("2_sr5fd")
+move = &"ELECTROWEB"
+
+[sub_resource type="Resource" id="Resource_5165s"]
+script = ExtResource("2_sr5fd")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_s0fnp"]
+script = ExtResource("2_sr5fd")
+level = 12
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_80k5d"]
+script = ExtResource("2_sr5fd")
+level = 16
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_eh3hx"]
+script = ExtResource("2_sr5fd")
+level = 20
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_u7u05"]
+script = ExtResource("2_sr5fd")
+level = 24
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ay0oc"]
+script = ExtResource("2_sr5fd")
+level = 28
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_voxt0"]
+script = ExtResource("2_sr5fd")
+level = 32
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ndcxk"]
+script = ExtResource("2_sr5fd")
+level = 39
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_rhyhg"]
+script = ExtResource("2_sr5fd")
+level = 44
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_52lhg"]
+script = ExtResource("2_sr5fd")
+level = 50
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_ntvb0"]
+script = ExtResource("2_sr5fd")
+level = 56
+move = &"BUGBUZZ"
+
+[resource]
+resource_name = "GALVANTULA"
+script = ExtResource("3_sku8t")
+species = &"GALVANTULA"
+category = "EleSpider"
+pokedex_entry = "They employ an electrically charged web to trap their prey. While it is immobilized by shock, they leisurely consume it."
+types = Array[StringName]([&"BUG", &"ELECTRIC"])
+base_hp = 70
+base_attack = 77
+base_defense = 60
+base_special_attack = 97
+base_special_defense = 60
+base_speed = 108
+ev_speed = 2
+base_exp = 165
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_sr5fd")]([SubResource("Resource_ss1vk"), SubResource("Resource_87bo4"), SubResource("Resource_qvta7"), SubResource("Resource_ocm4s"), SubResource("Resource_5165s"), SubResource("Resource_s0fnp"), SubResource("Resource_80k5d"), SubResource("Resource_eh3hx"), SubResource("Resource_u7u05"), SubResource("Resource_ay0oc"), SubResource("Resource_voxt0"), SubResource("Resource_ndcxk"), SubResource("Resource_rhyhg"), SubResource("Resource_52lhg"), SubResource("Resource_ntvb0")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BOUNCE", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CROSSPOISON", &"CUT", &"DOUBLETEAM", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SPEEDSWAP", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"VOLTSWITCH", &"WILDCHARGE", &"XSCISSOR"])
+abilities = Array[StringName]([&"COMPOUNDEYES", &"UNNERVE"])
+hidden_abilities = Array[StringName]([&"SWARM"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xtxcl")]([SubResource("Resource_c4xvk")])
+height = 8
+weight = 143
+color = &"Yellow"
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(4, 33)
+id = &"GALVANTULA"
+display_name = "Galvantula"

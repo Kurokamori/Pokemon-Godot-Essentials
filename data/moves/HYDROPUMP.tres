@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_po4h8"]
+
+[resource]
+resource_name = "HYDROPUMP"
+script = ExtResource("1_po4h8")
+type = &"WATER"
+category = 1
+power = 110
+accuracy = 80
+description = "The target is blasted by a huge volume of water launched under great pressure."
+id = &"HYDROPUMP"
+display_name = "Hydro Pump"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

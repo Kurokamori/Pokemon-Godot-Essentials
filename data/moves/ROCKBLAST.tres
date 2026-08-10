@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_33dhd"]
+
+[resource]
+resource_name = "ROCKBLAST"
+script = ExtResource("1_33dhd")
+type = &"ROCK"
+category = 0
+power = 25
+accuracy = 90
+total_pp = 10
+function_code = &"HitTwoToFiveTimes"
+description = "The user hurls hard rocks at the target. Two to five rocks are launched in quick succession."
+id = &"ROCKBLAST"
+display_name = "Rock Blast"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

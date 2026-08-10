@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_w5y1j"]
+
+[resource]
+resource_name = "ENDEAVOR"
+script = ExtResource("1_w5y1j")
+category = 0
+power = 1
+function_code = &"LowerTargetHPToUserHP"
+description = "An attack move that cuts down the target's HP to equal the user's HP."
+id = &"ENDEAVOR"
+display_name = "Endeavor"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

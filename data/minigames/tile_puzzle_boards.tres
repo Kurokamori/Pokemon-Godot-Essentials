@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="TilePuzzleLibrary" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/tile_puzzle/tile_puzzle_library.gd" id="1_library"]
+[ext_resource type="Script" path="res://src/minigames/tile_puzzle/tile_puzzle_board_data.gd" id="2_board"]
+
+[sub_resource type="Resource" id="Board_kabuto"]
+script = ExtResource("2_board")
+id = &"Kabuto"
+display_name = "Kabuto"
+default_size = Vector2i(4, 4)
+
+[sub_resource type="Resource" id="Board_default"]
+script = ExtResource("2_board")
+id = &"Default"
+display_name = "Stone Puzzle"
+default_size = Vector2i(4, 4)
+
+[resource]
+script = ExtResource("1_library")
+boards = Array[ExtResource("2_board")]([SubResource("Board_kabuto")])
+fallback = SubResource("Board_default")

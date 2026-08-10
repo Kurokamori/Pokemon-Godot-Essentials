@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_hhs7v"]
+
+[resource]
+script = ExtResource("1_hhs7v")
+category = &"battle_weathers"
+record_script = "res://src/data/battle_weather_data.gd"
+paths = {
+&"Hail": "res://data/battle_weathers/Hail.tres",
+&"HarshSun": "res://data/battle_weathers/HarshSun.tres",
+&"HeavyRain": "res://data/battle_weathers/HeavyRain.tres",
+&"None": "res://data/battle_weathers/None.tres",
+&"Rain": "res://data/battle_weathers/Rain.tres",
+&"Sandstorm": "res://data/battle_weathers/Sandstorm.tres",
+&"ShadowSky": "res://data/battle_weathers/ShadowSky.tres",
+&"StrongWinds": "res://data/battle_weathers/StrongWinds.tres",
+&"Sun": "res://data/battle_weathers/Sun.tres"
+}
+ordered_ids = Array[StringName]([&"None", &"Sun", &"Rain", &"Sandstorm", &"Hail", &"HarshSun", &"HeavyRain", &"StrongWinds", &"ShadowSky"])

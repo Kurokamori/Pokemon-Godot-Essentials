@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ux77d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jhexf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tp5a1"]
+
+[sub_resource type="Resource" id="Resource_dix1d"]
+script = ExtResource("1_ux77d")
+species = &"OMANYTE"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pi72y"]
+script = ExtResource("2_jhexf")
+level = 0
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_1esi0"]
+script = ExtResource("2_jhexf")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_r2su1"]
+script = ExtResource("2_jhexf")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_8fmyi"]
+script = ExtResource("2_jhexf")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_erfac"]
+script = ExtResource("2_jhexf")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_ue1wp"]
+script = ExtResource("2_jhexf")
+level = 15
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_l8gto"]
+script = ExtResource("2_jhexf")
+level = 20
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_bpbvi"]
+script = ExtResource("2_jhexf")
+level = 25
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_ijj70"]
+script = ExtResource("2_jhexf")
+level = 30
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_lrvij"]
+script = ExtResource("2_jhexf")
+level = 35
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_yh0o3"]
+script = ExtResource("2_jhexf")
+level = 43
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_gunsb"]
+script = ExtResource("2_jhexf")
+level = 49
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_8i8pk"]
+script = ExtResource("2_jhexf")
+level = 56
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_xmbth"]
+script = ExtResource("2_jhexf")
+level = 63
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_j8jpr"]
+script = ExtResource("2_jhexf")
+level = 70
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "OMASTAR"
+script = ExtResource("3_tp5a1")
+species = &"OMASTAR"
+category = "Spiral"
+pokedex_entry = "An Omastar uses its tentacles to capture its prey. It is believed to have become extinct because its shell grew too large, making its movements slow and ponderous."
+types = Array[StringName]([&"ROCK", &"WATER"])
+base_hp = 70
+base_attack = 60
+base_defense = 125
+base_special_attack = 115
+base_special_defense = 70
+base_speed = 55
+ev_defense = 2
+base_exp = 173
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jhexf")]([SubResource("Resource_pi72y"), SubResource("Resource_1esi0"), SubResource("Resource_r2su1"), SubResource("Resource_8fmyi"), SubResource("Resource_erfac"), SubResource("Resource_ue1wp"), SubResource("Resource_l8gto"), SubResource("Resource_bpbvi"), SubResource("Resource_ijj70"), SubResource("Resource_lrvij"), SubResource("Resource_yh0o3"), SubResource("Resource_gunsb"), SubResource("Resource_8i8pk"), SubResource("Resource_xmbth"), SubResource("Resource_j8jpr")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"LIQUIDATION", &"METEORBEAM", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PINMISSILE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SPIKES", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"TOXICSPIKES", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_ux77d")]([SubResource("Resource_dix1d")])
+height = 10
+weight = 350
+color = &"Blue"
+shape = &"Multiped"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 28)
+id = &"OMASTAR"
+display_name = "Omastar"

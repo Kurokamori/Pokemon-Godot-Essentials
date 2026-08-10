@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_43qy1"]
+
+[resource]
+resource_name = "APPLEACID"
+script = ExtResource("1_43qy1")
+type = &"GRASS"
+category = 1
+power = 80
+total_pp = 10
+function_code = &"LowerTargetSpDef1"
+effect_chance = 100
+description = "Attacks with an acidic liquid created from tart apples. This also lowers the target's Sp. Def."
+id = &"APPLEACID"
+display_name = "Apple Acid"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

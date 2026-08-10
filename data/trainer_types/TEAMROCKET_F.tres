@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_skt76"]
+
+[resource]
+resource_name = "TEAMROCKET_F"
+script = ExtResource("1_skt76")
+gender = 1
+base_money = 32
+skill_level = 32
+id = &"TEAMROCKET_F"
+display_name = "Team Rocket"

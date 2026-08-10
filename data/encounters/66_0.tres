@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_qx8as"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_nx7og"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_5km4c"]
+
+[sub_resource type="Resource" id="Resource_3nqyd"]
+script = ExtResource("3_5km4c")
+weight = 20
+species = &"ABRA"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_3h2wb"]
+script = ExtResource("3_5km4c")
+weight = 20
+species = &"DODUO"
+min_level = 13
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_jmkxl"]
+script = ExtResource("3_5km4c")
+weight = 20
+species = &"NIDORANfE"
+min_level = 15
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_28a7w"]
+script = ExtResource("3_5km4c")
+weight = 20
+species = &"NIDORANmA"
+min_level = 15
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_046vw"]
+script = ExtResource("3_5km4c")
+species = &"HOPPIP"
+min_level = 13
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_rfd61"]
+script = ExtResource("3_5km4c")
+species = &"TANGELA"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_fgnwm"]
+script = ExtResource("2_nx7og")
+step_chance = 21
+slots = Array[ExtResource("3_5km4c")]([SubResource("Resource_3nqyd"), SubResource("Resource_3h2wb"), SubResource("Resource_jmkxl"), SubResource("Resource_28a7w"), SubResource("Resource_046vw"), SubResource("Resource_rfd61")])
+
+[resource]
+resource_name = "66_0"
+script = ExtResource("1_qx8as")
+map_id = 66
+tables = Array[ExtResource("2_nx7og")]([SubResource("Resource_fgnwm")])
+id = &"66_0"
+display_name = "Map 66 v0"

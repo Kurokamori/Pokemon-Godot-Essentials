@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ehi6d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vag5g"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_10t3o"]
+
+[sub_resource type="Resource" id="Resource_58s4r"]
+script = ExtResource("1_ehi6d")
+species = &"ELGYEM"
+method = &"Level"
+parameter = "42"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_tqinf"]
+script = ExtResource("2_vag5g")
+move = &"PSYCHICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_rxpgs"]
+script = ExtResource("2_vag5g")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_gc0ac"]
+script = ExtResource("2_vag5g")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_mjj7f"]
+script = ExtResource("2_vag5g")
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_dwfb3"]
+script = ExtResource("2_vag5g")
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_23jmy"]
+script = ExtResource("2_vag5g")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_wvisv"]
+script = ExtResource("2_vag5g")
+level = 24
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_d040o"]
+script = ExtResource("2_vag5g")
+level = 24
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_jpjsw"]
+script = ExtResource("2_vag5g")
+level = 30
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ux83u"]
+script = ExtResource("2_vag5g")
+level = 36
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_kjh2a"]
+script = ExtResource("2_vag5g")
+level = 45
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_gak4m"]
+script = ExtResource("2_vag5g")
+level = 52
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_tpics"]
+script = ExtResource("2_vag5g")
+level = 60
+move = &"WONDERROOM"
+
+[sub_resource type="Resource" id="Resource_6h15r"]
+script = ExtResource("2_vag5g")
+level = 68
+move = &"PSYCHIC"
+
+[resource]
+resource_name = "BEHEEYEM"
+script = ExtResource("3_10t3o")
+species = &"BEHEEYEM"
+category = "Cerebral"
+pokedex_entry = "It uses psychic power to control an opponent's brain and tamper with its memories."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 75
+base_attack = 75
+base_defense = 75
+base_special_attack = 125
+base_special_defense = 95
+base_speed = 40
+ev_special_attack = 2
+base_exp = 170
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vag5g")]([SubResource("Resource_tqinf"), SubResource("Resource_rxpgs"), SubResource("Resource_gc0ac"), SubResource("Resource_mjj7f"), SubResource("Resource_dwfb3"), SubResource("Resource_23jmy"), SubResource("Resource_wvisv"), SubResource("Resource_d040o"), SubResource("Resource_jpjsw"), SubResource("Resource_ux83u"), SubResource("Resource_kjh2a"), SubResource("Resource_gak4m"), SubResource("Resource_tpics"), SubResource("Resource_6h15r")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COSMICPOWER", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRAVITY", &"GUARDSWAP", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LIGHTSCREEN", &"MAGICCOAT", &"METEORBEAM", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"UPROAR", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TELEPATHY", &"SYNCHRONIZE"])
+hidden_abilities = Array[StringName]([&"ANALYTIC"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ehi6d")]([SubResource("Resource_58s4r")])
+height = 10
+weight = 345
+color = &"Brown"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 12)
+shadow_size = 1
+id = &"BEHEEYEM"
+display_name = "Beheeyem"

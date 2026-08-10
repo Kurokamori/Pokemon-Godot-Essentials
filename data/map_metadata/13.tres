@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_7es6i"]
+
+[resource]
+resource_name = "13"
+script = ExtResource("1_7es6i")
+map_id = 13
+town_map_position = Array[int]([0, 14, 10])
+id = &"13"
+display_name = "Cedolan City"

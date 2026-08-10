@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_edbt1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mqjnc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3cecw"]
+
+[sub_resource type="Resource" id="Resource_hikoc"]
+script = ExtResource("1_edbt1")
+species = &"CROAGUNK"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_c20c4"]
+script = ExtResource("2_mqjnc")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_n3kqq"]
+script = ExtResource("2_mqjnc")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_t8u3q"]
+script = ExtResource("2_mqjnc")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_wd2qu"]
+script = ExtResource("2_mqjnc")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_hf253"]
+script = ExtResource("2_mqjnc")
+level = 12
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_lljae"]
+script = ExtResource("2_mqjnc")
+level = 16
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_crkwk"]
+script = ExtResource("2_mqjnc")
+level = 20
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_wdju1"]
+script = ExtResource("2_mqjnc")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_67vh2"]
+script = ExtResource("2_mqjnc")
+level = 28
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_5gpwj"]
+script = ExtResource("2_mqjnc")
+level = 32
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_sqajm"]
+script = ExtResource("2_mqjnc")
+level = 36
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_rwbdc"]
+script = ExtResource("2_mqjnc")
+level = 42
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_c77eg"]
+script = ExtResource("2_mqjnc")
+level = 48
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_qtfxp"]
+script = ExtResource("2_mqjnc")
+level = 54
+move = &"BELCH"
+
+[resource]
+resource_name = "TOXICROAK"
+script = ExtResource("3_3cecw")
+species = &"TOXICROAK"
+category = "Toxic Mouth"
+pokedex_entry = "Its knuckle claws secrete a toxin so vile that even a scratch could prove fatal."
+types = Array[StringName]([&"POISON", &"FIGHTING"])
+base_hp = 83
+base_attack = 106
+base_defense = 65
+base_special_attack = 86
+base_special_defense = 65
+base_speed = 85
+ev_attack = 2
+base_exp = 172
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mqjnc")]([SubResource("Resource_c20c4"), SubResource("Resource_n3kqq"), SubResource("Resource_t8u3q"), SubResource("Resource_wd2qu"), SubResource("Resource_hf253"), SubResource("Resource_lljae"), SubResource("Resource_crkwk"), SubResource("Resource_wdju1"), SubResource("Resource_67vh2"), SubResource("Resource_5gpwj"), SubResource("Resource_sqajm"), SubResource("Resource_rwbdc"), SubResource("Resource_c77eg"), SubResource("Resource_qtfxp")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BOUNCE", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"COACHING", &"CONFIDE", &"CORROSIVEGAS", &"CROSSPOISON", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"EMBARGO", &"ENCORE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"KNOCKOFF", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SPITE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"VACUUMWAVE", &"VENOMDRENCH", &"VENOSHOCK", &"WORKUP", &"XSCISSOR"])
+abilities = Array[StringName]([&"ANTICIPATION", &"DRYSKIN"])
+hidden_abilities = Array[StringName]([&"POISONTOUCH"])
+wild_item_uncommon = Array[StringName]([&"BLACKSLUDGE"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_edbt1")]([SubResource("Resource_hikoc")])
+height = 13
+weight = 444
+color = &"Blue"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 22)
+shadow_size = 1
+id = &"TOXICROAK"
+display_name = "Toxicroak"

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="UISkinData" format=3 uid="uid://c3ndathv0tug8"]
+
+[ext_resource type="Script" uid="uid://cv00jsxcysnuy" path="res://src/ui/ui_skin_data.gd" id="1_uiskin"]
+[ext_resource type="FontFile" uid="uid://5njs7cbbl2k6" path="res://assets/fonts/power green.ttf" id="2_main"]
+[ext_resource type="FontFile" uid="uid://cn3xq6hrvx1nv" path="res://assets/fonts/power clear bold.ttf" id="3_bold"]
+[ext_resource type="FontFile" uid="uid://bf22pju5lqsmg" path="res://assets/fonts/power green narrow.ttf" id="4_narrow"]
+[ext_resource type="FontFile" uid="uid://bunegmqnmwhn1" path="res://assets/fonts/power green small.ttf" id="5_small"]
+
+[resource]
+script = ExtResource("1_uiskin")
+main_font = ExtResource("2_main")
+bold_font = ExtResource("3_bold")
+narrow_font = ExtResource("4_narrow")
+small_font = ExtResource("5_small")
+font_size = 22
+small_font_size = 16
+dark_text = Color(0.313726, 0.313726, 0.345098, 1)
+dark_text_shadow = Color(0.627451, 0.627451, 0.658824, 1)
+light_text_shadow = Color(0.282353, 0.313726, 0.345098, 1)
+male_text = Color(0.188235, 0.313726, 0.784314, 1)
+female_text = Color(0.878431, 0.0313726, 0.0313726, 1)
+muted_text = Color(0.486275, 0.517647, 0.580392, 1)
+screen_background = Color(0.14902, 0.227451, 0.368627, 1)
+screen_background_edge = Color(0.0862745, 0.133333, 0.227451, 1)
+accent = Color(0.909804, 0.278431, 0.294118, 1)
+accent_dark = Color(0.658824, 0.172549, 0.192157, 1)
+hp_bar_high = Color(0.25098, 0.784314, 0.282353, 1)
+hp_bar_medium = Color(0.972549, 0.721569, 0.188235, 1)
+hp_bar_low = Color(0.941176, 0.282353, 0.282353, 1)
+exp_bar = Color(0.219608, 0.658824, 0.941176, 1)
+bar_background = Color(0.25098, 0.282353, 0.345098, 1)
+selection_fill = Color(0.909804, 0.278431, 0.294118, 0.9)
+disabled_text = Color(0.533333, 0.564706, 0.627451, 1)

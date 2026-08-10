@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jfg44"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jvxhe"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a2sgc"]
+
+[sub_resource type="Resource" id="Resource_pk0cn"]
+script = ExtResource("1_jfg44")
+species = &"MEDICHAM"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_t5s7g"]
+script = ExtResource("2_jvxhe")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_xhkr0"]
+script = ExtResource("2_jvxhe")
+level = 4
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_tufvn"]
+script = ExtResource("2_jvxhe")
+level = 7
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_ubuq8"]
+script = ExtResource("2_jvxhe")
+level = 9
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_hbb6b"]
+script = ExtResource("2_jvxhe")
+level = 12
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_kl24q"]
+script = ExtResource("2_jvxhe")
+level = 15
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_w8rxc"]
+script = ExtResource("2_jvxhe")
+level = 17
+move = &"FORCEPALM"
+
+[sub_resource type="Resource" id="Resource_pgj08"]
+script = ExtResource("2_jvxhe")
+level = 20
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_d5i16"]
+script = ExtResource("2_jvxhe")
+level = 23
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_kft7g"]
+script = ExtResource("2_jvxhe")
+level = 25
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_6uvxo"]
+script = ExtResource("2_jvxhe")
+level = 28
+move = &"HIGHJUMPKICK"
+
+[sub_resource type="Resource" id="Resource_21qx3"]
+script = ExtResource("2_jvxhe")
+level = 31
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_7al5b"]
+script = ExtResource("2_jvxhe")
+level = 33
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_n5e0q"]
+script = ExtResource("2_jvxhe")
+level = 36
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_2okc1"]
+script = ExtResource("2_jvxhe")
+level = 39
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_o13fj"]
+script = ExtResource("2_jvxhe")
+level = 41
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_gqbbk"]
+script = ExtResource("2_jvxhe")
+level = 44
+move = &"COUNTER"
+
+[resource]
+resource_name = "MEDITITE"
+script = ExtResource("3_a2sgc")
+species = &"MEDITITE"
+category = "Meditate"
+pokedex_entry = "It continually meditates for hours every day. As a result of rigorous and dedicated yoga training, it has tempered its spiritual power so much it can fly."
+types = Array[StringName]([&"FIGHTING", &"PSYCHIC"])
+base_hp = 30
+base_attack = 40
+base_defense = 55
+base_special_attack = 40
+base_special_defense = 55
+base_speed = 60
+ev_speed = 1
+base_exp = 56
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jvxhe")]([SubResource("Resource_t5s7g"), SubResource("Resource_xhkr0"), SubResource("Resource_tufvn"), SubResource("Resource_ubuq8"), SubResource("Resource_hbb6b"), SubResource("Resource_kl24q"), SubResource("Resource_w8rxc"), SubResource("Resource_pgj08"), SubResource("Resource_d5i16"), SubResource("Resource_kft7g"), SubResource("Resource_6uvxo"), SubResource("Resource_21qx3"), SubResource("Resource_7al5b"), SubResource("Resource_n5e0q"), SubResource("Resource_2okc1"), SubResource("Resource_o13fj"), SubResource("Resource_gqbbk")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERPUNCH", &"TRICK", &"VACUUMWAVE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BATONPASS", &"BULLETPUNCH", &"DYNAMICPUNCH", &"FAKEOUT", &"FIREPUNCH", &"GUARDSWAP", &"ICEPUNCH", &"POWERSWAP", &"PSYCHOCUT", &"QUICKGUARD", &"THUNDERPUNCH"])
+abilities = Array[StringName]([&"PUREPOWER"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_jfg44")]([SubResource("Resource_pk0cn")])
+height = 6
+weight = 112
+color = &"Blue"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 1
+id = &"MEDITITE"
+display_name = "Meditite"

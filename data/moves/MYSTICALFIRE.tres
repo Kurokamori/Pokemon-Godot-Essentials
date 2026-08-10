@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_s6by0"]
+
+[resource]
+resource_name = "MYSTICALFIRE"
+script = ExtResource("1_s6by0")
+type = &"FIRE"
+category = 1
+power = 75
+total_pp = 10
+function_code = &"LowerTargetSpAtk1"
+effect_chance = 100
+description = "The user attacks by breathing a special, hot fire. This also lowers the target's Sp. Atk stat."
+id = &"MYSTICALFIRE"
+display_name = "Mystical Fire"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

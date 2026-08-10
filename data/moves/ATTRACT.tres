@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_35m8o"]
+
+[resource]
+resource_name = "ATTRACT"
+script = ExtResource("1_35m8o")
+total_pp = 15
+function_code = &"AttractTarget"
+description = "If it is the opposite gender of the user, the target becomes infatuated and less likely to attack."
+id = &"ATTRACT"
+display_name = "Attract"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

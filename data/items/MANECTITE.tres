@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_7ngtx"]
+
+[resource]
+resource_name = "MANECTITE"
+script = ExtResource("1_7ngtx")
+name_plural = "Manectites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Manectric hold it, and it will be able to Mega Evolve."
+id = &"MANECTITE"
+display_name = "Manectite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

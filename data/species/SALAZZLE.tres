@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l4kfu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_sqgsj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vhvvr"]
+
+[sub_resource type="Resource" id="Resource_gvqqo"]
+script = ExtResource("1_l4kfu")
+species = &"SALANDIT"
+method = &"LevelFemale"
+parameter = "33"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_gpkhc"]
+script = ExtResource("2_sqgsj")
+level = 0
+move = &"FIRELASH"
+
+[sub_resource type="Resource" id="Resource_0qgjw"]
+script = ExtResource("2_sqgsj")
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_8to4c"]
+script = ExtResource("2_sqgsj")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_pieju"]
+script = ExtResource("2_sqgsj")
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_i50u2"]
+script = ExtResource("2_sqgsj")
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_wpjya"]
+script = ExtResource("2_sqgsj")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_ms8fs"]
+script = ExtResource("2_sqgsj")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_2yqf5"]
+script = ExtResource("2_sqgsj")
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_hnuvc"]
+script = ExtResource("2_sqgsj")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_1k5fj"]
+script = ExtResource("2_sqgsj")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_tiaff"]
+script = ExtResource("2_sqgsj")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_bgpkn"]
+script = ExtResource("2_sqgsj")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_mi10h"]
+script = ExtResource("2_sqgsj")
+level = 15
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_5ee7p"]
+script = ExtResource("2_sqgsj")
+level = 20
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_bjhlg"]
+script = ExtResource("2_sqgsj")
+level = 25
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_mqbgi"]
+script = ExtResource("2_sqgsj")
+level = 30
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_qg4if"]
+script = ExtResource("2_sqgsj")
+level = 37
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_eeyp4"]
+script = ExtResource("2_sqgsj")
+level = 44
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_bj30q"]
+script = ExtResource("2_sqgsj")
+level = 51
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_xsdn1"]
+script = ExtResource("2_sqgsj")
+level = 58
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_v5rps"]
+script = ExtResource("2_sqgsj")
+level = 65
+move = &"TOXIC"
+
+[resource]
+resource_name = "SALAZZLE"
+script = ExtResource("3_vhvvr")
+species = &"SALAZZLE"
+category = "Toxic Lizard"
+pokedex_entry = "Filled with pheromones, its poisonous gas can be diluted to use in the production of luscious perfumes."
+types = Array[StringName]([&"POISON", &"FIRE"])
+base_hp = 68
+base_attack = 64
+base_defense = 60
+base_special_attack = 111
+base_special_defense = 60
+base_speed = 117
+ev_speed = 2
+base_exp = 168
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_sqgsj")]([SubResource("Resource_gpkhc"), SubResource("Resource_0qgjw"), SubResource("Resource_8to4c"), SubResource("Resource_pieju"), SubResource("Resource_i50u2"), SubResource("Resource_wpjya"), SubResource("Resource_ms8fs"), SubResource("Resource_2yqf5"), SubResource("Resource_hnuvc"), SubResource("Resource_1k5fj"), SubResource("Resource_tiaff"), SubResource("Resource_bgpkn"), SubResource("Resource_mi10h"), SubResource("Resource_5ee7p"), SubResource("Resource_bjhlg"), SubResource("Resource_mqbgi"), SubResource("Resource_qg4if"), SubResource("Resource_eeyp4"), SubResource("Resource_bj30q"), SubResource("Resource_xsdn1"), SubResource("Resource_v5rps")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BEATUP", &"BREAKINGSWIPE", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"COVET", &"CROSSPOISON", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"GUNKSHOT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LEECHLIFE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SCALESHOT", &"SECRETPOWER", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"VENOMDRENCH", &"VENOSHOCK", &"WILLOWISP"])
+abilities = Array[StringName]([&"CORROSION"])
+hidden_abilities = Array[StringName]([&"OBLIVIOUS"])
+wild_item_uncommon = Array[StringName]([&"SMOKEBALL"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_l4kfu")]([SubResource("Resource_gvqqo")])
+height = 12
+weight = 222
+color = &"Black"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 22)
+id = &"SALAZZLE"
+display_name = "Salazzle"

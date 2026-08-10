@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_vm8od"]
+
+[resource]
+resource_name = "TM92"
+script = ExtResource("1_vm8od")
+name_plural = "TM92s"
+pocket = 4
+price = 5500
+sell_price = 2750
+bp_price = 32
+field_use = 5
+move = &"TRICKROOM"
+description = "The user creates a bizarre area in which slower Pokémon get to move first for five turns."
+id = &"TM92"
+display_name = "TM92"
+flags = Array[StringName]([&"Fling_10"])

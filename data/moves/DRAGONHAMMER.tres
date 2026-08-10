@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fh3a0"]
+
+[resource]
+resource_name = "DRAGONHAMMER"
+script = ExtResource("1_fh3a0")
+type = &"DRAGON"
+category = 0
+power = 90
+total_pp = 15
+description = "The user uses its body like a hammer to attack the target and inflict damage."
+id = &"DRAGONHAMMER"
+display_name = "Dragon Hammer"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

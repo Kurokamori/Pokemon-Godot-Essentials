@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dvttl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_eiu7r"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_v7s75"]
+
+[sub_resource type="Resource" id="Resource_75v4e"]
+script = ExtResource("1_dvttl")
+species = &"PROBOPASS"
+method = &"LocationFlag"
+parameter = "Magnetic"
+
+[sub_resource type="Resource" id="Resource_hjiwh"]
+script = ExtResource("1_dvttl")
+species = &"PROBOPASS"
+method = &"Item"
+parameter = "THUNDERSTONE"
+
+[sub_resource type="Resource" id="Resource_g3haf"]
+script = ExtResource("2_eiu7r")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_eov1n"]
+script = ExtResource("2_eiu7r")
+level = 4
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_ksqpe"]
+script = ExtResource("2_eiu7r")
+level = 7
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_6ksvn"]
+script = ExtResource("2_eiu7r")
+level = 10
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_1jvuv"]
+script = ExtResource("2_eiu7r")
+level = 13
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_jfiqb"]
+script = ExtResource("2_eiu7r")
+level = 16
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_ccudk"]
+script = ExtResource("2_eiu7r")
+level = 19
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_vbetc"]
+script = ExtResource("2_eiu7r")
+level = 22
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_rq71w"]
+script = ExtResource("2_eiu7r")
+level = 25
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_3a0k2"]
+script = ExtResource("2_eiu7r")
+level = 28
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_ccgnv"]
+script = ExtResource("2_eiu7r")
+level = 31
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_1t2op"]
+script = ExtResource("2_eiu7r")
+level = 34
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_8gbxu"]
+script = ExtResource("2_eiu7r")
+level = 37
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_271f1"]
+script = ExtResource("2_eiu7r")
+level = 40
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_4ivuu"]
+script = ExtResource("2_eiu7r")
+level = 43
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_xnxke"]
+script = ExtResource("2_eiu7r")
+level = 43
+move = &"ZAPCANNON"
+
+[resource]
+resource_name = "NOSEPASS"
+script = ExtResource("3_v7s75")
+species = &"NOSEPASS"
+category = "Compass"
+pokedex_entry = "Its body emits a powerful magnetism. It feeds on prey that is pulled in by the force. Its magnetism is stronger in cold seasons."
+types = Array[StringName]([&"ROCK"])
+base_hp = 30
+base_attack = 45
+base_defense = 135
+base_special_attack = 45
+base_special_defense = 90
+base_speed = 30
+ev_defense = 1
+base_exp = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_eiu7r")]([SubResource("Resource_g3haf"), SubResource("Resource_eov1n"), SubResource("Resource_ksqpe"), SubResource("Resource_6ksvn"), SubResource("Resource_1jvuv"), SubResource("Resource_jfiqb"), SubResource("Resource_ccudk"), SubResource("Resource_vbetc"), SubResource("Resource_rq71w"), SubResource("Resource_3a0k2"), SubResource("Resource_ccgnv"), SubResource("Resource_1t2op"), SubResource("Resource_8gbxu"), SubResource("Resource_271f1"), SubResource("Resource_4ivuu"), SubResource("Resource_xnxke")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FRUSTRATION", &"GRAVITY", &"HEADBUTT", &"HIDDENPOWER", &"ICEPUNCH", &"IRONDEFENSE", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"VOLTSWITCH"])
+egg_moves = Array[StringName]([&"BLOCK", &"DOUBLEEDGE", &"ROLLOUT", &"WIDEGUARD"])
+abilities = Array[StringName]([&"STURDY", &"MAGNETPULL"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_uncommon = Array[StringName]([&"MAGNET"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_dvttl")]([SubResource("Resource_75v4e"), SubResource("Resource_hjiwh")])
+height = 10
+weight = 970
+color = &"Gray"
+shape = &"Bipedal"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 29)
+id = &"NOSEPASS"
+display_name = "Nosepass"

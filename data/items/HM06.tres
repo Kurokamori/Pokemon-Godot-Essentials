@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_7wm7b"]
+
+[resource]
+resource_name = "HM06"
+script = ExtResource("1_7wm7b")
+name_plural = "HM06s"
+pocket = 4
+field_use = 4
+consumable = false
+show_quantity = false
+move = &"DIVE"
+description = "Diving on the first turn, the user floats up and attacks on the second. It can be used to dive underwater."
+id = &"HM06"
+display_name = "HM06"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ayfje"]
+
+[resource]
+resource_name = "SNOWMAIL"
+script = ExtResource("1_ayfje")
+name_plural = "Snow Mail"
+portion_name = "piece of Snow Mail"
+portion_name_plural = "pieces of Snow Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of a chilly, snow-covered world. Let a Pokémon hold it for delivery."
+id = &"SNOWMAIL"
+display_name = "Snow Mail"
+flags = Array[StringName]([&"IconMail"])

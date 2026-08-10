@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gx0w4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jdulp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sg7m5"]
+
+[sub_resource type="Resource" id="Resource_1ougg"]
+script = ExtResource("1_gx0w4")
+species = &"PIGNITE"
+method = &"Level"
+parameter = "17"
+
+[sub_resource type="Resource" id="Resource_d8jer"]
+script = ExtResource("2_jdulp")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_wrk21"]
+script = ExtResource("2_jdulp")
+level = 3
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_j5oat"]
+script = ExtResource("2_jdulp")
+level = 7
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_h5e1y"]
+script = ExtResource("2_jdulp")
+level = 9
+move = &"ODORSLEUTH"
+
+[sub_resource type="Resource" id="Resource_8uel7"]
+script = ExtResource("2_jdulp")
+level = 13
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_meb8d"]
+script = ExtResource("2_jdulp")
+level = 15
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_qtm1t"]
+script = ExtResource("2_jdulp")
+level = 19
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_dh81j"]
+script = ExtResource("2_jdulp")
+level = 21
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_a0q2q"]
+script = ExtResource("2_jdulp")
+level = 25
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_7kh2f"]
+script = ExtResource("2_jdulp")
+level = 27
+move = &"HEATCRASH"
+
+[sub_resource type="Resource" id="Resource_xest4"]
+script = ExtResource("2_jdulp")
+level = 31
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_2e62c"]
+script = ExtResource("2_jdulp")
+level = 33
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_hasus"]
+script = ExtResource("2_jdulp")
+level = 37
+move = &"HEADSMASH"
+
+[sub_resource type="Resource" id="Resource_4vd6y"]
+script = ExtResource("2_jdulp")
+level = 39
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_clmw0"]
+script = ExtResource("2_jdulp")
+level = 43
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "TEPIG"
+script = ExtResource("3_sg7m5")
+species = &"TEPIG"
+category = "Fire Pig"
+pokedex_entry = "It blows fire through its nose. When it catches a cold, the fire becomes pitch-black smoke instead."
+types = Array[StringName]([&"FIRE"])
+base_hp = 65
+base_attack = 63
+base_defense = 45
+base_special_attack = 45
+base_special_defense = 45
+base_speed = 45
+ev_hp = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jdulp")]([SubResource("Resource_d8jer"), SubResource("Resource_wrk21"), SubResource("Resource_j5oat"), SubResource("Resource_h5e1y"), SubResource("Resource_8uel7"), SubResource("Resource_meb8d"), SubResource("Resource_qtm1t"), SubResource("Resource_dh81j"), SubResource("Resource_a0q2q"), SubResource("Resource_7kh2f"), SubResource("Resource_xest4"), SubResource("Resource_2e62c"), SubResource("Resource_hasus"), SubResource("Resource_4vd6y"), SubResource("Resource_clmw0")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FLAMECHARGE", &"FLAMETHROWER", &"FRUSTRATION", &"GRASSKNOT", &"GYROBALL", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"TOXIC", &"WILDCHARGE", &"WILLOWISP", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BODYSLAM", &"BURNUP", &"COVET", &"CURSE", &"ENDEAVOR", &"HEAVYSLAM", &"MAGNITUDE", &"SLEEPTALK", &"SUCKERPUNCH", &"SUPERPOWER", &"THRASH", &"YAWN"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"THICKFAT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_gx0w4")]([SubResource("Resource_1ougg")])
+height = 5
+weight = 99
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 35)
+shadow_size = 1
+id = &"TEPIG"
+display_name = "Tepig"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_o0fdo"]
+
+[resource]
+resource_name = "SMOKESCREEN"
+script = ExtResource("1_o0fdo")
+total_pp = 20
+function_code = &"LowerTargetAccuracy1"
+description = "The user releases an obscuring cloud of smoke or ink. It reduces the target's accuracy."
+id = &"SMOKESCREEN"
+display_name = "Smokescreen"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

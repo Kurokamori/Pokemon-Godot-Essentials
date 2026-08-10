@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_gmnmo"]
+
+[resource]
+resource_name = "ELECTROBALL"
+script = ExtResource("1_gmnmo")
+type = &"ELECTRIC"
+category = 1
+power = 1
+total_pp = 10
+function_code = &"PowerHigherWithUserFasterThanTarget"
+description = "The user hurls an electric orb at the foe. It does more damage the faster the user is."
+id = &"ELECTROBALL"
+display_name = "Electro Ball"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

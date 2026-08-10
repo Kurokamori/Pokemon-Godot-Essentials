@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_lt3pt"]
+
+[resource]
+resource_name = "QUICKPOWDER"
+script = ExtResource("1_lt3pt")
+name_plural = "Quick Powders"
+portion_name = "bag of Quick Powder"
+portion_name_plural = "bags of Quick Powder"
+price = 1000
+sell_price = 500
+description = "An item to be held by Ditto. Extremely fine yet hard, this odd powder boosts the Speed stat."
+id = &"QUICKPOWDER"
+display_name = "Quick Powder"
+flags = Array[StringName]([&"Fling_10"])

@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dgalc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k0mop"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_y3ty1"]
+
+[sub_resource type="Resource" id="Resource_wop6y"]
+script = ExtResource("1_dgalc")
+species = &"DIGLETT"
+method = &"Level"
+parameter = "26"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_73gqh"]
+script = ExtResource("2_k0mop")
+level = 0
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_4u4h1"]
+script = ExtResource("2_k0mop")
+move = &"ROTOTILLER"
+
+[sub_resource type="Resource" id="Resource_4lcle"]
+script = ExtResource("2_k0mop")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_moxji"]
+script = ExtResource("2_k0mop")
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_jq7ia"]
+script = ExtResource("2_k0mop")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_n7qx4"]
+script = ExtResource("2_k0mop")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_5ne5c"]
+script = ExtResource("2_k0mop")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_wlnwv"]
+script = ExtResource("2_k0mop")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_0tiu1"]
+script = ExtResource("2_k0mop")
+level = 7
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_wwe22"]
+script = ExtResource("2_k0mop")
+level = 10
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_ug03q"]
+script = ExtResource("2_k0mop")
+level = 14
+move = &"MAGNITUDE"
+
+[sub_resource type="Resource" id="Resource_png2c"]
+script = ExtResource("2_k0mop")
+level = 18
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_sylce"]
+script = ExtResource("2_k0mop")
+level = 22
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_48kxe"]
+script = ExtResource("2_k0mop")
+level = 25
+move = &"MUDBOMB"
+
+[sub_resource type="Resource" id="Resource_a38tv"]
+script = ExtResource("2_k0mop")
+level = 30
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_yfol7"]
+script = ExtResource("2_k0mop")
+level = 35
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_nj05o"]
+script = ExtResource("2_k0mop")
+level = 41
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_kk2do"]
+script = ExtResource("2_k0mop")
+level = 47
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_b7imy"]
+script = ExtResource("2_k0mop")
+level = 53
+move = &"FISSURE"
+
+[resource]
+resource_name = "DUGTRIO_1"
+script = ExtResource("3_y3ty1")
+species = &"DUGTRIO"
+form = 1
+form_name = "Alolan"
+category = "Mole"
+pokedex_entry = "Its shining gold hair provides it with protection. It's reputed that keeping any of its fallen hairs will bring bad luck."
+pokedex_form = 1
+types = Array[StringName]([&"GROUND", &"STEEL"])
+base_hp = 35
+base_attack = 100
+base_defense = 60
+base_special_attack = 50
+base_special_defense = 70
+base_speed = 110
+ev_attack = 2
+base_exp = 149
+catch_rate = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k0mop")]([SubResource("Resource_73gqh"), SubResource("Resource_4u4h1"), SubResource("Resource_4lcle"), SubResource("Resource_moxji"), SubResource("Resource_jq7ia"), SubResource("Resource_n7qx4"), SubResource("Resource_5ne5c"), SubResource("Resource_wlnwv"), SubResource("Resource_0tiu1"), SubResource("Resource_wwe22"), SubResource("Resource_ug03q"), SubResource("Resource_png2c"), SubResource("Resource_sylce"), SubResource("Resource_48kxe"), SubResource("Resource_a38tv"), SubResource("Resource_yfol7"), SubResource("Resource_nj05o"), SubResource("Resource_kk2do"), SubResource("Resource_b7imy")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STEELBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"TRIATTACK", &"UPROAR", &"WORKUP"])
+abilities = Array[StringName]([&"SANDVEIL", &"TANGLINGHAIR"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_uncommon = Array[StringName]([&"SOFTSAND"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_dgalc")]([SubResource("Resource_wop6y")])
+height = 7
+weight = 666
+color = &"Brown"
+shape = &"MultiBody"
+habitat = &"Cave"
+generation = 7
+back_sprite_offset = Vector2i(2, 48)
+front_sprite_offset = Vector2i(3, 32)
+id = &"DUGTRIO_1"
+display_name = "Dugtrio"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

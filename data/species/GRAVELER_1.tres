@@ -1,0 +1,144 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_y835u"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gtm0t"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_v4kiv"]
+
+[sub_resource type="Resource" id="Resource_1k2wm"]
+script = ExtResource("1_y835u")
+species = &"GOLEM"
+method = &"Trade"
+
+[sub_resource type="Resource" id="Resource_2x21k"]
+script = ExtResource("1_y835u")
+species = &"GEODUDE"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3u602"]
+script = ExtResource("2_gtm0t")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_wntro"]
+script = ExtResource("2_gtm0t")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_m3asx"]
+script = ExtResource("2_gtm0t")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_081xb"]
+script = ExtResource("2_gtm0t")
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_xq7be"]
+script = ExtResource("2_gtm0t")
+level = 4
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_vt10l"]
+script = ExtResource("2_gtm0t")
+level = 6
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_mj1ap"]
+script = ExtResource("2_gtm0t")
+level = 10
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_4b170"]
+script = ExtResource("2_gtm0t")
+level = 12
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_4ixdb"]
+script = ExtResource("2_gtm0t")
+level = 16
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_uulke"]
+script = ExtResource("2_gtm0t")
+level = 18
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_b0pg4"]
+script = ExtResource("2_gtm0t")
+level = 22
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_7jxpx"]
+script = ExtResource("2_gtm0t")
+level = 24
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_3fjgx"]
+script = ExtResource("2_gtm0t")
+level = 30
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_d1wsg"]
+script = ExtResource("2_gtm0t")
+level = 34
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_htel2"]
+script = ExtResource("2_gtm0t")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_p4y42"]
+script = ExtResource("2_gtm0t")
+level = 44
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_jvhxe"]
+script = ExtResource("2_gtm0t")
+level = 50
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_n1swf"]
+script = ExtResource("2_gtm0t")
+level = 54
+move = &"STONEEDGE"
+
+[resource]
+resource_name = "GRAVELER_1"
+script = ExtResource("3_v4kiv")
+species = &"GRAVELER"
+form = 1
+form_name = "Alolan"
+category = "Rock"
+pokedex_entry = "They eat rocks and often get into a scrap over them. The shock of Graveler smashing together causes a flash of light and a booming noise."
+pokedex_form = 1
+types = Array[StringName]([&"ROCK", &"ELECTRIC"])
+base_hp = 55
+base_attack = 95
+base_defense = 115
+base_special_attack = 45
+base_special_defense = 45
+base_speed = 35
+ev_defense = 2
+base_exp = 137
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gtm0t")]([SubResource("Resource_3u602"), SubResource("Resource_wntro"), SubResource("Resource_m3asx"), SubResource("Resource_081xb"), SubResource("Resource_xq7be"), SubResource("Resource_vt10l"), SubResource("Resource_mj1ap"), SubResource("Resource_4b170"), SubResource("Resource_4ixdb"), SubResource("Resource_uulke"), SubResource("Resource_b0pg4"), SubResource("Resource_7jxpx"), SubResource("Resource_3fjgx"), SubResource("Resource_d1wsg"), SubResource("Resource_htel2"), SubResource("Resource_p4y42"), SubResource("Resource_jvhxe"), SubResource("Resource_n1swf")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ELECTROWEB", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"INCINERATE", &"IRONDEFENSE", &"MAGNETRISE", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"VOLTSWITCH"])
+abilities = Array[StringName]([&"MAGNETPULL", &"STURDY"])
+hidden_abilities = Array[StringName]([&"GALVANIZE"])
+wild_item_uncommon = Array[StringName]([&"CELLBATTERY"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_y835u")]([SubResource("Resource_1k2wm"), SubResource("Resource_2x21k")])
+height = 10
+weight = 1100
+color = &"Gray"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 7
+back_sprite_offset = Vector2i(3, 56)
+front_sprite_offset = Vector2i(-2, 28)
+id = &"GRAVELER_1"
+display_name = "Graveler"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

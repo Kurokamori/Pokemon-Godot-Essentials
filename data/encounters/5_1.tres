@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_tcnqg"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_idhyo"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_yeui8"]
+
+[sub_resource type="Resource" id="Resource_r8w4s"]
+script = ExtResource("3_yeui8")
+weight = 40
+species = &"PIDGEY"
+min_level = 15
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_2ee77"]
+script = ExtResource("3_yeui8")
+weight = 40
+species = &"RATTATA"
+min_level = 14
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_yvru0"]
+script = ExtResource("3_yeui8")
+species = &"SENTRET"
+min_level = 13
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_7spf2"]
+script = ExtResource("3_yeui8")
+weight = 5
+species = &"PIDGEY"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_pkbl3"]
+script = ExtResource("3_yeui8")
+weight = 5
+species = &"RATTATA"
+min_level = 13
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_ste2n"]
+script = ExtResource("2_idhyo")
+step_chance = 21
+slots = Array[ExtResource("3_yeui8")]([SubResource("Resource_r8w4s"), SubResource("Resource_2ee77"), SubResource("Resource_yvru0"), SubResource("Resource_7spf2"), SubResource("Resource_pkbl3")])
+
+[sub_resource type="Resource" id="Resource_ikh8a"]
+script = ExtResource("3_yeui8")
+weight = 40
+species = &"RATTATA"
+min_level = 14
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_le43w"]
+script = ExtResource("3_yeui8")
+weight = 30
+species = &"HOOTHOOT"
+min_level = 14
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_nusj5"]
+script = ExtResource("3_yeui8")
+weight = 20
+species = &"SPINARAK"
+min_level = 12
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_7pvj4"]
+script = ExtResource("3_yeui8")
+species = &"CLEFAIRY"
+min_level = 11
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_y01pq"]
+script = ExtResource("2_idhyo")
+encounter_type = &"LandNight"
+step_chance = 21
+slots = Array[ExtResource("3_yeui8")]([SubResource("Resource_ikh8a"), SubResource("Resource_le43w"), SubResource("Resource_nusj5"), SubResource("Resource_7pvj4")])
+
+[resource]
+resource_name = "5_1"
+script = ExtResource("1_tcnqg")
+map_id = 5
+version = 1
+tables = Array[ExtResource("2_idhyo")]([SubResource("Resource_ste2n"), SubResource("Resource_y01pq")])
+id = &"5_1"
+display_name = "Map 5 v1"

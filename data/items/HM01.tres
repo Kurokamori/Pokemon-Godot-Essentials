@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_mht8h"]
+
+[resource]
+resource_name = "HM01"
+script = ExtResource("1_mht8h")
+name_plural = "HM01s"
+pocket = 4
+field_use = 4
+consumable = false
+show_quantity = false
+move = &"CUT"
+description = "The target is cut with a scythe or claw. This can also be used to cut down thin trees."
+id = &"HM01"
+display_name = "HM01"

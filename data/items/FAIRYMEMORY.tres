@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ynt5x"]
+
+[resource]
+resource_name = "FAIRYMEMORY"
+script = ExtResource("1_ynt5x")
+name_plural = "Fairy Memories"
+price = 1000
+sell_price = 500
+description = "A memory disc containing Fairy-type data. It changes the holder's type if held by a certain Pokémon."
+id = &"FAIRYMEMORY"
+display_name = "Fairy Memory"
+flags = Array[StringName]([&"Fling_50"])

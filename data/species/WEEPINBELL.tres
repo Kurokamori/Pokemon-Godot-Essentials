@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dewkp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wqtrd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ff6sb"]
+
+[sub_resource type="Resource" id="Resource_c4qob"]
+script = ExtResource("1_dewkp")
+species = &"VICTREEBEL"
+method = &"Item"
+parameter = "LEAFSTONE"
+
+[sub_resource type="Resource" id="Resource_eej74"]
+script = ExtResource("1_dewkp")
+species = &"BELLSPROUT"
+method = &"Level"
+parameter = "21"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_th2jt"]
+script = ExtResource("2_wqtrd")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_p4let"]
+script = ExtResource("2_wqtrd")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_dyudq"]
+script = ExtResource("2_wqtrd")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_n7j05"]
+script = ExtResource("2_wqtrd")
+level = 7
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_ej7se"]
+script = ExtResource("2_wqtrd")
+level = 11
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_xr1bv"]
+script = ExtResource("2_wqtrd")
+level = 13
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_ealx1"]
+script = ExtResource("2_wqtrd")
+level = 15
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_mdiw0"]
+script = ExtResource("2_wqtrd")
+level = 17
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_d0yk4"]
+script = ExtResource("2_wqtrd")
+level = 24
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_4ge0a"]
+script = ExtResource("2_wqtrd")
+level = 29
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_wvhud"]
+script = ExtResource("2_wqtrd")
+level = 32
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_7vy6b"]
+script = ExtResource("2_wqtrd")
+level = 39
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_hkdlc"]
+script = ExtResource("2_wqtrd")
+level = 44
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_ki8fg"]
+script = ExtResource("2_wqtrd")
+level = 47
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_25row"]
+script = ExtResource("2_wqtrd")
+level = 54
+move = &"SLAM"
+
+[resource]
+resource_name = "WEEPINBELL"
+script = ExtResource("3_ff6sb")
+species = &"WEEPINBELL"
+category = "Flycatcher"
+pokedex_entry = "At night, a Weepinbell hangs on to a tree branch with its hooked rear and sleeps. If it moves around in its sleep, it may wake up to find itself on the ground."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 65
+base_attack = 90
+base_defense = 50
+base_special_attack = 85
+base_special_defense = 45
+base_speed = 55
+ev_attack = 2
+base_exp = 137
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wqtrd")]([SubResource("Resource_th2jt"), SubResource("Resource_p4let"), SubResource("Resource_dyudq"), SubResource("Resource_n7j05"), SubResource("Resource_ej7se"), SubResource("Resource_xr1bv"), SubResource("Resource_ealx1"), SubResource("Resource_mdiw0"), SubResource("Resource_d0yk4"), SubResource("Resource_4ge0a"), SubResource("Resource_wvhud"), SubResource("Resource_7vy6b"), SubResource("Resource_hkdlc"), SubResource("Resource_ki8fg"), SubResource("Resource_25row")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"INFESTATION", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POISONJAB", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"VENOSHOCK", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_dewkp")]([SubResource("Resource_c4qob"), SubResource("Resource_eej74")])
+height = 10
+weight = 64
+color = &"Green"
+shape = &"HeadBase"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(11, 32)
+id = &"WEEPINBELL"
+display_name = "Weepinbell"

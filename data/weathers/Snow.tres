@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/weather_data.gd" id="1_2lifq"]
+
+[resource]
+resource_name = "Snow"
+script = ExtResource("1_2lifq")
+legacy_number = 3
+particle_delta_x = -240
+particle_delta_y = 240
+graphics = Array[String](["hail_1", "hail_2", "hail_3"])
+id = &"Snow"
+display_name = "Snow"

@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_b2co4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_liolp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_33s6w"]
+
+[sub_resource type="Resource" id="Resource_b5iym"]
+script = ExtResource("1_b2co4")
+species = &"FRAXURE"
+method = &"Level"
+parameter = "38"
+
+[sub_resource type="Resource" id="Resource_qmdl6"]
+script = ExtResource("2_liolp")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_rjvb4"]
+script = ExtResource("2_liolp")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_flkj3"]
+script = ExtResource("2_liolp")
+level = 3
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_kvrmj"]
+script = ExtResource("2_liolp")
+level = 6
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_naxye"]
+script = ExtResource("2_liolp")
+level = 9
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_77th0"]
+script = ExtResource("2_liolp")
+level = 12
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_tqt3s"]
+script = ExtResource("2_liolp")
+level = 15
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_d5x6r"]
+script = ExtResource("2_liolp")
+level = 18
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_hpip5"]
+script = ExtResource("2_liolp")
+level = 21
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_705od"]
+script = ExtResource("2_liolp")
+level = 24
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_xq1yp"]
+script = ExtResource("2_liolp")
+level = 27
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_omd0j"]
+script = ExtResource("2_liolp")
+level = 30
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_2ifdi"]
+script = ExtResource("2_liolp")
+level = 33
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_mtrgb"]
+script = ExtResource("2_liolp")
+level = 36
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_13jkg"]
+script = ExtResource("2_liolp")
+level = 39
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_g4kmm"]
+script = ExtResource("2_liolp")
+level = 42
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_d3641"]
+script = ExtResource("2_liolp")
+level = 45
+move = &"GUILLOTINE"
+
+[sub_resource type="Resource" id="Resource_dfmai"]
+script = ExtResource("2_liolp")
+level = 48
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "AXEW"
+script = ExtResource("3_33s6w")
+species = &"AXEW"
+category = "Tusk"
+pokedex_entry = "They mark their territory by leaving gashes in trees with their tusks. If a tusk breaks, a new one grows in quickly."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 46
+base_attack = 87
+base_defense = 60
+base_special_attack = 30
+base_special_defense = 40
+base_speed = 57
+ev_attack = 1
+base_exp = 64
+growth_rate = &"Slow"
+catch_rate = 75
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_liolp")]([SubResource("Resource_qmdl6"), SubResource("Resource_rjvb4"), SubResource("Resource_flkj3"), SubResource("Resource_kvrmj"), SubResource("Resource_naxye"), SubResource("Resource_77th0"), SubResource("Resource_tqt3s"), SubResource("Resource_d5x6r"), SubResource("Resource_hpip5"), SubResource("Resource_705od"), SubResource("Resource_xq1yp"), SubResource("Resource_omd0j"), SubResource("Resource_2ifdi"), SubResource("Resource_mtrgb"), SubResource("Resource_13jkg"), SubResource("Resource_g4kmm"), SubResource("Resource_d3641"), SubResource("Resource_dfmai")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BREAKINGSWIPE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DIG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DUALCHOP", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"COUNTER", &"ENDEAVOR", &"FIRSTIMPRESSION", &"HARDEN", &"NIGHTSLASH"])
+abilities = Array[StringName]([&"RIVALRY", &"MOLDBREAKER"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_b2co4")]([SubResource("Resource_b5iym")])
+height = 6
+weight = 180
+color = &"Green"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-1, 30)
+shadow_size = 1
+id = &"AXEW"
+display_name = "Axew"

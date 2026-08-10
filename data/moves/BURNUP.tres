@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_32xdu"]
+
+[resource]
+resource_name = "BURNUP"
+script = ExtResource("1_32xdu")
+type = &"FIRE"
+category = 1
+power = 130
+function_code = &"UserLosesFireType"
+description = "To inflict massive damage, the user burns itself out. The user will no longer be Fire type."
+id = &"BURNUP"
+display_name = "Burn Up"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"ThawsUser"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1eujq"]
+
+[resource]
+resource_name = "KNOCKOFF"
+script = ExtResource("1_1eujq")
+type = &"DARK"
+category = 0
+power = 65
+total_pp = 20
+function_code = &"RemoveTargetItem"
+description = "The user slaps down the target's held item, preventing that item from being used in the battle."
+id = &"KNOCKOFF"
+display_name = "Knock Off"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

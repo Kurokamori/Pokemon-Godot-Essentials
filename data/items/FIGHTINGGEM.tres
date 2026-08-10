@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ftm2k"]
+
+[resource]
+resource_name = "FIGHTINGGEM"
+script = ExtResource("1_ftm2k")
+name_plural = "Fighting Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of combat. When held, it strengthens the power of a Fighting-type move only once."
+id = &"FIGHTINGGEM"
+display_name = "Fighting Gem"
+flags = Array[StringName]([&"TypeGem"])

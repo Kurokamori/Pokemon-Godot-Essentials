@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BerryPlantData" format=3]
+
+[ext_resource type="Script" path="res://src/data/berry_plant_data.gd" id="1_sylmw"]
+
+[resource]
+resource_name = "SITRUSBERRY"
+script = ExtResource("1_sylmw")
+hours_per_stage = 8
+drying_per_hour = 7
+id = &"SITRUSBERRY"
+display_name = "SITRUSBERRY"

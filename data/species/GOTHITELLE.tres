@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dueca"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nurxw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kc2ht"]
+
+[sub_resource type="Resource" id="Resource_f6mbv"]
+script = ExtResource("1_dueca")
+species = &"GOTHORITA"
+method = &"Level"
+parameter = "41"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_xamv2"]
+script = ExtResource("2_nurxw")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_dtrn7"]
+script = ExtResource("2_nurxw")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_5vl2e"]
+script = ExtResource("2_nurxw")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_1cne1"]
+script = ExtResource("2_nurxw")
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_fij8r"]
+script = ExtResource("2_nurxw")
+level = 12
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_hl05x"]
+script = ExtResource("2_nurxw")
+level = 16
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_1oitv"]
+script = ExtResource("2_nurxw")
+level = 20
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_q0lim"]
+script = ExtResource("2_nurxw")
+level = 24
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_ps0s8"]
+script = ExtResource("2_nurxw")
+level = 28
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_f4ddi"]
+script = ExtResource("2_nurxw")
+level = 35
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_hakj1"]
+script = ExtResource("2_nurxw")
+level = 40
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_k5fxb"]
+script = ExtResource("2_nurxw")
+level = 48
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_3rwer"]
+script = ExtResource("2_nurxw")
+level = 56
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_q2pn6"]
+script = ExtResource("2_nurxw")
+level = 64
+move = &"MAGICROOM"
+
+[resource]
+resource_name = "GOTHITELLE"
+script = ExtResource("3_kc2ht")
+species = &"GOTHITELLE"
+category = "Astral Body"
+pokedex_entry = "They can predict the future from the placement and movement of the stars. They can see Trainers' life spans."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 70
+base_attack = 55
+base_defense = 95
+base_special_attack = 95
+base_special_defense = 110
+base_speed = 65
+ev_special_defense = 3
+base_exp = 245
+growth_rate = &"Parabolic"
+gender_ratio = &"Female75Percent"
+catch_rate = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nurxw")]([SubResource("Resource_xamv2"), SubResource("Resource_dtrn7"), SubResource("Resource_5vl2e"), SubResource("Resource_1cne1"), SubResource("Resource_fij8r"), SubResource("Resource_hl05x"), SubResource("Resource_1oitv"), SubResource("Resource_q0lim"), SubResource("Resource_ps0s8"), SubResource("Resource_f4ddi"), SubResource("Resource_hakj1"), SubResource("Resource_k5fxb"), SubResource("Resource_3rwer"), SubResource("Resource_q2pn6")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COSMICPOWER", &"COVET", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLASH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LASERFOCUS", &"LIGHTSCREEN", &"LOWSWEEP", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"FRISK", &"COMPETITIVE"])
+hidden_abilities = Array[StringName]([&"SHADOWTAG"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_dueca")]([SubResource("Resource_f6mbv")])
+height = 15
+weight = 440
+color = &"Purple"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 14)
+id = &"GOTHITELLE"
+display_name = "Gothitelle"

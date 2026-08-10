@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6uk8u"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xgrdc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_65h1g"]
+
+[sub_resource type="Resource" id="Resource_vpvlq"]
+script = ExtResource("1_6uk8u")
+species = &"EKANS"
+method = &"Level"
+parameter = "22"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_xa0oo"]
+script = ExtResource("2_xgrdc")
+level = 0
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_8o3kn"]
+script = ExtResource("2_xgrdc")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_7of2g"]
+script = ExtResource("2_xgrdc")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_pymnp"]
+script = ExtResource("2_xgrdc")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_isivm"]
+script = ExtResource("2_xgrdc")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_jxq2l"]
+script = ExtResource("2_xgrdc")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_63pvy"]
+script = ExtResource("2_xgrdc")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_dh87m"]
+script = ExtResource("2_xgrdc")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_heotp"]
+script = ExtResource("2_xgrdc")
+level = 4
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_mg2co"]
+script = ExtResource("2_xgrdc")
+level = 9
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ttj8y"]
+script = ExtResource("2_xgrdc")
+level = 12
+move = &"GLARE"
+
+[sub_resource type="Resource" id="Resource_xyl4a"]
+script = ExtResource("2_xgrdc")
+level = 17
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6g8ok"]
+script = ExtResource("2_xgrdc")
+level = 20
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_5io62"]
+script = ExtResource("2_xgrdc")
+level = 27
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_ed0vt"]
+script = ExtResource("2_xgrdc")
+level = 27
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_uo6kf"]
+script = ExtResource("2_xgrdc")
+level = 27
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_4jcgp"]
+script = ExtResource("2_xgrdc")
+level = 32
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_p7rre"]
+script = ExtResource("2_xgrdc")
+level = 39
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_wfv30"]
+script = ExtResource("2_xgrdc")
+level = 44
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_di2a8"]
+script = ExtResource("2_xgrdc")
+level = 48
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_a7byv"]
+script = ExtResource("2_xgrdc")
+level = 51
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_rng03"]
+script = ExtResource("2_xgrdc")
+level = 56
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_wkf3y"]
+script = ExtResource("2_xgrdc")
+level = 63
+move = &"GUNKSHOT"
+
+[resource]
+resource_name = "ARBOK"
+script = ExtResource("3_65h1g")
+species = &"ARBOK"
+category = "Cobra"
+pokedex_entry = "This Pokémon has a terrifically strong constricting power. It can even flatten steel oil drums. Once it wraps its body around its foe, escaping is impossible."
+types = Array[StringName]([&"POISON"])
+base_hp = 60
+base_attack = 95
+base_defense = 69
+base_special_attack = 65
+base_special_defense = 79
+base_speed = 80
+ev_attack = 2
+base_exp = 157
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xgrdc")]([SubResource("Resource_xa0oo"), SubResource("Resource_8o3kn"), SubResource("Resource_7of2g"), SubResource("Resource_pymnp"), SubResource("Resource_isivm"), SubResource("Resource_jxq2l"), SubResource("Resource_63pvy"), SubResource("Resource_dh87m"), SubResource("Resource_heotp"), SubResource("Resource_mg2co"), SubResource("Resource_ttj8y"), SubResource("Resource_xyl4a"), SubResource("Resource_6g8ok"), SubResource("Resource_5io62"), SubResource("Resource_ed0vt"), SubResource("Resource_uo6kf"), SubResource("Resource_4jcgp"), SubResource("Resource_p7rre"), SubResource("Resource_wfv30"), SubResource("Resource_di2a8"), SubResource("Resource_a7byv"), SubResource("Resource_rng03"), SubResource("Resource_wkf3y")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BIND", &"BODYSLAM", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONTAIL", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SPITE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"THROATCHOP", &"TORMENT", &"VENOSHOCK"])
+abilities = Array[StringName]([&"INTIMIDATE", &"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Field", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6uk8u")]([SubResource("Resource_vpvlq")])
+height = 35
+weight = 650
+color = &"Purple"
+shape = &"Serpentine"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(8, 21)
+shadow_size = 3
+id = &"ARBOK"
+display_name = "Arbok"

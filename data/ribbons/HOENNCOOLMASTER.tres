@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_8gtdo"]
+
+[resource]
+resource_name = "HOENNCOOLMASTER"
+script = ExtResource("1_8gtdo")
+icon_position = 3
+description = "Hoenn Cool Contest Master Rank winner!"
+id = &"HOENNCOOLMASTER"
+display_name = "Cool Ribbon Master"

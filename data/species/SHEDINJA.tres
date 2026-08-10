@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_a6n73"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_o1l87"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_575rg"]
+
+[sub_resource type="Resource" id="Resource_yjujo"]
+script = ExtResource("1_a6n73")
+species = &"NINCADA"
+method = &"Shedinja"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_d6w5h"]
+script = ExtResource("2_o1l87")
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_83toh"]
+script = ExtResource("2_o1l87")
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_4n3ff"]
+script = ExtResource("2_o1l87")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_8ufie"]
+script = ExtResource("2_o1l87")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_rds4a"]
+script = ExtResource("2_o1l87")
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_ckce4"]
+script = ExtResource("2_o1l87")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_vmyfx"]
+script = ExtResource("2_o1l87")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_t7k4t"]
+script = ExtResource("2_o1l87")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_efdfu"]
+script = ExtResource("2_o1l87")
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_djkjx"]
+script = ExtResource("2_o1l87")
+level = 15
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_sfjv6"]
+script = ExtResource("2_o1l87")
+level = 23
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_mqwcl"]
+script = ExtResource("2_o1l87")
+level = 29
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_52mtu"]
+script = ExtResource("2_o1l87")
+level = 36
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_aevbb"]
+script = ExtResource("2_o1l87")
+level = 43
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_xcnax"]
+script = ExtResource("2_o1l87")
+level = 50
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_gyg2t"]
+script = ExtResource("2_o1l87")
+level = 57
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_57hla"]
+script = ExtResource("2_o1l87")
+level = 64
+move = &"PHANTOMFORCE"
+
+[resource]
+resource_name = "SHEDINJA"
+script = ExtResource("3_575rg")
+species = &"SHEDINJA"
+category = "Shed"
+pokedex_entry = "A peculiar Pokémon that floats in air even though its wings remain completely still. The inside of its body is hollow and utterly dark."
+types = Array[StringName]([&"BUG", &"GHOST"])
+base_attack = 90
+base_defense = 45
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 40
+ev_hp = 2
+base_exp = 83
+growth_rate = &"Erratic"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_o1l87")]([SubResource("Resource_d6w5h"), SubResource("Resource_83toh"), SubResource("Resource_4n3ff"), SubResource("Resource_8ufie"), SubResource("Resource_rds4a"), SubResource("Resource_ckce4"), SubResource("Resource_vmyfx"), SubResource("Resource_t7k4t"), SubResource("Resource_efdfu"), SubResource("Resource_djkjx"), SubResource("Resource_sfjv6"), SubResource("Resource_mqwcl"), SubResource("Resource_52mtu"), SubResource("Resource_aevbb"), SubResource("Resource_xcnax"), SubResource("Resource_gyg2t"), SubResource("Resource_57hla")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"BUGBITE", &"BUGBUZZ", &"CONFIDE", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"LEECHLIFE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PHANTOMFORCE", &"POLTERGEIST", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"TRICK", &"WILLOWISP", &"XSCISSOR"])
+abilities = Array[StringName]([&"WONDERGUARD"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_a6n73")]([SubResource("Resource_yjujo")])
+height = 8
+weight = 12
+color = &"Brown"
+shape = &"HeadBase"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 12)
+shadow_size = 1
+id = &"SHEDINJA"
+display_name = "Shedinja"

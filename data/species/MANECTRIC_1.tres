@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ey20c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mr6kw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0kf10"]
+
+[sub_resource type="Resource" id="Resource_yc8d7"]
+script = ExtResource("1_ey20c")
+species = &"ELECTRIKE"
+method = &"Level"
+parameter = "26"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_et10o"]
+script = ExtResource("2_mr6kw")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_fgqpp"]
+script = ExtResource("2_mr6kw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_fuyp2"]
+script = ExtResource("2_mr6kw")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_4060v"]
+script = ExtResource("2_mr6kw")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_exdum"]
+script = ExtResource("2_mr6kw")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_su2kq"]
+script = ExtResource("2_mr6kw")
+level = 12
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ttwyv"]
+script = ExtResource("2_mr6kw")
+level = 16
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_xtm3v"]
+script = ExtResource("2_mr6kw")
+level = 20
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_smad8"]
+script = ExtResource("2_mr6kw")
+level = 24
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_xyi2a"]
+script = ExtResource("2_mr6kw")
+level = 30
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_5kdvf"]
+script = ExtResource("2_mr6kw")
+level = 36
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_r0do4"]
+script = ExtResource("2_mr6kw")
+level = 42
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_fd0ie"]
+script = ExtResource("2_mr6kw")
+level = 48
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_evxhn"]
+script = ExtResource("2_mr6kw")
+level = 54
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_7ybjw"]
+script = ExtResource("2_mr6kw")
+level = 60
+move = &"ELECTRICTERRAIN"
+
+[resource]
+resource_name = "MANECTRIC_1"
+script = ExtResource("3_0kf10")
+species = &"MANECTRIC"
+form = 1
+form_name = "Mega Manectric"
+category = "Discharge"
+pokedex_entry = "Too much electricity has built up in its body, irritating Manectric. Its explosive speed is equal to that of a lightning bolt."
+pokedex_form = 1
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 70
+base_attack = 75
+base_defense = 80
+base_special_attack = 135
+base_special_defense = 80
+base_speed = 135
+ev_speed = 2
+base_exp = 201
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mr6kw")]([SubResource("Resource_et10o"), SubResource("Resource_fgqpp"), SubResource("Resource_fuyp2"), SubResource("Resource_4060v"), SubResource("Resource_exdum"), SubResource("Resource_su2kq"), SubResource("Resource_ttwyv"), SubResource("Resource_xtm3v"), SubResource("Resource_smad8"), SubResource("Resource_xyi2a"), SubResource("Resource_5kdvf"), SubResource("Resource_r0do4"), SubResource("Resource_fd0ie"), SubResource("Resource_evxhn"), SubResource("Resource_7ybjw")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DOUBLEEDGE", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FIREFANG", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEFANG", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROAR", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"INTIMIDATE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ey20c")]([SubResource("Resource_yc8d7")])
+height = 18
+weight = 440
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 6
+mega_stone = &"MANECTITE"
+back_sprite_offset = Vector2i(0, 36)
+front_sprite_offset = Vector2i(-3, 15)
+id = &"MANECTRIC_1"
+display_name = "Manectric"

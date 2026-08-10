@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ur3p5"]
+
+[resource]
+resource_name = "PSYCHUP"
+script = ExtResource("1_ur3p5")
+accuracy = 0
+total_pp = 10
+function_code = &"UserCopyTargetStatStages"
+description = "The user hypnotizes itself into copying any stat change made by the target."
+id = &"PSYCHUP"
+display_name = "Psych Up"

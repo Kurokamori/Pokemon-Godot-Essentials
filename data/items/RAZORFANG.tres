@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_iygex"]
+
+[resource]
+resource_name = "RAZORFANG"
+script = ExtResource("1_iygex")
+name_plural = "Razor Fangs"
+price = 5000
+sell_price = 2500
+bp_price = 5
+description = "An item to be held by a Pokémon. It may make foes and allies flinch when the holder inflicts damage."
+id = &"RAZORFANG"
+display_name = "Razor Fang"
+flags = Array[StringName]([&"Fling_30"])

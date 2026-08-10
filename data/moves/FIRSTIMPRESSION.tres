@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_dpw0e"]
+
+[resource]
+resource_name = "FIRSTIMPRESSION"
+script = ExtResource("1_dpw0e")
+type = &"BUG"
+category = 0
+power = 90
+total_pp = 10
+priority = 2
+function_code = &"FailsIfNotUserFirstTurn"
+description = "Although this move has great power, it only works the first turn the user is in battle."
+id = &"FIRSTIMPRESSION"
+display_name = "First Impression"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

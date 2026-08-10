@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_18yxx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_t0fjb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_akwhn"]
+
+[sub_resource type="Resource" id="Resource_w6ubs"]
+script = ExtResource("1_18yxx")
+species = &"WHIRLIPEDE"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_dr1mr"]
+script = ExtResource("2_t0fjb")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_cdxsc"]
+script = ExtResource("2_t0fjb")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_vwnvv"]
+script = ExtResource("2_t0fjb")
+level = 4
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_dxyrr"]
+script = ExtResource("2_t0fjb")
+level = 8
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_4e8mt"]
+script = ExtResource("2_t0fjb")
+level = 12
+move = &"POISONTAIL"
+
+[sub_resource type="Resource" id="Resource_bjvbx"]
+script = ExtResource("2_t0fjb")
+level = 16
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_vauli"]
+script = ExtResource("2_t0fjb")
+level = 20
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_cbn82"]
+script = ExtResource("2_t0fjb")
+level = 24
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_iddva"]
+script = ExtResource("2_t0fjb")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_xe0gi"]
+script = ExtResource("2_t0fjb")
+level = 32
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_f8qqy"]
+script = ExtResource("2_t0fjb")
+level = 36
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_6i4t5"]
+script = ExtResource("2_t0fjb")
+level = 40
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_1e5ek"]
+script = ExtResource("2_t0fjb")
+level = 44
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "VENIPEDE"
+script = ExtResource("3_akwhn")
+species = &"VENIPEDE"
+category = "Centipede"
+pokedex_entry = "It discovers what is going on around it by using the feelers on its head and tail. It is brutally aggresive."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 30
+base_attack = 45
+base_defense = 59
+base_special_attack = 30
+base_special_defense = 39
+base_speed = 57
+ev_defense = 1
+base_exp = 52
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_t0fjb")]([SubResource("Resource_dr1mr"), SubResource("Resource_cdxsc"), SubResource("Resource_vwnvv"), SubResource("Resource_dxyrr"), SubResource("Resource_4e8mt"), SubResource("Resource_bjvbx"), SubResource("Resource_vauli"), SubResource("Resource_cbn82"), SubResource("Resource_iddva"), SubResource("Resource_xe0gi"), SubResource("Resource_f8qqy"), SubResource("Resource_6i4t5"), SubResource("Resource_1e5ek")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BUGBITE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GYROBALL", &"HEX", &"HIDDENPOWER", &"INFESTATION", &"IRONDEFENSE", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SPIKES", &"STEELROLLER", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"BITE", &"FURYCUTTER"])
+abilities = Array[StringName]([&"POISONPOINT", &"SWARM"])
+hidden_abilities = Array[StringName]([&"SPEEDBOOST"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_18yxx")]([SubResource("Resource_w6ubs")])
+height = 4
+weight = 53
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(2, 58)
+front_sprite_offset = Vector2i(2, 36)
+id = &"VENIPEDE"
+display_name = "Venipede"

@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5uhkb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hrtj8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7xql5"]
+
+[sub_resource type="Resource" id="Resource_0qil8"]
+script = ExtResource("1_5uhkb")
+species = &"EEVEE"
+method = &"Item"
+parameter = "WATERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_t7gxs"]
+script = ExtResource("2_hrtj8")
+level = 0
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_88qpm"]
+script = ExtResource("2_hrtj8")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_way1a"]
+script = ExtResource("2_hrtj8")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_3sxmp"]
+script = ExtResource("2_hrtj8")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_3g5ft"]
+script = ExtResource("2_hrtj8")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_axlrx"]
+script = ExtResource("2_hrtj8")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_kie3b"]
+script = ExtResource("2_hrtj8")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_gu4vi"]
+script = ExtResource("2_hrtj8")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_vpqfg"]
+script = ExtResource("2_hrtj8")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_6u2u3"]
+script = ExtResource("2_hrtj8")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_7ffjn"]
+script = ExtResource("2_hrtj8")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_fm577"]
+script = ExtResource("2_hrtj8")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_mfe40"]
+script = ExtResource("2_hrtj8")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_1hdr2"]
+script = ExtResource("2_hrtj8")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_6766h"]
+script = ExtResource("2_hrtj8")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_8p52d"]
+script = ExtResource("2_hrtj8")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_dfohe"]
+script = ExtResource("2_hrtj8")
+level = 20
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_jty3i"]
+script = ExtResource("2_hrtj8")
+level = 25
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_ofon0"]
+script = ExtResource("2_hrtj8")
+level = 30
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_5lbm5"]
+script = ExtResource("2_hrtj8")
+level = 35
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_v7ilt"]
+script = ExtResource("2_hrtj8")
+level = 40
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_u2rje"]
+script = ExtResource("2_hrtj8")
+level = 45
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_ajw7m"]
+script = ExtResource("2_hrtj8")
+level = 50
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_1ygxa"]
+script = ExtResource("2_hrtj8")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "VAPOREON"
+script = ExtResource("3_7xql5")
+species = &"VAPOREON"
+category = "Bubble Jet"
+pokedex_entry = "Vaporeon underwent a spontaneous mutation and grew fins and gills that allow them to live underwater. They have the ability to freely control water."
+types = Array[StringName]([&"WATER"])
+base_hp = 130
+base_attack = 65
+base_defense = 60
+base_special_attack = 110
+base_special_defense = 95
+base_speed = 65
+ev_hp = 2
+base_exp = 184
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hrtj8")]([SubResource("Resource_t7gxs"), SubResource("Resource_88qpm"), SubResource("Resource_way1a"), SubResource("Resource_3sxmp"), SubResource("Resource_3g5ft"), SubResource("Resource_axlrx"), SubResource("Resource_kie3b"), SubResource("Resource_gu4vi"), SubResource("Resource_vpqfg"), SubResource("Resource_6u2u3"), SubResource("Resource_7ffjn"), SubResource("Resource_fm577"), SubResource("Resource_mfe40"), SubResource("Resource_1hdr2"), SubResource("Resource_6766h"), SubResource("Resource_8p52d"), SubResource("Resource_dfohe"), SubResource("Resource_jty3i"), SubResource("Resource_ofon0"), SubResource("Resource_5lbm5"), SubResource("Resource_v7ilt"), SubResource("Resource_u2rje"), SubResource("Resource_ajw7m"), SubResource("Resource_1ygxa")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLIPTURN", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"PAYDAY", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"WATERABSORB"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_5uhkb")]([SubResource("Resource_0qil8")])
+height = 10
+weight = 290
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(5, 26)
+id = &"VAPOREON"
+display_name = "Vaporeon"

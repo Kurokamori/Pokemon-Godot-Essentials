@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_a245k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2bb7e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8mbbi"]
+
+[sub_resource type="Resource" id="Resource_sjseh"]
+script = ExtResource("1_a245k")
+species = &"GASTRODON"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_0reju"]
+script = ExtResource("2_2bb7e")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_1yqfx"]
+script = ExtResource("2_2bb7e")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_kkcg3"]
+script = ExtResource("2_2bb7e")
+level = 5
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_oaqr8"]
+script = ExtResource("2_2bb7e")
+level = 10
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_fqbei"]
+script = ExtResource("2_2bb7e")
+level = 15
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_onkfq"]
+script = ExtResource("2_2bb7e")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_la836"]
+script = ExtResource("2_2bb7e")
+level = 25
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_1rqol"]
+script = ExtResource("2_2bb7e")
+level = 31
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_f1jcw"]
+script = ExtResource("2_2bb7e")
+level = 35
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_y0qt6"]
+script = ExtResource("2_2bb7e")
+level = 40
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_k1lgt"]
+script = ExtResource("2_2bb7e")
+level = 45
+move = &"MEMENTO"
+
+[resource]
+resource_name = "SHELLOS_1"
+script = ExtResource("3_8mbbi")
+species = &"SHELLOS"
+form = 1
+form_name = "East Sea"
+category = "Sea Slug"
+pokedex_entry = "Its appearance changes depending on the environment. One theory suggests that living in cold seas causes Shellos to take on this form."
+pokedex_form = 1
+types = Array[StringName]([&"WATER"])
+base_hp = 76
+base_attack = 48
+base_defense = 48
+base_special_attack = 57
+base_special_defense = 62
+base_speed = 34
+ev_hp = 1
+base_exp = 65
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2bb7e")]([SubResource("Resource_0reju"), SubResource("Resource_1yqfx"), SubResource("Resource_kkcg3"), SubResource("Resource_oaqr8"), SubResource("Resource_fqbei"), SubResource("Resource_onkfq"), SubResource("Resource_la836"), SubResource("Resource_1rqol"), SubResource("Resource_f1jcw"), SubResource("Resource_y0qt6"), SubResource("Resource_k1lgt")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"STRINGSHOT", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"ACIDARMOR", &"AMNESIA", &"CLEARSMOG", &"COUNTER", &"CURSE", &"FISSURE", &"MEMENTO", &"MIRRORCOAT", &"MIST", &"SLUDGE", &"SPITUP", &"STOCKPILE", &"SWALLOW", &"YAWN"])
+abilities = Array[StringName]([&"STICKYHOLD", &"STORMDRAIN"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+egg_groups = Array[StringName]([&"Water1", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_a245k")]([SubResource("Resource_sjseh")])
+height = 3
+weight = 63
+color = &"Blue"
+shape = &"Serpentine"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 30)
+shadow_size = 1
+id = &"SHELLOS_1"
+display_name = "Shellos"
+flags = Array[StringName]([&"InheritFormFromMother"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_r3n31"]
+
+[resource]
+resource_name = "ENIGMABERRY"
+script = ExtResource("1_r3n31")
+name_plural = "Enigma Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "If held by a Pokémon, it restores its HP if it is hit by any supereffective attack."
+id = &"ENIGMABERRY"
+display_name = "Enigma Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_BUG_100"])

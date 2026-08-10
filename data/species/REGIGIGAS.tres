@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hxho6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xugre"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kxayx"]
+
+[sub_resource type="Resource" id="Resource_n3o5e"]
+script = ExtResource("2_xugre")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_8q0xc"]
+script = ExtResource("2_xugre")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_mtd85"]
+script = ExtResource("2_xugre")
+level = 6
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_oketp"]
+script = ExtResource("2_xugre")
+level = 12
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_uujb3"]
+script = ExtResource("2_xugre")
+level = 18
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_5pajs"]
+script = ExtResource("2_xugre")
+level = 24
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_l7d7n"]
+script = ExtResource("2_xugre")
+level = 30
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_oltjx"]
+script = ExtResource("2_xugre")
+level = 36
+move = &"MEGAPUNCH"
+
+[sub_resource type="Resource" id="Resource_1agou"]
+script = ExtResource("2_xugre")
+level = 42
+move = &"BODYPRESS"
+
+[sub_resource type="Resource" id="Resource_x3exh"]
+script = ExtResource("2_xugre")
+level = 48
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_5neyx"]
+script = ExtResource("2_xugre")
+level = 54
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_3sb6c"]
+script = ExtResource("2_xugre")
+level = 60
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_uynhn"]
+script = ExtResource("2_xugre")
+level = 66
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_0mnss"]
+script = ExtResource("2_xugre")
+level = 72
+move = &"GIGAIMPACT"
+
+[sub_resource type="Resource" id="Resource_8n7rf"]
+script = ExtResource("2_xugre")
+level = 78
+move = &"CRUSHGRIP"
+
+[resource]
+resource_name = "REGIGIGAS"
+script = ExtResource("3_kxayx")
+species = &"REGIGIGAS"
+category = "Colossal"
+pokedex_entry = "There is an enduring legend that states this Pokémon towed continents with ropes."
+base_hp = 110
+base_attack = 160
+base_defense = 110
+base_special_attack = 80
+base_special_defense = 110
+base_speed = 100
+ev_attack = 3
+base_exp = 335
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_xugre")]([SubResource("Resource_n3o5e"), SubResource("Resource_8q0xc"), SubResource("Resource_mtd85"), SubResource("Resource_oketp"), SubResource("Resource_uujb3"), SubResource("Resource_5pajs"), SubResource("Resource_l7d7n"), SubResource("Resource_oltjx"), SubResource("Resource_1agou"), SubResource("Resource_x3exh"), SubResource("Resource_5neyx"), SubResource("Resource_3sb6c"), SubResource("Resource_uynhn"), SubResource("Resource_0mnss"), SubResource("Resource_8n7rf")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AVALANCHE", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CONFIDE", &"DARKESTLARIAT", &"DOUBLETEAM", &"DRAINPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HEADBUTT", &"HEATCRASH", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONHEAD", &"KNOCKOFF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TERRAINPULSE", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SLOWSTART"])
+hatch_steps = 30720
+height = 37
+weight = 4200
+color = &"White"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-2, 18)
+id = &"REGIGIGAS"
+display_name = "Regigigas"
+flags = Array[StringName]([&"Legendary"])

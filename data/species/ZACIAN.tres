@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kiwsf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7hitn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mhnpf"]
+
+[sub_resource type="Resource" id="Resource_r3dpq"]
+script = ExtResource("2_7hitn")
+move = &"SACREDSWORD"
+
+[sub_resource type="Resource" id="Resource_0ff21"]
+script = ExtResource("2_7hitn")
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_a6q1j"]
+script = ExtResource("2_7hitn")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_ytckf"]
+script = ExtResource("2_7hitn")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_2anrp"]
+script = ExtResource("2_7hitn")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_jjeof"]
+script = ExtResource("2_7hitn")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_8hvsr"]
+script = ExtResource("2_7hitn")
+level = 11
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_kgxyw"]
+script = ExtResource("2_7hitn")
+level = 22
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_5uobj"]
+script = ExtResource("2_7hitn")
+level = 33
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_yn86r"]
+script = ExtResource("2_7hitn")
+level = 44
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_f5q1l"]
+script = ExtResource("2_7hitn")
+level = 55
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_vheob"]
+script = ExtResource("2_7hitn")
+level = 66
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_o2s7u"]
+script = ExtResource("2_7hitn")
+level = 77
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_x67go"]
+script = ExtResource("2_7hitn")
+level = 88
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "ZACIAN"
+script = ExtResource("3_mhnpf")
+species = &"ZACIAN"
+form_name = "Hero of Many Battles"
+category = "Warrior"
+pokedex_entry = "Known as a legendary hero, this Pokémon absorbs metal particles, transforming them into a weapon it uses to battle."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 92
+base_attack = 130
+base_defense = 115
+base_special_attack = 80
+base_special_defense = 115
+base_speed = 138
+ev_speed = 3
+base_exp = 335
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 10
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_7hitn")]([SubResource("Resource_r3dpq"), SubResource("Resource_0ff21"), SubResource("Resource_a6q1j"), SubResource("Resource_ytckf"), SubResource("Resource_2anrp"), SubResource("Resource_jjeof"), SubResource("Resource_8hvsr"), SubResource("Resource_kgxyw"), SubResource("Resource_5uobj"), SubResource("Resource_yn86r"), SubResource("Resource_f5q1l"), SubResource("Resource_vheob"), SubResource("Resource_o2s7u"), SubResource("Resource_x67go")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"ASSURANCE", &"BRICKBREAK", &"BRUTALSWING", &"CLOSECOMBAT", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREFANG", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEFANG", &"IMPRISON", &"IRONHEAD", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"PSYCHOCUT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBLADE", &"STEELBEAM", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILSLAP", &"THUNDERFANG", &"TOXIC", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"INTREPIDSWORD"])
+wild_item_common = Array[StringName]([&"RUSTEDSWORD"])
+wild_item_uncommon = Array[StringName]([&"RUSTEDSWORD"])
+wild_item_rare = Array[StringName]([&"RUSTEDSWORD"])
+hatch_steps = 30720
+height = 28
+weight = 1100
+color = &"Blue"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(2, 7)
+shadow_size = 3
+id = &"ZACIAN"
+display_name = "Zacian"
+flags = Array[StringName]([&"Legendary"])

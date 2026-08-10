@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_elswp"]
+
+[resource]
+resource_name = "PRIMORDIALSEA"
+script = ExtResource("1_elswp")
+description = "Changes the weather to nullify Fire-type moves."
+id = &"PRIMORDIALSEA"
+display_name = "Primordial Sea"

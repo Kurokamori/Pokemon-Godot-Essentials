@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0hpfm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hhd7e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jkd6k"]
+
+[sub_resource type="Resource" id="Resource_uuygy"]
+script = ExtResource("1_0hpfm")
+species = &"CLEFAIRY"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_o6odf"]
+script = ExtResource("2_hhd7e")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_smle0"]
+script = ExtResource("2_hhd7e")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_e6p6u"]
+script = ExtResource("2_hhd7e")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_nkt35"]
+script = ExtResource("2_hhd7e")
+level = 4
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_icyyf"]
+script = ExtResource("2_hhd7e")
+level = 8
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_8cosa"]
+script = ExtResource("2_hhd7e")
+level = 12
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_5rcaf"]
+script = ExtResource("2_hhd7e")
+level = 16
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_ar523"]
+script = ExtResource("2_hhd7e")
+level = 20
+move = &"CHARM"
+
+[resource]
+resource_name = "CLEFFA"
+script = ExtResource("3_jkd6k")
+species = &"CLEFFA"
+category = "Star Shape"
+pokedex_entry = "On nights with many shooting stars, Cleffa can be seen dancing in a ring. They dance until daybreak, when they quench their thirst with the morning dew."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 50
+base_attack = 25
+base_defense = 28
+base_special_attack = 45
+base_special_defense = 55
+base_speed = 15
+ev_special_defense = 1
+base_exp = 44
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 150
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_hhd7e")]([SubResource("Resource_o6odf"), SubResource("Resource_smle0"), SubResource("Resource_e6p6u"), SubResource("Resource_nkt35"), SubResource("Resource_icyyf"), SubResource("Resource_8cosa"), SubResource("Resource_5rcaf"), SubResource("Resource_ar523")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ECHOEDVOICE", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOFTBOILED", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THUNDERWAVE", &"TRICK", &"UPROAR", &"WATERPULSE", &"WONDERROOM", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AMNESIA", &"AROMATHERAPY", &"BELLYDRUM", &"COVET", &"FAKETEARS", &"HEALPULSE", &"METRONOME", &"MIMIC", &"MISTYTERRAIN", &"PRESENT", &"SPLASH", &"STOREDPOWER", &"TICKLE", &"WISH"])
+abilities = Array[StringName]([&"CUTECHARM", &"MAGICGUARD"])
+hidden_abilities = Array[StringName]([&"FRIENDGUARD"])
+wild_item_uncommon = Array[StringName]([&"MOONSTONE"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_0hpfm")]([SubResource("Resource_uuygy")])
+height = 3
+weight = 30
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 37)
+shadow_size = 1
+id = &"CLEFFA"
+display_name = "Cleffa"

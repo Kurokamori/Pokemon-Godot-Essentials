@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_itit8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_w4vtr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_phbc6"]
+
+[sub_resource type="Resource" id="Resource_gex1u"]
+script = ExtResource("1_itit8")
+species = &"DRAGALGE"
+method = &"Level"
+parameter = "48"
+
+[sub_resource type="Resource" id="Resource_ebb8w"]
+script = ExtResource("2_w4vtr")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_s1ejm"]
+script = ExtResource("2_w4vtr")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_udeax"]
+script = ExtResource("2_w4vtr")
+level = 5
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_1ct58"]
+script = ExtResource("2_w4vtr")
+level = 10
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_dmo0q"]
+script = ExtResource("2_w4vtr")
+level = 15
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_gikt8"]
+script = ExtResource("2_w4vtr")
+level = 20
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_xk74q"]
+script = ExtResource("2_w4vtr")
+level = 25
+move = &"POISONTAIL"
+
+[sub_resource type="Resource" id="Resource_d2xfi"]
+script = ExtResource("2_w4vtr")
+level = 30
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_r5kit"]
+script = ExtResource("2_w4vtr")
+level = 35
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_fo402"]
+script = ExtResource("2_w4vtr")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_77r17"]
+script = ExtResource("2_w4vtr")
+level = 45
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_3m1ht"]
+script = ExtResource("2_w4vtr")
+level = 50
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_kwc4p"]
+script = ExtResource("2_w4vtr")
+level = 55
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "SKRELP"
+script = ExtResource("3_phbc6")
+species = &"SKRELP"
+category = "Mock Kelp"
+pokedex_entry = "Camouflaged as rotten kelp, they spray liquid poison on prey that approaches unawares and then finish it off."
+types = Array[StringName]([&"POISON", &"WATER"])
+base_hp = 50
+base_attack = 60
+base_defense = 60
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 30
+ev_special_defense = 1
+base_exp = 64
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_w4vtr")]([SubResource("Resource_ebb8w"), SubResource("Resource_s1ejm"), SubResource("Resource_udeax"), SubResource("Resource_1ct58"), SubResource("Resource_dmo0q"), SubResource("Resource_gikt8"), SubResource("Resource_xk74q"), SubResource("Resource_d2xfi"), SubResource("Resource_r5kit"), SubResource("Resource_fo402"), SubResource("Resource_77r17"), SubResource("Resource_3m1ht"), SubResource("Resource_kwc4p")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"GUNKSHOT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THUNDERBOLT", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"ACIDARMOR", &"DRAGONTAIL", &"HAZE", &"TWISTER"])
+abilities = Array[StringName]([&"POISONPOINT", &"POISONTOUCH"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_itit8")]([SubResource("Resource_gex1u")])
+height = 5
+weight = 73
+color = &"Brown"
+shape = &"HeadBase"
+generation = 6
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 1
+id = &"SKRELP"
+display_name = "Skrelp"

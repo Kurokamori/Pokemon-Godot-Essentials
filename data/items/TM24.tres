@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8gm04"]
+
+[resource]
+resource_name = "TM24"
+script = ExtResource("1_8gm04")
+name_plural = "TM24s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"THUNDERBOLT"
+description = "A strong electric blast crashes down on the target. This may also leave the target with paralysis."
+id = &"TM24"
+display_name = "TM24"
+flags = Array[StringName]([&"Fling_90"])

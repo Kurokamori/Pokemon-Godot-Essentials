@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_iwdrw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lp1jv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ngjdk"]
+
+[sub_resource type="Resource" id="Resource_66uu7"]
+script = ExtResource("1_iwdrw")
+species = &"PORYGONZ"
+method = &"TradeItem"
+parameter = "DUBIOUSDISC"
+
+[sub_resource type="Resource" id="Resource_pkuf2"]
+script = ExtResource("1_iwdrw")
+species = &"PORYGON"
+method = &"TradeItem"
+parameter = "UPGRADE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pnhjb"]
+script = ExtResource("2_lp1jv")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_rc2es"]
+script = ExtResource("2_lp1jv")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_6mugh"]
+script = ExtResource("2_lp1jv")
+move = &"CONVERSION"
+
+[sub_resource type="Resource" id="Resource_4y13t"]
+script = ExtResource("2_lp1jv")
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_phn3r"]
+script = ExtResource("2_lp1jv")
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_0uvy4"]
+script = ExtResource("2_lp1jv")
+level = 15
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_n2hau"]
+script = ExtResource("2_lp1jv")
+level = 20
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_a6vmt"]
+script = ExtResource("2_lp1jv")
+level = 25
+move = &"CONVERSION2"
+
+[sub_resource type="Resource" id="Resource_3i7el"]
+script = ExtResource("2_lp1jv")
+level = 30
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_sv8b5"]
+script = ExtResource("2_lp1jv")
+level = 35
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_avs42"]
+script = ExtResource("2_lp1jv")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_x51o7"]
+script = ExtResource("2_lp1jv")
+level = 45
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_ixn1n"]
+script = ExtResource("2_lp1jv")
+level = 50
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_vvwur"]
+script = ExtResource("2_lp1jv")
+level = 55
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_7aqjb"]
+script = ExtResource("2_lp1jv")
+level = 60
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_n0g58"]
+script = ExtResource("2_lp1jv")
+level = 65
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "PORYGON2"
+script = ExtResource("3_ngjdk")
+species = &"PORYGON2"
+category = "Virtual"
+pokedex_entry = "It was created by humans using the power of science. It has been given artificial intelligence that enables it to learn new gestures and emotions on its own."
+base_hp = 85
+base_attack = 80
+base_defense = 90
+base_special_attack = 105
+base_special_defense = 95
+base_speed = 60
+ev_special_attack = 2
+base_exp = 180
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lp1jv")]([SubResource("Resource_pnhjb"), SubResource("Resource_rc2es"), SubResource("Resource_6mugh"), SubResource("Resource_4y13t"), SubResource("Resource_phn3r"), SubResource("Resource_0uvy4"), SubResource("Resource_n2hau"), SubResource("Resource_a6vmt"), SubResource("Resource_3i7el"), SubResource("Resource_sv8b5"), SubResource("Resource_avs42"), SubResource("Resource_x51o7"), SubResource("Resource_ixn1n"), SubResource("Resource_vvwur"), SubResource("Resource_7aqjb"), SubResource("Resource_n0g58")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"BLIZZARD", &"CHARGEBEAM", &"CONFIDE", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EERIEIMPULSE", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"GUARDSWAP", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASTRESORT", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TRACE", &"DOWNLOAD"])
+hidden_abilities = Array[StringName]([&"ANALYTIC"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_iwdrw")]([SubResource("Resource_66uu7"), SubResource("Resource_pkuf2")])
+height = 6
+weight = 325
+shape = &"HeadLegs"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 1
+id = &"PORYGON2"
+display_name = "Porygon2"

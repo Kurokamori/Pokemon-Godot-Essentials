@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_b0nsj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7gx26"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a7q6j"]
+
+[sub_resource type="Resource" id="Resource_hovxs"]
+script = ExtResource("1_b0nsj")
+species = &"PERSIAN"
+method = &"Level"
+parameter = "28"
+
+[sub_resource type="Resource" id="Resource_5j2np"]
+script = ExtResource("1_b0nsj")
+species = &"PERRSERKER"
+
+[sub_resource type="Resource" id="Resource_xmwbs"]
+script = ExtResource("2_7gx26")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_furyd"]
+script = ExtResource("2_7gx26")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_atnuv"]
+script = ExtResource("2_7gx26")
+level = 4
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_21bpb"]
+script = ExtResource("2_7gx26")
+level = 8
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_8b31k"]
+script = ExtResource("2_7gx26")
+level = 12
+move = &"PAYDAY"
+
+[sub_resource type="Resource" id="Resource_alfgm"]
+script = ExtResource("2_7gx26")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_57hsf"]
+script = ExtResource("2_7gx26")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_gu4ch"]
+script = ExtResource("2_7gx26")
+level = 24
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_pbmq7"]
+script = ExtResource("2_7gx26")
+level = 29
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_d68hp"]
+script = ExtResource("2_7gx26")
+level = 32
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_ieest"]
+script = ExtResource("2_7gx26")
+level = 36
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_iy1qq"]
+script = ExtResource("2_7gx26")
+level = 40
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_q2mjd"]
+script = ExtResource("2_7gx26")
+level = 44
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "MEOWTH"
+script = ExtResource("3_a7q6j")
+species = &"MEOWTH"
+category = "Scratch Cat"
+pokedex_entry = "Meowth withdraw their sharp claws into their paws to silently sneak about. For some reason, this Pokémon loves shiny coins that glitter with light."
+base_hp = 40
+base_attack = 45
+base_defense = 35
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 90
+ev_speed = 1
+base_exp = 58
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7gx26")]([SubResource("Resource_xmwbs"), SubResource("Resource_furyd"), SubResource("Resource_atnuv"), SubResource("Resource_21bpb"), SubResource("Resource_8b31k"), SubResource("Resource_alfgm"), SubResource("Resource_57hsf"), SubResource("Resource_gu4ch"), SubResource("Resource_pbmq7"), SubResource("Resource_d68hp"), SubResource("Resource_ieest"), SubResource("Resource_iy1qq"), SubResource("Resource_q2mjd")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERVOICE", &"ICYWIND", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"UPROAR", &"UTURN", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"AMNESIA", &"CHARM", &"COVET", &"FLAIL", &"FOULPLAY", &"HYPNOSIS", &"LASTRESORT", &"SPITE", &"TAILWHIP"])
+abilities = Array[StringName]([&"PICKUP", &"TECHNICIAN"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+wild_item_uncommon = Array[StringName]([&"QUICKCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_b0nsj")]([SubResource("Resource_hovxs"), SubResource("Resource_5j2np")])
+height = 4
+weight = 42
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 26)
+shadow_size = 1
+id = &"MEOWTH"
+display_name = "Meowth"

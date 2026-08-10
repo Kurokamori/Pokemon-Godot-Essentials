@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_okavw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5fo8x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_05ql0"]
+
+[sub_resource type="Resource" id="Resource_285pq"]
+script = ExtResource("1_okavw")
+species = &"TRANQUILL"
+method = &"Level"
+parameter = "21"
+
+[sub_resource type="Resource" id="Resource_rci6c"]
+script = ExtResource("2_5fo8x")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_k2olo"]
+script = ExtResource("2_5fo8x")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_5ca7n"]
+script = ExtResource("2_5fo8x")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_phmdy"]
+script = ExtResource("2_5fo8x")
+level = 8
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_fl67l"]
+script = ExtResource("2_5fo8x")
+level = 12
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_jh6w8"]
+script = ExtResource("2_5fo8x")
+level = 16
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_g4aha"]
+script = ExtResource("2_5fo8x")
+level = 20
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_b0rha"]
+script = ExtResource("2_5fo8x")
+level = 24
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_rhtim"]
+script = ExtResource("2_5fo8x")
+level = 28
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_2p752"]
+script = ExtResource("2_5fo8x")
+level = 32
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_y81s8"]
+script = ExtResource("2_5fo8x")
+level = 36
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_i3aav"]
+script = ExtResource("2_5fo8x")
+level = 40
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_1k0tm"]
+script = ExtResource("2_5fo8x")
+level = 44
+move = &"SKYATTACK"
+
+[resource]
+resource_name = "PIDOVE"
+script = ExtResource("3_05ql0")
+species = &"PIDOVE"
+category = "Tiny Pigeon"
+pokedex_entry = "These Pokémon live in cities. They are accustomed to people. Flocks often gather in parks and plazas."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 50
+base_attack = 55
+base_defense = 50
+base_special_attack = 36
+base_special_defense = 30
+base_speed = 43
+ev_attack = 1
+base_exp = 53
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5fo8x")]([SubResource("Resource_rci6c"), SubResource("Resource_k2olo"), SubResource("Resource_5ca7n"), SubResource("Resource_phmdy"), SubResource("Resource_fl67l"), SubResource("Resource_jh6w8"), SubResource("Resource_g4aha"), SubResource("Resource_b0rha"), SubResource("Resource_rhtim"), SubResource("Resource_2p752"), SubResource("Resource_y81s8"), SubResource("Resource_i3aav"), SubResource("Resource_1k0tm")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRSLASH", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"DEFOG", &"HYPNOSIS", &"MORNINGSUN", &"NIGHTSLASH", &"WISH"])
+abilities = Array[StringName]([&"BIGPECKS", &"SUPERLUCK"])
+hidden_abilities = Array[StringName]([&"RIVALRY"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_okavw")]([SubResource("Resource_285pq")])
+height = 3
+weight = 21
+color = &"Gray"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 30)
+shadow_size = 1
+id = &"PIDOVE"
+display_name = "Pidove"

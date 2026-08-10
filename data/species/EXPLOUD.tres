@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uhns1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_eg3ui"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ggub2"]
+
+[sub_resource type="Resource" id="Resource_d3bsa"]
+script = ExtResource("1_uhns1")
+species = &"LOUDRED"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0umcp"]
+script = ExtResource("2_eg3ui")
+level = 0
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_tyhur"]
+script = ExtResource("2_eg3ui")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_hsa5t"]
+script = ExtResource("2_eg3ui")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_mru1x"]
+script = ExtResource("2_eg3ui")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_2sasr"]
+script = ExtResource("2_eg3ui")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_srkun"]
+script = ExtResource("2_eg3ui")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_pewoi"]
+script = ExtResource("2_eg3ui")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_s5xwj"]
+script = ExtResource("2_eg3ui")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_mul1b"]
+script = ExtResource("2_eg3ui")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_6sr7o"]
+script = ExtResource("2_eg3ui")
+level = 15
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_nhpax"]
+script = ExtResource("2_eg3ui")
+level = 15
+move = &"SLEEPTALK"
+
+[sub_resource type="Resource" id="Resource_jk5b6"]
+script = ExtResource("2_eg3ui")
+level = 23
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_4xpbb"]
+script = ExtResource("2_eg3ui")
+level = 29
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_n3ded"]
+script = ExtResource("2_eg3ui")
+level = 36
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_m0d1u"]
+script = ExtResource("2_eg3ui")
+level = 45
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_jrvbn"]
+script = ExtResource("2_eg3ui")
+level = 54
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_2ka6p"]
+script = ExtResource("2_eg3ui")
+level = 63
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_m4llt"]
+script = ExtResource("2_eg3ui")
+level = 72
+move = &"BOOMBURST"
+
+[sub_resource type="Resource" id="Resource_vfkpe"]
+script = ExtResource("2_eg3ui")
+level = 81
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "EXPLOUD"
+script = ExtResource("3_ggub2")
+species = &"EXPLOUD"
+category = "Loud Noise"
+pokedex_entry = "It has sound-generating organs all over its body. It communicates with others by adjusting the tone and volume of the cries it emits."
+base_hp = 104
+base_attack = 91
+base_defense = 63
+base_special_attack = 91
+base_special_defense = 73
+base_speed = 68
+ev_hp = 3
+base_exp = 245
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_eg3ui")]([SubResource("Resource_0umcp"), SubResource("Resource_tyhur"), SubResource("Resource_hsa5t"), SubResource("Resource_mru1x"), SubResource("Resource_2sasr"), SubResource("Resource_srkun"), SubResource("Resource_pewoi"), SubResource("Resource_s5xwj"), SubResource("Resource_mul1b"), SubResource("Resource_6sr7o"), SubResource("Resource_nhpax"), SubResource("Resource_jk5b6"), SubResource("Resource_4xpbb"), SubResource("Resource_n3ded"), SubResource("Resource_m0d1u"), SubResource("Resource_jrvbn"), SubResource("Resource_2ka6p"), SubResource("Resource_m4llt"), SubResource("Resource_vfkpe")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FIREFANG", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"TAUNT", &"TERRAINPULSE", &"THUNDERFANG", &"THUNDERPUNCH", &"TORMENT", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SOUNDPROOF"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_uhns1")]([SubResource("Resource_d3bsa")])
+height = 15
+weight = 840
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 19)
+id = &"EXPLOUD"
+display_name = "Exploud"

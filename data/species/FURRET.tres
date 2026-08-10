@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_u8klc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_60mjo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xvdg2"]
+
+[sub_resource type="Resource" id="Resource_3tprn"]
+script = ExtResource("1_u8klc")
+species = &"SENTRET"
+method = &"Level"
+parameter = "15"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_5163n"]
+script = ExtResource("2_60mjo")
+level = 0
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_32hk1"]
+script = ExtResource("2_60mjo")
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_tb37j"]
+script = ExtResource("2_60mjo")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_8f7qp"]
+script = ExtResource("2_60mjo")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_00te4"]
+script = ExtResource("2_60mjo")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_iflo8"]
+script = ExtResource("2_60mjo")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_nexd8"]
+script = ExtResource("2_60mjo")
+level = 4
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_1l3d5"]
+script = ExtResource("2_60mjo")
+level = 7
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_hvlxf"]
+script = ExtResource("2_60mjo")
+level = 13
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_ehlv2"]
+script = ExtResource("2_60mjo")
+level = 17
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_pb8rc"]
+script = ExtResource("2_60mjo")
+level = 21
+move = &"FOLLOWME"
+
+[sub_resource type="Resource" id="Resource_c6v0a"]
+script = ExtResource("2_60mjo")
+level = 28
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_5pq63"]
+script = ExtResource("2_60mjo")
+level = 32
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_6y5vm"]
+script = ExtResource("2_60mjo")
+level = 36
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_hihbe"]
+script = ExtResource("2_60mjo")
+level = 42
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_5udj6"]
+script = ExtResource("2_60mjo")
+level = 46
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_2fcdh"]
+script = ExtResource("2_60mjo")
+level = 50
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_1cgf8"]
+script = ExtResource("2_60mjo")
+level = 56
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "FURRET"
+script = ExtResource("3_xvdg2")
+species = &"FURRET"
+category = "Long Body"
+pokedex_entry = "A Furret has a very slim build. When under attack, it can squirm through narrow spaces and get away. In spite of its short limbs, it is very nimble and fleet."
+base_hp = 85
+base_attack = 76
+base_defense = 64
+base_special_attack = 45
+base_special_defense = 55
+base_speed = 90
+ev_speed = 2
+base_exp = 145
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_60mjo")]([SubResource("Resource_5163n"), SubResource("Resource_32hk1"), SubResource("Resource_tb37j"), SubResource("Resource_8f7qp"), SubResource("Resource_00te4"), SubResource("Resource_iflo8"), SubResource("Resource_nexd8"), SubResource("Resource_1l3d5"), SubResource("Resource_hvlxf"), SubResource("Resource_ehlv2"), SubResource("Resource_pb8rc"), SubResource("Resource_c6v0a"), SubResource("Resource_5pq63"), SubResource("Resource_6y5vm"), SubResource("Resource_hihbe"), SubResource("Resource_5udj6"), SubResource("Resource_2fcdh"), SubResource("Resource_1cgf8")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SURF", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"TRICK", &"UPROAR", &"UTURN", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"RUNAWAY", &"KEENEYE"])
+hidden_abilities = Array[StringName]([&"FRISK"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_u8klc")]([SubResource("Resource_3tprn")])
+height = 18
+weight = 325
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 24)
+id = &"FURRET"
+display_name = "Furret"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ftf7g"]
+
+[resource]
+resource_name = "JUSTIFIED"
+script = ExtResource("1_ftf7g")
+description = "Raises Attack when hit by a Dark-type move."
+id = &"JUSTIFIED"
+display_name = "Justified"

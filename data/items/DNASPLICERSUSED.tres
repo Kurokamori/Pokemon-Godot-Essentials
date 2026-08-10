@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ttm6v"]
+
+[resource]
+resource_name = "DNASPLICERSUSED"
+script = ExtResource("1_ttm6v")
+name_plural = "DNA Splicers"
+pocket = 8
+field_use = 1
+consumable = false
+show_quantity = false
+description = "A splicer that separates Kyurem and a certain Pokémon when they have been fused."
+id = &"DNASPLICERSUSED"
+display_name = "DNA Splicers"
+flags = Array[StringName]([&"KeyItem"])

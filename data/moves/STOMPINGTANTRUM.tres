@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_n0lx7"]
+
+[resource]
+resource_name = "STOMPINGTANTRUM"
+script = ExtResource("1_n0lx7")
+type = &"GROUND"
+category = 0
+power = 75
+total_pp = 10
+function_code = &"DoublePowerIfUserLastMoveFailed"
+description = "The user attacks driven by frustration. Power increases if the user's previous move failed."
+id = &"STOMPINGTANTRUM"
+display_name = "Stomping Tantrum"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

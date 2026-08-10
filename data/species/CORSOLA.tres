@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kyl1o"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p36h6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vqybw"]
+
+[sub_resource type="Resource" id="Resource_xo3j7"]
+script = ExtResource("1_kyl1o")
+species = &"CURSOLA"
+
+[sub_resource type="Resource" id="Resource_drxfh"]
+script = ExtResource("2_p36h6")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_57mc5"]
+script = ExtResource("2_p36h6")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_1jmbh"]
+script = ExtResource("2_p36h6")
+level = 5
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_dbop8"]
+script = ExtResource("2_p36h6")
+level = 10
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_taum7"]
+script = ExtResource("2_p36h6")
+level = 15
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_3glow"]
+script = ExtResource("2_p36h6")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_b26ae"]
+script = ExtResource("2_p36h6")
+level = 25
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_pc3he"]
+script = ExtResource("2_p36h6")
+level = 30
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_8iokd"]
+script = ExtResource("2_p36h6")
+level = 35
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_kdtc4"]
+script = ExtResource("2_p36h6")
+level = 40
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_oqcej"]
+script = ExtResource("2_p36h6")
+level = 45
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_gsrjy"]
+script = ExtResource("2_p36h6")
+level = 50
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_iv0d8"]
+script = ExtResource("2_p36h6")
+level = 55
+move = &"MIRRORCOAT"
+
+[resource]
+resource_name = "CORSOLA"
+script = ExtResource("3_vqybw")
+species = &"CORSOLA"
+category = "Coral"
+pokedex_entry = "Corsola live in warm southern seas. If the sea becomes polluted, the beautiful coral stalks become discolored and crumble away in tatters."
+types = Array[StringName]([&"WATER", &"ROCK"])
+base_hp = 65
+base_attack = 55
+base_defense = 95
+base_special_attack = 65
+base_special_defense = 95
+base_speed = 35
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 144
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_p36h6")]([SubResource("Resource_drxfh"), SubResource("Resource_57mc5"), SubResource("Resource_1jmbh"), SubResource("Resource_dbop8"), SubResource("Resource_taum7"), SubResource("Resource_3glow"), SubResource("Resource_b26ae"), SubResource("Resource_pc3he"), SubResource("Resource_8iokd"), SubResource("Resource_kdtc4"), SubResource("Resource_oqcej"), SubResource("Resource_gsrjy"), SubResource("Resource_iv0d8")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"EXPLOSION", &"FACADE", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"LIGHTSCREEN", &"LIQUIDATION", &"MAGICCOAT", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SURF", &"SWAGGER", &"THROATCHOP", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AMNESIA", &"AQUARING", &"CONFUSERAY", &"CURSE", &"HEADSMASH", &"ICICLESPEAR", &"INGRAIN", &"LIQUIDATION", &"MIST", &"NATUREPOWER", &"SCREECH", &"WATERPULSE"])
+abilities = Array[StringName]([&"HUSTLE", &"NATURALCURE"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+wild_item_uncommon = Array[StringName]([&"LUMINOUSMOSS"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kyl1o")]([SubResource("Resource_xo3j7")])
+height = 6
+weight = 50
+color = &"Pink"
+shape = &"Insectoid"
+habitat = &"Sea"
+generation = 2
+back_sprite_offset = Vector2i(-4, 51)
+front_sprite_offset = Vector2i(2, 31)
+id = &"CORSOLA"
+display_name = "Corsola"

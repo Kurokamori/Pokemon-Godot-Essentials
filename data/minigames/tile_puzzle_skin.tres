@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TilePuzzleSkin" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/tile_puzzle/tile_puzzle_skin.gd" id="1_skin"]
+
+[resource]
+script = ExtResource("1_skin")
+display_name = "Tile Puzzle"
+panel_color = Color(0.129412, 0.156863, 0.223529, 1)
+panel_border_color = Color(0.313726, 0.372549, 0.501961, 1)
+cursor_color = Color(0.972549, 0.815686, 0.188235, 1)
+highlight_color = Color(0.972549, 0.345098, 0.219608, 1)
+tile_size = 56
+tile_spacing = 2

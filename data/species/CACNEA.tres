@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4hh4s"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_uoy4x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xclgw"]
+
+[sub_resource type="Resource" id="Resource_xon1d"]
+script = ExtResource("1_4hh4s")
+species = &"CACTURNE"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_bi8f6"]
+script = ExtResource("2_uoy4x")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_gabyl"]
+script = ExtResource("2_uoy4x")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_gkn0d"]
+script = ExtResource("2_uoy4x")
+level = 4
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_dcw0j"]
+script = ExtResource("2_uoy4x")
+level = 7
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_nfrev"]
+script = ExtResource("2_uoy4x")
+level = 10
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_4kw7b"]
+script = ExtResource("2_uoy4x")
+level = 13
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_ox05n"]
+script = ExtResource("2_uoy4x")
+level = 16
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_tqguw"]
+script = ExtResource("2_uoy4x")
+level = 19
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_qv46k"]
+script = ExtResource("2_uoy4x")
+level = 22
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_km8du"]
+script = ExtResource("2_uoy4x")
+level = 26
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_lhuyl"]
+script = ExtResource("2_uoy4x")
+level = 30
+move = &"SPIKES"
+
+[sub_resource type="Resource" id="Resource_n1v04"]
+script = ExtResource("2_uoy4x")
+level = 34
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_0kxxi"]
+script = ExtResource("2_uoy4x")
+level = 38
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_mf83s"]
+script = ExtResource("2_uoy4x")
+level = 42
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_jaer4"]
+script = ExtResource("2_uoy4x")
+level = 46
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_jsl4v"]
+script = ExtResource("2_uoy4x")
+level = 50
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_81p64"]
+script = ExtResource("2_uoy4x")
+level = 54
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "CACNEA"
+script = ExtResource("3_xclgw")
+species = &"CACNEA"
+category = "Cactus"
+pokedex_entry = "Cacnea live in deserts with virtually no rainfall. It battles by swinging its thick, spiked arms. Once a year, a yellow flower blooms."
+types = Array[StringName]([&"GRASS"])
+base_hp = 50
+base_attack = 85
+base_defense = 40
+base_special_attack = 85
+base_special_defense = 40
+base_speed = 35
+ev_special_attack = 1
+base_exp = 67
+growth_rate = &"Parabolic"
+catch_rate = 190
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_uoy4x")]([SubResource("Resource_bi8f6"), SubResource("Resource_gabyl"), SubResource("Resource_gkn0d"), SubResource("Resource_dcw0j"), SubResource("Resource_nfrev"), SubResource("Resource_4kw7b"), SubResource("Resource_ox05n"), SubResource("Resource_tqguw"), SubResource("Resource_qv46k"), SubResource("Resource_km8du"), SubResource("Resource_lhuyl"), SubResource("Resource_n1v04"), SubResource("Resource_0kxxi"), SubResource("Resource_mf83s"), SubResource("Resource_jaer4"), SubResource("Resource_jsl4v"), SubResource("Resource_81p64")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"LOWKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THUNDERPUNCH", &"VENOSHOCK", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"ACID", &"BELCH", &"BLOCK", &"COUNTER", &"DISABLE", &"DYNAMICPUNCH", &"FELLSTINGER", &"LOWKICK", &"MAGICALLEAF", &"POWERUPPUNCH", &"SEEDBOMB", &"SWITCHEROO", &"TEETERDANCE", &"WORRYSEED"])
+abilities = Array[StringName]([&"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+wild_item_uncommon = Array[StringName]([&"STICKYBARB"])
+egg_groups = Array[StringName]([&"Grass", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4hh4s")]([SubResource("Resource_xon1d")])
+height = 4
+weight = 513
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 32)
+id = &"CACNEA"
+display_name = "Cacnea"

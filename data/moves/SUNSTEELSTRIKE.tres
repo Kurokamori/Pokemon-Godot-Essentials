@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_kfvu0"]
+
+[resource]
+resource_name = "SUNSTEELSTRIKE"
+script = ExtResource("1_kfvu0")
+type = &"STEEL"
+category = 0
+power = 100
+function_code = &"IgnoreTargetAbility"
+description = "The user slams into the target with the force of a meteor. Can't be stopped by the target's Ability."
+id = &"SUNSTEELSTRIKE"
+display_name = "Sunsteel Strike"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

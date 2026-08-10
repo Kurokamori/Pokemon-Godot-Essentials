@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5wmoc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q5yi7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5syi2"]
+
+[sub_resource type="Resource" id="Resource_66k53"]
+script = ExtResource("2_q5yi7")
+move = &"HYPERSPACEHOLE"
+
+[sub_resource type="Resource" id="Resource_b17fj"]
+script = ExtResource("2_q5yi7")
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_ir3lu"]
+script = ExtResource("2_q5yi7")
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_1taly"]
+script = ExtResource("2_q5yi7")
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_avi4t"]
+script = ExtResource("2_q5yi7")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_jrcnu"]
+script = ExtResource("2_q5yi7")
+level = 6
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_6syml"]
+script = ExtResource("2_q5yi7")
+level = 10
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_dnvwp"]
+script = ExtResource("2_q5yi7")
+level = 15
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_4pujm"]
+script = ExtResource("2_q5yi7")
+level = 19
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_0ywqy"]
+script = ExtResource("2_q5yi7")
+level = 25
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_boxqe"]
+script = ExtResource("2_q5yi7")
+level = 29
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_3f2ld"]
+script = ExtResource("2_q5yi7")
+level = 29
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_x2xbj"]
+script = ExtResource("2_q5yi7")
+level = 35
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_ngo76"]
+script = ExtResource("2_q5yi7")
+level = 46
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_q6l7q"]
+script = ExtResource("2_q5yi7")
+level = 50
+move = &"WONDERROOM"
+
+[sub_resource type="Resource" id="Resource_1chpb"]
+script = ExtResource("2_q5yi7")
+level = 50
+move = &"TRICKROOM"
+
+[sub_resource type="Resource" id="Resource_gmxc1"]
+script = ExtResource("2_q5yi7")
+level = 55
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_sqcwx"]
+script = ExtResource("2_q5yi7")
+level = 68
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_dgjb0"]
+script = ExtResource("2_q5yi7")
+level = 75
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_2w8hm"]
+script = ExtResource("2_q5yi7")
+level = 85
+move = &"HYPERSPACEHOLE"
+
+[resource]
+resource_name = "HOOPA"
+script = ExtResource("3_5syi2")
+species = &"HOOPA"
+form_name = "Hoopa Confined"
+category = "Mischief"
+pokedex_entry = "This troublemaker sends anything and everything to faraway places using its loop, which can warp space."
+types = Array[StringName]([&"PSYCHIC", &"GHOST"])
+base_hp = 80
+base_attack = 110
+base_defense = 60
+base_special_attack = 150
+base_special_defense = 130
+base_speed = 70
+ev_special_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_q5yi7")]([SubResource("Resource_66k53"), SubResource("Resource_b17fj"), SubResource("Resource_ir3lu"), SubResource("Resource_1taly"), SubResource("Resource_avi4t"), SubResource("Resource_jrcnu"), SubResource("Resource_6syml"), SubResource("Resource_dnvwp"), SubResource("Resource_4pujm"), SubResource("Resource_0ywqy"), SubResource("Resource_boxqe"), SubResource("Resource_3f2ld"), SubResource("Resource_x2xbj"), SubResource("Resource_ngo76"), SubResource("Resource_q6l7q"), SubResource("Resource_1chpb"), SubResource("Resource_gmxc1"), SubResource("Resource_sqcwx"), SubResource("Resource_dgjb0"), SubResource("Resource_2w8hm")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"BLOCK", &"BRICKBREAK", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"DARKPULSE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DUALCHOP", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GUNKSHOT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"QUASH", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THROATCHOP", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"MAGICIAN"])
+hatch_steps = 30720
+height = 5
+weight = 90
+color = &"Purple"
+shape = &"HeadArms"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"HOOPA"
+display_name = "Hoopa"
+flags = Array[StringName]([&"Mythical"])

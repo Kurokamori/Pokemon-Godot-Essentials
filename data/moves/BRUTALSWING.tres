@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_btrp7"]
+
+[resource]
+resource_name = "BRUTALSWING"
+script = ExtResource("1_btrp7")
+type = &"DARK"
+category = 0
+power = 60
+total_pp = 20
+target = &"AllNearOthers"
+description = "The user swings its body around violently to inflict damage on everything in its vicinity."
+id = &"BRUTALSWING"
+display_name = "Brutal Swing"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

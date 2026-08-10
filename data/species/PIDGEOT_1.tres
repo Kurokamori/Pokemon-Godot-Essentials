@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xxaan"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rjfca"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1v0x2"]
+
+[sub_resource type="Resource" id="Resource_b86xe"]
+script = ExtResource("1_xxaan")
+species = &"PIDGEOTTO"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pp8sx"]
+script = ExtResource("2_rjfca")
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_4tqqc"]
+script = ExtResource("2_rjfca")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_qavbu"]
+script = ExtResource("2_rjfca")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_icqpb"]
+script = ExtResource("2_rjfca")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_1nfn3"]
+script = ExtResource("2_rjfca")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_weod8"]
+script = ExtResource("2_rjfca")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_o7qhe"]
+script = ExtResource("2_rjfca")
+level = 9
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_es2ww"]
+script = ExtResource("2_rjfca")
+level = 13
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_2xkw2"]
+script = ExtResource("2_rjfca")
+level = 17
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_ux2qd"]
+script = ExtResource("2_rjfca")
+level = 22
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_t1h8s"]
+script = ExtResource("2_rjfca")
+level = 27
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_vi6bf"]
+script = ExtResource("2_rjfca")
+level = 32
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_jtkiv"]
+script = ExtResource("2_rjfca")
+level = 38
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_yklve"]
+script = ExtResource("2_rjfca")
+level = 44
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_xsn06"]
+script = ExtResource("2_rjfca")
+level = 50
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_26vh8"]
+script = ExtResource("2_rjfca")
+level = 56
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_k60q8"]
+script = ExtResource("2_rjfca")
+level = 62
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_iq2x4"]
+script = ExtResource("2_rjfca")
+level = 68
+move = &"HURRICANE"
+
+[resource]
+resource_name = "PIDGEOT_1"
+script = ExtResource("3_1v0x2")
+species = &"PIDGEOT"
+form = 1
+form_name = "Mega Pidgeot"
+category = "Bird"
+pokedex_entry = "With its muscular strength now greatly increased, it can fly continuously for two weeks without resting."
+pokedex_form = 1
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 83
+base_attack = 80
+base_defense = 80
+base_special_attack = 135
+base_special_defense = 80
+base_speed = 121
+ev_speed = 3
+base_exp = 290
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rjfca")]([SubResource("Resource_pp8sx"), SubResource("Resource_4tqqc"), SubResource("Resource_qavbu"), SubResource("Resource_icqpb"), SubResource("Resource_1nfn3"), SubResource("Resource_weod8"), SubResource("Resource_o7qhe"), SubResource("Resource_es2ww"), SubResource("Resource_2xkw2"), SubResource("Resource_ux2qd"), SubResource("Resource_t1h8s"), SubResource("Resource_vi6bf"), SubResource("Resource_jtkiv"), SubResource("Resource_yklve"), SubResource("Resource_xsn06"), SubResource("Resource_26vh8"), SubResource("Resource_k60q8"), SubResource("Resource_iq2x4")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"NOGUARD"])
+hidden_abilities = Array[StringName]([&"NOGUARD"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_xxaan")]([SubResource("Resource_b86xe")])
+height = 22
+weight = 505
+color = &"Brown"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 6
+mega_stone = &"PIDGEOTITE"
+back_sprite_offset = Vector2i(0, 30)
+front_sprite_offset = Vector2i(0, 4)
+shadow_size = 3
+id = &"PIDGEOT_1"
+display_name = "Pidgeot"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StatData" format=3]
+
+[ext_resource type="Script" path="res://src/data/stat_data.gd" id="1_gydxy"]
+
+[resource]
+resource_name = "EVASION"
+script = ExtResource("1_gydxy")
+type = 2
+name_brief = "Eva"
+id = &"EVASION"
+display_name = "evasiveness"

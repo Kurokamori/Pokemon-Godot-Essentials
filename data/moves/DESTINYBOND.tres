@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_88sn6"]
+
+[resource]
+resource_name = "DESTINYBOND"
+script = ExtResource("1_88sn6")
+type = &"GHOST"
+accuracy = 0
+target = &"User"
+function_code = &"AttackerFaintsIfUserFaints"
+description = "When this move is used, if the user faints, the foe that landed the knockout hit also faints."
+id = &"DESTINYBOND"
+display_name = "Destiny Bond"

@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_af702"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pr2j7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6d6uw"]
+
+[sub_resource type="Resource" id="Resource_bpm8x"]
+script = ExtResource("2_pr2j7")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_43ao4"]
+script = ExtResource("2_pr2j7")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_365v3"]
+script = ExtResource("2_pr2j7")
+level = 5
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_kq7n5"]
+script = ExtResource("2_pr2j7")
+level = 10
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_huq2o"]
+script = ExtResource("2_pr2j7")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_jb42f"]
+script = ExtResource("2_pr2j7")
+level = 20
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_mmcen"]
+script = ExtResource("2_pr2j7")
+level = 25
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_5clu5"]
+script = ExtResource("2_pr2j7")
+level = 30
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_ienmb"]
+script = ExtResource("2_pr2j7")
+level = 35
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_kka14"]
+script = ExtResource("2_pr2j7")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_b7i2v"]
+script = ExtResource("2_pr2j7")
+level = 45
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_yull1"]
+script = ExtResource("2_pr2j7")
+level = 50
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_6ng4k"]
+script = ExtResource("2_pr2j7")
+level = 55
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_cwm2p"]
+script = ExtResource("2_pr2j7")
+level = 60
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_bfqpv"]
+script = ExtResource("2_pr2j7")
+level = 65
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_8h6qn"]
+script = ExtResource("2_pr2j7")
+level = 70
+move = &"THRASH"
+
+[resource]
+resource_name = "THUNDURUS"
+script = ExtResource("3_6d6uw")
+species = &"THUNDURUS"
+form_name = "Incarnate Forme"
+category = "Bolt Strike"
+pokedex_entry = "The spikes on its tail discharge immense bolts of lightning. It flies around the Unova region firing off lightning bolts."
+types = Array[StringName]([&"ELECTRIC", &"FLYING"])
+base_hp = 79
+base_attack = 115
+base_defense = 70
+base_special_attack = 125
+base_special_defense = 80
+base_speed = 111
+ev_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 3
+base_happiness = 90
+level_up_moves = Array[ExtResource("2_pr2j7")]([SubResource("Resource_bpm8x"), SubResource("Resource_43ao4"), SubResource("Resource_365v3"), SubResource("Resource_kq7n5"), SubResource("Resource_huq2o"), SubResource("Resource_jb42f"), SubResource("Resource_mmcen"), SubResource("Resource_5clu5"), SubResource("Resource_ienmb"), SubResource("Resource_kka14"), SubResource("Resource_b7i2v"), SubResource("Resource_yull1"), SubResource("Resource_6ng4k"), SubResource("Resource_cwm2p"), SubResource("Resource_bfqpv"), SubResource("Resource_8h6qn")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTROBALL", &"ELECTROWEB", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLING", &"FLY", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"RISINGVOLTAGE", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SKYDROP", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SMARTSTRIKE", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"VOLTSWITCH", &"WEATHERBALL", &"WILDCHARGE"])
+abilities = Array[StringName]([&"PRANKSTER"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+hatch_steps = 30720
+height = 15
+weight = 610
+color = &"Blue"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 8)
+id = &"THUNDURUS"
+display_name = "Thundurus"
+flags = Array[StringName]([&"Legendary"])

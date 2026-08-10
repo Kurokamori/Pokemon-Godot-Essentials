@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_024rg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fx1be"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lowqj"]
+
+[sub_resource type="Resource" id="Resource_0ruku"]
+script = ExtResource("1_024rg")
+species = &"STEENEE"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_504x4"]
+script = ExtResource("2_fx1be")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_tnxv1"]
+script = ExtResource("2_fx1be")
+level = 4
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_nbioi"]
+script = ExtResource("2_fx1be")
+level = 8
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_bco1n"]
+script = ExtResource("2_fx1be")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_ja31l"]
+script = ExtResource("2_fx1be")
+level = 16
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_uouir"]
+script = ExtResource("2_fx1be")
+level = 20
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_ys20g"]
+script = ExtResource("2_fx1be")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_1axsk"]
+script = ExtResource("2_fx1be")
+level = 28
+move = &"TEETERDANCE"
+
+[sub_resource type="Resource" id="Resource_5uvn5"]
+script = ExtResource("2_fx1be")
+level = 32
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_648te"]
+script = ExtResource("2_fx1be")
+level = 36
+move = &"AROMATHERAPY"
+
+[resource]
+resource_name = "BOUNSWEET"
+script = ExtResource("3_lowqj")
+species = &"BOUNSWEET"
+category = "Fruit"
+pokedex_entry = "Because of its sweet, delicious aroma, bird Pokémon are always after it, but it's not intelligent enough to care."
+types = Array[StringName]([&"GRASS"])
+base_hp = 42
+base_attack = 30
+base_defense = 38
+base_special_attack = 30
+base_special_defense = 38
+base_speed = 32
+ev_hp = 1
+base_exp = 42
+growth_rate = &"Parabolic"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 235
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fx1be")]([SubResource("Resource_504x4"), SubResource("Resource_tnxv1"), SubResource("Resource_nbioi"), SubResource("Resource_bco1n"), SubResource("Resource_ja31l"), SubResource("Resource_uouir"), SubResource("Resource_ys20g"), SubResource("Resource_1axsk"), SubResource("Resource_5uvn5"), SubResource("Resource_648te")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BOUNCE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"HELPINGHAND", &"HIDDENPOWER", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PLAYROUGH", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"WORRYSEED", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ACUPRESSURE", &"ENDEAVOR", &"SYNTHESIS"])
+abilities = Array[StringName]([&"LEAFGUARD", &"OBLIVIOUS"])
+hidden_abilities = Array[StringName]([&"SWEETVEIL"])
+wild_item_uncommon = Array[StringName]([&"GRASSYSEED"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_024rg")]([SubResource("Resource_0ruku")])
+height = 3
+weight = 32
+color = &"Purple"
+shape = &"HeadLegs"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 32)
+shadow_size = 1
+id = &"BOUNSWEET"
+display_name = "Bounsweet"

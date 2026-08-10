@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_eyaog"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8fiap"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tjgxg"]
+
+[sub_resource type="Resource" id="Resource_o2wab"]
+script = ExtResource("1_eyaog")
+species = &"GLOOM"
+method = &"Item"
+parameter = "SUNSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8lg6i"]
+script = ExtResource("2_8fiap")
+level = 0
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_kay1r"]
+script = ExtResource("2_8fiap")
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_2vgim"]
+script = ExtResource("2_8fiap")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_x08ia"]
+script = ExtResource("2_8fiap")
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_jjxln"]
+script = ExtResource("2_8fiap")
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_2royr"]
+script = ExtResource("2_8fiap")
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_t788e"]
+script = ExtResource("2_8fiap")
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_5d3xg"]
+script = ExtResource("2_8fiap")
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_ywdlq"]
+script = ExtResource("2_8fiap")
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_p7wde"]
+script = ExtResource("2_8fiap")
+move = &"GRASSYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_oydwa"]
+script = ExtResource("2_8fiap")
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_wqoa1"]
+script = ExtResource("2_8fiap")
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_aauj0"]
+script = ExtResource("2_8fiap")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_fcj4v"]
+script = ExtResource("2_8fiap")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_0en4c"]
+script = ExtResource("2_8fiap")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_jpmlm"]
+script = ExtResource("2_8fiap")
+move = &"SWEETSCENT"
+
+[resource]
+resource_name = "BELLOSSOM"
+script = ExtResource("3_tjgxg")
+species = &"BELLOSSOM"
+category = "Flower"
+pokedex_entry = "Its flower petals deepen in color through exposure to sunlight. When cloudy weather persists, it does a dance that is thought to be a sun-summoning ritual."
+types = Array[StringName]([&"GRASS"])
+base_hp = 75
+base_attack = 80
+base_defense = 95
+base_special_attack = 90
+base_special_defense = 100
+base_speed = 50
+ev_special_defense = 3
+base_exp = 245
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8fiap")]([SubResource("Resource_8lg6i"), SubResource("Resource_kay1r"), SubResource("Resource_2vgim"), SubResource("Resource_x08ia"), SubResource("Resource_jjxln"), SubResource("Resource_2royr"), SubResource("Resource_t788e"), SubResource("Resource_5d3xg"), SubResource("Resource_ywdlq"), SubResource("Resource_p7wde"), SubResource("Resource_oydwa"), SubResource("Resource_wqoa1"), SubResource("Resource_aauj0"), SubResource("Resource_fcj4v"), SubResource("Resource_0en4c"), SubResource("Resource_jpmlm")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BATONPASS", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CUT", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LASERFOCUS", &"LEAFBLADE", &"LEAFSTORM", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PLAYROUGH", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"UPROAR", &"VENOSHOCK", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"HEALER"])
+wild_item_uncommon = Array[StringName]([&"ABSORBBULB"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_eyaog")]([SubResource("Resource_o2wab")])
+height = 4
+weight = 58
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 33)
+shadow_size = 1
+id = &"BELLOSSOM"
+display_name = "Bellossom"

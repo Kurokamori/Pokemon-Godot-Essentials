@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1pstl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i82tn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dtovg"]
+
+[sub_resource type="Resource" id="Resource_8sc64"]
+script = ExtResource("2_i82tn")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_awjm1"]
+script = ExtResource("2_i82tn")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_op8la"]
+script = ExtResource("2_i82tn")
+level = 5
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_dm14r"]
+script = ExtResource("2_i82tn")
+level = 10
+move = &"SNARL"
+
+[sub_resource type="Resource" id="Resource_7b2bk"]
+script = ExtResource("2_i82tn")
+level = 15
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_etqlx"]
+script = ExtResource("2_i82tn")
+level = 20
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_pdkqj"]
+script = ExtResource("2_i82tn")
+level = 25
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_7ydgs"]
+script = ExtResource("2_i82tn")
+level = 30
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_dhqqb"]
+script = ExtResource("2_i82tn")
+level = 35
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_j2wry"]
+script = ExtResource("2_i82tn")
+level = 40
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_lggy2"]
+script = ExtResource("2_i82tn")
+level = 45
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_lyd7d"]
+script = ExtResource("2_i82tn")
+level = 50
+move = &"OBLIVIONWING"
+
+[sub_resource type="Resource" id="Resource_aeag2"]
+script = ExtResource("2_i82tn")
+level = 55
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_ukgv7"]
+script = ExtResource("2_i82tn")
+level = 60
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_g3t3f"]
+script = ExtResource("2_i82tn")
+level = 65
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_4bacr"]
+script = ExtResource("2_i82tn")
+level = 70
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_twkkv"]
+script = ExtResource("2_i82tn")
+level = 75
+move = &"FOCUSBLAST"
+
+[sub_resource type="Resource" id="Resource_fsf0d"]
+script = ExtResource("2_i82tn")
+level = 80
+move = &"SKYATTACK"
+
+[sub_resource type="Resource" id="Resource_605ph"]
+script = ExtResource("2_i82tn")
+level = 85
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "YVELTAL"
+script = ExtResource("3_dtovg")
+species = &"YVELTAL"
+category = "Destruction"
+pokedex_entry = "When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more."
+types = Array[StringName]([&"DARK", &"FLYING"])
+base_hp = 126
+base_attack = 131
+base_defense = 95
+base_special_attack = 131
+base_special_defense = 98
+base_speed = 99
+ev_hp = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_i82tn")]([SubResource("Resource_8sc64"), SubResource("Resource_awjm1"), SubResource("Resource_op8la"), SubResource("Resource_dm14r"), SubResource("Resource_7b2bk"), SubResource("Resource_etqlx"), SubResource("Resource_pdkqj"), SubResource("Resource_7ydgs"), SubResource("Resource_dhqqb"), SubResource("Resource_j2wry"), SubResource("Resource_lggy2"), SubResource("Resource_lyd7d"), SubResource("Resource_aeag2"), SubResource("Resource_ukgv7"), SubResource("Resource_g3t3f"), SubResource("Resource_4bacr"), SubResource("Resource_twkkv"), SubResource("Resource_fsf0d"), SubResource("Resource_605ph")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRSLASH", &"BLOCK", &"BODYSLAM", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"DRAGONCLAW", &"DREAMEATER", &"DUALWINGBEAT", &"EMBARGO", &"ENDURE", &"FACADE", &"FLY", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYPERBEAM", &"HYPERVOICE", &"KNOCKOFF", &"LASERFOCUS", &"LASHOUT", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PHANTOMFORCE", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNARL", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UTURN", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"DARKAURA"])
+hatch_steps = 30720
+height = 58
+weight = 2030
+shape = &"Winged"
+generation = 6
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(12, -2)
+shadow_size = 3
+id = &"YVELTAL"
+display_name = "Yveltal"
+flags = Array[StringName]([&"Legendary"])

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0s5we"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_meqva"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_aimf5"]
+
+[sub_resource type="Resource" id="Resource_pms2m"]
+script = ExtResource("1_0s5we")
+species = &"SHELGON"
+method = &"Level"
+parameter = "50"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_eeyim"]
+script = ExtResource("2_meqva")
+level = 0
+move = &"FLY"
+
+[sub_resource type="Resource" id="Resource_v8xmb"]
+script = ExtResource("2_meqva")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_atdcs"]
+script = ExtResource("2_meqva")
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_u0u5b"]
+script = ExtResource("2_meqva")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_oksld"]
+script = ExtResource("2_meqva")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_b5a68"]
+script = ExtResource("2_meqva")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_br0xa"]
+script = ExtResource("2_meqva")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_hnha4"]
+script = ExtResource("2_meqva")
+level = 15
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_w81qb"]
+script = ExtResource("2_meqva")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_ctixp"]
+script = ExtResource("2_meqva")
+level = 25
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_5u8wk"]
+script = ExtResource("2_meqva")
+level = 33
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_3ao8l"]
+script = ExtResource("2_meqva")
+level = 39
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_jgmo3"]
+script = ExtResource("2_meqva")
+level = 46
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_pfyf4"]
+script = ExtResource("2_meqva")
+level = 55
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_86skw"]
+script = ExtResource("2_meqva")
+level = 64
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_44no0"]
+script = ExtResource("2_meqva")
+level = 73
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "SALAMENCE"
+script = ExtResource("3_aimf5")
+species = &"SALAMENCE"
+category = "Dragon"
+pokedex_entry = "After many long years, its cellular structure underwent a sudden mutation to grow wings. When angered, it loses all thought and rampages out of control."
+types = Array[StringName]([&"DRAGON", &"FLYING"])
+base_hp = 95
+base_attack = 135
+base_defense = 80
+base_special_attack = 110
+base_special_defense = 80
+base_speed = 100
+ev_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_meqva")]([SubResource("Resource_eeyim"), SubResource("Resource_v8xmb"), SubResource("Resource_atdcs"), SubResource("Resource_u0u5b"), SubResource("Resource_oksld"), SubResource("Resource_b5a68"), SubResource("Resource_br0xa"), SubResource("Resource_hnha4"), SubResource("Resource_w81qb"), SubResource("Resource_ctixp"), SubResource("Resource_5u8wk"), SubResource("Resource_3ao8l"), SubResource("Resource_jgmo3"), SubResource("Resource_pfyf4"), SubResource("Resource_86skw"), SubResource("Resource_44no0")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"AQUATAIL", &"ATTRACT", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DEFENSECURL", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"INCINERATE", &"IRONDEFENSE", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROOST", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THUNDERFANG", &"TWISTER", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"MOXIE"])
+wild_item_uncommon = Array[StringName]([&"DRAGONFANG"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_0s5we")]([SubResource("Resource_pms2m")])
+height = 15
+weight = 1026
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-4, 20)
+id = &"SALAMENCE"
+display_name = "Salamence"

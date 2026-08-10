@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_g55ep"]
+
+[resource]
+resource_name = "CALMMIND"
+script = ExtResource("1_g55ep")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserSpAtkSpDef1"
+description = "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats."
+id = &"CALMMIND"
+display_name = "Calm Mind"

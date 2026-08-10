@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3muu7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ymwcy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dbsvv"]
+
+[sub_resource type="Resource" id="Resource_omr5m"]
+script = ExtResource("2_ymwcy")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_c5c3f"]
+script = ExtResource("2_ymwcy")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_3rryl"]
+script = ExtResource("2_ymwcy")
+level = 7
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_tnnmc"]
+script = ExtResource("2_ymwcy")
+level = 14
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_8hvtt"]
+script = ExtResource("2_ymwcy")
+level = 21
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_yam2e"]
+script = ExtResource("2_ymwcy")
+level = 28
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_ynjwi"]
+script = ExtResource("2_ymwcy")
+level = 35
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_hqhwb"]
+script = ExtResource("2_ymwcy")
+level = 42
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_c8cuv"]
+script = ExtResource("2_ymwcy")
+level = 49
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_c8him"]
+script = ExtResource("2_ymwcy")
+level = 56
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_f08yw"]
+script = ExtResource("2_ymwcy")
+level = 63
+move = &"SIMPLEBEAM"
+
+[sub_resource type="Resource" id="Resource_1ctrc"]
+script = ExtResource("2_ymwcy")
+level = 70
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_57u0t"]
+script = ExtResource("2_ymwcy")
+level = 77
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_ljc7n"]
+script = ExtResource("2_ymwcy")
+level = 84
+move = &"TECHNOBLAST"
+
+[sub_resource type="Resource" id="Resource_qylev"]
+script = ExtResource("2_ymwcy")
+level = 91
+move = &"SELFDESTRUCT"
+
+[resource]
+resource_name = "GENESECT"
+script = ExtResource("3_dbsvv")
+species = &"GENESECT"
+form_name = "Normal"
+category = "Paleozoic"
+pokedex_entry = "This ancient bug Pokémon was altered by Team Plasma. They upgraded the cannon on its back."
+types = Array[StringName]([&"BUG", &"STEEL"])
+base_hp = 71
+base_attack = 120
+base_defense = 95
+base_special_attack = 120
+base_special_defense = 95
+base_speed = 99
+ev_attack = 1
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_ymwcy")]([SubResource("Resource_omr5m"), SubResource("Resource_c5c3f"), SubResource("Resource_3rryl"), SubResource("Resource_tnnmc"), SubResource("Resource_8hvtt"), SubResource("Resource_yam2e"), SubResource("Resource_ynjwi"), SubResource("Resource_hqhwb"), SubResource("Resource_c8cuv"), SubResource("Resource_c8him"), SubResource("Resource_f08yw"), SubResource("Resource_1ctrc"), SubResource("Resource_57u0t"), SubResource("Resource_ljc7n"), SubResource("Resource_qylev")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ASSURANCE", &"BLAZEKICK", &"BLIZZARD", &"BUGBITE", &"BUGBUZZ", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASH", &"FLASHCANNON", &"FLY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRAVITY", &"GUNKSHOT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"INFESTATION", &"IRONDEFENSE", &"IRONHEAD", &"LASTRESORT", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWCLAW", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELBEAM", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRIATTACK", &"UTURN", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"DOWNLOAD"])
+hatch_steps = 30720
+height = 15
+weight = 825
+color = &"Purple"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(3, 46)
+front_sprite_offset = Vector2i(-6, 19)
+id = &"GENESECT"
+display_name = "Genesect"
+flags = Array[StringName]([&"Mythical"])

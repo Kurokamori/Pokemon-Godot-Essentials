@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bkep1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_r2msb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qidge"]
+
+[sub_resource type="Resource" id="Resource_y5vdn"]
+script = ExtResource("1_bkep1")
+species = &"MEOWTH"
+method = &"Level"
+parameter = "28"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_4b4a1"]
+script = ExtResource("2_r2msb")
+level = 0
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_b32np"]
+script = ExtResource("2_r2msb")
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_1lkgq"]
+script = ExtResource("2_r2msb")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_jir15"]
+script = ExtResource("2_r2msb")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_pm33l"]
+script = ExtResource("2_r2msb")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_2wgxc"]
+script = ExtResource("2_r2msb")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_1odmi"]
+script = ExtResource("2_r2msb")
+level = 12
+move = &"PAYDAY"
+
+[sub_resource type="Resource" id="Resource_jf3wq"]
+script = ExtResource("2_r2msb")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ujntf"]
+script = ExtResource("2_r2msb")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_cwygl"]
+script = ExtResource("2_r2msb")
+level = 24
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_yiyat"]
+script = ExtResource("2_r2msb")
+level = 31
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_tr1du"]
+script = ExtResource("2_r2msb")
+level = 36
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_qg0o0"]
+script = ExtResource("2_r2msb")
+level = 42
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_8odic"]
+script = ExtResource("2_r2msb")
+level = 48
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_gjm42"]
+script = ExtResource("2_r2msb")
+level = 54
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "PERSIAN"
+script = ExtResource("3_qidge")
+species = &"PERSIAN"
+category = "Classy Cat"
+pokedex_entry = "A Persian's six bold whiskers sense air movements to determine what is in its vicinity. It becomes docile if grabbed by the whiskers."
+base_hp = 65
+base_attack = 70
+base_defense = 60
+base_special_attack = 65
+base_special_defense = 65
+base_speed = 115
+ev_speed = 2
+base_exp = 154
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_r2msb")]([SubResource("Resource_4b4a1"), SubResource("Resource_b32np"), SubResource("Resource_1lkgq"), SubResource("Resource_jir15"), SubResource("Resource_pm33l"), SubResource("Resource_2wgxc"), SubResource("Resource_1odmi"), SubResource("Resource_jf3wq"), SubResource("Resource_ujntf"), SubResource("Resource_cwygl"), SubResource("Resource_yiyat"), SubResource("Resource_tr1du"), SubResource("Resource_qg0o0"), SubResource("Resource_8odic"), SubResource("Resource_gjm42")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICYWIND", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PLAYROUGH", &"POWERGEM", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SKITTERSMACK", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"UPROAR", &"UTURN", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"LIMBER", &"TECHNICIAN"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+wild_item_uncommon = Array[StringName]([&"QUICKCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_bkep1")]([SubResource("Resource_y5vdn")])
+height = 10
+weight = 320
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-4, 20)
+id = &"PERSIAN"
+display_name = "Persian"

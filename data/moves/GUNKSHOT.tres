@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_pn7vj"]
+
+[resource]
+resource_name = "GUNKSHOT"
+script = ExtResource("1_pn7vj")
+type = &"POISON"
+category = 0
+power = 120
+accuracy = 80
+function_code = &"PoisonTarget"
+effect_chance = 30
+description = "The user shoots filthy garbage at the target to attack. It may also poison the target."
+id = &"GUNKSHOT"
+display_name = "Gunk Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

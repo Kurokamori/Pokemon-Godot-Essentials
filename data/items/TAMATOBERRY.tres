@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4tota"]
+
+[resource]
+resource_name = "TAMATOBERRY"
+script = ExtResource("1_4tota")
+name_plural = "Tamato Berries"
+pocket = 5
+price = 20
+sell_price = 10
+field_use = 1
+description = "Using it on a Pokémon makes it more friendly, but it also lowers its base Speed stat."
+id = &"TAMATOBERRY"
+display_name = "Tamato Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_PSYCHIC_90"])

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_eocdg"]
+
+[resource]
+resource_name = "ABSOLITE"
+script = ExtResource("1_eocdg")
+name_plural = "Absolites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Absol hold it, and it will be able to Mega Evolve."
+id = &"ABSOLITE"
+display_name = "Absolite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

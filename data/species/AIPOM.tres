@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_h8xma"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_r77wg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gokep"]
+
+[sub_resource type="Resource" id="Resource_8jixb"]
+script = ExtResource("1_h8xma")
+species = &"AMBIPOM"
+method = &"HasMove"
+parameter = "DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_l3q1a"]
+script = ExtResource("2_r77wg")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_cb58q"]
+script = ExtResource("2_r77wg")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_q4t5c"]
+script = ExtResource("2_r77wg")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_cg64j"]
+script = ExtResource("2_r77wg")
+level = 8
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_uoh3v"]
+script = ExtResource("2_r77wg")
+level = 11
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_u3ilc"]
+script = ExtResource("2_r77wg")
+level = 15
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_pxbql"]
+script = ExtResource("2_r77wg")
+level = 18
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_exgpm"]
+script = ExtResource("2_r77wg")
+level = 22
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_rgjdq"]
+script = ExtResource("2_r77wg")
+level = 25
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_uiahu"]
+script = ExtResource("2_r77wg")
+level = 29
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_00ej1"]
+script = ExtResource("2_r77wg")
+level = 32
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_yckr5"]
+script = ExtResource("2_r77wg")
+level = 36
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_6otm1"]
+script = ExtResource("2_r77wg")
+level = 39
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_s3fjs"]
+script = ExtResource("2_r77wg")
+level = 43
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "AIPOM"
+script = ExtResource("3_gokep")
+species = &"AIPOM"
+category = "Long Tail"
+pokedex_entry = "Its tail ends with a dexterous, handlike appendage. However, because it uses the tail so much, Aipom's real hands have become rather clumsy."
+base_hp = 55
+base_attack = 70
+base_defense = 55
+base_special_attack = 40
+base_special_defense = 55
+base_speed = 85
+ev_speed = 1
+base_exp = 72
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_r77wg")]([SubResource("Resource_l3q1a"), SubResource("Resource_cb58q"), SubResource("Resource_q4t5c"), SubResource("Resource_cg64j"), SubResource("Resource_uoh3v"), SubResource("Resource_u3ilc"), SubResource("Resource_pxbql"), SubResource("Resource_exgpm"), SubResource("Resource_rgjdq"), SubResource("Resource_uiahu"), SubResource("Resource_00ej1"), SubResource("Resource_yckr5"), SubResource("Resource_6otm1"), SubResource("Resource_s3fjs")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GRASSKNOT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEPUNCH", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"UTURN", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"AGILITY", &"BEATUP", &"BOUNCE", &"COUNTER", &"COVET", &"FAKEOUT", &"QUICKGUARD", &"REVENGE", &"SCREECH", &"SLAM", &"SPITE", &"SWITCHEROO"])
+abilities = Array[StringName]([&"RUNAWAY", &"PICKUP"])
+hidden_abilities = Array[StringName]([&"SKILLLINK"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_h8xma")]([SubResource("Resource_8jixb")])
+height = 8
+weight = 115
+color = &"Purple"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(-6, 50)
+front_sprite_offset = Vector2i(0, 23)
+shadow_size = 1
+id = &"AIPOM"
+display_name = "Aipom"

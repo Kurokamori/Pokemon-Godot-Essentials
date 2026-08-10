@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ChallengeRules" format=3]
+
+[ext_resource type="Script" path="res://src/battle/challenge_format_instinct.gd" id="1_k1hhw"]
+[ext_resource type="Script" path="res://src/battle/challenge_rules.gd" id="2_f3vve"]
+
+[sub_resource type="Resource" id="Resource_01m37"]
+script = ExtResource("1_k1hhw")
+entry_message = "Here your Pokemon fight on instinct. Choose them well; you cannot order them."
+
+[resource]
+script = ExtResource("2_f3vve")
+display_name = "Battle Palace"
+facility_id = &"BATTLEPALACE"
+format = SubResource("Resource_01m37")
+banned_species = Array[StringName]([&"MEWTWO", &"MEW", &"LUGIA", &"HOOH", &"CELEBI", &"KYOGRE", &"GROUDON", &"RAYQUAZA", &"JIRACHI", &"DEOXYS", &"DIALGA", &"PALKIA", &"GIRATINA", &"PHIONE", &"MANAPHY", &"DARKRAI", &"SHAYMIN", &"ARCEUS", &"RESHIRAM", &"ZEKROM", &"KYUREM", &"VICTINI", &"KELDEO", &"MELOETTA", &"GENESECT", &"XERNEAS", &"YVELTAL", &"ZYGARDE", &"DIANCIE", &"HOOPA", &"VOLCANION", &"COSMOG", &"COSMOEM", &"SOLGALEO", &"LUNALA", &"NECROZMA", &"MAGEARNA", &"MARSHADOW", &"ZERAORA", &"ZACIAN", &"ZAMAZENTA", &"ETERNATUS", &"ZARUDE", &"CALYREX"])
+prize_points = 4

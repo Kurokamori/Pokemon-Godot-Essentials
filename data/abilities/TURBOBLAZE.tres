@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_cfr7i"]
+
+[resource]
+resource_name = "TURBOBLAZE"
+script = ExtResource("1_cfr7i")
+description = "Moves can be used regardless of Abilities."
+id = &"TURBOBLAZE"
+display_name = "Turboblaze"

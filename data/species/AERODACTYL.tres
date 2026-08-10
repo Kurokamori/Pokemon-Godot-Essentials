@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xpcwv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4gxkt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sf1o6"]
+
+[sub_resource type="Resource" id="Resource_4gia6"]
+script = ExtResource("2_4gxkt")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_4pjg7"]
+script = ExtResource("2_4gxkt")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_ngmv8"]
+script = ExtResource("2_4gxkt")
+level = 5
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_1a4o4"]
+script = ExtResource("2_4gxkt")
+level = 10
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_5hjwn"]
+script = ExtResource("2_4gxkt")
+level = 15
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_t0jqy"]
+script = ExtResource("2_4gxkt")
+level = 20
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_ltgf4"]
+script = ExtResource("2_4gxkt")
+level = 25
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_x16xw"]
+script = ExtResource("2_4gxkt")
+level = 30
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_qejer"]
+script = ExtResource("2_4gxkt")
+level = 35
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_t5gdy"]
+script = ExtResource("2_4gxkt")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_jm5td"]
+script = ExtResource("2_4gxkt")
+level = 45
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_mm5wy"]
+script = ExtResource("2_4gxkt")
+level = 50
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_rkjg7"]
+script = ExtResource("2_4gxkt")
+level = 55
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_cynyj"]
+script = ExtResource("2_4gxkt")
+level = 60
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "AERODACTYL"
+script = ExtResource("3_sf1o6")
+species = &"AERODACTYL"
+category = "Fossil"
+pokedex_entry = "Aerodactyl is a Pokémon from the age of dinosaurs. It was regenerated from DNA extracted from amber. It is imagined to have been the king of the skies."
+types = Array[StringName]([&"ROCK", &"FLYING"])
+base_hp = 80
+base_attack = 105
+base_defense = 65
+base_special_attack = 60
+base_special_defense = 75
+base_speed = 130
+ev_speed = 2
+base_exp = 180
+growth_rate = &"Slow"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4gxkt")]([SubResource("Resource_4gia6"), SubResource("Resource_4pjg7"), SubResource("Resource_ngmv8"), SubResource("Resource_1a4o4"), SubResource("Resource_5hjwn"), SubResource("Resource_t0jqy"), SubResource("Resource_ltgf4"), SubResource("Resource_x16xw"), SubResource("Resource_qejer"), SubResource("Resource_t5gdy"), SubResource("Resource_jm5td"), SubResource("Resource_mm5wy"), SubResource("Resource_rkjg7"), SubResource("Resource_cynyj")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"ANCIENTPOWER", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYPERBEAM", &"ICEFANG", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"THUNDERFANG", &"TORMENT", &"TWISTER"])
+egg_moves = Array[StringName]([&"ASSURANCE", &"CURSE", &"DRAGONBREATH", &"ROOST", &"TAILWIND", &"WHIRLWIND", &"WIDEGUARD"])
+abilities = Array[StringName]([&"ROCKHEAD", &"PRESSURE"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 8960
+height = 18
+weight = 590
+color = &"Purple"
+shape = &"Winged"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 4)
+id = &"AERODACTYL"
+display_name = "Aerodactyl"

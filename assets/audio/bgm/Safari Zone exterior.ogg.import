@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://muasi5gw5ki3"
+path="res://.godot/imported/Safari Zone exterior.ogg-fc9c8ba45e934a7cc3fc1e005b3b7d1e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Safari Zone exterior.ogg"
+dest_files=["res://.godot/imported/Safari Zone exterior.ogg-fc9c8ba45e934a7cc3fc1e005b3b7d1e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

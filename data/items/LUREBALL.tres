@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_fxio0"]
+
+[resource]
+resource_name = "LUREBALL"
+script = ExtResource("1_fxio0")
+name_plural = "Lure Balls"
+pocket = 3
+price = 300
+sell_price = 150
+battle_use = 4
+description = "A Poké Ball for catching Pokémon hooked by a Rod when fishing."
+id = &"LUREBALL"
+display_name = "Lure Ball"
+flags = Array[StringName]([&"PokeBall"])

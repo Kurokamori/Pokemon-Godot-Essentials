@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_nlted"]
+
+[resource]
+resource_name = "TM68"
+script = ExtResource("1_nlted")
+name_plural = "TM68s"
+pocket = 4
+price = 7500
+sell_price = 3750
+bp_price = 32
+field_use = 5
+move = &"GIGAIMPACT"
+description = "The user charges at the target using every bit of its power. The user can't move on the next turn."
+id = &"TM68"
+display_name = "TM68"
+flags = Array[StringName]([&"Fling_150"])

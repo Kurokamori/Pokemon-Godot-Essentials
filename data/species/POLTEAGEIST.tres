@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hft7t"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4e1el"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hy1fl"]
+
+[sub_resource type="Resource" id="Resource_v2wgc"]
+script = ExtResource("1_hft7t")
+species = &"SINISTEA"
+method = &"Item"
+parameter = "CRACKEDPOT"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_l7tdk"]
+script = ExtResource("2_4e1el")
+level = 0
+move = &"TEATIME"
+
+[sub_resource type="Resource" id="Resource_h4175"]
+script = ExtResource("2_4e1el")
+move = &"STRENGTHSAP"
+
+[sub_resource type="Resource" id="Resource_44tb4"]
+script = ExtResource("2_4e1el")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_yf1jk"]
+script = ExtResource("2_4e1el")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_3akj5"]
+script = ExtResource("2_4e1el")
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_at8cu"]
+script = ExtResource("2_4e1el")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_spqnk"]
+script = ExtResource("2_4e1el")
+level = 18
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_wyve2"]
+script = ExtResource("2_4e1el")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_f1tvf"]
+script = ExtResource("2_4e1el")
+level = 30
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_e20wq"]
+script = ExtResource("2_4e1el")
+level = 36
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_xqk43"]
+script = ExtResource("2_4e1el")
+level = 42
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_0uuev"]
+script = ExtResource("2_4e1el")
+level = 48
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_kwaom"]
+script = ExtResource("2_4e1el")
+level = 54
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_lq8ag"]
+script = ExtResource("2_4e1el")
+level = 60
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_q7678"]
+script = ExtResource("2_4e1el")
+level = 66
+move = &"CURSE"
+
+[resource]
+resource_name = "POLTEAGEIST"
+script = ExtResource("3_hy1fl")
+species = &"POLTEAGEIST"
+form_name = "Phony Form"
+category = "Black Tea"
+pokedex_entry = "This species lives in antique teapots. Most pots are forgeries, but on rare occasions, an authentic work is found."
+types = Array[StringName]([&"GHOST"])
+base_hp = 60
+base_attack = 65
+base_defense = 65
+base_special_attack = 134
+base_special_defense = 114
+base_speed = 70
+ev_special_attack = 2
+base_exp = 178
+gender_ratio = &"Genderless"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4e1el")]([SubResource("Resource_l7tdk"), SubResource("Resource_h4175"), SubResource("Resource_44tb4"), SubResource("Resource_yf1jk"), SubResource("Resource_3akj5"), SubResource("Resource_at8cu"), SubResource("Resource_spqnk"), SubResource("Resource_wyve2"), SubResource("Resource_f1tvf"), SubResource("Resource_e20wq"), SubResource("Resource_xqk43"), SubResource("Resource_0uuev"), SubResource("Resource_kwaom"), SubResource("Resource_lq8ag"), SubResource("Resource_q7678")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"BATONPASS", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LIGHTSCREEN", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRICK", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"WEAKARMOR"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+egg_groups = Array[StringName]([&"Mineral", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_hft7t")]([SubResource("Resource_v2wgc")])
+height = 2
+weight = 4
+color = &"Purple"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 4)
+id = &"POLTEAGEIST"
+display_name = "Polteageist"

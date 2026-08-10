@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/weather_data.gd" id="1_h6stc"]
+
+[resource]
+resource_name = "Rain"
+script = ExtResource("1_h6stc")
+category = 1
+legacy_number = 1
+particle_delta_x = -600
+particle_delta_y = 2400
+graphics = Array[String](["rain_1", "rain_2", "rain_3", "rain_4"])
+id = &"Rain"
+display_name = "Rain"

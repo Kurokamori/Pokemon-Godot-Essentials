@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_w5orv"]
+
+[resource]
+resource_name = "CROSSPOISON"
+script = ExtResource("1_w5orv")
+type = &"POISON"
+category = 0
+power = 70
+total_pp = 20
+function_code = &"PoisonTarget"
+effect_chance = 10
+description = "A slashing attack with a poisonous blade that may also poison the foe. Critical hits land more easily."
+id = &"CROSSPOISON"
+display_name = "Cross Poison"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

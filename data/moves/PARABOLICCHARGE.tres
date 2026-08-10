@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_kksfv"]
+
+[resource]
+resource_name = "PARABOLICCHARGE"
+script = ExtResource("1_kksfv")
+type = &"ELECTRIC"
+category = 1
+power = 65
+total_pp = 20
+target = &"AllNearOthers"
+function_code = &"HealUserByHalfOfDamageDone"
+description = "The user attacks everything around it. The user's HP is restored by half the damage dealt."
+id = &"PARABOLICCHARGE"
+display_name = "Parabolic Charge"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

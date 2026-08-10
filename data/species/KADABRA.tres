@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kykcm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pwekg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uqrrj"]
+
+[sub_resource type="Resource" id="Resource_s83kk"]
+script = ExtResource("1_kykcm")
+species = &"ALAKAZAM"
+method = &"Trade"
+
+[sub_resource type="Resource" id="Resource_fus7g"]
+script = ExtResource("1_kykcm")
+species = &"ABRA"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fxop7"]
+script = ExtResource("2_pwekg")
+level = 0
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_uyl6t"]
+script = ExtResource("2_pwekg")
+move = &"KINESIS"
+
+[sub_resource type="Resource" id="Resource_3bcrd"]
+script = ExtResource("2_pwekg")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_vu3k2"]
+script = ExtResource("2_pwekg")
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_xaxq7"]
+script = ExtResource("2_pwekg")
+level = 5
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_o428f"]
+script = ExtResource("2_pwekg")
+level = 10
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_h13rm"]
+script = ExtResource("2_pwekg")
+level = 15
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_p54cs"]
+script = ExtResource("2_pwekg")
+level = 20
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_lvlm6"]
+script = ExtResource("2_pwekg")
+level = 25
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_gudok"]
+script = ExtResource("2_pwekg")
+level = 30
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_4q8k0"]
+script = ExtResource("2_pwekg")
+level = 35
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_5xi73"]
+script = ExtResource("2_pwekg")
+level = 40
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_w74je"]
+script = ExtResource("2_pwekg")
+level = 45
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_daw4v"]
+script = ExtResource("2_pwekg")
+level = 50
+move = &"CALMMIND"
+
+[resource]
+resource_name = "KADABRA"
+script = ExtResource("3_uqrrj")
+species = &"KADABRA"
+category = "Psi"
+pokedex_entry = "It is rumored that a boy with psychic abilities suddenly transformed into Kadabra while he was assisting research into extrasensory powers."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 40
+base_attack = 35
+base_defense = 30
+base_special_attack = 120
+base_special_defense = 70
+base_speed = 105
+ev_special_attack = 2
+base_exp = 140
+growth_rate = &"Parabolic"
+gender_ratio = &"Female25Percent"
+catch_rate = 100
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pwekg")]([SubResource("Resource_fxop7"), SubResource("Resource_uyl6t"), SubResource("Resource_3bcrd"), SubResource("Resource_vu3k2"), SubResource("Resource_xaxq7"), SubResource("Resource_o428f"), SubResource("Resource_h13rm"), SubResource("Resource_p54cs"), SubResource("Resource_lvlm6"), SubResource("Resource_gudok"), SubResource("Resource_4q8k0"), SubResource("Resource_5xi73"), SubResource("Resource_w74je"), SubResource("Resource_daw4v")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EMBARGO", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"HEADBUTT", &"HIDDENPOWER", &"ICEPUNCH", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NATURALGIFT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPEEDSWAP", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SYNCHRONIZE", &"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"MAGICGUARD"])
+wild_item_uncommon = Array[StringName]([&"TWISTEDSPOON"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kykcm")]([SubResource("Resource_s83kk"), SubResource("Resource_fus7g")])
+height = 13
+weight = 565
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 24)
+id = &"KADABRA"
+display_name = "Kadabra"

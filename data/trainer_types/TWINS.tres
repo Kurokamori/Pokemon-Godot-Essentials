@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_eij7r"]
+
+[resource]
+resource_name = "TWINS"
+script = ExtResource("1_eij7r")
+base_money = 24
+skill_level = 24
+id = &"TWINS"
+display_name = "Twins"

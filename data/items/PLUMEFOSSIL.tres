@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3aok3"]
+
+[resource]
+resource_name = "PLUMEFOSSIL"
+script = ExtResource("1_3aok3")
+name_plural = "Plume Fossils"
+price = 7000
+sell_price = 3500
+description = "A fossil of an ancient Pokémon that flew in the sky in ancient times. It appears to be part of its wing."
+id = &"PLUMEFOSSIL"
+display_name = "Plume Fossil"
+flags = Array[StringName]([&"Fossil", &"Fling_100"])

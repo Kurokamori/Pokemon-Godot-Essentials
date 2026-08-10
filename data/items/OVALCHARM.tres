@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_oogig"]
+
+[resource]
+resource_name = "OVALCHARM"
+script = ExtResource("1_oogig")
+name_plural = "Oval Charms"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "An oval charm said to increase the chance of Eggs being found at the Day Care."
+id = &"OVALCHARM"
+display_name = "Oval Charm"
+flags = Array[StringName]([&"KeyItem"])

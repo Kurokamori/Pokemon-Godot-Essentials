@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5xjbn"]
+
+[resource]
+resource_name = "FLUFFYTAIL"
+script = ExtResource("1_5xjbn")
+name_plural = "Fluffy Tails"
+pocket = 7
+price = 300
+sell_price = 150
+battle_use = 5
+description = "An item that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+id = &"FLUFFYTAIL"
+display_name = "Fluffy Tail"
+flags = Array[StringName]([&"Fling_30"])

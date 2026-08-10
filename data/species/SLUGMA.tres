@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s8lp8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d0ylx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bh7bk"]
+
+[sub_resource type="Resource" id="Resource_05s05"]
+script = ExtResource("1_s8lp8")
+species = &"MAGCARGO"
+method = &"Level"
+parameter = "38"
+
+[sub_resource type="Resource" id="Resource_li4xn"]
+script = ExtResource("2_d0ylx")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_14uss"]
+script = ExtResource("2_d0ylx")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_f5qai"]
+script = ExtResource("2_d0ylx")
+level = 6
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_1rrcy"]
+script = ExtResource("2_d0ylx")
+level = 8
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_amow1"]
+script = ExtResource("2_d0ylx")
+level = 13
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_4t6rl"]
+script = ExtResource("2_d0ylx")
+level = 15
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_5vvrg"]
+script = ExtResource("2_d0ylx")
+level = 20
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_3qiu7"]
+script = ExtResource("2_d0ylx")
+level = 22
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_ei5os"]
+script = ExtResource("2_d0ylx")
+level = 29
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_yin1p"]
+script = ExtResource("2_d0ylx")
+level = 34
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_w437o"]
+script = ExtResource("2_d0ylx")
+level = 36
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_2g6s6"]
+script = ExtResource("2_d0ylx")
+level = 41
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_rke17"]
+script = ExtResource("2_d0ylx")
+level = 43
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_qp0ux"]
+script = ExtResource("2_d0ylx")
+level = 48
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_v58te"]
+script = ExtResource("2_d0ylx")
+level = 50
+move = &"EARTHPOWER"
+
+[resource]
+resource_name = "SLUGMA"
+script = ExtResource("3_bh7bk")
+species = &"SLUGMA"
+category = "Lava"
+pokedex_entry = "It is a species of Pokémon that lives in volcanic areas. If its body cools, its skin hardens and immobilizes it. To avoid that, it sleeps near magma."
+types = Array[StringName]([&"FIRE"])
+base_hp = 40
+base_attack = 40
+base_defense = 40
+base_special_attack = 70
+base_special_defense = 40
+base_speed = 20
+ev_special_attack = 1
+base_exp = 50
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_d0ylx")]([SubResource("Resource_li4xn"), SubResource("Resource_14uss"), SubResource("Resource_f5qai"), SubResource("Resource_1rrcy"), SubResource("Resource_amow1"), SubResource("Resource_4t6rl"), SubResource("Resource_5vvrg"), SubResource("Resource_3qiu7"), SubResource("Resource_ei5os"), SubResource("Resource_yin1p"), SubResource("Resource_w437o"), SubResource("Resource_2g6s6"), SubResource("Resource_rke17"), SubResource("Resource_qp0ux"), SubResource("Resource_v58te")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ANCIENTPOWER", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"INFESTATION", &"IRONDEFENSE", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"PAINSPLIT", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"ACIDARMOR", &"CURSE", &"EARTHPOWER", &"GUARDSWAP", &"HEATWAVE", &"INFERNO", &"MEMENTO", &"ROLLOUT", &"SMOKESCREEN", &"SPITUP", &"STOCKPILE", &"SWALLOW"])
+abilities = Array[StringName]([&"MAGMAARMOR", &"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_s8lp8")]([SubResource("Resource_05s05")])
+height = 7
+weight = 350
+shape = &"Serpentine"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(-2, 54)
+front_sprite_offset = Vector2i(-6, 30)
+shadow_size = 1
+id = &"SLUGMA"
+display_name = "Slugma"

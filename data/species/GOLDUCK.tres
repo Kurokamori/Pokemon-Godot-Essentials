@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hwflb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qfsk8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nip2f"]
+
+[sub_resource type="Resource" id="Resource_hnp6h"]
+script = ExtResource("1_hwflb")
+species = &"PSYDUCK"
+method = &"Level"
+parameter = "33"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ht38s"]
+script = ExtResource("2_qfsk8")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_umqkv"]
+script = ExtResource("2_qfsk8")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_tsj6u"]
+script = ExtResource("2_qfsk8")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_xe7j4"]
+script = ExtResource("2_qfsk8")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_vqi7d"]
+script = ExtResource("2_qfsk8")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_ykguf"]
+script = ExtResource("2_qfsk8")
+level = 9
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_ftdol"]
+script = ExtResource("2_qfsk8")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_m1jrx"]
+script = ExtResource("2_qfsk8")
+level = 15
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_p4cl4"]
+script = ExtResource("2_qfsk8")
+level = 18
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_6xyfr"]
+script = ExtResource("2_qfsk8")
+level = 21
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_uhd53"]
+script = ExtResource("2_qfsk8")
+level = 24
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_pai0n"]
+script = ExtResource("2_qfsk8")
+level = 27
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_tuty8"]
+script = ExtResource("2_qfsk8")
+level = 30
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_8cje8"]
+script = ExtResource("2_qfsk8")
+level = 36
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_4kcs2"]
+script = ExtResource("2_qfsk8")
+level = 40
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_fm1td"]
+script = ExtResource("2_qfsk8")
+level = 45
+move = &"WONDERROOM"
+
+[resource]
+resource_name = "GOLDUCK"
+script = ExtResource("3_nip2f")
+species = &"GOLDUCK"
+category = "Duck"
+pokedex_entry = "A Golduck is an adept swimmer. It sometimes joins competitive swimmers in training. It uses psychic powers when its forehead shimmers with light."
+types = Array[StringName]([&"WATER"])
+base_hp = 80
+base_attack = 82
+base_defense = 78
+base_special_attack = 95
+base_special_defense = 80
+base_speed = 85
+ev_special_attack = 2
+base_exp = 175
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qfsk8")]([SubResource("Resource_ht38s"), SubResource("Resource_umqkv"), SubResource("Resource_tsj6u"), SubResource("Resource_xe7j4"), SubResource("Resource_vqi7d"), SubResource("Resource_ykguf"), SubResource("Resource_ftdol"), SubResource("Resource_m1jrx"), SubResource("Resource_p4cl4"), SubResource("Resource_6xyfr"), SubResource("Resource_uhd53"), SubResource("Resource_pai0n"), SubResource("Resource_tuty8"), SubResource("Resource_8cje8"), SubResource("Resource_4kcs2"), SubResource("Resource_fm1td")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FLIPTURN", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"FUTURESIGHT", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"LIQUIDATION", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"PAYDAY", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WONDERROOM", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"DAMP", &"CLOUDNINE"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_hwflb")]([SubResource("Resource_hnp6h")])
+height = 17
+weight = 766
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 22)
+id = &"GOLDUCK"
+display_name = "Golduck"

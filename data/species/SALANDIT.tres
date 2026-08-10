@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_u687s"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_iqx2m"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bod1k"]
+
+[sub_resource type="Resource" id="Resource_04072"]
+script = ExtResource("1_u687s")
+species = &"SALAZZLE"
+method = &"LevelFemale"
+parameter = "33"
+
+[sub_resource type="Resource" id="Resource_pn6iq"]
+script = ExtResource("2_iqx2m")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_33p3a"]
+script = ExtResource("2_iqx2m")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_c0b07"]
+script = ExtResource("2_iqx2m")
+level = 5
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_er3pk"]
+script = ExtResource("2_iqx2m")
+level = 10
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_oacpn"]
+script = ExtResource("2_iqx2m")
+level = 15
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_5tbim"]
+script = ExtResource("2_iqx2m")
+level = 20
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_milgn"]
+script = ExtResource("2_iqx2m")
+level = 25
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_frk0m"]
+script = ExtResource("2_iqx2m")
+level = 30
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_htfuh"]
+script = ExtResource("2_iqx2m")
+level = 35
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_6uaut"]
+script = ExtResource("2_iqx2m")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_kgk1c"]
+script = ExtResource("2_iqx2m")
+level = 45
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_ejhlk"]
+script = ExtResource("2_iqx2m")
+level = 50
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_jcavu"]
+script = ExtResource("2_iqx2m")
+level = 55
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_32ehv"]
+script = ExtResource("2_iqx2m")
+level = 60
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "SALANDIT"
+script = ExtResource("3_bod1k")
+species = &"SALANDIT"
+category = "Toxic Lizard"
+pokedex_entry = "It burns its bodily fluids to create a poisonous gas. When its enemies become disoriented from inhaling the gas, it attacks them."
+types = Array[StringName]([&"POISON", &"FIRE"])
+base_hp = 48
+base_attack = 44
+base_defense = 40
+base_special_attack = 71
+base_special_defense = 40
+base_speed = 77
+ev_speed = 1
+base_exp = 64
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_iqx2m")]([SubResource("Resource_pn6iq"), SubResource("Resource_33p3a"), SubResource("Resource_c0b07"), SubResource("Resource_er3pk"), SubResource("Resource_oacpn"), SubResource("Resource_5tbim"), SubResource("Resource_milgn"), SubResource("Resource_frk0m"), SubResource("Resource_htfuh"), SubResource("Resource_6uaut"), SubResource("Resource_kgk1c"), SubResource("Resource_ejhlk"), SubResource("Resource_jcavu"), SubResource("Resource_32ehv")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BEATUP", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"GUNKSHOT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"KNOCKOFF", &"LEECHLIFE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SCALESHOT", &"SECRETPOWER", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"VENOMDRENCH", &"VENOSHOCK", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"BELCH", &"FAKEOUT", &"MUDSLAP", &"SANDATTACK"])
+abilities = Array[StringName]([&"CORROSION"])
+hidden_abilities = Array[StringName]([&"OBLIVIOUS"])
+wild_item_uncommon = Array[StringName]([&"SMOKEBALL"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_u687s")]([SubResource("Resource_04072")])
+height = 6
+weight = 48
+color = &"Black"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 28)
+id = &"SALANDIT"
+display_name = "Salandit"

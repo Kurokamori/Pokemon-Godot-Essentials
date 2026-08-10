@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0kdk2"]
+
+[resource]
+resource_name = "FULLHEAL"
+script = ExtResource("1_0kdk2")
+name_plural = "Full Heals"
+pocket = 2
+price = 400
+sell_price = 200
+field_use = 1
+battle_use = 1
+description = "A spray-type medicine. It heals all the status problems of a single Pokémon."
+id = &"FULLHEAL"
+display_name = "Full Heal"
+flags = Array[StringName]([&"Fling_30"])

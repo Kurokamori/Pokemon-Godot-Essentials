@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_sa63l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_s0p71"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3qwmb"]
+
+[sub_resource type="Resource" id="Resource_lvbwd"]
+script = ExtResource("1_sa63l")
+species = &"KLANG"
+method = &"Level"
+parameter = "49"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_dl5tj"]
+script = ExtResource("2_s0p71")
+move = &"GEARUP"
+
+[sub_resource type="Resource" id="Resource_l6rg5"]
+script = ExtResource("2_s0p71")
+move = &"MAGNETICFLUX"
+
+[sub_resource type="Resource" id="Resource_qf0kt"]
+script = ExtResource("2_s0p71")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_l7nwa"]
+script = ExtResource("2_s0p71")
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_yclld"]
+script = ExtResource("2_s0p71")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_qsvyp"]
+script = ExtResource("2_s0p71")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_rwppm"]
+script = ExtResource("2_s0p71")
+level = 12
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_exgjp"]
+script = ExtResource("2_s0p71")
+level = 16
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_rno5m"]
+script = ExtResource("2_s0p71")
+level = 20
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_j5h51"]
+script = ExtResource("2_s0p71")
+level = 24
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_74f2v"]
+script = ExtResource("2_s0p71")
+level = 28
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_ew3pq"]
+script = ExtResource("2_s0p71")
+level = 32
+move = &"GEARGRIND"
+
+[sub_resource type="Resource" id="Resource_ygnwh"]
+script = ExtResource("2_s0p71")
+level = 36
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_jv146"]
+script = ExtResource("2_s0p71")
+level = 42
+move = &"SHIFTGEAR"
+
+[sub_resource type="Resource" id="Resource_3neoa"]
+script = ExtResource("2_s0p71")
+level = 48
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_5mnig"]
+script = ExtResource("2_s0p71")
+level = 56
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_8pfco"]
+script = ExtResource("2_s0p71")
+level = 64
+move = &"ELECTRICTERRAIN"
+
+[resource]
+resource_name = "KLINKLANG"
+script = ExtResource("3_3qwmb")
+species = &"KLINKLANG"
+category = "Gear"
+pokedex_entry = "The gear with the red core is rotated at high speed for a rapid energy charge."
+types = Array[StringName]([&"STEEL"])
+base_hp = 60
+base_attack = 100
+base_defense = 115
+base_special_attack = 70
+base_special_defense = 85
+base_speed = 90
+ev_defense = 3
+base_exp = 260
+growth_rate = &"Parabolic"
+gender_ratio = &"Genderless"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_s0p71")]([SubResource("Resource_dl5tj"), SubResource("Resource_l6rg5"), SubResource("Resource_qf0kt"), SubResource("Resource_l7nwa"), SubResource("Resource_yclld"), SubResource("Resource_qsvyp"), SubResource("Resource_rwppm"), SubResource("Resource_exgjp"), SubResource("Resource_rno5m"), SubResource("Resource_j5h51"), SubResource("Resource_74f2v"), SubResource("Resource_ew3pq"), SubResource("Resource_ygnwh"), SubResource("Resource_jv146"), SubResource("Resource_3neoa"), SubResource("Resource_5mnig"), SubResource("Resource_8pfco")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ASSURANCE", &"BIND", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"ELECTRICTERRAIN", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"POWERGEM", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKPOLISH", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"STEELROLLER", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRICKROOM", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"PLUS", &"MINUS"])
+hidden_abilities = Array[StringName]([&"CLEARBODY"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_sa63l")]([SubResource("Resource_lvbwd")])
+height = 6
+weight = 810
+color = &"Gray"
+shape = &"MultiBody"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+id = &"KLINKLANG"
+display_name = "Klinklang"

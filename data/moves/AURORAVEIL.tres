@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0jgij"]
+
+[resource]
+resource_name = "AURORAVEIL"
+script = ExtResource("1_0jgij")
+type = &"ICE"
+accuracy = 0
+total_pp = 20
+target = &"UserSide"
+function_code = &"StartWeakenDamageAgainstUserSideIfHail"
+description = "This move reduces damage from attacks for five turns. This can be used only in a hailstorm."
+id = &"AURORAVEIL"
+display_name = "Aurora Veil"

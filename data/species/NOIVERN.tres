@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pg8na"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2vla2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cktv4"]
+
+[sub_resource type="Resource" id="Resource_bfjpg"]
+script = ExtResource("1_pg8na")
+species = &"NOIBAT"
+method = &"Level"
+parameter = "48"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kc5gg"]
+script = ExtResource("2_2vla2")
+level = 0
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_iidc6"]
+script = ExtResource("2_2vla2")
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_xvqsf"]
+script = ExtResource("2_2vla2")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_jrwkh"]
+script = ExtResource("2_2vla2")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_q61m5"]
+script = ExtResource("2_2vla2")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_68su0"]
+script = ExtResource("2_2vla2")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_m3kkp"]
+script = ExtResource("2_2vla2")
+level = 12
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_njnln"]
+script = ExtResource("2_2vla2")
+level = 16
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_8hrjf"]
+script = ExtResource("2_2vla2")
+level = 20
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_pncw3"]
+script = ExtResource("2_2vla2")
+level = 24
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_byvv0"]
+script = ExtResource("2_2vla2")
+level = 28
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_a8q0l"]
+script = ExtResource("2_2vla2")
+level = 32
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_mfblb"]
+script = ExtResource("2_2vla2")
+level = 36
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_wp68u"]
+script = ExtResource("2_2vla2")
+level = 40
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6rjjw"]
+script = ExtResource("2_2vla2")
+level = 44
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_hfhla"]
+script = ExtResource("2_2vla2")
+level = 51
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_hdj1p"]
+script = ExtResource("2_2vla2")
+level = 56
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_4j15x"]
+script = ExtResource("2_2vla2")
+level = 62
+move = &"BOOMBURST"
+
+[resource]
+resource_name = "NOIVERN"
+script = ExtResource("3_cktv4")
+species = &"NOIVERN"
+category = "Sound Wave"
+pokedex_entry = "They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark."
+types = Array[StringName]([&"FLYING", &"DRAGON"])
+base_hp = 85
+base_attack = 70
+base_defense = 80
+base_special_attack = 97
+base_special_defense = 80
+base_speed = 123
+ev_speed = 2
+base_exp = 187
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2vla2")]([SubResource("Resource_kc5gg"), SubResource("Resource_iidc6"), SubResource("Resource_xvqsf"), SubResource("Resource_jrwkh"), SubResource("Resource_q61m5"), SubResource("Resource_68su0"), SubResource("Resource_m3kkp"), SubResource("Resource_njnln"), SubResource("Resource_8hrjf"), SubResource("Resource_pncw3"), SubResource("Resource_byvv0"), SubResource("Resource_a8q0l"), SubResource("Resource_mfblb"), SubResource("Resource_wp68u"), SubResource("Resource_6rjjw"), SubResource("Resource_hfhla"), SubResource("Resource_hdj1p"), SubResource("Resource_4j15x")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRSLASH", &"ATTRACT", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DREAMEATER", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLAMETHROWER", &"FLY", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"LASERFOCUS", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SKYATTACK", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"WATERPULSE", &"WILDCHARGE", &"XSCISSOR"])
+abilities = Array[StringName]([&"FRISK", &"INFILTRATOR"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Flying", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_pg8na")]([SubResource("Resource_bfjpg")])
+height = 15
+weight = 850
+color = &"Purple"
+shape = &"Winged"
+generation = 6
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-5, 15)
+shadow_size = 3
+id = &"NOIVERN"
+display_name = "Noivern"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_bxcow"]
+
+[resource]
+resource_name = "SUBSTITUTE"
+script = ExtResource("1_bxcow")
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"UserMakeSubstitute"
+description = "The user makes a copy of itself using some of its HP. The copy serves as the user's decoy."
+id = &"SUBSTITUTE"
+display_name = "Substitute"

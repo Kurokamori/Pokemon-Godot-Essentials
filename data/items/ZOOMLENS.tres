@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_7s5aa"]
+
+[resource]
+resource_name = "ZOOMLENS"
+script = ExtResource("1_7s5aa")
+name_plural = "Zoom Lenses"
+price = 4000
+sell_price = 2000
+bp_price = 48
+description = "An item to be held by a Pokémon. If the holder moves after its target, its accuracy will be boosted."
+id = &"ZOOMLENS"
+display_name = "Zoom Lens"
+flags = Array[StringName]([&"Fling_10"])

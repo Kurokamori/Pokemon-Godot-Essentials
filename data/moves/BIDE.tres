@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nn7ej"]
+
+[resource]
+resource_name = "BIDE"
+script = ExtResource("1_nn7ej")
+category = 0
+power = 1
+accuracy = 0
+total_pp = 10
+target = &"None"
+priority = 1
+function_code = &"MultiTurnAttackBideThenReturnDoubleDamage"
+description = "The user endures attacks for two turns, then strikes back to cause double the damage taken."
+id = &"BIDE"
+display_name = "Bide"
+flags = Array[StringName]([&"Contact", &"CanProtect"])

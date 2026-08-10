@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_q4vvl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mk60n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kieon"]
+
+[sub_resource type="Resource" id="Resource_icxjj"]
+script = ExtResource("2_mk60n")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_s02lc"]
+script = ExtResource("2_mk60n")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_t53pm"]
+script = ExtResource("2_mk60n")
+level = 4
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_kgsbh"]
+script = ExtResource("2_mk60n")
+level = 8
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_m1mqx"]
+script = ExtResource("2_mk60n")
+level = 12
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_jc7rd"]
+script = ExtResource("2_mk60n")
+level = 16
+move = &"TEARFULLOOK"
+
+[sub_resource type="Resource" id="Resource_kx6mb"]
+script = ExtResource("2_mk60n")
+level = 20
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_g41tj"]
+script = ExtResource("2_mk60n")
+level = 24
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_ji5gt"]
+script = ExtResource("2_mk60n")
+level = 28
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_5lnt2"]
+script = ExtResource("2_mk60n")
+level = 32
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_wj81t"]
+script = ExtResource("2_mk60n")
+level = 36
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_skmjm"]
+script = ExtResource("2_mk60n")
+level = 40
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_523qo"]
+script = ExtResource("2_mk60n")
+level = 44
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_nmwin"]
+script = ExtResource("2_mk60n")
+level = 48
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "WISHIWASHI_1"
+script = ExtResource("3_kieon")
+species = &"WISHIWASHI"
+form = 1
+form_name = "School Form"
+category = "Small Fry"
+pokedex_entry = "Weak Wishiwashi school together to concentrate their power. Their united force makes them the demon of the sea, feared near and far."
+pokedex_form = 1
+types = Array[StringName]([&"WATER"])
+base_hp = 45
+base_attack = 140
+base_defense = 130
+base_special_attack = 140
+base_special_defense = 135
+base_speed = 30
+ev_hp = 1
+base_exp = 217
+growth_rate = &"Fast"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mk60n")]([SubResource("Resource_icxjj"), SubResource("Resource_s02lc"), SubResource("Resource_t53pm"), SubResource("Resource_kgsbh"), SubResource("Resource_m1mqx"), SubResource("Resource_jc7rd"), SubResource("Resource_kx6mb"), SubResource("Resource_g41tj"), SubResource("Resource_ji5gt"), SubResource("Resource_5lnt2"), SubResource("Resource_wj81t"), SubResource("Resource_skmjm"), SubResource("Resource_523qo"), SubResource("Resource_nmwin")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BEATUP", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DIVE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"IRONTAIL", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"UPROAR", &"UTURN", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"MIST", &"TAKEDOWN", &"WATERPULSE"])
+abilities = Array[StringName]([&"SCHOOLING"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 3840
+height = 82
+weight = 786
+color = &"Blue"
+shape = &"MultiBody"
+generation = 7
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(9, 14)
+shadow_size = 3
+id = &"WISHIWASHI_1"
+display_name = "Wishiwashi"

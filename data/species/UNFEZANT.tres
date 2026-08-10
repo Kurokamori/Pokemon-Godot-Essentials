@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lijj5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hjg33"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xjsn1"]
+
+[sub_resource type="Resource" id="Resource_24dt2"]
+script = ExtResource("1_lijj5")
+species = &"TRANQUILL"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nxg16"]
+script = ExtResource("2_hjg33")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_2xsnt"]
+script = ExtResource("2_hjg33")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_wppeb"]
+script = ExtResource("2_hjg33")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_hbuop"]
+script = ExtResource("2_hjg33")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ix8q4"]
+script = ExtResource("2_hjg33")
+level = 12
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_p33ok"]
+script = ExtResource("2_hjg33")
+level = 16
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_jn1cr"]
+script = ExtResource("2_hjg33")
+level = 20
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_1sg68"]
+script = ExtResource("2_hjg33")
+level = 26
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_4w76t"]
+script = ExtResource("2_hjg33")
+level = 36
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_76psi"]
+script = ExtResource("2_hjg33")
+level = 42
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_b61u7"]
+script = ExtResource("2_hjg33")
+level = 50
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_xchip"]
+script = ExtResource("2_hjg33")
+level = 58
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_oitqu"]
+script = ExtResource("2_hjg33")
+level = 66
+move = &"SKYATTACK"
+
+[resource]
+resource_name = "UNFEZANT"
+script = ExtResource("3_xjsn1")
+species = &"UNFEZANT"
+category = "Proud"
+pokedex_entry = "Males have plumage on their heads. They will never let themselves feel close to anyone other than their Trainers."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 80
+base_attack = 115
+base_defense = 80
+base_special_attack = 65
+base_special_defense = 55
+base_speed = 93
+ev_attack = 3
+base_exp = 244
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hjg33")]([SubResource("Resource_nxg16"), SubResource("Resource_2xsnt"), SubResource("Resource_wppeb"), SubResource("Resource_hbuop"), SubResource("Resource_ix8q4"), SubResource("Resource_p33ok"), SubResource("Resource_jn1cr"), SubResource("Resource_1sg68"), SubResource("Resource_4w76t"), SubResource("Resource_76psi"), SubResource("Resource_b61u7"), SubResource("Resource_xchip"), SubResource("Resource_oitqu")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRSLASH", &"ATTRACT", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"BIGPECKS", &"SUPERLUCK"])
+hidden_abilities = Array[StringName]([&"RIVALRY"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_lijj5")]([SubResource("Resource_24dt2")])
+height = 12
+weight = 290
+color = &"Gray"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 18)
+id = &"UNFEZANT"
+display_name = "Unfezant"

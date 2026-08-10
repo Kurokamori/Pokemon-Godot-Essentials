@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_fjkv5"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_dmp81"]
+
+[sub_resource type="Resource" id="Resource_ue5y3"]
+script = ExtResource("1_fjkv5")
+species = &"PIDGEOTTO"
+level = 17
+
+[sub_resource type="Resource" id="Resource_0fhy0"]
+script = ExtResource("1_fjkv5")
+species = &"RATTATA"
+level = 15
+
+[sub_resource type="Resource" id="Resource_5j3sg"]
+script = ExtResource("1_fjkv5")
+species = &"BULBASAUR"
+level = 18
+
+[resource]
+resource_name = "RIVAL1|Blue|0"
+script = ExtResource("2_dmp81")
+trainer_type = &"RIVAL1"
+lose_text = "Not too shabby."
+pokemon = Array[ExtResource("1_fjkv5")]([SubResource("Resource_ue5y3"), SubResource("Resource_0fhy0"), SubResource("Resource_5j3sg")])
+id = &"RIVAL1|Blue|0"
+display_name = "Blue"

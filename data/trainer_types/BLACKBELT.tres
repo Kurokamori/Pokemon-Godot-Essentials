@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_j0bgs"]
+
+[resource]
+resource_name = "BLACKBELT"
+script = ExtResource("1_j0bgs")
+gender = 0
+base_money = 32
+skill_level = 32
+id = &"BLACKBELT"
+display_name = "Black Belt"

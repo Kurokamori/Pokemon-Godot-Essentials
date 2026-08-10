@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://otivhs687jta"
+path="res://.godot/imported/Battle Champion.ogg-1d790076108caa406c832e15ab621d20.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Battle Champion.ogg"
+dest_files=["res://.godot/imported/Battle Champion.ogg-1d790076108caa406c832e15ab621d20.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

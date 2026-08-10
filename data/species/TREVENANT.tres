@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mg2mj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8wi1h"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bnej7"]
+
+[sub_resource type="Resource" id="Resource_mx037"]
+script = ExtResource("1_mg2mj")
+species = &"PHANTUMP"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_mqbvj"]
+script = ExtResource("2_8wi1h")
+level = 0
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_docqv"]
+script = ExtResource("2_8wi1h")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_4oly2"]
+script = ExtResource("2_8wi1h")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_yjwl0"]
+script = ExtResource("2_8wi1h")
+move = &"BRANCHPOKE"
+
+[sub_resource type="Resource" id="Resource_3j3nv"]
+script = ExtResource("2_8wi1h")
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_4j11u"]
+script = ExtResource("2_8wi1h")
+level = 12
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_vew0a"]
+script = ExtResource("2_8wi1h")
+level = 16
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_huv42"]
+script = ExtResource("2_8wi1h")
+level = 20
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_jeds1"]
+script = ExtResource("2_8wi1h")
+level = 24
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_mv4qn"]
+script = ExtResource("2_8wi1h")
+level = 28
+move = &"HORNLEECH"
+
+[sub_resource type="Resource" id="Resource_60urb"]
+script = ExtResource("2_8wi1h")
+level = 32
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_moysl"]
+script = ExtResource("2_8wi1h")
+level = 36
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_ay076"]
+script = ExtResource("2_8wi1h")
+level = 40
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_34orm"]
+script = ExtResource("2_8wi1h")
+level = 44
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_4e75d"]
+script = ExtResource("2_8wi1h")
+level = 48
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_lw0u2"]
+script = ExtResource("2_8wi1h")
+level = 52
+move = &"FORESTSCURSE"
+
+[resource]
+resource_name = "TREVENANT"
+script = ExtResource("3_bnej7")
+species = &"TREVENANT"
+category = "Elder Tree"
+pokedex_entry = "Through its roots, it exerts control over other trees. A deadly curse falls upon anyone cutting down trees in forests where Trevenant dwell."
+types = Array[StringName]([&"GHOST", &"GRASS"])
+base_hp = 85
+base_attack = 110
+base_defense = 76
+base_special_attack = 65
+base_special_defense = 82
+base_speed = 56
+ev_attack = 2
+base_exp = 166
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8wi1h")]([SubResource("Resource_mqbvj"), SubResource("Resource_docqv"), SubResource("Resource_4oly2"), SubResource("Resource_yjwl0"), SubResource("Resource_3j3nv"), SubResource("Resource_4j11u"), SubResource("Resource_vew0a"), SubResource("Resource_huv42"), SubResource("Resource_jeds1"), SubResource("Resource_mv4qn"), SubResource("Resource_60urb"), SubResource("Resource_moysl"), SubResource("Resource_ay076"), SubResource("Resource_34orm"), SubResource("Resource_4e75d"), SubResource("Resource_lw0u2")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BLOCK", &"BRUTALSWING", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IMPRISON", &"LEAFSTORM", &"MAGICALLEAF", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PHANTOMFORCE", &"POISONJAB", &"POLTERGEIST", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"TRICKROOM", &"VENOMDRENCH", &"WILLOWISP", &"WORRYSEED", &"XSCISSOR"])
+abilities = Array[StringName]([&"NATURALCURE", &"FRISK"])
+hidden_abilities = Array[StringName]([&"HARVEST"])
+egg_groups = Array[StringName]([&"Grass", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mg2mj")]([SubResource("Resource_mx037")])
+height = 15
+weight = 710
+color = &"Brown"
+shape = &"Multiped"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 10)
+id = &"TREVENANT"
+display_name = "Trevenant"

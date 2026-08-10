@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_lbw4u"]
+
+[resource]
+resource_name = "MEGAPUNCH"
+script = ExtResource("1_lbw4u")
+category = 0
+power = 80
+accuracy = 85
+total_pp = 20
+description = "The target is slugged by a punch thrown with muscle-packed power."
+id = &"MEGAPUNCH"
+display_name = "Mega Punch"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Punching"])

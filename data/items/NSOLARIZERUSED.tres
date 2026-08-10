@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_mi74e"]
+
+[resource]
+resource_name = "NSOLARIZERUSED"
+script = ExtResource("1_mi74e")
+name_plural = "N-Solarizers"
+pocket = 8
+field_use = 1
+consumable = false
+show_quantity = false
+description = "A machine to separate Necrozma, which needed light, from Solgaleo."
+id = &"NSOLARIZERUSED"
+display_name = "N-Solarizer"
+flags = Array[StringName]([&"KeyItem"])

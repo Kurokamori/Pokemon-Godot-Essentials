@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_eobgu"]
+
+[resource]
+resource_name = "POWERLENS"
+script = ExtResource("1_eobgu")
+name_plural = "Power Lenses"
+price = 3000
+sell_price = 1500
+bp_price = 10
+description = "A Pokémon held item that promotes Sp. Atk gain on leveling, but reduces the Speed stat."
+id = &"POWERLENS"
+display_name = "Power Lens"
+flags = Array[StringName]([&"Fling_70"])

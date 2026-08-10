@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_mjr6c"]
+
+[resource]
+resource_name = "MOVE_TAILWHIP"
+script = ExtResource("1_mjr6c")
+graphic = "Struggle"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(149, 227, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(168, 235, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(143, 238, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(107, 238, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(84, 230, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(106, 228, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(149, 227, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(168, 235, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(143, 238, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(107, 238, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(84, 230, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(106, 228, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array()
+timing_sounds = PackedStringArray()
+timing_volumes = PackedInt32Array()
+timing_pitches = PackedInt32Array()
+id = &"MOVE_TAILWHIP"
+display_name = "Move:TAILWHIP"

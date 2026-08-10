@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qix8w"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bjycw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ydgpc"]
+
+[sub_resource type="Resource" id="Resource_1cjf2"]
+script = ExtResource("1_qix8w")
+species = &"CHIMECHO"
+method = &"HappinessNight"
+
+[sub_resource type="Resource" id="Resource_8tjlm"]
+script = ExtResource("2_bjycw")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_8aw6b"]
+script = ExtResource("2_bjycw")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_7pvgy"]
+script = ExtResource("2_bjycw")
+level = 7
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_hlmmx"]
+script = ExtResource("2_bjycw")
+level = 10
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_t0eam"]
+script = ExtResource("2_bjycw")
+level = 13
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_56psf"]
+script = ExtResource("2_bjycw")
+level = 16
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_w6nlw"]
+script = ExtResource("2_bjycw")
+level = 19
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_ypemg"]
+script = ExtResource("2_bjycw")
+level = 32
+move = &"UPROAR"
+
+[resource]
+resource_name = "CHINGLING"
+script = ExtResource("3_ydgpc")
+species = &"CHINGLING"
+category = "Bell"
+pokedex_entry = "It emits cries by agitating an orb at the back of its throat. It moves with flouncing hops."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 45
+base_attack = 30
+base_defense = 50
+base_special_attack = 65
+base_special_defense = 50
+base_speed = 45
+ev_special_attack = 1
+base_exp = 57
+growth_rate = &"Fast"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bjycw")]([SubResource("Resource_8tjlm"), SubResource("Resource_8aw6b"), SubResource("Resource_7pvgy"), SubResource("Resource_hlmmx"), SubResource("Resource_t0eam"), SubResource("Resource_56psf"), SubResource("Resource_w6nlw"), SubResource("Resource_ypemg")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BIND", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICYWIND", &"KNOCKOFF", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"UPROAR", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"COSMICPOWER", &"CURSE", &"DISABLE", &"FUTURESIGHT", &"HYPNOSIS", &"PERISHSONG", &"RECOVER", &"STOREDPOWER", &"WISH"])
+abilities = Array[StringName]([&"LEVITATE"])
+wild_item_uncommon = Array[StringName]([&"CLEANSETAG"])
+hatch_steps = 6400
+incense = &"PUREINCENSE"
+evolutions = Array[ExtResource("1_qix8w")]([SubResource("Resource_1cjf2")])
+height = 2
+weight = 6
+color = &"Yellow"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 20)
+shadow_size = 1
+id = &"CHINGLING"
+display_name = "Chingling"

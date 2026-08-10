@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_dniyl"]
+
+[resource]
+resource_name = "75"
+script = ExtResource("1_dniyl")
+map_id = 75
+outdoor_map = true
+town_map_position = Array[int]([1, 13, 16])
+battle_background = "city"
+id = &"75"
+display_name = "Tiall Region"

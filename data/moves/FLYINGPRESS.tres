@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_d43by"]
+
+[resource]
+resource_name = "FLYINGPRESS"
+script = ExtResource("1_d43by")
+type = &"FIGHTING"
+category = 0
+power = 100
+accuracy = 95
+total_pp = 10
+target = &"Other"
+function_code = &"EffectivenessIncludesFlyingType"
+description = "The user dives down onto the target from the sky. This move is Fighting and Flying type simultaneously."
+id = &"FLYINGPRESS"
+display_name = "Flying Press"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"TramplesMinimize"])

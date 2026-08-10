@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jxtpp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q2gne"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_igcnn"]
+
+[sub_resource type="Resource" id="Resource_xdafk"]
+script = ExtResource("1_jxtpp")
+species = &"VULPIX"
+method = &"Item"
+parameter = "FIRESTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_lmqo6"]
+script = ExtResource("2_q2gne")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_oewkd"]
+script = ExtResource("2_q2gne")
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_djtc8"]
+script = ExtResource("2_q2gne")
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_6sfr3"]
+script = ExtResource("2_q2gne")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_jvty8"]
+script = ExtResource("2_q2gne")
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_u60ed"]
+script = ExtResource("2_q2gne")
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_8l2hh"]
+script = ExtResource("2_q2gne")
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_jag2g"]
+script = ExtResource("2_q2gne")
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_t0lrx"]
+script = ExtResource("2_q2gne")
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_2513r"]
+script = ExtResource("2_q2gne")
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_3qkhg"]
+script = ExtResource("2_q2gne")
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_kbn3t"]
+script = ExtResource("2_q2gne")
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_d3odq"]
+script = ExtResource("2_q2gne")
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_t4qhu"]
+script = ExtResource("2_q2gne")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_cgp3b"]
+script = ExtResource("2_q2gne")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_k8mc1"]
+script = ExtResource("2_q2gne")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_x42rp"]
+script = ExtResource("2_q2gne")
+move = &"QUICKATTACK"
+
+[resource]
+resource_name = "NINETALES"
+script = ExtResource("3_igcnn")
+species = &"NINETALES"
+category = "Fox"
+pokedex_entry = "It has long been said that each of the nine tails embody an enchanted power. A long-lived Ninetales will have fur that shines like gold."
+types = Array[StringName]([&"FIRE"])
+base_hp = 73
+base_attack = 76
+base_defense = 75
+base_special_attack = 81
+base_special_defense = 100
+base_speed = 100
+ev_special_defense = 1
+ev_speed = 1
+base_exp = 177
+gender_ratio = &"Female75Percent"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_q2gne")]([SubResource("Resource_lmqo6"), SubResource("Resource_oewkd"), SubResource("Resource_djtc8"), SubResource("Resource_6sfr3"), SubResource("Resource_jvty8"), SubResource("Resource_u60ed"), SubResource("Resource_8l2hh"), SubResource("Resource_jag2g"), SubResource("Resource_t0lrx"), SubResource("Resource_2513r"), SubResource("Resource_3qkhg"), SubResource("Resource_kbn3t"), SubResource("Resource_d3odq"), SubResource("Resource_t4qhu"), SubResource("Resource_cgp3b"), SubResource("Resource_k8mc1"), SubResource("Resource_x42rp")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BODYSLAM", &"BURNINGJEALOUSY", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MYSTICALFIRE", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"OVERHEAT", &"PAINSPLIT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHUP", &"PSYSHOCK", &"REST", &"RETURN", &"ROAR", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"WEATHERBALL", &"WILLOWISP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"DROUGHT"])
+wild_item_uncommon = Array[StringName]([&"CHARCOAL"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_jxtpp")]([SubResource("Resource_xdafk")])
+height = 11
+weight = 199
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 3
+id = &"NINETALES"
+display_name = "Ninetales"

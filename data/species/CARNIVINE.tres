@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vnqs6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_f4ldt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xxomv"]
+
+[sub_resource type="Resource" id="Resource_6ahci"]
+script = ExtResource("2_f4ldt")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_k6j25"]
+script = ExtResource("2_f4ldt")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_yq1q3"]
+script = ExtResource("2_f4ldt")
+level = 7
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_l2bkm"]
+script = ExtResource("2_f4ldt")
+level = 11
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_7yl12"]
+script = ExtResource("2_f4ldt")
+level = 17
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_p46qk"]
+script = ExtResource("2_f4ldt")
+level = 21
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_nktve"]
+script = ExtResource("2_f4ldt")
+level = 27
+move = &"GRASSKNOT"
+
+[sub_resource type="Resource" id="Resource_5ubjv"]
+script = ExtResource("2_f4ldt")
+level = 31
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_8fb2d"]
+script = ExtResource("2_f4ldt")
+level = 37
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_7vvgu"]
+script = ExtResource("2_f4ldt")
+level = 37
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_shfd1"]
+script = ExtResource("2_f4ldt")
+level = 37
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_hmokr"]
+script = ExtResource("2_f4ldt")
+level = 41
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_wwti7"]
+script = ExtResource("2_f4ldt")
+level = 47
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_pkm6k"]
+script = ExtResource("2_f4ldt")
+level = 50
+move = &"POWERWHIP"
+
+[resource]
+resource_name = "CARNIVINE"
+script = ExtResource("3_xxomv")
+species = &"CARNIVINE"
+category = "Bug Catcher"
+pokedex_entry = "It attracts prey with its sweet-smelling saliva, then chomps down. It takes a whole day to eat prey."
+types = Array[StringName]([&"GRASS"])
+base_hp = 74
+base_attack = 100
+base_defense = 72
+base_special_attack = 90
+base_special_defense = 72
+base_speed = 46
+ev_attack = 2
+base_exp = 159
+growth_rate = &"Slow"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_f4ldt")]([SubResource("Resource_6ahci"), SubResource("Resource_k6j25"), SubResource("Resource_yq1q3"), SubResource("Resource_l2bkm"), SubResource("Resource_7yl12"), SubResource("Resource_p46qk"), SubResource("Resource_nktve"), SubResource("Resource_5ubjv"), SubResource("Resource_8fb2d"), SubResource("Resource_7vvgu"), SubResource("Resource_shfd1"), SubResource("Resource_hmokr"), SubResource("Resource_wwti7"), SubResource("Resource_pkm6k")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BUGBITE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"KNOCKOFF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"THROATCHOP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"ACIDSPRAY", &"LEECHSEED", &"MAGICALLEAF", &"RAGEPOWDER", &"RAZORLEAF", &"SLAM", &"SLEEPPOWDER", &"STUNSPORE", &"SYNTHESIS", &"WORRYSEED"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 6400
+height = 14
+weight = 270
+color = &"Green"
+shape = &"Multiped"
+generation = 4
+back_sprite_offset = Vector2i(8, 52)
+front_sprite_offset = Vector2i(4, 12)
+id = &"CARNIVINE"
+display_name = "Carnivine"

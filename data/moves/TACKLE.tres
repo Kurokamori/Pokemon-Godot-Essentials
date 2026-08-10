@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_06l5q"]
+
+[resource]
+resource_name = "TACKLE"
+script = ExtResource("1_06l5q")
+category = 0
+power = 40
+total_pp = 35
+description = "A physical attack in which the user charges and slams into the target with its whole body."
+id = &"TACKLE"
+display_name = "Tackle"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

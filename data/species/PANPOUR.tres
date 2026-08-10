@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xumb3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jfb7p"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ff43i"]
+
+[sub_resource type="Resource" id="Resource_pci7t"]
+script = ExtResource("1_xumb3")
+species = &"SIMIPOUR"
+method = &"Item"
+parameter = "WATERSTONE"
+
+[sub_resource type="Resource" id="Resource_fhlm4"]
+script = ExtResource("2_jfb7p")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_gdr2s"]
+script = ExtResource("2_jfb7p")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_8kqgo"]
+script = ExtResource("2_jfb7p")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_sies7"]
+script = ExtResource("2_jfb7p")
+level = 7
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_uj4d1"]
+script = ExtResource("2_jfb7p")
+level = 10
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_n7aci"]
+script = ExtResource("2_jfb7p")
+level = 13
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_hg8l6"]
+script = ExtResource("2_jfb7p")
+level = 16
+move = &"WATERSPORT"
+
+[sub_resource type="Resource" id="Resource_cdfwy"]
+script = ExtResource("2_jfb7p")
+level = 19
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_6ngn2"]
+script = ExtResource("2_jfb7p")
+level = 22
+move = &"SCALD"
+
+[sub_resource type="Resource" id="Resource_xdyhu"]
+script = ExtResource("2_jfb7p")
+level = 25
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_iynwc"]
+script = ExtResource("2_jfb7p")
+level = 28
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_xa6bt"]
+script = ExtResource("2_jfb7p")
+level = 31
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_h6kv8"]
+script = ExtResource("2_jfb7p")
+level = 34
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_roie3"]
+script = ExtResource("2_jfb7p")
+level = 37
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_7c5av"]
+script = ExtResource("2_jfb7p")
+level = 40
+move = &"NATURALGIFT"
+
+[sub_resource type="Resource" id="Resource_jsklo"]
+script = ExtResource("2_jfb7p")
+level = 43
+move = &"CRUNCH"
+
+[resource]
+resource_name = "PANPOUR"
+script = ExtResource("3_ff43i")
+species = &"PANPOUR"
+category = "Spray"
+pokedex_entry = "It does not thrive in dry environments. It keeps itself damp by shooting water stored in its head tuft from its tail."
+types = Array[StringName]([&"WATER"])
+base_hp = 50
+base_attack = 53
+base_defense = 48
+base_special_attack = 53
+base_special_defense = 48
+base_speed = 64
+ev_speed = 1
+base_exp = 63
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jfb7p")]([SubResource("Resource_fhlm4"), SubResource("Resource_gdr2s"), SubResource("Resource_8kqgo"), SubResource("Resource_sies7"), SubResource("Resource_uj4d1"), SubResource("Resource_n7aci"), SubResource("Resource_hg8l6"), SubResource("Resource_cdfwy"), SubResource("Resource_6ngn2"), SubResource("Resource_xdyhu"), SubResource("Resource_iynwc"), SubResource("Resource_xa6bt"), SubResource("Resource_h6kv8"), SubResource("Resource_roie3"), SubResource("Resource_7c5av"), SubResource("Resource_jsklo")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DIVE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GRASSKNOT", &"GUNKSHOT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"AQUARING", &"AQUATAIL", &"ASTONISH", &"COVET", &"DISARMINGVOICE", &"HYDROPUMP", &"LOWKICK", &"MUDSPORT", &"NASTYPLOT", &"ROLEPLAY", &"TICKLE"])
+abilities = Array[StringName]([&"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"TORRENT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xumb3")]([SubResource("Resource_pci7t")])
+height = 6
+weight = 135
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(6, 28)
+shadow_size = 1
+id = &"PANPOUR"
+display_name = "Panpour"

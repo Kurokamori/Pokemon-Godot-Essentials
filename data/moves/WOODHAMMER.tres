@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0m7rx"]
+
+[resource]
+resource_name = "WOODHAMMER"
+script = ExtResource("1_0m7rx")
+type = &"GRASS"
+category = 0
+power = 120
+total_pp = 15
+function_code = &"RecoilThirdOfDamageDealt"
+description = "The user slams its rugged body into the target to attack. The user also sustains serious damage."
+id = &"WOODHAMMER"
+display_name = "Wood Hammer"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

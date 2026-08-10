@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_336gv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_u30h5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_q8bnv"]
+
+[sub_resource type="Resource" id="Resource_laa5r"]
+script = ExtResource("1_336gv")
+species = &"BARRASKEWDA"
+method = &"Level"
+parameter = "26"
+
+[sub_resource type="Resource" id="Resource_gkmge"]
+script = ExtResource("2_u30h5")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_nsw85"]
+script = ExtResource("2_u30h5")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_cmjgw"]
+script = ExtResource("2_u30h5")
+level = 6
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_fmnwm"]
+script = ExtResource("2_u30h5")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_uarmf"]
+script = ExtResource("2_u30h5")
+level = 18
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_adr61"]
+script = ExtResource("2_u30h5")
+level = 24
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_50qwu"]
+script = ExtResource("2_u30h5")
+level = 30
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_nvlym"]
+script = ExtResource("2_u30h5")
+level = 36
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ufwwh"]
+script = ExtResource("2_u30h5")
+level = 42
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_eg40r"]
+script = ExtResource("2_u30h5")
+level = 48
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "ARROKUDA"
+script = ExtResource("3_q8bnv")
+species = &"ARROKUDA"
+category = "Rush"
+pokedex_entry = "If it sees any movement around it, this Pokémon charges for it straightaway, leading with its sharply pointed jaw. It's very proud of that jaw."
+types = Array[StringName]([&"WATER"])
+base_hp = 41
+base_attack = 63
+base_defense = 40
+base_special_attack = 40
+base_special_defense = 30
+base_speed = 66
+ev_speed = 1
+base_exp = 56
+growth_rate = &"Slow"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_u30h5")]([SubResource("Resource_gkmge"), SubResource("Resource_nsw85"), SubResource("Resource_cmjgw"), SubResource("Resource_fmnwm"), SubResource("Resource_uarmf"), SubResource("Resource_adr61"), SubResource("Resource_50qwu"), SubResource("Resource_nvlym"), SubResource("Resource_ufwwh"), SubResource("Resource_eg40r")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"ATTRACT", &"BOUNCE", &"BRICKBREAK", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CRUNCH", &"DIVE", &"DOUBLETEAM", &"DRILLRUN", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"HIDDENPOWER", &"ICEFANG", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THROATCHOP", &"TOXIC", &"WATERFALL", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"ACUPRESSURE", &"NIGHTSLASH", &"SLASH", &"THRASH"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"PROPELLERTAIL"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_336gv")]([SubResource("Resource_laa5r")])
+height = 5
+weight = 10
+color = &"Brown"
+shape = &"Finned"
+generation = 8
+back_sprite_offset = Vector2i(0, 62)
+front_sprite_offset = Vector2i(0, 19)
+id = &"ARROKUDA"
+display_name = "Arrokuda"

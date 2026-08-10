@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ka2ti"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cwcnl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_e02ct"]
+
+[sub_resource type="Resource" id="Resource_4npku"]
+script = ExtResource("2_cwcnl")
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_sqwij"]
+script = ExtResource("2_cwcnl")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_r1ag1"]
+script = ExtResource("2_cwcnl")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_tyk8b"]
+script = ExtResource("2_cwcnl")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_ps2yx"]
+script = ExtResource("2_cwcnl")
+level = 6
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_oqhnn"]
+script = ExtResource("2_cwcnl")
+level = 11
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_eimgd"]
+script = ExtResource("2_cwcnl")
+level = 16
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_qidvn"]
+script = ExtResource("2_cwcnl")
+level = 21
+move = &"TEETERDANCE"
+
+[sub_resource type="Resource" id="Resource_qc40n"]
+script = ExtResource("2_cwcnl")
+level = 26
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_v0j3t"]
+script = ExtResource("2_cwcnl")
+level = 31
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_iudqo"]
+script = ExtResource("2_cwcnl")
+level = 36
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_qepxh"]
+script = ExtResource("2_cwcnl")
+level = 43
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_dg1yh"]
+script = ExtResource("2_cwcnl")
+level = 50
+move = &"WAKEUPSLAP"
+
+[sub_resource type="Resource" id="Resource_akqbl"]
+script = ExtResource("2_cwcnl")
+level = 57
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_tfmta"]
+script = ExtResource("2_cwcnl")
+level = 64
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_3xkad"]
+script = ExtResource("2_cwcnl")
+level = 71
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_4mhql"]
+script = ExtResource("2_cwcnl")
+level = 78
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_x8qdr"]
+script = ExtResource("2_cwcnl")
+level = 85
+move = &"PERISHSONG"
+
+[resource]
+resource_name = "MELOETTA_1"
+script = ExtResource("3_e02ct")
+species = &"MELOETTA"
+form = 1
+form_name = "Pirouette Forme"
+category = "Melody"
+pokedex_entry = "Many famous songs have been inspired by the melodies that Meloetta plays."
+pokedex_form = 1
+types = Array[StringName]([&"NORMAL", &"FIGHTING"])
+base_hp = 100
+base_attack = 128
+base_defense = 90
+base_special_attack = 77
+base_special_defense = 77
+base_speed = 128
+ev_attack = 1
+ev_defense = 1
+ev_speed = 1
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_cwcnl")]([SubResource("Resource_4npku"), SubResource("Resource_sqwij"), SubResource("Resource_r1ag1"), SubResource("Resource_tyk8b"), SubResource("Resource_ps2yx"), SubResource("Resource_oqhnn"), SubResource("Resource_eimgd"), SubResource("Resource_qidvn"), SubResource("Resource_qc40n"), SubResource("Resource_v0j3t"), SubResource("Resource_iudqo"), SubResource("Resource_qepxh"), SubResource("Resource_dg1yh"), SubResource("Resource_akqbl"), SubResource("Resource_tfmta"), SubResource("Resource_3xkad"), SubResource("Resource_4mhql"), SubResource("Resource_x8qdr")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ALLYSWITCH", &"BRICKBREAK", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DUALCHOP", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEPUNCH", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"RELICSONG", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"UTURN", &"WONDERROOM", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SERENEGRACE"])
+wild_item_common = Array[StringName]([&"STARPIECE"])
+wild_item_uncommon = Array[StringName]([&"STARPIECE"])
+wild_item_rare = Array[StringName]([&"STARPIECE"])
+hatch_steps = 30720
+height = 6
+weight = 65
+color = &"White"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"MELOETTA_1"
+display_name = "Meloetta"
+flags = Array[StringName]([&"Mythical"])

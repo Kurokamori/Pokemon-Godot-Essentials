@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_x7qu4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_w6jd8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ypsou"]
+
+[sub_resource type="Resource" id="Resource_0tn3q"]
+script = ExtResource("2_w6jd8")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_tfcc5"]
+script = ExtResource("2_w6jd8")
+level = 9
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_rm2yx"]
+script = ExtResource("2_w6jd8")
+level = 16
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_cdogx"]
+script = ExtResource("2_w6jd8")
+level = 24
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_7gkmt"]
+script = ExtResource("2_w6jd8")
+level = 31
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_p8ntu"]
+script = ExtResource("2_w6jd8")
+level = 39
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_3x447"]
+script = ExtResource("2_w6jd8")
+level = 46
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_cn572"]
+script = ExtResource("2_w6jd8")
+level = 54
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_27xke"]
+script = ExtResource("2_w6jd8")
+level = 61
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_ucsiv"]
+script = ExtResource("2_w6jd8")
+level = 69
+move = &"RAINDANCE"
+
+[resource]
+resource_name = "PHIONE"
+script = ExtResource("3_ypsou")
+species = &"PHIONE"
+category = "Sea Drifter"
+pokedex_entry = "A Pokémon that lives in warm seas. It inflates the flotation sac on its head to drift and search for food."
+types = Array[StringName]([&"WATER"])
+base_hp = 80
+base_attack = 80
+base_defense = 80
+base_special_attack = 80
+base_special_defense = 80
+base_speed = 80
+ev_hp = 1
+base_exp = 240
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_w6jd8")]([SubResource("Resource_0tn3q"), SubResource("Resource_tfcc5"), SubResource("Resource_rm2yx"), SubResource("Resource_cdogx"), SubResource("Resource_7gkmt"), SubResource("Resource_p8ntu"), SubResource("Resource_3x447"), SubResource("Resource_cn572"), SubResource("Resource_27xke"), SubResource("Resource_ucsiv")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HAIL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"KNOCKOFF", &"LASTRESORT", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"UPROAR", &"UTURN", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"HYDRATION"])
+egg_groups = Array[StringName]([&"Water1", &"Fairy"])
+hatch_steps = 10240
+height = 4
+weight = 31
+color = &"Blue"
+shape = &"HeadArms"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(8, 20)
+shadow_size = 1
+id = &"PHIONE"
+display_name = "Phione"
+flags = Array[StringName]([&"Mythical"])

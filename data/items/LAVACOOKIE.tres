@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_duga4"]
+
+[resource]
+resource_name = "LAVACOOKIE"
+script = ExtResource("1_duga4")
+name_plural = "Lava Cookies"
+pocket = 2
+price = 350
+sell_price = 175
+field_use = 1
+battle_use = 1
+description = "Lavaridge Town's local specialty. It heals all the status problems of one Pokémon."
+id = &"LAVACOOKIE"
+display_name = "Lava Cookie"
+flags = Array[StringName]([&"Fling_30"])

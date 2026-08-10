@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1tlah"]
+
+[resource]
+resource_name = "DREAMEATER"
+script = ExtResource("1_1tlah")
+type = &"PSYCHIC"
+category = 1
+power = 100
+total_pp = 15
+function_code = &"HealUserByHalfOfDamageDoneIfTargetAsleep"
+description = "The user eats the dreams of a sleeping foe. It absorbs half the damage caused to heal the user's HP."
+id = &"DREAMEATER"
+display_name = "Dream Eater"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

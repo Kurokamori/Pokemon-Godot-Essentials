@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cra0k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gs1s7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4r8ba"]
+
+[sub_resource type="Resource" id="Resource_gn36x"]
+script = ExtResource("1_cra0k")
+species = &"SWANNA"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_ysms8"]
+script = ExtResource("2_gs1s7")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_4qlpj"]
+script = ExtResource("2_gs1s7")
+level = 3
+move = &"WATERSPORT"
+
+[sub_resource type="Resource" id="Resource_lvrt5"]
+script = ExtResource("2_gs1s7")
+level = 6
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_l2upt"]
+script = ExtResource("2_gs1s7")
+level = 9
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_jb1au"]
+script = ExtResource("2_gs1s7")
+level = 13
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_yacmk"]
+script = ExtResource("2_gs1s7")
+level = 15
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_0b6u0"]
+script = ExtResource("2_gs1s7")
+level = 19
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_y77rf"]
+script = ExtResource("2_gs1s7")
+level = 21
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_kt3om"]
+script = ExtResource("2_gs1s7")
+level = 24
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_whqhk"]
+script = ExtResource("2_gs1s7")
+level = 27
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_y5hg7"]
+script = ExtResource("2_gs1s7")
+level = 30
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_sbgfj"]
+script = ExtResource("2_gs1s7")
+level = 34
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_sexum"]
+script = ExtResource("2_gs1s7")
+level = 37
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_u8u7w"]
+script = ExtResource("2_gs1s7")
+level = 41
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_rontv"]
+script = ExtResource("2_gs1s7")
+level = 46
+move = &"HURRICANE"
+
+[resource]
+resource_name = "DUCKLETT"
+script = ExtResource("3_4r8ba")
+species = &"DUCKLETT"
+category = "Water Bird"
+pokedex_entry = "When attacked, it uses its feathers to splash water, escaping under cover of the spray."
+types = Array[StringName]([&"WATER", &"FLYING"])
+base_hp = 62
+base_attack = 44
+base_defense = 50
+base_special_attack = 44
+base_special_defense = 50
+base_speed = 55
+ev_hp = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gs1s7")]([SubResource("Resource_ysms8"), SubResource("Resource_4qlpj"), SubResource("Resource_lvrt5"), SubResource("Resource_l2upt"), SubResource("Resource_jb1au"), SubResource("Resource_yacmk"), SubResource("Resource_0b6u0"), SubResource("Resource_y77rf"), SubResource("Resource_kt3om"), SubResource("Resource_whqhk"), SubResource("Resource_y5hg7"), SubResource("Resource_sbgfj"), SubResource("Resource_sexum"), SubResource("Resource_u8u7w"), SubResource("Resource_rontv")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DIVE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAILWIND", &"TOXIC", &"UPROAR", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"AIRCUTTER", &"AQUAJET", &"BRINE", &"GUST", &"LUCKYCHANT", &"MEFIRST", &"MIRRORMOVE", &"MUDSPORT", &"STEELWING"])
+abilities = Array[StringName]([&"KEENEYE", &"BIGPECKS"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+egg_groups = Array[StringName]([&"Water1", &"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_cra0k")]([SubResource("Resource_gn36x")])
+height = 5
+weight = 55
+color = &"Blue"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 30)
+shadow_size = 1
+id = &"DUCKLETT"
+display_name = "Ducklett"

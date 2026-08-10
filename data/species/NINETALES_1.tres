@@ -1,0 +1,83 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ryp3v"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_51v77"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_g7k6e"]
+
+[sub_resource type="Resource" id="Resource_gctq4"]
+script = ExtResource("1_ryp3v")
+species = &"VULPIX"
+method = &"Item"
+parameter = "ICESTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_qd5nu"]
+script = ExtResource("2_51v77")
+level = 0
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_qfron"]
+script = ExtResource("2_51v77")
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_bcmiq"]
+script = ExtResource("2_51v77")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_apwms"]
+script = ExtResource("2_51v77")
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_ugel7"]
+script = ExtResource("2_51v77")
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_wnk6a"]
+script = ExtResource("2_51v77")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_qagj8"]
+script = ExtResource("2_51v77")
+move = &"SAFEGUARD"
+
+[resource]
+resource_name = "NINETALES_1"
+script = ExtResource("3_g7k6e")
+species = &"NINETALES"
+form = 1
+form_name = "Alolan"
+category = "Fox"
+pokedex_entry = "It lives on mountains perpetually covered in snow and is revered as a deity incarnate. It appears draped in a blizzard."
+pokedex_form = 1
+types = Array[StringName]([&"ICE", &"FAIRY"])
+base_hp = 73
+base_attack = 67
+base_defense = 75
+base_special_attack = 81
+base_special_defense = 100
+base_speed = 109
+ev_speed = 2
+base_exp = 177
+gender_ratio = &"Female75Percent"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_51v77")]([SubResource("Resource_qd5nu"), SubResource("Resource_qfron"), SubResource("Resource_bcmiq"), SubResource("Resource_apwms"), SubResource("Resource_ugel7"), SubResource("Resource_wnk6a"), SubResource("Resource_qagj8")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AQUATAIL", &"ATTRACT", &"AURORAVEIL", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DARKPULSE", &"DAZZLINGGLEAM", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FOULPLAY", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MISTYTERRAIN", &"NASTYPLOT", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"TRIPLEAXEL", &"WEATHERBALL", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"SNOWWARNING"])
+wild_item_uncommon = Array[StringName]([&"SNOWBALL"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ryp3v")]([SubResource("Resource_gctq4")])
+height = 11
+weight = 199
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 22)
+shadow_size = 3
+id = &"NINETALES_1"
+display_name = "Ninetales"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_lj3s8"]
+
+[resource]
+resource_name = "PYROBALL"
+script = ExtResource("1_lj3s8")
+type = &"FIRE"
+category = 0
+power = 120
+accuracy = 90
+function_code = &"BurnTarget"
+effect_chance = 10
+description = "Attacks by igniting a small stone and launching it as a fiery ball. May also burn the target."
+id = &"PYROBALL"
+display_name = "Pyro Ball"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"ThawsUser", &"Bomb", &"CannotMetronome"])

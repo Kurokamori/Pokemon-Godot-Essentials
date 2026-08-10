@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6jlj7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b7ioj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_m4fgb"]
+
+[sub_resource type="Resource" id="Resource_vkp62"]
+script = ExtResource("1_6jlj7")
+species = &"PRIMARINA"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_qt3ob"]
+script = ExtResource("1_6jlj7")
+species = &"POPPLIO"
+method = &"Level"
+parameter = "17"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ly0mj"]
+script = ExtResource("2_b7ioj")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_waana"]
+script = ExtResource("2_b7ioj")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_rfg3w"]
+script = ExtResource("2_b7ioj")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ee187"]
+script = ExtResource("2_b7ioj")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_2q017"]
+script = ExtResource("2_b7ioj")
+level = 9
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_rgkyd"]
+script = ExtResource("2_b7ioj")
+level = 12
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_yniev"]
+script = ExtResource("2_b7ioj")
+level = 15
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_lp0oi"]
+script = ExtResource("2_b7ioj")
+level = 20
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_u7eo2"]
+script = ExtResource("2_b7ioj")
+level = 25
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_ykjpd"]
+script = ExtResource("2_b7ioj")
+level = 30
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_7s5gf"]
+script = ExtResource("2_b7ioj")
+level = 35
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_pslte"]
+script = ExtResource("2_b7ioj")
+level = 40
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_rlcr4"]
+script = ExtResource("2_b7ioj")
+level = 45
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_gncbe"]
+script = ExtResource("2_b7ioj")
+level = 50
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "BRIONNE"
+script = ExtResource("3_m4fgb")
+species = &"BRIONNE"
+category = "Pop Star"
+pokedex_entry = "It gets excited when it sees a dance it doesn't know. This hard worker practices diligently until it can learn that dance."
+types = Array[StringName]([&"WATER"])
+base_hp = 60
+base_attack = 69
+base_defense = 69
+base_special_attack = 91
+base_special_defense = 81
+base_speed = 50
+ev_special_attack = 2
+base_exp = 147
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b7ioj")]([SubResource("Resource_ly0mj"), SubResource("Resource_waana"), SubResource("Resource_rfg3w"), SubResource("Resource_ee187"), SubResource("Resource_2q017"), SubResource("Resource_rgkyd"), SubResource("Resource_yniev"), SubResource("Resource_lp0oi"), SubResource("Resource_u7eo2"), SubResource("Resource_ykjpd"), SubResource("Resource_7s5gf"), SubResource("Resource_pslte"), SubResource("Resource_rlcr4"), SubResource("Resource_gncbe")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DIVE", &"DOUBLETEAM", &"DRAININGKISS", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"MISTYTERRAIN", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"TRIPLEAXEL", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WONDERROOM", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"LIQUIDVOICE"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_6jlj7")]([SubResource("Resource_vkp62"), SubResource("Resource_qt3ob")])
+height = 6
+weight = 175
+color = &"Blue"
+shape = &"Finned"
+generation = 7
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(1, 27)
+id = &"BRIONNE"
+display_name = "Brionne"

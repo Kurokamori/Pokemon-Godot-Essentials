@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pp0rt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ush5e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xlyte"]
+
+[sub_resource type="Resource" id="Resource_787d1"]
+script = ExtResource("2_ush5e")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_jwxpn"]
+script = ExtResource("2_ush5e")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_kpi1t"]
+script = ExtResource("2_ush5e")
+level = 5
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_m4e77"]
+script = ExtResource("2_ush5e")
+level = 10
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_jkux4"]
+script = ExtResource("2_ush5e")
+level = 15
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_f0b5h"]
+script = ExtResource("2_ush5e")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_c8fg3"]
+script = ExtResource("2_ush5e")
+level = 25
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_ya2yx"]
+script = ExtResource("2_ush5e")
+level = 30
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_njcdp"]
+script = ExtResource("2_ush5e")
+level = 35
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_dvgfx"]
+script = ExtResource("2_ush5e")
+level = 40
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_4g7wa"]
+script = ExtResource("2_ush5e")
+level = 45
+move = &"FIERYWRATH"
+
+[sub_resource type="Resource" id="Resource_4fvdq"]
+script = ExtResource("2_ush5e")
+level = 50
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_47jfr"]
+script = ExtResource("2_ush5e")
+level = 55
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_olv0g"]
+script = ExtResource("2_ush5e")
+level = 60
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_iyp57"]
+script = ExtResource("2_ush5e")
+level = 65
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_taork"]
+script = ExtResource("2_ush5e")
+level = 70
+move = &"SKYATTACK"
+
+[resource]
+resource_name = "MOLTRES_1"
+script = ExtResource("3_xlyte")
+species = &"MOLTRES"
+form = 1
+form_name = "Galarian"
+category = "Malevolent"
+pokedex_entry = "This Pokémon's sinister, flame-like aura will consume the spirit of any creature it hits. Victims become burned-out shadows of themselves."
+pokedex_form = 1
+types = Array[StringName]([&"DARK", &"FLYING"])
+base_hp = 90
+base_attack = 85
+base_defense = 90
+base_special_attack = 100
+base_special_defense = 125
+base_speed = 90
+ev_special_defense = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_ush5e")]([SubResource("Resource_787d1"), SubResource("Resource_jwxpn"), SubResource("Resource_kpi1t"), SubResource("Resource_m4e77"), SubResource("Resource_jkux4"), SubResource("Resource_f0b5h"), SubResource("Resource_c8fg3"), SubResource("Resource_ya2yx"), SubResource("Resource_njcdp"), SubResource("Resource_dvgfx"), SubResource("Resource_4g7wa"), SubResource("Resource_4fvdq"), SubResource("Resource_47jfr"), SubResource("Resource_olv0g"), SubResource("Resource_iyp57"), SubResource("Resource_taork")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"ASSURANCE", &"BRAVEBIRD", &"CONFIDE", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"UTURN"])
+abilities = Array[StringName]([&"BERSERK"])
+hidden_abilities = Array[StringName]([&"BERSERK"])
+hatch_steps = 20480
+height = 20
+weight = 660
+shape = &"Winged"
+habitat = &"Rare"
+generation = 8
+back_sprite_offset = Vector2i(16, 50)
+front_sprite_offset = Vector2i(9, 8)
+shadow_size = 3
+id = &"MOLTRES_1"
+display_name = "Moltres"
+flags = Array[StringName]([&"Legendary"])

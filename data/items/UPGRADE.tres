@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_qx50b"]
+
+[resource]
+resource_name = "UPGRADE"
+script = ExtResource("1_qx50b")
+name_plural = "Upgrades"
+price = 3000
+sell_price = 1000
+bp_price = 5
+description = "A transparent device filled with all sorts of data. It was produced by Silph Co."
+id = &"UPGRADE"
+display_name = "Upgrade"
+flags = Array[StringName]([&"Fling_30"])

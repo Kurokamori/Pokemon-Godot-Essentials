@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gee4o"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xcjh8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_383md"]
+
+[sub_resource type="Resource" id="Resource_4xpwj"]
+script = ExtResource("1_gee4o")
+species = &"CLOBBOPUS"
+method = &"HasMove"
+parameter = "TAUNT"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jjc3h"]
+script = ExtResource("2_xcjh8")
+level = 0
+move = &"OCTOLOCK"
+
+[sub_resource type="Resource" id="Resource_kq8qt"]
+script = ExtResource("2_xcjh8")
+move = &"OCTAZOOKA"
+
+[sub_resource type="Resource" id="Resource_nnklu"]
+script = ExtResource("2_xcjh8")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_7wrm7"]
+script = ExtResource("2_xcjh8")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_047cq"]
+script = ExtResource("2_xcjh8")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_c2i0f"]
+script = ExtResource("2_xcjh8")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_pud4u"]
+script = ExtResource("2_xcjh8")
+level = 15
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_h0vxf"]
+script = ExtResource("2_xcjh8")
+level = 20
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_koqm8"]
+script = ExtResource("2_xcjh8")
+level = 25
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_7wppa"]
+script = ExtResource("2_xcjh8")
+level = 30
+move = &"SUBMISSION"
+
+[sub_resource type="Resource" id="Resource_2txj8"]
+script = ExtResource("2_xcjh8")
+level = 35
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_cd7m7"]
+script = ExtResource("2_xcjh8")
+level = 40
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_usa48"]
+script = ExtResource("2_xcjh8")
+level = 45
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_k6m8r"]
+script = ExtResource("2_xcjh8")
+level = 50
+move = &"TOPSYTURVY"
+
+[resource]
+resource_name = "GRAPPLOCT"
+script = ExtResource("3_383md")
+species = &"GRAPPLOCT"
+category = "Jujitsu"
+pokedex_entry = "A body made up of nothing but muscle makes the grappling moves this Pokémon performs with its tentacles tremendously powerful."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 80
+base_attack = 118
+base_defense = 90
+base_special_attack = 70
+base_special_defense = 80
+base_speed = 42
+ev_attack = 2
+base_exp = 168
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xcjh8")]([SubResource("Resource_jjc3h"), SubResource("Resource_kq8qt"), SubResource("Resource_nnklu"), SubResource("Resource_7wrm7"), SubResource("Resource_047cq"), SubResource("Resource_c2i0f"), SubResource("Resource_pud4u"), SubResource("Resource_h0vxf"), SubResource("Resource_koqm8"), SubResource("Resource_7wppa"), SubResource("Resource_2txj8"), SubResource("Resource_cd7m7"), SubResource("Resource_usa48"), SubResource("Resource_k6m8r")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BRUTALSWING", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DIG", &"DIVE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"FACADE", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEPUNCH", &"LIQUIDATION", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TAUNT", &"TOXIC", &"WATERFALL", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"LIMBER"])
+hidden_abilities = Array[StringName]([&"TECHNICIAN"])
+egg_groups = Array[StringName]([&"Water1", &"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_gee4o")]([SubResource("Resource_4xpwj")])
+height = 16
+weight = 390
+color = &"Blue"
+shape = &"Multiped"
+generation = 8
+back_sprite_offset = Vector2i(1, 48)
+front_sprite_offset = Vector2i(-7, 18)
+id = &"GRAPPLOCT"
+display_name = "Grapploct"

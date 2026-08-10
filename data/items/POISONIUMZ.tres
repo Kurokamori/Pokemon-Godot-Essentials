@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_55phd"]
+
+[resource]
+resource_name = "POISONIUMZ"
+script = ExtResource("1_55phd")
+name_plural = "Poisonium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Poison-type Pokémon holds to turn a Poison-type move into Acid Downpour."
+id = &"POISONIUMZ"
+display_name = "Poisonium Z"
+flags = Array[StringName]([&"ZCrystal"])

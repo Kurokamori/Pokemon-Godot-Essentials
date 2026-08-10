@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vtq48"]
+
+[resource]
+resource_name = "ICICLESPEAR"
+script = ExtResource("1_vtq48")
+type = &"ICE"
+category = 0
+power = 25
+total_pp = 30
+function_code = &"HitTwoToFiveTimes"
+description = "The user launches sharp icicles at the target. It strikes two to five times in a row."
+id = &"ICICLESPEAR"
+display_name = "Icicle Spear"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

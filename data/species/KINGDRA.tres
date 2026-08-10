@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_k0xma"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cjiy6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nwphb"]
+
+[sub_resource type="Resource" id="Resource_n51oa"]
+script = ExtResource("1_k0xma")
+species = &"SEADRA"
+method = &"TradeItem"
+parameter = "DRAGONSCALE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kewjc"]
+script = ExtResource("2_cjiy6")
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_wwoep"]
+script = ExtResource("2_cjiy6")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_86s1r"]
+script = ExtResource("2_cjiy6")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_rnm1w"]
+script = ExtResource("2_cjiy6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_q4amd"]
+script = ExtResource("2_cjiy6")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_36ibq"]
+script = ExtResource("2_cjiy6")
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_7n4qv"]
+script = ExtResource("2_cjiy6")
+level = 15
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_pgtjv"]
+script = ExtResource("2_cjiy6")
+level = 20
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_dr2qj"]
+script = ExtResource("2_cjiy6")
+level = 25
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_7bv4u"]
+script = ExtResource("2_cjiy6")
+level = 30
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_hh7fh"]
+script = ExtResource("2_cjiy6")
+level = 37
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_qpvp2"]
+script = ExtResource("2_cjiy6")
+level = 44
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_haqje"]
+script = ExtResource("2_cjiy6")
+level = 51
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_m7oyc"]
+script = ExtResource("2_cjiy6")
+level = 58
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_slpnk"]
+script = ExtResource("2_cjiy6")
+level = 65
+move = &"RAINDANCE"
+
+[resource]
+resource_name = "KINGDRA"
+script = ExtResource("3_nwphb")
+species = &"KINGDRA"
+category = "Dragon"
+pokedex_entry = "It sleeps quietly, deep on the seafloor. When it comes up to the surface, it creates a huge whirlpool that can swallow even ships."
+types = Array[StringName]([&"WATER", &"DRAGON"])
+base_hp = 75
+base_attack = 95
+base_defense = 95
+base_special_attack = 95
+base_special_defense = 95
+base_speed = 85
+ev_attack = 1
+ev_special_attack = 1
+ev_special_defense = 1
+base_exp = 270
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cjiy6")]([SubResource("Resource_kewjc"), SubResource("Resource_wwoep"), SubResource("Resource_86s1r"), SubResource("Resource_rnm1w"), SubResource("Resource_q4amd"), SubResource("Resource_36ibq"), SubResource("Resource_7n4qv"), SubResource("Resource_pgtjv"), SubResource("Resource_dr2qj"), SubResource("Resource_7bv4u"), SubResource("Resource_hh7fh"), SubResource("Resource_qpvp2"), SubResource("Resource_haqje"), SubResource("Resource_m7oyc"), SubResource("Resource_slpnk")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BREAKINGSWIPE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONDANCE", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLIPTURN", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONHEAD", &"LASERFOCUS", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"DAMP"])
+wild_item_uncommon = Array[StringName]([&"DRAGONSCALE"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_k0xma")]([SubResource("Resource_n51oa")])
+height = 18
+weight = 1520
+color = &"Blue"
+shape = &"HeadBase"
+habitat = &"Sea"
+generation = 2
+back_sprite_offset = Vector2i(-4, 40)
+front_sprite_offset = Vector2i(5, 10)
+id = &"KINGDRA"
+display_name = "Kingdra"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3yecg"]
+
+[resource]
+resource_name = "CUT"
+script = ExtResource("1_3yecg")
+category = 0
+power = 50
+accuracy = 95
+total_pp = 30
+description = "The target is cut with a scythe or a claw. It can also be used to cut down thin trees."
+id = &"CUT"
+display_name = "Cut"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

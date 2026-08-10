@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_70g8l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7t4xh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_85c7i"]
+
+[sub_resource type="Resource" id="Resource_20ing"]
+script = ExtResource("1_70g8l")
+species = &"KROKOROK"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_mo2hl"]
+script = ExtResource("2_7t4xh")
+move = &"POWERTRIP"
+
+[sub_resource type="Resource" id="Resource_rtydp"]
+script = ExtResource("2_7t4xh")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_7efxi"]
+script = ExtResource("2_7t4xh")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_34uc1"]
+script = ExtResource("2_7t4xh")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_7f80m"]
+script = ExtResource("2_7t4xh")
+level = 9
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_yv752"]
+script = ExtResource("2_7t4xh")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_hdui5"]
+script = ExtResource("2_7t4xh")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_khqxo"]
+script = ExtResource("2_7t4xh")
+level = 18
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_xo5ks"]
+script = ExtResource("2_7t4xh")
+level = 21
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_mbjft"]
+script = ExtResource("2_7t4xh")
+level = 24
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_ao68h"]
+script = ExtResource("2_7t4xh")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_5n3ut"]
+script = ExtResource("2_7t4xh")
+level = 32
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_l32pu"]
+script = ExtResource("2_7t4xh")
+level = 35
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_cg7lq"]
+script = ExtResource("2_7t4xh")
+level = 44
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_nxvye"]
+script = ExtResource("2_7t4xh")
+level = 51
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_b4vnp"]
+script = ExtResource("2_7t4xh")
+level = 58
+move = &"OUTRAGE"
+
+[resource]
+resource_name = "KROOKODILE"
+script = ExtResource("3_85c7i")
+species = &"KROOKODILE"
+category = "Intimidation"
+pokedex_entry = "It can expand the focus of its eyes, enabling it to see objects in the far distance as if it were using binoculars."
+types = Array[StringName]([&"GROUND", &"DARK"])
+base_hp = 95
+base_attack = 117
+base_defense = 80
+base_special_attack = 65
+base_special_defense = 70
+base_speed = 92
+ev_attack = 3
+base_exp = 260
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7t4xh")]([SubResource("Resource_mo2hl"), SubResource("Resource_rtydp"), SubResource("Resource_7efxi"), SubResource("Resource_34uc1"), SubResource("Resource_7f80m"), SubResource("Resource_yv752"), SubResource("Resource_hdui5"), SubResource("Resource_khqxo"), SubResource("Resource_xo5ks"), SubResource("Resource_mbjft"), SubResource("Resource_ao68h"), SubResource("Resource_5n3ut"), SubResource("Resource_l32pu"), SubResource("Resource_cg7lq"), SubResource("Resource_nxvye"), SubResource("Resource_b4vnp")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CRUNCH", &"CUT", &"DARKESTLARIAT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHPOWER", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREFANG", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALESHOT", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERFANG", &"TORMENT", &"TOXIC", &"UPROAR"])
+abilities = Array[StringName]([&"INTIMIDATE", &"MOXIE"])
+hidden_abilities = Array[StringName]([&"ANGERPOINT"])
+wild_item_common = Array[StringName]([&"BLACKGLASSES"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_70g8l")]([SubResource("Resource_20ing")])
+height = 15
+weight = 963
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(-1, 15)
+id = &"KROOKODILE"
+display_name = "Krookodile"

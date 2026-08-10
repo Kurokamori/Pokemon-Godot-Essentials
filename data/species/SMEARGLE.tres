@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tr6jx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_v6g1r"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_06wxl"]
+
+[sub_resource type="Resource" id="Resource_n6oyb"]
+script = ExtResource("2_v6g1r")
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_riwla"]
+script = ExtResource("2_v6g1r")
+level = 11
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_dljfi"]
+script = ExtResource("2_v6g1r")
+level = 21
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_m2xqm"]
+script = ExtResource("2_v6g1r")
+level = 31
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_v7gmy"]
+script = ExtResource("2_v6g1r")
+level = 41
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_jods5"]
+script = ExtResource("2_v6g1r")
+level = 51
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_h8grg"]
+script = ExtResource("2_v6g1r")
+level = 61
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_c33nn"]
+script = ExtResource("2_v6g1r")
+level = 71
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_hr0t0"]
+script = ExtResource("2_v6g1r")
+level = 81
+move = &"SKETCH"
+
+[sub_resource type="Resource" id="Resource_kgurw"]
+script = ExtResource("2_v6g1r")
+level = 91
+move = &"SKETCH"
+
+[resource]
+resource_name = "SMEARGLE"
+script = ExtResource("3_06wxl")
+species = &"SMEARGLE"
+category = "Painter"
+pokedex_entry = "A Smeargle marks its territory using a fluid that leaks out from the tip of its tail. About 5,000 different marks left by this Pokémon have been found."
+base_hp = 55
+base_attack = 20
+base_defense = 35
+base_special_attack = 20
+base_special_defense = 45
+base_speed = 75
+ev_speed = 1
+base_exp = 88
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_v6g1r")]([SubResource("Resource_n6oyb"), SubResource("Resource_riwla"), SubResource("Resource_dljfi"), SubResource("Resource_m2xqm"), SubResource("Resource_v7gmy"), SubResource("Resource_jods5"), SubResource("Resource_h8grg"), SubResource("Resource_c33nn"), SubResource("Resource_hr0t0"), SubResource("Resource_kgurw")])
+abilities = Array[StringName]([&"OWNTEMPO", &"TECHNICIAN"])
+hidden_abilities = Array[StringName]([&"MOODY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 12
+weight = 580
+color = &"White"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-1, 28)
+shadow_size = 1
+id = &"SMEARGLE"
+display_name = "Smeargle"

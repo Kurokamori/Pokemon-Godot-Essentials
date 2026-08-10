@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tic2n"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0sp3p"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_m2tpw"]
+
+[sub_resource type="Resource" id="Resource_qokwv"]
+script = ExtResource("2_0sp3p")
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_gs5mf"]
+script = ExtResource("2_0sp3p")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_6v36q"]
+script = ExtResource("2_0sp3p")
+level = 5
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_1etv6"]
+script = ExtResource("2_0sp3p")
+level = 10
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_hbovo"]
+script = ExtResource("2_0sp3p")
+level = 15
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_6qe34"]
+script = ExtResource("2_0sp3p")
+level = 20
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_x81ks"]
+script = ExtResource("2_0sp3p")
+level = 25
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_vliin"]
+script = ExtResource("2_0sp3p")
+level = 30
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_do5wo"]
+script = ExtResource("2_0sp3p")
+level = 35
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_0vljq"]
+script = ExtResource("2_0sp3p")
+level = 40
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_82y3i"]
+script = ExtResource("2_0sp3p")
+level = 45
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_0iixl"]
+script = ExtResource("2_0sp3p")
+level = 50
+move = &"PSYCHICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_grt26"]
+script = ExtResource("2_0sp3p")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "INDEEDEE"
+script = ExtResource("3_m2tpw")
+species = &"INDEEDEE"
+form_name = "Male"
+category = "Emotion"
+pokedex_entry = "It uses the horns on its head to sense the emotions of others. Males will act as valets for those they serve, looking after their every need."
+types = Array[StringName]([&"PSYCHIC", &"NORMAL"])
+base_hp = 60
+base_attack = 65
+base_defense = 55
+base_special_attack = 105
+base_special_defense = 95
+base_speed = 95
+ev_special_attack = 2
+base_exp = 166
+growth_rate = &"Fast"
+catch_rate = 30
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_0sp3p")]([SubResource("Resource_qokwv"), SubResource("Resource_gs5mf"), SubResource("Resource_6v36q"), SubResource("Resource_1etv6"), SubResource("Resource_hbovo"), SubResource("Resource_6qe34"), SubResource("Resource_x81ks"), SubResource("Resource_vliin"), SubResource("Resource_do5wo"), SubResource("Resource_0vljq"), SubResource("Resource_82y3i"), SubResource("Resource_0iixl"), SubResource("Resource_grt26")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"IMPRISON", &"MAGICALLEAF", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"PAYDAY", &"PLAYROUGH", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYSHOCK", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TERRAINPULSE", &"TOXIC", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"EXTRASENSORY", &"FAKEOUT", &"PSYCHUP"])
+abilities = Array[StringName]([&"INNERFOCUS", &"SYNCHRONIZE"])
+hidden_abilities = Array[StringName]([&"PSYCHICSURGE"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 10240
+height = 9
+weight = 280
+color = &"Purple"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-1, 25)
+shadow_size = 1
+id = &"INDEEDEE"
+display_name = "Indeedee"

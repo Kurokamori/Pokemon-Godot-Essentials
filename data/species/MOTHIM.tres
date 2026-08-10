@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8kh85"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_88sfb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rctee"]
+
+[sub_resource type="Resource" id="Resource_5cx0w"]
+script = ExtResource("1_8kh85")
+species = &"BURMY"
+method = &"LevelMale"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_c01qf"]
+script = ExtResource("2_88sfb")
+level = 0
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_ldr83"]
+script = ExtResource("2_88sfb")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ri0qj"]
+script = ExtResource("2_88sfb")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_u4gpl"]
+script = ExtResource("2_88sfb")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_44eyq"]
+script = ExtResource("2_88sfb")
+level = 10
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_v5wce"]
+script = ExtResource("2_88sfb")
+level = 15
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_ps6gt"]
+script = ExtResource("2_88sfb")
+level = 20
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_7yb5g"]
+script = ExtResource("2_88sfb")
+level = 23
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_rs2kg"]
+script = ExtResource("2_88sfb")
+level = 26
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_jkq4k"]
+script = ExtResource("2_88sfb")
+level = 29
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_3q81j"]
+script = ExtResource("2_88sfb")
+level = 32
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_v3m68"]
+script = ExtResource("2_88sfb")
+level = 35
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_n55qt"]
+script = ExtResource("2_88sfb")
+level = 38
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_t6lnu"]
+script = ExtResource("2_88sfb")
+level = 41
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_j0hds"]
+script = ExtResource("2_88sfb")
+level = 44
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_dwbcu"]
+script = ExtResource("2_88sfb")
+level = 47
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_wxl3u"]
+script = ExtResource("2_88sfb")
+level = 50
+move = &"BUGBUZZ"
+
+[resource]
+resource_name = "MOTHIM"
+script = ExtResource("3_rctee")
+species = &"MOTHIM"
+category = "Moth"
+pokedex_entry = "It loves the honey of flowers and steals honey collected by Combee."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 70
+base_attack = 94
+base_defense = 50
+base_special_attack = 94
+base_special_defense = 50
+base_speed = 66
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 148
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_88sfb")]([SubResource("Resource_c01qf"), SubResource("Resource_ldr83"), SubResource("Resource_ri0qj"), SubResource("Resource_u4gpl"), SubResource("Resource_44eyq"), SubResource("Resource_v5wce"), SubResource("Resource_ps6gt"), SubResource("Resource_7yb5g"), SubResource("Resource_rs2kg"), SubResource("Resource_jkq4k"), SubResource("Resource_3q81j"), SubResource("Resource_v3m68"), SubResource("Resource_n55qt"), SubResource("Resource_t6lnu"), SubResource("Resource_j0hds"), SubResource("Resource_dwbcu"), SubResource("Resource_wxl3u")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DREAMEATER", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SILVERWIND", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UTURN", &"VENOSHOCK"])
+abilities = Array[StringName]([&"SWARM"])
+hidden_abilities = Array[StringName]([&"TINTEDLENS"])
+wild_item_uncommon = Array[StringName]([&"SILVERPOWDER"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_8kh85")]([SubResource("Resource_5cx0w")])
+height = 9
+weight = 233
+color = &"Yellow"
+shape = &"MultiWinged"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 14)
+id = &"MOTHIM"
+display_name = "Mothim"
+flags = Array[StringName]([&"DefaultForm_0"])

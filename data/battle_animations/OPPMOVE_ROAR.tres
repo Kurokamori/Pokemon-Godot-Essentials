@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_iyoyh"]
+
+[resource]
+resource_name = "OPPMOVE_ROAR"
+script = ExtResource("1_iyoyh")
+graphic = "Growl"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 344, 100.6, 100, 100, 0, 1, 0, 255, 0, 0, 0, 1, 1, 352, 70, 100, 100, 0, 1, 1, 255, 0, 0, 0, 1, 1, 352, 132.8, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 312, 100.6, 100, 100, 0, 1, 0, 255, 0, 0, 0, 1, 1, 328, 66.4, 100, 100, 0, 1, 1, 255, 0, 0, 0, 1, 1, 328, 145.4, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 296, 92.6, 100, 100, 0, 1, 0, 255, 0, 0, 0, 1, 1, 296, 41.8, 100, 100, 0, 1, 1, 255, 0, 0, 0, 1, 1, 296, 164, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 248, 108.6, 100, 100, 0, 1, 0, 255, 0, 0, 0, 1, 1, 248, 35.2, 100, 100, 0, 1, 1, 255, 0, 0, 0, 1, 1, 264, 200.6, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(0)
+timing_sounds = PackedStringArray("Wring Out")
+timing_volumes = PackedInt32Array(100)
+timing_pitches = PackedInt32Array(160)
+id = &"OPPMOVE_ROAR"
+display_name = "OppMove:ROAR"

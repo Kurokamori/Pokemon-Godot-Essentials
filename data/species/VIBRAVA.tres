@@ -1,0 +1,154 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_v1cmp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lrfq5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ro0nt"]
+
+[sub_resource type="Resource" id="Resource_04bxl"]
+script = ExtResource("1_v1cmp")
+species = &"FLYGON"
+method = &"Level"
+parameter = "45"
+
+[sub_resource type="Resource" id="Resource_a4ouc"]
+script = ExtResource("1_v1cmp")
+species = &"TRAPINCH"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ri1q6"]
+script = ExtResource("2_lrfq5")
+level = 0
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_shdk3"]
+script = ExtResource("2_lrfq5")
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_y1s4n"]
+script = ExtResource("2_lrfq5")
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_txnf7"]
+script = ExtResource("2_lrfq5")
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_70oq7"]
+script = ExtResource("2_lrfq5")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_xnnn1"]
+script = ExtResource("2_lrfq5")
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_lyifb"]
+script = ExtResource("2_lrfq5")
+move = &"FISSURE"
+
+[sub_resource type="Resource" id="Resource_gv3ni"]
+script = ExtResource("2_lrfq5")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_emg5g"]
+script = ExtResource("2_lrfq5")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_7hsky"]
+script = ExtResource("2_lrfq5")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_ed8dq"]
+script = ExtResource("2_lrfq5")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_24o3h"]
+script = ExtResource("2_lrfq5")
+level = 12
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_er63f"]
+script = ExtResource("2_lrfq5")
+level = 16
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_25eis"]
+script = ExtResource("2_lrfq5")
+level = 20
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_y4i7d"]
+script = ExtResource("2_lrfq5")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_apoxb"]
+script = ExtResource("2_lrfq5")
+level = 28
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_l5ccu"]
+script = ExtResource("2_lrfq5")
+level = 32
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_ou7p8"]
+script = ExtResource("2_lrfq5")
+level = 38
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_m34jq"]
+script = ExtResource("2_lrfq5")
+level = 44
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_p3yxk"]
+script = ExtResource("2_lrfq5")
+level = 50
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_5b5ak"]
+script = ExtResource("2_lrfq5")
+level = 56
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_4bb37"]
+script = ExtResource("2_lrfq5")
+level = 62
+move = &"BOOMBURST"
+
+[resource]
+resource_name = "VIBRAVA"
+script = ExtResource("3_ro0nt")
+species = &"VIBRAVA"
+category = "Vibration"
+pokedex_entry = "It looses ultrasonic waves by rubbing its wings together. Since a Vibrava's wings are still in the process of growing, it can only fly short distances."
+types = Array[StringName]([&"GROUND", &"DRAGON"])
+base_hp = 50
+base_attack = 70
+base_defense = 50
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 70
+ev_attack = 1
+ev_speed = 1
+base_exp = 119
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lrfq5")]([SubResource("Resource_ri1q6"), SubResource("Resource_shdk3"), SubResource("Resource_y1s4n"), SubResource("Resource_txnf7"), SubResource("Resource_70oq7"), SubResource("Resource_xnnn1"), SubResource("Resource_lyifb"), SubResource("Resource_gv3ni"), SubResource("Resource_emg5g"), SubResource("Resource_7hsky"), SubResource("Resource_ed8dq"), SubResource("Resource_24o3h"), SubResource("Resource_er63f"), SubResource("Resource_25eis"), SubResource("Resource_y4i7d"), SubResource("Resource_apoxb"), SubResource("Resource_l5ccu"), SubResource("Resource_ou7p8"), SubResource("Resource_m34jq"), SubResource("Resource_p3yxk"), SubResource("Resource_5b5ak"), SubResource("Resource_4bb37")])
+tutor_moves = Array[StringName]([&"AIRCUTTER", &"AIRSLASH", &"ATTRACT", &"BODYSLAM", &"BUGBITE", &"BUGBUZZ", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DEFOG", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THROATCHOP", &"TWISTER", &"UPROAR", &"UTURN"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Bug", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_v1cmp")]([SubResource("Resource_04bxl"), SubResource("Resource_a4ouc")])
+height = 11
+weight = 153
+color = &"Green"
+shape = &"MultiWinged"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(7, 29)
+id = &"VIBRAVA"
+display_name = "Vibrava"

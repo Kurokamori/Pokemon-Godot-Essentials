@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_y5abd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3ci67"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7mpbk"]
+
+[sub_resource type="Resource" id="Resource_7xcgd"]
+script = ExtResource("2_3ci67")
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_5qhdb"]
+script = ExtResource("2_3ci67")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_60cle"]
+script = ExtResource("2_3ci67")
+level = 5
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_bhohh"]
+script = ExtResource("2_3ci67")
+level = 10
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_hclfh"]
+script = ExtResource("2_3ci67")
+level = 15
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_w2wm1"]
+script = ExtResource("2_3ci67")
+level = 20
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_li262"]
+script = ExtResource("2_3ci67")
+level = 25
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_53aah"]
+script = ExtResource("2_3ci67")
+level = 30
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_lri7s"]
+script = ExtResource("2_3ci67")
+level = 35
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_2cj5v"]
+script = ExtResource("2_3ci67")
+level = 40
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_yuge2"]
+script = ExtResource("2_3ci67")
+level = 45
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_6ncex"]
+script = ExtResource("2_3ci67")
+level = 50
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_vlpkv"]
+script = ExtResource("2_3ci67")
+level = 55
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_4c85d"]
+script = ExtResource("2_3ci67")
+level = 60
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_xmgel"]
+script = ExtResource("2_3ci67")
+level = 65
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_trnrf"]
+script = ExtResource("2_3ci67")
+level = 70
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_anx55"]
+script = ExtResource("2_3ci67")
+level = 75
+move = &"FISSURE"
+
+[resource]
+resource_name = "LANDORUS"
+script = ExtResource("3_7mpbk")
+species = &"LANDORUS"
+form_name = "Incarnate Forme"
+category = "Abundance"
+pokedex_entry = "The energy that comes pouring from its tail increases the nutrition in the soil, making crops grow to great size."
+types = Array[StringName]([&"GROUND", &"FLYING"])
+base_hp = 89
+base_attack = 125
+base_defense = 90
+base_special_attack = 115
+base_special_defense = 80
+base_speed = 101
+ev_special_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 3
+base_happiness = 90
+level_up_moves = Array[ExtResource("2_3ci67")]([SubResource("Resource_7xcgd"), SubResource("Resource_5qhdb"), SubResource("Resource_60cle"), SubResource("Resource_bhohh"), SubResource("Resource_hclfh"), SubResource("Resource_w2wm1"), SubResource("Resource_li262"), SubResource("Resource_53aah"), SubResource("Resource_lri7s"), SubResource("Resource_2cj5v"), SubResource("Resource_yuge2"), SubResource("Resource_6ncex"), SubResource("Resource_vlpkv"), SubResource("Resource_4c85d"), SubResource("Resource_xmgel"), SubResource("Resource_trnrf"), SubResource("Resource_anx55")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLING", &"FLY", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"IRONTAIL", &"KNOCKOFF", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"TOXIC", &"UTURN", &"WEATHERBALL"])
+abilities = Array[StringName]([&"SANDFORCE"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+hatch_steps = 30720
+height = 15
+weight = 680
+color = &"Brown"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 6)
+shadow_size = 3
+id = &"LANDORUS"
+display_name = "Landorus"
+flags = Array[StringName]([&"Legendary"])

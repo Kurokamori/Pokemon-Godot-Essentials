@@ -1,0 +1,150 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_t3q1v"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gruhv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8vpny"]
+
+[sub_resource type="Resource" id="Resource_12pvk"]
+script = ExtResource("1_t3q1v")
+species = &"DROWZEE"
+method = &"Level"
+parameter = "26"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_tklk0"]
+script = ExtResource("2_gruhv")
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_xnhoq"]
+script = ExtResource("2_gruhv")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_ujev7"]
+script = ExtResource("2_gruhv")
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_n1bf3"]
+script = ExtResource("2_gruhv")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_hgjrt"]
+script = ExtResource("2_gruhv")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_gn7yn"]
+script = ExtResource("2_gruhv")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_w38py"]
+script = ExtResource("2_gruhv")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_fj6vo"]
+script = ExtResource("2_gruhv")
+level = 5
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_ob17q"]
+script = ExtResource("2_gruhv")
+level = 9
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_xatbu"]
+script = ExtResource("2_gruhv")
+level = 13
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_cvrrx"]
+script = ExtResource("2_gruhv")
+level = 17
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_rqpg8"]
+script = ExtResource("2_gruhv")
+level = 21
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_28ba1"]
+script = ExtResource("2_gruhv")
+level = 25
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_4tu31"]
+script = ExtResource("2_gruhv")
+level = 29
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_nnx1g"]
+script = ExtResource("2_gruhv")
+level = 33
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_tirfm"]
+script = ExtResource("2_gruhv")
+level = 37
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_uenqt"]
+script = ExtResource("2_gruhv")
+level = 41
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_q6we6"]
+script = ExtResource("2_gruhv")
+level = 45
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_c0kp8"]
+script = ExtResource("2_gruhv")
+level = 49
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_6srs7"]
+script = ExtResource("2_gruhv")
+level = 53
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_hwmlt"]
+script = ExtResource("2_gruhv")
+level = 57
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_h2kne"]
+script = ExtResource("2_gruhv")
+level = 61
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "HYPNO"
+script = ExtResource("3_8vpny")
+species = &"HYPNO"
+category = "Hypnosis"
+pokedex_entry = "The arcing movement and glitter of the pendulum in a Hypno's hand lull the foe into deep hypnosis. While searching for prey, it polishes the pendulum."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 85
+base_attack = 73
+base_defense = 70
+base_special_attack = 73
+base_special_defense = 115
+base_speed = 67
+ev_special_defense = 2
+base_exp = 169
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gruhv")]([SubResource("Resource_tklk0"), SubResource("Resource_xnhoq"), SubResource("Resource_ujev7"), SubResource("Resource_n1bf3"), SubResource("Resource_hgjrt"), SubResource("Resource_gn7yn"), SubResource("Resource_w38py"), SubResource("Resource_fj6vo"), SubResource("Resource_ob17q"), SubResource("Resource_xatbu"), SubResource("Resource_cvrrx"), SubResource("Resource_rqpg8"), SubResource("Resource_28ba1"), SubResource("Resource_4tu31"), SubResource("Resource_nnx1g"), SubResource("Resource_tirfm"), SubResource("Resource_uenqt"), SubResource("Resource_q6we6"), SubResource("Resource_c0kp8"), SubResource("Resource_6srs7"), SubResource("Resource_hwmlt"), SubResource("Resource_h2kne")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INSOMNIA", &"FOREWARN"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_t3q1v")]([SubResource("Resource_12pvk")])
+height = 16
+weight = 756
+color = &"Yellow"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 22)
+id = &"HYPNO"
+display_name = "Hypno"

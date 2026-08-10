@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_pby81"]
+
+[resource]
+resource_name = "TOXICORB"
+script = ExtResource("1_pby81")
+name_plural = "Toxic Orbs"
+price = 4000
+sell_price = 2000
+bp_price = 16
+description = "An item to be held by a Pokémon. It is a bizarre orb that badly poisons the holder in battle."
+id = &"TOXICORB"
+display_name = "Toxic Orb"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_n1kf6"]
+
+[resource]
+script = ExtResource("1_n1kf6")
+category = &"growth_rates"
+record_script = "res://src/data/growth_rate_data.gd"
+paths = {
+&"Erratic": "res://data/growth_rates/Erratic.tres",
+&"Fast": "res://data/growth_rates/Fast.tres",
+&"Fluctuating": "res://data/growth_rates/Fluctuating.tres",
+&"Medium": "res://data/growth_rates/Medium.tres",
+&"Parabolic": "res://data/growth_rates/Parabolic.tres",
+&"Slow": "res://data/growth_rates/Slow.tres"
+}
+ordered_ids = Array[StringName]([&"Medium", &"Erratic", &"Fluctuating", &"Parabolic", &"Fast", &"Slow"])

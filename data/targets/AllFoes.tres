@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TargetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/target_data.gd" id="1_agh6l"]
+
+[resource]
+resource_name = "AllFoes"
+script = ExtResource("1_agh6l")
+num_targets = 2
+targets_foe = true
+targets_all = true
+long_range = true
+id = &"AllFoes"
+display_name = "All Foes"

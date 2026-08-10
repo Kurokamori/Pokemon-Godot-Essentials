@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_e057h"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_6kduw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7if4i"]
+
+[sub_resource type="Resource" id="Resource_y6k5u"]
+script = ExtResource("1_e057h")
+species = &"VIBRAVA"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_uuh1e"]
+script = ExtResource("2_6kduw")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_neror"]
+script = ExtResource("2_6kduw")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_l76sb"]
+script = ExtResource("2_6kduw")
+level = 4
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_hltho"]
+script = ExtResource("2_6kduw")
+level = 8
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_rpud4"]
+script = ExtResource("2_6kduw")
+level = 12
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_gcwm3"]
+script = ExtResource("2_6kduw")
+level = 16
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_3pjep"]
+script = ExtResource("2_6kduw")
+level = 20
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_hebwe"]
+script = ExtResource("2_6kduw")
+level = 24
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_svwnn"]
+script = ExtResource("2_6kduw")
+level = 28
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_wg8ol"]
+script = ExtResource("2_6kduw")
+level = 32
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_u14lf"]
+script = ExtResource("2_6kduw")
+level = 36
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_1jgwv"]
+script = ExtResource("2_6kduw")
+level = 40
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_bxn7d"]
+script = ExtResource("2_6kduw")
+level = 44
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_tqq2s"]
+script = ExtResource("2_6kduw")
+level = 48
+move = &"FISSURE"
+
+[resource]
+resource_name = "TRAPINCH"
+script = ExtResource("3_7if4i")
+species = &"TRAPINCH"
+category = "Ant Pit"
+pokedex_entry = "Its big jaws crunch through boulders. Because its head is so big, it has a hard time getting back upright if it tips over onto its back."
+types = Array[StringName]([&"GROUND"])
+base_hp = 45
+base_attack = 100
+base_defense = 45
+base_special_attack = 45
+base_special_defense = 45
+base_speed = 10
+ev_attack = 1
+base_exp = 58
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_6kduw")]([SubResource("Resource_uuh1e"), SubResource("Resource_neror"), SubResource("Resource_l76sb"), SubResource("Resource_hltho"), SubResource("Resource_rpud4"), SubResource("Resource_gcwm3"), SubResource("Resource_3pjep"), SubResource("Resource_hebwe"), SubResource("Resource_svwnn"), SubResource("Resource_wg8ol"), SubResource("Resource_u14lf"), SubResource("Resource_1jgwv"), SubResource("Resource_bxn7d"), SubResource("Resource_tqq2s")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BUGBITE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER"])
+egg_moves = Array[StringName]([&"BUGBITE", &"EARTHPOWER", &"FEINT", &"FIRSTIMPRESSION", &"FLAIL", &"FOCUSENERGY", &"FURYCUTTER", &"GUST", &"MUDSHOT", &"QUICKATTACK"])
+abilities = Array[StringName]([&"HYPERCUTTER", &"ARENATRAP"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+wild_item_uncommon = Array[StringName]([&"SOFTSAND"])
+egg_groups = Array[StringName]([&"Bug", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_e057h")]([SubResource("Resource_y6k5u")])
+height = 7
+weight = 150
+color = &"Brown"
+shape = &"Insectoid"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-3, 31)
+shadow_size = 1
+id = &"TRAPINCH"
+display_name = "Trapinch"

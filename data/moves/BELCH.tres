@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1i3ey"]
+
+[resource]
+resource_name = "BELCH"
+script = ExtResource("1_1i3ey")
+type = &"POISON"
+category = 1
+power = 120
+accuracy = 90
+total_pp = 10
+function_code = &"FailsIfUserNotConsumedBerry"
+description = "The user lets out a damaging belch at the target. The user must eat a held Berry to use this move."
+id = &"BELCH"
+display_name = "Belch"
+flags = Array[StringName]([&"CanProtect"])

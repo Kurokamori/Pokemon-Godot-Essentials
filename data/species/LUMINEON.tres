@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xpwfk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jao3v"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ru7h6"]
+
+[sub_resource type="Resource" id="Resource_8ja1x"]
+script = ExtResource("1_xpwfk")
+species = &"FINNEON"
+method = &"Level"
+parameter = "31"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_67ph2"]
+script = ExtResource("2_jao3v")
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_bbttg"]
+script = ExtResource("2_jao3v")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_3wi07"]
+script = ExtResource("2_jao3v")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_qaskt"]
+script = ExtResource("2_jao3v")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_cc214"]
+script = ExtResource("2_jao3v")
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_y22r6"]
+script = ExtResource("2_jao3v")
+level = 6
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_jj245"]
+script = ExtResource("2_jao3v")
+level = 10
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_ylo18"]
+script = ExtResource("2_jao3v")
+level = 13
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_dmilx"]
+script = ExtResource("2_jao3v")
+level = 17
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_rt2wl"]
+script = ExtResource("2_jao3v")
+level = 22
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_r55jb"]
+script = ExtResource("2_jao3v")
+level = 26
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_ts7k4"]
+script = ExtResource("2_jao3v")
+level = 29
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_qpob5"]
+script = ExtResource("2_jao3v")
+level = 35
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_pit43"]
+script = ExtResource("2_jao3v")
+level = 42
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_w7wmr"]
+script = ExtResource("2_jao3v")
+level = 48
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_gu0el"]
+script = ExtResource("2_jao3v")
+level = 53
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_436bg"]
+script = ExtResource("2_jao3v")
+level = 59
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_gcwlv"]
+script = ExtResource("2_jao3v")
+level = 66
+move = &"SOAK"
+
+[resource]
+resource_name = "LUMINEON"
+script = ExtResource("3_ru7h6")
+species = &"LUMINEON"
+category = "Neon"
+pokedex_entry = "It lives on the deep-sea floor. It attracts prey by flashing the patterns on its four tail fins."
+types = Array[StringName]([&"WATER"])
+base_hp = 69
+base_attack = 69
+base_defense = 76
+base_special_attack = 69
+base_special_defense = 86
+base_speed = 91
+ev_speed = 2
+base_exp = 161
+growth_rate = &"Erratic"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jao3v")]([SubResource("Resource_67ph2"), SubResource("Resource_bbttg"), SubResource("Resource_3wi07"), SubResource("Resource_qaskt"), SubResource("Resource_cc214"), SubResource("Resource_y22r6"), SubResource("Resource_jj245"), SubResource("Resource_ylo18"), SubResource("Resource_dmilx"), SubResource("Resource_rt2wl"), SubResource("Resource_r55jb"), SubResource("Resource_ts7k4"), SubResource("Resource_qpob5"), SubResource("Resource_pit43"), SubResource("Resource_w7wmr"), SubResource("Resource_gu0el"), SubResource("Resource_436bg"), SubResource("Resource_gcwlv")])
+tutor_moves = Array[StringName]([&"AIRCUTTER", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TWISTER", &"UTURN", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"STORMDRAIN"])
+hidden_abilities = Array[StringName]([&"WATERVEIL"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xpwfk")]([SubResource("Resource_8ja1x")])
+height = 12
+weight = 240
+color = &"Blue"
+shape = &"Finned"
+generation = 4
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(4, 12)
+id = &"LUMINEON"
+display_name = "Lumineon"

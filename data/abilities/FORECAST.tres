@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_wxee4"]
+
+[resource]
+resource_name = "FORECAST"
+script = ExtResource("1_wxee4")
+description = "Castform transforms with the weather."
+id = &"FORECAST"
+display_name = "Forecast"

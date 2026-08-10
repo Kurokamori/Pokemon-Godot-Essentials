@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_41kwp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rdqo4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_05fbo"]
+
+[sub_resource type="Resource" id="Resource_0au4n"]
+script = ExtResource("1_41kwp")
+species = &"DODUO"
+method = &"Level"
+parameter = "31"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_berjh"]
+script = ExtResource("2_rdqo4")
+level = 0
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_aj765"]
+script = ExtResource("2_rdqo4")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_hxklm"]
+script = ExtResource("2_rdqo4")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_85kba"]
+script = ExtResource("2_rdqo4")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_0dvjv"]
+script = ExtResource("2_rdqo4")
+level = 5
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_7u1wb"]
+script = ExtResource("2_rdqo4")
+level = 8
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_gteho"]
+script = ExtResource("2_rdqo4")
+level = 12
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_mf7br"]
+script = ExtResource("2_rdqo4")
+level = 15
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_mrks1"]
+script = ExtResource("2_rdqo4")
+level = 19
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_mha7s"]
+script = ExtResource("2_rdqo4")
+level = 22
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_j6tne"]
+script = ExtResource("2_rdqo4")
+level = 26
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_kt7u7"]
+script = ExtResource("2_rdqo4")
+level = 29
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_qg3jj"]
+script = ExtResource("2_rdqo4")
+level = 34
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_aduot"]
+script = ExtResource("2_rdqo4")
+level = 38
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_gx3kb"]
+script = ExtResource("2_rdqo4")
+level = 43
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_sayva"]
+script = ExtResource("2_rdqo4")
+level = 47
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_3328w"]
+script = ExtResource("2_rdqo4")
+level = 52
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_6652x"]
+script = ExtResource("2_rdqo4")
+level = 56
+move = &"THRASH"
+
+[resource]
+resource_name = "DODRIO"
+script = ExtResource("3_05fbo")
+species = &"DODRIO"
+category = "Triple Bird"
+pokedex_entry = "A peculiar Pokémon species with three heads. It vigorously races across grassy plains even in arid seasons with little rainfall."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 60
+base_attack = 110
+base_defense = 70
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 110
+ev_attack = 2
+base_exp = 165
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rdqo4")]([SubResource("Resource_berjh"), SubResource("Resource_aj765"), SubResource("Resource_hxklm"), SubResource("Resource_85kba"), SubResource("Resource_0dvjv"), SubResource("Resource_7u1wb"), SubResource("Resource_gteho"), SubResource("Resource_mf7br"), SubResource("Resource_mrks1"), SubResource("Resource_mha7s"), SubResource("Resource_j6tne"), SubResource("Resource_kt7u7"), SubResource("Resource_qg3jj"), SubResource("Resource_aduot"), SubResource("Resource_gx3kb"), SubResource("Resource_sayva"), SubResource("Resource_3328w"), SubResource("Resource_6652x")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"KNOCKOFF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PLUCK", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"TORMENT", &"UPROAR", &"WORKUP"])
+abilities = Array[StringName]([&"RUNAWAY", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"TANGLEDFEET"])
+wild_item_uncommon = Array[StringName]([&"SHARPBEAK"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_41kwp")]([SubResource("Resource_0au4n")])
+height = 18
+weight = 852
+color = &"Brown"
+shape = &"HeadLegs"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 45)
+front_sprite_offset = Vector2i(0, 13)
+id = &"DODRIO"
+display_name = "Dodrio"

@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ln4lk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_iasbu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mximw"]
+
+[sub_resource type="Resource" id="Resource_nu7hx"]
+script = ExtResource("1_ln4lk")
+species = &"MACHOKE"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jk5nf"]
+script = ExtResource("2_iasbu")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_ww4ms"]
+script = ExtResource("2_iasbu")
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_kkqvj"]
+script = ExtResource("2_iasbu")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_5fi6h"]
+script = ExtResource("2_iasbu")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_qlfy1"]
+script = ExtResource("2_iasbu")
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_8hf3t"]
+script = ExtResource("2_iasbu")
+level = 12
+move = &"LOWSWEEP"
+
+[sub_resource type="Resource" id="Resource_5nd3f"]
+script = ExtResource("2_iasbu")
+level = 16
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_h3wav"]
+script = ExtResource("2_iasbu")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_8krt6"]
+script = ExtResource("2_iasbu")
+level = 24
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_fxue0"]
+script = ExtResource("2_iasbu")
+level = 31
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_eoa63"]
+script = ExtResource("2_iasbu")
+level = 36
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_hfui5"]
+script = ExtResource("2_iasbu")
+level = 42
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_xtd0k"]
+script = ExtResource("2_iasbu")
+level = 48
+move = &"SEISMICTOSS"
+
+[sub_resource type="Resource" id="Resource_ne3ga"]
+script = ExtResource("2_iasbu")
+level = 54
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_tdr4w"]
+script = ExtResource("2_iasbu")
+level = 60
+move = &"CROSSCHOP"
+
+[sub_resource type="Resource" id="Resource_ffrao"]
+script = ExtResource("2_iasbu")
+level = 66
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "MACHAMP"
+script = ExtResource("3_mximw")
+species = &"MACHAMP"
+category = "Superpower"
+pokedex_entry = "It is impossible to defend against punches and chops doled out by its four arms. Its fighting spirit flares up when it faces a tough opponent."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 90
+base_attack = 130
+base_defense = 80
+base_special_attack = 65
+base_special_defense = 85
+base_speed = 55
+ev_attack = 3
+base_exp = 253
+growth_rate = &"Parabolic"
+gender_ratio = &"Female25Percent"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_iasbu")]([SubResource("Resource_jk5nf"), SubResource("Resource_ww4ms"), SubResource("Resource_kkqvj"), SubResource("Resource_5fi6h"), SubResource("Resource_qlfy1"), SubResource("Resource_8hf3t"), SubResource("Resource_5nd3f"), SubResource("Resource_h3wav"), SubResource("Resource_8krt6"), SubResource("Resource_fxue0"), SubResource("Resource_eoa63"), SubResource("Resource_hfui5"), SubResource("Resource_xtd0k"), SubResource("Resource_ne3ga"), SubResource("Resource_tdr4w"), SubResource("Resource_ffrao")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COUNTER", &"CROSSPOISON", &"DARKESTLARIAT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENCORE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEAVYSLAM", &"HELPINGHAND", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEPUNCH", &"INCINERATE", &"KNOCKOFF", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"VACUUMWAVE", &"WORKUP"])
+abilities = Array[StringName]([&"GUTS", &"NOGUARD"])
+hidden_abilities = Array[StringName]([&"STEADFAST"])
+wild_item_uncommon = Array[StringName]([&"FOCUSBAND"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ln4lk")]([SubResource("Resource_nu7hx")])
+height = 16
+weight = 1300
+color = &"Gray"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(0, 17)
+id = &"MACHAMP"
+display_name = "Machamp"

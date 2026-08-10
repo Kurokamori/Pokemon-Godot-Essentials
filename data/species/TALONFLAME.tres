@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hnagx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nwrm4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jlogu"]
+
+[sub_resource type="Resource" id="Resource_8up5b"]
+script = ExtResource("1_hnagx")
+species = &"FLETCHINDER"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_olb17"]
+script = ExtResource("2_nwrm4")
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_wktjc"]
+script = ExtResource("2_nwrm4")
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_owila"]
+script = ExtResource("2_nwrm4")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_x5k38"]
+script = ExtResource("2_nwrm4")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_rjnl3"]
+script = ExtResource("2_nwrm4")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_j3844"]
+script = ExtResource("2_nwrm4")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_jip2l"]
+script = ExtResource("2_nwrm4")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_ejt5u"]
+script = ExtResource("2_nwrm4")
+level = 15
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_l16iv"]
+script = ExtResource("2_nwrm4")
+level = 22
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_8pr62"]
+script = ExtResource("2_nwrm4")
+level = 29
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_m8euu"]
+script = ExtResource("2_nwrm4")
+level = 38
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_7e0tb"]
+script = ExtResource("2_nwrm4")
+level = 47
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_mtxgq"]
+script = ExtResource("2_nwrm4")
+level = 56
+move = &"STEELWING"
+
+[sub_resource type="Resource" id="Resource_ccrrj"]
+script = ExtResource("2_nwrm4")
+level = 65
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_t6sas"]
+script = ExtResource("2_nwrm4")
+level = 74
+move = &"FLY"
+
+[sub_resource type="Resource" id="Resource_41a4i"]
+script = ExtResource("2_nwrm4")
+level = 83
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "TALONFLAME"
+script = ExtResource("3_jlogu")
+species = &"TALONFLAME"
+category = "Scorching"
+pokedex_entry = "In the fever of an exciting battle, it showers embers from the gaps between its feathers and takes to the air."
+types = Array[StringName]([&"FIRE", &"FLYING"])
+base_hp = 78
+base_attack = 81
+base_defense = 71
+base_special_attack = 74
+base_special_defense = 69
+base_speed = 126
+ev_speed = 3
+base_exp = 175
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nwrm4")]([SubResource("Resource_olb17"), SubResource("Resource_wktjc"), SubResource("Resource_owila"), SubResource("Resource_x5k38"), SubResource("Resource_rjnl3"), SubResource("Resource_j3844"), SubResource("Resource_jip2l"), SubResource("Resource_ejt5u"), SubResource("Resource_l16iv"), SubResource("Resource_8pr62"), SubResource("Resource_m8euu"), SubResource("Resource_7e0tb"), SubResource("Resource_mtxgq"), SubResource("Resource_ccrrj"), SubResource("Resource_t6sas"), SubResource("Resource_41a4i")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ATTRACT", &"BRAVEBIRD", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYPERBEAM", &"INCINERATE", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"TAUNT", &"THIEF", &"TOXIC", &"UTURN", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"GALEWINGS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_hnagx")]([SubResource("Resource_8up5b")])
+height = 12
+weight = 245
+shape = &"Winged"
+generation = 6
+back_sprite_offset = Vector2i(0, 51)
+front_sprite_offset = Vector2i(0, 5)
+id = &"TALONFLAME"
+display_name = "Talonflame"

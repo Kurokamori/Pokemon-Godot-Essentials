@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tyyk0"]
+
+[resource]
+resource_name = "NUZZLE"
+script = ExtResource("1_tyyk0")
+type = &"ELECTRIC"
+category = 0
+power = 20
+total_pp = 20
+function_code = &"ParalyzeTarget"
+effect_chance = 100
+description = "The user nuzzles its electrified cheeks against the target. This also leaves the target with paralysis."
+id = &"NUZZLE"
+display_name = "Nuzzle"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2r0n6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3a6ri"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7cvij"]
+
+[sub_resource type="Resource" id="Resource_ob632"]
+script = ExtResource("1_2r0n6")
+species = &"EEVEE"
+method = &"Item"
+parameter = "LEAFSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_auhtl"]
+script = ExtResource("2_3a6ri")
+level = 0
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_1ttqp"]
+script = ExtResource("2_3a6ri")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_1c3nd"]
+script = ExtResource("2_3a6ri")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_ps0do"]
+script = ExtResource("2_3a6ri")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_phq5t"]
+script = ExtResource("2_3a6ri")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_c85r5"]
+script = ExtResource("2_3a6ri")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_tew6b"]
+script = ExtResource("2_3a6ri")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_xf8q7"]
+script = ExtResource("2_3a6ri")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_fm37p"]
+script = ExtResource("2_3a6ri")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_61al5"]
+script = ExtResource("2_3a6ri")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_57ml3"]
+script = ExtResource("2_3a6ri")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_s7aeg"]
+script = ExtResource("2_3a6ri")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_tvlhi"]
+script = ExtResource("2_3a6ri")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_rmj2q"]
+script = ExtResource("2_3a6ri")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_6eckb"]
+script = ExtResource("2_3a6ri")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_wipma"]
+script = ExtResource("2_3a6ri")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_drwfc"]
+script = ExtResource("2_3a6ri")
+level = 20
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_r5jcc"]
+script = ExtResource("2_3a6ri")
+level = 25
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_krp31"]
+script = ExtResource("2_3a6ri")
+level = 30
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_q1aj3"]
+script = ExtResource("2_3a6ri")
+level = 35
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_3iwf0"]
+script = ExtResource("2_3a6ri")
+level = 40
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_w2nko"]
+script = ExtResource("2_3a6ri")
+level = 45
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_pk4gf"]
+script = ExtResource("2_3a6ri")
+level = 50
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_5ok0y"]
+script = ExtResource("2_3a6ri")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "LEAFEON"
+script = ExtResource("3_7cvij")
+species = &"LEAFEON"
+category = "Verdant"
+pokedex_entry = "Just like a plant, it uses photosynthesis. As a result, it is always enveloped in clear air."
+types = Array[StringName]([&"GRASS"])
+base_hp = 65
+base_attack = 110
+base_defense = 130
+base_special_attack = 60
+base_special_defense = 65
+base_speed = 95
+ev_defense = 2
+base_exp = 184
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_3a6ri")]([SubResource("Resource_auhtl"), SubResource("Resource_1ttqp"), SubResource("Resource_1c3nd"), SubResource("Resource_ps0do"), SubResource("Resource_phq5t"), SubResource("Resource_c85r5"), SubResource("Resource_tew6b"), SubResource("Resource_xf8q7"), SubResource("Resource_fm37p"), SubResource("Resource_61al5"), SubResource("Resource_57ml3"), SubResource("Resource_s7aeg"), SubResource("Resource_tvlhi"), SubResource("Resource_rmj2q"), SubResource("Resource_6eckb"), SubResource("Resource_wipma"), SubResource("Resource_drwfc"), SubResource("Resource_r5jcc"), SubResource("Resource_krp31"), SubResource("Resource_q1aj3"), SubResource("Resource_3iwf0"), SubResource("Resource_w2nko"), SubResource("Resource_pk4gf"), SubResource("Resource_5ok0y")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLASH", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LEAFBLADE", &"LEAFSTORM", &"MAGICALLEAF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PAYDAY", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"WEATHERBALL", &"WORKUP", &"WORRYSEED", &"XSCISSOR"])
+abilities = Array[StringName]([&"LEAFGUARD"])
+hidden_abilities = Array[StringName]([&"CHLOROPHYLL"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_2r0n6")]([SubResource("Resource_ob632")])
+height = 10
+weight = 255
+color = &"Green"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(-6, 52)
+front_sprite_offset = Vector2i(2, 25)
+shadow_size = 1
+id = &"LEAFEON"
+display_name = "Leafeon"

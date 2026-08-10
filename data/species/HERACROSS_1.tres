@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_q0618"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qs64x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_usgun"]
+
+[sub_resource type="Resource" id="Resource_ayq78"]
+script = ExtResource("2_qs64x")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_jfxg2"]
+script = ExtResource("2_qs64x")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_jw2kv"]
+script = ExtResource("2_qs64x")
+level = 5
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_kbh0b"]
+script = ExtResource("2_qs64x")
+level = 10
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_df6nq"]
+script = ExtResource("2_qs64x")
+level = 15
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_7vaop"]
+script = ExtResource("2_qs64x")
+level = 20
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_wjpxx"]
+script = ExtResource("2_qs64x")
+level = 25
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_dybfv"]
+script = ExtResource("2_qs64x")
+level = 30
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_u2ucu"]
+script = ExtResource("2_qs64x")
+level = 35
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_mglha"]
+script = ExtResource("2_qs64x")
+level = 40
+move = &"THROATCHOP"
+
+[sub_resource type="Resource" id="Resource_8plb4"]
+script = ExtResource("2_qs64x")
+level = 45
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_gmtu5"]
+script = ExtResource("2_qs64x")
+level = 50
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_hu7gg"]
+script = ExtResource("2_qs64x")
+level = 55
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_c2r8y"]
+script = ExtResource("2_qs64x")
+level = 60
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "HERACROSS_1"
+script = ExtResource("3_usgun")
+species = &"HERACROSS"
+form = 1
+form_name = "Mega Heracross"
+category = "Single Horn"
+pokedex_entry = "A tremendous influx of energy builds it up, but when Mega Evolution ends, Heracross is bothered by terrible soreness in its muscles."
+pokedex_form = 1
+types = Array[StringName]([&"BUG", &"FIGHTING"])
+base_hp = 80
+base_attack = 185
+base_defense = 115
+base_special_attack = 40
+base_special_defense = 105
+base_speed = 75
+ev_attack = 2
+base_exp = 210
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qs64x")]([SubResource("Resource_ayq78"), SubResource("Resource_jfxg2"), SubResource("Resource_jw2kv"), SubResource("Resource_kbh0b"), SubResource("Resource_df6nq"), SubResource("Resource_7vaop"), SubResource("Resource_wjpxx"), SubResource("Resource_dybfv"), SubResource("Resource_u2ucu"), SubResource("Resource_mglha"), SubResource("Resource_8plb4"), SubResource("Resource_gmtu5"), SubResource("Resource_hu7gg"), SubResource("Resource_c2r8y")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BUGBITE", &"BULKUP", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COUNTER", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"KNOCKOFF", &"LOWKICK", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"PINMISSILE", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SMACKDOWN", &"SMARTSTRIKE", &"SNORE", &"SPIKES", &"STONEEDGE", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"THROATCHOP", &"VACUUMWAVE", &"VENOSHOCK", &"WORKUP"])
+egg_moves = Array[StringName]([&"DOUBLEEDGE", &"FEINT", &"FLAIL", &"HARDEN", &"MEGAHORN", &"NIGHTSLASH", &"REVENGE", &"ROCKBLAST", &"SEISMICTOSS", &"TAKEDOWN"])
+abilities = Array[StringName]([&"SKILLLINK"])
+hidden_abilities = Array[StringName]([&"SKILLLINK"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 6400
+height = 17
+weight = 625
+color = &"Blue"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 6
+mega_stone = &"HERACRONITE"
+back_sprite_offset = Vector2i(6, 40)
+front_sprite_offset = Vector2i(-4, 15)
+id = &"HERACROSS_1"
+display_name = "Heracross"

@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jk1at"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_oousk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_eoe8a"]
+
+[sub_resource type="Resource" id="Resource_1lbwe"]
+script = ExtResource("2_oousk")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_53b2n"]
+script = ExtResource("2_oousk")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_x2u6s"]
+script = ExtResource("2_oousk")
+level = 5
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_2b1d4"]
+script = ExtResource("2_oousk")
+level = 10
+move = &"CIRCLETHROW"
+
+[sub_resource type="Resource" id="Resource_yan3m"]
+script = ExtResource("2_oousk")
+level = 15
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_6mfix"]
+script = ExtResource("2_oousk")
+level = 20
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_v8ghb"]
+script = ExtResource("2_oousk")
+level = 25
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_hpbk4"]
+script = ExtResource("2_oousk")
+level = 30
+move = &"STORMTHROW"
+
+[sub_resource type="Resource" id="Resource_oe2xj"]
+script = ExtResource("2_oousk")
+level = 35
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_a03am"]
+script = ExtResource("2_oousk")
+level = 40
+move = &"SEISMICTOSS"
+
+[sub_resource type="Resource" id="Resource_ygajk"]
+script = ExtResource("2_oousk")
+level = 45
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_i7ful"]
+script = ExtResource("2_oousk")
+level = 50
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_gjb6f"]
+script = ExtResource("2_oousk")
+level = 55
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "THROH"
+script = ExtResource("3_eoe8a")
+species = &"THROH"
+category = "Judo"
+pokedex_entry = "When they encounter foes bigger than themselves, they try to throw them. They always travel in packs of five."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 120
+base_attack = 100
+base_defense = 85
+base_special_attack = 30
+base_special_defense = 85
+base_speed = 45
+ev_hp = 2
+base_exp = 163
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_oousk")]([SubResource("Resource_1lbwe"), SubResource("Resource_53b2n"), SubResource("Resource_x2u6s"), SubResource("Resource_2b1d4"), SubResource("Resource_yan3m"), SubResource("Resource_6mfix"), SubResource("Resource_v8ghb"), SubResource("Resource_hpbk4"), SubResource("Resource_oe2xj"), SubResource("Resource_a03am"), SubResource("Resource_ygajk"), SubResource("Resource_i7ful"), SubResource("Resource_gjb6f")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"COACHING", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"KNOCKOFF", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"GUTS", &"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"MOLDBREAKER"])
+wild_item_uncommon = Array[StringName]([&"BLACKBELT"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+height = 13
+weight = 555
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 26)
+id = &"THROH"
+display_name = "Throh"

@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fbhpu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_s8605"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uuhlm"]
+
+[sub_resource type="Resource" id="Resource_pwnqq"]
+script = ExtResource("1_fbhpu")
+species = &"OCTILLERY"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_gd5cs"]
+script = ExtResource("2_s8605")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_n070v"]
+script = ExtResource("2_s8605")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_ifwhm"]
+script = ExtResource("2_s8605")
+level = 4
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_e6u1m"]
+script = ExtResource("2_s8605")
+level = 8
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_bp0e4"]
+script = ExtResource("2_s8605")
+level = 12
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_to6vo"]
+script = ExtResource("2_s8605")
+level = 16
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_7xy82"]
+script = ExtResource("2_s8605")
+level = 20
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_lwues"]
+script = ExtResource("2_s8605")
+level = 24
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_e8ueo"]
+script = ExtResource("2_s8605")
+level = 28
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_cu7fn"]
+script = ExtResource("2_s8605")
+level = 32
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_808ic"]
+script = ExtResource("2_s8605")
+level = 36
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_kebs4"]
+script = ExtResource("2_s8605")
+level = 40
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_oeibk"]
+script = ExtResource("2_s8605")
+level = 44
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "REMORAID"
+script = ExtResource("3_uuhlm")
+species = &"REMORAID"
+category = "Jet"
+pokedex_entry = "A Remoraid uses its abdominal muscles to forcefully expel swallowed water, then shoot down flying prey. When evolution approaches, it travels down rivers."
+types = Array[StringName]([&"WATER"])
+base_hp = 35
+base_attack = 65
+base_defense = 35
+base_special_attack = 65
+base_special_defense = 35
+base_speed = 65
+ev_special_attack = 1
+base_exp = 60
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_s8605")]([SubResource("Resource_gd5cs"), SubResource("Resource_n070v"), SubResource("Resource_ifwhm"), SubResource("Resource_e6u1m"), SubResource("Resource_bp0e4"), SubResource("Resource_to6vo"), SubResource("Resource_7xy82"), SubResource("Resource_lwues"), SubResource("Resource_e8ueo"), SubResource("Resource_cu7fn"), SubResource("Resource_808ic"), SubResource("Resource_kebs4"), SubResource("Resource_oeibk")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"BULLETSEED", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FOCUSENERGY", &"FRUSTRATION", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SIGNALBEAM", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STRINGSHOT", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDERWAVE", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"ACIDSPRAY", &"AURORABEAM", &"ENTRAINMENT", &"FLAIL", &"HAZE", &"MUDSHOT", &"OCTAZOOKA", &"ROCKBLAST", &"SCREECH", &"SNORE", &"SUPERSONIC", &"SWIFT", &"WATERSPOUT"])
+abilities = Array[StringName]([&"HUSTLE", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"MOODY"])
+egg_groups = Array[StringName]([&"Water1", &"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_fbhpu")]([SubResource("Resource_pwnqq")])
+height = 6
+weight = 120
+color = &"Gray"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 2
+back_sprite_offset = Vector2i(0, 64)
+front_sprite_offset = Vector2i(0, 14)
+shadow_size = 1
+id = &"REMORAID"
+display_name = "Remoraid"

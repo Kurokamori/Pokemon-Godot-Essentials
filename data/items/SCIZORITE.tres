@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_7sa8t"]
+
+[resource]
+resource_name = "SCIZORITE"
+script = ExtResource("1_7sa8t")
+name_plural = "Scizorites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Scizor hold it, and it will be able to Mega Evolve."
+id = &"SCIZORITE"
+display_name = "Scizorite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

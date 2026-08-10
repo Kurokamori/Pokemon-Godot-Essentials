@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wj4c1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jgr7q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0g4ka"]
+
+[sub_resource type="Resource" id="Resource_g3mua"]
+script = ExtResource("1_wj4c1")
+species = &"CORVISQUIRE"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_n1urb"]
+script = ExtResource("2_jgr7q")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_qd25w"]
+script = ExtResource("2_jgr7q")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_nsamr"]
+script = ExtResource("2_jgr7q")
+level = 4
+move = &"POWERTRIP"
+
+[sub_resource type="Resource" id="Resource_sedb4"]
+script = ExtResource("2_jgr7q")
+level = 8
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_76p5k"]
+script = ExtResource("2_jgr7q")
+level = 12
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_50rkx"]
+script = ExtResource("2_jgr7q")
+level = 16
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_vanb2"]
+script = ExtResource("2_jgr7q")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_11cb5"]
+script = ExtResource("2_jgr7q")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_x4yt6"]
+script = ExtResource("2_jgr7q")
+level = 28
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_0qch6"]
+script = ExtResource("2_jgr7q")
+level = 32
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_1467x"]
+script = ExtResource("2_jgr7q")
+level = 36
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "ROOKIDEE"
+script = ExtResource("3_0g4ka")
+species = &"ROOKIDEE"
+category = "Tiny Bird"
+pokedex_entry = "Jumping nimbly about, this small-bodied Pokémon takes advantage of even the slightest opportunity to disorient larger opponents."
+types = Array[StringName]([&"FLYING"])
+base_hp = 38
+base_attack = 47
+base_defense = 35
+base_special_attack = 33
+base_special_defense = 35
+base_speed = 57
+ev_speed = 1
+base_exp = 49
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jgr7q")]([SubResource("Resource_n1urb"), SubResource("Resource_qd25w"), SubResource("Resource_nsamr"), SubResource("Resource_sedb4"), SubResource("Resource_76p5k"), SubResource("Resource_50rkx"), SubResource("Resource_vanb2"), SubResource("Resource_11cb5"), SubResource("Resource_x4yt6"), SubResource("Resource_0qch6"), SubResource("Resource_1467x")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"HIDDENPOWER", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"TOXIC", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"DEFOG", &"ROCKSMASH", &"ROOST", &"SANDATTACK", &"SKYATTACK", &"SPITE", &"TAILWIND"])
+abilities = Array[StringName]([&"KEENEYE", &"UNNERVE"])
+hidden_abilities = Array[StringName]([&"BIGPECKS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_wj4c1")]([SubResource("Resource_g3mua")])
+height = 2
+weight = 18
+color = &"Blue"
+shape = &"Winged"
+generation = 8
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 30)
+shadow_size = 1
+id = &"ROOKIDEE"
+display_name = "Rookidee"

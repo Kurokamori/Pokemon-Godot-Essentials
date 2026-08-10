@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_dbx2f"]
+
+[resource]
+resource_name = "SING"
+script = ExtResource("1_dbx2f")
+accuracy = 55
+total_pp = 15
+function_code = &"SleepTarget"
+description = "A soothing lullaby is sung in a calming voice that puts the target into a deep slumber."
+id = &"SING"
+display_name = "Sing"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

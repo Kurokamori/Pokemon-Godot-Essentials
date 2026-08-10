@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1d4ex"]
+
+[resource]
+resource_name = "EVIOLITE"
+script = ExtResource("1_1d4ex")
+name_plural = "Eviolites"
+price = 3000
+sell_price = 2000
+bp_price = 25
+description = "A mysterious evolutionary lump. When held, it raises the Defense and Sp. Def if the holder can still evolve."
+id = &"EVIOLITE"
+display_name = "Eviolite"
+flags = Array[StringName]([&"Fling_40"])

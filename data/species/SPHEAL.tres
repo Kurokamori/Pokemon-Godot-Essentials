@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6l552"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_s0a6q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fg5gc"]
+
+[sub_resource type="Resource" id="Resource_gno5v"]
+script = ExtResource("1_6l552")
+species = &"SEALEO"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_xf3h0"]
+script = ExtResource("2_s0a6q")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_hf6g8"]
+script = ExtResource("2_s0a6q")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_ni7v6"]
+script = ExtResource("2_s0a6q")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_ahkj7"]
+script = ExtResource("2_s0a6q")
+level = 8
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_o1das"]
+script = ExtResource("2_s0a6q")
+level = 12
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_48aib"]
+script = ExtResource("2_s0a6q")
+level = 16
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_ingep"]
+script = ExtResource("2_s0a6q")
+level = 20
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_jj62w"]
+script = ExtResource("2_s0a6q")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_niyqm"]
+script = ExtResource("2_s0a6q")
+level = 28
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_hyot7"]
+script = ExtResource("2_s0a6q")
+level = 33
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_6o2nb"]
+script = ExtResource("2_s0a6q")
+level = 36
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_magvm"]
+script = ExtResource("2_s0a6q")
+level = 40
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_j8qbw"]
+script = ExtResource("2_s0a6q")
+level = 44
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_w6mkw"]
+script = ExtResource("2_s0a6q")
+level = 48
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_aarss"]
+script = ExtResource("2_s0a6q")
+level = 52
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "SPHEAL"
+script = ExtResource("3_fg5gc")
+species = &"SPHEAL"
+category = "Clap"
+pokedex_entry = "It is completely covered with plushy fur. As a result, it never feels the cold even when it is rolling about on ice floes or diving in the sea."
+types = Array[StringName]([&"ICE", &"WATER"])
+base_hp = 70
+base_attack = 40
+base_defense = 50
+base_special_attack = 55
+base_special_defense = 50
+base_speed = 25
+ev_hp = 1
+base_exp = 58
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_s0a6q")]([SubResource("Resource_xf3h0"), SubResource("Resource_hf6g8"), SubResource("Resource_ni7v6"), SubResource("Resource_ahkj7"), SubResource("Resource_o1das"), SubResource("Resource_48aib"), SubResource("Resource_ingep"), SubResource("Resource_jj62w"), SubResource("Resource_niyqm"), SubResource("Resource_hyot7"), SubResource("Resource_6o2nb"), SubResource("Resource_magvm"), SubResource("Resource_j8qbw"), SubResource("Resource_w6mkw"), SubResource("Resource_aarss")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUPERFANG", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AQUARING", &"BELLYDRUM", &"CURSE", &"FISSURE", &"ROLLOUT", &"SPITUP", &"STOCKPILE", &"SWALLOW", &"WATERPULSE", &"YAWN"])
+abilities = Array[StringName]([&"THICKFAT", &"ICEBODY"])
+hidden_abilities = Array[StringName]([&"OBLIVIOUS"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6l552")]([SubResource("Resource_gno5v")])
+height = 8
+weight = 395
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 36)
+id = &"SPHEAL"
+display_name = "Spheal"

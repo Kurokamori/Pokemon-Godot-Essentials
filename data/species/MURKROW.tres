@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ms7lu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bj7lq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_li8vd"]
+
+[sub_resource type="Resource" id="Resource_2ohrt"]
+script = ExtResource("1_ms7lu")
+species = &"HONCHKROW"
+method = &"Item"
+parameter = "DUSKSTONE"
+
+[sub_resource type="Resource" id="Resource_q7itg"]
+script = ExtResource("2_bj7lq")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_ht5yq"]
+script = ExtResource("2_bj7lq")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_2b6id"]
+script = ExtResource("2_bj7lq")
+level = 5
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_xm68l"]
+script = ExtResource("2_bj7lq")
+level = 11
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_r1ily"]
+script = ExtResource("2_bj7lq")
+level = 15
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_nujtd"]
+script = ExtResource("2_bj7lq")
+level = 21
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_52t4s"]
+script = ExtResource("2_bj7lq")
+level = 25
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_qnt1p"]
+script = ExtResource("2_bj7lq")
+level = 31
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_qlwdu"]
+script = ExtResource("2_bj7lq")
+level = 35
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_ucj80"]
+script = ExtResource("2_bj7lq")
+level = 41
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_f6qc2"]
+script = ExtResource("2_bj7lq")
+level = 45
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_five3"]
+script = ExtResource("2_bj7lq")
+level = 50
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_28dwo"]
+script = ExtResource("2_bj7lq")
+level = 55
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_0t45l"]
+script = ExtResource("2_bj7lq")
+level = 61
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_sw7kg"]
+script = ExtResource("2_bj7lq")
+level = 65
+move = &"QUASH"
+
+[resource]
+resource_name = "MURKROW"
+script = ExtResource("3_li8vd")
+species = &"MURKROW"
+category = "Darkness"
+pokedex_entry = "Murkrow were feared as the alleged bearers of ill fortune. It shows strong interest in anything that sparkles. It will even try to steal rings from women."
+types = Array[StringName]([&"DARK", &"FLYING"])
+base_hp = 60
+base_attack = 85
+base_defense = 42
+base_special_attack = 85
+base_special_defense = 42
+base_speed = 91
+ev_speed = 1
+base_exp = 81
+growth_rate = &"Parabolic"
+catch_rate = 30
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_bj7lq")]([SubResource("Resource_q7itg"), SubResource("Resource_ht5yq"), SubResource("Resource_2b6id"), SubResource("Resource_xm68l"), SubResource("Resource_r1ily"), SubResource("Resource_nujtd"), SubResource("Resource_52t4s"), SubResource("Resource_qnt1p"), SubResource("Resource_qlwdu"), SubResource("Resource_ucj80"), SubResource("Resource_f6qc2"), SubResource("Resource_five3"), SubResource("Resource_28dwo"), SubResource("Resource_0t45l"), SubResource("Resource_sw7kg")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLY", &"FOULPLAY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"ICYWIND", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PLUCK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"QUASH", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SKYATTACK", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STEELWING", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"THUNDERWAVE", &"TORMENT", &"TWISTER", &"UPROAR"])
+egg_moves = Array[StringName]([&"ASSURANCE", &"BRAVEBIRD", &"CONFUSERAY", &"DRILLPECK", &"FEATHERDANCE", &"FLATTER", &"PERISHSONG", &"PSYCHOSHIFT", &"SCREECH", &"SKYATTACK", &"WHIRLWIND", &"WINGATTACK"])
+abilities = Array[StringName]([&"INSOMNIA", &"SUPERLUCK"])
+hidden_abilities = Array[StringName]([&"PRANKSTER"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ms7lu")]([SubResource("Resource_2ohrt")])
+height = 5
+weight = 21
+color = &"Black"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(3, 32)
+shadow_size = 1
+id = &"MURKROW"
+display_name = "Murkrow"

@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hxcgs"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gcs43"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fu4mt"]
+
+[sub_resource type="Resource" id="Resource_surgn"]
+script = ExtResource("1_hxcgs")
+species = &"CRAWDAUNT"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_ewpsf"]
+script = ExtResource("2_gcs43")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_u7aqi"]
+script = ExtResource("2_gcs43")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_q1hv0"]
+script = ExtResource("2_gcs43")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_bs1bl"]
+script = ExtResource("2_gcs43")
+level = 8
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_atege"]
+script = ExtResource("2_gcs43")
+level = 12
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_o12us"]
+script = ExtResource("2_gcs43")
+level = 16
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_c0rpa"]
+script = ExtResource("2_gcs43")
+level = 20
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_8p2lx"]
+script = ExtResource("2_gcs43")
+level = 24
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_w51mn"]
+script = ExtResource("2_gcs43")
+level = 28
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_rb8dw"]
+script = ExtResource("2_gcs43")
+level = 32
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_bg48x"]
+script = ExtResource("2_gcs43")
+level = 36
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_ysb1q"]
+script = ExtResource("2_gcs43")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_8veee"]
+script = ExtResource("2_gcs43")
+level = 44
+move = &"CRABHAMMER"
+
+[sub_resource type="Resource" id="Resource_qmda8"]
+script = ExtResource("2_gcs43")
+level = 48
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_ft5oj"]
+script = ExtResource("2_gcs43")
+level = 52
+move = &"GUILLOTINE"
+
+[resource]
+resource_name = "CORPHISH"
+script = ExtResource("3_fu4mt")
+species = &"CORPHISH"
+category = "Ruffian"
+pokedex_entry = "Once it grips prey with its large pincers, it will never let go, no matter what. It is a hardy Pokémon that can thrive in any environment."
+types = Array[StringName]([&"WATER"])
+base_hp = 43
+base_attack = 80
+base_defense = 65
+base_special_attack = 50
+base_special_defense = 35
+base_speed = 35
+ev_attack = 1
+base_exp = 62
+growth_rate = &"Fluctuating"
+catch_rate = 205
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gcs43")]([SubResource("Resource_ewpsf"), SubResource("Resource_u7aqi"), SubResource("Resource_q1hv0"), SubResource("Resource_bs1bl"), SubResource("Resource_atege"), SubResource("Resource_o12us"), SubResource("Resource_c0rpa"), SubResource("Resource_8p2lx"), SubResource("Resource_w51mn"), SubResource("Resource_rb8dw"), SubResource("Resource_bg48x"), SubResource("Resource_ysb1q"), SubResource("Resource_8veee"), SubResource("Resource_qmda8"), SubResource("Resource_ft5oj")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"HAIL", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"AQUAJET", &"BODYSLAM", &"DOUBLEEDGE", &"DRAGONDANCE", &"ENDEAVOR", &"KNOCKOFF", &"METALCLAW", &"SLASH", &"SUPERPOWER", &"SWITCHEROO"])
+abilities = Array[StringName]([&"HYPERCUTTER", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_hxcgs")]([SubResource("Resource_surgn")])
+height = 6
+weight = 115
+shape = &"Insectoid"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 30)
+id = &"CORPHISH"
+display_name = "Corphish"

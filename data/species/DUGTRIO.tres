@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7hlsv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gqxxc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_r6cs0"]
+
+[sub_resource type="Resource" id="Resource_hynxj"]
+script = ExtResource("1_7hlsv")
+species = &"DIGLETT"
+method = &"Level"
+parameter = "26"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_smr13"]
+script = ExtResource("2_gqxxc")
+level = 0
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_m4ol3"]
+script = ExtResource("2_gqxxc")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_2i0fq"]
+script = ExtResource("2_gqxxc")
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_a6buu"]
+script = ExtResource("2_gqxxc")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_e1d11"]
+script = ExtResource("2_gqxxc")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_ikgaa"]
+script = ExtResource("2_gqxxc")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_yu4ni"]
+script = ExtResource("2_gqxxc")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_kfbog"]
+script = ExtResource("2_gqxxc")
+level = 12
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_mh8dc"]
+script = ExtResource("2_gqxxc")
+level = 16
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_eorwi"]
+script = ExtResource("2_gqxxc")
+level = 20
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_tbqte"]
+script = ExtResource("2_gqxxc")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_2quy7"]
+script = ExtResource("2_gqxxc")
+level = 30
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_uffex"]
+script = ExtResource("2_gqxxc")
+level = 36
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_m4oxf"]
+script = ExtResource("2_gqxxc")
+level = 42
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_y48uq"]
+script = ExtResource("2_gqxxc")
+level = 48
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_kcxcv"]
+script = ExtResource("2_gqxxc")
+level = 54
+move = &"FISSURE"
+
+[resource]
+resource_name = "DUGTRIO"
+script = ExtResource("3_r6cs0")
+species = &"DUGTRIO"
+category = "Mole"
+pokedex_entry = "Because the triplets originally split from one body, they think exactly alike. They work cooperatively to burrow endlessly through the ground."
+types = Array[StringName]([&"GROUND"])
+base_hp = 35
+base_attack = 100
+base_defense = 50
+base_special_attack = 50
+base_special_defense = 70
+base_speed = 120
+ev_speed = 2
+base_exp = 149
+catch_rate = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gqxxc")]([SubResource("Resource_smr13"), SubResource("Resource_m4ol3"), SubResource("Resource_2i0fq"), SubResource("Resource_a6buu"), SubResource("Resource_e1d11"), SubResource("Resource_ikgaa"), SubResource("Resource_yu4ni"), SubResource("Resource_kfbog"), SubResource("Resource_mh8dc"), SubResource("Resource_eorwi"), SubResource("Resource_tbqte"), SubResource("Resource_2quy7"), SubResource("Resource_uffex"), SubResource("Resource_m4oxf"), SubResource("Resource_y48uq"), SubResource("Resource_kcxcv")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYPERBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"TRIATTACK", &"UPROAR", &"WORKUP"])
+abilities = Array[StringName]([&"SANDVEIL", &"ARENATRAP"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_uncommon = Array[StringName]([&"SOFTSAND"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_7hlsv")]([SubResource("Resource_hynxj")])
+height = 7
+weight = 333
+color = &"Brown"
+shape = &"MultiBody"
+habitat = &"Cave"
+generation = 1
+back_sprite_offset = Vector2i(2, 48)
+front_sprite_offset = Vector2i(0, 31)
+id = &"DUGTRIO"
+display_name = "Dugtrio"

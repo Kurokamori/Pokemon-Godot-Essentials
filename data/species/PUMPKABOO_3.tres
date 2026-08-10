@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s3q4n"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_slavi"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gfm47"]
+
+[sub_resource type="Resource" id="Resource_6phn2"]
+script = ExtResource("1_s3q4n")
+species = &"GOURGEIST"
+method = &"Trade"
+
+[sub_resource type="Resource" id="Resource_buhp6"]
+script = ExtResource("2_slavi")
+move = &"TRICKORTREAT"
+
+[sub_resource type="Resource" id="Resource_x1fya"]
+script = ExtResource("2_slavi")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_4j12c"]
+script = ExtResource("2_slavi")
+level = 4
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_1mj74"]
+script = ExtResource("2_slavi")
+level = 8
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_shxmo"]
+script = ExtResource("2_slavi")
+level = 12
+move = &"TRICKORTREAT"
+
+[sub_resource type="Resource" id="Resource_88yce"]
+script = ExtResource("2_slavi")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_qnfx4"]
+script = ExtResource("2_slavi")
+level = 16
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_y5a7b"]
+script = ExtResource("2_slavi")
+level = 20
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_gnofe"]
+script = ExtResource("2_slavi")
+level = 24
+move = &"TRICKORTREAT"
+
+[sub_resource type="Resource" id="Resource_wwhpp"]
+script = ExtResource("2_slavi")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_n0sok"]
+script = ExtResource("2_slavi")
+level = 28
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_rhmsk"]
+script = ExtResource("2_slavi")
+level = 32
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_8ya4k"]
+script = ExtResource("2_slavi")
+level = 36
+move = &"TRICKORTREAT"
+
+[sub_resource type="Resource" id="Resource_1xf5h"]
+script = ExtResource("2_slavi")
+level = 36
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_cvv3j"]
+script = ExtResource("2_slavi")
+level = 40
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_3we00"]
+script = ExtResource("2_slavi")
+level = 44
+move = &"PAINSPLIT"
+
+[resource]
+resource_name = "PUMPKABOO_3"
+script = ExtResource("3_gfm47")
+species = &"PUMPKABOO"
+form = 3
+form_name = "Super Size"
+category = "Pumpkin"
+pokedex_entry = "Massive Pumpkaboo are said to be the product of areas where a great number of lost souls lingered."
+pokedex_form = 3
+types = Array[StringName]([&"GHOST", &"GRASS"])
+base_hp = 59
+base_attack = 66
+base_defense = 70
+base_special_attack = 44
+base_special_defense = 55
+base_speed = 41
+ev_defense = 1
+base_exp = 67
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_slavi")]([SubResource("Resource_buhp6"), SubResource("Resource_x1fya"), SubResource("Resource_4j12c"), SubResource("Resource_1mj74"), SubResource("Resource_shxmo"), SubResource("Resource_88yce"), SubResource("Resource_qnfx4"), SubResource("Resource_y5a7b"), SubResource("Resource_gnofe"), SubResource("Resource_wwhpp"), SubResource("Resource_n0sok"), SubResource("Resource_rhmsk"), SubResource("Resource_8ya4k"), SubResource("Resource_1xf5h"), SubResource("Resource_cvv3j"), SubResource("Resource_3we00")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GYROBALL", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"INCINERATE", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"CURSE", &"DESTINYBOND", &"DISABLE"])
+abilities = Array[StringName]([&"PICKUP", &"FRISK"])
+hidden_abilities = Array[StringName]([&"INSOMNIA"])
+wild_item_common = Array[StringName]([&"MIRACLESEED"])
+wild_item_uncommon = Array[StringName]([&"MIRACLESEED"])
+wild_item_rare = Array[StringName]([&"MIRACLESEED"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_s3q4n")]([SubResource("Resource_6phn2")])
+height = 8
+weight = 150
+color = &"Brown"
+generation = 6
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 22)
+shadow_size = 1
+id = &"PUMPKABOO_3"
+display_name = "Pumpkaboo"
+flags = Array[StringName]([&"InheritFormFromMother"])

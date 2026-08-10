@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_kfplt"]
+
+[resource]
+script = ExtResource("1_kfplt")
+category = &"natures"
+record_script = "res://src/data/nature_data.gd"
+paths = {
+&"ADAMANT": "res://data/natures/ADAMANT.tres",
+&"BASHFUL": "res://data/natures/BASHFUL.tres",
+&"BOLD": "res://data/natures/BOLD.tres",
+&"BRAVE": "res://data/natures/BRAVE.tres",
+&"CALM": "res://data/natures/CALM.tres",
+&"CAREFUL": "res://data/natures/CAREFUL.tres",
+&"DOCILE": "res://data/natures/DOCILE.tres",
+&"GENTLE": "res://data/natures/GENTLE.tres",
+&"HARDY": "res://data/natures/HARDY.tres",
+&"HASTY": "res://data/natures/HASTY.tres",
+&"IMPISH": "res://data/natures/IMPISH.tres",
+&"JOLLY": "res://data/natures/JOLLY.tres",
+&"LAX": "res://data/natures/LAX.tres",
+&"LONELY": "res://data/natures/LONELY.tres",
+&"MILD": "res://data/natures/MILD.tres",
+&"MODEST": "res://data/natures/MODEST.tres",
+&"NAIVE": "res://data/natures/NAIVE.tres",
+&"NAUGHTY": "res://data/natures/NAUGHTY.tres",
+&"QUIET": "res://data/natures/QUIET.tres",
+&"QUIRKY": "res://data/natures/QUIRKY.tres",
+&"RASH": "res://data/natures/RASH.tres",
+&"RELAXED": "res://data/natures/RELAXED.tres",
+&"SASSY": "res://data/natures/SASSY.tres",
+&"SERIOUS": "res://data/natures/SERIOUS.tres",
+&"TIMID": "res://data/natures/TIMID.tres"
+}
+ordered_ids = Array[StringName]([&"HARDY", &"LONELY", &"BRAVE", &"ADAMANT", &"NAUGHTY", &"BOLD", &"DOCILE", &"RELAXED", &"IMPISH", &"LAX", &"TIMID", &"HASTY", &"SERIOUS", &"JOLLY", &"NAIVE", &"MODEST", &"MILD", &"QUIET", &"BASHFUL", &"RASH", &"CALM", &"GENTLE", &"SASSY", &"CAREFUL", &"QUIRKY"])

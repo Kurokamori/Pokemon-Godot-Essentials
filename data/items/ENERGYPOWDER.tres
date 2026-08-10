@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_v0kjl"]
+
+[resource]
+resource_name = "ENERGYPOWDER"
+script = ExtResource("1_v0kjl")
+name_plural = "Energy Powders"
+portion_name = "dose of Energy Powder"
+portion_name_plural = "doses of Energy Powder"
+pocket = 2
+price = 500
+sell_price = 250
+field_use = 1
+battle_use = 1
+description = "A very bitter medicinal powder. It can be used to restore 60 HP to a single Pokémon."
+id = &"ENERGYPOWDER"
+display_name = "Energy Powder"
+flags = Array[StringName]([&"Fling_30"])

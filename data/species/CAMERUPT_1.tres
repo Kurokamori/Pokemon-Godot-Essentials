@@ -1,0 +1,154 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_j3a2m"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_typey"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_42eer"]
+
+[sub_resource type="Resource" id="Resource_w3evt"]
+script = ExtResource("1_j3a2m")
+species = &"NUMEL"
+method = &"Level"
+parameter = "33"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pj8pj"]
+script = ExtResource("2_typey")
+level = 0
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_e8hsl"]
+script = ExtResource("2_typey")
+move = &"FISSURE"
+
+[sub_resource type="Resource" id="Resource_re70g"]
+script = ExtResource("2_typey")
+move = &"ERUPTION"
+
+[sub_resource type="Resource" id="Resource_4mhs3"]
+script = ExtResource("2_typey")
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_sp0mm"]
+script = ExtResource("2_typey")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_mss0q"]
+script = ExtResource("2_typey")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_cjtf4"]
+script = ExtResource("2_typey")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_j212h"]
+script = ExtResource("2_typey")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_r40ue"]
+script = ExtResource("2_typey")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_u6d55"]
+script = ExtResource("2_typey")
+level = 8
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_5wniy"]
+script = ExtResource("2_typey")
+level = 8
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_5dbp6"]
+script = ExtResource("2_typey")
+level = 12
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_i0y0h"]
+script = ExtResource("2_typey")
+level = 15
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_oif3n"]
+script = ExtResource("2_typey")
+level = 19
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_1vedb"]
+script = ExtResource("2_typey")
+level = 22
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_lt7c6"]
+script = ExtResource("2_typey")
+level = 26
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_pw2ps"]
+script = ExtResource("2_typey")
+level = 29
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_3fvmr"]
+script = ExtResource("2_typey")
+level = 31
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_eah5c"]
+script = ExtResource("2_typey")
+level = 39
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_ah7lh"]
+script = ExtResource("2_typey")
+level = 46
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_60mrg"]
+script = ExtResource("2_typey")
+level = 52
+move = &"ERUPTION"
+
+[sub_resource type="Resource" id="Resource_w7w8a"]
+script = ExtResource("2_typey")
+level = 59
+move = &"FISSURE"
+
+[resource]
+resource_name = "CAMERUPT_1"
+script = ExtResource("3_42eer")
+species = &"CAMERUPT"
+form = 1
+form_name = "Mega Camerupt"
+category = "Eruption"
+pokedex_entry = "A Pokémon that lives in the crater of a volcano. Every 10 years, the volcanoes on its back erupt violently. Research is under way on the cause of eruption."
+pokedex_form = 1
+types = Array[StringName]([&"FIRE", &"GROUND"])
+base_hp = 70
+base_attack = 120
+base_defense = 100
+base_special_attack = 145
+base_special_defense = 105
+base_speed = 20
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 196
+catch_rate = 150
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_typey")]([SubResource("Resource_pj8pj"), SubResource("Resource_e8hsl"), SubResource("Resource_re70g"), SubResource("Resource_4mhs3"), SubResource("Resource_sp0mm"), SubResource("Resource_mss0q"), SubResource("Resource_cjtf4"), SubResource("Resource_j212h"), SubResource("Resource_r40ue"), SubResource("Resource_u6d55"), SubResource("Resource_5wniy"), SubResource("Resource_5dbp6"), SubResource("Resource_i0y0h"), SubResource("Resource_oif3n"), SubResource("Resource_1vedb"), SubResource("Resource_lt7c6"), SubResource("Resource_pw2ps"), SubResource("Resource_3fvmr"), SubResource("Resource_eah5c"), SubResource("Resource_ah7lh"), SubResource("Resource_60mrg"), SubResource("Resource_w7w8a")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONHEAD", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"WILLOWISP"])
+abilities = Array[StringName]([&"SHEERFORCE"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_j3a2m")]([SubResource("Resource_w3evt")])
+height = 25
+weight = 3205
+shape = &"Quadruped"
+habitat = &"Mountain"
+generation = 6
+mega_stone = &"CAMERUPTITE"
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 20)
+shadow_size = 3
+id = &"CAMERUPT_1"
+display_name = "Camerupt"

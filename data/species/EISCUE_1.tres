@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_p55l2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_612ut"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ks28m"]
+
+[sub_resource type="Resource" id="Resource_ij0uc"]
+script = ExtResource("2_612ut")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_j0wv3"]
+script = ExtResource("2_612ut")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_kc1vu"]
+script = ExtResource("2_612ut")
+level = 6
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_7kgqx"]
+script = ExtResource("2_612ut")
+level = 12
+move = &"WEATHERBALL"
+
+[sub_resource type="Resource" id="Resource_332cf"]
+script = ExtResource("2_612ut")
+level = 18
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_q42pk"]
+script = ExtResource("2_612ut")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_4ig0a"]
+script = ExtResource("2_612ut")
+level = 30
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_l2inx"]
+script = ExtResource("2_612ut")
+level = 36
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_hqsw6"]
+script = ExtResource("2_612ut")
+level = 42
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_heogv"]
+script = ExtResource("2_612ut")
+level = 48
+move = &"AURORAVEIL"
+
+[sub_resource type="Resource" id="Resource_xx3ie"]
+script = ExtResource("2_612ut")
+level = 54
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_3112m"]
+script = ExtResource("2_612ut")
+level = 60
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "EISCUE_1"
+script = ExtResource("3_ks28m")
+species = &"EISCUE"
+form = 1
+form_name = "Noice Face"
+category = "Penguin"
+pokedex_entry = "The ice covering this Pokémon's face has shattered, revealing a slightly worried expression that many people are enamored with."
+pokedex_form = 1
+types = Array[StringName]([&"ICE"])
+base_hp = 75
+base_attack = 80
+base_defense = 70
+base_special_attack = 65
+base_special_defense = 50
+base_speed = 130
+ev_defense = 2
+base_exp = 165
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_612ut")]([SubResource("Resource_ij0uc"), SubResource("Resource_j0wv3"), SubResource("Resource_kc1vu"), SubResource("Resource_7kgqx"), SubResource("Resource_332cf"), SubResource("Resource_q42pk"), SubResource("Resource_4ig0a"), SubResource("Resource_l2inx"), SubResource("Resource_hqsw6"), SubResource("Resource_heogv"), SubResource("Resource_xx3ie"), SubResource("Resource_3112m")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AMNESIA", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WEATHERBALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AQUARING", &"BELLYDRUM", &"DOUBLEEDGE", &"HEADSMASH", &"ICICLECRASH", &"SOAK"])
+abilities = Array[StringName]([&"ICEFACE"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 6400
+height = 14
+weight = 890
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 36)
+front_sprite_offset = Vector2i(0, 10)
+shadow_size = 1
+id = &"EISCUE_1"
+display_name = "Eiscue"

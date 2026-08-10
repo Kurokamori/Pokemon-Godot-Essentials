@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://0vuvrvi8d62p"
+path="res://.godot/imported/Slots stop.ogg-e28d59db57a80b51b697f3acb1f31751.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Slots stop.ogg"
+dest_files=["res://.godot/imported/Slots stop.ogg-e28d59db57a80b51b697f3acb1f31751.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

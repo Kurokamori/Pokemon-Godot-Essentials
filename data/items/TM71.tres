@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2s2ql"]
+
+[resource]
+resource_name = "TM71"
+script = ExtResource("1_2s2ql")
+name_plural = "TM71s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 80
+field_use = 5
+move = &"STONEEDGE"
+description = "The user stabs the target from below with sharpened stones. Critical hits land more easily."
+id = &"TM71"
+display_name = "TM71"
+flags = Array[StringName]([&"Fling_100"])

@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2eu5f"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i5um8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_53e6x"]
+
+[sub_resource type="Resource" id="Resource_7ohtt"]
+script = ExtResource("1_2eu5f")
+species = &"MAGMORTAR"
+method = &"TradeItem"
+parameter = "MAGMARIZER"
+
+[sub_resource type="Resource" id="Resource_58dst"]
+script = ExtResource("1_2eu5f")
+species = &"MAGBY"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_hoagp"]
+script = ExtResource("2_i5um8")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_brebn"]
+script = ExtResource("2_i5um8")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_drjc8"]
+script = ExtResource("2_i5um8")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_3fe47"]
+script = ExtResource("2_i5um8")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_xt2ox"]
+script = ExtResource("2_i5um8")
+level = 12
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_es7yu"]
+script = ExtResource("2_i5um8")
+level = 16
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_1ugkv"]
+script = ExtResource("2_i5um8")
+level = 20
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_el20j"]
+script = ExtResource("2_i5um8")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_lapql"]
+script = ExtResource("2_i5um8")
+level = 28
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_fxi4a"]
+script = ExtResource("2_i5um8")
+level = 34
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_kcn5v"]
+script = ExtResource("2_i5um8")
+level = 40
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_ogbag"]
+script = ExtResource("2_i5um8")
+level = 46
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_58tfl"]
+script = ExtResource("2_i5um8")
+level = 52
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_skkql"]
+script = ExtResource("2_i5um8")
+level = 58
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_kkrbe"]
+script = ExtResource("2_i5um8")
+level = 64
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "MAGMAR"
+script = ExtResource("3_53e6x")
+species = &"MAGMAR"
+category = "Spitfire"
+pokedex_entry = "In battle, it blows out intense flames from all over its body to intimidate its foe. These fiery bursts create heat waves that ignite grass and trees."
+types = Array[StringName]([&"FIRE"])
+base_hp = 65
+base_attack = 95
+base_defense = 57
+base_special_attack = 100
+base_special_defense = 85
+base_speed = 93
+ev_special_attack = 2
+base_exp = 173
+gender_ratio = &"Female25Percent"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_i5um8")]([SubResource("Resource_hoagp"), SubResource("Resource_brebn"), SubResource("Resource_drjc8"), SubResource("Resource_3fe47"), SubResource("Resource_xt2ox"), SubResource("Resource_es7yu"), SubResource("Resource_1ugkv"), SubResource("Resource_el20j"), SubResource("Resource_lapql"), SubResource("Resource_fxi4a"), SubResource("Resource_kcn5v"), SubResource("Resource_ogbag"), SubResource("Resource_58tfl"), SubResource("Resource_skkql"), SubResource("Resource_kkrbe")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OVERHEAT", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"THUNDERPUNCH", &"UPROAR", &"WILLOWISP"])
+abilities = Array[StringName]([&"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"VITALSPIRIT"])
+wild_item_uncommon = Array[StringName]([&"MAGMARIZER"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_2eu5f")]([SubResource("Resource_7ohtt"), SubResource("Resource_58dst")])
+height = 13
+weight = 445
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 21)
+id = &"MAGMAR"
+display_name = "Magmar"

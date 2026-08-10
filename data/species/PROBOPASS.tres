@@ -1,0 +1,173 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mgmd1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xasms"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lus84"]
+
+[sub_resource type="Resource" id="Resource_kjiuk"]
+script = ExtResource("1_mgmd1")
+species = &"NOSEPASS"
+method = &"LocationFlag"
+parameter = "Magnetic"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_j1ha4"]
+script = ExtResource("2_xasms")
+level = 0
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_m3xtx"]
+script = ExtResource("2_xasms")
+move = &"MAGNETICFLUX"
+
+[sub_resource type="Resource" id="Resource_hhw0r"]
+script = ExtResource("2_xasms")
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_wyu5v"]
+script = ExtResource("2_xasms")
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_xj2mi"]
+script = ExtResource("2_xasms")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_rswq5"]
+script = ExtResource("2_xasms")
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_ovqu4"]
+script = ExtResource("2_xasms")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_huhxr"]
+script = ExtResource("2_xasms")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_igx3m"]
+script = ExtResource("2_xasms")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_76pe8"]
+script = ExtResource("2_xasms")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_7nr3s"]
+script = ExtResource("2_xasms")
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_xxyqv"]
+script = ExtResource("2_xasms")
+level = 4
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_ux4xf"]
+script = ExtResource("2_xasms")
+level = 7
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_pwxej"]
+script = ExtResource("2_xasms")
+level = 10
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_5xpxv"]
+script = ExtResource("2_xasms")
+level = 13
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_brnt2"]
+script = ExtResource("2_xasms")
+level = 16
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_ntoo4"]
+script = ExtResource("2_xasms")
+level = 19
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_mbu3m"]
+script = ExtResource("2_xasms")
+level = 22
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_vd62l"]
+script = ExtResource("2_xasms")
+level = 25
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_cd87k"]
+script = ExtResource("2_xasms")
+level = 28
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_345su"]
+script = ExtResource("2_xasms")
+level = 31
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_46h3h"]
+script = ExtResource("2_xasms")
+level = 34
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_tdbu0"]
+script = ExtResource("2_xasms")
+level = 37
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_mugjr"]
+script = ExtResource("2_xasms")
+level = 40
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_0ebn4"]
+script = ExtResource("2_xasms")
+level = 43
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_myfkx"]
+script = ExtResource("2_xasms")
+level = 43
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_kh6g8"]
+script = ExtResource("2_xasms")
+level = 50
+move = &"BODYPRESS"
+
+[resource]
+resource_name = "PROBOPASS"
+script = ExtResource("3_lus84")
+species = &"PROBOPASS"
+category = "Compass"
+pokedex_entry = "It exudes strong magnetism from all over. It controls three small units called Mini-Noses."
+types = Array[StringName]([&"ROCK", &"STEEL"])
+base_hp = 60
+base_attack = 55
+base_defense = 145
+base_special_attack = 75
+base_special_defense = 150
+base_speed = 40
+ev_defense = 1
+ev_special_defense = 2
+base_exp = 184
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xasms")]([SubResource("Resource_j1ha4"), SubResource("Resource_m3xtx"), SubResource("Resource_hhw0r"), SubResource("Resource_wyu5v"), SubResource("Resource_xj2mi"), SubResource("Resource_rswq5"), SubResource("Resource_ovqu4"), SubResource("Resource_huhxr"), SubResource("Resource_igx3m"), SubResource("Resource_76pe8"), SubResource("Resource_7nr3s"), SubResource("Resource_xxyqv"), SubResource("Resource_ux4xf"), SubResource("Resource_pwxej"), SubResource("Resource_5xpxv"), SubResource("Resource_brnt2"), SubResource("Resource_ntoo4"), SubResource("Resource_mbu3m"), SubResource("Resource_vd62l"), SubResource("Resource_cd87k"), SubResource("Resource_345su"), SubResource("Resource_46h3h"), SubResource("Resource_tdbu0"), SubResource("Resource_mugjr"), SubResource("Resource_0ebn4"), SubResource("Resource_myfkx"), SubResource("Resource_kh6g8")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IRONDEFENSE", &"IRONHEAD", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"VOLTSWITCH"])
+abilities = Array[StringName]([&"STURDY", &"MAGNETPULL"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_uncommon = Array[StringName]([&"MAGNET"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mgmd1")]([SubResource("Resource_kjiuk")])
+height = 14
+weight = 3400
+color = &"Gray"
+shape = &"MultiBody"
+generation = 4
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 12)
+id = &"PROBOPASS"
+display_name = "Probopass"

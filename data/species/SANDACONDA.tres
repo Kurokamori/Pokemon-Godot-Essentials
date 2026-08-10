@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ovyow"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i27xt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5x6m4"]
+
+[sub_resource type="Resource" id="Resource_y1yj7"]
+script = ExtResource("1_ovyow")
+species = &"SILICOBRA"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nogbw"]
+script = ExtResource("2_i27xt")
+move = &"SKULLBASH"
+
+[sub_resource type="Resource" id="Resource_6o3sl"]
+script = ExtResource("2_i27xt")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_58r3j"]
+script = ExtResource("2_i27xt")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_o5ire"]
+script = ExtResource("2_i27xt")
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_twvo7"]
+script = ExtResource("2_i27xt")
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_4avod"]
+script = ExtResource("2_i27xt")
+level = 15
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_1yy7q"]
+script = ExtResource("2_i27xt")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_lcjdu"]
+script = ExtResource("2_i27xt")
+level = 25
+move = &"GLARE"
+
+[sub_resource type="Resource" id="Resource_vcta6"]
+script = ExtResource("2_i27xt")
+level = 30
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_2oy2w"]
+script = ExtResource("2_i27xt")
+level = 35
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_77iya"]
+script = ExtResource("2_i27xt")
+level = 42
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_2lc2b"]
+script = ExtResource("2_i27xt")
+level = 49
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_ca88m"]
+script = ExtResource("2_i27xt")
+level = 51
+move = &"SANDTOMB"
+
+[resource]
+resource_name = "SANDACONDA"
+script = ExtResource("3_5x6m4")
+species = &"SANDACONDA"
+category = "Sand Snake"
+pokedex_entry = "Its unique style of coiling allows it to blast sand out of its sand sac more efficiently."
+types = Array[StringName]([&"GROUND"])
+base_hp = 72
+base_attack = 107
+base_defense = 125
+base_special_attack = 65
+base_special_defense = 70
+base_speed = 71
+ev_defense = 2
+base_exp = 179
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_i27xt")]([SubResource("Resource_nogbw"), SubResource("Resource_6o3sl"), SubResource("Resource_58r3j"), SubResource("Resource_o5ire"), SubResource("Resource_twvo7"), SubResource("Resource_4avod"), SubResource("Resource_1yy7q"), SubResource("Resource_lcjdu"), SubResource("Resource_vcta6"), SubResource("Resource_2oy2w"), SubResource("Resource_77iya"), SubResource("Resource_2lc2b"), SubResource("Resource_ca88m")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYPRESS", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HURRICANE", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALESHOT", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SANDSPIT", &"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+egg_groups = Array[StringName]([&"Field", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ovyow")]([SubResource("Resource_y1yj7")])
+height = 38
+weight = 655
+color = &"Green"
+shape = &"Serpentine"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 26)
+shadow_size = 3
+id = &"SANDACONDA"
+display_name = "Sandaconda"

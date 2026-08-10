@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_f1ta7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yo1pv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vkfh5"]
+
+[sub_resource type="Resource" id="Resource_q0bfe"]
+script = ExtResource("1_f1ta7")
+species = &"WAILORD"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_y22vt"]
+script = ExtResource("2_yo1pv")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_3jo73"]
+script = ExtResource("2_yo1pv")
+level = 3
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_67d7p"]
+script = ExtResource("2_yo1pv")
+level = 6
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_drmt2"]
+script = ExtResource("2_yo1pv")
+level = 12
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_1ec7g"]
+script = ExtResource("2_yo1pv")
+level = 15
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_7gpbd"]
+script = ExtResource("2_yo1pv")
+level = 18
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_vxymv"]
+script = ExtResource("2_yo1pv")
+level = 21
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_bqypq"]
+script = ExtResource("2_yo1pv")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_gjl5i"]
+script = ExtResource("2_yo1pv")
+level = 27
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_aurrp"]
+script = ExtResource("2_yo1pv")
+level = 30
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_j52vc"]
+script = ExtResource("2_yo1pv")
+level = 33
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_exw13"]
+script = ExtResource("2_yo1pv")
+level = 36
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_fjago"]
+script = ExtResource("2_yo1pv")
+level = 39
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_s50vp"]
+script = ExtResource("2_yo1pv")
+level = 42
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_twg4t"]
+script = ExtResource("2_yo1pv")
+level = 45
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_60py4"]
+script = ExtResource("2_yo1pv")
+level = 48
+move = &"WATERSPOUT"
+
+[resource]
+resource_name = "WAILMER"
+script = ExtResource("3_vkfh5")
+species = &"WAILMER"
+category = "Ball Whale"
+pokedex_entry = "While this Pokémon usually lives in the sea, it can survive on land, although not too long. It loses vitality if its body becomes dried out."
+types = Array[StringName]([&"WATER"])
+base_hp = 130
+base_attack = 70
+base_defense = 35
+base_special_attack = 70
+base_special_defense = 35
+base_speed = 60
+ev_hp = 1
+base_exp = 80
+growth_rate = &"Fluctuating"
+catch_rate = 125
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yo1pv")]([SubResource("Resource_y22vt"), SubResource("Resource_3jo73"), SubResource("Resource_67d7p"), SubResource("Resource_drmt2"), SubResource("Resource_1ec7g"), SubResource("Resource_7gpbd"), SubResource("Resource_vxymv"), SubResource("Resource_bqypq"), SubResource("Resource_gjl5i"), SubResource("Resource_aurrp"), SubResource("Resource_j52vc"), SubResource("Resource_exw13"), SubResource("Resource_fjago"), SubResource("Resource_s50vp"), SubResource("Resource_twg4t"), SubResource("Resource_60py4")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BOUNCE", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AQUARING", &"BODYSLAM", &"CLEARSMOG", &"CURSE", &"DEFENSECURL", &"DOUBLEEDGE", &"FISSURE", &"ROLLOUT", &"SNORE", &"SOAK", &"THRASH", &"TICKLE", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"WATERVEIL", &"OBLIVIOUS"])
+hidden_abilities = Array[StringName]([&"PRESSURE"])
+egg_groups = Array[StringName]([&"Field", &"Water2"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_f1ta7")]([SubResource("Resource_q0bfe")])
+height = 20
+weight = 1300
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(0, 17)
+id = &"WAILMER"
+display_name = "Wailmer"

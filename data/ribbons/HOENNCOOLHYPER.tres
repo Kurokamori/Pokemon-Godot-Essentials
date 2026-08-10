@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_52ibk"]
+
+[resource]
+resource_name = "HOENNCOOLHYPER"
+script = ExtResource("1_52ibk")
+icon_position = 2
+description = "Hoenn Cool Contest Hyper Rank winner!"
+id = &"HOENNCOOLHYPER"
+display_name = "Cool Ribbon Hyper"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e6cps"]
+
+[resource]
+resource_name = "BUGBUZZ"
+script = ExtResource("1_e6cps")
+type = &"BUG"
+category = 1
+power = 90
+total_pp = 10
+function_code = &"LowerTargetSpDef1"
+effect_chance = 10
+description = "The user vibrates its wings to generate a damaging sound wave. It may also lower the target's Sp. Def stat."
+id = &"BUGBUZZ"
+display_name = "Bug Buzz"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

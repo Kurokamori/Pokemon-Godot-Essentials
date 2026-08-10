@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_x06rs"]
+
+[resource]
+resource_name = "SOULDEW"
+script = ExtResource("1_x06rs")
+name_plural = "Soul Dews"
+description = "A wondrous orb to be held by either Latios or Latias. It raises the power of Psychic- and Dragon-type moves."
+id = &"SOULDEW"
+display_name = "Soul Dew"
+flags = Array[StringName]([&"Fling_30"])

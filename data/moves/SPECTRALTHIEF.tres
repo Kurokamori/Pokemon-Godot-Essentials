@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fc87w"]
+
+[resource]
+resource_name = "SPECTRALTHIEF"
+script = ExtResource("1_fc87w")
+type = &"GHOST"
+category = 0
+power = 90
+total_pp = 10
+function_code = &"UserStealTargetPositiveStatStages"
+description = "The user hides in the target's shadow, steals the target's stat boosts, and then attacks."
+id = &"SPECTRALTHIEF"
+display_name = "Spectral Thief"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

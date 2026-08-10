@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_henxd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_f1tot"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kmsm5"]
+
+[sub_resource type="Resource" id="Resource_82u0x"]
+script = ExtResource("1_henxd")
+species = &"COALOSSAL"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_t2fok"]
+script = ExtResource("1_henxd")
+species = &"ROLYCOLY"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_t8khh"]
+script = ExtResource("2_f1tot")
+level = 0
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_b61xq"]
+script = ExtResource("2_f1tot")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_vkerd"]
+script = ExtResource("2_f1tot")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_xulmj"]
+script = ExtResource("2_f1tot")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_mwyxi"]
+script = ExtResource("2_f1tot")
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_8kuw2"]
+script = ExtResource("2_f1tot")
+level = 15
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_yq4sm"]
+script = ExtResource("2_f1tot")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_25d64"]
+script = ExtResource("2_f1tot")
+level = 27
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_vi17f"]
+script = ExtResource("2_f1tot")
+level = 35
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_b6st1"]
+script = ExtResource("2_f1tot")
+level = 41
+move = &"HEATCRASH"
+
+[sub_resource type="Resource" id="Resource_vm6ov"]
+script = ExtResource("2_f1tot")
+level = 48
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_m62id"]
+script = ExtResource("2_f1tot")
+level = 55
+move = &"BURNUP"
+
+[resource]
+resource_name = "CARKOL"
+script = ExtResource("3_kmsm5")
+species = &"CARKOL"
+category = "Coal"
+pokedex_entry = "By rapidly rolling its legs, it can travel at over 18 mph. The temperature of the flames it breathes exceeds 1,000 degrees Celsius."
+types = Array[StringName]([&"ROCK", &"FIRE"])
+base_hp = 80
+base_attack = 60
+base_defense = 90
+base_special_attack = 60
+base_special_defense = 70
+base_speed = 50
+ev_defense = 2
+base_exp = 144
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_f1tot")]([SubResource("Resource_t8khh"), SubResource("Resource_b61xq"), SubResource("Resource_vkerd"), SubResource("Resource_xulmj"), SubResource("Resource_mwyxi"), SubResource("Resource_8kuw2"), SubResource("Resource_yq4sm"), SubResource("Resource_25d64"), SubResource("Resource_vi17f"), SubResource("Resource_b6st1"), SubResource("Resource_vm6ov"), SubResource("Resource_m62id")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYPRESS", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"GYROBALL", &"HEATCRASH", &"HEATWAVE", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"IRONDEFENSE", &"IRONHEAD", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALD", &"SCORCHINGSANDS", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SPIKES", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"WILLOWISP"])
+abilities = Array[StringName]([&"STEAMENGINE", &"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"FLASHFIRE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_henxd")]([SubResource("Resource_82u0x"), SubResource("Resource_t2fok")])
+height = 11
+weight = 780
+color = &"Black"
+shape = &"HeadLegs"
+generation = 8
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(-1, 22)
+id = &"CARKOL"
+display_name = "Carkol"

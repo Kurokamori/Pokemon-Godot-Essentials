@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ftmff"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8xb20"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4ik2e"]
+
+[sub_resource type="Resource" id="Resource_wngst"]
+script = ExtResource("2_8xb20")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_cbjq6"]
+script = ExtResource("2_8xb20")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_spfae"]
+script = ExtResource("2_8xb20")
+level = 5
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_45bwm"]
+script = ExtResource("2_8xb20")
+level = 10
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_xqw24"]
+script = ExtResource("2_8xb20")
+level = 15
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_srpth"]
+script = ExtResource("2_8xb20")
+level = 20
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_317fy"]
+script = ExtResource("2_8xb20")
+level = 25
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_4pmuv"]
+script = ExtResource("2_8xb20")
+level = 30
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_1foql"]
+script = ExtResource("2_8xb20")
+level = 35
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_fncgi"]
+script = ExtResource("2_8xb20")
+level = 35
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_xghuf"]
+script = ExtResource("2_8xb20")
+level = 40
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_k31uv"]
+script = ExtResource("2_8xb20")
+level = 45
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_i2k7i"]
+script = ExtResource("2_8xb20")
+level = 50
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_ytmck"]
+script = ExtResource("2_8xb20")
+level = 55
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_na867"]
+script = ExtResource("2_8xb20")
+level = 60
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_ctjb1"]
+script = ExtResource("2_8xb20")
+level = 65
+move = &"SHELLSMASH"
+
+[resource]
+resource_name = "SHUCKLE"
+script = ExtResource("3_4ik2e")
+species = &"SHUCKLE"
+category = "Mold"
+pokedex_entry = "A Shuckle hides under rocks, keeping its body concealed inside its shell while eating stored berries. The berries mix with its body fluids to become a juice."
+types = Array[StringName]([&"BUG", &"ROCK"])
+base_hp = 20
+base_attack = 10
+base_defense = 230
+base_special_attack = 10
+base_special_defense = 230
+base_speed = 5
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 177
+growth_rate = &"Parabolic"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8xb20")]([SubResource("Resource_wngst"), SubResource("Resource_cbjq6"), SubResource("Resource_spfae"), SubResource("Resource_45bwm"), SubResource("Resource_xqw24"), SubResource("Resource_srpth"), SubResource("Resource_317fy"), SubResource("Resource_4pmuv"), SubResource("Resource_1foql"), SubResource("Resource_fncgi"), SubResource("Resource_xghuf"), SubResource("Resource_k31uv"), SubResource("Resource_i2k7i"), SubResource("Resource_ytmck"), SubResource("Resource_na867"), SubResource("Resource_ctjb1")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ANCIENTPOWER", &"ATTRACT", &"BIND", &"BODYSLAM", &"BUGBITE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GYROBALL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"INFESTATION", &"IRONDEFENSE", &"KNOCKOFF", &"METEORBEAM", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STEELROLLER", &"STONEEDGE", &"STRENGTH", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TOXIC", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"ACID", &"ACUPRESSURE", &"COVET", &"DEFENSECURL", &"FINALGAMBIT", &"HELPINGHAND", &"INFESTATION", &"KNOCKOFF", &"MUDSLAP", &"ROCKBLAST", &"SANDTOMB", &"SWEETSCENT", &"TOXIC"])
+abilities = Array[StringName]([&"STURDY", &"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"CONTRARY"])
+wild_item_common = Array[StringName]([&"BERRYJUICE"])
+wild_item_uncommon = Array[StringName]([&"BERRYJUICE"])
+wild_item_rare = Array[StringName]([&"BERRYJUICE"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+height = 6
+weight = 205
+color = &"Yellow"
+shape = &"Insectoid"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 30)
+id = &"SHUCKLE"
+display_name = "Shuckle"

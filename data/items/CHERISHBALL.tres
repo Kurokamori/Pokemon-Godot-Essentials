@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_40pq0"]
+
+[resource]
+resource_name = "CHERISHBALL"
+script = ExtResource("1_40pq0")
+name_plural = "Cherish Balls"
+pocket = 3
+battle_use = 4
+description = "A quite rare Poké Ball that has been specially crafted to commemorate an occasion of some sort."
+id = &"CHERISHBALL"
+display_name = "Cherish Ball"
+flags = Array[StringName]([&"PokeBall"])

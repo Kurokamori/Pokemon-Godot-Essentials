@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4tvoo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_78pnq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jv0ys"]
+
+[sub_resource type="Resource" id="Resource_dpn4x"]
+script = ExtResource("1_4tvoo")
+species = &"DELCATTY"
+method = &"Item"
+parameter = "MOONSTONE"
+
+[sub_resource type="Resource" id="Resource_axjbn"]
+script = ExtResource("2_78pnq")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_j3olg"]
+script = ExtResource("2_78pnq")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_w3tfg"]
+script = ExtResource("2_78pnq")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_d7sfs"]
+script = ExtResource("2_78pnq")
+level = 4
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_knfvl"]
+script = ExtResource("2_78pnq")
+level = 7
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_3bmjw"]
+script = ExtResource("2_78pnq")
+level = 10
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_4oshb"]
+script = ExtResource("2_78pnq")
+level = 13
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_wuc44"]
+script = ExtResource("2_78pnq")
+level = 16
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_w2jb7"]
+script = ExtResource("2_78pnq")
+level = 19
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_7jo4c"]
+script = ExtResource("2_78pnq")
+level = 22
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_hmvm6"]
+script = ExtResource("2_78pnq")
+level = 25
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_umhm0"]
+script = ExtResource("2_78pnq")
+level = 31
+move = &"FACADE"
+
+[sub_resource type="Resource" id="Resource_2ryaa"]
+script = ExtResource("2_78pnq")
+level = 34
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_16bip"]
+script = ExtResource("2_78pnq")
+level = 37
+move = &"HEALBELL"
+
+[sub_resource type="Resource" id="Resource_1nh1j"]
+script = ExtResource("2_78pnq")
+level = 40
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_i4opc"]
+script = ExtResource("2_78pnq")
+level = 43
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_v1cv1"]
+script = ExtResource("2_78pnq")
+level = 46
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "SKITTY"
+script = ExtResource("3_jv0ys")
+species = &"SKITTY"
+category = "Kitten"
+pokedex_entry = "A Skitty's adorably cute behavior makes it highly popular. In battle, it makes its tail puff out. It threatens foes with a sharp growl."
+base_hp = 50
+base_attack = 45
+base_defense = 45
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 50
+ev_speed = 1
+base_exp = 52
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_78pnq")]([SubResource("Resource_axjbn"), SubResource("Resource_j3olg"), SubResource("Resource_w3tfg"), SubResource("Resource_d7sfs"), SubResource("Resource_knfvl"), SubResource("Resource_3bmjw"), SubResource("Resource_4oshb"), SubResource("Resource_wuc44"), SubResource("Resource_w2jb7"), SubResource("Resource_7jo4c"), SubResource("Resource_hmvm6"), SubResource("Resource_umhm0"), SubResource("Resource_2ryaa"), SubResource("Resource_16bip"), SubResource("Resource_1nh1j"), SubResource("Resource_i4opc"), SubResource("Resource_v1cv1")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"UPROAR", &"WATERPULSE", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BATONPASS", &"COSMICPOWER", &"FAKEOUT", &"FAKETEARS", &"HELPINGHAND", &"LASTRESORT", &"SIMPLEBEAM", &"SUCKERPUNCH", &"TICKLE", &"UPROAR", &"WISH", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"CUTECHARM", &"NORMALIZE"])
+hidden_abilities = Array[StringName]([&"WONDERSKIN"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_4tvoo")]([SubResource("Resource_dpn4x")])
+height = 6
+weight = 110
+color = &"Pink"
+shape = &"Quadruped"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(4, 32)
+shadow_size = 1
+id = &"SKITTY"
+display_name = "Skitty"

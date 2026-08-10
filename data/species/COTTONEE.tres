@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ksh2i"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_48p03"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3u1b7"]
+
+[sub_resource type="Resource" id="Resource_73en0"]
+script = ExtResource("1_ksh2i")
+species = &"WHIMSICOTT"
+method = &"Item"
+parameter = "SUNSTONE"
+
+[sub_resource type="Resource" id="Resource_lmqh5"]
+script = ExtResource("2_48p03")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_x1srd"]
+script = ExtResource("2_48p03")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_tvgt1"]
+script = ExtResource("2_48p03")
+level = 3
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_0hplc"]
+script = ExtResource("2_48p03")
+level = 6
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_phea5"]
+script = ExtResource("2_48p03")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_s8yms"]
+script = ExtResource("2_48p03")
+level = 15
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_403x8"]
+script = ExtResource("2_48p03")
+level = 18
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_1jtbc"]
+script = ExtResource("2_48p03")
+level = 21
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_l5alw"]
+script = ExtResource("2_48p03")
+level = 24
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_icvel"]
+script = ExtResource("2_48p03")
+level = 27
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_0bafa"]
+script = ExtResource("2_48p03")
+level = 30
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_ehj8b"]
+script = ExtResource("2_48p03")
+level = 33
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_v3epw"]
+script = ExtResource("2_48p03")
+level = 36
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_p7vh4"]
+script = ExtResource("2_48p03")
+level = 39
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_iyjxb"]
+script = ExtResource("2_48p03")
+level = 42
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_p5k40"]
+script = ExtResource("2_48p03")
+level = 45
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_dj5hs"]
+script = ExtResource("2_48p03")
+level = 48
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "COTTONEE"
+script = ExtResource("3_3u1b7")
+species = &"COTTONEE"
+category = "Cotton Puff"
+pokedex_entry = "They go wherever the wind takes them. On rainy days, their bodies are heavier, so they take shelter beneath big trees."
+types = Array[StringName]([&"GRASS", &"FAIRY"])
+base_hp = 40
+base_attack = 27
+base_defense = 60
+base_special_attack = 37
+base_special_defense = 50
+base_speed = 66
+ev_speed = 1
+base_exp = 56
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_48p03")]([SubResource("Resource_lmqh5"), SubResource("Resource_x1srd"), SubResource("Resource_tvgt1"), SubResource("Resource_0hplc"), SubResource("Resource_phea5"), SubResource("Resource_s8yms"), SubResource("Resource_403x8"), SubResource("Resource_1jtbc"), SubResource("Resource_l5alw"), SubResource("Resource_icvel"), SubResource("Resource_0bafa"), SubResource("Resource_ehj8b"), SubResource("Resource_v3epw"), SubResource("Resource_p7vh4"), SubResource("Resource_iyjxb"), SubResource("Resource_p5k40"), SubResource("Resource_dj5hs")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BEATUP", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"DREAMEATER", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"KNOCKOFF", &"MIMIC", &"MISTYTERRAIN", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"TOXIC", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"MEMENTO", &"NATUREPOWER", &"SWITCHEROO", &"TICKLE", &"WORRYSEED"])
+abilities = Array[StringName]([&"PRANKSTER", &"INFILTRATOR"])
+hidden_abilities = Array[StringName]([&"CHLOROPHYLL"])
+wild_item_uncommon = Array[StringName]([&"ABSORBBULB"])
+egg_groups = Array[StringName]([&"Grass", &"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ksh2i")]([SubResource("Resource_73en0")])
+height = 3
+weight = 6
+color = &"Green"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(1, 22)
+shadow_size = 1
+id = &"COTTONEE"
+display_name = "Cottonee"

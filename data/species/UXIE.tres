@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_sagno"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dcfs4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8a5m5"]
+
+[sub_resource type="Resource" id="Resource_mxwtl"]
+script = ExtResource("2_dcfs4")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_0mtf1"]
+script = ExtResource("2_dcfs4")
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_t67ti"]
+script = ExtResource("2_dcfs4")
+level = 7
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_kkasl"]
+script = ExtResource("2_dcfs4")
+level = 14
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_wmk81"]
+script = ExtResource("2_dcfs4")
+level = 21
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_ah6lc"]
+script = ExtResource("2_dcfs4")
+level = 28
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_x5rpn"]
+script = ExtResource("2_dcfs4")
+level = 35
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_xte7r"]
+script = ExtResource("2_dcfs4")
+level = 42
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_btrkh"]
+script = ExtResource("2_dcfs4")
+level = 49
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_5y2b5"]
+script = ExtResource("2_dcfs4")
+level = 56
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_bbena"]
+script = ExtResource("2_dcfs4")
+level = 63
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_4cf55"]
+script = ExtResource("2_dcfs4")
+level = 70
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_r0ee5"]
+script = ExtResource("2_dcfs4")
+level = 77
+move = &"MEMENTO"
+
+[resource]
+resource_name = "UXIE"
+script = ExtResource("3_8a5m5")
+species = &"UXIE"
+category = "Knowledge"
+pokedex_entry = "Known as \"The Being of Knowledge.\" It is said that it can wipe out the memory of those who see its eyes."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 75
+base_attack = 75
+base_defense = 130
+base_special_attack = 75
+base_special_defense = 130
+base_speed = 95
+ev_defense = 2
+ev_special_defense = 1
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_dcfs4")]([SubResource("Resource_mxwtl"), SubResource("Resource_0mtf1"), SubResource("Resource_t67ti"), SubResource("Resource_kkasl"), SubResource("Resource_wmk81"), SubResource("Resource_ah6lc"), SubResource("Resource_x5rpn"), SubResource("Resource_xte7r"), SubResource("Resource_btrkh"), SubResource("Resource_5y2b5"), SubResource("Resource_bbena"), SubResource("Resource_4cf55"), SubResource("Resource_r0ee5")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ALLYSWITCH", &"AMNESIA", &"BATONPASS", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IMPRISON", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"UTURN", &"WATERPULSE", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+hatch_steps = 20480
+height = 3
+weight = 3
+color = &"Yellow"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(-4, 54)
+front_sprite_offset = Vector2i(-4, 18)
+shadow_size = 1
+id = &"UXIE"
+display_name = "Uxie"
+flags = Array[StringName]([&"Legendary"])

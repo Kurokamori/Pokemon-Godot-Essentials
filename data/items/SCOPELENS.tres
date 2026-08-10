@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5gta0"]
+
+[resource]
+resource_name = "SCOPELENS"
+script = ExtResource("1_5gta0")
+name_plural = "Scope Lenses"
+price = 4000
+sell_price = 2000
+bp_price = 48
+description = "An item to be held by a Pokémon. It is a lens that boosts the holder's critical-hit ratio."
+id = &"SCOPELENS"
+display_name = "Scope Lens"
+flags = Array[StringName]([&"Fling_30"])

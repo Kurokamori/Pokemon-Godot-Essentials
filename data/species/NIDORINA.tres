@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jru8l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e5u4c"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ai0vw"]
+
+[sub_resource type="Resource" id="Resource_nqfha"]
+script = ExtResource("1_jru8l")
+species = &"NIDOQUEEN"
+method = &"Item"
+parameter = "MOONSTONE"
+
+[sub_resource type="Resource" id="Resource_pdmig"]
+script = ExtResource("1_jru8l")
+species = &"NIDORANfE"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_mhlx0"]
+script = ExtResource("2_e5u4c")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_5w8xd"]
+script = ExtResource("2_e5u4c")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_5xtqo"]
+script = ExtResource("2_e5u4c")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_bfnkg"]
+script = ExtResource("2_e5u4c")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_gkeym"]
+script = ExtResource("2_e5u4c")
+level = 15
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_2s5qg"]
+script = ExtResource("2_e5u4c")
+level = 22
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_c8p7y"]
+script = ExtResource("2_e5u4c")
+level = 29
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_3o1qe"]
+script = ExtResource("2_e5u4c")
+level = 36
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_b431o"]
+script = ExtResource("2_e5u4c")
+level = 43
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_wjs2o"]
+script = ExtResource("2_e5u4c")
+level = 50
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_ins8m"]
+script = ExtResource("2_e5u4c")
+level = 57
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_iraaw"]
+script = ExtResource("2_e5u4c")
+level = 64
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_igeed"]
+script = ExtResource("2_e5u4c")
+level = 71
+move = &"EARTHPOWER"
+
+[resource]
+resource_name = "NIDORINA"
+script = ExtResource("3_ai0vw")
+species = &"NIDORINA"
+category = "Poison Pin"
+pokedex_entry = "When it is with its friends or family, its barbs are tucked away to prevent injury. It appears to become nervous if separated from the others."
+types = Array[StringName]([&"POISON"])
+base_hp = 70
+base_attack = 62
+base_defense = 67
+base_special_attack = 55
+base_special_defense = 55
+base_speed = 56
+ev_hp = 2
+base_exp = 128
+growth_rate = &"Parabolic"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_e5u4c")]([SubResource("Resource_mhlx0"), SubResource("Resource_5w8xd"), SubResource("Resource_5xtqo"), SubResource("Resource_bfnkg"), SubResource("Resource_gkeym"), SubResource("Resource_2s5qg"), SubResource("Resource_c8p7y"), SubResource("Resource_3o1qe"), SubResource("Resource_b431o"), SubResource("Resource_wjs2o"), SubResource("Resource_ins8m"), SubResource("Resource_iraaw"), SubResource("Resource_igeed")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BEATUP", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"WATERPULSE"])
+abilities = Array[StringName]([&"POISONPOINT", &"RIVALRY"])
+hidden_abilities = Array[StringName]([&"HUSTLE"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_jru8l")]([SubResource("Resource_nqfha"), SubResource("Resource_pdmig")])
+height = 8
+weight = 200
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 32)
+id = &"NIDORINA"
+display_name = "Nidorina"

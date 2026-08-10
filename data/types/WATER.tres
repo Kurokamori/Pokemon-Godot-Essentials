@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_b05qf"]
+
+[resource]
+resource_name = "WATER"
+script = ExtResource("1_b05qf")
+icon_position = 11
+special_type = true
+weaknesses = Array[StringName]([&"GRASS", &"ELECTRIC"])
+resistances = Array[StringName]([&"STEEL", &"FIRE", &"WATER", &"ICE"])
+id = &"WATER"
+display_name = "Water"

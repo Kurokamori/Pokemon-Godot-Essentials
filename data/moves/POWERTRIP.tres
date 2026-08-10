@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_p56my"]
+
+[resource]
+resource_name = "POWERTRIP"
+script = ExtResource("1_p56my")
+type = &"DARK"
+category = 0
+power = 1
+total_pp = 10
+function_code = &"PowerHigherWithUserPositiveStatStages"
+description = "The user boasts of its strength. Power increases the more the user's stats are raised."
+id = &"POWERTRIP"
+display_name = "Power Trip"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

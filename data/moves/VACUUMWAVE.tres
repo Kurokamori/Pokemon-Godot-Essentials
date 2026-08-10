@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_l44q8"]
+
+[resource]
+resource_name = "VACUUMWAVE"
+script = ExtResource("1_l44q8")
+type = &"FIGHTING"
+category = 1
+power = 40
+total_pp = 30
+priority = 1
+description = "The user whirls its fists to send a wave of pure vacuum at the target. This move always goes first."
+id = &"VACUUMWAVE"
+display_name = "Vacuum Wave"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tt0or"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0bv4a"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tsvy2"]
+
+[sub_resource type="Resource" id="Resource_mcgle"]
+script = ExtResource("1_tt0or")
+species = &"DARUMAKA"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fqww5"]
+script = ExtResource("2_0bv4a")
+level = 0
+move = &"ICICLECRASH"
+
+[sub_resource type="Resource" id="Resource_1elaw"]
+script = ExtResource("2_0bv4a")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_d30xr"]
+script = ExtResource("2_0bv4a")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_vohb4"]
+script = ExtResource("2_0bv4a")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_hkrka"]
+script = ExtResource("2_0bv4a")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_jr7bk"]
+script = ExtResource("2_0bv4a")
+level = 12
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_dgqxa"]
+script = ExtResource("2_0bv4a")
+level = 16
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_xkog4"]
+script = ExtResource("2_0bv4a")
+level = 20
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_y4e4l"]
+script = ExtResource("2_0bv4a")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_kuh2e"]
+script = ExtResource("2_0bv4a")
+level = 28
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_h5r8e"]
+script = ExtResource("2_0bv4a")
+level = 32
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_5ym8u"]
+script = ExtResource("2_0bv4a")
+level = 38
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_8r7n8"]
+script = ExtResource("2_0bv4a")
+level = 44
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_scsaw"]
+script = ExtResource("2_0bv4a")
+level = 50
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_j46dn"]
+script = ExtResource("2_0bv4a")
+level = 56
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "DARMANITAN_3"
+script = ExtResource("3_tsvy2")
+species = &"DARMANITAN"
+form = 3
+form_name = "Galarian Zen Mode"
+category = "Zen Charm"
+pokedex_entry = "Anger has reignited its atrophied flame sac. This Pokémon spews fire everywhere as it rampages indiscriminately."
+pokedex_form = 3
+types = Array[StringName]([&"ICE", &"FIRE"])
+base_hp = 105
+base_attack = 160
+base_defense = 55
+base_special_attack = 30
+base_special_defense = 55
+base_speed = 135
+ev_special_attack = 2
+base_exp = 189
+growth_rate = &"Parabolic"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_0bv4a")]([SubResource("Resource_fqww5"), SubResource("Resource_1elaw"), SubResource("Resource_d30xr"), SubResource("Resource_vohb4"), SubResource("Resource_hkrka"), SubResource("Resource_jr7bk"), SubResource("Resource_dgqxa"), SubResource("Resource_xkog4"), SubResource("Resource_y4e4l"), SubResource("Resource_kuh2e"), SubResource("Resource_h5r8e"), SubResource("Resource_5ym8u"), SubResource("Resource_8r7n8"), SubResource("Resource_scsaw"), SubResource("Resource_j46dn")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENCORE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPUNCH", &"FIRESPIN", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GYROBALL", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"IRONDEFENSE", &"IRONHEAD", &"LASHOUT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"UPROAR", &"UTURN", &"WILLOWISP", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"GORILLATACTICS"])
+hidden_abilities = Array[StringName]([&"ZENMODE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tt0or")]([SubResource("Resource_mcgle")])
+height = 17
+weight = 1200
+color = &"White"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 28)
+id = &"DARMANITAN_3"
+display_name = "Darmanitan"

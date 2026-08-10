@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5tclw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k67u5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4krpy"]
+
+[sub_resource type="Resource" id="Resource_7h8l8"]
+script = ExtResource("1_5tclw")
+species = &"DUBWOOL"
+method = &"Level"
+parameter = "24"
+
+[sub_resource type="Resource" id="Resource_l7s08"]
+script = ExtResource("2_k67u5")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_qti66"]
+script = ExtResource("2_k67u5")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_a1hpc"]
+script = ExtResource("2_k67u5")
+level = 4
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_kldgq"]
+script = ExtResource("2_k67u5")
+level = 8
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_3rm45"]
+script = ExtResource("2_k67u5")
+level = 12
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_tcb0x"]
+script = ExtResource("2_k67u5")
+level = 16
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_g04u8"]
+script = ExtResource("2_k67u5")
+level = 21
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_0jnnr"]
+script = ExtResource("2_k67u5")
+level = 25
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_ijwt2"]
+script = ExtResource("2_k67u5")
+level = 28
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_qne4p"]
+script = ExtResource("2_k67u5")
+level = 32
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_va867"]
+script = ExtResource("2_k67u5")
+level = 36
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_bln2h"]
+script = ExtResource("2_k67u5")
+level = 40
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "WOOLOO"
+script = ExtResource("3_4krpy")
+species = &"WOOLOO"
+category = "Sheep"
+pokedex_entry = "Its curly fleece is such an effective cushion that this Pokémon could fall off a cliff and stand right back up at the bottom, unharmed."
+base_hp = 42
+base_attack = 40
+base_defense = 55
+base_special_attack = 40
+base_special_defense = 45
+base_speed = 48
+ev_defense = 1
+base_exp = 122
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k67u5")]([SubResource("Resource_l7s08"), SubResource("Resource_qti66"), SubResource("Resource_a1hpc"), SubResource("Resource_kldgq"), SubResource("Resource_3rm45"), SubResource("Resource_tcb0x"), SubResource("Resource_g04u8"), SubResource("Resource_0jnnr"), SubResource("Resource_ijwt2"), SubResource("Resource_qne4p"), SubResource("Resource_va867"), SubResource("Resource_bln2h")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GRASSYGLIDE", &"GUARDSWAP", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"THUNDERWAVE", &"TOXIC", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"COUNTER", &"STOMP", &"SWAGGER"])
+abilities = Array[StringName]([&"FLUFFY", &"RUNAWAY"])
+hidden_abilities = Array[StringName]([&"BULLETPROOF"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_5tclw")]([SubResource("Resource_7h8l8")])
+height = 6
+weight = 60
+color = &"White"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 49)
+front_sprite_offset = Vector2i(1, 28)
+shadow_size = 1
+id = &"WOOLOO"
+display_name = "Wooloo"

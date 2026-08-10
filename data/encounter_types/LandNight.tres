@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EncounterTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_type_data.gd" id="1_eq0mv"]
+
+[resource]
+resource_name = "LandNight"
+script = ExtResource("1_eq0mv")
+trigger_chance = 21
+id = &"LandNight"
+display_name = "LandNight"

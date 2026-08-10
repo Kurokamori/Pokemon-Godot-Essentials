@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_pqoqg"]
+
+[resource]
+resource_name = "ECHOEDVOICE"
+script = ExtResource("1_pqoqg")
+category = 1
+power = 40
+total_pp = 15
+function_code = &"PowerHigherWithConsecutiveUseOnUserSide"
+description = "The user attacks the foe with an echoing voice. If this move is used every turn, it does greater damage."
+id = &"ECHOEDVOICE"
+display_name = "Echoed Voice"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

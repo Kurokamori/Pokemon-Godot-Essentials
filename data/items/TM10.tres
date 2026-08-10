@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_j6gqy"]
+
+[resource]
+resource_name = "TM10"
+script = ExtResource("1_j6gqy")
+name_plural = "TM10s"
+pocket = 4
+price = 1500
+sell_price = 750
+bp_price = 32
+field_use = 5
+move = &"WORKUP"
+description = "The user is roused, and its Attack and Sp. Atk stats increase."
+id = &"TM10"
+display_name = "TM10"
+flags = Array[StringName]([&"Fling_10"])

@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_a8voe"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tcjaq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ann4u"]
+
+[sub_resource type="Resource" id="Resource_8nqei"]
+script = ExtResource("1_a8voe")
+species = &"AEGISLASH"
+method = &"Item"
+parameter = "DUSKSTONE"
+
+[sub_resource type="Resource" id="Resource_viuse"]
+script = ExtResource("1_a8voe")
+species = &"HONEDGE"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0csui"]
+script = ExtResource("2_tcjaq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7inup"]
+script = ExtResource("2_tcjaq")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_fdcss"]
+script = ExtResource("2_tcjaq")
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_bwto3"]
+script = ExtResource("2_tcjaq")
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_1jgx3"]
+script = ExtResource("2_tcjaq")
+level = 12
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_qeyv7"]
+script = ExtResource("2_tcjaq")
+level = 16
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_dbosq"]
+script = ExtResource("2_tcjaq")
+level = 20
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_0beac"]
+script = ExtResource("2_tcjaq")
+level = 24
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_a5o47"]
+script = ExtResource("2_tcjaq")
+level = 28
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_eci7u"]
+script = ExtResource("2_tcjaq")
+level = 32
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_ova5k"]
+script = ExtResource("2_tcjaq")
+level = 38
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_uc0go"]
+script = ExtResource("2_tcjaq")
+level = 44
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_p6poh"]
+script = ExtResource("2_tcjaq")
+level = 50
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_fhook"]
+script = ExtResource("2_tcjaq")
+level = 56
+move = &"SACREDSWORD"
+
+[resource]
+resource_name = "DOUBLADE"
+script = ExtResource("3_ann4u")
+species = &"DOUBLADE"
+category = "Sword"
+pokedex_entry = "The complex attack patterns of its two swords are unstoppable, even for an opponent greatly accomplished at swordplay."
+types = Array[StringName]([&"STEEL", &"GHOST"])
+base_hp = 59
+base_attack = 110
+base_defense = 150
+base_special_attack = 45
+base_special_defense = 49
+base_speed = 35
+ev_defense = 2
+base_exp = 157
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tcjaq")]([SubResource("Resource_0csui"), SubResource("Resource_7inup"), SubResource("Resource_fdcss"), SubResource("Resource_bwto3"), SubResource("Resource_1jgx3"), SubResource("Resource_qeyv7"), SubResource("Resource_dbosq"), SubResource("Resource_0beac"), SubResource("Resource_a5o47"), SubResource("Resource_eci7u"), SubResource("Resource_ova5k"), SubResource("Resource_uc0go"), SubResource("Resource_p6poh"), SubResource("Resource_fhook")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FRUSTRATION", &"GYROBALL", &"HIDDENPOWER", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHOCUT", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBLADE", &"SPITE", &"STEELBEAM", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TOXIC"])
+abilities = Array[StringName]([&"NOGUARD"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_a8voe")]([SubResource("Resource_8nqei"), SubResource("Resource_viuse")])
+height = 8
+weight = 45
+color = &"Brown"
+shape = &"MultiBody"
+generation = 6
+back_sprite_offset = Vector2i(8, 52)
+front_sprite_offset = Vector2i(0, 12)
+id = &"DOUBLADE"
+display_name = "Doublade"

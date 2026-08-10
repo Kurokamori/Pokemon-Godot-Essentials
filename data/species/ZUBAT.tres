@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dpckq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7ce5n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gjvwq"]
+
+[sub_resource type="Resource" id="Resource_a5lpf"]
+script = ExtResource("1_dpckq")
+species = &"GOLBAT"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_gx6ln"]
+script = ExtResource("2_7ce5n")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_kptsm"]
+script = ExtResource("2_7ce5n")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_a1s6u"]
+script = ExtResource("2_7ce5n")
+level = 5
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_wev8p"]
+script = ExtResource("2_7ce5n")
+level = 10
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_1oms8"]
+script = ExtResource("2_7ce5n")
+level = 15
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_ugjxv"]
+script = ExtResource("2_7ce5n")
+level = 20
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_5fp5c"]
+script = ExtResource("2_7ce5n")
+level = 25
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_65tn8"]
+script = ExtResource("2_7ce5n")
+level = 30
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_wief4"]
+script = ExtResource("2_7ce5n")
+level = 35
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_h871b"]
+script = ExtResource("2_7ce5n")
+level = 40
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_2lkiv"]
+script = ExtResource("2_7ce5n")
+level = 45
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_418ri"]
+script = ExtResource("2_7ce5n")
+level = 50
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_g67ms"]
+script = ExtResource("2_7ce5n")
+level = 55
+move = &"LEECHLIFE"
+
+[resource]
+resource_name = "ZUBAT"
+script = ExtResource("3_gjvwq")
+species = &"ZUBAT"
+category = "Bat"
+pokedex_entry = "While living in pitch-black caverns, their eyes gradually grew shut and deprived them of vision. They use ultrasonic waves to detect obstacles."
+types = Array[StringName]([&"POISON", &"FLYING"])
+base_hp = 40
+base_attack = 45
+base_defense = 35
+base_special_attack = 30
+base_special_defense = 40
+base_speed = 55
+ev_speed = 1
+base_exp = 49
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7ce5n")]([SubResource("Resource_gx6ln"), SubResource("Resource_kptsm"), SubResource("Resource_a1s6u"), SubResource("Resource_wev8p"), SubResource("Resource_1oms8"), SubResource("Resource_ugjxv"), SubResource("Resource_5fp5c"), SubResource("Resource_65tn8"), SubResource("Resource_wief4"), SubResource("Resource_h871b"), SubResource("Resource_2lkiv"), SubResource("Resource_418ri"), SubResource("Resource_g67ms")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGADRAIN", &"HEATWAVE", &"HIDDENPOWER", &"LEECHLIFE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SNATCH", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TWISTER", &"UPROAR", &"UTURN", &"VENOMDRENCH", &"VENOSHOCK", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BRAVEBIRD", &"CURSE", &"DEFOG", &"GUST", &"HYPNOSIS", &"QUICKATTACK", &"VENOMDRENCH", &"WHIRLWIND", &"WINGATTACK", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_dpckq")]([SubResource("Resource_a5lpf")])
+height = 8
+weight = 75
+color = &"Purple"
+shape = &"Winged"
+habitat = &"Cave"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 8)
+shadow_size = 1
+id = &"ZUBAT"
+display_name = "Zubat"

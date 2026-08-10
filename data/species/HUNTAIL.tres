@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_eb5ex"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fhe4e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6qhf4"]
+
+[sub_resource type="Resource" id="Resource_d4dhr"]
+script = ExtResource("1_eb5ex")
+species = &"CLAMPERL"
+method = &"TradeItem"
+parameter = "DEEPSEATOOTH"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0n15s"]
+script = ExtResource("2_fhe4e")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ccneq"]
+script = ExtResource("2_fhe4e")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_s2skg"]
+script = ExtResource("2_fhe4e")
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_ho4y1"]
+script = ExtResource("2_fhe4e")
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_co4cm"]
+script = ExtResource("2_fhe4e")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_p7wwk"]
+script = ExtResource("2_fhe4e")
+level = 5
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_3sv1i"]
+script = ExtResource("2_fhe4e")
+level = 9
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_62lhi"]
+script = ExtResource("2_fhe4e")
+level = 11
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_lnibv"]
+script = ExtResource("2_fhe4e")
+level = 14
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_e6o44"]
+script = ExtResource("2_fhe4e")
+level = 16
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_erstu"]
+script = ExtResource("2_fhe4e")
+level = 19
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_v0554"]
+script = ExtResource("2_fhe4e")
+level = 23
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_0m6f8"]
+script = ExtResource("2_fhe4e")
+level = 26
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_nuyn4"]
+script = ExtResource("2_fhe4e")
+level = 29
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_rq0r1"]
+script = ExtResource("2_fhe4e")
+level = 34
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_kpqlr"]
+script = ExtResource("2_fhe4e")
+level = 39
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_bs4ul"]
+script = ExtResource("2_fhe4e")
+level = 45
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_hvufr"]
+script = ExtResource("2_fhe4e")
+level = 50
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "HUNTAIL"
+script = ExtResource("3_6qhf4")
+species = &"HUNTAIL"
+category = "Deep Sea"
+pokedex_entry = "To withstand the crushing water pressure deep under the sea, its spine is very thick and sturdy. Its tail, which is shaped like a small fish, has eyes that light up."
+types = Array[StringName]([&"WATER"])
+base_hp = 55
+base_attack = 104
+base_defense = 105
+base_special_attack = 94
+base_special_defense = 75
+base_speed = 52
+ev_attack = 1
+ev_defense = 1
+base_exp = 170
+growth_rate = &"Erratic"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fhe4e")]([SubResource("Resource_0n15s"), SubResource("Resource_ccneq"), SubResource("Resource_s2skg"), SubResource("Resource_ho4y1"), SubResource("Resource_co4cm"), SubResource("Resource_p7wwk"), SubResource("Resource_3sv1i"), SubResource("Resource_62lhi"), SubResource("Resource_lnibv"), SubResource("Resource_e6o44"), SubResource("Resource_erstu"), SubResource("Resource_v0554"), SubResource("Resource_0m6f8"), SubResource("Resource_nuyn4"), SubResource("Resource_rq0r1"), SubResource("Resource_kpqlr"), SubResource("Resource_bs4ul"), SubResource("Resource_hvufr")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUPERFANG", &"SURF", &"SWAGGER", &"SWIFT", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"WATERVEIL"])
+wild_item_uncommon = Array[StringName]([&"DEEPSEATOOTH"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_eb5ex")]([SubResource("Resource_d4dhr")])
+height = 17
+weight = 270
+color = &"Blue"
+shape = &"Serpentine"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 19)
+id = &"HUNTAIL"
+display_name = "Huntail"

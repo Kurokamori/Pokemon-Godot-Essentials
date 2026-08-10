@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_2o7se"]
+
+[resource]
+resource_name = "WORLDABILITY"
+script = ExtResource("1_2o7se")
+icon_position = 47
+description = "A Ribbon awarded for completing the Wi-Fi Battle Tower challenge."
+id = &"WORLDABILITY"
+display_name = "World Ability Ribbon"

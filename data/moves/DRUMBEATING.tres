@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_p1k3s"]
+
+[resource]
+resource_name = "DRUMBEATING"
+script = ExtResource("1_p1k3s")
+type = &"GRASS"
+category = 0
+power = 80
+total_pp = 10
+function_code = &"LowerTargetSpeed1"
+effect_chance = 100
+description = "The user plays its drum, controlling roots to attack. This also lowers the target's Speed stat."
+id = &"DRUMBEATING"
+display_name = "Drum Beating"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ig7ti"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vfc6n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4bm1t"]
+
+[sub_resource type="Resource" id="Resource_6yoc7"]
+script = ExtResource("1_ig7ti")
+species = &"HITMONLEE"
+method = &"AttackGreater"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_3evdw"]
+script = ExtResource("1_ig7ti")
+species = &"HITMONCHAN"
+method = &"DefenseGreater"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_5d347"]
+script = ExtResource("1_ig7ti")
+species = &"HITMONTOP"
+method = &"AtkDefEqual"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_ftfb3"]
+script = ExtResource("2_vfc6n")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_rbvm0"]
+script = ExtResource("2_vfc6n")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_beu5m"]
+script = ExtResource("2_vfc6n")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_wow6u"]
+script = ExtResource("2_vfc6n")
+move = &"FOCUSENERGY"
+
+[resource]
+resource_name = "TYROGUE"
+script = ExtResource("3_4bm1t")
+species = &"TYROGUE"
+category = "Scuffle"
+pokedex_entry = "Tyrogue become stressed out if they do not get to train every day. When raising this Pokémon, the trainer must establish a regular training schedule."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 35
+base_attack = 35
+base_defense = 35
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 35
+ev_attack = 1
+base_exp = 42
+gender_ratio = &"AlwaysMale"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vfc6n")]([SubResource("Resource_ftfb3"), SubResource("Resource_rbvm0"), SubResource("Resource_beu5m"), SubResource("Resource_wow6u")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"UPROAR", &"VACUUMWAVE", &"WORKUP"])
+egg_moves = Array[StringName]([&"BULLETPUNCH", &"COUNTER", &"FEINT", &"HELPINGHAND", &"HIGHJUMPKICK", &"MACHPUNCH", &"MINDREADER", &"RAPIDSPIN", &"VACUUMWAVE"])
+abilities = Array[StringName]([&"GUTS", &"STEADFAST"])
+hidden_abilities = Array[StringName]([&"VITALSPIRIT"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_ig7ti")]([SubResource("Resource_6yoc7"), SubResource("Resource_3evdw"), SubResource("Resource_5d347")])
+height = 7
+weight = 210
+color = &"Purple"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-3, 29)
+shadow_size = 1
+id = &"TYROGUE"
+display_name = "Tyrogue"

@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0eqlv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_eibxk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dvmjp"]
+
+[sub_resource type="Resource" id="Resource_6bslq"]
+script = ExtResource("1_0eqlv")
+species = &"MEOWSTIC"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_lbdxv"]
+script = ExtResource("2_eibxk")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_bhuq1"]
+script = ExtResource("2_eibxk")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_1ad5d"]
+script = ExtResource("2_eibxk")
+level = 3
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_tlbcd"]
+script = ExtResource("2_eibxk")
+level = 6
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_3mgw0"]
+script = ExtResource("2_eibxk")
+level = 9
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_2gq3o"]
+script = ExtResource("2_eibxk")
+level = 18
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_8b14v"]
+script = ExtResource("2_eibxk")
+level = 21
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_vm4p3"]
+script = ExtResource("2_eibxk")
+level = 30
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_mwapq"]
+script = ExtResource("2_eibxk")
+level = 30
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_s2tns"]
+script = ExtResource("2_eibxk")
+level = 33
+move = &"PSYSHOCK"
+
+[resource]
+resource_name = "ESPURR"
+script = ExtResource("3_dvmjp")
+species = &"ESPURR"
+category = "Restraint"
+pokedex_entry = "The organ that emits its intense psychic power is sheltered by its ears to keep power from leaking out."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 62
+base_attack = 48
+base_defense = 54
+base_special_attack = 63
+base_special_defense = 60
+base_speed = 68
+ev_speed = 1
+base_exp = 71
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_eibxk")]([SubResource("Resource_lbdxv"), SubResource("Resource_bhuq1"), SubResource("Resource_1ad5d"), SubResource("Resource_tlbcd"), SubResource("Resource_3mgw0"), SubResource("Resource_2gq3o"), SubResource("Resource_8b14v"), SubResource("Resource_vm4p3"), SubResource("Resource_mwapq"), SubResource("Resource_s2tns")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"CUT", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLASH", &"FRUSTRATION", &"GRAVITY", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"TICKLE", &"YAWN"])
+abilities = Array[StringName]([&"KEENEYE", &"INFILTRATOR"])
+hidden_abilities = Array[StringName]([&"OWNTEMPO"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0eqlv")]([SubResource("Resource_6bslq")])
+height = 3
+weight = 35
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 28)
+shadow_size = 1
+id = &"ESPURR"
+display_name = "Espurr"

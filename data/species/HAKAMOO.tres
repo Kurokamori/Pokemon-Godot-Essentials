@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bcu5y"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_u38yt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_64tln"]
+
+[sub_resource type="Resource" id="Resource_icuu3"]
+script = ExtResource("1_bcu5y")
+species = &"KOMMOO"
+method = &"Level"
+parameter = "45"
+
+[sub_resource type="Resource" id="Resource_wtpic"]
+script = ExtResource("1_bcu5y")
+species = &"JANGMOO"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_hnngf"]
+script = ExtResource("2_u38yt")
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_irjr6"]
+script = ExtResource("2_u38yt")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_o0xvx"]
+script = ExtResource("2_u38yt")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ihiiq"]
+script = ExtResource("2_u38yt")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_4p2p3"]
+script = ExtResource("2_u38yt")
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_il7cw"]
+script = ExtResource("2_u38yt")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_6evlp"]
+script = ExtResource("2_u38yt")
+level = 16
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_0o4tv"]
+script = ExtResource("2_u38yt")
+level = 20
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_k6rk2"]
+script = ExtResource("2_u38yt")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_lvuue"]
+script = ExtResource("2_u38yt")
+level = 28
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_8mntr"]
+script = ExtResource("2_u38yt")
+level = 32
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_ak7hs"]
+script = ExtResource("2_u38yt")
+level = 38
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_g68qj"]
+script = ExtResource("2_u38yt")
+level = 44
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_lcfij"]
+script = ExtResource("2_u38yt")
+level = 50
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_8wvcg"]
+script = ExtResource("2_u38yt")
+level = 56
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "HAKAMOO"
+script = ExtResource("3_64tln")
+species = &"HAKAMOO"
+category = "Scaly"
+pokedex_entry = "It sheds and regrows its scales on a continuous basis. The scales become harder and sharper each time they're regrown."
+types = Array[StringName]([&"DRAGON", &"FIGHTING"])
+base_hp = 55
+base_attack = 75
+base_defense = 90
+base_special_attack = 65
+base_special_defense = 70
+base_speed = 65
+ev_defense = 2
+base_exp = 147
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_u38yt")]([SubResource("Resource_hnngf"), SubResource("Resource_irjr6"), SubResource("Resource_o0xvx"), SubResource("Resource_ihiiq"), SubResource("Resource_4p2p3"), SubResource("Resource_il7cw"), SubResource("Resource_6evlp"), SubResource("Resource_0o4tv"), SubResource("Resource_k6rk2"), SubResource("Resource_lvuue"), SubResource("Resource_8mntr"), SubResource("Resource_ak7hs"), SubResource("Resource_g68qj"), SubResource("Resource_lcfij"), SubResource("Resource_8wvcg")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"HIDDENPOWER", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALESHOT", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"UPROAR", &"WORKUP", &"XSCISSOR"])
+abilities = Array[StringName]([&"BULLETPROOF", &"SOUNDPROOF"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_uncommon = Array[StringName]([&"RAZORCLAW"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_bcu5y")]([SubResource("Resource_icuu3"), SubResource("Resource_wtpic")])
+height = 12
+weight = 470
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(1, 48)
+front_sprite_offset = Vector2i(6, 18)
+id = &"HAKAMOO"
+display_name = "Hakamo-o"

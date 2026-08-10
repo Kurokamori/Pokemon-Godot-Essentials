@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_gux57"]
+
+[resource]
+resource_name = "HEADCHARGE"
+script = ExtResource("1_gux57")
+category = 0
+power = 120
+total_pp = 15
+function_code = &"RecoilQuarterOfDamageDealt"
+description = "The user charges its head into the foe, using its powerful guard hair. The user also takes damage."
+id = &"HEADCHARGE"
+display_name = "Head Charge"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

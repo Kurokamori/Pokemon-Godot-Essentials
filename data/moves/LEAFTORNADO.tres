@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_chf37"]
+
+[resource]
+resource_name = "LEAFTORNADO"
+script = ExtResource("1_chf37")
+type = &"GRASS"
+category = 1
+power = 65
+accuracy = 90
+total_pp = 10
+function_code = &"LowerTargetAccuracy1"
+effect_chance = 50
+description = "The user attacks its foe by encircling it in sharp leaves. This attack may also lower the foe's accuracy."
+id = &"LEAFTORNADO"
+display_name = "Leaf Tornado"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

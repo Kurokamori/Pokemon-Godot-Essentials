@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_b07rf"]
+
+[resource]
+resource_name = "PINAPBERRY"
+script = ExtResource("1_b07rf")
+name_plural = "Pinap Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "In the Sinnoh region, they like to make sweets known as Poffins with this Berry."
+id = &"PINAPBERRY"
+display_name = "Pinap Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_GRASS_90"])

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ft0buudk21eh"
+path="res://.godot/imported/Battle critical catch throw.ogg-bb9a88fbe1351de11200c9c201901461.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Battle critical catch throw.ogg"
+dest_files=["res://.godot/imported/Battle critical catch throw.ogg-bb9a88fbe1351de11200c9c201901461.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

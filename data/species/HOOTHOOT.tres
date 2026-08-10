@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ag05l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_r63nv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nisdt"]
+
+[sub_resource type="Resource" id="Resource_oqoro"]
+script = ExtResource("1_ag05l")
+species = &"NOCTOWL"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_wti77"]
+script = ExtResource("2_r63nv")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_u0d10"]
+script = ExtResource("2_r63nv")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_wd5ra"]
+script = ExtResource("2_r63nv")
+level = 3
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_oj6lq"]
+script = ExtResource("2_r63nv")
+level = 6
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_x22e1"]
+script = ExtResource("2_r63nv")
+level = 9
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_cm685"]
+script = ExtResource("2_r63nv")
+level = 12
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_aheqt"]
+script = ExtResource("2_r63nv")
+level = 15
+move = &"PSYCHOSHIFT"
+
+[sub_resource type="Resource" id="Resource_cfy0l"]
+script = ExtResource("2_r63nv")
+level = 18
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_o4d36"]
+script = ExtResource("2_r63nv")
+level = 21
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_akonc"]
+script = ExtResource("2_r63nv")
+level = 24
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_e3403"]
+script = ExtResource("2_r63nv")
+level = 27
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_pc5b1"]
+script = ExtResource("2_r63nv")
+level = 30
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_xng30"]
+script = ExtResource("2_r63nv")
+level = 33
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_7x11i"]
+script = ExtResource("2_r63nv")
+level = 36
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_602m3"]
+script = ExtResource("2_r63nv")
+level = 39
+move = &"DREAMEATER"
+
+[resource]
+resource_name = "HOOTHOOT"
+script = ExtResource("3_nisdt")
+species = &"HOOTHOOT"
+category = "Owl"
+pokedex_entry = "It has an internal organ that senses the earth's rotation. Using this special organ, a Hoothoot begins hooting at precisely the same time every day."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 60
+base_attack = 30
+base_defense = 30
+base_special_attack = 36
+base_special_defense = 56
+base_speed = 50
+ev_hp = 1
+base_exp = 52
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_r63nv")]([SubResource("Resource_wti77"), SubResource("Resource_u0d10"), SubResource("Resource_wd5ra"), SubResource("Resource_oj6lq"), SubResource("Resource_x22e1"), SubResource("Resource_cm685"), SubResource("Resource_aheqt"), SubResource("Resource_cfy0l"), SubResource("Resource_o4d36"), SubResource("Resource_akonc"), SubResource("Resource_e3403"), SubResource("Resource_pc5b1"), SubResource("Resource_xng30"), SubResource("Resource_7x11i"), SubResource("Resource_602m3")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"AMNESIA", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERVOICE", &"IMPRISON", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SILVERWIND", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AGILITY", &"DEFOG", &"FEATHERDANCE", &"HURRICANE", &"MEANLOOK", &"NIGHTSHADE", &"SKYATTACK", &"SUPERSONIC", &"WHIRLWIND", &"WINGATTACK"])
+abilities = Array[StringName]([&"INSOMNIA", &"KEENEYE"])
+hidden_abilities = Array[StringName]([&"TINTEDLENS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ag05l")]([SubResource("Resource_oqoro")])
+height = 7
+weight = 212
+color = &"Brown"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 30)
+shadow_size = 1
+id = &"HOOTHOOT"
+display_name = "Hoothoot"

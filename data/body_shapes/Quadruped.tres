@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BodyShapeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/body_shape_data.gd" id="1_0cikx"]
+
+[resource]
+resource_name = "Quadruped"
+script = ExtResource("1_0cikx")
+icon_position = 7
+id = &"Quadruped"
+display_name = "Quadruped"

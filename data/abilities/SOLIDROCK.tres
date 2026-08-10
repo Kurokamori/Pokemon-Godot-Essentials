@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_rrq7m"]
+
+[resource]
+resource_name = "SOLIDROCK"
+script = ExtResource("1_rrq7m")
+description = "Reduces damage from super-effective attacks."
+id = &"SOLIDROCK"
+display_name = "Solid Rock"

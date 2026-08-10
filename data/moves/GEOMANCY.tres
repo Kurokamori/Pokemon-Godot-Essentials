@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_r2c4i"]
+
+[resource]
+resource_name = "GEOMANCY"
+script = ExtResource("1_r2c4i")
+type = &"FAIRY"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"TwoTurnAttackRaiseUserSpAtkSpDefSpd2"
+description = "The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats on the next turn."
+id = &"GEOMANCY"
+display_name = "Geomancy"

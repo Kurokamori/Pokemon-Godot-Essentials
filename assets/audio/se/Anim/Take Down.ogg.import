@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c7b5fjp3h3vu7"
+path="res://.godot/imported/Take Down.ogg-9d814a25568a98a99d05f0cfa29962f7.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Anim/Take Down.ogg"
+dest_files=["res://.godot/imported/Take Down.ogg-9d814a25568a98a99d05f0cfa29962f7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

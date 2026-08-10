@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_h32wg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_6jbky"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_w052s"]
+
+[sub_resource type="Resource" id="Resource_haq0j"]
+script = ExtResource("2_6jbky")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_66cd0"]
+script = ExtResource("2_6jbky")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_1sgj2"]
+script = ExtResource("2_6jbky")
+level = 6
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_yq5cx"]
+script = ExtResource("2_6jbky")
+level = 12
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_6cfhy"]
+script = ExtResource("2_6jbky")
+level = 18
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_b3p2t"]
+script = ExtResource("2_6jbky")
+level = 24
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_8tv18"]
+script = ExtResource("2_6jbky")
+level = 30
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_kycqy"]
+script = ExtResource("2_6jbky")
+level = 36
+move = &"ICICLECRASH"
+
+[sub_resource type="Resource" id="Resource_egy13"]
+script = ExtResource("2_6jbky")
+level = 42
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_xho3v"]
+script = ExtResource("2_6jbky")
+level = 48
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_gavn2"]
+script = ExtResource("2_6jbky")
+level = 54
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_fpldr"]
+script = ExtResource("2_6jbky")
+level = 60
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_fmo0o"]
+script = ExtResource("2_6jbky")
+level = 66
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_pwxox"]
+script = ExtResource("2_6jbky")
+level = 72
+move = &"SWORDSDANCE"
+
+[resource]
+resource_name = "GLASTRIER"
+script = ExtResource("3_w052s")
+species = &"GLASTRIER"
+category = "Wild Horse"
+pokedex_entry = "Glastrier has tremendous physical strength, and the mask of ice covering its face is 100 times harder than diamond."
+types = Array[StringName]([&"ICE"])
+base_hp = 100
+base_attack = 145
+base_defense = 130
+base_special_attack = 65
+base_special_defense = 110
+base_speed = 30
+ev_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_6jbky")]([SubResource("Resource_haq0j"), SubResource("Resource_66cd0"), SubResource("Resource_1sgj2"), SubResource("Resource_yq5cx"), SubResource("Resource_6cfhy"), SubResource("Resource_b3p2t"), SubResource("Resource_8tv18"), SubResource("Resource_kycqy"), SubResource("Resource_egy13"), SubResource("Resource_xho3v"), SubResource("Resource_gavn2"), SubResource("Resource_fpldr"), SubResource("Resource_fmo0o"), SubResource("Resource_pwxox")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"AVALANCHE", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CLOSECOMBAT", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"LASHOUT", &"MEGAHORN", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SMARTSTRIKE", &"SNARL", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THROATCHOP", &"TOXIC", &"UPROAR"])
+abilities = Array[StringName]([&"CHILLINGNEIGH"])
+hatch_steps = 30720
+height = 22
+weight = 8000
+color = &"White"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(0, 13)
+id = &"GLASTRIER"
+display_name = "Glastrier"
+flags = Array[StringName]([&"Legendary"])

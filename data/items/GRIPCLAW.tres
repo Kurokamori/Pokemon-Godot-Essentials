@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0q5l6"]
+
+[resource]
+resource_name = "GRIPCLAW"
+script = ExtResource("1_0q5l6")
+name_plural = "Grip Claws"
+price = 4000
+sell_price = 2000
+bp_price = 15
+description = "A Pokémon held item that extends the duration of multiturn attacks like Bind and Wrap."
+id = &"GRIPCLAW"
+display_name = "Grip Claw"
+flags = Array[StringName]([&"Fling_90"])

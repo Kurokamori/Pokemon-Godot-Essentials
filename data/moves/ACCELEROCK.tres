@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_by5lp"]
+
+[resource]
+resource_name = "ACCELEROCK"
+script = ExtResource("1_by5lp")
+type = &"ROCK"
+category = 0
+power = 40
+total_pp = 20
+priority = 1
+description = "The user smashes into the target at high speed. This move always goes first."
+id = &"ACCELEROCK"
+display_name = "Accelerock"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

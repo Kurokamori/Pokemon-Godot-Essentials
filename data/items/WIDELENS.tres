@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3u5dx"]
+
+[resource]
+resource_name = "WIDELENS"
+script = ExtResource("1_3u5dx")
+name_plural = "Wide Lenses"
+price = 4000
+sell_price = 2000
+bp_price = 48
+description = "An item to be held by a Pokémon. It is a magnifying lens that slightly boosts the accuracy of moves."
+id = &"WIDELENS"
+display_name = "Wide Lens"
+flags = Array[StringName]([&"Fling_10"])

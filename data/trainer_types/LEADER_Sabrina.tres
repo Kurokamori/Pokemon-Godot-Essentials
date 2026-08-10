@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_xdooo"]
+
+[resource]
+resource_name = "LEADER_Sabrina"
+script = ExtResource("1_xdooo")
+gender = 1
+base_money = 100
+skill_level = 100
+battle_bgm = "Battle Gym Leader"
+victory_bgm = "Battle victory leader"
+id = &"LEADER_Sabrina"
+display_name = "Gym Leader"

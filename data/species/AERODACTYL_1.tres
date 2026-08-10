@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_y7tr4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h5kef"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cs3wc"]
+
+[sub_resource type="Resource" id="Resource_5vc35"]
+script = ExtResource("2_h5kef")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_wt11x"]
+script = ExtResource("2_h5kef")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_8ua5y"]
+script = ExtResource("2_h5kef")
+level = 5
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_hxnvt"]
+script = ExtResource("2_h5kef")
+level = 10
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_a0wjo"]
+script = ExtResource("2_h5kef")
+level = 15
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_yhk8u"]
+script = ExtResource("2_h5kef")
+level = 20
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_sdh6b"]
+script = ExtResource("2_h5kef")
+level = 25
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_n537k"]
+script = ExtResource("2_h5kef")
+level = 30
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ramsf"]
+script = ExtResource("2_h5kef")
+level = 35
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_3kun0"]
+script = ExtResource("2_h5kef")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_658al"]
+script = ExtResource("2_h5kef")
+level = 45
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_7tmid"]
+script = ExtResource("2_h5kef")
+level = 50
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_m45n5"]
+script = ExtResource("2_h5kef")
+level = 55
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_c5at1"]
+script = ExtResource("2_h5kef")
+level = 60
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "AERODACTYL_1"
+script = ExtResource("3_cs3wc")
+species = &"AERODACTYL"
+form = 1
+form_name = "Mega Aerodactyl"
+category = "Fossil"
+pokedex_entry = "When it Mega Evolves, it becomes more vicious than ever before. Some say that's because its excess of power is causing it pain."
+pokedex_form = 1
+types = Array[StringName]([&"ROCK", &"FLYING"])
+base_hp = 80
+base_attack = 135
+base_defense = 85
+base_special_attack = 70
+base_special_defense = 95
+base_speed = 150
+ev_speed = 2
+base_exp = 215
+growth_rate = &"Slow"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h5kef")]([SubResource("Resource_5vc35"), SubResource("Resource_wt11x"), SubResource("Resource_8ua5y"), SubResource("Resource_hxnvt"), SubResource("Resource_a0wjo"), SubResource("Resource_yhk8u"), SubResource("Resource_sdh6b"), SubResource("Resource_n537k"), SubResource("Resource_ramsf"), SubResource("Resource_3kun0"), SubResource("Resource_658al"), SubResource("Resource_7tmid"), SubResource("Resource_m45n5"), SubResource("Resource_c5at1")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"ANCIENTPOWER", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYPERBEAM", &"ICEFANG", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"THUNDERFANG", &"TORMENT", &"TWISTER"])
+egg_moves = Array[StringName]([&"ASSURANCE", &"CURSE", &"DRAGONBREATH", &"ROOST", &"TAILWIND", &"WHIRLWIND", &"WIDEGUARD"])
+abilities = Array[StringName]([&"TOUGHCLAWS"])
+hidden_abilities = Array[StringName]([&"TOUGHCLAWS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 8960
+height = 21
+weight = 790
+color = &"Purple"
+shape = &"Winged"
+habitat = &"Mountain"
+generation = 6
+mega_stone = &"AERODACTYLITE"
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 4)
+id = &"AERODACTYL_1"
+display_name = "Aerodactyl"

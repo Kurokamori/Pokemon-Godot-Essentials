@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0m76o"]
+
+[resource]
+resource_name = "ELECTRIUMZ"
+script = ExtResource("1_0m76o")
+name_plural = "Electrium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Electric-type Pokémon holds to turn a Electric-type move into Gigavolt Havoc."
+id = &"ELECTRIUMZ"
+display_name = "Electrium Z"
+flags = Array[StringName]([&"ZCrystal"])

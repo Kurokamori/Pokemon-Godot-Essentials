@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_r2mp4"]
+
+[resource]
+resource_name = "IRONBALL"
+script = ExtResource("1_r2mp4")
+name_plural = "Iron Balls"
+price = 4000
+sell_price = 2000
+bp_price = 10
+description = "A Pokémon held item that cuts Speed. It makes Flying-type and levitating holders susceptible to Ground moves."
+id = &"IRONBALL"
+display_name = "Iron Ball"
+flags = Array[StringName]([&"Fling_130"])

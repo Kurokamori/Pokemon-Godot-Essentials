@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vqu6b"]
+
+[resource]
+resource_name = "SPACIALREND"
+script = ExtResource("1_vqu6b")
+type = &"DRAGON"
+category = 1
+power = 100
+accuracy = 95
+description = "The user tears the target along with the space around it. Critical hits land more easily."
+id = &"SPACIALREND"
+display_name = "Spacial Rend"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

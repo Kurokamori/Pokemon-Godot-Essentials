@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_oc58i"]
+
+[resource]
+resource_name = "POWDER"
+script = ExtResource("1_oc58i")
+type = &"BUG"
+total_pp = 20
+function_code = &"TargetNextFireMoveDamagesTarget"
+description = "The target is covered in a powder that explodes and damages it if it uses a Fire-type move."
+id = &"POWDER"
+display_name = "Powder"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Powder"])

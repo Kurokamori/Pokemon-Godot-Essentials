@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ky43l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lijw0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_id3tm"]
+
+[sub_resource type="Resource" id="Resource_7o77k"]
+script = ExtResource("1_ky43l")
+species = &"BRELOOM"
+method = &"Level"
+parameter = "23"
+
+[sub_resource type="Resource" id="Resource_a8oqi"]
+script = ExtResource("2_lijw0")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_lm5i6"]
+script = ExtResource("2_lijw0")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_gs0sj"]
+script = ExtResource("2_lijw0")
+level = 5
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_qso8u"]
+script = ExtResource("2_lijw0")
+level = 8
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_duygi"]
+script = ExtResource("2_lijw0")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_krmxl"]
+script = ExtResource("2_lijw0")
+level = 15
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_7xvuf"]
+script = ExtResource("2_lijw0")
+level = 19
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_v8lna"]
+script = ExtResource("2_lijw0")
+level = 22
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_86d4p"]
+script = ExtResource("2_lijw0")
+level = 26
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_rpbsb"]
+script = ExtResource("2_lijw0")
+level = 29
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_0i8xx"]
+script = ExtResource("2_lijw0")
+level = 33
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_du6vt"]
+script = ExtResource("2_lijw0")
+level = 36
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_60xfh"]
+script = ExtResource("2_lijw0")
+level = 40
+move = &"SPORE"
+
+[resource]
+resource_name = "SHROOMISH"
+script = ExtResource("3_id3tm")
+species = &"SHROOMISH"
+category = "Mushroom"
+pokedex_entry = "It loves to eat damp, composted soil in forests. If you enter a forest after a long rain, you can see many Shroomish feasting on composted soil."
+types = Array[StringName]([&"GRASS"])
+base_hp = 60
+base_attack = 40
+base_defense = 60
+base_special_attack = 40
+base_special_defense = 60
+base_speed = 35
+ev_hp = 1
+base_exp = 59
+growth_rate = &"Fluctuating"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lijw0")]([SubResource("Resource_a8oqi"), SubResource("Resource_lm5i6"), SubResource("Resource_gs0sj"), SubResource("Resource_qso8u"), SubResource("Resource_duygi"), SubResource("Resource_krmxl"), SubResource("Resource_7xvuf"), SubResource("Resource_v8lna"), SubResource("Resource_86d4p"), SubResource("Resource_rpbsb"), SubResource("Resource_0i8xx"), SubResource("Resource_du6vt"), SubResource("Resource_60xfh")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"VENOSHOCK", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"CHARM", &"FAKETEARS", &"HELPINGHAND", &"SEEDBOMB", &"WORRYSEED"])
+abilities = Array[StringName]([&"EFFECTSPORE", &"POISONHEAL"])
+hidden_abilities = Array[StringName]([&"QUICKFEET"])
+wild_item_common = Array[StringName]([&"TINYMUSHROOM"])
+wild_item_uncommon = Array[StringName]([&"BIGMUSHROOM"])
+egg_groups = Array[StringName]([&"Fairy", &"Grass"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ky43l")]([SubResource("Resource_7o77k")])
+height = 4
+weight = 45
+color = &"Brown"
+shape = &"HeadLegs"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"SHROOMISH"
+display_name = "Shroomish"

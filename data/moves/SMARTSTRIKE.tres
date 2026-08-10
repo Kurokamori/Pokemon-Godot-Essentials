@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_50668"]
+
+[resource]
+resource_name = "SMARTSTRIKE"
+script = ExtResource("1_50668")
+type = &"STEEL"
+category = 0
+power = 70
+accuracy = 0
+total_pp = 10
+description = "The user stabs the target with a sharp horn. This attack never misses."
+id = &"SMARTSTRIKE"
+display_name = "Smart Strike"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

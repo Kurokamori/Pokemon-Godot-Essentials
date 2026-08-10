@@ -1,0 +1,149 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lacmn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ici6n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_eda0e"]
+
+[sub_resource type="Resource" id="Resource_ef8dc"]
+script = ExtResource("1_lacmn")
+species = &"LARVESTA"
+method = &"Level"
+parameter = "59"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_4y1yv"]
+script = ExtResource("2_ici6n")
+level = 0
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_2p2n3"]
+script = ExtResource("2_ici6n")
+move = &"FIERYDANCE"
+
+[sub_resource type="Resource" id="Resource_yct5r"]
+script = ExtResource("2_ici6n")
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_ay7je"]
+script = ExtResource("2_ici6n")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_27d5t"]
+script = ExtResource("2_ici6n")
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_ixypk"]
+script = ExtResource("2_ici6n")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_87gjy"]
+script = ExtResource("2_ici6n")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_cg4qg"]
+script = ExtResource("2_ici6n")
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_pwuna"]
+script = ExtResource("2_ici6n")
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_wykja"]
+script = ExtResource("2_ici6n")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_o77va"]
+script = ExtResource("2_ici6n")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_cjedu"]
+script = ExtResource("2_ici6n")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_soxfb"]
+script = ExtResource("2_ici6n")
+level = 18
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_3km8i"]
+script = ExtResource("2_ici6n")
+level = 24
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_tqe05"]
+script = ExtResource("2_ici6n")
+level = 30
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_3teok"]
+script = ExtResource("2_ici6n")
+level = 36
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_vqtae"]
+script = ExtResource("2_ici6n")
+level = 42
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_0wtb5"]
+script = ExtResource("2_ici6n")
+level = 48
+move = &"HEATWAVE"
+
+[sub_resource type="Resource" id="Resource_opglg"]
+script = ExtResource("2_ici6n")
+level = 54
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_tbndu"]
+script = ExtResource("2_ici6n")
+level = 62
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_fyax3"]
+script = ExtResource("2_ici6n")
+level = 70
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_b7jtx"]
+script = ExtResource("2_ici6n")
+level = 78
+move = &"RAGEPOWDER"
+
+[resource]
+resource_name = "VOLCARONA"
+script = ExtResource("3_eda0e")
+species = &"VOLCARONA"
+category = "Sun"
+pokedex_entry = "A sea of fire engulfs the surroundings of their battles, since they use their six wings to scatter their ember scales."
+types = Array[StringName]([&"BUG", &"FIRE"])
+base_hp = 85
+base_attack = 60
+base_defense = 65
+base_special_attack = 135
+base_special_defense = 105
+base_speed = 100
+ev_special_attack = 3
+base_exp = 275
+growth_rate = &"Slow"
+catch_rate = 15
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ici6n")]([SubResource("Resource_4y1yv"), SubResource("Resource_2p2n3"), SubResource("Resource_yct5r"), SubResource("Resource_ay7je"), SubResource("Resource_27d5t"), SubResource("Resource_ixypk"), SubResource("Resource_87gjy"), SubResource("Resource_cg4qg"), SubResource("Resource_pwuna"), SubResource("Resource_wykja"), SubResource("Resource_o77va"), SubResource("Resource_cjedu"), SubResource("Resource_soxfb"), SubResource("Resource_3km8i"), SubResource("Resource_tqe05"), SubResource("Resource_3teok"), SubResource("Resource_vqtae"), SubResource("Resource_0wtb5"), SubResource("Resource_opglg"), SubResource("Resource_tbndu"), SubResource("Resource_fyax3"), SubResource("Resource_b7jtx")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AMNESIA", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"INCINERATE", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"POISONJAB", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAILWIND", &"TOXIC", &"UTURN", &"WILDCHARGE", &"WILLOWISP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"SWARM"])
+wild_item_common = Array[StringName]([&"SILVERPOWDER"])
+wild_item_uncommon = Array[StringName]([&"SILVERPOWDER"])
+wild_item_rare = Array[StringName]([&"SILVERPOWDER"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_lacmn")]([SubResource("Resource_ef8dc")])
+height = 16
+weight = 460
+color = &"White"
+shape = &"MultiWinged"
+generation = 5
+back_sprite_offset = Vector2i(-4, 48)
+front_sprite_offset = Vector2i(3, 4)
+id = &"VOLCARONA"
+display_name = "Volcarona"

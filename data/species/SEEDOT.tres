@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mpjf4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pu184"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3eur5"]
+
+[sub_resource type="Resource" id="Resource_ltqkc"]
+script = ExtResource("1_mpjf4")
+species = &"NUZLEAF"
+method = &"Level"
+parameter = "14"
+
+[sub_resource type="Resource" id="Resource_2r5oa"]
+script = ExtResource("2_pu184")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1jsyd"]
+script = ExtResource("2_pu184")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_bnwey"]
+script = ExtResource("2_pu184")
+level = 3
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_rvi6q"]
+script = ExtResource("2_pu184")
+level = 6
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_243kh"]
+script = ExtResource("2_pu184")
+level = 9
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_6p58f"]
+script = ExtResource("2_pu184")
+level = 12
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_uit0y"]
+script = ExtResource("2_pu184")
+level = 15
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_6wjwk"]
+script = ExtResource("2_pu184")
+level = 18
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_i1c31"]
+script = ExtResource("2_pu184")
+level = 21
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_so16t"]
+script = ExtResource("2_pu184")
+level = 24
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_euk3d"]
+script = ExtResource("2_pu184")
+level = 27
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_v6od0"]
+script = ExtResource("2_pu184")
+level = 30
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_188fc"]
+script = ExtResource("2_pu184")
+level = 33
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "SEEDOT"
+script = ExtResource("3_3eur5")
+species = &"SEEDOT"
+category = "Acorn"
+pokedex_entry = "It hangs off branches and absorbs nutrients. When it finishes eating, its body becomes so heavy that it drops to the ground with a thump."
+types = Array[StringName]([&"GRASS"])
+base_hp = 40
+base_attack = 40
+base_defense = 50
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 30
+ev_defense = 1
+base_exp = 44
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pu184")]([SubResource("Resource_2r5oa"), SubResource("Resource_1jsyd"), SubResource("Resource_bnwey"), SubResource("Resource_rvi6q"), SubResource("Resource_243kh"), SubResource("Resource_6p58f"), SubResource("Resource_uit0y"), SubResource("Resource_6wjwk"), SubResource("Resource_i1c31"), SubResource("Resource_so16t"), SubResource("Resource_euk3d"), SubResource("Resource_v6od0"), SubResource("Resource_188fc")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FALSESWIPE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HIDDENPOWER", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AMNESIA", &"BEATUP", &"DEFOG", &"FOULPLAY", &"GRASSYTERRAIN", &"LEECHSEED", &"NIGHTSLASH", &"POWERSWAP", &"QUICKATTACK", &"TAKEDOWN", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+wild_item_uncommon = Array[StringName]([&"POWERHERB"])
+egg_groups = Array[StringName]([&"Field", &"Grass"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_mpjf4")]([SubResource("Resource_ltqkc")])
+height = 5
+weight = 40
+color = &"Brown"
+shape = &"HeadLegs"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"SEEDOT"
+display_name = "Seedot"

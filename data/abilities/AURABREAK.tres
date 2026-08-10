@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_3v2lh"]
+
+[resource]
+resource_name = "AURABREAK"
+script = ExtResource("1_3v2lh")
+description = "Reverses \"Aura\" Abilities to weaken affected moves."
+id = &"AURABREAK"
+display_name = "Aura Break"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_euqel"]
+
+[resource]
+resource_name = "BALMMUSHROOM"
+script = ExtResource("1_euqel")
+name_plural = "Balm Mushrooms"
+price = 15000
+sell_price = 7500
+description = "A rare mushroom which gives off a nice fragrance. A maniac will buy it for a high price."
+id = &"BALMMUSHROOM"
+display_name = "Balm Mushroom"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_0jowf"]
+
+[resource]
+resource_name = "MOTORDRIVE"
+script = ExtResource("1_0jowf")
+description = "Raises Speed if hit by an Electric-type move."
+id = &"MOTORDRIVE"
+display_name = "Motor Drive"

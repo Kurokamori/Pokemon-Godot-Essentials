@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vor4f"]
+
+[resource]
+resource_name = "LIGHTOFRUIN"
+script = ExtResource("1_vor4f")
+type = &"FAIRY"
+category = 1
+power = 140
+accuracy = 90
+function_code = &"RecoilHalfOfDamageDealt"
+description = "Fires a powerful beam of light drawn from the Eternal Flower. It also damages the user a lot."
+id = &"LIGHTOFRUIN"
+display_name = "Light of Ruin"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

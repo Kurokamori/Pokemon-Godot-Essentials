@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_884fq"]
+
+[resource]
+resource_name = "MAXMUSHROOMS"
+script = ExtResource("1_884fq")
+name_plural = "Max Mushrooms"
+portion_name = "cluster of Max Mushrooms"
+portion_name_plural = "clusters of Max Mushrooms"
+pocket = 7
+price = 8000
+sell_price = 4000
+battle_use = 3
+description = "Mushrooms that boost all stats of a Pokémon during battle."
+id = &"MAXMUSHROOMS"
+display_name = "Max Mushrooms"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,179 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ycqca"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fksyk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_i0ssv"]
+
+[sub_resource type="Resource" id="Resource_sbdwk"]
+script = ExtResource("1_ycqca")
+species = &"MRMIME"
+method = &"Level"
+parameter = "42"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_aebjm"]
+script = ExtResource("2_fksyk")
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_pv4k5"]
+script = ExtResource("2_fksyk")
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_38jv0"]
+script = ExtResource("2_fksyk")
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_8u1an"]
+script = ExtResource("2_fksyk")
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_ualy3"]
+script = ExtResource("2_fksyk")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_eq3ly"]
+script = ExtResource("2_fksyk")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_6r05g"]
+script = ExtResource("2_fksyk")
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_o2uog"]
+script = ExtResource("2_fksyk")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_th8bm"]
+script = ExtResource("2_fksyk")
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_7b8x6"]
+script = ExtResource("2_fksyk")
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_12qdt"]
+script = ExtResource("2_fksyk")
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_crs1g"]
+script = ExtResource("2_fksyk")
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_siebu"]
+script = ExtResource("2_fksyk")
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_0yrsq"]
+script = ExtResource("2_fksyk")
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_ef7qb"]
+script = ExtResource("2_fksyk")
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_sno5j"]
+script = ExtResource("2_fksyk")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_5r5wb"]
+script = ExtResource("2_fksyk")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_tvnci"]
+script = ExtResource("2_fksyk")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_4lbcw"]
+script = ExtResource("2_fksyk")
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_qd0k7"]
+script = ExtResource("2_fksyk")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_5vr14"]
+script = ExtResource("2_fksyk")
+level = 16
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_4j5ji"]
+script = ExtResource("2_fksyk")
+level = 20
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_ndltc"]
+script = ExtResource("2_fksyk")
+level = 24
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_kxaie"]
+script = ExtResource("2_fksyk")
+level = 28
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_c5pds"]
+script = ExtResource("2_fksyk")
+level = 32
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_ddj2t"]
+script = ExtResource("2_fksyk")
+level = 36
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_qicx5"]
+script = ExtResource("2_fksyk")
+level = 40
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_00wkj"]
+script = ExtResource("2_fksyk")
+level = 44
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_igaks"]
+script = ExtResource("2_fksyk")
+level = 48
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_2wqhg"]
+script = ExtResource("2_fksyk")
+level = 52
+move = &"TEETERDANCE"
+
+[resource]
+resource_name = "MRRIME"
+script = ExtResource("3_i0ssv")
+species = &"MRRIME"
+category = "Comedian"
+pokedex_entry = "Its amusing movements make it very popular. It releases its psychic power from the pattern on its belly."
+types = Array[StringName]([&"ICE", &"PSYCHIC"])
+base_hp = 80
+base_attack = 85
+base_defense = 75
+base_special_attack = 110
+base_special_defense = 100
+base_speed = 70
+ev_special_attack = 3
+base_exp = 182
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fksyk")]([SubResource("Resource_aebjm"), SubResource("Resource_pv4k5"), SubResource("Resource_38jv0"), SubResource("Resource_8u1an"), SubResource("Resource_ualy3"), SubResource("Resource_eq3ly"), SubResource("Resource_6r05g"), SubResource("Resource_o2uog"), SubResource("Resource_th8bm"), SubResource("Resource_7b8x6"), SubResource("Resource_12qdt"), SubResource("Resource_crs1g"), SubResource("Resource_siebu"), SubResource("Resource_0yrsq"), SubResource("Resource_ef7qb"), SubResource("Resource_sno5j"), SubResource("Resource_5r5wb"), SubResource("Resource_tvnci"), SubResource("Resource_4lbcw"), SubResource("Resource_qd0k7"), SubResource("Resource_5vr14"), SubResource("Resource_4j5ji"), SubResource("Resource_ndltc"), SubResource("Resource_kxaie"), SubResource("Resource_c5pds"), SubResource("Resource_ddj2t"), SubResource("Resource_qicx5"), SubResource("Resource_00wkj"), SubResource("Resource_igaks"), SubResource("Resource_2wqhg")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"AVALANCHE", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"TRIPLEAXEL", &"UPROAR", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CONFUSERAY", &"FAKEOUT", &"POWERSPLIT", &"TICKLE"])
+abilities = Array[StringName]([&"TANGLEDFEET", &"SCREENCLEANER"])
+hidden_abilities = Array[StringName]([&"ICEBODY"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_ycqca")]([SubResource("Resource_sbdwk")])
+height = 15
+weight = 582
+color = &"Purple"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-4, 23)
+id = &"MRRIME"
+display_name = "Mr. Rime"
+flags = Array[StringName]([&"DefaultForm_1", &"InheritFormWithEverStone"])

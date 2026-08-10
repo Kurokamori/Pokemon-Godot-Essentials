@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_dkc6s"]
+
+[resource]
+resource_name = "ASSURANCE"
+script = ExtResource("1_dkc6s")
+type = &"DARK"
+category = 0
+power = 60
+total_pp = 10
+function_code = &"DoublePowerIfTargetLostHPThisTurn"
+description = "If the target has already taken some damage in the same turn, this attack's power is doubled."
+id = &"ASSURANCE"
+display_name = "Assurance"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

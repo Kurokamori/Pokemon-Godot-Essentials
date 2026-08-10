@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_grs4q"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5iuo3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6e2ri"]
+
+[sub_resource type="Resource" id="Resource_3m6i1"]
+script = ExtResource("1_grs4q")
+species = &"BIDOOF"
+method = &"Level"
+parameter = "15"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_1ylbl"]
+script = ExtResource("2_5iuo3")
+level = 0
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_am0gf"]
+script = ExtResource("2_5iuo3")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_v60t2"]
+script = ExtResource("2_5iuo3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_sagrj"]
+script = ExtResource("2_5iuo3")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_kqmnc"]
+script = ExtResource("2_5iuo3")
+level = 5
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_fujwu"]
+script = ExtResource("2_5iuo3")
+level = 9
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_6mnt0"]
+script = ExtResource("2_5iuo3")
+level = 13
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_7j1ni"]
+script = ExtResource("2_5iuo3")
+level = 18
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_w4ht6"]
+script = ExtResource("2_5iuo3")
+level = 23
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_pw5x5"]
+script = ExtResource("2_5iuo3")
+level = 28
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ftg56"]
+script = ExtResource("2_5iuo3")
+level = 33
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_e1tho"]
+script = ExtResource("2_5iuo3")
+level = 38
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_quymx"]
+script = ExtResource("2_5iuo3")
+level = 43
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_v7bit"]
+script = ExtResource("2_5iuo3")
+level = 48
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_hlhwa"]
+script = ExtResource("2_5iuo3")
+level = 53
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_720uh"]
+script = ExtResource("2_5iuo3")
+level = 58
+move = &"CURSE"
+
+[resource]
+resource_name = "BIBAREL"
+script = ExtResource("3_6e2ri")
+species = &"BIBAREL"
+category = "Beaver"
+pokedex_entry = "It makes its nest by damming streams with bark and mud. It is known as an industrious worker."
+types = Array[StringName]([&"NORMAL", &"WATER"])
+base_hp = 79
+base_attack = 85
+base_defense = 60
+base_special_attack = 55
+base_special_defense = 60
+base_speed = 71
+ev_attack = 2
+base_exp = 144
+catch_rate = 127
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5iuo3")]([SubResource("Resource_1ylbl"), SubResource("Resource_am0gf"), SubResource("Resource_v60t2"), SubResource("Resource_sagrj"), SubResource("Resource_kqmnc"), SubResource("Resource_fujwu"), SubResource("Resource_6mnt0"), SubResource("Resource_7j1ni"), SubResource("Resource_w4ht6"), SubResource("Resource_pw5x5"), SubResource("Resource_ftg56"), SubResource("Resource_e1tho"), SubResource("Resource_quymx"), SubResource("Resource_v7bit"), SubResource("Resource_hlhwa"), SubResource("Resource_720uh")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASTRESORT", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"SIMPLE", &"UNAWARE"])
+hidden_abilities = Array[StringName]([&"MOODY"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_grs4q")]([SubResource("Resource_3m6i1")])
+height = 10
+weight = 315
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(-8, 48)
+front_sprite_offset = Vector2i(9, 23)
+id = &"BIBAREL"
+display_name = "Bibarel"

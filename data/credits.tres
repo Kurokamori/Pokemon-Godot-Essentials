@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="CreditsData" load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://src/data/credits_section.gd" id="1_section"]
+[ext_resource type="Script" path="res://src/data/credits_data.gd" id="2_credits"]
+
+[sub_resource type="Resource" id="Resource_title"]
+script = ExtResource("1_section")
+heading = ""
+entries = Array[String](["Your Game"])
+layout = 1
+blank_lines_after = 3
+
+[sub_resource type="Resource" id="Resource_director"]
+script = ExtResource("1_section")
+heading = "Directed by"
+entries = Array[String](["Your Name Here"])
+layout = 0
+blank_lines_after = 1
+
+[sub_resource type="Resource" id="Resource_art"]
+script = ExtResource("1_section")
+heading = "Artwork"
+entries = Array[String](["Your Name Here"])
+layout = 0
+blank_lines_after = 1
+
+[sub_resource type="Resource" id="Resource_music"]
+script = ExtResource("1_section")
+heading = "Music"
+entries = Array[String](["Your Name Here"])
+layout = 0
+blank_lines_after = 3
+
+[sub_resource type="Resource" id="Resource_essentials"]
+script = ExtResource("1_section")
+heading = "\"Pokemon Essentials\" was created by"
+entries = Array[String](["Poccil (Peter O.)", "Maruno", "Inspired by work by Flameguru"])
+layout = 1
+blank_lines_after = 1
+
+[sub_resource type="Resource" id="Resource_contributors"]
+script = ExtResource("1_section")
+heading = "With contributions from"
+entries = Array[String](["AvatarMonkeyKirby", "Boushy", "Brother1440", "FL.", "Genzai Kawakami", "Golisopod User", "help-14", "IceGod64", "Jacob O. Wobbrock", "KitsuneKouta", "Lisa Anthony", "Luka S.J.", "Marin", "MiDas Mike", "Near Fantastica", "PinkMan", "Popper", "Rataime", "Savordez", "SoundSpawn", "the__end", "Venom12", "Wachunga"])
+layout = 2
+blank_lines_after = 0
+
+[sub_resource type="Resource" id="Resource_everyone"]
+script = ExtResource("1_section")
+heading = ""
+entries = Array[String](["and everyone else who helped out"])
+layout = 1
+blank_lines_after = 2
+
+[sub_resource type="Resource" id="Resource_engine"]
+script = ExtResource("1_section")
+heading = "Built on"
+entries = Array[String](["Godot Engine", "Godot Pokemon Essentials"])
+layout = 1
+blank_lines_after = 2
+
+[sub_resource type="Resource" id="Resource_owner"]
+script = ExtResource("1_section")
+heading = "Pokemon is owned by"
+entries = Array[String](["The Pokemon Company", "Nintendo", "Affiliated with Game Freak"])
+layout = 1
+blank_lines_after = 3
+
+[sub_resource type="Resource" id="Resource_closing"]
+script = ExtResource("1_section")
+heading = ""
+entries = Array[String](["This is a non-profit fan-made game.", "No copyright infringements intended.", "Please support the official games!"])
+layout = 1
+blank_lines_after = 0
+
+[resource]
+script = ExtResource("2_credits")
+sections = Array[ExtResource("1_section")]([SubResource("Resource_title"), SubResource("Resource_director"), SubResource("Resource_art"), SubResource("Resource_music"), SubResource("Resource_essentials"), SubResource("Resource_contributors"), SubResource("Resource_everyone"), SubResource("Resource_engine"), SubResource("Resource_owner"), SubResource("Resource_closing")])
+scroll_speed = 40.0
+line_height = 24
+padding_lines = 4
+backgrounds = Array[String](["credits1", "credits2", "credits3", "credits4", "credits5"])
+seconds_per_background = 11.0
+background_fade_seconds = 1.0
+backdrop_dim = 0.35
+music = "Credits"
+restores_previous_music = true
+skippable_on_first_play = false

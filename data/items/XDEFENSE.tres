@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_x4jsg"]
+
+[resource]
+resource_name = "XDEFENSE"
+script = ExtResource("1_x4jsg")
+name_plural = "X Defenses"
+pocket = 7
+price = 2000
+sell_price = 1000
+battle_use = 3
+description = "An item that sharply boosts the Defense of a Pokémon while it remains in battle."
+id = &"XDEFENSE"
+display_name = "X Defense"
+flags = Array[StringName]([&"Fling_30"])

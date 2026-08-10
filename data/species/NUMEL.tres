@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_754tp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_g4pjr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_y6l5k"]
+
+[sub_resource type="Resource" id="Resource_ayi7v"]
+script = ExtResource("1_754tp")
+species = &"CAMERUPT"
+method = &"Level"
+parameter = "33"
+
+[sub_resource type="Resource" id="Resource_q3the"]
+script = ExtResource("2_g4pjr")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_gkxwn"]
+script = ExtResource("2_g4pjr")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_wqfoi"]
+script = ExtResource("2_g4pjr")
+level = 5
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_ew2m1"]
+script = ExtResource("2_g4pjr")
+level = 8
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_6okjn"]
+script = ExtResource("2_g4pjr")
+level = 12
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_s7v7s"]
+script = ExtResource("2_g4pjr")
+level = 15
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_v5l7l"]
+script = ExtResource("2_g4pjr")
+level = 19
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_sx8lj"]
+script = ExtResource("2_g4pjr")
+level = 22
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_elpem"]
+script = ExtResource("2_g4pjr")
+level = 26
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_13b4a"]
+script = ExtResource("2_g4pjr")
+level = 29
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_2pgkk"]
+script = ExtResource("2_g4pjr")
+level = 31
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_kntyc"]
+script = ExtResource("2_g4pjr")
+level = 36
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_7xaaa"]
+script = ExtResource("2_g4pjr")
+level = 40
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_3rjnw"]
+script = ExtResource("2_g4pjr")
+level = 43
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_q863u"]
+script = ExtResource("2_g4pjr")
+level = 47
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "NUMEL"
+script = ExtResource("3_y6l5k")
+species = &"NUMEL"
+category = "Numb"
+pokedex_entry = "A Numel stores boiling magma in the hump on its back. It is a hardy Pokémon that can transport a 220-pound load. It has served humans at work since long ago."
+types = Array[StringName]([&"FIRE", &"GROUND"])
+base_hp = 60
+base_attack = 60
+base_defense = 40
+base_special_attack = 65
+base_special_defense = 45
+base_speed = 35
+ev_special_attack = 1
+base_exp = 61
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_g4pjr")]([SubResource("Resource_q3the"), SubResource("Resource_gkxwn"), SubResource("Resource_wqfoi"), SubResource("Resource_ew2m1"), SubResource("Resource_6okjn"), SubResource("Resource_s7v7s"), SubResource("Resource_v5l7l"), SubResource("Resource_sx8lj"), SubResource("Resource_elpem"), SubResource("Resource_13b4a"), SubResource("Resource_2pgkk"), SubResource("Resource_kntyc"), SubResource("Resource_7xaaa"), SubResource("Resource_3rjnw"), SubResource("Resource_q863u")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FRUSTRATION", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"IRONHEAD", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"BODYSLAM", &"DEFENSECURL", &"GROWTH", &"HEATWAVE", &"HEAVYSLAM", &"HOWL", &"IRONHEAD", &"ROLLOUT", &"SCARYFACE", &"SPITUP", &"STOCKPILE", &"STOMP", &"SWALLOW", &"YAWN"])
+abilities = Array[StringName]([&"OBLIVIOUS", &"SIMPLE"])
+hidden_abilities = Array[StringName]([&"OWNTEMPO"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_754tp")]([SubResource("Resource_ayi7v")])
+height = 7
+weight = 240
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-5, 28)
+id = &"NUMEL"
+display_name = "Numel"

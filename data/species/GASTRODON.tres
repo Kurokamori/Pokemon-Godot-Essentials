@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_invu5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wpqka"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uxpok"]
+
+[sub_resource type="Resource" id="Resource_pky70"]
+script = ExtResource("1_invu5")
+species = &"SHELLOS"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_c00od"]
+script = ExtResource("2_wpqka")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_jygli"]
+script = ExtResource("2_wpqka")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_vekvi"]
+script = ExtResource("2_wpqka")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_atc2f"]
+script = ExtResource("2_wpqka")
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_di5nl"]
+script = ExtResource("2_wpqka")
+level = 15
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_gjj7s"]
+script = ExtResource("2_wpqka")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_6g5bc"]
+script = ExtResource("2_wpqka")
+level = 25
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_3cp21"]
+script = ExtResource("2_wpqka")
+level = 33
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_pdhrp"]
+script = ExtResource("2_wpqka")
+level = 39
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_5i5do"]
+script = ExtResource("2_wpqka")
+level = 46
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_wqyjq"]
+script = ExtResource("2_wpqka")
+level = 53
+move = &"MEMENTO"
+
+[resource]
+resource_name = "GASTRODON"
+script = ExtResource("3_uxpok")
+species = &"GASTRODON"
+form_name = "West Sea"
+category = "Sea Slug"
+pokedex_entry = "Its search for food sometimes leads it onto land, where it leaves behind a sticky trail of slime as it passes through."
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 111
+base_attack = 83
+base_defense = 68
+base_special_attack = 92
+base_special_defense = 82
+base_speed = 39
+ev_hp = 2
+base_exp = 166
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wpqka")]([SubResource("Resource_c00od"), SubResource("Resource_jygli"), SubResource("Resource_vekvi"), SubResource("Resource_atc2f"), SubResource("Resource_di5nl"), SubResource("Resource_gjj7s"), SubResource("Resource_6g5bc"), SubResource("Resource_3cp21"), SubResource("Resource_pdhrp"), SubResource("Resource_5i5do"), SubResource("Resource_wqyjq")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DIVE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALD", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"STRINGSHOT", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"STICKYHOLD", &"STORMDRAIN"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+egg_groups = Array[StringName]([&"Water1", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_invu5")]([SubResource("Resource_pky70")])
+height = 9
+weight = 299
+color = &"Purple"
+shape = &"Serpentine"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 25)
+id = &"GASTRODON"
+display_name = "Gastrodon"
+flags = Array[StringName]([&"InheritFormFromMother"])

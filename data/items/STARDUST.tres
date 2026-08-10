@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_hwixf"]
+
+[resource]
+resource_name = "STARDUST"
+script = ExtResource("1_hwixf")
+name_plural = "Stardusts"
+portion_name = "bag of Stardust"
+portion_name_plural = "bags of Stardust"
+price = 3000
+sell_price = 1500
+description = "Lovely, red-colored sand with a loose, silky feel. It can be sold at a high price to shops."
+id = &"STARDUST"
+display_name = "Stardust"
+flags = Array[StringName]([&"Fling_30"])

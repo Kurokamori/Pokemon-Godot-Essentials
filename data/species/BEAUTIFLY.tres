@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_138tq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nbf73"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lt44i"]
+
+[sub_resource type="Resource" id="Resource_fj2j8"]
+script = ExtResource("1_138tq")
+species = &"SILCOON"
+method = &"Level"
+parameter = "10"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pq8vd"]
+script = ExtResource("2_nbf73")
+level = 0
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_7nbgx"]
+script = ExtResource("2_nbf73")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_hm06r"]
+script = ExtResource("2_nbf73")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_65e37"]
+script = ExtResource("2_nbf73")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_grs8d"]
+script = ExtResource("2_nbf73")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_ita6g"]
+script = ExtResource("2_nbf73")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_ijg6m"]
+script = ExtResource("2_nbf73")
+level = 12
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_yu2w3"]
+script = ExtResource("2_nbf73")
+level = 15
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_ji65d"]
+script = ExtResource("2_nbf73")
+level = 17
+move = &"MORNINGSUN"
+
+[sub_resource type="Resource" id="Resource_jya02"]
+script = ExtResource("2_nbf73")
+level = 20
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_if7ub"]
+script = ExtResource("2_nbf73")
+level = 22
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_bysib"]
+script = ExtResource("2_nbf73")
+level = 25
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_xuadk"]
+script = ExtResource("2_nbf73")
+level = 27
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_hja4v"]
+script = ExtResource("2_nbf73")
+level = 30
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_o8xdm"]
+script = ExtResource("2_nbf73")
+level = 32
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_gg62p"]
+script = ExtResource("2_nbf73")
+level = 35
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_asym7"]
+script = ExtResource("2_nbf73")
+level = 37
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_qa6tv"]
+script = ExtResource("2_nbf73")
+level = 40
+move = &"QUIVERDANCE"
+
+[resource]
+resource_name = "BEAUTIFLY"
+script = ExtResource("3_lt44i")
+species = &"BEAUTIFLY"
+category = "Butterfly"
+pokedex_entry = "Its colorfully patterned wings are its most prominent feature. It flies through flower-covered fields collecting pollen. It attacks ferociously when angered."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 60
+base_attack = 70
+base_defense = 50
+base_special_attack = 100
+base_special_defense = 50
+base_speed = 65
+ev_special_attack = 3
+base_exp = 198
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nbf73")]([SubResource("Resource_pq8vd"), SubResource("Resource_7nbgx"), SubResource("Resource_hm06r"), SubResource("Resource_65e37"), SubResource("Resource_grs8d"), SubResource("Resource_ita6g"), SubResource("Resource_ijg6m"), SubResource("Resource_yu2w3"), SubResource("Resource_ji65d"), SubResource("Resource_jya02"), SubResource("Resource_if7ub"), SubResource("Resource_bysib"), SubResource("Resource_xuadk"), SubResource("Resource_hja4v"), SubResource("Resource_o8xdm"), SubResource("Resource_gg62p"), SubResource("Resource_asym7"), SubResource("Resource_qa6tv")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LASERFOCUS", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UTURN", &"VENOSHOCK"])
+abilities = Array[StringName]([&"SWARM"])
+hidden_abilities = Array[StringName]([&"RIVALRY"])
+wild_item_uncommon = Array[StringName]([&"SHEDSHELL"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_138tq")]([SubResource("Resource_fj2j8")])
+height = 10
+weight = 284
+color = &"Yellow"
+shape = &"MultiWinged"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 11)
+id = &"BEAUTIFLY"
+display_name = "Beautifly"

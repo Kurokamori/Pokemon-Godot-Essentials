@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1hum7"]
+
+[resource]
+resource_name = "DARKMEMORY"
+script = ExtResource("1_1hum7")
+name_plural = "Dark Memories"
+price = 1000
+sell_price = 500
+description = "A memory disc containing Dark-type data. It changes the holder's type if held by a certain Pokémon."
+id = &"DARKMEMORY"
+display_name = "Dark Memory"
+flags = Array[StringName]([&"Fling_50"])

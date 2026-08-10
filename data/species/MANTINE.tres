@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_u0ebw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_amxjb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vhtk8"]
+
+[sub_resource type="Resource" id="Resource_g5kwe"]
+script = ExtResource("1_u0ebw")
+species = &"MANTYKE"
+method = &"HasInParty"
+parameter = "REMORAID"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_x5em0"]
+script = ExtResource("2_amxjb")
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_2cmie"]
+script = ExtResource("2_amxjb")
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_lgily"]
+script = ExtResource("2_amxjb")
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_cwqgy"]
+script = ExtResource("2_amxjb")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_n7cdu"]
+script = ExtResource("2_amxjb")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_nfsue"]
+script = ExtResource("2_amxjb")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_o5j61"]
+script = ExtResource("2_amxjb")
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_xmtuw"]
+script = ExtResource("2_amxjb")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_5lv3l"]
+script = ExtResource("2_amxjb")
+level = 16
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_2mwsd"]
+script = ExtResource("2_amxjb")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_pakm8"]
+script = ExtResource("2_amxjb")
+level = 24
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_t4mst"]
+script = ExtResource("2_amxjb")
+level = 28
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_s38tc"]
+script = ExtResource("2_amxjb")
+level = 32
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_ug3m5"]
+script = ExtResource("2_amxjb")
+level = 36
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_wfh5d"]
+script = ExtResource("2_amxjb")
+level = 40
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_2wg71"]
+script = ExtResource("2_amxjb")
+level = 44
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_kjhrj"]
+script = ExtResource("2_amxjb")
+level = 48
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "MANTINE"
+script = ExtResource("3_vhtk8")
+species = &"MANTINE"
+category = "Kite"
+pokedex_entry = "On sunny days, schools of Mantine can be seen elegantly leaping over the waves. It is not bothered by the Remoraid that hitches rides."
+types = Array[StringName]([&"WATER", &"FLYING"])
+base_hp = 85
+base_attack = 40
+base_defense = 70
+base_special_attack = 80
+base_special_defense = 140
+base_speed = 70
+ev_special_defense = 2
+base_exp = 170
+growth_rate = &"Slow"
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_amxjb")]([SubResource("Resource_x5em0"), SubResource("Resource_2cmie"), SubResource("Resource_lgily"), SubResource("Resource_cwqgy"), SubResource("Resource_n7cdu"), SubResource("Resource_nfsue"), SubResource("Resource_o5j61"), SubResource("Resource_xmtuw"), SubResource("Resource_5lv3l"), SubResource("Resource_2mwsd"), SubResource("Resource_pakm8"), SubResource("Resource_t4mst"), SubResource("Resource_s38tc"), SubResource("Resource_ug3m5"), SubResource("Resource_wfh5d"), SubResource("Resource_2wg71"), SubResource("Resource_kjhrj")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"AMNESIA", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BOUNCE", &"BRINE", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONHEAD", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROOST", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEEDBOMB", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRINGSHOT", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AMNESIA", &"CONFUSERAY", &"HAZE", &"HYDROPUMP", &"MIRRORCOAT", &"SLAM", &"SPLASH", &"TAILWIND", &"TWISTER", &"WIDEGUARD"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"WATERABSORB"])
+hidden_abilities = Array[StringName]([&"WATERVEIL"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_u0ebw")]([SubResource("Resource_g5kwe")])
+height = 21
+weight = 2200
+color = &"Purple"
+shape = &"Winged"
+habitat = &"Sea"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 4)
+shadow_size = 3
+id = &"MANTINE"
+display_name = "Mantine"

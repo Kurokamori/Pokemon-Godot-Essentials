@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_yy6ey"]
+
+[resource]
+resource_name = "STEEL"
+script = ExtResource("1_yy6ey")
+icon_position = 8
+weaknesses = Array[StringName]([&"FIGHTING", &"GROUND", &"FIRE"])
+resistances = Array[StringName]([&"NORMAL", &"FLYING", &"ROCK", &"BUG", &"STEEL", &"GRASS", &"PSYCHIC", &"ICE", &"DRAGON", &"FAIRY"])
+immunities = Array[StringName]([&"POISON"])
+id = &"STEEL"
+display_name = "Steel"

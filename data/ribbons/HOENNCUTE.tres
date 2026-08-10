@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_xf73c"]
+
+[resource]
+resource_name = "HOENNCUTE"
+script = ExtResource("1_xf73c")
+icon_position = 8
+description = "Hoenn Cute Contest Normal Rank winner!"
+id = &"HOENNCUTE"
+display_name = "Cute Ribbon"

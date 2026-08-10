@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_y3gj2"]
+
+[resource]
+resource_name = "MOONSTONE"
+script = ExtResource("1_y3gj2")
+name_plural = "Moon Stones"
+price = 3000
+sell_price = 1500
+bp_price = 5
+field_use = 1
+description = "A peculiar stone that makes certain species of Pokémon evolve. It is as black as the night sky."
+id = &"MOONSTONE"
+display_name = "Moon Stone"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_30"])

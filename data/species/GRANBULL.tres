@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_a3a0s"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8x528"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vod7o"]
+
+[sub_resource type="Resource" id="Resource_1tvdw"]
+script = ExtResource("1_a3a0s")
+species = &"SNUBBULL"
+method = &"Level"
+parameter = "23"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_clq88"]
+script = ExtResource("2_8x528")
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_sac1k"]
+script = ExtResource("2_8x528")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_8ii4t"]
+script = ExtResource("2_8x528")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_0625v"]
+script = ExtResource("2_8x528")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_c3o0d"]
+script = ExtResource("2_8x528")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bcd5v"]
+script = ExtResource("2_8x528")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_w0wfv"]
+script = ExtResource("2_8x528")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_kgpyj"]
+script = ExtResource("2_8x528")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_v6rw2"]
+script = ExtResource("2_8x528")
+level = 7
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_i6fm7"]
+script = ExtResource("2_8x528")
+level = 13
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_oj0qb"]
+script = ExtResource("2_8x528")
+level = 19
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_dytjn"]
+script = ExtResource("2_8x528")
+level = 27
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_dlvac"]
+script = ExtResource("2_8x528")
+level = 35
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_nnc41"]
+script = ExtResource("2_8x528")
+level = 43
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_ssjgm"]
+script = ExtResource("2_8x528")
+level = 51
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_j77jo"]
+script = ExtResource("2_8x528")
+level = 59
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_65x0h"]
+script = ExtResource("2_8x528")
+level = 67
+move = &"OUTRAGE"
+
+[resource]
+resource_name = "GRANBULL"
+script = ExtResource("3_vod7o")
+species = &"GRANBULL"
+category = "Fairy"
+pokedex_entry = "It has a particularly well-developed lower jaw. The huge fangs are heavy, causing it to tilt its head. Unless it is startled, it will not try to bite."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 90
+base_attack = 120
+base_defense = 75
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 45
+ev_attack = 2
+base_exp = 158
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8x528")]([SubResource("Resource_clq88"), SubResource("Resource_sac1k"), SubResource("Resource_8ii4t"), SubResource("Resource_0625v"), SubResource("Resource_c3o0d"), SubResource("Resource_bcd5v"), SubResource("Resource_w0wfv"), SubResource("Resource_kgpyj"), SubResource("Resource_v6rw2"), SubResource("Resource_i6fm7"), SubResource("Resource_oj0qb"), SubResource("Resource_dytjn"), SubResource("Resource_dlvac"), SubResource("Resource_nnc41"), SubResource("Resource_ssjgm"), SubResource("Resource_j77jo"), SubResource("Resource_65x0h")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEALBELL", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEPUNCH", &"INCINERATE", &"IRONTAIL", &"LASTRESORT", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"WATERPULSE", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"INTIMIDATE", &"QUICKFEET"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_a3a0s")]([SubResource("Resource_1tvdw")])
+height = 14
+weight = 487
+color = &"Purple"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 25)
+id = &"GRANBULL"
+display_name = "Granbull"

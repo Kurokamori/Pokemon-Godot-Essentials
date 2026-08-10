@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_vedh0"]
+
+[resource]
+resource_name = "ROTOMCATALOG"
+script = ExtResource("1_vedh0")
+name_plural = "Rotom Catalogs"
+pocket = 8
+field_use = 1
+consumable = false
+show_quantity = false
+description = "A catalog of devices that Rotom like. Use the catalog to have Rotom hop in and out of the devices listed within."
+id = &"ROTOMCATALOG"
+display_name = "Rotom Catalog"
+flags = Array[StringName]([&"KeyItem"])

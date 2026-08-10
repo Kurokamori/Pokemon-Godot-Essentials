@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hqogg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ira8w"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qeb07"]
+
+[sub_resource type="Resource" id="Resource_0xrwr"]
+script = ExtResource("1_hqogg")
+species = &"RATTATA"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_wjmoq"]
+script = ExtResource("2_ira8w")
+level = 0
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_nkjme"]
+script = ExtResource("2_ira8w")
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_njbyt"]
+script = ExtResource("2_ira8w")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cuyu4"]
+script = ExtResource("2_ira8w")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_psibr"]
+script = ExtResource("2_ira8w")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_n1l47"]
+script = ExtResource("2_ira8w")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_x2cbf"]
+script = ExtResource("2_ira8w")
+level = 4
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_qf1aa"]
+script = ExtResource("2_ira8w")
+level = 7
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_uksan"]
+script = ExtResource("2_ira8w")
+level = 10
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_gxbf6"]
+script = ExtResource("2_ira8w")
+level = 13
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_w48ry"]
+script = ExtResource("2_ira8w")
+level = 16
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_3ltea"]
+script = ExtResource("2_ira8w")
+level = 19
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_fwo4h"]
+script = ExtResource("2_ira8w")
+level = 24
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_foef8"]
+script = ExtResource("2_ira8w")
+level = 29
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_nagnw"]
+script = ExtResource("2_ira8w")
+level = 34
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_jdsb1"]
+script = ExtResource("2_ira8w")
+level = 39
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_j3c7r"]
+script = ExtResource("2_ira8w")
+level = 44
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "RATICATE"
+script = ExtResource("3_qeb07")
+species = &"RATICATE"
+category = "Mouse"
+pokedex_entry = "A Raticate's sturdy fangs grow steadily. To keep them ground down, it gnaws on rocks and logs. It may even chew on the walls of houses."
+base_hp = 55
+base_attack = 81
+base_defense = 60
+base_special_attack = 50
+base_special_defense = 70
+base_speed = 97
+ev_speed = 2
+base_exp = 145
+catch_rate = 127
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ira8w")]([SubResource("Resource_wjmoq"), SubResource("Resource_nkjme"), SubResource("Resource_njbyt"), SubResource("Resource_cuyu4"), SubResource("Resource_psibr"), SubResource("Resource_n1l47"), SubResource("Resource_x2cbf"), SubResource("Resource_qf1aa"), SubResource("Resource_uksan"), SubResource("Resource_gxbf6"), SubResource("Resource_w48ry"), SubResource("Resource_3ltea"), SubResource("Resource_fwo4h"), SubResource("Resource_foef8"), SubResource("Resource_nagnw"), SubResource("Resource_jdsb1"), SubResource("Resource_j3c7r")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"UPROAR", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"RUNAWAY", &"GUTS"])
+hidden_abilities = Array[StringName]([&"HUSTLE"])
+wild_item_uncommon = Array[StringName]([&"CHILANBERRY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_hqogg")]([SubResource("Resource_0xrwr")])
+height = 7
+weight = 185
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 26)
+id = &"RATICATE"
+display_name = "Raticate"

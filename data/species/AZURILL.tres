@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l5esu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x3y2w"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_klxmi"]
+
+[sub_resource type="Resource" id="Resource_mcoba"]
+script = ExtResource("1_l5esu")
+species = &"MARILL"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_k08rc"]
+script = ExtResource("2_x3y2w")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_n6oeo"]
+script = ExtResource("2_x3y2w")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_mxfsj"]
+script = ExtResource("2_x3y2w")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_llx5a"]
+script = ExtResource("2_x3y2w")
+level = 3
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_ncn8e"]
+script = ExtResource("2_x3y2w")
+level = 6
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_3tww5"]
+script = ExtResource("2_x3y2w")
+level = 9
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_yj2xf"]
+script = ExtResource("2_x3y2w")
+level = 12
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_r56ae"]
+script = ExtResource("2_x3y2w")
+level = 15
+move = &"BOUNCE"
+
+[resource]
+resource_name = "AZURILL"
+script = ExtResource("3_klxmi")
+species = &"AZURILL"
+category = "Polka Dot"
+pokedex_entry = "Its tail, which is packed with nutrition, is very bouncy like a rubber ball. On sunny days they gather at the edge of water and splash about for fun."
+types = Array[StringName]([&"NORMAL", &"FAIRY"])
+base_hp = 50
+base_attack = 20
+base_defense = 40
+base_special_attack = 20
+base_special_defense = 40
+base_speed = 20
+ev_hp = 1
+base_exp = 38
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 150
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_x3y2w")]([SubResource("Resource_k08rc"), SubResource("Resource_n6oeo"), SubResource("Resource_mxfsj"), SubResource("Resource_llx5a"), SubResource("Resource_ncn8e"), SubResource("Resource_3tww5"), SubResource("Resource_yj2xf"), SubResource("Resource_r56ae")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRUTALSWING", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+egg_moves = Array[StringName]([&"AQUAJET", &"BELLYDRUM", &"BODYSLAM", &"COPYCAT", &"ENCORE", &"FAKETEARS", &"MUDDYWATER", &"PERISHSONG", &"PRESENT", &"SING", &"SLAM", &"SOAK", &"SUPERSONIC", &"TICKLE"])
+abilities = Array[StringName]([&"THICKFAT", &"HUGEPOWER"])
+hidden_abilities = Array[StringName]([&"SAPSIPPER"])
+hatch_steps = 2560
+incense = &"SEAINCENSE"
+evolutions = Array[ExtResource("1_l5esu")]([SubResource("Resource_mcoba")])
+height = 2
+weight = 20
+color = &"Blue"
+shape = &"HeadLegs"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(-7, 52)
+front_sprite_offset = Vector2i(3, 30)
+shadow_size = 1
+id = &"AZURILL"
+display_name = "Azurill"

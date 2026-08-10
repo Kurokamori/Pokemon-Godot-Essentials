@@ -1,0 +1,157 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5hhqa"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lxpsg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_luk4o"]
+
+[sub_resource type="Resource" id="Resource_tlmcs"]
+script = ExtResource("1_5hhqa")
+species = &"EEVEE"
+method = &"Item"
+parameter = "THUNDERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_et3wv"]
+script = ExtResource("2_lxpsg")
+level = 0
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_t624d"]
+script = ExtResource("2_lxpsg")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_yf4h7"]
+script = ExtResource("2_lxpsg")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_o85fg"]
+script = ExtResource("2_lxpsg")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_x64ex"]
+script = ExtResource("2_lxpsg")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_ywmpn"]
+script = ExtResource("2_lxpsg")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_4dg6r"]
+script = ExtResource("2_lxpsg")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_44sum"]
+script = ExtResource("2_lxpsg")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_ckqqa"]
+script = ExtResource("2_lxpsg")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_je14j"]
+script = ExtResource("2_lxpsg")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_07if0"]
+script = ExtResource("2_lxpsg")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_03tq1"]
+script = ExtResource("2_lxpsg")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_665uc"]
+script = ExtResource("2_lxpsg")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_hksp3"]
+script = ExtResource("2_lxpsg")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_42sgt"]
+script = ExtResource("2_lxpsg")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_iikcg"]
+script = ExtResource("2_lxpsg")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_kossw"]
+script = ExtResource("2_lxpsg")
+level = 20
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_oavh6"]
+script = ExtResource("2_lxpsg")
+level = 25
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_7tecr"]
+script = ExtResource("2_lxpsg")
+level = 30
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_q6gqs"]
+script = ExtResource("2_lxpsg")
+level = 35
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_snt0i"]
+script = ExtResource("2_lxpsg")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_8xlvq"]
+script = ExtResource("2_lxpsg")
+level = 45
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_2r4ia"]
+script = ExtResource("2_lxpsg")
+level = 50
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_xf2l5"]
+script = ExtResource("2_lxpsg")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "JOLTEON"
+script = ExtResource("3_luk4o")
+species = &"JOLTEON"
+category = "Lightning"
+pokedex_entry = "Its cells generate weak power that is amplified by its fur's static electricity to drop thunderbolts. The bristling fur is made of electrically charged needles."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 65
+base_attack = 65
+base_defense = 60
+base_special_attack = 110
+base_special_defense = 95
+base_speed = 130
+ev_speed = 2
+base_exp = 184
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lxpsg")]([SubResource("Resource_et3wv"), SubResource("Resource_t624d"), SubResource("Resource_yf4h7"), SubResource("Resource_o85fg"), SubResource("Resource_x64ex"), SubResource("Resource_ywmpn"), SubResource("Resource_4dg6r"), SubResource("Resource_44sum"), SubResource("Resource_ckqqa"), SubResource("Resource_je14j"), SubResource("Resource_07if0"), SubResource("Resource_03tq1"), SubResource("Resource_665uc"), SubResource("Resource_hksp3"), SubResource("Resource_42sgt"), SubResource("Resource_iikcg"), SubResource("Resource_kossw"), SubResource("Resource_oavh6"), SubResource("Resource_7tecr"), SubResource("Resource_q6gqs"), SubResource("Resource_snt0i"), SubResource("Resource_8xlvq"), SubResource("Resource_2r4ia"), SubResource("Resource_xf2l5")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLASH", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYDAY", &"PINMISSILE", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"RISINGVOLTAGE", &"ROAR", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"VOLTSWITCH", &"WEATHERBALL", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"VOLTABSORB"])
+hidden_abilities = Array[StringName]([&"QUICKFEET"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_5hhqa")]([SubResource("Resource_tlmcs")])
+height = 8
+weight = 245
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-3, 29)
+shadow_size = 1
+id = &"JOLTEON"
+display_name = "Jolteon"

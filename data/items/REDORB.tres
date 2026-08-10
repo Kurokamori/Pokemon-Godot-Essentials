@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_s00qm"]
+
+[resource]
+resource_name = "REDORB"
+script = ExtResource("1_s00qm")
+name_plural = "Red Orbs"
+price = 10000
+bp_price = 50
+description = "A shiny red orb that is said to have a legend tied to it. It's known to be connected with the Hoenn region."
+id = &"REDORB"
+display_name = "Red Orb"

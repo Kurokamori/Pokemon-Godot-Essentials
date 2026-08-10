@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2d20s"]
+
+[resource]
+resource_name = "MISTBALL"
+script = ExtResource("1_2d20s")
+type = &"PSYCHIC"
+category = 1
+power = 70
+function_code = &"LowerTargetSpAtk1"
+effect_chance = 50
+description = "A mistlike flurry of down envelops and damages the target. It may also lower the target's Sp. Atk."
+id = &"MISTBALL"
+display_name = "Mist Ball"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

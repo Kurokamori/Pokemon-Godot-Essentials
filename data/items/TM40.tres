@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2o8cd"]
+
+[resource]
+resource_name = "TM40"
+script = ExtResource("1_2o8cd")
+name_plural = "TM40s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 40
+field_use = 5
+move = &"AERIALACE"
+description = "The user confounds the target with speed, then slashes. This attack never misses."
+id = &"TM40"
+display_name = "TM40"
+flags = Array[StringName]([&"Fling_60"])

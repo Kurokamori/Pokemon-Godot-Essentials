@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_vsjdr"]
+
+[resource]
+resource_name = "DUSKBALL"
+script = ExtResource("1_vsjdr")
+name_plural = "Dusk Balls"
+pocket = 3
+price = 1000
+sell_price = 500
+battle_use = 4
+description = "A somewhat different Poké Ball that makes it easier to catch wild Pokémon at night or in dark places like caves."
+id = &"DUSKBALL"
+display_name = "Dusk Ball"
+flags = Array[StringName]([&"PokeBall"])

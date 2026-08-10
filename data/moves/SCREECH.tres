@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_d5q5f"]
+
+[resource]
+resource_name = "SCREECH"
+script = ExtResource("1_d5q5f")
+accuracy = 85
+total_pp = 40
+function_code = &"LowerTargetDefense2"
+description = "An earsplitting screech harshly reduces the target's Defense stat."
+id = &"SCREECH"
+display_name = "Screech"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_m3vtx"]
+
+[resource]
+resource_name = "MOVE_BRICKBREAK"
+script = ExtResource("1_m3vtx")
+graphic = "many"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 296, 38, 100, 100, 0, 0, 13, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 320, 38, 100, 100, 345, 0, 13, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 352, 62, 100, 100, 330, 0, 13, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 86, 100, 100, 315, 0, 13, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 400, 118, 100, 100, 300, 0, 13, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 416, 142, 100, 100, 285, 0, 13, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 432, 158, 100, 100, 285, 0, 13, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 440, 166, 100, 100, 285, 0, 13, 255, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(4)
+timing_sounds = PackedStringArray("Blow7")
+timing_volumes = PackedInt32Array(80)
+timing_pitches = PackedInt32Array(100)
+id = &"MOVE_BRICKBREAK"
+display_name = "Move:BRICKBREAK"

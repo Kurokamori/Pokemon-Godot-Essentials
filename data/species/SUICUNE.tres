@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2ck1f"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mgcjf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qbalx"]
+
+[sub_resource type="Resource" id="Resource_slwxd"]
+script = ExtResource("2_mgcjf")
+move = &"SHEERCOLD"
+
+[sub_resource type="Resource" id="Resource_sdpv0"]
+script = ExtResource("2_mgcjf")
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_mv3fd"]
+script = ExtResource("2_mgcjf")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_m0xlb"]
+script = ExtResource("2_mgcjf")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_4cd0k"]
+script = ExtResource("2_mgcjf")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_e7q5a"]
+script = ExtResource("2_mgcjf")
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_2t6uc"]
+script = ExtResource("2_mgcjf")
+level = 6
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_wcqs0"]
+script = ExtResource("2_mgcjf")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_nboqr"]
+script = ExtResource("2_mgcjf")
+level = 18
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_1dsqy"]
+script = ExtResource("2_mgcjf")
+level = 24
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_nhuhn"]
+script = ExtResource("2_mgcjf")
+level = 30
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_xdliw"]
+script = ExtResource("2_mgcjf")
+level = 36
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_qnkrj"]
+script = ExtResource("2_mgcjf")
+level = 42
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_myftp"]
+script = ExtResource("2_mgcjf")
+level = 48
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_1hrlq"]
+script = ExtResource("2_mgcjf")
+level = 54
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_5d8u6"]
+script = ExtResource("2_mgcjf")
+level = 60
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_grv8g"]
+script = ExtResource("2_mgcjf")
+level = 66
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_tug5j"]
+script = ExtResource("2_mgcjf")
+level = 72
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_vbhem"]
+script = ExtResource("2_mgcjf")
+level = 78
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "SUICUNE"
+script = ExtResource("3_qbalx")
+species = &"SUICUNE"
+category = "Aurora"
+pokedex_entry = "Suicune embodies the compassion of a pure spring of water. It runs across the land with gliding elegance. It has the power to purify dirty water."
+types = Array[StringName]([&"WATER"])
+base_hp = 100
+base_attack = 75
+base_defense = 115
+base_special_attack = 90
+base_special_defense = 115
+base_speed = 85
+ev_defense = 1
+ev_special_defense = 2
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_mgcjf")]([SubResource("Resource_slwxd"), SubResource("Resource_sdpv0"), SubResource("Resource_mv3fd"), SubResource("Resource_m0xlb"), SubResource("Resource_4cd0k"), SubResource("Resource_e7q5a"), SubResource("Resource_2t6uc"), SubResource("Resource_wcqs0"), SubResource("Resource_nboqr"), SubResource("Resource_1dsqy"), SubResource("Resource_nhuhn"), SubResource("Resource_xdliw"), SubResource("Resource_qnkrj"), SubResource("Resource_myftp"), SubResource("Resource_1hrlq"), SubResource("Resource_5d8u6"), SubResource("Resource_grv8g"), SubResource("Resource_tug5j"), SubResource("Resource_vbhem")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CALMMIND", &"CONFIDE", &"CRUNCH", &"CUT", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICYWIND", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHUP", &"QUASH", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+hatch_steps = 20480
+height = 20
+weight = 1870
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 18)
+id = &"SUICUNE"
+display_name = "Suicune"
+flags = Array[StringName]([&"Legendary"])

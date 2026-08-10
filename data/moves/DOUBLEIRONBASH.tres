@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_uynkr"]
+
+[resource]
+resource_name = "DOUBLEIRONBASH"
+script = ExtResource("1_uynkr")
+type = &"STEEL"
+category = 0
+power = 60
+function_code = &"HitTwoTimesFlinchTarget"
+effect_chance = 30
+description = "The user rotates, centering the hex nut in its chest, and then strikes twice. May cause flinching."
+id = &"DOUBLEIRONBASH"
+display_name = "Double Iron Bash"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"Punching", &"CannotMetronome"])

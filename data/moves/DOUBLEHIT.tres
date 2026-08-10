@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_jrmsh"]
+
+[resource]
+resource_name = "DOUBLEHIT"
+script = ExtResource("1_jrmsh")
+category = 0
+power = 35
+accuracy = 90
+total_pp = 10
+function_code = &"HitTwoTimes"
+description = "The user slams the target with a long tail, vines, or tentacle. The target is hit twice in a row."
+id = &"DOUBLEHIT"
+display_name = "Double Hit"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

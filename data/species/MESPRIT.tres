@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lb32v"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_daf3s"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0g1ls"]
+
+[sub_resource type="Resource" id="Resource_ntol7"]
+script = ExtResource("2_daf3s")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_l7s0a"]
+script = ExtResource("2_daf3s")
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_n3tiw"]
+script = ExtResource("2_daf3s")
+level = 7
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_wqn0o"]
+script = ExtResource("2_daf3s")
+level = 14
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_5o8c7"]
+script = ExtResource("2_daf3s")
+level = 21
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_q3wcm"]
+script = ExtResource("2_daf3s")
+level = 28
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_62e1a"]
+script = ExtResource("2_daf3s")
+level = 35
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_trhtp"]
+script = ExtResource("2_daf3s")
+level = 42
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_bgxjx"]
+script = ExtResource("2_daf3s")
+level = 49
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_wo2sk"]
+script = ExtResource("2_daf3s")
+level = 56
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_j4lf8"]
+script = ExtResource("2_daf3s")
+level = 63
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_gphp0"]
+script = ExtResource("2_daf3s")
+level = 70
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_es8lp"]
+script = ExtResource("2_daf3s")
+level = 77
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "MESPRIT"
+script = ExtResource("3_0g1ls")
+species = &"MESPRIT"
+category = "Emotion"
+pokedex_entry = "Known as \"The Being of Emotion.\" It taught humans the nobility of sorrow, pain, and joy."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 80
+base_attack = 105
+base_defense = 105
+base_special_attack = 105
+base_special_defense = 105
+base_speed = 80
+ev_attack = 1
+ev_special_attack = 1
+ev_special_defense = 1
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_daf3s")]([SubResource("Resource_ntol7"), SubResource("Resource_l7s0a"), SubResource("Resource_n3tiw"), SubResource("Resource_wqn0o"), SubResource("Resource_5o8c7"), SubResource("Resource_q3wcm"), SubResource("Resource_62e1a"), SubResource("Resource_trhtp"), SubResource("Resource_bgxjx"), SubResource("Resource_wo2sk"), SubResource("Resource_j4lf8"), SubResource("Resource_gphp0"), SubResource("Resource_es8lp")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ALLYSWITCH", &"BATONPASS", &"BLIZZARD", &"CALMMIND", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"IMPRISON", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"UTURN", &"WATERPULSE", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+hatch_steps = 20480
+height = 3
+weight = 3
+color = &"Pink"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 15)
+shadow_size = 1
+id = &"MESPRIT"
+display_name = "Mesprit"
+flags = Array[StringName]([&"Legendary"])

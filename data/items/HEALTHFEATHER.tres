@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2s4bh"]
+
+[resource]
+resource_name = "HEALTHFEATHER"
+script = ExtResource("1_2s4bh")
+name_plural = "Health Feathers"
+pocket = 2
+price = 300
+sell_price = 150
+field_use = 1
+description = "An item for use on a Pokémon. It slightly increases the base HP of a single Pokémon."
+id = &"HEALTHFEATHER"
+display_name = "Health Feather"
+flags = Array[StringName]([&"Fling_20"])

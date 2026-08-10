@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_w3x6n"]
+
+[resource]
+script = ExtResource("1_w3x6n")
+category = &"regional_dexes"
+record_script = "res://src/data/regional_dex_data.gd"
+paths = {
+&"0": "res://data/regional_dexes/0.tres",
+&"1": "res://data/regional_dexes/1.tres"
+}
+ordered_ids = Array[StringName]([&"0", &"1"])

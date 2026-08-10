@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_bajlo"]
+
+[resource]
+resource_name = "SINNOHCUTEHYPER"
+script = ExtResource("1_bajlo")
+icon_position = 30
+description = "Super Contest Cute Category Ultra Rank winner!"
+id = &"SINNOHCUTEHYPER"
+display_name = "Cute Ribbon Ultra"

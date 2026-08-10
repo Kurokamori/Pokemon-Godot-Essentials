@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_knhdu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b5vor"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uvjuj"]
+
+[sub_resource type="Resource" id="Resource_e80tl"]
+script = ExtResource("1_knhdu")
+species = &"BUTTERFREE"
+method = &"Level"
+parameter = "10"
+
+[sub_resource type="Resource" id="Resource_ph4fh"]
+script = ExtResource("1_knhdu")
+species = &"CATERPIE"
+method = &"Level"
+parameter = "7"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pesvt"]
+script = ExtResource("2_b5vor")
+level = 0
+move = &"HARDEN"
+
+[resource]
+resource_name = "METAPOD"
+script = ExtResource("3_uvjuj")
+species = &"METAPOD"
+category = "Cocoon"
+pokedex_entry = "Its shell is as hard as an iron slab. A Metapod does not move very much because it is preparing its soft innards for evolution inside the shell."
+types = Array[StringName]([&"BUG"])
+base_hp = 50
+base_attack = 20
+base_defense = 55
+base_special_attack = 25
+base_special_defense = 25
+base_speed = 30
+ev_defense = 2
+base_exp = 72
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b5vor")]([SubResource("Resource_pesvt")])
+tutor_moves = Array[StringName]([&"BUGBITE", &"ELECTROWEB", &"IRONDEFENSE", &"STRINGSHOT"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_knhdu")]([SubResource("Resource_e80tl"), SubResource("Resource_ph4fh")])
+height = 7
+weight = 99
+color = &"Green"
+shape = &"Serpentine"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-2, 32)
+shadow_size = 1
+id = &"METAPOD"
+display_name = "Metapod"

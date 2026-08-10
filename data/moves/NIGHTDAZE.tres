@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_q37ll"]
+
+[resource]
+resource_name = "NIGHTDAZE"
+script = ExtResource("1_q37ll")
+type = &"DARK"
+category = 1
+power = 85
+accuracy = 95
+total_pp = 10
+function_code = &"LowerTargetAccuracy1"
+effect_chance = 40
+description = "The user lets loose a pitch-black shock wave at its target. It may also lower the target's accuracy."
+id = &"NIGHTDAZE"
+display_name = "Night Daze"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

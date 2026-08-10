@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_egk5c"]
+
+[resource]
+resource_name = "FLAREBOOST"
+script = ExtResource("1_egk5c")
+description = "Powers up special attacks when burned."
+id = &"FLAREBOOST"
+display_name = "Flare Boost"

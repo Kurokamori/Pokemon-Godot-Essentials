@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uq1mx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nf03q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_x72i2"]
+
+[sub_resource type="Resource" id="Resource_i0nmo"]
+script = ExtResource("2_nf03q")
+move = &"HIDDENPOWER"
+
+[resource]
+resource_name = "UNOWN_15"
+script = ExtResource("3_x72i2")
+species = &"UNOWN"
+form = 15
+form_name = "P"
+category = "Symbol"
+pokedex_entry = "This Pokémon is shaped like ancient text characters. Although research is ongoing, it is a mystery as to which came first, the ancient writings or the various Unown."
+pokedex_form = 15
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 48
+base_attack = 72
+base_defense = 48
+base_special_attack = 72
+base_special_defense = 48
+base_speed = 48
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 118
+gender_ratio = &"Genderless"
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nf03q")]([SubResource("Resource_i0nmo")])
+tutor_moves = Array[StringName]([&"HIDDENPOWER"])
+abilities = Array[StringName]([&"LEVITATE"])
+hatch_steps = 10240
+height = 5
+weight = 50
+color = &"Black"
+habitat = &"Rare"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 14)
+id = &"UNOWN_15"
+display_name = "Unown"

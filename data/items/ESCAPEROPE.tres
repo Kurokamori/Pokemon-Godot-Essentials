@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_oh021"]
+
+[resource]
+resource_name = "ESCAPEROPE"
+script = ExtResource("1_oh021")
+name_plural = "Escape Ropes"
+pocket = 8
+field_use = 2
+consumable = false
+show_quantity = false
+description = "A long, durable rope. Use it to escape instantly from a cave or a dungeon."
+id = &"ESCAPEROPE"
+display_name = "Escape Rope"
+flags = Array[StringName]([&"KeyItem"])

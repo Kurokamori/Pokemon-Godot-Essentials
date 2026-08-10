@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_u4m1b"]
+
+[resource]
+resource_name = "PSYCHOSHIFT"
+script = ExtResource("1_u4m1b")
+type = &"PSYCHIC"
+total_pp = 10
+function_code = &"GiveUserStatusToTarget"
+description = "Using its psychic power of suggestion, the user transfers its status problems to the target."
+id = &"PSYCHOSHIFT"
+display_name = "Psycho Shift"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

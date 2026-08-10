@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_adpji"]
+
+[resource]
+resource_name = "ELECTRIC"
+script = ExtResource("1_adpji")
+icon_position = 13
+special_type = true
+weaknesses = Array[StringName]([&"GROUND"])
+resistances = Array[StringName]([&"FLYING", &"STEEL", &"ELECTRIC"])
+id = &"ELECTRIC"
+display_name = "Electric"

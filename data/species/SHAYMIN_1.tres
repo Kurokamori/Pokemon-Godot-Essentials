@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jidnu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fpf1r"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oe44t"]
+
+[sub_resource type="Resource" id="Resource_8hf8y"]
+script = ExtResource("2_fpf1r")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_bi28v"]
+script = ExtResource("2_fpf1r")
+level = 10
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_oq6d6"]
+script = ExtResource("2_fpf1r")
+level = 19
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_6y0md"]
+script = ExtResource("2_fpf1r")
+level = 28
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_nm526"]
+script = ExtResource("2_fpf1r")
+level = 37
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_a5rv5"]
+script = ExtResource("2_fpf1r")
+level = 46
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_p858l"]
+script = ExtResource("2_fpf1r")
+level = 55
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_6j6d8"]
+script = ExtResource("2_fpf1r")
+level = 64
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_q2be0"]
+script = ExtResource("2_fpf1r")
+level = 73
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_le12u"]
+script = ExtResource("2_fpf1r")
+level = 82
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_01gjg"]
+script = ExtResource("2_fpf1r")
+level = 91
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_2ikvl"]
+script = ExtResource("2_fpf1r")
+level = 100
+move = &"SEEDFLARE"
+
+[resource]
+resource_name = "SHAYMIN_1"
+script = ExtResource("3_oe44t")
+species = &"SHAYMIN"
+form = 1
+form_name = "Sky Forme"
+category = "Gratitude"
+pokedex_entry = "It lives in flower patches and avoids detection by curling up to look like a flowering plant."
+pokedex_form = 1
+types = Array[StringName]([&"GRASS", &"FLYING"])
+base_hp = 100
+base_attack = 103
+base_defense = 75
+base_special_attack = 120
+base_special_defense = 75
+base_speed = 127
+ev_speed = 3
+base_exp = 300
+growth_rate = &"Parabolic"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_fpf1r")]([SubResource("Resource_8hf8y"), SubResource("Resource_bi28v"), SubResource("Resource_oq6d6"), SubResource("Resource_6y0md"), SubResource("Resource_nm526"), SubResource("Resource_a5rv5"), SubResource("Resource_p858l"), SubResource("Resource_6j6d8"), SubResource("Resource_q2be0"), SubResource("Resource_le12u"), SubResource("Resource_01gjg"), SubResource("Resource_2ikvl")])
+tutor_moves = Array[StringName]([&"AIRCUTTER", &"BULLETSEED", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"LASERFOCUS", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OMINOUSWIND", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TAILWIND", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SERENEGRACE"])
+wild_item_common = Array[StringName]([&"LUMBERRY"])
+wild_item_uncommon = Array[StringName]([&"LUMBERRY"])
+wild_item_rare = Array[StringName]([&"LUMBERRY"])
+hatch_steps = 30720
+height = 4
+weight = 52
+color = &"Green"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 26)
+shadow_size = 1
+id = &"SHAYMIN_1"
+display_name = "Shaymin"
+flags = Array[StringName]([&"Mythical"])

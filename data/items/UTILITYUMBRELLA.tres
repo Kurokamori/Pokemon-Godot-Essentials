@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8imij"]
+
+[resource]
+resource_name = "UTILITYUMBRELLA"
+script = ExtResource("1_8imij")
+name_plural = "Utility Umbrellas"
+price = 3000
+sell_price = 2000
+bp_price = 25
+description = "An item to be held by a Pokémon. This sturdy umbrella protects the holder from the effects of rain and sun."
+id = &"UTILITYUMBRELLA"
+display_name = "Utility Umbrella"
+flags = Array[StringName]([&"Fling_60"])

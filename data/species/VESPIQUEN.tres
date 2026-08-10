@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_syted"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8xtcu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_h5c03"]
+
+[sub_resource type="Resource" id="Resource_5g1fn"]
+script = ExtResource("1_syted")
+species = &"COMBEE"
+method = &"LevelFemale"
+parameter = "21"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nqcgh"]
+script = ExtResource("2_8xtcu")
+level = 0
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_vr51i"]
+script = ExtResource("2_8xtcu")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_i24ip"]
+script = ExtResource("2_8xtcu")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_wo3i1"]
+script = ExtResource("2_8xtcu")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_tga5u"]
+script = ExtResource("2_8xtcu")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_y6qsq"]
+script = ExtResource("2_8xtcu")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_lttl2"]
+script = ExtResource("2_8xtcu")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_cysmt"]
+script = ExtResource("2_8xtcu")
+level = 4
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_18k7o"]
+script = ExtResource("2_8xtcu")
+level = 8
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_vbq3f"]
+script = ExtResource("2_8xtcu")
+level = 12
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_hm517"]
+script = ExtResource("2_8xtcu")
+level = 16
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_qj6g0"]
+script = ExtResource("2_8xtcu")
+level = 20
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_hiyxp"]
+script = ExtResource("2_8xtcu")
+level = 24
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_nc803"]
+script = ExtResource("2_8xtcu")
+level = 28
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_l7rrg"]
+script = ExtResource("2_8xtcu")
+level = 32
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_k4txl"]
+script = ExtResource("2_8xtcu")
+level = 36
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_85qc2"]
+script = ExtResource("2_8xtcu")
+level = 40
+move = &"ATTACKORDER"
+
+[sub_resource type="Resource" id="Resource_mn8o5"]
+script = ExtResource("2_8xtcu")
+level = 40
+move = &"DEFENDORDER"
+
+[sub_resource type="Resource" id="Resource_uo5yp"]
+script = ExtResource("2_8xtcu")
+level = 44
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "VESPIQUEN"
+script = ExtResource("3_h5c03")
+species = &"VESPIQUEN"
+category = "Beehive"
+pokedex_entry = "Its abdomen is a honeycomb for grubs. It raises its grubs on honey collected by Combee."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 70
+base_attack = 80
+base_defense = 102
+base_special_attack = 80
+base_special_defense = 102
+base_speed = 40
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 166
+growth_rate = &"Parabolic"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8xtcu")]([SubResource("Resource_nqcgh"), SubResource("Resource_vr51i"), SubResource("Resource_i24ip"), SubResource("Resource_wo3i1"), SubResource("Resource_tga5u"), SubResource("Resource_y6qsq"), SubResource("Resource_lttl2"), SubResource("Resource_cysmt"), SubResource("Resource_18k7o"), SubResource("Resource_vbq3f"), SubResource("Resource_hm517"), SubResource("Resource_qj6g0"), SubResource("Resource_hiyxp"), SubResource("Resource_nc803"), SubResource("Resource_l7rrg"), SubResource("Resource_k4txl"), SubResource("Resource_85qc2"), SubResource("Resource_mn8o5"), SubResource("Resource_uo5yp")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"INFESTATION", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PINMISSILE", &"POWERGEM", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROOST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TOXIC", &"TOXICSPIKES", &"UPROAR", &"UTURN", &"VENOSHOCK", &"XSCISSOR"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_syted")]([SubResource("Resource_5g1fn")])
+height = 12
+weight = 385
+color = &"Yellow"
+shape = &"MultiWinged"
+generation = 4
+back_sprite_offset = Vector2i(-4, 48)
+front_sprite_offset = Vector2i(0, 8)
+id = &"VESPIQUEN"
+display_name = "Vespiquen"

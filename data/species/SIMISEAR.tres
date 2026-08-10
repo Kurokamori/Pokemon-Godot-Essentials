@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_yft4v"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_g41xr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_irn52"]
+
+[sub_resource type="Resource" id="Resource_rcrqo"]
+script = ExtResource("1_yft4v")
+species = &"PANSEAR"
+method = &"Item"
+parameter = "FIRESTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_thsbe"]
+script = ExtResource("2_g41xr")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_bjdh7"]
+script = ExtResource("2_g41xr")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_16x2y"]
+script = ExtResource("2_g41xr")
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_mledt"]
+script = ExtResource("2_g41xr")
+move = &"FLAMEBURST"
+
+[resource]
+resource_name = "SIMISEAR"
+script = ExtResource("3_irn52")
+species = &"SIMISEAR"
+category = "Ember"
+pokedex_entry = "A flame burns inside its body. It scatters embers from its head and tail to sear its opponents."
+types = Array[StringName]([&"FIRE"])
+base_hp = 75
+base_attack = 98
+base_defense = 63
+base_special_attack = 98
+base_special_defense = 63
+base_speed = 101
+ev_speed = 2
+base_exp = 174
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_g41xr")]([SubResource("Resource_thsbe"), SubResource("Resource_bjdh7"), SubResource("Resource_16x2y"), SubResource("Resource_mledt")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"TOXIC", &"UPROAR", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"BLAZE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_yft4v")]([SubResource("Resource_rcrqo")])
+height = 10
+weight = 280
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(2, 22)
+shadow_size = 1
+id = &"SIMISEAR"
+display_name = "Simisear"

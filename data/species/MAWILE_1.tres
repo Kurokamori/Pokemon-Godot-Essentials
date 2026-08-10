@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0hhc8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ly4hf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_peltj"]
+
+[sub_resource type="Resource" id="Resource_632xk"]
+script = ExtResource("2_ly4hf")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_civkv"]
+script = ExtResource("2_ly4hf")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_up2i2"]
+script = ExtResource("2_ly4hf")
+level = 4
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_fj7xu"]
+script = ExtResource("2_ly4hf")
+level = 8
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_da7t4"]
+script = ExtResource("2_ly4hf")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_dxw8i"]
+script = ExtResource("2_ly4hf")
+level = 16
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_qg5js"]
+script = ExtResource("2_ly4hf")
+level = 16
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_4vwvh"]
+script = ExtResource("2_ly4hf")
+level = 16
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_p03mq"]
+script = ExtResource("2_ly4hf")
+level = 20
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_drglo"]
+script = ExtResource("2_ly4hf")
+level = 24
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_o7re1"]
+script = ExtResource("2_ly4hf")
+level = 28
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_52tcy"]
+script = ExtResource("2_ly4hf")
+level = 32
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_xyrl0"]
+script = ExtResource("2_ly4hf")
+level = 36
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_h7gqy"]
+script = ExtResource("2_ly4hf")
+level = 40
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_pur0f"]
+script = ExtResource("2_ly4hf")
+level = 44
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_hnbmi"]
+script = ExtResource("2_ly4hf")
+level = 48
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "MAWILE_1"
+script = ExtResource("3_peltj")
+species = &"MAWILE"
+form = 1
+form_name = "Mega Mawile"
+category = "Deceiver"
+pokedex_entry = "Its two sets of jaws thrash about violently as if they each had a will of their own. One gnash from them can turn a boulder to dust."
+pokedex_form = 1
+types = Array[StringName]([&"STEEL", &"FAIRY"])
+base_hp = 50
+base_attack = 105
+base_defense = 125
+base_special_attack = 55
+base_special_defense = 95
+base_speed = 50
+ev_attack = 1
+ev_defense = 1
+base_exp = 168
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ly4hf")]([SubResource("Resource_632xk"), SubResource("Resource_civkv"), SubResource("Resource_up2i2"), SubResource("Resource_fj7xu"), SubResource("Resource_da7t4"), SubResource("Resource_dxw8i"), SubResource("Resource_qg5js"), SubResource("Resource_4vwvh"), SubResource("Resource_p03mq"), SubResource("Resource_drglo"), SubResource("Resource_o7re1"), SubResource("Resource_52tcy"), SubResource("Resource_xyrl0"), SubResource("Resource_h7gqy"), SubResource("Resource_pur0f"), SubResource("Resource_hnbmi")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"CRUNCH", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DYNAMICPUNCH", &"EMBARGO", &"ENDURE", &"FACADE", &"FAKETEARS", &"FALSESWIPE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STEELBEAM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THUNDERFANG", &"THUNDERPUNCH", &"TORMENT"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"FIREFANG", &"GUARDSWAP", &"ICEFANG", &"METALBURST", &"MISTYTERRAIN", &"POISONFANG", &"POWERUPPUNCH", &"SEISMICTOSS", &"SLAM", &"SUCKERPUNCH", &"THUNDERFANG", &"TICKLE"])
+abilities = Array[StringName]([&"HUGEPOWER"])
+hidden_abilities = Array[StringName]([&"HUGEPOWER"])
+wild_item_uncommon = Array[StringName]([&"IRONBALL"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 5120
+height = 10
+weight = 235
+color = &"Black"
+shape = &"Bipedal"
+habitat = &"Cave"
+generation = 6
+mega_stone = &"MAWILITE"
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(0, 17)
+shadow_size = 3
+id = &"MAWILE_1"
+display_name = "Mawile"

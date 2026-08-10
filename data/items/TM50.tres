@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_320yb"]
+
+[resource]
+resource_name = "TM50"
+script = ExtResource("1_320yb")
+name_plural = "TM50s"
+pocket = 4
+price = 5500
+sell_price = 2750
+bp_price = 32
+field_use = 5
+move = &"OVERHEAT"
+description = "The user attacks the target at full power. The attack's recoil harshly lowers the user's Sp. Atk stat."
+id = &"TM50"
+display_name = "TM50"
+flags = Array[StringName]([&"Fling_130"])

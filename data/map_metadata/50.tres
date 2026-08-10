@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_barsj"]
+
+[resource]
+resource_name = "50"
+script = ExtResource("1_barsj")
+map_id = 50
+dark_map = true
+can_bicycle = true
+town_map_position = Array[int]([0, 16, 10])
+battle_background = "cave3"
+battle_environment = &"Cave"
+id = &"50"
+display_name = "Route 7"
+flags = Array[StringName]([&"Magnetic", &"DistortionWorld"])

@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_78hr1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e5mjk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_enlhg"]
+
+[sub_resource type="Resource" id="Resource_1injy"]
+script = ExtResource("2_e5mjk")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_lyigc"]
+script = ExtResource("2_e5mjk")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_vv708"]
+script = ExtResource("2_e5mjk")
+level = 5
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_8ljn3"]
+script = ExtResource("2_e5mjk")
+level = 10
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_21g8v"]
+script = ExtResource("2_e5mjk")
+level = 15
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_quivx"]
+script = ExtResource("2_e5mjk")
+level = 20
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_8u2cs"]
+script = ExtResource("2_e5mjk")
+level = 25
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_m14vf"]
+script = ExtResource("2_e5mjk")
+level = 30
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_qcio3"]
+script = ExtResource("2_e5mjk")
+level = 35
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ss6w7"]
+script = ExtResource("2_e5mjk")
+level = 40
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_ajmmw"]
+script = ExtResource("2_e5mjk")
+level = 45
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_2kkl6"]
+script = ExtResource("2_e5mjk")
+level = 50
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_rcj03"]
+script = ExtResource("2_e5mjk")
+level = 55
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_pd33b"]
+script = ExtResource("2_e5mjk")
+level = 60
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_yvhmu"]
+script = ExtResource("2_e5mjk")
+level = 65
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_h1pgm"]
+script = ExtResource("2_e5mjk")
+level = 70
+move = &"SKULLBASH"
+
+[resource]
+resource_name = "CELESTEELA"
+script = ExtResource("3_enlhg")
+species = &"CELESTEELA"
+category = "Launch"
+pokedex_entry = "One kind of Ultra Beast. Witnesses have seen it burn down a forest by expelling gas from its two arms."
+types = Array[StringName]([&"STEEL", &"FLYING"])
+base_hp = 97
+base_attack = 101
+base_defense = 103
+base_special_attack = 107
+base_special_defense = 101
+base_speed = 61
+ev_attack = 1
+ev_defense = 1
+ev_special_attack = 1
+base_exp = 285
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_e5mjk")]([SubResource("Resource_1injy"), SubResource("Resource_lyigc"), SubResource("Resource_vv708"), SubResource("Resource_8ljn3"), SubResource("Resource_21g8v"), SubResource("Resource_quivx"), SubResource("Resource_8u2cs"), SubResource("Resource_m14vf"), SubResource("Resource_qcio3"), SubResource("Resource_ss6w7"), SubResource("Resource_ajmmw"), SubResource("Resource_2kkl6"), SubResource("Resource_rcj03"), SubResource("Resource_pd33b"), SubResource("Resource_yvhmu"), SubResource("Resource_h1pgm")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AIRSLASH", &"BLOCK", &"BODYSLAM", &"BRUTALSWING", &"BULLDOZE", &"CONFIDE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASHCANNON", &"FLY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HEAVYSLAM", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"MAGNETRISE", &"MEGAHORN", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SMARTSTRIKE", &"SNORE", &"SOLARBEAM", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TOXIC", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"BEASTBOOST"])
+hatch_steps = 30720
+height = 92
+weight = 9999
+color = &"Green"
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(10, 40)
+front_sprite_offset = Vector2i(2, -3)
+shadow_size = 3
+id = &"CELESTEELA"
+display_name = "Celesteela"
+flags = Array[StringName]([&"UltraBeast"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_r7ns3"]
+
+[resource]
+resource_name = "ARMTHRUST"
+script = ExtResource("1_r7ns3")
+type = &"FIGHTING"
+category = 0
+power = 15
+total_pp = 20
+function_code = &"HitTwoToFiveTimes"
+description = "The user looses a flurry of open-palmed arm thrusts that hit two to five times in a row."
+id = &"ARMTHRUST"
+display_name = "Arm Thrust"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

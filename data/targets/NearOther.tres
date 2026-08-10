@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TargetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/target_data.gd" id="1_1lky0"]
+
+[resource]
+resource_name = "NearOther"
+script = ExtResource("1_1lky0")
+targets_foe = true
+targets_ally = true
+id = &"NearOther"
+display_name = "Near Other"

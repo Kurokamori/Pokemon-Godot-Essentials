@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6h1i0"]
+
+[resource]
+resource_name = "GROWTH"
+script = ExtResource("1_6h1i0")
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserAtkSpAtk1Or2InSun"
+description = "The user's body grows all at once, raising the Atk and Sp. Atk stats."
+id = &"GROWTH"
+display_name = "Growth"

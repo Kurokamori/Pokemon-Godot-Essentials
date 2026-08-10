@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3vu02"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_f7sx2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ag4q2"]
+
+[sub_resource type="Resource" id="Resource_7kqvw"]
+script = ExtResource("1_3vu02")
+species = &"SHELLDER"
+method = &"Item"
+parameter = "WATERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fhstt"]
+script = ExtResource("2_f7sx2")
+level = 0
+move = &"ICICLESPEAR"
+
+[sub_resource type="Resource" id="Resource_60qq4"]
+script = ExtResource("2_f7sx2")
+move = &"ICICLECRASH"
+
+[sub_resource type="Resource" id="Resource_uwbdl"]
+script = ExtResource("2_f7sx2")
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_8cmtg"]
+script = ExtResource("2_f7sx2")
+move = &"SPIKES"
+
+[sub_resource type="Resource" id="Resource_tdr40"]
+script = ExtResource("2_f7sx2")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_odwr0"]
+script = ExtResource("2_f7sx2")
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_wuqpe"]
+script = ExtResource("2_f7sx2")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_vpay6"]
+script = ExtResource("2_f7sx2")
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_f8r6f"]
+script = ExtResource("2_f7sx2")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_rgxvo"]
+script = ExtResource("2_f7sx2")
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_c8xtj"]
+script = ExtResource("2_f7sx2")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_byrwi"]
+script = ExtResource("2_f7sx2")
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_5bjld"]
+script = ExtResource("2_f7sx2")
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_oiswh"]
+script = ExtResource("2_f7sx2")
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_dw7md"]
+script = ExtResource("2_f7sx2")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_u0fcs"]
+script = ExtResource("2_f7sx2")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_7s0xl"]
+script = ExtResource("2_f7sx2")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_d1s5a"]
+script = ExtResource("2_f7sx2")
+move = &"ICESHARD"
+
+[resource]
+resource_name = "CLOYSTER"
+script = ExtResource("3_ag4q2")
+species = &"CLOYSTER"
+category = "Bivalve"
+pokedex_entry = "It swims in the sea by swallowing water, then jetting it out toward the rear. The Cloyster shoots spikes from its shell using the same system."
+types = Array[StringName]([&"WATER", &"ICE"])
+base_hp = 50
+base_attack = 95
+base_defense = 180
+base_special_attack = 85
+base_special_defense = 45
+base_speed = 70
+ev_defense = 2
+base_exp = 184
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_f7sx2")]([SubResource("Resource_fhstt"), SubResource("Resource_60qq4"), SubResource("Resource_uwbdl"), SubResource("Resource_8cmtg"), SubResource("Resource_tdr40"), SubResource("Resource_odwr0"), SubResource("Resource_wuqpe"), SubResource("Resource_vpay6"), SubResource("Resource_f8r6f"), SubResource("Resource_rgxvo"), SubResource("Resource_c8xtj"), SubResource("Resource_byrwi"), SubResource("Resource_5bjld"), SubResource("Resource_oiswh"), SubResource("Resource_dw7md"), SubResource("Resource_u0fcs"), SubResource("Resource_7s0xl"), SubResource("Resource_d1s5a")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"LIGHTSCREEN", &"LIQUIDATION", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKBLAST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SIGNALBEAM", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SPIKES", &"STEELROLLER", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TORMENT", &"TOXICSPIKES", &"TRIATTACK", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SHELLARMOR", &"SKILLLINK"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_common = Array[StringName]([&"PEARL"])
+wild_item_uncommon = Array[StringName]([&"BIGPEARL"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_3vu02")]([SubResource("Resource_7kqvw")])
+height = 15
+weight = 1325
+color = &"Purple"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 23)
+id = &"CLOYSTER"
+display_name = "Cloyster"

@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8v772"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vn20o"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8a45e"]
+
+[sub_resource type="Resource" id="Resource_q56t4"]
+script = ExtResource("1_8v772")
+species = &"VANILLISH"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_luhct"]
+script = ExtResource("2_vn20o")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_ss164"]
+script = ExtResource("2_vn20o")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_rqbm3"]
+script = ExtResource("2_vn20o")
+level = 4
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_an42e"]
+script = ExtResource("2_vn20o")
+level = 8
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_h4ymp"]
+script = ExtResource("2_vn20o")
+level = 12
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_r6vot"]
+script = ExtResource("2_vn20o")
+level = 16
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_cbh56"]
+script = ExtResource("2_vn20o")
+level = 20
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_i1d7g"]
+script = ExtResource("2_vn20o")
+level = 24
+move = &"ICICLESPEAR"
+
+[sub_resource type="Resource" id="Resource_uj1sm"]
+script = ExtResource("2_vn20o")
+level = 28
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_curhe"]
+script = ExtResource("2_vn20o")
+level = 32
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_f0eam"]
+script = ExtResource("2_vn20o")
+level = 36
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_eokrl"]
+script = ExtResource("2_vn20o")
+level = 40
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_oxqdx"]
+script = ExtResource("2_vn20o")
+level = 44
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_3p72r"]
+script = ExtResource("2_vn20o")
+level = 48
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "VANILLITE"
+script = ExtResource("3_8a45e")
+species = &"VANILLITE"
+category = "Fresh Snow"
+pokedex_entry = "This Pokémon formed from icicles bathed in energy from the morning sun. It sleeps buried in snow."
+types = Array[StringName]([&"ICE"])
+base_hp = 36
+base_attack = 50
+base_defense = 50
+base_special_attack = 65
+base_special_defense = 60
+base_speed = 44
+ev_special_attack = 1
+base_exp = 61
+growth_rate = &"Slow"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vn20o")]([SubResource("Resource_luhct"), SubResource("Resource_ss164"), SubResource("Resource_rqbm3"), SubResource("Resource_an42e"), SubResource("Resource_h4ymp"), SubResource("Resource_r6vot"), SubResource("Resource_cbh56"), SubResource("Resource_i1d7g"), SubResource("Resource_uj1sm"), SubResource("Resource_curhe"), SubResource("Resource_f0eam"), SubResource("Resource_eokrl"), SubResource("Resource_oxqdx"), SubResource("Resource_3p72r")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FROSTBREATH", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IMPRISON", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"TOXIC", &"UPROAR", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"AURORAVEIL", &"AUTOTOMIZE", &"EXPLOSION", &"ICESHARD", &"ICICLECRASH", &"MAGNETRISE"])
+abilities = Array[StringName]([&"ICEBODY", &"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+wild_item_uncommon = Array[StringName]([&"NEVERMELTICE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_8v772")]([SubResource("Resource_q56t4")])
+height = 4
+weight = 57
+color = &"White"
+shape = &"HeadBase"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"VANILLITE"
+display_name = "Vanillite"

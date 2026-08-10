@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4gukw"]
+
+[resource]
+resource_name = "RETURN"
+script = ExtResource("1_4gukw")
+category = 0
+power = 1
+total_pp = 20
+function_code = &"PowerHigherWithUserHappiness"
+description = "A full-power attack that grows more powerful the more the user likes its Trainer."
+id = &"RETURN"
+display_name = "Return"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2webw"]
+
+[resource]
+resource_name = "DRAGONIUMZ"
+script = ExtResource("1_2webw")
+name_plural = "Dragonium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Dragon-type Pokémon holds to turn a Dragon-type move into Devastating Drake."
+id = &"DRAGONIUMZ"
+display_name = "Dragonium Z"
+flags = Array[StringName]([&"ZCrystal"])

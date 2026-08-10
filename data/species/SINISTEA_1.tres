@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s7u4y"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mpcwq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mcbge"]
+
+[sub_resource type="Resource" id="Resource_c8oor"]
+script = ExtResource("1_s7u4y")
+species = &"POLTEAGEIST"
+method = &"Item"
+parameter = "CHIPPEDPOT"
+
+[sub_resource type="Resource" id="Resource_fl1ke"]
+script = ExtResource("2_mpcwq")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_j62vn"]
+script = ExtResource("2_mpcwq")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_2acef"]
+script = ExtResource("2_mpcwq")
+level = 6
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_2dd8d"]
+script = ExtResource("2_mpcwq")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_q4x3a"]
+script = ExtResource("2_mpcwq")
+level = 18
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_c3sve"]
+script = ExtResource("2_mpcwq")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_286k4"]
+script = ExtResource("2_mpcwq")
+level = 30
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_fhb3l"]
+script = ExtResource("2_mpcwq")
+level = 36
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_8uait"]
+script = ExtResource("2_mpcwq")
+level = 42
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_nnbaf"]
+script = ExtResource("2_mpcwq")
+level = 48
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_saprr"]
+script = ExtResource("2_mpcwq")
+level = 54
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_r4e8c"]
+script = ExtResource("2_mpcwq")
+level = 60
+move = &"SHELLSMASH"
+
+[resource]
+resource_name = "SINISTEA_1"
+script = ExtResource("3_mcbge")
+species = &"SINISTEA"
+form = 1
+form_name = "Antique Form"
+category = "Black Tea"
+pokedex_entry = "The swirl pattern in this Pokémon's body is its weakness. If it gets stirred, the swirl loses its shape, and Sinistea gets dizzy."
+pokedex_form = 1
+types = Array[StringName]([&"GHOST"])
+base_hp = 40
+base_attack = 45
+base_defense = 45
+base_special_attack = 74
+base_special_defense = 54
+base_speed = 50
+ev_special_attack = 1
+base_exp = 62
+gender_ratio = &"Genderless"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mpcwq")]([SubResource("Resource_fl1ke"), SubResource("Resource_j62vn"), SubResource("Resource_2acef"), SubResource("Resource_2dd8d"), SubResource("Resource_q4x3a"), SubResource("Resource_c3sve"), SubResource("Resource_286k4"), SubResource("Resource_fhb3l"), SubResource("Resource_8uait"), SubResource("Resource_nnbaf"), SubResource("Resource_saprr"), SubResource("Resource_r4e8c")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"BATONPASS", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRICK", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"WEAKARMOR"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+egg_groups = Array[StringName]([&"Mineral", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_s7u4y")]([SubResource("Resource_c8oor")])
+weight = 2
+color = &"Purple"
+generation = 8
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 18)
+id = &"SINISTEA_1"
+display_name = "Sinistea"

@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ehtmy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a6lf3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7dvmn"]
+
+[sub_resource type="Resource" id="Resource_fpot6"]
+script = ExtResource("1_ehtmy")
+species = &"BIBAREL"
+method = &"Level"
+parameter = "15"
+
+[sub_resource type="Resource" id="Resource_e817a"]
+script = ExtResource("2_a6lf3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_3yq6a"]
+script = ExtResource("2_a6lf3")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_gs1dr"]
+script = ExtResource("2_a6lf3")
+level = 5
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_1uku3"]
+script = ExtResource("2_a6lf3")
+level = 9
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_a8s8e"]
+script = ExtResource("2_a6lf3")
+level = 13
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_0lqyj"]
+script = ExtResource("2_a6lf3")
+level = 17
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_tm60x"]
+script = ExtResource("2_a6lf3")
+level = 21
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_egdba"]
+script = ExtResource("2_a6lf3")
+level = 25
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_jr01k"]
+script = ExtResource("2_a6lf3")
+level = 29
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_41duy"]
+script = ExtResource("2_a6lf3")
+level = 33
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_26i45"]
+script = ExtResource("2_a6lf3")
+level = 37
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_ascac"]
+script = ExtResource("2_a6lf3")
+level = 41
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_qfp2h"]
+script = ExtResource("2_a6lf3")
+level = 45
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_lnbdu"]
+script = ExtResource("2_a6lf3")
+level = 49
+move = &"CURSE"
+
+[resource]
+resource_name = "BIDOOF"
+script = ExtResource("3_7dvmn")
+species = &"BIDOOF"
+category = "Plump Mouse"
+pokedex_entry = "With nerves of steel, nothing can perturb it. It is more agile and active than it appears."
+base_hp = 59
+base_attack = 45
+base_defense = 40
+base_special_attack = 35
+base_special_defense = 40
+base_speed = 31
+ev_hp = 1
+base_exp = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_a6lf3")]([SubResource("Resource_e817a"), SubResource("Resource_3yq6a"), SubResource("Resource_gs1dr"), SubResource("Resource_1uku3"), SubResource("Resource_a8s8e"), SubResource("Resource_0lqyj"), SubResource("Resource_tm60x"), SubResource("Resource_egdba"), SubResource("Resource_jr01k"), SubResource("Resource_41duy"), SubResource("Resource_26i45"), SubResource("Resource_ascac"), SubResource("Resource_qfp2h"), SubResource("Resource_lnbdu")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"FURYCUTTER", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"WORKUP"])
+egg_moves = Array[StringName]([&"AQUATAIL", &"DEFENSECURL", &"DOUBLEEDGE", &"FURYSWIPES", &"QUICKATTACK", &"ROLLOUT", &"SKULLBASH"])
+abilities = Array[StringName]([&"SIMPLE", &"UNAWARE"])
+hidden_abilities = Array[StringName]([&"MOODY"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ehtmy")]([SubResource("Resource_fpot6")])
+height = 5
+weight = 200
+color = &"Brown"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(4, 56)
+front_sprite_offset = Vector2i(-3, 32)
+shadow_size = 1
+id = &"BIDOOF"
+display_name = "Bidoof"

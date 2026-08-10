@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_pldik"]
+
+[resource]
+resource_name = "MIRACLEEYE"
+script = ExtResource("1_pldik")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 40
+function_code = &"StartNegateTargetEvasionStatStageAndDarkImmunity"
+description = "Enables the user to hit a Dark type with any type of move. It also enables the user to hit an evasive foe."
+id = &"MIRACLEEYE"
+display_name = "Miracle Eye"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

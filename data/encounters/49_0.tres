@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_ae1s2"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_0wn6g"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_y5x2s"]
+
+[sub_resource type="Resource" id="Resource_e5why"]
+script = ExtResource("3_y5x2s")
+weight = 20
+species = &"MAGNETON"
+min_level = 14
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_eaf25"]
+script = ExtResource("3_y5x2s")
+weight = 20
+species = &"MAGNETON"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_13k2p"]
+script = ExtResource("3_y5x2s")
+weight = 20
+species = &"NOSEPASS"
+min_level = 13
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_jdtcf"]
+script = ExtResource("3_y5x2s")
+weight = 20
+species = &"NOSEPASS"
+min_level = 14
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_ne2f3"]
+script = ExtResource("3_y5x2s")
+species = &"GEODUDE"
+min_level = 13
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_bn8bo"]
+script = ExtResource("3_y5x2s")
+species = &"MAWILE"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_v7far"]
+script = ExtResource("2_0wn6g")
+encounter_type = &"Cave"
+step_chance = 5
+slots = Array[ExtResource("3_y5x2s")]([SubResource("Resource_e5why"), SubResource("Resource_eaf25"), SubResource("Resource_13k2p"), SubResource("Resource_jdtcf"), SubResource("Resource_ne2f3"), SubResource("Resource_bn8bo")])
+
+[resource]
+resource_name = "49_0"
+script = ExtResource("1_ae1s2")
+map_id = 49
+tables = Array[ExtResource("2_0wn6g")]([SubResource("Resource_v7far")])
+id = &"49_0"
+display_name = "Map 49 v0"

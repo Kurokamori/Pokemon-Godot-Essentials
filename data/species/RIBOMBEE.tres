@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_g7iyl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nysmw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_60tef"]
+
+[sub_resource type="Resource" id="Resource_nntjd"]
+script = ExtResource("1_g7iyl")
+species = &"CUTIEFLY"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3dvk8"]
+script = ExtResource("2_nysmw")
+level = 0
+move = &"POLLENPUFF"
+
+[sub_resource type="Resource" id="Resource_dvy7f"]
+script = ExtResource("2_nysmw")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_5vx8y"]
+script = ExtResource("2_nysmw")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_1gq8j"]
+script = ExtResource("2_nysmw")
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_p2dhg"]
+script = ExtResource("2_nysmw")
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_m6win"]
+script = ExtResource("2_nysmw")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_48uv5"]
+script = ExtResource("2_nysmw")
+level = 18
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_uctiq"]
+script = ExtResource("2_nysmw")
+level = 24
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_7orbj"]
+script = ExtResource("2_nysmw")
+level = 32
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_gsotl"]
+script = ExtResource("2_nysmw")
+level = 40
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_14jrx"]
+script = ExtResource("2_nysmw")
+level = 48
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_5rl1i"]
+script = ExtResource("2_nysmw")
+level = 56
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_p12yy"]
+script = ExtResource("2_nysmw")
+level = 64
+move = &"QUIVERDANCE"
+
+[resource]
+resource_name = "RIBOMBEE"
+script = ExtResource("3_60tef")
+species = &"RIBOMBEE"
+category = "Bee Fly"
+pokedex_entry = "Rain makes pollen damp, so Ribombee hates rain. When it sees ominous clouds, it finds a hollow in a tree, where it waits stock-still."
+types = Array[StringName]([&"BUG", &"FAIRY"])
+base_hp = 60
+base_attack = 55
+base_defense = 60
+base_special_attack = 95
+base_special_defense = 70
+base_speed = 124
+ev_speed = 2
+base_exp = 162
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nysmw")]([SubResource("Resource_3dvk8"), SubResource("Resource_dvy7f"), SubResource("Resource_5vx8y"), SubResource("Resource_1gq8j"), SubResource("Resource_p2dhg"), SubResource("Resource_m6win"), SubResource("Resource_48uv5"), SubResource("Resource_uctiq"), SubResource("Resource_7orbj"), SubResource("Resource_gsotl"), SubResource("Resource_14jrx"), SubResource("Resource_5rl1i"), SubResource("Resource_p12yy")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BUGBITE", &"BUGBUZZ", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"DUALWINGBEAT", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"INFESTATION", &"LASTRESORT", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PLAYROUGH", &"POLLENPUFF", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"UTURN", &"WONDERROOM"])
+abilities = Array[StringName]([&"HONEYGATHER", &"SHIELDDUST"])
+hidden_abilities = Array[StringName]([&"SWEETVEIL"])
+wild_item_uncommon = Array[StringName]([&"HONEY"])
+egg_groups = Array[StringName]([&"Bug", &"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_g7iyl")]([SubResource("Resource_nntjd")])
+height = 2
+weight = 5
+color = &"Yellow"
+shape = &"MultiWinged"
+generation = 7
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(8, 14)
+shadow_size = 1
+id = &"RIBOMBEE"
+display_name = "Ribombee"

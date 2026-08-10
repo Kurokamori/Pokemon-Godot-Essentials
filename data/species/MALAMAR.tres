@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_d0hps"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_43aia"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bn6rf"]
+
+[sub_resource type="Resource" id="Resource_mfr6e"]
+script = ExtResource("1_d0hps")
+species = &"INKAY"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ppk4e"]
+script = ExtResource("2_43aia")
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_kll1r"]
+script = ExtResource("2_43aia")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_u7acx"]
+script = ExtResource("2_43aia")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_2q10h"]
+script = ExtResource("2_43aia")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_h5o38"]
+script = ExtResource("2_43aia")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_5ifnh"]
+script = ExtResource("2_43aia")
+level = 9
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_jbe4m"]
+script = ExtResource("2_43aia")
+level = 12
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_5ooqi"]
+script = ExtResource("2_43aia")
+level = 15
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_bcx4o"]
+script = ExtResource("2_43aia")
+level = 18
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_m2gil"]
+script = ExtResource("2_43aia")
+level = 21
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_oeefj"]
+script = ExtResource("2_43aia")
+level = 24
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_uruyf"]
+script = ExtResource("2_43aia")
+level = 27
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_3eynp"]
+script = ExtResource("2_43aia")
+level = 33
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_u1oau"]
+script = ExtResource("2_43aia")
+level = 37
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_2x5vy"]
+script = ExtResource("2_43aia")
+level = 42
+move = &"TOPSYTURVY"
+
+[sub_resource type="Resource" id="Resource_cm4r2"]
+script = ExtResource("2_43aia")
+level = 47
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "MALAMAR"
+script = ExtResource("3_bn6rf")
+species = &"MALAMAR"
+category = "Overturning"
+pokedex_entry = "It lures prey close with hypnotic motions, then wraps its tentacles around it before finishing it off with digestive fluids."
+types = Array[StringName]([&"DARK", &"PSYCHIC"])
+base_hp = 86
+base_attack = 92
+base_defense = 88
+base_special_attack = 68
+base_special_defense = 75
+base_speed = 73
+ev_attack = 2
+base_exp = 169
+catch_rate = 80
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_43aia")]([SubResource("Resource_ppk4e"), SubResource("Resource_kll1r"), SubResource("Resource_u7acx"), SubResource("Resource_2q10h"), SubResource("Resource_h5o38"), SubResource("Resource_5ifnh"), SubResource("Resource_jbe4m"), SubResource("Resource_5ooqi"), SubResource("Resource_bcx4o"), SubResource("Resource_m2gil"), SubResource("Resource_oeefj"), SubResource("Resource_uruyf"), SubResource("Resource_3eynp"), SubResource("Resource_u1oau"), SubResource("Resource_2x5vy"), SubResource("Resource_cm4r2")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BIND", &"BLOCK", &"BRUTALSWING", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GUARDSWAP", &"HIDDENPOWER", &"HYPERBEAM", &"KNOCKOFF", &"LASHOUT", &"LIGHTSCREEN", &"LIQUIDATION", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THROATCHOP", &"THUNDERBOLT", &"TORMENT", &"TOXIC", &"TRICKROOM"])
+abilities = Array[StringName]([&"CONTRARY", &"SUCTIONCUPS"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Water1", &"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_d0hps")]([SubResource("Resource_mfr6e")])
+height = 15
+weight = 470
+color = &"Blue"
+shape = &"HeadBase"
+generation = 6
+back_sprite_offset = Vector2i(0, 36)
+front_sprite_offset = Vector2i(-6, 7)
+shadow_size = 1
+id = &"MALAMAR"
+display_name = "Malamar"

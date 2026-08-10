@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xuagp"]
+
+[resource]
+resource_name = "TRICK"
+script = ExtResource("1_xuagp")
+type = &"PSYCHIC"
+total_pp = 10
+function_code = &"UserTargetSwapItems"
+description = "The user catches the target off guard and swaps its held item with its own."
+id = &"TRICK"
+display_name = "Trick"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

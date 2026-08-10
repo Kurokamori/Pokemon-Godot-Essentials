@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_lkfi5"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_3lt0o"]
+
+[sub_resource type="Resource" id="Resource_7g8ar"]
+script = ExtResource("1_lkfi5")
+species = &"STARYU"
+level = 15
+
+[sub_resource type="Resource" id="Resource_1sgnn"]
+script = ExtResource("1_lkfi5")
+species = &"GOLDEEN"
+level = 11
+
+[resource]
+resource_name = "SWIMMER2_F|Ariel|0"
+script = ExtResource("2_3lt0o")
+trainer_type = &"SWIMMER2_F"
+lose_text = "Washed out!"
+pokemon = Array[ExtResource("1_lkfi5")]([SubResource("Resource_7g8ar"), SubResource("Resource_1sgnn")])
+id = &"SWIMMER2_F|Ariel|0"
+display_name = "Ariel"

@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dh0me"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_m26xj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cciqs"]
+
+[sub_resource type="Resource" id="Resource_wpsnm"]
+script = ExtResource("1_dh0me")
+species = &"GABITE"
+method = &"Level"
+parameter = "48"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_uxumc"]
+script = ExtResource("2_m26xj")
+level = 0
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_2spuf"]
+script = ExtResource("2_m26xj")
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_8y4x2"]
+script = ExtResource("2_m26xj")
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_ohpst"]
+script = ExtResource("2_m26xj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_jipi4"]
+script = ExtResource("2_m26xj")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_og7ko"]
+script = ExtResource("2_m26xj")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_74tal"]
+script = ExtResource("2_m26xj")
+level = 18
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_6a5ee"]
+script = ExtResource("2_m26xj")
+level = 27
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_24hsq"]
+script = ExtResource("2_m26xj")
+level = 34
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_pyp4e"]
+script = ExtResource("2_m26xj")
+level = 42
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_w4hpc"]
+script = ExtResource("2_m26xj")
+level = 52
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_gtfxv"]
+script = ExtResource("2_m26xj")
+level = 62
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_7xi5e"]
+script = ExtResource("2_m26xj")
+level = 72
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_350ci"]
+script = ExtResource("2_m26xj")
+level = 82
+move = &"DRAGONRUSH"
+
+[resource]
+resource_name = "GARCHOMP_1"
+script = ExtResource("3_cciqs")
+species = &"GARCHOMP"
+form = 1
+form_name = "Mega Garchomp"
+category = "Mach"
+pokedex_entry = "Its vaunted wings become scythes, sending it mad with rage. It swings its scythes wildly and slices the ground to pieces."
+pokedex_form = 1
+types = Array[StringName]([&"DRAGON", &"GROUND"])
+base_hp = 108
+base_attack = 170
+base_defense = 115
+base_special_attack = 120
+base_special_defense = 95
+base_speed = 92
+ev_attack = 3
+base_exp = 350
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_m26xj")]([SubResource("Resource_uxumc"), SubResource("Resource_2spuf"), SubResource("Resource_8y4x2"), SubResource("Resource_ohpst"), SubResource("Resource_jipi4"), SubResource("Resource_og7ko"), SubResource("Resource_74tal"), SubResource("Resource_6a5ee"), SubResource("Resource_24hsq"), SubResource("Resource_pyp4e"), SubResource("Resource_w4hpc"), SubResource("Resource_gtfxv"), SubResource("Resource_7xi5e"), SubResource("Resource_350ci")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DIG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALCHOP", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALESHOT", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TWISTER", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SANDFORCE"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_dh0me")]([SubResource("Resource_wpsnm")])
+height = 19
+weight = 950
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 6
+mega_stone = &"GARCHOMPITE"
+back_sprite_offset = Vector2i(2, 44)
+front_sprite_offset = Vector2i(2, 14)
+id = &"GARCHOMP_1"
+display_name = "Garchomp"

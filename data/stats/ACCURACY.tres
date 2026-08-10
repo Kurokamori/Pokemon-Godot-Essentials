@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StatData" format=3]
+
+[ext_resource type="Script" path="res://src/data/stat_data.gd" id="1_eq4yn"]
+
+[resource]
+resource_name = "ACCURACY"
+script = ExtResource("1_eq4yn")
+type = 2
+name_brief = "Acc"
+id = &"ACCURACY"
+display_name = "accuracy"

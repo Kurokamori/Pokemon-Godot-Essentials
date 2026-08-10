@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0rpty"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3cnog"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_48kv8"]
+
+[sub_resource type="Resource" id="Resource_w36j5"]
+script = ExtResource("1_0rpty")
+species = &"DRILBUR"
+method = &"Level"
+parameter = "31"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_hxkur"]
+script = ExtResource("2_3cnog")
+level = 0
+move = &"HORNDRILL"
+
+[sub_resource type="Resource" id="Resource_lqj8o"]
+script = ExtResource("2_3cnog")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_hnuk8"]
+script = ExtResource("2_3cnog")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_akchk"]
+script = ExtResource("2_3cnog")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_mip1v"]
+script = ExtResource("2_3cnog")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_v7cn8"]
+script = ExtResource("2_3cnog")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_h5qfy"]
+script = ExtResource("2_3cnog")
+level = 16
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_4d3nt"]
+script = ExtResource("2_3cnog")
+level = 20
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_vss1o"]
+script = ExtResource("2_3cnog")
+level = 24
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_xijck"]
+script = ExtResource("2_3cnog")
+level = 28
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_jl0od"]
+script = ExtResource("2_3cnog")
+level = 34
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_t3jfo"]
+script = ExtResource("2_3cnog")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_5l342"]
+script = ExtResource("2_3cnog")
+level = 46
+move = &"DRILLRUN"
+
+[sub_resource type="Resource" id="Resource_2hhlc"]
+script = ExtResource("2_3cnog")
+level = 52
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_qntp6"]
+script = ExtResource("2_3cnog")
+level = 58
+move = &"FISSURE"
+
+[resource]
+resource_name = "EXCADRILL"
+script = ExtResource("3_48kv8")
+species = &"EXCADRILL"
+category = "Subterrene"
+pokedex_entry = "More than 300 feet below the surface, they build mazelike nests. Their activity can be destructive to subway tunnels."
+types = Array[StringName]([&"GROUND", &"STEEL"])
+base_hp = 110
+base_attack = 135
+base_defense = 60
+base_special_attack = 50
+base_special_defense = 65
+base_speed = 88
+ev_attack = 2
+base_exp = 178
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3cnog")]([SubResource("Resource_hxkur"), SubResource("Resource_lqj8o"), SubResource("Resource_hnuk8"), SubResource("Resource_akchk"), SubResource("Resource_mip1v"), SubResource("Resource_v7cn8"), SubResource("Resource_h5qfy"), SubResource("Resource_4d3nt"), SubResource("Resource_vss1o"), SubResource("Resource_xijck"), SubResource("Resource_jl0od"), SubResource("Resource_t3jfo"), SubResource("Resource_5l342"), SubResource("Resource_2hhlc"), SubResource("Resource_qntp6")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"MAGNETRISE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SMARTSTRIKE", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TOXIC", &"XSCISSOR"])
+abilities = Array[StringName]([&"SANDRUSH", &"SANDFORCE"])
+hidden_abilities = Array[StringName]([&"MOLDBREAKER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0rpty")]([SubResource("Resource_w36j5")])
+height = 7
+weight = 404
+color = &"Gray"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(10, 48)
+front_sprite_offset = Vector2i(0, 23)
+id = &"EXCADRILL"
+display_name = "Excadrill"

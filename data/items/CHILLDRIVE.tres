@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_d1vbx"]
+
+[resource]
+resource_name = "CHILLDRIVE"
+script = ExtResource("1_d1vbx")
+name_plural = "Chill Drives"
+description = "A cassette to be held by Genesect. It changes Techno Blast to an Ice-type move."
+id = &"CHILLDRIVE"
+display_name = "Chill Drive"
+flags = Array[StringName]([&"Fling_70"])

@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3d33n"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_g4ftu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7w4n6"]
+
+[sub_resource type="Resource" id="Resource_5deju"]
+script = ExtResource("1_3d33n")
+species = &"MAGIKARP"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kaxrt"]
+script = ExtResource("2_g4ftu")
+level = 0
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_1n320"]
+script = ExtResource("2_g4ftu")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_0eq8m"]
+script = ExtResource("2_g4ftu")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_tusn8"]
+script = ExtResource("2_g4ftu")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_vsgj7"]
+script = ExtResource("2_g4ftu")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ft1i5"]
+script = ExtResource("2_g4ftu")
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_a48sa"]
+script = ExtResource("2_g4ftu")
+level = 4
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_m28bu"]
+script = ExtResource("2_g4ftu")
+level = 8
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_hb116"]
+script = ExtResource("2_g4ftu")
+level = 12
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_sgyvq"]
+script = ExtResource("2_g4ftu")
+level = 16
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_fqji1"]
+script = ExtResource("2_g4ftu")
+level = 21
+move = &"WATERFALL"
+
+[sub_resource type="Resource" id="Resource_s62fe"]
+script = ExtResource("2_g4ftu")
+level = 24
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_m124x"]
+script = ExtResource("2_g4ftu")
+level = 28
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_dj7wk"]
+script = ExtResource("2_g4ftu")
+level = 32
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_x75do"]
+script = ExtResource("2_g4ftu")
+level = 36
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_6qhce"]
+script = ExtResource("2_g4ftu")
+level = 40
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_cmvrw"]
+script = ExtResource("2_g4ftu")
+level = 44
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_s6rng"]
+script = ExtResource("2_g4ftu")
+level = 48
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_mtntj"]
+script = ExtResource("2_g4ftu")
+level = 52
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "GYARADOS"
+script = ExtResource("3_7w4n6")
+species = &"GYARADOS"
+category = "Atrocious"
+pokedex_entry = "It is an extremely vicious and violent Pokémon. When humans begin to fight, it will appear and burn everything to the ground with intensely hot flames."
+types = Array[StringName]([&"WATER", &"FLYING"])
+base_hp = 95
+base_attack = 125
+base_defense = 79
+base_special_attack = 60
+base_special_defense = 100
+base_speed = 81
+ev_attack = 2
+base_exp = 189
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_g4ftu")]([SubResource("Resource_kaxrt"), SubResource("Resource_1n320"), SubResource("Resource_0eq8m"), SubResource("Resource_tusn8"), SubResource("Resource_vsgj7"), SubResource("Resource_ft1i5"), SubResource("Resource_a48sa"), SubResource("Resource_m28bu"), SubResource("Resource_hb116"), SubResource("Resource_sgyvq"), SubResource("Resource_fqji1"), SubResource("Resource_s62fe"), SubResource("Resource_m124x"), SubResource("Resource_dj7wk"), SubResource("Resource_x75do"), SubResource("Resource_6qhce"), SubResource("Resource_cmvrw"), SubResource("Resource_s6rng"), SubResource("Resource_mtntj")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRINE", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICYWIND", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASHOUT", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POWERWHIP", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SCALD", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SPITE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TWISTER", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"MOXIE"])
+egg_groups = Array[StringName]([&"Water2", &"Dragon"])
+hatch_steps = 1280
+evolutions = Array[ExtResource("1_3d33n")]([SubResource("Resource_5deju")])
+height = 65
+weight = 2350
+color = &"Blue"
+shape = &"Serpentine"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-4, 14)
+shadow_size = 3
+id = &"GYARADOS"
+display_name = "Gyarados"

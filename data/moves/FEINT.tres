@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_sogow"]
+
+[resource]
+resource_name = "FEINT"
+script = ExtResource("1_sogow")
+category = 0
+power = 30
+total_pp = 10
+priority = 2
+function_code = &"RemoveProtections"
+description = "An attack that hits a target using Protect or Detect. It also lifts the effects of those moves."
+id = &"FEINT"
+display_name = "Feint"
+flags = Array[StringName]([&"CanMirrorMove"])

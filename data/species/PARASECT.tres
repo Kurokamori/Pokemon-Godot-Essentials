@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_427uw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_als71"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_k2hrm"]
+
+[sub_resource type="Resource" id="Resource_clnx0"]
+script = ExtResource("1_427uw")
+species = &"PARAS"
+method = &"Level"
+parameter = "24"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_p5duo"]
+script = ExtResource("2_als71")
+move = &"CROSSPOISON"
+
+[sub_resource type="Resource" id="Resource_4m27g"]
+script = ExtResource("2_als71")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_78kvu"]
+script = ExtResource("2_als71")
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_7m7hp"]
+script = ExtResource("2_als71")
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_kbvcf"]
+script = ExtResource("2_als71")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_cdgdk"]
+script = ExtResource("2_als71")
+level = 6
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_3tk68"]
+script = ExtResource("2_als71")
+level = 6
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_o7qn3"]
+script = ExtResource("2_als71")
+level = 11
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_rrcxw"]
+script = ExtResource("2_als71")
+level = 17
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_j0hu1"]
+script = ExtResource("2_als71")
+level = 22
+move = &"SPORE"
+
+[sub_resource type="Resource" id="Resource_3htef"]
+script = ExtResource("2_als71")
+level = 29
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_uj1f5"]
+script = ExtResource("2_als71")
+level = 37
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_8t02o"]
+script = ExtResource("2_als71")
+level = 44
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_sn4oq"]
+script = ExtResource("2_als71")
+level = 51
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_axmvv"]
+script = ExtResource("2_als71")
+level = 59
+move = &"RAGEPOWDER"
+
+[sub_resource type="Resource" id="Resource_funp8"]
+script = ExtResource("2_als71")
+level = 66
+move = &"XSCISSOR"
+
+[resource]
+resource_name = "PARASECT"
+script = ExtResource("3_k2hrm")
+species = &"PARASECT"
+category = "Mushroom"
+pokedex_entry = "Parasect are known to infest the roots of large trees en masse and drain nutrients. When an infested tree dies, they move onto another tree all at once."
+types = Array[StringName]([&"BUG", &"GRASS"])
+base_hp = 60
+base_attack = 95
+base_defense = 80
+base_special_attack = 60
+base_special_defense = 80
+base_speed = 30
+ev_attack = 2
+ev_defense = 1
+base_exp = 142
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_als71")]([SubResource("Resource_p5duo"), SubResource("Resource_4m27g"), SubResource("Resource_78kvu"), SubResource("Resource_7m7hp"), SubResource("Resource_kbvcf"), SubResource("Resource_cdgdk"), SubResource("Resource_3tk68"), SubResource("Resource_o7qn3"), SubResource("Resource_rrcxw"), SubResource("Resource_j0hu1"), SubResource("Resource_3htef"), SubResource("Resource_uj1f5"), SubResource("Resource_8t02o"), SubResource("Resource_sn4oq"), SubResource("Resource_axmvv"), SubResource("Resource_funp8")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BUGBITE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"KNOCKOFF", &"LEECHLIFE", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"THROATCHOP", &"VENOSHOCK", &"WORRYSEED", &"XSCISSOR"])
+abilities = Array[StringName]([&"EFFECTSPORE", &"DRYSKIN"])
+hidden_abilities = Array[StringName]([&"DAMP"])
+wild_item_common = Array[StringName]([&"TINYMUSHROOM"])
+wild_item_uncommon = Array[StringName]([&"BIGMUSHROOM"])
+egg_groups = Array[StringName]([&"Bug", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_427uw")]([SubResource("Resource_clnx0")])
+height = 10
+weight = 295
+shape = &"Insectoid"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 27)
+shadow_size = 3
+id = &"PARASECT"
+display_name = "Parasect"

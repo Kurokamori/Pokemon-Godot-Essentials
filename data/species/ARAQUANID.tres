@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vkeby"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_j6am1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vmss4"]
+
+[sub_resource type="Resource" id="Resource_pedfr"]
+script = ExtResource("1_vkeby")
+species = &"DEWPIDER"
+method = &"Level"
+parameter = "22"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7mj0d"]
+script = ExtResource("2_j6am1")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_i1ifi"]
+script = ExtResource("2_j6am1")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_1q6mk"]
+script = ExtResource("2_j6am1")
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_g2fu3"]
+script = ExtResource("2_j6am1")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_upcf6"]
+script = ExtResource("2_j6am1")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_bvsfb"]
+script = ExtResource("2_j6am1")
+level = 12
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_jcws5"]
+script = ExtResource("2_j6am1")
+level = 16
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_7v825"]
+script = ExtResource("2_j6am1")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_355gp"]
+script = ExtResource("2_j6am1")
+level = 26
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_vw7ss"]
+script = ExtResource("2_j6am1")
+level = 32
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_ecsdn"]
+script = ExtResource("2_j6am1")
+level = 38
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_5eu4b"]
+script = ExtResource("2_j6am1")
+level = 44
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_y2ei4"]
+script = ExtResource("2_j6am1")
+level = 50
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_gxjcx"]
+script = ExtResource("2_j6am1")
+level = 56
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_3un2i"]
+script = ExtResource("2_j6am1")
+level = 62
+move = &"MIRRORCOAT"
+
+[resource]
+resource_name = "ARAQUANID"
+script = ExtResource("3_vmss4")
+species = &"ARAQUANID"
+category = "Water Bubble"
+pokedex_entry = "It delivers headbutts with the water bubble on its head. Small Pokémon get sucked into the bubble, where they drown."
+types = Array[StringName]([&"WATER", &"BUG"])
+base_hp = 68
+base_attack = 70
+base_defense = 92
+base_special_attack = 50
+base_special_defense = 132
+base_speed = 42
+ev_special_defense = 2
+base_exp = 159
+catch_rate = 100
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_j6am1")]([SubResource("Resource_7mj0d"), SubResource("Resource_i1ifi"), SubResource("Resource_1q6mk"), SubResource("Resource_g2fu3"), SubResource("Resource_upcf6"), SubResource("Resource_bvsfb"), SubResource("Resource_jcws5"), SubResource("Resource_7v825"), SubResource("Resource_355gp"), SubResource("Resource_vw7ss"), SubResource("Resource_ecsdn"), SubResource("Resource_5eu4b"), SubResource("Resource_y2ei4"), SubResource("Resource_gxjcx"), SubResource("Resource_3un2i")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"GIGADRAIN", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"LASERFOCUS", &"LEECHLIFE", &"LIQUIDATION", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WATERPULSE", &"WONDERROOM", &"XSCISSOR"])
+abilities = Array[StringName]([&"WATERBUBBLE"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+wild_item_uncommon = Array[StringName]([&"MYSTICWATER"])
+egg_groups = Array[StringName]([&"Water1", &"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_vkeby")]([SubResource("Resource_pedfr")])
+height = 18
+weight = 820
+color = &"Green"
+shape = &"Insectoid"
+generation = 7
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-1, 25)
+shadow_size = 3
+id = &"ARAQUANID"
+display_name = "Araquanid"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_s7chs"]
+
+[resource]
+resource_name = "ODDINCENSE"
+script = ExtResource("1_s7chs")
+name_plural = "Odd Incenses"
+portion_name = "jar of Odd Incense"
+portion_name_plural = "jars of Odd Incense"
+price = 2000
+sell_price = 1000
+description = "An item to be held by a Pokémon. This exotic-smelling incense boosts the power of Psychic-type moves."
+id = &"ODDINCENSE"
+display_name = "Odd Incense"
+flags = Array[StringName]([&"Fling_10"])

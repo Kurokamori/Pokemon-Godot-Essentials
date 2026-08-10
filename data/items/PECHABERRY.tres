@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_j528c"]
+
+[resource]
+resource_name = "PECHABERRY"
+script = ExtResource("1_j528c")
+name_plural = "Pecha Berries"
+pocket = 5
+price = 20
+sell_price = 10
+field_use = 1
+battle_use = 1
+description = "It may be used or held by a Pokémon to recover from poison."
+id = &"PECHABERRY"
+display_name = "Pecha Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_ELECTRIC_80"])

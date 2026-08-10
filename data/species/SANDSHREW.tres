@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hxdxj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jj26f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_odoxa"]
+
+[sub_resource type="Resource" id="Resource_hcuhp"]
+script = ExtResource("1_hxdxj")
+species = &"SANDSLASH"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_ofsop"]
+script = ExtResource("2_jj26f")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_cvvue"]
+script = ExtResource("2_jj26f")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_q7iok"]
+script = ExtResource("2_jj26f")
+level = 3
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_pc10s"]
+script = ExtResource("2_jj26f")
+level = 6
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_erb23"]
+script = ExtResource("2_jj26f")
+level = 9
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_exxsy"]
+script = ExtResource("2_jj26f")
+level = 12
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_6uixd"]
+script = ExtResource("2_jj26f")
+level = 15
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_w20gi"]
+script = ExtResource("2_jj26f")
+level = 18
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_u7s3l"]
+script = ExtResource("2_jj26f")
+level = 21
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_ltb32"]
+script = ExtResource("2_jj26f")
+level = 24
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_s72sw"]
+script = ExtResource("2_jj26f")
+level = 27
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ys5jn"]
+script = ExtResource("2_jj26f")
+level = 30
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ewg3u"]
+script = ExtResource("2_jj26f")
+level = 33
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_ay7s2"]
+script = ExtResource("2_jj26f")
+level = 36
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_018u6"]
+script = ExtResource("2_jj26f")
+level = 39
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_yh58h"]
+script = ExtResource("2_jj26f")
+level = 42
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_iafwr"]
+script = ExtResource("2_jj26f")
+level = 45
+move = &"EARTHQUAKE"
+
+[resource]
+resource_name = "SANDSHREW"
+script = ExtResource("3_odoxa")
+species = &"SANDSHREW"
+category = "Mouse"
+pokedex_entry = "When it curls up in a ball, it can make any attack bounce off harmlessly. Its hide has turned tough and solid as a result of living in the desert."
+types = Array[StringName]([&"GROUND"])
+base_hp = 50
+base_attack = 75
+base_defense = 85
+base_special_attack = 20
+base_special_defense = 30
+base_speed = 40
+ev_defense = 1
+base_exp = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jj26f")]([SubResource("Resource_ofsop"), SubResource("Resource_cvvue"), SubResource("Resource_q7iok"), SubResource("Resource_pc10s"), SubResource("Resource_erb23"), SubResource("Resource_exxsy"), SubResource("Resource_6uixd"), SubResource("Resource_w20gi"), SubResource("Resource_u7s3l"), SubResource("Resource_ltb32"), SubResource("Resource_s72sw"), SubResource("Resource_ys5jn"), SubResource("Resource_ewg3u"), SubResource("Resource_ay7s2"), SubResource("Resource_018u6"), SubResource("Resource_yh58h"), SubResource("Resource_iafwr")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AMNESIA", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"IRONTAIL", &"KNOCKOFF", &"LEECHLIFE", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THIEF", &"THROATCHOP", &"WORKUP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"COUNTER", &"CRUSHCLAW", &"FLAIL", &"HONECLAWS", &"METALCLAW", &"MUDSHOT", &"MUDSLAP", &"NIGHTSLASH", &"RAPIDSPIN"])
+abilities = Array[StringName]([&"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"SANDRUSH"])
+wild_item_uncommon = Array[StringName]([&"GRIPCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_hxdxj")]([SubResource("Resource_hcuhp")])
+height = 6
+weight = 120
+color = &"Yellow"
+shape = &"BipedalTail"
+habitat = &"RoughTerrain"
+generation = 1
+back_sprite_offset = Vector2i(2, 56)
+front_sprite_offset = Vector2i(2, 34)
+shadow_size = 1
+id = &"SANDSHREW"
+display_name = "Sandshrew"

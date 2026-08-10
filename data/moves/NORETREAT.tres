@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_etdfc"]
+
+[resource]
+resource_name = "NORETREAT"
+script = ExtResource("1_etdfc")
+type = &"FIGHTING"
+accuracy = 0
+target = &"User"
+function_code = &"RaiseUserMainStats1TrapUserInBattle"
+description = "This move raises all the user's stats but prevents the user from switching out or fleeing."
+id = &"NORETREAT"
+display_name = "No Retreat"

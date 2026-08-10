@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wb522"]
+
+[resource]
+resource_name = "REVIVE"
+script = ExtResource("1_wb522")
+name_plural = "Revives"
+pocket = 2
+price = 2000
+sell_price = 1000
+field_use = 1
+battle_use = 1
+description = "A medicine that revives a fainted Pokémon. It restores half the Pokémon's maximum HP."
+id = &"REVIVE"
+display_name = "Revive"
+flags = Array[StringName]([&"Fling_30"])

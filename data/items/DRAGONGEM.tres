@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_e1ixq"]
+
+[resource]
+resource_name = "DRAGONGEM"
+script = ExtResource("1_e1ixq")
+name_plural = "Dragon Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with a draconic essence. When held, it strengthens the power of a Dragon-type move only once."
+id = &"DRAGONGEM"
+display_name = "Dragon Gem"
+flags = Array[StringName]([&"TypeGem"])

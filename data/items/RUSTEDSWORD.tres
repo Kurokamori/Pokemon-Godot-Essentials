@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_qfpf3"]
+
+[resource]
+resource_name = "RUSTEDSWORD"
+script = ExtResource("1_qfpf3")
+name_plural = "Rusted Swords"
+description = "It is said that a hero used this sword to halt a disaster in ancient times. But it's grown rusty and worn."
+id = &"RUSTEDSWORD"
+display_name = "Rusted Sword"

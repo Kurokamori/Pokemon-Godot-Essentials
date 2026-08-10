@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bk5lbcott70xx"
+path="res://.godot/imported/Bug catching 1st.ogg-2a676bf89f007e09eed29ba20de09467.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/me/Bug catching 1st.ogg"
+dest_files=["res://.godot/imported/Bug catching 1st.ogg-2a676bf89f007e09eed29ba20de09467.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

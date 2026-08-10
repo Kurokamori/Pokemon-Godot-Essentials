@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_j4ahk"]
+
+[resource]
+resource_name = "ROLLINGKICK"
+script = ExtResource("1_j4ahk")
+type = &"FIGHTING"
+category = 0
+power = 60
+accuracy = 85
+total_pp = 15
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "The user lashes out with a quick, spinning kick. It may also make the target flinch."
+id = &"ROLLINGKICK"
+display_name = "Rolling Kick"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

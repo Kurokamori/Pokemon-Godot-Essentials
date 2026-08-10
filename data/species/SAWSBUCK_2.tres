@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wgqkb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qcx78"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jwx8s"]
+
+[sub_resource type="Resource" id="Resource_71ixe"]
+script = ExtResource("1_wgqkb")
+species = &"DEERLING"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_vs4pf"]
+script = ExtResource("2_qcx78")
+level = 0
+move = &"HORNLEECH"
+
+[sub_resource type="Resource" id="Resource_l10r1"]
+script = ExtResource("2_qcx78")
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_3cq75"]
+script = ExtResource("2_qcx78")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_g0jnx"]
+script = ExtResource("2_qcx78")
+move = &"CAMOUFLAGE"
+
+[sub_resource type="Resource" id="Resource_t5sog"]
+script = ExtResource("2_qcx78")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_adirw"]
+script = ExtResource("2_qcx78")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_er4dy"]
+script = ExtResource("2_qcx78")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_xksi6"]
+script = ExtResource("2_qcx78")
+level = 7
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_p6m7j"]
+script = ExtResource("2_qcx78")
+level = 10
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_ekcor"]
+script = ExtResource("2_qcx78")
+level = 13
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_eeyur"]
+script = ExtResource("2_qcx78")
+level = 16
+move = &"FEINTATTACK"
+
+[sub_resource type="Resource" id="Resource_swfqu"]
+script = ExtResource("2_qcx78")
+level = 20
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_26bj3"]
+script = ExtResource("2_qcx78")
+level = 24
+move = &"JUMPKICK"
+
+[sub_resource type="Resource" id="Resource_airf1"]
+script = ExtResource("2_qcx78")
+level = 28
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_db8sq"]
+script = ExtResource("2_qcx78")
+level = 32
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_hvyc8"]
+script = ExtResource("2_qcx78")
+level = 36
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_v2io5"]
+script = ExtResource("2_qcx78")
+level = 44
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_6jqap"]
+script = ExtResource("2_qcx78")
+level = 52
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_lnxim"]
+script = ExtResource("2_qcx78")
+level = 60
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "SAWSBUCK_2"
+script = ExtResource("3_jwx8s")
+species = &"SAWSBUCK"
+form = 2
+form_name = "Autumn Form"
+category = "Season"
+pokedex_entry = "The plants growing on its horns change according to the season. The leaders of the herd possess magnificent horns."
+pokedex_form = 2
+types = Array[StringName]([&"NORMAL", &"GRASS"])
+base_hp = 80
+base_attack = 100
+base_defense = 70
+base_special_attack = 60
+base_special_defense = 70
+base_speed = 95
+ev_attack = 2
+base_exp = 166
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qcx78")]([SubResource("Resource_vs4pf"), SubResource("Resource_l10r1"), SubResource("Resource_3cq75"), SubResource("Resource_g0jnx"), SubResource("Resource_t5sog"), SubResource("Resource_adirw"), SubResource("Resource_er4dy"), SubResource("Resource_xksi6"), SubResource("Resource_p6m7j"), SubResource("Resource_ekcor"), SubResource("Resource_eeyur"), SubResource("Resource_swfqu"), SubResource("Resource_26bj3"), SubResource("Resource_airf1"), SubResource("Resource_db8sq"), SubResource("Resource_hvyc8"), SubResource("Resource_v2io5"), SubResource("Resource_6jqap"), SubResource("Resource_lnxim")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"LASTRESORT", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THUNDERWAVE", &"TOXIC", &"WILDCHARGE", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"SAPSIPPER"])
+hidden_abilities = Array[StringName]([&"SERENEGRACE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_wgqkb")]([SubResource("Resource_71ixe")])
+height = 19
+weight = 925
+color = &"Brown"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 14)
+id = &"SAWSBUCK_2"
+display_name = "Sawsbuck"

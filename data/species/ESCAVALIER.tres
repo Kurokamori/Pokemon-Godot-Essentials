@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ovckx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_sgr5o"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_epg7d"]
+
+[sub_resource type="Resource" id="Resource_i55xx"]
+script = ExtResource("1_ovckx")
+species = &"KARRABLAST"
+method = &"TradeSpecies"
+parameter = "SHELMET"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pqwdo"]
+script = ExtResource("2_sgr5o")
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_3iokt"]
+script = ExtResource("2_sgr5o")
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_5ekkj"]
+script = ExtResource("2_sgr5o")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_o6xie"]
+script = ExtResource("2_sgr5o")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_vvym1"]
+script = ExtResource("2_sgr5o")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_t8ykn"]
+script = ExtResource("2_sgr5o")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_xim0i"]
+script = ExtResource("2_sgr5o")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_jg3cv"]
+script = ExtResource("2_sgr5o")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_r4ja2"]
+script = ExtResource("2_sgr5o")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_k62p1"]
+script = ExtResource("2_sgr5o")
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_atamg"]
+script = ExtResource("2_sgr5o")
+level = 12
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_cyupo"]
+script = ExtResource("2_sgr5o")
+level = 16
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_xyk3a"]
+script = ExtResource("2_sgr5o")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_e88ey"]
+script = ExtResource("2_sgr5o")
+level = 24
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_ldgxp"]
+script = ExtResource("2_sgr5o")
+level = 28
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_407qe"]
+script = ExtResource("2_sgr5o")
+level = 32
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_c1jqn"]
+script = ExtResource("2_sgr5o")
+level = 36
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_gfcky"]
+script = ExtResource("2_sgr5o")
+level = 40
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_xcivt"]
+script = ExtResource("2_sgr5o")
+level = 44
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_4qrrb"]
+script = ExtResource("2_sgr5o")
+level = 48
+move = &"GIGAIMPACT"
+
+[sub_resource type="Resource" id="Resource_ebxvf"]
+script = ExtResource("2_sgr5o")
+level = 52
+move = &"METALBURST"
+
+[resource]
+resource_name = "ESCAVALIER"
+script = ExtResource("3_epg7d")
+species = &"ESCAVALIER"
+category = "Cavalry"
+pokedex_entry = "These Pokémon evolve by wearing the shell covering of a Shelmet. The steel armor protects their whole body."
+types = Array[StringName]([&"BUG", &"STEEL"])
+base_hp = 70
+base_attack = 135
+base_defense = 105
+base_special_attack = 60
+base_special_defense = 105
+base_speed = 20
+ev_attack = 2
+base_exp = 173
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_sgr5o")]([SubResource("Resource_pqwdo"), SubResource("Resource_3iokt"), SubResource("Resource_5ekkj"), SubResource("Resource_o6xie"), SubResource("Resource_vvym1"), SubResource("Resource_t8ykn"), SubResource("Resource_xim0i"), SubResource("Resource_jg3cv"), SubResource("Resource_r4ja2"), SubResource("Resource_k62p1"), SubResource("Resource_atamg"), SubResource("Resource_cyupo"), SubResource("Resource_xyk3a"), SubResource("Resource_e88ey"), SubResource("Resource_ldgxp"), SubResource("Resource_407qe"), SubResource("Resource_c1jqn"), SubResource("Resource_gfcky"), SubResource("Resource_xcivt"), SubResource("Resource_4qrrb"), SubResource("Resource_ebxvf")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ATTRACT", &"BRUTALSWING", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"DRILLRUN", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FOCUSBLAST", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"LASERFOCUS", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"STEELBEAM", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"XSCISSOR"])
+abilities = Array[StringName]([&"SWARM", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ovckx")]([SubResource("Resource_i55xx")])
+height = 10
+weight = 330
+color = &"Gray"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 10)
+id = &"ESCAVALIER"
+display_name = "Escavalier"

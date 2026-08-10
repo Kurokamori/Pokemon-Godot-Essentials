@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0sjtj"]
+
+[resource]
+resource_name = "ALLYSWITCH"
+script = ExtResource("1_0sjtj")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 15
+target = &"User"
+priority = 2
+function_code = &"UserSwapsPositionsWithAlly"
+description = "The user teleports using a strange power and switches its place with one of its allies."
+id = &"ALLYSWITCH"
+display_name = "Ally Switch"

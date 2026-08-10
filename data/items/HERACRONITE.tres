@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_trm2s"]
+
+[resource]
+resource_name = "HERACRONITE"
+script = ExtResource("1_trm2s")
+name_plural = "Heracronites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Heracross hold it, and it will be able to Mega Evolve."
+id = &"HERACRONITE"
+display_name = "Heracronite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

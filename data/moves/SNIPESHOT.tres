@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vnpbq"]
+
+[resource]
+resource_name = "SNIPESHOT"
+script = ExtResource("1_vnpbq")
+type = &"WATER"
+category = 1
+power = 80
+total_pp = 15
+function_code = &"CannotBeRedirected"
+description = "The user ignores any effects that redirect moves, allowing this move to hit the chosen target."
+id = &"SNIPESHOT"
+display_name = "Snipe Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

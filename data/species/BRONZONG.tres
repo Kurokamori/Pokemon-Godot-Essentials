@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3bwo2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_13uk3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_f05vp"]
+
+[sub_resource type="Resource" id="Resource_33mhh"]
+script = ExtResource("1_3bwo2")
+species = &"BRONZOR"
+method = &"Level"
+parameter = "33"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_12cbt"]
+script = ExtResource("2_13uk3")
+level = 0
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_7mjhd"]
+script = ExtResource("2_13uk3")
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_e8jr2"]
+script = ExtResource("2_13uk3")
+move = &"WEATHERBALL"
+
+[sub_resource type="Resource" id="Resource_sy38o"]
+script = ExtResource("2_13uk3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_sc0l3"]
+script = ExtResource("2_13uk3")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_7ngsc"]
+script = ExtResource("2_13uk3")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_2tsvi"]
+script = ExtResource("2_13uk3")
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_a0i8s"]
+script = ExtResource("2_13uk3")
+level = 12
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_5lrq2"]
+script = ExtResource("2_13uk3")
+level = 16
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_h47p6"]
+script = ExtResource("2_13uk3")
+level = 20
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_11wcs"]
+script = ExtResource("2_13uk3")
+level = 24
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_0611b"]
+script = ExtResource("2_13uk3")
+level = 28
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_gg2x1"]
+script = ExtResource("2_13uk3")
+level = 32
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_v331q"]
+script = ExtResource("2_13uk3")
+level = 38
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_ij7mw"]
+script = ExtResource("2_13uk3")
+level = 44
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_eywsf"]
+script = ExtResource("2_13uk3")
+level = 50
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_2yyti"]
+script = ExtResource("2_13uk3")
+level = 56
+move = &"RAINDANCE"
+
+[resource]
+resource_name = "BRONZONG"
+script = ExtResource("3_f05vp")
+species = &"BRONZONG"
+category = "Bronze Bell"
+pokedex_entry = "One caused a news sensation when it was dug up at a construction site after a 2,000-year sleep."
+types = Array[StringName]([&"STEEL", &"PSYCHIC"])
+base_hp = 67
+base_attack = 89
+base_defense = 116
+base_special_attack = 79
+base_special_defense = 116
+base_speed = 33
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 175
+gender_ratio = &"Genderless"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_13uk3")]([SubResource("Resource_12cbt"), SubResource("Resource_7mjhd"), SubResource("Resource_e8jr2"), SubResource("Resource_sy38o"), SubResource("Resource_sc0l3"), SubResource("Resource_7ngsc"), SubResource("Resource_2tsvi"), SubResource("Resource_a0i8s"), SubResource("Resource_5lrq2"), SubResource("Resource_h47p6"), SubResource("Resource_11wcs"), SubResource("Resource_0611b"), SubResource("Resource_gg2x1"), SubResource("Resource_v331q"), SubResource("Resource_ij7mw"), SubResource("Resource_eywsf"), SubResource("Resource_2yyti")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ANCIENTPOWER", &"BLOCK", &"BODYPRESS", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"DREAMEATER", &"EARTHQUAKE", &"ENDURE", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HEAVYSLAM", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"IRONDEFENSE", &"IRONHEAD", &"LIGHTSCREEN", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"TRICK", &"TRICKROOM", &"WEATHERBALL", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE", &"HEATPROOF"])
+hidden_abilities = Array[StringName]([&"HEAVYMETAL"])
+wild_item_uncommon = Array[StringName]([&"METALCOAT"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_3bwo2")]([SubResource("Resource_33mhh")])
+height = 13
+weight = 1870
+color = &"Green"
+shape = &"HeadArms"
+generation = 4
+back_sprite_offset = Vector2i(6, 48)
+front_sprite_offset = Vector2i(-1, 10)
+id = &"BRONZONG"
+display_name = "Bronzong"

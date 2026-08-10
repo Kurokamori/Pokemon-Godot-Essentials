@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_penax"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wox8u"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4yqag"]
+
+[sub_resource type="Resource" id="Resource_a5ymk"]
+script = ExtResource("1_penax")
+species = &"TAILLOW"
+method = &"Level"
+parameter = "22"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_lj50e"]
+script = ExtResource("2_wox8u")
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_gwvf6"]
+script = ExtResource("2_wox8u")
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_oj43g"]
+script = ExtResource("2_wox8u")
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_snu0k"]
+script = ExtResource("2_wox8u")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_iqx3l"]
+script = ExtResource("2_wox8u")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_0tskt"]
+script = ExtResource("2_wox8u")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_bpnl2"]
+script = ExtResource("2_wox8u")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_uu6oj"]
+script = ExtResource("2_wox8u")
+level = 5
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_mpckq"]
+script = ExtResource("2_wox8u")
+level = 9
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_2pjqs"]
+script = ExtResource("2_wox8u")
+level = 13
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_rlolx"]
+script = ExtResource("2_wox8u")
+level = 17
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_43goi"]
+script = ExtResource("2_wox8u")
+level = 21
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_802vl"]
+script = ExtResource("2_wox8u")
+level = 27
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_ekst6"]
+script = ExtResource("2_wox8u")
+level = 33
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_hmr5f"]
+script = ExtResource("2_wox8u")
+level = 39
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_g36pm"]
+script = ExtResource("2_wox8u")
+level = 45
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_l7dkv"]
+script = ExtResource("2_wox8u")
+level = 51
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_6ku3d"]
+script = ExtResource("2_wox8u")
+level = 57
+move = &"REVERSAL"
+
+[resource]
+resource_name = "SWELLOW"
+script = ExtResource("3_4yqag")
+species = &"SWELLOW"
+category = "Swallow"
+pokedex_entry = "A Swellow dives upon prey from far above. It never misses its targets. It takes to the skies in search of lands with a warm climate."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 60
+base_attack = 85
+base_defense = 60
+base_special_attack = 75
+base_special_defense = 50
+base_speed = 125
+ev_speed = 2
+base_exp = 159
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wox8u")]([SubResource("Resource_lj50e"), SubResource("Resource_gwvf6"), SubResource("Resource_oj43g"), SubResource("Resource_snu0k"), SubResource("Resource_iqx3l"), SubResource("Resource_0tskt"), SubResource("Resource_bpnl2"), SubResource("Resource_uu6oj"), SubResource("Resource_mpckq"), SubResource("Resource_2pjqs"), SubResource("Resource_rlolx"), SubResource("Resource_43goi"), SubResource("Resource_802vl"), SubResource("Resource_ekst6"), SubResource("Resource_hmr5f"), SubResource("Resource_g36pm"), SubResource("Resource_l7dkv"), SubResource("Resource_6ku3d")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"GUTS"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_penax")]([SubResource("Resource_a5ymk")])
+height = 7
+weight = 198
+color = &"Blue"
+shape = &"Winged"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(9, 25)
+id = &"SWELLOW"
+display_name = "Swellow"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BodyShapeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/body_shape_data.gd" id="1_hxw4o"]
+
+[resource]
+resource_name = "Serpentine"
+script = ExtResource("1_hxw4o")
+icon_position = 1
+id = &"Serpentine"
+display_name = "Serpentine"

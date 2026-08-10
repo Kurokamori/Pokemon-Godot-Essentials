@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dwqbf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q13hg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gu0qn"]
+
+[sub_resource type="Resource" id="Resource_al4p3"]
+script = ExtResource("1_dwqbf")
+species = &"HAUNTER"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3567f"]
+script = ExtResource("2_q13hg")
+move = &"SHADOWPUNCH"
+
+[sub_resource type="Resource" id="Resource_a7qa3"]
+script = ExtResource("2_q13hg")
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_hddt7"]
+script = ExtResource("2_q13hg")
+move = &"REFLECTTYPE"
+
+[sub_resource type="Resource" id="Resource_nvosy"]
+script = ExtResource("2_q13hg")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_terjn"]
+script = ExtResource("2_q13hg")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_quhna"]
+script = ExtResource("2_q13hg")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_o6ge2"]
+script = ExtResource("2_q13hg")
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_53mpy"]
+script = ExtResource("2_q13hg")
+level = 12
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_odir2"]
+script = ExtResource("2_q13hg")
+level = 16
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_n2hfp"]
+script = ExtResource("2_q13hg")
+level = 20
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_x2tuh"]
+script = ExtResource("2_q13hg")
+level = 24
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_tkswx"]
+script = ExtResource("2_q13hg")
+level = 30
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_mtnxi"]
+script = ExtResource("2_q13hg")
+level = 36
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_sfki7"]
+script = ExtResource("2_q13hg")
+level = 42
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_et408"]
+script = ExtResource("2_q13hg")
+level = 48
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_yp5d7"]
+script = ExtResource("2_q13hg")
+level = 54
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_6l0xu"]
+script = ExtResource("2_q13hg")
+level = 60
+move = &"DREAMEATER"
+
+[resource]
+resource_name = "GENGAR_1"
+script = ExtResource("3_gu0qn")
+species = &"GENGAR"
+form = 1
+form_name = "Mega Gengar"
+category = "Shadow"
+pokedex_entry = "The energy of Mega Evolution awakened it. It sinks into another dimension, where it keeps a patient watch for its chance to attack."
+pokedex_form = 1
+types = Array[StringName]([&"GHOST", &"POISON"])
+base_hp = 60
+base_attack = 65
+base_defense = 80
+base_special_attack = 170
+base_special_defense = 95
+base_speed = 130
+ev_special_attack = 3
+base_exp = 300
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_q13hg")]([SubResource("Resource_3567f"), SubResource("Resource_a7qa3"), SubResource("Resource_hddt7"), SubResource("Resource_nvosy"), SubResource("Resource_terjn"), SubResource("Resource_quhna"), SubResource("Resource_o6ge2"), SubResource("Resource_53mpy"), SubResource("Resource_odir2"), SubResource("Resource_n2hfp"), SubResource("Resource_x2tuh"), SubResource("Resource_tkswx"), SubResource("Resource_mtnxi"), SubResource("Resource_sfki7"), SubResource("Resource_et408"), SubResource("Resource_yp5d7"), SubResource("Resource_6l0xu")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"COUNTER", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EMBARGO", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"INFESTATION", &"KNOCKOFF", &"LASERFOCUS", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PHANTOMFORCE", &"POISONJAB", &"POLTERGEIST", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHADOWBALL", &"SHADOWCLAW", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"VENOSHOCK", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"SHADOWTAG"])
+hidden_abilities = Array[StringName]([&"SHADOWTAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_dwqbf")]([SubResource("Resource_al4p3")])
+height = 14
+weight = 405
+color = &"Purple"
+shape = &"BipedalTail"
+habitat = &"Cave"
+generation = 6
+mega_stone = &"GENGARITE"
+back_sprite_offset = Vector2i(7, 54)
+front_sprite_offset = Vector2i(-4, 23)
+shadow_size = 3
+id = &"GENGAR_1"
+display_name = "Gengar"

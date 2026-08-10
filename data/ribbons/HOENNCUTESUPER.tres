@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_ljpmu"]
+
+[resource]
+resource_name = "HOENNCUTESUPER"
+script = ExtResource("1_ljpmu")
+icon_position = 9
+description = "Hoenn Cute Contest Super Rank winner!"
+id = &"HOENNCUTESUPER"
+display_name = "Cute Ribbon Super"

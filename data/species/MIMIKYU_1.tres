@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_416ll"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bds8s"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3trux"]
+
+[sub_resource type="Resource" id="Resource_1andw"]
+script = ExtResource("2_bds8s")
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_o6ia3"]
+script = ExtResource("2_bds8s")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_2i4w2"]
+script = ExtResource("2_bds8s")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_73lgy"]
+script = ExtResource("2_bds8s")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_cdco1"]
+script = ExtResource("2_bds8s")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_ggi60"]
+script = ExtResource("2_bds8s")
+level = 6
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_osm76"]
+script = ExtResource("2_bds8s")
+level = 12
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_npx67"]
+script = ExtResource("2_bds8s")
+level = 18
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_pc51u"]
+script = ExtResource("2_bds8s")
+level = 24
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_xdnub"]
+script = ExtResource("2_bds8s")
+level = 30
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_eymb2"]
+script = ExtResource("2_bds8s")
+level = 36
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_yxlar"]
+script = ExtResource("2_bds8s")
+level = 42
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_1jkjh"]
+script = ExtResource("2_bds8s")
+level = 48
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_806q7"]
+script = ExtResource("2_bds8s")
+level = 54
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_k8j2t"]
+script = ExtResource("2_bds8s")
+level = 60
+move = &"PAINSPLIT"
+
+[resource]
+resource_name = "MIMIKYU_1"
+script = ExtResource("3_3trux")
+species = &"MIMIKYU"
+form = 1
+form_name = "Busted Form"
+category = "Disguise"
+pokedex_entry = "Sad that its true identity may be exposed, Mimikyu will mercilessly seek revenge on any opponent that breaks its neck."
+pokedex_form = 1
+types = Array[StringName]([&"GHOST", &"FAIRY"])
+base_hp = 55
+base_attack = 90
+base_defense = 80
+base_special_attack = 50
+base_special_defense = 105
+base_speed = 96
+ev_special_defense = 2
+base_exp = 167
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bds8s")]([SubResource("Resource_1andw"), SubResource("Resource_o6ia3"), SubResource("Resource_2i4w2"), SubResource("Resource_73lgy"), SubResource("Resource_cdco1"), SubResource("Resource_ggi60"), SubResource("Resource_osm76"), SubResource("Resource_npx67"), SubResource("Resource_pc51u"), SubResource("Resource_xdnub"), SubResource("Resource_eymb2"), SubResource("Resource_yxlar"), SubResource("Resource_1jkjh"), SubResource("Resource_806q7"), SubResource("Resource_k8j2t")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BEATUP", &"BULKUP", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LASTRESORT", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PHANTOMFORCE", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WORKUP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"CURSE", &"DESTINYBOND", &"GRUDGE"])
+abilities = Array[StringName]([&"DISGUISE"])
+wild_item_uncommon = Array[StringName]([&"CHESTOBERRY"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+height = 2
+weight = 7
+color = &"Yellow"
+shape = &"Serpentine"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(5, 27)
+shadow_size = 1
+id = &"MIMIKYU_1"
+display_name = "Mimikyu"

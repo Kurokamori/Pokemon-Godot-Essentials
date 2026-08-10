@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ukywb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lk1eh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pmwm5"]
+
+[sub_resource type="Resource" id="Resource_nnik1"]
+script = ExtResource("1_ukywb")
+species = &"DELPHOX"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_pkowo"]
+script = ExtResource("1_ukywb")
+species = &"FENNEKIN"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_rx4rt"]
+script = ExtResource("2_lk1eh")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_ja48r"]
+script = ExtResource("2_lk1eh")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_cm2ht"]
+script = ExtResource("2_lk1eh")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_jp0mw"]
+script = ExtResource("2_lk1eh")
+level = 5
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_si4y3"]
+script = ExtResource("2_lk1eh")
+level = 11
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_pb7iv"]
+script = ExtResource("2_lk1eh")
+level = 14
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_7c34x"]
+script = ExtResource("2_lk1eh")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_wliiu"]
+script = ExtResource("2_lk1eh")
+level = 22
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_8nrc0"]
+script = ExtResource("2_lk1eh")
+level = 28
+move = &"LUCKYCHANT"
+
+[sub_resource type="Resource" id="Resource_eqmio"]
+script = ExtResource("2_lk1eh")
+level = 31
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_xj7se"]
+script = ExtResource("2_lk1eh")
+level = 36
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_vqych"]
+script = ExtResource("2_lk1eh")
+level = 41
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_tokd5"]
+script = ExtResource("2_lk1eh")
+level = 45
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_kgaq8"]
+script = ExtResource("2_lk1eh")
+level = 49
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_x54of"]
+script = ExtResource("2_lk1eh")
+level = 52
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_fue72"]
+script = ExtResource("2_lk1eh")
+level = 56
+move = &"MAGICROOM"
+
+[sub_resource type="Resource" id="Resource_j23b0"]
+script = ExtResource("2_lk1eh")
+level = 59
+move = &"FIREBLAST"
+
+[resource]
+resource_name = "BRAIXEN"
+script = ExtResource("3_pmwm5")
+species = &"BRAIXEN"
+category = "Fox"
+pokedex_entry = "When the twig is plucked from its tail, friction sets the twig alight. The flame is used to send signals to its allies."
+types = Array[StringName]([&"FIRE"])
+base_hp = 59
+base_attack = 59
+base_defense = 58
+base_special_attack = 90
+base_special_defense = 70
+base_speed = 73
+ev_special_attack = 2
+base_exp = 143
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lk1eh")]([SubResource("Resource_rx4rt"), SubResource("Resource_ja48r"), SubResource("Resource_cm2ht"), SubResource("Resource_jp0mw"), SubResource("Resource_si4y3"), SubResource("Resource_pb7iv"), SubResource("Resource_7c34x"), SubResource("Resource_wliiu"), SubResource("Resource_8nrc0"), SubResource("Resource_eqmio"), SubResource("Resource_xj7se"), SubResource("Resource_vqych"), SubResource("Resource_tokd5"), SubResource("Resource_kgaq8"), SubResource("Resource_x54of"), SubResource("Resource_fue72"), SubResource("Resource_j23b0")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"LOWKICK", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"TOXIC", &"TRICK", &"WILLOWISP", &"WONDERROOM", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"MAGICIAN"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ukywb")]([SubResource("Resource_nnik1"), SubResource("Resource_pkowo")])
+height = 10
+weight = 145
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(1, 17)
+shadow_size = 1
+id = &"BRAIXEN"
+display_name = "Braixen"

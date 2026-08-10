@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4tbtf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x56ia"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wrpbn"]
+
+[sub_resource type="Resource" id="Resource_yx4ug"]
+script = ExtResource("1_4tbtf")
+species = &"MAREANIE"
+method = &"Level"
+parameter = "38"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_icldw"]
+script = ExtResource("2_x56ia")
+level = 0
+move = &"BANEFULBUNKER"
+
+[sub_resource type="Resource" id="Resource_xl8ao"]
+script = ExtResource("2_x56ia")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_n13mq"]
+script = ExtResource("2_x56ia")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_arxji"]
+script = ExtResource("2_x56ia")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_1fmmy"]
+script = ExtResource("2_x56ia")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_tweb4"]
+script = ExtResource("2_x56ia")
+level = 15
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_5c2me"]
+script = ExtResource("2_x56ia")
+level = 20
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_k2ehl"]
+script = ExtResource("2_x56ia")
+level = 25
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_s03oh"]
+script = ExtResource("2_x56ia")
+level = 30
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_friam"]
+script = ExtResource("2_x56ia")
+level = 35
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_ueecr"]
+script = ExtResource("2_x56ia")
+level = 42
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_08blw"]
+script = ExtResource("2_x56ia")
+level = 49
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_sfvux"]
+script = ExtResource("2_x56ia")
+level = 56
+move = &"TOXIC"
+
+[resource]
+resource_name = "TOXAPEX"
+script = ExtResource("3_wrpbn")
+species = &"TOXAPEX"
+category = "Brutal Star"
+pokedex_entry = "Those attacked by Toxapex's poison will suffer intense pain for three days and three nights. Post-recovery, there will be some aftereffects."
+types = Array[StringName]([&"POISON", &"WATER"])
+base_hp = 50
+base_attack = 63
+base_defense = 152
+base_special_attack = 53
+base_special_defense = 142
+base_speed = 35
+ev_defense = 2
+base_exp = 173
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_x56ia")]([SubResource("Resource_icldw"), SubResource("Resource_xl8ao"), SubResource("Resource_n13mq"), SubResource("Resource_arxji"), SubResource("Resource_1fmmy"), SubResource("Resource_tweb4"), SubResource("Resource_5c2me"), SubResource("Resource_k2ehl"), SubResource("Resource_s03oh"), SubResource("Resource_friam"), SubResource("Resource_ueecr"), SubResource("Resource_08blw"), SubResource("Resource_sfvux")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CROSSPOISON", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"GASTROACID", &"GUNKSHOT", &"HAIL", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"KNOCKOFF", &"LIGHTSCREEN", &"LIQUIDATION", &"MAGICCOAT", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"WATERPULSE"])
+abilities = Array[StringName]([&"MERCILESS", &"LIMBER"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4tbtf")]([SubResource("Resource_yx4ug")])
+height = 7
+weight = 145
+color = &"Blue"
+shape = &"Multiped"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 22)
+shadow_size = 3
+id = &"TOXAPEX"
+display_name = "Toxapex"

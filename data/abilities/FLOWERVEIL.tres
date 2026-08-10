@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ub7dy"]
+
+[resource]
+resource_name = "FLOWERVEIL"
+script = ExtResource("1_ub7dy")
+description = "Protects Grass-type allies from stat/status effects."
+id = &"FLOWERVEIL"
+display_name = "Flower Veil"

@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fqcnt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lww55"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oct6r"]
+
+[sub_resource type="Resource" id="Resource_n8gbh"]
+script = ExtResource("1_fqcnt")
+species = &"NUZLEAF"
+method = &"Item"
+parameter = "LEAFSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_gynne"]
+script = ExtResource("2_lww55")
+level = 0
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_gaw6p"]
+script = ExtResource("2_lww55")
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_aeuup"]
+script = ExtResource("2_lww55")
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_35vox"]
+script = ExtResource("2_lww55")
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_75w3t"]
+script = ExtResource("2_lww55")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_68i6q"]
+script = ExtResource("2_lww55")
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_atgrx"]
+script = ExtResource("2_lww55")
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_ug0vv"]
+script = ExtResource("2_lww55")
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_8suge"]
+script = ExtResource("2_lww55")
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_h6soi"]
+script = ExtResource("2_lww55")
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_ikhbx"]
+script = ExtResource("2_lww55")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_vfp23"]
+script = ExtResource("2_lww55")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_225yd"]
+script = ExtResource("2_lww55")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_bbrsr"]
+script = ExtResource("2_lww55")
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_ki7s1"]
+script = ExtResource("2_lww55")
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_p35up"]
+script = ExtResource("2_lww55")
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_6ggrh"]
+script = ExtResource("2_lww55")
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_knwlb"]
+script = ExtResource("2_lww55")
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_5xw0b"]
+script = ExtResource("2_lww55")
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_fb280"]
+script = ExtResource("2_lww55")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_gk2ca"]
+script = ExtResource("2_lww55")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_m3cnt"]
+script = ExtResource("2_lww55")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_bkya7"]
+script = ExtResource("2_lww55")
+move = &"ASTONISH"
+
+[resource]
+resource_name = "SHIFTRY"
+script = ExtResource("3_oct6r")
+species = &"SHIFTRY"
+category = "Wicked"
+pokedex_entry = "It is said to arrive on chilly, wintry winds. Feared from long ago as the guardian of forests, this Pokémon lives in a deep forest where people do not venture."
+types = Array[StringName]([&"GRASS", &"DARK"])
+base_hp = 90
+base_attack = 100
+base_defense = 60
+base_special_attack = 90
+base_special_defense = 60
+base_speed = 80
+ev_attack = 3
+base_exp = 240
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lww55")]([SubResource("Resource_gynne"), SubResource("Resource_gaw6p"), SubResource("Resource_aeuup"), SubResource("Resource_35vox"), SubResource("Resource_75w3t"), SubResource("Resource_68i6q"), SubResource("Resource_atgrx"), SubResource("Resource_ug0vv"), SubResource("Resource_8suge"), SubResource("Resource_h6soi"), SubResource("Resource_ikhbx"), SubResource("Resource_vfp23"), SubResource("Resource_225yd"), SubResource("Resource_bbrsr"), SubResource("Resource_ki7s1"), SubResource("Resource_p35up"), SubResource("Resource_6ggrh"), SubResource("Resource_knwlb"), SubResource("Resource_5xw0b"), SubResource("Resource_fb280"), SubResource("Resource_gk2ca"), SubResource("Resource_m3cnt"), SubResource("Resource_bkya7")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"BRUTALSWING", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DEFOG", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FALSESWIPE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"ICYWIND", &"KNOCKOFF", &"LASHOUT", &"LEAFBLADE", &"LEAFSTORM", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"OMINOUSWIND", &"PAYBACK", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SHADOWBALL", &"SILVERWIND", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TAILWIND", &"THIEF", &"THROATCHOP", &"TORMENT", &"TWISTER", &"WORRYSEED", &"XSCISSOR"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+wild_item_uncommon = Array[StringName]([&"POWERHERB"])
+egg_groups = Array[StringName]([&"Field", &"Grass"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_fqcnt")]([SubResource("Resource_n8gbh")])
+height = 13
+weight = 596
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(4, 48)
+front_sprite_offset = Vector2i(4, 18)
+id = &"SHIFTRY"
+display_name = "Shiftry"

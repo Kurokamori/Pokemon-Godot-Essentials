@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_om1w6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_l7s52"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jdwah"]
+
+[sub_resource type="Resource" id="Resource_ctrlk"]
+script = ExtResource("1_om1w6")
+species = &"SNORLAX"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_2l61t"]
+script = ExtResource("2_l7s52")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_axmus"]
+script = ExtResource("2_l7s52")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_kfd57"]
+script = ExtResource("2_l7s52")
+level = 4
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_un8tu"]
+script = ExtResource("2_l7s52")
+level = 8
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_5bm5l"]
+script = ExtResource("2_l7s52")
+level = 12
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_ub70f"]
+script = ExtResource("2_l7s52")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_mof3p"]
+script = ExtResource("2_l7s52")
+level = 20
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_cur7w"]
+script = ExtResource("2_l7s52")
+level = 20
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_8egfo"]
+script = ExtResource("2_l7s52")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_w1mn0"]
+script = ExtResource("2_l7s52")
+level = 28
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_dpg70"]
+script = ExtResource("2_l7s52")
+level = 32
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_re0m6"]
+script = ExtResource("2_l7s52")
+level = 36
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_yei68"]
+script = ExtResource("2_l7s52")
+level = 40
+move = &"METRONOME"
+
+[sub_resource type="Resource" id="Resource_qk2g5"]
+script = ExtResource("2_l7s52")
+level = 44
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_7j32k"]
+script = ExtResource("2_l7s52")
+level = 48
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_1k6kj"]
+script = ExtResource("2_l7s52")
+level = 52
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "MUNCHLAX"
+script = ExtResource("3_jdwah")
+species = &"MUNCHLAX"
+category = "Big Eater"
+pokedex_entry = "It wolfs down its weight in food once a day, swallowing food whole with almost no chewing."
+base_hp = 135
+base_attack = 85
+base_defense = 40
+base_special_attack = 40
+base_special_defense = 85
+base_speed = 5
+ev_hp = 1
+base_exp = 78
+growth_rate = &"Slow"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_l7s52")]([SubResource("Resource_2l61t"), SubResource("Resource_axmus"), SubResource("Resource_kfd57"), SubResource("Resource_un8tu"), SubResource("Resource_5bm5l"), SubResource("Resource_ub70f"), SubResource("Resource_mof3p"), SubResource("Resource_cur7w"), SubResource("Resource_8egfo"), SubResource("Resource_w1mn0"), SubResource("Resource_dpg70"), SubResource("Resource_re0m6"), SubResource("Resource_yei68"), SubResource("Resource_qk2g5"), SubResource("Resource_7j32k"), SubResource("Resource_1k6kj")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DOUBLETEAM", &"EARTHQUAKE", &"ENCORE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"LASTRESORT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYDAY", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"RECYCLE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AFTERYOU", &"BELCH", &"CHARM", &"COUNTER", &"CURSE", &"DOUBLEEDGE", &"FISSURE", &"GASTROACID", &"LICK", &"SELFDESTRUCT", &"WHIRLWIND", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"PICKUP", &"THICKFAT"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+wild_item_common = Array[StringName]([&"LEFTOVERS"])
+wild_item_uncommon = Array[StringName]([&"LEFTOVERS"])
+wild_item_rare = Array[StringName]([&"LEFTOVERS"])
+hatch_steps = 10240
+incense = &"FULLINCENSE"
+evolutions = Array[ExtResource("1_om1w6")]([SubResource("Resource_ctrlk")])
+height = 6
+weight = 1050
+color = &"Black"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 28)
+shadow_size = 1
+id = &"MUNCHLAX"
+display_name = "Munchlax"

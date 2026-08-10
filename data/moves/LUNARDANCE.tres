@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ynsoa"]
+
+[resource]
+resource_name = "LUNARDANCE"
+script = ExtResource("1_ynsoa")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"UserFaintsHealAndCureReplacementRestorePP"
+description = "The user faints. In return, the Pokémon taking its place will have its status and HP fully restored."
+id = &"LUNARDANCE"
+display_name = "Lunar Dance"
+flags = Array[StringName]([&"Dance"])

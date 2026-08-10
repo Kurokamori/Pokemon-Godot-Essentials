@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_qwm7p"]
+
+[resource]
+resource_name = "ROCKGEM"
+script = ExtResource("1_qwm7p")
+name_plural = "Rock Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of rock. When held, it strengthens the power of a Rock-type move only once."
+id = &"ROCKGEM"
+display_name = "Rock Gem"
+flags = Array[StringName]([&"TypeGem"])

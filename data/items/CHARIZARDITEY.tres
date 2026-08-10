@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_o5qft"]
+
+[resource]
+resource_name = "CHARIZARDITEY"
+script = ExtResource("1_o5qft")
+name_plural = "Charizardite Ys"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Charizard hold it, and it will be able to Mega Evolve."
+id = &"CHARIZARDITEY"
+display_name = "Charizardite Y"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

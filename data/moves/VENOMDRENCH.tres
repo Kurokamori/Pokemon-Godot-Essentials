@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_hi75k"]
+
+[resource]
+resource_name = "VENOMDRENCH"
+script = ExtResource("1_hi75k")
+type = &"POISON"
+total_pp = 20
+target = &"AllNearFoes"
+function_code = &"LowerPoisonedTargetAtkSpAtkSpd1"
+description = "Foes are drenched in an odd liquid that lowers the Attack, Sp. Atk, and Speed of poisoned Pokémon."
+id = &"VENOMDRENCH"
+display_name = "Venom Drench"
+flags = Array[StringName]([&"CanProtect"])

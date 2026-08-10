@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4c2pf"]
+
+[resource]
+resource_name = "HORNLEECH"
+script = ExtResource("1_4c2pf")
+type = &"GRASS"
+category = 0
+power = 75
+total_pp = 10
+function_code = &"HealUserByHalfOfDamageDone"
+description = "The user drains the foe's energy with its horns. The user's HP is restored by half the damage inflicted."
+id = &"HORNLEECH"
+display_name = "Horn Leech"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

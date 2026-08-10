@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_65vk1"]
+
+[resource]
+resource_name = "LEAFBLADE"
+script = ExtResource("1_65vk1")
+type = &"GRASS"
+category = 0
+power = 90
+total_pp = 15
+description = "The user handles a sharp leaf like a sword and attacks by slashing. It has a high critical-hit ratio."
+id = &"LEAFBLADE"
+display_name = "Leaf Blade"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

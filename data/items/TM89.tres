@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_b0hfq"]
+
+[resource]
+resource_name = "TM89"
+script = ExtResource("1_b0hfq")
+name_plural = "TM89s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"UTURN"
+description = "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+id = &"TM89"
+display_name = "TM89"
+flags = Array[StringName]([&"Fling_70"])

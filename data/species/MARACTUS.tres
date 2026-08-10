@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_le55m"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h3gsw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3pkvn"]
+
+[sub_resource type="Resource" id="Resource_marm5"]
+script = ExtResource("2_h3gsw")
+move = &"SPIKYSHIELD"
+
+[sub_resource type="Resource" id="Resource_5gqjf"]
+script = ExtResource("2_h3gsw")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_6i7sq"]
+script = ExtResource("2_h3gsw")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_nl1kv"]
+script = ExtResource("2_h3gsw")
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_bxdht"]
+script = ExtResource("2_h3gsw")
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_80w87"]
+script = ExtResource("2_h3gsw")
+level = 4
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_1i3o1"]
+script = ExtResource("2_h3gsw")
+level = 8
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_vw58u"]
+script = ExtResource("2_h3gsw")
+level = 12
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_ggjr3"]
+script = ExtResource("2_h3gsw")
+level = 16
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_eqehp"]
+script = ExtResource("2_h3gsw")
+level = 20
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_r1cmp"]
+script = ExtResource("2_h3gsw")
+level = 24
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_5sddo"]
+script = ExtResource("2_h3gsw")
+level = 28
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_b64lt"]
+script = ExtResource("2_h3gsw")
+level = 32
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_htfgr"]
+script = ExtResource("2_h3gsw")
+level = 36
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_jpgvp"]
+script = ExtResource("2_h3gsw")
+level = 40
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_vkmku"]
+script = ExtResource("2_h3gsw")
+level = 44
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_0uevs"]
+script = ExtResource("2_h3gsw")
+level = 48
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_82uqh"]
+script = ExtResource("2_h3gsw")
+level = 52
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_hh0sp"]
+script = ExtResource("2_h3gsw")
+level = 56
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_futlw"]
+script = ExtResource("2_h3gsw")
+level = 60
+move = &"COTTONGUARD"
+
+[resource]
+resource_name = "MARACTUS"
+script = ExtResource("3_3pkvn")
+species = &"MARACTUS"
+category = "Cactus"
+pokedex_entry = "Arid regions are their habitat. They move rhythmically, making a sound similar to maracas."
+types = Array[StringName]([&"GRASS"])
+base_hp = 75
+base_attack = 86
+base_defense = 67
+base_special_attack = 106
+base_special_defense = 67
+base_speed = 60
+ev_special_attack = 2
+base_exp = 161
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h3gsw")]([SubResource("Resource_marm5"), SubResource("Resource_5gqjf"), SubResource("Resource_6i7sq"), SubResource("Resource_nl1kv"), SubResource("Resource_bxdht"), SubResource("Resource_80w87"), SubResource("Resource_1i3o1"), SubResource("Resource_vw58u"), SubResource("Resource_ggjr3"), SubResource("Resource_eqehp"), SubResource("Resource_r1cmp"), SubResource("Resource_5sddo"), SubResource("Resource_b64lt"), SubResource("Resource_htfgr"), SubResource("Resource_jpgvp"), SubResource("Resource_vkmku"), SubResource("Resource_0uevs"), SubResource("Resource_82uqh"), SubResource("Resource_hh0sp"), SubResource("Resource_futlw")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ASSURANCE", &"ATTRACT", &"BOUNCE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"KNOCKOFF", &"LEAFSTORM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPIKES", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"THROATCHOP", &"TOXIC", &"UPROAR", &"WEATHERBALL", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"WOODHAMMER", &"WORRYSEED"])
+abilities = Array[StringName]([&"WATERABSORB", &"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"STORMDRAIN"])
+wild_item_uncommon = Array[StringName]([&"MIRACLESEED"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+height = 10
+weight = 280
+color = &"Green"
+shape = &"HeadBase"
+generation = 5
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(-1, 16)
+shadow_size = 1
+id = &"MARACTUS"
+display_name = "Maractus"

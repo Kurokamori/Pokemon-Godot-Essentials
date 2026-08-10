@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xgpa1p62fqh4"
+path="res://.godot/imported/Strength push.ogg-9859ac2cdcebcfee5e93f011276a977f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Strength push.ogg"
+dest_files=["res://.godot/imported/Strength push.ogg-9859ac2cdcebcfee5e93f011276a977f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

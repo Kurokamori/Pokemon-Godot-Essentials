@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ncbdf"]
+
+[resource]
+resource_name = "DIREHIT3"
+script = ExtResource("1_ncbdf")
+name_plural = "Dire Hit 3s"
+pocket = 7
+battle_use = 3
+description = "It greatly raises the critical-hit ratio. It wears off if the Pokémon is withdrawn."
+id = &"DIREHIT3"
+display_name = "Dire Hit 3"
+flags = Array[StringName]([&"Fling_30"])

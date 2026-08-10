@@ -1,0 +1,58 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nb08r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h3as0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p0us6"]
+
+[sub_resource type="Resource" id="Resource_khdw0"]
+script = ExtResource("1_nb08r")
+species = &"BEEDRILL"
+method = &"Level"
+parameter = "10"
+
+[sub_resource type="Resource" id="Resource_vn0h6"]
+script = ExtResource("1_nb08r")
+species = &"WEEDLE"
+method = &"Level"
+parameter = "7"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_n0j04"]
+script = ExtResource("2_h3as0")
+level = 0
+move = &"HARDEN"
+
+[resource]
+resource_name = "KAKUNA"
+script = ExtResource("3_p0us6")
+species = &"KAKUNA"
+category = "Cocoon"
+pokedex_entry = "It remains virtually immobile while it clings to a tree. However, on the inside, it busily prepares for evolution. This is evident from how hot its shell becomes."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 45
+base_attack = 25
+base_defense = 50
+base_special_attack = 25
+base_special_defense = 25
+base_speed = 35
+ev_defense = 2
+base_exp = 72
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h3as0")]([SubResource("Resource_n0j04")])
+tutor_moves = Array[StringName]([&"BUGBITE", &"ELECTROWEB", &"IRONDEFENSE", &"STRINGSHOT"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_nb08r")]([SubResource("Resource_khdw0"), SubResource("Resource_vn0h6")])
+height = 6
+weight = 100
+color = &"Yellow"
+shape = &"Serpentine"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 22)
+shadow_size = 1
+id = &"KAKUNA"
+display_name = "Kakuna"

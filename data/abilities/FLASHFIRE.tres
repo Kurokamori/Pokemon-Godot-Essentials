@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ony8l"]
+
+[resource]
+resource_name = "FLASHFIRE"
+script = ExtResource("1_ony8l")
+description = "It powers up Fire-type moves if it's hit by one."
+id = &"FLASHFIRE"
+display_name = "Flash Fire"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7ib11"]
+
+[resource]
+resource_name = "COUNTER"
+script = ExtResource("1_7ib11")
+type = &"FIGHTING"
+category = 0
+power = 1
+total_pp = 20
+target = &"None"
+priority = -5
+function_code = &"CounterPhysicalDamage"
+description = "A retaliation move that counters any physical attack, inflicting double the damage taken."
+id = &"COUNTER"
+display_name = "Counter"
+flags = Array[StringName]([&"Contact", &"CanProtect"])

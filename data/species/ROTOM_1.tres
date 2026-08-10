@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_28yk4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bgwit"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6y84r"]
+
+[sub_resource type="Resource" id="Resource_r82kv"]
+script = ExtResource("2_bgwit")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_02u5p"]
+script = ExtResource("2_bgwit")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_4e3ri"]
+script = ExtResource("2_bgwit")
+level = 5
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_mhgvd"]
+script = ExtResource("2_bgwit")
+level = 10
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_uae3l"]
+script = ExtResource("2_bgwit")
+level = 15
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_hjlra"]
+script = ExtResource("2_bgwit")
+level = 20
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_pgdcn"]
+script = ExtResource("2_bgwit")
+level = 25
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_ilkol"]
+script = ExtResource("2_bgwit")
+level = 30
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_055ht"]
+script = ExtResource("2_bgwit")
+level = 35
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_v51i8"]
+script = ExtResource("2_bgwit")
+level = 40
+move = &"SUBSTITUTE"
+
+[sub_resource type="Resource" id="Resource_ygko4"]
+script = ExtResource("2_bgwit")
+level = 45
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_tl1ei"]
+script = ExtResource("2_bgwit")
+level = 50
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_025fx"]
+script = ExtResource("2_bgwit")
+level = 55
+move = &"UPROAR"
+
+[resource]
+resource_name = "ROTOM_1"
+script = ExtResource("3_6y84r")
+species = &"ROTOM"
+form = 1
+form_name = "Heat Rotom"
+category = "Plasma"
+pokedex_entry = "This Rotom has possessed a convection microwave oven that uses a special motor. It also has a flair for manipulating flames."
+pokedex_form = 1
+types = Array[StringName]([&"ELECTRIC", &"FIRE"])
+base_hp = 50
+base_attack = 65
+base_defense = 107
+base_special_attack = 105
+base_special_defense = 107
+base_speed = 86
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 182
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bgwit")]([SubResource("Resource_r82kv"), SubResource("Resource_02u5p"), SubResource("Resource_4e3ri"), SubResource("Resource_mhgvd"), SubResource("Resource_uae3l"), SubResource("Resource_hjlra"), SubResource("Resource_pgdcn"), SubResource("Resource_ilkol"), SubResource("Resource_055ht"), SubResource("Resource_v51i8"), SubResource("Resource_ygko4"), SubResource("Resource_tl1ei"), SubResource("Resource_025fx")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HYPERVOICE", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"UPROAR", &"VOLTSWITCH", &"WILLOWISP"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+height = 3
+weight = 3
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 16)
+id = &"ROTOM_1"
+display_name = "Rotom"

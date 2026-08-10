@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_xsxlc"]
+
+[resource]
+resource_name = "STAMINA"
+script = ExtResource("1_xsxlc")
+description = "Boosts Defense when hit by an attack."
+id = &"STAMINA"
+display_name = "Stamina"

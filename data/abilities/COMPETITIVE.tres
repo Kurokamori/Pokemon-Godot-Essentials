@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_5hb3f"]
+
+[resource]
+resource_name = "COMPETITIVE"
+script = ExtResource("1_5hb3f")
+description = "Sharply boosts Sp. Atk when a stat is lowered."
+id = &"COMPETITIVE"
+display_name = "Competitive"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_85s06"]
+
+[resource]
+resource_name = "SANDFORCE"
+script = ExtResource("1_85s06")
+description = "Boosts certain moves' power in a sandstorm."
+id = &"SANDFORCE"
+display_name = "Sand Force"

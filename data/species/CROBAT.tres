@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6qoi4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_52soc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dxtbb"]
+
+[sub_resource type="Resource" id="Resource_6u3nm"]
+script = ExtResource("1_6qoi4")
+species = &"GOLBAT"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nu6r2"]
+script = ExtResource("2_52soc")
+level = 0
+move = &"CROSSPOISON"
+
+[sub_resource type="Resource" id="Resource_nhx7c"]
+script = ExtResource("2_52soc")
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_dbe7l"]
+script = ExtResource("2_52soc")
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_emvri"]
+script = ExtResource("2_52soc")
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_swab5"]
+script = ExtResource("2_52soc")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_0xohk"]
+script = ExtResource("2_52soc")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_jgafs"]
+script = ExtResource("2_52soc")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_o5v6c"]
+script = ExtResource("2_52soc")
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_wusgs"]
+script = ExtResource("2_52soc")
+level = 15
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_uutkq"]
+script = ExtResource("2_52soc")
+level = 20
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_2pse4"]
+script = ExtResource("2_52soc")
+level = 27
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_qgo41"]
+script = ExtResource("2_52soc")
+level = 34
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_vywrx"]
+script = ExtResource("2_52soc")
+level = 41
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_ofc8u"]
+script = ExtResource("2_52soc")
+level = 48
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_l35vk"]
+script = ExtResource("2_52soc")
+level = 55
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_kk3r3"]
+script = ExtResource("2_52soc")
+level = 62
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_eqqha"]
+script = ExtResource("2_52soc")
+level = 69
+move = &"LEECHLIFE"
+
+[resource]
+resource_name = "CROBAT"
+script = ExtResource("3_dxtbb")
+species = &"CROBAT"
+category = "Bat"
+pokedex_entry = "Over the course of evolution, its hind legs turned into wings. By alternately resting its front and rear wings, it can fly all day without having to stop."
+types = Array[StringName]([&"POISON", &"FLYING"])
+base_hp = 85
+base_attack = 90
+base_defense = 80
+base_special_attack = 70
+base_special_defense = 80
+base_speed = 130
+ev_speed = 3
+base_exp = 268
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_52soc")]([SubResource("Resource_nu6r2"), SubResource("Resource_nhx7c"), SubResource("Resource_dbe7l"), SubResource("Resource_emvri"), SubResource("Resource_swab5"), SubResource("Resource_0xohk"), SubResource("Resource_jgafs"), SubResource("Resource_o5v6c"), SubResource("Resource_wusgs"), SubResource("Resource_uutkq"), SubResource("Resource_2pse4"), SubResource("Resource_qgo41"), SubResource("Resource_vywrx"), SubResource("Resource_ofc8u"), SubResource("Resource_l35vk"), SubResource("Resource_kk3r3"), SubResource("Resource_eqqha")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"CRUNCH", &"DARKPULSE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEATWAVE", &"HEX", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"LEECHLIFE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SKYATTACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNATCH", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"TWISTER", &"UPROAR", &"UTURN", &"VENOMDRENCH", &"VENOSHOCK", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_6qoi4")]([SubResource("Resource_6u3nm")])
+height = 18
+weight = 750
+color = &"Purple"
+shape = &"MultiWinged"
+habitat = &"Cave"
+generation = 2
+back_sprite_offset = Vector2i(4, 50)
+front_sprite_offset = Vector2i(0, 8)
+id = &"CROBAT"
+display_name = "Crobat"

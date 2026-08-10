@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tid36"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_02kx2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7n5hr"]
+
+[sub_resource type="Resource" id="Resource_ikb44"]
+script = ExtResource("2_02kx2")
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_m8oan"]
+script = ExtResource("2_02kx2")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_8b4ib"]
+script = ExtResource("2_02kx2")
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_fdgmd"]
+script = ExtResource("2_02kx2")
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_bvuvk"]
+script = ExtResource("2_02kx2")
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_qbij1"]
+script = ExtResource("2_02kx2")
+level = 7
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_glyvx"]
+script = ExtResource("2_02kx2")
+level = 14
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_26mer"]
+script = ExtResource("2_02kx2")
+level = 21
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_32tsr"]
+script = ExtResource("2_02kx2")
+level = 28
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_p7kjt"]
+script = ExtResource("2_02kx2")
+level = 35
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_b4nwi"]
+script = ExtResource("2_02kx2")
+level = 42
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_3njg7"]
+script = ExtResource("2_02kx2")
+level = 49
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_b0ddt"]
+script = ExtResource("2_02kx2")
+level = 56
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "CRAMORANT_2"
+script = ExtResource("3_7n5hr")
+species = &"CRAMORANT"
+form = 2
+form_name = "Gorging Form"
+category = "Gulp"
+pokedex_entry = "This Cramorant has accidentally gotten a Pikachu lodged in its gullet. Cramorant is choking a little, but it isn't really bothered."
+pokedex_form = 2
+types = Array[StringName]([&"FLYING", &"WATER"])
+base_hp = 70
+base_attack = 85
+base_defense = 55
+base_special_attack = 85
+base_special_defense = 95
+base_speed = 85
+ev_special_defense = 2
+base_exp = 166
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_02kx2")]([SubResource("Resource_ikb44"), SubResource("Resource_m8oan"), SubResource("Resource_8b4ib"), SubResource("Resource_fdgmd"), SubResource("Resource_bvuvk"), SubResource("Resource_qbij1"), SubResource("Resource_glyvx"), SubResource("Resource_26mer"), SubResource("Resource_32tsr"), SubResource("Resource_p7kjt"), SubResource("Resource_b4nwi"), SubResource("Resource_3njg7"), SubResource("Resource_b0ddt")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"THIEF", &"THROATCHOP", &"TOXIC", &"UPROAR", &"WEATHERBALL", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AERIALACE", &"AQUARING", &"DEFOG", &"FEATHERDANCE", &"ROOST"])
+abilities = Array[StringName]([&"GULPMISSILE"])
+egg_groups = Array[StringName]([&"Water1", &"Flying"])
+hatch_steps = 5120
+height = 8
+weight = 180
+color = &"Blue"
+shape = &"Winged"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-6, 14)
+id = &"CRAMORANT_2"
+display_name = "Cramorant"

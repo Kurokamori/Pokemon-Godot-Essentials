@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_7sm2x"]
+
+[resource]
+resource_name = "SURGESURFER"
+script = ExtResource("1_7sm2x")
+description = "Doubles Speed on Electric Terrain."
+id = &"SURGESURFER"
+display_name = "Surge Surfer"

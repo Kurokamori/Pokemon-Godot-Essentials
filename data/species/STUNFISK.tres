@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qo817"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vdjmn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3gc4i"]
+
+[sub_resource type="Resource" id="Resource_y1dhg"]
+script = ExtResource("2_vdjmn")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_g40rg"]
+script = ExtResource("2_vdjmn")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_8fk03"]
+script = ExtResource("2_vdjmn")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_6xlax"]
+script = ExtResource("2_vdjmn")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_po8eh"]
+script = ExtResource("2_vdjmn")
+level = 5
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_830y0"]
+script = ExtResource("2_vdjmn")
+level = 10
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_lhyaf"]
+script = ExtResource("2_vdjmn")
+level = 15
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_yq7hb"]
+script = ExtResource("2_vdjmn")
+level = 20
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_ce8c1"]
+script = ExtResource("2_vdjmn")
+level = 25
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_f3quc"]
+script = ExtResource("2_vdjmn")
+level = 30
+move = &"ELECTRICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_t5c3q"]
+script = ExtResource("2_vdjmn")
+level = 35
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_w0uar"]
+script = ExtResource("2_vdjmn")
+level = 40
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_t2b58"]
+script = ExtResource("2_vdjmn")
+level = 45
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_tvld8"]
+script = ExtResource("2_vdjmn")
+level = 50
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_g62fs"]
+script = ExtResource("2_vdjmn")
+level = 55
+move = &"FISSURE"
+
+[resource]
+resource_name = "STUNFISK"
+script = ExtResource("3_3gc4i")
+species = &"STUNFISK"
+category = "Trap"
+pokedex_entry = "It conceals itself in the mud of the seashore. Then it waits. When prey touch it, it delivers a jolt of energy."
+types = Array[StringName]([&"GROUND", &"ELECTRIC"])
+base_hp = 109
+base_attack = 66
+base_defense = 84
+base_special_attack = 81
+base_special_defense = 99
+base_speed = 32
+ev_hp = 2
+base_exp = 165
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vdjmn")]([SubResource("Resource_y1dhg"), SubResource("Resource_g40rg"), SubResource("Resource_8fk03"), SubResource("Resource_6xlax"), SubResource("Resource_po8eh"), SubResource("Resource_830y0"), SubResource("Resource_lhyaf"), SubResource("Resource_yq7hb"), SubResource("Resource_ce8c1"), SubResource("Resource_f3quc"), SubResource("Resource_t5c3q"), SubResource("Resource_w0uar"), SubResource("Resource_t2b58"), SubResource("Resource_tvld8"), SubResource("Resource_g62fs")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BOUNCE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROWEB", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"HIDDENPOWER", &"INFESTATION", &"LASHOUT", &"MAGNETRISE", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"ASTONISH", &"CURSE", &"PAINSPLIT", &"REFLECTTYPE", &"SPARK", &"SPITE", &"YAWN"])
+abilities = Array[StringName]([&"STATIC", &"LIMBER"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+wild_item_uncommon = Array[StringName]([&"SOFTSAND"])
+egg_groups = Array[StringName]([&"Water1", &"Amorphous"])
+hatch_steps = 5120
+height = 7
+weight = 110
+color = &"Brown"
+shape = &"Finned"
+generation = 5
+back_sprite_offset = Vector2i(0, 64)
+front_sprite_offset = Vector2i(2, 32)
+id = &"STUNFISK"
+display_name = "Stunfisk"

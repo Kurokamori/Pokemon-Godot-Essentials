@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_uxaca"]
+
+[resource]
+resource_name = "MOONGEISTBEAM"
+script = ExtResource("1_uxaca")
+type = &"GHOST"
+category = 1
+power = 100
+function_code = &"IgnoreTargetAbility"
+description = "The user emits a sinister ray. This move can be used on the target regardless of its Abilities."
+id = &"MOONGEISTBEAM"
+display_name = "Moongeist Beam"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

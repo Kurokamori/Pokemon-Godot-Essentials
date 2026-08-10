@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BerryPlantData" format=3]
+
+[ext_resource type="Script" path="res://src/data/berry_plant_data.gd" id="1_utahx"]
+
+[resource]
+resource_name = "CHERIBERRY"
+script = ExtResource("1_utahx")
+id = &"CHERIBERRY"
+display_name = "CHERIBERRY"

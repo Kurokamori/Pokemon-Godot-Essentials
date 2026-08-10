@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5yw6k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_w31f8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wtapj"]
+
+[sub_resource type="Resource" id="Resource_rae52"]
+script = ExtResource("1_5yw6k")
+species = &"GROWLITHE"
+method = &"Item"
+parameter = "FIRESTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ghsn6"]
+script = ExtResource("2_w31f8")
+level = 0
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_8s5i6"]
+script = ExtResource("2_w31f8")
+move = &"BURNUP"
+
+[sub_resource type="Resource" id="Resource_ntu5m"]
+script = ExtResource("2_w31f8")
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_vhbjo"]
+script = ExtResource("2_w31f8")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_qhgoi"]
+script = ExtResource("2_w31f8")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ouhk6"]
+script = ExtResource("2_w31f8")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_2gfy2"]
+script = ExtResource("2_w31f8")
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_6886q"]
+script = ExtResource("2_w31f8")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_q6ync"]
+script = ExtResource("2_w31f8")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_7u1cy"]
+script = ExtResource("2_w31f8")
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_xrt5s"]
+script = ExtResource("2_w31f8")
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_vl3fx"]
+script = ExtResource("2_w31f8")
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_vttrm"]
+script = ExtResource("2_w31f8")
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_47ih6"]
+script = ExtResource("2_w31f8")
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_jprtb"]
+script = ExtResource("2_w31f8")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_d11nj"]
+script = ExtResource("2_w31f8")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_lnj2m"]
+script = ExtResource("2_w31f8")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_nkffx"]
+script = ExtResource("2_w31f8")
+move = &"BITE"
+
+[resource]
+resource_name = "ARCANINE"
+script = ExtResource("3_wtapj")
+species = &"ARCANINE"
+category = "Legendary"
+pokedex_entry = "This fleet-footed Pokémon is said to run over 6,200 miles in a single day and night. The fire that blazes wildly within its body is its source of power."
+types = Array[StringName]([&"FIRE"])
+base_hp = 90
+base_attack = 110
+base_defense = 80
+base_special_attack = 100
+base_special_defense = 80
+base_speed = 95
+ev_attack = 2
+base_exp = 194
+growth_rate = &"Slow"
+gender_ratio = &"Female25Percent"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_w31f8")]([SubResource("Resource_ghsn6"), SubResource("Resource_8s5i6"), SubResource("Resource_ntu5m"), SubResource("Resource_vhbjo"), SubResource("Resource_qhgoi"), SubResource("Resource_ouhk6"), SubResource("Resource_2gfy2"), SubResource("Resource_6886q"), SubResource("Resource_q6ync"), SubResource("Resource_7u1cy"), SubResource("Resource_xrt5s"), SubResource("Resource_vl3fx"), SubResource("Resource_vttrm"), SubResource("Resource_47ih6"), SubResource("Resource_jprtb"), SubResource("Resource_d11nj"), SubResource("Resource_lnj2m"), SubResource("Resource_nkffx")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"COVET", &"CRUNCH", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDERFANG", &"WILDCHARGE", &"WILLOWISP"])
+abilities = Array[StringName]([&"INTIMIDATE", &"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"JUSTIFIED"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5yw6k")]([SubResource("Resource_rae52")])
+height = 19
+weight = 1550
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(1, 18)
+id = &"ARCANINE"
+display_name = "Arcanine"

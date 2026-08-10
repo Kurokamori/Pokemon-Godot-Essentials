@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_035ac"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_opboj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qlsi1"]
+
+[sub_resource type="Resource" id="Resource_re0ac"]
+script = ExtResource("1_035ac")
+species = &"WEAVILE"
+method = &"NightHoldItem"
+parameter = "RAZORCLAW"
+
+[sub_resource type="Resource" id="Resource_bl25a"]
+script = ExtResource("2_opboj")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_gu7i7"]
+script = ExtResource("2_opboj")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_vhw33"]
+script = ExtResource("2_opboj")
+level = 6
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_cnah6"]
+script = ExtResource("2_opboj")
+level = 12
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ji4dm"]
+script = ExtResource("2_opboj")
+level = 18
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_qbxo5"]
+script = ExtResource("2_opboj")
+level = 24
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_qc7xk"]
+script = ExtResource("2_opboj")
+level = 30
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_g7ro3"]
+script = ExtResource("2_opboj")
+level = 36
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_06ext"]
+script = ExtResource("2_opboj")
+level = 42
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_y1qsr"]
+script = ExtResource("2_opboj")
+level = 48
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ax40q"]
+script = ExtResource("2_opboj")
+level = 54
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6k503"]
+script = ExtResource("2_opboj")
+level = 60
+move = &"SLASH"
+
+[resource]
+resource_name = "SNEASEL"
+script = ExtResource("3_qlsi1")
+species = &"SNEASEL"
+category = "Sharp Claw"
+pokedex_entry = "A Sneasel scales trees by punching its hooked claws into the bark. It seeks out unguarded nests and steals eggs for food while the parents are away."
+types = Array[StringName]([&"DARK", &"ICE"])
+base_hp = 55
+base_attack = 95
+base_defense = 55
+base_special_attack = 35
+base_special_defense = 75
+base_speed = 115
+ev_speed = 1
+base_exp = 86
+growth_rate = &"Parabolic"
+catch_rate = 60
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_opboj")]([SubResource("Resource_bl25a"), SubResource("Resource_gu7i7"), SubResource("Resource_vhw33"), SubResource("Resource_cnah6"), SubResource("Resource_ji4dm"), SubResource("Resource_qbxo5"), SubResource("Resource_qc7xk"), SubResource("Resource_g7ro3"), SubResource("Resource_06ext"), SubResource("Resource_y1qsr"), SubResource("Resource_ax40q"), SubResource("Resource_6k503")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ATTRACT", &"AVALANCHE", &"BEATUP", &"BLIZZARD", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DYNAMICPUNCH", &"EMBARGO", &"ENDURE", &"FACADE", &"FAKETEARS", &"FALSESWIPE", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHOCUT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"TRIPLEAXEL", &"WHIRLPOOL", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"BITE", &"COUNTER", &"CRUSHCLAW", &"DOUBLEHIT", &"FAKEOUT", &"FEINT", &"ICEPUNCH", &"ICESHARD", &"ICICLECRASH", &"SPITE", &"THROATCHOP"])
+abilities = Array[StringName]([&"INNERFOCUS", &"KEENEYE"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+wild_item_uncommon = Array[StringName]([&"QUICKCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_035ac")]([SubResource("Resource_re0ac")])
+height = 9
+weight = 280
+color = &"Black"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(4, 26)
+shadow_size = 1
+id = &"SNEASEL"
+display_name = "Sneasel"

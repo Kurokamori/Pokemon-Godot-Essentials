@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_81uwt"]
+
+[resource]
+resource_name = "STOREDPOWER"
+script = ExtResource("1_81uwt")
+type = &"PSYCHIC"
+category = 1
+power = 20
+total_pp = 10
+function_code = &"PowerHigherWithUserPositiveStatStages"
+description = "The user attacks with stored power. The more the user's stats are raised, the greater the damage."
+id = &"STOREDPOWER"
+display_name = "Stored Power"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

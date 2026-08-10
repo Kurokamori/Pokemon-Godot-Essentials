@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_e15ub"]
+
+[resource]
+resource_name = "TM49"
+script = ExtResource("1_e15ub")
+name_plural = "TM49s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"SCALD"
+description = "The user shoots boiling hot water at its target. This may also leave the target with a burn."
+id = &"TM49"
+display_name = "TM49"
+flags = Array[StringName]([&"Fling_80"])

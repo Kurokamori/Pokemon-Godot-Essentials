@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7hbpl"]
+
+[resource]
+resource_name = "DISARMINGVOICE"
+script = ExtResource("1_7hbpl")
+type = &"FAIRY"
+category = 1
+power = 40
+accuracy = 0
+total_pp = 15
+target = &"AllNearFoes"
+description = "Letting out a charming cry, the user does emotional damage to foes. This attack never misses."
+id = &"DISARMINGVOICE"
+display_name = "Disarming Voice"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

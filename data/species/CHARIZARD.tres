@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jp8tm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wriog"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ucisl"]
+
+[sub_resource type="Resource" id="Resource_2ikmg"]
+script = ExtResource("1_jp8tm")
+species = &"CHARMELEON"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_dfiuh"]
+script = ExtResource("2_wriog")
+level = 0
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_pgpnl"]
+script = ExtResource("2_wriog")
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_j3wda"]
+script = ExtResource("2_wriog")
+move = &"HEATWAVE"
+
+[sub_resource type="Resource" id="Resource_w3601"]
+script = ExtResource("2_wriog")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_g1ik5"]
+script = ExtResource("2_wriog")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_jb8rv"]
+script = ExtResource("2_wriog")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_2kfew"]
+script = ExtResource("2_wriog")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_q3rrc"]
+script = ExtResource("2_wriog")
+level = 12
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_cp2ah"]
+script = ExtResource("2_wriog")
+level = 19
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_yoybp"]
+script = ExtResource("2_wriog")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_m8t42"]
+script = ExtResource("2_wriog")
+level = 30
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_psrjo"]
+script = ExtResource("2_wriog")
+level = 39
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_xpv5y"]
+script = ExtResource("2_wriog")
+level = 46
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_c6pbd"]
+script = ExtResource("2_wriog")
+level = 54
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_glm3x"]
+script = ExtResource("2_wriog")
+level = 62
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "CHARIZARD"
+script = ExtResource("3_ucisl")
+species = &"CHARIZARD"
+category = "Flame"
+pokedex_entry = "A Charizard flies about in search of strong opponents. It breathes intense flames that can melt any material. However, it will never torch a weaker foe."
+types = Array[StringName]([&"FIRE", &"FLYING"])
+base_hp = 78
+base_attack = 84
+base_defense = 78
+base_special_attack = 109
+base_special_defense = 85
+base_speed = 100
+ev_special_attack = 3
+base_exp = 267
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wriog")]([SubResource("Resource_dfiuh"), SubResource("Resource_pgpnl"), SubResource("Resource_j3wda"), SubResource("Resource_w3601"), SubResource("Resource_g1ik5"), SubResource("Resource_jb8rv"), SubResource("Resource_2kfew"), SubResource("Resource_q3rrc"), SubResource("Resource_cp2ah"), SubResource("Resource_yoybp"), SubResource("Resource_m8t42"), SubResource("Resource_psrjo"), SubResource("Resource_xpv5y"), SubResource("Resource_c6pbd"), SubResource("Resource_glm3x")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"ATTRACT", &"BEATUP", &"BLASTBURN", &"BLAZEKICK", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREFANG", &"FIREPLEDGE", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FLY", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HEATCRASH", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SCALESHOT", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"THUNDERPUNCH", &"TWISTER", &"WEATHERBALL", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"SOLARPOWER"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_jp8tm")]([SubResource("Resource_2ikmg")])
+height = 17
+weight = 905
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(8, 40)
+front_sprite_offset = Vector2i(-1, 12)
+shadow_size = 3
+id = &"CHARIZARD"
+display_name = "Charizard"

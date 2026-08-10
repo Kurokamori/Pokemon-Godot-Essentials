@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleTerrainData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_terrain_data.gd" id="1_nuyar"]
+
+[resource]
+resource_name = "Grassy"
+script = ExtResource("1_nuyar")
+animation = &"GrassyTerrain"
+id = &"Grassy"
+display_name = "Grassy"

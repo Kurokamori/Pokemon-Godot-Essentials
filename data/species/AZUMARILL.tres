@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_doo1c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fypis"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a5ytn"]
+
+[sub_resource type="Resource" id="Resource_5pp4m"]
+script = ExtResource("1_doo1c")
+species = &"MARILL"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7v38l"]
+script = ExtResource("2_fypis")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_5smly"]
+script = ExtResource("2_fypis")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_ugt7o"]
+script = ExtResource("2_fypis")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_4a08d"]
+script = ExtResource("2_fypis")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_a4ynl"]
+script = ExtResource("2_fypis")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_4tobd"]
+script = ExtResource("2_fypis")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_qpnem"]
+script = ExtResource("2_fypis")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_xnigw"]
+script = ExtResource("2_fypis")
+level = 6
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_1siqs"]
+script = ExtResource("2_fypis")
+level = 9
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_fxqh0"]
+script = ExtResource("2_fypis")
+level = 12
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_fbo6u"]
+script = ExtResource("2_fypis")
+level = 15
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_b4m4f"]
+script = ExtResource("2_fypis")
+level = 21
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_ja3tw"]
+script = ExtResource("2_fypis")
+level = 25
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_ab7tn"]
+script = ExtResource("2_fypis")
+level = 30
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_71scb"]
+script = ExtResource("2_fypis")
+level = 35
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_n0t26"]
+script = ExtResource("2_fypis")
+level = 40
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_732o7"]
+script = ExtResource("2_fypis")
+level = 45
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_a0njp"]
+script = ExtResource("2_fypis")
+level = 50
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "AZUMARILL"
+script = ExtResource("3_a5ytn")
+species = &"AZUMARILL"
+category = "Aqua Rabbit"
+pokedex_entry = "It lives in water virtually all day long. Its body color and pattern act as camouflage that makes it tough for enemies to spot in water."
+types = Array[StringName]([&"WATER", &"FAIRY"])
+base_hp = 100
+base_attack = 50
+base_defense = 80
+base_special_attack = 60
+base_special_defense = 80
+base_speed = 50
+ev_hp = 3
+base_exp = 210
+growth_rate = &"Fast"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fypis")]([SubResource("Resource_7v38l"), SubResource("Resource_5smly"), SubResource("Resource_ugt7o"), SubResource("Resource_4a08d"), SubResource("Resource_a4ynl"), SubResource("Resource_4tobd"), SubResource("Resource_qpnem"), SubResource("Resource_xnigw"), SubResource("Resource_1siqs"), SubResource("Resource_fxqh0"), SubResource("Resource_fbo6u"), SubResource("Resource_b4m4f"), SubResource("Resource_ja3tw"), SubResource("Resource_ab7tn"), SubResource("Resource_71scb"), SubResource("Resource_n0t26"), SubResource("Resource_732o7"), SubResource("Resource_a0njp")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DYNAMICPUNCH", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"LIQUIDATION", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWIFT", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"THICKFAT", &"HUGEPOWER"])
+hidden_abilities = Array[StringName]([&"SAPSIPPER"])
+egg_groups = Array[StringName]([&"Water1", &"Fairy"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_doo1c")]([SubResource("Resource_5pp4m")])
+height = 8
+weight = 285
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 2
+back_sprite_offset = Vector2i(-10, 42)
+front_sprite_offset = Vector2i(2, 23)
+id = &"AZUMARILL"
+display_name = "Azumarill"

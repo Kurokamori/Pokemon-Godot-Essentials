@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1ctng"]
+
+[resource]
+resource_name = "EARTHPOWER"
+script = ExtResource("1_1ctng")
+type = &"GROUND"
+category = 1
+power = 90
+total_pp = 10
+function_code = &"LowerTargetSpDef1"
+effect_chance = 10
+description = "The user makes the ground under the foe erupt with power. It may also lower the target's Sp. Def."
+id = &"EARTHPOWER"
+display_name = "Earth Power"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

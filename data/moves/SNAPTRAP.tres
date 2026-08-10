@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5awo5"]
+
+[resource]
+resource_name = "SNAPTRAP"
+script = ExtResource("1_5awo5")
+type = &"GRASS"
+category = 0
+power = 35
+total_pp = 15
+function_code = &"BindTarget"
+description = "The user snares the target in a snap trap for four to five turns."
+id = &"SNAPTRAP"
+display_name = "Snap Trap"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

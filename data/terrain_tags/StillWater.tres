@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_3t07c"]
+
+[resource]
+resource_name = "StillWater"
+script = ExtResource("1_3t07c")
+tag_number = 6
+can_surf = true
+can_fish = true
+shows_reflections = true
+battle_environment = &"StillWater"
+id = &"StillWater"
+display_name = "StillWater"

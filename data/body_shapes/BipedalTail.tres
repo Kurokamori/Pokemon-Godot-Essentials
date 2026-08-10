@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BodyShapeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/body_shape_data.gd" id="1_v35c8"]
+
+[resource]
+resource_name = "BipedalTail"
+script = ExtResource("1_v35c8")
+icon_position = 5
+id = &"BipedalTail"
+display_name = "Bipedal with tail"

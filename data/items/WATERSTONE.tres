@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_c8c0r"]
+
+[resource]
+resource_name = "WATERSTONE"
+script = ExtResource("1_c8c0r")
+name_plural = "Water Stones"
+price = 3000
+sell_price = 1500
+bp_price = 5
+field_use = 1
+description = "A peculiar stone that makes certain species of Pokémon evolve. It is a clear, light blue."
+id = &"WATERSTONE"
+display_name = "Water Stone"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_30"])

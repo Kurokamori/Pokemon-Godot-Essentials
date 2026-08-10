@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_eep7a"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_okr0b"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uqpds"]
+
+[sub_resource type="Resource" id="Resource_y5167"]
+script = ExtResource("1_eep7a")
+species = &"HERDIER"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_x6s5d"]
+script = ExtResource("2_okr0b")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_6doxp"]
+script = ExtResource("2_okr0b")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_ssdcm"]
+script = ExtResource("2_okr0b")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_tii2q"]
+script = ExtResource("2_okr0b")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_oe04r"]
+script = ExtResource("2_okr0b")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_4gtah"]
+script = ExtResource("2_okr0b")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_3iok7"]
+script = ExtResource("2_okr0b")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_86fk6"]
+script = ExtResource("2_okr0b")
+level = 12
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_d2ruj"]
+script = ExtResource("2_okr0b")
+level = 19
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_e7pia"]
+script = ExtResource("2_okr0b")
+level = 24
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_e2d1r"]
+script = ExtResource("2_okr0b")
+level = 30
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_xgliy"]
+script = ExtResource("2_okr0b")
+level = 38
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_em8ke"]
+script = ExtResource("2_okr0b")
+level = 46
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_474yk"]
+script = ExtResource("2_okr0b")
+level = 54
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_1h1vn"]
+script = ExtResource("2_okr0b")
+level = 62
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_2f5lb"]
+script = ExtResource("2_okr0b")
+level = 70
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_kuj23"]
+script = ExtResource("2_okr0b")
+level = 78
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "STOUTLAND"
+script = ExtResource("3_uqpds")
+species = &"STOUTLAND"
+category = "Big-Hearted"
+pokedex_entry = "This extremely wise Pokémon excels at rescuing people stranded at sea or in the mountains."
+base_hp = 85
+base_attack = 110
+base_defense = 90
+base_special_attack = 45
+base_special_defense = 90
+base_speed = 80
+ev_attack = 3
+base_exp = 250
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_okr0b")]([SubResource("Resource_x6s5d"), SubResource("Resource_6doxp"), SubResource("Resource_ssdcm"), SubResource("Resource_tii2q"), SubResource("Resource_oe04r"), SubResource("Resource_4gtah"), SubResource("Resource_3iok7"), SubResource("Resource_86fk6"), SubResource("Resource_d2ruj"), SubResource("Resource_e7pia"), SubResource("Resource_e2d1r"), SubResource("Resource_xgliy"), SubResource("Resource_em8ke"), SubResource("Resource_474yk"), SubResource("Resource_1h1vn"), SubResource("Resource_2f5lb"), SubResource("Resource_kuj23")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEFANG", &"IRONHEAD", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNARL", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"INTIMIDATE", &"SANDRUSH"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_eep7a")]([SubResource("Resource_y5167")])
+height = 12
+weight = 610
+color = &"Gray"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 18)
+id = &"STOUTLAND"
+display_name = "Stoutland"

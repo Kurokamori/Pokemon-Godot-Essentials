@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c3wh87nrojbgf"
+path="res://.godot/imported/Super Fang.ogg-ca8551e3c2a31abc069bfd7c189fb127.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Anim/Super Fang.ogg"
+dest_files=["res://.godot/imported/Super Fang.ogg-ca8551e3c2a31abc069bfd7c189fb127.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

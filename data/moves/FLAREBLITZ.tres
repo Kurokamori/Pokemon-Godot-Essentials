@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qxtph"]
+
+[resource]
+resource_name = "FLAREBLITZ"
+script = ExtResource("1_qxtph")
+type = &"FIRE"
+category = 0
+power = 120
+total_pp = 15
+function_code = &"RecoilThirdOfDamageDealtBurnTarget"
+effect_chance = 10
+description = "The user cloaks itself in fire and charges at the foe. The user also takes damage and may burn the target."
+id = &"FLAREBLITZ"
+display_name = "Flare Blitz"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"ThawsUser"])

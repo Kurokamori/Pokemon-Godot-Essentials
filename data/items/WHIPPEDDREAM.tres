@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_jbnvf"]
+
+[resource]
+resource_name = "WHIPPEDDREAM"
+script = ExtResource("1_jbnvf")
+name_plural = "Whipped Dreams"
+portion_name = "dollop of Whipped Dream"
+portion_name_plural = "dollops of Whipped Dream"
+price = 3000
+sell_price = 1000
+bp_price = 5
+description = "A soft and sweet treat made of fluffy, puffy and whirled cream. It's loved by a certain Pokémon."
+id = &"WHIPPEDDREAM"
+display_name = "Whipped Dream"
+flags = Array[StringName]([&"Fling_80"])

@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8hn4l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yfij6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0elok"]
+
+[sub_resource type="Resource" id="Resource_tou63"]
+script = ExtResource("1_8hn4l")
+species = &"LAIRON"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_0wy7y"]
+script = ExtResource("2_yfij6")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_esg7s"]
+script = ExtResource("2_yfij6")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_1u47e"]
+script = ExtResource("2_yfij6")
+level = 4
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_onf3e"]
+script = ExtResource("2_yfij6")
+level = 8
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_cv37n"]
+script = ExtResource("2_yfij6")
+level = 12
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_v8bfd"]
+script = ExtResource("2_yfij6")
+level = 16
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_30inu"]
+script = ExtResource("2_yfij6")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_kwqyo"]
+script = ExtResource("2_yfij6")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_s8e1l"]
+script = ExtResource("2_yfij6")
+level = 28
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_ev7iq"]
+script = ExtResource("2_yfij6")
+level = 33
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_f4y1u"]
+script = ExtResource("2_yfij6")
+level = 36
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_iypcx"]
+script = ExtResource("2_yfij6")
+level = 40
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_a8fnf"]
+script = ExtResource("2_yfij6")
+level = 44
+move = &"IRONTAIL"
+
+[sub_resource type="Resource" id="Resource_hbw50"]
+script = ExtResource("2_yfij6")
+level = 48
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_st0ld"]
+script = ExtResource("2_yfij6")
+level = 52
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_x34i3"]
+script = ExtResource("2_yfij6")
+level = 56
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_yg1x0"]
+script = ExtResource("2_yfij6")
+level = 60
+move = &"METALBURST"
+
+[resource]
+resource_name = "ARON"
+script = ExtResource("3_0elok")
+species = &"ARON"
+category = "Iron Armor"
+pokedex_entry = "A Pokémon that is clad in steel armor. A new suit of armor is made when it evolves. The old, discarded armor is salvaged as metal for making iron products."
+types = Array[StringName]([&"STEEL", &"ROCK"])
+base_hp = 50
+base_attack = 70
+base_defense = 100
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 30
+ev_defense = 1
+base_exp = 66
+growth_rate = &"Slow"
+catch_rate = 180
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_yfij6")]([SubResource("Resource_0wy7y"), SubResource("Resource_esg7s"), SubResource("Resource_1u47e"), SubResource("Resource_onf3e"), SubResource("Resource_cv37n"), SubResource("Resource_v8bfd"), SubResource("Resource_30inu"), SubResource("Resource_kwqyo"), SubResource("Resource_s8e1l"), SubResource("Resource_ev7iq"), SubResource("Resource_f4y1u"), SubResource("Resource_iypcx"), SubResource("Resource_a8fnf"), SubResource("Resource_hbw50"), SubResource("Resource_st0ld"), SubResource("Resource_x34i3"), SubResource("Resource_yg1x0")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SPITE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"UPROAR", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"BODYSLAM", &"CURSE", &"DRAGONRUSH", &"ENDEAVOR", &"HEADSMASH", &"IRONHEAD", &"MUDSLAP", &"REVERSAL", &"SCREECH", &"STOMP", &"SUPERPOWER"])
+abilities = Array[StringName]([&"STURDY", &"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"HEAVYMETAL"])
+wild_item_uncommon = Array[StringName]([&"HARDSTONE"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_8hn4l")]([SubResource("Resource_tou63")])
+height = 4
+weight = 600
+color = &"Gray"
+shape = &"Quadruped"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(-1, 37)
+shadow_size = 1
+id = &"ARON"
+display_name = "Aron"

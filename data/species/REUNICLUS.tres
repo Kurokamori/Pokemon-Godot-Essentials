@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0vd1x"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_67305"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_f8e5e"]
+
+[sub_resource type="Resource" id="Resource_0ar3t"]
+script = ExtResource("1_0vd1x")
+species = &"DUOSION"
+method = &"Level"
+parameter = "41"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_g25rv"]
+script = ExtResource("2_67305")
+level = 0
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_s0old"]
+script = ExtResource("2_67305")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_iegir"]
+script = ExtResource("2_67305")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_2sitd"]
+script = ExtResource("2_67305")
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_7n1xg"]
+script = ExtResource("2_67305")
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_pyey4"]
+script = ExtResource("2_67305")
+level = 12
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_r61l5"]
+script = ExtResource("2_67305")
+level = 16
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_1pqt1"]
+script = ExtResource("2_67305")
+level = 20
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_sovhk"]
+script = ExtResource("2_67305")
+level = 24
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_hxn12"]
+script = ExtResource("2_67305")
+level = 24
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_ph3el"]
+script = ExtResource("2_67305")
+level = 28
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_j0svn"]
+script = ExtResource("2_67305")
+level = 35
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_kr4yh"]
+script = ExtResource("2_67305")
+level = 40
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_hbvca"]
+script = ExtResource("2_67305")
+level = 48
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_eqwkl"]
+script = ExtResource("2_67305")
+level = 56
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_tpho2"]
+script = ExtResource("2_67305")
+level = 64
+move = &"WONDERROOM"
+
+[resource]
+resource_name = "REUNICLUS"
+script = ExtResource("3_f8e5e")
+species = &"REUNICLUS"
+category = "Multiplying"
+pokedex_entry = "These remarkably intelligent Pokémon fight by controlling arms that can grip with rock-crushing power."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 110
+base_attack = 65
+base_defense = 75
+base_special_attack = 125
+base_special_defense = 85
+base_speed = 30
+ev_special_attack = 3
+base_exp = 245
+growth_rate = &"Parabolic"
+catch_rate = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_67305")]([SubResource("Resource_g25rv"), SubResource("Resource_s0old"), SubResource("Resource_iegir"), SubResource("Resource_2sitd"), SubResource("Resource_7n1xg"), SubResource("Resource_pyey4"), SubResource("Resource_r61l5"), SubResource("Resource_1pqt1"), SubResource("Resource_sovhk"), SubResource("Resource_hxn12"), SubResource("Resource_ph3el"), SubResource("Resource_j0svn"), SubResource("Resource_kr4yh"), SubResource("Resource_hbvca"), SubResource("Resource_eqwkl"), SubResource("Resource_tpho2")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"EMBARGO", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IMPRISON", &"INFESTATION", &"IRONDEFENSE", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STEELROLLER", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"OVERCOAT", &"MAGICGUARD"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0vd1x")]([SubResource("Resource_0ar3t")])
+height = 10
+weight = 201
+color = &"Green"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(4, 58)
+front_sprite_offset = Vector2i(0, 14)
+id = &"REUNICLUS"
+display_name = "Reuniclus"

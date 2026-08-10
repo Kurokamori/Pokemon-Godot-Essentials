@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_65fdc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_w0une"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3a2dw"]
+
+[sub_resource type="Resource" id="Resource_icd0m"]
+script = ExtResource("2_w0une")
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_xcxnv"]
+script = ExtResource("2_w0une")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_h520o"]
+script = ExtResource("2_w0une")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_dbv1h"]
+script = ExtResource("2_w0une")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_i27tw"]
+script = ExtResource("2_w0une")
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_6c8gb"]
+script = ExtResource("2_w0une")
+level = 6
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_lpe7r"]
+script = ExtResource("2_w0une")
+level = 10
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_715gm"]
+script = ExtResource("2_w0une")
+level = 16
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_cc8qf"]
+script = ExtResource("2_w0une")
+level = 21
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_q0qi6"]
+script = ExtResource("2_w0une")
+level = 26
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_kphj0"]
+script = ExtResource("2_w0une")
+level = 30
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_25e0y"]
+script = ExtResource("2_w0une")
+level = 36
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_6e4yf"]
+script = ExtResource("2_w0une")
+level = 41
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_niup6"]
+script = ExtResource("2_w0une")
+level = 46
+move = &"DRAGONHAMMER"
+
+[sub_resource type="Resource" id="Resource_7ivh6"]
+script = ExtResource("2_w0une")
+level = 50
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_5t3w1"]
+script = ExtResource("2_w0une")
+level = 56
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_yih2q"]
+script = ExtResource("2_w0une")
+level = 61
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "TROPIUS"
+script = ExtResource("3_3a2dw")
+species = &"TROPIUS"
+category = "Fruit"
+pokedex_entry = "It flies by flapping its broad leaves. The bunch of fruit that grows around its neck is deliciously sweet. In the spring, it scatters pollen from its neck."
+types = Array[StringName]([&"GRASS", &"FLYING"])
+base_hp = 99
+base_attack = 68
+base_defense = 83
+base_special_attack = 72
+base_special_defense = 87
+base_speed = 51
+ev_hp = 2
+base_exp = 161
+growth_rate = &"Slow"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_w0une")]([SubResource("Resource_icd0m"), SubResource("Resource_xcxnv"), SubResource("Resource_h520o"), SubResource("Resource_dbv1h"), SubResource("Resource_i27tw"), SubResource("Resource_6c8gb"), SubResource("Resource_lpe7r"), SubResource("Resource_715gm"), SubResource("Resource_cc8qf"), SubResource("Resource_q0qi6"), SubResource("Resource_kphj0"), SubResource("Resource_25e0y"), SubResource("Resource_6e4yf"), SubResource("Resource_niup6"), SubResource("Resource_7ivh6"), SubResource("Resource_5t3w1"), SubResource("Resource_yih2q")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BODYSLAM", &"BRUTALSWING", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLY", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OMINOUSWIND", &"OUTRAGE", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TAILWIND", &"TWISTER", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"CURSE", &"DRAGONDANCE", &"DRAGONHAMMER", &"HEADBUTT", &"LEAFBLADE", &"LEAFSTORM", &"LEECHSEED", &"NATUREPOWER", &"SLAM", &"SYNTHESIS"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"SOLARPOWER"])
+hidden_abilities = Array[StringName]([&"HARVEST"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 6400
+height = 20
+weight = 1000
+color = &"Green"
+shape = &"Quadruped"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(8, 12)
+id = &"TROPIUS"
+display_name = "Tropius"

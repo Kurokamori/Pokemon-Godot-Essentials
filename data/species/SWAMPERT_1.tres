@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_sqgis"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_t1drk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_im5lj"]
+
+[sub_resource type="Resource" id="Resource_7mkj7"]
+script = ExtResource("1_sqgis")
+species = &"MARSHTOMP"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_vrpi7"]
+script = ExtResource("2_t1drk")
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_1dtff"]
+script = ExtResource("2_t1drk")
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_1hmhb"]
+script = ExtResource("2_t1drk")
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_k15dg"]
+script = ExtResource("2_t1drk")
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_8nmq6"]
+script = ExtResource("2_t1drk")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_mejy7"]
+script = ExtResource("2_t1drk")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_qmuen"]
+script = ExtResource("2_t1drk")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_acj61"]
+script = ExtResource("2_t1drk")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_4vodq"]
+script = ExtResource("2_t1drk")
+level = 9
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_gfkmh"]
+script = ExtResource("2_t1drk")
+level = 12
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_7u3hg"]
+script = ExtResource("2_t1drk")
+level = 15
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_kemiq"]
+script = ExtResource("2_t1drk")
+level = 20
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_7tn7u"]
+script = ExtResource("2_t1drk")
+level = 25
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_auier"]
+script = ExtResource("2_t1drk")
+level = 30
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_kqmlv"]
+script = ExtResource("2_t1drk")
+level = 35
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_ao0cx"]
+script = ExtResource("2_t1drk")
+level = 42
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_cecyt"]
+script = ExtResource("2_t1drk")
+level = 49
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_3y0w6"]
+script = ExtResource("2_t1drk")
+level = 56
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_0tcwq"]
+script = ExtResource("2_t1drk")
+level = 63
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "SWAMPERT_1"
+script = ExtResource("3_im5lj")
+species = &"SWAMPERT"
+form = 1
+form_name = "Mega Swampert"
+category = "Mud Fish"
+pokedex_entry = "If it senses the approach of a storm and a tidal wave, it protects its seaside nest by piling up boulders. It swims as fast as a jet ski."
+pokedex_form = 1
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 100
+base_attack = 150
+base_defense = 110
+base_special_attack = 95
+base_special_defense = 110
+base_speed = 70
+ev_attack = 3
+base_exp = 318
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_t1drk")]([SubResource("Resource_vrpi7"), SubResource("Resource_1dtff"), SubResource("Resource_1hmhb"), SubResource("Resource_k15dg"), SubResource("Resource_8nmq6"), SubResource("Resource_mejy7"), SubResource("Resource_qmuen"), SubResource("Resource_acj61"), SubResource("Resource_4vodq"), SubResource("Resource_gfkmh"), SubResource("Resource_7u3hg"), SubResource("Resource_kemiq"), SubResource("Resource_7tn7u"), SubResource("Resource_auier"), SubResource("Resource_kqmlv"), SubResource("Resource_ao0cx"), SubResource("Resource_cecyt"), SubResource("Resource_3y0w6"), SubResource("Resource_0tcwq")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DARKESTLARIAT", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FLIPTURN", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYDROCANNON", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"LIQUIDATION", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDTOMB", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SLUDGEWAVE", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_sqgis")]([SubResource("Resource_7mkj7")])
+height = 19
+weight = 1020
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 6
+mega_stone = &"SWAMPERTITE"
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 17)
+shadow_size = 3
+id = &"SWAMPERT_1"
+display_name = "Swampert"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_o56yd"]
+
+[resource]
+resource_name = "PREMIERBALL"
+script = ExtResource("1_o56yd")
+name_plural = "Premier Balls"
+pocket = 3
+price = 200
+sell_price = 10
+battle_use = 4
+description = "A somewhat rare Poké Ball that has been specially made to commemorate an event of some sort."
+id = &"PREMIERBALL"
+display_name = "Premier Ball"
+flags = Array[StringName]([&"PokeBall"])

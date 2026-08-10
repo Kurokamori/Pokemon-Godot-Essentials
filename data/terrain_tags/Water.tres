@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_kxi50"]
+
+[resource]
+resource_name = "Water"
+script = ExtResource("1_kxi50")
+tag_number = 7
+can_surf = true
+can_fish = true
+battle_environment = &"MovingWater"
+id = &"Water"
+display_name = "Water"

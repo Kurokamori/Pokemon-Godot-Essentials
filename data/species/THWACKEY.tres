@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_f82kh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_m1tbx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_i5nh4"]
+
+[sub_resource type="Resource" id="Resource_fnfpc"]
+script = ExtResource("1_f82kh")
+species = &"RILLABOOM"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_jew0u"]
+script = ExtResource("1_f82kh")
+species = &"GROOKEY"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_br0bw"]
+script = ExtResource("2_m1tbx")
+level = 0
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_0e1p2"]
+script = ExtResource("2_m1tbx")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_y5lq8"]
+script = ExtResource("2_m1tbx")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_ydkif"]
+script = ExtResource("2_m1tbx")
+move = &"BRANCHPOKE"
+
+[sub_resource type="Resource" id="Resource_ac8tc"]
+script = ExtResource("2_m1tbx")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_nll4j"]
+script = ExtResource("2_m1tbx")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_oo2ht"]
+script = ExtResource("2_m1tbx")
+level = 19
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_jbje8"]
+script = ExtResource("2_m1tbx")
+level = 24
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_dif6b"]
+script = ExtResource("2_m1tbx")
+level = 30
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_jhx5r"]
+script = ExtResource("2_m1tbx")
+level = 36
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_x87rs"]
+script = ExtResource("2_m1tbx")
+level = 42
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_e53xn"]
+script = ExtResource("2_m1tbx")
+level = 48
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "THWACKEY"
+script = ExtResource("3_i5nh4")
+species = &"THWACKEY"
+category = "Beat"
+pokedex_entry = "When it's drumming out rapid beats in battle, it gets so caught up in the rhythm that it won't even notice that it's already knocked out its opponent."
+types = Array[StringName]([&"GRASS"])
+base_hp = 70
+base_attack = 85
+base_defense = 70
+base_special_attack = 55
+base_special_defense = 60
+base_speed = 80
+ev_attack = 2
+base_exp = 147
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_m1tbx")]([SubResource("Resource_br0bw"), SubResource("Resource_0e1p2"), SubResource("Resource_y5lq8"), SubResource("Resource_ydkif"), SubResource("Resource_ac8tc"), SubResource("Resource_nll4j"), SubResource("Resource_oo2ht"), SubResource("Resource_jbje8"), SubResource("Resource_dif6b"), SubResource("Resource_jhx5r"), SubResource("Resource_x87rs"), SubResource("Resource_e53xn")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ASSURANCE", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSENERGY", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"HIDDENPOWER", &"LOWKICK", &"MAGICALLEAF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"GRASSYSURGE"])
+egg_groups = Array[StringName]([&"Field", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_f82kh")]([SubResource("Resource_fnfpc"), SubResource("Resource_jew0u")])
+height = 7
+weight = 140
+color = &"Green"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(-6, 24)
+id = &"THWACKEY"
+display_name = "Thwackey"

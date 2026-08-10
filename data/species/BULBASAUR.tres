@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ghym2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_j7ir8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a4btb"]
+
+[sub_resource type="Resource" id="Resource_xknro"]
+script = ExtResource("1_ghym2")
+species = &"IVYSAUR"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_sefw8"]
+script = ExtResource("2_j7ir8")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_v57we"]
+script = ExtResource("2_j7ir8")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_8aqxb"]
+script = ExtResource("2_j7ir8")
+level = 3
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_j7jtn"]
+script = ExtResource("2_j7ir8")
+level = 6
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_pbvov"]
+script = ExtResource("2_j7ir8")
+level = 9
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_u227e"]
+script = ExtResource("2_j7ir8")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_n6r48"]
+script = ExtResource("2_j7ir8")
+level = 15
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_bk0ic"]
+script = ExtResource("2_j7ir8")
+level = 15
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_e3ukp"]
+script = ExtResource("2_j7ir8")
+level = 18
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_plwyo"]
+script = ExtResource("2_j7ir8")
+level = 21
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_wghy7"]
+script = ExtResource("2_j7ir8")
+level = 24
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_1fgfg"]
+script = ExtResource("2_j7ir8")
+level = 27
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_wae4g"]
+script = ExtResource("2_j7ir8")
+level = 30
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_6285d"]
+script = ExtResource("2_j7ir8")
+level = 33
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_p63ih"]
+script = ExtResource("2_j7ir8")
+level = 36
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "BULBASAUR"
+script = ExtResource("3_a4btb")
+species = &"BULBASAUR"
+category = "Seed"
+pokedex_entry = "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 45
+base_attack = 49
+base_defense = 49
+base_special_attack = 65
+base_special_defense = 65
+base_speed = 45
+ev_special_attack = 1
+base_exp = 64
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_j7ir8")]([SubResource("Resource_sefw8"), SubResource("Resource_v57we"), SubResource("Resource_8aqxb"), SubResource("Resource_j7jtn"), SubResource("Resource_pbvov"), SubResource("Resource_u227e"), SubResource("Resource_n6r48"), SubResource("Resource_bk0ic"), SubResource("Resource_e3ukp"), SubResource("Resource_plwyo"), SubResource("Resource_wghy7"), SubResource("Resource_1fgfg"), SubResource("Resource_wae4g"), SubResource("Resource_6285d"), SubResource("Resource_p63ih")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BIND", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CUT", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"KNOCKOFF", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"STRINGSHOT", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"VENOSHOCK", &"WEATHERBALL", &"WORKUP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AMNESIA", &"CHARM", &"CURSE", &"GRASSYTERRAIN", &"INGRAIN", &"LEAFSTORM", &"MAGICALLEAF", &"NATUREPOWER", &"PETALDANCE", &"POWERWHIP", &"SKULLBASH", &"SLUDGE", &"TOXIC"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"CHLOROPHYLL"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ghym2")]([SubResource("Resource_xknro")])
+height = 7
+weight = 69
+color = &"Green"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(1, 36)
+shadow_size = 1
+id = &"BULBASAUR"
+display_name = "Bulbasaur"

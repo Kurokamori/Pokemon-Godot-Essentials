@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_omq2g"]
+
+[resource]
+resource_name = "LASTRESORT"
+script = ExtResource("1_omq2g")
+category = 0
+power = 140
+function_code = &"FailsIfUserHasUnusedMove"
+description = "This move can be used only after the user has used all the other moves it knows in the battle."
+id = &"LASTRESORT"
+display_name = "Last Resort"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

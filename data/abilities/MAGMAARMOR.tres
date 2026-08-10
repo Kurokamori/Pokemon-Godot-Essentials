@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_fogng"]
+
+[resource]
+resource_name = "MAGMAARMOR"
+script = ExtResource("1_fogng")
+description = "Prevents the Pokémon from becoming frozen."
+id = &"MAGMAARMOR"
+display_name = "Magma Armor"
+flags = Array[StringName]([&"FasterEggHatching"])

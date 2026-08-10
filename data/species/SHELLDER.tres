@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lfqmh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rmyuh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_c14lq"]
+
+[sub_resource type="Resource" id="Resource_8kd6h"]
+script = ExtResource("1_lfqmh")
+species = &"CLOYSTER"
+method = &"Item"
+parameter = "WATERSTONE"
+
+[sub_resource type="Resource" id="Resource_qstl1"]
+script = ExtResource("2_rmyuh")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bkpf7"]
+script = ExtResource("2_rmyuh")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_5xa0o"]
+script = ExtResource("2_rmyuh")
+level = 4
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_x1yq5"]
+script = ExtResource("2_rmyuh")
+level = 8
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_el2o2"]
+script = ExtResource("2_rmyuh")
+level = 12
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_cqr7b"]
+script = ExtResource("2_rmyuh")
+level = 16
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_hod44"]
+script = ExtResource("2_rmyuh")
+level = 20
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_wujjg"]
+script = ExtResource("2_rmyuh")
+level = 24
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_xwqiv"]
+script = ExtResource("2_rmyuh")
+level = 28
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_sfc2e"]
+script = ExtResource("2_rmyuh")
+level = 32
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_7sug8"]
+script = ExtResource("2_rmyuh")
+level = 36
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_dpcrk"]
+script = ExtResource("2_rmyuh")
+level = 40
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_ca3p4"]
+script = ExtResource("2_rmyuh")
+level = 44
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_lny1y"]
+script = ExtResource("2_rmyuh")
+level = 48
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "SHELLDER"
+script = ExtResource("3_c14lq")
+species = &"SHELLDER"
+category = "Bivalve"
+pokedex_entry = "At night, it burrows a hole in the seafloor with its broad tongue to make a place to sleep. While asleep, it closes its shell, but leaves its tongue hanging out."
+types = Array[StringName]([&"WATER"])
+base_hp = 30
+base_attack = 65
+base_defense = 100
+base_special_attack = 45
+base_special_defense = 25
+base_speed = 40
+ev_defense = 1
+base_exp = 61
+growth_rate = &"Slow"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rmyuh")]([SubResource("Resource_qstl1"), SubResource("Resource_bkpf7"), SubResource("Resource_5xa0o"), SubResource("Resource_x1yq5"), SubResource("Resource_el2o2"), SubResource("Resource_cqr7b"), SubResource("Resource_hod44"), SubResource("Resource_wujjg"), SubResource("Resource_xwqiv"), SubResource("Resource_sfc2e"), SubResource("Resource_7sug8"), SubResource("Resource_dpcrk"), SubResource("Resource_ca3p4"), SubResource("Resource_lny1y")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"LIQUIDATION", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKBLAST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TRIATTACK", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AQUARING", &"BUBBLEBEAM", &"ICICLESPEAR", &"LIFEDEW", &"MUDSHOT", &"RAPIDSPIN", &"ROCKBLAST", &"SCREECH", &"TAKEDOWN", &"WATERPULSE"])
+abilities = Array[StringName]([&"SHELLARMOR", &"SKILLLINK"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_common = Array[StringName]([&"PEARL"])
+wild_item_uncommon = Array[StringName]([&"BIGPEARL"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_lfqmh")]([SubResource("Resource_8kd6h")])
+height = 3
+weight = 40
+color = &"Purple"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"SHELLDER"
+display_name = "Shellder"

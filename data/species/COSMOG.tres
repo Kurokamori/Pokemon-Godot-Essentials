@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4hk32"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wd6uf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vys68"]
+
+[sub_resource type="Resource" id="Resource_pd7lm"]
+script = ExtResource("1_4hk32")
+species = &"COSMOEM"
+method = &"Level"
+parameter = "43"
+
+[sub_resource type="Resource" id="Resource_42mbh"]
+script = ExtResource("2_wd6uf")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_7yhjm"]
+script = ExtResource("2_wd6uf")
+move = &"TELEPORT"
+
+[resource]
+resource_name = "COSMOG"
+script = ExtResource("3_vys68")
+species = &"COSMOG"
+category = "Nebula"
+pokedex_entry = "Whether or not it's a Pokémon from this world is a mystery. When it's in a jam, it warps away to a safe place to hide."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 43
+base_attack = 29
+base_defense = 31
+base_special_attack = 29
+base_special_defense = 31
+base_speed = 37
+ev_hp = 1
+base_exp = 40
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_wd6uf")]([SubResource("Resource_42mbh"), SubResource("Resource_7yhjm")])
+abilities = Array[StringName]([&"UNAWARE"])
+hatch_steps = 30720
+evolutions = Array[ExtResource("1_4hk32")]([SubResource("Resource_pd7lm")])
+height = 2
+color = &"Blue"
+generation = 7
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"COSMOG"
+display_name = "Cosmog"
+flags = Array[StringName]([&"Legendary"])

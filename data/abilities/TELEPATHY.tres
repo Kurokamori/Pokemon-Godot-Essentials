@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_opgvx"]
+
+[resource]
+resource_name = "TELEPATHY"
+script = ExtResource("1_opgvx")
+description = "Anticipates an ally's attack and dodges it."
+id = &"TELEPATHY"
+display_name = "Telepathy"

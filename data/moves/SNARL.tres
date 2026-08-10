@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_61pgx"]
+
+[resource]
+resource_name = "SNARL"
+script = ExtResource("1_61pgx")
+type = &"DARK"
+category = 1
+power = 55
+accuracy = 95
+total_pp = 15
+target = &"AllNearFoes"
+function_code = &"LowerTargetSpAtk1"
+effect_chance = 100
+description = "The user yells as if it is ranting about something, making the target's Sp. Atk stat decrease."
+id = &"SNARL"
+display_name = "Snarl"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound", &"CannotMetronome"])

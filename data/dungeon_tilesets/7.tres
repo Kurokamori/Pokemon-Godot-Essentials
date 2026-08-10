@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="DungeonTilesetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/dungeon_tileset_data.gd" id="1_xhnax"]
+
+[resource]
+resource_name = "7"
+script = ExtResource("1_xhnax")
+tileset_id = 7
+tile_type_ids = {
+&"floor": [[426.0, false]],
+&"floor_decoration_large": [[434.0, false]],
+&"floor_patch": [[48.0, false]],
+&"upper_wall_1": [[416.0, true]],
+&"upper_wall_2": [[418.0, true]],
+&"upper_wall_3": [[420.0, true]],
+&"upper_wall_4": [[400.0, true]],
+&"upper_wall_6": [[404.0, true]],
+&"upper_wall_7": [[384.0, true]],
+&"upper_wall_8": [[386.0, true]],
+&"upper_wall_9": [[388.0, true]],
+&"upper_wall_in_1": [[390.0, true]],
+&"upper_wall_in_3": [[389.0, true]],
+&"upper_wall_in_7": [[398.0, true]],
+&"upper_wall_in_9": [[397.0, true]],
+&"void": [[424.0, false]],
+&"void_decoration": [[425.0, false]],
+&"void_decoration_large": [[432.0, false]],
+&"wall_1": [[409.0, true]],
+&"wall_2": [[410.0, true]],
+&"wall_3": [[411.0, true]],
+&"wall_4": [[401.0, true]],
+&"wall_6": [[403.0, true]],
+&"wall_7": [[393.0, true]],
+&"wall_8": [[394.0, true]],
+&"wall_9": [[395.0, true]],
+&"wall_in_1": [[406.0, true]],
+&"wall_in_3": [[405.0, true]],
+&"wall_in_7": [[414.0, true]],
+&"wall_in_9": [[413.0, true]],
+&"walls": [[384.0, false]]
+}
+id = &"7"
+display_name = "Tileset 7"

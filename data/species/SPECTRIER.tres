@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lbj63"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ar573"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sx2nk"]
+
+[sub_resource type="Resource" id="Resource_ich5u"]
+script = ExtResource("2_ar573")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bym8v"]
+script = ExtResource("2_ar573")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_qr146"]
+script = ExtResource("2_ar573")
+level = 6
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_i85yd"]
+script = ExtResource("2_ar573")
+level = 12
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_ns42i"]
+script = ExtResource("2_ar573")
+level = 18
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_isg2s"]
+script = ExtResource("2_ar573")
+level = 24
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_blkjh"]
+script = ExtResource("2_ar573")
+level = 30
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_36ccb"]
+script = ExtResource("2_ar573")
+level = 36
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_qeoi3"]
+script = ExtResource("2_ar573")
+level = 42
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_a14al"]
+script = ExtResource("2_ar573")
+level = 48
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_75uvh"]
+script = ExtResource("2_ar573")
+level = 54
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_8snfk"]
+script = ExtResource("2_ar573")
+level = 60
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_2ojbc"]
+script = ExtResource("2_ar573")
+level = 66
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_bxu6e"]
+script = ExtResource("2_ar573")
+level = 72
+move = &"NASTYPLOT"
+
+[resource]
+resource_name = "SPECTRIER"
+script = ExtResource("3_sx2nk")
+species = &"SPECTRIER"
+category = "Swift Horse"
+pokedex_entry = "As it dashes through the night, Spectrier absorbs the life-force of sleeping creatures. It craves silence and solitude."
+types = Array[StringName]([&"GHOST"])
+base_hp = 100
+base_attack = 65
+base_defense = 60
+base_special_attack = 145
+base_special_defense = 80
+base_speed = 130
+ev_special_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_ar573")]([SubResource("Resource_ich5u"), SubResource("Resource_bym8v"), SubResource("Resource_qr146"), SubResource("Resource_i85yd"), SubResource("Resource_ns42i"), SubResource("Resource_isg2s"), SubResource("Resource_blkjh"), SubResource("Resource_36ccb"), SubResource("Resource_qeoi3"), SubResource("Resource_a14al"), SubResource("Resource_75uvh"), SubResource("Resource_8snfk"), SubResource("Resource_2ojbc"), SubResource("Resource_bxu6e")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"BODYSLAM", &"BULLDOZE", &"CALMMIND", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"LASHOUT", &"MIMIC", &"MUDSHOT", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PHANTOMFORCE", &"PROTECT", &"PSYCHOCUT", &"REST", &"RETURN", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"TOXIC", &"UPROAR", &"WILLOWISP"])
+abilities = Array[StringName]([&"GRIMNEIGH"])
+hatch_steps = 30720
+height = 20
+weight = 445
+color = &"Black"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(0, 14)
+id = &"SPECTRIER"
+display_name = "Spectrier"
+flags = Array[StringName]([&"Legendary"])

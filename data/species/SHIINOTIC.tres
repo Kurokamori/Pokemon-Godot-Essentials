@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6bv2p"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8prhm"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j4gsv"]
+
+[sub_resource type="Resource" id="Resource_sy3nl"]
+script = ExtResource("1_6bv2p")
+species = &"MORELULL"
+method = &"Level"
+parameter = "24"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jogyw"]
+script = ExtResource("2_8prhm")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_30v2r"]
+script = ExtResource("2_8prhm")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_aa1sp"]
+script = ExtResource("2_8prhm")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_xxp3e"]
+script = ExtResource("2_8prhm")
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_yrah1"]
+script = ExtResource("2_8prhm")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_fyl8u"]
+script = ExtResource("2_8prhm")
+level = 16
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_mep0x"]
+script = ExtResource("2_8prhm")
+level = 20
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_vpac1"]
+script = ExtResource("2_8prhm")
+level = 27
+move = &"STRENGTHSAP"
+
+[sub_resource type="Resource" id="Resource_7uy7k"]
+script = ExtResource("2_8prhm")
+level = 32
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_jbqet"]
+script = ExtResource("2_8prhm")
+level = 38
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_7lda4"]
+script = ExtResource("2_8prhm")
+level = 44
+move = &"SPORE"
+
+[sub_resource type="Resource" id="Resource_cvo0b"]
+script = ExtResource("2_8prhm")
+level = 50
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_8bcko"]
+script = ExtResource("2_8prhm")
+level = 56
+move = &"DREAMEATER"
+
+[resource]
+resource_name = "SHIINOTIC"
+script = ExtResource("3_j4gsv")
+species = &"SHIINOTIC"
+category = "Illuminating"
+pokedex_entry = "It puts its prey to sleep and siphons off their vitality through the tip of its arms. If one of its kind is weakened, it helps by sending it vitality."
+types = Array[StringName]([&"GRASS", &"FAIRY"])
+base_hp = 60
+base_attack = 45
+base_defense = 80
+base_special_attack = 90
+base_special_defense = 100
+base_speed = 30
+ev_special_defense = 2
+base_exp = 142
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8prhm")]([SubResource("Resource_jogyw"), SubResource("Resource_30v2r"), SubResource("Resource_aa1sp"), SubResource("Resource_xxp3e"), SubResource("Resource_yrah1"), SubResource("Resource_fyl8u"), SubResource("Resource_mep0x"), SubResource("Resource_vpac1"), SubResource("Resource_7uy7k"), SubResource("Resource_jbqet"), SubResource("Resource_7lda4"), SubResource("Resource_cvo0b"), SubResource("Resource_8bcko")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POLLENPUFF", &"PROTECT", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SIGNALBEAM", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"THUNDERWAVE", &"TOXIC", &"WEATHERBALL", &"WONDERROOM", &"WORRYSEED"])
+abilities = Array[StringName]([&"ILLUMINATE", &"EFFECTSPORE"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+wild_item_common = Array[StringName]([&"TINYMUSHROOM"])
+wild_item_uncommon = Array[StringName]([&"BIGMUSHROOM"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6bv2p")]([SubResource("Resource_sy3nl")])
+height = 10
+weight = 115
+color = &"Purple"
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"SHIINOTIC"
+display_name = "Shiinotic"

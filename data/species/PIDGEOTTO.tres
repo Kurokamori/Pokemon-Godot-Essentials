@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6xj35"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_clsyb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mh20o"]
+
+[sub_resource type="Resource" id="Resource_53fq6"]
+script = ExtResource("1_6xj35")
+species = &"PIDGEOT"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_8gqmd"]
+script = ExtResource("1_6xj35")
+species = &"PIDGEY"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fjjs4"]
+script = ExtResource("2_clsyb")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bvm33"]
+script = ExtResource("2_clsyb")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_avi5v"]
+script = ExtResource("2_clsyb")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_fw5eb"]
+script = ExtResource("2_clsyb")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_xu6xl"]
+script = ExtResource("2_clsyb")
+level = 9
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_g8300"]
+script = ExtResource("2_clsyb")
+level = 13
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_6clew"]
+script = ExtResource("2_clsyb")
+level = 17
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_1uill"]
+script = ExtResource("2_clsyb")
+level = 22
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_c573e"]
+script = ExtResource("2_clsyb")
+level = 27
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_bcnks"]
+script = ExtResource("2_clsyb")
+level = 32
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_88aq3"]
+script = ExtResource("2_clsyb")
+level = 37
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_biq7i"]
+script = ExtResource("2_clsyb")
+level = 42
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_jjyys"]
+script = ExtResource("2_clsyb")
+level = 47
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_27rjw"]
+script = ExtResource("2_clsyb")
+level = 52
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_gocjh"]
+script = ExtResource("2_clsyb")
+level = 57
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_1b274"]
+script = ExtResource("2_clsyb")
+level = 62
+move = &"HURRICANE"
+
+[resource]
+resource_name = "PIDGEOTTO"
+script = ExtResource("3_mh20o")
+species = &"PIDGEOTTO"
+category = "Bird"
+pokedex_entry = "This Pokémon flies around, patrolling its large territory. If its living space is violated, it shows no mercy in thoroughly punishing the foe with its sharp claws."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 63
+base_attack = 60
+base_defense = 55
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 71
+ev_speed = 2
+base_exp = 122
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_clsyb")]([SubResource("Resource_fjjs4"), SubResource("Resource_bvm33"), SubResource("Resource_avi5v"), SubResource("Resource_fw5eb"), SubResource("Resource_xu6xl"), SubResource("Resource_g8300"), SubResource("Resource_6clew"), SubResource("Resource_1uill"), SubResource("Resource_c573e"), SubResource("Resource_bcnks"), SubResource("Resource_88aq3"), SubResource("Resource_biq7i"), SubResource("Resource_jjyys"), SubResource("Resource_27rjw"), SubResource("Resource_gocjh"), SubResource("Resource_1b274")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"KEENEYE", &"TANGLEDFEET"])
+hidden_abilities = Array[StringName]([&"BIGPECKS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_6xj35")]([SubResource("Resource_53fq6"), SubResource("Resource_8gqmd")])
+height = 11
+weight = 300
+color = &"Brown"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(0, 6)
+id = &"PIDGEOTTO"
+display_name = "Pidgeotto"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ibige"]
+
+[resource]
+resource_name = "REINSOFUNITY"
+script = ExtResource("1_ibige")
+name_plural = "Reins of Unity"
+portion_name = "set of Reins of Unity"
+portion_name_plural = "sets of Reins of Unity"
+pocket = 8
+field_use = 1
+consumable = false
+show_quantity = false
+description = "Reins that people presented to the king. They unite Calyrex with its beloved steed."
+id = &"REINSOFUNITY"
+display_name = "Reins of Unity"
+flags = Array[StringName]([&"KeyItem"])

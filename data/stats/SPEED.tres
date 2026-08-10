@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StatData" format=3]
+
+[ext_resource type="Script" path="res://src/data/stat_data.gd" id="1_8axi0"]
+
+[resource]
+resource_name = "SPEED"
+script = ExtResource("1_8axi0")
+name_brief = "Spd"
+pbs_order = 3
+id = &"SPEED"
+display_name = "Speed"

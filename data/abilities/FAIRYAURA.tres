@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_vw1oh"]
+
+[resource]
+resource_name = "FAIRYAURA"
+script = ExtResource("1_vw1oh")
+description = "Powers up each Pokémon's Fairy-type moves."
+id = &"FAIRYAURA"
+display_name = "Fairy Aura"

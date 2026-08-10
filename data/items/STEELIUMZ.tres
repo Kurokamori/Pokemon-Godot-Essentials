@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ct216"]
+
+[resource]
+resource_name = "STEELIUMZ"
+script = ExtResource("1_ct216")
+name_plural = "Steelium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Steel-type Pokémon holds to turn a Steel-type move into Corkscrew Crash."
+id = &"STEELIUMZ"
+display_name = "Steelium Z"
+flags = Array[StringName]([&"ZCrystal"])

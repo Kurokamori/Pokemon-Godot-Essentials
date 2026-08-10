@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_k770r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5fkbq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xmhf5"]
+
+[sub_resource type="Resource" id="Resource_3cn7b"]
+script = ExtResource("1_k770r")
+species = &"STOUTLAND"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_g6mhj"]
+script = ExtResource("1_k770r")
+species = &"LILLIPUP"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_4ygce"]
+script = ExtResource("2_5fkbq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_24m3p"]
+script = ExtResource("2_5fkbq")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_na4lc"]
+script = ExtResource("2_5fkbq")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_xpgmk"]
+script = ExtResource("2_5fkbq")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_wv26n"]
+script = ExtResource("2_5fkbq")
+level = 12
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_sq2kx"]
+script = ExtResource("2_5fkbq")
+level = 19
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_gwiw4"]
+script = ExtResource("2_5fkbq")
+level = 24
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_jjks4"]
+script = ExtResource("2_5fkbq")
+level = 30
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_llxci"]
+script = ExtResource("2_5fkbq")
+level = 36
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_13hb0"]
+script = ExtResource("2_5fkbq")
+level = 42
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_1deal"]
+script = ExtResource("2_5fkbq")
+level = 48
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_n7u1a"]
+script = ExtResource("2_5fkbq")
+level = 54
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_po308"]
+script = ExtResource("2_5fkbq")
+level = 60
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_nat47"]
+script = ExtResource("2_5fkbq")
+level = 66
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "HERDIER"
+script = ExtResource("3_xmhf5")
+species = &"HERDIER"
+category = "Loyal Dog"
+pokedex_entry = "It loyally follows its Trainer's orders. For ages, they have helped Trainers raise Pokémon."
+base_hp = 65
+base_attack = 80
+base_defense = 65
+base_special_attack = 35
+base_special_defense = 65
+base_speed = 60
+ev_attack = 2
+base_exp = 130
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5fkbq")]([SubResource("Resource_4ygce"), SubResource("Resource_24m3p"), SubResource("Resource_na4lc"), SubResource("Resource_xpgmk"), SubResource("Resource_wv26n"), SubResource("Resource_sq2kx"), SubResource("Resource_gwiw4"), SubResource("Resource_jjks4"), SubResource("Resource_llxci"), SubResource("Resource_13hb0"), SubResource("Resource_1deal"), SubResource("Resource_n7u1a"), SubResource("Resource_po308"), SubResource("Resource_nat47")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEFANG", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNARL", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"INTIMIDATE", &"SANDRUSH"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_k770r")]([SubResource("Resource_3cn7b"), SubResource("Resource_g6mhj")])
+height = 9
+weight = 147
+color = &"Gray"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-2, 26)
+id = &"HERDIER"
+display_name = "Herdier"

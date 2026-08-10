@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nxvxd"]
+
+[resource]
+resource_name = "DUALCHOP"
+script = ExtResource("1_nxvxd")
+type = &"DRAGON"
+category = 0
+power = 40
+accuracy = 90
+total_pp = 15
+function_code = &"HitTwoTimes"
+description = "The user attacks its target by hitting it with brutal strikes. The target is hit twice in a row."
+id = &"DUALCHOP"
+display_name = "Dual Chop"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_jtch2"]
+
+[resource]
+resource_name = "VENOSHOCK"
+script = ExtResource("1_jtch2")
+type = &"POISON"
+category = 1
+power = 65
+total_pp = 10
+function_code = &"DoublePowerIfTargetPoisoned"
+description = "The user drenches the foe in a special poisonous liquid. Its power doubles if the target is poisoned."
+id = &"VENOSHOCK"
+display_name = "Venoshock"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

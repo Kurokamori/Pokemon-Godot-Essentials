@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_a3k7v"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dk5gk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vx21e"]
+
+[sub_resource type="Resource" id="Resource_dushf"]
+script = ExtResource("1_a3k7v")
+species = &"IVYSAUR"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_htxj2"]
+script = ExtResource("2_dk5gk")
+level = 0
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_6ajst"]
+script = ExtResource("2_dk5gk")
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_wdaoi"]
+script = ExtResource("2_dk5gk")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_xoudh"]
+script = ExtResource("2_dk5gk")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_hg12n"]
+script = ExtResource("2_dk5gk")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_y8q6u"]
+script = ExtResource("2_dk5gk")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_p365a"]
+script = ExtResource("2_dk5gk")
+level = 9
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_vbjlt"]
+script = ExtResource("2_dk5gk")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_w2322"]
+script = ExtResource("2_dk5gk")
+level = 15
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_3jpns"]
+script = ExtResource("2_dk5gk")
+level = 15
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_4kau5"]
+script = ExtResource("2_dk5gk")
+level = 20
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_rnbrh"]
+script = ExtResource("2_dk5gk")
+level = 25
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_07yrx"]
+script = ExtResource("2_dk5gk")
+level = 30
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_pcsmt"]
+script = ExtResource("2_dk5gk")
+level = 37
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_ov1ul"]
+script = ExtResource("2_dk5gk")
+level = 44
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_4xgag"]
+script = ExtResource("2_dk5gk")
+level = 51
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_7uug4"]
+script = ExtResource("2_dk5gk")
+level = 58
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "VENUSAUR"
+script = ExtResource("3_vx21e")
+species = &"VENUSAUR"
+category = "Seed"
+pokedex_entry = "Venusaur's flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower's aroma soothes the emotions of people."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 80
+base_attack = 82
+base_defense = 83
+base_special_attack = 100
+base_special_defense = 100
+base_speed = 80
+ev_special_attack = 2
+ev_special_defense = 1
+base_exp = 263
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dk5gk")]([SubResource("Resource_htxj2"), SubResource("Resource_6ajst"), SubResource("Resource_wdaoi"), SubResource("Resource_xoudh"), SubResource("Resource_hg12n"), SubResource("Resource_y8q6u"), SubResource("Resource_p365a"), SubResource("Resource_vbjlt"), SubResource("Resource_w2322"), SubResource("Resource_3jpns"), SubResource("Resource_4kau5"), SubResource("Resource_rnbrh"), SubResource("Resource_07yrx"), SubResource("Resource_pcsmt"), SubResource("Resource_ov1ul"), SubResource("Resource_4xgag"), SubResource("Resource_7uug4")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BIND", &"BLOCK", &"BODYSLAM", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CUT", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRENZYPLANT", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"KNOCKOFF", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OUTRAGE", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"STRINGSHOT", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TERRAINPULSE", &"TOXIC", &"VENOSHOCK", &"WEATHERBALL", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"CHLOROPHYLL"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_a3k7v")]([SubResource("Resource_dushf")])
+height = 20
+weight = 1000
+color = &"Green"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 3
+id = &"VENUSAUR"
+display_name = "Venusaur"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_aim5h"]
+
+[resource]
+resource_name = "DARKESTLARIAT"
+script = ExtResource("1_aim5h")
+type = &"DARK"
+category = 0
+power = 85
+total_pp = 10
+function_code = &"IgnoreTargetDefSpDefEvaStatStages"
+description = "The user swings both arms and hits the target. Ignores the target's stat changes."
+id = &"DARKESTLARIAT"
+display_name = "Darkest Lariat"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

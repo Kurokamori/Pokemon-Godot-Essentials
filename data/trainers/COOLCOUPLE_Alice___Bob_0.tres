@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_1onen"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_de4d7"]
+
+[sub_resource type="Resource" id="Resource_y183j"]
+script = ExtResource("1_1onen")
+species = &"TURTWIG"
+level = 19
+
+[sub_resource type="Resource" id="Resource_wyogk"]
+script = ExtResource("1_1onen")
+species = &"CHIMCHAR"
+level = 19
+
+[resource]
+resource_name = "COOLCOUPLE|Alice & Bob|0"
+script = ExtResource("2_de4d7")
+trainer_type = &"COOLCOUPLE"
+lose_text = "Our teamwork failed!"
+pokemon = Array[ExtResource("1_1onen")]([SubResource("Resource_y183j"), SubResource("Resource_wyogk")])
+id = &"COOLCOUPLE|Alice & Bob|0"
+display_name = "Alice & Bob"

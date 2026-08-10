@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o064g"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_88t6k"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8y8k8"]
+
+[sub_resource type="Resource" id="Resource_bduvs"]
+script = ExtResource("1_o064g")
+species = &"YUNGOOS"
+method = &"LevelDay"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8g2n3"]
+script = ExtResource("2_88t6k")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cum42"]
+script = ExtResource("2_88t6k")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_o7vwn"]
+script = ExtResource("2_88t6k")
+move = &"PURSUIT"
+
+[sub_resource type="Resource" id="Resource_1qle6"]
+script = ExtResource("2_88t6k")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_no5nx"]
+script = ExtResource("2_88t6k")
+level = 3
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_dmfkf"]
+script = ExtResource("2_88t6k")
+level = 7
+move = &"PURSUIT"
+
+[sub_resource type="Resource" id="Resource_5lptg"]
+script = ExtResource("2_88t6k")
+level = 10
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_6kua4"]
+script = ExtResource("2_88t6k")
+level = 13
+move = &"ODORSLEUTH"
+
+[sub_resource type="Resource" id="Resource_wvpy5"]
+script = ExtResource("2_88t6k")
+level = 16
+move = &"BIDE"
+
+[sub_resource type="Resource" id="Resource_krr0j"]
+script = ExtResource("2_88t6k")
+level = 19
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_kxrnr"]
+script = ExtResource("2_88t6k")
+level = 23
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_homvk"]
+script = ExtResource("2_88t6k")
+level = 27
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_ucfb2"]
+script = ExtResource("2_88t6k")
+level = 31
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_34ahp"]
+script = ExtResource("2_88t6k")
+level = 35
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_2noeb"]
+script = ExtResource("2_88t6k")
+level = 39
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_kexjk"]
+script = ExtResource("2_88t6k")
+level = 43
+move = &"HYPERFANG"
+
+[sub_resource type="Resource" id="Resource_hkr50"]
+script = ExtResource("2_88t6k")
+level = 47
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_j7kxh"]
+script = ExtResource("2_88t6k")
+level = 51
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_t61kt"]
+script = ExtResource("2_88t6k")
+level = 55
+move = &"REST"
+
+[resource]
+resource_name = "GUMSHOOS"
+script = ExtResource("3_8y8k8")
+species = &"GUMSHOOS"
+category = "Stakeout"
+pokedex_entry = "When it finds a trace of its prey, it patiently stakes out the location... but it's always snoozing by nightfall."
+base_hp = 88
+base_attack = 110
+base_defense = 60
+base_special_attack = 55
+base_special_defense = 60
+base_speed = 45
+ev_attack = 2
+base_exp = 146
+catch_rate = 127
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_88t6k")]([SubResource("Resource_8g2n3"), SubResource("Resource_cum42"), SubResource("Resource_o7vwn"), SubResource("Resource_1qle6"), SubResource("Resource_no5nx"), SubResource("Resource_dmfkf"), SubResource("Resource_5lptg"), SubResource("Resource_6kua4"), SubResource("Resource_wvpy5"), SubResource("Resource_krr0j"), SubResource("Resource_kxrnr"), SubResource("Resource_homvk"), SubResource("Resource_ucfb2"), SubResource("Resource_34ahp"), SubResource("Resource_2noeb"), SubResource("Resource_kexjk"), SubResource("Resource_hkr50"), SubResource("Resource_j7kxh"), SubResource("Resource_t61kt")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DUALCHOP", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FRUSTRATION", &"HIDDENPOWER", &"ICEPUNCH", &"IRONHEAD", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"STAKEOUT", &"STRONGJAW"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+wild_item_uncommon = Array[StringName]([&"PECHABERRY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_o064g")]([SubResource("Resource_bduvs")])
+height = 7
+weight = 142
+color = &"Brown"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(1, 20)
+id = &"GUMSHOOS"
+display_name = "Gumshoos"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_rxqb3"]
+
+[resource]
+resource_name = "FOSSILIZEDDINO"
+script = ExtResource("1_rxqb3")
+name_plural = "Fossilized Dinos"
+price = 5000
+sell_price = 2500
+description = "The fossil of an ancient Pokémon that once lived in the sea. What it looked like is a mystery."
+id = &"FOSSILIZEDDINO"
+display_name = "Fossilized Dino"
+flags = Array[StringName]([&"Fling_100"])

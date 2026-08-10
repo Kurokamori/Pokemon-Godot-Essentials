@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6bo1l"]
+
+[resource]
+resource_name = "OLDGATEAU"
+script = ExtResource("1_6bo1l")
+name_plural = "Old Gateaux"
+pocket = 2
+price = 350
+sell_price = 175
+field_use = 1
+battle_use = 1
+description = "Old Chateau's hidden specialty. It heals all the status problems of a single Pokémon."
+id = &"OLDGATEAU"
+display_name = "Old Gateau"
+flags = Array[StringName]([&"Fling_30"])

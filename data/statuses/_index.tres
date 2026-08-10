@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_7608m"]
+
+[resource]
+script = ExtResource("1_7608m")
+category = &"statuses"
+record_script = "res://src/data/status_data.gd"
+paths = {
+&"BURN": "res://data/statuses/BURN.tres",
+&"FROZEN": "res://data/statuses/FROZEN.tres",
+&"NONE": "res://data/statuses/NONE.tres",
+&"PARALYSIS": "res://data/statuses/PARALYSIS.tres",
+&"POISON": "res://data/statuses/POISON.tres",
+&"SLEEP": "res://data/statuses/SLEEP.tres"
+}
+ordered_ids = Array[StringName]([&"NONE", &"SLEEP", &"POISON", &"BURN", &"PARALYSIS", &"FROZEN"])

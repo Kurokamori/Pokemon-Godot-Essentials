@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2dcqe"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cymqd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pvjii"]
+
+[sub_resource type="Resource" id="Resource_lvpym"]
+script = ExtResource("1_2dcqe")
+species = &"MAGMAR"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_4xxo8"]
+script = ExtResource("2_cymqd")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_tg155"]
+script = ExtResource("2_cymqd")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ahr0n"]
+script = ExtResource("2_cymqd")
+level = 4
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_eo4fd"]
+script = ExtResource("2_cymqd")
+level = 8
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_m8bt2"]
+script = ExtResource("2_cymqd")
+level = 12
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_gvlbe"]
+script = ExtResource("2_cymqd")
+level = 16
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_dummq"]
+script = ExtResource("2_cymqd")
+level = 20
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_wo52i"]
+script = ExtResource("2_cymqd")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_3lacg"]
+script = ExtResource("2_cymqd")
+level = 28
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_rnpv6"]
+script = ExtResource("2_cymqd")
+level = 32
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_vshxf"]
+script = ExtResource("2_cymqd")
+level = 36
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_jlsyh"]
+script = ExtResource("2_cymqd")
+level = 40
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_t5ajh"]
+script = ExtResource("2_cymqd")
+level = 44
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_sudlk"]
+script = ExtResource("2_cymqd")
+level = 48
+move = &"FIREBLAST"
+
+[resource]
+resource_name = "MAGBY"
+script = ExtResource("3_pvjii")
+species = &"MAGBY"
+category = "Live Coal"
+pokedex_entry = "If a Magby is spouting yellow flames from its mouth, it is in good health. When it is fatigued, black smoke will be mixed in with the flames."
+types = Array[StringName]([&"FIRE"])
+base_hp = 45
+base_attack = 75
+base_defense = 37
+base_special_attack = 70
+base_special_defense = 55
+base_speed = 83
+ev_speed = 1
+base_exp = 73
+gender_ratio = &"Female25Percent"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cymqd")]([SubResource("Resource_4xxo8"), SubResource("Resource_tg155"), SubResource("Resource_ahr0n"), SubResource("Resource_eo4fd"), SubResource("Resource_m8bt2"), SubResource("Resource_gvlbe"), SubResource("Resource_dummq"), SubResource("Resource_wo52i"), SubResource("Resource_3lacg"), SubResource("Resource_rnpv6"), SubResource("Resource_vshxf"), SubResource("Resource_jlsyh"), SubResource("Resource_t5ajh"), SubResource("Resource_sudlk")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OVERHEAT", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"THUNDERPUNCH", &"UPROAR", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"BELCH", &"BELLYDRUM", &"CROSSCHOP", &"DYNAMICPUNCH", &"FLAREBLITZ", &"FOCUSENERGY", &"FOCUSPUNCH", &"MACHPUNCH", &"MEGAPUNCH", &"POWERSWAP", &"SCREECH", &"THUNDERPUNCH"])
+abilities = Array[StringName]([&"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"VITALSPIRIT"])
+wild_item_uncommon = Array[StringName]([&"MAGMARIZER"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_2dcqe")]([SubResource("Resource_lvpym")])
+height = 7
+weight = 214
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 31)
+shadow_size = 1
+id = &"MAGBY"
+display_name = "Magby"

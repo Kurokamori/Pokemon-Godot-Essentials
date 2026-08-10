@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="DuelRules" load_steps=16 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/duel/duel_rules.gd" id="1_rules"]
+[ext_resource type="Script" path="res://src/minigames/duel/duel_outcome.gd" id="2_outcome"]
+[ext_resource type="PackedScene" path="res://scenes/minigames/duel_overlay.tscn" id="3_overlay"]
+
+[sub_resource type="Resource" id="Outcome_special_clash"]
+script = ExtResource("2_outcome")
+opponent_action = 3
+player_command = 3
+message = "Your special attacks collide!"
+player_damage = 4
+opponent_damage = 4
+beat = 8
+
+[sub_resource type="Resource" id="Outcome_opponent_pierces"]
+script = ExtResource("2_outcome")
+opponent_action = 3
+player_command = -1
+message = "The opponent pierces through your defences!"
+player_damage = 3
+opponent_damage = 0
+beat = 7
+
+[sub_resource type="Resource" id="Outcome_player_pierces"]
+script = ExtResource("2_outcome")
+opponent_action = -1
+player_command = 3
+message = "You pierce through the opponent's defences!"
+player_damage = 0
+opponent_damage = 3
+beat = 6
+
+[sub_resource type="Resource" id="Outcome_study"]
+script = ExtResource("2_outcome")
+opponent_action = 0
+player_command = 0
+message = "You study each other's movements..."
+player_damage = 0
+opponent_damage = 0
+beat = 0
+
+[sub_resource type="Resource" id="Outcome_unblocked"]
+script = ExtResource("2_outcome")
+opponent_action = 0
+player_command = 1
+message = "Your attack was not blocked!"
+player_damage = 0
+opponent_damage = 1
+beat = 1
+
+[sub_resource type="Resource" id="Outcome_evaded_by_opponent"]
+script = ExtResource("2_outcome")
+opponent_action = 0
+player_command = 2
+message = "Your attack was evaded!"
+player_damage = 0
+opponent_damage = 0
+beat = 5
+
+[sub_resource type="Resource" id="Outcome_failed_block"]
+script = ExtResource("2_outcome")
+opponent_action = 1
+player_command = 0
+message = "You fail to block the opponent's attack!"
+player_damage = 1
+opponent_damage = 0
+beat = 2
+
+[sub_resource type="Resource" id="Outcome_crossed_blades"]
+script = ExtResource("2_outcome")
+opponent_action = 1
+player_command = 1
+message = "You cross blades with the opponent!"
+player_damage = 0
+opponent_damage = 0
+beat = 3
+
+[sub_resource type="Resource" id="Outcome_trade_light"]
+script = ExtResource("2_outcome")
+opponent_action = 1
+player_command = 2
+message = "You hit each other!"
+player_damage = 1
+opponent_damage = 2
+beat = 3
+
+[sub_resource type="Resource" id="Outcome_evaded_by_player"]
+script = ExtResource("2_outcome")
+opponent_action = 2
+player_command = 0
+message = "You evade the opponent's attack!"
+player_damage = 0
+opponent_damage = 0
+beat = 4
+
+[sub_resource type="Resource" id="Outcome_trade_heavy"]
+script = ExtResource("2_outcome")
+opponent_action = 2
+player_command = 1
+message = "You hit each other!"
+player_damage = 2
+opponent_damage = 1
+beat = 3
+
+[sub_resource type="Resource" id="Outcome_trade_full"]
+script = ExtResource("2_outcome")
+opponent_action = 2
+player_command = 2
+message = "You hit each other!"
+player_damage = 2
+opponent_damage = 2
+beat = 3
+
+[resource]
+script = ExtResource("1_rules")
+command_names = Array[String](["DEFEND", "PRECISE ATTACK", "FIERCE ATTACK", "SPECIAL ATTACK"])
+starting_health = 10
+once_only_command = 3
+opponent_weights = PackedInt32Array(3, 4, 4, 2)
+outcomes = Array[ExtResource("2_outcome")]([SubResource("Outcome_special_clash"), SubResource("Outcome_opponent_pierces"), SubResource("Outcome_player_pierces"), SubResource("Outcome_study"), SubResource("Outcome_unblocked"), SubResource("Outcome_evaded_by_opponent"), SubResource("Outcome_failed_block"), SubResource("Outcome_crossed_blades"), SubResource("Outcome_trade_light"), SubResource("Outcome_evaded_by_player"), SubResource("Outcome_trade_heavy"), SubResource("Outcome_trade_full")])
+overlay_scene = ExtResource("3_overlay")
+prompt = "Choose a command."
+move_seconds = 0.25
+shake_seconds = 0.3
+shake_strength = 6.0
+flash_seconds = 0.25
+beat_seconds = 0.35

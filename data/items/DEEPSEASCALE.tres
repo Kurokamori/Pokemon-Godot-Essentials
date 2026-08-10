@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bvekj"]
+
+[resource]
+resource_name = "DEEPSEASCALE"
+script = ExtResource("1_bvekj")
+name_plural = "Deep Sea Scales"
+price = 2000
+sell_price = 1000
+bp_price = 5
+description = "An item to be held by Clamperl. A scale that shines a faint pink, it raises the Sp. Def stat."
+id = &"DEEPSEASCALE"
+display_name = "Deep Sea Scale"
+flags = Array[StringName]([&"Fling_30"])

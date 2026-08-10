@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_ygmhw"]
+
+[resource]
+resource_name = "MOVE_HARDEN"
+script = ExtResource("1_ygmhw")
+graphic = "anim sheet"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 133, 221, 100, 100, 0, 0, 15, 70, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 133, 221, 100, 100, 0, 0, 15, 105, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 133, 221, 100, 100, 0, 0, 15, 140, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 133, 221, 100, 100, 0, 0, 15, 140, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 133, 221, 100, 100, 0, 0, 15, 140, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 133, 221, 100, 100, 0, 0, 15, 140, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 133, 221, 100, 100, 0, 0, 15, 105, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 133, 221, 100, 100, 0, 0, 15, 70, 0, 0, 0, 1, 2)])
+timing_frames = PackedInt32Array(0)
+timing_sounds = PackedStringArray("Harden")
+timing_volumes = PackedInt32Array(100)
+timing_pitches = PackedInt32Array(100)
+id = &"MOVE_HARDEN"
+display_name = "Move:HARDEN"

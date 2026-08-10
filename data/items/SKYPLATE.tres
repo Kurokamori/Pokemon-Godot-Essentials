@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4h0n0"]
+
+[resource]
+resource_name = "SKYPLATE"
+script = ExtResource("1_4h0n0")
+name_plural = "Sky Plates"
+price = 10000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Flying-type moves."
+id = &"SKYPLATE"
+display_name = "Sky Plate"
+flags = Array[StringName]([&"Fling_90"])

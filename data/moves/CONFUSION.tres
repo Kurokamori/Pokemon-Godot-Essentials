@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_d8pvb"]
+
+[resource]
+resource_name = "CONFUSION"
+script = ExtResource("1_d8pvb")
+type = &"PSYCHIC"
+category = 1
+power = 50
+total_pp = 25
+function_code = &"ConfuseTarget"
+effect_chance = 10
+description = "The target is hit by a weak telekinetic force. It may also leave the target confused."
+id = &"CONFUSION"
+display_name = "Confusion"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

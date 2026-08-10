@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3bdma"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wujof"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_s5dsx"]
+
+[sub_resource type="Resource" id="Resource_rk2uo"]
+script = ExtResource("1_3bdma")
+species = &"COPPERAJAH"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_eecnd"]
+script = ExtResource("2_wujof")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7j6xi"]
+script = ExtResource("2_wujof")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_v6yfs"]
+script = ExtResource("2_wujof")
+level = 5
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_q08w3"]
+script = ExtResource("2_wujof")
+level = 10
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_txkm7"]
+script = ExtResource("2_wujof")
+level = 15
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_xegnp"]
+script = ExtResource("2_wujof")
+level = 20
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_ieloc"]
+script = ExtResource("2_wujof")
+level = 25
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_6566a"]
+script = ExtResource("2_wujof")
+level = 30
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_njlha"]
+script = ExtResource("2_wujof")
+level = 35
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_fk0s8"]
+script = ExtResource("2_wujof")
+level = 40
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_2tqne"]
+script = ExtResource("2_wujof")
+level = 45
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_r2rjd"]
+script = ExtResource("2_wujof")
+level = 50
+move = &"HIGHHORSEPOWER"
+
+[sub_resource type="Resource" id="Resource_06sjs"]
+script = ExtResource("2_wujof")
+level = 55
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "CUFANT"
+script = ExtResource("3_s5dsx")
+species = &"CUFANT"
+category = "Copperderm"
+pokedex_entry = "It digs up the ground with its trunk. It's also very strong, being able to carry loads of over five tons without any problem at all."
+types = Array[StringName]([&"STEEL"])
+base_hp = 72
+base_attack = 80
+base_defense = 49
+base_special_attack = 40
+base_special_defense = 49
+base_speed = 40
+ev_attack = 1
+base_exp = 66
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wujof")]([SubResource("Resource_eecnd"), SubResource("Resource_7j6xi"), SubResource("Resource_v6yfs"), SubResource("Resource_q08w3"), SubResource("Resource_txkm7"), SubResource("Resource_xegnp"), SubResource("Resource_ieloc"), SubResource("Resource_6566a"), SubResource("Resource_njlha"), SubResource("Resource_fk0s8"), SubResource("Resource_2tqne"), SubResource("Resource_r2rjd"), SubResource("Resource_06sjs")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"IRONDEFENSE", &"IRONHEAD", &"MEGAKICK", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PLAYROUGH", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BELCH", &"CURSE", &"DEFENSECURL", &"DOUBLEEDGE", &"FISSURE", &"SLAM", &"SWAGGER", &"WHIRLWIND"])
+abilities = Array[StringName]([&"SHEERFORCE"])
+hidden_abilities = Array[StringName]([&"HEAVYMETAL"])
+wild_item_uncommon = Array[StringName]([&"LAGGINGTAIL"])
+egg_groups = Array[StringName]([&"Field", &"Mineral"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_3bdma")]([SubResource("Resource_rk2uo")])
+height = 12
+weight = 1000
+color = &"Yellow"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(4, 48)
+front_sprite_offset = Vector2i(-8, 26)
+id = &"CUFANT"
+display_name = "Cufant"

@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jmps5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gwokv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_67ho1"]
+
+[sub_resource type="Resource" id="Resource_t7ijb"]
+script = ExtResource("1_jmps5")
+species = &"FOONGUS"
+method = &"Level"
+parameter = "39"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ck68p"]
+script = ExtResource("2_gwokv")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_g3sfx"]
+script = ExtResource("2_gwokv")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_6nis2"]
+script = ExtResource("2_gwokv")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_dsoom"]
+script = ExtResource("2_gwokv")
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_4ldu2"]
+script = ExtResource("2_gwokv")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_uletx"]
+script = ExtResource("2_gwokv")
+level = 16
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_m6pq8"]
+script = ExtResource("2_gwokv")
+level = 20
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_scgee"]
+script = ExtResource("2_gwokv")
+level = 24
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_0ctx8"]
+script = ExtResource("2_gwokv")
+level = 28
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_qatjv"]
+script = ExtResource("2_gwokv")
+level = 32
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_5xsfi"]
+script = ExtResource("2_gwokv")
+level = 36
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_txgc3"]
+script = ExtResource("2_gwokv")
+level = 42
+move = &"RAGEPOWDER"
+
+[sub_resource type="Resource" id="Resource_a208m"]
+script = ExtResource("2_gwokv")
+level = 48
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_eq0a5"]
+script = ExtResource("2_gwokv")
+level = 54
+move = &"SPORE"
+
+[resource]
+resource_name = "AMOONGUSS"
+script = ExtResource("3_67ho1")
+species = &"AMOONGUSS"
+category = "Mushroom"
+pokedex_entry = "They show off their Poké Ball caps to lure prey, but very few Pokémon are fooled by this."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 114
+base_attack = 85
+base_defense = 70
+base_special_attack = 85
+base_special_defense = 80
+base_speed = 30
+ev_hp = 2
+base_exp = 162
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gwokv")]([SubResource("Resource_ck68p"), SubResource("Resource_g3sfx"), SubResource("Resource_6nis2"), SubResource("Resource_dsoom"), SubResource("Resource_4ldu2"), SubResource("Resource_uletx"), SubResource("Resource_m6pq8"), SubResource("Resource_scgee"), SubResource("Resource_0ctx8"), SubResource("Resource_qatjv"), SubResource("Resource_5xsfi"), SubResource("Resource_txgc3"), SubResource("Resource_a208m"), SubResource("Resource_eq0a5")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYTERRAIN", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POLLENPUFF", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"VENOSHOCK", &"WORRYSEED"])
+abilities = Array[StringName]([&"EFFECTSPORE"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+wild_item_common = Array[StringName]([&"TINYMUSHROOM"])
+wild_item_uncommon = Array[StringName]([&"BIGMUSHROOM"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_jmps5")]([SubResource("Resource_t7ijb")])
+height = 6
+weight = 105
+color = &"White"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 27)
+id = &"AMOONGUSS"
+display_name = "Amoonguss"

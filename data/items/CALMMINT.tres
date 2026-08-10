@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_adkg4"]
+
+[resource]
+resource_name = "CALMMINT"
+script = ExtResource("1_adkg4")
+name_plural = "Calm Mints"
+portion_name = "sprig of Calm Mint"
+portion_name_plural = "sprigs of Calm Mint"
+pocket = 2
+price = 20
+sell_price = 10
+bp_price = 50
+field_use = 1
+description = "When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Attack will grow more slowly."
+id = &"CALMMINT"
+display_name = "Calm Mint"
+flags = Array[StringName]([&"Fling_10"])

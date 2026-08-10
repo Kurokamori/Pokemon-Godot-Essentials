@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qok4f"]
+
+[resource]
+resource_name = "QUIVERDANCE"
+script = ExtResource("1_qok4f")
+type = &"BUG"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserSpAtkSpDefSpd1"
+description = "The user performs a beautiful dance. It boosts the user's Sp. Atk, Sp. Def, and Speed stats."
+id = &"QUIVERDANCE"
+display_name = "Quiver Dance"
+flags = Array[StringName]([&"Dance"])

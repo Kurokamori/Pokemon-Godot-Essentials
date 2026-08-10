@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fnemc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8ahfx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_onxe0"]
+
+[sub_resource type="Resource" id="Resource_h4j8f"]
+script = ExtResource("2_8ahfx")
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_bkplp"]
+script = ExtResource("2_8ahfx")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_5hyrq"]
+script = ExtResource("2_8ahfx")
+level = 6
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_68xgf"]
+script = ExtResource("2_8ahfx")
+level = 12
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_plelv"]
+script = ExtResource("2_8ahfx")
+level = 18
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_35c0y"]
+script = ExtResource("2_8ahfx")
+level = 24
+move = &"GEARUP"
+
+[sub_resource type="Resource" id="Resource_upeu5"]
+script = ExtResource("2_8ahfx")
+level = 30
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_ogdvj"]
+script = ExtResource("2_8ahfx")
+level = 36
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_h506u"]
+script = ExtResource("2_8ahfx")
+level = 42
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_hn6tx"]
+script = ExtResource("2_8ahfx")
+level = 48
+move = &"SHIFTGEAR"
+
+[sub_resource type="Resource" id="Resource_lb2ro"]
+script = ExtResource("2_8ahfx")
+level = 54
+move = &"CRAFTYSHIELD"
+
+[sub_resource type="Resource" id="Resource_r5u3d"]
+script = ExtResource("2_8ahfx")
+level = 60
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_qdnm2"]
+script = ExtResource("2_8ahfx")
+level = 66
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_402no"]
+script = ExtResource("2_8ahfx")
+level = 72
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_exmij"]
+script = ExtResource("2_8ahfx")
+level = 78
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_sfbuc"]
+script = ExtResource("2_8ahfx")
+level = 84
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_wt16j"]
+script = ExtResource("2_8ahfx")
+level = 90
+move = &"FLEURCANNON"
+
+[resource]
+resource_name = "MAGEARNA_1"
+script = ExtResource("3_onxe0")
+species = &"MAGEARNA"
+form = 1
+form_name = "Original Color"
+category = "Artificial"
+pokedex_entry = "This gorgeous Magearna looks as it did at the time of its invention. Its luxurious decoration pleased the king's daughter."
+pokedex_form = 1
+types = Array[StringName]([&"STEEL", &"FAIRY"])
+base_hp = 80
+base_attack = 95
+base_defense = 115
+base_special_attack = 130
+base_special_defense = 115
+base_speed = 65
+ev_special_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_8ahfx")]([SubResource("Resource_h4j8f"), SubResource("Resource_bkplp"), SubResource("Resource_5hyrq"), SubResource("Resource_68xgf"), SubResource("Resource_plelv"), SubResource("Resource_35c0y"), SubResource("Resource_upeu5"), SubResource("Resource_ogdvj"), SubResource("Resource_h506u"), SubResource("Resource_hn6tx"), SubResource("Resource_lb2ro"), SubResource("Resource_r5u3d"), SubResource("Resource_qdnm2"), SubResource("Resource_402no"), SubResource("Resource_exmij"), SubResource("Resource_sfbuc"), SubResource("Resource_wt16j")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AGILITY", &"AURASPHERE", &"BATONPASS", &"BRICKBREAK", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"ECHOEDVOICE", &"EERIEIMPULSE", &"ELECTROBALL", &"ELECTROWEB", &"EMBARGO", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FALSESWIPE", &"FLASHCANNON", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"GYROBALL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"IMPRISON", &"IRONDEFENSE", &"IRONHEAD", &"LASTRESORT", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MISTYEXPLOSION", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"STEELBEAM", &"STEELROLLER", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"VOLTSWITCH", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SOULHEART"])
+hatch_steps = 30720
+height = 10
+weight = 805
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(3, 50)
+front_sprite_offset = Vector2i(1, 17)
+shadow_size = 1
+id = &"MAGEARNA_1"
+display_name = "Magearna"
+flags = Array[StringName]([&"Mythical"])

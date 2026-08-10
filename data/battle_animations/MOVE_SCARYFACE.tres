@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_u2jgs"]
+
+[resource]
+resource_name = "MOVE_SCARYFACE"
+script = ExtResource("1_u2jgs")
+graphic = "normal2"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 102, 100, 100, 0, 0, 10, 150, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 102, 125, 125, 0, 0, 10, 200, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 102, 150, 150, 0, 0, 10, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 102, 175, 175, 0, 0, 10, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 102, 200, 200, 0, 0, 10, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 102, 225, 225, 0, 0, 10, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 102, 225, 225, 0, 0, 10, 150, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 102, 200, 200, 0, 0, 10, 100, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(2)
+timing_sounds = PackedStringArray("Stare")
+timing_volumes = PackedInt32Array(80)
+timing_pitches = PackedInt32Array(100)
+id = &"MOVE_SCARYFACE"
+display_name = "Move:SCARYFACE"

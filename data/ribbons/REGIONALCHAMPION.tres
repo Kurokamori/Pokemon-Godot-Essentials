@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_6vhvr"]
+
+[resource]
+resource_name = "REGIONALCHAMPION"
+script = ExtResource("1_6vhvr")
+icon_position = 75
+description = "Pokémon World Championships Regional Champion Ribbon."
+id = &"REGIONALCHAMPION"
+display_name = "Regional Champion Ribbon"

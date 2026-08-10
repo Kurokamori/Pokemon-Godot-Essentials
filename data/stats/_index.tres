@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_bvxqm"]
+
+[resource]
+script = ExtResource("1_bvxqm")
+category = &"stats"
+record_script = "res://src/data/stat_data.gd"
+paths = {
+&"ACCURACY": "res://data/stats/ACCURACY.tres",
+&"ATTACK": "res://data/stats/ATTACK.tres",
+&"DEFENSE": "res://data/stats/DEFENSE.tres",
+&"EVASION": "res://data/stats/EVASION.tres",
+&"HP": "res://data/stats/HP.tres",
+&"SPECIAL_ATTACK": "res://data/stats/SPECIAL_ATTACK.tres",
+&"SPECIAL_DEFENSE": "res://data/stats/SPECIAL_DEFENSE.tres",
+&"SPEED": "res://data/stats/SPEED.tres"
+}
+ordered_ids = Array[StringName]([&"HP", &"ATTACK", &"DEFENSE", &"SPECIAL_ATTACK", &"SPECIAL_DEFENSE", &"SPEED", &"ACCURACY", &"EVASION"])

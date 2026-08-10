@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_m73bt"]
+
+[resource]
+resource_name = "SPORTBALL"
+script = ExtResource("1_m73bt")
+name_plural = "Sport Balls"
+pocket = 3
+price = 300
+sell_price = 150
+battle_use = 4
+description = "A special Poké Ball for the Bug-Catching Contest."
+id = &"SPORTBALL"
+display_name = "Sport Ball"
+flags = Array[StringName]([&"PokeBall"])

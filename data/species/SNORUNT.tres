@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0fnah"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pq0hv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fgtlh"]
+
+[sub_resource type="Resource" id="Resource_b5bi6"]
+script = ExtResource("1_0fnah")
+species = &"GLALIE"
+method = &"Level"
+parameter = "42"
+
+[sub_resource type="Resource" id="Resource_x6xi5"]
+script = ExtResource("1_0fnah")
+species = &"FROSLASS"
+method = &"ItemFemale"
+parameter = "DAWNSTONE"
+
+[sub_resource type="Resource" id="Resource_o7l87"]
+script = ExtResource("2_pq0hv")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_rjlum"]
+script = ExtResource("2_pq0hv")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_duep6"]
+script = ExtResource("2_pq0hv")
+level = 5
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_w002q"]
+script = ExtResource("2_pq0hv")
+level = 10
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_rwj23"]
+script = ExtResource("2_pq0hv")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_5oemq"]
+script = ExtResource("2_pq0hv")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_0i8of"]
+script = ExtResource("2_pq0hv")
+level = 25
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_mr0gw"]
+script = ExtResource("2_pq0hv")
+level = 30
+move = &"FROSTBREATH"
+
+[sub_resource type="Resource" id="Resource_8vwgk"]
+script = ExtResource("2_pq0hv")
+level = 35
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_momii"]
+script = ExtResource("2_pq0hv")
+level = 40
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_j4kb2"]
+script = ExtResource("2_pq0hv")
+level = 45
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_6ggfd"]
+script = ExtResource("2_pq0hv")
+level = 50
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_5cglr"]
+script = ExtResource("2_pq0hv")
+level = 55
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_tsj7m"]
+script = ExtResource("2_pq0hv")
+level = 60
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "SNORUNT"
+script = ExtResource("3_fgtlh")
+species = &"SNORUNT"
+category = "Snow Hat"
+pokedex_entry = "They tend to move about in groups of around five Snorunt. In snowy regions, it is said that when they are seen late at night, snowfall will arrive by morning."
+types = Array[StringName]([&"ICE"])
+base_hp = 50
+base_attack = 50
+base_defense = 50
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 50
+ev_hp = 1
+base_exp = 60
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pq0hv")]([SubResource("Resource_o7l87"), SubResource("Resource_rjlum"), SubResource("Resource_duep6"), SubResource("Resource_w002q"), SubResource("Resource_rwj23"), SubResource("Resource_5oemq"), SubResource("Resource_0i8of"), SubResource("Resource_mr0gw"), SubResource("Resource_8vwgk"), SubResource("Resource_momii"), SubResource("Resource_j4kb2"), SubResource("Resource_6ggfd"), SubResource("Resource_5cglr"), SubResource("Resource_tsj7m")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLASH", &"FROSTBREATH", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"ICEBEAM", &"ICEFANG", &"ICYWIND", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SPIKES", &"SPITE", &"SUBSTITUTE", &"SWAGGER", &"WATERPULSE", &"WEATHERBALL"])
+egg_moves = Array[StringName]([&"BLOCK", &"DISABLE", &"FAKETEARS", &"HEX", &"ICICLECRASH", &"ROLLOUT", &"SPIKES", &"SWITCHEROO", &"WEATHERBALL"])
+abilities = Array[StringName]([&"INNERFOCUS", &"ICEBODY"])
+hidden_abilities = Array[StringName]([&"MOODY"])
+wild_item_uncommon = Array[StringName]([&"SNOWBALL"])
+egg_groups = Array[StringName]([&"Fairy", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0fnah")]([SubResource("Resource_b5bi6"), SubResource("Resource_x6xi5")])
+height = 7
+weight = 168
+color = &"Gray"
+shape = &"Bipedal"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"SNORUNT"
+display_name = "Snorunt"

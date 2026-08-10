@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gu8u8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ktm00"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_e3kc3"]
+
+[sub_resource type="Resource" id="Resource_i2a2d"]
+script = ExtResource("1_gu8u8")
+species = &"LITLEO"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_opmr2"]
+script = ExtResource("2_ktm00")
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_jgc0t"]
+script = ExtResource("2_ktm00")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_dt87e"]
+script = ExtResource("2_ktm00")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_54yml"]
+script = ExtResource("2_ktm00")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_w7huu"]
+script = ExtResource("2_ktm00")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_kam2s"]
+script = ExtResource("2_ktm00")
+level = 5
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_q5to1"]
+script = ExtResource("2_ktm00")
+level = 8
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_8ph5f"]
+script = ExtResource("2_ktm00")
+level = 11
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_4lrjr"]
+script = ExtResource("2_ktm00")
+level = 15
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_ynhdi"]
+script = ExtResource("2_ktm00")
+level = 20
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_3mkiw"]
+script = ExtResource("2_ktm00")
+level = 23
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_ks4c4"]
+script = ExtResource("2_ktm00")
+level = 28
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_jn3xh"]
+script = ExtResource("2_ktm00")
+level = 33
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_ykn7w"]
+script = ExtResource("2_ktm00")
+level = 38
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_xenbu"]
+script = ExtResource("2_ktm00")
+level = 42
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_3tkex"]
+script = ExtResource("2_ktm00")
+level = 48
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_y5j1p"]
+script = ExtResource("2_ktm00")
+level = 51
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_e4nsq"]
+script = ExtResource("2_ktm00")
+level = 57
+move = &"OVERHEAT"
+
+[resource]
+resource_name = "PYROAR"
+script = ExtResource("3_e3kc3")
+species = &"PYROAR"
+category = "Royal"
+pokedex_entry = "With fiery breath of more than 6,000 degrees Celsius, they viciously threaten any challenger. The females protect the pride's cubs."
+types = Array[StringName]([&"FIRE", &"NORMAL"])
+base_hp = 86
+base_attack = 68
+base_defense = 72
+base_special_attack = 109
+base_special_defense = 66
+base_speed = 106
+ev_special_attack = 2
+base_exp = 177
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleSevenEighths"
+catch_rate = 65
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ktm00")]([SubResource("Resource_opmr2"), SubResource("Resource_jgc0t"), SubResource("Resource_dt87e"), SubResource("Resource_54yml"), SubResource("Resource_w7huu"), SubResource("Resource_kam2s"), SubResource("Resource_q5to1"), SubResource("Resource_8ph5f"), SubResource("Resource_4lrjr"), SubResource("Resource_ynhdi"), SubResource("Resource_3mkiw"), SubResource("Resource_ks4c4"), SubResource("Resource_jn3xh"), SubResource("Resource_ykn7w"), SubResource("Resource_xenbu"), SubResource("Resource_3tkex"), SubResource("Resource_y5j1p"), SubResource("Resource_e4nsq")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BOUNCE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"WILDCHARGE", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"RIVALRY", &"UNNERVE"])
+hidden_abilities = Array[StringName]([&"MOXIE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_gu8u8")]([SubResource("Resource_i2a2d")])
+height = 15
+weight = 815
+color = &"Brown"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(3, 18)
+id = &"PYROAR"
+display_name = "Pyroar"

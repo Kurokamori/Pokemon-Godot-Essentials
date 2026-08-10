@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rjfn7"]
+
+[resource]
+resource_name = "SOLARBLADE"
+script = ExtResource("1_rjfn7")
+type = &"GRASS"
+category = 0
+power = 125
+total_pp = 10
+function_code = &"TwoTurnAttackOneTurnInSun"
+description = "The user gathers light energy into a blade, attacking the target on the next turn."
+id = &"SOLARBLADE"
+display_name = "Solar Blade"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

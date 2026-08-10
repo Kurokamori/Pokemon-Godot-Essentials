@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_jmn6r"]
+
+[resource]
+resource_name = "THUNDERWAVE"
+script = ExtResource("1_jmn6r")
+type = &"ELECTRIC"
+accuracy = 90
+total_pp = 20
+function_code = &"ParalyzeTargetIfNotTypeImmune"
+description = "A weak electric charge is launched at the target. It causes paralysis if it hits."
+id = &"THUNDERWAVE"
+display_name = "Thunder Wave"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

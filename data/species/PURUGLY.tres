@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6w88h"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4tqk8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_58qbx"]
+
+[sub_resource type="Resource" id="Resource_ietpb"]
+script = ExtResource("1_6w88h")
+species = &"GLAMEOW"
+method = &"Level"
+parameter = "38"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_he87b"]
+script = ExtResource("2_4tqk8")
+level = 0
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_liks0"]
+script = ExtResource("2_4tqk8")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_xg0gw"]
+script = ExtResource("2_4tqk8")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_148dd"]
+script = ExtResource("2_4tqk8")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_8kflp"]
+script = ExtResource("2_4tqk8")
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_jxhgd"]
+script = ExtResource("2_4tqk8")
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_2m7bo"]
+script = ExtResource("2_4tqk8")
+level = 5
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_60qai"]
+script = ExtResource("2_4tqk8")
+level = 8
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_22rtf"]
+script = ExtResource("2_4tqk8")
+level = 13
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_dedlr"]
+script = ExtResource("2_4tqk8")
+level = 17
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_ub7ev"]
+script = ExtResource("2_4tqk8")
+level = 20
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_syafi"]
+script = ExtResource("2_4tqk8")
+level = 25
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_157ha"]
+script = ExtResource("2_4tqk8")
+level = 29
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_p1cqj"]
+script = ExtResource("2_4tqk8")
+level = 32
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_q1s0u"]
+script = ExtResource("2_4tqk8")
+level = 37
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_w0lul"]
+script = ExtResource("2_4tqk8")
+level = 45
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_k02fj"]
+script = ExtResource("2_4tqk8")
+level = 52
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_hlumu"]
+script = ExtResource("2_4tqk8")
+level = 60
+move = &"HONECLAWS"
+
+[resource]
+resource_name = "PURUGLY"
+script = ExtResource("3_58qbx")
+species = &"PURUGLY"
+category = "Tiger Cat"
+pokedex_entry = "It is a brazen brute that barges its way into another Pokémon's nest and claims it as its own."
+base_hp = 71
+base_attack = 82
+base_defense = 64
+base_special_attack = 64
+base_special_defense = 59
+base_speed = 112
+ev_speed = 2
+base_exp = 158
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4tqk8")]([SubResource("Resource_he87b"), SubResource("Resource_liks0"), SubResource("Resource_xg0gw"), SubResource("Resource_148dd"), SubResource("Resource_8kflp"), SubResource("Resource_jxhgd"), SubResource("Resource_2m7bo"), SubResource("Resource_60qai"), SubResource("Resource_22rtf"), SubResource("Resource_dedlr"), SubResource("Resource_ub7ev"), SubResource("Resource_syafi"), SubResource("Resource_157ha"), SubResource("Resource_p1cqj"), SubResource("Resource_q1s0u"), SubResource("Resource_w0lul"), SubResource("Resource_k02fj"), SubResource("Resource_hlumu")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"UTURN", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"THICKFAT", &"OWNTEMPO"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6w88h")]([SubResource("Resource_ietpb")])
+height = 10
+weight = 438
+color = &"Gray"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-4, 24)
+id = &"PURUGLY"
+display_name = "Purugly"

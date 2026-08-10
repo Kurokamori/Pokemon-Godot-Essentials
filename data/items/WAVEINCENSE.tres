@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_16bcg"]
+
+[resource]
+resource_name = "WAVEINCENSE"
+script = ExtResource("1_16bcg")
+name_plural = "Wave Incenses"
+portion_name = "jar of Wave Incense"
+portion_name_plural = "jars of Wave Incense"
+price = 2000
+sell_price = 1000
+description = "An item to be held by a Pokémon. It has a curious aroma that boosts the power of Water-type moves."
+id = &"WAVEINCENSE"
+display_name = "Wave Incense"
+flags = Array[StringName]([&"Fling_10"])

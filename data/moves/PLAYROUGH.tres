@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_cjkrt"]
+
+[resource]
+resource_name = "PLAYROUGH"
+script = ExtResource("1_cjkrt")
+type = &"FAIRY"
+category = 0
+power = 90
+accuracy = 90
+total_pp = 10
+function_code = &"LowerTargetAttack1"
+effect_chance = 10
+description = "The user plays rough with the target and attacks it. This may also lower the target's Attack stat."
+id = &"PLAYROUGH"
+display_name = "Play Rough"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,154 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3a8ue"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x4lbk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_57w5l"]
+
+[sub_resource type="Resource" id="Resource_76co5"]
+script = ExtResource("1_3a8ue")
+species = &"CACNEA"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_aeg5q"]
+script = ExtResource("2_x4lbk")
+level = 0
+move = &"SPIKYSHIELD"
+
+[sub_resource type="Resource" id="Resource_b2rjr"]
+script = ExtResource("2_x4lbk")
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_hqoxv"]
+script = ExtResource("2_x4lbk")
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_dbrt0"]
+script = ExtResource("2_x4lbk")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_esloc"]
+script = ExtResource("2_x4lbk")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_x0y1c"]
+script = ExtResource("2_x4lbk")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_om33f"]
+script = ExtResource("2_x4lbk")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_gauqu"]
+script = ExtResource("2_x4lbk")
+level = 4
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_xc3jj"]
+script = ExtResource("2_x4lbk")
+level = 7
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_pq3w6"]
+script = ExtResource("2_x4lbk")
+level = 10
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_e43d6"]
+script = ExtResource("2_x4lbk")
+level = 13
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_taigc"]
+script = ExtResource("2_x4lbk")
+level = 16
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_y1amr"]
+script = ExtResource("2_x4lbk")
+level = 19
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_bared"]
+script = ExtResource("2_x4lbk")
+level = 22
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_ol8gk"]
+script = ExtResource("2_x4lbk")
+level = 26
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_t6mti"]
+script = ExtResource("2_x4lbk")
+level = 30
+move = &"SPIKES"
+
+[sub_resource type="Resource" id="Resource_y07uo"]
+script = ExtResource("2_x4lbk")
+level = 35
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_8io6w"]
+script = ExtResource("2_x4lbk")
+level = 38
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_k7k2n"]
+script = ExtResource("2_x4lbk")
+level = 44
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_37rr1"]
+script = ExtResource("2_x4lbk")
+level = 49
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_a0ica"]
+script = ExtResource("2_x4lbk")
+level = 54
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_10jld"]
+script = ExtResource("2_x4lbk")
+level = 59
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "CACTURNE"
+script = ExtResource("3_57w5l")
+species = &"CACTURNE"
+category = "Scarecrow"
+pokedex_entry = "After spending thousands of years in harsh deserts, its blood transformed into the same substances as sand. It is nocturnal, so it hunts at night."
+types = Array[StringName]([&"GRASS", &"DARK"])
+base_hp = 70
+base_attack = 115
+base_defense = 60
+base_special_attack = 115
+base_special_defense = 60
+base_speed = 55
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 166
+growth_rate = &"Parabolic"
+catch_rate = 60
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_x4lbk")]([SubResource("Resource_aeg5q"), SubResource("Resource_b2rjr"), SubResource("Resource_hqoxv"), SubResource("Resource_dbrt0"), SubResource("Resource_esloc"), SubResource("Resource_x0y1c"), SubResource("Resource_om33f"), SubResource("Resource_gauqu"), SubResource("Resource_xc3jj"), SubResource("Resource_pq3w6"), SubResource("Resource_e43d6"), SubResource("Resource_taigc"), SubResource("Resource_y1amr"), SubResource("Resource_bared"), SubResource("Resource_ol8gk"), SubResource("Resource_t6mti"), SubResource("Resource_y07uo"), SubResource("Resource_8io6w"), SubResource("Resource_k7k2n"), SubResource("Resource_37rr1"), SubResource("Resource_a0ica"), SubResource("Resource_10jld")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROLEPLAY", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THUNDERPUNCH", &"VENOSHOCK", &"WORRYSEED"])
+abilities = Array[StringName]([&"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+wild_item_uncommon = Array[StringName]([&"STICKYBARB"])
+egg_groups = Array[StringName]([&"Grass", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_3a8ue")]([SubResource("Resource_76co5")])
+height = 13
+weight = 774
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 16)
+id = &"CACTURNE"
+display_name = "Cacturne"

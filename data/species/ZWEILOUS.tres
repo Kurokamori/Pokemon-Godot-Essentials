@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qgec8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2povw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_few32"]
+
+[sub_resource type="Resource" id="Resource_tlc4q"]
+script = ExtResource("1_qgec8")
+species = &"HYDREIGON"
+method = &"Level"
+parameter = "64"
+
+[sub_resource type="Resource" id="Resource_hl78m"]
+script = ExtResource("1_qgec8")
+species = &"DEINO"
+method = &"Level"
+parameter = "50"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ctxfx"]
+script = ExtResource("2_2povw")
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_fy52s"]
+script = ExtResource("2_2povw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_6l5qq"]
+script = ExtResource("2_2povw")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_hrlc5"]
+script = ExtResource("2_2povw")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_ynjp7"]
+script = ExtResource("2_2povw")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_00lqx"]
+script = ExtResource("2_2povw")
+level = 12
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_getfd"]
+script = ExtResource("2_2povw")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_6wnfl"]
+script = ExtResource("2_2povw")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_7nquq"]
+script = ExtResource("2_2povw")
+level = 24
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_pidc6"]
+script = ExtResource("2_2povw")
+level = 28
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_fs0lu"]
+script = ExtResource("2_2povw")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_3g6wg"]
+script = ExtResource("2_2povw")
+level = 36
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_t8ltf"]
+script = ExtResource("2_2povw")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_kfjr0"]
+script = ExtResource("2_2povw")
+level = 44
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_ejirj"]
+script = ExtResource("2_2povw")
+level = 48
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_8hvm7"]
+script = ExtResource("2_2povw")
+level = 54
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_2q75b"]
+script = ExtResource("2_2povw")
+level = 60
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_al181"]
+script = ExtResource("2_2povw")
+level = 66
+move = &"OUTRAGE"
+
+[resource]
+resource_name = "ZWEILOUS"
+script = ExtResource("3_few32")
+species = &"ZWEILOUS"
+category = "Hostile"
+pokedex_entry = "Since their two heads do not get along and compete with each other for food, they always eat too much."
+types = Array[StringName]([&"DARK", &"DRAGON"])
+base_hp = 72
+base_attack = 85
+base_defense = 70
+base_special_attack = 65
+base_special_defense = 70
+base_speed = 58
+ev_attack = 2
+base_exp = 147
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_2povw")]([SubResource("Resource_ctxfx"), SubResource("Resource_fy52s"), SubResource("Resource_6l5qq"), SubResource("Resource_hrlc5"), SubResource("Resource_ynjp7"), SubResource("Resource_00lqx"), SubResource("Resource_getfd"), SubResource("Resource_6wnfl"), SubResource("Resource_7nquq"), SubResource("Resource_pidc6"), SubResource("Resource_fs0lu"), SubResource("Resource_3g6wg"), SubResource("Resource_t8ltf"), SubResource("Resource_kfjr0"), SubResource("Resource_ejirj"), SubResource("Resource_8hvm7"), SubResource("Resource_2q75b"), SubResource("Resource_al181")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FIREFANG", &"FOCUSENERGY", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEFANG", &"INCINERATE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERFANG", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"UPROAR", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"HUSTLE"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_qgec8")]([SubResource("Resource_tlc4q"), SubResource("Resource_hl78m")])
+height = 14
+weight = 500
+color = &"Blue"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 22)
+id = &"ZWEILOUS"
+display_name = "Zweilous"

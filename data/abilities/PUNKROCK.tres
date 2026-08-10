@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_vxxip"]
+
+[resource]
+resource_name = "PUNKROCK"
+script = ExtResource("1_vxxip")
+description = "Powers up own sound moves. Resists other sound moves."
+id = &"PUNKROCK"
+display_name = "Punk Rock"

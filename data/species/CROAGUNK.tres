@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s6cos"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5aoou"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kwh27"]
+
+[sub_resource type="Resource" id="Resource_0p5xc"]
+script = ExtResource("1_s6cos")
+species = &"TOXICROAK"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_slvr6"]
+script = ExtResource("2_5aoou")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_op37u"]
+script = ExtResource("2_5aoou")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_afaa0"]
+script = ExtResource("2_5aoou")
+level = 4
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_bi3sl"]
+script = ExtResource("2_5aoou")
+level = 8
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_aqwt6"]
+script = ExtResource("2_5aoou")
+level = 12
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_42bjg"]
+script = ExtResource("2_5aoou")
+level = 16
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_blagl"]
+script = ExtResource("2_5aoou")
+level = 20
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_d74nv"]
+script = ExtResource("2_5aoou")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_lsv55"]
+script = ExtResource("2_5aoou")
+level = 28
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_11sns"]
+script = ExtResource("2_5aoou")
+level = 32
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_wjifk"]
+script = ExtResource("2_5aoou")
+level = 36
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_lqs46"]
+script = ExtResource("2_5aoou")
+level = 40
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_1gcuv"]
+script = ExtResource("2_5aoou")
+level = 44
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_wkyan"]
+script = ExtResource("2_5aoou")
+level = 48
+move = &"BELCH"
+
+[resource]
+resource_name = "CROAGUNK"
+script = ExtResource("3_kwh27")
+species = &"CROAGUNK"
+category = "Toxic Mouth"
+pokedex_entry = "Its cheeks hold poison sacs. It tries to catch foes off guard to jab them with toxic fingers."
+types = Array[StringName]([&"POISON", &"FIGHTING"])
+base_hp = 48
+base_attack = 61
+base_defense = 40
+base_special_attack = 61
+base_special_defense = 40
+base_speed = 50
+ev_attack = 1
+base_exp = 60
+catch_rate = 140
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_5aoou")]([SubResource("Resource_slvr6"), SubResource("Resource_op37u"), SubResource("Resource_afaa0"), SubResource("Resource_bi3sl"), SubResource("Resource_aqwt6"), SubResource("Resource_42bjg"), SubResource("Resource_blagl"), SubResource("Resource_d74nv"), SubResource("Resource_lsv55"), SubResource("Resource_11sns"), SubResource("Resource_wjifk"), SubResource("Resource_lqs46"), SubResource("Resource_1gcuv"), SubResource("Resource_wkyan")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BOUNCE", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"COACHING", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"EMBARGO", &"ENCORE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GUNKSHOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"ICYWIND", &"KNOCKOFF", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"VACUUMWAVE", &"VENOMDRENCH", &"VENOSHOCK", &"WORKUP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"ACUPRESSURE", &"BULLETPUNCH", &"COUNTER", &"CROSSCHOP", &"DYNAMICPUNCH", &"FAKEOUT", &"FEINT", &"HEADBUTT", &"QUICKGUARD", &"VACUUMWAVE"])
+abilities = Array[StringName]([&"ANTICIPATION", &"DRYSKIN"])
+hidden_abilities = Array[StringName]([&"POISONTOUCH"])
+wild_item_uncommon = Array[StringName]([&"BLACKSLUDGE"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_s6cos")]([SubResource("Resource_0p5xc")])
+height = 7
+weight = 230
+color = &"Blue"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-3, 30)
+shadow_size = 1
+id = &"CROAGUNK"
+display_name = "Croagunk"

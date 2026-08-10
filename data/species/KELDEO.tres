@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_j3mdd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_021p7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3fud2"]
+
+[sub_resource type="Resource" id="Resource_hdhxd"]
+script = ExtResource("2_021p7")
+move = &"SECRETSWORD"
+
+[sub_resource type="Resource" id="Resource_3nrfh"]
+script = ExtResource("2_021p7")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_upcok"]
+script = ExtResource("2_021p7")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_2kcjl"]
+script = ExtResource("2_021p7")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_2uenm"]
+script = ExtResource("2_021p7")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_eqt46"]
+script = ExtResource("2_021p7")
+level = 7
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_x42vw"]
+script = ExtResource("2_021p7")
+level = 14
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_dltry"]
+script = ExtResource("2_021p7")
+level = 21
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_usshh"]
+script = ExtResource("2_021p7")
+level = 28
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_pnhy0"]
+script = ExtResource("2_021p7")
+level = 35
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_kkhay"]
+script = ExtResource("2_021p7")
+level = 42
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_4mpyg"]
+script = ExtResource("2_021p7")
+level = 49
+move = &"SACREDSWORD"
+
+[sub_resource type="Resource" id="Resource_x0hkg"]
+script = ExtResource("2_021p7")
+level = 56
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_evo7m"]
+script = ExtResource("2_021p7")
+level = 63
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_fkv5c"]
+script = ExtResource("2_021p7")
+level = 70
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "KELDEO"
+script = ExtResource("3_3fud2")
+species = &"KELDEO"
+form_name = "Ordinary Form"
+category = "Colt"
+pokedex_entry = "It crosses the world, running over the surfaces of oceans and rivers. It appears at scenic waterfronts."
+types = Array[StringName]([&"WATER", &"FIGHTING"])
+base_hp = 91
+base_attack = 72
+base_defense = 90
+base_special_attack = 129
+base_special_defense = 90
+base_speed = 108
+ev_special_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_021p7")]([SubResource("Resource_hdhxd"), SubResource("Resource_3nrfh"), SubResource("Resource_upcok"), SubResource("Resource_2kcjl"), SubResource("Resource_2uenm"), SubResource("Resource_eqt46"), SubResource("Resource_x42vw"), SubResource("Resource_dltry"), SubResource("Resource_usshh"), SubResource("Resource_pnhy0"), SubResource("Resource_kkhay"), SubResource("Resource_4mpyg"), SubResource("Resource_x0hkg"), SubResource("Resource_evo7m"), SubResource("Resource_fkv5c")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"AQUATAIL", &"AURASPHERE", &"BOUNCE", &"BRICKBREAK", &"CALMMIND", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COVET", &"CUT", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLIPTURN", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICYWIND", &"LASTRESORT", &"LIQUIDATION", &"LOWKICK", &"MEGAHORN", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SECRETSWORD", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"WATERPULSE", &"WORKUP", &"XSCISSOR"])
+abilities = Array[StringName]([&"JUSTIFIED"])
+hatch_steps = 20480
+height = 14
+weight = 485
+color = &"Yellow"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 22)
+id = &"KELDEO"
+display_name = "Keldeo"
+flags = Array[StringName]([&"Mythical"])

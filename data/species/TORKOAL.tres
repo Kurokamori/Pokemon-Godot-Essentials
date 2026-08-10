@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6nw76"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8h6mq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_l0nxs"]
+
+[sub_resource type="Resource" id="Resource_nhib3"]
+script = ExtResource("2_8h6mq")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_xcjpk"]
+script = ExtResource("2_8h6mq")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_g8frn"]
+script = ExtResource("2_8h6mq")
+level = 4
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_umfjs"]
+script = ExtResource("2_8h6mq")
+level = 8
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_iqonv"]
+script = ExtResource("2_8h6mq")
+level = 12
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_5sw3r"]
+script = ExtResource("2_8h6mq")
+level = 16
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_m1jpl"]
+script = ExtResource("2_8h6mq")
+level = 20
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_ltv5q"]
+script = ExtResource("2_8h6mq")
+level = 24
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_w584y"]
+script = ExtResource("2_8h6mq")
+level = 28
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_oukbd"]
+script = ExtResource("2_8h6mq")
+level = 32
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_2t31w"]
+script = ExtResource("2_8h6mq")
+level = 36
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_dcs30"]
+script = ExtResource("2_8h6mq")
+level = 40
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_cbaal"]
+script = ExtResource("2_8h6mq")
+level = 44
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_plq4b"]
+script = ExtResource("2_8h6mq")
+level = 48
+move = &"HEATWAVE"
+
+[sub_resource type="Resource" id="Resource_n6y3r"]
+script = ExtResource("2_8h6mq")
+level = 52
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_mjcm6"]
+script = ExtResource("2_8h6mq")
+level = 56
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_6iw5d"]
+script = ExtResource("2_8h6mq")
+level = 60
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_w33uo"]
+script = ExtResource("2_8h6mq")
+level = 64
+move = &"ERUPTION"
+
+[resource]
+resource_name = "TORKOAL"
+script = ExtResource("3_l0nxs")
+species = &"TORKOAL"
+category = "Coal"
+pokedex_entry = "It battles using energy it gets from burning coal. When loosing smoke from its nostrils, it lets off a sound that is similar to a locomotive's horn."
+types = Array[StringName]([&"FIRE"])
+base_hp = 70
+base_attack = 85
+base_defense = 140
+base_special_attack = 85
+base_special_defense = 70
+base_speed = 20
+ev_defense = 2
+base_exp = 165
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8h6mq")]([SubResource("Resource_nhib3"), SubResource("Resource_xcjpk"), SubResource("Resource_g8frn"), SubResource("Resource_umfjs"), SubResource("Resource_iqonv"), SubResource("Resource_5sw3r"), SubResource("Resource_m1jpl"), SubResource("Resource_ltv5q"), SubResource("Resource_w584y"), SubResource("Resource_oukbd"), SubResource("Resource_2t31w"), SubResource("Resource_dcs30"), SubResource("Resource_cbaal"), SubResource("Resource_plq4b"), SubResource("Resource_n6y3r"), SubResource("Resource_mjcm6"), SubResource("Resource_6iw5d"), SubResource("Resource_w33uo")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HEATCRASH", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONDEFENSE", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCORCHINGSANDS", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"WEATHERBALL", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"CLEARSMOG", &"ERUPTION", &"FISSURE", &"FLAIL", &"SKULLBASH", &"SUPERPOWER", &"YAWN"])
+abilities = Array[StringName]([&"WHITESMOKE", &"DROUGHT"])
+hidden_abilities = Array[StringName]([&"SHELLARMOR"])
+wild_item_uncommon = Array[StringName]([&"CHARCOAL"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 5
+weight = 804
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 22)
+id = &"TORKOAL"
+display_name = "Torkoal"

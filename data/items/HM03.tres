@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_jjj1l"]
+
+[resource]
+resource_name = "HM03"
+script = ExtResource("1_jjj1l")
+name_plural = "HM03s"
+pocket = 4
+field_use = 4
+consumable = false
+show_quantity = false
+move = &"SURF"
+description = "Attacks everything by swamping the surroundings with a giant wave. This can also be used to cross water."
+id = &"HM03"
+display_name = "HM03"

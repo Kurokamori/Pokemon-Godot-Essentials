@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EvolutionMethodData" format=3]
+
+[ext_resource type="Script" path="res://src/data/evolution_method_data.gd" id="1_sbjoa"]
+
+[resource]
+resource_name = "Trade"
+script = ExtResource("1_sbjoa")
+on_trade = true
+id = &"Trade"
+display_name = "Trade"

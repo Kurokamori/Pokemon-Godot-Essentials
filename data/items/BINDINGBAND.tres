@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xbywr"]
+
+[resource]
+resource_name = "BINDINGBAND"
+script = ExtResource("1_xbywr")
+name_plural = "Binding Bands"
+price = 3000
+sell_price = 2000
+bp_price = 15
+description = "A band that increases the power of binding moves when held."
+id = &"BINDINGBAND"
+display_name = "Binding Band"
+flags = Array[StringName]([&"Fling_30"])

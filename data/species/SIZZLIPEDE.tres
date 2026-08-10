@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_w452r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_orfg3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_po5ff"]
+
+[sub_resource type="Resource" id="Resource_s3so1"]
+script = ExtResource("1_w452r")
+species = &"CENTISKORCH"
+method = &"Level"
+parameter = "28"
+
+[sub_resource type="Resource" id="Resource_l4q7j"]
+script = ExtResource("2_orfg3")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_f1cnm"]
+script = ExtResource("2_orfg3")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_qxsci"]
+script = ExtResource("2_orfg3")
+level = 5
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_66klw"]
+script = ExtResource("2_orfg3")
+level = 10
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_kbyuo"]
+script = ExtResource("2_orfg3")
+level = 15
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_0pw7n"]
+script = ExtResource("2_orfg3")
+level = 20
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_kvj5d"]
+script = ExtResource("2_orfg3")
+level = 25
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_smn4e"]
+script = ExtResource("2_orfg3")
+level = 30
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_l57dp"]
+script = ExtResource("2_orfg3")
+level = 35
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_i6c4k"]
+script = ExtResource("2_orfg3")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_vf0t1"]
+script = ExtResource("2_orfg3")
+level = 45
+move = &"FIRELASH"
+
+[sub_resource type="Resource" id="Resource_yf2ot"]
+script = ExtResource("2_orfg3")
+level = 50
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_adkla"]
+script = ExtResource("2_orfg3")
+level = 55
+move = &"BURNUP"
+
+[resource]
+resource_name = "SIZZLIPEDE"
+script = ExtResource("3_po5ff")
+species = &"SIZZLIPEDE"
+category = "Radiator"
+pokedex_entry = "It stores flammable gas in its body and uses it to generate heat. The yellow sections on its belly get particularly hot."
+types = Array[StringName]([&"FIRE", &"BUG"])
+base_hp = 50
+base_attack = 65
+base_defense = 45
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 45
+ev_attack = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_orfg3")]([SubResource("Resource_l4q7j"), SubResource("Resource_f1cnm"), SubResource("Resource_qxsci"), SubResource("Resource_66klw"), SubResource("Resource_kbyuo"), SubResource("Resource_0pw7n"), SubResource("Resource_kvj5d"), SubResource("Resource_smn4e"), SubResource("Resource_l57dp"), SubResource("Resource_i6c4k"), SubResource("Resource_vf0t1"), SubResource("Resource_yf2ot"), SubResource("Resource_adkla")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BRUTALSWING", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIRESPIN", &"FRUSTRATION", &"HEATCRASH", &"HEATWAVE", &"HIDDENPOWER", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCORCHINGSANDS", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TOXIC", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"DEFENSECURL", &"KNOCKOFF", &"ROLLOUT", &"STRUGGLEBUG"])
+abilities = Array[StringName]([&"FLASHFIRE", &"WHITESMOKE"])
+hidden_abilities = Array[StringName]([&"FLAMEBODY"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_w452r")]([SubResource("Resource_s3so1")])
+height = 7
+weight = 10
+shape = &"Multiped"
+generation = 8
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(-6, 32)
+id = &"SIZZLIPEDE"
+display_name = "Sizzlipede"

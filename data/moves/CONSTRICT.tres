@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6dlec"]
+
+[resource]
+resource_name = "CONSTRICT"
+script = ExtResource("1_6dlec")
+category = 0
+power = 10
+total_pp = 35
+function_code = &"LowerTargetSpeed1"
+effect_chance = 10
+description = "The foe is attacked with long, creeping tentacles or vines. It may also lower the target's Speed."
+id = &"CONSTRICT"
+display_name = "Constrict"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

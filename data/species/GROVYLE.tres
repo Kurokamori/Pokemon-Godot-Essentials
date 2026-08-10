@@ -1,0 +1,143 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_r4g8g"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e7bfb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p1vd7"]
+
+[sub_resource type="Resource" id="Resource_0bdr7"]
+script = ExtResource("1_r4g8g")
+species = &"SCEPTILE"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_th1mp"]
+script = ExtResource("1_r4g8g")
+species = &"TREECKO"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_1g5gv"]
+script = ExtResource("2_e7bfb")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_4y627"]
+script = ExtResource("2_e7bfb")
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_p8qk3"]
+script = ExtResource("2_e7bfb")
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_ykdju"]
+script = ExtResource("2_e7bfb")
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_kp1mi"]
+script = ExtResource("2_e7bfb")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_n7i25"]
+script = ExtResource("2_e7bfb")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_o0i40"]
+script = ExtResource("2_e7bfb")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_0lioa"]
+script = ExtResource("2_e7bfb")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_cmbfc"]
+script = ExtResource("2_e7bfb")
+level = 9
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_xx2vp"]
+script = ExtResource("2_e7bfb")
+level = 12
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_fr5g7"]
+script = ExtResource("2_e7bfb")
+level = 15
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_1lu2t"]
+script = ExtResource("2_e7bfb")
+level = 20
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_qy516"]
+script = ExtResource("2_e7bfb")
+level = 25
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_2fce4"]
+script = ExtResource("2_e7bfb")
+level = 30
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_b7omc"]
+script = ExtResource("2_e7bfb")
+level = 35
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_kxbdn"]
+script = ExtResource("2_e7bfb")
+level = 40
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_wr14k"]
+script = ExtResource("2_e7bfb")
+level = 45
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_h5wdn"]
+script = ExtResource("2_e7bfb")
+level = 50
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_ajn0l"]
+script = ExtResource("2_e7bfb")
+level = 55
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "GROVYLE"
+script = ExtResource("3_p1vd7")
+species = &"GROVYLE"
+category = "Wood Gecko"
+pokedex_entry = "Leaves grow out of this Pokémon's body. They help obscure a Grovyle from the eyes of its enemies while it is in a thickly overgrown forest."
+types = Array[StringName]([&"GRASS"])
+base_hp = 50
+base_attack = 65
+base_defense = 45
+base_special_attack = 85
+base_special_defense = 65
+base_speed = 95
+ev_speed = 2
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_e7bfb")]([SubResource("Resource_1g5gv"), SubResource("Resource_4y627"), SubResource("Resource_p8qk3"), SubResource("Resource_ykdju"), SubResource("Resource_kp1mi"), SubResource("Resource_n7i25"), SubResource("Resource_o0i40"), SubResource("Resource_0lioa"), SubResource("Resource_cmbfc"), SubResource("Resource_xx2vp"), SubResource("Resource_fr5g7"), SubResource("Resource_1lu2t"), SubResource("Resource_qy516"), SubResource("Resource_2fce4"), SubResource("Resource_b7omc"), SubResource("Resource_kxbdn"), SubResource("Resource_wr14k"), SubResource("Resource_h5wdn"), SubResource("Resource_ajn0l")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HIDDENPOWER", &"IRONTAIL", &"LEAFBLADE", &"LEAFSTORM", &"LOWKICK", &"LOWSWEEP", &"MAGICALLEAF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"THUNDERPUNCH", &"WORKUP", &"WORRYSEED", &"XSCISSOR"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"UNBURDEN"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_r4g8g")]([SubResource("Resource_0bdr7"), SubResource("Resource_th1mp")])
+height = 9
+weight = 216
+color = &"Green"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 23)
+shadow_size = 1
+id = &"GROVYLE"
+display_name = "Grovyle"

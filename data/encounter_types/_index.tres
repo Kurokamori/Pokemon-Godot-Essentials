@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_jg4a6"]
+
+[resource]
+script = ExtResource("1_jg4a6")
+category = &"encounter_types"
+record_script = "res://src/data/encounter_type_data.gd"
+paths = {
+&"BugContest": "res://data/encounter_types/BugContest.tres",
+&"Cave": "res://data/encounter_types/Cave.tres",
+&"CaveAfternoon": "res://data/encounter_types/CaveAfternoon.tres",
+&"CaveDay": "res://data/encounter_types/CaveDay.tres",
+&"CaveEvening": "res://data/encounter_types/CaveEvening.tres",
+&"CaveMorning": "res://data/encounter_types/CaveMorning.tres",
+&"CaveNight": "res://data/encounter_types/CaveNight.tres",
+&"GoodRod": "res://data/encounter_types/GoodRod.tres",
+&"HeadbuttHigh": "res://data/encounter_types/HeadbuttHigh.tres",
+&"HeadbuttLow": "res://data/encounter_types/HeadbuttLow.tres",
+&"Land": "res://data/encounter_types/Land.tres",
+&"LandAfternoon": "res://data/encounter_types/LandAfternoon.tres",
+&"LandDay": "res://data/encounter_types/LandDay.tres",
+&"LandEvening": "res://data/encounter_types/LandEvening.tres",
+&"LandMorning": "res://data/encounter_types/LandMorning.tres",
+&"LandNight": "res://data/encounter_types/LandNight.tres",
+&"OldRod": "res://data/encounter_types/OldRod.tres",
+&"PokeRadar": "res://data/encounter_types/PokeRadar.tres",
+&"RockSmash": "res://data/encounter_types/RockSmash.tres",
+&"SuperRod": "res://data/encounter_types/SuperRod.tres",
+&"Water": "res://data/encounter_types/Water.tres",
+&"WaterAfternoon": "res://data/encounter_types/WaterAfternoon.tres",
+&"WaterDay": "res://data/encounter_types/WaterDay.tres",
+&"WaterEvening": "res://data/encounter_types/WaterEvening.tres",
+&"WaterMorning": "res://data/encounter_types/WaterMorning.tres",
+&"WaterNight": "res://data/encounter_types/WaterNight.tres"
+}
+ordered_ids = Array[StringName]([&"Land", &"LandDay", &"LandNight", &"LandMorning", &"LandAfternoon", &"LandEvening", &"PokeRadar", &"Cave", &"CaveDay", &"CaveNight", &"CaveMorning", &"CaveAfternoon", &"CaveEvening", &"Water", &"WaterDay", &"WaterNight", &"WaterMorning", &"WaterAfternoon", &"WaterEvening", &"OldRod", &"GoodRod", &"SuperRod", &"RockSmash", &"HeadbuttLow", &"HeadbuttHigh", &"BugContest"])

@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1m3c8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mdtal"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dw84l"]
+
+[sub_resource type="Resource" id="Resource_yqqlw"]
+script = ExtResource("1_1m3c8")
+species = &"GABITE"
+method = &"Level"
+parameter = "48"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nhk2k"]
+script = ExtResource("2_mdtal")
+level = 0
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_rchsm"]
+script = ExtResource("2_mdtal")
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_v1gtl"]
+script = ExtResource("2_mdtal")
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_obyfx"]
+script = ExtResource("2_mdtal")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_fqmux"]
+script = ExtResource("2_mdtal")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_enym2"]
+script = ExtResource("2_mdtal")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_t1qrt"]
+script = ExtResource("2_mdtal")
+level = 18
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_epmrb"]
+script = ExtResource("2_mdtal")
+level = 27
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_fqcum"]
+script = ExtResource("2_mdtal")
+level = 34
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_p6s5u"]
+script = ExtResource("2_mdtal")
+level = 42
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_m4geg"]
+script = ExtResource("2_mdtal")
+level = 52
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_durjw"]
+script = ExtResource("2_mdtal")
+level = 62
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_hd6f6"]
+script = ExtResource("2_mdtal")
+level = 72
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_b5glg"]
+script = ExtResource("2_mdtal")
+level = 82
+move = &"DRAGONRUSH"
+
+[resource]
+resource_name = "GARCHOMP"
+script = ExtResource("3_dw84l")
+species = &"GARCHOMP"
+category = "Mach"
+pokedex_entry = "When it folds up its body and extends its wings, it looks like a jet plane. It flies at sonic speed."
+types = Array[StringName]([&"DRAGON", &"GROUND"])
+base_hp = 108
+base_attack = 130
+base_defense = 95
+base_special_attack = 80
+base_special_defense = 85
+base_speed = 102
+ev_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mdtal")]([SubResource("Resource_nhk2k"), SubResource("Resource_rchsm"), SubResource("Resource_v1gtl"), SubResource("Resource_obyfx"), SubResource("Resource_fqmux"), SubResource("Resource_enym2"), SubResource("Resource_t1qrt"), SubResource("Resource_epmrb"), SubResource("Resource_fqcum"), SubResource("Resource_p6s5u"), SubResource("Resource_m4geg"), SubResource("Resource_durjw"), SubResource("Resource_hd6f6"), SubResource("Resource_b5glg")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DIG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALCHOP", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALESHOT", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TWISTER", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"ROUGHSKIN"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_1m3c8")]([SubResource("Resource_yqqlw")])
+height = 19
+weight = 950
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 14)
+id = &"GARCHOMP"
+display_name = "Garchomp"

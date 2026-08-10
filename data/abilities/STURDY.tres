@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_p2jru"]
+
+[resource]
+resource_name = "STURDY"
+script = ExtResource("1_p2jru")
+description = "It cannot be knocked out with one hit."
+id = &"STURDY"
+display_name = "Sturdy"

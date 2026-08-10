@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_trepe"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vx71j"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3724h"]
+
+[sub_resource type="Resource" id="Resource_cqp5j"]
+script = ExtResource("2_vx71j")
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_3c7xi"]
+script = ExtResource("2_vx71j")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_arxte"]
+script = ExtResource("2_vx71j")
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_s8gkb"]
+script = ExtResource("2_vx71j")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_t03me"]
+script = ExtResource("2_vx71j")
+level = 9
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_aisld"]
+script = ExtResource("2_vx71j")
+level = 18
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_7pa2d"]
+script = ExtResource("2_vx71j")
+level = 27
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_j3wnu"]
+script = ExtResource("2_vx71j")
+level = 36
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_nvnb4"]
+script = ExtResource("2_vx71j")
+level = 45
+move = &"FISSURE"
+
+[sub_resource type="Resource" id="Resource_7rflu"]
+script = ExtResource("2_vx71j")
+level = 54
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_uolrn"]
+script = ExtResource("2_vx71j")
+level = 63
+move = &"PRECIPICEBLADES"
+
+[sub_resource type="Resource" id="Resource_21wg5"]
+script = ExtResource("2_vx71j")
+level = 72
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_3t8bv"]
+script = ExtResource("2_vx71j")
+level = 81
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_y8fwk"]
+script = ExtResource("2_vx71j")
+level = 90
+move = &"ERUPTION"
+
+[resource]
+resource_name = "GROUDON_1"
+script = ExtResource("3_3724h")
+species = &"GROUDON"
+form = 1
+form_name = "Primal Groudon"
+category = "Continent"
+pokedex_entry = "Groudon has appeared in mythology as the creator of the land. It sleeps in magma underground and is said to make volcanoes erupt on awakening."
+pokedex_form = 1
+types = Array[StringName]([&"GROUND", &"FIRE"])
+base_hp = 100
+base_attack = 180
+base_defense = 160
+base_special_attack = 150
+base_special_defense = 90
+base_speed = 90
+ev_attack = 3
+base_exp = 385
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_vx71j")]([SubResource("Resource_cqp5j"), SubResource("Resource_3c7xi"), SubResource("Resource_arxte"), SubResource("Resource_s8gkb"), SubResource("Resource_t03me"), SubResource("Resource_aisld"), SubResource("Resource_7pa2d"), SubResource("Resource_j3wnu"), SubResource("Resource_nvnb4"), SubResource("Resource_7rflu"), SubResource("Resource_uolrn"), SubResource("Resource_21wg5"), SubResource("Resource_3t8bv"), SubResource("Resource_y8fwk")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CONFIDE", &"COUNTER", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HEATCRASH", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYPERBEAM", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR"])
+abilities = Array[StringName]([&"DESOLATELAND"])
+hatch_steps = 30720
+height = 50
+weight = 9997
+shape = &"BipedalTail"
+habitat = &"RoughTerrain"
+generation = 6
+back_sprite_offset = Vector2i(0, 45)
+front_sprite_offset = Vector2i(-1, 12)
+shadow_size = 3
+id = &"GROUDON_1"
+display_name = "Groudon"
+flags = Array[StringName]([&"Legendary"])

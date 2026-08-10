@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nkh4n"]
+
+[resource]
+resource_name = "SWORDSDANCE"
+script = ExtResource("1_nkh4n")
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"RaiseUserAttack2"
+description = "A frenetic dance to uplift the fighting spirit. It sharply raises the user's Attack stat."
+id = &"SWORDSDANCE"
+display_name = "Swords Dance"
+flags = Array[StringName]([&"Dance"])

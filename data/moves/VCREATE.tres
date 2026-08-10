@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_eyrro"]
+
+[resource]
+resource_name = "VCREATE"
+script = ExtResource("1_eyrro")
+type = &"FIRE"
+category = 0
+power = 180
+accuracy = 95
+function_code = &"LowerUserDefSpDefSpd1"
+description = "With a fiery forehead, the user hurls itself at the foe. It lowers the user's Defense, Sp. Def, and Speed."
+id = &"VCREATE"
+display_name = "V-create"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

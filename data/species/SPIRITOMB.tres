@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hi2qv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8si8h"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1aun1"]
+
+[sub_resource type="Resource" id="Resource_s88se"]
+script = ExtResource("2_8si8h")
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_ttcvl"]
+script = ExtResource("2_8si8h")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_th37k"]
+script = ExtResource("2_8si8h")
+level = 5
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_6c5iu"]
+script = ExtResource("2_8si8h")
+level = 10
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_jn5gp"]
+script = ExtResource("2_8si8h")
+level = 15
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_wuamu"]
+script = ExtResource("2_8si8h")
+level = 20
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_tp45q"]
+script = ExtResource("2_8si8h")
+level = 25
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_wi2gl"]
+script = ExtResource("2_8si8h")
+level = 30
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_y2hib"]
+script = ExtResource("2_8si8h")
+level = 35
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_uumf0"]
+script = ExtResource("2_8si8h")
+level = 40
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_2yiiy"]
+script = ExtResource("2_8si8h")
+level = 45
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_hu8y1"]
+script = ExtResource("2_8si8h")
+level = 50
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_tnxen"]
+script = ExtResource("2_8si8h")
+level = 55
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_q1p7h"]
+script = ExtResource("2_8si8h")
+level = 60
+move = &"DREAMEATER"
+
+[resource]
+resource_name = "SPIRITOMB"
+script = ExtResource("3_1aun1")
+species = &"SPIRITOMB"
+category = "Forbidden"
+pokedex_entry = "A Pokémon that was formed by 108 spirits. It is bound to a fissure in an odd keystone."
+types = Array[StringName]([&"GHOST", &"DARK"])
+base_hp = 50
+base_attack = 92
+base_defense = 108
+base_special_attack = 92
+base_special_defense = 108
+base_speed = 35
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 170
+catch_rate = 100
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8si8h")]([SubResource("Resource_s88se"), SubResource("Resource_ttcvl"), SubResource("Resource_th37k"), SubResource("Resource_6c5iu"), SubResource("Resource_jn5gp"), SubResource("Resource_wuamu"), SubResource("Resource_tp45q"), SubResource("Resource_wi2gl"), SubResource("Resource_y2hib"), SubResource("Resource_uumf0"), SubResource("Resource_2yiiy"), SubResource("Resource_hu8y1"), SubResource("Resource_tnxen"), SubResource("Resource_q1p7h")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BURNINGJEALOUSY", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICYWIND", &"IMPRISON", &"INFESTATION", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"QUASH", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SILVERWIND", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"TORMENT", &"TRICK", &"UPROAR", &"WATERPULSE", &"WILLOWISP", &"WONDERROOM"])
+egg_moves = Array[StringName]([&"DESTINYBOND", &"DISABLE", &"FOULPLAY", &"GRUDGE", &"IMPRISON", &"PAINSPLIT", &"SHADOWSNEAK", &"SMOKESCREEN"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 7680
+height = 10
+weight = 1080
+color = &"Purple"
+shape = &"HeadBase"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 24)
+shadow_size = 1
+id = &"SPIRITOMB"
+display_name = "Spiritomb"

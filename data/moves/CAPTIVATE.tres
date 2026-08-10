@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6sabi"]
+
+[resource]
+resource_name = "CAPTIVATE"
+script = ExtResource("1_6sabi")
+total_pp = 20
+target = &"AllNearFoes"
+function_code = &"LowerTargetSpAtk2IfCanAttract"
+description = "If it is the opposite gender of the user, the target is charmed into harshly lowering its Sp. Atk stat."
+id = &"CAPTIVATE"
+display_name = "Captivate"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

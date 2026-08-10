@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e38cn"]
+
+[resource]
+resource_name = "LIFEDEW"
+script = ExtResource("1_e38cn")
+type = &"WATER"
+accuracy = 0
+total_pp = 10
+target = &"UserAndAllies"
+function_code = &"HealUserAndAlliesQuarterOfTotalHP"
+description = "The user scatters mysterious water around and restores the HP of itself and its allies."
+id = &"LIFEDEW"
+display_name = "Life Dew"
+flags = Array[StringName]([&"CannotMetronome"])

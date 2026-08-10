@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_igogw"]
+
+[resource]
+resource_name = "PETAYABERRY"
+script = ExtResource("1_igogw")
+name_plural = "Petaya Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "If held by a Pokémon, it raises its Sp. Atk stat in a pinch."
+id = &"PETAYABERRY"
+display_name = "Petaya Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_POISON_100"])

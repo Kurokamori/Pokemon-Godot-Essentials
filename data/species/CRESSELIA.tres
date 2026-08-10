@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_do8ix"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_38gox"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_aeoey"]
+
+[sub_resource type="Resource" id="Resource_hwcbo"]
+script = ExtResource("2_38gox")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_4evix"]
+script = ExtResource("2_38gox")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_hd87p"]
+script = ExtResource("2_38gox")
+level = 6
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_34pfb"]
+script = ExtResource("2_38gox")
+level = 12
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_ec2ul"]
+script = ExtResource("2_38gox")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_nwrhn"]
+script = ExtResource("2_38gox")
+level = 24
+move = &"PSYCHOSHIFT"
+
+[sub_resource type="Resource" id="Resource_cme06"]
+script = ExtResource("2_38gox")
+level = 30
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_xxgpr"]
+script = ExtResource("2_38gox")
+level = 36
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_7yndb"]
+script = ExtResource("2_38gox")
+level = 42
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_vpb5y"]
+script = ExtResource("2_38gox")
+level = 48
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_yyaqh"]
+script = ExtResource("2_38gox")
+level = 54
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_4pr2h"]
+script = ExtResource("2_38gox")
+level = 60
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_8wm8g"]
+script = ExtResource("2_38gox")
+level = 66
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_xm1aw"]
+script = ExtResource("2_38gox")
+level = 72
+move = &"LUNARDANCE"
+
+[resource]
+resource_name = "CRESSELIA"
+script = ExtResource("3_aeoey")
+species = &"CRESSELIA"
+category = "Lunar"
+pokedex_entry = "Shiny particles are released from its wings like a veil. It is said to represent the crescent moon."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 120
+base_attack = 70
+base_defense = 120
+base_special_attack = 75
+base_special_defense = 130
+base_speed = 85
+ev_special_defense = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 3
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_38gox")]([SubResource("Resource_hwcbo"), SubResource("Resource_4evix"), SubResource("Resource_hd87p"), SubResource("Resource_34pfb"), SubResource("Resource_ec2ul"), SubResource("Resource_nwrhn"), SubResource("Resource_cme06"), SubResource("Resource_xxgpr"), SubResource("Resource_7yndb"), SubResource("Resource_vpb5y"), SubResource("Resource_yyaqh"), SubResource("Resource_4pr2h"), SubResource("Resource_8wm8g"), SubResource("Resource_xm1aw")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERWAVE", &"TRICK", &"TRICKROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+hatch_steps = 30720
+height = 15
+weight = 856
+color = &"Yellow"
+shape = &"Serpentine"
+generation = 4
+back_sprite_offset = Vector2i(0, 45)
+front_sprite_offset = Vector2i(0, 5)
+id = &"CRESSELIA"
+display_name = "Cresselia"
+flags = Array[StringName]([&"Legendary"])

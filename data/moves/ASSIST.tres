@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_i2ga6"]
+
+[resource]
+resource_name = "ASSIST"
+script = ExtResource("1_i2ga6")
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"UseRandomMoveFromUserParty"
+description = "The user hurriedly and randomly uses a move among those known by other Pokémon in the party."
+id = &"ASSIST"
+display_name = "Assist"

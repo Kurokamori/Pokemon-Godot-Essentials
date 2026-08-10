@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_llni8"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_06kix"]
+
+[sub_resource type="Resource" id="Resource_7ichv"]
+script = ExtResource("1_llni8")
+species = &"VENUSAUR"
+level = 63
+item = &"SITRUSBERRY"
+
+[sub_resource type="Resource" id="Resource_i4kqs"]
+script = ExtResource("1_llni8")
+species = &"CHARIZARD"
+level = 63
+item = &"SITRUSBERRY"
+
+[sub_resource type="Resource" id="Resource_t3whw"]
+script = ExtResource("1_llni8")
+species = &"BLASTOISE"
+level = 63
+item = &"SITRUSBERRY"
+
+[resource]
+resource_name = "CHAMPION|Blue|0"
+script = ExtResource("2_06kix")
+trainer_type = &"CHAMPION"
+lose_text = "A good battle indeed!"
+pokemon = Array[ExtResource("1_llni8")]([SubResource("Resource_7ichv"), SubResource("Resource_i4kqs"), SubResource("Resource_t3whw")])
+id = &"CHAMPION|Blue|0"
+display_name = "Blue"

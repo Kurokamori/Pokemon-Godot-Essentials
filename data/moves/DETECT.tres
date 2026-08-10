@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nn3oc"]
+
+[resource]
+resource_name = "DETECT"
+script = ExtResource("1_nn3oc")
+type = &"FIGHTING"
+accuracy = 0
+target = &"User"
+priority = 4
+function_code = &"ProtectUser"
+description = "It enables the user to evade all attacks. Its chance of failing rises if it is used in succession."
+id = &"DETECT"
+display_name = "Detect"

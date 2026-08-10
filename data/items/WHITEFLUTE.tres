@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_l7pe1"]
+
+[resource]
+resource_name = "WHITEFLUTE"
+script = ExtResource("1_l7pe1")
+name_plural = "White Flutes"
+price = 20
+sell_price = 10
+field_use = 2
+consumable = false
+description = "A white flute made from blown glass. Its melody makes wild Pokémon more likely to appear."
+id = &"WHITEFLUTE"
+display_name = "White Flute"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_wnd6q"]
+
+[resource]
+resource_name = "VITALTHROW"
+script = ExtResource("1_wnd6q")
+type = &"FIGHTING"
+category = 0
+power = 70
+accuracy = 0
+total_pp = 10
+priority = -1
+description = "The user attacks last. In return, this throw move is guaranteed not to miss."
+id = &"VITALTHROW"
+display_name = "Vital Throw"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

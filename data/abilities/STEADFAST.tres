@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_eubnn"]
+
+[resource]
+resource_name = "STEADFAST"
+script = ExtResource("1_eubnn")
+description = "Raises Speed each time the Pokémon flinches."
+id = &"STEADFAST"
+display_name = "Steadfast"

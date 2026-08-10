@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_p7c2k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gt1br"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nfq34"]
+
+[sub_resource type="Resource" id="Resource_qo5y1"]
+script = ExtResource("1_p7c2k")
+species = &"EXEGGCUTE"
+method = &"Item"
+parameter = "LEAFSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ioda1"]
+script = ExtResource("2_gt1br")
+level = 0
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_7llpg"]
+script = ExtResource("2_gt1br")
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_jkvhb"]
+script = ExtResource("2_gt1br")
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_cfs3q"]
+script = ExtResource("2_gt1br")
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_xuj6v"]
+script = ExtResource("2_gt1br")
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_qf3y1"]
+script = ExtResource("2_gt1br")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ahi5t"]
+script = ExtResource("2_gt1br")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_t0j6c"]
+script = ExtResource("2_gt1br")
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_h2o26"]
+script = ExtResource("2_gt1br")
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_c5fup"]
+script = ExtResource("2_gt1br")
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_hkhia"]
+script = ExtResource("2_gt1br")
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_ev706"]
+script = ExtResource("2_gt1br")
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_l7hux"]
+script = ExtResource("2_gt1br")
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_7njxx"]
+script = ExtResource("2_gt1br")
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_k6mpx"]
+script = ExtResource("2_gt1br")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_wyfyq"]
+script = ExtResource("2_gt1br")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_og6q2"]
+script = ExtResource("2_gt1br")
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_0c130"]
+script = ExtResource("2_gt1br")
+move = &"LEECHSEED"
+
+[resource]
+resource_name = "EXEGGUTOR"
+script = ExtResource("3_nfq34")
+species = &"EXEGGUTOR"
+category = "Coconut"
+pokedex_entry = "Originally from the tropics, Exeggutor's heads grow larger with exposure to bright sunlight. It is said that when the heads fall, they group to form an Exeggcute."
+types = Array[StringName]([&"GRASS", &"PSYCHIC"])
+base_hp = 95
+base_attack = 95
+base_defense = 85
+base_special_attack = 125
+base_special_defense = 75
+base_speed = 55
+ev_special_attack = 2
+base_exp = 186
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gt1br")]([SubResource("Resource_ioda1"), SubResource("Resource_7llpg"), SubResource("Resource_jkvhb"), SubResource("Resource_cfs3q"), SubResource("Resource_xuj6v"), SubResource("Resource_qf3y1"), SubResource("Resource_ahi5t"), SubResource("Resource_t0j6c"), SubResource("Resource_h2o26"), SubResource("Resource_c5fup"), SubResource("Resource_hkhia"), SubResource("Resource_ev706"), SubResource("Resource_l7hux"), SubResource("Resource_7njxx"), SubResource("Resource_k6mpx"), SubResource("Resource_wyfyq"), SubResource("Resource_og6q2"), SubResource("Resource_0c130")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BULLDOZE", &"BULLETSEED", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FLASH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"GRAVITY", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LEAFSTORM", &"LIGHTSCREEN", &"LOWKICK", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SKILLSWAP", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TELEKINESIS", &"TERRAINPULSE", &"THIEF", &"TRICKROOM", &"UPROAR", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"HARVEST"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_p7c2k")]([SubResource("Resource_qo5y1")])
+height = 20
+weight = 1200
+color = &"Yellow"
+shape = &"HeadLegs"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 15)
+id = &"EXEGGUTOR"
+display_name = "Exeggutor"

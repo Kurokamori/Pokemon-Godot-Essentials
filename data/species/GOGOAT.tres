@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xs1fr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gwq2t"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_h26dm"]
+
+[sub_resource type="Resource" id="Resource_lk5x5"]
+script = ExtResource("1_xs1fr")
+species = &"SKIDDO"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_j0l6y"]
+script = ExtResource("2_gwq2t")
+level = 0
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_g238e"]
+script = ExtResource("2_gwq2t")
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_k5tei"]
+script = ExtResource("2_gwq2t")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cvfvo"]
+script = ExtResource("2_gwq2t")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_hbcnx"]
+script = ExtResource("2_gwq2t")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_1pt1b"]
+script = ExtResource("2_gwq2t")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_s7meu"]
+script = ExtResource("2_gwq2t")
+level = 7
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_m8e18"]
+script = ExtResource("2_gwq2t")
+level = 9
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_6yvdu"]
+script = ExtResource("2_gwq2t")
+level = 12
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_41p5t"]
+script = ExtResource("2_gwq2t")
+level = 13
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_tt46h"]
+script = ExtResource("2_gwq2t")
+level = 16
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_5wm36"]
+script = ExtResource("2_gwq2t")
+level = 20
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_kbmdd"]
+script = ExtResource("2_gwq2t")
+level = 22
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_d8qxd"]
+script = ExtResource("2_gwq2t")
+level = 26
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_vdhek"]
+script = ExtResource("2_gwq2t")
+level = 30
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_v478c"]
+script = ExtResource("2_gwq2t")
+level = 34
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_pc1ji"]
+script = ExtResource("2_gwq2t")
+level = 40
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_46d8q"]
+script = ExtResource("2_gwq2t")
+level = 47
+move = &"HORNLEECH"
+
+[sub_resource type="Resource" id="Resource_4lmg2"]
+script = ExtResource("2_gwq2t")
+level = 55
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_sqlwm"]
+script = ExtResource("2_gwq2t")
+level = 58
+move = &"MILKDRINK"
+
+[resource]
+resource_name = "GOGOAT"
+script = ExtResource("3_h26dm")
+species = &"GOGOAT"
+category = "Mount"
+pokedex_entry = "It can tell how its trainer is feeling by subtle shifts in the grip on its horns. This empathetic sense lets them run as if one being."
+types = Array[StringName]([&"GRASS"])
+base_hp = 123
+base_attack = 100
+base_defense = 62
+base_special_attack = 97
+base_special_defense = 81
+base_speed = 68
+ev_hp = 2
+base_exp = 186
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gwq2t")]([SubResource("Resource_j0l6y"), SubResource("Resource_g238e"), SubResource("Resource_k5tei"), SubResource("Resource_cvfvo"), SubResource("Resource_hbcnx"), SubResource("Resource_1pt1b"), SubResource("Resource_s7meu"), SubResource("Resource_m8e18"), SubResource("Resource_6yvdu"), SubResource("Resource_41p5t"), SubResource("Resource_tt46h"), SubResource("Resource_5wm36"), SubResource("Resource_kbmdd"), SubResource("Resource_d8qxd"), SubResource("Resource_vdhek"), SubResource("Resource_v478c"), SubResource("Resource_pc1ji"), SubResource("Resource_46d8q"), SubResource("Resource_4lmg2"), SubResource("Resource_sqlwm")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BOUNCE", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"WILDCHARGE", &"WORKUP", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SAPSIPPER"])
+hidden_abilities = Array[StringName]([&"GRASSPELT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xs1fr")]([SubResource("Resource_lk5x5")])
+height = 17
+weight = 910
+color = &"Brown"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-4, 18)
+id = &"GOGOAT"
+display_name = "Gogoat"

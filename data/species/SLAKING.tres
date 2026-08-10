@@ -1,0 +1,163 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0lebw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_523fo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_st2p4"]
+
+[sub_resource type="Resource" id="Resource_mmo3k"]
+script = ExtResource("1_0lebw")
+species = &"VIGOROTH"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_mom4j"]
+script = ExtResource("2_523fo")
+level = 0
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_qt0pj"]
+script = ExtResource("2_523fo")
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_mwlkn"]
+script = ExtResource("2_523fo")
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_g16u6"]
+script = ExtResource("2_523fo")
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_ane5f"]
+script = ExtResource("2_523fo")
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_8xn1i"]
+script = ExtResource("2_523fo")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_wuly1"]
+script = ExtResource("2_523fo")
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_mjt5y"]
+script = ExtResource("2_523fo")
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_mldk3"]
+script = ExtResource("2_523fo")
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_13cqp"]
+script = ExtResource("2_523fo")
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_hcqo0"]
+script = ExtResource("2_523fo")
+move = &"FOCUSPUNCH"
+
+[sub_resource type="Resource" id="Resource_jxdfj"]
+script = ExtResource("2_523fo")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_5f8ak"]
+script = ExtResource("2_523fo")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_vjua8"]
+script = ExtResource("2_523fo")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_567yq"]
+script = ExtResource("2_523fo")
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_wft62"]
+script = ExtResource("2_523fo")
+level = 6
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_fyho7"]
+script = ExtResource("2_523fo")
+level = 9
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_egpy2"]
+script = ExtResource("2_523fo")
+level = 14
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_kmvc0"]
+script = ExtResource("2_523fo")
+level = 17
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_54yxu"]
+script = ExtResource("2_523fo")
+level = 23
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_rxbfc"]
+script = ExtResource("2_523fo")
+level = 27
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_sntvf"]
+script = ExtResource("2_523fo")
+level = 33
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_3wg6i"]
+script = ExtResource("2_523fo")
+level = 39
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_pegyt"]
+script = ExtResource("2_523fo")
+level = 47
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_gkdoi"]
+script = ExtResource("2_523fo")
+level = 53
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_bvmya"]
+script = ExtResource("2_523fo")
+level = 61
+move = &"HAMMERARM"
+
+[resource]
+resource_name = "SLAKING"
+script = ExtResource("3_st2p4")
+species = &"SLAKING"
+category = "Lazy"
+pokedex_entry = "Hordes of Slaking gather around trees when fruits come into season. They wait around patiently for ripened fruits to fall out of the trees."
+base_hp = 150
+base_attack = 160
+base_defense = 100
+base_special_attack = 95
+base_special_defense = 65
+base_speed = 100
+ev_hp = 3
+base_exp = 285
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_523fo")]([SubResource("Resource_mom4j"), SubResource("Resource_qt0pj"), SubResource("Resource_mwlkn"), SubResource("Resource_g16u6"), SubResource("Resource_ane5f"), SubResource("Resource_8xn1i"), SubResource("Resource_wuly1"), SubResource("Resource_mjt5y"), SubResource("Resource_mldk3"), SubResource("Resource_13cqp"), SubResource("Resource_hcqo0"), SubResource("Resource_jxdfj"), SubResource("Resource_5f8ak"), SubResource("Resource_vjua8"), SubResource("Resource_567yq"), SubResource("Resource_wft62"), SubResource("Resource_fyho7"), SubResource("Resource_egpy2"), SubResource("Resource_kmvc0"), SubResource("Resource_54yxu"), SubResource("Resource_rxbfc"), SubResource("Resource_sntvf"), SubResource("Resource_3wg6i"), SubResource("Resource_pegyt"), SubResource("Resource_gkdoi"), SubResource("Resource_bvmya")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"TRUANT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_0lebw")]([SubResource("Resource_mmo3k")])
+height = 20
+weight = 1305
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 3
+id = &"SLAKING"
+display_name = "Slaking"

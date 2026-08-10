@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_382en"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hrv2e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_keqy5"]
+
+[sub_resource type="Resource" id="Resource_r82d8"]
+script = ExtResource("1_382en")
+species = &"WIMPOD"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_1j01p"]
+script = ExtResource("2_hrv2e")
+level = 0
+move = &"FIRSTIMPRESSION"
+
+[sub_resource type="Resource" id="Resource_cqv8h"]
+script = ExtResource("2_hrv2e")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_h6o0f"]
+script = ExtResource("2_hrv2e")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_s7dlq"]
+script = ExtResource("2_hrv2e")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_hr7fa"]
+script = ExtResource("2_hrv2e")
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_vrwt3"]
+script = ExtResource("2_hrv2e")
+level = 4
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_7e87o"]
+script = ExtResource("2_hrv2e")
+level = 8
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_fahme"]
+script = ExtResource("2_hrv2e")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_qp5jf"]
+script = ExtResource("2_hrv2e")
+level = 16
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_mg1bq"]
+script = ExtResource("2_hrv2e")
+level = 20
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_4mx4w"]
+script = ExtResource("2_hrv2e")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_qc5gn"]
+script = ExtResource("2_hrv2e")
+level = 28
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_hg0uy"]
+script = ExtResource("2_hrv2e")
+level = 32
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_mdtgb"]
+script = ExtResource("2_hrv2e")
+level = 36
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_aojib"]
+script = ExtResource("2_hrv2e")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_onaam"]
+script = ExtResource("2_hrv2e")
+level = 44
+move = &"LIQUIDATION"
+
+[resource]
+resource_name = "GOLISOPOD"
+script = ExtResource("3_keqy5")
+species = &"GOLISOPOD"
+category = "Hard Scale"
+pokedex_entry = "It battles skillfully with its six arms, but spends most of its time peacefully meditating in caves deep beneath the sea."
+types = Array[StringName]([&"BUG", &"WATER"])
+base_hp = 75
+base_attack = 125
+base_defense = 140
+base_special_attack = 60
+base_special_defense = 90
+base_speed = 40
+ev_defense = 2
+base_exp = 186
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hrv2e")]([SubResource("Resource_1j01p"), SubResource("Resource_cqv8h"), SubResource("Resource_h6o0f"), SubResource("Resource_s7dlq"), SubResource("Resource_hr7fa"), SubResource("Resource_vrwt3"), SubResource("Resource_7e87o"), SubResource("Resource_fahme"), SubResource("Resource_qp5jf"), SubResource("Resource_mg1bq"), SubResource("Resource_4mx4w"), SubResource("Resource_qc5gn"), SubResource("Resource_hg0uy"), SubResource("Resource_mdtgb"), SubResource("Resource_aojib"), SubResource("Resource_onaam")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BRICKBREAK", &"BUGBITE", &"BUGBUZZ", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"DARKPULSE", &"DIVE", &"DOUBLETEAM", &"DRILLRUN", &"DUALCHOP", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"LASERFOCUS", &"LEECHLIFE", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNARL", &"SNORE", &"SPIKES", &"SPITE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THROATCHOP", &"TOXIC", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE", &"XSCISSOR"])
+abilities = Array[StringName]([&"EMERGENCYEXIT"])
+egg_groups = Array[StringName]([&"Bug", &"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_382en")]([SubResource("Resource_r82d8")])
+height = 20
+weight = 1080
+color = &"Gray"
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-3, 10)
+shadow_size = 3
+id = &"GOLISOPOD"
+display_name = "Golisopod"

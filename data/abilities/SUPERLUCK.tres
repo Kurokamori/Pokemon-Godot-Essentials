@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_qeird"]
+
+[resource]
+resource_name = "SUPERLUCK"
+script = ExtResource("1_qeird")
+description = "Heightens the critical-hit ratios of moves."
+id = &"SUPERLUCK"
+display_name = "Super Luck"

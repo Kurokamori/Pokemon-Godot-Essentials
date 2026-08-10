@@ -1,0 +1,147 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xmpgo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tj4g1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_s62hc"]
+
+[sub_resource type="Resource" id="Resource_noddw"]
+script = ExtResource("1_xmpgo")
+species = &"QUILAVA"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kthca"]
+script = ExtResource("2_tj4g1")
+move = &"ERUPTION"
+
+[sub_resource type="Resource" id="Resource_yy0wl"]
+script = ExtResource("2_tj4g1")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_hn2yv"]
+script = ExtResource("2_tj4g1")
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_qqiis"]
+script = ExtResource("2_tj4g1")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_yrquj"]
+script = ExtResource("2_tj4g1")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_2jqgp"]
+script = ExtResource("2_tj4g1")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_162dl"]
+script = ExtResource("2_tj4g1")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_wse76"]
+script = ExtResource("2_tj4g1")
+level = 6
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_owh7l"]
+script = ExtResource("2_tj4g1")
+level = 10
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_sk0j7"]
+script = ExtResource("2_tj4g1")
+level = 13
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ix22a"]
+script = ExtResource("2_tj4g1")
+level = 20
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_ource"]
+script = ExtResource("2_tj4g1")
+level = 24
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_4wh63"]
+script = ExtResource("2_tj4g1")
+level = 31
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_0dlfw"]
+script = ExtResource("2_tj4g1")
+level = 35
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_itcej"]
+script = ExtResource("2_tj4g1")
+level = 43
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_1qpxt"]
+script = ExtResource("2_tj4g1")
+level = 48
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_1bbms"]
+script = ExtResource("2_tj4g1")
+level = 56
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_ifxdf"]
+script = ExtResource("2_tj4g1")
+level = 61
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_n6q01"]
+script = ExtResource("2_tj4g1")
+level = 69
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_t0eas"]
+script = ExtResource("2_tj4g1")
+level = 74
+move = &"BURNUP"
+
+[sub_resource type="Resource" id="Resource_8tva7"]
+script = ExtResource("2_tj4g1")
+level = 82
+move = &"ERUPTION"
+
+[resource]
+resource_name = "TYPHLOSION"
+script = ExtResource("3_s62hc")
+species = &"TYPHLOSION"
+category = "Volcano"
+pokedex_entry = "It can hide behind a shimmering heat haze that it creates using its intense flames. Typhlosion create blazing explosive blasts that burn everything to cinders."
+types = Array[StringName]([&"FIRE"])
+base_hp = 78
+base_attack = 84
+base_defense = 78
+base_special_attack = 109
+base_special_defense = 85
+base_speed = 100
+ev_special_attack = 3
+base_exp = 267
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tj4g1")]([SubResource("Resource_kthca"), SubResource("Resource_yy0wl"), SubResource("Resource_hn2yv"), SubResource("Resource_qqiis"), SubResource("Resource_yrquj"), SubResource("Resource_2jqgp"), SubResource("Resource_162dl"), SubResource("Resource_wse76"), SubResource("Resource_owh7l"), SubResource("Resource_sk0j7"), SubResource("Resource_ix22a"), SubResource("Resource_ource"), SubResource("Resource_4wh63"), SubResource("Resource_0dlfw"), SubResource("Resource_itcej"), SubResource("Resource_1qpxt"), SubResource("Resource_1bbms"), SubResource("Resource_ifxdf"), SubResource("Resource_n6q01"), SubResource("Resource_t0eas"), SubResource("Resource_8tva7")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLASTBURN", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"LASERFOCUS", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THROATCHOP", &"THUNDERPUNCH", &"WILDCHARGE", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"FLASHFIRE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xmpgo")]([SubResource("Resource_noddw")])
+height = 17
+weight = 795
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-1, 15)
+id = &"TYPHLOSION"
+display_name = "Typhlosion"

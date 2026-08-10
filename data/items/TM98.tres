@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_onc3j"]
+
+[resource]
+resource_name = "TM98"
+script = ExtResource("1_onc3j")
+name_plural = "TM98s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 40
+field_use = 5
+move = &"ROCKSMASH"
+description = "The user attacks with a punch that may lower the target's Defense stat."
+id = &"TM98"
+display_name = "TM98"
+flags = Array[StringName]([&"Fling_40"])

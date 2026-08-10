@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5ebik"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k0x3c"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ys6ys"]
+
+[sub_resource type="Resource" id="Resource_knhuv"]
+script = ExtResource("1_5ebik")
+species = &"BOLTUND"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_2u1n6"]
+script = ExtResource("2_k0x3c")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_vjqxb"]
+script = ExtResource("2_k0x3c")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_0uytv"]
+script = ExtResource("2_k0x3c")
+level = 5
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_cswol"]
+script = ExtResource("2_k0x3c")
+level = 10
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_gucvj"]
+script = ExtResource("2_k0x3c")
+level = 15
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_5nyuo"]
+script = ExtResource("2_k0x3c")
+level = 20
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_ld0e3"]
+script = ExtResource("2_k0x3c")
+level = 26
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_6h0sy"]
+script = ExtResource("2_k0x3c")
+level = 30
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_avsx8"]
+script = ExtResource("2_k0x3c")
+level = 35
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_1rwli"]
+script = ExtResource("2_k0x3c")
+level = 40
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_k561u"]
+script = ExtResource("2_k0x3c")
+level = 45
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "YAMPER"
+script = ExtResource("3_ys6ys")
+species = &"YAMPER"
+category = "Puppy"
+pokedex_entry = "This gluttonous Pokémon only assists people with their work because it wants treats. As it runs, it crackles with electricity."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 59
+base_attack = 45
+base_defense = 50
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 26
+ev_hp = 1
+base_exp = 54
+growth_rate = &"Fast"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k0x3c")]([SubResource("Resource_2u1n6"), SubResource("Resource_vjqxb"), SubResource("Resource_0uytv"), SubResource("Resource_cswol"), SubResource("Resource_gucvj"), SubResource("Resource_5nyuo"), SubResource("Resource_ld0e3"), SubResource("Resource_6h0sy"), SubResource("Resource_avsx8"), SubResource("Resource_1rwli"), SubResource("Resource_k561u")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"DISCHARGE", &"DOUBLEEDGE", &"FLAMECHARGE", &"HOWL", &"SANDATTACK"])
+abilities = Array[StringName]([&"BALLFETCH"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5ebik")]([SubResource("Resource_knhuv")])
+height = 3
+weight = 135
+color = &"Yellow"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 57)
+front_sprite_offset = Vector2i(0, 29)
+shadow_size = 1
+id = &"YAMPER"
+display_name = "Yamper"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_vi22j"]
+
+[resource]
+resource_name = "GORGEOUSROYAL"
+script = ExtResource("1_vi22j")
+icon_position = 55
+description = "A gorgeous and regal Ribbon that is the peak of fabulous."
+id = &"GORGEOUSROYAL"
+display_name = "Gorgeous Royal Ribbon"

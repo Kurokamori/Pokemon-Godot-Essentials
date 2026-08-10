@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_s2nnr"]
+
+[resource]
+resource_name = "BUGINIUMZ"
+script = ExtResource("1_s2nnr")
+name_plural = "Buginium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Bug-type Pokémon holds to turn a Bug-type move into Savage Spin-Out."
+id = &"BUGINIUMZ"
+display_name = "Buginium Z"
+flags = Array[StringName]([&"ZCrystal"])

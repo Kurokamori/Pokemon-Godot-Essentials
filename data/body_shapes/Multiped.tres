@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BodyShapeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/body_shape_data.gd" id="1_q23y3"]
+
+[resource]
+resource_name = "Multiped"
+script = ExtResource("1_q23y3")
+icon_position = 9
+id = &"Multiped"
+display_name = "Multiped"

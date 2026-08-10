@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_om5eg"]
+
+[resource]
+resource_name = "SKILLLINK"
+script = ExtResource("1_om5eg")
+description = "Increases the frequency of multi-strike moves."
+id = &"SKILLLINK"
+display_name = "Skill Link"

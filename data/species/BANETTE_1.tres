@@ -1,0 +1,148 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_i7aoy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gkqlv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_i2egl"]
+
+[sub_resource type="Resource" id="Resource_w4dlo"]
+script = ExtResource("1_i7aoy")
+species = &"SHUPPET"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_r0baa"]
+script = ExtResource("2_gkqlv")
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_08xvl"]
+script = ExtResource("2_gkqlv")
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_haghs"]
+script = ExtResource("2_gkqlv")
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_jdqey"]
+script = ExtResource("2_gkqlv")
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_6i7is"]
+script = ExtResource("2_gkqlv")
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_31bde"]
+script = ExtResource("2_gkqlv")
+level = 4
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_xkvtf"]
+script = ExtResource("2_gkqlv")
+level = 7
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_alcb0"]
+script = ExtResource("2_gkqlv")
+level = 10
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_2s18o"]
+script = ExtResource("2_gkqlv")
+level = 13
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_djivo"]
+script = ExtResource("2_gkqlv")
+level = 16
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_ubfdg"]
+script = ExtResource("2_gkqlv")
+level = 19
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_bour4"]
+script = ExtResource("2_gkqlv")
+level = 22
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_aus24"]
+script = ExtResource("2_gkqlv")
+level = 26
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_kbhmm"]
+script = ExtResource("2_gkqlv")
+level = 30
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_mwgl1"]
+script = ExtResource("2_gkqlv")
+level = 34
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_8ubbx"]
+script = ExtResource("2_gkqlv")
+level = 40
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_owx88"]
+script = ExtResource("2_gkqlv")
+level = 46
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_1n0pn"]
+script = ExtResource("2_gkqlv")
+level = 52
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_b4n3k"]
+script = ExtResource("2_gkqlv")
+level = 58
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_rnfm7"]
+script = ExtResource("2_gkqlv")
+level = 64
+move = &"PHANTOMFORCE"
+
+[resource]
+resource_name = "BANETTE_1"
+script = ExtResource("3_i2egl")
+species = &"BANETTE"
+form = 1
+form_name = "Mega Banette"
+category = "Marionette"
+pokedex_entry = "Extraordinary energy amplifies its cursing power to such an extent that it can't help but curse its own Trainer."
+pokedex_form = 1
+types = Array[StringName]([&"GHOST"])
+base_hp = 64
+base_attack = 165
+base_defense = 75
+base_special_attack = 93
+base_special_defense = 83
+base_speed = 75
+ev_attack = 2
+base_exp = 194
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_gkqlv")]([SubResource("Resource_r0baa"), SubResource("Resource_08xvl"), SubResource("Resource_haghs"), SubResource("Resource_jdqey"), SubResource("Resource_6i7is"), SubResource("Resource_31bde"), SubResource("Resource_xkvtf"), SubResource("Resource_alcb0"), SubResource("Resource_2s18o"), SubResource("Resource_djivo"), SubResource("Resource_ubfdg"), SubResource("Resource_bour4"), SubResource("Resource_aus24"), SubResource("Resource_kbhmm"), SubResource("Resource_mwgl1"), SubResource("Resource_8ubbx"), SubResource("Resource_owx88"), SubResource("Resource_1n0pn"), SubResource("Resource_b4n3k"), SubResource("Resource_rnfm7")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICYWIND", &"INFESTATION", &"KNOCKOFF", &"MAGICCOAT", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"WILLOWISP"])
+abilities = Array[StringName]([&"PRANKSTER"])
+hidden_abilities = Array[StringName]([&"PRANKSTER"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_i7aoy")]([SubResource("Resource_w4dlo")])
+height = 12
+weight = 130
+color = &"Black"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 6
+mega_stone = &"BANETTITE"
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(3, 12)
+id = &"BANETTE_1"
+display_name = "Banette"

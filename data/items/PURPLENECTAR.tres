@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_re22o"]
+
+[resource]
+resource_name = "PURPLENECTAR"
+script = ExtResource("1_re22o")
+name_plural = "Purple Nectars"
+portion_name = "jar of Purple Nectar"
+portion_name_plural = "jars of Purple Nectar"
+price = 300
+sell_price = 150
+field_use = 1
+description = "A flower nectar obtained at Poni Meadow. It changes the form of certain species of Pokémon."
+id = &"PURPLENECTAR"
+display_name = "Purple Nectar"
+flags = Array[StringName]([&"Fling_10"])

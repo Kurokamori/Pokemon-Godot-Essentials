@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://lyoj01yxrqcp"
+path="res://.godot/imported/GUI sel decision.ogg-eae5485d27abf7bb5a1d3dbea7d69a6d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/GUI sel decision.ogg"
+dest_files=["res://.godot/imported/GUI sel decision.ogg-eae5485d27abf7bb5a1d3dbea7d69a6d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

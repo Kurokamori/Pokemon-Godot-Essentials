@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_8yeqe"]
+
+[resource]
+resource_name = "LIGHTNINGROD"
+script = ExtResource("1_8yeqe")
+description = "Draws in all Electric-type moves to up Sp. Attack."
+id = &"LIGHTNINGROD"
+display_name = "Lightning Rod"

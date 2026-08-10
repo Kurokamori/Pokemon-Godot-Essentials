@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_stfgp"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_erlmn"]
+
+[sub_resource type="Resource" id="Resource_8mt55"]
+script = ExtResource("1_stfgp")
+species = &"SKITTY"
+level = 18
+
+[resource]
+resource_name = "BEAUTY|Bridget|0"
+script = ExtResource("2_erlmn")
+trainer_type = &"BEAUTY"
+lose_text = "My Skitty!"
+pokemon = Array[ExtResource("1_stfgp")]([SubResource("Resource_8mt55")])
+id = &"BEAUTY|Bridget|0"
+display_name = "Bridget"

@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jyy0k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p8j5w"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_h3mqy"]
+
+[sub_resource type="Resource" id="Resource_15rn5"]
+script = ExtResource("1_jyy0k")
+species = &"FEEBAS"
+method = &"TradeItem"
+parameter = "PRISMSCALE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_2y7wf"]
+script = ExtResource("2_p8j5w")
+level = 0
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_8jhv2"]
+script = ExtResource("2_p8j5w")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_5bndw"]
+script = ExtResource("2_p8j5w")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_j4jnl"]
+script = ExtResource("2_p8j5w")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1mtoi"]
+script = ExtResource("2_p8j5w")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_l8sib"]
+script = ExtResource("2_p8j5w")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_jkpvy"]
+script = ExtResource("2_p8j5w")
+level = 4
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_3s3uj"]
+script = ExtResource("2_p8j5w")
+level = 8
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_ojkjf"]
+script = ExtResource("2_p8j5w")
+level = 12
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_7o0b2"]
+script = ExtResource("2_p8j5w")
+level = 16
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_44cv7"]
+script = ExtResource("2_p8j5w")
+level = 20
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_exswi"]
+script = ExtResource("2_p8j5w")
+level = 24
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_l6saj"]
+script = ExtResource("2_p8j5w")
+level = 28
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_gvm31"]
+script = ExtResource("2_p8j5w")
+level = 32
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_4khe2"]
+script = ExtResource("2_p8j5w")
+level = 36
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_xfr18"]
+script = ExtResource("2_p8j5w")
+level = 40
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_wvaym"]
+script = ExtResource("2_p8j5w")
+level = 44
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_d77yw"]
+script = ExtResource("2_p8j5w")
+level = 48
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_qqwel"]
+script = ExtResource("2_p8j5w")
+level = 52
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "MILOTIC"
+script = ExtResource("3_h3mqy")
+species = &"MILOTIC"
+category = "Tender"
+pokedex_entry = "It is said to live at the bottom of large lakes. Considered to be the most beautiful of all Pokémon, it has been depicted in paintings and statues."
+types = Array[StringName]([&"WATER"])
+base_hp = 95
+base_attack = 60
+base_defense = 79
+base_special_attack = 100
+base_special_defense = 125
+base_speed = 81
+ev_special_defense = 2
+base_exp = 189
+growth_rate = &"Erratic"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_p8j5w")]([SubResource("Resource_2y7wf"), SubResource("Resource_8jhv2"), SubResource("Resource_5bndw"), SubResource("Resource_j4jnl"), SubResource("Resource_1mtoi"), SubResource("Resource_l8sib"), SubResource("Resource_jkpvy"), SubResource("Resource_3s3uj"), SubResource("Resource_ojkjf"), SubResource("Resource_7o0b2"), SubResource("Resource_44cv7"), SubResource("Resource_exswi"), SubResource("Resource_l6saj"), SubResource("Resource_gvm31"), SubResource("Resource_4khe2"), SubResource("Resource_xfr18"), SubResource("Resource_wvaym"), SubResource("Resource_d77yw"), SubResource("Resource_qqwel")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BREAKINGSWIPE", &"BRINE", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"ENDURE", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TRIPLEAXEL", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"MARVELSCALE", &"COMPETITIVE"])
+hidden_abilities = Array[StringName]([&"CUTECHARM"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_jyy0k")]([SubResource("Resource_15rn5")])
+height = 62
+weight = 1620
+color = &"Pink"
+shape = &"Serpentine"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(10, 14)
+shadow_size = 3
+id = &"MILOTIC"
+display_name = "Milotic"

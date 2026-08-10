@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_w7jkx"]
+
+[resource]
+resource_name = "HEALBALL"
+script = ExtResource("1_w7jkx")
+name_plural = "Heal Balls"
+pocket = 3
+price = 300
+sell_price = 150
+battle_use = 4
+description = "A remedial Poké Ball that restores the caught Pokémon's HP and eliminates any status problem."
+id = &"HEALBALL"
+display_name = "Heal Ball"
+flags = Array[StringName]([&"PokeBall"])

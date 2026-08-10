@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_8egwf"]
+
+[resource]
+resource_name = "HEAVYMETAL"
+script = ExtResource("1_8egwf")
+description = "Doubles the Pokémon's weight."
+id = &"HEAVYMETAL"
+display_name = "Heavy Metal"

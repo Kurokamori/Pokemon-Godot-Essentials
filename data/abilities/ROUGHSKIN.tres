@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_v8xc2"]
+
+[resource]
+resource_name = "ROUGHSKIN"
+script = ExtResource("1_v8xc2")
+description = "Inflicts damage to the foe on contact."
+id = &"ROUGHSKIN"
+display_name = "Rough Skin"

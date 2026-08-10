@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dx4qr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k3s4l"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3spiu"]
+
+[sub_resource type="Resource" id="Resource_8u13m"]
+script = ExtResource("1_dx4qr")
+species = &"NICKIT"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ept58"]
+script = ExtResource("2_k3s4l")
+level = 0
+move = &"THIEF"
+
+[sub_resource type="Resource" id="Resource_x3opb"]
+script = ExtResource("2_k3s4l")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_med36"]
+script = ExtResource("2_k3s4l")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_bha57"]
+script = ExtResource("2_k3s4l")
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_ifdqi"]
+script = ExtResource("2_k3s4l")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_xoiye"]
+script = ExtResource("2_k3s4l")
+level = 12
+move = &"SNARL"
+
+[sub_resource type="Resource" id="Resource_20q2y"]
+script = ExtResource("2_k3s4l")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_lg6h4"]
+script = ExtResource("2_k3s4l")
+level = 22
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_k5kto"]
+script = ExtResource("2_k3s4l")
+level = 28
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_0jykc"]
+script = ExtResource("2_k3s4l")
+level = 34
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_0i5og"]
+script = ExtResource("2_k3s4l")
+level = 40
+move = &"TAILSLAP"
+
+[sub_resource type="Resource" id="Resource_t43co"]
+script = ExtResource("2_k3s4l")
+level = 46
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_40dmt"]
+script = ExtResource("2_k3s4l")
+level = 52
+move = &"PARTINGSHOT"
+
+[resource]
+resource_name = "THIEVUL"
+script = ExtResource("3_3spiu")
+species = &"THIEVUL"
+category = "Fox"
+pokedex_entry = "It secretly marks potential targets with a scent. By following the scent, it stalks its targets and steals from them when they least expect it."
+types = Array[StringName]([&"DARK"])
+base_hp = 70
+base_attack = 58
+base_defense = 58
+base_special_attack = 87
+base_special_defense = 92
+base_speed = 90
+ev_special_defense = 2
+base_exp = 159
+growth_rate = &"Fast"
+catch_rate = 127
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k3s4l")]([SubResource("Resource_ept58"), SubResource("Resource_x3opb"), SubResource("Resource_med36"), SubResource("Resource_bha57"), SubResource("Resource_ifdqi"), SubResource("Resource_xoiye"), SubResource("Resource_20q2y"), SubResource("Resource_lg6h4"), SubResource("Resource_k5kto"), SubResource("Resource_0jykc"), SubResource("Resource_0i5og"), SubResource("Resource_t43co"), SubResource("Resource_40dmt")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BEATUP", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREFANG", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEFANG", &"LASHOUT", &"MIMIC", &"MUDSHOT", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNARL", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"TAUNT", &"THIEF", &"THUNDERFANG", &"TOXIC", &"UTURN"])
+abilities = Array[StringName]([&"RUNAWAY", &"UNBURDEN"])
+hidden_abilities = Array[StringName]([&"STAKEOUT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_dx4qr")]([SubResource("Resource_8u13m")])
+height = 12
+weight = 199
+color = &"Brown"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(6, 18)
+shadow_x = -5
+id = &"THIEVUL"
+display_name = "Thievul"

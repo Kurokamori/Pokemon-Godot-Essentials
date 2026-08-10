@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uuiow"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dfc8x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_v8gi4"]
+
+[sub_resource type="Resource" id="Resource_mpnja"]
+script = ExtResource("1_uuiow")
+species = &"COTTONEE"
+method = &"Item"
+parameter = "SUNSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_e1ytk"]
+script = ExtResource("2_dfc8x")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_welei"]
+script = ExtResource("2_dfc8x")
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_olehu"]
+script = ExtResource("2_dfc8x")
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_6ko6q"]
+script = ExtResource("2_dfc8x")
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_2u128"]
+script = ExtResource("2_dfc8x")
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_ksjne"]
+script = ExtResource("2_dfc8x")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_gmyru"]
+script = ExtResource("2_dfc8x")
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_c1jwf"]
+script = ExtResource("2_dfc8x")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_8um8s"]
+script = ExtResource("2_dfc8x")
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_5gi04"]
+script = ExtResource("2_dfc8x")
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ntdno"]
+script = ExtResource("2_dfc8x")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_kbf0q"]
+script = ExtResource("2_dfc8x")
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_klcpi"]
+script = ExtResource("2_dfc8x")
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_xhr4w"]
+script = ExtResource("2_dfc8x")
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_g10i8"]
+script = ExtResource("2_dfc8x")
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_7trn7"]
+script = ExtResource("2_dfc8x")
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_u5aiq"]
+script = ExtResource("2_dfc8x")
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_hsf6m"]
+script = ExtResource("2_dfc8x")
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_ty3d6"]
+script = ExtResource("2_dfc8x")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_g6xpt"]
+script = ExtResource("2_dfc8x")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_o3xlh"]
+script = ExtResource("2_dfc8x")
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_a5dc2"]
+script = ExtResource("2_dfc8x")
+move = &"STUNSPORE"
+
+[resource]
+resource_name = "WHIMSICOTT"
+script = ExtResource("3_v8gi4")
+species = &"WHIMSICOTT"
+category = "Windveiled"
+pokedex_entry = "Riding whirlwinds, they appear. These Pokémon sneak through gaps into houses and cause all sorts of mischief."
+types = Array[StringName]([&"GRASS", &"FAIRY"])
+base_hp = 60
+base_attack = 67
+base_defense = 85
+base_special_attack = 77
+base_special_defense = 75
+base_speed = 116
+ev_speed = 2
+base_exp = 168
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dfc8x")]([SubResource("Resource_e1ytk"), SubResource("Resource_welei"), SubResource("Resource_olehu"), SubResource("Resource_6ko6q"), SubResource("Resource_2u128"), SubResource("Resource_ksjne"), SubResource("Resource_gmyru"), SubResource("Resource_c1jwf"), SubResource("Resource_8um8s"), SubResource("Resource_5gi04"), SubResource("Resource_ntdno"), SubResource("Resource_kbf0q"), SubResource("Resource_klcpi"), SubResource("Resource_xhr4w"), SubResource("Resource_g10i8"), SubResource("Resource_7trn7"), SubResource("Resource_u5aiq"), SubResource("Resource_hsf6m"), SubResource("Resource_ty3d6"), SubResource("Resource_g6xpt"), SubResource("Resource_o3xlh"), SubResource("Resource_a5dc2")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BEATUP", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"DREAMEATER", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLASH", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"KNOCKOFF", &"LIGHTSCREEN", &"MIMIC", &"MISTYTERRAIN", &"NATURALGIFT", &"NATUREPOWER", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TOXIC", &"TRICKROOM", &"UTURN", &"WORRYSEED"])
+abilities = Array[StringName]([&"PRANKSTER", &"INFILTRATOR"])
+hidden_abilities = Array[StringName]([&"CHLOROPHYLL"])
+wild_item_uncommon = Array[StringName]([&"ABSORBBULB"])
+egg_groups = Array[StringName]([&"Grass", &"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_uuiow")]([SubResource("Resource_mpnja")])
+height = 7
+weight = 66
+color = &"Green"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 25)
+shadow_size = 1
+id = &"WHIMSICOTT"
+display_name = "Whimsicott"

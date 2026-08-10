@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_f2cno"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yryd5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3dnv4"]
+
+[sub_resource type="Resource" id="Resource_uu2sl"]
+script = ExtResource("1_f2cno")
+species = &"LICKILICKY"
+method = &"HasMove"
+parameter = "ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_2528o"]
+script = ExtResource("2_yryd5")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_hhw8x"]
+script = ExtResource("2_yryd5")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_nlsig"]
+script = ExtResource("2_yryd5")
+level = 6
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_pu1c0"]
+script = ExtResource("2_yryd5")
+level = 12
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_ssnsf"]
+script = ExtResource("2_yryd5")
+level = 18
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_2jk1s"]
+script = ExtResource("2_yryd5")
+level = 24
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_nqjy7"]
+script = ExtResource("2_yryd5")
+level = 30
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_mbbn7"]
+script = ExtResource("2_yryd5")
+level = 36
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_drnqx"]
+script = ExtResource("2_yryd5")
+level = 42
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_m54p8"]
+script = ExtResource("2_yryd5")
+level = 48
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_fa2oh"]
+script = ExtResource("2_yryd5")
+level = 54
+move = &"POWERWHIP"
+
+[sub_resource type="Resource" id="Resource_phcjh"]
+script = ExtResource("2_yryd5")
+level = 60
+move = &"BELLYDRUM"
+
+[resource]
+resource_name = "LICKITUNG"
+script = ExtResource("3_3dnv4")
+species = &"LICKITUNG"
+category = "Licking"
+pokedex_entry = "Whenever it sees something unfamiliar, it always licks the object because it memorizes things by texture and taste. It is somewhat put off by sour things."
+base_hp = 90
+base_attack = 55
+base_defense = 75
+base_special_attack = 60
+base_special_defense = 75
+base_speed = 30
+ev_hp = 2
+base_exp = 77
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yryd5")]([SubResource("Resource_2528o"), SubResource("Resource_hhw8x"), SubResource("Resource_nlsig"), SubResource("Resource_pu1c0"), SubResource("Resource_ssnsf"), SubResource("Resource_2jk1s"), SubResource("Resource_nqjy7"), SubResource("Resource_mbbn7"), SubResource("Resource_drnqx"), SubResource("Resource_m54p8"), SubResource("Resource_fa2oh"), SubResource("Resource_phcjh")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONTAIL", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"POWERWHIP", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TERRAINPULSE", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AMNESIA", &"BELCH", &"BELLYDRUM", &"BODYSLAM", &"CURSE", &"HAMMERARM", &"MUDDYWATER", &"SNORE", &"THRASH", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"OWNTEMPO", &"OBLIVIOUS"])
+hidden_abilities = Array[StringName]([&"CLOUDNINE"])
+wild_item_uncommon = Array[StringName]([&"LAGGINGTAIL"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_f2cno")]([SubResource("Resource_uu2sl")])
+height = 12
+weight = 655
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 24)
+id = &"LICKITUNG"
+display_name = "Lickitung"

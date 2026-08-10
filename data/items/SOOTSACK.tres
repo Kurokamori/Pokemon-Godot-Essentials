@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_a4lhs"]
+
+[resource]
+resource_name = "SOOTSACK"
+script = ExtResource("1_a4lhs")
+name_plural = "Soot Sacks"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A sack used to gather and hold volcanic ash."
+id = &"SOOTSACK"
+display_name = "Soot Sack"
+flags = Array[StringName]([&"KeyItem"])

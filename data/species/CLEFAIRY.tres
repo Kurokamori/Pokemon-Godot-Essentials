@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cwjyt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qb4kw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6cjij"]
+
+[sub_resource type="Resource" id="Resource_4y12b"]
+script = ExtResource("1_cwjyt")
+species = &"CLEFABLE"
+method = &"Item"
+parameter = "MOONSTONE"
+
+[sub_resource type="Resource" id="Resource_etcum"]
+script = ExtResource("1_cwjyt")
+species = &"CLEFFA"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_m37m1"]
+script = ExtResource("2_qb4kw")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_8b7fm"]
+script = ExtResource("2_qb4kw")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_qmc85"]
+script = ExtResource("2_qb4kw")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_r30xj"]
+script = ExtResource("2_qb4kw")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_2qxi0"]
+script = ExtResource("2_qb4kw")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_wdk7k"]
+script = ExtResource("2_qb4kw")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_k4y3c"]
+script = ExtResource("2_qb4kw")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_oodgb"]
+script = ExtResource("2_qb4kw")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_p780m"]
+script = ExtResource("2_qb4kw")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_kkrv1"]
+script = ExtResource("2_qb4kw")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_k6iir"]
+script = ExtResource("2_qb4kw")
+level = 4
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_pngjt"]
+script = ExtResource("2_qb4kw")
+level = 8
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_seav8"]
+script = ExtResource("2_qb4kw")
+level = 12
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_uqvka"]
+script = ExtResource("2_qb4kw")
+level = 16
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_fs0tx"]
+script = ExtResource("2_qb4kw")
+level = 20
+move = &"METRONOME"
+
+[sub_resource type="Resource" id="Resource_vv5sy"]
+script = ExtResource("2_qb4kw")
+level = 24
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_vqbhp"]
+script = ExtResource("2_qb4kw")
+level = 28
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_kbs1r"]
+script = ExtResource("2_qb4kw")
+level = 32
+move = &"METEORMASH"
+
+[sub_resource type="Resource" id="Resource_0spqd"]
+script = ExtResource("2_qb4kw")
+level = 36
+move = &"FOLLOWME"
+
+[sub_resource type="Resource" id="Resource_ga47t"]
+script = ExtResource("2_qb4kw")
+level = 40
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_xh1rb"]
+script = ExtResource("2_qb4kw")
+level = 44
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_hj55q"]
+script = ExtResource("2_qb4kw")
+level = 48
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "CLEFAIRY"
+script = ExtResource("3_6cjij")
+species = &"CLEFAIRY"
+category = "Fairy"
+pokedex_entry = "On every night of a full moon, they come out to play. When dawn arrives, the tired Clefairy go to sleep nestled up against each other in deep and quiet mountains."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 70
+base_attack = 45
+base_defense = 48
+base_special_attack = 60
+base_special_defense = 65
+base_speed = 35
+ev_hp = 2
+base_exp = 113
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 150
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_qb4kw")]([SubResource("Resource_m37m1"), SubResource("Resource_8b7fm"), SubResource("Resource_qmc85"), SubResource("Resource_r30xj"), SubResource("Resource_2qxi0"), SubResource("Resource_wdk7k"), SubResource("Resource_k4y3c"), SubResource("Resource_oodgb"), SubResource("Resource_p780m"), SubResource("Resource_kkrv1"), SubResource("Resource_k6iir"), SubResource("Resource_pngjt"), SubResource("Resource_seav8"), SubResource("Resource_uqvka"), SubResource("Resource_fs0tx"), SubResource("Resource_vv5sy"), SubResource("Resource_vqbhp"), SubResource("Resource_kbs1r"), SubResource("Resource_0spqd"), SubResource("Resource_ga47t"), SubResource("Resource_xh1rb"), SubResource("Resource_hj55q")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"AMNESIA", &"ATTRACT", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COSMICPOWER", &"COUNTER", &"COVET", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"DUALWINGBEAT", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"METRONOME", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOFTBOILED", &"SOLARBEAM", &"STEALTHROCK", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"UPROAR", &"WATERPULSE", &"WONDERROOM", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"CUTECHARM", &"MAGICGUARD"])
+hidden_abilities = Array[StringName]([&"FRIENDGUARD"])
+wild_item_uncommon = Array[StringName]([&"MOONSTONE"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_cwjyt")]([SubResource("Resource_4y12b"), SubResource("Resource_etcum")])
+height = 6
+weight = 75
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 29)
+shadow_size = 1
+id = &"CLEFAIRY"
+display_name = "Clefairy"

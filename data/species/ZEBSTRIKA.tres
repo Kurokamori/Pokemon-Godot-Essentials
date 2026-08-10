@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_oihy5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jckbo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_o81im"]
+
+[sub_resource type="Resource" id="Resource_kjhem"]
+script = ExtResource("1_oihy5")
+species = &"BLITZLE"
+method = &"Level"
+parameter = "27"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jweog"]
+script = ExtResource("2_jckbo")
+move = &"IONDELUGE"
+
+[sub_resource type="Resource" id="Resource_20kpw"]
+script = ExtResource("2_jckbo")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ebyhl"]
+script = ExtResource("2_jckbo")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_vjw0k"]
+script = ExtResource("2_jckbo")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_io771"]
+script = ExtResource("2_jckbo")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_fnygl"]
+script = ExtResource("2_jckbo")
+level = 4
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_elg4f"]
+script = ExtResource("2_jckbo")
+level = 8
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_krsgh"]
+script = ExtResource("2_jckbo")
+level = 11
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_hstee"]
+script = ExtResource("2_jckbo")
+level = 15
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_nhr58"]
+script = ExtResource("2_jckbo")
+level = 18
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_jm6op"]
+script = ExtResource("2_jckbo")
+level = 22
+move = &"PURSUIT"
+
+[sub_resource type="Resource" id="Resource_s4ctu"]
+script = ExtResource("2_jckbo")
+level = 25
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_8id5b"]
+script = ExtResource("2_jckbo")
+level = 31
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_7fdoc"]
+script = ExtResource("2_jckbo")
+level = 36
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_ncrwf"]
+script = ExtResource("2_jckbo")
+level = 42
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_acbk4"]
+script = ExtResource("2_jckbo")
+level = 47
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_7gmcw"]
+script = ExtResource("2_jckbo")
+level = 53
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_8uql2"]
+script = ExtResource("2_jckbo")
+level = 58
+move = &"IONDELUGE"
+
+[resource]
+resource_name = "ZEBSTRIKA"
+script = ExtResource("3_o81im")
+species = &"ZEBSTRIKA"
+category = "Thunderbolt"
+pokedex_entry = "This ill-tempered Pokémon is dangerous because when it's angry, it shoots lightning from its mane in all directions."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 75
+base_attack = 100
+base_defense = 63
+base_special_attack = 80
+base_special_defense = 63
+base_speed = 116
+ev_speed = 2
+base_exp = 174
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jckbo")]([SubResource("Resource_jweog"), SubResource("Resource_20kpw"), SubResource("Resource_ebyhl"), SubResource("Resource_vjw0k"), SubResource("Resource_io771"), SubResource("Resource_fnygl"), SubResource("Resource_elg4f"), SubResource("Resource_krsgh"), SubResource("Resource_hstee"), SubResource("Resource_nhr58"), SubResource("Resource_jm6op"), SubResource("Resource_s4ctu"), SubResource("Resource_8id5b"), SubResource("Resource_7fdoc"), SubResource("Resource_ncrwf"), SubResource("Resource_acbk4"), SubResource("Resource_7gmcw"), SubResource("Resource_8uql2")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BOUNCE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLAMECHARGE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"LASERFOCUS", &"LIGHTSCREEN", &"LOWKICK", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"LIGHTNINGROD", &"MOTORDRIVE"])
+hidden_abilities = Array[StringName]([&"SAPSIPPER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_oihy5")]([SubResource("Resource_kjhem")])
+height = 16
+weight = 795
+color = &"Black"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 57)
+front_sprite_offset = Vector2i(0, 18)
+id = &"ZEBSTRIKA"
+display_name = "Zebstrika"

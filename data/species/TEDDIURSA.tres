@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0k17w"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7sf2w"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3dk5x"]
+
+[sub_resource type="Resource" id="Resource_chj4t"]
+script = ExtResource("1_0k17w")
+species = &"URSARING"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_x6nt2"]
+script = ExtResource("2_7sf2w")
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_qr0bo"]
+script = ExtResource("2_7sf2w")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_ojkfg"]
+script = ExtResource("2_7sf2w")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_01pra"]
+script = ExtResource("2_7sf2w")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_0ctyp"]
+script = ExtResource("2_7sf2w")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_5u6s3"]
+script = ExtResource("2_7sf2w")
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_olo6j"]
+script = ExtResource("2_7sf2w")
+level = 8
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_mbw3o"]
+script = ExtResource("2_7sf2w")
+level = 15
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_8qql5"]
+script = ExtResource("2_7sf2w")
+level = 22
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_l0qc6"]
+script = ExtResource("2_7sf2w")
+level = 25
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_th7e7"]
+script = ExtResource("2_7sf2w")
+level = 29
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_8g2xm"]
+script = ExtResource("2_7sf2w")
+level = 36
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_2u6da"]
+script = ExtResource("2_7sf2w")
+level = 43
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_hn1u5"]
+script = ExtResource("2_7sf2w")
+level = 43
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_0lcq6"]
+script = ExtResource("2_7sf2w")
+level = 50
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_5ytp8"]
+script = ExtResource("2_7sf2w")
+level = 57
+move = &"FLING"
+
+[resource]
+resource_name = "TEDDIURSA"
+script = ExtResource("3_3dk5x")
+species = &"TEDDIURSA"
+category = "Little Bear"
+pokedex_entry = "It licks its palms that are sweetened by being soaked in honey. A Teddiursa makes its own honey by blending fruits and pollen collected by Beedrill."
+base_hp = 60
+base_attack = 80
+base_defense = 50
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 40
+ev_attack = 1
+base_exp = 66
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7sf2w")]([SubResource("Resource_x6nt2"), SubResource("Resource_qr0bo"), SubResource("Resource_ojkfg"), SubResource("Resource_01pra"), SubResource("Resource_0ctyp"), SubResource("Resource_5u6s3"), SubResource("Resource_olo6j"), SubResource("Resource_mbw3o"), SubResource("Resource_8qql5"), SubResource("Resource_l0qc6"), SubResource("Resource_th7e7"), SubResource("Resource_8g2xm"), SubResource("Resource_2u6da"), SubResource("Resource_hn1u5"), SubResource("Resource_0lcq6"), SubResource("Resource_5ytp8")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERVOICE", &"ICEPUNCH", &"LASTRESORT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"WORKUP"])
+egg_moves = Array[StringName]([&"BELLYDRUM", &"CLOSECOMBAT", &"COUNTER", &"CROSSCHOP", &"CRUNCH", &"DOUBLEEDGE", &"FAKETEARS", &"METALCLAW", &"NIGHTSLASH", &"PLAYROUGH", &"SEISMICTOSS", &"TAKEDOWN", &"YAWN"])
+abilities = Array[StringName]([&"PICKUP", &"QUICKFEET"])
+hidden_abilities = Array[StringName]([&"HONEYGATHER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0k17w")]([SubResource("Resource_chj4t")])
+height = 6
+weight = 88
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 32)
+shadow_size = 1
+id = &"TEDDIURSA"
+display_name = "Teddiursa"

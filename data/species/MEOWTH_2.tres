@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tvic5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ejbxy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_h0ja6"]
+
+[sub_resource type="Resource" id="Resource_58wx1"]
+script = ExtResource("1_tvic5")
+species = &"PERRSERKER"
+method = &"Level"
+parameter = "28"
+
+[sub_resource type="Resource" id="Resource_62byf"]
+script = ExtResource("2_ejbxy")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_idwwh"]
+script = ExtResource("2_ejbxy")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_10qbk"]
+script = ExtResource("2_ejbxy")
+level = 4
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_krao4"]
+script = ExtResource("2_ejbxy")
+level = 8
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_wtpnt"]
+script = ExtResource("2_ejbxy")
+level = 12
+move = &"PAYDAY"
+
+[sub_resource type="Resource" id="Resource_qql0q"]
+script = ExtResource("2_ejbxy")
+level = 16
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_1w4sp"]
+script = ExtResource("2_ejbxy")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_2r0be"]
+script = ExtResource("2_ejbxy")
+level = 24
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_5h508"]
+script = ExtResource("2_ejbxy")
+level = 29
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_g6ib4"]
+script = ExtResource("2_ejbxy")
+level = 32
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_td4gc"]
+script = ExtResource("2_ejbxy")
+level = 36
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_bnlgd"]
+script = ExtResource("2_ejbxy")
+level = 40
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_keshm"]
+script = ExtResource("2_ejbxy")
+level = 44
+move = &"THRASH"
+
+[resource]
+resource_name = "MEOWTH_2"
+script = ExtResource("3_h0ja6")
+species = &"MEOWTH"
+form = 2
+form_name = "Galarian"
+category = "Scratch Cat"
+pokedex_entry = "Living with a savage, seafaring people has toughened this Pokémon's body so much that parts of it have turned to iron."
+pokedex_form = 2
+types = Array[StringName]([&"STEEL"])
+base_hp = 50
+base_attack = 65
+base_defense = 55
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 40
+ev_speed = 1
+base_exp = 58
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ejbxy")]([SubResource("Resource_62byf"), SubResource("Resource_idwwh"), SubResource("Resource_10qbk"), SubResource("Resource_krao4"), SubResource("Resource_wtpnt"), SubResource("Resource_qql0q"), SubResource("Resource_1w4sp"), SubResource("Resource_2r0be"), SubResource("Resource_5h508"), SubResource("Resource_g6ib4"), SubResource("Resource_td4gc"), SubResource("Resource_bnlgd"), SubResource("Resource_keshm")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CRUNCH", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GUNKSHOT", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERVOICE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STEELBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"UPROAR", &"UTURN", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"COVET", &"CURSE", &"DOUBLEEDGE", &"FLAIL", &"NIGHTSLASH", &"SPITE"])
+abilities = Array[StringName]([&"PICKUP", &"TOUGHCLAWS"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+wild_item_uncommon = Array[StringName]([&"QUICKCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tvic5")]([SubResource("Resource_58wx1")])
+height = 4
+weight = 75
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 1
+id = &"MEOWTH_2"
+display_name = "Meowth"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0bm5u"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xup81"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uc668"]
+
+[sub_resource type="Resource" id="Resource_ycu1o"]
+script = ExtResource("1_0bm5u")
+species = &"WALREIN"
+method = &"Level"
+parameter = "44"
+
+[sub_resource type="Resource" id="Resource_rn8ht"]
+script = ExtResource("1_0bm5u")
+species = &"SPHEAL"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pe7rf"]
+script = ExtResource("2_xup81")
+level = 0
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_gy8jg"]
+script = ExtResource("2_xup81")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_myyu8"]
+script = ExtResource("2_xup81")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_1xgsg"]
+script = ExtResource("2_xup81")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_w8u0c"]
+script = ExtResource("2_xup81")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_6l7jk"]
+script = ExtResource("2_xup81")
+level = 12
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_5bu3h"]
+script = ExtResource("2_xup81")
+level = 16
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_lgubc"]
+script = ExtResource("2_xup81")
+level = 20
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_tewgr"]
+script = ExtResource("2_xup81")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_db4i8"]
+script = ExtResource("2_xup81")
+level = 28
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_72agh"]
+script = ExtResource("2_xup81")
+level = 35
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_i4u8y"]
+script = ExtResource("2_xup81")
+level = 40
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_fu4df"]
+script = ExtResource("2_xup81")
+level = 46
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_sbc4k"]
+script = ExtResource("2_xup81")
+level = 52
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_v0jxa"]
+script = ExtResource("2_xup81")
+level = 58
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_ujtij"]
+script = ExtResource("2_xup81")
+level = 64
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "SEALEO"
+script = ExtResource("3_uc668")
+species = &"SEALEO"
+category = "Ball Roll"
+pokedex_entry = "Sealeo live in herds on ice floes. Using its powerful flippers, it shatters ice. It dives into the sea to hunt prey five times a day."
+types = Array[StringName]([&"ICE", &"WATER"])
+base_hp = 90
+base_attack = 60
+base_defense = 70
+base_special_attack = 75
+base_special_defense = 70
+base_speed = 45
+ev_hp = 2
+base_exp = 144
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xup81")]([SubResource("Resource_pe7rf"), SubResource("Resource_gy8jg"), SubResource("Resource_myyu8"), SubResource("Resource_1xgsg"), SubResource("Resource_w8u0c"), SubResource("Resource_6l7jk"), SubResource("Resource_5bu3h"), SubResource("Resource_lgubc"), SubResource("Resource_tewgr"), SubResource("Resource_db4i8"), SubResource("Resource_72agh"), SubResource("Resource_i4u8y"), SubResource("Resource_fu4df"), SubResource("Resource_sbc4k"), SubResource("Resource_v0jxa"), SubResource("Resource_ujtij")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUPERFANG", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"THICKFAT", &"ICEBODY"])
+hidden_abilities = Array[StringName]([&"OBLIVIOUS"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0bm5u")]([SubResource("Resource_ycu1o"), SubResource("Resource_rn8ht")])
+height = 11
+weight = 876
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(2, 54)
+front_sprite_offset = Vector2i(2, 28)
+id = &"SEALEO"
+display_name = "Sealeo"

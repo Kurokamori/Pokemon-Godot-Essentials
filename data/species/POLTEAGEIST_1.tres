@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_h3fw5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_r5k0y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fpp0b"]
+
+[sub_resource type="Resource" id="Resource_3guus"]
+script = ExtResource("1_h3fw5")
+species = &"SINISTEA"
+method = &"Item"
+parameter = "CHIPPEDPOT"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_14j8a"]
+script = ExtResource("2_r5k0y")
+level = 0
+move = &"TEATIME"
+
+[sub_resource type="Resource" id="Resource_axkrj"]
+script = ExtResource("2_r5k0y")
+move = &"STRENGTHSAP"
+
+[sub_resource type="Resource" id="Resource_88pcd"]
+script = ExtResource("2_r5k0y")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_16evt"]
+script = ExtResource("2_r5k0y")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_l50vq"]
+script = ExtResource("2_r5k0y")
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_xs84a"]
+script = ExtResource("2_r5k0y")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_sx6sh"]
+script = ExtResource("2_r5k0y")
+level = 18
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_tsmu7"]
+script = ExtResource("2_r5k0y")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_q50pg"]
+script = ExtResource("2_r5k0y")
+level = 30
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_1uog4"]
+script = ExtResource("2_r5k0y")
+level = 36
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_tuw1g"]
+script = ExtResource("2_r5k0y")
+level = 42
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_wlxrf"]
+script = ExtResource("2_r5k0y")
+level = 48
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_epya6"]
+script = ExtResource("2_r5k0y")
+level = 54
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_r0si6"]
+script = ExtResource("2_r5k0y")
+level = 60
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_dt2h2"]
+script = ExtResource("2_r5k0y")
+level = 66
+move = &"CURSE"
+
+[resource]
+resource_name = "POLTEAGEIST_1"
+script = ExtResource("3_fpp0b")
+species = &"POLTEAGEIST"
+form = 1
+form_name = "Antique Form"
+category = "Black Tea"
+pokedex_entry = "Trainers Polteageist trusts will be allowed to experience its distinctive flavor and aroma firsthand by sampling just a tiny bit of its tea."
+pokedex_form = 1
+types = Array[StringName]([&"GHOST"])
+base_hp = 60
+base_attack = 65
+base_defense = 65
+base_special_attack = 134
+base_special_defense = 114
+base_speed = 70
+ev_special_attack = 2
+base_exp = 178
+gender_ratio = &"Genderless"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_r5k0y")]([SubResource("Resource_14j8a"), SubResource("Resource_axkrj"), SubResource("Resource_88pcd"), SubResource("Resource_16evt"), SubResource("Resource_l50vq"), SubResource("Resource_xs84a"), SubResource("Resource_sx6sh"), SubResource("Resource_tsmu7"), SubResource("Resource_q50pg"), SubResource("Resource_1uog4"), SubResource("Resource_tuw1g"), SubResource("Resource_wlxrf"), SubResource("Resource_epya6"), SubResource("Resource_r0si6"), SubResource("Resource_dt2h2")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"BATONPASS", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LIGHTSCREEN", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRICK", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"WEAKARMOR"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+egg_groups = Array[StringName]([&"Mineral", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_h3fw5")]([SubResource("Resource_3guus")])
+height = 2
+weight = 4
+color = &"Purple"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 4)
+id = &"POLTEAGEIST_1"
+display_name = "Polteageist"

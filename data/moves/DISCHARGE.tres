@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yof3b"]
+
+[resource]
+resource_name = "DISCHARGE"
+script = ExtResource("1_yof3b")
+type = &"ELECTRIC"
+category = 1
+power = 80
+total_pp = 15
+target = &"AllNearOthers"
+function_code = &"ParalyzeTarget"
+effect_chance = 30
+description = "A flare of electricity is loosed to strike the area around the user. It may also cause paralysis."
+id = &"DISCHARGE"
+display_name = "Discharge"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

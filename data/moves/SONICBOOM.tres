@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tjdba"]
+
+[resource]
+resource_name = "SONICBOOM"
+script = ExtResource("1_tjdba")
+category = 1
+power = 1
+accuracy = 90
+total_pp = 20
+function_code = &"FixedDamage20"
+description = "The target is hit with a destructive shock wave that always inflicts 20 HP damage."
+id = &"SONICBOOM"
+display_name = "Sonic Boom"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

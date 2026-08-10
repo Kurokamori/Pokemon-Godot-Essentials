@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hu75a"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_myxp1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qg3it"]
+
+[sub_resource type="Resource" id="Resource_qlyq6"]
+script = ExtResource("2_myxp1")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_n6cub"]
+script = ExtResource("2_myxp1")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_d53ce"]
+script = ExtResource("2_myxp1")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_iim3o"]
+script = ExtResource("2_myxp1")
+level = 8
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_i1eee"]
+script = ExtResource("2_myxp1")
+level = 12
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_che85"]
+script = ExtResource("2_myxp1")
+level = 16
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_c4jri"]
+script = ExtResource("2_myxp1")
+level = 20
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_mjgqo"]
+script = ExtResource("2_myxp1")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_wc20y"]
+script = ExtResource("2_myxp1")
+level = 28
+move = &"STEELWING"
+
+[sub_resource type="Resource" id="Resource_a5ey0"]
+script = ExtResource("2_myxp1")
+level = 32
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_f0mmv"]
+script = ExtResource("2_myxp1")
+level = 36
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_m2j4s"]
+script = ExtResource("2_myxp1")
+level = 40
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_dtrid"]
+script = ExtResource("2_myxp1")
+level = 44
+move = &"SPIKES"
+
+[sub_resource type="Resource" id="Resource_ewqa2"]
+script = ExtResource("2_myxp1")
+level = 48
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_p7c7q"]
+script = ExtResource("2_myxp1")
+level = 52
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "SKARMORY"
+script = ExtResource("3_qg3it")
+species = &"SKARMORY"
+category = "Armor Bird"
+pokedex_entry = "A Pokémon that has a body and wings of steel. People in the past used feathers fallen from Skarmory to make swords and knives."
+types = Array[StringName]([&"STEEL", &"FLYING"])
+base_hp = 65
+base_attack = 80
+base_defense = 140
+base_special_attack = 40
+base_special_defense = 70
+base_speed = 70
+ev_defense = 2
+base_exp = 163
+growth_rate = &"Slow"
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_myxp1")]([SubResource("Resource_qlyq6"), SubResource("Resource_n6cub"), SubResource("Resource_d53ce"), SubResource("Resource_iim3o"), SubResource("Resource_i1eee"), SubResource("Resource_che85"), SubResource("Resource_c4jri"), SubResource("Resource_mjgqo"), SubResource("Resource_wc20y"), SubResource("Resource_a5ey0"), SubResource("Resource_f0mmv"), SubResource("Resource_m2j4s"), SubResource("Resource_dtrid"), SubResource("Resource_ewqa2"), SubResource("Resource_p7c7q")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BODYPRESS", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FLY", &"FRUSTRATION", &"FURYCUTTER", &"GUARDSWAP", &"HIDDENPOWER", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PLUCK", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"SPIKES", &"STEALTHROCK", &"STEELBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TWISTER", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"AIRCUTTER", &"ASSURANCE", &"BRAVEBIRD", &"CURSE", &"DRILLPECK", &"FEINT", &"GUARDSWAP", &"NIGHTSLASH", &"ROOST", &"SKYATTACK", &"WHIRLWIND"])
+abilities = Array[StringName]([&"KEENEYE", &"STURDY"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+wild_item_uncommon = Array[StringName]([&"METALCOAT"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 6400
+height = 17
+weight = 505
+color = &"Gray"
+shape = &"Winged"
+habitat = &"RoughTerrain"
+generation = 2
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(2, 18)
+id = &"SKARMORY"
+display_name = "Skarmory"

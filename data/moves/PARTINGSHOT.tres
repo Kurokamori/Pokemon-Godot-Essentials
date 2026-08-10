@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_wcqau"]
+
+[resource]
+resource_name = "PARTINGSHOT"
+script = ExtResource("1_wcqau")
+type = &"DARK"
+total_pp = 20
+function_code = &"LowerTargetAtkSpAtk1SwitchOutUser"
+description = "With a parting threat, the user lowers the target's Attack and Sp. Atk stats. Then it switches out."
+id = &"PARTINGSHOT"
+display_name = "Parting Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

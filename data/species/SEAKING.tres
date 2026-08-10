@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_g1kfh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_023rt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fppsw"]
+
+[sub_resource type="Resource" id="Resource_iehn5"]
+script = ExtResource("1_g1kfh")
+species = &"GOLDEEN"
+method = &"Level"
+parameter = "33"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_empee"]
+script = ExtResource("2_023rt")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_aya8p"]
+script = ExtResource("2_023rt")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_6kvtu"]
+script = ExtResource("2_023rt")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_0yi53"]
+script = ExtResource("2_023rt")
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_vhdw2"]
+script = ExtResource("2_023rt")
+level = 15
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_kulvg"]
+script = ExtResource("2_023rt")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_atuxe"]
+script = ExtResource("2_023rt")
+level = 25
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_bvwf5"]
+script = ExtResource("2_023rt")
+level = 30
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_ws0jg"]
+script = ExtResource("2_023rt")
+level = 37
+move = &"WATERFALL"
+
+[sub_resource type="Resource" id="Resource_rimuf"]
+script = ExtResource("2_023rt")
+level = 44
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_oix1v"]
+script = ExtResource("2_023rt")
+level = 51
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_36n4c"]
+script = ExtResource("2_023rt")
+level = 58
+move = &"HORNDRILL"
+
+[resource]
+resource_name = "SEAKING"
+script = ExtResource("3_fppsw")
+species = &"SEAKING"
+category = "Goldfish"
+pokedex_entry = "It punches holes in boulders on stream- beds. This is a clever innovation that prevents its eggs from being attacked or washed away by the current."
+types = Array[StringName]([&"WATER"])
+base_hp = 80
+base_attack = 92
+base_defense = 65
+base_special_attack = 65
+base_special_defense = 80
+base_speed = 68
+ev_attack = 2
+base_exp = 158
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_023rt")]([SubResource("Resource_empee"), SubResource("Resource_aya8p"), SubResource("Resource_6kvtu"), SubResource("Resource_0yi53"), SubResource("Resource_vhdw2"), SubResource("Resource_kulvg"), SubResource("Resource_atuxe"), SubResource("Resource_bvwf5"), SubResource("Resource_ws0jg"), SubResource("Resource_rimuf"), SubResource("Resource_oix1v"), SubResource("Resource_36n4c")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ENDURE", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"KNOCKOFF", &"MEGAHORN", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THROATCHOP", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"WATERVEIL"])
+hidden_abilities = Array[StringName]([&"LIGHTNINGROD"])
+wild_item_uncommon = Array[StringName]([&"MYSTICWATER"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_g1kfh")]([SubResource("Resource_iehn5")])
+height = 13
+weight = 390
+shape = &"Finned"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 64)
+front_sprite_offset = Vector2i(0, 14)
+id = &"SEAKING"
+display_name = "Seaking"

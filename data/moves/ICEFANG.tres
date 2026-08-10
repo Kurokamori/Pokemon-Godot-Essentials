@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_g1bm0"]
+
+[resource]
+resource_name = "ICEFANG"
+script = ExtResource("1_g1bm0")
+type = &"ICE"
+category = 0
+power = 65
+accuracy = 95
+total_pp = 15
+function_code = &"FreezeFlinchTarget"
+effect_chance = 101
+description = "The user bites with cold-infused fangs. It may also make the target flinch or leave it frozen."
+id = &"ICEFANG"
+display_name = "Ice Fang"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Biting"])

@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4b8m7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x82wh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ibpji"]
+
+[sub_resource type="Resource" id="Resource_kr8bu"]
+script = ExtResource("2_x82wh")
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_qukdx"]
+script = ExtResource("2_x82wh")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_5y2b3"]
+script = ExtResource("2_x82wh")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_x2n4a"]
+script = ExtResource("2_x82wh")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_tc2yq"]
+script = ExtResource("2_x82wh")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_oicmp"]
+script = ExtResource("2_x82wh")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_liod4"]
+script = ExtResource("2_x82wh")
+level = 11
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_huxlk"]
+script = ExtResource("2_x82wh")
+level = 22
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_gksf2"]
+script = ExtResource("2_x82wh")
+level = 33
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_f1bkp"]
+script = ExtResource("2_x82wh")
+level = 44
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_us8gl"]
+script = ExtResource("2_x82wh")
+level = 55
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_c1v3j"]
+script = ExtResource("2_x82wh")
+level = 66
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_4ryny"]
+script = ExtResource("2_x82wh")
+level = 77
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_ggxua"]
+script = ExtResource("2_x82wh")
+level = 88
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "ZAMAZENTA_1"
+script = ExtResource("3_ibpji")
+species = &"ZAMAZENTA"
+form = 1
+form_name = "Crowned Shield"
+category = "Warrior"
+pokedex_entry = "Its ability to deflect any attack led to it being known as the Fighting Master's Shield. It was feared and respected by all."
+pokedex_form = 1
+types = Array[StringName]([&"FIGHTING", &"STEEL"])
+base_hp = 92
+base_attack = 130
+base_defense = 145
+base_special_attack = 80
+base_special_defense = 145
+base_speed = 128
+ev_speed = 3
+base_exp = 360
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 10
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_x82wh")]([SubResource("Resource_kr8bu"), SubResource("Resource_qukdx"), SubResource("Resource_5y2b3"), SubResource("Resource_x2n4a"), SubResource("Resource_tc2yq"), SubResource("Resource_oicmp"), SubResource("Resource_liod4"), SubResource("Resource_huxlk"), SubResource("Resource_gksf2"), SubResource("Resource_f1bkp"), SubResource("Resource_us8gl"), SubResource("Resource_c1v3j"), SubResource("Resource_4ryny"), SubResource("Resource_ggxua")])
+tutor_moves = Array[StringName]([&"AGILITY", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CRUNCH", &"DAZZLINGGLEAM", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREFANG", &"FLASHCANNON", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"GUARDSWAP", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEFANG", &"IMPRISON", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"POWERSWAP", &"PROTECT", &"PSYCHICFANGS", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"STEELBEAM", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"THUNDERFANG", &"TOXIC", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"DAUNTLESSSHIELD"])
+wild_item_common = Array[StringName]([&"RUSTEDSHIELD"])
+wild_item_uncommon = Array[StringName]([&"RUSTEDSHIELD"])
+wild_item_rare = Array[StringName]([&"RUSTEDSHIELD"])
+hatch_steps = 30720
+height = 29
+weight = 7850
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-3, 11)
+shadow_size = 3
+id = &"ZAMAZENTA_1"
+display_name = "Zamazenta"
+flags = Array[StringName]([&"Legendary"])

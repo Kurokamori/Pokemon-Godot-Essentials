@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_h1rx3"]
+
+[resource]
+resource_name = "NATURALGIFT"
+script = ExtResource("1_h1rx3")
+category = 0
+power = 1
+total_pp = 15
+function_code = &"TypeAndPowerDependOnUserBerry"
+description = "The user draws power to attack by using its held Berry. The Berry determines its type and power."
+id = &"NATURALGIFT"
+display_name = "Natural Gift"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

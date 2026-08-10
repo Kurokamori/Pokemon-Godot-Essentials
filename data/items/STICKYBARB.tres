@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8b5qx"]
+
+[resource]
+resource_name = "STICKYBARB"
+script = ExtResource("1_8b5qx")
+name_plural = "Sticky Barbs"
+price = 4000
+sell_price = 2000
+bp_price = 16
+description = "A held item that damages the holder on every turn. It may latch on to Pokémon that touch the holder."
+id = &"STICKYBARB"
+display_name = "Sticky Barb"
+flags = Array[StringName]([&"Fling_80"])

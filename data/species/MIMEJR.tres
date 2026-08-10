@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_g3jjv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dt5rq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mrgxv"]
+
+[sub_resource type="Resource" id="Resource_yhkha"]
+script = ExtResource("1_g3jjv")
+species = &"MRMIME"
+method = &"HasMove"
+parameter = "MIMIC"
+
+[sub_resource type="Resource" id="Resource_4oojf"]
+script = ExtResource("2_dt5rq")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_tcij4"]
+script = ExtResource("2_dt5rq")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_xe8u5"]
+script = ExtResource("2_dt5rq")
+level = 4
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_nog4l"]
+script = ExtResource("2_dt5rq")
+level = 8
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_uwbcn"]
+script = ExtResource("2_dt5rq")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_guvk2"]
+script = ExtResource("2_dt5rq")
+level = 16
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_0ka5k"]
+script = ExtResource("2_dt5rq")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_jusgi"]
+script = ExtResource("2_dt5rq")
+level = 24
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_kk8w7"]
+script = ExtResource("2_dt5rq")
+level = 28
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_imll4"]
+script = ExtResource("2_dt5rq")
+level = 32
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_645am"]
+script = ExtResource("2_dt5rq")
+level = 36
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_jadk0"]
+script = ExtResource("2_dt5rq")
+level = 36
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_f08ak"]
+script = ExtResource("2_dt5rq")
+level = 36
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_iy07i"]
+script = ExtResource("2_dt5rq")
+level = 40
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_n1c7p"]
+script = ExtResource("2_dt5rq")
+level = 44
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_1lcqh"]
+script = ExtResource("2_dt5rq")
+level = 48
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_y4hd7"]
+script = ExtResource("2_dt5rq")
+level = 52
+move = &"TEETERDANCE"
+
+[resource]
+resource_name = "MIMEJR"
+script = ExtResource("3_mrgxv")
+species = &"MIMEJR"
+category = "Mime"
+pokedex_entry = "It habitually mimics foes. Once mimicked, the foe cannot take its eyes off this Pokémon."
+types = Array[StringName]([&"PSYCHIC", &"FAIRY"])
+base_hp = 20
+base_attack = 25
+base_defense = 45
+base_special_attack = 70
+base_special_defense = 90
+base_speed = 60
+ev_special_defense = 1
+base_exp = 62
+catch_rate = 145
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dt5rq")]([SubResource("Resource_4oojf"), SubResource("Resource_tcij4"), SubResource("Resource_xe8u5"), SubResource("Resource_nog4l"), SubResource("Resource_uwbcn"), SubResource("Resource_guvk2"), SubResource("Resource_0ka5k"), SubResource("Resource_jusgi"), SubResource("Resource_kk8w7"), SubResource("Resource_imll4"), SubResource("Resource_645am"), SubResource("Resource_jadk0"), SubResource("Resource_f08ak"), SubResource("Resource_iy07i"), SubResource("Resource_n1c7p"), SubResource("Resource_1lcqh"), SubResource("Resource_y4hd7")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FUTURESIGHT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICYWIND", &"INFESTATION", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"UPROAR", &"WONDERROOM"])
+egg_moves = Array[StringName]([&"CHARM", &"CONFUSERAY", &"FAKEOUT", &"FUTURESIGHT", &"HEALINGWISH", &"HYPNOSIS", &"ICYWIND", &"MAGICROOM", &"MIMIC", &"POWERSPLIT", &"TEETERDANCE", &"TICKLE", &"TRICK"])
+abilities = Array[StringName]([&"SOUNDPROOF", &"FILTER"])
+hidden_abilities = Array[StringName]([&"TECHNICIAN"])
+hatch_steps = 6400
+incense = &"ODDINCENSE"
+evolutions = Array[ExtResource("1_g3jjv")]([SubResource("Resource_yhkha")])
+height = 6
+weight = 130
+color = &"Pink"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 19)
+shadow_size = 1
+id = &"MIMEJR"
+display_name = "Mime Jr."

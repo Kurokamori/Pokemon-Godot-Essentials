@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2jn87"]
+
+[resource]
+resource_name = "ZINGZAP"
+script = ExtResource("1_2jn87")
+type = &"ELECTRIC"
+category = 0
+power = 80
+total_pp = 10
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "A strong electric blast crashes down on the target. This may also make the target flinch."
+id = &"ZINGZAP"
+display_name = "Zing Zap"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

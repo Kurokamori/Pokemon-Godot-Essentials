@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/weather_data.gd" id="1_leuxo"]
+
+[resource]
+resource_name = "Sun"
+script = ExtResource("1_leuxo")
+legacy_number = 7
+id = &"Sun"
+display_name = "Sun"

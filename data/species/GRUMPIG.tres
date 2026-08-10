@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_odieg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_r6075"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_q8jai"]
+
+[sub_resource type="Resource" id="Resource_cj8he"]
+script = ExtResource("1_odieg")
+species = &"SPOINK"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_mo0c4"]
+script = ExtResource("2_r6075")
+level = 0
+move = &"TEETERDANCE"
+
+[sub_resource type="Resource" id="Resource_8t7cf"]
+script = ExtResource("2_r6075")
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_o6k4n"]
+script = ExtResource("2_r6075")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_spglw"]
+script = ExtResource("2_r6075")
+level = 7
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_nh528"]
+script = ExtResource("2_r6075")
+level = 10
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_ypk08"]
+script = ExtResource("2_r6075")
+level = 14
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_m4g44"]
+script = ExtResource("2_r6075")
+level = 15
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_wdl2v"]
+script = ExtResource("2_r6075")
+level = 18
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_i1pmn"]
+script = ExtResource("2_r6075")
+level = 21
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_51gya"]
+script = ExtResource("2_r6075")
+level = 26
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_qtqpa"]
+script = ExtResource("2_r6075")
+level = 29
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_gmh6e"]
+script = ExtResource("2_r6075")
+level = 35
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_ppyfe"]
+script = ExtResource("2_r6075")
+level = 35
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_yfsxk"]
+script = ExtResource("2_r6075")
+level = 42
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_g0w2r"]
+script = ExtResource("2_r6075")
+level = 46
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_sfcit"]
+script = ExtResource("2_r6075")
+level = 52
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_lu2gg"]
+script = ExtResource("2_r6075")
+level = 60
+move = &"BOUNCE"
+
+[resource]
+resource_name = "GRUMPIG"
+script = ExtResource("3_q8jai")
+species = &"GRUMPIG"
+category = "Manipulate"
+pokedex_entry = "It stores power in the black pearls on its forehead. When it uses psychic power, it performs an odd dance step. Its style of dancing became hugely popular overseas."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 80
+base_attack = 45
+base_defense = 65
+base_special_attack = 90
+base_special_defense = 110
+base_speed = 80
+ev_special_defense = 2
+base_exp = 165
+growth_rate = &"Fast"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_r6075")]([SubResource("Resource_mo0c4"), SubResource("Resource_8t7cf"), SubResource("Resource_o6k4n"), SubResource("Resource_spglw"), SubResource("Resource_nh528"), SubResource("Resource_ypk08"), SubResource("Resource_m4g44"), SubResource("Resource_wdl2v"), SubResource("Resource_i1pmn"), SubResource("Resource_51gya"), SubResource("Resource_qtqpa"), SubResource("Resource_gmh6e"), SubResource("Resource_ppyfe"), SubResource("Resource_yfsxk"), SubResource("Resource_g0w2r"), SubResource("Resource_sfcit"), SubResource("Resource_lu2gg")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"THICKFAT", &"OWNTEMPO"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_odieg")]([SubResource("Resource_cj8he")])
+height = 9
+weight = 715
+color = &"Purple"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(2, 21)
+id = &"GRUMPIG"
+display_name = "Grumpig"

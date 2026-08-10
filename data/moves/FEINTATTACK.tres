@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_viw8t"]
+
+[resource]
+resource_name = "FEINTATTACK"
+script = ExtResource("1_viw8t")
+type = &"DARK"
+category = 0
+power = 60
+accuracy = 0
+total_pp = 20
+description = "The user draws up to the foe disarmingly, then throws a sucker punch. It hits without fail."
+id = &"FEINTATTACK"
+display_name = "Feint Attack"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_rornv"]
+
+[resource]
+script = ExtResource("1_rornv")
+category = &"egg_groups"
+record_script = "res://src/data/simple_name_data.gd"
+paths = {
+&"Amorphous": "res://data/egg_groups/Amorphous.tres",
+&"Bug": "res://data/egg_groups/Bug.tres",
+&"Ditto": "res://data/egg_groups/Ditto.tres",
+&"Dragon": "res://data/egg_groups/Dragon.tres",
+&"Fairy": "res://data/egg_groups/Fairy.tres",
+&"Field": "res://data/egg_groups/Field.tres",
+&"Flying": "res://data/egg_groups/Flying.tres",
+&"Grass": "res://data/egg_groups/Grass.tres",
+&"Humanlike": "res://data/egg_groups/Humanlike.tres",
+&"Mineral": "res://data/egg_groups/Mineral.tres",
+&"Monster": "res://data/egg_groups/Monster.tres",
+&"Undiscovered": "res://data/egg_groups/Undiscovered.tres",
+&"Water1": "res://data/egg_groups/Water1.tres",
+&"Water2": "res://data/egg_groups/Water2.tres",
+&"Water3": "res://data/egg_groups/Water3.tres"
+}
+ordered_ids = Array[StringName]([&"Undiscovered", &"Monster", &"Water1", &"Bug", &"Flying", &"Field", &"Fairy", &"Grass", &"Humanlike", &"Water3", &"Mineral", &"Amorphous", &"Water2", &"Ditto", &"Dragon"])

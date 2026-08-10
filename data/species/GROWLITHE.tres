@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ekold"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vp1pk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wdmg2"]
+
+[sub_resource type="Resource" id="Resource_uprlf"]
+script = ExtResource("1_ekold")
+species = &"ARCANINE"
+method = &"Item"
+parameter = "FIRESTONE"
+
+[sub_resource type="Resource" id="Resource_fooup"]
+script = ExtResource("2_vp1pk")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_0qfa5"]
+script = ExtResource("2_vp1pk")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_0gw3s"]
+script = ExtResource("2_vp1pk")
+level = 4
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_rfj0l"]
+script = ExtResource("2_vp1pk")
+level = 8
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_utlxr"]
+script = ExtResource("2_vp1pk")
+level = 12
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_4yyy3"]
+script = ExtResource("2_vp1pk")
+level = 16
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_by1d6"]
+script = ExtResource("2_vp1pk")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_y2pba"]
+script = ExtResource("2_vp1pk")
+level = 24
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_52vqy"]
+script = ExtResource("2_vp1pk")
+level = 28
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_j5neo"]
+script = ExtResource("2_vp1pk")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_f00ea"]
+script = ExtResource("2_vp1pk")
+level = 36
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_0iqas"]
+script = ExtResource("2_vp1pk")
+level = 40
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_8jcpf"]
+script = ExtResource("2_vp1pk")
+level = 44
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_27j5v"]
+script = ExtResource("2_vp1pk")
+level = 48
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_u8cg1"]
+script = ExtResource("2_vp1pk")
+level = 52
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_eorba"]
+script = ExtResource("2_vp1pk")
+level = 56
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "GROWLITHE"
+script = ExtResource("3_wdmg2")
+species = &"GROWLITHE"
+category = "Puppy"
+pokedex_entry = "Its superb sense of smell ensures that this Pokémon won't forget any scent, no matter what. It uses its sense of smell to detect the emotions of others."
+types = Array[StringName]([&"FIRE"])
+base_hp = 55
+base_attack = 70
+base_defense = 45
+base_special_attack = 70
+base_special_defense = 50
+base_speed = 60
+ev_attack = 1
+base_exp = 70
+growth_rate = &"Slow"
+gender_ratio = &"Female25Percent"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vp1pk")]([SubResource("Resource_fooup"), SubResource("Resource_0qfa5"), SubResource("Resource_0gw3s"), SubResource("Resource_rfj0l"), SubResource("Resource_utlxr"), SubResource("Resource_4yyy3"), SubResource("Resource_by1d6"), SubResource("Resource_y2pba"), SubResource("Resource_52vqy"), SubResource("Resource_j5neo"), SubResource("Resource_f00ea"), SubResource("Resource_0iqas"), SubResource("Resource_8jcpf"), SubResource("Resource_27j5v"), SubResource("Resource_u8cg1"), SubResource("Resource_eorba")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"COVET", &"CRUNCH", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"WILDCHARGE", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"BODYSLAM", &"BURNUP", &"CLOSECOMBAT", &"COVET", &"CRUNCH", &"DOUBLEEDGE", &"DOUBLEKICK", &"FIRESPIN", &"FLAREBLITZ", &"HEATWAVE", &"HOWL", &"MORNINGSUN", &"THRASH"])
+abilities = Array[StringName]([&"INTIMIDATE", &"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"JUSTIFIED"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ekold")]([SubResource("Resource_uprlf")])
+height = 7
+weight = 190
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(-2, 32)
+id = &"GROWLITHE"
+display_name = "Growlithe"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5qf4k"]
+
+[resource]
+resource_name = "TM35"
+script = ExtResource("1_5qf4k")
+name_plural = "TM35s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"FLAMETHROWER"
+description = "The target is scorched with an intense blast of fire. This may also leave the target with a burn."
+id = &"TM35"
+display_name = "TM35"
+flags = Array[StringName]([&"Fling_90"])

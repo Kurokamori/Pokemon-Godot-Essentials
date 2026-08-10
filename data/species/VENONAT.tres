@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nytgc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3mbrf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_r00j5"]
+
+[sub_resource type="Resource" id="Resource_daggw"]
+script = ExtResource("1_nytgc")
+species = &"VENOMOTH"
+method = &"Level"
+parameter = "31"
+
+[sub_resource type="Resource" id="Resource_6vfr3"]
+script = ExtResource("2_3mbrf")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_r8kln"]
+script = ExtResource("2_3mbrf")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_wirg1"]
+script = ExtResource("2_3mbrf")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_lorvj"]
+script = ExtResource("2_3mbrf")
+level = 5
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_0f4si"]
+script = ExtResource("2_3mbrf")
+level = 11
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_mmgvw"]
+script = ExtResource("2_3mbrf")
+level = 13
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_87kpx"]
+script = ExtResource("2_3mbrf")
+level = 17
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_hx8k6"]
+script = ExtResource("2_3mbrf")
+level = 23
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_sk65v"]
+script = ExtResource("2_3mbrf")
+level = 25
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_4eq0b"]
+script = ExtResource("2_3mbrf")
+level = 29
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_5nkme"]
+script = ExtResource("2_3mbrf")
+level = 35
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_eenyo"]
+script = ExtResource("2_3mbrf")
+level = 37
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_7s4k8"]
+script = ExtResource("2_3mbrf")
+level = 41
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_uirep"]
+script = ExtResource("2_3mbrf")
+level = 47
+move = &"PSYCHIC"
+
+[resource]
+resource_name = "VENONAT"
+script = ExtResource("3_r00j5")
+species = &"VENONAT"
+category = "Insect"
+pokedex_entry = "Its coat of thin, stiff hair that covers its entire body is said to have evolved for protection. Its large eyes never fail to spot even miniscule prey."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 60
+base_attack = 55
+base_defense = 50
+base_special_attack = 40
+base_special_defense = 55
+base_speed = 45
+ev_special_defense = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3mbrf")]([SubResource("Resource_6vfr3"), SubResource("Resource_r8kln"), SubResource("Resource_wirg1"), SubResource("Resource_lorvj"), SubResource("Resource_0f4si"), SubResource("Resource_mmgvw"), SubResource("Resource_87kpx"), SubResource("Resource_hx8k6"), SubResource("Resource_sk65v"), SubResource("Resource_4eq0b"), SubResource("Resource_5nkme"), SubResource("Resource_eenyo"), SubResource("Resource_7s4k8"), SubResource("Resource_uirep")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BUGBITE", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"HIDDENPOWER", &"INFESTATION", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"VENOSHOCK", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AGILITY", &"BATONPASS", &"BUGBITE", &"MORNINGSUN", &"RAGEPOWDER", &"SCREECH", &"TOXICSPIKES"])
+abilities = Array[StringName]([&"COMPOUNDEYES", &"TINTEDLENS"])
+hidden_abilities = Array[StringName]([&"RUNAWAY"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nytgc")]([SubResource("Resource_daggw")])
+height = 10
+weight = 300
+color = &"Purple"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(-4, 54)
+front_sprite_offset = Vector2i(0, 26)
+shadow_size = 1
+id = &"VENONAT"
+display_name = "Venonat"

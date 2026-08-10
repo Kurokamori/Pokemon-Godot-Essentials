@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8xaew"]
+
+[resource]
+resource_name = "SMOOTHROCK"
+script = ExtResource("1_8xaew")
+name_plural = "Smooth Rocks"
+price = 4000
+sell_price = 2000
+bp_price = 15
+description = "A Pokémon held item that extends the duration of the move Sandstorm used by the holder."
+id = &"SMOOTHROCK"
+display_name = "Smooth Rock"
+flags = Array[StringName]([&"Fling_10"])

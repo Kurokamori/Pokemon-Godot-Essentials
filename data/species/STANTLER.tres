@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_u5evb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jjx0x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oliid"]
+
+[sub_resource type="Resource" id="Resource_jyvlv"]
+script = ExtResource("2_jjx0x")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1rjnh"]
+script = ExtResource("2_jjx0x")
+level = 3
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ud8me"]
+script = ExtResource("2_jjx0x")
+level = 7
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_33fj3"]
+script = ExtResource("2_jjx0x")
+level = 10
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_ggk4e"]
+script = ExtResource("2_jjx0x")
+level = 13
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_evydq"]
+script = ExtResource("2_jjx0x")
+level = 16
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_bxla3"]
+script = ExtResource("2_jjx0x")
+level = 21
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_eqoxa"]
+script = ExtResource("2_jjx0x")
+level = 23
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_kwj17"]
+script = ExtResource("2_jjx0x")
+level = 27
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_4tvw0"]
+script = ExtResource("2_jjx0x")
+level = 33
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_rw58l"]
+script = ExtResource("2_jjx0x")
+level = 38
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_4go5s"]
+script = ExtResource("2_jjx0x")
+level = 43
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_w5ja8"]
+script = ExtResource("2_jjx0x")
+level = 49
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_xapw8"]
+script = ExtResource("2_jjx0x")
+level = 50
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_sir54"]
+script = ExtResource("2_jjx0x")
+level = 55
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "STANTLER"
+script = ExtResource("3_oliid")
+species = &"STANTLER"
+category = "Big Horn"
+pokedex_entry = "Stantler's magnificent antlers were once traded at high prices as works of art. As a result, this Pokémon was hunted close to extinction."
+base_hp = 73
+base_attack = 95
+base_defense = 62
+base_special_attack = 85
+base_special_defense = 65
+base_speed = 85
+ev_attack = 1
+base_exp = 163
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jjx0x")]([SubResource("Resource_jyvlv"), SubResource("Resource_1rjnh"), SubResource("Resource_ud8me"), SubResource("Resource_33fj3"), SubResource("Resource_ggk4e"), SubResource("Resource_evydq"), SubResource("Resource_bxla3"), SubResource("Resource_eqoxa"), SubResource("Resource_kwj17"), SubResource("Resource_4tvw0"), SubResource("Resource_rw58l"), SubResource("Resource_4go5s"), SubResource("Resource_w5ja8"), SubResource("Resource_xapw8"), SubResource("Resource_sir54")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BOUNCE", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HEADBUTT", &"HIDDENPOWER", &"IRONTAIL", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICROOM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICKROOM", &"UPROAR", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BITE", &"DISABLE", &"DOUBLEKICK", &"EXTRASENSORY", &"MEGAHORN", &"SPITE", &"THRASH", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INTIMIDATE", &"FRISK"])
+hidden_abilities = Array[StringName]([&"SAPSIPPER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 14
+weight = 712
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-3, 16)
+id = &"STANTLER"
+display_name = "Stantler"

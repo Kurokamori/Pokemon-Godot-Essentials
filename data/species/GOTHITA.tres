@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uql2i"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_o0uw3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5vlp4"]
+
+[sub_resource type="Resource" id="Resource_4d5h1"]
+script = ExtResource("1_uql2i")
+species = &"GOTHORITA"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_y20lh"]
+script = ExtResource("2_o0uw3")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_t44l1"]
+script = ExtResource("2_o0uw3")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_e3lqn"]
+script = ExtResource("2_o0uw3")
+level = 4
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_xqbgc"]
+script = ExtResource("2_o0uw3")
+level = 8
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_naddq"]
+script = ExtResource("2_o0uw3")
+level = 12
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_1kuxi"]
+script = ExtResource("2_o0uw3")
+level = 16
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_kdnt0"]
+script = ExtResource("2_o0uw3")
+level = 20
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_v0bku"]
+script = ExtResource("2_o0uw3")
+level = 24
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_xpaht"]
+script = ExtResource("2_o0uw3")
+level = 28
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_aronk"]
+script = ExtResource("2_o0uw3")
+level = 33
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_1kjy5"]
+script = ExtResource("2_o0uw3")
+level = 36
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_q33t8"]
+script = ExtResource("2_o0uw3")
+level = 40
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_wdkqq"]
+script = ExtResource("2_o0uw3")
+level = 44
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_23rg7"]
+script = ExtResource("2_o0uw3")
+level = 48
+move = &"MAGICROOM"
+
+[resource]
+resource_name = "GOTHITA"
+script = ExtResource("3_5vlp4")
+species = &"GOTHITA"
+category = "Fixation"
+pokedex_entry = "They intently observe both Trainers and Pokémon. Apparently, they are looking at something that only Gothita can see."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 45
+base_attack = 30
+base_defense = 50
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 45
+ev_special_defense = 1
+base_exp = 58
+growth_rate = &"Parabolic"
+gender_ratio = &"Female75Percent"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_o0uw3")]([SubResource("Resource_y20lh"), SubResource("Resource_t44l1"), SubResource("Resource_e3lqn"), SubResource("Resource_xqbgc"), SubResource("Resource_naddq"), SubResource("Resource_1kuxi"), SubResource("Resource_kdnt0"), SubResource("Resource_v0bku"), SubResource("Resource_xpaht"), SubResource("Resource_aronk"), SubResource("Resource_1kjy5"), SubResource("Resource_q33t8"), SubResource("Resource_wdkqq"), SubResource("Resource_23rg7")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLASH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"FAKEOUT", &"HEALPULSE", &"MEANLOOK", &"MIRRORCOAT", &"TORMENT"])
+abilities = Array[StringName]([&"FRISK", &"COMPETITIVE"])
+hidden_abilities = Array[StringName]([&"SHADOWTAG"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_uql2i")]([SubResource("Resource_4d5h1")])
+height = 4
+weight = 58
+color = &"Purple"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 49)
+front_sprite_offset = Vector2i(1, 32)
+shadow_size = 1
+id = &"GOTHITA"
+display_name = "Gothita"

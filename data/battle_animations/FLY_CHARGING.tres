@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_xryux"]
+
+[resource]
+resource_name = "FLY_CHARGING"
+script = ExtResource("1_xryux")
+graphic = "fly copy"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 134, 260, 100, 100, 0, 0, 5, 255, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 138, 247, 100, 100, 0, 0, 5, 255, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 136, 258, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 132, 238, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 131, 233, 100, 100, 0, 0, 2, 255, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 142, 225, 100, 100, 0, 0, 3, 255, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 136, 194, 100, 100, 0, 0, 4, 255, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 134, 166, 100, 100, 0, 0, 4, 255, 0, 0, 0, 1, 2), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(0)
+timing_sounds = PackedStringArray("Trump Card")
+timing_volumes = PackedInt32Array(100)
+timing_pitches = PackedInt32Array(100)
+id = &"FLY_CHARGING"
+display_name = "Fly charging"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_issy3"]
+
+[resource]
+resource_name = "REGENERATOR"
+script = ExtResource("1_issy3")
+description = "Restores a little HP when withdrawn from battle."
+id = &"REGENERATOR"
+display_name = "Regenerator"

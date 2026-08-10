@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_txu7o"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gbuu2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pni0n"]
+
+[sub_resource type="Resource" id="Resource_nktc2"]
+script = ExtResource("1_txu7o")
+species = &"DUSKNOIR"
+method = &"TradeItem"
+parameter = "REAPERCLOTH"
+
+[sub_resource type="Resource" id="Resource_yov4l"]
+script = ExtResource("1_txu7o")
+species = &"DUSKULL"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_50euo"]
+script = ExtResource("2_gbuu2")
+level = 0
+move = &"SHADOWPUNCH"
+
+[sub_resource type="Resource" id="Resource_y2e6m"]
+script = ExtResource("2_gbuu2")
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_cxsep"]
+script = ExtResource("2_gbuu2")
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_acr30"]
+script = ExtResource("2_gbuu2")
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_s82q2"]
+script = ExtResource("2_gbuu2")
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_irtje"]
+script = ExtResource("2_gbuu2")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_pujtr"]
+script = ExtResource("2_gbuu2")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_udjf6"]
+script = ExtResource("2_gbuu2")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_4okxm"]
+script = ExtResource("2_gbuu2")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_lcp3w"]
+script = ExtResource("2_gbuu2")
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_cojwq"]
+script = ExtResource("2_gbuu2")
+level = 12
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_kv7rb"]
+script = ExtResource("2_gbuu2")
+level = 16
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_t5esu"]
+script = ExtResource("2_gbuu2")
+level = 20
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_n82ss"]
+script = ExtResource("2_gbuu2")
+level = 24
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_7vpw8"]
+script = ExtResource("2_gbuu2")
+level = 28
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_72roh"]
+script = ExtResource("2_gbuu2")
+level = 32
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_1o40d"]
+script = ExtResource("2_gbuu2")
+level = 36
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_erafd"]
+script = ExtResource("2_gbuu2")
+level = 42
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_l1yxi"]
+script = ExtResource("2_gbuu2")
+level = 48
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "DUSCLOPS"
+script = ExtResource("3_pni0n")
+species = &"DUSCLOPS"
+category = "Beckon"
+pokedex_entry = "It is thought that its body is hollow with only a spectral ball of fire burning inside. However, no one has been able to confirm this theory as fact."
+types = Array[StringName]([&"GHOST"])
+base_hp = 40
+base_attack = 70
+base_defense = 130
+base_special_attack = 60
+base_special_defense = 130
+base_speed = 25
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 159
+growth_rate = &"Fast"
+catch_rate = 90
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_gbuu2")]([SubResource("Resource_50euo"), SubResource("Resource_y2e6m"), SubResource("Resource_cxsep"), SubResource("Resource_acr30"), SubResource("Resource_s82q2"), SubResource("Resource_irtje"), SubResource("Resource_pujtr"), SubResource("Resource_udjf6"), SubResource("Resource_4okxm"), SubResource("Resource_lcp3w"), SubResource("Resource_cojwq"), SubResource("Resource_kv7rb"), SubResource("Resource_t5esu"), SubResource("Resource_n82ss"), SubResource("Resource_7vpw8"), SubResource("Resource_72roh"), SubResource("Resource_1o40d"), SubResource("Resource_erafd"), SubResource("Resource_l1yxi")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRAVITY", &"HEADBUTT", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"INFESTATION", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"POLTERGEIST", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"FRISK"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_txu7o")]([SubResource("Resource_nktc2"), SubResource("Resource_yov4l")])
+height = 16
+weight = 306
+color = &"Black"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(5, 19)
+id = &"DUSCLOPS"
+display_name = "Dusclops"

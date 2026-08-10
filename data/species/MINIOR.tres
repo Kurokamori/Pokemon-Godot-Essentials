@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mvx04"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_m8px4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_12o8v"]
+
+[sub_resource type="Resource" id="Resource_3c80f"]
+script = ExtResource("2_m8px4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_dlt4c"]
+script = ExtResource("2_m8px4")
+level = 3
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_d4w42"]
+script = ExtResource("2_m8px4")
+level = 8
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_bvbs5"]
+script = ExtResource("2_m8px4")
+level = 10
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_gcip1"]
+script = ExtResource("2_m8px4")
+level = 15
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_pw6le"]
+script = ExtResource("2_m8px4")
+level = 17
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_xhitc"]
+script = ExtResource("2_m8px4")
+level = 22
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_ic38r"]
+script = ExtResource("2_m8px4")
+level = 24
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_dh21m"]
+script = ExtResource("2_m8px4")
+level = 29
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_40ws0"]
+script = ExtResource("2_m8px4")
+level = 31
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_ryo86"]
+script = ExtResource("2_m8px4")
+level = 36
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_loyo0"]
+script = ExtResource("2_m8px4")
+level = 38
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_v8jxv"]
+script = ExtResource("2_m8px4")
+level = 43
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_4ny31"]
+script = ExtResource("2_m8px4")
+level = 45
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_2xr64"]
+script = ExtResource("2_m8px4")
+level = 50
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "MINIOR"
+script = ExtResource("3_12o8v")
+species = &"MINIOR"
+form_name = "Meteor Form"
+category = "Meteor"
+pokedex_entry = "Originally making its home in the ozone layer, it hurtles to the ground when the shell enclosing its body grows too heavy."
+types = Array[StringName]([&"ROCK", &"FLYING"])
+base_hp = 60
+base_attack = 60
+base_defense = 100
+base_special_attack = 60
+base_special_defense = 100
+base_speed = 60
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 154
+growth_rate = &"Parabolic"
+gender_ratio = &"Genderless"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_m8px4")]([SubResource("Resource_3c80f"), SubResource("Resource_dlt4c"), SubResource("Resource_d4w42"), SubResource("Resource_bvbs5"), SubResource("Resource_gcip1"), SubResource("Resource_pw6le"), SubResource("Resource_xhitc"), SubResource("Resource_ic38r"), SubResource("Resource_dh21m"), SubResource("Resource_40ws0"), SubResource("Resource_ryo86"), SubResource("Resource_loyo0"), SubResource("Resource_v8jxv"), SubResource("Resource_4ny31"), SubResource("Resource_2xr64")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"EXPLOSION", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"GYROBALL", &"HIDDENPOWER", &"HYPERBEAM", &"IRONHEAD", &"LASTRESORT", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"TOXIC", &"UTURN", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SHIELDSDOWN"])
+wild_item_uncommon = Array[StringName]([&"STARPIECE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+height = 3
+weight = 400
+color = &"Brown"
+generation = 7
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 10)
+shadow_size = 1
+id = &"MINIOR"
+display_name = "Minior"

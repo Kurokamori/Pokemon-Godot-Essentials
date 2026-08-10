@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_7ojv5"]
+
+[resource]
+resource_name = "TM57"
+script = ExtResource("1_7ojv5")
+name_plural = "TM57s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"CHARGEBEAM"
+description = "The user attacks the target with an electric charge. The user may use any remaining charge to raise its Sp. Atk."
+id = &"TM57"
+display_name = "TM57"
+flags = Array[StringName]([&"Fling_50"])

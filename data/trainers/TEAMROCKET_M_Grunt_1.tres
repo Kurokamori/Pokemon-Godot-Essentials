@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_a5w6o"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_r2f6s"]
+
+[sub_resource type="Resource" id="Resource_8f0jj"]
+script = ExtResource("1_a5w6o")
+species = &"WEEPINBELL"
+level = 21
+shadow = true
+
+[resource]
+resource_name = "TEAMROCKET_M|Grunt|1"
+script = ExtResource("2_r2f6s")
+trainer_type = &"TEAMROCKET_M"
+version = 1
+lose_text = "You're too good for me!"
+pokemon = Array[ExtResource("1_a5w6o")]([SubResource("Resource_8f0jj")])
+id = &"TEAMROCKET_M|Grunt|1"
+display_name = "Grunt"

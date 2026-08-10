@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_6jo80"]
+
+[resource]
+resource_name = "FRISK"
+script = ExtResource("1_6jo80")
+description = "The Pokémon can check a foe's held item."
+id = &"FRISK"
+display_name = "Frisk"

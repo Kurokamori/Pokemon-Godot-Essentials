@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3ogvn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dk723"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_u7758"]
+
+[sub_resource type="Resource" id="Resource_85x4x"]
+script = ExtResource("1_3ogvn")
+species = &"PONYTA"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_mv4yv"]
+script = ExtResource("2_dk723")
+level = 0
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_1qldl"]
+script = ExtResource("2_dk723")
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_ghkmi"]
+script = ExtResource("2_dk723")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_8qm2v"]
+script = ExtResource("2_dk723")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_3hmpl"]
+script = ExtResource("2_dk723")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_gj2w4"]
+script = ExtResource("2_dk723")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_36f8l"]
+script = ExtResource("2_dk723")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_e3ir0"]
+script = ExtResource("2_dk723")
+level = 15
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_3wsdv"]
+script = ExtResource("2_dk723")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_q2mhv"]
+script = ExtResource("2_dk723")
+level = 25
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_f0810"]
+script = ExtResource("2_dk723")
+level = 30
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_k4chh"]
+script = ExtResource("2_dk723")
+level = 35
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_fasrb"]
+script = ExtResource("2_dk723")
+level = 43
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_kjjga"]
+script = ExtResource("2_dk723")
+level = 49
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_08jgb"]
+script = ExtResource("2_dk723")
+level = 56
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_is68h"]
+script = ExtResource("2_dk723")
+level = 63
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "RAPIDASH_1"
+script = ExtResource("3_u7758")
+species = &"RAPIDASH"
+form = 1
+form_name = "Galarian"
+category = "Unique Horn"
+pokedex_entry = "Little can stand up to its psycho cut. Unleashed from this Pokémon's horn, the move will punch a hole right through a thick metal sheet."
+pokedex_form = 1
+types = Array[StringName]([&"PSYCHIC", &"FAIRY"])
+base_hp = 65
+base_attack = 100
+base_defense = 70
+base_special_attack = 80
+base_special_defense = 80
+base_speed = 105
+ev_speed = 2
+base_exp = 175
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dk723")]([SubResource("Resource_mv4yv"), SubResource("Resource_1qldl"), SubResource("Resource_ghkmi"), SubResource("Resource_8qm2v"), SubResource("Resource_3hmpl"), SubResource("Resource_gj2w4"), SubResource("Resource_36f8l"), SubResource("Resource_e3ir0"), SubResource("Resource_3wsdv"), SubResource("Resource_q2mhv"), SubResource("Resource_f0810"), SubResource("Resource_k4chh"), SubResource("Resource_fasrb"), SubResource("Resource_kjjga"), SubResource("Resource_08jgb"), SubResource("Resource_is68h")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"BOUNCE", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IMPRISON", &"IRONTAIL", &"LOWKICK", &"MAGICROOM", &"MEGAHORN", &"MIMIC", &"MISTYTERRAIN", &"MYSTICALFIRE", &"NATURALGIFT", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THROATCHOP", &"TRICKROOM", &"WILDCHARGE", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"RUNAWAY", &"PASTELVEIL"])
+hidden_abilities = Array[StringName]([&"ANTICIPATION"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_3ogvn")]([SubResource("Resource_85x4x")])
+height = 17
+weight = 800
+color = &"White"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 8
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(4, 14)
+id = &"RAPIDASH_1"
+display_name = "Rapidash"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

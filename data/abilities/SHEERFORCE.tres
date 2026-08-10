@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_m4a2q"]
+
+[resource]
+resource_name = "SHEERFORCE"
+script = ExtResource("1_m4a2q")
+description = "Removes added effects to increase move damage."
+id = &"SHEERFORCE"
+display_name = "Sheer Force"

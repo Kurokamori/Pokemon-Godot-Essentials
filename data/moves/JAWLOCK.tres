@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_es8i0"]
+
+[resource]
+resource_name = "JAWLOCK"
+script = ExtResource("1_es8i0")
+type = &"DARK"
+category = 0
+power = 80
+total_pp = 10
+function_code = &"TrapUserAndTargetInBattle"
+description = "This move prevents the user and the target from switching out until either of them faints."
+id = &"JAWLOCK"
+display_name = "Jaw Lock"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

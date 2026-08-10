@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3n50e"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_usf7a"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dlbmh"]
+
+[sub_resource type="Resource" id="Resource_cva1b"]
+script = ExtResource("1_3n50e")
+species = &"TOUCANNON"
+method = &"Level"
+parameter = "28"
+
+[sub_resource type="Resource" id="Resource_paxq8"]
+script = ExtResource("1_3n50e")
+species = &"PIKIPEK"
+method = &"Level"
+parameter = "14"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_75gek"]
+script = ExtResource("2_usf7a")
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_w7hdn"]
+script = ExtResource("2_usf7a")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_hodnr"]
+script = ExtResource("2_usf7a")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_n5g16"]
+script = ExtResource("2_usf7a")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_pmsxq"]
+script = ExtResource("2_usf7a")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_5f01b"]
+script = ExtResource("2_usf7a")
+level = 3
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_bhry0"]
+script = ExtResource("2_usf7a")
+level = 7
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_k4lhd"]
+script = ExtResource("2_usf7a")
+level = 9
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_agaty"]
+script = ExtResource("2_usf7a")
+level = 13
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_75i8p"]
+script = ExtResource("2_usf7a")
+level = 16
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_bqdco"]
+script = ExtResource("2_usf7a")
+level = 21
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_yr5pg"]
+script = ExtResource("2_usf7a")
+level = 24
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_w4oeq"]
+script = ExtResource("2_usf7a")
+level = 29
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_sshji"]
+script = ExtResource("2_usf7a")
+level = 32
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_sa3y6"]
+script = ExtResource("2_usf7a")
+level = 37
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_pf2qo"]
+script = ExtResource("2_usf7a")
+level = 40
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_bvm20"]
+script = ExtResource("2_usf7a")
+level = 45
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "TRUMBEAK"
+script = ExtResource("3_dlbmh")
+species = &"TRUMBEAK"
+category = "Bugle Beak"
+pokedex_entry = "It eats berries and stores their seeds in its beak. When it encounters enemies or prey, it fires off all the seeds in a burst."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 55
+base_attack = 85
+base_defense = 50
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 75
+ev_attack = 2
+base_exp = 124
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_usf7a")]([SubResource("Resource_75gek"), SubResource("Resource_w7hdn"), SubResource("Resource_hodnr"), SubResource("Resource_n5g16"), SubResource("Resource_pmsxq"), SubResource("Resource_5f01b"), SubResource("Resource_bhry0"), SubResource("Resource_k4lhd"), SubResource("Resource_agaty"), SubResource("Resource_75i8p"), SubResource("Resource_bqdco"), SubResource("Resource_yr5pg"), SubResource("Resource_w4oeq"), SubResource("Resource_sshji"), SubResource("Resource_sa3y6"), SubResource("Resource_pf2qo"), SubResource("Resource_bvm20")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FLAMECHARGE", &"FLY", &"FRUSTRATION", &"GUNKSHOT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERVOICE", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TAILWIND", &"THIEF", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"KEENEYE", &"SKILLLINK"])
+hidden_abilities = Array[StringName]([&"PICKUP"])
+wild_item_uncommon = Array[StringName]([&"SITRUSBERRY"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_3n50e")]([SubResource("Resource_cva1b"), SubResource("Resource_paxq8")])
+height = 6
+weight = 148
+color = &"Black"
+shape = &"Winged"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 1
+id = &"TRUMBEAK"
+display_name = "Trumbeak"

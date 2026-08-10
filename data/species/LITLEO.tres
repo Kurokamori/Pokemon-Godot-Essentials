@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_e0vor"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_n0yll"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_moeph"]
+
+[sub_resource type="Resource" id="Resource_tcgb0"]
+script = ExtResource("1_e0vor")
+species = &"PYROAR"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_vgkcw"]
+script = ExtResource("2_n0yll")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_oqtx4"]
+script = ExtResource("2_n0yll")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_tgc4u"]
+script = ExtResource("2_n0yll")
+level = 5
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_82s3b"]
+script = ExtResource("2_n0yll")
+level = 8
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_g2gw0"]
+script = ExtResource("2_n0yll")
+level = 11
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_bttb5"]
+script = ExtResource("2_n0yll")
+level = 15
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_ems04"]
+script = ExtResource("2_n0yll")
+level = 20
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_gsaq6"]
+script = ExtResource("2_n0yll")
+level = 23
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_itua6"]
+script = ExtResource("2_n0yll")
+level = 28
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_k4ot2"]
+script = ExtResource("2_n0yll")
+level = 33
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_2ee1i"]
+script = ExtResource("2_n0yll")
+level = 36
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_i0flt"]
+script = ExtResource("2_n0yll")
+level = 39
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_1kt6c"]
+script = ExtResource("2_n0yll")
+level = 43
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_h2i1q"]
+script = ExtResource("2_n0yll")
+level = 46
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_ygg6k"]
+script = ExtResource("2_n0yll")
+level = 50
+move = &"OVERHEAT"
+
+[resource]
+resource_name = "LITLEO"
+script = ExtResource("3_moeph")
+species = &"LITLEO"
+category = "Lion Cub"
+pokedex_entry = "They set off on their own from their pride and live by themselves to become stronger. These hot-blooded Pokémon are quick to fight."
+types = Array[StringName]([&"FIRE", &"NORMAL"])
+base_hp = 62
+base_attack = 50
+base_defense = 58
+base_special_attack = 73
+base_special_defense = 54
+base_speed = 72
+ev_special_attack = 1
+base_exp = 74
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleSevenEighths"
+catch_rate = 220
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_n0yll")]([SubResource("Resource_vgkcw"), SubResource("Resource_oqtx4"), SubResource("Resource_tgc4u"), SubResource("Resource_82s3b"), SubResource("Resource_g2gw0"), SubResource("Resource_bttb5"), SubResource("Resource_ems04"), SubResource("Resource_gsaq6"), SubResource("Resource_itua6"), SubResource("Resource_k4ot2"), SubResource("Resource_2ee1i"), SubResource("Resource_i0flt"), SubResource("Resource_1kt6c"), SubResource("Resource_h2i1q"), SubResource("Resource_ygg6k")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FRUSTRATION", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"WILDCHARGE", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"ENTRAINMENT", &"FIRESPIN", &"FLAREBLITZ", &"SNATCH", &"YAWN"])
+abilities = Array[StringName]([&"RIVALRY", &"UNNERVE"])
+hidden_abilities = Array[StringName]([&"MOXIE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_e0vor")]([SubResource("Resource_tcgb0")])
+height = 6
+weight = 135
+color = &"Brown"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-3, 28)
+shadow_size = 1
+id = &"LITLEO"
+display_name = "Litleo"

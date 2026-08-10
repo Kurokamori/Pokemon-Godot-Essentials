@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_co6me"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3q5ca"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n3vjo"]
+
+[sub_resource type="Resource" id="Resource_flsc6"]
+script = ExtResource("1_co6me")
+species = &"ELECTRODE"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_wnog2"]
+script = ExtResource("2_3q5ca")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_pa3hf"]
+script = ExtResource("2_3q5ca")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_sh7hk"]
+script = ExtResource("2_3q5ca")
+level = 4
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_rh4ft"]
+script = ExtResource("2_3q5ca")
+level = 6
+move = &"EERIEIMPULSE"
+
+[sub_resource type="Resource" id="Resource_blhsf"]
+script = ExtResource("2_3q5ca")
+level = 9
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_jmugu"]
+script = ExtResource("2_3q5ca")
+level = 11
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_d4hf4"]
+script = ExtResource("2_3q5ca")
+level = 13
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_x88wh"]
+script = ExtResource("2_3q5ca")
+level = 16
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_sphxc"]
+script = ExtResource("2_3q5ca")
+level = 20
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_0p6wy"]
+script = ExtResource("2_3q5ca")
+level = 22
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_q3af4"]
+script = ExtResource("2_3q5ca")
+level = 26
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_bwm74"]
+script = ExtResource("2_3q5ca")
+level = 29
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_vw8cp"]
+script = ExtResource("2_3q5ca")
+level = 34
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_ehnre"]
+script = ExtResource("2_3q5ca")
+level = 37
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_6py2q"]
+script = ExtResource("2_3q5ca")
+level = 41
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_a711y"]
+script = ExtResource("2_3q5ca")
+level = 46
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_c8cmw"]
+script = ExtResource("2_3q5ca")
+level = 48
+move = &"MIRRORCOAT"
+
+[resource]
+resource_name = "VOLTORB"
+script = ExtResource("3_n3vjo")
+species = &"VOLTORB"
+category = "Ball"
+pokedex_entry = "It bears an uncanny and unexplained resemblance to a Poké Ball. Because it explodes at the slightest shock, even veteran trainers treat it with caution."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 40
+base_attack = 30
+base_defense = 50
+base_special_attack = 55
+base_special_defense = 55
+base_speed = 100
+ev_speed = 1
+base_exp = 66
+gender_ratio = &"Genderless"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3q5ca")]([SubResource("Resource_wnog2"), SubResource("Resource_pa3hf"), SubResource("Resource_sh7hk"), SubResource("Resource_rh4ft"), SubResource("Resource_blhsf"), SubResource("Resource_jmugu"), SubResource("Resource_d4hf4"), SubResource("Resource_x88wh"), SubResource("Resource_sphxc"), SubResource("Resource_0p6wy"), SubResource("Resource_q3af4"), SubResource("Resource_bwm74"), SubResource("Resource_vw8cp"), SubResource("Resource_ehnre"), SubResource("Resource_6py2q"), SubResource("Resource_a711y"), SubResource("Resource_c8cmw")])
+tutor_moves = Array[StringName]([&"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"SOUNDPROOF", &"STATIC"])
+hidden_abilities = Array[StringName]([&"AFTERMATH"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_co6me")]([SubResource("Resource_flsc6")])
+height = 5
+weight = 104
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"VOLTORB"
+display_name = "Voltorb"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EncounterTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_type_data.gd" id="1_mabsu"]
+
+[resource]
+resource_name = "RockSmash"
+script = ExtResource("1_mabsu")
+kind = 0
+trigger_chance = 50
+id = &"RockSmash"
+display_name = "RockSmash"

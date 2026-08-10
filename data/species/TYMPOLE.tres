@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_c0ynd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cu78f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p00bh"]
+
+[sub_resource type="Resource" id="Resource_5aoqw"]
+script = ExtResource("1_c0ynd")
+species = &"PALPITOAD"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_yli7p"]
+script = ExtResource("2_cu78f")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_gdyxf"]
+script = ExtResource("2_cu78f")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_x31hm"]
+script = ExtResource("2_cu78f")
+level = 4
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_7veim"]
+script = ExtResource("2_cu78f")
+level = 8
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_kppfr"]
+script = ExtResource("2_cu78f")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_bh5c1"]
+script = ExtResource("2_cu78f")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_jkhyw"]
+script = ExtResource("2_cu78f")
+level = 20
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_x1hu5"]
+script = ExtResource("2_cu78f")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_a11jm"]
+script = ExtResource("2_cu78f")
+level = 28
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_om0nv"]
+script = ExtResource("2_cu78f")
+level = 32
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_bah6b"]
+script = ExtResource("2_cu78f")
+level = 36
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_dxain"]
+script = ExtResource("2_cu78f")
+level = 40
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_7ke5u"]
+script = ExtResource("2_cu78f")
+level = 44
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_y8mhy"]
+script = ExtResource("2_cu78f")
+level = 48
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "TYMPOLE"
+script = ExtResource("3_p00bh")
+species = &"TYMPOLE"
+category = "Tadpole"
+pokedex_entry = "By vibrating its cheeks, it emits sound waves imperceptible to humans. It uses the rhythm of these sounds to talk."
+types = Array[StringName]([&"WATER"])
+base_hp = 50
+base_attack = 50
+base_defense = 40
+base_special_attack = 50
+base_special_defense = 40
+base_speed = 64
+ev_speed = 1
+base_exp = 59
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cu78f")]([SubResource("Resource_yli7p"), SubResource("Resource_gdyxf"), SubResource("Resource_x31hm"), SubResource("Resource_7veim"), SubResource("Resource_kppfr"), SubResource("Resource_bh5c1"), SubResource("Resource_jkhyw"), SubResource("Resource_x1hu5"), SubResource("Resource_a11jm"), SubResource("Resource_om0nv"), SubResource("Resource_bah6b"), SubResource("Resource_dxain"), SubResource("Resource_7ke5u"), SubResource("Resource_y8mhy")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERVOICE", &"ICYWIND", &"INFESTATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"UPROAR", &"VENOMDRENCH", &"WATERPULSE", &"WEATHERBALL"])
+egg_moves = Array[StringName]([&"MIST", &"MUDSLAP", &"TOXIC", &"WATERPULSE"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"HYDRATION"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_c0ynd")]([SubResource("Resource_5aoqw")])
+height = 5
+weight = 45
+color = &"Blue"
+shape = &"Finned"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 20)
+id = &"TYMPOLE"
+display_name = "Tympole"

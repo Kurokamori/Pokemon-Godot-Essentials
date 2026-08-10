@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wrij1"]
+
+[resource]
+resource_name = "DOUSEDRIVE"
+script = ExtResource("1_wrij1")
+name_plural = "Douse Drives"
+description = "A cassette to be held by Genesect. It changes Techno Blast to a Water-type move."
+id = &"DOUSEDRIVE"
+display_name = "Douse Drive"
+flags = Array[StringName]([&"Fling_70"])

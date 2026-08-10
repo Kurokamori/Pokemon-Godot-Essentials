@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3s1nw"]
+
+[resource]
+resource_name = "POLTERGEIST"
+script = ExtResource("1_3s1nw")
+type = &"GHOST"
+category = 0
+power = 110
+accuracy = 90
+function_code = &"FailsIfTargetHasNoItem"
+description = "Attacks the target by controlling its item. The move fails if the target doesn't have an item."
+id = &"POLTERGEIST"
+display_name = "Poltergeist"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

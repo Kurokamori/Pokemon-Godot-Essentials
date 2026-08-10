@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hgtba"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_255kh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ul2i4"]
+
+[sub_resource type="Resource" id="Resource_ck6ss"]
+script = ExtResource("1_hgtba")
+species = &"LOUDRED"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_3d8bf"]
+script = ExtResource("2_255kh")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_t83k5"]
+script = ExtResource("2_255kh")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_pyqfd"]
+script = ExtResource("2_255kh")
+level = 5
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_07uqo"]
+script = ExtResource("2_255kh")
+level = 10
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_gw675"]
+script = ExtResource("2_255kh")
+level = 15
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_fu7xb"]
+script = ExtResource("2_255kh")
+level = 15
+move = &"SLEEPTALK"
+
+[sub_resource type="Resource" id="Resource_31qy7"]
+script = ExtResource("2_255kh")
+level = 21
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_2s27n"]
+script = ExtResource("2_255kh")
+level = 25
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_djda7"]
+script = ExtResource("2_255kh")
+level = 30
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_usskw"]
+script = ExtResource("2_255kh")
+level = 35
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_deq8d"]
+script = ExtResource("2_255kh")
+level = 40
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6p6v6"]
+script = ExtResource("2_255kh")
+level = 45
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "WHISMUR"
+script = ExtResource("3_ul2i4")
+species = &"WHISMUR"
+category = "Whisper"
+pokedex_entry = "Its cries equal a jet plane in volume. It inhales through its ear canals. Because of this system, it can cry continually without having to catch its breath."
+base_hp = 64
+base_attack = 51
+base_defense = 23
+base_special_attack = 51
+base_special_defense = 23
+base_speed = 28
+ev_hp = 1
+base_exp = 48
+growth_rate = &"Parabolic"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_255kh")]([SubResource("Resource_3d8bf"), SubResource("Resource_t83k5"), SubResource("Resource_pyqfd"), SubResource("Resource_07uqo"), SubResource("Resource_gw675"), SubResource("Resource_fu7xb"), SubResource("Resource_31qy7"), SubResource("Resource_2s27n"), SubResource("Resource_djda7"), SubResource("Resource_usskw"), SubResource("Resource_deq8d"), SubResource("Resource_6p6v6")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROLLOUT", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERPUNCH", &"UPROAR", &"WATERPULSE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CIRCLETHROW", &"DISARMINGVOICE", &"ENDEAVOR", &"EXTRASENSORY", &"FAKETEARS", &"HAMMERARM", &"SMOKESCREEN", &"SNORE", &"TAKEDOWN", &"WHIRLWIND"])
+abilities = Array[StringName]([&"SOUNDPROOF"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_hgtba")]([SubResource("Resource_ck6ss")])
+height = 6
+weight = 163
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(1, 31)
+shadow_size = 1
+id = &"WHISMUR"
+display_name = "Whismur"

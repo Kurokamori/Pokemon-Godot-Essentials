@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ay058"]
+
+[resource]
+resource_name = "HEALPOWDER"
+script = ExtResource("1_ay058")
+name_plural = "Heal Powders"
+portion_name = "dose of Heal Powder"
+portion_name_plural = "doses of Heal Powder"
+pocket = 2
+price = 300
+sell_price = 150
+field_use = 1
+battle_use = 1
+description = "A very bitter medicine powder. It heals all the status problems of a single Pokémon."
+id = &"HEALPOWDER"
+display_name = "Heal Powder"
+flags = Array[StringName]([&"Fling_30"])

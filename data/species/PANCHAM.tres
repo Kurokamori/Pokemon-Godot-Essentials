@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xqshu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p3taq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_prj7e"]
+
+[sub_resource type="Resource" id="Resource_srg3x"]
+script = ExtResource("1_xqshu")
+species = &"PANGORO"
+method = &"LevelDarkInParty"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_o44ue"]
+script = ExtResource("2_p3taq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_jig7q"]
+script = ExtResource("2_p3taq")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_naw4s"]
+script = ExtResource("2_p3taq")
+level = 4
+move = &"ARMTHRUST"
+
+[sub_resource type="Resource" id="Resource_he4w4"]
+script = ExtResource("2_p3taq")
+level = 8
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_ahmqb"]
+script = ExtResource("2_p3taq")
+level = 12
+move = &"CIRCLETHROW"
+
+[sub_resource type="Resource" id="Resource_n31nm"]
+script = ExtResource("2_p3taq")
+level = 16
+move = &"LOWSWEEP"
+
+[sub_resource type="Resource" id="Resource_kc1iv"]
+script = ExtResource("2_p3taq")
+level = 20
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_5h53e"]
+script = ExtResource("2_p3taq")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ln8c1"]
+script = ExtResource("2_p3taq")
+level = 28
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_mtqnj"]
+script = ExtResource("2_p3taq")
+level = 33
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_meiy6"]
+script = ExtResource("2_p3taq")
+level = 36
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_5nnqf"]
+script = ExtResource("2_p3taq")
+level = 40
+move = &"PARTINGSHOT"
+
+[sub_resource type="Resource" id="Resource_t45cl"]
+script = ExtResource("2_p3taq")
+level = 44
+move = &"ENTRAINMENT"
+
+[resource]
+resource_name = "PANCHAM"
+script = ExtResource("3_prj7e")
+species = &"PANCHAM"
+category = "Playful"
+pokedex_entry = "It does its best to be taken seriously by its enemies, but its glare is not sufficiently intimidating. Chewing on a leaf is its trademark."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 67
+base_attack = 82
+base_defense = 62
+base_special_attack = 46
+base_special_defense = 48
+base_speed = 43
+ev_attack = 1
+base_exp = 70
+catch_rate = 220
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_p3taq")]([SubResource("Resource_o44ue"), SubResource("Resource_jig7q"), SubResource("Resource_naw4s"), SubResource("Resource_he4w4"), SubResource("Resource_ahmqb"), SubResource("Resource_n31nm"), SubResource("Resource_kc1iv"), SubResource("Resource_5h53e"), SubResource("Resource_ln8c1"), SubResource("Resource_mtqnj"), SubResource("Resource_meiy6"), SubResource("Resource_5nnqf"), SubResource("Resource_t45cl")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"COACHING", &"CONFIDE", &"COVET", &"CRUNCH", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREPUNCH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEPUNCH", &"IRONHEAD", &"KNOCKOFF", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SNATCH", &"SNORE", &"SPITE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"UPROAR", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"POWERTRIP", &"QUASH", &"QUICKGUARD", &"SEISMICTOSS", &"STORMTHROW"])
+abilities = Array[StringName]([&"IRONFIST", &"MOLDBREAKER"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+wild_item_uncommon = Array[StringName]([&"MENTALHERB"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_xqshu")]([SubResource("Resource_srg3x")])
+height = 6
+weight = 80
+color = &"White"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 30)
+shadow_size = 1
+id = &"PANCHAM"
+display_name = "Pancham"

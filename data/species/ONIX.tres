@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2al5y"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3spwf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dwbdx"]
+
+[sub_resource type="Resource" id="Resource_100js"]
+script = ExtResource("1_2al5y")
+species = &"STEELIX"
+method = &"TradeItem"
+parameter = "METALCOAT"
+
+[sub_resource type="Resource" id="Resource_84njg"]
+script = ExtResource("2_3spwf")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cdvy1"]
+script = ExtResource("2_3spwf")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_x5qsl"]
+script = ExtResource("2_3spwf")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_6m82a"]
+script = ExtResource("2_3spwf")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_r5wxa"]
+script = ExtResource("2_3spwf")
+level = 4
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_qh8dw"]
+script = ExtResource("2_3spwf")
+level = 8
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_8h6ea"]
+script = ExtResource("2_3spwf")
+level = 12
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_u85vw"]
+script = ExtResource("2_3spwf")
+level = 16
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_v4x4k"]
+script = ExtResource("2_3spwf")
+level = 20
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_nsb18"]
+script = ExtResource("2_3spwf")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_h4t34"]
+script = ExtResource("2_3spwf")
+level = 28
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_85d2f"]
+script = ExtResource("2_3spwf")
+level = 32
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_0qlhk"]
+script = ExtResource("2_3spwf")
+level = 36
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_5dmcg"]
+script = ExtResource("2_3spwf")
+level = 40
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_88k6j"]
+script = ExtResource("2_3spwf")
+level = 44
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_30t5m"]
+script = ExtResource("2_3spwf")
+level = 48
+move = &"IRONTAIL"
+
+[sub_resource type="Resource" id="Resource_14x8a"]
+script = ExtResource("2_3spwf")
+level = 52
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_u6fwo"]
+script = ExtResource("2_3spwf")
+level = 56
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "ONIX"
+script = ExtResource("3_dwbdx")
+species = &"ONIX"
+category = "Rock Snake"
+pokedex_entry = "There is a magnet in its brain that prevents an Onix from losing direction while tunneling. As it grows older, its body becomes steadily rounder and smoother."
+types = Array[StringName]([&"ROCK", &"GROUND"])
+base_hp = 35
+base_attack = 45
+base_defense = 160
+base_special_attack = 30
+base_special_defense = 45
+base_speed = 70
+ev_defense = 1
+base_exp = 77
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3spwf")]([SubResource("Resource_84njg"), SubResource("Resource_cdvy1"), SubResource("Resource_x5qsl"), SubResource("Resource_6m82a"), SubResource("Resource_r5wxa"), SubResource("Resource_qh8dw"), SubResource("Resource_8h6ea"), SubResource("Resource_u85vw"), SubResource("Resource_v4x4k"), SubResource("Resource_nsb18"), SubResource("Resource_h4t34"), SubResource("Resource_85d2f"), SubResource("Resource_0qlhk"), SubResource("Resource_5dmcg"), SubResource("Resource_88k6j"), SubResource("Resource_30t5m"), SubResource("Resource_14x8a"), SubResource("Resource_u6fwo")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BIND", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BREAKINGSWIPE", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GYROBALL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"IRONHEAD", &"IRONTAIL", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TORMENT", &"TWISTER"])
+egg_moves = Array[StringName]([&"BLOCK", &"DEFENSECURL", &"DRAGONTAIL", &"FLAIL", &"HEADSMASH", &"HEAVYSLAM", &"ROCKBLAST", &"ROLLOUT", &"WIDEGUARD"])
+abilities = Array[StringName]([&"ROCKHEAD", &"STURDY"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_2al5y")]([SubResource("Resource_100js")])
+height = 88
+weight = 2100
+color = &"Gray"
+shape = &"Serpentine"
+habitat = &"Cave"
+generation = 1
+back_sprite_offset = Vector2i(-15, 36)
+front_sprite_offset = Vector2i(-6, 16)
+shadow_size = 3
+id = &"ONIX"
+display_name = "Onix"

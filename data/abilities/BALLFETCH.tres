@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ppdrw"]
+
+[resource]
+resource_name = "BALLFETCH"
+script = ExtResource("1_ppdrw")
+description = "Retrieves the first thrown Poké Ball if it failed."
+id = &"BALLFETCH"
+display_name = "Ball Fetch"

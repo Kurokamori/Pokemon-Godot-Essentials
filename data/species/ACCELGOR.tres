@@ -1,0 +1,144 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cgshd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cy6qc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hdsvi"]
+
+[sub_resource type="Resource" id="Resource_mx43w"]
+script = ExtResource("1_cgshd")
+species = &"SHELMET"
+method = &"TradeSpecies"
+parameter = "KARRABLAST"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_uj2i7"]
+script = ExtResource("2_cy6qc")
+move = &"WATERSHURIKEN"
+
+[sub_resource type="Resource" id="Resource_snwaf"]
+script = ExtResource("2_cy6qc")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_ubla0"]
+script = ExtResource("2_cy6qc")
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_tmdq1"]
+script = ExtResource("2_cy6qc")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_41b8j"]
+script = ExtResource("2_cy6qc")
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_65vvt"]
+script = ExtResource("2_cy6qc")
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_q4ljq"]
+script = ExtResource("2_cy6qc")
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_ohq3k"]
+script = ExtResource("2_cy6qc")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_f4hf1"]
+script = ExtResource("2_cy6qc")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_ywib8"]
+script = ExtResource("2_cy6qc")
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_2rnf3"]
+script = ExtResource("2_cy6qc")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_p4xtl"]
+script = ExtResource("2_cy6qc")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_6whwt"]
+script = ExtResource("2_cy6qc")
+level = 16
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_r1niu"]
+script = ExtResource("2_cy6qc")
+level = 20
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_o3gbl"]
+script = ExtResource("2_cy6qc")
+level = 24
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_8668a"]
+script = ExtResource("2_cy6qc")
+level = 28
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_epm6j"]
+script = ExtResource("2_cy6qc")
+level = 32
+move = &"POWERSWAP"
+
+[sub_resource type="Resource" id="Resource_8ylbo"]
+script = ExtResource("2_cy6qc")
+level = 36
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_xifqa"]
+script = ExtResource("2_cy6qc")
+level = 40
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_erp5b"]
+script = ExtResource("2_cy6qc")
+level = 44
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_0lk2o"]
+script = ExtResource("2_cy6qc")
+level = 48
+move = &"FINALGAMBIT"
+
+[sub_resource type="Resource" id="Resource_wf4pw"]
+script = ExtResource("2_cy6qc")
+level = 52
+move = &"TOXIC"
+
+[resource]
+resource_name = "ACCELGOR"
+script = ExtResource("3_hdsvi")
+species = &"ACCELGOR"
+category = "Shell Out"
+pokedex_entry = "Having removed its heavy shell, it becomes very light and can fight with ninja-like movements."
+types = Array[StringName]([&"BUG"])
+base_hp = 80
+base_attack = 70
+base_defense = 40
+base_special_attack = 100
+base_special_defense = 60
+base_speed = 145
+ev_speed = 2
+base_exp = 173
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cy6qc")]([SubResource("Resource_uj2i7"), SubResource("Resource_snwaf"), SubResource("Resource_ubla0"), SubResource("Resource_tmdq1"), SubResource("Resource_41b8j"), SubResource("Resource_65vvt"), SubResource("Resource_q4ljq"), SubResource("Resource_ohq3k"), SubResource("Resource_f4hf1"), SubResource("Resource_ywib8"), SubResource("Resource_2rnf3"), SubResource("Resource_p4xtl"), SubResource("Resource_6whwt"), SubResource("Resource_r1niu"), SubResource("Resource_o3gbl"), SubResource("Resource_8668a"), SubResource("Resource_epm6j"), SubResource("Resource_8ylbo"), SubResource("Resource_xifqa"), SubResource("Resource_erp5b"), SubResource("Resource_0lk2o"), SubResource("Resource_wf4pw")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FOCUSBLAST", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GUARDSWAP", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"KNOCKOFF", &"LASERFOCUS", &"LEECHLIFE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"POWERSWAP", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SPIKES", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TOXIC", &"TOXICSPIKES", &"UTURN", &"VENOMDRENCH", &"VENOSHOCK"])
+abilities = Array[StringName]([&"HYDRATION", &"STICKYHOLD"])
+hidden_abilities = Array[StringName]([&"UNBURDEN"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_cgshd")]([SubResource("Resource_mx43w")])
+height = 8
+weight = 253
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(9, 48)
+front_sprite_offset = Vector2i(5, 26)
+id = &"ACCELGOR"
+display_name = "Accelgor"

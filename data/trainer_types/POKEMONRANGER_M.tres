@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_5ru22"]
+
+[resource]
+resource_name = "POKEMONRANGER_M"
+script = ExtResource("1_5ru22")
+gender = 0
+base_money = 60
+skill_level = 60
+id = &"POKEMONRANGER_M"
+display_name = "Pokémon Ranger"

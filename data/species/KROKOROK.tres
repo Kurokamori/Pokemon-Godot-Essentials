@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rsb8b"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5fwx7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uklho"]
+
+[sub_resource type="Resource" id="Resource_8jiof"]
+script = ExtResource("1_rsb8b")
+species = &"KROOKODILE"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_6vco5"]
+script = ExtResource("1_rsb8b")
+species = &"SANDILE"
+method = &"Level"
+parameter = "29"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_tii3d"]
+script = ExtResource("2_5fwx7")
+move = &"POWERTRIP"
+
+[sub_resource type="Resource" id="Resource_rypx0"]
+script = ExtResource("2_5fwx7")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_bwgis"]
+script = ExtResource("2_5fwx7")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_bmjsp"]
+script = ExtResource("2_5fwx7")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_36yo2"]
+script = ExtResource("2_5fwx7")
+level = 9
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_s5e0f"]
+script = ExtResource("2_5fwx7")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_mxyau"]
+script = ExtResource("2_5fwx7")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_287my"]
+script = ExtResource("2_5fwx7")
+level = 18
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_lolgb"]
+script = ExtResource("2_5fwx7")
+level = 21
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_xho5h"]
+script = ExtResource("2_5fwx7")
+level = 24
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_ymvp7"]
+script = ExtResource("2_5fwx7")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_lfe55"]
+script = ExtResource("2_5fwx7")
+level = 32
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_ng8aj"]
+script = ExtResource("2_5fwx7")
+level = 35
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_n0ruk"]
+script = ExtResource("2_5fwx7")
+level = 42
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_34juy"]
+script = ExtResource("2_5fwx7")
+level = 47
+move = &"THRASH"
+
+[resource]
+resource_name = "KROKOROK"
+script = ExtResource("3_uklho")
+species = &"KROKOROK"
+category = "Desert Croc"
+pokedex_entry = "The special membrane covering its eyes can sense the heat of objects, so it can see its surroundings, even in darkness."
+types = Array[StringName]([&"GROUND", &"DARK"])
+base_hp = 60
+base_attack = 82
+base_defense = 45
+base_special_attack = 45
+base_special_defense = 45
+base_speed = 74
+ev_attack = 2
+base_exp = 123
+growth_rate = &"Parabolic"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5fwx7")]([SubResource("Resource_tii3d"), SubResource("Resource_rypx0"), SubResource("Resource_bwgis"), SubResource("Resource_bmjsp"), SubResource("Resource_36yo2"), SubResource("Resource_s5e0f"), SubResource("Resource_mxyau"), SubResource("Resource_287my"), SubResource("Resource_lolgb"), SubResource("Resource_xho5h"), SubResource("Resource_ymvp7"), SubResource("Resource_lfe55"), SubResource("Resource_ng8aj"), SubResource("Resource_n0ruk"), SubResource("Resource_34juy")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREFANG", &"FLING", &"FOCUSENERGY", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERFANG", &"TORMENT", &"TOXIC", &"UPROAR"])
+abilities = Array[StringName]([&"INTIMIDATE", &"MOXIE"])
+hidden_abilities = Array[StringName]([&"ANGERPOINT"])
+wild_item_uncommon = Array[StringName]([&"BLACKGLASSES"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_rsb8b")]([SubResource("Resource_8jiof"), SubResource("Resource_6vco5")])
+height = 10
+weight = 334
+color = &"Brown"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(6, 48)
+front_sprite_offset = Vector2i(3, 22)
+id = &"KROKOROK"
+display_name = "Krokorok"

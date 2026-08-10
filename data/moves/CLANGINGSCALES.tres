@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_wiju1"]
+
+[resource]
+resource_name = "CLANGINGSCALES"
+script = ExtResource("1_wiju1")
+type = &"DRAGON"
+category = 1
+power = 110
+target = &"AllNearFoes"
+function_code = &"LowerUserDefense1"
+description = "The user rubs its scales and makes a huge noise. Also lowers the user's Defense stat."
+id = &"CLANGINGSCALES"
+display_name = "Clanging Scales"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

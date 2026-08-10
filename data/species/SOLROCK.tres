@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_x51b6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b0c70"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7wwg8"]
+
+[sub_resource type="Resource" id="Resource_i27oe"]
+script = ExtResource("2_b0c70")
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_jis6q"]
+script = ExtResource("2_b0c70")
+move = &"MORNINGSUN"
+
+[sub_resource type="Resource" id="Resource_8twjm"]
+script = ExtResource("2_b0c70")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_frh3w"]
+script = ExtResource("2_b0c70")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_i3rkb"]
+script = ExtResource("2_b0c70")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_fu76a"]
+script = ExtResource("2_b0c70")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_4h7qp"]
+script = ExtResource("2_b0c70")
+level = 5
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_t5gur"]
+script = ExtResource("2_b0c70")
+level = 10
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_luu7m"]
+script = ExtResource("2_b0c70")
+level = 15
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_f5ppg"]
+script = ExtResource("2_b0c70")
+level = 20
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_uohan"]
+script = ExtResource("2_b0c70")
+level = 25
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_c8vrm"]
+script = ExtResource("2_b0c70")
+level = 30
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_tqn6x"]
+script = ExtResource("2_b0c70")
+level = 35
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_80a4p"]
+script = ExtResource("2_b0c70")
+level = 40
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_5rk8l"]
+script = ExtResource("2_b0c70")
+level = 45
+move = &"WONDERROOM"
+
+[sub_resource type="Resource" id="Resource_g86hy"]
+script = ExtResource("2_b0c70")
+level = 50
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "SOLROCK"
+script = ExtResource("3_7wwg8")
+species = &"SOLROCK"
+category = "Meteorite"
+pokedex_entry = "Solar energy is the source of this Pokémon's power. On sunny days, groups of Solrock line up facing the sun and absorb its light."
+types = Array[StringName]([&"ROCK", &"PSYCHIC"])
+base_hp = 90
+base_attack = 95
+base_defense = 85
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 70
+ev_attack = 2
+base_exp = 161
+growth_rate = &"Fast"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b0c70")]([SubResource("Resource_i27oe"), SubResource("Resource_jis6q"), SubResource("Resource_8twjm"), SubResource("Resource_frh3w"), SubResource("Resource_i3rkb"), SubResource("Resource_fu76a"), SubResource("Resource_4h7qp"), SubResource("Resource_t5gur"), SubResource("Resource_luu7m"), SubResource("Resource_f5ppg"), SubResource("Resource_uohan"), SubResource("Resource_c8vrm"), SubResource("Resource_tqn6x"), SubResource("Resource_80a4p"), SubResource("Resource_5rk8l"), SubResource("Resource_g86hy")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ALLYSWITCH", &"ANCIENTPOWER", &"BATONPASS", &"BODYSLAM", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COSMICPOWER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EARTHPOWER", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMETHROWER", &"FLAREBLITZ", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TELEKINESIS", &"TRICKROOM", &"WEATHERBALL", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+wild_item_common = Array[StringName]([&"STARDUST"])
+wild_item_uncommon = Array[StringName]([&"SUNSTONE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+height = 12
+weight = 1540
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 8)
+id = &"SOLROCK"
+display_name = "Solrock"

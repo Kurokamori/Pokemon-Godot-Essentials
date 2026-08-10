@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4ci7g"]
+
+[resource]
+resource_name = "AIRMAIL"
+script = ExtResource("1_4ci7g")
+name_plural = "Air Mail"
+portion_name = "piece of Air Mail"
+portion_name_plural = "pieces of Air Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of colorful letter sets. Let a Pokémon hold it for delivery."
+id = &"AIRMAIL"
+display_name = "Air Mail"
+flags = Array[StringName]([&"IconMail"])

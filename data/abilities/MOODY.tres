@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_mu0vr"]
+
+[resource]
+resource_name = "MOODY"
+script = ExtResource("1_mu0vr")
+description = "Raises one stat and lowers another."
+id = &"MOODY"
+display_name = "Moody"

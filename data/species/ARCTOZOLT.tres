@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pfwq8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rmdpq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pgrv6"]
+
+[sub_resource type="Resource" id="Resource_tnsio"]
+script = ExtResource("2_rmdpq")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_iujxt"]
+script = ExtResource("2_rmdpq")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_eyutu"]
+script = ExtResource("2_rmdpq")
+level = 7
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_grsry"]
+script = ExtResource("2_rmdpq")
+level = 14
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_ijwtk"]
+script = ExtResource("2_rmdpq")
+level = 21
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_s8q87"]
+script = ExtResource("2_rmdpq")
+level = 28
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_33s2a"]
+script = ExtResource("2_rmdpq")
+level = 35
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_m5xnn"]
+script = ExtResource("2_rmdpq")
+level = 42
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_xrcgq"]
+script = ExtResource("2_rmdpq")
+level = 49
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_gwge8"]
+script = ExtResource("2_rmdpq")
+level = 56
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_jf5qy"]
+script = ExtResource("2_rmdpq")
+level = 63
+move = &"BOLTBEAK"
+
+[sub_resource type="Resource" id="Resource_n81b2"]
+script = ExtResource("2_rmdpq")
+level = 70
+move = &"ICICLECRASH"
+
+[sub_resource type="Resource" id="Resource_o7mjy"]
+script = ExtResource("2_rmdpq")
+level = 77
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "ARCTOZOLT"
+script = ExtResource("3_pgrv6")
+species = &"ARCTOZOLT"
+category = "Fossil"
+pokedex_entry = "The shaking of its freezing upper half is what generates its electricity. It has a hard time walking around."
+types = Array[StringName]([&"ELECTRIC", &"ICE"])
+base_hp = 90
+base_attack = 100
+base_defense = 90
+base_special_attack = 90
+base_special_defense = 80
+base_speed = 55
+ev_attack = 2
+base_exp = 177
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rmdpq")]([SubResource("Resource_tnsio"), SubResource("Resource_iujxt"), SubResource("Resource_eyutu"), SubResource("Resource_grsry"), SubResource("Resource_ijwtk"), SubResource("Resource_s8q87"), SubResource("Resource_33s2a"), SubResource("Resource_m5xnn"), SubResource("Resource_xrcgq"), SubResource("Resource_gwge8"), SubResource("Resource_jf5qy"), SubResource("Resource_n81b2"), SubResource("Resource_o7mjy")])
+tutor_moves = Array[StringName]([&"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CONFIDE", &"DOUBLETEAM", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONTAIL", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"WILDCHARGE"])
+abilities = Array[StringName]([&"VOLTABSORB", &"STATIC"])
+hidden_abilities = Array[StringName]([&"SLUSHRUSH"])
+hatch_steps = 8960
+height = 23
+weight = 1500
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(-5, 40)
+front_sprite_offset = Vector2i(6, 14)
+id = &"ARCTOZOLT"
+display_name = "Arctozolt"

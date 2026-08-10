@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_dtbya"]
+
+[resource]
+resource_name = "BONERUSH"
+script = ExtResource("1_dtbya")
+type = &"GROUND"
+category = 0
+power = 25
+accuracy = 90
+total_pp = 10
+function_code = &"HitTwoToFiveTimes"
+description = "The user strikes the target with a hard bone two to five times in a row."
+id = &"BONERUSH"
+display_name = "Bone Rush"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

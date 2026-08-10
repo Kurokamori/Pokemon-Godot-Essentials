@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qdgfw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3o1dc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dj24g"]
+
+[sub_resource type="Resource" id="Resource_10rx3"]
+script = ExtResource("1_qdgfw")
+species = &"SWOOBAT"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_outb3"]
+script = ExtResource("2_3o1dc")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_sjj1r"]
+script = ExtResource("2_3o1dc")
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_abkfx"]
+script = ExtResource("2_3o1dc")
+level = 5
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_jv5bf"]
+script = ExtResource("2_3o1dc")
+level = 10
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_mmwwt"]
+script = ExtResource("2_3o1dc")
+level = 15
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_u474e"]
+script = ExtResource("2_3o1dc")
+level = 20
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_niidh"]
+script = ExtResource("2_3o1dc")
+level = 25
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_jb78i"]
+script = ExtResource("2_3o1dc")
+level = 30
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_r4s2r"]
+script = ExtResource("2_3o1dc")
+level = 35
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_vdijl"]
+script = ExtResource("2_3o1dc")
+level = 40
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_8gkhg"]
+script = ExtResource("2_3o1dc")
+level = 45
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_1ogtg"]
+script = ExtResource("2_3o1dc")
+level = 50
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_1i8s6"]
+script = ExtResource("2_3o1dc")
+level = 55
+move = &"SIMPLEBEAM"
+
+[resource]
+resource_name = "WOOBAT"
+script = ExtResource("3_dj24g")
+species = &"WOOBAT"
+category = "Bat"
+pokedex_entry = "Suction from its nostrils enables it to stick to cave walls during sleep. It leaves a heart-shaped mark behind."
+types = Array[StringName]([&"PSYCHIC", &"FLYING"])
+base_hp = 65
+base_attack = 45
+base_defense = 43
+base_special_attack = 55
+base_special_defense = 43
+base_speed = 72
+ev_speed = 1
+base_exp = 65
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3o1dc")]([SubResource("Resource_outb3"), SubResource("Resource_sjj1r"), SubResource("Resource_abkfx"), SubResource("Resource_jv5bf"), SubResource("Resource_mmwwt"), SubResource("Resource_u474e"), SubResource("Resource_niidh"), SubResource("Resource_jb78i"), SubResource("Resource_r4s2r"), SubResource("Resource_vdijl"), SubResource("Resource_8gkhg"), SubResource("Resource_1ogtg"), SubResource("Resource_1i8s6")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AFTERYOU", &"AIRSLASH", &"ALLYSWITCH", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DREAMEATER", &"DUALWINGBEAT", &"EMBARGO", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLASH", &"FLY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GYROBALL", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"IMPRISON", &"KNOCKOFF", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SPEEDSWAP", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"UTURN", &"VENOMDRENCH", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"FLATTER", &"KNOCKOFF", &"PSYCHOSHIFT", &"ROOST", &"SUPERSONIC"])
+abilities = Array[StringName]([&"UNAWARE", &"KLUTZ"])
+hidden_abilities = Array[StringName]([&"SIMPLE"])
+egg_groups = Array[StringName]([&"Field", &"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_qdgfw")]([SubResource("Resource_10rx3")])
+height = 4
+weight = 21
+color = &"Blue"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(3, 18)
+shadow_size = 1
+id = &"WOOBAT"
+display_name = "Woobat"

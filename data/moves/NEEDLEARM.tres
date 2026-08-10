@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_n0p7w"]
+
+[resource]
+resource_name = "NEEDLEARM"
+script = ExtResource("1_n0p7w")
+type = &"GRASS"
+category = 0
+power = 60
+total_pp = 15
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "The user attacks by wildly swinging its thorny arms. It may also make the target flinch."
+id = &"NEEDLEARM"
+display_name = "Needle Arm"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tp5ws"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qdb3g"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8kxlm"]
+
+[sub_resource type="Resource" id="Resource_k4d51"]
+script = ExtResource("1_tp5ws")
+species = &"ANORITH"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_h4hjs"]
+script = ExtResource("2_qdb3g")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_tniyi"]
+script = ExtResource("2_qdb3g")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_hhbbk"]
+script = ExtResource("2_qdb3g")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_lf11c"]
+script = ExtResource("2_qdb3g")
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_sworp"]
+script = ExtResource("2_qdb3g")
+level = 12
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_fppgh"]
+script = ExtResource("2_qdb3g")
+level = 16
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_d6m5v"]
+script = ExtResource("2_qdb3g")
+level = 20
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_bdj8p"]
+script = ExtResource("2_qdb3g")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_3juet"]
+script = ExtResource("2_qdb3g")
+level = 28
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_f650o"]
+script = ExtResource("2_qdb3g")
+level = 32
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_ypbsc"]
+script = ExtResource("2_qdb3g")
+level = 36
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_205uj"]
+script = ExtResource("2_qdb3g")
+level = 43
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_t7rk3"]
+script = ExtResource("2_qdb3g")
+level = 48
+move = &"XSCISSOR"
+
+[resource]
+resource_name = "ARMALDO"
+script = ExtResource("3_8kxlm")
+species = &"ARMALDO"
+category = "Plate"
+pokedex_entry = "Armaldo usually lives on land. However, when it hunts for prey, it dives beneath the ocean. It swims around using its two large wings."
+types = Array[StringName]([&"ROCK", &"BUG"])
+base_hp = 75
+base_attack = 125
+base_defense = 100
+base_special_attack = 70
+base_special_defense = 80
+base_speed = 45
+ev_attack = 2
+base_exp = 173
+growth_rate = &"Erratic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qdb3g")]([SubResource("Resource_h4hjs"), SubResource("Resource_tniyi"), SubResource("Resource_hhbbk"), SubResource("Resource_lf11c"), SubResource("Resource_sworp"), SubResource("Resource_fppgh"), SubResource("Resource_d6m5v"), SubResource("Resource_bdj8p"), SubResource("Resource_3juet"), SubResource("Resource_f650o"), SubResource("Resource_ypbsc"), SubResource("Resource_205uj"), SubResource("Resource_t7rk3")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BRUTALSWING", &"BUGBITE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"IRONTAIL", &"KNOCKOFF", &"LIQUIDATION", &"LOWKICK", &"METEORBEAM", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"WATERPULSE", &"XSCISSOR"])
+abilities = Array[StringName]([&"BATTLEARMOR"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_tp5ws")]([SubResource("Resource_k4d51")])
+height = 15
+weight = 682
+color = &"Gray"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 19)
+id = &"ARMALDO"
+display_name = "Armaldo"

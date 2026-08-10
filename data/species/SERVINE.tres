@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_stl1u"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2p2ro"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1lkit"]
+
+[sub_resource type="Resource" id="Resource_e1dc7"]
+script = ExtResource("1_stl1u")
+species = &"SERPERIOR"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_gswf8"]
+script = ExtResource("1_stl1u")
+species = &"SNIVY"
+method = &"Level"
+parameter = "17"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_klgkr"]
+script = ExtResource("2_2p2ro")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_nn5ly"]
+script = ExtResource("2_2p2ro")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_xuw85"]
+script = ExtResource("2_2p2ro")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_4b25k"]
+script = ExtResource("2_2p2ro")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_eo3tj"]
+script = ExtResource("2_2p2ro")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_t51f7"]
+script = ExtResource("2_2p2ro")
+level = 7
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_3tigd"]
+script = ExtResource("2_2p2ro")
+level = 10
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_xvr4i"]
+script = ExtResource("2_2p2ro")
+level = 13
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_7yjpf"]
+script = ExtResource("2_2p2ro")
+level = 16
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_6lefe"]
+script = ExtResource("2_2p2ro")
+level = 20
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_vwex0"]
+script = ExtResource("2_2p2ro")
+level = 24
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_5uwke"]
+script = ExtResource("2_2p2ro")
+level = 28
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_b3eou"]
+script = ExtResource("2_2p2ro")
+level = 32
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_f00la"]
+script = ExtResource("2_2p2ro")
+level = 36
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_uh85q"]
+script = ExtResource("2_2p2ro")
+level = 40
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_4vgut"]
+script = ExtResource("2_2p2ro")
+level = 44
+move = &"WRINGOUT"
+
+[sub_resource type="Resource" id="Resource_nty0f"]
+script = ExtResource("2_2p2ro")
+level = 48
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_tj5cw"]
+script = ExtResource("2_2p2ro")
+level = 52
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "SERVINE"
+script = ExtResource("3_1lkit")
+species = &"SERVINE"
+category = "Grass Snake"
+pokedex_entry = "They avoid attacks by sinking into the shadows of thick foliage. They retaliate with masterful whipping techniques."
+types = Array[StringName]([&"GRASS"])
+base_hp = 60
+base_attack = 60
+base_defense = 75
+base_special_attack = 60
+base_special_defense = 75
+base_speed = 83
+ev_speed = 2
+base_exp = 145
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2p2ro")]([SubResource("Resource_klgkr"), SubResource("Resource_nn5ly"), SubResource("Resource_xuw85"), SubResource("Resource_4b25k"), SubResource("Resource_eo3tj"), SubResource("Resource_t51f7"), SubResource("Resource_3tigd"), SubResource("Resource_xvr4i"), SubResource("Resource_7yjpf"), SubResource("Resource_6lefe"), SubResource("Resource_vwex0"), SubResource("Resource_5uwke"), SubResource("Resource_b3eou"), SubResource("Resource_f00la"), SubResource("Resource_uh85q"), SubResource("Resource_4vgut"), SubResource("Resource_nty0f"), SubResource("Resource_tj5cw")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BIND", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"HIDDENPOWER", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TAUNT", &"TORMENT", &"TOXIC", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"CONTRARY"])
+egg_groups = Array[StringName]([&"Field", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_stl1u")]([SubResource("Resource_e1dc7"), SubResource("Resource_gswf8")])
+height = 8
+weight = 160
+color = &"Green"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(4, 22)
+shadow_size = 1
+id = &"SERVINE"
+display_name = "Servine"

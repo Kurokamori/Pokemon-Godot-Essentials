@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mnlbg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_n7hhs"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7yah5"]
+
+[sub_resource type="Resource" id="Resource_3udvs"]
+script = ExtResource("1_mnlbg")
+species = &"HATTERENE"
+method = &"Level"
+parameter = "42"
+
+[sub_resource type="Resource" id="Resource_7f15d"]
+script = ExtResource("1_mnlbg")
+species = &"HATENNA"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_p5j8u"]
+script = ExtResource("2_n7hhs")
+level = 0
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_lkusb"]
+script = ExtResource("2_n7hhs")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_upt54"]
+script = ExtResource("2_n7hhs")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_0qabw"]
+script = ExtResource("2_n7hhs")
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_vm7o5"]
+script = ExtResource("2_n7hhs")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_2r0qo"]
+script = ExtResource("2_n7hhs")
+level = 15
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_qhqia"]
+script = ExtResource("2_n7hhs")
+level = 20
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_pwrrq"]
+script = ExtResource("2_n7hhs")
+level = 25
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_ps2rt"]
+script = ExtResource("2_n7hhs")
+level = 30
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_ofv1e"]
+script = ExtResource("2_n7hhs")
+level = 37
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_hv3jo"]
+script = ExtResource("2_n7hhs")
+level = 44
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_4j6cn"]
+script = ExtResource("2_n7hhs")
+level = 51
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "HATTREM"
+script = ExtResource("3_7yah5")
+species = &"HATTREM"
+category = "Serene"
+pokedex_entry = "Using the braids on its head, it pummels foes to get them to quiet down. One blow from those braids would knock out a professional boxer."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 57
+base_attack = 40
+base_defense = 65
+base_special_attack = 86
+base_special_defense = 73
+base_speed = 49
+ev_special_attack = 2
+base_exp = 130
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_n7hhs")]([SubResource("Resource_p5j8u"), SubResource("Resource_lkusb"), SubResource("Resource_upt54"), SubResource("Resource_0qabw"), SubResource("Resource_vm7o5"), SubResource("Resource_2r0qo"), SubResource("Resource_qhqia"), SubResource("Resource_pwrrq"), SubResource("Resource_ps2rt"), SubResource("Resource_ofv1e"), SubResource("Resource_hv3jo"), SubResource("Resource_4j6cn")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BRUTALSWING", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"IMPRISON", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"THUNDERWAVE", &"TOXIC"])
+abilities = Array[StringName]([&"HEALER", &"ANTICIPATION"])
+hidden_abilities = Array[StringName]([&"MAGICBOUNCE"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mnlbg")]([SubResource("Resource_3udvs"), SubResource("Resource_7f15d")])
+height = 6
+weight = 48
+color = &"Pink"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 26)
+id = &"HATTREM"
+display_name = "Hattrem"

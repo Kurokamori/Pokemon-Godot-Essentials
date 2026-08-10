@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_5srly"]
+
+[resource]
+resource_name = "TERAVOLT"
+script = ExtResource("1_5srly")
+description = "Moves can be used regardless of Abilities."
+id = &"TERAVOLT"
+display_name = "Teravolt"

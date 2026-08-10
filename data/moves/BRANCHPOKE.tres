@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fidhp"]
+
+[resource]
+resource_name = "BRANCHPOKE"
+script = ExtResource("1_fidhp")
+type = &"GRASS"
+category = 0
+power = 40
+total_pp = 40
+description = "The user attacks the target by poking it with a sharply pointed branch."
+id = &"BRANCHPOKE"
+display_name = "Branch Poke"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

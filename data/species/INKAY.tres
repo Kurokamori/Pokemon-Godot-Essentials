@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_y20a6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xdw22"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jhnm2"]
+
+[sub_resource type="Resource" id="Resource_702dt"]
+script = ExtResource("1_y20a6")
+species = &"MALAMAR"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_g7mw0"]
+script = ExtResource("2_xdw22")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_flr4j"]
+script = ExtResource("2_xdw22")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_dnoav"]
+script = ExtResource("2_xdw22")
+level = 3
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_q0j45"]
+script = ExtResource("2_xdw22")
+level = 6
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_1rey7"]
+script = ExtResource("2_xdw22")
+level = 9
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_6habb"]
+script = ExtResource("2_xdw22")
+level = 12
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_hbghv"]
+script = ExtResource("2_xdw22")
+level = 15
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_pmwai"]
+script = ExtResource("2_xdw22")
+level = 18
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_10ey0"]
+script = ExtResource("2_xdw22")
+level = 21
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_heeys"]
+script = ExtResource("2_xdw22")
+level = 24
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_fk8r6"]
+script = ExtResource("2_xdw22")
+level = 27
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_fscmu"]
+script = ExtResource("2_xdw22")
+level = 31
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_nvo82"]
+script = ExtResource("2_xdw22")
+level = 33
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_035s0"]
+script = ExtResource("2_xdw22")
+level = 36
+move = &"TOPSYTURVY"
+
+[sub_resource type="Resource" id="Resource_0fik3"]
+script = ExtResource("2_xdw22")
+level = 39
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "INKAY"
+script = ExtResource("3_jhnm2")
+species = &"INKAY"
+category = "Revolving"
+pokedex_entry = "It flashes the light-emitting spots on its body, which drains its opponent's will to fight. It takes the opportunity to scuttle away and hide."
+types = Array[StringName]([&"DARK", &"PSYCHIC"])
+base_hp = 53
+base_attack = 54
+base_defense = 53
+base_special_attack = 37
+base_special_defense = 46
+base_speed = 45
+ev_attack = 1
+base_exp = 58
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xdw22")]([SubResource("Resource_g7mw0"), SubResource("Resource_flr4j"), SubResource("Resource_dnoav"), SubResource("Resource_q0j45"), SubResource("Resource_1rey7"), SubResource("Resource_6habb"), SubResource("Resource_hbghv"), SubResource("Resource_pmwai"), SubResource("Resource_10ey0"), SubResource("Resource_heeys"), SubResource("Resource_fk8r6"), SubResource("Resource_fscmu"), SubResource("Resource_nvo82"), SubResource("Resource_035s0"), SubResource("Resource_0fik3")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BIND", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GUARDSWAP", &"HIDDENPOWER", &"KNOCKOFF", &"LASHOUT", &"LIGHTSCREEN", &"LIQUIDATION", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"TORMENT", &"TOXIC", &"TRICKROOM"])
+egg_moves = Array[StringName]([&"ACUPRESSURE", &"DESTINYBOND", &"DISABLE"])
+abilities = Array[StringName]([&"CONTRARY", &"SUCTIONCUPS"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Water1", &"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_y20a6")]([SubResource("Resource_702dt")])
+height = 4
+weight = 35
+color = &"Blue"
+shape = &"Multiped"
+generation = 6
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 16)
+id = &"INKAY"
+display_name = "Inkay"

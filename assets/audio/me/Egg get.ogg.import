@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cyqwkiyw17wd2"
+path="res://.godot/imported/Egg get.ogg-ad285a603536eb33a2efd23ee87e1b62.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/me/Egg get.ogg"
+dest_files=["res://.godot/imported/Egg get.ogg-ad285a603536eb33a2efd23ee87e1b62.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

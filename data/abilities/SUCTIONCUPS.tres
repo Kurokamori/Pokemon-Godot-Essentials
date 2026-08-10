@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_v2d2j"]
+
+[resource]
+resource_name = "SUCTIONCUPS"
+script = ExtResource("1_v2d2j")
+description = "Negates all moves that force switching out."
+id = &"SUCTIONCUPS"
+display_name = "Suction Cups"

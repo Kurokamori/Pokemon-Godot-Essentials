@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_muei8"]
+
+[resource]
+resource_name = "LAGGINGTAIL"
+script = ExtResource("1_muei8")
+name_plural = "Lagging Tails"
+price = 4000
+sell_price = 2000
+bp_price = 25
+description = "An item to be held by a Pokémon. It is tremendously heavy and makes the holder move slower than usual."
+id = &"LAGGINGTAIL"
+display_name = "Lagging Tail"
+flags = Array[StringName]([&"Fling_10"])

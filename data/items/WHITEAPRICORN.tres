@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_n4wfy"]
+
+[resource]
+resource_name = "WHITEAPRICORN"
+script = ExtResource("1_n4wfy")
+name_plural = "White Apricorns"
+price = 200
+sell_price = 100
+description = "A white Apricorn. It doesn't smell like anything."
+id = &"WHITEAPRICORN"
+display_name = "White Apricorn"
+flags = Array[StringName]([&"Apricorn"])

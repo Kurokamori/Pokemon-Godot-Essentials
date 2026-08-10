@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_tes51"]
+
+[resource]
+resource_name = "TM22"
+script = ExtResource("1_tes51")
+name_plural = "TM22s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"SOLARBEAM"
+description = "In this two-turn attack, the user gathers light, then blasts a bundled beam on the next turn."
+id = &"TM22"
+display_name = "TM22"
+flags = Array[StringName]([&"Fling_120"])

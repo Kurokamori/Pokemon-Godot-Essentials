@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TriadRules" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/triad/triad_rules.gd" id="1_rules"]
+
+[resource]
+script = ExtResource("1_rules")
+board_size = Vector2i(3, 3)
+same_wins = false
+open_hand = false
+wrap_around = false
+elements = false
+random_hand = false
+count_unplayed = false
+type_bonuses = false
+trade = 0
+minimum_cards = 5

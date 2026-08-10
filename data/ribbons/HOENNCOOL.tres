@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_53emk"]
+
+[resource]
+resource_name = "HOENNCOOL"
+script = ExtResource("1_53emk")
+description = "Hoenn Cool Contest Normal Rank winner!"
+id = &"HOENNCOOL"
+display_name = "Cool Ribbon"

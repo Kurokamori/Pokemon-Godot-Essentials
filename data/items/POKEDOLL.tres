@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_buofh"]
+
+[resource]
+resource_name = "POKEDOLL"
+script = ExtResource("1_buofh")
+name_plural = "Poké Dolls"
+pocket = 7
+price = 300
+sell_price = 150
+battle_use = 5
+description = "A doll that attracts Pokémon. Use it to flee from any battle with a wild Pokémon."
+id = &"POKEDOLL"
+display_name = "Poké Doll"
+flags = Array[StringName]([&"Fling_30"])

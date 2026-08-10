@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_g1vea"]
+
+[resource]
+script = ExtResource("1_g1vea")
+category = &"dungeon_tilesets"
+record_script = "res://src/data/dungeon_tileset_data.gd"
+paths = {
+&"23": "res://data/dungeon_tilesets/23.tres",
+&"7": "res://data/dungeon_tilesets/7.tres"
+}
+ordered_ids = Array[StringName]([&"7", &"23"])

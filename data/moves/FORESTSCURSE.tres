@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_p3qxq"]
+
+[resource]
+resource_name = "FORESTSCURSE"
+script = ExtResource("1_p3qxq")
+type = &"GRASS"
+total_pp = 20
+function_code = &"AddGrassTypeToTarget"
+description = "The user puts a forest curse on the target. The target is now Grass type as well."
+id = &"FORESTSCURSE"
+display_name = "Forest's Curse"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

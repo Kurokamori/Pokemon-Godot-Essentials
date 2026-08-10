@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_m1c78"]
+
+[resource]
+resource_name = "POWERWHIP"
+script = ExtResource("1_m1c78")
+type = &"GRASS"
+category = 0
+power = 120
+accuracy = 85
+total_pp = 10
+description = "The user violently whirls its vines or tentacles to harshly lash the target."
+id = &"POWERWHIP"
+display_name = "Power Whip"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_r5csg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ws8h0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uh2u0"]
+
+[sub_resource type="Resource" id="Resource_etld8"]
+script = ExtResource("2_ws8h0")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_o2hc1"]
+script = ExtResource("2_ws8h0")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_3t00g"]
+script = ExtResource("2_ws8h0")
+level = 5
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_dwxof"]
+script = ExtResource("2_ws8h0")
+level = 10
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_m5gok"]
+script = ExtResource("2_ws8h0")
+level = 15
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_0xsi7"]
+script = ExtResource("2_ws8h0")
+level = 20
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_ug0mk"]
+script = ExtResource("2_ws8h0")
+level = 25
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_6lfvk"]
+script = ExtResource("2_ws8h0")
+level = 30
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_qmvyq"]
+script = ExtResource("2_ws8h0")
+level = 35
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_lt4b8"]
+script = ExtResource("2_ws8h0")
+level = 40
+move = &"ZINGZAP"
+
+[sub_resource type="Resource" id="Resource_vqvgc"]
+script = ExtResource("2_ws8h0")
+level = 45
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_qpy18"]
+script = ExtResource("2_ws8h0")
+level = 50
+move = &"ELECTRICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_1clq2"]
+script = ExtResource("2_ws8h0")
+level = 55
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_tx1lj"]
+script = ExtResource("2_ws8h0")
+level = 60
+move = &"SPIKYSHIELD"
+
+[resource]
+resource_name = "TOGEDEMARU"
+script = ExtResource("3_uh2u0")
+species = &"TOGEDEMARU"
+category = "Roly-Poly"
+pokedex_entry = "The long hairs on its back act as lightning rods. The bolts of lightning it attracts are stored as energy in its electric sac."
+types = Array[StringName]([&"ELECTRIC", &"STEEL"])
+base_hp = 65
+base_attack = 98
+base_defense = 63
+base_special_attack = 40
+base_special_defense = 73
+base_speed = 96
+ev_attack = 2
+base_exp = 152
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ws8h0")]([SubResource("Resource_etld8"), SubResource("Resource_o2hc1"), SubResource("Resource_3t00g"), SubResource("Resource_dwxof"), SubResource("Resource_m5gok"), SubResource("Resource_0xsi7"), SubResource("Resource_ug0mk"), SubResource("Resource_6lfvk"), SubResource("Resource_qmvyq"), SubResource("Resource_lt4b8"), SubResource("Resource_vqvgc"), SubResource("Resource_qpy18"), SubResource("Resource_1clq2"), SubResource("Resource_tx1lj")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BOUNCE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IRONHEAD", &"IRONTAIL", &"LASTRESORT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"RISINGVOLTAGE", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"STEELROLLER", &"SUBSTITUTE", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"UTURN", &"VOLTSWITCH", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"DISARMINGVOICE", &"FAKEOUT", &"FLAIL", &"PRESENT", &"TICKLE", &"WISH"])
+abilities = Array[StringName]([&"IRONBARBS", &"LIGHTNINGROD"])
+hidden_abilities = Array[StringName]([&"STURDY"])
+wild_item_uncommon = Array[StringName]([&"ELECTRICSEED"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 2560
+height = 3
+weight = 33
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(5, 31)
+shadow_size = 1
+id = &"TOGEDEMARU"
+display_name = "Togedemaru"

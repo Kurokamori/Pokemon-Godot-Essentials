@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_kdvq5"]
+
+[resource]
+resource_name = "THIEF"
+script = ExtResource("1_kdvq5")
+type = &"DARK"
+category = 0
+power = 60
+total_pp = 25
+function_code = &"UserTakesTargetItem"
+description = "The user attacks and steals the foe's held item simultaneously. It can't steal if the user holds an item."
+id = &"THIEF"
+display_name = "Thief"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

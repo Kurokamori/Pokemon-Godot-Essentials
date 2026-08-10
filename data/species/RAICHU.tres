@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4a6c3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b3t3y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0kiaa"]
+
+[sub_resource type="Resource" id="Resource_opspk"]
+script = ExtResource("1_4a6c3")
+species = &"PIKACHU"
+method = &"Item"
+parameter = "THUNDERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8l1e7"]
+script = ExtResource("2_b3t3y")
+level = 0
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_n48l4"]
+script = ExtResource("2_b3t3y")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_jarul"]
+script = ExtResource("2_b3t3y")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_u8jhi"]
+script = ExtResource("2_b3t3y")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_gx4lg"]
+script = ExtResource("2_b3t3y")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_q3gcd"]
+script = ExtResource("2_b3t3y")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_7uux1"]
+script = ExtResource("2_b3t3y")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_yqt0t"]
+script = ExtResource("2_b3t3y")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_agthe"]
+script = ExtResource("2_b3t3y")
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_ycdmo"]
+script = ExtResource("2_b3t3y")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_n18fe"]
+script = ExtResource("2_b3t3y")
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_angx7"]
+script = ExtResource("2_b3t3y")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_i63ai"]
+script = ExtResource("2_b3t3y")
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_akrg1"]
+script = ExtResource("2_b3t3y")
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_kwpoe"]
+script = ExtResource("2_b3t3y")
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_lxq8d"]
+script = ExtResource("2_b3t3y")
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_tsqyv"]
+script = ExtResource("2_b3t3y")
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_sjbov"]
+script = ExtResource("2_b3t3y")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_v3qs0"]
+script = ExtResource("2_b3t3y")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_6ghgj"]
+script = ExtResource("2_b3t3y")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_lkpp6"]
+script = ExtResource("2_b3t3y")
+move = &"QUICKATTACK"
+
+[resource]
+resource_name = "RAICHU"
+script = ExtResource("3_0kiaa")
+species = &"RAICHU"
+category = "Mouse"
+pokedex_entry = "If it stores too much electricity, its behavior turns aggressive. To avoid this, it occasionally discharges excess energy and calms itself down."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 60
+base_attack = 90
+base_defense = 55
+base_special_attack = 90
+base_special_defense = 80
+base_speed = 110
+ev_speed = 3
+base_exp = 243
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b3t3y")]([SubResource("Resource_8l1e7"), SubResource("Resource_n48l4"), SubResource("Resource_jarul"), SubResource("Resource_u8jhi"), SubResource("Resource_gx4lg"), SubResource("Resource_q3gcd"), SubResource("Resource_7uux1"), SubResource("Resource_yqt0t"), SubResource("Resource_agthe"), SubResource("Resource_ycdmo"), SubResource("Resource_n18fe"), SubResource("Resource_angx7"), SubResource("Resource_i63ai"), SubResource("Resource_akrg1"), SubResource("Resource_kwpoe"), SubResource("Resource_lxq8d"), SubResource("Resource_tsqyv"), SubResource("Resource_sjbov"), SubResource("Resource_v3qs0"), SubResource("Resource_6ghgj"), SubResource("Resource_lkpp6")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"RISINGVOLTAGE", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SPEEDSWAP", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"STATIC"])
+hidden_abilities = Array[StringName]([&"LIGHTNINGROD"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_4a6c3")]([SubResource("Resource_opspk")])
+height = 8
+weight = 300
+color = &"Yellow"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(2, 54)
+front_sprite_offset = Vector2i(4, 22)
+id = &"RAICHU"
+display_name = "Raichu"

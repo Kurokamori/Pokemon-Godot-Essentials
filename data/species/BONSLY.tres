@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l8qqg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mhw8q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dn6ql"]
+
+[sub_resource type="Resource" id="Resource_8nc7m"]
+script = ExtResource("1_l8qqg")
+species = &"SUDOWOODO"
+method = &"HasMove"
+parameter = "MIMIC"
+
+[sub_resource type="Resource" id="Resource_lf5e5"]
+script = ExtResource("2_mhw8q")
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_3ph1y"]
+script = ExtResource("2_mhw8q")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_p8n6t"]
+script = ExtResource("2_mhw8q")
+level = 4
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_rqc6y"]
+script = ExtResource("2_mhw8q")
+level = 8
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_48sof"]
+script = ExtResource("2_mhw8q")
+level = 12
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_vid7b"]
+script = ExtResource("2_mhw8q")
+level = 16
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_i0ewb"]
+script = ExtResource("2_mhw8q")
+level = 20
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_ppy7a"]
+script = ExtResource("2_mhw8q")
+level = 24
+move = &"TEARFULLOOK"
+
+[sub_resource type="Resource" id="Resource_pdu2h"]
+script = ExtResource("2_mhw8q")
+level = 28
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_eemkw"]
+script = ExtResource("2_mhw8q")
+level = 32
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_lwdaj"]
+script = ExtResource("2_mhw8q")
+level = 36
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_soa3g"]
+script = ExtResource("2_mhw8q")
+level = 40
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_p25sr"]
+script = ExtResource("2_mhw8q")
+level = 44
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "BONSLY"
+script = ExtResource("3_dn6ql")
+species = &"BONSLY"
+category = "Bonsai"
+pokedex_entry = "It looks as if it is always crying. It is actually adjusting its body's fluid levels by eliminating excess."
+types = Array[StringName]([&"ROCK"])
+base_hp = 50
+base_attack = 80
+base_defense = 95
+base_special_attack = 10
+base_special_defense = 45
+base_speed = 10
+ev_defense = 1
+base_exp = 58
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mhw8q")]([SubResource("Resource_lf5e5"), SubResource("Resource_3ph1y"), SubResource("Resource_p8n6t"), SubResource("Resource_rqc6y"), SubResource("Resource_48sof"), SubResource("Resource_vid7b"), SubResource("Resource_i0ewb"), SubResource("Resource_ppy7a"), SubResource("Resource_pdu2h"), SubResource("Resource_eemkw"), SubResource("Resource_lwdaj"), SubResource("Resource_soa3g"), SubResource("Resource_p25sr")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BLOCK", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"EXPLOSION", &"FACADE", &"FAKETEARS", &"FOULPLAY", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"LOWKICK", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"PSYCHUP", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"UPROAR"])
+egg_moves = Array[StringName]([&"CURSE", &"DEFENSECURL", &"HARDEN", &"HEADBUTT", &"ROCKPOLISH", &"ROLLOUT", &"SANDTOMB", &"SELFDESTRUCT"])
+abilities = Array[StringName]([&"STURDY", &"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+hatch_steps = 5120
+incense = &"ROCKINCENSE"
+evolutions = Array[ExtResource("1_l8qqg")]([SubResource("Resource_8nc7m")])
+height = 5
+weight = 150
+color = &"Brown"
+shape = &"HeadLegs"
+generation = 4
+back_sprite_offset = Vector2i(-4, 46)
+front_sprite_offset = Vector2i(4, 26)
+shadow_size = 1
+id = &"BONSLY"
+display_name = "Bonsly"

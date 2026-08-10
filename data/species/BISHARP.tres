@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tgcjm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wr0nt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_otfqe"]
+
+[sub_resource type="Resource" id="Resource_k3wi2"]
+script = ExtResource("1_tgcjm")
+species = &"PAWNIARD"
+method = &"Level"
+parameter = "52"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_aqpsd"]
+script = ExtResource("2_wr0nt")
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_uisjk"]
+script = ExtResource("2_wr0nt")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_i8h4r"]
+script = ExtResource("2_wr0nt")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_yw0kj"]
+script = ExtResource("2_wr0nt")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_cv2hp"]
+script = ExtResource("2_wr0nt")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_unxa8"]
+script = ExtResource("2_wr0nt")
+level = 15
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_4tiid"]
+script = ExtResource("2_wr0nt")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_s425q"]
+script = ExtResource("2_wr0nt")
+level = 25
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_3q1fd"]
+script = ExtResource("2_wr0nt")
+level = 30
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_0d3id"]
+script = ExtResource("2_wr0nt")
+level = 35
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ayknx"]
+script = ExtResource("2_wr0nt")
+level = 40
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_hflbk"]
+script = ExtResource("2_wr0nt")
+level = 45
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_4rwnj"]
+script = ExtResource("2_wr0nt")
+level = 50
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_4jusm"]
+script = ExtResource("2_wr0nt")
+level = 57
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_l3hqo"]
+script = ExtResource("2_wr0nt")
+level = 64
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_qlicy"]
+script = ExtResource("2_wr0nt")
+level = 71
+move = &"GUILLOTINE"
+
+[resource]
+resource_name = "BISHARP"
+script = ExtResource("3_otfqe")
+species = &"BISHARP"
+category = "Sword Blade"
+pokedex_entry = "Bisharp pursues prey in the company of a large group of Pawniard. Then Bisharp finishes off the prey."
+types = Array[StringName]([&"DARK", &"STEEL"])
+base_hp = 65
+base_attack = 125
+base_defense = 100
+base_special_attack = 60
+base_special_defense = 70
+base_speed = 70
+ev_attack = 2
+base_exp = 172
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_wr0nt")]([SubResource("Resource_aqpsd"), SubResource("Resource_uisjk"), SubResource("Resource_i8h4r"), SubResource("Resource_yw0kj"), SubResource("Resource_cv2hp"), SubResource("Resource_unxa8"), SubResource("Resource_4tiid"), SubResource("Resource_s425q"), SubResource("Resource_3q1fd"), SubResource("Resource_0d3id"), SubResource("Resource_ayknx"), SubResource("Resource_hflbk"), SubResource("Resource_4rwnj"), SubResource("Resource_4jusm"), SubResource("Resource_l3hqo"), SubResource("Resource_qlicy")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DUALCHOP", &"EMBARGO", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"LASERFOCUS", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHOCUT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKPOLISH", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STEALTHROCK", &"STEELBEAM", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"XSCISSOR"])
+abilities = Array[StringName]([&"DEFIANT", &"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"PRESSURE"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tgcjm")]([SubResource("Resource_k3wi2")])
+height = 16
+weight = 700
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(-4, 44)
+front_sprite_offset = Vector2i(0, 16)
+id = &"BISHARP"
+display_name = "Bisharp"

@@ -1,0 +1,159 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dhbur"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_g38fg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rptg2"]
+
+[sub_resource type="Resource" id="Resource_pa2w4"]
+script = ExtResource("1_dhbur")
+species = &"EEVEE"
+method = &"HappinessNight"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nmjr1"]
+script = ExtResource("2_g38fg")
+level = 0
+move = &"SNARL"
+
+[sub_resource type="Resource" id="Resource_igyyl"]
+script = ExtResource("2_g38fg")
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_22x8y"]
+script = ExtResource("2_g38fg")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_fcd30"]
+script = ExtResource("2_g38fg")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_38qve"]
+script = ExtResource("2_g38fg")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ejyko"]
+script = ExtResource("2_g38fg")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_f0qpd"]
+script = ExtResource("2_g38fg")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_1royu"]
+script = ExtResource("2_g38fg")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_ai1xy"]
+script = ExtResource("2_g38fg")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_fdt35"]
+script = ExtResource("2_g38fg")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_w0yv7"]
+script = ExtResource("2_g38fg")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_nfqqn"]
+script = ExtResource("2_g38fg")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_2uj1u"]
+script = ExtResource("2_g38fg")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_wq83x"]
+script = ExtResource("2_g38fg")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_qculx"]
+script = ExtResource("2_g38fg")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_yd424"]
+script = ExtResource("2_g38fg")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_r3qn0"]
+script = ExtResource("2_g38fg")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_5fyxq"]
+script = ExtResource("2_g38fg")
+level = 20
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_r8e5k"]
+script = ExtResource("2_g38fg")
+level = 25
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_s1g6d"]
+script = ExtResource("2_g38fg")
+level = 30
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_ex72i"]
+script = ExtResource("2_g38fg")
+level = 35
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_r3yyv"]
+script = ExtResource("2_g38fg")
+level = 40
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_2xdo1"]
+script = ExtResource("2_g38fg")
+level = 45
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_71mts"]
+script = ExtResource("2_g38fg")
+level = 50
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_cfmng"]
+script = ExtResource("2_g38fg")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "UMBREON"
+script = ExtResource("3_rptg2")
+species = &"UMBREON"
+category = "Moonlight"
+pokedex_entry = "Umbreon evolved from exposure to the moon's energy pulses. It lurks in darkness and waits for its foes to move. The rings on its body glow when it leaps to attack."
+types = Array[StringName]([&"DARK"])
+base_hp = 95
+base_attack = 65
+base_defense = 110
+base_special_attack = 60
+base_special_defense = 130
+base_speed = 65
+ev_special_defense = 2
+base_exp = 184
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_g38fg")]([SubResource("Resource_nmjr1"), SubResource("Resource_igyyl"), SubResource("Resource_22x8y"), SubResource("Resource_fcd30"), SubResource("Resource_38qve"), SubResource("Resource_ejyko"), SubResource("Resource_f0qpd"), SubResource("Resource_1royu"), SubResource("Resource_ai1xy"), SubResource("Resource_fdt35"), SubResource("Resource_w0yv7"), SubResource("Resource_nfqqn"), SubResource("Resource_2uj1u"), SubResource("Resource_wq83x"), SubResource("Resource_qculx"), SubResource("Resource_yd424"), SubResource("Resource_r3qn0"), SubResource("Resource_5fyxq"), SubResource("Resource_r8e5k"), SubResource("Resource_s1g6d"), SubResource("Resource_ex72i"), SubResource("Resource_r3yyv"), SubResource("Resource_2xdo1"), SubResource("Resource_71mts"), SubResource("Resource_cfmng")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CRUNCH", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLASH", &"FOCUSENERGY", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GUARDSWAP", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"LASERFOCUS", &"LASHOUT", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"WEATHERBALL", &"WONDERROOM", &"WORKUP"])
+abilities = Array[StringName]([&"SYNCHRONIZE"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_dhbur")]([SubResource("Resource_pa2w4")])
+height = 10
+weight = 270
+color = &"Black"
+shape = &"Quadruped"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 27)
+id = &"UMBREON"
+display_name = "Umbreon"

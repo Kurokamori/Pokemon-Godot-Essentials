@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qgprh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0u7ja"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ud0p1"]
+
+[sub_resource type="Resource" id="Resource_81v50"]
+script = ExtResource("1_qgprh")
+species = &"FERROTHORN"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_4u6pj"]
+script = ExtResource("2_0u7ja")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bhgf7"]
+script = ExtResource("2_0u7ja")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_i42r4"]
+script = ExtResource("2_0u7ja")
+level = 5
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_p3hsm"]
+script = ExtResource("2_0u7ja")
+level = 10
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_3g6mi"]
+script = ExtResource("2_0u7ja")
+level = 15
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_moahp"]
+script = ExtResource("2_0u7ja")
+level = 20
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_7sne4"]
+script = ExtResource("2_0u7ja")
+level = 25
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_ge502"]
+script = ExtResource("2_0u7ja")
+level = 30
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_d2nkg"]
+script = ExtResource("2_0u7ja")
+level = 35
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_410ub"]
+script = ExtResource("2_0u7ja")
+level = 41
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_f3wct"]
+script = ExtResource("2_0u7ja")
+level = 45
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_er66u"]
+script = ExtResource("2_0u7ja")
+level = 50
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "FERROSEED"
+script = ExtResource("3_ud0p1")
+species = &"FERROSEED"
+category = "Thorn Seed"
+pokedex_entry = "They stick their spikes into cave walls and absorb the minerals they find in the rock."
+types = Array[StringName]([&"GRASS", &"STEEL"])
+base_hp = 44
+base_attack = 50
+base_defense = 91
+base_special_attack = 24
+base_special_defense = 86
+base_speed = 10
+ev_defense = 1
+base_exp = 61
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_0u7ja")]([SubResource("Resource_4u6pj"), SubResource("Resource_bhgf7"), SubResource("Resource_i42r4"), SubResource("Resource_p3hsm"), SubResource("Resource_3g6mi"), SubResource("Resource_moahp"), SubResource("Resource_7sne4"), SubResource("Resource_ge502"), SubResource("Resource_d2nkg"), SubResource("Resource_410ub"), SubResource("Resource_f3wct"), SubResource("Resource_er66u")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"GIGADRAIN", &"GRAVITY", &"GYROBALL", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROCKPOLISH", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPIKES", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"ACIDSPRAY", &"GRAVITY", &"KNOCKOFF", &"LEECHSEED", &"TOXIC"])
+abilities = Array[StringName]([&"IRONBARBS"])
+wild_item_uncommon = Array[StringName]([&"STICKYBARB"])
+egg_groups = Array[StringName]([&"Grass", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_qgprh")]([SubResource("Resource_81v50")])
+height = 6
+weight = 188
+color = &"Gray"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"FERROSEED"
+display_name = "Ferroseed"

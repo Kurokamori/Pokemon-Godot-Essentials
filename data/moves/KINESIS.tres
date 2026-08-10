@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7n2wj"]
+
+[resource]
+resource_name = "KINESIS"
+script = ExtResource("1_7n2wj")
+type = &"PSYCHIC"
+accuracy = 80
+total_pp = 15
+function_code = &"LowerTargetAccuracy1"
+description = "The user distracts the target by bending a spoon. It lowers the target's accuracy."
+id = &"KINESIS"
+display_name = "Kinesis"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_td4wj"]
+
+[resource]
+script = ExtResource("1_td4wj")
+category = &"environments"
+record_script = "res://src/data/environment_data.gd"
+paths = {
+&"Cave": "res://data/environments/Cave.tres",
+&"Forest": "res://data/environments/Forest.tres",
+&"ForestGrass": "res://data/environments/ForestGrass.tres",
+&"Grass": "res://data/environments/Grass.tres",
+&"Graveyard": "res://data/environments/Graveyard.tres",
+&"Ice": "res://data/environments/Ice.tres",
+&"MovingWater": "res://data/environments/MovingWater.tres",
+&"None": "res://data/environments/None.tres",
+&"Puddle": "res://data/environments/Puddle.tres",
+&"Rock": "res://data/environments/Rock.tres",
+&"Sand": "res://data/environments/Sand.tres",
+&"Sky": "res://data/environments/Sky.tres",
+&"Snow": "res://data/environments/Snow.tres",
+&"Space": "res://data/environments/Space.tres",
+&"StillWater": "res://data/environments/StillWater.tres",
+&"TallGrass": "res://data/environments/TallGrass.tres",
+&"UltraSpace": "res://data/environments/UltraSpace.tres",
+&"Underwater": "res://data/environments/Underwater.tres",
+&"Volcano": "res://data/environments/Volcano.tres"
+}
+ordered_ids = Array[StringName]([&"None", &"Grass", &"TallGrass", &"MovingWater", &"StillWater", &"Puddle", &"Underwater", &"Cave", &"Rock", &"Sand", &"Forest", &"ForestGrass", &"Snow", &"Ice", &"Volcano", &"Graveyard", &"Sky", &"Space", &"UltraSpace"])

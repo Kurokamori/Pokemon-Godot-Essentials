@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_cw3e2"]
+
+[resource]
+resource_name = "SANDTOMB"
+script = ExtResource("1_cw3e2")
+type = &"GROUND"
+category = 0
+power = 35
+accuracy = 85
+total_pp = 15
+function_code = &"BindTarget"
+description = "The user traps the target inside a harshly raging sandstorm for four to five turns."
+id = &"SANDTOMB"
+display_name = "Sand Tomb"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

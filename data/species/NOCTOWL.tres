@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cjqen"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fxqsw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j5v6g"]
+
+[sub_resource type="Resource" id="Resource_8ncc8"]
+script = ExtResource("1_cjqen")
+species = &"HOOTHOOT"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_lqbue"]
+script = ExtResource("2_fxqsw")
+move = &"SKYATTACK"
+
+[sub_resource type="Resource" id="Resource_wf1hy"]
+script = ExtResource("2_fxqsw")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_bqda0"]
+script = ExtResource("2_fxqsw")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_qpywx"]
+script = ExtResource("2_fxqsw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_4xa7d"]
+script = ExtResource("2_fxqsw")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_bpnq6"]
+script = ExtResource("2_fxqsw")
+level = 9
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_b0ax6"]
+script = ExtResource("2_fxqsw")
+level = 12
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_y5bxy"]
+script = ExtResource("2_fxqsw")
+level = 15
+move = &"PSYCHOSHIFT"
+
+[sub_resource type="Resource" id="Resource_vqusk"]
+script = ExtResource("2_fxqsw")
+level = 18
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_57k43"]
+script = ExtResource("2_fxqsw")
+level = 23
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_npul3"]
+script = ExtResource("2_fxqsw")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_b3b6m"]
+script = ExtResource("2_fxqsw")
+level = 33
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_w0tj5"]
+script = ExtResource("2_fxqsw")
+level = 38
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_d4xlh"]
+script = ExtResource("2_fxqsw")
+level = 43
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_u17e0"]
+script = ExtResource("2_fxqsw")
+level = 48
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_xh7qs"]
+script = ExtResource("2_fxqsw")
+level = 53
+move = &"DREAMEATER"
+
+[resource]
+resource_name = "NOCTOWL"
+script = ExtResource("3_j5v6g")
+species = &"NOCTOWL"
+category = "Owl"
+pokedex_entry = "It unfailingly catches prey in darkness. Noctowl owe their success to superior vision that allows them to see in minimal light, and to their supple and silent wings."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 100
+base_attack = 50
+base_defense = 50
+base_special_attack = 86
+base_special_defense = 96
+base_speed = 70
+ev_hp = 2
+base_exp = 158
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fxqsw")]([SubResource("Resource_lqbue"), SubResource("Resource_wf1hy"), SubResource("Resource_bqda0"), SubResource("Resource_qpywx"), SubResource("Resource_4xa7d"), SubResource("Resource_bpnq6"), SubResource("Resource_b0ax6"), SubResource("Resource_y5bxy"), SubResource("Resource_vqusk"), SubResource("Resource_57k43"), SubResource("Resource_npul3"), SubResource("Resource_b3b6m"), SubResource("Resource_w0tj5"), SubResource("Resource_d4xlh"), SubResource("Resource_u17e0"), SubResource("Resource_xh7qs")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"AMNESIA", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"LASERFOCUS", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SILVERWIND", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INSOMNIA", &"KEENEYE"])
+hidden_abilities = Array[StringName]([&"TINTEDLENS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_cjqen")]([SubResource("Resource_8ncc8")])
+height = 16
+weight = 408
+color = &"Brown"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(1, 20)
+shadow_size = 1
+id = &"NOCTOWL"
+display_name = "Noctowl"

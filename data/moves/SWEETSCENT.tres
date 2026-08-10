@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vlcv4"]
+
+[resource]
+resource_name = "SWEETSCENT"
+script = ExtResource("1_vlcv4")
+total_pp = 20
+target = &"AllNearFoes"
+function_code = &"LowerTargetEvasion2"
+description = "A sweet scent that lowers the foe's evasiveness. It also lures wild Pokémon if used in grass, etc."
+id = &"SWEETSCENT"
+display_name = "Sweet Scent"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

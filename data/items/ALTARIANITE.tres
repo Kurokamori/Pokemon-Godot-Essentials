@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bkcb5"]
+
+[resource]
+resource_name = "ALTARIANITE"
+script = ExtResource("1_bkcb5")
+name_plural = "Altarianites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Altaria hold it, and it will be able to Mega Evolve."
+id = &"ALTARIANITE"
+display_name = "Altarianite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

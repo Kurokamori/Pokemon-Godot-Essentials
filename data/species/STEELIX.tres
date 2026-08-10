@@ -1,0 +1,160 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2vap5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p3ob0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ibgec"]
+
+[sub_resource type="Resource" id="Resource_6wk6e"]
+script = ExtResource("1_2vap5")
+species = &"ONIX"
+method = &"TradeItem"
+parameter = "METALCOAT"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0leb2"]
+script = ExtResource("2_p3ob0")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_om6fw"]
+script = ExtResource("2_p3ob0")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_6rv3r"]
+script = ExtResource("2_p3ob0")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_m6gl8"]
+script = ExtResource("2_p3ob0")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_yuqu1"]
+script = ExtResource("2_p3ob0")
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_lcdib"]
+script = ExtResource("2_p3ob0")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1a6nu"]
+script = ExtResource("2_p3ob0")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_scsiv"]
+script = ExtResource("2_p3ob0")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_7eeyb"]
+script = ExtResource("2_p3ob0")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_lhqyb"]
+script = ExtResource("2_p3ob0")
+level = 4
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_npxpe"]
+script = ExtResource("2_p3ob0")
+level = 8
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_lq2d7"]
+script = ExtResource("2_p3ob0")
+level = 12
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_s0tvq"]
+script = ExtResource("2_p3ob0")
+level = 16
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_a7o8s"]
+script = ExtResource("2_p3ob0")
+level = 20
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_is5w2"]
+script = ExtResource("2_p3ob0")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_2eefq"]
+script = ExtResource("2_p3ob0")
+level = 28
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_vua0s"]
+script = ExtResource("2_p3ob0")
+level = 32
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_v0jct"]
+script = ExtResource("2_p3ob0")
+level = 36
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_ifwnq"]
+script = ExtResource("2_p3ob0")
+level = 40
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_655go"]
+script = ExtResource("2_p3ob0")
+level = 44
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_ufwj2"]
+script = ExtResource("2_p3ob0")
+level = 48
+move = &"IRONTAIL"
+
+[sub_resource type="Resource" id="Resource_ovbo2"]
+script = ExtResource("2_p3ob0")
+level = 52
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_uar2x"]
+script = ExtResource("2_p3ob0")
+level = 56
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_5x6k8"]
+script = ExtResource("2_p3ob0")
+level = 60
+move = &"MAGNETRISE"
+
+[resource]
+resource_name = "STEELIX"
+script = ExtResource("3_ibgec")
+species = &"STEELIX"
+category = "Iron Snake"
+pokedex_entry = "Steelix live even further underground than Onix. This Pokémon is known to dig toward the earth's core, reaching a depth of over six-tenths of a mile underground."
+types = Array[StringName]([&"STEEL", &"GROUND"])
+base_hp = 75
+base_attack = 85
+base_defense = 200
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 30
+ev_defense = 2
+base_exp = 179
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_p3ob0")]([SubResource("Resource_0leb2"), SubResource("Resource_om6fw"), SubResource("Resource_6rv3r"), SubResource("Resource_m6gl8"), SubResource("Resource_yuqu1"), SubResource("Resource_lcdib"), SubResource("Resource_1a6nu"), SubResource("Resource_scsiv"), SubResource("Resource_7eeyb"), SubResource("Resource_lhqyb"), SubResource("Resource_npxpe"), SubResource("Resource_lq2d7"), SubResource("Resource_s0tvq"), SubResource("Resource_a7o8s"), SubResource("Resource_is5w2"), SubResource("Resource_2eefq"), SubResource("Resource_vua0s"), SubResource("Resource_v0jct"), SubResource("Resource_ifwnq"), SubResource("Resource_655go"), SubResource("Resource_ufwj2"), SubResource("Resource_ovbo2"), SubResource("Resource_uar2x"), SubResource("Resource_5x6k8")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BIND", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BREAKINGSWIPE", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREFANG", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEFANG", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"MAGNETRISE", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"PSYCHICFANGS", &"PSYCHUP", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THUNDERFANG", &"TORMENT", &"TWISTER"])
+abilities = Array[StringName]([&"ROCKHEAD", &"STURDY"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+wild_item_uncommon = Array[StringName]([&"METALCOAT"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_2vap5")]([SubResource("Resource_6wk6e")])
+height = 92
+weight = 4000
+color = &"Gray"
+shape = &"Serpentine"
+habitat = &"Cave"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 14)
+shadow_size = 3
+id = &"STEELIX"
+display_name = "Steelix"

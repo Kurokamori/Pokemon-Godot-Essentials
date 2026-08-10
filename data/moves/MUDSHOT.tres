@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_w1hxi"]
+
+[resource]
+resource_name = "MUDSHOT"
+script = ExtResource("1_w1hxi")
+type = &"GROUND"
+category = 1
+power = 55
+accuracy = 95
+total_pp = 15
+function_code = &"LowerTargetSpeed1"
+effect_chance = 100
+description = "The user attacks by hurling a blob of mud at the target. It also reduces the target's Speed."
+id = &"MUDSHOT"
+display_name = "Mud Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

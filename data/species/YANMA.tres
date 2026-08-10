@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ups0t"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kew1t"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bnlrm"]
+
+[sub_resource type="Resource" id="Resource_i5syt"]
+script = ExtResource("1_ups0t")
+species = &"YANMEGA"
+method = &"HasMove"
+parameter = "ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_4qon1"]
+script = ExtResource("2_kew1t")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_racdp"]
+script = ExtResource("2_kew1t")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_v0drr"]
+script = ExtResource("2_kew1t")
+level = 6
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_cfomp"]
+script = ExtResource("2_kew1t")
+level = 11
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_wsktm"]
+script = ExtResource("2_kew1t")
+level = 14
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_0k41w"]
+script = ExtResource("2_kew1t")
+level = 17
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_u3io2"]
+script = ExtResource("2_kew1t")
+level = 22
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_5mvjm"]
+script = ExtResource("2_kew1t")
+level = 27
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_q4f78"]
+script = ExtResource("2_kew1t")
+level = 30
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_qmgyu"]
+script = ExtResource("2_kew1t")
+level = 33
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_pqmlx"]
+script = ExtResource("2_kew1t")
+level = 38
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_kmw7x"]
+script = ExtResource("2_kew1t")
+level = 43
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_4scwa"]
+script = ExtResource("2_kew1t")
+level = 46
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_g0bfn"]
+script = ExtResource("2_kew1t")
+level = 49
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_2sn2g"]
+script = ExtResource("2_kew1t")
+level = 54
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_37kro"]
+script = ExtResource("2_kew1t")
+level = 57
+move = &"BUGBUZZ"
+
+[resource]
+resource_name = "YANMA"
+script = ExtResource("3_bnlrm")
+species = &"YANMA"
+category = "Clear Wing"
+pokedex_entry = "It can see 360 degrees without moving its eyes. It is a great flier capable of making sudden stops and turning midair to quickly chase down targeted prey."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 65
+base_attack = 65
+base_defense = 45
+base_special_attack = 75
+base_special_defense = 45
+base_speed = 95
+ev_speed = 1
+base_exp = 78
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_kew1t")]([SubResource("Resource_4qon1"), SubResource("Resource_racdp"), SubResource("Resource_v0drr"), SubResource("Resource_cfomp"), SubResource("Resource_wsktm"), SubResource("Resource_0k41w"), SubResource("Resource_u3io2"), SubResource("Resource_5mvjm"), SubResource("Resource_q4f78"), SubResource("Resource_qmgyu"), SubResource("Resource_pqmlx"), SubResource("Resource_kmw7x"), SubResource("Resource_4scwa"), SubResource("Resource_g0bfn"), SubResource("Resource_2sn2g"), SubResource("Resource_37kro")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ANCIENTPOWER", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"HEADBUTT", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STRINGSHOT", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"THIEF", &"UPROAR", &"UTURN"])
+egg_moves = Array[StringName]([&"DOUBLEEDGE", &"FEINT", &"LEECHLIFE", &"REVERSAL", &"WHIRLWIND"])
+abilities = Array[StringName]([&"SPEEDBOOST", &"COMPOUNDEYES"])
+hidden_abilities = Array[StringName]([&"FRISK"])
+wild_item_uncommon = Array[StringName]([&"WIDELENS"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ups0t")]([SubResource("Resource_i5syt")])
+height = 12
+weight = 380
+shape = &"MultiWinged"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 14)
+id = &"YANMA"
+display_name = "Yanma"

@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_758df"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ldji6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6jqr5"]
+
+[sub_resource type="Resource" id="Resource_wp5jh"]
+script = ExtResource("2_ldji6")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_nfy7d"]
+script = ExtResource("2_ldji6")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_ru6s5"]
+script = ExtResource("2_ldji6")
+level = 5
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_3r0o8"]
+script = ExtResource("2_ldji6")
+level = 10
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_cii01"]
+script = ExtResource("2_ldji6")
+level = 15
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_crrer"]
+script = ExtResource("2_ldji6")
+level = 20
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_pc5im"]
+script = ExtResource("2_ldji6")
+level = 25
+move = &"PARABOLICCHARGE"
+
+[sub_resource type="Resource" id="Resource_3d6wo"]
+script = ExtResource("2_ldji6")
+level = 30
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_5o0dj"]
+script = ExtResource("2_ldji6")
+level = 35
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_df5ua"]
+script = ExtResource("2_ldji6")
+level = 35
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_leqr1"]
+script = ExtResource("2_ldji6")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_xad4d"]
+script = ExtResource("2_ldji6")
+level = 45
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_jaei3"]
+script = ExtResource("2_ldji6")
+level = 50
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_wxq0g"]
+script = ExtResource("2_ldji6")
+level = 55
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_tuyv0"]
+script = ExtResource("2_ldji6")
+level = 60
+move = &"THUNDER"
+
+[resource]
+resource_name = "DEDENNE"
+script = ExtResource("3_6jqr5")
+species = &"DEDENNE"
+category = "Antenna"
+pokedex_entry = "Its whiskers serve as antennas. By sending and receiving electrical waves, it can communicate with others over vast distances."
+types = Array[StringName]([&"ELECTRIC", &"FAIRY"])
+base_hp = 67
+base_attack = 58
+base_defense = 57
+base_special_attack = 81
+base_special_defense = 67
+base_speed = 101
+ev_speed = 2
+base_exp = 151
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ldji6")]([SubResource("Resource_wp5jh"), SubResource("Resource_nfy7d"), SubResource("Resource_ru6s5"), SubResource("Resource_3r0o8"), SubResource("Resource_cii01"), SubResource("Resource_crrer"), SubResource("Resource_pc5im"), SubResource("Resource_3d6wo"), SubResource("Resource_5o0dj"), SubResource("Resource_df5ua"), SubResource("Resource_leqr1"), SubResource("Resource_xad4d"), SubResource("Resource_jaei3"), SubResource("Resource_wxq0g"), SubResource("Resource_tuyv0")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ATTRACT", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DAZZLINGGLEAM", &"DIG", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"LASTRESORT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"RECYCLE", &"REST", &"RETALIATE", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"UTURN", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"COVET", &"MAGNETRISE", &"TEARFULLOOK"])
+abilities = Array[StringName]([&"CHEEKPOUCH", &"PICKUP"])
+hidden_abilities = Array[StringName]([&"PLUS"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 5120
+height = 2
+weight = 22
+color = &"Yellow"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 34)
+id = &"DEDENNE"
+display_name = "Dedenne"

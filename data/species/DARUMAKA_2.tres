@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nx58a"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_uhvff"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_i18fu"]
+
+[sub_resource type="Resource" id="Resource_sraxi"]
+script = ExtResource("1_nx58a")
+species = &"DARMANITAN"
+method = &"Item"
+parameter = "ICESTONE"
+
+[sub_resource type="Resource" id="Resource_832vf"]
+script = ExtResource("2_uhvff")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_nyprj"]
+script = ExtResource("2_uhvff")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_8k5px"]
+script = ExtResource("2_uhvff")
+level = 4
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_gicpy"]
+script = ExtResource("2_uhvff")
+level = 8
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_yfrpb"]
+script = ExtResource("2_uhvff")
+level = 12
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_w2tyf"]
+script = ExtResource("2_uhvff")
+level = 16
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_qsxv0"]
+script = ExtResource("2_uhvff")
+level = 20
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_2u7ro"]
+script = ExtResource("2_uhvff")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_les12"]
+script = ExtResource("2_uhvff")
+level = 28
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_6pb01"]
+script = ExtResource("2_uhvff")
+level = 32
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_obr6g"]
+script = ExtResource("2_uhvff")
+level = 36
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_h8v4l"]
+script = ExtResource("2_uhvff")
+level = 40
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_h56ob"]
+script = ExtResource("2_uhvff")
+level = 44
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_axgjy"]
+script = ExtResource("2_uhvff")
+level = 48
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "DARUMAKA_2"
+script = ExtResource("3_i18fu")
+species = &"DARUMAKA"
+form = 2
+form_name = "Galarian"
+category = "Zen Charm"
+pokedex_entry = "The colder they get, the more energetic they are. They freeze their breath to make snowballs, using them as ammo for playful snowball fights."
+pokedex_form = 2
+types = Array[StringName]([&"ICE"])
+base_hp = 70
+base_attack = 90
+base_defense = 45
+base_special_attack = 15
+base_special_defense = 45
+base_speed = 50
+ev_attack = 1
+base_exp = 63
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_uhvff")]([SubResource("Resource_832vf"), SubResource("Resource_nyprj"), SubResource("Resource_8k5px"), SubResource("Resource_gicpy"), SubResource("Resource_yfrpb"), SubResource("Resource_w2tyf"), SubResource("Resource_qsxv0"), SubResource("Resource_2u7ro"), SubResource("Resource_les12"), SubResource("Resource_6pb01"), SubResource("Resource_obr6g"), SubResource("Resource_h8v4l"), SubResource("Resource_h56ob"), SubResource("Resource_axgjy")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENCORE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPUNCH", &"FIRESPIN", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSENERGY", &"FRUSTRATION", &"GRASSKNOT", &"GYROBALL", &"HEATWAVE", &"HIDDENPOWER", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"UPROAR", &"UTURN", &"WILLOWISP", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"FLAMEWHEEL", &"FOCUSPUNCH", &"FREEZEDRY", &"HAMMERARM", &"INCINERATE", &"POWERUPPUNCH", &"TAKEDOWN", &"YAWN"])
+abilities = Array[StringName]([&"HUSTLE"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nx58a")]([SubResource("Resource_sraxi")])
+height = 7
+weight = 400
+color = &"White"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 57)
+front_sprite_offset = Vector2i(3, 34)
+shadow_size = 1
+id = &"DARUMAKA_2"
+display_name = "Darumaka"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

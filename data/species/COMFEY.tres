@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ioshx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_61knh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tdeu3"]
+
+[sub_resource type="Resource" id="Resource_x1ve7"]
+script = ExtResource("2_61knh")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_t3qob"]
+script = ExtResource("2_61knh")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_8g3w3"]
+script = ExtResource("2_61knh")
+level = 3
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_urrtt"]
+script = ExtResource("2_61knh")
+level = 6
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_rdqb1"]
+script = ExtResource("2_61knh")
+level = 9
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_sh2s3"]
+script = ExtResource("2_61knh")
+level = 12
+move = &"FLOWERSHIELD"
+
+[sub_resource type="Resource" id="Resource_yyt6r"]
+script = ExtResource("2_61knh")
+level = 15
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_li1aa"]
+script = ExtResource("2_61knh")
+level = 18
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_i42h7"]
+script = ExtResource("2_61knh")
+level = 21
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_aa7k1"]
+script = ExtResource("2_61knh")
+level = 24
+move = &"GRASSKNOT"
+
+[sub_resource type="Resource" id="Resource_1o1fl"]
+script = ExtResource("2_61knh")
+level = 27
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_bfk8l"]
+script = ExtResource("2_61knh")
+level = 30
+move = &"FLORALHEALING"
+
+[sub_resource type="Resource" id="Resource_0hipo"]
+script = ExtResource("2_61knh")
+level = 33
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_oeycd"]
+script = ExtResource("2_61knh")
+level = 36
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_awmn8"]
+script = ExtResource("2_61knh")
+level = 39
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_2i88h"]
+script = ExtResource("2_61knh")
+level = 42
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_v68a8"]
+script = ExtResource("2_61knh")
+level = 45
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_uowqp"]
+script = ExtResource("2_61knh")
+level = 48
+move = &"GRASSYTERRAIN"
+
+[resource]
+resource_name = "COMFEY"
+script = ExtResource("3_tdeu3")
+species = &"COMFEY"
+category = "Posy Picker"
+pokedex_entry = "Baths prepared with the flowers from its vine have a relaxing effect, so this Pokémon is a hit with many people."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 51
+base_attack = 52
+base_defense = 90
+base_special_attack = 82
+base_special_defense = 110
+base_speed = 100
+ev_special_defense = 2
+base_exp = 170
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_61knh")]([SubResource("Resource_x1ve7"), SubResource("Resource_t3qob"), SubResource("Resource_8g3w3"), SubResource("Resource_urrtt"), SubResource("Resource_rdqb1"), SubResource("Resource_sh2s3"), SubResource("Resource_yyt6r"), SubResource("Resource_li1aa"), SubResource("Resource_i42h7"), SubResource("Resource_aa7k1"), SubResource("Resource_1o1fl"), SubResource("Resource_bfk8l"), SubResource("Resource_0hipo"), SubResource("Resource_oeycd"), SubResource("Resource_awmn8"), SubResource("Resource_2i88h"), SubResource("Resource_v68a8"), SubResource("Resource_uowqp")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AFTERYOU", &"ALLYSWITCH", &"AMNESIA", &"ATTRACT", &"BIND", &"BULLETSEED", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"DRAININGKISS", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PLAYROUGH", &"POLLENPUFF", &"PROTECT", &"PSYCHUP", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TAILWIND", &"TAUNT", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"TRICKROOM", &"UTURN", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AFTERYOU", &"LEAFTORNADO", &"WORRYSEED"])
+abilities = Array[StringName]([&"FLOWERVEIL", &"TRIAGE"])
+hidden_abilities = Array[StringName]([&"NATURALCURE"])
+wild_item_uncommon = Array[StringName]([&"MISTYSEED"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+weight = 3
+color = &"Green"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+id = &"COMFEY"
+display_name = "Comfey"

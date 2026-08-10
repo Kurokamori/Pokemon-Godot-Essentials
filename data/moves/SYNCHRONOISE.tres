@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_i02ep"]
+
+[resource]
+resource_name = "SYNCHRONOISE"
+script = ExtResource("1_i02ep")
+type = &"PSYCHIC"
+category = 1
+power = 120
+total_pp = 10
+target = &"AllNearOthers"
+function_code = &"FailsUnlessTargetSharesTypeWithUser"
+description = "Using an odd shock wave, the user damages any Pokémon of the same type as the user."
+id = &"SYNCHRONOISE"
+display_name = "Synchronoise"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

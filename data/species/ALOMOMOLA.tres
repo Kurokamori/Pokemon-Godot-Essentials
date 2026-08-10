@@ -1,0 +1,148 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bkk6l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fkex6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ty6h7"]
+
+[sub_resource type="Resource" id="Resource_l4e7b"]
+script = ExtResource("2_fkex6")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_5n5es"]
+script = ExtResource("2_fkex6")
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_s5sld"]
+script = ExtResource("2_fkex6")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_rj0qy"]
+script = ExtResource("2_fkex6")
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_7yiio"]
+script = ExtResource("2_fkex6")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_r0r00"]
+script = ExtResource("2_fkex6")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_ysw0b"]
+script = ExtResource("2_fkex6")
+move = &"WATERSPORT"
+
+[sub_resource type="Resource" id="Resource_mpgtc"]
+script = ExtResource("2_fkex6")
+level = 5
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_m1rv1"]
+script = ExtResource("2_fkex6")
+level = 9
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_s7q8y"]
+script = ExtResource("2_fkex6")
+level = 13
+move = &"DOUBLESLAP"
+
+[sub_resource type="Resource" id="Resource_3kawn"]
+script = ExtResource("2_fkex6")
+level = 17
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_qmerq"]
+script = ExtResource("2_fkex6")
+level = 21
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_15iok"]
+script = ExtResource("2_fkex6")
+level = 25
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_gwdw8"]
+script = ExtResource("2_fkex6")
+level = 29
+move = &"WAKEUPSLAP"
+
+[sub_resource type="Resource" id="Resource_2hgtg"]
+script = ExtResource("2_fkex6")
+level = 33
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_1eoqi"]
+script = ExtResource("2_fkex6")
+level = 37
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_fwm6a"]
+script = ExtResource("2_fkex6")
+level = 41
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_h7283"]
+script = ExtResource("2_fkex6")
+level = 45
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_f4eqf"]
+script = ExtResource("2_fkex6")
+level = 49
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_fbbw6"]
+script = ExtResource("2_fkex6")
+level = 53
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_ewha1"]
+script = ExtResource("2_fkex6")
+level = 57
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_a6aa0"]
+script = ExtResource("2_fkex6")
+level = 61
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_nc4pn"]
+script = ExtResource("2_fkex6")
+level = 65
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "ALOMOMOLA"
+script = ExtResource("3_ty6h7")
+species = &"ALOMOMOLA"
+category = "Caring"
+pokedex_entry = "Floating in the open sea is how they live. When they find a wounded Pokémon, they embrace it and bring it to shore."
+types = Array[StringName]([&"WATER"])
+base_hp = 165
+base_attack = 75
+base_defense = 80
+base_special_attack = 40
+base_special_defense = 45
+base_speed = 65
+ev_hp = 2
+base_exp = 165
+growth_rate = &"Fast"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fkex6")]([SubResource("Resource_l4e7b"), SubResource("Resource_5n5es"), SubResource("Resource_s5sld"), SubResource("Resource_rj0qy"), SubResource("Resource_7yiio"), SubResource("Resource_r0r00"), SubResource("Resource_ysw0b"), SubResource("Resource_mpgtc"), SubResource("Resource_m1rv1"), SubResource("Resource_s7q8y"), SubResource("Resource_3kawn"), SubResource("Resource_qmerq"), SubResource("Resource_15iok"), SubResource("Resource_gwdw8"), SubResource("Resource_2hgtg"), SubResource("Resource_1eoqi"), SubResource("Resource_fwm6a"), SubResource("Resource_h7283"), SubResource("Resource_f4eqf"), SubResource("Resource_fbbw6"), SubResource("Resource_ewha1"), SubResource("Resource_a6aa0"), SubResource("Resource_nc4pn")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BOUNCE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"KNOCKOFF", &"LIGHTSCREEN", &"LIQUIDATION", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"ENDURE", &"MIRRORCOAT", &"MIST", &"PAINSPLIT", &"REFRESH", &"TICKLE"])
+abilities = Array[StringName]([&"HEALER", &"HYDRATION"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+egg_groups = Array[StringName]([&"Water1", &"Water2"])
+hatch_steps = 10240
+height = 12
+weight = 316
+color = &"Pink"
+shape = &"Finned"
+generation = 5
+back_sprite_offset = Vector2i(-5, 49)
+front_sprite_offset = Vector2i(-5, 4)
+id = &"ALOMOMOLA"
+display_name = "Alomomola"

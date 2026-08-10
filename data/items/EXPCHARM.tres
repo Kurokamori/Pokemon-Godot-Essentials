@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_uc45i"]
+
+[resource]
+resource_name = "EXPCHARM"
+script = ExtResource("1_uc45i")
+name_plural = "Exp. Charms"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A charm that increases the Exp. Points that Pokémon can get. A machine-like object is inside it."
+id = &"EXPCHARM"
+display_name = "Exp. Charm"
+flags = Array[StringName]([&"KeyItem"])

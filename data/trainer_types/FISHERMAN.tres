@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_133w8"]
+
+[resource]
+resource_name = "FISHERMAN"
+script = ExtResource("1_133w8")
+gender = 0
+base_money = 32
+skill_level = 32
+id = &"FISHERMAN"
+display_name = "Fisherman"

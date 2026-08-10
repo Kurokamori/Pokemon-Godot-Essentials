@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6dgfo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_umsaw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_berho"]
+
+[sub_resource type="Resource" id="Resource_d3fj0"]
+script = ExtResource("1_6dgfo")
+species = &"UNFEZANT"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_8n7p5"]
+script = ExtResource("1_6dgfo")
+species = &"PIDOVE"
+method = &"Level"
+parameter = "21"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ugwe4"]
+script = ExtResource("2_umsaw")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_rxvub"]
+script = ExtResource("2_umsaw")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_5ed4s"]
+script = ExtResource("2_umsaw")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_4r0ps"]
+script = ExtResource("2_umsaw")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_gkkm0"]
+script = ExtResource("2_umsaw")
+level = 12
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_1mgtf"]
+script = ExtResource("2_umsaw")
+level = 16
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_f72io"]
+script = ExtResource("2_umsaw")
+level = 20
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_1q0gw"]
+script = ExtResource("2_umsaw")
+level = 26
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_ts8py"]
+script = ExtResource("2_umsaw")
+level = 34
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_or56r"]
+script = ExtResource("2_umsaw")
+level = 38
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_4ecda"]
+script = ExtResource("2_umsaw")
+level = 44
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_m8u34"]
+script = ExtResource("2_umsaw")
+level = 50
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_eufnl"]
+script = ExtResource("2_umsaw")
+level = 56
+move = &"SKYATTACK"
+
+[resource]
+resource_name = "TRANQUILL"
+script = ExtResource("3_berho")
+species = &"TRANQUILL"
+category = "Wild Pigeon"
+pokedex_entry = "Many people believe that, deep in the forest where Tranquill live, there is a peaceful place where there is no war."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 62
+base_attack = 77
+base_defense = 62
+base_special_attack = 50
+base_special_defense = 42
+base_speed = 65
+ev_attack = 2
+base_exp = 125
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_umsaw")]([SubResource("Resource_ugwe4"), SubResource("Resource_rxvub"), SubResource("Resource_5ed4s"), SubResource("Resource_4r0ps"), SubResource("Resource_gkkm0"), SubResource("Resource_1mgtf"), SubResource("Resource_f72io"), SubResource("Resource_1q0gw"), SubResource("Resource_ts8py"), SubResource("Resource_or56r"), SubResource("Resource_4ecda"), SubResource("Resource_m8u34"), SubResource("Resource_eufnl")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRSLASH", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"BIGPECKS", &"SUPERLUCK"])
+hidden_abilities = Array[StringName]([&"RIVALRY"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_6dgfo")]([SubResource("Resource_d3fj0"), SubResource("Resource_8n7p5")])
+height = 6
+weight = 150
+color = &"Gray"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 28)
+shadow_size = 1
+id = &"TRANQUILL"
+display_name = "Tranquill"

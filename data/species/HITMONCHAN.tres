@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_iy32e"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2ta7e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_w627v"]
+
+[sub_resource type="Resource" id="Resource_1xlkq"]
+script = ExtResource("1_iy32e")
+species = &"TYROGUE"
+method = &"DefenseGreater"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3g5jd"]
+script = ExtResource("2_2ta7e")
+level = 0
+move = &"DRAINPUNCH"
+
+[sub_resource type="Resource" id="Resource_8b36a"]
+script = ExtResource("2_2ta7e")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_b6cyj"]
+script = ExtResource("2_2ta7e")
+move = &"VACUUMWAVE"
+
+[sub_resource type="Resource" id="Resource_37xgp"]
+script = ExtResource("2_2ta7e")
+move = &"BULLETPUNCH"
+
+[sub_resource type="Resource" id="Resource_ibagf"]
+script = ExtResource("2_2ta7e")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_o8rwd"]
+script = ExtResource("2_2ta7e")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_os787"]
+script = ExtResource("2_2ta7e")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_d2sah"]
+script = ExtResource("2_2ta7e")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_y67c6"]
+script = ExtResource("2_2ta7e")
+level = 4
+move = &"MACHPUNCH"
+
+[sub_resource type="Resource" id="Resource_ojet7"]
+script = ExtResource("2_2ta7e")
+level = 8
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_bypv5"]
+script = ExtResource("2_2ta7e")
+level = 12
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_5vxfs"]
+script = ExtResource("2_2ta7e")
+level = 16
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_g6wq8"]
+script = ExtResource("2_2ta7e")
+level = 21
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_v7k5i"]
+script = ExtResource("2_2ta7e")
+level = 24
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_qloer"]
+script = ExtResource("2_2ta7e")
+level = 24
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_q6djq"]
+script = ExtResource("2_2ta7e")
+level = 24
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_dpnjb"]
+script = ExtResource("2_2ta7e")
+level = 28
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_8hf40"]
+script = ExtResource("2_2ta7e")
+level = 32
+move = &"MEGAPUNCH"
+
+[sub_resource type="Resource" id="Resource_fqhm5"]
+script = ExtResource("2_2ta7e")
+level = 36
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_bak7s"]
+script = ExtResource("2_2ta7e")
+level = 40
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_mingq"]
+script = ExtResource("2_2ta7e")
+level = 44
+move = &"FOCUSPUNCH"
+
+[resource]
+resource_name = "HITMONCHAN"
+script = ExtResource("3_w627v")
+species = &"HITMONCHAN"
+category = "Punching"
+pokedex_entry = "A Hitmonchan is said to possess the spirit of a boxer who aimed to become the world champion. Having an indomitable spirit means that it will never give up."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 50
+base_attack = 105
+base_defense = 79
+base_special_attack = 35
+base_special_defense = 110
+base_speed = 76
+ev_special_defense = 2
+base_exp = 159
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2ta7e")]([SubResource("Resource_3g5jd"), SubResource("Resource_8b36a"), SubResource("Resource_b6cyj"), SubResource("Resource_37xgp"), SubResource("Resource_ibagf"), SubResource("Resource_o8rwd"), SubResource("Resource_os787"), SubResource("Resource_d2sah"), SubResource("Resource_y67c6"), SubResource("Resource_ojet7"), SubResource("Resource_bypv5"), SubResource("Resource_5vxfs"), SubResource("Resource_g6wq8"), SubResource("Resource_v7k5i"), SubResource("Resource_qloer"), SubResource("Resource_q6djq"), SubResource("Resource_dpnjb"), SubResource("Resource_8hf40"), SubResource("Resource_fqhm5"), SubResource("Resource_bak7s"), SubResource("Resource_mingq")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"AURASPHERE", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"UPROAR", &"VACUUMWAVE", &"WORKUP"])
+abilities = Array[StringName]([&"KEENEYE", &"IRONFIST"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_iy32e")]([SubResource("Resource_1xlkq")])
+height = 14
+weight = 502
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 23)
+id = &"HITMONCHAN"
+display_name = "Hitmonchan"

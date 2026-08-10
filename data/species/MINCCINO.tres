@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ox2in"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3v2ul"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rts3g"]
+
+[sub_resource type="Resource" id="Resource_8b6g1"]
+script = ExtResource("1_ox2in")
+species = &"CINCCINO"
+method = &"Item"
+parameter = "SHINYSTONE"
+
+[sub_resource type="Resource" id="Resource_r8dlv"]
+script = ExtResource("2_3v2ul")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_avqyn"]
+script = ExtResource("2_3v2ul")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_rrgyw"]
+script = ExtResource("2_3v2ul")
+level = 4
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_5koph"]
+script = ExtResource("2_3v2ul")
+level = 8
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_itlkv"]
+script = ExtResource("2_3v2ul")
+level = 12
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_5fayj"]
+script = ExtResource("2_3v2ul")
+level = 16
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_jp5xt"]
+script = ExtResource("2_3v2ul")
+level = 20
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_1066g"]
+script = ExtResource("2_3v2ul")
+level = 24
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_2wh5l"]
+script = ExtResource("2_3v2ul")
+level = 28
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_j7lfu"]
+script = ExtResource("2_3v2ul")
+level = 32
+move = &"TAILSLAP"
+
+[sub_resource type="Resource" id="Resource_3keby"]
+script = ExtResource("2_3v2ul")
+level = 36
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_c24jw"]
+script = ExtResource("2_3v2ul")
+level = 40
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_qpyb4"]
+script = ExtResource("2_3v2ul")
+level = 44
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_mig08"]
+script = ExtResource("2_3v2ul")
+level = 48
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "MINCCINO"
+script = ExtResource("3_rts3g")
+species = &"MINCCINO"
+category = "Chinchilla"
+pokedex_entry = "These Pokémon prefer a tidy habitat. They are always sweeping and dusting, using their tails as brooms."
+base_hp = 55
+base_attack = 50
+base_defense = 40
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 75
+ev_speed = 1
+base_exp = 60
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3v2ul")]([SubResource("Resource_r8dlv"), SubResource("Resource_avqyn"), SubResource("Resource_rrgyw"), SubResource("Resource_5koph"), SubResource("Resource_itlkv"), SubResource("Resource_5fayj"), SubResource("Resource_jp5xt"), SubResource("Resource_1066g"), SubResource("Resource_2wh5l"), SubResource("Resource_j7lfu"), SubResource("Resource_3keby"), SubResource("Resource_c24jw"), SubResource("Resource_qpyb4"), SubResource("Resource_mig08")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AQUATAIL", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DIG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"THIEF", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRIPLEAXEL", &"UPROAR", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"AQUATAIL", &"FLAIL", &"KNOCKOFF", &"TAILWHIP"])
+abilities = Array[StringName]([&"CUTECHARM", &"TECHNICIAN"])
+hidden_abilities = Array[StringName]([&"SKILLLINK"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ox2in")]([SubResource("Resource_8b6g1")])
+height = 4
+weight = 58
+color = &"Gray"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(1, 23)
+shadow_size = 1
+id = &"MINCCINO"
+display_name = "Minccino"

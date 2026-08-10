@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dfeio"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tf1ws"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_enmrf"]
+
+[sub_resource type="Resource" id="Resource_oo82i"]
+script = ExtResource("1_dfeio")
+species = &"LAMPENT"
+method = &"Item"
+parameter = "DUSKSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ionaq"]
+script = ExtResource("2_tf1ws")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_tcmmy"]
+script = ExtResource("2_tf1ws")
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_4oyjj"]
+script = ExtResource("2_tf1ws")
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_y4qao"]
+script = ExtResource("2_tf1ws")
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_amhad"]
+script = ExtResource("2_tf1ws")
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_q0yg1"]
+script = ExtResource("2_tf1ws")
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_jnrnv"]
+script = ExtResource("2_tf1ws")
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_22yx6"]
+script = ExtResource("2_tf1ws")
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_lr6gs"]
+script = ExtResource("2_tf1ws")
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_ed803"]
+script = ExtResource("2_tf1ws")
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_7xrph"]
+script = ExtResource("2_tf1ws")
+move = &"OVERHEAT"
+
+[sub_resource type="Resource" id="Resource_c0mdb"]
+script = ExtResource("2_tf1ws")
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_5aq2s"]
+script = ExtResource("2_tf1ws")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_d6hb5"]
+script = ExtResource("2_tf1ws")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_jg8ee"]
+script = ExtResource("2_tf1ws")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_qi7fu"]
+script = ExtResource("2_tf1ws")
+move = &"MINIMIZE"
+
+[resource]
+resource_name = "CHANDELURE"
+script = ExtResource("3_enmrf")
+species = &"CHANDELURE"
+category = "Luring"
+pokedex_entry = "Being consumed in Chandelure's flame burns up the spirit, leaving the body behind."
+types = Array[StringName]([&"GHOST", &"FIRE"])
+base_hp = 60
+base_attack = 55
+base_defense = 90
+base_special_attack = 145
+base_special_defense = 90
+base_speed = 80
+ev_special_attack = 3
+base_exp = 260
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tf1ws")]([SubResource("Resource_ionaq"), SubResource("Resource_tcmmy"), SubResource("Resource_4oyjj"), SubResource("Resource_y4qao"), SubResource("Resource_amhad"), SubResource("Resource_q0yg1"), SubResource("Resource_jnrnv"), SubResource("Resource_22yx6"), SubResource("Resource_lr6gs"), SubResource("Resource_ed803"), SubResource("Resource_7xrph"), SubResource("Resource_c0mdb"), SubResource("Resource_5aq2s"), SubResource("Resource_d6hb5"), SubResource("Resource_jg8ee"), SubResource("Resource_qi7fu")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BURNINGJEALOUSY", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"INCINERATE", &"LASERFOCUS", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"PAINSPLIT", &"PAYBACK", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"TRICKROOM", &"WILLOWISP"])
+abilities = Array[StringName]([&"FLASHFIRE", &"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_dfeio")]([SubResource("Resource_oo82i")])
+height = 10
+weight = 343
+color = &"Black"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(0, 32)
+front_sprite_offset = Vector2i(-3, 5)
+id = &"CHANDELURE"
+display_name = "Chandelure"

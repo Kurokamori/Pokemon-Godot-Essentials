@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1u7sk"]
+
+[resource]
+resource_name = "METAGROSSITE"
+script = ExtResource("1_1u7sk")
+name_plural = "Metagrossites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Metagross hold it, and it will be able to Mega Evolve."
+id = &"METAGROSSITE"
+display_name = "Metagrossite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

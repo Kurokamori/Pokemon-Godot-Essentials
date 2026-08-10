@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ne7by"]
+
+[resource]
+resource_name = "GOOEY"
+script = ExtResource("1_ne7by")
+description = "Contact with it lowers the attacker's Speed stat."
+id = &"GOOEY"
+display_name = "Gooey"

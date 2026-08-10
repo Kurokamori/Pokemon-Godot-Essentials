@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tbq0a"]
+
+[resource]
+resource_name = "RAGEPOWDER"
+script = ExtResource("1_tbq0a")
+type = &"BUG"
+accuracy = 0
+total_pp = 20
+target = &"User"
+priority = 2
+function_code = &"RedirectAllMovesToUser"
+description = "The user scatters irritating powder to draw attention to itself. Opponents aim only at the user."
+id = &"RAGEPOWDER"
+display_name = "Rage Powder"
+flags = Array[StringName]([&"Powder"])

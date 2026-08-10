@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bm8qx"]
+
+[resource]
+resource_name = "PPMAX"
+script = ExtResource("1_bm8qx")
+name_plural = "PP Maxes"
+portion_name = "bottle of PP Max"
+portion_name_plural = "bottles of PP Max"
+pocket = 2
+price = 10000
+sell_price = 5000
+field_use = 1
+description = "It maximally raises the top PP of a selected move that has been learned by the target Pokémon."
+id = &"PPMAX"
+display_name = "PP Max"
+flags = Array[StringName]([&"Fling_30"])

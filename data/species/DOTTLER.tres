@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_14vnc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8sdop"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gu8n6"]
+
+[sub_resource type="Resource" id="Resource_flf68"]
+script = ExtResource("1_14vnc")
+species = &"ORBEETLE"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_r4tlw"]
+script = ExtResource("1_14vnc")
+species = &"BLIPBUG"
+method = &"Level"
+parameter = "10"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ucyhk"]
+script = ExtResource("2_8sdop")
+level = 0
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_jcwu3"]
+script = ExtResource("2_8sdop")
+level = 0
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_wktco"]
+script = ExtResource("2_8sdop")
+level = 0
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_28tj6"]
+script = ExtResource("2_8sdop")
+move = &"STRUGGLEBUG"
+
+[resource]
+resource_name = "DOTTLER"
+script = ExtResource("3_gu8n6")
+species = &"DOTTLER"
+category = "Radome"
+pokedex_entry = "It barely moves, but it's still alive. Hiding in its shell without food or water seems to have awakened its psychic powers."
+types = Array[StringName]([&"BUG", &"PSYCHIC"])
+base_hp = 50
+base_attack = 35
+base_defense = 80
+base_special_attack = 50
+base_special_defense = 90
+base_speed = 30
+ev_special_defense = 2
+base_exp = 117
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8sdop")]([SubResource("Resource_ucyhk"), SubResource("Resource_jcwu3"), SubResource("Resource_wktco"), SubResource("Resource_28tj6")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYPRESS", &"BUGBUZZ", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"GUARDSWAP", &"HELPINGHAND", &"HIDDENPOWER", &"IMPRISON", &"IRONDEFENSE", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SWARM", &"COMPOUNDEYES"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+wild_item_uncommon = Array[StringName]([&"PSYCHICSEED"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_14vnc")]([SubResource("Resource_flf68"), SubResource("Resource_r4tlw")])
+height = 4
+weight = 195
+color = &"Yellow"
+shape = &"Insectoid"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 31)
+id = &"DOTTLER"
+display_name = "Dottler"

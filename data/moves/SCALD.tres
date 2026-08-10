@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ff0q1"]
+
+[resource]
+resource_name = "SCALD"
+script = ExtResource("1_ff0q1")
+type = &"WATER"
+category = 1
+power = 80
+total_pp = 15
+function_code = &"BurnTarget"
+effect_chance = 30
+description = "The user shoots boiling hot water at its target. It may also leave the target with a burn."
+id = &"SCALD"
+display_name = "Scald"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"ThawsUser"])

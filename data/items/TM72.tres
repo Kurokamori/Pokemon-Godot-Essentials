@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4ub8t"]
+
+[resource]
+resource_name = "TM72"
+script = ExtResource("1_4ub8t")
+name_plural = "TM72s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"AVALANCHE"
+description = "The power of this attack move is doubled if the user has been hurt by the target in the same turn."
+id = &"TM72"
+display_name = "TM72"
+flags = Array[StringName]([&"Fling_60"])

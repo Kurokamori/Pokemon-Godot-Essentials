@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0b06c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_va4qa"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pmkj4"]
+
+[sub_resource type="Resource" id="Resource_3gfqj"]
+script = ExtResource("1_0b06c")
+species = &"PIDGEOTTO"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_gxqgl"]
+script = ExtResource("2_va4qa")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_d1hov"]
+script = ExtResource("2_va4qa")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_rrxh0"]
+script = ExtResource("2_va4qa")
+level = 9
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_6021f"]
+script = ExtResource("2_va4qa")
+level = 13
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_nd0iy"]
+script = ExtResource("2_va4qa")
+level = 17
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_t5qov"]
+script = ExtResource("2_va4qa")
+level = 21
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_cx0ry"]
+script = ExtResource("2_va4qa")
+level = 25
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_p13wh"]
+script = ExtResource("2_va4qa")
+level = 29
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_68yt5"]
+script = ExtResource("2_va4qa")
+level = 33
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_s8m5o"]
+script = ExtResource("2_va4qa")
+level = 37
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_rc61g"]
+script = ExtResource("2_va4qa")
+level = 41
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_s7vj0"]
+script = ExtResource("2_va4qa")
+level = 45
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_6dfmi"]
+script = ExtResource("2_va4qa")
+level = 49
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_l07ib"]
+script = ExtResource("2_va4qa")
+level = 53
+move = &"HURRICANE"
+
+[resource]
+resource_name = "PIDGEY"
+script = ExtResource("3_pmkj4")
+species = &"PIDGEY"
+category = "Tiny Bird"
+pokedex_entry = "It has an extremely sharp sense of direction. It can unerringly return home to its nest, however far it may be removed from its familiar surroundings."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 40
+base_attack = 45
+base_defense = 40
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 56
+ev_speed = 1
+base_exp = 50
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_va4qa")]([SubResource("Resource_gxqgl"), SubResource("Resource_d1hov"), SubResource("Resource_rrxh0"), SubResource("Resource_6021f"), SubResource("Resource_nd0iy"), SubResource("Resource_t5qov"), SubResource("Resource_cx0ry"), SubResource("Resource_p13wh"), SubResource("Resource_68yt5"), SubResource("Resource_s8m5o"), SubResource("Resource_rc61g"), SubResource("Resource_s7vj0"), SubResource("Resource_6dfmi"), SubResource("Resource_l07ib")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"AIRCUTTER", &"AIRSLASH", &"BRAVEBIRD", &"UPROAR"])
+abilities = Array[StringName]([&"KEENEYE", &"TANGLEDFEET"])
+hidden_abilities = Array[StringName]([&"BIGPECKS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_0b06c")]([SubResource("Resource_3gfqj")])
+height = 3
+weight = 18
+color = &"Brown"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"PIDGEY"
+display_name = "Pidgey"

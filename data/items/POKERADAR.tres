@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_oy6k2"]
+
+[resource]
+resource_name = "POKERADAR"
+script = ExtResource("1_oy6k2")
+name_plural = "Poké Radars"
+pocket = 8
+field_use = 2
+consumable = false
+show_quantity = false
+description = "A tool that can search out Pokémon that are hiding in grass. Its battery is recharged as you walk."
+id = &"POKERADAR"
+display_name = "Poké Radar"
+flags = Array[StringName]([&"KeyItem"])

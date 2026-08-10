@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_sh51g"]
+
+[resource]
+resource_name = "TICKLE"
+script = ExtResource("1_sh51g")
+total_pp = 20
+function_code = &"LowerTargetAtkDef1"
+description = "The user tickles the target into laughing, reducing its Attack and Defense stats."
+id = &"TICKLE"
+display_name = "Tickle"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

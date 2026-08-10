@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xy15m"]
+
+[resource]
+resource_name = "DESTINYKNOT"
+script = ExtResource("1_xy15m")
+name_plural = "Destiny Knots"
+price = 3000
+sell_price = 2000
+bp_price = 10
+description = "A long, thin, bright-red string to be held by a Pokémon. If the holder becomes infatuated, so does the foe."
+id = &"DESTINYKNOT"
+display_name = "Destiny Knot"
+flags = Array[StringName]([&"Fling_10"])

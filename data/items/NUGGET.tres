@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_socf6"]
+
+[resource]
+resource_name = "NUGGET"
+script = ExtResource("1_socf6")
+name_plural = "Nuggets"
+price = 10000
+sell_price = 5000
+description = "A nugget of pure gold that gives off a lustrous gleam. It can be sold at a high price to shops."
+id = &"NUGGET"
+display_name = "Nugget"
+flags = Array[StringName]([&"Fling_30"])

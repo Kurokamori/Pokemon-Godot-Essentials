@@ -1,0 +1,71 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_je5t5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_is0ca"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fpb48"]
+
+[sub_resource type="Resource" id="Resource_o0wf1"]
+script = ExtResource("1_je5t5")
+species = &"HUNTAIL"
+method = &"TradeItem"
+parameter = "DEEPSEATOOTH"
+
+[sub_resource type="Resource" id="Resource_3l5su"]
+script = ExtResource("1_je5t5")
+species = &"GOREBYSS"
+method = &"TradeItem"
+parameter = "DEEPSEASCALE"
+
+[sub_resource type="Resource" id="Resource_fu84e"]
+script = ExtResource("2_is0ca")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_sm6id"]
+script = ExtResource("2_is0ca")
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_nlkid"]
+script = ExtResource("2_is0ca")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_utc0f"]
+script = ExtResource("2_is0ca")
+level = 50
+move = &"SHELLSMASH"
+
+[resource]
+resource_name = "CLAMPERL"
+script = ExtResource("3_fpb48")
+species = &"CLAMPERL"
+category = "Bivalve"
+pokedex_entry = "A Clamperl slams its shell closed on prey to prevent escape. The pearl it creates upon evolution is said to be infused with a mysterious energy."
+types = Array[StringName]([&"WATER"])
+base_hp = 35
+base_attack = 64
+base_defense = 85
+base_special_attack = 74
+base_special_defense = 55
+base_speed = 32
+ev_defense = 1
+base_exp = 69
+growth_rate = &"Erratic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_is0ca")]([SubResource("Resource_fu84e"), SubResource("Resource_sm6id"), SubResource("Resource_nlkid"), SubResource("Resource_utc0f")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AQUARING", &"BODYSLAM", &"CONFUSERAY", &"MUDDYWATER", &"SUPERSONIC"])
+abilities = Array[StringName]([&"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+wild_item_common = Array[StringName]([&"PEARL"])
+wild_item_uncommon = Array[StringName]([&"BIGPEARL"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_je5t5")]([SubResource("Resource_o0wf1"), SubResource("Resource_3l5su")])
+height = 4
+weight = 525
+color = &"Blue"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 31)
+id = &"CLAMPERL"
+display_name = "Clamperl"

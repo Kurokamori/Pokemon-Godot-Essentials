@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EvolutionMethodData" format=3]
+
+[ext_resource type="Script" path="res://src/data/evolution_method_data.gd" id="1_vlito"]
+
+[resource]
+resource_name = "ItemMale"
+script = ExtResource("1_vlito")
+parameter_type = 2
+on_use_item = true
+id = &"ItemMale"
+display_name = "ItemMale"

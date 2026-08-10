@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3f4fc"]
+
+[resource]
+resource_name = "CAMOUFLAGE"
+script = ExtResource("1_3f4fc")
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"SetUserTypesBasedOnEnvironment"
+description = "The user's type is changed depending on its environment, such as at water's edge, in grass, or in a cave."
+id = &"CAMOUFLAGE"
+display_name = "Camouflage"

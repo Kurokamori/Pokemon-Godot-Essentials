@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_f82v6"]
+
+[resource]
+resource_name = "BATTLEBOND"
+script = ExtResource("1_f82v6")
+description = "Defeating a foe lets it become Ash-Greninja."
+id = &"BATTLEBOND"
+display_name = "Battle Bond"

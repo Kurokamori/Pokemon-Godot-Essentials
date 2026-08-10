@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_uogly"]
+
+[resource]
+resource_name = "GUILLOTINE"
+script = ExtResource("1_uogly")
+category = 0
+power = 1
+accuracy = 30
+function_code = &"OHKO"
+description = "A vicious, tearing attack with big pincers. The target will faint instantly if this attack hits."
+id = &"GUILLOTINE"
+display_name = "Guillotine"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

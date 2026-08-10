@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7k6ys"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_utaqd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qvbra"]
+
+[sub_resource type="Resource" id="Resource_ksceg"]
+script = ExtResource("1_7k6ys")
+species = &"LEDYBA"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_iorfc"]
+script = ExtResource("2_utaqd")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_k373l"]
+script = ExtResource("2_utaqd")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_b82k5"]
+script = ExtResource("2_utaqd")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_igsf6"]
+script = ExtResource("2_utaqd")
+level = 5
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_15xhm"]
+script = ExtResource("2_utaqd")
+level = 8
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_8er8w"]
+script = ExtResource("2_utaqd")
+level = 12
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_8pkrm"]
+script = ExtResource("2_utaqd")
+level = 12
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_tlg7e"]
+script = ExtResource("2_utaqd")
+level = 12
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_wmojw"]
+script = ExtResource("2_utaqd")
+level = 15
+move = &"MACHPUNCH"
+
+[sub_resource type="Resource" id="Resource_ttync"]
+script = ExtResource("2_utaqd")
+level = 20
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_p303g"]
+script = ExtResource("2_utaqd")
+level = 24
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_10277"]
+script = ExtResource("2_utaqd")
+level = 29
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_gpr5i"]
+script = ExtResource("2_utaqd")
+level = 33
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_oh3lo"]
+script = ExtResource("2_utaqd")
+level = 38
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_8074t"]
+script = ExtResource("2_utaqd")
+level = 42
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_2ut44"]
+script = ExtResource("2_utaqd")
+level = 47
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "LEDIAN"
+script = ExtResource("3_qvbra")
+species = &"LEDIAN"
+category = "Five Star"
+pokedex_entry = "It is said that in lands with clean air, where the stars fill the sky, there live many Ledian. For good reason, they use the light of the stars as energy."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 55
+base_attack = 35
+base_defense = 50
+base_special_attack = 55
+base_special_defense = 110
+base_speed = 85
+ev_special_defense = 2
+base_exp = 137
+growth_rate = &"Fast"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_utaqd")]([SubResource("Resource_iorfc"), SubResource("Resource_k373l"), SubResource("Resource_b82k5"), SubResource("Resource_igsf6"), SubResource("Resource_15xhm"), SubResource("Resource_8er8w"), SubResource("Resource_8pkrm"), SubResource("Resource_tlg7e"), SubResource("Resource_wmojw"), SubResource("Resource_ttync"), SubResource("Resource_p303g"), SubResource("Resource_10277"), SubResource("Resource_gpr5i"), SubResource("Resource_oh3lo"), SubResource("Resource_8074t"), SubResource("Resource_2ut44")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BRICKBREAK", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"INFESTATION", &"KNOCKOFF", &"LIGHTSCREEN", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"POWERUPPUNCH", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"THIEF", &"THUNDERPUNCH", &"UPROAR", &"UTURN"])
+abilities = Array[StringName]([&"SWARM", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"IRONFIST"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_7k6ys")]([SubResource("Resource_ksceg")])
+height = 14
+weight = 356
+shape = &"Winged"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 17)
+id = &"LEDIAN"
+display_name = "Ledian"

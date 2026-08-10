@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_b7ofm"]
+
+[resource]
+resource_name = "FAIRYLOCK"
+script = ExtResource("1_b7ofm")
+type = &"FAIRY"
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+function_code = &"TrapAllBattlersInBattleForOneTurn"
+description = "By locking down the battlefield, the user keeps all Pokémon from fleeing during the next turn."
+id = &"FAIRYLOCK"
+display_name = "Fairy Lock"
+flags = Array[StringName]([&"CanMirrorMove"])

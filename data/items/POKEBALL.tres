@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_snoac"]
+
+[resource]
+resource_name = "POKEBALL"
+script = ExtResource("1_snoac")
+name_plural = "Poké Balls"
+pocket = 3
+price = 200
+sell_price = 100
+battle_use = 4
+description = "A device for catching wild Pokémon. It is thrown like a ball at the target. It is designed as a capsule system."
+id = &"POKEBALL"
+display_name = "Poké Ball"
+flags = Array[StringName]([&"PokeBall"])

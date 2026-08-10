@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_tlltf"]
+
+[resource]
+resource_name = "ROCKYHELMET"
+script = ExtResource("1_tlltf")
+name_plural = "Rocky Helmets"
+price = 3000
+sell_price = 2000
+bp_price = 25
+description = "If the holder of this item takes damage, the attacker will also be damaged upon contact."
+id = &"ROCKYHELMET"
+display_name = "Rocky Helmet"
+flags = Array[StringName]([&"Fling_60"])

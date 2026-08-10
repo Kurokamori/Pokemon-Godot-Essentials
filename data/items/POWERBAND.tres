@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_cbvsi"]
+
+[resource]
+resource_name = "POWERBAND"
+script = ExtResource("1_cbvsi")
+name_plural = "Power Bands"
+price = 3000
+sell_price = 1500
+bp_price = 10
+description = "A Pokémon held item that promotes Sp. Def gain on leveling, but reduces the Speed stat."
+id = &"POWERBAND"
+display_name = "Power Band"
+flags = Array[StringName]([&"Fling_70"])

@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hwe3j"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ncn6a"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hxu0l"]
+
+[sub_resource type="Resource" id="Resource_elkme"]
+script = ExtResource("1_hwe3j")
+species = &"WEEPINBELL"
+method = &"Item"
+parameter = "LEAFSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_u0pyh"]
+script = ExtResource("2_ncn6a")
+level = 0
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_c4m8f"]
+script = ExtResource("2_ncn6a")
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_4i5xc"]
+script = ExtResource("2_ncn6a")
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_al75i"]
+script = ExtResource("2_ncn6a")
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_2jqbt"]
+script = ExtResource("2_ncn6a")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_h2ean"]
+script = ExtResource("2_ncn6a")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_esvha"]
+script = ExtResource("2_ncn6a")
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_in6fb"]
+script = ExtResource("2_ncn6a")
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_cnhkt"]
+script = ExtResource("2_ncn6a")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_x4p7j"]
+script = ExtResource("2_ncn6a")
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_lno5k"]
+script = ExtResource("2_ncn6a")
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_s0hua"]
+script = ExtResource("2_ncn6a")
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_xt3j4"]
+script = ExtResource("2_ncn6a")
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_nooj2"]
+script = ExtResource("2_ncn6a")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_mcuu4"]
+script = ExtResource("2_ncn6a")
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_70gp0"]
+script = ExtResource("2_ncn6a")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_6ayur"]
+script = ExtResource("2_ncn6a")
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_4yj2f"]
+script = ExtResource("2_ncn6a")
+level = 32
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_klt6m"]
+script = ExtResource("2_ncn6a")
+level = 44
+move = &"LEAFBLADE"
+
+[resource]
+resource_name = "VICTREEBEL"
+script = ExtResource("3_hxu0l")
+species = &"VICTREEBEL"
+category = "Flycatcher"
+pokedex_entry = "The long vine extending from its head is waved about as if it were a living thing to attract prey. When an unsuspecting victim approaches, it is swallowed whole."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 80
+base_attack = 105
+base_defense = 65
+base_special_attack = 100
+base_special_defense = 70
+base_speed = 70
+ev_attack = 3
+base_exp = 245
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ncn6a")]([SubResource("Resource_u0pyh"), SubResource("Resource_c4m8f"), SubResource("Resource_4i5xc"), SubResource("Resource_al75i"), SubResource("Resource_2jqbt"), SubResource("Resource_h2ean"), SubResource("Resource_esvha"), SubResource("Resource_in6fb"), SubResource("Resource_cnhkt"), SubResource("Resource_x4p7j"), SubResource("Resource_lno5k"), SubResource("Resource_s0hua"), SubResource("Resource_xt3j4"), SubResource("Resource_nooj2"), SubResource("Resource_mcuu4"), SubResource("Resource_70gp0"), SubResource("Resource_6ayur"), SubResource("Resource_4yj2f"), SubResource("Resource_klt6m")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POISONJAB", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"VENOSHOCK", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_hwe3j")]([SubResource("Resource_elkme")])
+height = 17
+weight = 155
+color = &"Green"
+shape = &"HeadBase"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(8, 13)
+id = &"VICTREEBEL"
+display_name = "Victreebel"

@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nvnp6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_03a3p"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kvi0r"]
+
+[sub_resource type="Resource" id="Resource_irsjx"]
+script = ExtResource("1_nvnp6")
+species = &"SLOWBRO"
+method = &"Item"
+parameter = "GALARICACUFF"
+
+[sub_resource type="Resource" id="Resource_fhf3o"]
+script = ExtResource("1_nvnp6")
+species = &"SLOWKING"
+method = &"Item"
+parameter = "GALARICAWREATH"
+
+[sub_resource type="Resource" id="Resource_o8734"]
+script = ExtResource("2_03a3p")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_4pp6i"]
+script = ExtResource("2_03a3p")
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_ykyvj"]
+script = ExtResource("2_03a3p")
+level = 3
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_tnysk"]
+script = ExtResource("2_03a3p")
+level = 6
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_wv3r7"]
+script = ExtResource("2_03a3p")
+level = 9
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_25uvb"]
+script = ExtResource("2_03a3p")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_6iboy"]
+script = ExtResource("2_03a3p")
+level = 15
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_c7v4n"]
+script = ExtResource("2_03a3p")
+level = 18
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_dv4rq"]
+script = ExtResource("2_03a3p")
+level = 21
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_tqju3"]
+script = ExtResource("2_03a3p")
+level = 24
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_qx6kx"]
+script = ExtResource("2_03a3p")
+level = 27
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_tkm6l"]
+script = ExtResource("2_03a3p")
+level = 30
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_s3dpl"]
+script = ExtResource("2_03a3p")
+level = 33
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_r0omn"]
+script = ExtResource("2_03a3p")
+level = 36
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_c23rn"]
+script = ExtResource("2_03a3p")
+level = 39
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_5crx6"]
+script = ExtResource("2_03a3p")
+level = 42
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_t8w4y"]
+script = ExtResource("2_03a3p")
+level = 45
+move = &"HEALPULSE"
+
+[resource]
+resource_name = "SLOWPOKE_1"
+script = ExtResource("3_kvi0r")
+species = &"SLOWPOKE"
+form = 1
+form_name = "Galarian"
+category = "Dopey"
+pokedex_entry = "Although this Pokémon is normally zoned out, its expression abruptly sharpens on occasion. The cause for this seems to lie in Slowpoke's diet."
+pokedex_form = 1
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 90
+base_attack = 65
+base_defense = 65
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 15
+ev_hp = 1
+base_exp = 63
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_03a3p")]([SubResource("Resource_o8734"), SubResource("Resource_4pp6i"), SubResource("Resource_ykyvj"), SubResource("Resource_tnysk"), SubResource("Resource_wv3r7"), SubResource("Resource_25uvb"), SubResource("Resource_6iboy"), SubResource("Resource_c7v4n"), SubResource("Resource_dv4rq"), SubResource("Resource_tqju3"), SubResource("Resource_qx6kx"), SubResource("Resource_tkm6l"), SubResource("Resource_s3dpl"), SubResource("Resource_r0omn"), SubResource("Resource_c23rn"), SubResource("Resource_5crx6"), SubResource("Resource_t8w4y")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GRASSKNOT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"IRONTAIL", &"LIGHTSCREEN", &"LIQUIDATION", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYDAY", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYSHOCK", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WEATHERBALL", &"WHIRLPOOL", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BELCH", &"BELLYDRUM", &"BLOCK", &"FUTURESIGHT", &"SNORE", &"STOMP", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"GLUTTONY", &"OWNTEMPO"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+wild_item_uncommon = Array[StringName]([&"LAGGINGTAIL"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nvnp6")]([SubResource("Resource_irsjx"), SubResource("Resource_fhf3o")])
+height = 12
+weight = 360
+color = &"Pink"
+shape = &"Quadruped"
+habitat = &"WatersEdge"
+generation = 8
+back_sprite_offset = Vector2i(0, 62)
+front_sprite_offset = Vector2i(2, 38)
+id = &"SLOWPOKE_1"
+display_name = "Slowpoke"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

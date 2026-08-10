@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ogj7s"]
+
+[resource]
+resource_name = "FURCOAT"
+script = ExtResource("1_ogj7s")
+description = "Halves the damage from physical moves."
+id = &"FURCOAT"
+display_name = "Fur Coat"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_aevps"]
+
+[resource]
+resource_name = "EVERSTONE"
+script = ExtResource("1_aevps")
+name_plural = "Everstones"
+price = 3000
+sell_price = 1500
+bp_price = 5
+description = "An item to be held by a Pokémon. The Pokémon holding this peculiar stone is prevented from evolving."
+id = &"EVERSTONE"
+display_name = "Everstone"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ouysc"]
+
+[resource]
+resource_name = "ZYGARDECUBE"
+script = ExtResource("1_ouysc")
+name_plural = "Zygarde Cubes"
+pocket = 8
+field_use = 1
+consumable = false
+show_quantity = false
+description = "An item in which Zygarde Cores and Cells are gathered. You can also use it to change Zygarde's forms."
+id = &"ZYGARDECUBE"
+display_name = "Zygarde Cube"
+flags = Array[StringName]([&"KeyItem"])

@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_q4kx3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i05bw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nqgni"]
+
+[sub_resource type="Resource" id="Resource_8m8ux"]
+script = ExtResource("1_q4kx3")
+species = &"GOGOAT"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_3ix0l"]
+script = ExtResource("2_i05bw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_no5wr"]
+script = ExtResource("2_i05bw")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_0bvli"]
+script = ExtResource("2_i05bw")
+level = 7
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_om23e"]
+script = ExtResource("2_i05bw")
+level = 9
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_sc420"]
+script = ExtResource("2_i05bw")
+level = 12
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_5yb73"]
+script = ExtResource("2_i05bw")
+level = 13
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_t2v30"]
+script = ExtResource("2_i05bw")
+level = 16
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_k4jli"]
+script = ExtResource("2_i05bw")
+level = 20
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_03avx"]
+script = ExtResource("2_i05bw")
+level = 22
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_50ts4"]
+script = ExtResource("2_i05bw")
+level = 26
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_acpnw"]
+script = ExtResource("2_i05bw")
+level = 30
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_thhhq"]
+script = ExtResource("2_i05bw")
+level = 34
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_smwi2"]
+script = ExtResource("2_i05bw")
+level = 38
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_lvfhn"]
+script = ExtResource("2_i05bw")
+level = 42
+move = &"HORNLEECH"
+
+[sub_resource type="Resource" id="Resource_5q17n"]
+script = ExtResource("2_i05bw")
+level = 45
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_jysde"]
+script = ExtResource("2_i05bw")
+level = 50
+move = &"MILKDRINK"
+
+[resource]
+resource_name = "SKIDDO"
+script = ExtResource("3_nqgni")
+species = &"SKIDDO"
+category = "Mount"
+pokedex_entry = "If it has sunshine and water, it doesn't need to eat, because it can generate energy from the leaves on its back."
+types = Array[StringName]([&"GRASS"])
+base_hp = 66
+base_attack = 65
+base_defense = 48
+base_special_attack = 62
+base_special_defense = 57
+base_speed = 52
+ev_hp = 1
+base_exp = 70
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_i05bw")]([SubResource("Resource_3ix0l"), SubResource("Resource_no5wr"), SubResource("Resource_0bvli"), SubResource("Resource_om23e"), SubResource("Resource_sc420"), SubResource("Resource_5yb73"), SubResource("Resource_t2v30"), SubResource("Resource_k4jli"), SubResource("Resource_03avx"), SubResource("Resource_50ts4"), SubResource("Resource_acpnw"), SubResource("Resource_thhhq"), SubResource("Resource_smwi2"), SubResource("Resource_lvfhn"), SubResource("Resource_5q17n"), SubResource("Resource_jysde")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"WILDCHARGE", &"WORKUP", &"WORRYSEED", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"DEFENSECURL", &"GRASSYTERRAIN", &"MILKDRINK", &"ROLLOUT"])
+abilities = Array[StringName]([&"SAPSIPPER"])
+hidden_abilities = Array[StringName]([&"GRASSPELT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_q4kx3")]([SubResource("Resource_8m8ux")])
+height = 9
+weight = 310
+color = &"Brown"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 26)
+shadow_size = 1
+id = &"SKIDDO"
+display_name = "Skiddo"

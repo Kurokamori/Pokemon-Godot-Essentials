@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_t4cxd"]
+
+[resource]
+resource_name = "CATCHINGCHARM"
+script = ExtResource("1_t4cxd")
+name_plural = "Catching Charms"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A charm said to increase the chance of getting a critical catch. The charm doesn't shake much."
+id = &"CATCHINGCHARM"
+display_name = "Catching Charm"
+flags = Array[StringName]([&"KeyItem"])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="PhoneMessageData" format=3]
+
+[ext_resource type="Script" path="res://src/data/phone_message_data.gd" id="1_mnu0m"]
+
+[resource]
+resource_name = "PICNICKER|Susie|0"
+script = ExtResource("1_mnu0m")
+trainer_type = &"PICNICKER"
+intro = Array[String](["This is \\TN!", "Hi, this is \\TN!"])
+intro_morning = Array[String](["This is \\TN! Good morning, \\PN!", "Hi, this is \\TN! Good morning, \\PN!"])
+intro_afternoon = Array[String](["This is \\TN! Good afternoon, \\PN!", "Hi, this is \\TN! Good afternoon, \\PN!"])
+intro_evening = Array[String](["This is \\TN! Good evening, \\PN!", "Hi, this is \\TN! Good evening, \\PN!"])
+body1 = Array[String](["My \\TP and I are getting more in sync with each other."])
+body2 = Array[String](["We battled a wild \\TE and managed to beat it in a close match.\\mWe're getting into the groove!", "But, you know what? I still haven't caught \\TE.\\mIt's getting beyond frustrating..."])
+battle_request = Array[String](["Would you be my practice partner again sometime?\\mI'll be waiting on \\TM...\\mCould you take it a little easier on me next time?"])
+end = Array[String](["Bye! Let's chat again!"])
+id = &"PICNICKER|Susie|0"
+display_name = "Susie"

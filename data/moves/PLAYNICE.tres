@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yf2vx"]
+
+[resource]
+resource_name = "PLAYNICE"
+script = ExtResource("1_yf2vx")
+accuracy = 0
+total_pp = 20
+function_code = &"LowerTargetAttack1BypassSubstitute"
+description = "The user and target become friends. The target loses its will to fight, lowering its Attack stat."
+id = &"PLAYNICE"
+display_name = "Play Nice"
+flags = Array[StringName]([&"CanMirrorMove"])

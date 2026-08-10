@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_85mpw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_iwt45"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_d8w2w"]
+
+[sub_resource type="Resource" id="Resource_usnqw"]
+script = ExtResource("1_85mpw")
+species = &"POLIWHIRL"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_au1j3"]
+script = ExtResource("2_iwt45")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_81f10"]
+script = ExtResource("2_iwt45")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_iea4q"]
+script = ExtResource("2_iwt45")
+level = 6
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_rp5da"]
+script = ExtResource("2_iwt45")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_0k25c"]
+script = ExtResource("2_iwt45")
+level = 18
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_8dhqx"]
+script = ExtResource("2_iwt45")
+level = 24
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_pndvr"]
+script = ExtResource("2_iwt45")
+level = 30
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_gy4rw"]
+script = ExtResource("2_iwt45")
+level = 36
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_yxuw2"]
+script = ExtResource("2_iwt45")
+level = 42
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_r2efm"]
+script = ExtResource("2_iwt45")
+level = 48
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_gne66"]
+script = ExtResource("2_iwt45")
+level = 54
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "POLIWAG"
+script = ExtResource("3_d8w2w")
+species = &"POLIWAG"
+category = "Tadpole"
+pokedex_entry = "It is possible to see this Pokémon's spiral innards right through its thin skin. However, the skin is also very flexible. Even sharp fangs bounce right off it."
+types = Array[StringName]([&"WATER"])
+base_hp = 40
+base_attack = 50
+base_defense = 40
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 90
+ev_speed = 1
+base_exp = 60
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_iwt45")]([SubResource("Resource_au1j3"), SubResource("Resource_81f10"), SubResource("Resource_iea4q"), SubResource("Resource_rp5da"), SubResource("Resource_0k25c"), SubResource("Resource_8dhqx"), SubResource("Resource_pndvr"), SubResource("Resource_gy4rw"), SubResource("Resource_yxuw2"), SubResource("Resource_r2efm"), SubResource("Resource_gne66")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"BUBBLEBEAM", &"ENCORE", &"ENDEAVOR", &"HAZE", &"MINDREADER", &"MIST", &"MUDSHOT", &"SPLASH", &"WATERPULSE"])
+abilities = Array[StringName]([&"WATERABSORB", &"DAMP"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_85mpw")]([SubResource("Resource_usnqw")])
+height = 6
+weight = 124
+color = &"Blue"
+shape = &"HeadLegs"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(4, 30)
+shadow_size = 1
+id = &"POLIWAG"
+display_name = "Poliwag"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vfohg"]
+
+[resource]
+resource_name = "TELEPORT"
+script = ExtResource("1_vfohg")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 20
+target = &"User"
+priority = -6
+function_code = &"SwitchOutUserStatusMove"
+description = "The user switches place with a party Pokémon. Also warps to the last Pokémon Center visited."
+id = &"TELEPORT"
+display_name = "Teleport"

@@ -1,0 +1,174 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_csuwo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5l0d8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1faox"]
+
+[sub_resource type="Resource" id="Resource_td7cj"]
+script = ExtResource("2_5l0d8")
+move = &"ASTRALBARRAGE"
+
+[sub_resource type="Resource" id="Resource_axh7a"]
+script = ExtResource("2_5l0d8")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_tfnht"]
+script = ExtResource("2_5l0d8")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_0d472"]
+script = ExtResource("2_5l0d8")
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_a2lx3"]
+script = ExtResource("2_5l0d8")
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_epabf"]
+script = ExtResource("2_5l0d8")
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_2pt7g"]
+script = ExtResource("2_5l0d8")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_e4gfj"]
+script = ExtResource("2_5l0d8")
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_h5shx"]
+script = ExtResource("2_5l0d8")
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_qsxuv"]
+script = ExtResource("2_5l0d8")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_tmhxu"]
+script = ExtResource("2_5l0d8")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_shdax"]
+script = ExtResource("2_5l0d8")
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_i102o"]
+script = ExtResource("2_5l0d8")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_prto3"]
+script = ExtResource("2_5l0d8")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_t07fe"]
+script = ExtResource("2_5l0d8")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_tb8p5"]
+script = ExtResource("2_5l0d8")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_pa1th"]
+script = ExtResource("2_5l0d8")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_0oqio"]
+script = ExtResource("2_5l0d8")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_jbfwh"]
+script = ExtResource("2_5l0d8")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_3wiux"]
+script = ExtResource("2_5l0d8")
+level = 8
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_yid6l"]
+script = ExtResource("2_5l0d8")
+level = 16
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_xhsvw"]
+script = ExtResource("2_5l0d8")
+level = 24
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_43cuh"]
+script = ExtResource("2_5l0d8")
+level = 32
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_yb2pk"]
+script = ExtResource("2_5l0d8")
+level = 40
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_4dtbb"]
+script = ExtResource("2_5l0d8")
+level = 48
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_jhurs"]
+script = ExtResource("2_5l0d8")
+level = 56
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_sjlmc"]
+script = ExtResource("2_5l0d8")
+level = 64
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_hkwea"]
+script = ExtResource("2_5l0d8")
+level = 72
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_i0bu7"]
+script = ExtResource("2_5l0d8")
+level = 80
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_8hpo2"]
+script = ExtResource("2_5l0d8")
+level = 88
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "CALYREX_2"
+script = ExtResource("3_1faox")
+species = &"CALYREX"
+form = 2
+form_name = "Shadow Rider"
+category = "High King"
+pokedex_entry = "Legend says that by using its power to see all events from past to future, this Pokémon saved the creatures of a forest from a meteorite strike."
+pokedex_form = 2
+types = Array[StringName]([&"PSYCHIC", &"GHOST"])
+base_hp = 100
+base_attack = 85
+base_defense = 80
+base_special_attack = 165
+base_special_defense = 100
+base_speed = 150
+ev_special_attack = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_5l0d8")]([SubResource("Resource_td7cj"), SubResource("Resource_axh7a"), SubResource("Resource_tfnht"), SubResource("Resource_0d472"), SubResource("Resource_a2lx3"), SubResource("Resource_epabf"), SubResource("Resource_2pt7g"), SubResource("Resource_e4gfj"), SubResource("Resource_h5shx"), SubResource("Resource_qsxuv"), SubResource("Resource_tmhxu"), SubResource("Resource_shdax"), SubResource("Resource_i102o"), SubResource("Resource_prto3"), SubResource("Resource_t07fe"), SubResource("Resource_tb8p5"), SubResource("Resource_pa1th"), SubResource("Resource_0oqio"), SubResource("Resource_jbfwh"), SubResource("Resource_3wiux"), SubResource("Resource_yid6l"), SubResource("Resource_xhsvw"), SubResource("Resource_43cuh"), SubResource("Resource_yb2pk"), SubResource("Resource_4dtbb"), SubResource("Resource_jhurs"), SubResource("Resource_sjlmc"), SubResource("Resource_hkwea"), SubResource("Resource_i0bu7"), SubResource("Resource_8hpo2")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"BATONPASS", &"BODYSLAM", &"BULLDOZE", &"BULLETSEED", &"CALMMIND", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DRAININGKISS", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYTERRAIN", &"GUARDSWAP", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LASHOUT", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MUDSHOT", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PHANTOMFORCE", &"POLLENPUFF", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SPEEDSWAP", &"STOMPINGTANTRUM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TOXIC", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"UPROAR", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"ASONEGRIMNEIGH"])
+hatch_steps = 30720
+height = 24
+weight = 536
+color = &"Black"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 47)
+front_sprite_offset = Vector2i(-5, 9)
+shadow_size = 3
+id = &"CALYREX_2"
+display_name = "Calyrex"
+flags = Array[StringName]([&"Legendary"])

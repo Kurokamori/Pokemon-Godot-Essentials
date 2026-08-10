@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gbdf1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_o22be"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0odtr"]
+
+[sub_resource type="Resource" id="Resource_smx2r"]
+script = ExtResource("1_gbdf1")
+species = &"NINCADA"
+method = &"Ninjask"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_vmid2"]
+script = ExtResource("2_o22be")
+level = 0
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_hitta"]
+script = ExtResource("2_o22be")
+level = 0
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_brnw3"]
+script = ExtResource("2_o22be")
+level = 0
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_h6k2h"]
+script = ExtResource("2_o22be")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_hs6fa"]
+script = ExtResource("2_o22be")
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_05db1"]
+script = ExtResource("2_o22be")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_78h15"]
+script = ExtResource("2_o22be")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_a1s84"]
+script = ExtResource("2_o22be")
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_f37xt"]
+script = ExtResource("2_o22be")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_irtov"]
+script = ExtResource("2_o22be")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_rhh4a"]
+script = ExtResource("2_o22be")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_jlr87"]
+script = ExtResource("2_o22be")
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_5iqp3"]
+script = ExtResource("2_o22be")
+level = 15
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ipwln"]
+script = ExtResource("2_o22be")
+level = 23
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_pr5f1"]
+script = ExtResource("2_o22be")
+level = 29
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_1dk3t"]
+script = ExtResource("2_o22be")
+level = 36
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_2dkqv"]
+script = ExtResource("2_o22be")
+level = 43
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_e8hq1"]
+script = ExtResource("2_o22be")
+level = 50
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_vjjhc"]
+script = ExtResource("2_o22be")
+level = 57
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_o2nb0"]
+script = ExtResource("2_o22be")
+level = 64
+move = &"XSCISSOR"
+
+[resource]
+resource_name = "NINJASK"
+script = ExtResource("3_0odtr")
+species = &"NINJASK"
+category = "Ninja"
+pokedex_entry = "Because it darts about vigorously at high speed, it is very difficult to see. Hearing its distinctive cries for too long induces a headache."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 61
+base_attack = 90
+base_defense = 45
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 160
+ev_speed = 2
+base_exp = 160
+growth_rate = &"Erratic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_o22be")]([SubResource("Resource_vmid2"), SubResource("Resource_hitta"), SubResource("Resource_brnw3"), SubResource("Resource_h6k2h"), SubResource("Resource_hs6fa"), SubResource("Resource_05db1"), SubResource("Resource_78h15"), SubResource("Resource_a1s84"), SubResource("Resource_f37xt"), SubResource("Resource_irtov"), SubResource("Resource_rhh4a"), SubResource("Resource_jlr87"), SubResource("Resource_5iqp3"), SubResource("Resource_ipwln"), SubResource("Resource_pr5f1"), SubResource("Resource_1dk3t"), SubResource("Resource_2dkqv"), SubResource("Resource_e8hq1"), SubResource("Resource_vjjhc"), SubResource("Resource_o2nb0")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"BATONPASS", &"BUGBITE", &"BUGBUZZ", &"CONFIDE", &"CUT", &"DEFOG", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"LASERFOCUS", &"LEECHLIFE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SILVERWIND", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THIEF", &"UPROAR", &"UTURN", &"XSCISSOR"])
+abilities = Array[StringName]([&"SPEEDBOOST"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_gbdf1")]([SubResource("Resource_smx2r")])
+height = 8
+weight = 120
+color = &"Yellow"
+shape = &"MultiWinged"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 12)
+id = &"NINJASK"
+display_name = "Ninjask"

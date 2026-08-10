@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_y31kb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_t1dqk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2nvyk"]
+
+[sub_resource type="Resource" id="Resource_0och4"]
+script = ExtResource("1_y31kb")
+species = &"NIDORINA"
+method = &"Item"
+parameter = "MOONSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_tmaee"]
+script = ExtResource("2_t1dqk")
+level = 0
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_cwcqb"]
+script = ExtResource("2_t1dqk")
+move = &"SLUDGEWAVE"
+
+[sub_resource type="Resource" id="Resource_sfvix"]
+script = ExtResource("2_t1dqk")
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_nt73n"]
+script = ExtResource("2_t1dqk")
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_ria1t"]
+script = ExtResource("2_t1dqk")
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_qlbdn"]
+script = ExtResource("2_t1dqk")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_t73m1"]
+script = ExtResource("2_t1dqk")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_t7i3x"]
+script = ExtResource("2_t1dqk")
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_wikfb"]
+script = ExtResource("2_t1dqk")
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_xvlo3"]
+script = ExtResource("2_t1dqk")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_d7hor"]
+script = ExtResource("2_t1dqk")
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_npodo"]
+script = ExtResource("2_t1dqk")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_qwy8o"]
+script = ExtResource("2_t1dqk")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_2esep"]
+script = ExtResource("2_t1dqk")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_o76na"]
+script = ExtResource("2_t1dqk")
+move = &"TAILWHIP"
+
+[resource]
+resource_name = "NIDOQUEEN"
+script = ExtResource("3_2nvyk")
+species = &"NIDOQUEEN"
+category = "Drill"
+pokedex_entry = "It is adept at sending foes flying with harsh tackles using its tough, scaly body. This Pokémon is at its strongest when it is defending its young."
+types = Array[StringName]([&"POISON", &"GROUND"])
+base_hp = 90
+base_attack = 92
+base_defense = 87
+base_special_attack = 75
+base_special_defense = 85
+base_speed = 76
+ev_hp = 3
+base_exp = 253
+growth_rate = &"Parabolic"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_t1dqk")]([SubResource("Resource_tmaee"), SubResource("Resource_cwcqb"), SubResource("Resource_sfvix"), SubResource("Resource_nt73n"), SubResource("Resource_ria1t"), SubResource("Resource_qlbdn"), SubResource("Resource_t73m1"), SubResource("Resource_t7i3x"), SubResource("Resource_wikfb"), SubResource("Resource_xvlo3"), SubResource("Resource_d7hor"), SubResource("Resource_npodo"), SubResource("Resource_qwy8o"), SubResource("Resource_2esep"), SubResource("Resource_o76na")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BEATUP", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAGONTAIL", &"DRILLRUN", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PAYDAY", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"TOXICSPIKES", &"UPROAR", &"VENOMDRENCH", &"VENOSHOCK", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"POISONPOINT", &"RIVALRY"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_y31kb")]([SubResource("Resource_0och4")])
+height = 13
+weight = 600
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(2, 19)
+shadow_size = 3
+id = &"NIDOQUEEN"
+display_name = "Nidoqueen"

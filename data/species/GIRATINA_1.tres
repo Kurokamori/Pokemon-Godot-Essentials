@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_y1xpe"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_djrj6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5obse"]
+
+[sub_resource type="Resource" id="Resource_5iv7d"]
+script = ExtResource("2_djrj6")
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_ceobv"]
+script = ExtResource("2_djrj6")
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_s618o"]
+script = ExtResource("2_djrj6")
+level = 7
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_lfmb8"]
+script = ExtResource("2_djrj6")
+level = 14
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_0d8t3"]
+script = ExtResource("2_djrj6")
+level = 21
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_bw6ah"]
+script = ExtResource("2_djrj6")
+level = 28
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_hj42m"]
+script = ExtResource("2_djrj6")
+level = 35
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_vle8n"]
+script = ExtResource("2_djrj6")
+level = 42
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_4fivb"]
+script = ExtResource("2_djrj6")
+level = 49
+move = &"SHADOWFORCE"
+
+[sub_resource type="Resource" id="Resource_grup8"]
+script = ExtResource("2_djrj6")
+level = 56
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_38mbv"]
+script = ExtResource("2_djrj6")
+level = 63
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_vxfjy"]
+script = ExtResource("2_djrj6")
+level = 70
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_pa7nl"]
+script = ExtResource("2_djrj6")
+level = 77
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_0rsgl"]
+script = ExtResource("2_djrj6")
+level = 84
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "GIRATINA_1"
+script = ExtResource("3_5obse")
+species = &"GIRATINA"
+form = 1
+form_name = "Origin Forme"
+category = "Renegade"
+pokedex_entry = "A Pokémon that is said to live in a world on the reverse side of ours. It appears in an ancient cemetery."
+pokedex_form = 1
+types = Array[StringName]([&"GHOST", &"DRAGON"])
+base_hp = 150
+base_attack = 120
+base_defense = 100
+base_special_attack = 120
+base_special_defense = 100
+base_speed = 90
+ev_hp = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_djrj6")]([SubResource("Resource_5iv7d"), SubResource("Resource_ceobv"), SubResource("Resource_s618o"), SubResource("Resource_lfmb8"), SubResource("Resource_0d8t3"), SubResource("Resource_bw6ah"), SubResource("Resource_hj42m"), SubResource("Resource_vle8n"), SubResource("Resource_4fivb"), SubResource("Resource_grup8"), SubResource("Resource_38mbv"), SubResource("Resource_vxfjy"), SubResource("Resource_pa7nl"), SubResource("Resource_0rsgl")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ANCIENTPOWER", &"AQUATAIL", &"AURASPHERE", &"BODYSLAM", &"BREAKINGSWIPE", &"BRUTALSWING", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"DREAMEATER", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRAVITY", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICYWIND", &"IRONHEAD", &"IRONTAIL", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SPITE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TWISTER", &"WILLOWISP"])
+abilities = Array[StringName]([&"LEVITATE"])
+hidden_abilities = Array[StringName]([&"LEVITATE"])
+hatch_steps = 30720
+height = 69
+weight = 6500
+color = &"Black"
+shape = &"Serpentine"
+generation = 4
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(0, 4)
+id = &"GIRATINA_1"
+display_name = "Giratina"
+flags = Array[StringName]([&"Legendary"])

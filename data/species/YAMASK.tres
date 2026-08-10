@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qdeow"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kxmue"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rna6x"]
+
+[sub_resource type="Resource" id="Resource_n336h"]
+script = ExtResource("1_qdeow")
+species = &"COFAGRIGUS"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_mjnpk"]
+script = ExtResource("1_qdeow")
+species = &"RUNERIGUS"
+
+[sub_resource type="Resource" id="Resource_3ms7b"]
+script = ExtResource("2_kxmue")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_ucq4c"]
+script = ExtResource("2_kxmue")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_6pvvd"]
+script = ExtResource("2_kxmue")
+level = 4
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_mcx5k"]
+script = ExtResource("2_kxmue")
+level = 8
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_qclfe"]
+script = ExtResource("2_kxmue")
+level = 12
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_cykyc"]
+script = ExtResource("2_kxmue")
+level = 16
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_a074j"]
+script = ExtResource("2_kxmue")
+level = 20
+move = &"CRAFTYSHIELD"
+
+[sub_resource type="Resource" id="Resource_0cftf"]
+script = ExtResource("2_kxmue")
+level = 24
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_q4pdm"]
+script = ExtResource("2_kxmue")
+level = 28
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_uhcl2"]
+script = ExtResource("2_kxmue")
+level = 32
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_3fh8n"]
+script = ExtResource("2_kxmue")
+level = 36
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_62i65"]
+script = ExtResource("2_kxmue")
+level = 40
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_fdhty"]
+script = ExtResource("2_kxmue")
+level = 44
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_4dct7"]
+script = ExtResource("2_kxmue")
+level = 48
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_ehhsa"]
+script = ExtResource("2_kxmue")
+level = 48
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_mdg4s"]
+script = ExtResource("2_kxmue")
+level = 52
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "YAMASK"
+script = ExtResource("3_rna6x")
+species = &"YAMASK"
+category = "Spirit"
+pokedex_entry = "These Pokémon arose from the spirits of people interred in graves in past ages. Each retains memories of its former life."
+types = Array[StringName]([&"GHOST"])
+base_hp = 38
+base_attack = 30
+base_defense = 85
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 30
+ev_defense = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_kxmue")]([SubResource("Resource_3ms7b"), SubResource("Resource_ucq4c"), SubResource("Resource_6pvvd"), SubResource("Resource_mcx5k"), SubResource("Resource_qclfe"), SubResource("Resource_cykyc"), SubResource("Resource_a074j"), SubResource("Resource_0cftf"), SubResource("Resource_q4pdm"), SubResource("Resource_uhcl2"), SubResource("Resource_3fh8n"), SubResource("Resource_62i65"), SubResource("Resource_fdhty"), SubResource("Resource_4dct7"), SubResource("Resource_ehhsa"), SubResource("Resource_mdg4s")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"BLOCK", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLASH", &"FRUSTRATION", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"INFESTATION", &"IRONDEFENSE", &"KNOCKOFF", &"MAGICCOAT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TOXICSPIKES", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"MEMENTO"])
+abilities = Array[StringName]([&"MUMMY"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Mineral", &"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_qdeow")]([SubResource("Resource_n336h"), SubResource("Resource_mjnpk")])
+height = 5
+weight = 15
+color = &"Black"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(2, 52)
+front_sprite_offset = Vector2i(1, 14)
+shadow_size = 1
+id = &"YAMASK"
+display_name = "Yamask"

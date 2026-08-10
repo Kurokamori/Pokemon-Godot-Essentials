@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_hlgda"]
+
+[resource]
+resource_name = "DAMPROCK"
+script = ExtResource("1_hlgda")
+name_plural = "Damp Rocks"
+price = 4000
+sell_price = 2000
+bp_price = 15
+description = "A Pokémon held item that extends the duration of the move Rain Dance used by the holder."
+id = &"DAMPROCK"
+display_name = "Damp Rock"
+flags = Array[StringName]([&"Fling_60"])

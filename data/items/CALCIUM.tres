@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xuqrq"]
+
+[resource]
+resource_name = "CALCIUM"
+script = ExtResource("1_xuqrq")
+name_plural = "Calciums"
+portion_name = "bottle of Calcium"
+portion_name_plural = "bottles of Calcium"
+pocket = 2
+price = 10000
+sell_price = 5000
+field_use = 1
+description = "A nutritious drink for Pokémon. It raises the base Sp. Atk (Special Attack) stat of a single Pokémon."
+id = &"CALCIUM"
+display_name = "Calcium"
+flags = Array[StringName]([&"Fling_30"])

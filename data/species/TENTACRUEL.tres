@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_00j4c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hw37y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_55aai"]
+
+[sub_resource type="Resource" id="Resource_bc4u4"]
+script = ExtResource("1_00j4c")
+species = &"TENTACOOL"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3gk61"]
+script = ExtResource("2_hw37y")
+move = &"REFLECTTYPE"
+
+[sub_resource type="Resource" id="Resource_6mmti"]
+script = ExtResource("2_hw37y")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_wa0pw"]
+script = ExtResource("2_hw37y")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_5y3pq"]
+script = ExtResource("2_hw37y")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_e5820"]
+script = ExtResource("2_hw37y")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_n4xh4"]
+script = ExtResource("2_hw37y")
+level = 12
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_b2nha"]
+script = ExtResource("2_hw37y")
+level = 16
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_nybpg"]
+script = ExtResource("2_hw37y")
+level = 20
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_3l1j8"]
+script = ExtResource("2_hw37y")
+level = 24
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_pl1or"]
+script = ExtResource("2_hw37y")
+level = 28
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_r7pvg"]
+script = ExtResource("2_hw37y")
+level = 34
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_kmjsd"]
+script = ExtResource("2_hw37y")
+level = 40
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_blpgi"]
+script = ExtResource("2_hw37y")
+level = 46
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_767kf"]
+script = ExtResource("2_hw37y")
+level = 52
+move = &"SLUDGEWAVE"
+
+[sub_resource type="Resource" id="Resource_50g6e"]
+script = ExtResource("2_hw37y")
+level = 58
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "TENTACRUEL"
+script = ExtResource("3_55aai")
+species = &"TENTACRUEL"
+category = "Jellyfish"
+pokedex_entry = "It lives in complex rock formations on the ocean floor and traps prey using its 80 tentacles. Its red orbs glow when it grows excited or agitated."
+types = Array[StringName]([&"WATER", &"POISON"])
+base_hp = 80
+base_attack = 70
+base_defense = 65
+base_special_attack = 80
+base_special_defense = 120
+base_speed = 100
+ev_special_defense = 2
+base_exp = 180
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hw37y")]([SubResource("Resource_3gk61"), SubResource("Resource_6mmti"), SubResource("Resource_wa0pw"), SubResource("Resource_5y3pq"), SubResource("Resource_e5820"), SubResource("Resource_n4xh4"), SubResource("Resource_b2nha"), SubResource("Resource_nybpg"), SubResource("Resource_3l1j8"), SubResource("Resource_pl1or"), SubResource("Resource_r7pvg"), SubResource("Resource_kmjsd"), SubResource("Resource_blpgi"), SubResource("Resource_767kf"), SubResource("Resource_50g6e")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BLIZZARD", &"BRINE", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"CROSSPOISON", &"CUT", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HAIL", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"KNOCKOFF", &"MAGICCOAT", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"CLEARBODY", &"LIQUIDOOZE"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_00j4c")]([SubResource("Resource_bc4u4")])
+height = 16
+weight = 550
+color = &"Blue"
+shape = &"Multiped"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(4, 54)
+front_sprite_offset = Vector2i(6, 12)
+id = &"TENTACRUEL"
+display_name = "Tentacruel"

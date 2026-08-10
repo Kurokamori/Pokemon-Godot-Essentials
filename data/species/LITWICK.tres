@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_msshv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5dgnf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ej1ut"]
+
+[sub_resource type="Resource" id="Resource_7ynie"]
+script = ExtResource("1_msshv")
+species = &"LAMPENT"
+method = &"Level"
+parameter = "41"
+
+[sub_resource type="Resource" id="Resource_2a6qj"]
+script = ExtResource("2_5dgnf")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_sic0e"]
+script = ExtResource("2_5dgnf")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_gxawm"]
+script = ExtResource("2_5dgnf")
+level = 4
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_4g1x6"]
+script = ExtResource("2_5dgnf")
+level = 8
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_ddc2r"]
+script = ExtResource("2_5dgnf")
+level = 12
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_t1xg8"]
+script = ExtResource("2_5dgnf")
+level = 16
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_dwrqc"]
+script = ExtResource("2_5dgnf")
+level = 20
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_recpe"]
+script = ExtResource("2_5dgnf")
+level = 24
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_dre1b"]
+script = ExtResource("2_5dgnf")
+level = 28
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_3ncjq"]
+script = ExtResource("2_5dgnf")
+level = 32
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_qfncc"]
+script = ExtResource("2_5dgnf")
+level = 36
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_k6ebu"]
+script = ExtResource("2_5dgnf")
+level = 40
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_4ldly"]
+script = ExtResource("2_5dgnf")
+level = 44
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_o3jy5"]
+script = ExtResource("2_5dgnf")
+level = 48
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_3e8qp"]
+script = ExtResource("2_5dgnf")
+level = 52
+move = &"OVERHEAT"
+
+[sub_resource type="Resource" id="Resource_lasqn"]
+script = ExtResource("2_5dgnf")
+level = 56
+move = &"MEMENTO"
+
+[resource]
+resource_name = "LITWICK"
+script = ExtResource("3_ej1ut")
+species = &"LITWICK"
+category = "Candle"
+pokedex_entry = "While shining a light and pretending to be a guide, it leeches off the life force of any who follow it."
+types = Array[StringName]([&"GHOST", &"FIRE"])
+base_hp = 50
+base_attack = 30
+base_defense = 55
+base_special_attack = 65
+base_special_defense = 55
+base_speed = 20
+ev_special_attack = 1
+base_exp = 55
+growth_rate = &"Parabolic"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5dgnf")]([SubResource("Resource_2a6qj"), SubResource("Resource_sic0e"), SubResource("Resource_gxawm"), SubResource("Resource_4g1x6"), SubResource("Resource_ddc2r"), SubResource("Resource_t1xg8"), SubResource("Resource_dwrqc"), SubResource("Resource_recpe"), SubResource("Resource_dre1b"), SubResource("Resource_3ncjq"), SubResource("Resource_qfncc"), SubResource("Resource_k6ebu"), SubResource("Resource_4ldly"), SubResource("Resource_o3jy5"), SubResource("Resource_3e8qp"), SubResource("Resource_lasqn")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BURNINGJEALOUSY", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"HEATWAVE", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"INCINERATE", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"PAINSPLIT", &"PAYBACK", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"TRICKROOM", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"ACIDARMOR", &"CLEARSMOG", &"HAZE", &"POWERSPLIT"])
+abilities = Array[StringName]([&"FLASHFIRE", &"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_msshv")]([SubResource("Resource_7ynie")])
+height = 3
+weight = 31
+color = &"White"
+shape = &"HeadBase"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-2, 33)
+shadow_size = 1
+id = &"LITWICK"
+display_name = "Litwick"

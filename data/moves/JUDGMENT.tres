@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_pr0uq"]
+
+[resource]
+resource_name = "JUDGMENT"
+script = ExtResource("1_pr0uq")
+category = 1
+power = 100
+total_pp = 10
+function_code = &"TypeDependsOnUserPlate"
+description = "The user releases countless shots of light. Its type varies with the kind of Plate the user is holding."
+id = &"JUDGMENT"
+display_name = "Judgment"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

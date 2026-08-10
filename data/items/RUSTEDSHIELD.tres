@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6y1n4"]
+
+[resource]
+resource_name = "RUSTEDSHIELD"
+script = ExtResource("1_6y1n4")
+name_plural = "Rusted Shields"
+description = "It is said that a hero used this shield to halt a disaster in ancient times. But it's grown rusty and worn."
+id = &"RUSTEDSHIELD"
+display_name = "Rusted Shield"

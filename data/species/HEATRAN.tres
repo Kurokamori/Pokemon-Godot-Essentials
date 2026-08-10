@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_c4tl6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_u0bcn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qy2mc"]
+
+[sub_resource type="Resource" id="Resource_7qonb"]
+script = ExtResource("2_u0bcn")
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_xo3h6"]
+script = ExtResource("2_u0bcn")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_bk7r6"]
+script = ExtResource("2_u0bcn")
+level = 6
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_lv054"]
+script = ExtResource("2_u0bcn")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_tox8y"]
+script = ExtResource("2_u0bcn")
+level = 18
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_d0x42"]
+script = ExtResource("2_u0bcn")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_c7dlu"]
+script = ExtResource("2_u0bcn")
+level = 30
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_lx4j8"]
+script = ExtResource("2_u0bcn")
+level = 36
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_paoe6"]
+script = ExtResource("2_u0bcn")
+level = 42
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_ng0qx"]
+script = ExtResource("2_u0bcn")
+level = 48
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_q6d6r"]
+script = ExtResource("2_u0bcn")
+level = 54
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_7f6j1"]
+script = ExtResource("2_u0bcn")
+level = 60
+move = &"HEATWAVE"
+
+[sub_resource type="Resource" id="Resource_d0ko3"]
+script = ExtResource("2_u0bcn")
+level = 66
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_erirw"]
+script = ExtResource("2_u0bcn")
+level = 72
+move = &"MAGMASTORM"
+
+[resource]
+resource_name = "HEATRAN"
+script = ExtResource("3_qy2mc")
+species = &"HEATRAN"
+category = "Lava Dome"
+pokedex_entry = "It dwells in volcanic caves. It digs in with its cross-shaped feet to crawl on ceilings and walls."
+types = Array[StringName]([&"FIRE", &"STEEL"])
+base_hp = 91
+base_attack = 90
+base_defense = 106
+base_special_attack = 130
+base_special_defense = 106
+base_speed = 77
+ev_special_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+catch_rate = 3
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_u0bcn")]([SubResource("Resource_7qonb"), SubResource("Resource_xo3h6"), SubResource("Resource_bk7r6"), SubResource("Resource_lv054"), SubResource("Resource_tox8y"), SubResource("Resource_d0x42"), SubResource("Resource_c7dlu"), SubResource("Resource_lx4j8"), SubResource("Resource_paoe6"), SubResource("Resource_ng0qx"), SubResource("Resource_q6d6r"), SubResource("Resource_7f6j1"), SubResource("Resource_d0ko3"), SubResource("Resource_erirw")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BUGBITE", &"BULLDOZE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONPULSE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATCRASH", &"HEATWAVE", &"HEAVYSLAM", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TORMENT", &"UPROAR", &"WILLOWISP"])
+abilities = Array[StringName]([&"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"FLAMEBODY"])
+hatch_steps = 2560
+height = 17
+weight = 4300
+color = &"Brown"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(3, 58)
+front_sprite_offset = Vector2i(-2, 30)
+shadow_size = 3
+id = &"HEATRAN"
+display_name = "Heatran"
+flags = Array[StringName]([&"Legendary"])

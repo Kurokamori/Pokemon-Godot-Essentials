@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_n07po"]
+
+[resource]
+resource_name = "ICE"
+script = ExtResource("1_n07po")
+icon_position = 15
+special_type = true
+weaknesses = Array[StringName]([&"FIGHTING", &"ROCK", &"STEEL", &"FIRE"])
+resistances = Array[StringName]([&"ICE"])
+id = &"ICE"
+display_name = "Ice"

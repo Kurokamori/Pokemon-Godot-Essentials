@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tcjgq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_apwla"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_iljr1"]
+
+[sub_resource type="Resource" id="Resource_fer8a"]
+script = ExtResource("1_tcjgq")
+species = &"GARDEVOIR"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_afgvm"]
+script = ExtResource("1_tcjgq")
+species = &"GALLADE"
+method = &"ItemMale"
+parameter = "DAWNSTONE"
+
+[sub_resource type="Resource" id="Resource_vlxus"]
+script = ExtResource("1_tcjgq")
+species = &"RALTS"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_gc8ij"]
+script = ExtResource("2_apwla")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_n7y75"]
+script = ExtResource("2_apwla")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_bgnln"]
+script = ExtResource("2_apwla")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_4npak"]
+script = ExtResource("2_apwla")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_wlu2p"]
+script = ExtResource("2_apwla")
+level = 9
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_16ok2"]
+script = ExtResource("2_apwla")
+level = 12
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_rh2uh"]
+script = ExtResource("2_apwla")
+level = 15
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_316pb"]
+script = ExtResource("2_apwla")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_kocbw"]
+script = ExtResource("2_apwla")
+level = 23
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_uhof0"]
+script = ExtResource("2_apwla")
+level = 28
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_bnuio"]
+script = ExtResource("2_apwla")
+level = 33
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_dk2u2"]
+script = ExtResource("2_apwla")
+level = 38
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_3s2ck"]
+script = ExtResource("2_apwla")
+level = 43
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_7icma"]
+script = ExtResource("2_apwla")
+level = 48
+move = &"DREAMEATER"
+
+[sub_resource type="Resource" id="Resource_lwfdf"]
+script = ExtResource("2_apwla")
+level = 53
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "KIRLIA"
+script = ExtResource("3_iljr1")
+species = &"KIRLIA"
+category = "Emotion"
+pokedex_entry = "A Kirlia has the psychic power to create a rip in the dimensions and see into the future. It is said to dance with pleasure on sunny mornings."
+types = Array[StringName]([&"PSYCHIC", &"FAIRY"])
+base_hp = 38
+base_attack = 35
+base_defense = 35
+base_special_attack = 65
+base_special_defense = 55
+base_speed = 50
+ev_special_attack = 2
+base_exp = 97
+growth_rate = &"Slow"
+catch_rate = 120
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_apwla")]([SubResource("Resource_gc8ij"), SubResource("Resource_n7y75"), SubResource("Resource_bgnln"), SubResource("Resource_4npak"), SubResource("Resource_wlu2p"), SubResource("Resource_16ok2"), SubResource("Resource_rh2uh"), SubResource("Resource_316pb"), SubResource("Resource_kocbw"), SubResource("Resource_uhof0"), SubResource("Resource_bnuio"), SubResource("Resource_dk2u2"), SubResource("Resource_3s2ck"), SubResource("Resource_7icma"), SubResource("Resource_lwfdf")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"TRIPLEAXEL", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SYNCHRONIZE", &"TRACE"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Humanlike", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tcjgq")]([SubResource("Resource_fer8a"), SubResource("Resource_afgvm"), SubResource("Resource_vlxus")])
+height = 8
+weight = 202
+color = &"White"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 23)
+shadow_size = 1
+id = &"KIRLIA"
+display_name = "Kirlia"

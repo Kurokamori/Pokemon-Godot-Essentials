@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_42t7t"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gocam"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wcpur"]
+
+[sub_resource type="Resource" id="Resource_b2mhw"]
+script = ExtResource("1_42t7t")
+species = &"CHARIZARD"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_rne7m"]
+script = ExtResource("1_42t7t")
+species = &"CHARMANDER"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_4bst1"]
+script = ExtResource("2_gocam")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_6wqgf"]
+script = ExtResource("2_gocam")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_wbk2w"]
+script = ExtResource("2_gocam")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_fmml4"]
+script = ExtResource("2_gocam")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_u3tvo"]
+script = ExtResource("2_gocam")
+level = 12
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_aps3m"]
+script = ExtResource("2_gocam")
+level = 19
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_a4xuk"]
+script = ExtResource("2_gocam")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_8lhfr"]
+script = ExtResource("2_gocam")
+level = 30
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_7442d"]
+script = ExtResource("2_gocam")
+level = 37
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_eaxqm"]
+script = ExtResource("2_gocam")
+level = 42
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_6y58k"]
+script = ExtResource("2_gocam")
+level = 48
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_fc12x"]
+script = ExtResource("2_gocam")
+level = 54
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "CHARMELEON"
+script = ExtResource("3_wcpur")
+species = &"CHARMELEON"
+category = "Flame"
+pokedex_entry = "Without pity, its sharp claws destroy foes. If it encounters a strong enemy, it becomes agitated, and the flame on its tail flares with a bluish white color."
+types = Array[StringName]([&"FIRE"])
+base_hp = 58
+base_attack = 64
+base_defense = 58
+base_special_attack = 80
+base_special_defense = 65
+base_speed = 80
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gocam")]([SubResource("Resource_4bst1"), SubResource("Resource_6wqgf"), SubResource("Resource_wbk2w"), SubResource("Resource_fmml4"), SubResource("Resource_u3tvo"), SubResource("Resource_aps3m"), SubResource("Resource_a4xuk"), SubResource("Resource_8lhfr"), SubResource("Resource_7442d"), SubResource("Resource_eaxqm"), SubResource("Resource_6y58k"), SubResource("Resource_fc12x")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREFANG", &"FIREPLEDGE", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THUNDERPUNCH", &"WEATHERBALL", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"SOLARPOWER"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_42t7t")]([SubResource("Resource_b2mhw"), SubResource("Resource_rne7m")])
+height = 11
+weight = 190
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(5, 22)
+id = &"CHARMELEON"
+display_name = "Charmeleon"

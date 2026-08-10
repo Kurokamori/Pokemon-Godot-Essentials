@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_n042q"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_snv2v"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_aerwc"]
+
+[sub_resource type="Resource" id="Resource_tpvsv"]
+script = ExtResource("1_n042q")
+species = &"TRUMBEAK"
+method = &"Level"
+parameter = "28"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_dtrm8"]
+script = ExtResource("2_snv2v")
+level = 0
+move = &"BEAKBLAST"
+
+[sub_resource type="Resource" id="Resource_5ja25"]
+script = ExtResource("2_snv2v")
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_xexnx"]
+script = ExtResource("2_snv2v")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_8h6ed"]
+script = ExtResource("2_snv2v")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_8jrk5"]
+script = ExtResource("2_snv2v")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_31w10"]
+script = ExtResource("2_snv2v")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_3ygu3"]
+script = ExtResource("2_snv2v")
+level = 3
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_rrhpn"]
+script = ExtResource("2_snv2v")
+level = 7
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_s36vj"]
+script = ExtResource("2_snv2v")
+level = 9
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_66g47"]
+script = ExtResource("2_snv2v")
+level = 13
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_dw0jb"]
+script = ExtResource("2_snv2v")
+level = 16
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_jg4ef"]
+script = ExtResource("2_snv2v")
+level = 21
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_3a0sh"]
+script = ExtResource("2_snv2v")
+level = 24
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_hg84a"]
+script = ExtResource("2_snv2v")
+level = 30
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_pvskx"]
+script = ExtResource("2_snv2v")
+level = 34
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_t61gf"]
+script = ExtResource("2_snv2v")
+level = 40
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_iyl0u"]
+script = ExtResource("2_snv2v")
+level = 44
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_jvfyb"]
+script = ExtResource("2_snv2v")
+level = 50
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "TOUCANNON"
+script = ExtResource("3_aerwc")
+species = &"TOUCANNON"
+category = "Cannon"
+pokedex_entry = "They smack beaks with others of their kind to communicate. The strength and number of hits tell each other how they feel."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 80
+base_attack = 120
+base_defense = 75
+base_special_attack = 75
+base_special_defense = 75
+base_speed = 60
+ev_attack = 3
+base_exp = 243
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_snv2v")]([SubResource("Resource_dtrm8"), SubResource("Resource_5ja25"), SubResource("Resource_xexnx"), SubResource("Resource_8h6ed"), SubResource("Resource_8jrk5"), SubResource("Resource_31w10"), SubResource("Resource_3ygu3"), SubResource("Resource_rrhpn"), SubResource("Resource_s36vj"), SubResource("Resource_66g47"), SubResource("Resource_dw0jb"), SubResource("Resource_jg4ef"), SubResource("Resource_3a0sh"), SubResource("Resource_hg84a"), SubResource("Resource_pvskx"), SubResource("Resource_t61gf"), SubResource("Resource_iyl0u"), SubResource("Resource_jvfyb")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FLAMECHARGE", &"FLASHCANNON", &"FLY", &"FRUSTRATION", &"GUNKSHOT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERVOICE", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SKYATTACK", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TAILWIND", &"THIEF", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"KEENEYE", &"SKILLLINK"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+wild_item_uncommon = Array[StringName]([&"RAWSTBERRY"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_n042q")]([SubResource("Resource_tpvsv")])
+height = 11
+weight = 260
+color = &"Black"
+shape = &"Winged"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-10, 22)
+id = &"TOUCANNON"
+display_name = "Toucannon"

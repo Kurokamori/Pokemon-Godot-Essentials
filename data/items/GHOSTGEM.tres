@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_vq3nn"]
+
+[resource]
+resource_name = "GHOSTGEM"
+script = ExtResource("1_vq3nn")
+name_plural = "Ghost Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with a spectral essence. When held, it strengthens the power of a Ghost-type move only once."
+id = &"GHOSTGEM"
+display_name = "Ghost Gem"
+flags = Array[StringName]([&"TypeGem"])

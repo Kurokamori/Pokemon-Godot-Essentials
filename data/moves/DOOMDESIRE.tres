@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_by8nh"]
+
+[resource]
+resource_name = "DOOMDESIRE"
+script = ExtResource("1_by8nh")
+type = &"STEEL"
+category = 1
+power = 140
+function_code = &"AttackTwoTurnsLater"
+description = "Two turns after this move is used, the user blasts the target with a concentrated bundle of light."
+id = &"DOOMDESIRE"
+display_name = "Doom Desire"

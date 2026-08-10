@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_fdodp"]
+
+[resource]
+resource_name = "BEAT_UP_HIT_4"
+script = ExtResource("1_fdodp")
+graphic = "many"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 86, 75, 75, 0, 0, 17, 150, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 86, 100, 100, 0, 0, 17, 255, 0, 0, 0, 1, 1, 392, 86, 100, 100, 0, 0, 20, 100, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 86, 100, 100, 0, 0, 17, 255, 0, 0, 0, 1, 1, 384, 94, 100, 100, 0, 0, 19, 100, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 86, 125, 125, 0, 0, 17, 100, 0, 0, 0, 1, 1, 384, 94, 125, 125, 0, 0, 19, 50, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(0)
+timing_sounds = PackedStringArray("Blow4")
+timing_volumes = PackedInt32Array(80)
+timing_pitches = PackedInt32Array(100)
+id = &"BEAT_UP_HIT_4"
+display_name = "Beat Up hit 4"

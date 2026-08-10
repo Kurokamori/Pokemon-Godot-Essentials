@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_5kkrw"]
+
+[resource]
+resource_name = "MIRRORARMOR"
+script = ExtResource("1_5kkrw")
+description = "Bounces back stat-lowering effects."
+id = &"MIRRORARMOR"
+display_name = "Mirror Armor"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_cs1kv"]
+
+[resource]
+resource_name = "FACADE"
+script = ExtResource("1_cs1kv")
+category = 0
+power = 70
+total_pp = 20
+function_code = &"DoublePowerIfUserPoisonedBurnedParalyzed"
+description = "An attack move that doubles its power if the user is poisoned, burned, or has paralysis."
+id = &"FACADE"
+display_name = "Facade"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

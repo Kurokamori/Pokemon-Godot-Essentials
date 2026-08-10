@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_moroo"]
+
+[resource]
+resource_name = "BEAKBLAST"
+script = ExtResource("1_moroo")
+type = &"FLYING"
+category = 0
+power = 100
+total_pp = 15
+priority = -3
+function_code = &"BurnAttackerBeforeUserActs"
+description = "The user heats up its beak before attacking. Making contact in this time results in a burn."
+id = &"BEAKBLAST"
+display_name = "Beak Blast"
+flags = Array[StringName]([&"CanProtect", &"Bomb"])

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_rqylr"]
+
+[resource]
+resource_name = "TUBER2_M"
+script = ExtResource("1_rqylr")
+gender = 0
+base_money = 4
+skill_level = 16
+id = &"TUBER2_M"
+display_name = "Tuber"

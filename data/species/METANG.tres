@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7iwpj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tjlpf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qdw6h"]
+
+[sub_resource type="Resource" id="Resource_nt572"]
+script = ExtResource("1_7iwpj")
+species = &"METAGROSS"
+method = &"Level"
+parameter = "45"
+
+[sub_resource type="Resource" id="Resource_371q3"]
+script = ExtResource("1_7iwpj")
+species = &"BELDUM"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_aatev"]
+script = ExtResource("2_tjlpf")
+level = 0
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_8jls7"]
+script = ExtResource("2_tjlpf")
+level = 0
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_1h4xg"]
+script = ExtResource("2_tjlpf")
+move = &"BULLETPUNCH"
+
+[sub_resource type="Resource" id="Resource_s15s3"]
+script = ExtResource("2_tjlpf")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_qpiys"]
+script = ExtResource("2_tjlpf")
+level = 6
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_6ytiv"]
+script = ExtResource("2_tjlpf")
+level = 12
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_tkjcv"]
+script = ExtResource("2_tjlpf")
+level = 18
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_j4htg"]
+script = ExtResource("2_tjlpf")
+level = 26
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_aoccj"]
+script = ExtResource("2_tjlpf")
+level = 34
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_okpyo"]
+script = ExtResource("2_tjlpf")
+level = 42
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_6rwvy"]
+script = ExtResource("2_tjlpf")
+level = 50
+move = &"METEORMASH"
+
+[sub_resource type="Resource" id="Resource_j1m54"]
+script = ExtResource("2_tjlpf")
+level = 58
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_320qt"]
+script = ExtResource("2_tjlpf")
+level = 66
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_etlg7"]
+script = ExtResource("2_tjlpf")
+level = 74
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "METANG"
+script = ExtResource("3_qdw6h")
+species = &"METANG"
+category = "Iron Claw"
+pokedex_entry = "The claws tipping its arms pack the destructive power to tear through thick iron sheets as if they were silk. It flies at over 60 miles per hour."
+types = Array[StringName]([&"STEEL", &"PSYCHIC"])
+base_hp = 60
+base_attack = 75
+base_defense = 100
+base_special_attack = 55
+base_special_defense = 80
+base_speed = 50
+ev_defense = 2
+base_exp = 147
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_tjlpf")]([SubResource("Resource_aatev"), SubResource("Resource_8jls7"), SubResource("Resource_1h4xg"), SubResource("Resource_s15s3"), SubResource("Resource_qpiys"), SubResource("Resource_6ytiv"), SubResource("Resource_tkjcv"), SubResource("Resource_j4htg"), SubResource("Resource_aoccj"), SubResource("Resource_okpyo"), SubResource("Resource_6rwvy"), SubResource("Resource_j1m54"), SubResource("Resource_320qt"), SubResource("Resource_etlg7")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CONFIDE", &"COSMICPOWER", &"CUT", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"FURYCUTTER", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"LIGHTSCREEN", &"MAGNETRISE", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERPUNCH", &"TRICK", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"CLEARBODY"])
+hidden_abilities = Array[StringName]([&"LIGHTMETAL"])
+wild_item_uncommon = Array[StringName]([&"METALCOAT"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_7iwpj")]([SubResource("Resource_nt572"), SubResource("Resource_371q3")])
+height = 12
+weight = 2025
+color = &"Blue"
+shape = &"HeadArms"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 16)
+id = &"METANG"
+display_name = "Metang"

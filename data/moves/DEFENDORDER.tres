@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_pfaxt"]
+
+[resource]
+resource_name = "DEFENDORDER"
+script = ExtResource("1_pfaxt")
+type = &"BUG"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"RaiseUserDefSpDef1"
+description = "The user calls out its underlings to shield its body, raising its Defense and Sp. Def stats."
+id = &"DEFENDORDER"
+display_name = "Defend Order"

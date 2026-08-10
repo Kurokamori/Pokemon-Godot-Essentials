@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_xb3sv"]
+
+[resource]
+resource_name = "BADDREAMS"
+script = ExtResource("1_xb3sv")
+description = "Reduces a sleeping foe's HP."
+id = &"BADDREAMS"
+display_name = "Bad Dreams"

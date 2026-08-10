@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_cn2jr"]
+
+[resource]
+resource_name = "HEARTMAIL"
+script = ExtResource("1_cn2jr")
+name_plural = "Heart Mail"
+portion_name = "piece of Heart Mail"
+portion_name_plural = "pieces of Heart Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of giant heart patterns. Let a Pokémon hold it for delivery."
+id = &"HEARTMAIL"
+display_name = "Heart Mail"
+flags = Array[StringName]([&"IconMail"])

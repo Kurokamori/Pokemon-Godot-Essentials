@@ -1,0 +1,150 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0uq8j"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qrbrf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qs2xm"]
+
+[sub_resource type="Resource" id="Resource_peruo"]
+script = ExtResource("1_0uq8j")
+species = &"PATRAT"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_av6eb"]
+script = ExtResource("2_qrbrf")
+level = 0
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_ihanr"]
+script = ExtResource("2_qrbrf")
+move = &"ROTOTILLER"
+
+[sub_resource type="Resource" id="Resource_fp47a"]
+script = ExtResource("2_qrbrf")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_2d7vb"]
+script = ExtResource("2_qrbrf")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_dlss1"]
+script = ExtResource("2_qrbrf")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_jldml"]
+script = ExtResource("2_qrbrf")
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_y0ee0"]
+script = ExtResource("2_qrbrf")
+level = 3
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_6uc0c"]
+script = ExtResource("2_qrbrf")
+level = 6
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_fpyct"]
+script = ExtResource("2_qrbrf")
+level = 8
+move = &"BIDE"
+
+[sub_resource type="Resource" id="Resource_pdrpy"]
+script = ExtResource("2_qrbrf")
+level = 11
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_mdg4d"]
+script = ExtResource("2_qrbrf")
+level = 13
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_4orrf"]
+script = ExtResource("2_qrbrf")
+level = 16
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_bw3o8"]
+script = ExtResource("2_qrbrf")
+level = 18
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_fgkk6"]
+script = ExtResource("2_qrbrf")
+level = 22
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_ayacb"]
+script = ExtResource("2_qrbrf")
+level = 25
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_jdpkx"]
+script = ExtResource("2_qrbrf")
+level = 29
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_py14n"]
+script = ExtResource("2_qrbrf")
+level = 32
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_rflvj"]
+script = ExtResource("2_qrbrf")
+level = 36
+move = &"HYPERFANG"
+
+[sub_resource type="Resource" id="Resource_j53sq"]
+script = ExtResource("2_qrbrf")
+level = 39
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_euifw"]
+script = ExtResource("2_qrbrf")
+level = 43
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_rhnn4"]
+script = ExtResource("2_qrbrf")
+level = 46
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_jpj83"]
+script = ExtResource("2_qrbrf")
+level = 50
+move = &"SLAM"
+
+[resource]
+resource_name = "WATCHOG"
+script = ExtResource("3_qs2xm")
+species = &"WATCHOG"
+category = "Lookout"
+pokedex_entry = "They make the patterns on their bodies shine in order to threaten predators. Keen eyesight lets them see in the dark."
+base_hp = 60
+base_attack = 85
+base_defense = 69
+base_special_attack = 60
+base_special_defense = 69
+base_speed = 77
+ev_attack = 2
+base_exp = 147
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qrbrf")]([SubResource("Resource_av6eb"), SubResource("Resource_ihanr"), SubResource("Resource_fp47a"), SubResource("Resource_2d7vb"), SubResource("Resource_dlss1"), SubResource("Resource_jldml"), SubResource("Resource_y0ee0"), SubResource("Resource_6uc0c"), SubResource("Resource_fpyct"), SubResource("Resource_pdrpy"), SubResource("Resource_mdg4d"), SubResource("Resource_4orrf"), SubResource("Resource_bw3o8"), SubResource("Resource_fgkk6"), SubResource("Resource_ayacb"), SubResource("Resource_jdpkx"), SubResource("Resource_py14n"), SubResource("Resource_rflvj"), SubResource("Resource_j53sq"), SubResource("Resource_euifw"), SubResource("Resource_rhnn4"), SubResource("Resource_jpj83")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AQUATAIL", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"DREAMEATER", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"LOWKICK", &"MIMIC", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWORDSDANCE", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"ILLUMINATE", &"KEENEYE"])
+hidden_abilities = Array[StringName]([&"ANALYTIC"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0uq8j")]([SubResource("Resource_peruo")])
+height = 11
+weight = 270
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(5, 17)
+shadow_size = 1
+id = &"WATCHOG"
+display_name = "Watchog"

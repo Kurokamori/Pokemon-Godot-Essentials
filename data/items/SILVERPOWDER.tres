@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6wv0v"]
+
+[resource]
+resource_name = "SILVERPOWDER"
+script = ExtResource("1_6wv0v")
+name_plural = "Silver Powders"
+portion_name = "pile of Silver Powder"
+portion_name_plural = "piles of Silver Powder"
+price = 3000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a shiny, silver powder that ups the power of Bug-type moves."
+id = &"SILVERPOWDER"
+display_name = "Silver Powder"
+flags = Array[StringName]([&"Fling_10"])

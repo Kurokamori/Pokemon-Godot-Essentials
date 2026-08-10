@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_sf43t"]
+
+[resource]
+resource_name = "FURYATTACK"
+script = ExtResource("1_sf43t")
+category = 0
+power = 15
+accuracy = 85
+total_pp = 20
+function_code = &"HitTwoToFiveTimes"
+description = "The target is jabbed repeatedly with a horn or beak two to five times in a row."
+id = &"FURYATTACK"
+display_name = "Fury Attack"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

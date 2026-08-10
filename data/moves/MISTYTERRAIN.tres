@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ofsk8"]
+
+[resource]
+resource_name = "MISTYTERRAIN"
+script = ExtResource("1_ofsk8")
+type = &"FAIRY"
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+function_code = &"StartMistyTerrain"
+description = "The user covers the ground with mist for five turns. Grounded Pokémon can't gain status conditions."
+id = &"MISTYTERRAIN"
+display_name = "Misty Terrain"

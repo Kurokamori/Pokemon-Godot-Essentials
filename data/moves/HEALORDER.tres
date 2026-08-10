@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_li1lt"]
+
+[resource]
+resource_name = "HEALORDER"
+script = ExtResource("1_li1lt")
+type = &"BUG"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"HealUserHalfOfTotalHP"
+description = "The user calls out its underlings to heal it. The user regains up to half of its max HP."
+id = &"HEALORDER"
+display_name = "Heal Order"

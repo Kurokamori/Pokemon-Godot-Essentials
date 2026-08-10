@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8huiw"]
+
+[resource]
+resource_name = "DREAMBALL"
+script = ExtResource("1_8huiw")
+name_plural = "Dream Balls"
+pocket = 3
+price = 300
+sell_price = 150
+battle_use = 4
+description = "A somewhat different Poké Ball that makes it easier to catch wild Pokémon while they're asleep."
+id = &"DREAMBALL"
+display_name = "Dream Ball"
+flags = Array[StringName]([&"PokeBall"])

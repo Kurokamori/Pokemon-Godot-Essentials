@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_f66o6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rujb8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7nf6d"]
+
+[sub_resource type="Resource" id="Resource_c6ey6"]
+script = ExtResource("1_f66o6")
+species = &"FERALIGATR"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_d3fha"]
+script = ExtResource("1_f66o6")
+species = &"TOTODILE"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jqed3"]
+script = ExtResource("2_rujb8")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_f7lgu"]
+script = ExtResource("2_rujb8")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_63f0x"]
+script = ExtResource("2_rujb8")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_trto5"]
+script = ExtResource("2_rujb8")
+level = 6
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_geabi"]
+script = ExtResource("2_rujb8")
+level = 8
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_in8ug"]
+script = ExtResource("2_rujb8")
+level = 13
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_uo3wf"]
+script = ExtResource("2_rujb8")
+level = 15
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_h440t"]
+script = ExtResource("2_rujb8")
+level = 21
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_gwu4j"]
+script = ExtResource("2_rujb8")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_f7iy1"]
+script = ExtResource("2_rujb8")
+level = 30
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_dr25v"]
+script = ExtResource("2_rujb8")
+level = 33
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_sa5p0"]
+script = ExtResource("2_rujb8")
+level = 39
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_r80wk"]
+script = ExtResource("2_rujb8")
+level = 42
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_k0qax"]
+script = ExtResource("2_rujb8")
+level = 48
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_kyhqv"]
+script = ExtResource("2_rujb8")
+level = 51
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_hv3nl"]
+script = ExtResource("2_rujb8")
+level = 57
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_7vei2"]
+script = ExtResource("2_rujb8")
+level = 60
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "CROCONAW"
+script = ExtResource("3_7nf6d")
+species = &"CROCONAW"
+category = "Big Jaw"
+pokedex_entry = "Once its jaws clamp down on its foe, it will absolutely not let go. Because the tips of its fangs are forked back like fishhooks, they become irremovably embedded."
+types = Array[StringName]([&"WATER"])
+base_hp = 65
+base_attack = 80
+base_defense = 80
+base_special_attack = 59
+base_special_defense = 63
+base_speed = 58
+ev_attack = 1
+ev_defense = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rujb8")]([SubResource("Resource_jqed3"), SubResource("Resource_f7lgu"), SubResource("Resource_63f0x"), SubResource("Resource_trto5"), SubResource("Resource_geabi"), SubResource("Resource_in8ug"), SubResource("Resource_uo3wf"), SubResource("Resource_h440t"), SubResource("Resource_gwu4j"), SubResource("Resource_f7iy1"), SubResource("Resource_dr25v"), SubResource("Resource_sa5p0"), SubResource("Resource_r80wk"), SubResource("Resource_k0qax"), SubResource("Resource_kyhqv"), SubResource("Resource_hv3nl"), SubResource("Resource_7vei2")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_f66o6")]([SubResource("Resource_c6ey6"), SubResource("Resource_d3fha")])
+height = 11
+weight = 250
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(2, 24)
+id = &"CROCONAW"
+display_name = "Croconaw"

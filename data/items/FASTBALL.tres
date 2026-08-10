@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6v4ih"]
+
+[resource]
+resource_name = "FASTBALL"
+script = ExtResource("1_6v4ih")
+name_plural = "Fast Balls"
+pocket = 3
+price = 300
+sell_price = 150
+battle_use = 4
+description = "A Poké Ball that makes it easier to catch fast Pokémon."
+id = &"FASTBALL"
+display_name = "Fast Ball"
+flags = Array[StringName]([&"PokeBall"])

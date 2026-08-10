@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dmfj1qu3fo5nh"
+path="res://.godot/imported/Vs sword.ogg-b4fa3d945a66133a18934b65b175c7fd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Vs sword.ogg"
+dest_files=["res://.godot/imported/Vs sword.ogg-b4fa3d945a66133a18934b65b175c7fd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

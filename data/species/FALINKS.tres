@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_irq6j"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vbefs"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kx1t1"]
+
+[sub_resource type="Resource" id="Resource_681eh"]
+script = ExtResource("2_vbefs")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_rti7u"]
+script = ExtResource("2_vbefs")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_o6c0o"]
+script = ExtResource("2_vbefs")
+level = 5
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_ktd3n"]
+script = ExtResource("2_vbefs")
+level = 10
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_jkpv1"]
+script = ExtResource("2_vbefs")
+level = 15
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_yj3fu"]
+script = ExtResource("2_vbefs")
+level = 20
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_46pbh"]
+script = ExtResource("2_vbefs")
+level = 25
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_piew8"]
+script = ExtResource("2_vbefs")
+level = 30
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_g11lf"]
+script = ExtResource("2_vbefs")
+level = 35
+move = &"FIRSTIMPRESSION"
+
+[sub_resource type="Resource" id="Resource_ht2ae"]
+script = ExtResource("2_vbefs")
+level = 40
+move = &"NORETREAT"
+
+[sub_resource type="Resource" id="Resource_ve667"]
+script = ExtResource("2_vbefs")
+level = 45
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_tforq"]
+script = ExtResource("2_vbefs")
+level = 50
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_catqy"]
+script = ExtResource("2_vbefs")
+level = 55
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_243u7"]
+script = ExtResource("2_vbefs")
+level = 60
+move = &"COUNTER"
+
+[resource]
+resource_name = "FALINKS"
+script = ExtResource("3_kx1t1")
+species = &"FALINKS"
+category = "Formation"
+pokedex_entry = "The six of them work together as one Pokémon. Teamwork is also their battle strategy, and they constantly change their formation as they fight."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 65
+base_attack = 100
+base_defense = 100
+base_special_attack = 70
+base_special_defense = 60
+base_speed = 75
+ev_attack = 2
+ev_special_defense = 1
+base_exp = 165
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vbefs")]([SubResource("Resource_681eh"), SubResource("Resource_rti7u"), SubResource("Resource_o6c0o"), SubResource("Resource_ktd3n"), SubResource("Resource_jkpv1"), SubResource("Resource_yj3fu"), SubResource("Resource_46pbh"), SubResource("Resource_piew8"), SubResource("Resource_g11lf"), SubResource("Resource_ht2ae"), SubResource("Resource_ve667"), SubResource("Resource_tforq"), SubResource("Resource_catqy"), SubResource("Resource_243u7")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"BEATUP", &"BRICKBREAK", &"BULKUP", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"THROATCHOP", &"TOXIC", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"BATTLEARMOR"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Fairy", &"Mineral"])
+hatch_steps = 6400
+height = 30
+weight = 620
+color = &"Yellow"
+shape = &"MultiBody"
+generation = 8
+back_sprite_offset = Vector2i(-1, 54)
+front_sprite_offset = Vector2i(-4, 30)
+shadow_size = 3
+id = &"FALINKS"
+display_name = "Falinks"

@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bt1lg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_34igd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_abyqt"]
+
+[sub_resource type="Resource" id="Resource_oofwy"]
+script = ExtResource("1_bt1lg")
+species = &"GALVANTULA"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_s5p28"]
+script = ExtResource("2_34igd")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_0f5bw"]
+script = ExtResource("2_34igd")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_3nyy6"]
+script = ExtResource("2_34igd")
+level = 4
+move = &"ELECTROWEB"
+
+[sub_resource type="Resource" id="Resource_3coxq"]
+script = ExtResource("2_34igd")
+level = 8
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_fh7n7"]
+script = ExtResource("2_34igd")
+level = 12
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_qrs7w"]
+script = ExtResource("2_34igd")
+level = 16
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_p1xlj"]
+script = ExtResource("2_34igd")
+level = 20
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_nb3dj"]
+script = ExtResource("2_34igd")
+level = 24
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_6gfqs"]
+script = ExtResource("2_34igd")
+level = 28
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_qxux7"]
+script = ExtResource("2_34igd")
+level = 32
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_217ri"]
+script = ExtResource("2_34igd")
+level = 37
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_rlcj6"]
+script = ExtResource("2_34igd")
+level = 40
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_gcv3d"]
+script = ExtResource("2_34igd")
+level = 44
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_ed1jc"]
+script = ExtResource("2_34igd")
+level = 48
+move = &"BUGBUZZ"
+
+[resource]
+resource_name = "JOLTIK"
+script = ExtResource("3_abyqt")
+species = &"JOLTIK"
+category = "Attaching"
+pokedex_entry = "They attach themselves to large-bodied Pokémon and absorb static electricity, which they store in an electric pouch."
+types = Array[StringName]([&"BUG", &"ELECTRIC"])
+base_hp = 50
+base_attack = 47
+base_defense = 50
+base_special_attack = 57
+base_special_defense = 50
+base_speed = 65
+ev_speed = 1
+base_exp = 64
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_34igd")]([SubResource("Resource_s5p28"), SubResource("Resource_0f5bw"), SubResource("Resource_3nyy6"), SubResource("Resource_3coxq"), SubResource("Resource_fh7n7"), SubResource("Resource_qrs7w"), SubResource("Resource_p1xlj"), SubResource("Resource_nb3dj"), SubResource("Resource_6gfqs"), SubResource("Resource_qxux7"), SubResource("Resource_217ri"), SubResource("Resource_rlcj6"), SubResource("Resource_gcv3d"), SubResource("Resource_ed1jc")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BOUNCE", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CROSSPOISON", &"CUT", &"DOUBLETEAM", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"HIDDENPOWER", &"INFESTATION", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SPEEDSWAP", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"VOLTSWITCH", &"WILDCHARGE", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"DOUBLETEAM", &"INFESTATION", &"LUNGE", &"POISONSTING", &"STRUGGLEBUG"])
+abilities = Array[StringName]([&"COMPOUNDEYES", &"UNNERVE"])
+hidden_abilities = Array[StringName]([&"SWARM"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_bt1lg")]([SubResource("Resource_oofwy")])
+weight = 6
+color = &"Yellow"
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(4, 36)
+shadow_size = 1
+id = &"JOLTIK"
+display_name = "Joltik"

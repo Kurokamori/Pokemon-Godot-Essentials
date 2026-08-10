@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_hyey2"]
+
+[resource]
+resource_name = "POISONHEAL"
+script = ExtResource("1_hyey2")
+description = "Restores HP if the Pokémon is poisoned."
+id = &"POISONHEAL"
+display_name = "Poison Heal"

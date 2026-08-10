@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_cys22"]
+
+[resource]
+resource_name = "SPRAYDUCK"
+script = ExtResource("1_cys22")
+name_plural = "Sprayducks"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A watering can shaped like a Psyduck. It helps promote healthy growth of Berries planted in soft soil."
+id = &"SPRAYDUCK"
+display_name = "Sprayduck"
+flags = Array[StringName]([&"KeyItem"])

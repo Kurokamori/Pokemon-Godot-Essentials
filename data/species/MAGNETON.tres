@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o4v3a"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_6heki"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n2krx"]
+
+[sub_resource type="Resource" id="Resource_8iak3"]
+script = ExtResource("1_o4v3a")
+species = &"MAGNEZONE"
+method = &"Item"
+parameter = "THUNDERSTONE"
+
+[sub_resource type="Resource" id="Resource_psyyc"]
+script = ExtResource("1_o4v3a")
+species = &"MAGNEZONE"
+method = &"LocationFlag"
+parameter = "Magnetic"
+
+[sub_resource type="Resource" id="Resource_0yfj2"]
+script = ExtResource("1_o4v3a")
+species = &"MAGNEMITE"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6dd14"]
+script = ExtResource("2_6heki")
+level = 0
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_mf4hc"]
+script = ExtResource("2_6heki")
+move = &"ELECTRICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_84imm"]
+script = ExtResource("2_6heki")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_wluql"]
+script = ExtResource("2_6heki")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ootwy"]
+script = ExtResource("2_6heki")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_xhvlu"]
+script = ExtResource("2_6heki")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_7y4xr"]
+script = ExtResource("2_6heki")
+level = 12
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_0rji1"]
+script = ExtResource("2_6heki")
+level = 16
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_iprlx"]
+script = ExtResource("2_6heki")
+level = 20
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_o5481"]
+script = ExtResource("2_6heki")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_0xvv6"]
+script = ExtResource("2_6heki")
+level = 28
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_s132g"]
+script = ExtResource("2_6heki")
+level = 34
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_grcjb"]
+script = ExtResource("2_6heki")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_nkglu"]
+script = ExtResource("2_6heki")
+level = 46
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_8ni4s"]
+script = ExtResource("2_6heki")
+level = 52
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_jd3fs"]
+script = ExtResource("2_6heki")
+level = 58
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_hl5hf"]
+script = ExtResource("2_6heki")
+level = 64
+move = &"ZAPCANNON"
+
+[resource]
+resource_name = "MAGNETON"
+script = ExtResource("3_n2krx")
+species = &"MAGNETON"
+category = "Magnet"
+pokedex_entry = "It is actually three Magnemite linked by magnetism. It generates powerful radio waves that raise temperatures by 3.6 degrees F within a 3,300-foot radius."
+types = Array[StringName]([&"ELECTRIC", &"STEEL"])
+base_hp = 50
+base_attack = 60
+base_defense = 95
+base_special_attack = 120
+base_special_defense = 70
+base_speed = 70
+ev_special_attack = 2
+base_exp = 163
+gender_ratio = &"Genderless"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_6heki")]([SubResource("Resource_6dd14"), SubResource("Resource_mf4hc"), SubResource("Resource_84imm"), SubResource("Resource_wluql"), SubResource("Resource_ootwy"), SubResource("Resource_xhvlu"), SubResource("Resource_7y4xr"), SubResource("Resource_0rji1"), SubResource("Resource_iprlx"), SubResource("Resource_o5481"), SubResource("Resource_0xvv6"), SubResource("Resource_s132g"), SubResource("Resource_grcjb"), SubResource("Resource_nkglu"), SubResource("Resource_8ni4s"), SubResource("Resource_jd3fs"), SubResource("Resource_hl5hf")])
+tutor_moves = Array[StringName]([&"CHARGEBEAM", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"GYROBALL", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROLLOUT", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRIATTACK", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"MAGNETPULL", &"STURDY"])
+hidden_abilities = Array[StringName]([&"ANALYTIC"])
+wild_item_uncommon = Array[StringName]([&"METALCOAT"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_o4v3a")]([SubResource("Resource_8iak3"), SubResource("Resource_psyyc"), SubResource("Resource_0yfj2")])
+height = 10
+weight = 600
+color = &"Gray"
+shape = &"MultiBody"
+habitat = &"RoughTerrain"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 14)
+id = &"MAGNETON"
+display_name = "Magneton"

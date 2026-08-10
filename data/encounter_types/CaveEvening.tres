@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EncounterTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_type_data.gd" id="1_ist5l"]
+
+[resource]
+resource_name = "CaveEvening"
+script = ExtResource("1_ist5l")
+kind = 2
+trigger_chance = 5
+id = &"CaveEvening"
+display_name = "CaveEvening"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_mrtfo"]
+
+[resource]
+resource_name = "DUBIOUSDISC"
+script = ExtResource("1_mrtfo")
+name_plural = "Dubious Discs"
+price = 3000
+sell_price = 1000
+bp_price = 5
+description = "A transparent device overflowing with dubious data.  Its producer is unknown."
+id = &"DUBIOUSDISC"
+display_name = "Dubious Disc"
+flags = Array[StringName]([&"Fling_50"])

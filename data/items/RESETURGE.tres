@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_52xxf"]
+
+[resource]
+resource_name = "RESETURGE"
+script = ExtResource("1_52xxf")
+name_plural = "Reset Urges"
+pocket = 7
+description = "When used, it restores any stat changes of an ally Pokémon."
+id = &"RESETURGE"
+display_name = "Reset Urge"
+flags = Array[StringName]([&"Fling_30"])

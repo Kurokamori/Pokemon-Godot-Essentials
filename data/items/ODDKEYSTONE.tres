@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xt7xb"]
+
+[resource]
+resource_name = "ODDKEYSTONE"
+script = ExtResource("1_xt7xb")
+name_plural = "Odd Keystones"
+price = 2100
+sell_price = 1050
+description = "A vital item that is needed to keep a stone tower from collapsing. Voices can be heard from it occasionally."
+id = &"ODDKEYSTONE"
+display_name = "Odd Keystone"
+flags = Array[StringName]([&"Fling_80"])

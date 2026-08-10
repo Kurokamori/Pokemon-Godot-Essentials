@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wr1da"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fqjpx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_o1k7o"]
+
+[sub_resource type="Resource" id="Resource_uirev"]
+script = ExtResource("1_wr1da")
+species = &"GURDURR"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_dcb2e"]
+script = ExtResource("2_fqjpx")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_siblq"]
+script = ExtResource("2_fqjpx")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_kj7b0"]
+script = ExtResource("2_fqjpx")
+level = 4
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_4p6vb"]
+script = ExtResource("2_fqjpx")
+level = 8
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_qib4e"]
+script = ExtResource("2_fqjpx")
+level = 12
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_opxvi"]
+script = ExtResource("2_fqjpx")
+level = 16
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_3giys"]
+script = ExtResource("2_fqjpx")
+level = 20
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_06l3x"]
+script = ExtResource("2_fqjpx")
+level = 24
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_bmhft"]
+script = ExtResource("2_fqjpx")
+level = 28
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_5s2nq"]
+script = ExtResource("2_fqjpx")
+level = 32
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_rh8pg"]
+script = ExtResource("2_fqjpx")
+level = 36
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_ncw0x"]
+script = ExtResource("2_fqjpx")
+level = 40
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_1ig06"]
+script = ExtResource("2_fqjpx")
+level = 44
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_2d883"]
+script = ExtResource("2_fqjpx")
+level = 48
+move = &"FOCUSPUNCH"
+
+[resource]
+resource_name = "TIMBURR"
+script = ExtResource("3_o1k7o")
+species = &"TIMBURR"
+category = "Muscular"
+pokedex_entry = "These Pokémon appear at building sites and help out with construction. They always carry squared logs."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 75
+base_attack = 80
+base_defense = 55
+base_special_attack = 25
+base_special_defense = 35
+base_speed = 35
+ev_attack = 1
+base_exp = 61
+growth_rate = &"Parabolic"
+gender_ratio = &"Female25Percent"
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fqjpx")]([SubResource("Resource_dcb2e"), SubResource("Resource_siblq"), SubResource("Resource_kj7b0"), SubResource("Resource_4p6vb"), SubResource("Resource_qib4e"), SubResource("Resource_opxvi"), SubResource("Resource_3giys"), SubResource("Resource_06l3x"), SubResource("Resource_bmhft"), SubResource("Resource_5s2nq"), SubResource("Resource_rh8pg"), SubResource("Resource_ncw0x"), SubResource("Resource_1ig06"), SubResource("Resource_2d883")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"CAPTIVATE", &"COACHING", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP"])
+egg_moves = Array[StringName]([&"COUNTER", &"DEFOG", &"DETECT", &"MACHPUNCH", &"POWERUPPUNCH", &"WIDEGUARD"])
+abilities = Array[StringName]([&"GUTS", &"SHEERFORCE"])
+hidden_abilities = Array[StringName]([&"IRONFIST"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_wr1da")]([SubResource("Resource_uirev")])
+height = 6
+weight = 125
+color = &"Gray"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(4, 30)
+shadow_size = 1
+id = &"TIMBURR"
+display_name = "Timburr"

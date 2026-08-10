@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0jv8p"]
+
+[resource]
+resource_name = "THUNDERSTONE"
+script = ExtResource("1_0jv8p")
+name_plural = "Thunder Stones"
+price = 3000
+sell_price = 1500
+bp_price = 5
+field_use = 1
+description = "A peculiar stone that makes certain species of Pokémon evolve. It has a thunderbolt pattern."
+id = &"THUNDERSTONE"
+display_name = "Thunder Stone"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_30"])

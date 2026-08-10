@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xaoeg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_16ki0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n53gp"]
+
+[sub_resource type="Resource" id="Resource_qup0i"]
+script = ExtResource("1_xaoeg")
+species = &"MILOTIC"
+method = &"TradeItem"
+parameter = "PRISMSCALE"
+
+[sub_resource type="Resource" id="Resource_sefmm"]
+script = ExtResource("1_xaoeg")
+species = &"MILOTIC"
+method = &"Beauty"
+parameter = "170"
+
+[sub_resource type="Resource" id="Resource_xcnur"]
+script = ExtResource("2_16ki0")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_pw7y1"]
+script = ExtResource("2_16ki0")
+level = 15
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_4bqur"]
+script = ExtResource("2_16ki0")
+level = 25
+move = &"FLAIL"
+
+[resource]
+resource_name = "FEEBAS"
+script = ExtResource("3_n53gp")
+species = &"FEEBAS"
+category = "Fish"
+pokedex_entry = "Feebas live in ponds that are heavily infested with weeds. Because of its hopelessly shabby appearance, it seems as if few trainers raise it."
+types = Array[StringName]([&"WATER"])
+base_hp = 20
+base_attack = 15
+base_defense = 20
+base_special_attack = 10
+base_special_defense = 55
+base_speed = 80
+ev_speed = 1
+base_exp = 40
+growth_rate = &"Erratic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_16ki0")]([SubResource("Resource_xcnur"), SubResource("Resource_pw7y1"), SubResource("Resource_4bqur")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LIGHTSCREEN", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"CONFUSERAY", &"DRAGONBREATH", &"HAZE", &"HYPNOSIS", &"MIRRORCOAT", &"MIST", &"TICKLE"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"OBLIVIOUS"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xaoeg")]([SubResource("Resource_qup0i"), SubResource("Resource_sefmm")])
+height = 6
+weight = 74
+color = &"Brown"
+shape = &"Finned"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 21)
+shadow_size = 1
+id = &"FEEBAS"
+display_name = "Feebas"

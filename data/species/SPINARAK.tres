@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_eskho"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hywdd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hplq5"]
+
+[sub_resource type="Resource" id="Resource_ysy6h"]
+script = ExtResource("1_eskho")
+species = &"ARIADOS"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_v7nkf"]
+script = ExtResource("2_hywdd")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_08v8h"]
+script = ExtResource("2_hywdd")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_f5481"]
+script = ExtResource("2_hywdd")
+level = 5
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_ex73u"]
+script = ExtResource("2_hywdd")
+level = 8
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_4hx43"]
+script = ExtResource("2_hywdd")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_yk4cd"]
+script = ExtResource("2_hywdd")
+level = 15
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_2s4ev"]
+script = ExtResource("2_hywdd")
+level = 19
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_c6iiu"]
+script = ExtResource("2_hywdd")
+level = 22
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_6okuh"]
+script = ExtResource("2_hywdd")
+level = 26
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_75n07"]
+script = ExtResource("2_hywdd")
+level = 29
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_x07nj"]
+script = ExtResource("2_hywdd")
+level = 33
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_gxso0"]
+script = ExtResource("2_hywdd")
+level = 36
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_cwmye"]
+script = ExtResource("2_hywdd")
+level = 40
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_4d783"]
+script = ExtResource("2_hywdd")
+level = 43
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_80226"]
+script = ExtResource("2_hywdd")
+level = 47
+move = &"CROSSPOISON"
+
+[sub_resource type="Resource" id="Resource_jifej"]
+script = ExtResource("2_hywdd")
+level = 50
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_87yfb"]
+script = ExtResource("2_hywdd")
+level = 54
+move = &"TOXICTHREAD"
+
+[resource]
+resource_name = "SPINARAK"
+script = ExtResource("3_hplq5")
+species = &"SPINARAK"
+category = "String Spit"
+pokedex_entry = "The web it spins can be considered its second nervous system. It is said that a Spinarak determines its prey by the tiny vibrations it feels through the web."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 40
+base_attack = 60
+base_defense = 40
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 30
+ev_attack = 1
+base_exp = 50
+growth_rate = &"Fast"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hywdd")]([SubResource("Resource_v7nkf"), SubResource("Resource_08v8h"), SubResource("Resource_f5481"), SubResource("Resource_ex73u"), SubResource("Resource_4hx43"), SubResource("Resource_yk4cd"), SubResource("Resource_2s4ev"), SubResource("Resource_c6iiu"), SubResource("Resource_6okuh"), SubResource("Resource_75n07"), SubResource("Resource_x07nj"), SubResource("Resource_gxso0"), SubResource("Resource_cwmye"), SubResource("Resource_4d783"), SubResource("Resource_80226"), SubResource("Resource_jifej"), SubResource("Resource_87yfb")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BOUNCE", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"HIDDENPOWER", &"HONECLAWS", &"INFESTATION", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"VENOSHOCK", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"BATONPASS", &"DISABLE", &"LUNGE", &"MEGAHORN", &"NIGHTSLASH", &"PSYBEAM", &"RAGEPOWDER", &"TOXICSPIKES"])
+abilities = Array[StringName]([&"SWARM", &"INSOMNIA"])
+hidden_abilities = Array[StringName]([&"SNIPER"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_eskho")]([SubResource("Resource_ysy6h")])
+height = 5
+weight = 85
+color = &"Green"
+shape = &"Insectoid"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(0, 38)
+id = &"SPINARAK"
+display_name = "Spinarak"

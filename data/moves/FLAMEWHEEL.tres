@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_cnd20"]
+
+[resource]
+resource_name = "FLAMEWHEEL"
+script = ExtResource("1_cnd20")
+type = &"FIRE"
+category = 0
+power = 60
+total_pp = 25
+function_code = &"BurnTarget"
+effect_chance = 10
+description = "The user cloaks itself in fire and charges at the target. It may also leave the target with a burn."
+id = &"FLAMEWHEEL"
+display_name = "Flame Wheel"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"ThawsUser"])

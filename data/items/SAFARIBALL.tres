@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_sqymy"]
+
+[resource]
+resource_name = "SAFARIBALL"
+script = ExtResource("1_sqymy")
+name_plural = "Safari Balls"
+pocket = 3
+battle_use = 4
+description = "A special Poké Ball that is used only in the Safari Zone. It is decorated in a camouflage pattern."
+id = &"SAFARIBALL"
+display_name = "Safari Ball"
+flags = Array[StringName]([&"PokeBall"])

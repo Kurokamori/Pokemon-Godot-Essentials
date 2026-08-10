@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_ndli5"]
+
+[resource]
+script = ExtResource("1_ndli5")
+category = &"body_shapes"
+record_script = "res://src/data/body_shape_data.gd"
+paths = {
+&"Bipedal": "res://data/body_shapes/Bipedal.tres",
+&"BipedalTail": "res://data/body_shapes/BipedalTail.tres",
+&"Finned": "res://data/body_shapes/Finned.tres",
+&"Head": "res://data/body_shapes/Head.tres",
+&"HeadArms": "res://data/body_shapes/HeadArms.tres",
+&"HeadBase": "res://data/body_shapes/HeadBase.tres",
+&"HeadLegs": "res://data/body_shapes/HeadLegs.tres",
+&"Insectoid": "res://data/body_shapes/Insectoid.tres",
+&"MultiBody": "res://data/body_shapes/MultiBody.tres",
+&"MultiWinged": "res://data/body_shapes/MultiWinged.tres",
+&"Multiped": "res://data/body_shapes/Multiped.tres",
+&"Quadruped": "res://data/body_shapes/Quadruped.tres",
+&"Serpentine": "res://data/body_shapes/Serpentine.tres",
+&"Winged": "res://data/body_shapes/Winged.tres"
+}
+ordered_ids = Array[StringName]([&"Head", &"Serpentine", &"Finned", &"HeadArms", &"HeadBase", &"BipedalTail", &"HeadLegs", &"Quadruped", &"Winged", &"Multiped", &"MultiBody", &"Bipedal", &"MultiWinged", &"Insectoid"])

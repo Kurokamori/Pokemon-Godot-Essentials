@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dsm0b"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qncov"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1peji"]
+
+[sub_resource type="Resource" id="Resource_d3aif"]
+script = ExtResource("1_dsm0b")
+species = &"GROTLE"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_g4ia5"]
+script = ExtResource("2_qncov")
+level = 0
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_br3u2"]
+script = ExtResource("2_qncov")
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_cmd4e"]
+script = ExtResource("2_qncov")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7djcw"]
+script = ExtResource("2_qncov")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_lrf3a"]
+script = ExtResource("2_qncov")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_wa7gq"]
+script = ExtResource("2_qncov")
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_kvshv"]
+script = ExtResource("2_qncov")
+level = 5
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_t0uf6"]
+script = ExtResource("2_qncov")
+level = 6
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_lm8lo"]
+script = ExtResource("2_qncov")
+level = 10
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_drgdw"]
+script = ExtResource("2_qncov")
+level = 13
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_lmn0l"]
+script = ExtResource("2_qncov")
+level = 17
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_dib1n"]
+script = ExtResource("2_qncov")
+level = 22
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_xf5om"]
+script = ExtResource("2_qncov")
+level = 27
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_kbxwk"]
+script = ExtResource("2_qncov")
+level = 33
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_s3pex"]
+script = ExtResource("2_qncov")
+level = 39
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_0k2xd"]
+script = ExtResource("2_qncov")
+level = 45
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_vo0pt"]
+script = ExtResource("2_qncov")
+level = 51
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_phh4r"]
+script = ExtResource("2_qncov")
+level = 57
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "TORTERRA"
+script = ExtResource("3_1peji")
+species = &"TORTERRA"
+category = "Continent"
+pokedex_entry = "Small Pokémon occasionally gather on its unmoving back to begin building their nests."
+types = Array[StringName]([&"GRASS", &"GROUND"])
+base_hp = 95
+base_attack = 109
+base_defense = 105
+base_special_attack = 75
+base_special_defense = 85
+base_speed = 56
+ev_attack = 2
+ev_defense = 1
+base_exp = 263
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qncov")]([SubResource("Resource_g4ia5"), SubResource("Resource_br3u2"), SubResource("Resource_cmd4e"), SubResource("Resource_7djcw"), SubResource("Resource_lrf3a"), SubResource("Resource_wa7gq"), SubResource("Resource_kvshv"), SubResource("Resource_t0uf6"), SubResource("Resource_lm8lo"), SubResource("Resource_drgdw"), SubResource("Resource_lmn0l"), SubResource("Resource_dib1n"), SubResource("Resource_xf5om"), SubResource("Resource_kbxwk"), SubResource("Resource_s3pex"), SubResource("Resource_0k2xd"), SubResource("Resource_vo0pt"), SubResource("Resource_phh4r")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRENZYPLANT", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSPLEDGE", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"IRONHEAD", &"IRONTAIL", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OUTRAGE", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"SHELLARMOR"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_dsm0b")]([SubResource("Resource_d3aif")])
+height = 22
+weight = 3100
+color = &"Green"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(3, 15)
+shadow_size = 3
+id = &"TORTERRA"
+display_name = "Torterra"

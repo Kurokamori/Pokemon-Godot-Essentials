@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_r8w4c"]
+
+[resource]
+resource_name = "LONGREACH"
+script = ExtResource("1_r8w4c")
+description = "Uses moves without making contact with the target."
+id = &"LONGREACH"
+display_name = "Long Reach"

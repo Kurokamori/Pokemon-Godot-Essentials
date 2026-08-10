@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_4slri"]
+
+[resource]
+resource_name = "WHITESMOKE"
+script = ExtResource("1_4slri")
+description = "Prevents other Pokémon from lowering its stats."
+id = &"WHITESMOKE"
+display_name = "White Smoke"

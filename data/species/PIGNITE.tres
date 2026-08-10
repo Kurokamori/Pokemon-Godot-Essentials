@@ -1,0 +1,144 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wlhu7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_6rtfq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_g3qjl"]
+
+[sub_resource type="Resource" id="Resource_rneqk"]
+script = ExtResource("1_wlhu7")
+species = &"EMBOAR"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_gpvov"]
+script = ExtResource("1_wlhu7")
+species = &"TEPIG"
+method = &"Level"
+parameter = "17"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ssy1n"]
+script = ExtResource("2_6rtfq")
+level = 0
+move = &"ARMTHRUST"
+
+[sub_resource type="Resource" id="Resource_vffjl"]
+script = ExtResource("2_6rtfq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_dl06i"]
+script = ExtResource("2_6rtfq")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_0ueb8"]
+script = ExtResource("2_6rtfq")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_k32y6"]
+script = ExtResource("2_6rtfq")
+move = &"ODORSLEUTH"
+
+[sub_resource type="Resource" id="Resource_yo4ca"]
+script = ExtResource("2_6rtfq")
+level = 3
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_fkywm"]
+script = ExtResource("2_6rtfq")
+level = 7
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_fn62m"]
+script = ExtResource("2_6rtfq")
+level = 9
+move = &"ODORSLEUTH"
+
+[sub_resource type="Resource" id="Resource_080cd"]
+script = ExtResource("2_6rtfq")
+level = 13
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_7rrl3"]
+script = ExtResource("2_6rtfq")
+level = 15
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_yo0g5"]
+script = ExtResource("2_6rtfq")
+level = 20
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_imthe"]
+script = ExtResource("2_6rtfq")
+level = 23
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_5ik5u"]
+script = ExtResource("2_6rtfq")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_aa3l4"]
+script = ExtResource("2_6rtfq")
+level = 31
+move = &"HEATCRASH"
+
+[sub_resource type="Resource" id="Resource_3ilao"]
+script = ExtResource("2_6rtfq")
+level = 36
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_stxje"]
+script = ExtResource("2_6rtfq")
+level = 39
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_kfhnr"]
+script = ExtResource("2_6rtfq")
+level = 44
+move = &"HEADSMASH"
+
+[sub_resource type="Resource" id="Resource_igojy"]
+script = ExtResource("2_6rtfq")
+level = 47
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_oo5ba"]
+script = ExtResource("2_6rtfq")
+level = 52
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "PIGNITE"
+script = ExtResource("3_g3qjl")
+species = &"PIGNITE"
+category = "Fire Pig"
+pokedex_entry = "Whatever it eats becomes fuel for the flame in its stomach. When it is angered, the intensity of the flame increases."
+types = Array[StringName]([&"FIRE", &"FIGHTING"])
+base_hp = 90
+base_attack = 93
+base_defense = 55
+base_special_attack = 70
+base_special_defense = 55
+base_speed = 55
+ev_attack = 2
+base_exp = 146
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_6rtfq")]([SubResource("Resource_ssy1n"), SubResource("Resource_vffjl"), SubResource("Resource_dl06i"), SubResource("Resource_0ueb8"), SubResource("Resource_k32y6"), SubResource("Resource_yo4ca"), SubResource("Resource_fkywm"), SubResource("Resource_fn62m"), SubResource("Resource_080cd"), SubResource("Resource_7rrl3"), SubResource("Resource_yo0g5"), SubResource("Resource_imthe"), SubResource("Resource_5ik5u"), SubResource("Resource_aa3l4"), SubResource("Resource_3ilao"), SubResource("Resource_stxje"), SubResource("Resource_kfhnr"), SubResource("Resource_igojy"), SubResource("Resource_oo5ba")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"GYROBALL", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WILDCHARGE", &"WILLOWISP", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"THICKFAT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_wlhu7")]([SubResource("Resource_rneqk"), SubResource("Resource_gpvov")])
+height = 10
+weight = 555
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 27)
+id = &"PIGNITE"
+display_name = "Pignite"

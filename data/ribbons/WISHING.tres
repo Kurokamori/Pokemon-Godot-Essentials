@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_lmxui"]
+
+[resource]
+resource_name = "WISHING"
+script = ExtResource("1_lmxui")
+icon_position = 71
+description = "A Ribbon said to make your wish come true."
+id = &"WISHING"
+display_name = "Wishing Ribbon"

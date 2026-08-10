@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ajlll"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ao5xx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ke4q3"]
+
+[sub_resource type="Resource" id="Resource_ub67e"]
+script = ExtResource("1_ajlll")
+species = &"APPLIN"
+method = &"Item"
+parameter = "SWEETAPPLE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_hd52l"]
+script = ExtResource("2_ao5xx")
+level = 0
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_nqbgh"]
+script = ExtResource("2_ao5xx")
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_2ug70"]
+script = ExtResource("2_ao5xx")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_6uwg4"]
+script = ExtResource("2_ao5xx")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_x7a66"]
+script = ExtResource("2_ao5xx")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_8qfod"]
+script = ExtResource("2_ao5xx")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_vyspt"]
+script = ExtResource("2_ao5xx")
+level = 4
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_hlu3q"]
+script = ExtResource("2_ao5xx")
+level = 8
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_5c47o"]
+script = ExtResource("2_ao5xx")
+level = 12
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_oswnr"]
+script = ExtResource("2_ao5xx")
+level = 16
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_lhy3q"]
+script = ExtResource("2_ao5xx")
+level = 20
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_i1d30"]
+script = ExtResource("2_ao5xx")
+level = 24
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_bm141"]
+script = ExtResource("2_ao5xx")
+level = 28
+move = &"APPLEACID"
+
+[sub_resource type="Resource" id="Resource_hct26"]
+script = ExtResource("2_ao5xx")
+level = 32
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_ylu4p"]
+script = ExtResource("2_ao5xx")
+level = 36
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_bf8oi"]
+script = ExtResource("2_ao5xx")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_qdac4"]
+script = ExtResource("2_ao5xx")
+level = 44
+move = &"ENERGYBALL"
+
+[resource]
+resource_name = "APPLETUN"
+script = ExtResource("3_ke4q3")
+species = &"APPLETUN"
+category = "Apple Nectar"
+pokedex_entry = "Its body is covered in sweet nectar, and the skin on its back is especially yummy. Children used to have it as a snack."
+types = Array[StringName]([&"GRASS", &"DRAGON"])
+base_hp = 110
+base_attack = 85
+base_defense = 80
+base_special_attack = 100
+base_special_defense = 80
+base_speed = 30
+ev_hp = 2
+base_exp = 170
+growth_rate = &"Erratic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ao5xx")]([SubResource("Resource_hd52l"), SubResource("Resource_nqbgh"), SubResource("Resource_2ug70"), SubResource("Resource_6uwg4"), SubResource("Resource_x7a66"), SubResource("Resource_8qfod"), SubResource("Resource_vyspt"), SubResource("Resource_hlu3q"), SubResource("Resource_5c47o"), SubResource("Resource_oswnr"), SubResource("Resource_lhy3q"), SubResource("Resource_i1d30"), SubResource("Resource_bm141"), SubResource("Resource_hct26"), SubResource("Resource_ylu4p"), SubResource("Resource_bf8oi"), SubResource("Resource_qdac4")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GYROBALL", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TOXIC"])
+abilities = Array[StringName]([&"RIPEN", &"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"THICKFAT"])
+egg_groups = Array[StringName]([&"Grass", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ajlll")]([SubResource("Resource_ub67e")])
+height = 4
+weight = 130
+color = &"Green"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(-2, 42)
+front_sprite_offset = Vector2i(0, 18)
+id = &"APPLETUN"
+display_name = "Appletun"

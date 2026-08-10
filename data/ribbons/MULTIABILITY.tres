@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_71ltq"]
+
+[resource]
+resource_name = "MULTIABILITY"
+script = ExtResource("1_71ltq")
+icon_position = 45
+description = "A Ribbon awarded for completing the Battle Tower Multi challenge."
+id = &"MULTIABILITY"
+display_name = "Multi Ability Ribbon"

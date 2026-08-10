@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_fxcan"]
+
+[resource]
+resource_name = "TM05"
+script = ExtResource("1_fxcan")
+name_plural = "TM05s"
+pocket = 4
+price = 1000
+sell_price = 500
+bp_price = 32
+field_use = 5
+move = &"ROAR"
+description = "The target is scared off, and a different Pokémon is dragged out. In the wild, this ends the battle."
+id = &"TM05"
+display_name = "TM05"
+flags = Array[StringName]([&"Fling_10"])

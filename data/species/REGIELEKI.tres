@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_k74eb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_evmrt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_b2sfx"]
+
+[sub_resource type="Resource" id="Resource_0oh4n"]
+script = ExtResource("2_evmrt")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_56dj5"]
+script = ExtResource("2_evmrt")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_aqutx"]
+script = ExtResource("2_evmrt")
+level = 6
+move = &"ELECTROWEB"
+
+[sub_resource type="Resource" id="Resource_c4e4u"]
+script = ExtResource("2_evmrt")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_lml0w"]
+script = ExtResource("2_evmrt")
+level = 18
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_ynyol"]
+script = ExtResource("2_evmrt")
+level = 24
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_xhjpe"]
+script = ExtResource("2_evmrt")
+level = 30
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_wghor"]
+script = ExtResource("2_evmrt")
+level = 36
+move = &"THUNDERCAGE"
+
+[sub_resource type="Resource" id="Resource_r57n1"]
+script = ExtResource("2_evmrt")
+level = 42
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_jjr5d"]
+script = ExtResource("2_evmrt")
+level = 48
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_10hwv"]
+script = ExtResource("2_evmrt")
+level = 54
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_8js45"]
+script = ExtResource("2_evmrt")
+level = 60
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_l5uvd"]
+script = ExtResource("2_evmrt")
+level = 66
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_p7owo"]
+script = ExtResource("2_evmrt")
+level = 72
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_wex66"]
+script = ExtResource("2_evmrt")
+level = 78
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "REGIELEKI"
+script = ExtResource("3_b2sfx")
+species = &"REGIELEKI"
+category = "Electron"
+pokedex_entry = "This Pokémon is a cluster of electrical energy. It's said that removing the rings on Regieleki's body will unleash the Pokémon's latent power."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 80
+base_attack = 100
+base_defense = 50
+base_special_attack = 100
+base_special_defense = 50
+base_speed = 200
+ev_speed = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_evmrt")]([SubResource("Resource_0oh4n"), SubResource("Resource_56dj5"), SubResource("Resource_aqutx"), SubResource("Resource_c4e4u"), SubResource("Resource_lml0w"), SubResource("Resource_ynyol"), SubResource("Resource_xhjpe"), SubResource("Resource_wghor"), SubResource("Resource_r57n1"), SubResource("Resource_jjr5d"), SubResource("Resource_10hwv"), SubResource("Resource_8js45"), SubResource("Resource_l5uvd"), SubResource("Resource_p7owo"), SubResource("Resource_wex66")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AGILITY", &"ASSURANCE", &"BODYSLAM", &"BOUNCE", &"CONFIDE", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"TRANSISTOR"])
+hatch_steps = 30720
+height = 12
+weight = 1450
+color = &"Yellow"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(4, 48)
+front_sprite_offset = Vector2i(4, 10)
+id = &"REGIELEKI"
+display_name = "Regieleki"
+flags = Array[StringName]([&"Legendary"])

@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_v7x0i"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fp4tk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0ddmr"]
+
+[sub_resource type="Resource" id="Resource_lcknd"]
+script = ExtResource("1_v7x0i")
+species = &"SKWOVET"
+method = &"Level"
+parameter = "24"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kk5vy"]
+script = ExtResource("2_fp4tk")
+level = 0
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_1e1bd"]
+script = ExtResource("2_fp4tk")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_drc32"]
+script = ExtResource("2_fp4tk")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_3kebb"]
+script = ExtResource("2_fp4tk")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ff61r"]
+script = ExtResource("2_fp4tk")
+move = &"STUFFCHEEKS"
+
+[sub_resource type="Resource" id="Resource_uqhw6"]
+script = ExtResource("2_fp4tk")
+level = 15
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_a0jfo"]
+script = ExtResource("2_fp4tk")
+level = 15
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_s53eh"]
+script = ExtResource("2_fp4tk")
+level = 15
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_dnw1w"]
+script = ExtResource("2_fp4tk")
+level = 20
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_djtew"]
+script = ExtResource("2_fp4tk")
+level = 27
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_qpoiw"]
+script = ExtResource("2_fp4tk")
+level = 34
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_1u7tg"]
+script = ExtResource("2_fp4tk")
+level = 41
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_q1p8h"]
+script = ExtResource("2_fp4tk")
+level = 48
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_iqh8m"]
+script = ExtResource("2_fp4tk")
+level = 55
+move = &"BELCH"
+
+[resource]
+resource_name = "GREEDENT"
+script = ExtResource("3_0ddmr")
+species = &"GREEDENT"
+category = "Greedy"
+pokedex_entry = "It stashes berries in its tail - so many berries that they fall out constantly. But this Pokémon is a bit slow-witted, so it doesn't notice the loss."
+base_hp = 120
+base_attack = 95
+base_defense = 95
+base_special_attack = 55
+base_special_defense = 75
+base_speed = 20
+ev_hp = 2
+base_exp = 161
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fp4tk")]([SubResource("Resource_kk5vy"), SubResource("Resource_1e1bd"), SubResource("Resource_drc32"), SubResource("Resource_3kebb"), SubResource("Resource_ff61r"), SubResource("Resource_uqhw6"), SubResource("Resource_a0jfo"), SubResource("Resource_s53eh"), SubResource("Resource_dnw1w"), SubResource("Resource_djtew"), SubResource("Resource_qpoiw"), SubResource("Resource_1u7tg"), SubResource("Resource_q1p8h"), SubResource("Resource_iqh8m")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BRUTALSWING", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREFANG", &"FLING", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEFANG", &"IRONTAIL", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHICFANGS", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"TAILSLAP", &"THIEF", &"THUNDERFANG", &"TOXIC", &"UPROAR", &"WILDCHARGE"])
+abilities = Array[StringName]([&"CHEEKPOUCH"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+wild_item_uncommon = Array[StringName]([&"SITRUSBERRY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_v7x0i")]([SubResource("Resource_lcknd")])
+height = 6
+weight = 60
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(8, 52)
+front_sprite_offset = Vector2i(12, 15)
+id = &"GREEDENT"
+display_name = "Greedent"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_o3jmw"]
+
+[resource]
+resource_name = "AGILITY"
+script = ExtResource("1_o3jmw")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 30
+target = &"User"
+function_code = &"RaiseUserSpeed2"
+description = "The user relaxes and lightens its body to move faster. It sharply boosts the Speed stat."
+id = &"AGILITY"
+display_name = "Agility"

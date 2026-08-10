@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_074xt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tn88v"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4cogh"]
+
+[sub_resource type="Resource" id="Resource_wl3u2"]
+script = ExtResource("1_074xt")
+species = &"ELECTABUZZ"
+method = &"TradeItem"
+parameter = "ELECTIRIZER"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_1r5b6"]
+script = ExtResource("2_tn88v")
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_bkoxw"]
+script = ExtResource("2_tn88v")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_qicfk"]
+script = ExtResource("2_tn88v")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_kvgn8"]
+script = ExtResource("2_tn88v")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_2wb80"]
+script = ExtResource("2_tn88v")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_5hx7u"]
+script = ExtResource("2_tn88v")
+level = 12
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_02axm"]
+script = ExtResource("2_tn88v")
+level = 16
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_3x3ik"]
+script = ExtResource("2_tn88v")
+level = 20
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_sq5pr"]
+script = ExtResource("2_tn88v")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_p3j5j"]
+script = ExtResource("2_tn88v")
+level = 28
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_kar51"]
+script = ExtResource("2_tn88v")
+level = 34
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_tdqw5"]
+script = ExtResource("2_tn88v")
+level = 40
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_7crbq"]
+script = ExtResource("2_tn88v")
+level = 46
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_67ha7"]
+script = ExtResource("2_tn88v")
+level = 52
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_tdkgs"]
+script = ExtResource("2_tn88v")
+level = 58
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_w28kv"]
+script = ExtResource("2_tn88v")
+level = 64
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "ELECTIVIRE"
+script = ExtResource("3_4cogh")
+species = &"ELECTIVIRE"
+category = "Thunderbolt"
+pokedex_entry = "It pushes the tips of its two tails against the foe, then lets loose with over 20,000 volts of power."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 75
+base_attack = 123
+base_defense = 67
+base_special_attack = 95
+base_special_defense = 85
+base_speed = 95
+ev_attack = 3
+base_exp = 270
+gender_ratio = &"Female25Percent"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tn88v")]([SubResource("Resource_1r5b6"), SubResource("Resource_bkoxw"), SubResource("Resource_qicfk"), SubResource("Resource_kvgn8"), SubResource("Resource_2wb80"), SubResource("Resource_5hx7u"), SubResource("Resource_02axm"), SubResource("Resource_3x3ik"), SubResource("Resource_sq5pr"), SubResource("Resource_p3j5j"), SubResource("Resource_kar51"), SubResource("Resource_tdqw5"), SubResource("Resource_7crbq"), SubResource("Resource_67ha7"), SubResource("Resource_tdkgs"), SubResource("Resource_w28kv")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"COVET", &"DARKESTLARIAT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IRONTAIL", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"UPROAR", &"VOLTSWITCH", &"WEATHERBALL", &"WILDCHARGE"])
+abilities = Array[StringName]([&"MOTORDRIVE"])
+hidden_abilities = Array[StringName]([&"VITALSPIRIT"])
+wild_item_uncommon = Array[StringName]([&"ELECTIRIZER"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_074xt")]([SubResource("Resource_wl3u2")])
+height = 18
+weight = 1386
+color = &"Yellow"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 45)
+front_sprite_offset = Vector2i(1, 18)
+shadow_size = 3
+id = &"ELECTIVIRE"
+display_name = "Electivire"

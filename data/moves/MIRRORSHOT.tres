@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_g65x3"]
+
+[resource]
+resource_name = "MIRRORSHOT"
+script = ExtResource("1_g65x3")
+type = &"STEEL"
+category = 1
+power = 65
+accuracy = 85
+total_pp = 10
+function_code = &"LowerTargetAccuracy1"
+effect_chance = 30
+description = "The user looses a flash of energy from its polished body. It may also lower the target's accuracy."
+id = &"MIRRORSHOT"
+display_name = "Mirror Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

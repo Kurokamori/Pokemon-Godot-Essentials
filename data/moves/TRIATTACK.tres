@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_i4khp"]
+
+[resource]
+resource_name = "TRIATTACK"
+script = ExtResource("1_i4khp")
+category = 1
+power = 80
+total_pp = 10
+function_code = &"ParalyzeBurnOrFreezeTarget"
+effect_chance = 20
+description = "The user strikes with a simultaneous three-beam attack. May also paralyze, burn, or freeze the target."
+id = &"TRIATTACK"
+display_name = "Tri Attack"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

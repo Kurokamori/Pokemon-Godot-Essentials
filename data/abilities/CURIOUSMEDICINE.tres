@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ya8fd"]
+
+[resource]
+resource_name = "CURIOUSMEDICINE"
+script = ExtResource("1_ya8fd")
+description = "Removes all allies' stat changes on joining battle."
+id = &"CURIOUSMEDICINE"
+display_name = "Curious Medicine"

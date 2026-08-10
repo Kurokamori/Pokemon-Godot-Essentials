@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bm8so"]
+
+[resource]
+resource_name = "GUARDSPEC"
+script = ExtResource("1_bm8so")
+name_plural = "Guard Specs."
+pocket = 7
+price = 1500
+sell_price = 750
+battle_use = 5
+description = "An item that prevents stat reduction among the Trainer's party Pokémon for five turns after use."
+id = &"GUARDSPEC"
+display_name = "Guard Spec."
+flags = Array[StringName]([&"Fling_30"])

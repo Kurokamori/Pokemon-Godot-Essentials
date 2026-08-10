@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_quefb"]
+
+[resource]
+resource_name = "SHELLSMASH"
+script = ExtResource("1_quefb")
+accuracy = 0
+total_pp = 15
+target = &"User"
+function_code = &"LowerUserDefSpDef1RaiseUserAtkSpAtkSpd2"
+description = "The user breaks its shell, lowering its defenses but sharply raising attacking and Speed stats."
+id = &"SHELLSMASH"
+display_name = "Shell Smash"

@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nn85o"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_t1v5y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dsf7g"]
+
+[sub_resource type="Resource" id="Resource_h464m"]
+script = ExtResource("2_t1v5y")
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_nfl4g"]
+script = ExtResource("2_t1v5y")
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_erp4b"]
+script = ExtResource("2_t1v5y")
+level = 6
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_q88vh"]
+script = ExtResource("2_t1v5y")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_mcmbq"]
+script = ExtResource("2_t1v5y")
+level = 18
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_pm8a3"]
+script = ExtResource("2_t1v5y")
+level = 24
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_ivbfr"]
+script = ExtResource("2_t1v5y")
+level = 30
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_3t7ra"]
+script = ExtResource("2_t1v5y")
+level = 36
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_7qxlp"]
+script = ExtResource("2_t1v5y")
+level = 42
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_4ool4"]
+script = ExtResource("2_t1v5y")
+level = 48
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_bhxj8"]
+script = ExtResource("2_t1v5y")
+level = 54
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_nojmo"]
+script = ExtResource("2_t1v5y")
+level = 60
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_0gpid"]
+script = ExtResource("2_t1v5y")
+level = 66
+move = &"DRAGONENERGY"
+
+[sub_resource type="Resource" id="Resource_ixkyf"]
+script = ExtResource("2_t1v5y")
+level = 72
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_0wqih"]
+script = ExtResource("2_t1v5y")
+level = 78
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "REGIDRAGO"
+script = ExtResource("3_dsf7g")
+species = &"REGIDRAGO"
+category = "Dragon Orb"
+pokedex_entry = "Its body is composed of crystallized dragon energy. Regidrago is said to have the powers of every dragon Pokémon."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 200
+base_attack = 100
+base_defense = 50
+base_special_attack = 100
+base_special_defense = 50
+base_speed = 80
+ev_hp = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_t1v5y")]([SubResource("Resource_h464m"), SubResource("Resource_nfl4g"), SubResource("Resource_erp4b"), SubResource("Resource_q88vh"), SubResource("Resource_mcmbq"), SubResource("Resource_pm8a3"), SubResource("Resource_ivbfr"), SubResource("Resource_3t7ra"), SubResource("Resource_7qxlp"), SubResource("Resource_4ool4"), SubResource("Resource_bhxj8"), SubResource("Resource_nojmo"), SubResource("Resource_0gpid"), SubResource("Resource_ixkyf"), SubResource("Resource_0wqih")])
+tutor_moves = Array[StringName]([&"BODYSLAM", &"BREAKINGSWIPE", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FIREFANG", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SCALESHOT", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"THUNDERFANG", &"TOXIC"])
+abilities = Array[StringName]([&"DRAGONSMAW"])
+hatch_steps = 30720
+height = 21
+weight = 2000
+color = &"Green"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 8)
+id = &"REGIDRAGO"
+display_name = "Regidrago"
+flags = Array[StringName]([&"Legendary"])

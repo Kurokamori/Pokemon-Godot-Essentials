@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_121t3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_y3sc2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_61aou"]
+
+[sub_resource type="Resource" id="Resource_54t55"]
+script = ExtResource("1_121t3")
+species = &"GRAVELER"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_d5n6l"]
+script = ExtResource("2_y3sc2")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ipb60"]
+script = ExtResource("2_y3sc2")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_4l38n"]
+script = ExtResource("2_y3sc2")
+level = 4
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_md0ao"]
+script = ExtResource("2_y3sc2")
+level = 6
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_1hohd"]
+script = ExtResource("2_y3sc2")
+level = 10
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_chlu2"]
+script = ExtResource("2_y3sc2")
+level = 12
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_38p51"]
+script = ExtResource("2_y3sc2")
+level = 16
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_nt5kv"]
+script = ExtResource("2_y3sc2")
+level = 18
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_cwvgs"]
+script = ExtResource("2_y3sc2")
+level = 22
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_s0xra"]
+script = ExtResource("2_y3sc2")
+level = 24
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_ni6iq"]
+script = ExtResource("2_y3sc2")
+level = 28
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_yxq5d"]
+script = ExtResource("2_y3sc2")
+level = 30
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_ubpim"]
+script = ExtResource("2_y3sc2")
+level = 34
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_3nfhv"]
+script = ExtResource("2_y3sc2")
+level = 36
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_4bl1l"]
+script = ExtResource("2_y3sc2")
+level = 40
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_te1s3"]
+script = ExtResource("2_y3sc2")
+level = 42
+move = &"STONEEDGE"
+
+[resource]
+resource_name = "GEODUDE"
+script = ExtResource("3_61aou")
+species = &"GEODUDE"
+category = "Rock"
+pokedex_entry = "It climbs mountain paths using only the power of its arms. Because they look just like boulders lining paths, hikers may step on them without noticing."
+types = Array[StringName]([&"ROCK", &"GROUND"])
+base_hp = 40
+base_attack = 80
+base_defense = 100
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 20
+ev_defense = 1
+base_exp = 60
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_y3sc2")]([SubResource("Resource_d5n6l"), SubResource("Resource_ipb60"), SubResource("Resource_4l38n"), SubResource("Resource_md0ao"), SubResource("Resource_1hohd"), SubResource("Resource_chlu2"), SubResource("Resource_38p51"), SubResource("Resource_nt5kv"), SubResource("Resource_cwvgs"), SubResource("Resource_s0xra"), SubResource("Resource_ni6iq"), SubResource("Resource_yxq5d"), SubResource("Resource_ubpim"), SubResource("Resource_3nfhv"), SubResource("Resource_4bl1l"), SubResource("Resource_te1s3")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"INCINERATE", &"IRONDEFENSE", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDERPUNCH"])
+egg_moves = Array[StringName]([&"AUTOTOMIZE", &"BLOCK", &"CURSE", &"FLAIL", &"HAMMERARM", &"MEGAPUNCH", &"WIDEGUARD"])
+abilities = Array[StringName]([&"ROCKHEAD", &"STURDY"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+wild_item_uncommon = Array[StringName]([&"EVERSTONE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_121t3")]([SubResource("Resource_54t55")])
+height = 4
+weight = 200
+color = &"Brown"
+shape = &"HeadArms"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 22)
+id = &"GEODUDE"
+display_name = "Geodude"

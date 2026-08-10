@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vnpwn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d3kp2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bjh4b"]
+
+[sub_resource type="Resource" id="Resource_c3ind"]
+script = ExtResource("1_vnpwn")
+species = &"RAPIDASH"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_1fpii"]
+script = ExtResource("2_d3kp2")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_heod8"]
+script = ExtResource("2_d3kp2")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_4cgny"]
+script = ExtResource("2_d3kp2")
+level = 5
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_buits"]
+script = ExtResource("2_d3kp2")
+level = 10
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_lc6ad"]
+script = ExtResource("2_d3kp2")
+level = 15
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_eqodr"]
+script = ExtResource("2_d3kp2")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_uj3gq"]
+script = ExtResource("2_d3kp2")
+level = 25
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_4bssc"]
+script = ExtResource("2_d3kp2")
+level = 30
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_bf8yk"]
+script = ExtResource("2_d3kp2")
+level = 35
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_u6m6u"]
+script = ExtResource("2_d3kp2")
+level = 41
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_jeuc4"]
+script = ExtResource("2_d3kp2")
+level = 45
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_25twf"]
+script = ExtResource("2_d3kp2")
+level = 50
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_6ardg"]
+script = ExtResource("2_d3kp2")
+level = 55
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "PONYTA"
+script = ExtResource("3_bjh4b")
+species = &"PONYTA"
+category = "Fire Horse"
+pokedex_entry = "A Ponyta is very weak at birth. It can barely stand up. Its legs become stronger as it stumbles and falls while trying to keep up with its parent."
+types = Array[StringName]([&"FIRE"])
+base_hp = 50
+base_attack = 85
+base_defense = 55
+base_special_attack = 65
+base_special_defense = 65
+base_speed = 90
+ev_speed = 1
+base_exp = 82
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_d3kp2")]([SubResource("Resource_1fpii"), SubResource("Resource_heod8"), SubResource("Resource_4cgny"), SubResource("Resource_buits"), SubResource("Resource_lc6ad"), SubResource("Resource_eqodr"), SubResource("Resource_uj3gq"), SubResource("Resource_4bssc"), SubResource("Resource_bf8yk"), SubResource("Resource_u6m6u"), SubResource("Resource_jeuc4"), SubResource("Resource_25twf"), SubResource("Resource_6ardg")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"BOUNCE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"PLAYROUGH", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"WILDCHARGE", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"ALLYSWITCH", &"CHARM", &"DOUBLEEDGE", &"DOUBLEKICK", &"FLAMEWHEEL", &"HIGHHORSEPOWER", &"HORNDRILL", &"HYPNOSIS", &"LOWKICK", &"MORNINGSUN", &"THRASH"])
+abilities = Array[StringName]([&"RUNAWAY", &"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"FLAMEBODY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_vnpwn")]([SubResource("Resource_c3ind")])
+height = 10
+weight = 300
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 24)
+id = &"PONYTA"
+display_name = "Ponyta"

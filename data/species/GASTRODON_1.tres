@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mhvl5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hipmn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5l7wp"]
+
+[sub_resource type="Resource" id="Resource_afttg"]
+script = ExtResource("1_mhvl5")
+species = &"SHELLOS"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_5oq2f"]
+script = ExtResource("2_hipmn")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ls6k6"]
+script = ExtResource("2_hipmn")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_7jcmw"]
+script = ExtResource("2_hipmn")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_e14wd"]
+script = ExtResource("2_hipmn")
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_qph66"]
+script = ExtResource("2_hipmn")
+level = 15
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_dryll"]
+script = ExtResource("2_hipmn")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_p2iqu"]
+script = ExtResource("2_hipmn")
+level = 25
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_je5v4"]
+script = ExtResource("2_hipmn")
+level = 33
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_3a0wt"]
+script = ExtResource("2_hipmn")
+level = 39
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_voyh8"]
+script = ExtResource("2_hipmn")
+level = 46
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_d6g1g"]
+script = ExtResource("2_hipmn")
+level = 53
+move = &"MEMENTO"
+
+[resource]
+resource_name = "GASTRODON_1"
+script = ExtResource("3_5l7wp")
+species = &"GASTRODON"
+form = 1
+form_name = "East Sea"
+category = "Sea Slug"
+pokedex_entry = "Its body is covered in a sticky slime. It's very susceptible to dehydration, so it can't spend too much time on land."
+pokedex_form = 1
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 111
+base_attack = 83
+base_defense = 68
+base_special_attack = 92
+base_special_defense = 82
+base_speed = 39
+ev_hp = 2
+base_exp = 166
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hipmn")]([SubResource("Resource_5oq2f"), SubResource("Resource_ls6k6"), SubResource("Resource_7jcmw"), SubResource("Resource_e14wd"), SubResource("Resource_qph66"), SubResource("Resource_dryll"), SubResource("Resource_p2iqu"), SubResource("Resource_je5v4"), SubResource("Resource_3a0wt"), SubResource("Resource_voyh8"), SubResource("Resource_d6g1g")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DIVE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALD", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"STRINGSHOT", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"STICKYHOLD", &"STORMDRAIN"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+egg_groups = Array[StringName]([&"Water1", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mhvl5")]([SubResource("Resource_afttg")])
+height = 9
+weight = 299
+color = &"Blue"
+shape = &"Serpentine"
+generation = 4
+back_sprite_offset = Vector2i(4, 49)
+front_sprite_offset = Vector2i(0, 25)
+id = &"GASTRODON_1"
+display_name = "Gastrodon"
+flags = Array[StringName]([&"InheritFormFromMother"])

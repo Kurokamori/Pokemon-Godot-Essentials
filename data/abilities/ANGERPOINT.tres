@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_luwys"]
+
+[resource]
+resource_name = "ANGERPOINT"
+script = ExtResource("1_luwys")
+description = "Maxes Attack after taking a critical hit."
+id = &"ANGERPOINT"
+display_name = "Anger Point"

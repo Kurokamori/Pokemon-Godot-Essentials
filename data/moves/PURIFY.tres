@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_72hst"]
+
+[resource]
+resource_name = "PURIFY"
+script = ExtResource("1_72hst")
+type = &"POISON"
+accuracy = 0
+total_pp = 20
+function_code = &"CureTargetStatusHealUserHalfOfTotalHP"
+description = "The user heals the target's status condition. If so, it also restores the user's own HP."
+id = &"PURIFY"
+display_name = "Purify"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

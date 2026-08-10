@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tdiun"]
+
+[resource]
+resource_name = "STOMP"
+script = ExtResource("1_tdiun")
+category = 0
+power = 65
+total_pp = 20
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "The target is stomped with a big foot. It may also make the target flinch."
+id = &"STOMP"
+display_name = "Stomp"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"TramplesMinimize"])

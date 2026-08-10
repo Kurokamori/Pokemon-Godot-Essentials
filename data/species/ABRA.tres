@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ejlox"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0ypf8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ryhtl"]
+
+[sub_resource type="Resource" id="Resource_68wrc"]
+script = ExtResource("1_ejlox")
+species = &"KADABRA"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_7ucc0"]
+script = ExtResource("2_0ypf8")
+move = &"TELEPORT"
+
+[resource]
+resource_name = "ABRA"
+script = ExtResource("3_ryhtl")
+species = &"ABRA"
+category = "Psi"
+pokedex_entry = "A Pokémon that sleeps 18 hours a day. Observation revealed that it uses Teleport to change its location once every hour."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 25
+base_attack = 20
+base_defense = 15
+base_special_attack = 105
+base_special_defense = 55
+base_speed = 90
+ev_special_attack = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"Female25Percent"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_0ypf8")]([SubResource("Resource_7ucc0")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EMBARGO", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"HEADBUTT", &"HIDDENPOWER", &"ICEPUNCH", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NATURALGIFT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPEEDSWAP", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ALLYSWITCH", &"CONFUSION", &"ENCORE", &"FIREPUNCH", &"GUARDSPLIT", &"GUARDSWAP", &"ICEPUNCH", &"KNOCKOFF", &"MAGICCOAT", &"POWERTRICK", &"PSYCHOSHIFT", &"THUNDERPUNCH"])
+abilities = Array[StringName]([&"SYNCHRONIZE", &"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"MAGICGUARD"])
+wild_item_uncommon = Array[StringName]([&"TWISTEDSPOON"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ejlox")]([SubResource("Resource_68wrc")])
+height = 9
+weight = 195
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 31)
+id = &"ABRA"
+display_name = "Abra"

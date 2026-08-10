@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ewj0g"]
+
+[resource]
+resource_name = "STONEPLATE"
+script = ExtResource("1_ewj0g")
+name_plural = "Stone Plates"
+price = 10000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a stone tablet that boosts the power of Rock-type moves."
+id = &"STONEPLATE"
+display_name = "Stone Plate"
+flags = Array[StringName]([&"Fling_90"])

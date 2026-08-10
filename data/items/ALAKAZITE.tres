@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3grxq"]
+
+[resource]
+resource_name = "ALAKAZITE"
+script = ExtResource("1_3grxq")
+name_plural = "Alakazites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Alakazam hold it, and it will be able to Mega Evolve."
+id = &"ALAKAZITE"
+display_name = "Alakazite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

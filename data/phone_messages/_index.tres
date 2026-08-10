@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_u7saj"]
+
+[resource]
+script = ExtResource("1_u7saj")
+category = &"phone_messages"
+record_script = "res://src/data/phone_message_data.gd"
+paths = {
+&"CAMPER|Jeff|0": "res://data/phone_messages/CAMPER_Jeff_0.tres",
+&"PICNICKER|Susie|0": "res://data/phone_messages/PICNICKER_Susie_0.tres",
+&"default": "res://data/phone_messages/default.tres"
+}
+ordered_ids = Array[StringName]([&"default", &"CAMPER|Jeff|0", &"PICNICKER|Susie|0"])

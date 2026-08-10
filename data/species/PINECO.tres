@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lxccm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nrua7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0tsrq"]
+
+[sub_resource type="Resource" id="Resource_n0via"]
+script = ExtResource("1_lxccm")
+species = &"FORRETRESS"
+method = &"Level"
+parameter = "31"
+
+[sub_resource type="Resource" id="Resource_8vq5e"]
+script = ExtResource("2_nrua7")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_u5wdj"]
+script = ExtResource("2_nrua7")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_lj6sw"]
+script = ExtResource("2_nrua7")
+level = 6
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_1jvej"]
+script = ExtResource("2_nrua7")
+level = 9
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_p7jm8"]
+script = ExtResource("2_nrua7")
+level = 12
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_poy6l"]
+script = ExtResource("2_nrua7")
+level = 17
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_2udpu"]
+script = ExtResource("2_nrua7")
+level = 20
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_fhcv0"]
+script = ExtResource("2_nrua7")
+level = 23
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_27bm5"]
+script = ExtResource("2_nrua7")
+level = 28
+move = &"SPIKES"
+
+[sub_resource type="Resource" id="Resource_7fmxk"]
+script = ExtResource("2_nrua7")
+level = 31
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_mt4rk"]
+script = ExtResource("2_nrua7")
+level = 34
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_jjnab"]
+script = ExtResource("2_nrua7")
+level = 39
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_n13vj"]
+script = ExtResource("2_nrua7")
+level = 42
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_axxd5"]
+script = ExtResource("2_nrua7")
+level = 45
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "PINECO"
+script = ExtResource("3_0tsrq")
+species = &"PINECO"
+category = "Bagworm"
+pokedex_entry = "A Pineco hangs from a tree branch and waits for prey. While eating, if it is disturbed by someone shaking its tree, it falls on the ground and explodes."
+types = Array[StringName]([&"BUG"])
+base_hp = 50
+base_attack = 65
+base_defense = 90
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 15
+ev_defense = 1
+base_exp = 58
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nrua7")]([SubResource("Resource_8vq5e"), SubResource("Resource_u5wdj"), SubResource("Resource_lj6sw"), SubResource("Resource_1jvej"), SubResource("Resource_p7jm8"), SubResource("Resource_poy6l"), SubResource("Resource_2udpu"), SubResource("Resource_fhcv0"), SubResource("Resource_27bm5"), SubResource("Resource_7fmxk"), SubResource("Resource_mt4rk"), SubResource("Resource_jjnab"), SubResource("Resource_n13vj"), SubResource("Resource_axxd5")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BUGBITE", &"BUGBUZZ", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GRAVITY", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"IRONDEFENSE", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"COUNTER", &"DOUBLEEDGE", &"FLAIL", &"PINMISSILE", &"POWERTRICK", &"REVENGE", &"SANDTOMB", &"SWIFT", &"TOXICSPIKES"])
+abilities = Array[StringName]([&"STURDY"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_lxccm")]([SubResource("Resource_n0via")])
+height = 6
+weight = 72
+color = &"Gray"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 24)
+id = &"PINECO"
+display_name = "Pineco"

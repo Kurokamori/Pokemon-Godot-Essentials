@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_jed8q"]
+
+[resource]
+resource_name = "HEARTSTAMP"
+script = ExtResource("1_jed8q")
+type = &"PSYCHIC"
+category = 0
+power = 60
+total_pp = 25
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "The user unleashes a vicious blow after its cute act makes the foe less wary. It may also cause flinching."
+id = &"HEARTSTAMP"
+display_name = "Heart Stamp"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

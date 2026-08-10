@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_02hgc"]
+
+[resource]
+resource_name = "ASONEGRIMNEIGH"
+script = ExtResource("1_02hgc")
+description = "Combines Unnerve and Grim Neigh Abilities."
+id = &"ASONEGRIMNEIGH"
+display_name = "As One"

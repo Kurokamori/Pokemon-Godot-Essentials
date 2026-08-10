@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rq1s6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_01pvs"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_crlb8"]
+
+[sub_resource type="Resource" id="Resource_ynlby"]
+script = ExtResource("1_rq1s6")
+species = &"DECIDUEYE"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_rdesw"]
+script = ExtResource("1_rq1s6")
+species = &"ROWLET"
+method = &"Level"
+parameter = "17"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kgyp3"]
+script = ExtResource("2_01pvs")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_6vswj"]
+script = ExtResource("2_01pvs")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_x0g40"]
+script = ExtResource("2_01pvs")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_x7ild"]
+script = ExtResource("2_01pvs")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_milq0"]
+script = ExtResource("2_01pvs")
+level = 9
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_ofgau"]
+script = ExtResource("2_01pvs")
+level = 12
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_3ppe2"]
+script = ExtResource("2_01pvs")
+level = 15
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_k2x7y"]
+script = ExtResource("2_01pvs")
+level = 20
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_x16o1"]
+script = ExtResource("2_01pvs")
+level = 25
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_apaf5"]
+script = ExtResource("2_01pvs")
+level = 30
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_jkhs2"]
+script = ExtResource("2_01pvs")
+level = 35
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_owe1b"]
+script = ExtResource("2_01pvs")
+level = 40
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_rvliv"]
+script = ExtResource("2_01pvs")
+level = 45
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_521pb"]
+script = ExtResource("2_01pvs")
+level = 50
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "DARTRIX"
+script = ExtResource("3_crlb8")
+species = &"DARTRIX"
+category = "Blade Quill"
+pokedex_entry = "A bit of a dandy, it spends its free time preening its wings. Its preoccupation with any dirt on its plumage can leave it unable to battle."
+types = Array[StringName]([&"GRASS", &"FLYING"])
+base_hp = 78
+base_attack = 75
+base_defense = 75
+base_special_attack = 70
+base_special_defense = 70
+base_speed = 52
+ev_hp = 2
+base_exp = 147
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_01pvs")]([SubResource("Resource_kgyp3"), SubResource("Resource_6vswj"), SubResource("Resource_x0g40"), SubResource("Resource_x7ild"), SubResource("Resource_milq0"), SubResource("Resource_ofgau"), SubResource("Resource_3ppe2"), SubResource("Resource_k2x7y"), SubResource("Resource_x16o1"), SubResource("Resource_apaf5"), SubResource("Resource_jkhs2"), SubResource("Resource_owe1b"), SubResource("Resource_rvliv"), SubResource("Resource_521pb")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"HIDDENPOWER", &"LEAFBLADE", &"LIGHTSCREEN", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWCLAW", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"LONGREACH"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_rq1s6")]([SubResource("Resource_ynlby"), SubResource("Resource_rdesw")])
+height = 7
+weight = 160
+color = &"Brown"
+shape = &"Winged"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 25)
+shadow_size = 1
+id = &"DARTRIX"
+display_name = "Dartrix"

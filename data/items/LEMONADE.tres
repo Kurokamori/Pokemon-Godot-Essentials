@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_l6kng"]
+
+[resource]
+resource_name = "LEMONADE"
+script = ExtResource("1_l6kng")
+name_plural = "Lemonades"
+portion_name = "can of Lemonade"
+portion_name_plural = "cans of Lemonade"
+pocket = 2
+price = 350
+sell_price = 200
+field_use = 1
+battle_use = 1
+description = "A very sweet and refreshing drink. It can be used to restore 70 HP to a single Pokémon."
+id = &"LEMONADE"
+display_name = "Lemonade"
+flags = Array[StringName]([&"Fling_30"])

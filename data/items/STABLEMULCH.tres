@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_iyms0"]
+
+[resource]
+resource_name = "STABLEMULCH"
+script = ExtResource("1_iyms0")
+name_plural = "Stable Mulch"
+portion_name = "bag of Stable Mulch"
+portion_name_plural = "bags of Stable Mulch"
+price = 200
+sell_price = 100
+description = "A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price."
+id = &"STABLEMULCH"
+display_name = "Stable Mulch"
+flags = Array[StringName]([&"Mulch", &"Fling_30"])

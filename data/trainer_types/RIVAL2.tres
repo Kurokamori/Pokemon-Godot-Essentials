@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_ffpd0"]
+
+[resource]
+resource_name = "RIVAL2"
+script = ExtResource("1_ffpd0")
+gender = 0
+base_money = 36
+skill_level = 36
+id = &"RIVAL2"
+display_name = "Rival"

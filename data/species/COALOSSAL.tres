@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xe0hp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_n7oim"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ytpxp"]
+
+[sub_resource type="Resource" id="Resource_h1pr2"]
+script = ExtResource("1_xe0hp")
+species = &"CARKOL"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ssx8g"]
+script = ExtResource("2_n7oim")
+level = 0
+move = &"TARSHOT"
+
+[sub_resource type="Resource" id="Resource_qp8b3"]
+script = ExtResource("2_n7oim")
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_6hak6"]
+script = ExtResource("2_n7oim")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cb0l6"]
+script = ExtResource("2_n7oim")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_qwvot"]
+script = ExtResource("2_n7oim")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_f7pj1"]
+script = ExtResource("2_n7oim")
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_3w4ct"]
+script = ExtResource("2_n7oim")
+level = 15
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_4q7qu"]
+script = ExtResource("2_n7oim")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_piisl"]
+script = ExtResource("2_n7oim")
+level = 27
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_xw6so"]
+script = ExtResource("2_n7oim")
+level = 37
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_3lm4e"]
+script = ExtResource("2_n7oim")
+level = 45
+move = &"HEATCRASH"
+
+[sub_resource type="Resource" id="Resource_txc4n"]
+script = ExtResource("2_n7oim")
+level = 54
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_4r3cn"]
+script = ExtResource("2_n7oim")
+level = 63
+move = &"BURNUP"
+
+[resource]
+resource_name = "COALOSSAL"
+script = ExtResource("3_ytpxp")
+species = &"COALOSSAL"
+category = "Coal"
+pokedex_entry = "While it's engaged in battle, its mountain of coal will burn bright red, sending off sparks that scorch the surrounding area."
+types = Array[StringName]([&"ROCK", &"FIRE"])
+base_hp = 110
+base_attack = 80
+base_defense = 120
+base_special_attack = 80
+base_special_defense = 90
+base_speed = 30
+ev_defense = 3
+base_exp = 255
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_n7oim")]([SubResource("Resource_ssx8g"), SubResource("Resource_qp8b3"), SubResource("Resource_6hak6"), SubResource("Resource_cb0l6"), SubResource("Resource_qwvot"), SubResource("Resource_f7pj1"), SubResource("Resource_3w4ct"), SubResource("Resource_4q7qu"), SubResource("Resource_piisl"), SubResource("Resource_xw6so"), SubResource("Resource_3lm4e"), SubResource("Resource_txc4n"), SubResource("Resource_4r3cn")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEATCRASH", &"HEATWAVE", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALD", &"SCORCHINGSANDS", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPIKES", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"WILLOWISP"])
+abilities = Array[StringName]([&"STEAMENGINE", &"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"FLASHFIRE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_xe0hp")]([SubResource("Resource_h1pr2")])
+height = 28
+weight = 3105
+color = &"Black"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(-2, 11)
+id = &"COALOSSAL"
+display_name = "Coalossal"

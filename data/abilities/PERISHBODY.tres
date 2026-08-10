@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ds1mm"]
+
+[resource]
+resource_name = "PERISHBODY"
+script = ExtResource("1_ds1mm")
+description = "Both Pokémon faint 3 turns after taking a contact hit."
+id = &"PERISHBODY"
+display_name = "Perish Body"

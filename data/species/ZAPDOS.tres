@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qt271"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_spj0g"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4ro8j"]
+
+[sub_resource type="Resource" id="Resource_83lfl"]
+script = ExtResource("2_spj0g")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_rx8u3"]
+script = ExtResource("2_spj0g")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_ic5qg"]
+script = ExtResource("2_spj0g")
+level = 5
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_hpq3o"]
+script = ExtResource("2_spj0g")
+level = 10
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_gp2b7"]
+script = ExtResource("2_spj0g")
+level = 15
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_nj110"]
+script = ExtResource("2_spj0g")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_6lcxf"]
+script = ExtResource("2_spj0g")
+level = 25
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_vial2"]
+script = ExtResource("2_spj0g")
+level = 30
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_5slgq"]
+script = ExtResource("2_spj0g")
+level = 35
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_wtrup"]
+script = ExtResource("2_spj0g")
+level = 40
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_sk83y"]
+script = ExtResource("2_spj0g")
+level = 45
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_b1cfh"]
+script = ExtResource("2_spj0g")
+level = 50
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_qc0kk"]
+script = ExtResource("2_spj0g")
+level = 55
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_haj4h"]
+script = ExtResource("2_spj0g")
+level = 60
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_ajybv"]
+script = ExtResource("2_spj0g")
+level = 65
+move = &"MAGNETICFLUX"
+
+[sub_resource type="Resource" id="Resource_02bvo"]
+script = ExtResource("2_spj0g")
+level = 70
+move = &"ZAPCANNON"
+
+[resource]
+resource_name = "ZAPDOS"
+script = ExtResource("3_4ro8j")
+species = &"ZAPDOS"
+category = "Electric"
+pokedex_entry = "Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually lives in thunderclouds. It gains power if it is stricken by lightning bolts."
+types = Array[StringName]([&"ELECTRIC", &"FLYING"])
+base_hp = 90
+base_attack = 90
+base_defense = 85
+base_special_attack = 125
+base_special_defense = 90
+base_speed = 100
+ev_special_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_spj0g")]([SubResource("Resource_83lfl"), SubResource("Resource_rx8u3"), SubResource("Resource_ic5qg"), SubResource("Resource_hpq3o"), SubResource("Resource_gp2b7"), SubResource("Resource_nj110"), SubResource("Resource_6lcxf"), SubResource("Resource_vial2"), SubResource("Resource_5slgq"), SubResource("Resource_wtrup"), SubResource("Resource_sk83y"), SubResource("Resource_b1cfh"), SubResource("Resource_qc0kk"), SubResource("Resource_haj4h"), SubResource("Resource_ajybv"), SubResource("Resource_02bvo")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"ANCIENTPOWER", &"BATONPASS", &"BRAVEBIRD", &"CHARGEBEAM", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"EERIEIMPULSE", &"ENDURE", &"FACADE", &"FLASH", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROAR", &"ROCKSMASH", &"ROOST", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TWISTER", &"UTURN", &"VOLTSWITCH", &"WEATHERBALL", &"WILDCHARGE"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"STATIC"])
+hatch_steps = 20480
+height = 16
+weight = 526
+color = &"Yellow"
+shape = &"Winged"
+habitat = &"Rare"
+generation = 1
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(3, 9)
+id = &"ZAPDOS"
+display_name = "Zapdos"
+flags = Array[StringName]([&"Legendary"])

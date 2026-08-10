@@ -1,0 +1,152 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o7kt1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cjvnh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tg1bn"]
+
+[sub_resource type="Resource" id="Resource_hg7ce"]
+script = ExtResource("1_o7kt1")
+species = &"SEEL"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ejsjn"]
+script = ExtResource("2_cjvnh")
+level = 0
+move = &"SHEERCOLD"
+
+[sub_resource type="Resource" id="Resource_5qxi0"]
+script = ExtResource("2_cjvnh")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_7084q"]
+script = ExtResource("2_cjvnh")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_xnunt"]
+script = ExtResource("2_cjvnh")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_gj8f6"]
+script = ExtResource("2_cjvnh")
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_rt4xj"]
+script = ExtResource("2_cjvnh")
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_m2qqi"]
+script = ExtResource("2_cjvnh")
+level = 3
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_3uu5i"]
+script = ExtResource("2_cjvnh")
+level = 7
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_x2ltg"]
+script = ExtResource("2_cjvnh")
+level = 11
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_ps05o"]
+script = ExtResource("2_cjvnh")
+level = 13
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_0qjme"]
+script = ExtResource("2_cjvnh")
+level = 17
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_qfltf"]
+script = ExtResource("2_cjvnh")
+level = 21
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_unk3s"]
+script = ExtResource("2_cjvnh")
+level = 23
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_jth6r"]
+script = ExtResource("2_cjvnh")
+level = 27
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_jw6pu"]
+script = ExtResource("2_cjvnh")
+level = 31
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_iw8b0"]
+script = ExtResource("2_cjvnh")
+level = 33
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_fdrpc"]
+script = ExtResource("2_cjvnh")
+level = 39
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_f6ldh"]
+script = ExtResource("2_cjvnh")
+level = 45
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_4ktv8"]
+script = ExtResource("2_cjvnh")
+level = 49
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_0b4tm"]
+script = ExtResource("2_cjvnh")
+level = 55
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_dt0ql"]
+script = ExtResource("2_cjvnh")
+level = 61
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_mcl8w"]
+script = ExtResource("2_cjvnh")
+level = 65
+move = &"HAIL"
+
+[resource]
+resource_name = "DEWGONG"
+script = ExtResource("3_tg1bn")
+species = &"DEWGONG"
+category = "Sea Lion"
+pokedex_entry = "It loves to snooze on bitterly cold ice. The sight of this Pokémon sleeping on a glacier was mistakenly thought to be a mermaid by a mariner long ago."
+types = Array[StringName]([&"WATER", &"ICE"])
+base_hp = 90
+base_attack = 70
+base_defense = 80
+base_special_attack = 70
+base_special_defense = 95
+base_speed = 70
+ev_special_defense = 2
+base_exp = 166
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cjvnh")]([SubResource("Resource_ejsjn"), SubResource("Resource_5qxi0"), SubResource("Resource_7084q"), SubResource("Resource_xnunt"), SubResource("Resource_gj8f6"), SubResource("Resource_rt4xj"), SubResource("Resource_m2qqi"), SubResource("Resource_3uu5i"), SubResource("Resource_x2ltg"), SubResource("Resource_ps05o"), SubResource("Resource_0qjme"), SubResource("Resource_qfltf"), SubResource("Resource_unk3s"), SubResource("Resource_jth6r"), SubResource("Resource_jw6pu"), SubResource("Resource_iw8b0"), SubResource("Resource_fdrpc"), SubResource("Resource_f6ldh"), SubResource("Resource_4ktv8"), SubResource("Resource_0b4tm"), SubResource("Resource_dt0ql"), SubResource("Resource_mcl8w")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"THICKFAT", &"HYDRATION"])
+hidden_abilities = Array[StringName]([&"ICEBODY"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_o7kt1")]([SubResource("Resource_hg7ce")])
+height = 17
+weight = 1200
+color = &"White"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-2, 19)
+id = &"DEWGONG"
+display_name = "Dewgong"

@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rnoul"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_f5wrq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_s17nn"]
+
+[sub_resource type="Resource" id="Resource_ubt60"]
+script = ExtResource("1_rnoul")
+species = &"KLANG"
+method = &"Level"
+parameter = "38"
+
+[sub_resource type="Resource" id="Resource_fnrnr"]
+script = ExtResource("2_f5wrq")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_5xhby"]
+script = ExtResource("2_f5wrq")
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_6tp62"]
+script = ExtResource("2_f5wrq")
+level = 4
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_cvj0r"]
+script = ExtResource("2_f5wrq")
+level = 8
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_u7iks"]
+script = ExtResource("2_f5wrq")
+level = 12
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_psvwm"]
+script = ExtResource("2_f5wrq")
+level = 16
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_5kn7k"]
+script = ExtResource("2_f5wrq")
+level = 20
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_kq0ac"]
+script = ExtResource("2_f5wrq")
+level = 24
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_o65mb"]
+script = ExtResource("2_f5wrq")
+level = 28
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_4b3jh"]
+script = ExtResource("2_f5wrq")
+level = 32
+move = &"GEARGRIND"
+
+[sub_resource type="Resource" id="Resource_f3wav"]
+script = ExtResource("2_f5wrq")
+level = 36
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_bmhjx"]
+script = ExtResource("2_f5wrq")
+level = 40
+move = &"SHIFTGEAR"
+
+[sub_resource type="Resource" id="Resource_i16sk"]
+script = ExtResource("2_f5wrq")
+level = 44
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_fcvjk"]
+script = ExtResource("2_f5wrq")
+level = 48
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "KLINK"
+script = ExtResource("3_s17nn")
+species = &"KLINK"
+category = "Gear"
+pokedex_entry = "Interlocking two bodies and spinning around generates the energy they need to live."
+types = Array[StringName]([&"STEEL"])
+base_hp = 40
+base_attack = 55
+base_defense = 70
+base_special_attack = 45
+base_special_defense = 60
+base_speed = 30
+ev_defense = 1
+base_exp = 60
+growth_rate = &"Parabolic"
+gender_ratio = &"Genderless"
+catch_rate = 130
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_f5wrq")]([SubResource("Resource_fnrnr"), SubResource("Resource_5xhby"), SubResource("Resource_6tp62"), SubResource("Resource_cvj0r"), SubResource("Resource_u7iks"), SubResource("Resource_psvwm"), SubResource("Resource_5kn7k"), SubResource("Resource_kq0ac"), SubResource("Resource_o65mb"), SubResource("Resource_4b3jh"), SubResource("Resource_f3wav"), SubResource("Resource_bmhjx"), SubResource("Resource_i16sk"), SubResource("Resource_fcvjk")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"BIND", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GRAVITY", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"POWERGEM", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKPOLISH", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"STEELROLLER", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"PLUS", &"MINUS"])
+hidden_abilities = Array[StringName]([&"CLEARBODY"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_rnoul")]([SubResource("Resource_ubt60")])
+height = 3
+weight = 210
+color = &"Gray"
+shape = &"MultiBody"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 18)
+id = &"KLINK"
+display_name = "Klink"

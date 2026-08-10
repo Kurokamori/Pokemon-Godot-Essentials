@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yqy7g"]
+
+[resource]
+resource_name = "SIMPLEBEAM"
+script = ExtResource("1_yqy7g")
+total_pp = 15
+function_code = &"SetTargetAbilityToSimple"
+description = "The user's mysterious psychic wave changes the target's Ability to Simple."
+id = &"SIMPLEBEAM"
+display_name = "Simple Beam"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

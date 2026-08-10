@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e8tl2"]
+
+[resource]
+resource_name = "BUBBLE"
+script = ExtResource("1_e8tl2")
+type = &"WATER"
+category = 1
+power = 40
+total_pp = 30
+target = &"AllNearFoes"
+function_code = &"LowerTargetSpeed1"
+effect_chance = 10
+description = "A spray of countless bubbles is jetted at the opposing team. It may also lower the targets' Speed stats."
+id = &"BUBBLE"
+display_name = "Bubble"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

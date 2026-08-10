@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lokmx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4cwvw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_m4nt5"]
+
+[sub_resource type="Resource" id="Resource_04u6g"]
+script = ExtResource("1_lokmx")
+species = &"HATTREM"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_i3wou"]
+script = ExtResource("2_4cwvw")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_gwi0w"]
+script = ExtResource("2_4cwvw")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_qtg63"]
+script = ExtResource("2_4cwvw")
+level = 5
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_jlmqy"]
+script = ExtResource("2_4cwvw")
+level = 10
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_pq42r"]
+script = ExtResource("2_4cwvw")
+level = 15
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_6bobi"]
+script = ExtResource("2_4cwvw")
+level = 20
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_gxt2k"]
+script = ExtResource("2_4cwvw")
+level = 25
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_bssxx"]
+script = ExtResource("2_4cwvw")
+level = 30
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_l7i2t"]
+script = ExtResource("2_4cwvw")
+level = 35
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_q4i4a"]
+script = ExtResource("2_4cwvw")
+level = 40
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_nu0xb"]
+script = ExtResource("2_4cwvw")
+level = 45
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "HATENNA"
+script = ExtResource("3_m4nt5")
+species = &"HATENNA"
+category = "Calm"
+pokedex_entry = "Via the protrusion on its head, it senses other creatures' emotions. If you don't have a calm disposition, it will never warm up to you."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 42
+base_attack = 30
+base_defense = 45
+base_special_attack = 56
+base_special_defense = 53
+base_speed = 39
+ev_special_attack = 1
+base_exp = 53
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 235
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4cwvw")]([SubResource("Resource_i3wou"), SubResource("Resource_gwi0w"), SubResource("Resource_qtg63"), SubResource("Resource_jlmqy"), SubResource("Resource_pq42r"), SubResource("Resource_6bobi"), SubResource("Resource_gxt2k"), SubResource("Resource_bssxx"), SubResource("Resource_l7i2t"), SubResource("Resource_q4i4a"), SubResource("Resource_nu0xb")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"IMPRISON", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"THUNDERWAVE", &"TOXIC"])
+egg_moves = Array[StringName]([&"AFTERYOU", &"AROMATICMIST", &"NUZZLE", &"QUASH"])
+abilities = Array[StringName]([&"HEALER", &"ANTICIPATION"])
+hidden_abilities = Array[StringName]([&"MAGICBOUNCE"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_lokmx")]([SubResource("Resource_04u6g")])
+height = 4
+weight = 34
+color = &"Pink"
+shape = &"HeadLegs"
+generation = 8
+back_sprite_offset = Vector2i(2, 50)
+front_sprite_offset = Vector2i(2, 34)
+id = &"HATENNA"
+display_name = "Hatenna"

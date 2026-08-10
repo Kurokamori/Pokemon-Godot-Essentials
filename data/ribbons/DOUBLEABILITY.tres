@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_u8j2r"]
+
+[resource]
+resource_name = "DOUBLEABILITY"
+script = ExtResource("1_u8j2r")
+icon_position = 44
+description = "A Ribbon awarded for completing the Battle Tower Double challenge."
+id = &"DOUBLEABILITY"
+display_name = "Double Ability Ribbon"

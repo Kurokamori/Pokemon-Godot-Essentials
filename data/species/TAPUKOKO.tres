@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1d683"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7ko3w"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7k8lh"]
+
+[sub_resource type="Resource" id="Resource_svsqw"]
+script = ExtResource("2_7ko3w")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_xgg1j"]
+script = ExtResource("2_7ko3w")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_uxynf"]
+script = ExtResource("2_7ko3w")
+level = 5
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_vn66c"]
+script = ExtResource("2_7ko3w")
+level = 10
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_pmtu3"]
+script = ExtResource("2_7ko3w")
+level = 15
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_hadsh"]
+script = ExtResource("2_7ko3w")
+level = 20
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_q8anh"]
+script = ExtResource("2_7ko3w")
+level = 25
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_ub4ys"]
+script = ExtResource("2_7ko3w")
+level = 30
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_dybcm"]
+script = ExtResource("2_7ko3w")
+level = 35
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_f80ul"]
+script = ExtResource("2_7ko3w")
+level = 40
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_jln84"]
+script = ExtResource("2_7ko3w")
+level = 45
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_igrhp"]
+script = ExtResource("2_7ko3w")
+level = 50
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_r11cc"]
+script = ExtResource("2_7ko3w")
+level = 55
+move = &"NATURESMADNESS"
+
+[sub_resource type="Resource" id="Resource_uaccp"]
+script = ExtResource("2_7ko3w")
+level = 60
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_r0anb"]
+script = ExtResource("2_7ko3w")
+level = 65
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_eg1kf"]
+script = ExtResource("2_7ko3w")
+level = 70
+move = &"POWERSWAP"
+
+[sub_resource type="Resource" id="Resource_5tyfs"]
+script = ExtResource("2_7ko3w")
+level = 75
+move = &"ELECTRICTERRAIN"
+
+[resource]
+resource_name = "TAPUKOKO"
+script = ExtResource("3_7k8lh")
+species = &"TAPUKOKO"
+category = "Land Spirit"
+pokedex_entry = "Although it's called a guardian deity, if a person or Pokémon puts it in a bad mood, it will become a malevolent deity and attack."
+types = Array[StringName]([&"ELECTRIC", &"FAIRY"])
+base_hp = 70
+base_attack = 115
+base_defense = 85
+base_special_attack = 95
+base_special_defense = 75
+base_speed = 130
+ev_speed = 3
+base_exp = 285
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7ko3w")]([SubResource("Resource_svsqw"), SubResource("Resource_xgg1j"), SubResource("Resource_uxynf"), SubResource("Resource_vn66c"), SubResource("Resource_pmtu3"), SubResource("Resource_hadsh"), SubResource("Resource_q8anh"), SubResource("Resource_ub4ys"), SubResource("Resource_dybcm"), SubResource("Resource_f80ul"), SubResource("Resource_jln84"), SubResource("Resource_igrhp"), SubResource("Resource_r11cc"), SubResource("Resource_uaccp"), SubResource("Resource_r0anb"), SubResource("Resource_eg1kf"), SubResource("Resource_5tyfs")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ASSURANCE", &"BRAVEBIRD", &"CALMMIND", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"ECHOEDVOICE", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONDEFENSE", &"IRONHEAD", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POWERSWAP", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROOST", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"UTURN", &"VOLTSWITCH", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"ELECTRICSURGE"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+hatch_steps = 3840
+height = 18
+weight = 205
+color = &"Yellow"
+shape = &"HeadArms"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 8)
+id = &"TAPUKOKO"
+display_name = "Tapu Koko"
+flags = Array[StringName]([&"Legendary"])

@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pe5jj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dmoag"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pqkq3"]
+
+[sub_resource type="Resource" id="Resource_k7vav"]
+script = ExtResource("1_pe5jj")
+species = &"SWELLOW"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_he304"]
+script = ExtResource("2_dmoag")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_fnxx6"]
+script = ExtResource("2_dmoag")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_87gxl"]
+script = ExtResource("2_dmoag")
+level = 5
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_tssci"]
+script = ExtResource("2_dmoag")
+level = 9
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_b8d45"]
+script = ExtResource("2_dmoag")
+level = 13
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_vv2sv"]
+script = ExtResource("2_dmoag")
+level = 17
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_ger8n"]
+script = ExtResource("2_dmoag")
+level = 21
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_h21f6"]
+script = ExtResource("2_dmoag")
+level = 25
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_ykwbv"]
+script = ExtResource("2_dmoag")
+level = 29
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_up7ln"]
+script = ExtResource("2_dmoag")
+level = 33
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_4soms"]
+script = ExtResource("2_dmoag")
+level = 37
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_1xdoe"]
+script = ExtResource("2_dmoag")
+level = 41
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_tepd1"]
+script = ExtResource("2_dmoag")
+level = 45
+move = &"REVERSAL"
+
+[resource]
+resource_name = "TAILLOW"
+script = ExtResource("3_pqkq3")
+species = &"TAILLOW"
+category = "Tiny Swallow"
+pokedex_entry = "Although it is small, it is very courageous. It will take on a larger Skarmory on an equal footing. However, its will weakens if it becomes hungry."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 40
+base_attack = 55
+base_defense = 30
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 85
+ev_speed = 1
+base_exp = 54
+growth_rate = &"Parabolic"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dmoag")]([SubResource("Resource_he304"), SubResource("Resource_fnxx6"), SubResource("Resource_87gxl"), SubResource("Resource_tssci"), SubResource("Resource_b8d45"), SubResource("Resource_vv2sv"), SubResource("Resource_ger8n"), SubResource("Resource_h21f6"), SubResource("Resource_ykwbv"), SubResource("Resource_up7ln"), SubResource("Resource_4soms"), SubResource("Resource_1xdoe"), SubResource("Resource_tepd1")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"BOOMBURST", &"BRAVEBIRD", &"HURRICANE", &"SKYATTACK", &"SUPERSONIC", &"WHIRLWIND"])
+abilities = Array[StringName]([&"GUTS"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_pe5jj")]([SubResource("Resource_k7vav")])
+height = 3
+weight = 23
+color = &"Blue"
+shape = &"Winged"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(3, 34)
+shadow_size = 1
+id = &"TAILLOW"
+display_name = "Taillow"

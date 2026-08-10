@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_51j44"]
+
+[resource]
+resource_name = "HONEY"
+script = ExtResource("1_51j44")
+name_plural = "Honey"
+portion_name = "jar of Honey"
+portion_name_plural = "jars of Honey"
+price = 900
+sell_price = 450
+field_use = 2
+description = "A sweet honey with a lush aroma that attracts wild Pokémon when used in tall grass, in caves, or elsewhere."
+id = &"HONEY"
+display_name = "Honey"
+flags = Array[StringName]([&"Fling_30"])

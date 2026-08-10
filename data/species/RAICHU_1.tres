@@ -1,0 +1,75 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_eywji"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_y0m0d"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_33gpp"]
+
+[sub_resource type="Resource" id="Resource_1aqgl"]
+script = ExtResource("1_eywji")
+species = &"PIKACHU"
+method = &"Item"
+parameter = "THUNDERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ouoc7"]
+script = ExtResource("2_y0m0d")
+level = 0
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_vt6la"]
+script = ExtResource("2_y0m0d")
+move = &"SPEEDSWAP"
+
+[sub_resource type="Resource" id="Resource_o1dfj"]
+script = ExtResource("2_y0m0d")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_l58h1"]
+script = ExtResource("2_y0m0d")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_2bov0"]
+script = ExtResource("2_y0m0d")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ddq4a"]
+script = ExtResource("2_y0m0d")
+move = &"THUNDERBOLT"
+
+[resource]
+resource_name = "RAICHU_1"
+script = ExtResource("3_33gpp")
+species = &"RAICHU"
+form = 1
+form_name = "Alolan"
+category = "Mouse"
+pokedex_entry = "It uses psychokinesis to control electricity. It hops aboard its own tail, using psychic power to lift the tail and move about while riding it."
+pokedex_form = 1
+types = Array[StringName]([&"ELECTRIC", &"PSYCHIC"])
+base_hp = 60
+base_attack = 85
+base_defense = 50
+base_special_attack = 95
+base_special_defense = 85
+base_speed = 110
+ev_speed = 3
+base_exp = 243
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_y0m0d")]([SubResource("Resource_ouoc7"), SubResource("Resource_vt6la"), SubResource("Resource_o1dfj"), SubResource("Resource_l58h1"), SubResource("Resource_2bov0"), SubResource("Resource_ddq4a")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENCORE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"RISINGVOLTAGE", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SPEEDSWAP", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"SURGESURFER"])
+hidden_abilities = Array[StringName]([&"SURGESURFER"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_eywji")]([SubResource("Resource_1aqgl")])
+height = 7
+weight = 210
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 12)
+id = &"RAICHU_1"
+display_name = "Raichu"

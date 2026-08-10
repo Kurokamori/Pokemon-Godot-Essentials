@@ -1,0 +1,161 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kwhkc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3kc70"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ymwsd"]
+
+[sub_resource type="Resource" id="Resource_bppme"]
+script = ExtResource("1_kwhkc")
+species = &"SURSKIT"
+method = &"Level"
+parameter = "22"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_iu6h4"]
+script = ExtResource("2_3kc70")
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_7l6gr"]
+script = ExtResource("2_3kc70")
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_848wx"]
+script = ExtResource("2_3kc70")
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_a3ss1"]
+script = ExtResource("2_3kc70")
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_cfjyc"]
+script = ExtResource("2_3kc70")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_lbby0"]
+script = ExtResource("2_3kc70")
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_vkjq2"]
+script = ExtResource("2_3kc70")
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_b48oc"]
+script = ExtResource("2_3kc70")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_60x8b"]
+script = ExtResource("2_3kc70")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_pm5y3"]
+script = ExtResource("2_3kc70")
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_6fipv"]
+script = ExtResource("2_3kc70")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_7o550"]
+script = ExtResource("2_3kc70")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_uumy0"]
+script = ExtResource("2_3kc70")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_m2qos"]
+script = ExtResource("2_3kc70")
+level = 6
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_oej2o"]
+script = ExtResource("2_3kc70")
+level = 9
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_3onao"]
+script = ExtResource("2_3kc70")
+level = 14
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_jhhf0"]
+script = ExtResource("2_3kc70")
+level = 17
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_ho8be"]
+script = ExtResource("2_3kc70")
+level = 22
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_11pcm"]
+script = ExtResource("2_3kc70")
+level = 22
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_fi5il"]
+script = ExtResource("2_3kc70")
+level = 26
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_xqx5w"]
+script = ExtResource("2_3kc70")
+level = 32
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_2l1gu"]
+script = ExtResource("2_3kc70")
+level = 38
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_58ffa"]
+script = ExtResource("2_3kc70")
+level = 42
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_ilybu"]
+script = ExtResource("2_3kc70")
+level = 48
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_e2q3h"]
+script = ExtResource("2_3kc70")
+level = 52
+move = &"QUIVERDANCE"
+
+[resource]
+resource_name = "MASQUERAIN"
+script = ExtResource("3_ymwsd")
+species = &"MASQUERAIN"
+category = "Eyeball"
+pokedex_entry = "It intimidates foes with the large eyelike patterns on its antennae. Because it can't fly if its wings get wet, it shelters from rain under large trees and eaves."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 70
+base_attack = 60
+base_defense = 62
+base_special_attack = 100
+base_special_defense = 82
+base_speed = 80
+ev_special_attack = 1
+ev_special_defense = 1
+base_exp = 159
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3kc70")]([SubResource("Resource_iu6h4"), SubResource("Resource_7l6gr"), SubResource("Resource_848wx"), SubResource("Resource_a3ss1"), SubResource("Resource_cfjyc"), SubResource("Resource_lbby0"), SubResource("Resource_vkjq2"), SubResource("Resource_b48oc"), SubResource("Resource_60x8b"), SubResource("Resource_pm5y3"), SubResource("Resource_6fipv"), SubResource("Resource_7o550"), SubResource("Resource_uumy0"), SubResource("Resource_m2qos"), SubResource("Resource_oej2o"), SubResource("Resource_3onao"), SubResource("Resource_jhhf0"), SubResource("Resource_ho8be"), SubResource("Resource_11pcm"), SubResource("Resource_fi5il"), SubResource("Resource_xqx5w"), SubResource("Resource_2l1gu"), SubResource("Resource_58ffa"), SubResource("Resource_ilybu"), SubResource("Resource_e2q3h")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BLIZZARD", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UTURN", &"WATERPULSE"])
+abilities = Array[StringName]([&"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+wild_item_uncommon = Array[StringName]([&"SILVERPOWDER"])
+egg_groups = Array[StringName]([&"Water1", &"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_kwhkc")]([SubResource("Resource_bppme")])
+height = 8
+weight = 36
+color = &"Blue"
+shape = &"MultiWinged"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(6, 10)
+id = &"MASQUERAIN"
+display_name = "Masquerain"

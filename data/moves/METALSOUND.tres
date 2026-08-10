@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_lv225"]
+
+[resource]
+resource_name = "METALSOUND"
+script = ExtResource("1_lv225")
+type = &"STEEL"
+accuracy = 85
+total_pp = 40
+function_code = &"LowerTargetSpDef2"
+description = "A horrible sound like scraping metal harshly reduces the target's Sp. Def stat."
+id = &"METALSOUND"
+display_name = "Metal Sound"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

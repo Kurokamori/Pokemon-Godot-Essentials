@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4mc7g"]
+
+[resource]
+resource_name = "FIRIUMZ"
+script = ExtResource("1_4mc7g")
+name_plural = "Firium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Fire-type Pokémon holds to turn a Fire-type move into Inferno Overdrive."
+id = &"FIRIUMZ"
+display_name = "Firium Z"
+flags = Array[StringName]([&"ZCrystal"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ei5wr"]
+
+[resource]
+resource_name = "SUBMISSION"
+script = ExtResource("1_ei5wr")
+type = &"FIGHTING"
+category = 0
+power = 80
+accuracy = 80
+total_pp = 20
+function_code = &"RecoilQuarterOfDamageDealt"
+description = "The user grabs the target and recklessly dives for the ground. It also hurts the user slightly."
+id = &"SUBMISSION"
+display_name = "Submission"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

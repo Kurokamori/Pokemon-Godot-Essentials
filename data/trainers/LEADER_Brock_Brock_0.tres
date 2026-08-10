@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_yjxlx"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_mr1qj"]
+
+[sub_resource type="Resource" id="Resource_a05pg"]
+script = ExtResource("1_yjxlx")
+species = &"GEODUDE"
+level = 12
+moves = Array[StringName]([&"DEFENSECURL", &"HEADSMASH", &"ROCKPOLISH", &"ROCKTHROW"])
+ability_index = 0
+gender = 0
+ivs = Array[int]([0, 0, 0, 0, 0, 0])
+
+[sub_resource type="Resource" id="Resource_jk0qo"]
+script = ExtResource("1_yjxlx")
+species = &"ONIX"
+level = 14
+nickname = "Rocky"
+moves = Array[StringName]([&"HEADSMASH", &"ROCKTHROW", &"RAGE", &"ROCKTOMB"])
+ability_index = 0
+item = &"SITRUSBERRY"
+gender = 0
+poke_ball = &"HEAVYBALL"
+ivs = Array[int]([0, 0, 0, 0, 0, 0])
+shiny = true
+
+[resource]
+resource_name = "LEADER_Brock|Brock|0"
+script = ExtResource("2_mr1qj")
+trainer_type = &"LEADER_Brock"
+items = Array[StringName]([&"FULLRESTORE", &"FULLRESTORE"])
+lose_text = "Very good."
+pokemon = Array[ExtResource("1_yjxlx")]([SubResource("Resource_a05pg"), SubResource("Resource_jk0qo")])
+id = &"LEADER_Brock|Brock|0"
+display_name = "Brock"

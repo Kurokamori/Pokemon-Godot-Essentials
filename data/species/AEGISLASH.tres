@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kawh0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ndhbw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kpk0d"]
+
+[sub_resource type="Resource" id="Resource_6lbsc"]
+script = ExtResource("1_kawh0")
+species = &"DOUBLADE"
+method = &"Item"
+parameter = "DUSKSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_irhta"]
+script = ExtResource("2_ndhbw")
+level = 0
+move = &"KINGSSHIELD"
+
+[sub_resource type="Resource" id="Resource_tq0oc"]
+script = ExtResource("2_ndhbw")
+move = &"HEADSMASH"
+
+[sub_resource type="Resource" id="Resource_inbjt"]
+script = ExtResource("2_ndhbw")
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_4kwvn"]
+script = ExtResource("2_ndhbw")
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_q22yr"]
+script = ExtResource("2_ndhbw")
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_1t3hf"]
+script = ExtResource("2_ndhbw")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_0nkcv"]
+script = ExtResource("2_ndhbw")
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_k382f"]
+script = ExtResource("2_ndhbw")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_3kjst"]
+script = ExtResource("2_ndhbw")
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_3pm0o"]
+script = ExtResource("2_ndhbw")
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_wlh1b"]
+script = ExtResource("2_ndhbw")
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_5lxhh"]
+script = ExtResource("2_ndhbw")
+move = &"SACREDSWORD"
+
+[sub_resource type="Resource" id="Resource_pcqa1"]
+script = ExtResource("2_ndhbw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_k4pnu"]
+script = ExtResource("2_ndhbw")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_at6ua"]
+script = ExtResource("2_ndhbw")
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_0xbin"]
+script = ExtResource("2_ndhbw")
+move = &"AUTOTOMIZE"
+
+[resource]
+resource_name = "AEGISLASH"
+script = ExtResource("3_kpk0d")
+species = &"AEGISLASH"
+form_name = "Shield Forme"
+category = "Royal Sword"
+pokedex_entry = "In this defensive stance, Aegislash uses its steel body and a force field of spectral power to reduce the damage of any attack."
+types = Array[StringName]([&"STEEL", &"GHOST"])
+base_hp = 60
+base_attack = 50
+base_defense = 140
+base_special_attack = 50
+base_special_defense = 140
+base_speed = 60
+ev_defense = 2
+ev_special_defense = 1
+base_exp = 250
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ndhbw")]([SubResource("Resource_irhta"), SubResource("Resource_tq0oc"), SubResource("Resource_inbjt"), SubResource("Resource_4kwvn"), SubResource("Resource_q22yr"), SubResource("Resource_1t3hf"), SubResource("Resource_0nkcv"), SubResource("Resource_k382f"), SubResource("Resource_3kjst"), SubResource("Resource_3pm0o"), SubResource("Resource_wlh1b"), SubResource("Resource_5lxhh"), SubResource("Resource_pcqa1"), SubResource("Resource_k4pnu"), SubResource("Resource_at6ua"), SubResource("Resource_0xbin")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"AIRSLASH", &"ATTRACT", &"BLOCK", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHOCUT", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBLADE", &"SPITE", &"STEELBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TOXIC"])
+abilities = Array[StringName]([&"STANCECHANGE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kawh0")]([SubResource("Resource_6lbsc")])
+height = 17
+weight = 530
+color = &"Brown"
+shape = &"HeadBase"
+generation = 6
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(5, 7)
+id = &"AEGISLASH"
+display_name = "Aegislash"

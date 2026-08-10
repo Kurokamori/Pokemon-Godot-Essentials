@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_su26k"]
+
+[resource]
+resource_name = "COOLCOUPLE"
+script = ExtResource("1_su26k")
+base_money = 72
+skill_level = 48
+id = &"COOLCOUPLE"
+display_name = "Cool Couple"

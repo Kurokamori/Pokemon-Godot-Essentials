@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5cnkq"]
+
+[resource]
+resource_name = "ANTIDOTE"
+script = ExtResource("1_5cnkq")
+name_plural = "Antidotes"
+pocket = 2
+price = 200
+sell_price = 100
+field_use = 1
+battle_use = 1
+description = "A spray-type medicine. It lifts the effect of poison from one Pokémon."
+id = &"ANTIDOTE"
+display_name = "Antidote"
+flags = Array[StringName]([&"Fling_30"])

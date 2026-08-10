@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_56x0f"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_l1dij"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gxaib"]
+
+[sub_resource type="Resource" id="Resource_qh6rp"]
+script = ExtResource("2_l1dij")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_6xsp1"]
+script = ExtResource("2_l1dij")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_tgq4s"]
+script = ExtResource("2_l1dij")
+level = 4
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_wrjuj"]
+script = ExtResource("2_l1dij")
+level = 8
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_jb8rf"]
+script = ExtResource("2_l1dij")
+level = 12
+move = &"GLARE"
+
+[sub_resource type="Resource" id="Resource_a6rcs"]
+script = ExtResource("2_l1dij")
+level = 16
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6njy5"]
+script = ExtResource("2_l1dij")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_0tnsn"]
+script = ExtResource("2_l1dij")
+level = 24
+move = &"DRILLRUN"
+
+[sub_resource type="Resource" id="Resource_22rny"]
+script = ExtResource("2_l1dij")
+level = 28
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_q2rf0"]
+script = ExtResource("2_l1dij")
+level = 32
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_iw7u2"]
+script = ExtResource("2_l1dij")
+level = 36
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_124co"]
+script = ExtResource("2_l1dij")
+level = 40
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_th0q7"]
+script = ExtResource("2_l1dij")
+level = 44
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_kmfko"]
+script = ExtResource("2_l1dij")
+level = 48
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_ehha2"]
+script = ExtResource("2_l1dij")
+level = 52
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_x3nml"]
+script = ExtResource("2_l1dij")
+level = 56
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "DUNSPARCE"
+script = ExtResource("3_gxaib")
+species = &"DUNSPARCE"
+category = "Land Snake"
+pokedex_entry = "Its drill-tipped tail is used to burrow into the ground backwards. This Pokémon is known to make its nest in complex shapes deep under the ground."
+base_hp = 100
+base_attack = 70
+base_defense = 70
+base_special_attack = 65
+base_special_defense = 65
+base_speed = 45
+ev_hp = 1
+base_exp = 145
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_l1dij")]([SubResource("Resource_qh6rp"), SubResource("Resource_6xsp1"), SubResource("Resource_tgq4s"), SubResource("Resource_wrjuj"), SubResource("Resource_jb8rf"), SubResource("Resource_a6rcs"), SubResource("Resource_6njy5"), SubResource("Resource_0tnsn"), SubResource("Resource_22rny"), SubResource("Resource_q2rf0"), SubResource("Resource_iw7u2"), SubResource("Resource_124co"), SubResource("Resource_th0q7"), SubResource("Resource_kmfko"), SubResource("Resource_ehha2"), SubResource("Resource_x3nml")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"AMNESIA", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BATONPASS", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DRILLRUN", &"DUALWINGBEAT", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FRUSTRATION", &"GYROBALL", &"HEADBUTT", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"ICEBEAM", &"INCINERATE", &"IRONTAIL", &"LASTRESORT", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"POISONJAB", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROOST", &"ROUND", &"SCALESHOT", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TERRAINPULSE", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"WATERPULSE", &"WILDCHARGE", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AGILITY", &"ANCIENTPOWER", &"AQUATAIL", &"ASTONISH", &"BITE", &"CURSE", &"HEADBUTT", &"HEX", &"LASTRESORT", &"MAGICCOAT", &"SNORE"])
+abilities = Array[StringName]([&"SERENEGRACE", &"RUNAWAY"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 15
+weight = 140
+color = &"Yellow"
+shape = &"Serpentine"
+habitat = &"Cave"
+generation = 2
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(1, 32)
+id = &"DUNSPARCE"
+display_name = "Dunsparce"

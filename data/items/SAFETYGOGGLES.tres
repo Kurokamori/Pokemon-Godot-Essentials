@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_k8yhh"]
+
+[resource]
+resource_name = "SAFETYGOGGLES"
+script = ExtResource("1_k8yhh")
+name_plural = "Safety Goggles"
+portion_name = "pair of Safety Goggles"
+portion_name_plural = "pairs of Safety Goggles"
+price = 3000
+sell_price = 2000
+bp_price = 25
+description = "An item to be held by a Pokémon. They protect the holder from weather-related damage and powder."
+id = &"SAFETYGOGGLES"
+display_name = "Safety Goggles"
+flags = Array[StringName]([&"Fling_80"])

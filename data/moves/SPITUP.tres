@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ymn1m"]
+
+[resource]
+resource_name = "SPITUP"
+script = ExtResource("1_ymn1m")
+category = 1
+power = 1
+total_pp = 10
+function_code = &"PowerDependsOnUserStockpile"
+description = "The power stored using the move Stockpile is released all at once in an attack."
+id = &"SPITUP"
+display_name = "Spit Up"
+flags = Array[StringName]([&"CanProtect"])

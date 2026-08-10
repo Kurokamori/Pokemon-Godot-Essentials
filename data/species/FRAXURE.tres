@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6gbfu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lvr1n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3mst6"]
+
+[sub_resource type="Resource" id="Resource_pyfny"]
+script = ExtResource("1_6gbfu")
+species = &"HAXORUS"
+method = &"Level"
+parameter = "48"
+
+[sub_resource type="Resource" id="Resource_mb5v4"]
+script = ExtResource("1_6gbfu")
+species = &"AXEW"
+method = &"Level"
+parameter = "38"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_5ltye"]
+script = ExtResource("2_lvr1n")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_2cpli"]
+script = ExtResource("2_lvr1n")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_xyxoi"]
+script = ExtResource("2_lvr1n")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_d0361"]
+script = ExtResource("2_lvr1n")
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_jfgnj"]
+script = ExtResource("2_lvr1n")
+level = 9
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_xom72"]
+script = ExtResource("2_lvr1n")
+level = 12
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_ap1kp"]
+script = ExtResource("2_lvr1n")
+level = 15
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_1yhsk"]
+script = ExtResource("2_lvr1n")
+level = 18
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_4el7b"]
+script = ExtResource("2_lvr1n")
+level = 21
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_wi10p"]
+script = ExtResource("2_lvr1n")
+level = 24
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_5qq2v"]
+script = ExtResource("2_lvr1n")
+level = 27
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_ir3tk"]
+script = ExtResource("2_lvr1n")
+level = 30
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_c8emx"]
+script = ExtResource("2_lvr1n")
+level = 33
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_imc7u"]
+script = ExtResource("2_lvr1n")
+level = 36
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_332d4"]
+script = ExtResource("2_lvr1n")
+level = 41
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_2iodo"]
+script = ExtResource("2_lvr1n")
+level = 46
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_r3tb8"]
+script = ExtResource("2_lvr1n")
+level = 51
+move = &"GUILLOTINE"
+
+[sub_resource type="Resource" id="Resource_ytweg"]
+script = ExtResource("2_lvr1n")
+level = 56
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "FRAXURE"
+script = ExtResource("3_3mst6")
+species = &"FRAXURE"
+category = "Axe Jaw"
+pokedex_entry = "Their tusks can shatter rocks. Territory battles between Fraxure can be intensely violent."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 66
+base_attack = 117
+base_defense = 70
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 67
+ev_attack = 2
+base_exp = 144
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_lvr1n")]([SubResource("Resource_5ltye"), SubResource("Resource_2cpli"), SubResource("Resource_xyxoi"), SubResource("Resource_d0361"), SubResource("Resource_jfgnj"), SubResource("Resource_xom72"), SubResource("Resource_ap1kp"), SubResource("Resource_1yhsk"), SubResource("Resource_4el7b"), SubResource("Resource_wi10p"), SubResource("Resource_5qq2v"), SubResource("Resource_ir3tk"), SubResource("Resource_c8emx"), SubResource("Resource_imc7u"), SubResource("Resource_332d4"), SubResource("Resource_2iodo"), SubResource("Resource_r3tb8"), SubResource("Resource_ytweg")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BREAKINGSWIPE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DIG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALCHOP", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"XSCISSOR"])
+abilities = Array[StringName]([&"RIVALRY", &"MOLDBREAKER"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_6gbfu")]([SubResource("Resource_pyfny"), SubResource("Resource_mb5v4")])
+height = 10
+weight = 360
+color = &"Green"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 24)
+id = &"FRAXURE"
+display_name = "Fraxure"

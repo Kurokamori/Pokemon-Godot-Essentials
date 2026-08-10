@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EvolutionMethodData" format=3]
+
+[ext_resource type="Script" path="res://src/data/evolution_method_data.gd" id="1_agbo5"]
+
+[resource]
+resource_name = "ItemHappiness"
+script = ExtResource("1_agbo5")
+parameter_type = 2
+on_use_item = true
+id = &"ItemHappiness"
+display_name = "ItemHappiness"

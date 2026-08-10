@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_mq1sh"]
+
+[resource]
+script = ExtResource("1_mq1sh")
+category = &"targets"
+record_script = "res://src/data/target_data.gd"
+paths = {
+&"AllAllies": "res://data/targets/AllAllies.tres",
+&"AllBattlers": "res://data/targets/AllBattlers.tres",
+&"AllFoes": "res://data/targets/AllFoes.tres",
+&"AllNearFoes": "res://data/targets/AllNearFoes.tres",
+&"AllNearOthers": "res://data/targets/AllNearOthers.tres",
+&"BothSides": "res://data/targets/BothSides.tres",
+&"Foe": "res://data/targets/Foe.tres",
+&"FoeSide": "res://data/targets/FoeSide.tres",
+&"NearAlly": "res://data/targets/NearAlly.tres",
+&"NearFoe": "res://data/targets/NearFoe.tres",
+&"NearOther": "res://data/targets/NearOther.tres",
+&"None": "res://data/targets/None.tres",
+&"Other": "res://data/targets/Other.tres",
+&"RandomNearFoe": "res://data/targets/RandomNearFoe.tres",
+&"User": "res://data/targets/User.tres",
+&"UserAndAllies": "res://data/targets/UserAndAllies.tres",
+&"UserOrNearAlly": "res://data/targets/UserOrNearAlly.tres",
+&"UserSide": "res://data/targets/UserSide.tres"
+}
+ordered_ids = Array[StringName]([&"None", &"User", &"NearAlly", &"UserOrNearAlly", &"AllAllies", &"UserAndAllies", &"NearFoe", &"RandomNearFoe", &"AllNearFoes", &"Foe", &"AllFoes", &"NearOther", &"AllNearOthers", &"Other", &"AllBattlers", &"UserSide", &"FoeSide", &"BothSides"])

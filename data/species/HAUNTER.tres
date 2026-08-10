@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bj86c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5cdyj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j2oo3"]
+
+[sub_resource type="Resource" id="Resource_ye2vg"]
+script = ExtResource("1_bj86c")
+species = &"GENGAR"
+method = &"Trade"
+
+[sub_resource type="Resource" id="Resource_6atjw"]
+script = ExtResource("1_bj86c")
+species = &"GASTLY"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_dog1k"]
+script = ExtResource("2_5cdyj")
+level = 0
+move = &"SHADOWPUNCH"
+
+[sub_resource type="Resource" id="Resource_4808p"]
+script = ExtResource("2_5cdyj")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_l4e5u"]
+script = ExtResource("2_5cdyj")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_5mok6"]
+script = ExtResource("2_5cdyj")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_qvnh3"]
+script = ExtResource("2_5cdyj")
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_l12jw"]
+script = ExtResource("2_5cdyj")
+level = 12
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_hesln"]
+script = ExtResource("2_5cdyj")
+level = 16
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_ge83o"]
+script = ExtResource("2_5cdyj")
+level = 20
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_acjwc"]
+script = ExtResource("2_5cdyj")
+level = 24
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_my6fq"]
+script = ExtResource("2_5cdyj")
+level = 30
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_fq1jg"]
+script = ExtResource("2_5cdyj")
+level = 36
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_gnmfr"]
+script = ExtResource("2_5cdyj")
+level = 42
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_1e5g3"]
+script = ExtResource("2_5cdyj")
+level = 48
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_cpss7"]
+script = ExtResource("2_5cdyj")
+level = 54
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_m55p3"]
+script = ExtResource("2_5cdyj")
+level = 60
+move = &"DREAMEATER"
+
+[resource]
+resource_name = "HAUNTER"
+script = ExtResource("3_j2oo3")
+species = &"HAUNTER"
+category = "Gas"
+pokedex_entry = "If a Haunter beckons you while it is floating in darkness, don't approach it. This Pokémon will try to lick you with its tongue and steal your life away."
+types = Array[StringName]([&"GHOST", &"POISON"])
+base_hp = 45
+base_attack = 50
+base_defense = 45
+base_special_attack = 115
+base_special_defense = 55
+base_speed = 95
+ev_special_attack = 2
+base_exp = 142
+growth_rate = &"Parabolic"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5cdyj")]([SubResource("Resource_dog1k"), SubResource("Resource_4808p"), SubResource("Resource_l4e5u"), SubResource("Resource_5mok6"), SubResource("Resource_qvnh3"), SubResource("Resource_l12jw"), SubResource("Resource_hesln"), SubResource("Resource_ge83o"), SubResource("Resource_acjwc"), SubResource("Resource_my6fq"), SubResource("Resource_fq1jg"), SubResource("Resource_gnmfr"), SubResource("Resource_1e5g3"), SubResource("Resource_cpss7"), SubResource("Resource_m55p3")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"HEX", &"HIDDENPOWER", &"ICEPUNCH", &"ICYWIND", &"INFESTATION", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHADOWCLAW", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"VENOSHOCK", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_bj86c")]([SubResource("Resource_ye2vg"), SubResource("Resource_6atjw")])
+height = 16
+color = &"Purple"
+shape = &"HeadArms"
+habitat = &"Cave"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 16)
+id = &"HAUNTER"
+display_name = "Haunter"

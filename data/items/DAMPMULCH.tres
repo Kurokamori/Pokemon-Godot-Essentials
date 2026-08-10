@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_td6t5"]
+
+[resource]
+resource_name = "DAMPMULCH"
+script = ExtResource("1_td6t5")
+name_plural = "Damp Mulch"
+portion_name = "bag of Damp Mulch"
+portion_name_plural = "bags of Damp Mulch"
+price = 200
+sell_price = 100
+description = "A fertilizer to be spread on soft soil in regions where Berries are grown. A maniac will buy it for a high price."
+id = &"DAMPMULCH"
+display_name = "Damp Mulch"
+flags = Array[StringName]([&"Mulch", &"Fling_30"])

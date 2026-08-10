@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_armar"]
+
+[resource]
+resource_name = "HOENNSMART"
+script = ExtResource("1_armar")
+icon_position = 12
+description = "Hoenn Smart Contest Normal Rank winner!"
+id = &"HOENNSMART"
+display_name = "Smart Ribbon"

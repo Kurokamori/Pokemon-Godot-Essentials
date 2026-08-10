@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_r0gj4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tkd18"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_soyw1"]
+
+[sub_resource type="Resource" id="Resource_25tum"]
+script = ExtResource("1_r0gj4")
+species = &"CRANIDOS"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jqtnm"]
+script = ExtResource("2_tkd18")
+level = 0
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_vd5re"]
+script = ExtResource("2_tkd18")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_7b7dj"]
+script = ExtResource("2_tkd18")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_1myvr"]
+script = ExtResource("2_tkd18")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_pg552"]
+script = ExtResource("2_tkd18")
+level = 6
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_iy6v8"]
+script = ExtResource("2_tkd18")
+level = 10
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_w40vs"]
+script = ExtResource("2_tkd18")
+level = 15
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_7y2it"]
+script = ExtResource("2_tkd18")
+level = 19
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_rjbgo"]
+script = ExtResource("2_tkd18")
+level = 24
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_hm3ai"]
+script = ExtResource("2_tkd18")
+level = 28
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_y8jxk"]
+script = ExtResource("2_tkd18")
+level = 36
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_5gbxj"]
+script = ExtResource("2_tkd18")
+level = 43
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_bhnoy"]
+script = ExtResource("2_tkd18")
+level = 51
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_yabte"]
+script = ExtResource("2_tkd18")
+level = 58
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "RAMPARDOS"
+script = ExtResource("3_soyw1")
+species = &"RAMPARDOS"
+category = "Head Butt"
+pokedex_entry = "Its powerful head butt has enough power to shatter even the most durable things upon impact."
+types = Array[StringName]([&"ROCK"])
+base_hp = 97
+base_attack = 165
+base_defense = 60
+base_special_attack = 65
+base_special_defense = 50
+base_speed = 58
+ev_attack = 2
+base_exp = 173
+growth_rate = &"Erratic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tkd18")]([SubResource("Resource_jqtnm"), SubResource("Resource_vd5re"), SubResource("Resource_7b7dj"), SubResource("Resource_1myvr"), SubResource("Resource_pg552"), SubResource("Resource_iy6v8"), SubResource("Resource_w40vs"), SubResource("Resource_7y2it"), SubResource("Resource_rjbgo"), SubResource("Resource_hm3ai"), SubResource("Resource_y8jxk"), SubResource("Resource_5gbxj"), SubResource("Resource_bhnoy"), SubResource("Resource_yabte")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PAINSPLIT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"UPROAR", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"MOLDBREAKER"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_r0gj4")]([SubResource("Resource_25tum")])
+height = 16
+weight = 1025
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 12)
+id = &"RAMPARDOS"
+display_name = "Rampardos"

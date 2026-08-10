@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qctsb"]
+
+[resource]
+resource_name = "SCORCHINGSANDS"
+script = ExtResource("1_qctsb")
+type = &"GROUND"
+category = 1
+power = 70
+total_pp = 10
+function_code = &"BurnTarget"
+effect_chance = 30
+description = "The user throws scorching sand at the target to attack. This may also burn the target."
+id = &"SCORCHINGSANDS"
+display_name = "Scorching Sands"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"ThawsUser"])

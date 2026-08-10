@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_r4voq"]
+
+[resource]
+resource_name = "GRASSYTERRAIN"
+script = ExtResource("1_r4voq")
+type = &"GRASS"
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+function_code = &"StartGrassyTerrain"
+description = "The user turns the ground to grass for five turns. Grounded Pokémon restore a little HP every turn."
+id = &"GRASSYTERRAIN"
+display_name = "Grassy Terrain"

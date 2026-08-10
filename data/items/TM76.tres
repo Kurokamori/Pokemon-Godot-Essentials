@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_mrg8l"]
+
+[resource]
+resource_name = "TM76"
+script = ExtResource("1_mrg8l")
+name_plural = "TM76s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"STEALTHROCK"
+description = "The user lays a trap of levitating stones around the opposing team that hurt Pokémon that switch in."
+id = &"TM76"
+display_name = "TM76"
+flags = Array[StringName]([&"Fling_10"])

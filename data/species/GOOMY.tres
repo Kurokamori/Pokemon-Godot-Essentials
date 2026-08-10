@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_x3b40"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_inlum"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_eyxm6"]
+
+[sub_resource type="Resource" id="Resource_jovgs"]
+script = ExtResource("1_x3b40")
+species = &"SLIGGOO"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_ure3x"]
+script = ExtResource("2_inlum")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_52l0d"]
+script = ExtResource("2_inlum")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1cbq3"]
+script = ExtResource("2_inlum")
+level = 5
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_yf8q0"]
+script = ExtResource("2_inlum")
+level = 10
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_4rqvt"]
+script = ExtResource("2_inlum")
+level = 15
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_16bx2"]
+script = ExtResource("2_inlum")
+level = 20
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_wgkb5"]
+script = ExtResource("2_inlum")
+level = 25
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_k1m5x"]
+script = ExtResource("2_inlum")
+level = 30
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_uad3g"]
+script = ExtResource("2_inlum")
+level = 35
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_jg3rg"]
+script = ExtResource("2_inlum")
+level = 41
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_fbphn"]
+script = ExtResource("2_inlum")
+level = 45
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_6dech"]
+script = ExtResource("2_inlum")
+level = 50
+move = &"MUDDYWATER"
+
+[resource]
+resource_name = "GOOMY"
+script = ExtResource("3_eyxm6")
+species = &"GOOMY"
+category = "Soft Tissue"
+pokedex_entry = "Its source of protection is its slimy, germ-laden mucous membrane. Anyone who touches it needs some thorough hand-washing."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 45
+base_attack = 50
+base_defense = 35
+base_special_attack = 55
+base_special_defense = 75
+base_speed = 40
+ev_special_defense = 1
+base_exp = 60
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_inlum")]([SubResource("Resource_ure3x"), SubResource("Resource_52l0d"), SubResource("Resource_1cbq3"), SubResource("Resource_yf8q0"), SubResource("Resource_4rqvt"), SubResource("Resource_16bx2"), SubResource("Resource_wgkb5"), SubResource("Resource_k1m5x"), SubResource("Resource_uad3g"), SubResource("Resource_jg3rg"), SubResource("Resource_fbphn"), SubResource("Resource_6dech")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"INFESTATION", &"IRONTAIL", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERBOLT", &"TOXIC", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"COUNTER", &"LIFEDEW"])
+abilities = Array[StringName]([&"SAPSIPPER", &"HYDRATION"])
+hidden_abilities = Array[StringName]([&"GOOEY"])
+wild_item_uncommon = Array[StringName]([&"SHEDSHELL"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_x3b40")]([SubResource("Resource_jovgs")])
+height = 3
+weight = 28
+color = &"Purple"
+shape = &"Serpentine"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"GOOMY"
+display_name = "Goomy"

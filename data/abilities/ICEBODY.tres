@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_hcs0q"]
+
+[resource]
+resource_name = "ICEBODY"
+script = ExtResource("1_hcs0q")
+description = "The Pokémon gradually regains HP in a hailstorm."
+id = &"ICEBODY"
+display_name = "Ice Body"

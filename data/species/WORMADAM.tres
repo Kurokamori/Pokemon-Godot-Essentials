@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_27omm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qjubt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_khjmw"]
+
+[sub_resource type="Resource" id="Resource_uy6co"]
+script = ExtResource("1_27omm")
+species = &"BURMY"
+method = &"LevelFemale"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_j433o"]
+script = ExtResource("2_qjubt")
+level = 0
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_inwb0"]
+script = ExtResource("2_qjubt")
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_exgkf"]
+script = ExtResource("2_qjubt")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_oksyp"]
+script = ExtResource("2_qjubt")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_v470m"]
+script = ExtResource("2_qjubt")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_8sfsj"]
+script = ExtResource("2_qjubt")
+level = 10
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_k4qdp"]
+script = ExtResource("2_qjubt")
+level = 15
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_8s7bf"]
+script = ExtResource("2_qjubt")
+level = 20
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_nnvmt"]
+script = ExtResource("2_qjubt")
+level = 23
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_i5r8f"]
+script = ExtResource("2_qjubt")
+level = 26
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_81tkk"]
+script = ExtResource("2_qjubt")
+level = 29
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_f4o4u"]
+script = ExtResource("2_qjubt")
+level = 32
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_mdg6n"]
+script = ExtResource("2_qjubt")
+level = 35
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_5cc22"]
+script = ExtResource("2_qjubt")
+level = 38
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_c38fa"]
+script = ExtResource("2_qjubt")
+level = 41
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_bv6j2"]
+script = ExtResource("2_qjubt")
+level = 44
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_0guv3"]
+script = ExtResource("2_qjubt")
+level = 47
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_qyng0"]
+script = ExtResource("2_qjubt")
+level = 50
+move = &"BUGBUZZ"
+
+[resource]
+resource_name = "WORMADAM"
+script = ExtResource("3_khjmw")
+species = &"WORMADAM"
+form_name = "Plant Cloak"
+category = "Bagworm"
+pokedex_entry = "When Burmy evolved, its cloak became a part of this Pokémon's body. The cloak is never shed."
+types = Array[StringName]([&"BUG", &"GRASS"])
+base_hp = 60
+base_attack = 59
+base_defense = 85
+base_special_attack = 79
+base_special_defense = 105
+base_speed = 36
+ev_special_defense = 2
+base_exp = 148
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qjubt")]([SubResource("Resource_j433o"), SubResource("Resource_inwb0"), SubResource("Resource_exgkf"), SubResource("Resource_oksyp"), SubResource("Resource_v470m"), SubResource("Resource_8sfsj"), SubResource("Resource_k4qdp"), SubResource("Resource_8s7bf"), SubResource("Resource_nnvmt"), SubResource("Resource_i5r8f"), SubResource("Resource_81tkk"), SubResource("Resource_f4o4u"), SubResource("Resource_mdg6n"), SubResource("Resource_5cc22"), SubResource("Resource_c38fa"), SubResource("Resource_bv6j2"), SubResource("Resource_0guv3"), SubResource("Resource_qyng0")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DREAMEATER", &"ELECTROWEB", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TELEKINESIS", &"THIEF", &"UPROAR", &"VENOSHOCK", &"WORRYSEED"])
+abilities = Array[StringName]([&"ANTICIPATION"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_uncommon = Array[StringName]([&"SILVERPOWDER"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_27omm")]([SubResource("Resource_uy6co")])
+height = 5
+weight = 65
+color = &"Green"
+shape = &"HeadBase"
+generation = 4
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(0, 17)
+shadow_size = 1
+id = &"WORMADAM"
+display_name = "Wormadam"
+flags = Array[StringName]([&"InheritFormFromMother"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_02qys"]
+
+[resource]
+resource_name = "ROCKPOLISH"
+script = ExtResource("1_02qys")
+type = &"ROCK"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserSpeed2"
+description = "The user polishes its body to reduce drag. It can sharply raise the Speed stat."
+id = &"ROCKPOLISH"
+display_name = "Rock Polish"

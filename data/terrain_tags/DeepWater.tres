@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_32jdu"]
+
+[resource]
+resource_name = "DeepWater"
+script = ExtResource("1_32jdu")
+tag_number = 5
+can_surf = true
+can_fish = true
+can_dive = true
+battle_environment = &"MovingWater"
+id = &"DeepWater"
+display_name = "DeepWater"

@@ -1,0 +1,86 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_llymi"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_10cyr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pnjyb"]
+
+[sub_resource type="Resource" id="Resource_7at32"]
+script = ExtResource("1_llymi")
+species = &"CHANSEY"
+method = &"DayHoldItem"
+parameter = "OVALSTONE"
+
+[sub_resource type="Resource" id="Resource_vtj6x"]
+script = ExtResource("2_10cyr")
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_n1ujf"]
+script = ExtResource("2_10cyr")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_8ra4x"]
+script = ExtResource("2_10cyr")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_mh3qy"]
+script = ExtResource("2_10cyr")
+level = 4
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_6jsi5"]
+script = ExtResource("2_10cyr")
+level = 8
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_3odfn"]
+script = ExtResource("2_10cyr")
+level = 12
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_8pjc3"]
+script = ExtResource("2_10cyr")
+level = 16
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_7srg4"]
+script = ExtResource("2_10cyr")
+level = 20
+move = &"CHARM"
+
+[resource]
+resource_name = "HAPPINY"
+script = ExtResource("3_pnjyb")
+species = &"HAPPINY"
+category = "Playhouse"
+pokedex_entry = "It loves round white things. It carries an egg-shaped rock in imitation of Chansey."
+base_hp = 100
+base_attack = 5
+base_defense = 5
+base_special_attack = 15
+base_special_defense = 65
+base_speed = 30
+ev_hp = 1
+base_exp = 110
+growth_rate = &"Fast"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 130
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_10cyr")]([SubResource("Resource_vtj6x"), SubResource("Resource_n1ujf"), SubResource("Resource_8ra4x"), SubResource("Resource_mh3qy"), SubResource("Resource_6jsi5"), SubResource("Resource_3odfn"), SubResource("Resource_8pjc3"), SubResource("Resource_7srg4")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICYWIND", &"INCINERATE", &"LASTRESORT", &"LIGHTSCREEN", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERWAVE", &"UPROAR", &"WATERPULSE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AROMATHERAPY", &"COUNTER", &"GRAVITY", &"HEALBELL", &"HELPINGHAND", &"LASTRESORT", &"METRONOME", &"PRESENT", &"SEISMICTOSS"])
+abilities = Array[StringName]([&"NATURALCURE", &"SERENEGRACE"])
+hidden_abilities = Array[StringName]([&"FRIENDGUARD"])
+wild_item_common = Array[StringName]([&"OVALSTONE"])
+hatch_steps = 10240
+incense = &"LUCKINCENSE"
+evolutions = Array[ExtResource("1_llymi")]([SubResource("Resource_7at32")])
+height = 6
+weight = 244
+color = &"Pink"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 30)
+shadow_size = 1
+id = &"HAPPINY"
+display_name = "Happiny"

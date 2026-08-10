@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_pp0kb"]
+
+[resource]
+resource_name = "GENTLEMINT"
+script = ExtResource("1_pp0kb")
+name_plural = "Gentle Mints"
+portion_name = "sprig of Gentle Mint"
+portion_name_plural = "sprigs of Gentle Mint"
+pocket = 2
+price = 20
+sell_price = 10
+bp_price = 50
+field_use = 1
+description = "When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Defense will grow more slowly."
+id = &"GENTLEMINT"
+display_name = "Gentle Mint"
+flags = Array[StringName]([&"Fling_10"])

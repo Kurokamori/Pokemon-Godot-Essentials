@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GenderRatioData" format=3]
+
+[ext_resource type="Script" path="res://src/data/gender_ratio_data.gd" id="1_t3mok"]
+
+[resource]
+resource_name = "Female25Percent"
+script = ExtResource("1_t3mok")
+female_chance = 64
+id = &"Female25Percent"
+display_name = "Female 25 Percent"

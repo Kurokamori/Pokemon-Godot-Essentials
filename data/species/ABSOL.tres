@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_w0q5e"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_83mid"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_equr8"]
+
+[sub_resource type="Resource" id="Resource_wvpan"]
+script = ExtResource("2_83mid")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_k6vke"]
+script = ExtResource("2_83mid")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_dw174"]
+script = ExtResource("2_83mid")
+level = 5
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_20lyt"]
+script = ExtResource("2_83mid")
+level = 10
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_u36jw"]
+script = ExtResource("2_83mid")
+level = 15
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_5n4xw"]
+script = ExtResource("2_83mid")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_215s4"]
+script = ExtResource("2_83mid")
+level = 25
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_gcoe3"]
+script = ExtResource("2_83mid")
+level = 30
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_gbili"]
+script = ExtResource("2_83mid")
+level = 35
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_erpu5"]
+script = ExtResource("2_83mid")
+level = 40
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_jeq7i"]
+script = ExtResource("2_83mid")
+level = 45
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_dg7ge"]
+script = ExtResource("2_83mid")
+level = 50
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_ce2te"]
+script = ExtResource("2_83mid")
+level = 55
+move = &"PERISHSONG"
+
+[resource]
+resource_name = "ABSOL"
+script = ExtResource("3_equr8")
+species = &"ABSOL"
+category = "Disaster"
+pokedex_entry = "It sharply senses even subtle changes in the sky and the land to predict natural disasters. It is a long-lived Pokémon that has a life-span of 100 years."
+types = Array[StringName]([&"DARK"])
+base_hp = 65
+base_attack = 130
+base_defense = 60
+base_special_attack = 75
+base_special_defense = 60
+base_speed = 75
+ev_attack = 2
+base_exp = 163
+growth_rate = &"Parabolic"
+catch_rate = 30
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_83mid")]([SubResource("Resource_wvpan"), SubResource("Resource_k6vke"), SubResource("Resource_dw174"), SubResource("Resource_20lyt"), SubResource("Resource_u36jw"), SubResource("Resource_5n4xw"), SubResource("Resource_215s4"), SubResource("Resource_gcoe3"), SubResource("Resource_gbili"), SubResource("Resource_erpu5"), SubResource("Resource_jeq7i"), SubResource("Resource_dg7ge"), SubResource("Resource_ce2te")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRUTALSWING", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CLOSECOMBAT", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FOCUSENERGY", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"FUTURESIGHT", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"MAGICCOAT", &"MEGAHORN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"PROTECT", &"PSYCHOCUT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"WATERPULSE", &"WILLOWISP", &"XSCISSOR", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ASSURANCE", &"BATONPASS", &"BITE", &"CURSE", &"DOUBLEEDGE", &"FEINT", &"HEX", &"MAGICCOAT", &"MEANLOOK", &"MEGAHORN", &"PERISHSONG", &"PLAYROUGH", &"SUCKERPUNCH", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"PRESSURE", &"SUPERLUCK"])
+hidden_abilities = Array[StringName]([&"JUSTIFIED"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 6400
+height = 12
+weight = 470
+color = &"White"
+shape = &"Quadruped"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 26)
+id = &"ABSOL"
+display_name = "Absol"

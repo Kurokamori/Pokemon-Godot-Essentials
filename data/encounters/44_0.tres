@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_smyn3"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_0xf5f"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_os45y"]
+
+[sub_resource type="Resource" id="Resource_derud"]
+script = ExtResource("3_os45y")
+weight = 50
+species = &"SHELLOS_1"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_gbgjw"]
+script = ExtResource("3_os45y")
+weight = 40
+species = &"GRIMER"
+min_level = 13
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_k0xws"]
+script = ExtResource("3_os45y")
+species = &"MURKROW"
+min_level = 12
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_4kt3f"]
+script = ExtResource("2_0xf5f")
+step_chance = 21
+slots = Array[ExtResource("3_os45y")]([SubResource("Resource_derud"), SubResource("Resource_gbgjw"), SubResource("Resource_k0xws")])
+
+[resource]
+resource_name = "44_0"
+script = ExtResource("1_smyn3")
+map_id = 44
+tables = Array[ExtResource("2_0xf5f")]([SubResource("Resource_4kt3f")])
+id = &"44_0"
+display_name = "Map 44 v0"

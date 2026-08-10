@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_721g0"]
+
+[resource]
+resource_name = "NEUROFORCE"
+script = ExtResource("1_721g0")
+description = "Powers up moves that are super-effective."
+id = &"NEUROFORCE"
+display_name = "Neuroforce"

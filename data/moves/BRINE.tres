@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_gwneg"]
+
+[resource]
+resource_name = "BRINE"
+script = ExtResource("1_gwneg")
+type = &"WATER"
+category = 1
+power = 65
+total_pp = 10
+function_code = &"DoublePowerIfTargetHPLessThanHalf"
+description = "If the target's HP is down to about half, this attack will hit with double the power."
+id = &"BRINE"
+display_name = "Brine"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vmxuk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_oo8wk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ydm2b"]
+
+[sub_resource type="Resource" id="Resource_8s22k"]
+script = ExtResource("2_oo8wk")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_tddqd"]
+script = ExtResource("2_oo8wk")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_pgwhc"]
+script = ExtResource("2_oo8wk")
+level = 5
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_k5q0h"]
+script = ExtResource("2_oo8wk")
+level = 10
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_abo8o"]
+script = ExtResource("2_oo8wk")
+level = 15
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_vp2n6"]
+script = ExtResource("2_oo8wk")
+level = 20
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_fu1k7"]
+script = ExtResource("2_oo8wk")
+level = 25
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_kp705"]
+script = ExtResource("2_oo8wk")
+level = 30
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_jbrdb"]
+script = ExtResource("2_oo8wk")
+level = 35
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_c3wod"]
+script = ExtResource("2_oo8wk")
+level = 40
+move = &"SUBSTITUTE"
+
+[sub_resource type="Resource" id="Resource_tl6fw"]
+script = ExtResource("2_oo8wk")
+level = 45
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_px5h2"]
+script = ExtResource("2_oo8wk")
+level = 50
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_uwl6r"]
+script = ExtResource("2_oo8wk")
+level = 55
+move = &"UPROAR"
+
+[resource]
+resource_name = "ROTOM"
+script = ExtResource("3_ydm2b")
+species = &"ROTOM"
+form_name = "Rotom"
+category = "Plasma"
+pokedex_entry = "Its body is composed of plasma. It is known to infiltrate electronic devices and wreak havoc."
+types = Array[StringName]([&"ELECTRIC", &"GHOST"])
+base_hp = 50
+base_attack = 50
+base_defense = 77
+base_special_attack = 95
+base_special_defense = 77
+base_speed = 91
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 154
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_oo8wk")]([SubResource("Resource_8s22k"), SubResource("Resource_tddqd"), SubResource("Resource_pgwhc"), SubResource("Resource_k5q0h"), SubResource("Resource_abo8o"), SubResource("Resource_vp2n6"), SubResource("Resource_fu1k7"), SubResource("Resource_kp705"), SubResource("Resource_jbrdb"), SubResource("Resource_c3wod"), SubResource("Resource_tl6fw"), SubResource("Resource_px5h2"), SubResource("Resource_uwl6r")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HYPERVOICE", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"UPROAR", &"VOLTSWITCH", &"WILLOWISP"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+height = 3
+weight = 3
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 14)
+shadow_size = 1
+id = &"ROTOM"
+display_name = "Rotom"

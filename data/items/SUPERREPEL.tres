@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_rsi8x"]
+
+[resource]
+resource_name = "SUPERREPEL"
+script = ExtResource("1_rsi8x")
+name_plural = "Super Repels"
+price = 700
+sell_price = 350
+field_use = 2
+description = "An item that prevents weak wild Pokémon from appearing for 200 steps after its use."
+id = &"SUPERREPEL"
+display_name = "Super Repel"
+flags = Array[StringName]([&"Repel", &"Fling_30"])

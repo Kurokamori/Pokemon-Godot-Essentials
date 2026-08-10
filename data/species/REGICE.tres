@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o550l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_upu3f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mhtyt"]
+
+[sub_resource type="Resource" id="Resource_ia5rb"]
+script = ExtResource("2_upu3f")
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_gwn7s"]
+script = ExtResource("2_upu3f")
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_kogb7"]
+script = ExtResource("2_upu3f")
+level = 6
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_rmdj5"]
+script = ExtResource("2_upu3f")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_ejxci"]
+script = ExtResource("2_upu3f")
+level = 18
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_msxru"]
+script = ExtResource("2_upu3f")
+level = 24
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_m4l4k"]
+script = ExtResource("2_upu3f")
+level = 30
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_aiqhg"]
+script = ExtResource("2_upu3f")
+level = 36
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_1l3nk"]
+script = ExtResource("2_upu3f")
+level = 42
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_jgjge"]
+script = ExtResource("2_upu3f")
+level = 48
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_vt7ox"]
+script = ExtResource("2_upu3f")
+level = 54
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_krclu"]
+script = ExtResource("2_upu3f")
+level = 60
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_uswhf"]
+script = ExtResource("2_upu3f")
+level = 66
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_m6iwg"]
+script = ExtResource("2_upu3f")
+level = 72
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_lcdv1"]
+script = ExtResource("2_upu3f")
+level = 78
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "REGICE"
+script = ExtResource("3_mhtyt")
+species = &"REGICE"
+category = "Iceberg"
+pokedex_entry = "Its entire body is made of Antarctic ice. After extensive studies, researchers believe the ice was formed during an ice age."
+types = Array[StringName]([&"ICE"])
+base_hp = 80
+base_attack = 50
+base_defense = 100
+base_special_attack = 100
+base_special_defense = 200
+base_speed = 50
+ev_special_defense = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_upu3f")]([SubResource("Resource_ia5rb"), SubResource("Resource_gwn7s"), SubResource("Resource_kogb7"), SubResource("Resource_rmdj5"), SubResource("Resource_ejxci"), SubResource("Resource_msxru"), SubResource("Resource_m4l4k"), SubResource("Resource_aiqhg"), SubResource("Resource_1l3nk"), SubResource("Resource_jgjge"), SubResource("Resource_vt7ox"), SubResource("Resource_krclu"), SubResource("Resource_uswhf"), SubResource("Resource_m6iwg"), SubResource("Resource_lcdv1")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"AURORAVEIL", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HAIL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"IRONHEAD", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE"])
+abilities = Array[StringName]([&"CLEARBODY"])
+hidden_abilities = Array[StringName]([&"ICEBODY"])
+hatch_steps = 20480
+height = 18
+weight = 1750
+color = &"Blue"
+shape = &"Bipedal"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 20)
+id = &"REGICE"
+display_name = "Regice"
+flags = Array[StringName]([&"Legendary"])

@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1w7jd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tjnig"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0dxgw"]
+
+[sub_resource type="Resource" id="Resource_x3eix"]
+script = ExtResource("1_1w7jd")
+species = &"HAKAMOO"
+method = &"Level"
+parameter = "45"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7ha2a"]
+script = ExtResource("2_tjnig")
+level = 0
+move = &"CLANGINGSCALES"
+
+[sub_resource type="Resource" id="Resource_v2x7m"]
+script = ExtResource("2_tjnig")
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_1vmja"]
+script = ExtResource("2_tjnig")
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_sknbi"]
+script = ExtResource("2_tjnig")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_b60k4"]
+script = ExtResource("2_tjnig")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_0ec0x"]
+script = ExtResource("2_tjnig")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_kskec"]
+script = ExtResource("2_tjnig")
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_jwa3n"]
+script = ExtResource("2_tjnig")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_1u1h1"]
+script = ExtResource("2_tjnig")
+level = 16
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_e4l3x"]
+script = ExtResource("2_tjnig")
+level = 20
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_s8o7o"]
+script = ExtResource("2_tjnig")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_0darw"]
+script = ExtResource("2_tjnig")
+level = 28
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_vod8q"]
+script = ExtResource("2_tjnig")
+level = 32
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_x8e52"]
+script = ExtResource("2_tjnig")
+level = 38
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_uyyso"]
+script = ExtResource("2_tjnig")
+level = 44
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_qdbrp"]
+script = ExtResource("2_tjnig")
+level = 52
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_wtow4"]
+script = ExtResource("2_tjnig")
+level = 60
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_hrucm"]
+script = ExtResource("2_tjnig")
+level = 68
+move = &"CLANGOROUSSOUL"
+
+[sub_resource type="Resource" id="Resource_1oxp0"]
+script = ExtResource("2_tjnig")
+level = 76
+move = &"BOOMBURST"
+
+[resource]
+resource_name = "KOMMOO"
+script = ExtResource("3_0dxgw")
+species = &"KOMMOO"
+category = "Scaly"
+pokedex_entry = "Its rigid scales function as offense and defense. In the past, its scales were processed and used to make weapons and other commodities."
+types = Array[StringName]([&"DRAGON", &"FIGHTING"])
+base_hp = 75
+base_attack = 110
+base_defense = 125
+base_special_attack = 100
+base_special_defense = 105
+base_speed = 85
+ev_defense = 3
+base_exp = 300
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tjnig")]([SubResource("Resource_7ha2a"), SubResource("Resource_v2x7m"), SubResource("Resource_1vmja"), SubResource("Resource_sknbi"), SubResource("Resource_b60k4"), SubResource("Resource_0ec0x"), SubResource("Resource_kskec"), SubResource("Resource_jwa3n"), SubResource("Resource_1u1h1"), SubResource("Resource_e4l3x"), SubResource("Resource_s8o7o"), SubResource("Resource_0darw"), SubResource("Resource_vod8q"), SubResource("Resource_x8e52"), SubResource("Resource_uyyso"), SubResource("Resource_qdbrp"), SubResource("Resource_wtow4"), SubResource("Resource_hrucm"), SubResource("Resource_1oxp0")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"AURASPHERE", &"BODYPRESS", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREPUNCH", &"FLAMETHROWER", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEPUNCH", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALESHOT", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"UPROAR", &"WATERPULSE", &"WORKUP", &"XSCISSOR"])
+abilities = Array[StringName]([&"BULLETPROOF", &"SOUNDPROOF"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_common = Array[StringName]([&"RAZORCLAW"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_1w7jd")]([SubResource("Resource_x3eix")])
+height = 16
+weight = 782
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(6, 12)
+shadow_size = 3
+id = &"KOMMOO"
+display_name = "Kommo-o"

@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_i3f30"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k0fov"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dws0x"]
+
+[sub_resource type="Resource" id="Resource_55csl"]
+script = ExtResource("2_k0fov")
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_ysb7l"]
+script = ExtResource("2_k0fov")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_idkf2"]
+script = ExtResource("2_k0fov")
+level = 6
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_2yxwy"]
+script = ExtResource("2_k0fov")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_eqj1p"]
+script = ExtResource("2_k0fov")
+level = 18
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_2gluu"]
+script = ExtResource("2_k0fov")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_ny86v"]
+script = ExtResource("2_k0fov")
+level = 30
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_506aw"]
+script = ExtResource("2_k0fov")
+level = 36
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_uokkm"]
+script = ExtResource("2_k0fov")
+level = 42
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_ei174"]
+script = ExtResource("2_k0fov")
+level = 48
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_tsnp0"]
+script = ExtResource("2_k0fov")
+level = 54
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_mljag"]
+script = ExtResource("2_k0fov")
+level = 60
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_55njq"]
+script = ExtResource("2_k0fov")
+level = 66
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_01ntv"]
+script = ExtResource("2_k0fov")
+level = 72
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_kle6h"]
+script = ExtResource("2_k0fov")
+level = 78
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "REGIROCK"
+script = ExtResource("3_dws0x")
+species = &"REGIROCK"
+category = "Rock Peak"
+pokedex_entry = "A Pokémon that is made entirely of rocks and boulders. If parts of its body chip off in battle, Regirock repairs itself by adding new rocks."
+types = Array[StringName]([&"ROCK"])
+base_hp = 80
+base_attack = 100
+base_defense = 200
+base_special_attack = 50
+base_special_defense = 100
+base_speed = 50
+ev_defense = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_k0fov")]([SubResource("Resource_55csl"), SubResource("Resource_ysb7l"), SubResource("Resource_idkf2"), SubResource("Resource_2yxwy"), SubResource("Resource_eqj1p"), SubResource("Resource_2gluu"), SubResource("Resource_ny86v"), SubResource("Resource_506aw"), SubResource("Resource_uokkm"), SubResource("Resource_ei174"), SubResource("Resource_tsnp0"), SubResource("Resource_mljag"), SubResource("Resource_55njq"), SubResource("Resource_01ntv"), SubResource("Resource_kle6h")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IRONDEFENSE", &"IRONHEAD", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE"])
+abilities = Array[StringName]([&"CLEARBODY"])
+hidden_abilities = Array[StringName]([&"STURDY"])
+hatch_steps = 20480
+height = 17
+weight = 2300
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 18)
+id = &"REGIROCK"
+display_name = "Regirock"
+flags = Array[StringName]([&"Legendary"])

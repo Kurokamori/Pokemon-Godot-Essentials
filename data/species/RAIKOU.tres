@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5ww1u"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e5865"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7pce4"]
+
+[sub_resource type="Resource" id="Resource_ifib6"]
+script = ExtResource("2_e5865")
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_xtokk"]
+script = ExtResource("2_e5865")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_5b233"]
+script = ExtResource("2_e5865")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_alp2f"]
+script = ExtResource("2_e5865")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_1kr7p"]
+script = ExtResource("2_e5865")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_jpm70"]
+script = ExtResource("2_e5865")
+level = 6
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_rtrei"]
+script = ExtResource("2_e5865")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_wek1y"]
+script = ExtResource("2_e5865")
+level = 18
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_c80cw"]
+script = ExtResource("2_e5865")
+level = 24
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_ulwd2"]
+script = ExtResource("2_e5865")
+level = 30
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_ljwbp"]
+script = ExtResource("2_e5865")
+level = 36
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_53itn"]
+script = ExtResource("2_e5865")
+level = 42
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_3e641"]
+script = ExtResource("2_e5865")
+level = 48
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_1txsc"]
+script = ExtResource("2_e5865")
+level = 54
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_22udt"]
+script = ExtResource("2_e5865")
+level = 60
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_vpirm"]
+script = ExtResource("2_e5865")
+level = 66
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_d2o2e"]
+script = ExtResource("2_e5865")
+level = 72
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_xw6er"]
+script = ExtResource("2_e5865")
+level = 78
+move = &"ZAPCANNON"
+
+[resource]
+resource_name = "RAIKOU"
+script = ExtResource("3_7pce4")
+species = &"RAIKOU"
+category = "Thunder"
+pokedex_entry = "Raikou embodies the speed of lightning. Its roars send shock waves shuddering through the air and ground as if lightning bolts were crashing down."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 90
+base_attack = 85
+base_defense = 75
+base_special_attack = 115
+base_special_defense = 100
+base_speed = 115
+ev_special_attack = 1
+ev_speed = 2
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_e5865")]([SubResource("Resource_ifib6"), SubResource("Resource_xtokk"), SubResource("Resource_5b233"), SubResource("Resource_alp2f"), SubResource("Resource_1kr7p"), SubResource("Resource_jpm70"), SubResource("Resource_rtrei"), SubResource("Resource_wek1y"), SubResource("Resource_c80cw"), SubResource("Resource_ulwd2"), SubResource("Resource_ljwbp"), SubResource("Resource_53itn"), SubResource("Resource_3e641"), SubResource("Resource_1txsc"), SubResource("Resource_22udt"), SubResource("Resource_vpirm"), SubResource("Resource_d2o2e"), SubResource("Resource_xw6er")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AURASPHERE", &"BODYSLAM", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"QUASH", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROAR", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"VOLTSWITCH", &"WEATHERBALL", &"WILDCHARGE"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+hatch_steps = 20480
+height = 19
+weight = 1780
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 18)
+id = &"RAIKOU"
+display_name = "Raikou"
+flags = Array[StringName]([&"Legendary"])

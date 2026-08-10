@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l4kd7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a56wc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_21ccn"]
+
+[sub_resource type="Resource" id="Resource_26kg8"]
+script = ExtResource("2_a56wc")
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_4srp6"]
+script = ExtResource("2_a56wc")
+move = &"MORNINGSUN"
+
+[sub_resource type="Resource" id="Resource_niewa"]
+script = ExtResource("2_a56wc")
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_tagkt"]
+script = ExtResource("2_a56wc")
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_hqghw"]
+script = ExtResource("2_a56wc")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_63v8p"]
+script = ExtResource("2_a56wc")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_hngk3"]
+script = ExtResource("2_a56wc")
+level = 8
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_u1ucb"]
+script = ExtResource("2_a56wc")
+level = 16
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_fuvbw"]
+script = ExtResource("2_a56wc")
+level = 24
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_2h428"]
+script = ExtResource("2_a56wc")
+level = 32
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_bod2b"]
+script = ExtResource("2_a56wc")
+level = 40
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_rctae"]
+script = ExtResource("2_a56wc")
+level = 48
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_b34xb"]
+script = ExtResource("2_a56wc")
+level = 56
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_oiqdv"]
+script = ExtResource("2_a56wc")
+level = 64
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_14e0m"]
+script = ExtResource("2_a56wc")
+level = 72
+move = &"PHOTONGEYSER"
+
+[sub_resource type="Resource" id="Resource_t5w61"]
+script = ExtResource("2_a56wc")
+level = 80
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_tvoxv"]
+script = ExtResource("2_a56wc")
+level = 88
+move = &"PRISMATICLASER"
+
+[resource]
+resource_name = "NECROZMA"
+script = ExtResource("3_21ccn")
+species = &"NECROZMA"
+category = "Prism"
+pokedex_entry = "Light is apparently the source of its energy. It has an extraordinarily vicious disposition and is constantly firing off laser beams."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 97
+base_attack = 107
+base_defense = 101
+base_special_attack = 127
+base_special_defense = 89
+base_speed = 79
+ev_attack = 1
+ev_special_attack = 2
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_a56wc")]([SubResource("Resource_26kg8"), SubResource("Resource_4srp6"), SubResource("Resource_niewa"), SubResource("Resource_tagkt"), SubResource("Resource_hqghw"), SubResource("Resource_63v8p"), SubResource("Resource_hngk3"), SubResource("Resource_u1ucb"), SubResource("Resource_fuvbw"), SubResource("Resource_2h428"), SubResource("Resource_bod2b"), SubResource("Resource_rctae"), SubResource("Resource_b34xb"), SubResource("Resource_oiqdv"), SubResource("Resource_14e0m"), SubResource("Resource_t5w61"), SubResource("Resource_tvoxv")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COSMICPOWER", &"DARKPULSE", &"DOUBLETEAM", &"DRAGONDANCE", &"DRAGONPULSE", &"EARTHPOWER", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FLASHCANNON", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRAVITY", &"GYROBALL", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"LIGHTSCREEN", &"MAGNETRISE", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"PSYCHICFANGS", &"PSYCHOCUT", &"PSYSHOCK", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STONEEDGE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TELEKINESIS", &"THIEF", &"THUNDERWAVE", &"TOXIC", &"TRICKROOM", &"XSCISSOR"])
+abilities = Array[StringName]([&"PRISMARMOR"])
+hatch_steps = 30720
+height = 24
+weight = 2300
+color = &"Black"
+shape = &"HeadArms"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 6)
+shadow_size = 3
+id = &"NECROZMA"
+display_name = "Necrozma"
+flags = Array[StringName]([&"Legendary"])

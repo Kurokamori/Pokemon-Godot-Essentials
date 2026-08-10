@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_n7p8s"]
+
+[resource]
+resource_name = "PECK"
+script = ExtResource("1_n7p8s")
+type = &"FLYING"
+category = 0
+power = 35
+total_pp = 35
+target = &"Other"
+description = "The target is jabbed with a sharply pointed beak or horn."
+id = &"PECK"
+display_name = "Peck"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

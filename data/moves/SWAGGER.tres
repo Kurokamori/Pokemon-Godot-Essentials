@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nnw51"]
+
+[resource]
+resource_name = "SWAGGER"
+script = ExtResource("1_nnw51")
+accuracy = 85
+total_pp = 15
+function_code = &"RaiseTargetAttack2ConfuseTarget"
+description = "The user enrages and confuses the target. However, it also sharply raises the target's Attack stat."
+id = &"SWAGGER"
+display_name = "Swagger"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

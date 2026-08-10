@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_76n3p"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lugr1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wfclb"]
+
+[sub_resource type="Resource" id="Resource_dg61n"]
+script = ExtResource("1_76n3p")
+species = &"FOMANTIS"
+method = &"LevelDay"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_48r3p"]
+script = ExtResource("2_lugr1")
+level = 0
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_vlkne"]
+script = ExtResource("2_lugr1")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_xq8xd"]
+script = ExtResource("2_lugr1")
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_4u6uw"]
+script = ExtResource("2_lugr1")
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_rcc8w"]
+script = ExtResource("2_lugr1")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_vpqgb"]
+script = ExtResource("2_lugr1")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_2rtyh"]
+script = ExtResource("2_lugr1")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_8odyo"]
+script = ExtResource("2_lugr1")
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_ltrx0"]
+script = ExtResource("2_lugr1")
+level = 15
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_wc4x2"]
+script = ExtResource("2_lugr1")
+level = 20
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_ot0xt"]
+script = ExtResource("2_lugr1")
+level = 25
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_4blil"]
+script = ExtResource("2_lugr1")
+level = 30
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_lr8ne"]
+script = ExtResource("2_lugr1")
+level = 37
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_tjxdq"]
+script = ExtResource("2_lugr1")
+level = 44
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_wf8so"]
+script = ExtResource("2_lugr1")
+level = 51
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_p4jnl"]
+script = ExtResource("2_lugr1")
+level = 63
+move = &"SOLARBLADE"
+
+[resource]
+resource_name = "LURANTIS"
+script = ExtResource("3_wfclb")
+species = &"LURANTIS"
+category = "Bloom Sickle"
+pokedex_entry = "It requires a lot of effort to maintain Lurantis's vivid coloring, but some collectors enjoy this work and treat it as their hobby."
+types = Array[StringName]([&"GRASS"])
+base_hp = 70
+base_attack = 105
+base_defense = 90
+base_special_attack = 80
+base_special_defense = 90
+base_speed = 45
+ev_attack = 2
+base_exp = 168
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lugr1")]([SubResource("Resource_48r3p"), SubResource("Resource_vlkne"), SubResource("Resource_xq8xd"), SubResource("Resource_4u6uw"), SubResource("Resource_rcc8w"), SubResource("Resource_vpqgb"), SubResource("Resource_2rtyh"), SubResource("Resource_8odyo"), SubResource("Resource_ltrx0"), SubResource("Resource_wc4x2"), SubResource("Resource_ot0xt"), SubResource("Resource_4blil"), SubResource("Resource_lr8ne"), SubResource("Resource_tjxdq"), SubResource("Resource_wf8so"), SubResource("Resource_p4jnl")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"BUGBITE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"DEFOG", &"DOUBLETEAM", &"DUALCHOP", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HIDDENPOWER", &"HYPERBEAM", &"KNOCKOFF", &"LASERFOCUS", &"LEAFBLADE", &"LEAFSTORM", &"LEECHLIFE", &"LOWSWEEP", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POISONJAB", &"PROTECT", &"PSYCHOCUT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"WEATHERBALL", &"WORRYSEED", &"XSCISSOR"])
+abilities = Array[StringName]([&"LEAFGUARD"])
+hidden_abilities = Array[StringName]([&"CONTRARY"])
+wild_item_uncommon = Array[StringName]([&"MIRACLESEED"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_76n3p")]([SubResource("Resource_dg61n")])
+height = 9
+weight = 185
+color = &"Pink"
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 1
+id = &"LURANTIS"
+display_name = "Lurantis"

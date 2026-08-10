@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_i7iqi"]
+
+[resource]
+resource_name = "SAFEGUARD"
+script = ExtResource("1_i7iqi")
+accuracy = 0
+total_pp = 25
+target = &"UserSide"
+function_code = &"StartUserSideImmunityToInflictedStatus"
+description = "The user creates a protective field that prevents status problems for five turns."
+id = &"SAFEGUARD"
+display_name = "Safeguard"

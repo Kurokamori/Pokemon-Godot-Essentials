@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StatusData" format=3]
+
+[ext_resource type="Script" path="res://src/data/status_data.gd" id="1_f4rru"]
+
+[resource]
+resource_name = "POISON"
+script = ExtResource("1_f4rru")
+animation = &"Poison"
+icon_position = 1
+id = &"POISON"
+display_name = "Poison"

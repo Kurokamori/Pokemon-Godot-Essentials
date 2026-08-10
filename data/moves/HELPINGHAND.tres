@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2ibqe"]
+
+[resource]
+resource_name = "HELPINGHAND"
+script = ExtResource("1_2ibqe")
+accuracy = 0
+total_pp = 20
+target = &"NearAlly"
+priority = 5
+function_code = &"PowerUpAllyMove"
+description = "The user assists an ally by boosting the power of its attack."
+id = &"HELPINGHAND"
+display_name = "Helping Hand"

@@ -1,0 +1,159 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_n3ikx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_w45ae"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nudy1"]
+
+[sub_resource type="Resource" id="Resource_rlk54"]
+script = ExtResource("1_n3ikx")
+species = &"FLAAFFY"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_wq2ty"]
+script = ExtResource("2_w45ae")
+level = 0
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_3r6is"]
+script = ExtResource("2_w45ae")
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_54xya"]
+script = ExtResource("2_w45ae")
+move = &"MAGNETICFLUX"
+
+[sub_resource type="Resource" id="Resource_p4blg"]
+script = ExtResource("2_w45ae")
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_ylhrx"]
+script = ExtResource("2_w45ae")
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_vd2b1"]
+script = ExtResource("2_w45ae")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cacwj"]
+script = ExtResource("2_w45ae")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_0rjsk"]
+script = ExtResource("2_w45ae")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_fu4hw"]
+script = ExtResource("2_w45ae")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_e4j8e"]
+script = ExtResource("2_w45ae")
+level = 4
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_pyp2m"]
+script = ExtResource("2_w45ae")
+level = 8
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_mouuv"]
+script = ExtResource("2_w45ae")
+level = 11
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_5wfcx"]
+script = ExtResource("2_w45ae")
+level = 16
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_07y77"]
+script = ExtResource("2_w45ae")
+level = 20
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_ejmd2"]
+script = ExtResource("2_w45ae")
+level = 25
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_vyt84"]
+script = ExtResource("2_w45ae")
+level = 29
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_ehnlo"]
+script = ExtResource("2_w45ae")
+level = 35
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_cncuk"]
+script = ExtResource("2_w45ae")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_4pcqa"]
+script = ExtResource("2_w45ae")
+level = 46
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_erhar"]
+script = ExtResource("2_w45ae")
+level = 51
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_tdkk3"]
+script = ExtResource("2_w45ae")
+level = 57
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_64ncl"]
+script = ExtResource("2_w45ae")
+level = 62
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_a2cbe"]
+script = ExtResource("2_w45ae")
+level = 65
+move = &"DRAGONPULSE"
+
+[resource]
+resource_name = "AMPHAROS_1"
+script = ExtResource("3_nudy1")
+species = &"AMPHAROS"
+form = 1
+form_name = "Mega Ampharos"
+category = "Light"
+pokedex_entry = "Massive amounts of energy intensely stimulated Ampharos's cells, apparently awakening its long-sleeping dragon's blood."
+pokedex_form = 1
+types = Array[StringName]([&"ELECTRIC", &"DRAGON"])
+base_hp = 90
+base_attack = 95
+base_defense = 105
+base_special_attack = 165
+base_special_defense = 110
+base_speed = 45
+ev_special_attack = 3
+base_exp = 305
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_w45ae")]([SubResource("Resource_wq2ty"), SubResource("Resource_3r6is"), SubResource("Resource_54xya"), SubResource("Resource_p4blg"), SubResource("Resource_ylhrx"), SubResource("Resource_vd2b1"), SubResource("Resource_cacwj"), SubResource("Resource_0rjsk"), SubResource("Resource_fu4hw"), SubResource("Resource_e4j8e"), SubResource("Resource_pyp2m"), SubResource("Resource_mouuv"), SubResource("Resource_5wfcx"), SubResource("Resource_07y77"), SubResource("Resource_ejmd2"), SubResource("Resource_vyt84"), SubResource("Resource_ehnlo"), SubResource("Resource_cncuk"), SubResource("Resource_4pcqa"), SubResource("Resource_erhar"), SubResource("Resource_tdkk3"), SubResource("Resource_64ncl"), SubResource("Resource_a2cbe")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEALBELL", &"HIDDENPOWER", &"HYPERBEAM", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"MOLDBREAKER"])
+hidden_abilities = Array[StringName]([&"MOLDBREAKER"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_n3ikx")]([SubResource("Resource_rlk54")])
+height = 14
+weight = 615
+color = &"Yellow"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 6
+mega_stone = &"AMPHAROSITE"
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(10, 16)
+id = &"AMPHAROS_1"
+display_name = "Ampharos"

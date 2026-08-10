@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ocgwf"]
+
+[resource]
+resource_name = "ANCIENTPOWER"
+script = ExtResource("1_ocgwf")
+type = &"ROCK"
+category = 1
+power = 60
+function_code = &"RaiseUserMainStats1"
+effect_chance = 10
+description = "The user attacks with a prehistoric power. It may also raise all the user's stats at once."
+id = &"ANCIENTPOWER"
+display_name = "Ancient Power"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

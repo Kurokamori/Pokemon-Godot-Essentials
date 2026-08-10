@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_sfw2f"]
+
+[resource]
+resource_name = "WINNING"
+script = ExtResource("1_sfw2f")
+icon_position = 40
+description = "Ribbon awarded for clearing Hoenn's Battle Tower's Lv. 50 challenge."
+id = &"WINNING"
+display_name = "Winning Ribbon"

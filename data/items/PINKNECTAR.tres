@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6yj37"]
+
+[resource]
+resource_name = "PINKNECTAR"
+script = ExtResource("1_6yj37")
+name_plural = "Pink Nectars"
+portion_name = "jar of Pink Nectar"
+portion_name_plural = "jars of Pink Nectar"
+price = 300
+sell_price = 150
+field_use = 1
+description = "A flower nectar obtained from shrubs on Royal Avenue. It changes the form of certain species of Pokémon."
+id = &"PINKNECTAR"
+display_name = "Pink Nectar"
+flags = Array[StringName]([&"Fling_10"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1wd52"]
+
+[resource]
+resource_name = "GRASSGEM"
+script = ExtResource("1_1wd52")
+name_plural = "Grass Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of nature. When held, it strengthens the power of a Grass-type move only once."
+id = &"GRASSGEM"
+display_name = "Grass Gem"
+flags = Array[StringName]([&"TypeGem"])

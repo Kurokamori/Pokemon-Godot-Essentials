@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_p7ov5"]
+
+[resource]
+script = ExtResource("1_p7ov5")
+category = &"dungeon_parameters"
+record_script = "res://src/data/dungeon_parameters_data.gd"
+paths = {
+&"cave": "res://data/dungeon_parameters/cave.tres",
+&"forest": "res://data/dungeon_parameters/forest.tres"
+}
+ordered_ids = Array[StringName]([&"cave", &"forest"])

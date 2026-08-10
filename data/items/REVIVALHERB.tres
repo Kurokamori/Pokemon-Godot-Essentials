@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ui2lc"]
+
+[resource]
+resource_name = "REVIVALHERB"
+script = ExtResource("1_ui2lc")
+name_plural = "Revival Herbs"
+pocket = 2
+price = 2800
+sell_price = 1400
+field_use = 1
+battle_use = 1
+description = "A very bitter medicinal herb. It revives a fainted Pokémon, fully restoring its HP."
+id = &"REVIVALHERB"
+display_name = "Revival Herb"
+flags = Array[StringName]([&"Fling_30"])

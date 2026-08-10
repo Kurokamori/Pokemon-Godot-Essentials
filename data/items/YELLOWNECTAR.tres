@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_rhgci"]
+
+[resource]
+resource_name = "YELLOWNECTAR"
+script = ExtResource("1_rhgci")
+name_plural = "Yellow Nectars"
+portion_name = "jar of Yellow Nectar"
+portion_name_plural = "jars of Yellow Nectar"
+price = 300
+sell_price = 150
+field_use = 1
+description = "A flower nectar obtained at Melemele Meadow. It changes the form of certain species of Pokémon."
+id = &"YELLOWNECTAR"
+display_name = "Yellow Nectar"
+flags = Array[StringName]([&"Fling_10"])

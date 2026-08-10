@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatusData" format=3]
+
+[ext_resource type="Script" path="res://src/data/status_data.gd" id="1_jajys"]
+
+[resource]
+resource_name = "NONE"
+script = ExtResource("1_jajys")
+id = &"NONE"
+display_name = "None"

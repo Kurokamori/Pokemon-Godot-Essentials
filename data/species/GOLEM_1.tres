@@ -1,0 +1,147 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_b2ljb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hndkb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4bdm4"]
+
+[sub_resource type="Resource" id="Resource_wb2rv"]
+script = ExtResource("1_b2ljb")
+species = &"GRAVELER"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_edqsg"]
+script = ExtResource("2_hndkb")
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_7lmla"]
+script = ExtResource("2_hndkb")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ba4f0"]
+script = ExtResource("2_hndkb")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_baain"]
+script = ExtResource("2_hndkb")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_jua4t"]
+script = ExtResource("2_hndkb")
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_jkjd5"]
+script = ExtResource("2_hndkb")
+level = 4
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_stdvp"]
+script = ExtResource("2_hndkb")
+level = 6
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_v85y0"]
+script = ExtResource("2_hndkb")
+level = 10
+move = &"STEAMROLLER"
+
+[sub_resource type="Resource" id="Resource_aeg7l"]
+script = ExtResource("2_hndkb")
+level = 12
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_nhlb8"]
+script = ExtResource("2_hndkb")
+level = 16
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_8h20o"]
+script = ExtResource("2_hndkb")
+level = 18
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_r5eqr"]
+script = ExtResource("2_hndkb")
+level = 22
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_vq753"]
+script = ExtResource("2_hndkb")
+level = 24
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_d8e6s"]
+script = ExtResource("2_hndkb")
+level = 30
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_x032t"]
+script = ExtResource("2_hndkb")
+level = 34
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_284ic"]
+script = ExtResource("2_hndkb")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_xyhp1"]
+script = ExtResource("2_hndkb")
+level = 44
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_gip7r"]
+script = ExtResource("2_hndkb")
+level = 50
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_ys4mh"]
+script = ExtResource("2_hndkb")
+level = 54
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_j1tna"]
+script = ExtResource("2_hndkb")
+level = 60
+move = &"HEAVYSLAM"
+
+[resource]
+resource_name = "GOLEM_1"
+script = ExtResource("3_4bdm4")
+species = &"GOLEM"
+form = 1
+form_name = "Alolan"
+category = "Megaton"
+pokedex_entry = "It fires rocks charged with electricity. Even if the rock isn't fired that accurately, just grazing an opponent will cause numbness and fainting."
+pokedex_form = 1
+types = Array[StringName]([&"ROCK", &"ELECTRIC"])
+base_hp = 80
+base_attack = 120
+base_defense = 130
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 45
+ev_defense = 3
+base_exp = 248
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hndkb")]([SubResource("Resource_edqsg"), SubResource("Resource_7lmla"), SubResource("Resource_ba4f0"), SubResource("Resource_baain"), SubResource("Resource_jua4t"), SubResource("Resource_jkjd5"), SubResource("Resource_stdvp"), SubResource("Resource_v85y0"), SubResource("Resource_aeg7l"), SubResource("Resource_nhlb8"), SubResource("Resource_8h20o"), SubResource("Resource_r5eqr"), SubResource("Resource_vq753"), SubResource("Resource_d8e6s"), SubResource("Resource_x032t"), SubResource("Resource_284ic"), SubResource("Resource_xyhp1"), SubResource("Resource_gip7r"), SubResource("Resource_ys4mh"), SubResource("Resource_j1tna")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ELECTROWEB", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"MAGNETPULL", &"STURDY"])
+hidden_abilities = Array[StringName]([&"GALVANIZE"])
+wild_item_common = Array[StringName]([&"CELLBATTERY"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_b2ljb")]([SubResource("Resource_wb2rv")])
+height = 17
+weight = 3160
+color = &"Gray"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 17)
+id = &"GOLEM_1"
+display_name = "Golem"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

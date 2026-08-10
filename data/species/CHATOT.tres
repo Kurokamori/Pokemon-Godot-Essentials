@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_be8ti"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5a1jt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4agj5"]
+
+[sub_resource type="Resource" id="Resource_k4v1i"]
+script = ExtResource("2_5a1jt")
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_kncbq"]
+script = ExtResource("2_5a1jt")
+move = &"CHATTER"
+
+[sub_resource type="Resource" id="Resource_fn2hn"]
+script = ExtResource("2_5a1jt")
+move = &"CONFIDE"
+
+[sub_resource type="Resource" id="Resource_pev6l"]
+script = ExtResource("2_5a1jt")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_pg6qg"]
+script = ExtResource("2_5a1jt")
+level = 5
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_sgjok"]
+script = ExtResource("2_5a1jt")
+level = 9
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_fesss"]
+script = ExtResource("2_5a1jt")
+level = 13
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_bfi44"]
+script = ExtResource("2_5a1jt")
+level = 17
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_plmia"]
+script = ExtResource("2_5a1jt")
+level = 21
+move = &"CHATTER"
+
+[sub_resource type="Resource" id="Resource_6y3mj"]
+script = ExtResource("2_5a1jt")
+level = 25
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_4yb8v"]
+script = ExtResource("2_5a1jt")
+level = 29
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_bmt6c"]
+script = ExtResource("2_5a1jt")
+level = 33
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_e14v8"]
+script = ExtResource("2_5a1jt")
+level = 37
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_w8qo6"]
+script = ExtResource("2_5a1jt")
+level = 41
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_vwlxf"]
+script = ExtResource("2_5a1jt")
+level = 45
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_ia5aa"]
+script = ExtResource("2_5a1jt")
+level = 49
+move = &"PARTINGSHOT"
+
+[sub_resource type="Resource" id="Resource_0emkr"]
+script = ExtResource("2_5a1jt")
+level = 50
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_oyuvg"]
+script = ExtResource("2_5a1jt")
+level = 57
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "CHATOT"
+script = ExtResource("3_4agj5")
+species = &"CHATOT"
+category = "Music Note"
+pokedex_entry = "It can learn and speak human words. If they gather, they all learn the same saying."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 76
+base_attack = 65
+base_defense = 45
+base_special_attack = 92
+base_special_defense = 42
+base_speed = 91
+ev_attack = 1
+base_exp = 144
+growth_rate = &"Parabolic"
+catch_rate = 30
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_5a1jt")]([SubResource("Resource_k4v1i"), SubResource("Resource_kncbq"), SubResource("Resource_fn2hn"), SubResource("Resource_pev6l"), SubResource("Resource_pg6qg"), SubResource("Resource_sgjok"), SubResource("Resource_fesss"), SubResource("Resource_bfi44"), SubResource("Resource_plmia"), SubResource("Resource_6y3mj"), SubResource("Resource_4yb8v"), SubResource("Resource_bmt6c"), SubResource("Resource_e14v8"), SubResource("Resource_w8qo6"), SubResource("Resource_vwlxf"), SubResource("Resource_ia5aa"), SubResource("Resource_0emkr"), SubResource("Resource_oyuvg")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"HYPERVOICE", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLEPLAY", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"AGILITY", &"AIRCUTTER", &"BOOMBURST", &"ENCORE", &"NIGHTSHADE", &"SUPERSONIC"])
+abilities = Array[StringName]([&"KEENEYE", &"TANGLEDFEET"])
+hidden_abilities = Array[StringName]([&"BIGPECKS"])
+wild_item_uncommon = Array[StringName]([&"METRONOME"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+height = 5
+weight = 19
+color = &"Black"
+shape = &"Winged"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 30)
+shadow_size = 1
+id = &"CHATOT"
+display_name = "Chatot"

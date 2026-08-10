@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_q2bk8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5ksob"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6tovm"]
+
+[sub_resource type="Resource" id="Resource_ubret"]
+script = ExtResource("2_5ksob")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_k3kon"]
+script = ExtResource("2_5ksob")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_2csf6"]
+script = ExtResource("2_5ksob")
+level = 5
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_21g3v"]
+script = ExtResource("2_5ksob")
+level = 10
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_bn3p8"]
+script = ExtResource("2_5ksob")
+level = 15
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_sdblt"]
+script = ExtResource("2_5ksob")
+level = 20
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_oji7j"]
+script = ExtResource("2_5ksob")
+level = 25
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_628tk"]
+script = ExtResource("2_5ksob")
+level = 30
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_s801x"]
+script = ExtResource("2_5ksob")
+level = 35
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_5pixn"]
+script = ExtResource("2_5ksob")
+level = 40
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_ixs2w"]
+script = ExtResource("2_5ksob")
+level = 45
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_ylubl"]
+script = ExtResource("2_5ksob")
+level = 50
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_i16es"]
+script = ExtResource("2_5ksob")
+level = 55
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "RELICANTH"
+script = ExtResource("3_6tovm")
+species = &"RELICANTH"
+category = "Longevity"
+pokedex_entry = "A Pokémon that was once believed to be extinct. The species has not changed its form for 100 million years. It walks on the seafloor using its pectoral fins."
+types = Array[StringName]([&"WATER", &"ROCK"])
+base_hp = 100
+base_attack = 90
+base_defense = 130
+base_special_attack = 45
+base_special_defense = 65
+base_speed = 55
+ev_hp = 1
+ev_defense = 1
+base_exp = 170
+growth_rate = &"Slow"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5ksob")]([SubResource("Resource_ubret"), SubResource("Resource_k3kon"), SubResource("Resource_2csf6"), SubResource("Resource_21g3v"), SubResource("Resource_bn3p8"), SubResource("Resource_sdblt"), SubResource("Resource_oji7j"), SubResource("Resource_628tk"), SubResource("Resource_s801x"), SubResource("Resource_5pixn"), SubResource("Resource_ixs2w"), SubResource("Resource_ylubl"), SubResource("Resource_i16es")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BOUNCE", &"BRINE", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"LIQUIDATION", &"METEORBEAM", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AMNESIA", &"AQUATAIL", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"SKULLBASH", &"SNORE", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"STURDY"])
+wild_item_uncommon = Array[StringName]([&"DEEPSEASCALE"])
+egg_groups = Array[StringName]([&"Water1", &"Water2"])
+hatch_steps = 10240
+height = 10
+weight = 234
+color = &"Gray"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 12)
+id = &"RELICANTH"
+display_name = "Relicanth"

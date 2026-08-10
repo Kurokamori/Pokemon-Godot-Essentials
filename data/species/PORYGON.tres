@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rxw5q"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0h4js"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_utvoj"]
+
+[sub_resource type="Resource" id="Resource_mosci"]
+script = ExtResource("1_rxw5q")
+species = &"PORYGON2"
+method = &"TradeItem"
+parameter = "UPGRADE"
+
+[sub_resource type="Resource" id="Resource_s66hr"]
+script = ExtResource("2_0h4js")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_skrkc"]
+script = ExtResource("2_0h4js")
+move = &"CONVERSION"
+
+[sub_resource type="Resource" id="Resource_isu6k"]
+script = ExtResource("2_0h4js")
+level = 5
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_7jgow"]
+script = ExtResource("2_0h4js")
+level = 10
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_cm7v1"]
+script = ExtResource("2_0h4js")
+level = 15
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_0j6s8"]
+script = ExtResource("2_0h4js")
+level = 20
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_wnc33"]
+script = ExtResource("2_0h4js")
+level = 25
+move = &"CONVERSION2"
+
+[sub_resource type="Resource" id="Resource_qleid"]
+script = ExtResource("2_0h4js")
+level = 30
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_4ndqm"]
+script = ExtResource("2_0h4js")
+level = 35
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_wwcpr"]
+script = ExtResource("2_0h4js")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_gq1nc"]
+script = ExtResource("2_0h4js")
+level = 45
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_6fo36"]
+script = ExtResource("2_0h4js")
+level = 50
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_mil8e"]
+script = ExtResource("2_0h4js")
+level = 55
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_ytj7r"]
+script = ExtResource("2_0h4js")
+level = 60
+move = &"ZAPCANNON"
+
+[resource]
+resource_name = "PORYGON"
+script = ExtResource("3_utvoj")
+species = &"PORYGON"
+category = "Virtual"
+pokedex_entry = "It is capable of reverting itself entirely back to program data in order to enter cyberspace. A Porygon is copy-protected so it cannot be duplicated."
+base_hp = 65
+base_attack = 60
+base_defense = 70
+base_special_attack = 85
+base_special_defense = 75
+base_speed = 40
+ev_special_attack = 1
+base_exp = 79
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_0h4js")]([SubResource("Resource_s66hr"), SubResource("Resource_skrkc"), SubResource("Resource_isu6k"), SubResource("Resource_7jgow"), SubResource("Resource_cm7v1"), SubResource("Resource_0j6s8"), SubResource("Resource_wnc33"), SubResource("Resource_qleid"), SubResource("Resource_4ndqm"), SubResource("Resource_wwcpr"), SubResource("Resource_gq1nc"), SubResource("Resource_6fo36"), SubResource("Resource_mil8e"), SubResource("Resource_ytj7r")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"BLIZZARD", &"CHARGEBEAM", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EERIEIMPULSE", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"GUARDSWAP", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASTRESORT", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TRACE", &"DOWNLOAD"])
+hidden_abilities = Array[StringName]([&"ANALYTIC"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_rxw5q")]([SubResource("Resource_mosci")])
+height = 8
+weight = 365
+color = &"Pink"
+shape = &"HeadLegs"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 22)
+shadow_size = 1
+id = &"PORYGON"
+display_name = "Porygon"

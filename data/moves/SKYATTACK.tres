@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0qcal"]
+
+[resource]
+resource_name = "SKYATTACK"
+script = ExtResource("1_0qcal")
+type = &"FLYING"
+category = 0
+power = 140
+accuracy = 90
+target = &"Other"
+function_code = &"TwoTurnAttackFlinchTarget"
+effect_chance = 30
+description = "A second-turn attack move where critical hits land more easily. It may also make the target flinch."
+id = &"SKYATTACK"
+display_name = "Sky Attack"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_omn8m"]
+
+[resource]
+resource_name = "XSPEED2"
+script = ExtResource("1_omn8m")
+name_plural = "X Speed 2s"
+pocket = 7
+battle_use = 3
+description = "It sharply raises the Speed stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+id = &"XSPEED2"
+display_name = "X Speed 2"
+flags = Array[StringName]([&"Fling_30"])

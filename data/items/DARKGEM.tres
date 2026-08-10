@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_s7fqb"]
+
+[resource]
+resource_name = "DARKGEM"
+script = ExtResource("1_s7fqb")
+name_plural = "Dark Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of darkness. When held, it strengthens the power of a Dark-type move only once."
+id = &"DARKGEM"
+display_name = "Dark Gem"
+flags = Array[StringName]([&"TypeGem"])

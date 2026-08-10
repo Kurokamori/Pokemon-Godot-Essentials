@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ktsu4"]
+
+[resource]
+resource_name = "HYPERSPACEHOLE"
+script = ExtResource("1_ktsu4")
+type = &"PSYCHIC"
+category = 1
+power = 80
+accuracy = 0
+function_code = &"RemoveProtectionsBypassSubstitute"
+description = "Using a hyperspace hole, the user appears right next to the target and strikes. Skips protections."
+id = &"HYPERSPACEHOLE"
+display_name = "Hyperspace Hole"
+flags = Array[StringName]([&"CanMirrorMove", &"CannotMetronome"])

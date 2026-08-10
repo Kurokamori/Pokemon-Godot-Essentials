@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_b68v0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8ovkg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_iu2io"]
+
+[sub_resource type="Resource" id="Resource_keeat"]
+script = ExtResource("1_b68v0")
+species = &"PONYTA"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yyj17"]
+script = ExtResource("2_8ovkg")
+level = 0
+move = &"SMARTSTRIKE"
+
+[sub_resource type="Resource" id="Resource_eesfc"]
+script = ExtResource("2_8ovkg")
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_p7mcj"]
+script = ExtResource("2_8ovkg")
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_4qsq2"]
+script = ExtResource("2_8ovkg")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1mray"]
+script = ExtResource("2_8ovkg")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_mubba"]
+script = ExtResource("2_8ovkg")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_kq3xl"]
+script = ExtResource("2_8ovkg")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_qpb6i"]
+script = ExtResource("2_8ovkg")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_86ogu"]
+script = ExtResource("2_8ovkg")
+level = 15
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_p18ni"]
+script = ExtResource("2_8ovkg")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_s1u8p"]
+script = ExtResource("2_8ovkg")
+level = 25
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_2mwww"]
+script = ExtResource("2_8ovkg")
+level = 30
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_rbpjj"]
+script = ExtResource("2_8ovkg")
+level = 35
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_7kcff"]
+script = ExtResource("2_8ovkg")
+level = 43
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_k8wq8"]
+script = ExtResource("2_8ovkg")
+level = 49
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_m7s6l"]
+script = ExtResource("2_8ovkg")
+level = 56
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_5cceq"]
+script = ExtResource("2_8ovkg")
+level = 63
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "RAPIDASH"
+script = ExtResource("3_iu2io")
+species = &"RAPIDASH"
+category = "Fire Horse"
+pokedex_entry = "It usually canters casually in the fields and plains. But once a Rapidash turns serious, its fiery manes flare and blaze as it gallops its way up to 150 mph."
+types = Array[StringName]([&"FIRE"])
+base_hp = 65
+base_attack = 100
+base_defense = 70
+base_special_attack = 80
+base_special_defense = 80
+base_speed = 105
+ev_speed = 2
+base_exp = 175
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8ovkg")]([SubResource("Resource_yyj17"), SubResource("Resource_eesfc"), SubResource("Resource_p7mcj"), SubResource("Resource_4qsq2"), SubResource("Resource_1mray"), SubResource("Resource_mubba"), SubResource("Resource_kq3xl"), SubResource("Resource_qpb6i"), SubResource("Resource_86ogu"), SubResource("Resource_p18ni"), SubResource("Resource_s1u8p"), SubResource("Resource_2mwww"), SubResource("Resource_rbpjj"), SubResource("Resource_7kcff"), SubResource("Resource_k8wq8"), SubResource("Resource_m7s6l"), SubResource("Resource_5cceq")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"BOUNCE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"MEGAHORN", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"PAYDAY", &"PLAYROUGH", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SCORCHINGSANDS", &"SECRETPOWER", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THROATCHOP", &"WILDCHARGE", &"WILLOWISP"])
+abilities = Array[StringName]([&"RUNAWAY", &"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"FLAMEBODY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_b68v0")]([SubResource("Resource_keeat")])
+height = 17
+weight = 950
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(4, 14)
+id = &"RAPIDASH"
+display_name = "Rapidash"

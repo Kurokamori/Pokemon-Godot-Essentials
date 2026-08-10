@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7883g"]
+
+[resource]
+resource_name = "GLACIATE"
+script = ExtResource("1_7883g")
+type = &"ICE"
+category = 1
+power = 65
+accuracy = 95
+total_pp = 10
+target = &"AllNearFoes"
+function_code = &"LowerTargetSpeed1"
+effect_chance = 100
+description = "The user attacks by blowing freezing cold air at the foe. This attack reduces the targets' Speed stat."
+id = &"GLACIATE"
+display_name = "Glaciate"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

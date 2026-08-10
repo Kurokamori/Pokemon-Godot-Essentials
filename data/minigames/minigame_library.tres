@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="MinigameLibrary" load_steps=15 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/minigame_library.gd" id="1_library"]
+[ext_resource type="Script" path="res://src/minigames/minigame_entry.gd" id="2_entry"]
+[ext_resource type="PackedScene" path="res://scenes/minigames/voltorb_flip_screen.tscn" id="3_voltorb"]
+[ext_resource type="PackedScene" path="res://scenes/minigames/slot_machine_screen.tscn" id="4_slots"]
+[ext_resource type="PackedScene" path="res://scenes/minigames/mining_screen.tscn" id="5_mining"]
+[ext_resource type="PackedScene" path="res://scenes/minigames/tile_puzzle_screen.tscn" id="6_puzzle"]
+[ext_resource type="PackedScene" path="res://scenes/minigames/triad_duel_screen.tscn" id="7_triad"]
+[ext_resource type="PackedScene" path="res://scenes/minigames/triad_shop_screen.tscn" id="8_shop"]
+
+[sub_resource type="Resource" id="Entry_voltorb"]
+script = ExtResource("2_entry")
+id = &"VOLTORBFLIP"
+display_name = "Voltorb Flip"
+scene = ExtResource("3_voltorb")
+unavailable_message = "The Voltorb Flip machine is out of order."
+
+[sub_resource type="Resource" id="Entry_slots"]
+script = ExtResource("2_entry")
+id = &"SLOTMACHINE"
+display_name = "Slot Machine"
+scene = ExtResource("4_slots")
+unavailable_message = "The slot machines are out of order."
+
+[sub_resource type="Resource" id="Entry_mining"]
+script = ExtResource("2_entry")
+id = &"MINING"
+display_name = "Mining"
+scene = ExtResource("5_mining")
+unavailable_message = "The mining wall is closed for now."
+
+[sub_resource type="Resource" id="Entry_puzzle"]
+script = ExtResource("2_entry")
+id = &"TILEPUZZLE"
+display_name = "Tile Puzzle"
+scene = ExtResource("6_puzzle")
+unavailable_message = "The tile puzzle is not working."
+
+[sub_resource type="Resource" id="Entry_triad"]
+script = ExtResource("2_entry")
+id = &"TRIADDUEL"
+display_name = "Triple Triad"
+scene = ExtResource("7_triad")
+unavailable_message = "Nobody here is up for a card duel."
+
+[sub_resource type="Resource" id="Entry_triad_shop"]
+script = ExtResource("2_entry")
+id = &"TRIADSHOP"
+display_name = "Card Stall"
+scene = ExtResource("8_shop")
+unavailable_message = "The card stall is closed."
+
+[resource]
+script = ExtResource("1_library")
+entries = Array[ExtResource("2_entry")]([SubResource("Entry_voltorb"), SubResource("Entry_slots"), SubResource("Entry_mining"), SubResource("Entry_puzzle"), SubResource("Entry_triad"), SubResource("Entry_triad_shop")])

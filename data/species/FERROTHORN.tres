@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gn5c0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_eekjj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5uhhg"]
+
+[sub_resource type="Resource" id="Resource_8pm5q"]
+script = ExtResource("1_gn5c0")
+species = &"FERROSEED"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_grpk5"]
+script = ExtResource("2_eekjj")
+level = 0
+move = &"POWERWHIP"
+
+[sub_resource type="Resource" id="Resource_6b0nf"]
+script = ExtResource("2_eekjj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_yjsar"]
+script = ExtResource("2_eekjj")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_r0na5"]
+script = ExtResource("2_eekjj")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_2otuy"]
+script = ExtResource("2_eekjj")
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_dy7x0"]
+script = ExtResource("2_eekjj")
+level = 15
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_x235u"]
+script = ExtResource("2_eekjj")
+level = 20
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_1smmw"]
+script = ExtResource("2_eekjj")
+level = 25
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_ik8vf"]
+script = ExtResource("2_eekjj")
+level = 30
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_kyr2j"]
+script = ExtResource("2_eekjj")
+level = 35
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_gv4sm"]
+script = ExtResource("2_eekjj")
+level = 43
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_4qffg"]
+script = ExtResource("2_eekjj")
+level = 49
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_k2uq5"]
+script = ExtResource("2_eekjj")
+level = 56
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "FERROTHORN"
+script = ExtResource("3_5uhhg")
+species = &"FERROTHORN"
+category = "Thorn Pod"
+pokedex_entry = "They attach themselves to cave ceilings, firing steel spikes at targets passing beneath them."
+types = Array[StringName]([&"GRASS", &"STEEL"])
+base_hp = 74
+base_attack = 94
+base_defense = 131
+base_special_attack = 54
+base_special_defense = 116
+base_speed = 20
+ev_defense = 2
+base_exp = 171
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_eekjj")]([SubResource("Resource_grpk5"), SubResource("Resource_6b0nf"), SubResource("Resource_yjsar"), SubResource("Resource_r0na5"), SubResource("Resource_2otuy"), SubResource("Resource_dy7x0"), SubResource("Resource_x235u"), SubResource("Resource_1smmw"), SubResource("Resource_ik8vf"), SubResource("Resource_kyr2j"), SubResource("Resource_gv4sm"), SubResource("Resource_4qffg"), SubResource("Resource_k2uq5")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BLOCK", &"BODYPRESS", &"BRUTALSWING", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HEAVYSLAM", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROCKPOLISH", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPIKES", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"WORRYSEED"])
+abilities = Array[StringName]([&"IRONBARBS"])
+hidden_abilities = Array[StringName]([&"ANTICIPATION"])
+wild_item_uncommon = Array[StringName]([&"STICKYBARB"])
+egg_groups = Array[StringName]([&"Grass", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_gn5c0")]([SubResource("Resource_8pm5q")])
+height = 10
+weight = 1100
+color = &"Gray"
+shape = &"Multiped"
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 20)
+id = &"FERROTHORN"
+display_name = "Ferrothorn"

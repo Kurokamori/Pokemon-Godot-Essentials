@@ -1,0 +1,150 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wlqes"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_krcm8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mei65"]
+
+[sub_resource type="Resource" id="Resource_a3y8o"]
+script = ExtResource("1_wlqes")
+species = &"PHANPY"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8184y"]
+script = ExtResource("2_krcm8")
+level = 0
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_ibxp2"]
+script = ExtResource("2_krcm8")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_a2u6m"]
+script = ExtResource("2_krcm8")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_f3nvd"]
+script = ExtResource("2_krcm8")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_pvonr"]
+script = ExtResource("2_krcm8")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_1shcn"]
+script = ExtResource("2_krcm8")
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_q8fud"]
+script = ExtResource("2_krcm8")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_xbq5x"]
+script = ExtResource("2_krcm8")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_juepd"]
+script = ExtResource("2_krcm8")
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_ddnma"]
+script = ExtResource("2_krcm8")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_l32tq"]
+script = ExtResource("2_krcm8")
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_q5lue"]
+script = ExtResource("2_krcm8")
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_ba48j"]
+script = ExtResource("2_krcm8")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_it6w4"]
+script = ExtResource("2_krcm8")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_71871"]
+script = ExtResource("2_krcm8")
+level = 6
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_bp1ji"]
+script = ExtResource("2_krcm8")
+level = 10
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_l2kl6"]
+script = ExtResource("2_krcm8")
+level = 15
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_agc3p"]
+script = ExtResource("2_krcm8")
+level = 19
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_3v4ln"]
+script = ExtResource("2_krcm8")
+level = 24
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_3tpiy"]
+script = ExtResource("2_krcm8")
+level = 30
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_u7umq"]
+script = ExtResource("2_krcm8")
+level = 37
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_rhu5l"]
+script = ExtResource("2_krcm8")
+level = 43
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_aeiyo"]
+script = ExtResource("2_krcm8")
+level = 50
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "DONPHAN"
+script = ExtResource("3_mei65")
+species = &"DONPHAN"
+category = "Armor"
+pokedex_entry = "A Donphan is so strong it can easily haul a dump truck. Its hide has toughened to a rock-hard state. An ordinary sort of attack won't even leave a scratch."
+types = Array[StringName]([&"GROUND"])
+base_hp = 90
+base_attack = 120
+base_defense = 120
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 50
+ev_attack = 1
+ev_defense = 1
+base_exp = 175
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_krcm8")]([SubResource("Resource_8184y"), SubResource("Resource_ibxp2"), SubResource("Resource_a2u6m"), SubResource("Resource_f3nvd"), SubResource("Resource_pvonr"), SubResource("Resource_1shcn"), SubResource("Resource_q8fud"), SubResource("Resource_xbq5x"), SubResource("Resource_juepd"), SubResource("Resource_ddnma"), SubResource("Resource_l32tq"), SubResource("Resource_q5lue"), SubResource("Resource_ba48j"), SubResource("Resource_it6w4"), SubResource("Resource_71871"), SubResource("Resource_bp1ji"), SubResource("Resource_l2kl6"), SubResource("Resource_agc3p"), SubResource("Resource_3v4ln"), SubResource("Resource_3tpiy"), SubResource("Resource_u7umq"), SubResource("Resource_rhu5l"), SubResource("Resource_aeiyo")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BOUNCE", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONDEFENSE", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER"])
+abilities = Array[StringName]([&"STURDY"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_wlqes")]([SubResource("Resource_a3y8o")])
+height = 11
+weight = 1200
+color = &"Gray"
+shape = &"Quadruped"
+habitat = &"RoughTerrain"
+generation = 2
+back_sprite_offset = Vector2i(9, 52)
+front_sprite_offset = Vector2i(-6, 30)
+id = &"DONPHAN"
+display_name = "Donphan"

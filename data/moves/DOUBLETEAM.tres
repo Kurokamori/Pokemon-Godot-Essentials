@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_kxdv7"]
+
+[resource]
+resource_name = "DOUBLETEAM"
+script = ExtResource("1_kxdv7")
+accuracy = 0
+total_pp = 15
+target = &"User"
+function_code = &"RaiseUserEvasion1"
+description = "By moving rapidly, the user makes illusory copies of itself to raise its evasiveness."
+id = &"DOUBLETEAM"
+display_name = "Double Team"

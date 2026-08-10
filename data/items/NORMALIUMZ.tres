@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5ko2x"]
+
+[resource]
+resource_name = "NORMALIUMZ"
+script = ExtResource("1_5ko2x")
+name_plural = "Normalium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Normal-type Pokémon holds to turn a Normal-type move into Breakneck Blitz."
+id = &"NORMALIUMZ"
+display_name = "Normalium Z"
+flags = Array[StringName]([&"ZCrystal"])

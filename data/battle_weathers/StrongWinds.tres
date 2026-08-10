@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleWeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_weather_data.gd" id="1_hc1tm"]
+
+[resource]
+resource_name = "StrongWinds"
+script = ExtResource("1_hc1tm")
+animation = &"StrongWinds"
+id = &"StrongWinds"
+display_name = "Strong Winds"

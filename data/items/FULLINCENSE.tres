@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_x51gh"]
+
+[resource]
+resource_name = "FULLINCENSE"
+script = ExtResource("1_x51gh")
+name_plural = "Full Incenses"
+portion_name = "jar of Full Incense"
+portion_name_plural = "jars of Full Incense"
+price = 5000
+sell_price = 2500
+description = "An item to be held by a Pokémon. This exotic-smelling incense makes the holder bloated and slow moving."
+id = &"FULLINCENSE"
+display_name = "Full Incense"
+flags = Array[StringName]([&"Fling_10"])

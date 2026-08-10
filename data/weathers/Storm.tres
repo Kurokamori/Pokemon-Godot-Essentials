@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/weather_data.gd" id="1_ulsgk"]
+
+[resource]
+resource_name = "Storm"
+script = ExtResource("1_ulsgk")
+category = 1
+legacy_number = 2
+particle_delta_x = -3600
+particle_delta_y = 3600
+graphics = Array[String](["storm_1", "storm_2", "storm_3", "storm_4"])
+id = &"Storm"
+display_name = "Storm"

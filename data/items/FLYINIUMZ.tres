@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_by4tj"]
+
+[resource]
+resource_name = "FLYINIUMZ"
+script = ExtResource("1_by4tj")
+name_plural = "Flyinium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Flying-type Pokémon holds to turn a Flying-type move into Supersonic Skystrike."
+id = &"FLYINIUMZ"
+display_name = "Flyinium Z"
+flags = Array[StringName]([&"ZCrystal"])

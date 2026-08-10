@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uyw4a"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_n7fio"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_o8pa1"]
+
+[sub_resource type="Resource" id="Resource_ehunc"]
+script = ExtResource("1_uyw4a")
+species = &"STARAPTOR"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_cq2we"]
+script = ExtResource("1_uyw4a")
+species = &"STARLY"
+method = &"Level"
+parameter = "14"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8cjn0"]
+script = ExtResource("2_n7fio")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1okdk"]
+script = ExtResource("2_n7fio")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_o0uri"]
+script = ExtResource("2_n7fio")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_hlnxb"]
+script = ExtResource("2_n7fio")
+level = 5
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_mb6gm"]
+script = ExtResource("2_n7fio")
+level = 9
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_ebccd"]
+script = ExtResource("2_n7fio")
+level = 13
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_abn1x"]
+script = ExtResource("2_n7fio")
+level = 18
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_p4rs7"]
+script = ExtResource("2_n7fio")
+level = 23
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_rqavi"]
+script = ExtResource("2_n7fio")
+level = 28
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_tx67d"]
+script = ExtResource("2_n7fio")
+level = 33
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_xwv5x"]
+script = ExtResource("2_n7fio")
+level = 38
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_pbwgn"]
+script = ExtResource("2_n7fio")
+level = 43
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_iho18"]
+script = ExtResource("2_n7fio")
+level = 48
+move = &"FINALGAMBIT"
+
+[resource]
+resource_name = "STARAVIA"
+script = ExtResource("3_o8pa1")
+species = &"STARAVIA"
+category = "Starling"
+pokedex_entry = "It flies around forests and fields in search of bug Pokémon. It stays within a huge flock."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 55
+base_attack = 75
+base_defense = 50
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 80
+ev_speed = 2
+base_exp = 119
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_n7fio")]([SubResource("Resource_8cjn0"), SubResource("Resource_1okdk"), SubResource("Resource_o0uri"), SubResource("Resource_hlnxb"), SubResource("Resource_mb6gm"), SubResource("Resource_ebccd"), SubResource("Resource_abn1x"), SubResource("Resource_p4rs7"), SubResource("Resource_rqavi"), SubResource("Resource_tx67d"), SubResource("Resource_xwv5x"), SubResource("Resource_pbwgn"), SubResource("Resource_iho18")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"RECKLESS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_uyw4a")]([SubResource("Resource_ehunc"), SubResource("Resource_cq2we")])
+height = 6
+weight = 155
+color = &"Brown"
+shape = &"Winged"
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 27)
+shadow_size = 1
+id = &"STARAVIA"
+display_name = "Staravia"

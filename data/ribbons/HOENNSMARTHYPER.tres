@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_uwqkk"]
+
+[resource]
+resource_name = "HOENNSMARTHYPER"
+script = ExtResource("1_uwqkk")
+icon_position = 14
+description = "Hoenn Smart Contest Hyper Rank winner!"
+id = &"HOENNSMARTHYPER"
+display_name = "Smart Ribbon Hyper"

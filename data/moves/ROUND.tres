@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_pc7pl"]
+
+[resource]
+resource_name = "ROUND"
+script = ExtResource("1_pc7pl")
+category = 1
+power = 60
+total_pp = 15
+function_code = &"UsedAfterAllyRoundWithDoublePower"
+description = "The user attacks with a song. Others can join in the Round and make the attack do greater damage."
+id = &"ROUND"
+display_name = "Round"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

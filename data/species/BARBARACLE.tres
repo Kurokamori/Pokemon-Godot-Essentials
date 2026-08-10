@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_t54bm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wixjs"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2ts1r"]
+
+[sub_resource type="Resource" id="Resource_wyvcy"]
+script = ExtResource("1_t54bm")
+species = &"BINACLE"
+method = &"Level"
+parameter = "39"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_d6bgd"]
+script = ExtResource("2_wixjs")
+move = &"SKULLBASH"
+
+[sub_resource type="Resource" id="Resource_rumjc"]
+script = ExtResource("2_wixjs")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_gwfl8"]
+script = ExtResource("2_wixjs")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_i83uv"]
+script = ExtResource("2_wixjs")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_echa5"]
+script = ExtResource("2_wixjs")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_3nfmx"]
+script = ExtResource("2_wixjs")
+level = 12
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_k3ugv"]
+script = ExtResource("2_wixjs")
+level = 16
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_u4dkd"]
+script = ExtResource("2_wixjs")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_a8wyx"]
+script = ExtResource("2_wixjs")
+level = 24
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_ix2ja"]
+script = ExtResource("2_wixjs")
+level = 28
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_i7cq4"]
+script = ExtResource("2_wixjs")
+level = 32
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_qabr6"]
+script = ExtResource("2_wixjs")
+level = 36
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_c3rxg"]
+script = ExtResource("2_wixjs")
+level = 42
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_xcags"]
+script = ExtResource("2_wixjs")
+level = 48
+move = &"CROSSCHOP"
+
+[sub_resource type="Resource" id="Resource_gaeaq"]
+script = ExtResource("2_wixjs")
+level = 54
+move = &"STONEEDGE"
+
+[resource]
+resource_name = "BARBARACLE"
+script = ExtResource("3_2ts1r")
+species = &"BARBARACLE"
+category = "Collective"
+pokedex_entry = "Barbaracle's legs and hands have minds of their own, and they will move independently. But they usually follow the head's orders."
+types = Array[StringName]([&"ROCK", &"WATER"])
+base_hp = 72
+base_attack = 105
+base_defense = 115
+base_special_attack = 54
+base_special_defense = 86
+base_speed = 68
+ev_attack = 2
+base_exp = 175
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wixjs")]([SubResource("Resource_d6bgd"), SubResource("Resource_rumjc"), SubResource("Resource_gwfl8"), SubResource("Resource_i83uv"), SubResource("Resource_echa5"), SubResource("Resource_3nfmx"), SubResource("Resource_k3ugv"), SubResource("Resource_u4dkd"), SubResource("Resource_a8wyx"), SubResource("Resource_ix2ja"), SubResource("Resource_i7cq4"), SubResource("Resource_qabr6"), SubResource("Resource_c3rxg"), SubResource("Resource_xcags"), SubResource("Resource_gaeaq")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BLIZZARD", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DIVE", &"DOUBLETEAM", &"DRAGONCLAW", &"DUALCHOP", &"EARTHPOWER", &"EARTHQUAKE", &"EMBARGO", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"LASERFOCUS", &"LIQUIDATION", &"LOWKICK", &"METEORBEAM", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL", &"XSCISSOR"])
+abilities = Array[StringName]([&"TOUGHCLAWS", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_t54bm")]([SubResource("Resource_wyvcy")])
+height = 13
+weight = 960
+color = &"Brown"
+shape = &"MultiBody"
+generation = 6
+back_sprite_offset = Vector2i(6, 44)
+front_sprite_offset = Vector2i(-4, 12)
+id = &"BARBARACLE"
+display_name = "Barbaracle"

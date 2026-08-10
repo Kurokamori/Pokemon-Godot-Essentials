@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_eb2rx"]
+
+[resource]
+resource_name = "SHELLBELL"
+script = ExtResource("1_eb2rx")
+name_plural = "Shell Bells"
+price = 4000
+sell_price = 2000
+bp_price = 25
+description = "An item to be held by a Pokémon. The holder's HP is restored a little every time it inflicts damage."
+id = &"SHELLBELL"
+display_name = "Shell Bell"
+flags = Array[StringName]([&"Fling_30"])

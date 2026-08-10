@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_8ggrs"]
+
+[resource]
+resource_name = "71"
+script = ExtResource("1_8ggrs")
+map_id = 71
+town_map_position = Array[int]([0, 13, 13])
+id = &"71"
+display_name = "Route 8"

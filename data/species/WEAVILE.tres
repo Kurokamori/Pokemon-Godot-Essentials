@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ew0eg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2kig0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_i7uxv"]
+
+[sub_resource type="Resource" id="Resource_w2k6w"]
+script = ExtResource("1_ew0eg")
+species = &"SNEASEL"
+method = &"NightHoldItem"
+parameter = "RAZORCLAW"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_eoc7b"]
+script = ExtResource("2_2kig0")
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_yiftm"]
+script = ExtResource("2_2kig0")
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_im0ko"]
+script = ExtResource("2_2kig0")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_8a32e"]
+script = ExtResource("2_2kig0")
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_cpkt2"]
+script = ExtResource("2_2kig0")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_4gp08"]
+script = ExtResource("2_2kig0")
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_6rytc"]
+script = ExtResource("2_2kig0")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_p3nxd"]
+script = ExtResource("2_2kig0")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_il6gx"]
+script = ExtResource("2_2kig0")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_e5vjw"]
+script = ExtResource("2_2kig0")
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_g3f64"]
+script = ExtResource("2_2kig0")
+level = 18
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_stimq"]
+script = ExtResource("2_2kig0")
+level = 24
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_gk5hl"]
+script = ExtResource("2_2kig0")
+level = 30
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_ik15t"]
+script = ExtResource("2_2kig0")
+level = 36
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_82xv2"]
+script = ExtResource("2_2kig0")
+level = 42
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_vqxfv"]
+script = ExtResource("2_2kig0")
+level = 48
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_jooev"]
+script = ExtResource("2_2kig0")
+level = 54
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_icoxe"]
+script = ExtResource("2_2kig0")
+level = 60
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_1pqgg"]
+script = ExtResource("2_2kig0")
+level = 66
+move = &"DARKPULSE"
+
+[resource]
+resource_name = "WEAVILE"
+script = ExtResource("3_i7uxv")
+species = &"WEAVILE"
+category = "Sharp Claw"
+pokedex_entry = "They live in cold regions, forming groups of four or five that hunt prey with impressive coordination."
+types = Array[StringName]([&"DARK", &"ICE"])
+base_hp = 70
+base_attack = 120
+base_defense = 65
+base_special_attack = 45
+base_special_defense = 85
+base_speed = 125
+ev_attack = 1
+ev_speed = 1
+base_exp = 179
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_2kig0")]([SubResource("Resource_eoc7b"), SubResource("Resource_yiftm"), SubResource("Resource_im0ko"), SubResource("Resource_8a32e"), SubResource("Resource_cpkt2"), SubResource("Resource_4gp08"), SubResource("Resource_6rytc"), SubResource("Resource_p3nxd"), SubResource("Resource_il6gx"), SubResource("Resource_e5vjw"), SubResource("Resource_g3f64"), SubResource("Resource_stimq"), SubResource("Resource_gk5hl"), SubResource("Resource_ik15t"), SubResource("Resource_82xv2"), SubResource("Resource_vqxfv"), SubResource("Resource_jooev"), SubResource("Resource_icoxe"), SubResource("Resource_1pqgg")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"AVALANCHE", &"BEATUP", &"BLIZZARD", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DYNAMICPUNCH", &"EMBARGO", &"ENDURE", &"FACADE", &"FAKETEARS", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHOCUT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"TRIPLEAXEL", &"WHIRLPOOL", &"XSCISSOR"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+wild_item_uncommon = Array[StringName]([&"QUICKCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ew0eg")]([SubResource("Resource_w2k6w")])
+height = 11
+weight = 340
+color = &"Black"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 18)
+shadow_size = 1
+id = &"WEAVILE"
+display_name = "Weavile"

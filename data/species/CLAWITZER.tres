@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_i7fsp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_iiieb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_75cnm"]
+
+[sub_resource type="Resource" id="Resource_y24t7"]
+script = ExtResource("1_i7fsp")
+species = &"CLAUNCHER"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jyvrt"]
+script = ExtResource("2_iiieb")
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_s1co3"]
+script = ExtResource("2_iiieb")
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_qwq5b"]
+script = ExtResource("2_iiieb")
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_dkl6b"]
+script = ExtResource("2_iiieb")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_fupmr"]
+script = ExtResource("2_iiieb")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_46yp1"]
+script = ExtResource("2_iiieb")
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_cnre3"]
+script = ExtResource("2_iiieb")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_xtymw"]
+script = ExtResource("2_iiieb")
+level = 15
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_fv7er"]
+script = ExtResource("2_iiieb")
+level = 20
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_ef4r6"]
+script = ExtResource("2_iiieb")
+level = 25
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_fboee"]
+script = ExtResource("2_iiieb")
+level = 30
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_lugep"]
+script = ExtResource("2_iiieb")
+level = 35
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_c860v"]
+script = ExtResource("2_iiieb")
+level = 42
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_l5f04"]
+script = ExtResource("2_iiieb")
+level = 49
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_mesaq"]
+script = ExtResource("2_iiieb")
+level = 56
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_ohn6r"]
+script = ExtResource("2_iiieb")
+level = 63
+move = &"CRABHAMMER"
+
+[resource]
+resource_name = "CLAWITZER"
+script = ExtResource("3_75cnm")
+species = &"CLAWITZER"
+category = "Howitzer"
+pokedex_entry = "By expelling water from the nozzle in the back of its claw, it can move at a speed of 60 knots."
+types = Array[StringName]([&"WATER"])
+base_hp = 71
+base_attack = 73
+base_defense = 88
+base_special_attack = 120
+base_special_defense = 89
+base_speed = 59
+ev_special_attack = 2
+growth_rate = &"Slow"
+catch_rate = 55
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_iiieb")]([SubResource("Resource_jyvrt"), SubResource("Resource_s1co3"), SubResource("Resource_qwq5b"), SubResource("Resource_dkl6b"), SubResource("Resource_fupmr"), SubResource("Resource_46yp1"), SubResource("Resource_cnre3"), SubResource("Resource_xtymw"), SubResource("Resource_fv7er"), SubResource("Resource_ef4r6"), SubResource("Resource_fboee"), SubResource("Resource_lugep"), SubResource("Resource_c860v"), SubResource("Resource_l5f04"), SubResource("Resource_mesaq"), SubResource("Resource_ohn6r")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AURASPHERE", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DIVE", &"DOUBLETEAM", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLIPTURN", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASERFOCUS", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TERRAINPULSE", &"TOXIC", &"UTURN", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE"])
+abilities = Array[StringName]([&"MEGALAUNCHER"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_i7fsp")]([SubResource("Resource_y24t7")])
+height = 13
+weight = 353
+color = &"Blue"
+shape = &"Serpentine"
+generation = 6
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(0, 9)
+id = &"CLAWITZER"
+display_name = "Clawitzer"

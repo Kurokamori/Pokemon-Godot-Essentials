@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_rwiml"]
+
+[resource]
+resource_name = "ENERGYROOT"
+script = ExtResource("1_rwiml")
+name_plural = "Energy Roots"
+pocket = 2
+price = 1200
+sell_price = 600
+field_use = 1
+battle_use = 1
+description = "An extremely bitter medicinal root. It can be used to restore 120 HP to a single Pokémon."
+id = &"ENERGYROOT"
+display_name = "Energy Root"
+flags = Array[StringName]([&"Fling_30"])

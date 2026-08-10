@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_02s1a"]
+
+[resource]
+resource_name = "IMPRISON"
+script = ExtResource("1_02s1a")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"DisableTargetMovesKnownByUser"
+description = "If the foe knows any move also known by the user, the foe is prevented from using it."
+id = &"IMPRISON"
+display_name = "Imprison"

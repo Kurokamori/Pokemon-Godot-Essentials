@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2iyoa"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p1hba"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_15gt3"]
+
+[sub_resource type="Resource" id="Resource_bq7sx"]
+script = ExtResource("1_2iyoa")
+species = &"MAGMAR"
+method = &"TradeItem"
+parameter = "MAGMARIZER"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_sdh2e"]
+script = ExtResource("2_p1hba")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_5xdrg"]
+script = ExtResource("2_p1hba")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_d7irb"]
+script = ExtResource("2_p1hba")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_wex55"]
+script = ExtResource("2_p1hba")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_xpgem"]
+script = ExtResource("2_p1hba")
+level = 12
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_50j7l"]
+script = ExtResource("2_p1hba")
+level = 16
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_veug1"]
+script = ExtResource("2_p1hba")
+level = 20
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_k10w7"]
+script = ExtResource("2_p1hba")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_aifcf"]
+script = ExtResource("2_p1hba")
+level = 28
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_txnpp"]
+script = ExtResource("2_p1hba")
+level = 34
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_1tdsr"]
+script = ExtResource("2_p1hba")
+level = 40
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_n826b"]
+script = ExtResource("2_p1hba")
+level = 46
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_oi1f1"]
+script = ExtResource("2_p1hba")
+level = 52
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_f8nxa"]
+script = ExtResource("2_p1hba")
+level = 58
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_wfq75"]
+script = ExtResource("2_p1hba")
+level = 64
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "MAGMORTAR"
+script = ExtResource("3_15gt3")
+species = &"MAGMORTAR"
+category = "Blast"
+pokedex_entry = "It blasts fireballs of over 3,600 degrees F from the ends of its arms. It lives in volcanic craters."
+types = Array[StringName]([&"FIRE"])
+base_hp = 75
+base_attack = 95
+base_defense = 67
+base_special_attack = 125
+base_special_defense = 95
+base_speed = 83
+ev_special_attack = 3
+base_exp = 270
+gender_ratio = &"Female25Percent"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_p1hba")]([SubResource("Resource_sdh2e"), SubResource("Resource_5xdrg"), SubResource("Resource_d7irb"), SubResource("Resource_wex55"), SubResource("Resource_xpgem"), SubResource("Resource_50j7l"), SubResource("Resource_veug1"), SubResource("Resource_k10w7"), SubResource("Resource_aifcf"), SubResource("Resource_txnpp"), SubResource("Resource_1tdsr"), SubResource("Resource_n826b"), SubResource("Resource_oi1f1"), SubResource("Resource_f8nxa"), SubResource("Resource_wfq75")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERBOLT", &"THUNDERPUNCH", &"TORMENT", &"UPROAR", &"WEATHERBALL", &"WILLOWISP"])
+abilities = Array[StringName]([&"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"VITALSPIRIT"])
+wild_item_uncommon = Array[StringName]([&"MAGMARIZER"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_2iyoa")]([SubResource("Resource_bq7sx")])
+height = 16
+weight = 680
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 17)
+id = &"MAGMORTAR"
+display_name = "Magmortar"

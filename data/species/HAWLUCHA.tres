@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_v23r1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wevji"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nrtqg"]
+
+[sub_resource type="Resource" id="Resource_7payl"]
+script = ExtResource("2_wevji")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_tcmet"]
+script = ExtResource("2_wevji")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_778in"]
+script = ExtResource("2_wevji")
+level = 4
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_6bsmn"]
+script = ExtResource("2_wevji")
+level = 8
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_c7gyi"]
+script = ExtResource("2_wevji")
+level = 12
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_88qga"]
+script = ExtResource("2_wevji")
+level = 16
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_gvm5x"]
+script = ExtResource("2_wevji")
+level = 20
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_8g408"]
+script = ExtResource("2_wevji")
+level = 24
+move = &"SUBMISSION"
+
+[sub_resource type="Resource" id="Resource_kqhp6"]
+script = ExtResource("2_wevji")
+level = 28
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_8l1iq"]
+script = ExtResource("2_wevji")
+level = 32
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_8ahwy"]
+script = ExtResource("2_wevji")
+level = 36
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_ajkb7"]
+script = ExtResource("2_wevji")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_cpnpc"]
+script = ExtResource("2_wevji")
+level = 44
+move = &"FLYINGPRESS"
+
+[sub_resource type="Resource" id="Resource_2lya8"]
+script = ExtResource("2_wevji")
+level = 48
+move = &"HIGHJUMPKICK"
+
+[sub_resource type="Resource" id="Resource_v6oal"]
+script = ExtResource("2_wevji")
+level = 52
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_k0nkb"]
+script = ExtResource("2_wevji")
+level = 56
+move = &"SKYATTACK"
+
+[resource]
+resource_name = "HAWLUCHA"
+script = ExtResource("3_nrtqg")
+species = &"HAWLUCHA"
+category = "Wrestling"
+pokedex_entry = "With its wings, it controls its position in the air. It likes to attack from above, a maneuver that is difficult to defend against."
+types = Array[StringName]([&"FIGHTING", &"FLYING"])
+base_hp = 78
+base_attack = 92
+base_defense = 75
+base_special_attack = 74
+base_special_defense = 63
+base_speed = 118
+ev_attack = 2
+base_exp = 175
+catch_rate = 100
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wevji")]([SubResource("Resource_7payl"), SubResource("Resource_tcmet"), SubResource("Resource_778in"), SubResource("Resource_6bsmn"), SubResource("Resource_c7gyi"), SubResource("Resource_88qga"), SubResource("Resource_gvm5x"), SubResource("Resource_8g408"), SubResource("Resource_kqhp6"), SubResource("Resource_8l1iq"), SubResource("Resource_8ahwy"), SubResource("Resource_ajkb7"), SubResource("Resource_cpnpc"), SubResource("Resource_2lya8"), SubResource("Resource_v6oal"), SubResource("Resource_k0nkb")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BODYPRESS", &"BOUNCE", &"BRAVEBIRD", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CUT", &"DEFOG", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"DUALWINGBEAT", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREPUNCH", &"FLING", &"FLY", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"IRONHEAD", &"LASERFOCUS", &"LASTRESORT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"TAUNT", &"THROATCHOP", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"UTURN", &"WORKUP", &"XSCISSOR", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CROSSCHOP", &"DEFOG", &"ENTRAINMENT", &"FEINT", &"MEANLOOK", &"QUICKGUARD"])
+abilities = Array[StringName]([&"LIMBER", &"UNBURDEN"])
+hidden_abilities = Array[StringName]([&"MOLDBREAKER"])
+wild_item_uncommon = Array[StringName]([&"KINGSROCK"])
+egg_groups = Array[StringName]([&"Flying", &"Humanlike"])
+hatch_steps = 5120
+height = 8
+weight = 215
+color = &"Green"
+shape = &"Bipedal"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-5, 21)
+id = &"HAWLUCHA"
+display_name = "Hawlucha"

@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_d471j"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jsn0f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7argt"]
+
+[sub_resource type="Resource" id="Resource_spmxx"]
+script = ExtResource("1_d471j")
+species = &"RAPIDASH"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_n5u4j"]
+script = ExtResource("2_jsn0f")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_iumvl"]
+script = ExtResource("2_jsn0f")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_wrl7v"]
+script = ExtResource("2_jsn0f")
+level = 5
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_w1fnn"]
+script = ExtResource("2_jsn0f")
+level = 10
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_idupa"]
+script = ExtResource("2_jsn0f")
+level = 15
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_5nqks"]
+script = ExtResource("2_jsn0f")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_fi24r"]
+script = ExtResource("2_jsn0f")
+level = 25
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_kygrp"]
+script = ExtResource("2_jsn0f")
+level = 30
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_a1303"]
+script = ExtResource("2_jsn0f")
+level = 35
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_00sit"]
+script = ExtResource("2_jsn0f")
+level = 41
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_xt7nh"]
+script = ExtResource("2_jsn0f")
+level = 45
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_v6svt"]
+script = ExtResource("2_jsn0f")
+level = 50
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_1qs3e"]
+script = ExtResource("2_jsn0f")
+level = 55
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "PONYTA_1"
+script = ExtResource("3_7argt")
+species = &"PONYTA"
+form = 1
+form_name = "Galarian"
+category = "Unique Horn"
+pokedex_entry = "Its small horn hides a healing power. With a few rubs from this Pokémon's horn, any slight wound you have will be healed."
+pokedex_form = 1
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 50
+base_attack = 85
+base_defense = 55
+base_special_attack = 65
+base_special_defense = 65
+base_speed = 90
+ev_speed = 1
+base_exp = 82
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jsn0f")]([SubResource("Resource_n5u4j"), SubResource("Resource_iumvl"), SubResource("Resource_wrl7v"), SubResource("Resource_w1fnn"), SubResource("Resource_idupa"), SubResource("Resource_5nqks"), SubResource("Resource_fi24r"), SubResource("Resource_kygrp"), SubResource("Resource_a1303"), SubResource("Resource_00sit"), SubResource("Resource_xt7nh"), SubResource("Resource_v6svt"), SubResource("Resource_1qs3e")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"BOUNCE", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"IMPRISON", &"IRONTAIL", &"LOWKICK", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"WILDCHARGE", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ALLYSWITCH", &"CHARM", &"DOUBLEEDGE", &"DOUBLEKICK", &"FLAMEWHEEL", &"HIGHHORSEPOWER", &"HORNDRILL", &"HYPNOSIS", &"LOWKICK", &"MORNINGSUN", &"THRASH"])
+abilities = Array[StringName]([&"RUNAWAY", &"PASTELVEIL"])
+hidden_abilities = Array[StringName]([&"ANTICIPATION"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_d471j")]([SubResource("Resource_spmxx")])
+height = 8
+weight = 240
+color = &"White"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 24)
+id = &"PONYTA_1"
+display_name = "Ponyta"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

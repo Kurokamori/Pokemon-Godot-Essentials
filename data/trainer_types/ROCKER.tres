@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_jve6i"]
+
+[resource]
+resource_name = "ROCKER"
+script = ExtResource("1_jve6i")
+gender = 0
+base_money = 24
+skill_level = 24
+id = &"ROCKER"
+display_name = "Rocker"

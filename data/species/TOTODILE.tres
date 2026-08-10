@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_c18cx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1gs71"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6nqvv"]
+
+[sub_resource type="Resource" id="Resource_tvvto"]
+script = ExtResource("1_c18cx")
+species = &"CROCONAW"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_lafdu"]
+script = ExtResource("2_1gs71")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_snpl8"]
+script = ExtResource("2_1gs71")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ocqx5"]
+script = ExtResource("2_1gs71")
+level = 6
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_y46q2"]
+script = ExtResource("2_1gs71")
+level = 8
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_exmnw"]
+script = ExtResource("2_1gs71")
+level = 13
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_rldey"]
+script = ExtResource("2_1gs71")
+level = 15
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_jdl3x"]
+script = ExtResource("2_1gs71")
+level = 20
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_yop1x"]
+script = ExtResource("2_1gs71")
+level = 22
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_7qhvs"]
+script = ExtResource("2_1gs71")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_y8vy2"]
+script = ExtResource("2_1gs71")
+level = 29
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_7ebxg"]
+script = ExtResource("2_1gs71")
+level = 34
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_dxlta"]
+script = ExtResource("2_1gs71")
+level = 36
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_er8s6"]
+script = ExtResource("2_1gs71")
+level = 41
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_v22wb"]
+script = ExtResource("2_1gs71")
+level = 43
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_buymy"]
+script = ExtResource("2_1gs71")
+level = 48
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_0jddk"]
+script = ExtResource("2_1gs71")
+level = 50
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "TOTODILE"
+script = ExtResource("3_6nqvv")
+species = &"TOTODILE"
+category = "Big Jaw"
+pokedex_entry = "Despite its small body, Totodile's jaws are very powerful. While it may think it is just playfully nipping, its bite has enough strength to cause serious injury."
+types = Array[StringName]([&"WATER"])
+base_hp = 50
+base_attack = 65
+base_defense = 64
+base_special_attack = 44
+base_special_defense = 48
+base_speed = 43
+ev_attack = 1
+base_exp = 63
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1gs71")]([SubResource("Resource_lafdu"), SubResource("Resource_snpl8"), SubResource("Resource_ocqx5"), SubResource("Resource_y46q2"), SubResource("Resource_exmnw"), SubResource("Resource_rldey"), SubResource("Resource_jdl3x"), SubResource("Resource_yop1x"), SubResource("Resource_7qhvs"), SubResource("Resource_y8vy2"), SubResource("Resource_7ebxg"), SubResource("Resource_dxlta"), SubResource("Resource_er8s6"), SubResource("Resource_v22wb"), SubResource("Resource_buymy"), SubResource("Resource_0jddk")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"AQUAJET", &"BLOCK", &"CRUNCH", &"DRAGONDANCE", &"FAKETEARS", &"FLATTER", &"HYDROPUMP", &"ICEPUNCH", &"METALCLAW", &"THRASH"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_c18cx")]([SubResource("Resource_tvvto")])
+height = 6
+weight = 95
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"TOTODILE"
+display_name = "Totodile"

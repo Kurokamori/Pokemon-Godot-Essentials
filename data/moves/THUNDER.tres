@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3c3kn"]
+
+[resource]
+resource_name = "THUNDER"
+script = ExtResource("1_3c3kn")
+type = &"ELECTRIC"
+category = 1
+power = 110
+accuracy = 70
+total_pp = 10
+function_code = &"ParalyzeTargetAlwaysHitsInRainHitsTargetInSky"
+effect_chance = 30
+description = "A wicked thunderbolt is dropped on the foe to inflict damage. It may also leave the target paralyzed."
+id = &"THUNDER"
+display_name = "Thunder"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

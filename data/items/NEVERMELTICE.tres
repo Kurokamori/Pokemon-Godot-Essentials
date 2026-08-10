@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_p3v1k"]
+
+[resource]
+resource_name = "NEVERMELTICE"
+script = ExtResource("1_p3v1k")
+name_plural = "Never-Melt Ices"
+portion_name = "piece of Never-Melt Ice"
+portion_name_plural = "pieces of Never-Melt Ice"
+price = 3000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a piece of ice that repels heat and boosts Ice-type moves."
+id = &"NEVERMELTICE"
+display_name = "Never-Melt Ice"
+flags = Array[StringName]([&"Fling_30"])

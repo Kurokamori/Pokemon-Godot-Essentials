@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5my88"]
+
+[resource]
+resource_name = "BEASTBALL"
+script = ExtResource("1_5my88")
+name_plural = "Beast Balls"
+pocket = 3
+price = 1000
+sell_price = 500
+battle_use = 4
+description = "A special Poké Ball designed to catch Ultra Beasts. It has a low success rate for catching others."
+id = &"BEASTBALL"
+display_name = "Beast Ball"
+flags = Array[StringName]([&"PokeBall"])

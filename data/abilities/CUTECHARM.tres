@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_d2wsn"]
+
+[resource]
+resource_name = "CUTECHARM"
+script = ExtResource("1_d2wsn")
+description = "Contact with the Pokémon may cause infatuation."
+id = &"CUTECHARM"
+display_name = "Cute Charm"

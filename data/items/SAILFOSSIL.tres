@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_l3idw"]
+
+[resource]
+resource_name = "SAILFOSSIL"
+script = ExtResource("1_l3idw")
+name_plural = "Sail Fossils"
+price = 7000
+sell_price = 3500
+description = "A fossil from a prehistoric Pokémon that once lived on the land. It looks like the impression from a skin sail."
+id = &"SAILFOSSIL"
+display_name = "Sail Fossil"
+flags = Array[StringName]([&"Fossil", &"Fling_100"])

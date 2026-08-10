@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jbnlg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_sepe1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1mm1d"]
+
+[sub_resource type="Resource" id="Resource_efrjg"]
+script = ExtResource("1_jbnlg")
+species = &"POLIWRATH"
+method = &"Item"
+parameter = "WATERSTONE"
+
+[sub_resource type="Resource" id="Resource_0jb4v"]
+script = ExtResource("1_jbnlg")
+species = &"POLITOED"
+method = &"TradeItem"
+parameter = "KINGSROCK"
+
+[sub_resource type="Resource" id="Resource_ntvmx"]
+script = ExtResource("1_jbnlg")
+species = &"POLIWAG"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_i5skw"]
+script = ExtResource("2_sepe1")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_fb55q"]
+script = ExtResource("2_sepe1")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_pax61"]
+script = ExtResource("2_sepe1")
+level = 6
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_aasoh"]
+script = ExtResource("2_sepe1")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_2vgcu"]
+script = ExtResource("2_sepe1")
+level = 18
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_tamsc"]
+script = ExtResource("2_sepe1")
+level = 24
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_tv6sm"]
+script = ExtResource("2_sepe1")
+level = 32
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_2qjc0"]
+script = ExtResource("2_sepe1")
+level = 40
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_vrnic"]
+script = ExtResource("2_sepe1")
+level = 48
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_x61pc"]
+script = ExtResource("2_sepe1")
+level = 56
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_sbgey"]
+script = ExtResource("2_sepe1")
+level = 66
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "POLIWHIRL"
+script = ExtResource("3_1mm1d")
+species = &"POLIWHIRL"
+category = "Tadpole"
+pokedex_entry = "Its body surface is always wet and slick with an oily fluid. Because of this greasy covering, it can easily slip and slide out of the clutches of any enemy in battle."
+types = Array[StringName]([&"WATER"])
+base_hp = 65
+base_attack = 65
+base_defense = 65
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 90
+ev_speed = 2
+base_exp = 135
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_sepe1")]([SubResource("Resource_i5skw"), SubResource("Resource_fb55q"), SubResource("Resource_pax61"), SubResource("Resource_aasoh"), SubResource("Resource_2vgcu"), SubResource("Resource_tamsc"), SubResource("Resource_tv6sm"), SubResource("Resource_2qjc0"), SubResource("Resource_vrnic"), SubResource("Resource_x61pc"), SubResource("Resource_sbgey")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"WATERABSORB", &"DAMP"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+wild_item_uncommon = Array[StringName]([&"KINGSROCK"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_jbnlg")]([SubResource("Resource_efrjg"), SubResource("Resource_0jb4v"), SubResource("Resource_ntvmx")])
+height = 10
+weight = 200
+color = &"Blue"
+shape = &"Bipedal"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 28)
+id = &"POLIWHIRL"
+display_name = "Poliwhirl"

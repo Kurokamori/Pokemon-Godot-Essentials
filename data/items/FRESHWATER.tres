@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6w6c5"]
+
+[resource]
+resource_name = "FRESHWATER"
+script = ExtResource("1_6w6c5")
+name_plural = "Fresh Waters"
+portion_name = "bottle of Fresh Water"
+portion_name_plural = "bottles of Fresh Water"
+pocket = 2
+price = 200
+sell_price = 100
+field_use = 1
+battle_use = 1
+description = "Water with high mineral content. It can be used to restore 30 HP to a single Pokémon."
+id = &"FRESHWATER"
+display_name = "Fresh Water"
+flags = Array[StringName]([&"Fling_30"])

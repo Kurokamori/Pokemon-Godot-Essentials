@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tdqft"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_c2ii6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tswd1"]
+
+[sub_resource type="Resource" id="Resource_22mwb"]
+script = ExtResource("1_tdqft")
+species = &"PANCHAM"
+method = &"LevelDarkInParty"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_r6dmd"]
+script = ExtResource("2_c2ii6")
+level = 0
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_g3wm7"]
+script = ExtResource("2_c2ii6")
+move = &"BULLETPUNCH"
+
+[sub_resource type="Resource" id="Resource_q1q88"]
+script = ExtResource("2_c2ii6")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_d5a4b"]
+script = ExtResource("2_c2ii6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ihm2d"]
+script = ExtResource("2_c2ii6")
+move = &"ARMTHRUST"
+
+[sub_resource type="Resource" id="Resource_8qr6h"]
+script = ExtResource("2_c2ii6")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_igvdu"]
+script = ExtResource("2_c2ii6")
+level = 12
+move = &"CIRCLETHROW"
+
+[sub_resource type="Resource" id="Resource_a6cnl"]
+script = ExtResource("2_c2ii6")
+level = 16
+move = &"LOWSWEEP"
+
+[sub_resource type="Resource" id="Resource_1m0fr"]
+script = ExtResource("2_c2ii6")
+level = 20
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_j3v63"]
+script = ExtResource("2_c2ii6")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ppf00"]
+script = ExtResource("2_c2ii6")
+level = 28
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_mf3r5"]
+script = ExtResource("2_c2ii6")
+level = 35
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_xg0ok"]
+script = ExtResource("2_c2ii6")
+level = 40
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_wk27i"]
+script = ExtResource("2_c2ii6")
+level = 46
+move = &"PARTINGSHOT"
+
+[sub_resource type="Resource" id="Resource_nh1ev"]
+script = ExtResource("2_c2ii6")
+level = 52
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_576t4"]
+script = ExtResource("2_c2ii6")
+level = 58
+move = &"HAMMERARM"
+
+[resource]
+resource_name = "PANGORO"
+script = ExtResource("3_tswd1")
+species = &"PANGORO"
+category = "Daunting"
+pokedex_entry = "It charges ahead and bashes its opponents like a berserker, uncaring about any hits it might take. Its arms are mighty enough to snap a telephone pole."
+types = Array[StringName]([&"FIGHTING", &"DARK"])
+base_hp = 95
+base_attack = 124
+base_defense = 78
+base_special_attack = 69
+base_special_defense = 71
+base_speed = 58
+ev_attack = 2
+base_exp = 173
+catch_rate = 65
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_c2ii6")]([SubResource("Resource_r6dmd"), SubResource("Resource_g3wm7"), SubResource("Resource_q1q88"), SubResource("Resource_d5a4b"), SubResource("Resource_ihm2d"), SubResource("Resource_8qr6h"), SubResource("Resource_igvdu"), SubResource("Resource_a6cnl"), SubResource("Resource_1m0fr"), SubResource("Resource_j3v63"), SubResource("Resource_ppf00"), SubResource("Resource_mf3r5"), SubResource("Resource_xg0ok"), SubResource("Resource_wk27i"), SubResource("Resource_nh1ev"), SubResource("Resource_576t4")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BEATUP", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COVET", &"CRUNCH", &"CUT", &"DARKESTLARIAT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ECHOEDVOICE", &"EMBARGO", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEPUNCH", &"INFESTATION", &"IRONHEAD", &"KNOCKOFF", &"LASERFOCUS", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"UPROAR", &"WORKUP", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"IRONFIST", &"MOLDBREAKER"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+wild_item_uncommon = Array[StringName]([&"MENTALHERB"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_tdqft")]([SubResource("Resource_22mwb")])
+height = 21
+weight = 1360
+color = &"White"
+shape = &"Bipedal"
+generation = 6
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(5, 14)
+shadow_size = 3
+id = &"PANGORO"
+display_name = "Pangoro"

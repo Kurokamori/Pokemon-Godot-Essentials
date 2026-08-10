@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_t7qjm"]
+
+[resource]
+resource_name = "HOLDBACK"
+script = ExtResource("1_t7qjm")
+category = 0
+power = 40
+total_pp = 40
+function_code = &"CannotMakeTargetFaint"
+description = "The user holds back when it attacks, and the target is left with at least 1 HP."
+id = &"HOLDBACK"
+display_name = "Hold Back"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

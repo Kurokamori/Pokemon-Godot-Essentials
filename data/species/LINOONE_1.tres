@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qhimb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_clss3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_onx56"]
+
+[sub_resource type="Resource" id="Resource_7kokx"]
+script = ExtResource("1_qhimb")
+species = &"OBSTAGOON"
+method = &"LevelNight"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_hjjre"]
+script = ExtResource("1_qhimb")
+species = &"ZIGZAGOON"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_emnih"]
+script = ExtResource("2_clss3")
+level = 0
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_jgo5j"]
+script = ExtResource("2_clss3")
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_belpe"]
+script = ExtResource("2_clss3")
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_fcup1"]
+script = ExtResource("2_clss3")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_crix2"]
+script = ExtResource("2_clss3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_anrww"]
+script = ExtResource("2_clss3")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_kqsuq"]
+script = ExtResource("2_clss3")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_6ny6o"]
+script = ExtResource("2_clss3")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_hfne0"]
+script = ExtResource("2_clss3")
+level = 9
+move = &"SNARL"
+
+[sub_resource type="Resource" id="Resource_n2bs6"]
+script = ExtResource("2_clss3")
+level = 12
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_elplr"]
+script = ExtResource("2_clss3")
+level = 15
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_kauk0"]
+script = ExtResource("2_clss3")
+level = 18
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_38vc6"]
+script = ExtResource("2_clss3")
+level = 23
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_uulfv"]
+script = ExtResource("2_clss3")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_v615d"]
+script = ExtResource("2_clss3")
+level = 33
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_v1nxt"]
+script = ExtResource("2_clss3")
+level = 38
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_34dl6"]
+script = ExtResource("2_clss3")
+level = 43
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_lkkkv"]
+script = ExtResource("2_clss3")
+level = 48
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "LINOONE_1"
+script = ExtResource("3_onx56")
+species = &"LINOONE"
+form = 1
+form_name = "Galarian"
+category = "Rushing"
+pokedex_entry = "It uses its long tongue to taunt opponents. Once the opposition is enraged, this Pokémon hurls itself at the opponent, tackling them forcefully."
+pokedex_form = 1
+types = Array[StringName]([&"DARK", &"NORMAL"])
+base_hp = 78
+base_attack = 70
+base_defense = 61
+base_special_attack = 50
+base_special_defense = 61
+base_speed = 100
+ev_speed = 2
+base_exp = 147
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_clss3")]([SubResource("Resource_emnih"), SubResource("Resource_jgo5j"), SubResource("Resource_belpe"), SubResource("Resource_fcup1"), SubResource("Resource_crix2"), SubResource("Resource_anrww"), SubResource("Resource_kqsuq"), SubResource("Resource_6ny6o"), SubResource("Resource_hfne0"), SubResource("Resource_n2bs6"), SubResource("Resource_elplr"), SubResource("Resource_kauk0"), SubResource("Resource_38vc6"), SubResource("Resource_uulfv"), SubResource("Resource_v615d"), SubResource("Resource_v1nxt"), SubResource("Resource_34dl6"), SubResource("Resource_lkkkv")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLING", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASHOUT", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNARL", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"PICKUP", &"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"QUICKFEET"])
+wild_item_common = Array[StringName]([&"POTION"])
+wild_item_uncommon = Array[StringName]([&"MAXREVIVE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_qhimb")]([SubResource("Resource_7kokx"), SubResource("Resource_hjjre")])
+height = 5
+weight = 325
+color = &"White"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 8
+back_sprite_offset = Vector2i(0, 59)
+front_sprite_offset = Vector2i(6, 35)
+id = &"LINOONE_1"
+display_name = "Linoone"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

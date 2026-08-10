@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4st6c"]
+
+[resource]
+resource_name = "TM34"
+script = ExtResource("1_4st6c")
+name_plural = "TM34s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"SHOCKWAVE"
+description = "The user strikes the target with a quick jolt of electricity. This attack never misses."
+id = &"TM34"
+display_name = "TM34"
+flags = Array[StringName]([&"Fling_60"])

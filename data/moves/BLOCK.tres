@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_bxq85"]
+
+[resource]
+resource_name = "BLOCK"
+script = ExtResource("1_bxq85")
+accuracy = 0
+function_code = &"TrapTargetInBattle"
+description = "The user blocks the target's way with arms spread wide to prevent escape."
+id = &"BLOCK"
+display_name = "Block"
+flags = Array[StringName]([&"CanMirrorMove"])

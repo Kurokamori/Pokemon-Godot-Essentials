@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dctbg6vne6svi"
+path="res://.godot/imported/Route 1.ogg-62a36cf321ca69628815d8046502c54f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Route 1.ogg"
+dest_files=["res://.godot/imported/Route 1.ogg-62a36cf321ca69628815d8046502c54f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

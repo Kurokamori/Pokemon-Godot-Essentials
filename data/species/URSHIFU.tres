@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bd2ys"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_08bgl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gklep"]
+
+[sub_resource type="Resource" id="Resource_hsreo"]
+script = ExtResource("1_bd2ys")
+species = &"KUBFU"
+method = &"Event"
+parameter = "1"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ksr1v"]
+script = ExtResource("2_08bgl")
+level = 0
+move = &"WICKEDBLOW"
+
+[sub_resource type="Resource" id="Resource_hallk"]
+script = ExtResource("2_08bgl")
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_aq0wx"]
+script = ExtResource("2_08bgl")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_enahj"]
+script = ExtResource("2_08bgl")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_f2f76"]
+script = ExtResource("2_08bgl")
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_wmfu6"]
+script = ExtResource("2_08bgl")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_lyhnj"]
+script = ExtResource("2_08bgl")
+level = 12
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_6cvm2"]
+script = ExtResource("2_08bgl")
+level = 16
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_7vi1n"]
+script = ExtResource("2_08bgl")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_fecxi"]
+script = ExtResource("2_08bgl")
+level = 24
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_p25ea"]
+script = ExtResource("2_08bgl")
+level = 28
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_m5536"]
+script = ExtResource("2_08bgl")
+level = 32
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_el2u8"]
+script = ExtResource("2_08bgl")
+level = 36
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_61c06"]
+script = ExtResource("2_08bgl")
+level = 40
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_xnrhk"]
+script = ExtResource("2_08bgl")
+level = 44
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_8ikv1"]
+script = ExtResource("2_08bgl")
+level = 48
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_itg2b"]
+script = ExtResource("2_08bgl")
+level = 52
+move = &"FOCUSPUNCH"
+
+[resource]
+resource_name = "URSHIFU"
+script = ExtResource("3_gklep")
+species = &"URSHIFU"
+form_name = "Single Strike Style"
+category = "Wushu"
+pokedex_entry = "Inhabiting the mountains of a distant region, this Pokémon races across sheer cliffs, training its legs and refining its moves."
+types = Array[StringName]([&"FIGHTING", &"DARK"])
+base_hp = 100
+base_attack = 130
+base_defense = 100
+base_special_attack = 63
+base_special_defense = 60
+base_speed = 97
+ev_attack = 3
+base_exp = 275
+growth_rate = &"Slow"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 3
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_08bgl")]([SubResource("Resource_ksr1v"), SubResource("Resource_hallk"), SubResource("Resource_aq0wx"), SubResource("Resource_enahj"), SubResource("Resource_f2f76"), SubResource("Resource_wmfu6"), SubResource("Resource_lyhnj"), SubResource("Resource_6cvm2"), SubResource("Resource_7vi1n"), SubResource("Resource_fecxi"), SubResource("Resource_p25ea"), SubResource("Resource_m5536"), SubResource("Resource_el2u8"), SubResource("Resource_61c06"), SubResource("Resource_xnrhk"), SubResource("Resource_8ikv1"), SubResource("Resource_itg2b")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ASSURANCE", &"ATTRACT", &"AURASPHERE", &"BEATUP", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CRUNCH", &"DARKESTLARIAT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"IRONDEFENSE", &"IRONHEAD", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"STONEEDGE", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TAUNT", &"THROATCHOP", &"THUNDERPUNCH", &"TOXIC", &"UTURN", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"UNSEENFIST"])
+hatch_steps = 30720
+evolutions = Array[ExtResource("1_bd2ys")]([SubResource("Resource_hsreo")])
+height = 19
+weight = 1050
+color = &"Gray"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(2, 13)
+id = &"URSHIFU"
+display_name = "Urshifu"
+flags = Array[StringName]([&"Legendary"])

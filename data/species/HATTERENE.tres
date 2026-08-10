@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_k7b1s"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_aijw8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_psdgd"]
+
+[sub_resource type="Resource" id="Resource_eromk"]
+script = ExtResource("1_k7b1s")
+species = &"HATTREM"
+method = &"Level"
+parameter = "42"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_irunj"]
+script = ExtResource("2_aijw8")
+level = 0
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_25twc"]
+script = ExtResource("2_aijw8")
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_r368c"]
+script = ExtResource("2_aijw8")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_j6fk3"]
+script = ExtResource("2_aijw8")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_db0x7"]
+script = ExtResource("2_aijw8")
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_eqj2h"]
+script = ExtResource("2_aijw8")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_fnq02"]
+script = ExtResource("2_aijw8")
+level = 15
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_amgif"]
+script = ExtResource("2_aijw8")
+level = 20
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_ixxnj"]
+script = ExtResource("2_aijw8")
+level = 25
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_obljw"]
+script = ExtResource("2_aijw8")
+level = 30
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_c3326"]
+script = ExtResource("2_aijw8")
+level = 37
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_gjdop"]
+script = ExtResource("2_aijw8")
+level = 46
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_8bexh"]
+script = ExtResource("2_aijw8")
+level = 55
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_1e8vk"]
+script = ExtResource("2_aijw8")
+level = 64
+move = &"MAGICPOWDER"
+
+[resource]
+resource_name = "HATTERENE"
+script = ExtResource("3_psdgd")
+species = &"HATTERENE"
+category = "Silent"
+pokedex_entry = "It emits psychic power strong enough to cause headaches as a deterrent to the approach of others."
+types = Array[StringName]([&"PSYCHIC", &"FAIRY"])
+base_hp = 57
+base_attack = 90
+base_defense = 95
+base_special_attack = 136
+base_special_defense = 103
+base_speed = 29
+ev_special_attack = 3
+base_exp = 255
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_aijw8")]([SubResource("Resource_irunj"), SubResource("Resource_25twc"), SubResource("Resource_r368c"), SubResource("Resource_j6fk3"), SubResource("Resource_db0x7"), SubResource("Resource_eqj2h"), SubResource("Resource_fnq02"), SubResource("Resource_amgif"), SubResource("Resource_ixxnj"), SubResource("Resource_obljw"), SubResource("Resource_c3326"), SubResource("Resource_gjdop"), SubResource("Resource_8bexh"), SubResource("Resource_1e8vk")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BRUTALSWING", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"GUARDSWAP", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICROOM", &"MIMIC", &"MISTYEXPLOSION", &"MYSTICALFIRE", &"NATURALGIFT", &"PLAYROUGH", &"POWERSWAP", &"POWERWHIP", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYSHOCK", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"THUNDERWAVE", &"TOXIC", &"TRICKROOM", &"WONDERROOM"])
+abilities = Array[StringName]([&"HEALER", &"ANTICIPATION"])
+hidden_abilities = Array[StringName]([&"MAGICBOUNCE"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_k7b1s")]([SubResource("Resource_eromk")])
+height = 21
+weight = 51
+color = &"Pink"
+shape = &"HeadBase"
+generation = 8
+back_sprite_offset = Vector2i(10, 44)
+front_sprite_offset = Vector2i(-7, 13)
+id = &"HATTERENE"
+display_name = "Hatterene"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_8mswa"]
+
+[resource]
+resource_name = "SPEEDSWAP"
+script = ExtResource("1_8mswa")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+function_code = &"UserTargetSwapBaseSpeed"
+description = "The user exchanges Speed stats with the target."
+id = &"SPEEDSWAP"
+display_name = "Speed Swap"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

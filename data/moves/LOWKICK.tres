@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qlx48"]
+
+[resource]
+resource_name = "LOWKICK"
+script = ExtResource("1_qlx48")
+type = &"FIGHTING"
+category = 0
+power = 1
+total_pp = 20
+function_code = &"PowerHigherWithTargetWeight"
+description = "A powerful low kick that makes the foe fall over. It inflicts greater damage on heavier foes."
+id = &"LOWKICK"
+display_name = "Low Kick"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

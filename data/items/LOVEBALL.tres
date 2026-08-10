@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_pluwd"]
+
+[resource]
+resource_name = "LOVEBALL"
+script = ExtResource("1_pluwd")
+name_plural = "Love Balls"
+pocket = 3
+price = 300
+sell_price = 150
+battle_use = 4
+description = "A Poké Ball for catching Pokémon that are the opposite gender of your Pokémon."
+id = &"LOVEBALL"
+display_name = "Love Ball"
+flags = Array[StringName]([&"PokeBall"])

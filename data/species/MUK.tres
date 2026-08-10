@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jsgjf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3fbbv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uao03"]
+
+[sub_resource type="Resource" id="Resource_5330v"]
+script = ExtResource("1_jsgjf")
+species = &"GRIMER"
+method = &"Level"
+parameter = "38"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_bgmrf"]
+script = ExtResource("2_3fbbv")
+level = 0
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_2qaqu"]
+script = ExtResource("2_3fbbv")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_gvy2r"]
+script = ExtResource("2_3fbbv")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_iftw4"]
+script = ExtResource("2_3fbbv")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_a7bc0"]
+script = ExtResource("2_3fbbv")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_m7lds"]
+script = ExtResource("2_3fbbv")
+level = 4
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_yehci"]
+script = ExtResource("2_3fbbv")
+level = 7
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_k8vhg"]
+script = ExtResource("2_3fbbv")
+level = 12
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_3u2sl"]
+script = ExtResource("2_3fbbv")
+level = 15
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_dp4x6"]
+script = ExtResource("2_3fbbv")
+level = 18
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_coc3h"]
+script = ExtResource("2_3fbbv")
+level = 21
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_cibqm"]
+script = ExtResource("2_3fbbv")
+level = 26
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_1oop7"]
+script = ExtResource("2_3fbbv")
+level = 29
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_u4l2k"]
+script = ExtResource("2_3fbbv")
+level = 32
+move = &"SLUDGEWAVE"
+
+[sub_resource type="Resource" id="Resource_6x6gs"]
+script = ExtResource("2_3fbbv")
+level = 37
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_htv7f"]
+script = ExtResource("2_3fbbv")
+level = 40
+move = &"GUNKSHOT"
+
+[sub_resource type="Resource" id="Resource_xa7d6"]
+script = ExtResource("2_3fbbv")
+level = 46
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_mlx78"]
+script = ExtResource("2_3fbbv")
+level = 52
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_xgb0q"]
+script = ExtResource("2_3fbbv")
+level = 57
+move = &"MEMENTO"
+
+[resource]
+resource_name = "MUK"
+script = ExtResource("3_uao03")
+species = &"MUK"
+category = "Sludge"
+pokedex_entry = "It prefers warm and humid habitats. In the summertime, the toxic substances in its body intensify, making Muk reek like putrid kitchen garbage."
+types = Array[StringName]([&"POISON"])
+base_hp = 105
+base_attack = 105
+base_defense = 75
+base_special_attack = 65
+base_special_defense = 100
+base_speed = 50
+ev_hp = 1
+ev_attack = 1
+base_exp = 175
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3fbbv")]([SubResource("Resource_bgmrf"), SubResource("Resource_2qaqu"), SubResource("Resource_gvy2r"), SubResource("Resource_iftw4"), SubResource("Resource_a7bc0"), SubResource("Resource_m7lds"), SubResource("Resource_yehci"), SubResource("Resource_k8vhg"), SubResource("Resource_3u2sl"), SubResource("Resource_dp4x6"), SubResource("Resource_coc3h"), SubResource("Resource_cibqm"), SubResource("Resource_1oop7"), SubResource("Resource_u4l2k"), SubResource("Resource_6x6gs"), SubResource("Resource_htv7f"), SubResource("Resource_xa7d6"), SubResource("Resource_mlx78"), SubResource("Resource_xgb0q")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GUNKSHOT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"INCINERATE", &"INFESTATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"TORMENT", &"VENOSHOCK"])
+abilities = Array[StringName]([&"STENCH", &"STICKYHOLD"])
+hidden_abilities = Array[StringName]([&"POISONTOUCH"])
+wild_item_common = Array[StringName]([&"BLACKSLUDGE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_jsgjf")]([SubResource("Resource_5330v")])
+height = 12
+weight = 300
+color = &"Purple"
+shape = &"HeadArms"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(4, 50)
+front_sprite_offset = Vector2i(-4, 26)
+shadow_size = 3
+id = &"MUK"
+display_name = "Muk"

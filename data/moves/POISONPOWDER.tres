@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2ewfi"]
+
+[resource]
+resource_name = "POISONPOWDER"
+script = ExtResource("1_2ewfi")
+type = &"POISON"
+accuracy = 75
+total_pp = 35
+function_code = &"PoisonTarget"
+description = "The user scatters a cloud of poisonous dust on the target. It may poison the target."
+id = &"POISONPOWDER"
+display_name = "Poison Powder"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Powder"])

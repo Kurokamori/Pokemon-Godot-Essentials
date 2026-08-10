@@ -1,0 +1,178 @@
+[gd_resource type="Resource" script_class="TownMapData" format=3]
+
+[ext_resource type="Script" path="res://src/data/town_map_point.gd" id="1_uqbem"]
+[ext_resource type="Script" path="res://src/data/town_map_data.gd" id="2_ea6pv"]
+[ext_resource type="Script" path="res://src/data/town_map_decoration.gd" id="3_dcrtn"]
+
+[sub_resource type="Resource" id="Resource_dcr01"]
+script = ExtResource("3_dcrtn")
+position = Vector2i(16, 15)
+graphic = "hidden_Berth"
+visibility_switch = 51
+
+[sub_resource type="Resource" id="Resource_dcr02"]
+script = ExtResource("3_dcrtn")
+position = Vector2i(20, 14)
+graphic = "hidden_Faraday"
+visibility_switch = 52
+
+[sub_resource type="Resource" id="Resource_wefuu"]
+script = ExtResource("1_uqbem")
+position = Vector2i(13, 12)
+location_name = "Lappet Town"
+point_of_interest = "Oak's Lab"
+fly_map_id = 2
+fly_position = Vector2i(8, 8)
+
+[sub_resource type="Resource" id="Resource_65eqq"]
+script = ExtResource("1_uqbem")
+position = Vector2i(13, 11)
+location_name = "Route 1"
+
+[sub_resource type="Resource" id="Resource_ln8my"]
+script = ExtResource("1_uqbem")
+position = Vector2i(13, 10)
+location_name = "Cedolan City"
+point_of_interest = "Cedolan Dept. Store"
+fly_map_id = 7
+fly_position = Vector2i(47, 11)
+
+[sub_resource type="Resource" id="Resource_2wo5u"]
+script = ExtResource("1_uqbem")
+position = Vector2i(14, 10)
+location_name = "Cedolan City"
+fly_map_id = 7
+fly_position = Vector2i(47, 11)
+
+[sub_resource type="Resource" id="Resource_yi0b5"]
+script = ExtResource("1_uqbem")
+position = Vector2i(14, 9)
+location_name = "Route 2"
+
+[sub_resource type="Resource" id="Resource_un750"]
+script = ExtResource("1_uqbem")
+position = Vector2i(14, 8)
+location_name = "Route 2"
+
+[sub_resource type="Resource" id="Resource_278ke"]
+script = ExtResource("1_uqbem")
+position = Vector2i(15, 8)
+location_name = "Lerucean Town"
+fly_map_id = 23
+fly_position = Vector2i(11, 15)
+
+[sub_resource type="Resource" id="Resource_erfo7"]
+script = ExtResource("1_uqbem")
+position = Vector2i(16, 8)
+location_name = "Natural Park"
+
+[sub_resource type="Resource" id="Resource_d0a2s"]
+script = ExtResource("1_uqbem")
+position = Vector2i(15, 7)
+location_name = "Route 3"
+
+[sub_resource type="Resource" id="Resource_ut5ca"]
+script = ExtResource("1_uqbem")
+position = Vector2i(15, 6)
+location_name = "Route 3"
+point_of_interest = "Ice Cave"
+
+[sub_resource type="Resource" id="Resource_w18pu"]
+script = ExtResource("1_uqbem")
+position = Vector2i(14, 6)
+location_name = "Route 3"
+
+[sub_resource type="Resource" id="Resource_cem4d"]
+script = ExtResource("1_uqbem")
+position = Vector2i(13, 6)
+location_name = "Ingido Plateau"
+fly_map_id = 35
+fly_position = Vector2i(17, 7)
+
+[sub_resource type="Resource" id="Resource_rqfg5"]
+script = ExtResource("1_uqbem")
+position = Vector2i(12, 6)
+location_name = "Route 4"
+
+[sub_resource type="Resource" id="Resource_620wq"]
+script = ExtResource("1_uqbem")
+position = Vector2i(11, 6)
+location_name = "Route 4"
+
+[sub_resource type="Resource" id="Resource_mo546"]
+script = ExtResource("1_uqbem")
+position = Vector2i(11, 7)
+location_name = "Route 5"
+point_of_interest = "Cycle Road"
+
+[sub_resource type="Resource" id="Resource_slyxr"]
+script = ExtResource("1_uqbem")
+position = Vector2i(11, 8)
+location_name = "Route 5"
+point_of_interest = "Cycle Road"
+
+[sub_resource type="Resource" id="Resource_c8nci"]
+script = ExtResource("1_uqbem")
+position = Vector2i(11, 9)
+location_name = "Route 5"
+point_of_interest = "Cycle Road"
+
+[sub_resource type="Resource" id="Resource_0l4ch"]
+script = ExtResource("1_uqbem")
+position = Vector2i(11, 10)
+location_name = "Route 6"
+
+[sub_resource type="Resource" id="Resource_v4xxl"]
+script = ExtResource("1_uqbem")
+position = Vector2i(12, 10)
+location_name = "Route 6"
+
+[sub_resource type="Resource" id="Resource_imqmv"]
+script = ExtResource("1_uqbem")
+position = Vector2i(15, 10)
+location_name = "Route 7"
+
+[sub_resource type="Resource" id="Resource_pnnqu"]
+script = ExtResource("1_uqbem")
+position = Vector2i(16, 10)
+location_name = "Route 7"
+point_of_interest = "Rock Cave"
+
+[sub_resource type="Resource" id="Resource_2e8jq"]
+script = ExtResource("1_uqbem")
+position = Vector2i(17, 10)
+location_name = "Battle Frontier"
+fly_map_id = 52
+fly_position = Vector2i(17, 14)
+
+[sub_resource type="Resource" id="Resource_pmsn2"]
+script = ExtResource("1_uqbem")
+position = Vector2i(12, 12)
+location_name = "Safari Zone"
+
+[sub_resource type="Resource" id="Resource_o5gl5"]
+script = ExtResource("1_uqbem")
+position = Vector2i(13, 13)
+location_name = "Route 8"
+point_of_interest = "Diving area"
+
+[sub_resource type="Resource" id="Resource_av806"]
+script = ExtResource("1_uqbem")
+position = Vector2i(18, 17)
+location_name = "Berth Island"
+visibility_switch = 51
+
+[sub_resource type="Resource" id="Resource_hmc8i"]
+script = ExtResource("1_uqbem")
+position = Vector2i(22, 16)
+location_name = "Faraday Island"
+visibility_switch = 52
+
+[resource]
+resource_name = "0"
+script = ExtResource("2_ea6pv")
+filename = "mapRegion0.png"
+points = Array[ExtResource("1_uqbem")]([SubResource("Resource_wefuu"), SubResource("Resource_65eqq"), SubResource("Resource_ln8my"), SubResource("Resource_2wo5u"), SubResource("Resource_yi0b5"), SubResource("Resource_un750"), SubResource("Resource_278ke"), SubResource("Resource_erfo7"), SubResource("Resource_d0a2s"), SubResource("Resource_ut5ca"), SubResource("Resource_w18pu"), SubResource("Resource_cem4d"), SubResource("Resource_rqfg5"), SubResource("Resource_620wq"), SubResource("Resource_mo546"), SubResource("Resource_slyxr"), SubResource("Resource_c8nci"), SubResource("Resource_0l4ch"), SubResource("Resource_v4xxl"), SubResource("Resource_imqmv"), SubResource("Resource_pnnqu"), SubResource("Resource_2e8jq"), SubResource("Resource_pmsn2"), SubResource("Resource_o5gl5"), SubResource("Resource_av806"), SubResource("Resource_hmc8i")])
+decorations = Array[ExtResource("3_dcrtn")]([SubResource("Resource_dcr01"), SubResource("Resource_dcr02")])
+id = &"0"
+display_name = "Essen"

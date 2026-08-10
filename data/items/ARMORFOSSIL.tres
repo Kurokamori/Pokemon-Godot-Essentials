@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3o6p0"]
+
+[resource]
+resource_name = "ARMORFOSSIL"
+script = ExtResource("1_3o6p0")
+name_plural = "Armor Fossils"
+price = 7000
+sell_price = 3500
+description = "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a collar."
+id = &"ARMORFOSSIL"
+display_name = "Armor Fossil"
+flags = Array[StringName]([&"Fossil", &"Fling_100"])

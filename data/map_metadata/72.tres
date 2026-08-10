@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_28pgw"]
+
+[resource]
+resource_name = "72"
+script = ExtResource("1_28pgw")
+map_id = 72
+outdoor_map = true
+announce_location = true
+weather = ["Storm", 50]
+town_map_position = Array[int]([0, 18, 17])
+battle_background = "field"
+id = &"72"
+display_name = "Berth Island"
+flags = Array[StringName]([&"DistortionWorld"])

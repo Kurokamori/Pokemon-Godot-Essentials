@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_4onis"]
+
+[resource]
+resource_name = "POWERSPOT"
+script = ExtResource("1_4onis")
+description = "Just being next to the Pokémon powers up moves."
+id = &"POWERSPOT"
+display_name = "Power Spot"

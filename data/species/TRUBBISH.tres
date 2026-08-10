@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_psytk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fuepf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2tnki"]
+
+[sub_resource type="Resource" id="Resource_503kp"]
+script = ExtResource("1_psytk")
+species = &"GARBODOR"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_2f2xl"]
+script = ExtResource("2_fuepf")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_qv18b"]
+script = ExtResource("2_fuepf")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_shoiy"]
+script = ExtResource("2_fuepf")
+level = 3
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_2liu1"]
+script = ExtResource("2_fuepf")
+level = 6
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_2xl6g"]
+script = ExtResource("2_fuepf")
+level = 9
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_rqeee"]
+script = ExtResource("2_fuepf")
+level = 12
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_nu64b"]
+script = ExtResource("2_fuepf")
+level = 15
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_n6y1j"]
+script = ExtResource("2_fuepf")
+level = 18
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_p6faf"]
+script = ExtResource("2_fuepf")
+level = 21
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_206td"]
+script = ExtResource("2_fuepf")
+level = 21
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_g6uon"]
+script = ExtResource("2_fuepf")
+level = 24
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_b7vjg"]
+script = ExtResource("2_fuepf")
+level = 27
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_jk0vy"]
+script = ExtResource("2_fuepf")
+level = 30
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_3ql3d"]
+script = ExtResource("2_fuepf")
+level = 33
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_5cc6q"]
+script = ExtResource("2_fuepf")
+level = 37
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_vfxdn"]
+script = ExtResource("2_fuepf")
+level = 39
+move = &"GUNKSHOT"
+
+[sub_resource type="Resource" id="Resource_3fyou"]
+script = ExtResource("2_fuepf")
+level = 42
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "TRUBBISH"
+script = ExtResource("3_2tnki")
+species = &"TRUBBISH"
+category = "Trash Bag"
+pokedex_entry = "The combination of garbage bags and industrial waste caused the chemical reaction that crated this Pokémon."
+types = Array[StringName]([&"POISON"])
+base_hp = 50
+base_attack = 50
+base_defense = 62
+base_special_attack = 40
+base_special_defense = 62
+base_speed = 65
+ev_speed = 1
+base_exp = 66
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fuepf")]([SubResource("Resource_2f2xl"), SubResource("Resource_qv18b"), SubResource("Resource_shoiy"), SubResource("Resource_2liu1"), SubResource("Resource_2xl6g"), SubResource("Resource_rqeee"), SubResource("Resource_nu64b"), SubResource("Resource_n6y1j"), SubResource("Resource_p6faf"), SubResource("Resource_206td"), SubResource("Resource_g6uon"), SubResource("Resource_b7vjg"), SubResource("Resource_jk0vy"), SubResource("Resource_3ql3d"), SubResource("Resource_5cc6q"), SubResource("Resource_vfxdn"), SubResource("Resource_3fyou")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"DARKPULSE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"EXPLOSION", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GUNKSHOT", &"HIDDENPOWER", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROCKBLAST", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPIKES", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"AUTOTOMIZE", &"CURSE", &"HAZE", &"ROLLOUT", &"SANDATTACK"])
+abilities = Array[StringName]([&"STENCH", &"STICKYHOLD"])
+hidden_abilities = Array[StringName]([&"AFTERMATH"])
+wild_item_uncommon = Array[StringName]([&"SILKSCARF"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_psytk")]([SubResource("Resource_503kp")])
+height = 6
+weight = 310
+color = &"Green"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(4, 32)
+id = &"TRUBBISH"
+display_name = "Trubbish"

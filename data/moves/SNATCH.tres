@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_lx8h6"]
+
+[resource]
+resource_name = "SNATCH"
+script = ExtResource("1_lx8h6")
+type = &"DARK"
+accuracy = 0
+total_pp = 10
+target = &"User"
+priority = 4
+function_code = &"StealAndUseBeneficialStatusMove"
+description = "The user steals the effects of any healing or stat-changing move the foe attempts to use."
+id = &"SNATCH"
+display_name = "Snatch"

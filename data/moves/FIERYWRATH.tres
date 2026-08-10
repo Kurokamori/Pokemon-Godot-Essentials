@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5wrct"]
+
+[resource]
+resource_name = "FIERYWRATH"
+script = ExtResource("1_5wrct")
+type = &"DARK"
+category = 1
+power = 90
+total_pp = 10
+target = &"AllNearFoes"
+function_code = &"FlinchTarget"
+effect_chance = 20
+description = "The user transforms its wrath into a fire-like aura to attack. This may also make foes flinch."
+id = &"FIERYWRATH"
+display_name = "Fiery Wrath"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xl0dv"]
+
+[resource]
+resource_name = "SLAM"
+script = ExtResource("1_xl0dv")
+category = 0
+power = 80
+accuracy = 75
+total_pp = 20
+description = "The target is slammed with a long tail, vines, etc., to inflict damage."
+id = &"SLAM"
+display_name = "Slam"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

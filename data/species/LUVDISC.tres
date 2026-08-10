@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nyicq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_iyroj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_81xmq"]
+
+[sub_resource type="Resource" id="Resource_4sg3s"]
+script = ExtResource("2_iyroj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_jqkt3"]
+script = ExtResource("2_iyroj")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_cnrev"]
+script = ExtResource("2_iyroj")
+level = 4
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_q8lku"]
+script = ExtResource("2_iyroj")
+level = 7
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_16wr4"]
+script = ExtResource("2_iyroj")
+level = 9
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_skw5d"]
+script = ExtResource("2_iyroj")
+level = 13
+move = &"TEARFULLOOK"
+
+[sub_resource type="Resource" id="Resource_x3cn1"]
+script = ExtResource("2_iyroj")
+level = 17
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_n0hf1"]
+script = ExtResource("2_iyroj")
+level = 20
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_y4fv5"]
+script = ExtResource("2_iyroj")
+level = 22
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_6ab8y"]
+script = ExtResource("2_iyroj")
+level = 26
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_lg8xa"]
+script = ExtResource("2_iyroj")
+level = 31
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_e74dc"]
+script = ExtResource("2_iyroj")
+level = 34
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_fdjiu"]
+script = ExtResource("2_iyroj")
+level = 37
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_h8hgd"]
+script = ExtResource("2_iyroj")
+level = 40
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_ixcu7"]
+script = ExtResource("2_iyroj")
+level = 42
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_4wnun"]
+script = ExtResource("2_iyroj")
+level = 46
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_yudfg"]
+script = ExtResource("2_iyroj")
+level = 49
+move = &"SAFEGUARD"
+
+[resource]
+resource_name = "LUVDISC"
+script = ExtResource("3_81xmq")
+species = &"LUVDISC"
+category = "Rendezvous"
+pokedex_entry = "Luvdisc make the branches of Corsola their nests. There is a custom from long ago of giving a Luvdisc as a gift to express one's feelings of love."
+types = Array[StringName]([&"WATER"])
+base_hp = 43
+base_attack = 30
+base_defense = 55
+base_special_attack = 40
+base_special_defense = 65
+base_speed = 97
+ev_speed = 1
+base_exp = 116
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_iyroj")]([SubResource("Resource_4sg3s"), SubResource("Resource_jqkt3"), SubResource("Resource_cnrev"), SubResource("Resource_q8lku"), SubResource("Resource_16wr4"), SubResource("Resource_skw5d"), SubResource("Resource_x3cn1"), SubResource("Resource_n0hf1"), SubResource("Resource_y4fv5"), SubResource("Resource_6ab8y"), SubResource("Resource_lg8xa"), SubResource("Resource_e74dc"), SubResource("Resource_fdjiu"), SubResource("Resource_h8hgd"), SubResource("Resource_ixcu7"), SubResource("Resource_4wnun"), SubResource("Resource_yudfg")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AQUAJET", &"AQUARING", &"ENTRAINMENT", &"HEALPULSE", &"SPLASH", &"SUPERSONIC"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+wild_item_common = Array[StringName]([&"HEARTSCALE"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+height = 6
+weight = 87
+color = &"Pink"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 23)
+shadow_size = 1
+id = &"LUVDISC"
+display_name = "Luvdisc"

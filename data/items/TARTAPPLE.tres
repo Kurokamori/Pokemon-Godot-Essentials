@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_oqgf7"]
+
+[resource]
+resource_name = "TARTAPPLE"
+script = ExtResource("1_oqgf7")
+name_plural = "Tart Apples"
+price = 2200
+sell_price = 1100
+bp_price = 5
+field_use = 1
+description = "A peculiar apple that can make a certain species of Pokémon evolve. It's exceptionally tart."
+id = &"TARTAPPLE"
+display_name = "Tart Apple"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_30"])

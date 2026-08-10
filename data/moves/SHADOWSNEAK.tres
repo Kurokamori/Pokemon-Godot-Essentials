@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yq6pk"]
+
+[resource]
+resource_name = "SHADOWSNEAK"
+script = ExtResource("1_yq6pk")
+type = &"GHOST"
+category = 0
+power = 40
+total_pp = 30
+priority = 1
+description = "The user extends its shadow and attacks the target from behind. This move always goes first."
+id = &"SHADOWSNEAK"
+display_name = "Shadow Sneak"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_47yb6"]
+
+[resource]
+resource_name = "YAWN"
+script = ExtResource("1_47yb6")
+accuracy = 0
+total_pp = 10
+function_code = &"SleepTargetNextTurn"
+description = "The user lets loose a huge yawn that lulls the target into falling asleep on the next turn."
+id = &"YAWN"
+display_name = "Yawn"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

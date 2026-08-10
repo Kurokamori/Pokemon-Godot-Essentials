@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_f3xdo"]
+
+[resource]
+resource_name = "BOLTSTRIKE"
+script = ExtResource("1_f3xdo")
+type = &"ELECTRIC"
+category = 0
+power = 130
+accuracy = 85
+function_code = &"ParalyzeTarget"
+effect_chance = 20
+description = "The user charges at its foe, surrounding itself with lightning. It may also leave the target paralyzed."
+id = &"BOLTSTRIKE"
+display_name = "Bolt Strike"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

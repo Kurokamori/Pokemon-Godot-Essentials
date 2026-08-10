@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_wsuls"]
+
+[resource]
+resource_name = "WRAP"
+script = ExtResource("1_wsuls")
+category = 0
+power = 15
+accuracy = 90
+total_pp = 20
+function_code = &"BindTarget"
+description = "A long body or vines are used to wrap and squeeze the target for four to five turns."
+id = &"WRAP"
+display_name = "Wrap"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

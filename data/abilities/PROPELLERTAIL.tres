@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_fa3s0"]
+
+[resource]
+resource_name = "PROPELLERTAIL"
+script = ExtResource("1_fa3s0")
+description = "This Pokémon's moves cannot be redirected."
+id = &"PROPELLERTAIL"
+display_name = "Propeller Tail"

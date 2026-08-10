@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://big2y4by5xhol"
+path="res://.godot/imported/Voltorb Flip explosion.ogg-7aa2287a158f61162f9e87898963bc2a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Voltorb Flip explosion.ogg"
+dest_files=["res://.godot/imported/Voltorb Flip explosion.ogg-7aa2287a158f61162f9e87898963bc2a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

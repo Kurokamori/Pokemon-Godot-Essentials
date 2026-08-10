@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3dnp5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lxjid"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_b8t4d"]
+
+[sub_resource type="Resource" id="Resource_c4ypr"]
+script = ExtResource("1_3dnp5")
+species = &"TORRACAT"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6iwvh"]
+script = ExtResource("2_lxjid")
+level = 0
+move = &"DARKESTLARIAT"
+
+[sub_resource type="Resource" id="Resource_8ma5j"]
+script = ExtResource("2_lxjid")
+move = &"CROSSCHOP"
+
+[sub_resource type="Resource" id="Resource_16a61"]
+script = ExtResource("2_lxjid")
+move = &"THROATCHOP"
+
+[sub_resource type="Resource" id="Resource_ghc6a"]
+script = ExtResource("2_lxjid")
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_0hyl4"]
+script = ExtResource("2_lxjid")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_0mh2k"]
+script = ExtResource("2_lxjid")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_ek7kk"]
+script = ExtResource("2_lxjid")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_h84wv"]
+script = ExtResource("2_lxjid")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_epy5s"]
+script = ExtResource("2_lxjid")
+level = 9
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_6qj0b"]
+script = ExtResource("2_lxjid")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_j5y0u"]
+script = ExtResource("2_lxjid")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_cfobx"]
+script = ExtResource("2_lxjid")
+level = 20
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_3hxuk"]
+script = ExtResource("2_lxjid")
+level = 25
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_65ik8"]
+script = ExtResource("2_lxjid")
+level = 30
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_7t2o0"]
+script = ExtResource("2_lxjid")
+level = 32
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_iub24"]
+script = ExtResource("2_lxjid")
+level = 44
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_8304l"]
+script = ExtResource("2_lxjid")
+level = 51
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_8vpie"]
+script = ExtResource("2_lxjid")
+level = 58
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "INCINEROAR"
+script = ExtResource("3_b8t4d")
+species = &"INCINEROAR"
+category = "Heel"
+pokedex_entry = "Although it's rough mannered and egotistical, it finds beating down unworthy opponents boring. It gets motivated for stronger opponents."
+types = Array[StringName]([&"FIRE", &"DARK"])
+base_hp = 95
+base_attack = 115
+base_defense = 90
+base_special_attack = 80
+base_special_defense = 90
+base_speed = 60
+ev_attack = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lxjid")]([SubResource("Resource_6iwvh"), SubResource("Resource_8ma5j"), SubResource("Resource_16a61"), SubResource("Resource_ghc6a"), SubResource("Resource_0hyl4"), SubResource("Resource_0mh2k"), SubResource("Resource_ek7kk"), SubResource("Resource_h84wv"), SubResource("Resource_epy5s"), SubResource("Resource_6qj0b"), SubResource("Resource_j5y0u"), SubResource("Resource_cfobx"), SubResource("Resource_3hxuk"), SubResource("Resource_65ik8"), SubResource("Resource_7t2o0"), SubResource("Resource_iub24"), SubResource("Resource_8304l"), SubResource("Resource_8vpie")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ASSURANCE", &"ATTRACT", &"BIND", &"BLASTBURN", &"BLAZEKICK", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"COVET", &"CRUNCH", &"DARKESTLARIAT", &"DARKPULSE", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"EMBARGO", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPLEDGE", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEATCRASH", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"IRONHEAD", &"KNOCKOFF", &"LASHOUT", &"LEECHLIFE", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PAYDAY", &"PROTECT", &"QUASH", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROUND", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THROATCHOP", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"UTURN", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"INTIMIDATE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_3dnp5")]([SubResource("Resource_c4ypr")])
+height = 18
+weight = 830
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 10)
+shadow_size = 3
+id = &"INCINEROAR"
+display_name = "Incineroar"

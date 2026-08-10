@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_7hqmv"]
+
+[resource]
+resource_name = "IMPOSTER"
+script = ExtResource("1_7hqmv")
+description = "It transforms itself into the Pokémon it is facing."
+id = &"IMPOSTER"
+display_name = "Imposter"

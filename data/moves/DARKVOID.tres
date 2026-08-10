@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vpyfv"]
+
+[resource]
+resource_name = "DARKVOID"
+script = ExtResource("1_vpyfv")
+type = &"DARK"
+accuracy = 50
+total_pp = 10
+target = &"AllNearFoes"
+function_code = &"SleepTargetIfUserDarkrai"
+description = "Opposing Pokémon are dragged into a world of total darkness that makes them sleep."
+id = &"DARKVOID"
+display_name = "Dark Void"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

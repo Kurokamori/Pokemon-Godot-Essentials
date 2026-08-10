@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0w2ro"]
+
+[resource]
+resource_name = "SACREDFIRE"
+script = ExtResource("1_0w2ro")
+type = &"FIRE"
+category = 0
+power = 100
+accuracy = 95
+function_code = &"BurnTarget"
+effect_chance = 50
+description = "The target is razed with a mystical fire of great intensity. It may also leave the target with a burn."
+id = &"SACREDFIRE"
+display_name = "Sacred Fire"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"ThawsUser"])

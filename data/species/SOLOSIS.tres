@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_g1ai5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_248mc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xcinl"]
+
+[sub_resource type="Resource" id="Resource_0ppiu"]
+script = ExtResource("1_g1ai5")
+species = &"DUOSION"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_g0tvt"]
+script = ExtResource("2_248mc")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_iuhmf"]
+script = ExtResource("2_248mc")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_er2jt"]
+script = ExtResource("2_248mc")
+level = 4
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_6s86o"]
+script = ExtResource("2_248mc")
+level = 8
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_xfe8d"]
+script = ExtResource("2_248mc")
+level = 12
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_27gxo"]
+script = ExtResource("2_248mc")
+level = 16
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_j1ynr"]
+script = ExtResource("2_248mc")
+level = 20
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_a4wje"]
+script = ExtResource("2_248mc")
+level = 24
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_a7l1p"]
+script = ExtResource("2_248mc")
+level = 24
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_me2xd"]
+script = ExtResource("2_248mc")
+level = 28
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_ilr5x"]
+script = ExtResource("2_248mc")
+level = 33
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_pljrp"]
+script = ExtResource("2_248mc")
+level = 36
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_yybtt"]
+script = ExtResource("2_248mc")
+level = 40
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_p8260"]
+script = ExtResource("2_248mc")
+level = 44
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_khqv3"]
+script = ExtResource("2_248mc")
+level = 48
+move = &"WONDERROOM"
+
+[resource]
+resource_name = "SOLOSIS"
+script = ExtResource("3_xcinl")
+species = &"SOLOSIS"
+category = "Cell"
+pokedex_entry = "Because their bodies are enveloped in a special liquid, they can survive in any environment."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 45
+base_attack = 30
+base_defense = 40
+base_special_attack = 105
+base_special_defense = 50
+base_speed = 20
+ev_special_attack = 1
+base_exp = 58
+growth_rate = &"Parabolic"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_248mc")]([SubResource("Resource_g0tvt"), SubResource("Resource_iuhmf"), SubResource("Resource_er2jt"), SubResource("Resource_6s86o"), SubResource("Resource_xfe8d"), SubResource("Resource_27gxo"), SubResource("Resource_j1ynr"), SubResource("Resource_a4wje"), SubResource("Resource_a7l1p"), SubResource("Resource_me2xd"), SubResource("Resource_ilr5x"), SubResource("Resource_pljrp"), SubResource("Resource_yybtt"), SubResource("Resource_p8260"), SubResource("Resource_khqv3")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"FUTURESIGHT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HELPINGHAND", &"HIDDENPOWER", &"IMPRISON", &"INFESTATION", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STEELROLLER", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ACIDARMOR", &"ASTONISH", &"CONFUSERAY"])
+abilities = Array[StringName]([&"OVERCOAT", &"MAGICGUARD"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_g1ai5")]([SubResource("Resource_0ppiu")])
+height = 3
+weight = 10
+color = &"Green"
+generation = 5
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 14)
+shadow_size = 1
+id = &"SOLOSIS"
+display_name = "Solosis"

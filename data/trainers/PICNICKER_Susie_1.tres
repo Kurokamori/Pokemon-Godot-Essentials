@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_ofbrq"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_nimft"]
+
+[sub_resource type="Resource" id="Resource_m7weg"]
+script = ExtResource("1_ofbrq")
+species = &"PERSIAN"
+level = 32
+
+[resource]
+resource_name = "PICNICKER|Susie|1"
+script = ExtResource("2_nimft")
+trainer_type = &"PICNICKER"
+version = 1
+lose_text = "Defeated! Oh my!"
+pokemon = Array[ExtResource("1_ofbrq")]([SubResource("Resource_m7weg")])
+id = &"PICNICKER|Susie|1"
+display_name = "Susie"

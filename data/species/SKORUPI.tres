@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ygabv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ev8jx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ak1q2"]
+
+[sub_resource type="Resource" id="Resource_dsg8a"]
+script = ExtResource("1_ygabv")
+species = &"DRAPION"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_5452l"]
+script = ExtResource("2_ev8jx")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_wjaij"]
+script = ExtResource("2_ev8jx")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_sy4rk"]
+script = ExtResource("2_ev8jx")
+level = 3
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_kiugg"]
+script = ExtResource("2_ev8jx")
+level = 6
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_3y5ay"]
+script = ExtResource("2_ev8jx")
+level = 9
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_oxb1o"]
+script = ExtResource("2_ev8jx")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ngk43"]
+script = ExtResource("2_ev8jx")
+level = 15
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_023kc"]
+script = ExtResource("2_ev8jx")
+level = 18
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_x8d0e"]
+script = ExtResource("2_ev8jx")
+level = 21
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_smxll"]
+script = ExtResource("2_ev8jx")
+level = 24
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_bd6xw"]
+script = ExtResource("2_ev8jx")
+level = 27
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_se3ol"]
+script = ExtResource("2_ev8jx")
+level = 30
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_bvv0o"]
+script = ExtResource("2_ev8jx")
+level = 33
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_12ol3"]
+script = ExtResource("2_ev8jx")
+level = 36
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_eb3ha"]
+script = ExtResource("2_ev8jx")
+level = 39
+move = &"CROSSPOISON"
+
+[sub_resource type="Resource" id="Resource_wkt6r"]
+script = ExtResource("2_ev8jx")
+level = 42
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_haoqp"]
+script = ExtResource("2_ev8jx")
+level = 45
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_1fhwk"]
+script = ExtResource("2_ev8jx")
+level = 48
+move = &"CRUNCH"
+
+[resource]
+resource_name = "SKORUPI"
+script = ExtResource("3_ak1q2")
+species = &"SKORUPI"
+category = "Scorpion"
+pokedex_entry = "It grips prey with its tail claws and injects poison. It tenaciously hangs on until the poison takes."
+types = Array[StringName]([&"POISON", &"BUG"])
+base_hp = 40
+base_attack = 50
+base_defense = 90
+base_special_attack = 30
+base_special_defense = 55
+base_speed = 65
+ev_defense = 1
+base_exp = 66
+growth_rate = &"Slow"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ev8jx")]([SubResource("Resource_5452l"), SubResource("Resource_wjaij"), SubResource("Resource_sy4rk"), SubResource("Resource_kiugg"), SubResource("Resource_3y5ay"), SubResource("Resource_oxb1o"), SubResource("Resource_ngk43"), SubResource("Resource_023kc"), SubResource("Resource_x8d0e"), SubResource("Resource_smxll"), SubResource("Resource_bd6xw"), SubResource("Resource_se3ol"), SubResource("Resource_bvv0o"), SubResource("Resource_12ol3"), SubResource("Resource_eb3ha"), SubResource("Resource_wkt6r"), SubResource("Resource_haoqp"), SubResource("Resource_1fhwk")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BRICKBREAK", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"CRUNCH", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASH", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"INFESTATION", &"IRONTAIL", &"KNOCKOFF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"TOXICSPIKES", &"VENOSHOCK", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"AGILITY", &"CONFUSERAY", &"NIGHTSLASH", &"POISONTAIL", &"SANDATTACK", &"SCREECH", &"SLASH", &"WHIRLWIND"])
+abilities = Array[StringName]([&"BATTLEARMOR", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"KEENEYE"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Bug", &"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ygabv")]([SubResource("Resource_dsg8a")])
+height = 8
+weight = 120
+color = &"Purple"
+shape = &"Insectoid"
+generation = 4
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(2, 28)
+shadow_size = 1
+id = &"SKORUPI"
+display_name = "Skorupi"

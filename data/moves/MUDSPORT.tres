@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ppg5q"]
+
+[resource]
+resource_name = "MUDSPORT"
+script = ExtResource("1_ppg5q")
+type = &"GROUND"
+accuracy = 0
+total_pp = 15
+target = &"BothSides"
+function_code = &"StartWeakenElectricMoves"
+description = "The user covers itself with mud. It weakens Electric-type moves while the user is in the battle."
+id = &"MUDSPORT"
+display_name = "Mud Sport"

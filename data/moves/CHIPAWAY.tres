@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yyuio"]
+
+[resource]
+resource_name = "CHIPAWAY"
+script = ExtResource("1_yyuio")
+category = 0
+power = 70
+total_pp = 20
+function_code = &"IgnoreTargetDefSpDefEvaStatStages"
+description = "Seeking an opening, the user strikes continually. The foe's stat changes don't affect the damage."
+id = &"CHIPAWAY"
+display_name = "Chip Away"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

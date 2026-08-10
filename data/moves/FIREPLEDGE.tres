@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0u06x"]
+
+[resource]
+resource_name = "FIREPLEDGE"
+script = ExtResource("1_0u06x")
+type = &"FIRE"
+category = 1
+power = 80
+total_pp = 10
+function_code = &"FirePledge"
+description = "A column of fire hits opposing Pokémon. When used with its Grass equivalent, it makes a sea of fire."
+id = &"FIREPLEDGE"
+display_name = "Fire Pledge"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

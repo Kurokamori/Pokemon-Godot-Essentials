@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_b4ay4"]
+
+[resource]
+script = ExtResource("1_b4ay4")
+category = &"tilesets"
+record_script = "res://src/data/tileset_data.gd"
+paths = {
+&"1": "res://data/tilesets/tileset_001.tres",
+&"10": "res://data/tilesets/tileset_010.tres",
+&"11": "res://data/tilesets/tileset_011.tres",
+&"12": "res://data/tilesets/tileset_012.tres",
+&"13": "res://data/tilesets/tileset_013.tres",
+&"14": "res://data/tilesets/tileset_014.tres",
+&"15": "res://data/tilesets/tileset_015.tres",
+&"16": "res://data/tilesets/tileset_016.tres",
+&"17": "res://data/tilesets/tileset_017.tres",
+&"18": "res://data/tilesets/tileset_018.tres",
+&"19": "res://data/tilesets/tileset_019.tres",
+&"2": "res://data/tilesets/tileset_002.tres",
+&"20": "res://data/tilesets/tileset_020.tres",
+&"21": "res://data/tilesets/tileset_021.tres",
+&"22": "res://data/tilesets/tileset_022.tres",
+&"23": "res://data/tilesets/tileset_023.tres",
+&"24": "res://data/tilesets/tileset_024.tres",
+&"25": "res://data/tilesets/tileset_025.tres",
+&"3": "res://data/tilesets/tileset_003.tres",
+&"4": "res://data/tilesets/tileset_004.tres",
+&"5": "res://data/tilesets/tileset_005.tres",
+&"6": "res://data/tilesets/tileset_006.tres",
+&"7": "res://data/tilesets/tileset_007.tres",
+&"8": "res://data/tilesets/tileset_008.tres",
+&"9": "res://data/tilesets/tileset_009.tres"
+}
+ordered_ids = Array[StringName]([&"1", &"2", &"3", &"4", &"5", &"6", &"7", &"8", &"9", &"10", &"11", &"12", &"13", &"14", &"15", &"16", &"17", &"18", &"19", &"20", &"21", &"22", &"23", &"24", &"25"])

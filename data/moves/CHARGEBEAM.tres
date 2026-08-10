@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qhus4"]
+
+[resource]
+resource_name = "CHARGEBEAM"
+script = ExtResource("1_qhus4")
+type = &"ELECTRIC"
+category = 1
+power = 50
+accuracy = 90
+total_pp = 10
+function_code = &"RaiseUserSpAtk1"
+effect_chance = 70
+description = "The user fires a concentrated bundle of electricity. It may also raise the user's Sp. Atk stat."
+id = &"CHARGEBEAM"
+display_name = "Charge Beam"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

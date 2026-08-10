@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qiqpe"]
+
+[resource]
+resource_name = "DIG"
+script = ExtResource("1_qiqpe")
+type = &"GROUND"
+category = 0
+power = 80
+total_pp = 10
+function_code = &"TwoTurnAttackInvulnerableUnderground"
+description = "The user burrows, then attacks on the second turn. It can also be used to exit dungeons."
+id = &"DIG"
+display_name = "Dig"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

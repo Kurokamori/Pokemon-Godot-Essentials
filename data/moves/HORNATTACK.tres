@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_en851"]
+
+[resource]
+resource_name = "HORNATTACK"
+script = ExtResource("1_en851")
+category = 0
+power = 65
+total_pp = 25
+description = "The target is jabbed with a sharply pointed horn to inflict damage."
+id = &"HORNATTACK"
+display_name = "Horn Attack"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

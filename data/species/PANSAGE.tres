@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_64ppu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rya6g"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fcytn"]
+
+[sub_resource type="Resource" id="Resource_o1kuy"]
+script = ExtResource("1_64ppu")
+species = &"SIMISAGE"
+method = &"Item"
+parameter = "LEAFSTONE"
+
+[sub_resource type="Resource" id="Resource_bp7xv"]
+script = ExtResource("2_rya6g")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_qtb24"]
+script = ExtResource("2_rya6g")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_x3oxd"]
+script = ExtResource("2_rya6g")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_4pn48"]
+script = ExtResource("2_rya6g")
+level = 7
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_245mc"]
+script = ExtResource("2_rya6g")
+level = 10
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_xhtyi"]
+script = ExtResource("2_rya6g")
+level = 13
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_7y4ty"]
+script = ExtResource("2_rya6g")
+level = 16
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_1ekj3"]
+script = ExtResource("2_rya6g")
+level = 19
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_8c0q3"]
+script = ExtResource("2_rya6g")
+level = 22
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_53k48"]
+script = ExtResource("2_rya6g")
+level = 25
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_u3brs"]
+script = ExtResource("2_rya6g")
+level = 28
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_hwbmk"]
+script = ExtResource("2_rya6g")
+level = 31
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_dviqg"]
+script = ExtResource("2_rya6g")
+level = 34
+move = &"GRASSKNOT"
+
+[sub_resource type="Resource" id="Resource_okh1v"]
+script = ExtResource("2_rya6g")
+level = 37
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_tniin"]
+script = ExtResource("2_rya6g")
+level = 40
+move = &"NATURALGIFT"
+
+[sub_resource type="Resource" id="Resource_uwos8"]
+script = ExtResource("2_rya6g")
+level = 43
+move = &"CRUNCH"
+
+[resource]
+resource_name = "PANSAGE"
+script = ExtResource("3_fcytn")
+species = &"PANSAGE"
+category = "Grass Monkey"
+pokedex_entry = "It shares the leaf on its head with weary-looking Pokémon. These leaves are known to relieve stress."
+types = Array[StringName]([&"GRASS"])
+base_hp = 50
+base_attack = 53
+base_defense = 48
+base_special_attack = 53
+base_special_defense = 48
+base_speed = 64
+ev_speed = 1
+base_exp = 63
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rya6g")]([SubResource("Resource_bp7xv"), SubResource("Resource_qtb24"), SubResource("Resource_x3oxd"), SubResource("Resource_4pn48"), SubResource("Resource_245mc"), SubResource("Resource_xhtyi"), SubResource("Resource_7y4ty"), SubResource("Resource_1ekj3"), SubResource("Resource_8c0q3"), SubResource("Resource_53k48"), SubResource("Resource_u3brs"), SubResource("Resource_hwbmk"), SubResource("Resource_dviqg"), SubResource("Resource_okh1v"), SubResource("Resource_tniin"), SubResource("Resource_uwos8")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"IRONTAIL", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"WORKUP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"ASTONISH", &"BULLETSEED", &"COVET", &"DISARMINGVOICE", &"GRASSWHISTLE", &"LEAFSTORM", &"LOWKICK", &"MAGICALLEAF", &"NASTYPLOT", &"ROLEPLAY", &"SPIKYSHIELD", &"TICKLE"])
+abilities = Array[StringName]([&"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"OVERGROW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_64ppu")]([SubResource("Resource_o1kuy")])
+height = 6
+weight = 105
+color = &"Green"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(6, 30)
+shadow_size = 1
+id = &"PANSAGE"
+display_name = "Pansage"

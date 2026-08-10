@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_kr3te"]
+
+[resource]
+resource_name = "LOWSWEEP"
+script = ExtResource("1_kr3te")
+type = &"FIGHTING"
+category = 0
+power = 65
+total_pp = 20
+function_code = &"LowerTargetSpeed1"
+effect_chance = 100
+description = "The user attacks the target's legs swiftly, reducing the target's Speed stat."
+id = &"LOWSWEEP"
+display_name = "Low Sweep"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

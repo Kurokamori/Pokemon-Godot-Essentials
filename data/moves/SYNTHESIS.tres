@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tv0uy"]
+
+[resource]
+resource_name = "SYNTHESIS"
+script = ExtResource("1_tv0uy")
+type = &"GRASS"
+accuracy = 0
+target = &"User"
+function_code = &"HealUserDependingOnWeather"
+description = "The user restores its own HP. The amount of HP regained varies with the weather."
+id = &"SYNTHESIS"
+display_name = "Synthesis"

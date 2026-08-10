@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EnvironmentData" format=3]
+
+[ext_resource type="Script" path="res://src/data/environment_data.gd" id="1_lcsa4"]
+
+[resource]
+resource_name = "TallGrass"
+script = ExtResource("1_lcsa4")
+battle_base = "grass"
+id = &"TallGrass"
+display_name = "Tall grass"

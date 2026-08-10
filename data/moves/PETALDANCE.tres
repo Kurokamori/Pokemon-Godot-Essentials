@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_pvsh5"]
+
+[resource]
+resource_name = "PETALDANCE"
+script = ExtResource("1_pvsh5")
+type = &"GRASS"
+category = 1
+power = 120
+total_pp = 10
+target = &"RandomNearFoe"
+function_code = &"MultiTurnAttackConfuseUserAtEnd"
+description = "The user attacks by scattering petals for two to three turns. The user then becomes confused."
+id = &"PETALDANCE"
+display_name = "Petal Dance"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Dance"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_qc266"]
+
+[resource]
+resource_name = "ABILITYPATCH"
+script = ExtResource("1_qc266")
+name_plural = "Ability Patches"
+pocket = 2
+price = 10000
+sell_price = 5000
+bp_price = 200
+field_use = 1
+description = "A patch that allows a Pokémon with a regular Ability to have a rare Ability."
+id = &"ABILITYPATCH"
+display_name = "Ability Patch"

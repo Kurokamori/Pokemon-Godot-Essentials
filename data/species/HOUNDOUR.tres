@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_a3bcf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fyrv2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ktdht"]
+
+[sub_resource type="Resource" id="Resource_g3soh"]
+script = ExtResource("1_a3bcf")
+species = &"HOUNDOOM"
+method = &"Level"
+parameter = "24"
+
+[sub_resource type="Resource" id="Resource_8n7np"]
+script = ExtResource("2_fyrv2")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_a7geg"]
+script = ExtResource("2_fyrv2")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_ouf3t"]
+script = ExtResource("2_fyrv2")
+level = 4
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_hcwko"]
+script = ExtResource("2_fyrv2")
+level = 8
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_o5id5"]
+script = ExtResource("2_fyrv2")
+level = 13
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_emy1g"]
+script = ExtResource("2_fyrv2")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_tgyt4"]
+script = ExtResource("2_fyrv2")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_luemn"]
+script = ExtResource("2_fyrv2")
+level = 25
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_amldt"]
+script = ExtResource("2_fyrv2")
+level = 28
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_olpd6"]
+script = ExtResource("2_fyrv2")
+level = 32
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_oykjr"]
+script = ExtResource("2_fyrv2")
+level = 37
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_ovj61"]
+script = ExtResource("2_fyrv2")
+level = 40
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_4723y"]
+script = ExtResource("2_fyrv2")
+level = 44
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_vgbvi"]
+script = ExtResource("2_fyrv2")
+level = 49
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_f0lk6"]
+script = ExtResource("2_fyrv2")
+level = 52
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_nsy0k"]
+script = ExtResource("2_fyrv2")
+level = 56
+move = &"INFERNO"
+
+[resource]
+resource_name = "HOUNDOUR"
+script = ExtResource("3_ktdht")
+species = &"HOUNDOUR"
+category = "Dark"
+pokedex_entry = "Houndour communicate with each other using a variety of cries to corner their prey. This Pokémon's remarkable teamwork is simply unparalleled."
+types = Array[StringName]([&"DARK", &"FIRE"])
+base_hp = 45
+base_attack = 60
+base_defense = 30
+base_special_attack = 80
+base_special_defense = 50
+base_speed = 65
+ev_special_attack = 1
+base_exp = 66
+growth_rate = &"Slow"
+catch_rate = 120
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_fyrv2")]([SubResource("Resource_8n7np"), SubResource("Resource_a7geg"), SubResource("Resource_ouf3t"), SubResource("Resource_hcwko"), SubResource("Resource_o5id5"), SubResource("Resource_emy1g"), SubResource("Resource_tgyt4"), SubResource("Resource_luemn"), SubResource("Resource_amldt"), SubResource("Resource_olpd6"), SubResource("Resource_oykjr"), SubResource("Resource_ovj61"), SubResource("Resource_4723y"), SubResource("Resource_vgbvi"), SubResource("Resource_f0lk6"), SubResource("Resource_nsy0k")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FOULPLAY", &"FRUSTRATION", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERVOICE", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"TORMENT", &"UPROAR", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"BEATUP", &"COUNTER", &"DESTINYBOND", &"FEINT", &"FIREFANG", &"FIRESPIN", &"REVERSAL", &"SPITE", &"SUCKERPUNCH", &"THUNDERFANG"])
+abilities = Array[StringName]([&"EARLYBIRD", &"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_a3bcf")]([SubResource("Resource_g3soh")])
+height = 6
+weight = 108
+color = &"Black"
+shape = &"Quadruped"
+habitat = &"RoughTerrain"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 30)
+shadow_size = 1
+id = &"HOUNDOUR"
+display_name = "Houndour"

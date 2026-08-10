@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_hlcov"]
+
+[resource]
+resource_name = "MACHPUNCH"
+script = ExtResource("1_hlcov")
+type = &"FIGHTING"
+category = 0
+power = 40
+total_pp = 30
+priority = 1
+description = "The user throws a punch at blinding speed. It is certain to strike first."
+id = &"MACHPUNCH"
+display_name = "Mach Punch"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Punching"])

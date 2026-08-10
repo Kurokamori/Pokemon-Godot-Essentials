@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_evpya"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4m0kd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_b0nem"]
+
+[sub_resource type="Resource" id="Resource_bwwyn"]
+script = ExtResource("1_evpya")
+species = &"GUMSHOOS"
+method = &"LevelDay"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_ys380"]
+script = ExtResource("2_4m0kd")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ljukb"]
+script = ExtResource("2_4m0kd")
+level = 3
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_7251e"]
+script = ExtResource("2_4m0kd")
+level = 7
+move = &"PURSUIT"
+
+[sub_resource type="Resource" id="Resource_sphta"]
+script = ExtResource("2_4m0kd")
+level = 10
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_xst05"]
+script = ExtResource("2_4m0kd")
+level = 13
+move = &"ODORSLEUTH"
+
+[sub_resource type="Resource" id="Resource_jbrbn"]
+script = ExtResource("2_4m0kd")
+level = 16
+move = &"BIDE"
+
+[sub_resource type="Resource" id="Resource_uv15l"]
+script = ExtResource("2_4m0kd")
+level = 19
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_5fcw1"]
+script = ExtResource("2_4m0kd")
+level = 22
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_8444a"]
+script = ExtResource("2_4m0kd")
+level = 25
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_f3iuw"]
+script = ExtResource("2_4m0kd")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_hwrlt"]
+script = ExtResource("2_4m0kd")
+level = 31
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_cxex3"]
+script = ExtResource("2_4m0kd")
+level = 34
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ximd6"]
+script = ExtResource("2_4m0kd")
+level = 37
+move = &"HYPERFANG"
+
+[sub_resource type="Resource" id="Resource_pfida"]
+script = ExtResource("2_4m0kd")
+level = 40
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_238go"]
+script = ExtResource("2_4m0kd")
+level = 43
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_cnjms"]
+script = ExtResource("2_4m0kd")
+level = 46
+move = &"REST"
+
+[resource]
+resource_name = "YUNGOOS"
+script = ExtResource("3_b0nem")
+species = &"YUNGOOS"
+category = "Loitering"
+pokedex_entry = "Its stomach takes up most of its long torso. It's a big eater, so the amount Trainers have to spend on its food is no laughing matter."
+base_hp = 48
+base_attack = 70
+base_defense = 30
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 45
+ev_attack = 1
+base_exp = 51
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4m0kd")]([SubResource("Resource_ys380"), SubResource("Resource_ljukb"), SubResource("Resource_7251e"), SubResource("Resource_sphta"), SubResource("Resource_xst05"), SubResource("Resource_jbrbn"), SubResource("Resource_uv15l"), SubResource("Resource_5fcw1"), SubResource("Resource_8444a"), SubResource("Resource_f3iuw"), SubResource("Resource_hwrlt"), SubResource("Resource_cxex3"), SubResource("Resource_ximd6"), SubResource("Resource_pfida"), SubResource("Resource_238go"), SubResource("Resource_cnjms")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"FIREFANG", &"ICEFANG", &"LASTRESORT", &"REVENGE", &"THUNDERFANG"])
+abilities = Array[StringName]([&"STAKEOUT", &"STRONGJAW"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+wild_item_uncommon = Array[StringName]([&"PECHABERRY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_evpya")]([SubResource("Resource_bwwyn")])
+height = 4
+weight = 60
+color = &"Brown"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(2, 33)
+id = &"YUNGOOS"
+display_name = "Yungoos"

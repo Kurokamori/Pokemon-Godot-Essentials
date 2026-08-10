@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_fu1vh"]
+
+[resource]
+resource_name = "SINNOHBEAUTYHYPER"
+script = ExtResource("1_fu1vh")
+icon_position = 26
+description = "Super Contest Beauty Category Ultra Rank winner!"
+id = &"SINNOHBEAUTYHYPER"
+display_name = "Beauty Ribbon Ultra"

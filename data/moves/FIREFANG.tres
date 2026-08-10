@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5natm"]
+
+[resource]
+resource_name = "FIREFANG"
+script = ExtResource("1_5natm")
+type = &"FIRE"
+category = 0
+power = 65
+accuracy = 95
+total_pp = 15
+function_code = &"BurnFlinchTarget"
+effect_chance = 101
+description = "The user bites with flame-cloaked fangs. It may also make the target flinch or leave it burned."
+id = &"FIREFANG"
+display_name = "Fire Fang"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Biting"])

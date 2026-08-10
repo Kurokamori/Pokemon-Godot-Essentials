@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_34hlq"]
+
+[resource]
+resource_name = "DANCER"
+script = ExtResource("1_34hlq")
+description = "Repeats another Pokémon's dance move immediately."
+id = &"DANCER"
+display_name = "Dancer"

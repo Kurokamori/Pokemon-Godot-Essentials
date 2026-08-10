@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3u3t8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b53lg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cxr0r"]
+
+[sub_resource type="Resource" id="Resource_xp6s8"]
+script = ExtResource("1_3u3t8")
+species = &"SPRITZEE"
+method = &"TradeItem"
+parameter = "SACHET"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_10ctp"]
+script = ExtResource("2_b53lg")
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_ghmdn"]
+script = ExtResource("2_b53lg")
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_ye8mq"]
+script = ExtResource("2_b53lg")
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_d1kmu"]
+script = ExtResource("2_b53lg")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_mi883"]
+script = ExtResource("2_b53lg")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_m824h"]
+script = ExtResource("2_b53lg")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_26png"]
+script = ExtResource("2_b53lg")
+level = 9
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_48fxv"]
+script = ExtResource("2_b53lg")
+level = 12
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_qrnkb"]
+script = ExtResource("2_b53lg")
+level = 15
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_adc5p"]
+script = ExtResource("2_b53lg")
+level = 18
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_ulqay"]
+script = ExtResource("2_b53lg")
+level = 21
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_do03q"]
+script = ExtResource("2_b53lg")
+level = 24
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_lfsqy"]
+script = ExtResource("2_b53lg")
+level = 27
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_gmgwr"]
+script = ExtResource("2_b53lg")
+level = 30
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_eoqm7"]
+script = ExtResource("2_b53lg")
+level = 33
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_a41q6"]
+script = ExtResource("2_b53lg")
+level = 36
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_spadw"]
+script = ExtResource("2_b53lg")
+level = 39
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_da7dt"]
+script = ExtResource("2_b53lg")
+level = 42
+move = &"PSYCHUP"
+
+[resource]
+resource_name = "AROMATISSE"
+script = ExtResource("3_cxr0r")
+species = &"AROMATISSE"
+category = "Fragrance"
+pokedex_entry = "It devises various scents, pleasant and unpleasant, and emits scents that its enemies dislike in order to gain an edge in battle."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 101
+base_attack = 72
+base_defense = 72
+base_special_attack = 99
+base_special_defense = 89
+base_speed = 29
+ev_hp = 2
+base_exp = 162
+catch_rate = 140
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b53lg")]([SubResource("Resource_10ctp"), SubResource("Resource_ghmdn"), SubResource("Resource_ye8mq"), SubResource("Resource_d1kmu"), SubResource("Resource_mi883"), SubResource("Resource_m824h"), SubResource("Resource_26png"), SubResource("Resource_48fxv"), SubResource("Resource_qrnkb"), SubResource("Resource_adc5p"), SubResource("Resource_ulqay"), SubResource("Resource_do03q"), SubResource("Resource_lfsqy"), SubResource("Resource_gmgwr"), SubResource("Resource_eoqm7"), SubResource("Resource_a41q6"), SubResource("Resource_spadw"), SubResource("Resource_da7dt")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"ECHOEDVOICE", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MAGICCOAT", &"METRONOME", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"NASTYPLOT", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"TOXIC", &"TRICKROOM"])
+abilities = Array[StringName]([&"HEALER"])
+hidden_abilities = Array[StringName]([&"AROMAVEIL"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_3u3t8")]([SubResource("Resource_xp6s8")])
+height = 8
+weight = 155
+color = &"Pink"
+shape = &"Bipedal"
+generation = 6
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 22)
+shadow_size = 1
+id = &"AROMATISSE"
+display_name = "Aromatisse"

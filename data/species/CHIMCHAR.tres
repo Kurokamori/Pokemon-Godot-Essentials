@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_17ch6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8dh33"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3elre"]
+
+[sub_resource type="Resource" id="Resource_t633w"]
+script = ExtResource("1_17ch6")
+species = &"MONFERNO"
+method = &"Level"
+parameter = "14"
+
+[sub_resource type="Resource" id="Resource_n6vec"]
+script = ExtResource("2_8dh33")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_cwkb7"]
+script = ExtResource("2_8dh33")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_68525"]
+script = ExtResource("2_8dh33")
+level = 6
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_x0prs"]
+script = ExtResource("2_8dh33")
+level = 9
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_bfwnc"]
+script = ExtResource("2_8dh33")
+level = 12
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_ttddu"]
+script = ExtResource("2_8dh33")
+level = 15
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_1t6ge"]
+script = ExtResource("2_8dh33")
+level = 17
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_au7a1"]
+script = ExtResource("2_8dh33")
+level = 23
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_tmq1m"]
+script = ExtResource("2_8dh33")
+level = 25
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_5i8a7"]
+script = ExtResource("2_8dh33")
+level = 31
+move = &"FACADE"
+
+[sub_resource type="Resource" id="Resource_qmf87"]
+script = ExtResource("2_8dh33")
+level = 33
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_w0qg8"]
+script = ExtResource("2_8dh33")
+level = 39
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_0ls17"]
+script = ExtResource("2_8dh33")
+level = 41
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_be17w"]
+script = ExtResource("2_8dh33")
+level = 47
+move = &"FLAMETHROWER"
+
+[resource]
+resource_name = "CHIMCHAR"
+script = ExtResource("3_3elre")
+species = &"CHIMCHAR"
+category = "Chimp"
+pokedex_entry = "It agilely scales sheer cliffs to live atop craggy mountains. Its fire is put out when it sleeps."
+types = Array[StringName]([&"FIRE"])
+base_hp = 44
+base_attack = 58
+base_defense = 44
+base_special_attack = 58
+base_special_defense = 44
+base_speed = 61
+ev_speed = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8dh33")]([SubResource("Resource_n6vec"), SubResource("Resource_cwkb7"), SubResource("Resource_68525"), SubResource("Resource_x0prs"), SubResource("Resource_bfwnc"), SubResource("Resource_ttddu"), SubResource("Resource_1t6ge"), SubResource("Resource_au7a1"), SubResource("Resource_tmq1m"), SubResource("Resource_5i8a7"), SubResource("Resource_qmf87"), SubResource("Resource_w0qg8"), SubResource("Resource_0ls17"), SubResource("Resource_be17w")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THUNDERPUNCH", &"TORMENT", &"UPROAR", &"UTURN", &"VACUUMWAVE", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"BLAZEKICK", &"COUNTER", &"DOUBLEKICK", &"ENCORE", &"FAKEOUT", &"FIREPUNCH", &"FOCUSENERGY", &"HEATWAVE", &"HELPINGHAND", &"POWERUPPUNCH", &"QUICKGUARD", &"SUBMISSION", &"THUNDERPUNCH"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"IRONFIST"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_17ch6")]([SubResource("Resource_t633w")])
+height = 5
+weight = 62
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 27)
+shadow_size = 1
+id = &"CHIMCHAR"
+display_name = "Chimchar"

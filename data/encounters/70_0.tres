@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_u3eeb"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_fpdhd"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_2sj1d"]
+
+[sub_resource type="Resource" id="Resource_6asvl"]
+script = ExtResource("3_2sj1d")
+weight = 20
+species = &"CHINCHOU"
+min_level = 17
+max_level = 21
+
+[sub_resource type="Resource" id="Resource_en8pf"]
+script = ExtResource("3_2sj1d")
+weight = 20
+species = &"CLAMPERL"
+min_level = 18
+max_level = 20
+
+[sub_resource type="Resource" id="Resource_pabgk"]
+script = ExtResource("3_2sj1d")
+weight = 20
+species = &"SHELLDER"
+min_level = 18
+max_level = 20
+
+[sub_resource type="Resource" id="Resource_kpgrp"]
+script = ExtResource("3_2sj1d")
+species = &"CLAMPERL"
+min_level = 18
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_fjsg8"]
+script = ExtResource("3_2sj1d")
+species = &"CORSOLA"
+min_level = 17
+max_level = 20
+
+[sub_resource type="Resource" id="Resource_ja0fk"]
+script = ExtResource("3_2sj1d")
+species = &"RELICANTH"
+min_level = 16
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_urq6t"]
+script = ExtResource("3_2sj1d")
+species = &"SHELLDER"
+min_level = 18
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_gud4l"]
+script = ExtResource("2_fpdhd")
+step_chance = 21
+slots = Array[ExtResource("3_2sj1d")]([SubResource("Resource_6asvl"), SubResource("Resource_en8pf"), SubResource("Resource_pabgk"), SubResource("Resource_kpgrp"), SubResource("Resource_fjsg8"), SubResource("Resource_ja0fk"), SubResource("Resource_urq6t")])
+
+[resource]
+resource_name = "70_0"
+script = ExtResource("1_u3eeb")
+map_id = 70
+tables = Array[ExtResource("2_fpdhd")]([SubResource("Resource_gud4l")])
+id = &"70_0"
+display_name = "Map 70 v0"

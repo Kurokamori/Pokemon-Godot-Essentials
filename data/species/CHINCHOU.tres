@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_j4ruy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_68nea"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ot7tt"]
+
+[sub_resource type="Resource" id="Resource_sdf72"]
+script = ExtResource("1_j4ruy")
+species = &"LANTURN"
+method = &"Level"
+parameter = "27"
+
+[sub_resource type="Resource" id="Resource_ndjr6"]
+script = ExtResource("2_68nea")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_gppm7"]
+script = ExtResource("2_68nea")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_3jfej"]
+script = ExtResource("2_68nea")
+level = 4
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_468ts"]
+script = ExtResource("2_68nea")
+level = 8
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_us4jd"]
+script = ExtResource("2_68nea")
+level = 12
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_fngme"]
+script = ExtResource("2_68nea")
+level = 16
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_6e44b"]
+script = ExtResource("2_68nea")
+level = 20
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_56103"]
+script = ExtResource("2_68nea")
+level = 24
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_jjp7f"]
+script = ExtResource("2_68nea")
+level = 28
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_r67y2"]
+script = ExtResource("2_68nea")
+level = 32
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_06uij"]
+script = ExtResource("2_68nea")
+level = 36
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_mo622"]
+script = ExtResource("2_68nea")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_aufy3"]
+script = ExtResource("2_68nea")
+level = 44
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "CHINCHOU"
+script = ExtResource("3_ot7tt")
+species = &"CHINCHOU"
+category = "Angler"
+pokedex_entry = "When it senses danger, it discharges positive and negative electricity from its two antennae. It lives in depths beyond sunlight's reach."
+types = Array[StringName]([&"WATER", &"ELECTRIC"])
+base_hp = 75
+base_attack = 38
+base_defense = 38
+base_special_attack = 56
+base_special_defense = 56
+base_speed = 67
+ev_hp = 1
+base_exp = 66
+growth_rate = &"Slow"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_68nea")]([SubResource("Resource_ndjr6"), SubResource("Resource_gppm7"), SubResource("Resource_3jfej"), SubResource("Resource_468ts"), SubResource("Resource_us4jd"), SubResource("Resource_fngme"), SubResource("Resource_6e44b"), SubResource("Resource_56103"), SubResource("Resource_jjp7f"), SubResource("Resource_r67y2"), SubResource("Resource_06uij"), SubResource("Resource_mo622"), SubResource("Resource_aufy3")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AMNESIA", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"HAIL", &"HEALBELL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"VOLTSWITCH", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"AGILITY", &"AMNESIA", &"FLAIL", &"MIST", &"PSYBEAM", &"SCREECH", &"SOAK", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"VOLTABSORB", &"ILLUMINATE"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+wild_item_uncommon = Array[StringName]([&"DEEPSEASCALE"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_j4ruy")]([SubResource("Resource_sdf72")])
+height = 5
+weight = 120
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 18)
+id = &"CHINCHOU"
+display_name = "Chinchou"

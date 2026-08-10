@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8oi38"]
+
+[resource]
+resource_name = "PRETTYFEATHER"
+script = ExtResource("1_8oi38")
+name_plural = "Pretty Feathers"
+price = 1000
+sell_price = 500
+description = "Though this feather is beautiful, it's just a regular feather and has no effect on Pokémon."
+id = &"PRETTYFEATHER"
+display_name = "Pretty Feather"
+flags = Array[StringName]([&"Fling_20"])

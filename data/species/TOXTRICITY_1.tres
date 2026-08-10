@@ -1,0 +1,164 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l7bpl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wiv6d"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sad5l"]
+
+[sub_resource type="Resource" id="Resource_mevcq"]
+script = ExtResource("1_l7bpl")
+species = &"TOXEL"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_u2hjo"]
+script = ExtResource("2_wiv6d")
+level = 0
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_hnc0i"]
+script = ExtResource("2_wiv6d")
+move = &"EERIEIMPULSE"
+
+[sub_resource type="Resource" id="Resource_8tyga"]
+script = ExtResource("2_wiv6d")
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_7yb2n"]
+script = ExtResource("2_wiv6d")
+move = &"TEARFULLOOK"
+
+[sub_resource type="Resource" id="Resource_i0ils"]
+script = ExtResource("2_wiv6d")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_kl5ug"]
+script = ExtResource("2_wiv6d")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_l2ocg"]
+script = ExtResource("2_wiv6d")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_2fbi0"]
+script = ExtResource("2_wiv6d")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_fkg38"]
+script = ExtResource("2_wiv6d")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_r3qbe"]
+script = ExtResource("2_wiv6d")
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_y3o4o"]
+script = ExtResource("2_wiv6d")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_dr6w8"]
+script = ExtResource("2_wiv6d")
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_noy3s"]
+script = ExtResource("2_wiv6d")
+level = 4
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_fxesh"]
+script = ExtResource("2_wiv6d")
+level = 8
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_08jj1"]
+script = ExtResource("2_wiv6d")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_oyj6j"]
+script = ExtResource("2_wiv6d")
+level = 16
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_22xy6"]
+script = ExtResource("2_wiv6d")
+level = 20
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_elohe"]
+script = ExtResource("2_wiv6d")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_ckwwf"]
+script = ExtResource("2_wiv6d")
+level = 28
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_hx55s"]
+script = ExtResource("2_wiv6d")
+level = 32
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_r07ep"]
+script = ExtResource("2_wiv6d")
+level = 36
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_ketpp"]
+script = ExtResource("2_wiv6d")
+level = 40
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_rpt1g"]
+script = ExtResource("2_wiv6d")
+level = 44
+move = &"OVERDRIVE"
+
+[sub_resource type="Resource" id="Resource_naccd"]
+script = ExtResource("2_wiv6d")
+level = 48
+move = &"BOOMBURST"
+
+[sub_resource type="Resource" id="Resource_4fd7c"]
+script = ExtResource("2_wiv6d")
+level = 52
+move = &"MAGNETICFLUX"
+
+[resource]
+resource_name = "TOXTRICITY_1"
+script = ExtResource("3_sad5l")
+species = &"TOXTRICITY"
+form = 1
+form_name = "Low Key Form"
+category = "Punk"
+pokedex_entry = "Capable of generating 15,000 volts of electricity, this Pokémon looks down on all that would challenge it."
+pokedex_form = 1
+types = Array[StringName]([&"ELECTRIC", &"POISON"])
+base_hp = 75
+base_attack = 98
+base_defense = 70
+base_special_attack = 114
+base_special_defense = 70
+base_speed = 75
+ev_special_attack = 2
+base_exp = 176
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wiv6d")]([SubResource("Resource_u2hjo"), SubResource("Resource_hnc0i"), SubResource("Resource_8tyga"), SubResource("Resource_7yb2n"), SubResource("Resource_i0ils"), SubResource("Resource_kl5ug"), SubResource("Resource_l2ocg"), SubResource("Resource_2fbi0"), SubResource("Resource_fkg38"), SubResource("Resource_r3qbe"), SubResource("Resource_y3o4o"), SubResource("Resource_dr6w8"), SubResource("Resource_noy3s"), SubResource("Resource_fxesh"), SubResource("Resource_08jj1"), SubResource("Resource_oyj6j"), SubResource("Resource_22xy6"), SubResource("Resource_elohe"), SubResource("Resource_ckwwf"), SubResource("Resource_hx55s"), SubResource("Resource_r07ep"), SubResource("Resource_ketpp"), SubResource("Resource_rpt1g"), SubResource("Resource_naccd"), SubResource("Resource_4fd7c")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"EERIEIMPULSE", &"ELECTROBALL", &"ENCORE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNARL", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"VENOMDRENCH", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"PUNKROCK", &"MINUS"])
+hidden_abilities = Array[StringName]([&"TECHNICIAN"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_l7bpl")]([SubResource("Resource_mevcq")])
+height = 16
+weight = 400
+color = &"Purple"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(4, 10)
+id = &"TOXTRICITY_1"
+display_name = "Toxtricity"

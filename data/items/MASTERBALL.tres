@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_awyef"]
+
+[resource]
+resource_name = "MASTERBALL"
+script = ExtResource("1_awyef")
+name_plural = "Master Balls"
+pocket = 3
+battle_use = 4
+description = "The best Ball with the ultimate level of performance. It will catch any wild Pokémon without fail."
+id = &"MASTERBALL"
+display_name = "Master Ball"
+flags = Array[StringName]([&"PokeBall"])

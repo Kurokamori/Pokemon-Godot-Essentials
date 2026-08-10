@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7t151"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dopso"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rv83o"]
+
+[sub_resource type="Resource" id="Resource_tawbt"]
+script = ExtResource("1_7t151")
+species = &"VIVILLON"
+method = &"Level"
+parameter = "12"
+
+[sub_resource type="Resource" id="Resource_bkwnx"]
+script = ExtResource("1_7t151")
+species = &"SCATTERBUG"
+method = &"Level"
+parameter = "9"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_makov"]
+script = ExtResource("2_dopso")
+level = 0
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_kwy31"]
+script = ExtResource("2_dopso")
+move = &"HARDEN"
+
+[resource]
+resource_name = "SPEWPA"
+script = ExtResource("3_rv83o")
+species = &"SPEWPA"
+category = "Scatterdust"
+pokedex_entry = "It lives hidden within thicket shadows. When predators attack, it quickly bristles the fur covering its body in an effort to threaten them."
+types = Array[StringName]([&"BUG"])
+base_hp = 45
+base_attack = 22
+base_defense = 60
+base_special_attack = 27
+base_special_defense = 30
+base_speed = 29
+ev_defense = 2
+base_exp = 75
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dopso")]([SubResource("Resource_makov"), SubResource("Resource_kwy31")])
+tutor_moves = Array[StringName]([&"BUGBITE", &"ELECTROWEB", &"IRONDEFENSE", &"PROTECT"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"FRIENDGUARD"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_7t151")]([SubResource("Resource_tawbt"), SubResource("Resource_bkwnx")])
+height = 3
+weight = 84
+color = &"Black"
+shape = &"HeadBase"
+generation = 6
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 34)
+id = &"SPEWPA"
+display_name = "Spewpa"

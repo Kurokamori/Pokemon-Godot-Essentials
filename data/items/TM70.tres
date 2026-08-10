@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wywr4"]
+
+[resource]
+resource_name = "TM70"
+script = ExtResource("1_wywr4")
+name_plural = "TM70s"
+pocket = 4
+price = 1000
+sell_price = 500
+bp_price = 32
+field_use = 5
+move = &"FLASH"
+description = "The user flashes a light that lowers the target's accuracy. It can also be used to illuminate caves."
+id = &"TM70"
+display_name = "TM70"
+flags = Array[StringName]([&"Fling_10"])

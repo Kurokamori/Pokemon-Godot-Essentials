@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_q6q4j"]
+
+[resource]
+resource_name = "THROATCHOP"
+script = ExtResource("1_q6q4j")
+type = &"DARK"
+category = 0
+power = 80
+total_pp = 15
+function_code = &"DisableTargetSoundMoves"
+effect_chance = 100
+description = "The user attacks the target's throat. The target cannot use sound-based moves for two turns."
+id = &"THROATCHOP"
+display_name = "Throat Chop"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

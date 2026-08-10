@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_lwnfh"]
+
+[resource]
+resource_name = "REVERSAL"
+script = ExtResource("1_lwnfh")
+type = &"FIGHTING"
+category = 0
+power = 1
+total_pp = 15
+function_code = &"PowerLowerWithUserHP"
+description = "An all-out attack that becomes more powerful the less HP the user has."
+id = &"REVERSAL"
+display_name = "Reversal"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

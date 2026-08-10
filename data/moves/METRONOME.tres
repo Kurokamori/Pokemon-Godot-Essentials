@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_h2sst"]
+
+[resource]
+resource_name = "METRONOME"
+script = ExtResource("1_h2sst")
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"UseRandomMove"
+description = "The user waggles a finger and stimulates its brain into randomly using nearly any move."
+id = &"METRONOME"
+display_name = "Metronome"

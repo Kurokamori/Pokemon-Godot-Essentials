@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_sn27g"]
+
+[resource]
+resource_name = "BONECLUB"
+script = ExtResource("1_sn27g")
+type = &"GROUND"
+category = 0
+power = 65
+accuracy = 85
+total_pp = 20
+function_code = &"FlinchTarget"
+effect_chance = 10
+description = "The user clubs the target with a bone. It may also make the target flinch."
+id = &"BONECLUB"
+display_name = "Bone Club"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

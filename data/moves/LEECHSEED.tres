@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ece2p"]
+
+[resource]
+resource_name = "LEECHSEED"
+script = ExtResource("1_ece2p")
+type = &"GRASS"
+accuracy = 90
+total_pp = 10
+function_code = &"StartLeechSeedTarget"
+description = "A seed is planted on the target. It steals some HP from the target every turn."
+id = &"LEECHSEED"
+display_name = "Leech Seed"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

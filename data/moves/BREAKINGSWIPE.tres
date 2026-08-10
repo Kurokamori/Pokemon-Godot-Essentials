@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5aow4"]
+
+[resource]
+resource_name = "BREAKINGSWIPE"
+script = ExtResource("1_5aow4")
+type = &"DRAGON"
+category = 0
+power = 60
+total_pp = 15
+target = &"AllNearFoes"
+function_code = &"LowerTargetAttack1"
+effect_chance = 100
+description = "The user swings its tough tail wildly and attacks all foes. This also lowers their Attack stats."
+id = &"BREAKINGSWIPE"
+display_name = "Breaking Swipe"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

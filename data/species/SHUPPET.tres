@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6s2gd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a3x7q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qq5ag"]
+
+[sub_resource type="Resource" id="Resource_ngeg8"]
+script = ExtResource("1_6s2gd")
+species = &"BANETTE"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_btfc4"]
+script = ExtResource("2_a3x7q")
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_3a8gi"]
+script = ExtResource("2_a3x7q")
+level = 4
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_dwmaa"]
+script = ExtResource("2_a3x7q")
+level = 7
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_tm8bm"]
+script = ExtResource("2_a3x7q")
+level = 10
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_dmpjv"]
+script = ExtResource("2_a3x7q")
+level = 13
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_uxtf5"]
+script = ExtResource("2_a3x7q")
+level = 16
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_ohhq0"]
+script = ExtResource("2_a3x7q")
+level = 19
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_4w0cy"]
+script = ExtResource("2_a3x7q")
+level = 22
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_4ymjx"]
+script = ExtResource("2_a3x7q")
+level = 26
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_tcbo1"]
+script = ExtResource("2_a3x7q")
+level = 30
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_lr386"]
+script = ExtResource("2_a3x7q")
+level = 34
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_34r0y"]
+script = ExtResource("2_a3x7q")
+level = 38
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_x3s80"]
+script = ExtResource("2_a3x7q")
+level = 42
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_r1063"]
+script = ExtResource("2_a3x7q")
+level = 46
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_2rmcb"]
+script = ExtResource("2_a3x7q")
+level = 50
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_s0t8g"]
+script = ExtResource("2_a3x7q")
+level = 54
+move = &"PHANTOMFORCE"
+
+[resource]
+resource_name = "SHUPPET"
+script = ExtResource("3_qq5ag")
+species = &"SHUPPET"
+category = "Puppet"
+pokedex_entry = "This Pokémon roams about deep in the night seeking such negative emotions as grudges and envy. It retreats to its nest when the sun begins to rise."
+types = Array[StringName]([&"GHOST"])
+base_hp = 44
+base_attack = 75
+base_defense = 35
+base_special_attack = 63
+base_special_defense = 33
+base_speed = 45
+ev_attack = 1
+base_exp = 59
+growth_rate = &"Fast"
+catch_rate = 225
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_a3x7q")]([SubResource("Resource_btfc4"), SubResource("Resource_3a8gi"), SubResource("Resource_dwmaa"), SubResource("Resource_tm8bm"), SubResource("Resource_dmpjv"), SubResource("Resource_uxtf5"), SubResource("Resource_ohhq0"), SubResource("Resource_4w0cy"), SubResource("Resource_4ymjx"), SubResource("Resource_tcbo1"), SubResource("Resource_lr386"), SubResource("Resource_34r0y"), SubResource("Resource_x3s80"), SubResource("Resource_r1063"), SubResource("Resource_2rmcb"), SubResource("Resource_s0t8g")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"ICYWIND", &"KNOCKOFF", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"ASTONISH", &"CONFUSERAY", &"DESTINYBOND", &"DISABLE", &"GUNKSHOT", &"IMPRISON", &"PHANTOMFORCE", &"SHADOWSNEAK"])
+abilities = Array[StringName]([&"INSOMNIA", &"FRISK"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_6s2gd")]([SubResource("Resource_ngeg8")])
+height = 6
+weight = 23
+color = &"Black"
+habitat = &"Urban"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 18)
+id = &"SHUPPET"
+display_name = "Shuppet"

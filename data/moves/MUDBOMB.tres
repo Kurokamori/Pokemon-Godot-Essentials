@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_eaclq"]
+
+[resource]
+resource_name = "MUDBOMB"
+script = ExtResource("1_eaclq")
+type = &"GROUND"
+category = 1
+power = 65
+accuracy = 85
+total_pp = 10
+function_code = &"LowerTargetAccuracy1"
+effect_chance = 30
+description = "The user launches a hard-packed mud ball to attack. It may also lower the target's accuracy."
+id = &"MUDBOMB"
+display_name = "Mud Bomb"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

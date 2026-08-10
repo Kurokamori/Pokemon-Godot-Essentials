@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rfyar"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3d8iy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mx81y"]
+
+[sub_resource type="Resource" id="Resource_yo4bp"]
+script = ExtResource("1_rfyar")
+species = &"MELTAN"
+method = &"Level"
+parameter = "45"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_06bm8"]
+script = ExtResource("2_3d8iy")
+level = 0
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_po8sh"]
+script = ExtResource("2_3d8iy")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_nuoot"]
+script = ExtResource("2_3d8iy")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_fqon4"]
+script = ExtResource("2_3d8iy")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_o5ly0"]
+script = ExtResource("2_3d8iy")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ybkcl"]
+script = ExtResource("2_3d8iy")
+level = 24
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_yi2r7"]
+script = ExtResource("2_3d8iy")
+level = 32
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_kgti5"]
+script = ExtResource("2_3d8iy")
+level = 40
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_2ll21"]
+script = ExtResource("2_3d8iy")
+level = 48
+move = &"MEGAPUNCH"
+
+[sub_resource type="Resource" id="Resource_smv3l"]
+script = ExtResource("2_3d8iy")
+level = 56
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_tsk6w"]
+script = ExtResource("2_3d8iy")
+level = 64
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_tiqr3"]
+script = ExtResource("2_3d8iy")
+level = 72
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_aw0ax"]
+script = ExtResource("2_3d8iy")
+level = 80
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_bqvor"]
+script = ExtResource("2_3d8iy")
+level = 88
+move = &"DOUBLEIRONBASH"
+
+[sub_resource type="Resource" id="Resource_opdb7"]
+script = ExtResource("2_3d8iy")
+level = 96
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "MELMETAL"
+script = ExtResource("3_mx81y")
+species = &"MELMETAL"
+category = "Hex Nut"
+pokedex_entry = "Revered long ago for its capacity to create iron from nothing, for some reason it has come back to life after 3,000 years."
+types = Array[StringName]([&"STEEL"])
+base_hp = 135
+base_attack = 143
+base_defense = 143
+base_special_attack = 80
+base_special_defense = 65
+base_speed = 34
+ev_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_3d8iy")]([SubResource("Resource_06bm8"), SubResource("Resource_po8sh"), SubResource("Resource_nuoot"), SubResource("Resource_fqon4"), SubResource("Resource_o5ly0"), SubResource("Resource_ybkcl"), SubResource("Resource_yi2r7"), SubResource("Resource_kgti5"), SubResource("Resource_2ll21"), SubResource("Resource_smv3l"), SubResource("Resource_tsk6w"), SubResource("Resource_tiqr3"), SubResource("Resource_aw0ax"), SubResource("Resource_bqvor"), SubResource("Resource_opdb7")])
+tutor_moves = Array[StringName]([&"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"CONFIDE", &"DARKESTLARIAT", &"DOUBLETEAM", &"EARTHQUAKE", &"ELECTRICTERRAIN", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"IRONDEFENSE", &"IRONHEAD", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELBEAM", &"STEELROLLER", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC"])
+abilities = Array[StringName]([&"IRONFIST"])
+hatch_steps = 30720
+evolutions = Array[ExtResource("1_rfyar")]([SubResource("Resource_yo4bp")])
+height = 25
+weight = 8000
+color = &"Gray"
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(11, 54)
+front_sprite_offset = Vector2i(-8, 15)
+shadow_size = 3
+id = &"MELMETAL"
+display_name = "Melmetal"
+flags = Array[StringName]([&"Mythical"])

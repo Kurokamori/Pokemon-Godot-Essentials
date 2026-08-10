@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_34wr5"]
+
+[resource]
+resource_name = "COMMON_SAFARIBAIT"
+script = ExtResource("1_34wr5")
+graphic = "safari_bait"
+sheet_columns = 1
+cel_side = 32
+frames = Array[PackedFloat32Array]([PackedFloat32Array(208, 244, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(232, 181.55103, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(256, 134.77551, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(280, 103.67347, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(304, 88.244896, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(328, 88.48979, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(352, 104.408165, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(376, 136, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(376, 126, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(376, 132, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(376, 136, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(376, 136, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(0, 7)
+timing_sounds = PackedStringArray("Battle throw", "Battle ball drop")
+timing_volumes = PackedInt32Array(90, 80)
+timing_pitches = PackedInt32Array(100, 100)
+id = &"COMMON_SAFARIBAIT"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_57mqh"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_h75ex"]
+
+[sub_resource type="Resource" id="Resource_fubeq"]
+script = ExtResource("1_57mqh")
+species = &"FEAROW"
+level = 29
+
+[sub_resource type="Resource" id="Resource_nywrg"]
+script = ExtResource("1_57mqh")
+species = &"FURRET"
+level = 29
+
+[resource]
+resource_name = "CAMPER|Jeff|1"
+script = ExtResource("2_h75ex")
+trainer_type = &"CAMPER"
+version = 1
+lose_text = "You beat me again!"
+pokemon = Array[ExtResource("1_57mqh")]([SubResource("Resource_fubeq"), SubResource("Resource_nywrg")])
+id = &"CAMPER|Jeff|1"
+display_name = "Jeff"

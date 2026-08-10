@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8ec44"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d726n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_soaym"]
+
+[sub_resource type="Resource" id="Resource_kufj0"]
+script = ExtResource("2_d726n")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_fqx1h"]
+script = ExtResource("2_d726n")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_cgt5c"]
+script = ExtResource("2_d726n")
+level = 5
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ibejx"]
+script = ExtResource("2_d726n")
+level = 10
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_ihufy"]
+script = ExtResource("2_d726n")
+level = 15
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_n065h"]
+script = ExtResource("2_d726n")
+level = 20
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_2nssh"]
+script = ExtResource("2_d726n")
+level = 25
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_n0s8f"]
+script = ExtResource("2_d726n")
+level = 30
+move = &"TRIPLEKICK"
+
+[sub_resource type="Resource" id="Resource_4vlfr"]
+script = ExtResource("2_d726n")
+level = 35
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_3gc5i"]
+script = ExtResource("2_d726n")
+level = 40
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_m8kr2"]
+script = ExtResource("2_d726n")
+level = 45
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_o2no4"]
+script = ExtResource("2_d726n")
+level = 50
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_g817q"]
+script = ExtResource("2_d726n")
+level = 55
+move = &"SPEEDSWAP"
+
+[sub_resource type="Resource" id="Resource_2yxe8"]
+script = ExtResource("2_d726n")
+level = 60
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_f5ctc"]
+script = ExtResource("2_d726n")
+level = 65
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_gwsi7"]
+script = ExtResource("2_d726n")
+level = 70
+move = &"HIGHJUMPKICK"
+
+[resource]
+resource_name = "PHEROMOSA"
+script = ExtResource("3_soaym")
+species = &"PHEROMOSA"
+category = "Lissome"
+pokedex_entry = "One of the Ultra Beasts. It refuses to touch anything, perhaps because it senses some uncleanness in this world."
+types = Array[StringName]([&"BUG", &"FIGHTING"])
+base_hp = 71
+base_attack = 137
+base_defense = 37
+base_special_attack = 137
+base_special_defense = 37
+base_speed = 151
+ev_speed = 3
+base_exp = 285
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_d726n")]([SubResource("Resource_kufj0"), SubResource("Resource_fqx1h"), SubResource("Resource_cgt5c"), SubResource("Resource_ibejx"), SubResource("Resource_ihufy"), SubResource("Resource_n065h"), SubResource("Resource_2nssh"), SubResource("Resource_n0s8f"), SubResource("Resource_4vlfr"), SubResource("Resource_3gc5i"), SubResource("Resource_m8kr2"), SubResource("Resource_o2no4"), SubResource("Resource_g817q"), SubResource("Resource_2yxe8"), SubResource("Resource_f5ctc"), SubResource("Resource_gwsi7")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"BLIZZARD", &"BLOCK", &"BOUNCE", &"BRICKBREAK", &"BUGBITE", &"BUGBUZZ", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DOUBLETEAM", &"DRILLRUN", &"ECHOEDVOICE", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPEEDSWAP", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"THROATCHOP", &"TORMENT", &"TOXIC", &"TRIPLEAXEL", &"UTURN"])
+abilities = Array[StringName]([&"BEASTBOOST"])
+hatch_steps = 30720
+height = 18
+weight = 250
+color = &"White"
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 4)
+shadow_size = 1
+id = &"PHEROMOSA"
+display_name = "Pheromosa"
+flags = Array[StringName]([&"UltraBeast"])

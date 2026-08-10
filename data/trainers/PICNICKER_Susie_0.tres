@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_b1fn1"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_lyqiv"]
+
+[sub_resource type="Resource" id="Resource_y3qsd"]
+script = ExtResource("1_b1fn1")
+species = &"MEOWTH"
+level = 18
+
+[resource]
+resource_name = "PICNICKER|Susie|0"
+script = ExtResource("2_lyqiv")
+trainer_type = &"PICNICKER"
+lose_text = "Defeated! Oh my!"
+pokemon = Array[ExtResource("1_b1fn1")]([SubResource("Resource_y3qsd")])
+id = &"PICNICKER|Susie|0"
+display_name = "Susie"

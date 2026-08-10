@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EvolutionMethodData" format=3]
+
+[ext_resource type="Script" path="res://src/data/evolution_method_data.gd" id="1_qecnu"]
+
+[resource]
+resource_name = "BattleDealCriticalHit"
+script = ExtResource("1_qecnu")
+parameter_type = 1
+after_battle = true
+id = &"BattleDealCriticalHit"
+display_name = "BattleDealCriticalHit"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ydcof"]
+
+[resource]
+resource_name = "DRACOMETEOR"
+script = ExtResource("1_ydcof")
+type = &"DRAGON"
+category = 1
+power = 130
+accuracy = 90
+function_code = &"LowerUserSpAtk2"
+description = "Comets are summoned down from the sky. The attack's recoil harshly reduces the user's Sp. Atk stat."
+id = &"DRACOMETEOR"
+display_name = "Draco Meteor"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

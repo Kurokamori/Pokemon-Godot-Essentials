@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_osihj"]
+
+[resource]
+resource_name = "GROUNDIUMZ"
+script = ExtResource("1_osihj")
+name_plural = "Groundium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Ground-type Pokémon holds to turn a Ground-type move into Tectonic Rage."
+id = &"GROUNDIUMZ"
+display_name = "Groundium Z"
+flags = Array[StringName]([&"ZCrystal"])

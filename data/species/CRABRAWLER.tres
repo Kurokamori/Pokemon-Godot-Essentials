@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nj37e"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bu5wy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0jobq"]
+
+[sub_resource type="Resource" id="Resource_kg0r4"]
+script = ExtResource("1_nj37e")
+species = &"CRABOMINABLE"
+method = &"LocationFlag"
+parameter = "IceRock"
+
+[sub_resource type="Resource" id="Resource_vnop6"]
+script = ExtResource("2_bu5wy")
+move = &"BUBBLE"
+
+[sub_resource type="Resource" id="Resource_52hds"]
+script = ExtResource("2_bu5wy")
+level = 5
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_adled"]
+script = ExtResource("2_bu5wy")
+level = 9
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_8w38q"]
+script = ExtResource("2_bu5wy")
+level = 13
+move = &"PURSUIT"
+
+[sub_resource type="Resource" id="Resource_o4yo0"]
+script = ExtResource("2_bu5wy")
+level = 17
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_50mkt"]
+script = ExtResource("2_bu5wy")
+level = 22
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_0bjid"]
+script = ExtResource("2_bu5wy")
+level = 25
+move = &"DIZZYPUNCH"
+
+[sub_resource type="Resource" id="Resource_hby0x"]
+script = ExtResource("2_bu5wy")
+level = 29
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_1bqoe"]
+script = ExtResource("2_bu5wy")
+level = 33
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_vfc0q"]
+script = ExtResource("2_bu5wy")
+level = 37
+move = &"CRABHAMMER"
+
+[sub_resource type="Resource" id="Resource_1vnlt"]
+script = ExtResource("2_bu5wy")
+level = 42
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_d8otm"]
+script = ExtResource("2_bu5wy")
+level = 45
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_0hlnb"]
+script = ExtResource("2_bu5wy")
+level = 49
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "CRABRAWLER"
+script = ExtResource("3_0jobq")
+species = &"CRABRAWLER"
+category = "Boxing"
+pokedex_entry = "It punches so much, its pincers often come off from overuse, but they grow back quickly. What little meat they contain is rich and delicious."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 47
+base_attack = 82
+base_defense = 57
+base_special_attack = 42
+base_special_defense = 47
+base_speed = 63
+ev_attack = 1
+base_exp = 68
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bu5wy")]([SubResource("Resource_vnop6"), SubResource("Resource_52hds"), SubResource("Resource_adled"), SubResource("Resource_8w38q"), SubResource("Resource_o4yo0"), SubResource("Resource_50mkt"), SubResource("Resource_0bjid"), SubResource("Resource_hby0x"), SubResource("Resource_1bqoe"), SubResource("Resource_vfc0q"), SubResource("Resource_1vnlt"), SubResource("Resource_d8otm"), SubResource("Resource_0hlnb")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"HIDDENPOWER", &"ICEPUNCH", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THIEF", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AMNESIA", &"ENDEAVOR", &"SUPERPOWER", &"WIDEGUARD"])
+abilities = Array[StringName]([&"HYPERCUTTER", &"IRONFIST"])
+hidden_abilities = Array[StringName]([&"ANGERPOINT"])
+wild_item_uncommon = Array[StringName]([&"ASPEARBERRY"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nj37e")]([SubResource("Resource_kg0r4")])
+height = 6
+weight = 70
+color = &"Purple"
+shape = &"Insectoid"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-4, 24)
+id = &"CRABRAWLER"
+display_name = "Crabrawler"

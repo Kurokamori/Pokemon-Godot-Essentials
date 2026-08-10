@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l6p8c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yg744"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ms5k0"]
+
+[sub_resource type="Resource" id="Resource_xu5s5"]
+script = ExtResource("2_yg744")
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_4rdlx"]
+script = ExtResource("2_yg744")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_prwja"]
+script = ExtResource("2_yg744")
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_g1vjh"]
+script = ExtResource("2_yg744")
+move = &"WEATHERBALL"
+
+[sub_resource type="Resource" id="Resource_1mvs7"]
+script = ExtResource("2_yg744")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_btv8j"]
+script = ExtResource("2_yg744")
+level = 9
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_fgb7q"]
+script = ExtResource("2_yg744")
+level = 18
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_u6pu4"]
+script = ExtResource("2_yg744")
+level = 27
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_763qt"]
+script = ExtResource("2_yg744")
+level = 36
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_083tb"]
+script = ExtResource("2_yg744")
+level = 45
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_itq26"]
+script = ExtResource("2_yg744")
+level = 54
+move = &"AEROBLAST"
+
+[sub_resource type="Resource" id="Resource_uivjb"]
+script = ExtResource("2_yg744")
+level = 63
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_3c5kr"]
+script = ExtResource("2_yg744")
+level = 72
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_v1q82"]
+script = ExtResource("2_yg744")
+level = 81
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_cftg1"]
+script = ExtResource("2_yg744")
+level = 90
+move = &"SKYATTACK"
+
+[resource]
+resource_name = "LUGIA"
+script = ExtResource("3_ms5k0")
+species = &"LUGIA"
+category = "Diving"
+pokedex_entry = "Lugia is so powerful even a light fluttering of its wings can blow apart houses. As a result, it chooses to live out of sight deep under the sea."
+types = Array[StringName]([&"PSYCHIC", &"FLYING"])
+base_hp = 106
+base_attack = 90
+base_defense = 130
+base_special_attack = 90
+base_special_defense = 154
+base_speed = 110
+ev_special_defense = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_yg744")]([SubResource("Resource_xu5s5"), SubResource("Resource_4rdlx"), SubResource("Resource_prwja"), SubResource("Resource_g1vjh"), SubResource("Resource_1mvs7"), SubResource("Resource_btv8j"), SubResource("Resource_fgb7q"), SubResource("Resource_u6pu4"), SubResource("Resource_763qt"), SubResource("Resource_083tb"), SubResource("Resource_itq26"), SubResource("Resource_uivjb"), SubResource("Resource_3c5kr"), SubResource("Resource_v1q82"), SubResource("Resource_cftg1")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"ANCIENTPOWER", &"AQUATAIL", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"DEFOG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAGONTAIL", &"DREAMEATER", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASH", &"FLY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROOST", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALESHOT", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"MULTISCALE"])
+hatch_steps = 30720
+height = 52
+weight = 2160
+color = &"White"
+shape = &"Winged"
+habitat = &"Rare"
+generation = 2
+back_sprite_offset = Vector2i(14, 44)
+front_sprite_offset = Vector2i(-7, 6)
+shadow_size = 3
+id = &"LUGIA"
+display_name = "Lugia"
+flags = Array[StringName]([&"Legendary"])

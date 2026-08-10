@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0ed0d"]
+
+[resource]
+resource_name = "SWIFTFEATHER"
+script = ExtResource("1_0ed0d")
+name_plural = "Swift Feathers"
+pocket = 2
+price = 300
+sell_price = 150
+field_use = 1
+description = "An item for use on a Pokémon. It slightly increases the base Speed stat of a single Pokémon."
+id = &"SWIFTFEATHER"
+display_name = "Swift Feather"
+flags = Array[StringName]([&"Fling_20"])

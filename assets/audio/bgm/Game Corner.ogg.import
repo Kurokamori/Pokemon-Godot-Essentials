@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://7h1w828rmsyh"
+path="res://.godot/imported/Game Corner.ogg-102b0fdce5b61ceb3022734d82a3996f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Game Corner.ogg"
+dest_files=["res://.godot/imported/Game Corner.ogg-102b0fdce5b61ceb3022734d82a3996f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

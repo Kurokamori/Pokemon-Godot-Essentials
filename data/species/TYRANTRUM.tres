@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_30d2a"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ds4c4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a81av"]
+
+[sub_resource type="Resource" id="Resource_dncvu"]
+script = ExtResource("1_30d2a")
+species = &"TYRUNT"
+method = &"LevelDay"
+parameter = "39"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_h2jpi"]
+script = ExtResource("2_ds4c4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_umfeh"]
+script = ExtResource("2_ds4c4")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_lxs8j"]
+script = ExtResource("2_ds4c4")
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_qjsy5"]
+script = ExtResource("2_ds4c4")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_w45al"]
+script = ExtResource("2_ds4c4")
+level = 12
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_qi1bv"]
+script = ExtResource("2_ds4c4")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_chlf5"]
+script = ExtResource("2_ds4c4")
+level = 20
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_0fbhp"]
+script = ExtResource("2_ds4c4")
+level = 24
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_xc2ox"]
+script = ExtResource("2_ds4c4")
+level = 28
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_0vf07"]
+script = ExtResource("2_ds4c4")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_adm3t"]
+script = ExtResource("2_ds4c4")
+level = 36
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_p5bce"]
+script = ExtResource("2_ds4c4")
+level = 42
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_7mw0l"]
+script = ExtResource("2_ds4c4")
+level = 48
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_iktv1"]
+script = ExtResource("2_ds4c4")
+level = 54
+move = &"HORNDRILL"
+
+[sub_resource type="Resource" id="Resource_5tema"]
+script = ExtResource("2_ds4c4")
+level = 60
+move = &"GIGAIMPACT"
+
+[sub_resource type="Resource" id="Resource_ta1nn"]
+script = ExtResource("2_ds4c4")
+level = 66
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "TYRANTRUM"
+script = ExtResource("3_a81av")
+species = &"TYRANTRUM"
+category = "Despot"
+pokedex_entry = "Thanks to its gargantuan jaws, which could shred thick metal plates as if they were paper, it was invincible in the ancient world it once inhabited."
+types = Array[StringName]([&"ROCK", &"DRAGON"])
+base_hp = 82
+base_attack = 121
+base_defense = 119
+base_special_attack = 69
+base_special_defense = 59
+base_speed = 71
+ev_attack = 2
+base_exp = 182
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ds4c4")]([SubResource("Resource_h2jpi"), SubResource("Resource_umfeh"), SubResource("Resource_lxs8j"), SubResource("Resource_qjsy5"), SubResource("Resource_w45al"), SubResource("Resource_qi1bv"), SubResource("Resource_chlf5"), SubResource("Resource_0fbhp"), SubResource("Resource_xc2ox"), SubResource("Resource_0vf07"), SubResource("Resource_adm3t"), SubResource("Resource_p5bce"), SubResource("Resource_7mw0l"), SubResource("Resource_iktv1"), SubResource("Resource_5tema"), SubResource("Resource_ta1nn")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CLOSECOMBAT", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEFANG", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LASHOUT", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDERFANG", &"TOXIC", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"STRONGJAW"])
+hidden_abilities = Array[StringName]([&"ROCKHEAD"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_30d2a")]([SubResource("Resource_dncvu")])
+height = 25
+weight = 2700
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(8, 14)
+id = &"TYRANTRUM"
+display_name = "Tyrantrum"

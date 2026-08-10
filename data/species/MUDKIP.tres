@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uktvu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h5g86"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_23ylo"]
+
+[sub_resource type="Resource" id="Resource_2svir"]
+script = ExtResource("1_uktvu")
+species = &"MARSHTOMP"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_i1uyb"]
+script = ExtResource("2_h5g86")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_flosg"]
+script = ExtResource("2_h5g86")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_ijols"]
+script = ExtResource("2_h5g86")
+level = 3
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_dpeoq"]
+script = ExtResource("2_h5g86")
+level = 6
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_i8pvj"]
+script = ExtResource("2_h5g86")
+level = 9
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_a3yrh"]
+script = ExtResource("2_h5g86")
+level = 12
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_u4g7b"]
+script = ExtResource("2_h5g86")
+level = 15
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_2m25w"]
+script = ExtResource("2_h5g86")
+level = 18
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_aumcl"]
+script = ExtResource("2_h5g86")
+level = 21
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_71gqx"]
+script = ExtResource("2_h5g86")
+level = 24
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_c2plw"]
+script = ExtResource("2_h5g86")
+level = 27
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_mtqq5"]
+script = ExtResource("2_h5g86")
+level = 30
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_55d61"]
+script = ExtResource("2_h5g86")
+level = 33
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_j0ls6"]
+script = ExtResource("2_h5g86")
+level = 36
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_c86di"]
+script = ExtResource("2_h5g86")
+level = 39
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "MUDKIP"
+script = ExtResource("3_23ylo")
+species = &"MUDKIP"
+category = "Mud Fish"
+pokedex_entry = "On land, it can powerfully lift large boulders by planting its four feet and heaving. It sleeps by burying itself in soil at the water's edge."
+types = Array[StringName]([&"WATER"])
+base_hp = 50
+base_attack = 70
+base_defense = 50
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 40
+ev_attack = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h5g86")]([SubResource("Resource_i1uyb"), SubResource("Resource_flosg"), SubResource("Resource_ijols"), SubResource("Resource_dpeoq"), SubResource("Resource_i8pvj"), SubResource("Resource_a3yrh"), SubResource("Resource_u4g7b"), SubResource("Resource_2m25w"), SubResource("Resource_aumcl"), SubResource("Resource_71gqx"), SubResource("Resource_c2plw"), SubResource("Resource_mtqq5"), SubResource("Resource_55d61"), SubResource("Resource_j0ls6"), SubResource("Resource_c86di")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LOWKICK", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEWAVE", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"BITE", &"COUNTER", &"CURSE", &"DOUBLEEDGE", &"MIRRORCOAT", &"MUDSLAP", &"SLUDGE", &"STOMP", &"UPROAR", &"WHIRLPOOL", &"WIDEGUARD", &"YAWN"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"DAMP"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_uktvu")]([SubResource("Resource_2svir")])
+height = 4
+weight = 76
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 31)
+shadow_size = 1
+id = &"MUDKIP"
+display_name = "Mudkip"

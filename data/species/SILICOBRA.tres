@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5aers"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wo6gp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ufl33"]
+
+[sub_resource type="Resource" id="Resource_wrrao"]
+script = ExtResource("1_5aers")
+species = &"SANDACONDA"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_qennv"]
+script = ExtResource("2_wo6gp")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_0huno"]
+script = ExtResource("2_wo6gp")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_5rb0j"]
+script = ExtResource("2_wo6gp")
+level = 5
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_g7y52"]
+script = ExtResource("2_wo6gp")
+level = 10
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_o3nfp"]
+script = ExtResource("2_wo6gp")
+level = 15
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_x4es1"]
+script = ExtResource("2_wo6gp")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_2i4a2"]
+script = ExtResource("2_wo6gp")
+level = 25
+move = &"GLARE"
+
+[sub_resource type="Resource" id="Resource_5namo"]
+script = ExtResource("2_wo6gp")
+level = 30
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_w68nk"]
+script = ExtResource("2_wo6gp")
+level = 35
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_rjhpw"]
+script = ExtResource("2_wo6gp")
+level = 40
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_g5d0l"]
+script = ExtResource("2_wo6gp")
+level = 45
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_njgiu"]
+script = ExtResource("2_wo6gp")
+level = 50
+move = &"SANDTOMB"
+
+[resource]
+resource_name = "SILICOBRA"
+script = ExtResource("3_ufl33")
+species = &"SILICOBRA"
+category = "Sand Snake"
+pokedex_entry = "It spews sand from its nostrils. While the enemy is blinded, it burrows into the ground to hide."
+types = Array[StringName]([&"GROUND"])
+base_hp = 52
+base_attack = 57
+base_defense = 75
+base_special_attack = 35
+base_special_defense = 50
+base_speed = 46
+ev_defense = 1
+base_exp = 63
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wo6gp")]([SubResource("Resource_qennv"), SubResource("Resource_0huno"), SubResource("Resource_5rb0j"), SubResource("Resource_g7y52"), SubResource("Resource_o3nfp"), SubResource("Resource_x4es1"), SubResource("Resource_2i4a2"), SubResource("Resource_5namo"), SubResource("Resource_w68nk"), SubResource("Resource_rjhpw"), SubResource("Resource_g5d0l"), SubResource("Resource_njgiu")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALESHOT", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TOXIC"])
+egg_moves = Array[StringName]([&"BELCH", &"DRAGONRUSH", &"LASTRESORT", &"MUDSLAP", &"POISONTAIL"])
+abilities = Array[StringName]([&"SANDSPIT", &"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+egg_groups = Array[StringName]([&"Field", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5aers")]([SubResource("Resource_wrrao")])
+height = 22
+weight = 76
+color = &"Green"
+shape = &"Serpentine"
+generation = 8
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(-2, 30)
+shadow_size = 1
+id = &"SILICOBRA"
+display_name = "Silicobra"

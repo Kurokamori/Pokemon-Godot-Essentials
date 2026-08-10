@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EnvironmentData" format=3]
+
+[ext_resource type="Script" path="res://src/data/environment_data.gd" id="1_d1gj0"]
+
+[resource]
+resource_name = "Volcano"
+script = ExtResource("1_d1gj0")
+id = &"Volcano"
+display_name = "Volcano"

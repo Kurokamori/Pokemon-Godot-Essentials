@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4eqla"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cno57"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_s7n73"]
+
+[sub_resource type="Resource" id="Resource_n8pxg"]
+script = ExtResource("1_4eqla")
+species = &"SHIINOTIC"
+method = &"Level"
+parameter = "24"
+
+[sub_resource type="Resource" id="Resource_etkom"]
+script = ExtResource("2_cno57")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_kdfeb"]
+script = ExtResource("2_cno57")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_gdsa1"]
+script = ExtResource("2_cno57")
+level = 4
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_mot7n"]
+script = ExtResource("2_cno57")
+level = 8
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_bcsf8"]
+script = ExtResource("2_cno57")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_qb3hw"]
+script = ExtResource("2_cno57")
+level = 16
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_4fnx7"]
+script = ExtResource("2_cno57")
+level = 20
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_3e64c"]
+script = ExtResource("2_cno57")
+level = 25
+move = &"STRENGTHSAP"
+
+[sub_resource type="Resource" id="Resource_s7f4t"]
+script = ExtResource("2_cno57")
+level = 28
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_mhxro"]
+script = ExtResource("2_cno57")
+level = 32
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_1ohxo"]
+script = ExtResource("2_cno57")
+level = 36
+move = &"SPORE"
+
+[sub_resource type="Resource" id="Resource_mifal"]
+script = ExtResource("2_cno57")
+level = 40
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_mgk0q"]
+script = ExtResource("2_cno57")
+level = 44
+move = &"DREAMEATER"
+
+[resource]
+resource_name = "MORELULL"
+script = ExtResource("3_s7n73")
+species = &"MORELULL"
+category = "Illuminating"
+pokedex_entry = "It scatters its shining spores around itself. Even though they're dangerous, nighttime tours of forests where Morelull live are popular."
+types = Array[StringName]([&"GRASS", &"FAIRY"])
+base_hp = 40
+base_attack = 35
+base_defense = 55
+base_special_attack = 65
+base_special_defense = 75
+base_speed = 15
+ev_special_defense = 1
+base_exp = 57
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cno57")]([SubResource("Resource_etkom"), SubResource("Resource_kdfeb"), SubResource("Resource_gdsa1"), SubResource("Resource_mot7n"), SubResource("Resource_bcsf8"), SubResource("Resource_qb3hw"), SubResource("Resource_4fnx7"), SubResource("Resource_3e64c"), SubResource("Resource_s7f4t"), SubResource("Resource_mhxro"), SubResource("Resource_1ohxo"), SubResource("Resource_mifal"), SubResource("Resource_mgk0q")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POLLENPUFF", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SIGNALBEAM", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"THUNDERWAVE", &"TOXIC", &"WONDERROOM", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"GROWTH", &"LEECHSEED", &"POISONPOWDER", &"STUNSPORE"])
+abilities = Array[StringName]([&"ILLUMINATE", &"EFFECTSPORE"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+wild_item_common = Array[StringName]([&"TINYMUSHROOM"])
+wild_item_uncommon = Array[StringName]([&"BIGMUSHROOM"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4eqla")]([SubResource("Resource_n8pxg")])
+height = 2
+weight = 15
+color = &"Purple"
+shape = &"HeadBase"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(1, 27)
+shadow_size = 1
+id = &"MORELULL"
+display_name = "Morelull"

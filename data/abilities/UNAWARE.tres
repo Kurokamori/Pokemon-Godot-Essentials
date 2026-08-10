@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_p343x"]
+
+[resource]
+resource_name = "UNAWARE"
+script = ExtResource("1_p343x")
+description = "Ignores any stat changes in the Pokémon."
+id = &"UNAWARE"
+display_name = "Unaware"

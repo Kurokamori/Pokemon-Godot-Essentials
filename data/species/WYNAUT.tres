@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7brv3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_n07ce"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gc5yn"]
+
+[sub_resource type="Resource" id="Resource_4x15o"]
+script = ExtResource("1_7brv3")
+species = &"WOBBUFFET"
+method = &"Level"
+parameter = "15"
+
+[sub_resource type="Resource" id="Resource_x36dc"]
+script = ExtResource("2_n07ce")
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_aptn2"]
+script = ExtResource("2_n07ce")
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_4r5xt"]
+script = ExtResource("2_n07ce")
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_3dbuy"]
+script = ExtResource("2_n07ce")
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_kp18x"]
+script = ExtResource("2_n07ce")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_56vh3"]
+script = ExtResource("2_n07ce")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_m1ah1"]
+script = ExtResource("2_n07ce")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_myuee"]
+script = ExtResource("2_n07ce")
+move = &"AMNESIA"
+
+[resource]
+resource_name = "WYNAUT"
+script = ExtResource("3_gc5yn")
+species = &"WYNAUT"
+category = "Bright"
+pokedex_entry = "A Wynaut loves to eat sweet fruits. It cleverly picks fruits using its earlike arms. They gather in fruit gardens, drawn by the fragrance."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 95
+base_attack = 23
+base_defense = 48
+base_special_attack = 23
+base_special_defense = 48
+base_speed = 23
+ev_hp = 1
+base_exp = 52
+catch_rate = 125
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_n07ce")]([SubResource("Resource_x36dc"), SubResource("Resource_aptn2"), SubResource("Resource_4r5xt"), SubResource("Resource_3dbuy"), SubResource("Resource_kp18x"), SubResource("Resource_56vh3"), SubResource("Resource_m1ah1"), SubResource("Resource_myuee")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"CHARM", &"ENCORE", &"SAFEGUARD"])
+abilities = Array[StringName]([&"SHADOWTAG"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+hatch_steps = 5120
+incense = &"LAXINCENSE"
+evolutions = Array[ExtResource("1_7brv3")]([SubResource("Resource_4x15o")])
+height = 6
+weight = 140
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-1, 30)
+shadow_size = 1
+id = &"WYNAUT"
+display_name = "Wynaut"

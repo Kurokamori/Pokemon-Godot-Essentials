@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2koty"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qiwkv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rfpx6"]
+
+[sub_resource type="Resource" id="Resource_egpp6"]
+script = ExtResource("1_2koty")
+species = &"ELDEGOSS"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_dd4gf"]
+script = ExtResource("2_qiwkv")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_q6kia"]
+script = ExtResource("2_qiwkv")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_jgj57"]
+script = ExtResource("2_qiwkv")
+level = 4
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_b64s4"]
+script = ExtResource("2_qiwkv")
+level = 8
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_aehx5"]
+script = ExtResource("2_qiwkv")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_6tial"]
+script = ExtResource("2_qiwkv")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_q1tp1"]
+script = ExtResource("2_qiwkv")
+level = 21
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_r4jqh"]
+script = ExtResource("2_qiwkv")
+level = 24
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_bghhu"]
+script = ExtResource("2_qiwkv")
+level = 28
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_5yg82"]
+script = ExtResource("2_qiwkv")
+level = 32
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_rirv1"]
+script = ExtResource("2_qiwkv")
+level = 36
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "GOSSIFLEUR"
+script = ExtResource("3_rfpx6")
+species = &"GOSSIFLEUR"
+category = "Flowering"
+pokedex_entry = "It anchors itself in the ground with its single leg, then basks in the sun. After absorbing enough sunlight, its petals spread as it blooms brilliantly."
+types = Array[StringName]([&"GRASS"])
+base_hp = 40
+base_attack = 40
+base_defense = 60
+base_special_attack = 40
+base_special_defense = 60
+base_speed = 10
+ev_special_defense = 1
+base_exp = 50
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qiwkv")]([SubResource("Resource_dd4gf"), SubResource("Resource_q6kia"), SubResource("Resource_jgj57"), SubResource("Resource_b64s4"), SubResource("Resource_aehx5"), SubResource("Resource_6tial"), SubResource("Resource_q1tp1"), SubResource("Resource_r4jqh"), SubResource("Resource_bghhu"), SubResource("Resource_5yg82"), SubResource("Resource_rirv1")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"POLLENPUFF", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TOXIC"])
+egg_moves = Array[StringName]([&"GROWTH", &"LEECHSEED", &"POISONPOWDER", &"SLEEPPOWDER", &"STUNSPORE", &"WORRYSEED"])
+abilities = Array[StringName]([&"COTTONDOWN", &"REGENERATOR"])
+hidden_abilities = Array[StringName]([&"EFFECTSPORE"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_2koty")]([SubResource("Resource_egpp6")])
+height = 4
+weight = 22
+color = &"Green"
+shape = &"HeadBase"
+generation = 8
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 22)
+shadow_size = 1
+id = &"GOSSIFLEUR"
+display_name = "Gossifleur"

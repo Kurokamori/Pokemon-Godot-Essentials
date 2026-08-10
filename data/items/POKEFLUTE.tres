@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_qeyue"]
+
+[resource]
+resource_name = "POKEFLUTE"
+script = ExtResource("1_qeyue")
+name_plural = "Poké Flutes"
+pocket = 8
+field_use = 1
+battle_use = 5
+consumable = false
+show_quantity = false
+description = "A flute that is said to instantly awaken any Pokémon. It has a lovely tone."
+id = &"POKEFLUTE"
+display_name = "Poké Flute"
+flags = Array[StringName]([&"KeyItem"])

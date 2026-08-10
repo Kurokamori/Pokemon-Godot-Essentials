@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_b3xfh"]
+
+[resource]
+resource_name = "JUMPKICK"
+script = ExtResource("1_b3xfh")
+type = &"FIGHTING"
+category = 0
+power = 100
+accuracy = 95
+total_pp = 10
+function_code = &"CrashDamageIfFailsUnusableInGravity"
+description = "The user jumps up high, then strikes with a kick. If the kick misses, the user hurts itself."
+id = &"JUMPKICK"
+display_name = "Jump Kick"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

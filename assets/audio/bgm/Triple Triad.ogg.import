@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c1n78kjcdux0p"
+path="res://.godot/imported/Triple Triad.ogg-bebf0da17dd79edd29bb8c5c2287d319.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Triple Triad.ogg"
+dest_files=["res://.godot/imported/Triple Triad.ogg-bebf0da17dd79edd29bb8c5c2287d319.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

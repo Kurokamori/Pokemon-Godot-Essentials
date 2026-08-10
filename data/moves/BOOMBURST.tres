@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_r42ij"]
+
+[resource]
+resource_name = "BOOMBURST"
+script = ExtResource("1_r42ij")
+category = 1
+power = 140
+total_pp = 10
+target = &"AllNearOthers"
+description = "The user attacks everything around it with the destructive power of a terrible, explosive sound."
+id = &"BOOMBURST"
+display_name = "Boomburst"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

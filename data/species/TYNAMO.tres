@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ee43w"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p2vtj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wabs0"]
+
+[sub_resource type="Resource" id="Resource_ugs3x"]
+script = ExtResource("1_ee43w")
+species = &"EELEKTRIK"
+method = &"Level"
+parameter = "39"
+
+[sub_resource type="Resource" id="Resource_h7sbu"]
+script = ExtResource("2_p2vtj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_40fce"]
+script = ExtResource("2_p2vtj")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_22tel"]
+script = ExtResource("2_p2vtj")
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_i8hn8"]
+script = ExtResource("2_p2vtj")
+move = &"CHARGEBEAM"
+
+[resource]
+resource_name = "TYNAMO"
+script = ExtResource("3_wabs0")
+species = &"TYNAMO"
+category = "EleFish"
+pokedex_entry = "These Pokémon move in schools. They have an electricity-generating organ, so they discharge electricity if in danger."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 35
+base_attack = 55
+base_defense = 40
+base_special_attack = 45
+base_special_defense = 40
+base_speed = 60
+ev_speed = 1
+base_exp = 55
+growth_rate = &"Slow"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_p2vtj")]([SubResource("Resource_h7sbu"), SubResource("Resource_40fce"), SubResource("Resource_22tel"), SubResource("Resource_i8hn8")])
+tutor_moves = Array[StringName]([&"CHARGEBEAM", &"MAGNETRISE", &"THUNDERWAVE"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ee43w")]([SubResource("Resource_ugs3x")])
+height = 2
+weight = 3
+color = &"White"
+shape = &"Finned"
+generation = 5
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(0, 20)
+id = &"TYNAMO"
+display_name = "Tynamo"

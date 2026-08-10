@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_3rniq"]
+
+[resource]
+resource_name = "ANTICIPATION"
+script = ExtResource("1_3rniq")
+description = "Senses a foe's dangerous moves."
+id = &"ANTICIPATION"
+display_name = "Anticipation"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ynqri"]
+
+[resource]
+resource_name = "SEAINCENSE"
+script = ExtResource("1_ynqri")
+name_plural = "Sea Incenses"
+portion_name = "jar of Sea Incense"
+portion_name_plural = "jars of Sea Incense"
+price = 2000
+sell_price = 1000
+description = "An item to be held by a Pokémon. It has a curious aroma that boosts the power of Water-type moves."
+id = &"SEAINCENSE"
+display_name = "Sea Incense"
+flags = Array[StringName]([&"Fling_10"])

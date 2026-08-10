@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ncghs"]
+
+[resource]
+resource_name = "GLACIALLANCE"
+script = ExtResource("1_ncghs")
+type = &"ICE"
+category = 0
+power = 130
+target = &"AllNearFoes"
+description = "The user attacks by hurling a blizzard-cloaked icicle lance at opposing Pokémon."
+id = &"GLACIALLANCE"
+display_name = "Glacial Lance"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

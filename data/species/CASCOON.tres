@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qkj0d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_788kc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2vf8v"]
+
+[sub_resource type="Resource" id="Resource_r2xd2"]
+script = ExtResource("1_qkj0d")
+species = &"DUSTOX"
+method = &"Level"
+parameter = "10"
+
+[sub_resource type="Resource" id="Resource_ssole"]
+script = ExtResource("1_qkj0d")
+species = &"WURMPLE"
+method = &"Cascoon"
+parameter = "7"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0q451"]
+script = ExtResource("2_788kc")
+level = 0
+move = &"HARDEN"
+
+[resource]
+resource_name = "CASCOON"
+script = ExtResource("3_2vf8v")
+species = &"CASCOON"
+category = "Cocoon"
+pokedex_entry = "To avoid detection by its enemies, it hides motionlessly beneath large leaves and in the gaps of branches. It also attaches dead leaves to its body for camouflage."
+types = Array[StringName]([&"BUG"])
+base_hp = 50
+base_attack = 35
+base_defense = 55
+base_special_attack = 25
+base_special_defense = 25
+base_speed = 15
+ev_defense = 2
+base_exp = 72
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_788kc")]([SubResource("Resource_0q451")])
+tutor_moves = Array[StringName]([&"BUGBITE", &"ELECTROWEB", &"IRONDEFENSE", &"STRINGSHOT"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_qkj0d")]([SubResource("Resource_r2xd2"), SubResource("Resource_ssole")])
+height = 7
+weight = 115
+color = &"Purple"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(0, 37)
+id = &"CASCOON"
+display_name = "Cascoon"

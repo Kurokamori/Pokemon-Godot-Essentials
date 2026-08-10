@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_f1wxf"]
+
+[resource]
+resource_name = "SINNOHSMARTSUPER"
+script = ExtResource("1_f1wxf")
+icon_position = 33
+description = "Super Contest Smart Category Great Rank winner!"
+id = &"SINNOHSMARTSUPER"
+display_name = "Smart Ribbon Great"

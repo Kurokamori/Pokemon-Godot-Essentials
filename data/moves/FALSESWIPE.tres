@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2al0s"]
+
+[resource]
+resource_name = "FALSESWIPE"
+script = ExtResource("1_2al0s")
+category = 0
+power = 40
+total_pp = 40
+function_code = &"CannotMakeTargetFaint"
+description = "A restrained attack that prevents the target from fainting. The target is left with at least 1 HP."
+id = &"FALSESWIPE"
+display_name = "False Swipe"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

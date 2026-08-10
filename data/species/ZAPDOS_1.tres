@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_250an"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_omlh3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_w3rox"]
+
+[sub_resource type="Resource" id="Resource_yqsgp"]
+script = ExtResource("2_omlh3")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_73d53"]
+script = ExtResource("2_omlh3")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_mvq1h"]
+script = ExtResource("2_omlh3")
+level = 5
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_3elfp"]
+script = ExtResource("2_omlh3")
+level = 10
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_4k5ro"]
+script = ExtResource("2_omlh3")
+level = 15
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_nuspl"]
+script = ExtResource("2_omlh3")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_wjqlc"]
+script = ExtResource("2_omlh3")
+level = 25
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_1peu4"]
+script = ExtResource("2_omlh3")
+level = 30
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_3i67i"]
+script = ExtResource("2_omlh3")
+level = 35
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_4vv83"]
+script = ExtResource("2_omlh3")
+level = 40
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_bdjhy"]
+script = ExtResource("2_omlh3")
+level = 45
+move = &"THUNDEROUSKICK"
+
+[sub_resource type="Resource" id="Resource_6r3ts"]
+script = ExtResource("2_omlh3")
+level = 50
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_bea2i"]
+script = ExtResource("2_omlh3")
+level = 55
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_idm71"]
+script = ExtResource("2_omlh3")
+level = 60
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_pns20"]
+script = ExtResource("2_omlh3")
+level = 65
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_umfwa"]
+script = ExtResource("2_omlh3")
+level = 70
+move = &"REVERSAL"
+
+[resource]
+resource_name = "ZAPDOS_1"
+script = ExtResource("3_w3rox")
+species = &"ZAPDOS"
+form = 1
+form_name = "Galarian"
+category = "Strong Legs"
+pokedex_entry = "When its feathers rub together, they produce a crackling sound like the zapping of electricity. That's why this Pokémon is called Zapdos."
+pokedex_form = 1
+types = Array[StringName]([&"FIGHTING", &"FLYING"])
+base_hp = 90
+base_attack = 125
+base_defense = 90
+base_special_attack = 85
+base_special_defense = 90
+base_speed = 100
+ev_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_omlh3")]([SubResource("Resource_yqsgp"), SubResource("Resource_73d53"), SubResource("Resource_mvq1h"), SubResource("Resource_3elfp"), SubResource("Resource_4k5ro"), SubResource("Resource_nuspl"), SubResource("Resource_wjqlc"), SubResource("Resource_1peu4"), SubResource("Resource_3i67i"), SubResource("Resource_4vv83"), SubResource("Resource_bdjhy"), SubResource("Resource_6r3ts"), SubResource("Resource_bea2i"), SubResource("Resource_idm71"), SubResource("Resource_pns20"), SubResource("Resource_umfwa")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AGILITY", &"ASSURANCE", &"BLAZEKICK", &"BOUNCE", &"BRAVEBIRD", &"BRICKBREAK", &"BULKUP", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TAUNT", &"THROATCHOP", &"UTURN"])
+abilities = Array[StringName]([&"DEFIANT"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+hatch_steps = 20480
+height = 16
+weight = 582
+color = &"Yellow"
+shape = &"Winged"
+habitat = &"Rare"
+generation = 8
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(6, 20)
+id = &"ZAPDOS_1"
+display_name = "Zapdos"
+flags = Array[StringName]([&"Legendary"])

@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ba2t5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xvyew"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_28jdc"]
+
+[sub_resource type="Resource" id="Resource_4uhos"]
+script = ExtResource("1_ba2t5")
+species = &"WINGULL"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ap70d"]
+script = ExtResource("2_xvyew")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_pmfa7"]
+script = ExtResource("2_xvyew")
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_mjl1u"]
+script = ExtResource("2_xvyew")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_qsyao"]
+script = ExtResource("2_xvyew")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_dkyl3"]
+script = ExtResource("2_xvyew")
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_4x6be"]
+script = ExtResource("2_xvyew")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_hgr3i"]
+script = ExtResource("2_xvyew")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ehfb8"]
+script = ExtResource("2_xvyew")
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_167n6"]
+script = ExtResource("2_xvyew")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_7rkr2"]
+script = ExtResource("2_xvyew")
+level = 15
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_m7mo0"]
+script = ExtResource("2_xvyew")
+level = 20
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_c2hd5"]
+script = ExtResource("2_xvyew")
+level = 28
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_ednew"]
+script = ExtResource("2_xvyew")
+level = 28
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_iwgqh"]
+script = ExtResource("2_xvyew")
+level = 28
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_a7f85"]
+script = ExtResource("2_xvyew")
+level = 34
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_mtqv3"]
+script = ExtResource("2_xvyew")
+level = 41
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_rww3i"]
+script = ExtResource("2_xvyew")
+level = 48
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_6uetw"]
+script = ExtResource("2_xvyew")
+level = 55
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_r7n6b"]
+script = ExtResource("2_xvyew")
+level = 62
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "PELIPPER"
+script = ExtResource("3_28jdc")
+species = &"PELIPPER"
+category = "Water Bird"
+pokedex_entry = "It skims the tops of waves as it flies. When it spots prey, it uses its large beak to scoop up the victim with water. It protects its eggs in its beak."
+types = Array[StringName]([&"WATER", &"FLYING"])
+base_hp = 60
+base_attack = 50
+base_defense = 100
+base_special_attack = 95
+base_special_defense = 70
+base_speed = 65
+ev_defense = 2
+base_exp = 154
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xvyew")]([SubResource("Resource_ap70d"), SubResource("Resource_pmfa7"), SubResource("Resource_mjl1u"), SubResource("Resource_qsyao"), SubResource("Resource_dkyl3"), SubResource("Resource_4x6be"), SubResource("Resource_hgr3i"), SubResource("Resource_ehfb8"), SubResource("Resource_167n6"), SubResource("Resource_7rkr2"), SubResource("Resource_m7mo0"), SubResource("Resource_c2hd5"), SubResource("Resource_ednew"), SubResource("Resource_iwgqh"), SubResource("Resource_a7f85"), SubResource("Resource_mtqv3"), SubResource("Resource_rww3i"), SubResource("Resource_6uetw"), SubResource("Resource_r7n6b")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"ATTRACT", &"BLIZZARD", &"BRAVEBIRD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HAIL", &"HIDDENPOWER", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"KNOCKOFF", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEEDBOMB", &"SHOCKWAVE", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"UTURN", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"KEENEYE", &"DRIZZLE"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+wild_item_common = Array[StringName]([&"PRETTYFEATHER"])
+egg_groups = Array[StringName]([&"Water1", &"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ba2t5")]([SubResource("Resource_4uhos")])
+height = 12
+weight = 280
+color = &"Yellow"
+shape = &"Winged"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+id = &"PELIPPER"
+display_name = "Pelipper"

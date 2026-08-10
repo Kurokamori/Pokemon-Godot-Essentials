@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gis5d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_iwioo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_d1wpo"]
+
+[sub_resource type="Resource" id="Resource_slydu"]
+script = ExtResource("1_gis5d")
+species = &"CLAYDOL"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_8hbv3"]
+script = ExtResource("2_iwioo")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_4d5up"]
+script = ExtResource("2_iwioo")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_nnpdj"]
+script = ExtResource("2_iwioo")
+level = 3
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_ajbni"]
+script = ExtResource("2_iwioo")
+level = 6
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_qphdb"]
+script = ExtResource("2_iwioo")
+level = 9
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_ua3ir"]
+script = ExtResource("2_iwioo")
+level = 12
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_3rf8w"]
+script = ExtResource("2_iwioo")
+level = 15
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_pw173"]
+script = ExtResource("2_iwioo")
+level = 18
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_7r18v"]
+script = ExtResource("2_iwioo")
+level = 21
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_kx2qe"]
+script = ExtResource("2_iwioo")
+level = 24
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_7usgv"]
+script = ExtResource("2_iwioo")
+level = 27
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_uk7sw"]
+script = ExtResource("2_iwioo")
+level = 30
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_nl6qh"]
+script = ExtResource("2_iwioo")
+level = 33
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_1dd2g"]
+script = ExtResource("2_iwioo")
+level = 36
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_n80vy"]
+script = ExtResource("2_iwioo")
+level = 36
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_objsu"]
+script = ExtResource("2_iwioo")
+level = 39
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_f4gbo"]
+script = ExtResource("2_iwioo")
+level = 42
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "BALTOY"
+script = ExtResource("3_d1wpo")
+species = &"BALTOY"
+category = "Clay Doll"
+pokedex_entry = "A Baltoy moves by spinning on its single foot. It has been depicted in murals adorning the walls of a once-bustling city in an ancient age."
+types = Array[StringName]([&"GROUND", &"PSYCHIC"])
+base_hp = 40
+base_attack = 40
+base_defense = 55
+base_special_attack = 40
+base_special_defense = 70
+base_speed = 55
+ev_special_defense = 1
+base_exp = 60
+gender_ratio = &"Genderless"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_iwioo")]([SubResource("Resource_8hbv3"), SubResource("Resource_4d5up"), SubResource("Resource_nnpdj"), SubResource("Resource_ajbni"), SubResource("Resource_qphdb"), SubResource("Resource_ua3ir"), SubResource("Resource_3rf8w"), SubResource("Resource_pw173"), SubResource("Resource_7r18v"), SubResource("Resource_kx2qe"), SubResource("Resource_7usgv"), SubResource("Resource_uk7sw"), SubResource("Resource_nl6qh"), SubResource("Resource_1dd2g"), SubResource("Resource_n80vy"), SubResource("Resource_objsu"), SubResource("Resource_f4gbo")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ANCIENTPOWER", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COSMICPOWER", &"DAZZLINGGLEAM", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"EERIEIMPULSE", &"ENDURE", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FLASH", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"ICEBEAM", &"IMPRISON", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+wild_item_uncommon = Array[StringName]([&"LIGHTCLAY"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_gis5d")]([SubResource("Resource_slydu")])
+height = 5
+weight = 215
+color = &"Brown"
+shape = &"HeadArms"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(-7, 52)
+front_sprite_offset = Vector2i(-2, 22)
+shadow_size = 1
+id = &"BALTOY"
+display_name = "Baltoy"

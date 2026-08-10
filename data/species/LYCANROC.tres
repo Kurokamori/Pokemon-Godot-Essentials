@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xnb3s"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ath20"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fhvlp"]
+
+[sub_resource type="Resource" id="Resource_ous8e"]
+script = ExtResource("1_xnb3s")
+species = &"ROCKRUFF"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_i8fyg"]
+script = ExtResource("2_ath20")
+level = 0
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_rtqpe"]
+script = ExtResource("2_ath20")
+move = &"ACCELEROCK"
+
+[sub_resource type="Resource" id="Resource_qu75c"]
+script = ExtResource("2_ath20")
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_n5ldi"]
+script = ExtResource("2_ath20")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ouswk"]
+script = ExtResource("2_ath20")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_o3ado"]
+script = ExtResource("2_ath20")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_66q8p"]
+script = ExtResource("2_ath20")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_p3cax"]
+script = ExtResource("2_ath20")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_y0v41"]
+script = ExtResource("2_ath20")
+level = 12
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_nwknc"]
+script = ExtResource("2_ath20")
+level = 16
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_04oyr"]
+script = ExtResource("2_ath20")
+level = 20
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ble75"]
+script = ExtResource("2_ath20")
+level = 24
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_f85xm"]
+script = ExtResource("2_ath20")
+level = 30
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_ch6dy"]
+script = ExtResource("2_ath20")
+level = 36
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_523gm"]
+script = ExtResource("2_ath20")
+level = 42
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ppu1f"]
+script = ExtResource("2_ath20")
+level = 48
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_enjp1"]
+script = ExtResource("2_ath20")
+level = 54
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_lllry"]
+script = ExtResource("2_ath20")
+level = 60
+move = &"STONEEDGE"
+
+[resource]
+resource_name = "LYCANROC"
+script = ExtResource("3_fhvlp")
+species = &"LYCANROC"
+form_name = "Midday Form"
+category = "Wolf"
+pokedex_entry = "Its quick movements confuse its enemies. Well equipped with claws and fangs, it also uses the sharp rocks in its mane as weapons."
+types = Array[StringName]([&"ROCK"])
+base_hp = 75
+base_attack = 115
+base_defense = 65
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 112
+ev_attack = 2
+base_exp = 170
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ath20")]([SubResource("Resource_i8fyg"), SubResource("Resource_rtqpe"), SubResource("Resource_qu75c"), SubResource("Resource_n5ldi"), SubResource("Resource_ouswk"), SubResource("Resource_o3ado"), SubResource("Resource_66q8p"), SubResource("Resource_p3cax"), SubResource("Resource_y0v41"), SubResource("Resource_nwknc"), SubResource("Resource_04oyr"), SubResource("Resource_ble75"), SubResource("Resource_f85xm"), SubResource("Resource_ch6dy"), SubResource("Resource_523gm"), SubResource("Resource_ppu1f"), SubResource("Resource_enjp1"), SubResource("Resource_lllry")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"ATTRACT", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"COVET", &"CRUNCH", &"DOUBLETEAM", &"DRILLRUN", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERVOICE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LASHOUT", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILSLAP", &"TAUNT", &"THUNDERFANG", &"TOXIC", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"KEENEYE", &"SANDRUSH"])
+hidden_abilities = Array[StringName]([&"STEADFAST"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_xnb3s")]([SubResource("Resource_ous8e")])
+height = 8
+weight = 250
+color = &"Brown"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-2, 23)
+id = &"LYCANROC"
+display_name = "Lycanroc"

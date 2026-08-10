@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tlgoy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_01x3f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2otdi"]
+
+[sub_resource type="Resource" id="Resource_nm1tj"]
+script = ExtResource("1_tlgoy")
+species = &"MEDITITE"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_1qhen"]
+script = ExtResource("2_01x3f")
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_crmtu"]
+script = ExtResource("2_01x3f")
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_3tfs2"]
+script = ExtResource("2_01x3f")
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_hydwf"]
+script = ExtResource("2_01x3f")
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_ym7dj"]
+script = ExtResource("2_01x3f")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_swo1c"]
+script = ExtResource("2_01x3f")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_7qd71"]
+script = ExtResource("2_01x3f")
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_dk5oe"]
+script = ExtResource("2_01x3f")
+level = 4
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_mjjhj"]
+script = ExtResource("2_01x3f")
+level = 7
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_clsro"]
+script = ExtResource("2_01x3f")
+level = 9
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_iklgb"]
+script = ExtResource("2_01x3f")
+level = 12
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_fgs2n"]
+script = ExtResource("2_01x3f")
+level = 15
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_xkuh4"]
+script = ExtResource("2_01x3f")
+level = 17
+move = &"FORCEPALM"
+
+[sub_resource type="Resource" id="Resource_7rjgg"]
+script = ExtResource("2_01x3f")
+level = 20
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_e3xna"]
+script = ExtResource("2_01x3f")
+level = 23
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_6m40y"]
+script = ExtResource("2_01x3f")
+level = 25
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_03exg"]
+script = ExtResource("2_01x3f")
+level = 28
+move = &"HIGHJUMPKICK"
+
+[sub_resource type="Resource" id="Resource_rnch0"]
+script = ExtResource("2_01x3f")
+level = 31
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_k8i37"]
+script = ExtResource("2_01x3f")
+level = 33
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_fq2gs"]
+script = ExtResource("2_01x3f")
+level = 36
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_xslta"]
+script = ExtResource("2_01x3f")
+level = 42
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_tg17i"]
+script = ExtResource("2_01x3f")
+level = 47
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_ymbdb"]
+script = ExtResource("2_01x3f")
+level = 53
+move = &"COUNTER"
+
+[resource]
+resource_name = "MEDICHAM"
+script = ExtResource("3_2otdi")
+species = &"MEDICHAM"
+category = "Meditate"
+pokedex_entry = "Through crushingly harsh yoga training, it gained the power to foretell its foe's actions. It battles with elegant, dance- like movement."
+types = Array[StringName]([&"FIGHTING", &"PSYCHIC"])
+base_hp = 60
+base_attack = 60
+base_defense = 75
+base_special_attack = 60
+base_special_defense = 75
+base_speed = 80
+ev_speed = 2
+base_exp = 144
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_01x3f")]([SubResource("Resource_1qhen"), SubResource("Resource_crmtu"), SubResource("Resource_3tfs2"), SubResource("Resource_hydwf"), SubResource("Resource_ym7dj"), SubResource("Resource_swo1c"), SubResource("Resource_7qd71"), SubResource("Resource_dk5oe"), SubResource("Resource_mjjhj"), SubResource("Resource_clsro"), SubResource("Resource_iklgb"), SubResource("Resource_fgs2n"), SubResource("Resource_xkuh4"), SubResource("Resource_7rjgg"), SubResource("Resource_e3xna"), SubResource("Resource_6m40y"), SubResource("Resource_03exg"), SubResource("Resource_rnch0"), SubResource("Resource_k8i37"), SubResource("Resource_fq2gs"), SubResource("Resource_xslta"), SubResource("Resource_tg17i"), SubResource("Resource_ymbdb")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"LASERFOCUS", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERPUNCH", &"TRICK", &"VACUUMWAVE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"PUREPOWER"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tlgoy")]([SubResource("Resource_nm1tj")])
+height = 13
+weight = 315
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"MEDICHAM"
+display_name = "Medicham"

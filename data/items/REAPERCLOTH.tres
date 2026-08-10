@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_c0pkm"]
+
+[resource]
+resource_name = "REAPERCLOTH"
+script = ExtResource("1_c0pkm")
+name_plural = "Reaper Cloths"
+portion_name = "scrap of Reaper Cloth"
+portion_name_plural = "scraps of Reaper Cloth"
+price = 3000
+sell_price = 1000
+bp_price = 5
+description = "A cloth imbued with horrifyingly strong spiritual energy. It is loved by a certain Pokémon."
+id = &"REAPERCLOTH"
+display_name = "Reaper Cloth"
+flags = Array[StringName]([&"Fling_10"])

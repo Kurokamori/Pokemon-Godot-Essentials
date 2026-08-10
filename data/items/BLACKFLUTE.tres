@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_45q45"]
+
+[resource]
+resource_name = "BLACKFLUTE"
+script = ExtResource("1_45q45")
+name_plural = "Black Flutes"
+price = 20
+sell_price = 10
+field_use = 2
+consumable = false
+description = "A black flute made from blown glass. Its melody makes wild Pokémon less likely to appear."
+id = &"BLACKFLUTE"
+display_name = "Black Flute"
+flags = Array[StringName]([&"Fling_30"])

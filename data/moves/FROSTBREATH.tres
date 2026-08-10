@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ltisj"]
+
+[resource]
+resource_name = "FROSTBREATH"
+script = ExtResource("1_ltisj")
+type = &"ICE"
+category = 1
+power = 60
+accuracy = 90
+total_pp = 10
+function_code = &"AlwaysCriticalHit"
+description = "The user blows a cold breath on the target. This attack always results in a critical hit."
+id = &"FROSTBREATH"
+display_name = "Frost Breath"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_y82u8"]
+
+[resource]
+resource_name = "TM51"
+script = ExtResource("1_y82u8")
+name_plural = "TM51s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"ROOST"
+description = "The user lands and rests its body. This move restores the user's HP by up to half of its max HP."
+id = &"TM51"
+display_name = "TM51"
+flags = Array[StringName]([&"Fling_10"])

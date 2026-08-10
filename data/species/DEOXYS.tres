@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5l7mt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2buff"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ua540"]
+
+[sub_resource type="Resource" id="Resource_2a8x3"]
+script = ExtResource("2_2buff")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_2u1cm"]
+script = ExtResource("2_2buff")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_di5pr"]
+script = ExtResource("2_2buff")
+level = 7
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_2mkoh"]
+script = ExtResource("2_2buff")
+level = 13
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_jlolc"]
+script = ExtResource("2_2buff")
+level = 19
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_jghjj"]
+script = ExtResource("2_2buff")
+level = 25
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_vis57"]
+script = ExtResource("2_2buff")
+level = 31
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_cfsdv"]
+script = ExtResource("2_2buff")
+level = 37
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_bfxys"]
+script = ExtResource("2_2buff")
+level = 43
+move = &"PSYCHOSHIFT"
+
+[sub_resource type="Resource" id="Resource_6cdsp"]
+script = ExtResource("2_2buff")
+level = 49
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_gyai6"]
+script = ExtResource("2_2buff")
+level = 55
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_3qtpq"]
+script = ExtResource("2_2buff")
+level = 61
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_5amvw"]
+script = ExtResource("2_2buff")
+level = 67
+move = &"PSYCHOBOOST"
+
+[sub_resource type="Resource" id="Resource_2vsl8"]
+script = ExtResource("2_2buff")
+level = 73
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "DEOXYS"
+script = ExtResource("3_ua540")
+species = &"DEOXYS"
+form_name = "Normal Forme"
+category = "DNA"
+pokedex_entry = "A Pokémon that mutated from an extraterrestrial virus exposed to a laser beam. Its body is configured for superior agility and speed."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 50
+base_attack = 150
+base_defense = 50
+base_special_attack = 150
+base_special_defense = 50
+base_speed = 150
+ev_attack = 1
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_2buff")]([SubResource("Resource_2a8x3"), SubResource("Resource_2u1cm"), SubResource("Resource_di5pr"), SubResource("Resource_2mkoh"), SubResource("Resource_jlolc"), SubResource("Resource_jghjj"), SubResource("Resource_vis57"), SubResource("Resource_cfsdv"), SubResource("Resource_bfxys"), SubResource("Resource_6cdsp"), SubResource("Resource_gyai6"), SubResource("Resource_3qtpq"), SubResource("Resource_5amvw"), SubResource("Resource_2vsl8")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"AVALANCHE", &"BIND", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"WATERPULSE", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"PRESSURE"])
+hatch_steps = 30720
+height = 17
+weight = 608
+shape = &"Bipedal"
+habitat = &"Rare"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 14)
+id = &"DEOXYS"
+display_name = "Deoxys"
+flags = Array[StringName]([&"Mythical"])

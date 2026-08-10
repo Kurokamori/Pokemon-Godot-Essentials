@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vb5fl"]
+
+[resource]
+resource_name = "DRAGONRUSH"
+script = ExtResource("1_vb5fl")
+type = &"DRAGON"
+category = 0
+power = 100
+accuracy = 75
+total_pp = 10
+function_code = &"FlinchTarget"
+effect_chance = 20
+description = "The user tackles the foe while exhibiting overwhelming menace. It may also make the target flinch."
+id = &"DRAGONRUSH"
+display_name = "Dragon Rush"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"TramplesMinimize"])

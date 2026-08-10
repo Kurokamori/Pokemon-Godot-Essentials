@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2r8sr"]
+
+[resource]
+resource_name = "RECYCLE"
+script = ExtResource("1_2r8sr")
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"RestoreUserConsumedItem"
+description = "The user recycles a held item that has been used in battle so it can be used again."
+id = &"RECYCLE"
+display_name = "Recycle"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_k00bl"]
+
+[resource]
+resource_name = "EXPCANDYXL"
+script = ExtResource("1_k00bl")
+name_plural = "Exp. Candy XLs"
+pocket = 2
+price = 10000
+sell_price = 5000
+field_use = 1
+description = "A candy packed with energy. When consumed, it will grant a Pokémon a very large amount of Exp. Points."
+id = &"EXPCANDYXL"
+display_name = "Exp. Candy XL"
+flags = Array[StringName]([&"Fling_30"])

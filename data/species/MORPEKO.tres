@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1vc5r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a7edf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hxogv"]
+
+[sub_resource type="Resource" id="Resource_0dy4u"]
+script = ExtResource("2_a7edf")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_um2pw"]
+script = ExtResource("2_a7edf")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_wgfex"]
+script = ExtResource("2_a7edf")
+level = 5
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ks471"]
+script = ExtResource("2_a7edf")
+level = 10
+move = &"POWERTRIP"
+
+[sub_resource type="Resource" id="Resource_uccf8"]
+script = ExtResource("2_a7edf")
+level = 15
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_p2a6s"]
+script = ExtResource("2_a7edf")
+level = 20
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_qstjo"]
+script = ExtResource("2_a7edf")
+level = 25
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_jmfqv"]
+script = ExtResource("2_a7edf")
+level = 30
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_akx7h"]
+script = ExtResource("2_a7edf")
+level = 35
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_1un31"]
+script = ExtResource("2_a7edf")
+level = 40
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_0gxla"]
+script = ExtResource("2_a7edf")
+level = 45
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_cg21x"]
+script = ExtResource("2_a7edf")
+level = 50
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ntye1"]
+script = ExtResource("2_a7edf")
+level = 55
+move = &"AURAWHEEL"
+
+[sub_resource type="Resource" id="Resource_djmsr"]
+script = ExtResource("2_a7edf")
+level = 60
+move = &"THRASH"
+
+[resource]
+resource_name = "MORPEKO"
+script = ExtResource("3_hxogv")
+species = &"MORPEKO"
+form_name = "Full Belly Mode"
+category = "Two-Sided"
+pokedex_entry = "As it eats the seeds stored up in its pocket-like pouches, this Pokémon is not just satisfying its constant hunger. It's also generating electricity."
+types = Array[StringName]([&"ELECTRIC", &"DARK"])
+base_hp = 58
+base_attack = 95
+base_defense = 58
+base_special_attack = 70
+base_special_defense = 58
+base_speed = 97
+ev_speed = 2
+base_exp = 153
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_a7edf")]([SubResource("Resource_0dy4u"), SubResource("Resource_um2pw"), SubResource("Resource_wgfex"), SubResource("Resource_ks471"), SubResource("Resource_uccf8"), SubResource("Resource_p2a6s"), SubResource("Resource_qstjo"), SubResource("Resource_jmfqv"), SubResource("Resource_akx7h"), SubResource("Resource_1un31"), SubResource("Resource_0gxla"), SubResource("Resource_cg21x"), SubResource("Resource_ntye1"), SubResource("Resource_djmsr")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"ATTRACT", &"BRICKBREAK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DOUBLETEAM", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREFANG", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"HIDDENPOWER", &"ICEFANG", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"PSYCHICFANGS", &"REST", &"RETURN", &"REVENGE", &"RISINGVOLTAGE", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNARL", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"CHARGE", &"FAKEOUT", &"PARTINGSHOT", &"QUASH", &"RAPIDSPIN", &"SUPERFANG", &"SWAGGER", &"TICKLE"])
+abilities = Array[StringName]([&"HUNGERSWITCH"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 2560
+height = 3
+weight = 30
+color = &"Yellow"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(2, 26)
+shadow_size = 1
+id = &"MORPEKO"
+display_name = "Morpeko"

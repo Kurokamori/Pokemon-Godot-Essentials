@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5totb"]
+
+[resource]
+resource_name = "HIDDENPOWER"
+script = ExtResource("1_5totb")
+category = 1
+power = 60
+total_pp = 15
+function_code = &"TypeDependsOnUserIVs"
+description = "A unique attack that varies in type and intensity depending on the Pokémon using it."
+id = &"HIDDENPOWER"
+display_name = "Hidden Power"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

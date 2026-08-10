@@ -1,0 +1,145 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lyjyr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e6jcy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_82itk"]
+
+[sub_resource type="Resource" id="Resource_4pojl"]
+script = ExtResource("1_lyjyr")
+species = &"SHUPPET"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3ujh3"]
+script = ExtResource("2_e6jcy")
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_j4nwq"]
+script = ExtResource("2_e6jcy")
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_cit6i"]
+script = ExtResource("2_e6jcy")
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_y83ry"]
+script = ExtResource("2_e6jcy")
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_u3d1y"]
+script = ExtResource("2_e6jcy")
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_w2p7l"]
+script = ExtResource("2_e6jcy")
+level = 4
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_ycrsm"]
+script = ExtResource("2_e6jcy")
+level = 7
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_bk6ai"]
+script = ExtResource("2_e6jcy")
+level = 10
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_ooe8u"]
+script = ExtResource("2_e6jcy")
+level = 13
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_vq2sx"]
+script = ExtResource("2_e6jcy")
+level = 16
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_38mgd"]
+script = ExtResource("2_e6jcy")
+level = 19
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_ve4aj"]
+script = ExtResource("2_e6jcy")
+level = 22
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_kq1r3"]
+script = ExtResource("2_e6jcy")
+level = 26
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_yb6pj"]
+script = ExtResource("2_e6jcy")
+level = 30
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_dw6gd"]
+script = ExtResource("2_e6jcy")
+level = 34
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_f2wee"]
+script = ExtResource("2_e6jcy")
+level = 40
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_uwuiu"]
+script = ExtResource("2_e6jcy")
+level = 46
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_3d28u"]
+script = ExtResource("2_e6jcy")
+level = 52
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_nuto3"]
+script = ExtResource("2_e6jcy")
+level = 58
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_dmuaa"]
+script = ExtResource("2_e6jcy")
+level = 64
+move = &"PHANTOMFORCE"
+
+[resource]
+resource_name = "BANETTE"
+script = ExtResource("3_82itk")
+species = &"BANETTE"
+category = "Marionette"
+pokedex_entry = "An abandoned plush doll became this Pokémon. They are said to live in garbage dumps and wander about in search of the children that threw them away."
+types = Array[StringName]([&"GHOST"])
+base_hp = 64
+base_attack = 115
+base_defense = 65
+base_special_attack = 83
+base_special_defense = 63
+base_speed = 65
+ev_attack = 2
+base_exp = 159
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_e6jcy")]([SubResource("Resource_3ujh3"), SubResource("Resource_j4nwq"), SubResource("Resource_cit6i"), SubResource("Resource_y83ry"), SubResource("Resource_u3d1y"), SubResource("Resource_w2p7l"), SubResource("Resource_ycrsm"), SubResource("Resource_bk6ai"), SubResource("Resource_ooe8u"), SubResource("Resource_vq2sx"), SubResource("Resource_38mgd"), SubResource("Resource_ve4aj"), SubResource("Resource_kq1r3"), SubResource("Resource_yb6pj"), SubResource("Resource_dw6gd"), SubResource("Resource_f2wee"), SubResource("Resource_uwuiu"), SubResource("Resource_3d28u"), SubResource("Resource_nuto3"), SubResource("Resource_dmuaa")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICYWIND", &"INFESTATION", &"KNOCKOFF", &"MAGICCOAT", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"WILLOWISP"])
+abilities = Array[StringName]([&"INSOMNIA", &"FRISK"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_lyjyr")]([SubResource("Resource_4pojl")])
+height = 11
+weight = 125
+color = &"Black"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 3
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(3, 16)
+shadow_size = 1
+id = &"BANETTE"
+display_name = "Banette"

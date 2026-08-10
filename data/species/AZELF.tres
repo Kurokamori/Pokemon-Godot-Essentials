@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2iggw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_j7xme"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_h4fpg"]
+
+[sub_resource type="Resource" id="Resource_p1inu"]
+script = ExtResource("2_j7xme")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_k1xu8"]
+script = ExtResource("2_j7xme")
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_jo5jv"]
+script = ExtResource("2_j7xme")
+level = 7
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_1s2sy"]
+script = ExtResource("2_j7xme")
+level = 14
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_tj3m7"]
+script = ExtResource("2_j7xme")
+level = 21
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_6lf7e"]
+script = ExtResource("2_j7xme")
+level = 28
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_xamdp"]
+script = ExtResource("2_j7xme")
+level = 35
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_rs6rc"]
+script = ExtResource("2_j7xme")
+level = 42
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_eamo3"]
+script = ExtResource("2_j7xme")
+level = 49
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_2dst4"]
+script = ExtResource("2_j7xme")
+level = 56
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_7wfg8"]
+script = ExtResource("2_j7xme")
+level = 63
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_lxygm"]
+script = ExtResource("2_j7xme")
+level = 70
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_xefey"]
+script = ExtResource("2_j7xme")
+level = 77
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "AZELF"
+script = ExtResource("3_h4fpg")
+species = &"AZELF"
+category = "Willpower"
+pokedex_entry = "Known as \"The Being of Willpower.\" It sleeps at the bottom of a lake to keep the world in balance."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 75
+base_attack = 125
+base_defense = 70
+base_special_attack = 125
+base_special_defense = 70
+base_speed = 115
+ev_attack = 2
+ev_special_attack = 1
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_j7xme")]([SubResource("Resource_p1inu"), SubResource("Resource_k1xu8"), SubResource("Resource_jo5jv"), SubResource("Resource_1s2sy"), SubResource("Resource_tj3m7"), SubResource("Resource_6lf7e"), SubResource("Resource_xamdp"), SubResource("Resource_rs6rc"), SubResource("Resource_eamo3"), SubResource("Resource_2dst4"), SubResource("Resource_7wfg8"), SubResource("Resource_lxygm"), SubResource("Resource_xefey")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ALLYSWITCH", &"ASSURANCE", &"BATONPASS", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IMPRISON", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"UPROAR", &"UTURN", &"WATERPULSE", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+hatch_steps = 20480
+height = 3
+weight = 3
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(6, 18)
+shadow_size = 1
+id = &"AZELF"
+display_name = "Azelf"
+flags = Array[StringName]([&"Legendary"])

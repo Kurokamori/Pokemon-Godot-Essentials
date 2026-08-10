@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_314c5"]
+
+[resource]
+resource_name = "BERRYJUICE"
+script = ExtResource("1_314c5")
+name_plural = "Berry Juices"
+portion_name = "cup of Berry Juice"
+portion_name_plural = "cups of Berry Juice"
+pocket = 2
+price = 100
+sell_price = 50
+field_use = 1
+battle_use = 1
+description = "A 100% pure juice made of Berries. It restores the HP of one Pokémon by just 20 points."
+id = &"BERRYJUICE"
+display_name = "Berry Juice"
+flags = Array[StringName]([&"Fling_30"])

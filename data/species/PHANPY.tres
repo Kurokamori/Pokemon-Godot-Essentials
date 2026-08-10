@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ysevs"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_13a4a"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_c8lek"]
+
+[sub_resource type="Resource" id="Resource_l25c1"]
+script = ExtResource("1_ysevs")
+species = &"DONPHAN"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_kiew1"]
+script = ExtResource("2_13a4a")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_v3e66"]
+script = ExtResource("2_13a4a")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_ffmht"]
+script = ExtResource("2_13a4a")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_nmehr"]
+script = ExtResource("2_13a4a")
+level = 6
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_aqpti"]
+script = ExtResource("2_13a4a")
+level = 10
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_jve6x"]
+script = ExtResource("2_13a4a")
+level = 15
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_26wu7"]
+script = ExtResource("2_13a4a")
+level = 19
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_udq0k"]
+script = ExtResource("2_13a4a")
+level = 24
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_8nu24"]
+script = ExtResource("2_13a4a")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_224br"]
+script = ExtResource("2_13a4a")
+level = 33
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_s7t6d"]
+script = ExtResource("2_13a4a")
+level = 37
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_r2kbc"]
+script = ExtResource("2_13a4a")
+level = 42
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "PHANPY"
+script = ExtResource("3_c8lek")
+species = &"PHANPY"
+category = "Long Nose"
+pokedex_entry = "Phanpy's big ears serve as broad fans. When it becomes hot, it flaps the ears busily to cool down. Even the young are very strong."
+types = Array[StringName]([&"GROUND"])
+base_hp = 90
+base_attack = 60
+base_defense = 60
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 40
+ev_hp = 1
+base_exp = 66
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_13a4a")]([SubResource("Resource_kiew1"), SubResource("Resource_v3e66"), SubResource("Resource_ffmht"), SubResource("Resource_nmehr"), SubResource("Resource_aqpti"), SubResource("Resource_jve6x"), SubResource("Resource_26wu7"), SubResource("Resource_udq0k"), SubResource("Resource_8nu24"), SubResource("Resource_224br"), SubResource("Resource_s7t6d"), SubResource("Resource_r2kbc")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERVOICE", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"BODYSLAM", &"COUNTER", &"ENDEAVOR", &"FISSURE", &"FOCUSENERGY", &"HEADSMASH", &"HEAVYSLAM", &"HIGHHORSEPOWER", &"ICESHARD", &"MUDSLAP", &"PLAYROUGH", &"SNORE"])
+abilities = Array[StringName]([&"PICKUP"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ysevs")]([SubResource("Resource_l25c1")])
+height = 5
+weight = 335
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"RoughTerrain"
+generation = 2
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"PHANPY"
+display_name = "Phanpy"

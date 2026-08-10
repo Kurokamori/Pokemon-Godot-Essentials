@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7843v"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tylyx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5wbkr"]
+
+[sub_resource type="Resource" id="Resource_6kxw7"]
+script = ExtResource("2_tylyx")
+move = &"PRESENT"
+
+[sub_resource type="Resource" id="Resource_hgt8u"]
+script = ExtResource("2_tylyx")
+level = 25
+move = &"DRILLPECK"
+
+[resource]
+resource_name = "DELIBIRD"
+script = ExtResource("3_5wbkr")
+species = &"DELIBIRD"
+category = "Delivery"
+pokedex_entry = "It carries food bundled up in its tail. There was a famous explorer who managed to scale Mt. Everest thanks to a Delibird sharing its food."
+types = Array[StringName]([&"ICE", &"FLYING"])
+base_hp = 45
+base_attack = 55
+base_defense = 45
+base_special_attack = 65
+base_special_defense = 45
+base_speed = 75
+ev_speed = 1
+base_exp = 116
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tylyx")]([SubResource("Resource_6kxw7"), SubResource("Resource_hgt8u")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"AURORAVEIL", &"AVALANCHE", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRAVEBIRD", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLING", &"FLY", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"FUTURESIGHT", &"GUNKSHOT", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SIGNALBEAM", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"SPIKES", &"STEELWING", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"TRIPLEAXEL", &"WATERPULSE", &"WEATHERBALL"])
+egg_moves = Array[StringName]([&"AURORABEAM", &"AURORAVEIL", &"COUNTER", &"DESTINYBOND", &"FAKEOUT", &"FREEZEDRY", &"FUTURESIGHT", &"ICEPUNCH", &"ICESHARD", &"ICYWIND", &"MEMENTO", &"QUICKATTACK", &"RAPIDSPIN", &"SPIKES", &"SPLASH"])
+abilities = Array[StringName]([&"VITALSPIRIT", &"HUSTLE"])
+hidden_abilities = Array[StringName]([&"INSOMNIA"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+height = 9
+weight = 160
+shape = &"Winged"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 26)
+id = &"DELIBIRD"
+display_name = "Delibird"

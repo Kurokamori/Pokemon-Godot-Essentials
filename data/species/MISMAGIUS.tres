@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_u5na6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_562o4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pj6qq"]
+
+[sub_resource type="Resource" id="Resource_tlsgd"]
+script = ExtResource("1_u5na6")
+species = &"MISDREAVUS"
+method = &"Item"
+parameter = "DUSKSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_rabsw"]
+script = ExtResource("2_562o4")
+move = &"MYSTICALFIRE"
+
+[sub_resource type="Resource" id="Resource_ux7yy"]
+script = ExtResource("2_562o4")
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_q5gco"]
+script = ExtResource("2_562o4")
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_jtggv"]
+script = ExtResource("2_562o4")
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_u8jtn"]
+script = ExtResource("2_562o4")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_0hljm"]
+script = ExtResource("2_562o4")
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_gb8j3"]
+script = ExtResource("2_562o4")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_6lxb6"]
+script = ExtResource("2_562o4")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_cuscv"]
+script = ExtResource("2_562o4")
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_io74g"]
+script = ExtResource("2_562o4")
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_cu2y2"]
+script = ExtResource("2_562o4")
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_wsbk4"]
+script = ExtResource("2_562o4")
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_fc0fj"]
+script = ExtResource("2_562o4")
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_itlm6"]
+script = ExtResource("2_562o4")
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_e6467"]
+script = ExtResource("2_562o4")
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_v7xal"]
+script = ExtResource("2_562o4")
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_bwcnp"]
+script = ExtResource("2_562o4")
+move = &"CONFUSION"
+
+[resource]
+resource_name = "MISMAGIUS"
+script = ExtResource("3_pj6qq")
+species = &"MISMAGIUS"
+category = "Magical"
+pokedex_entry = "Its cries sound like incantations. Those hearing it are tormented by headaches and hallucinations."
+types = Array[StringName]([&"GHOST"])
+base_hp = 60
+base_attack = 60
+base_defense = 60
+base_special_attack = 105
+base_special_defense = 105
+base_speed = 105
+ev_special_attack = 1
+ev_special_defense = 1
+base_exp = 173
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_562o4")]([SubResource("Resource_rabsw"), SubResource("Resource_ux7yy"), SubResource("Resource_q5gco"), SubResource("Resource_jtggv"), SubResource("Resource_u8jtn"), SubResource("Resource_0hljm"), SubResource("Resource_gb8j3"), SubResource("Resource_6lxb6"), SubResource("Resource_cuscv"), SubResource("Resource_io74g"), SubResource("Resource_cu2y2"), SubResource("Resource_wsbk4"), SubResource("Resource_fc0fj"), SubResource("Resource_itlm6"), SubResource("Resource_e6467"), SubResource("Resource_v7xal"), SubResource("Resource_bwcnp")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEALBELL", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICYWIND", &"LASERFOCUS", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"UPROAR", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_u5na6")]([SubResource("Resource_tlsgd")])
+height = 9
+weight = 44
+color = &"Purple"
+generation = 4
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-2, 10)
+id = &"MISMAGIUS"
+display_name = "Mismagius"

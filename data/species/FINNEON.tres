@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_d7b1o"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yy8iy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xpd1r"]
+
+[sub_resource type="Resource" id="Resource_7mahn"]
+script = ExtResource("1_d7b1o")
+species = &"LUMINEON"
+method = &"Level"
+parameter = "31"
+
+[sub_resource type="Resource" id="Resource_cwp23"]
+script = ExtResource("2_yy8iy")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_wg4s1"]
+script = ExtResource("2_yy8iy")
+level = 6
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_unk82"]
+script = ExtResource("2_yy8iy")
+level = 10
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_wuu5p"]
+script = ExtResource("2_yy8iy")
+level = 13
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_b7730"]
+script = ExtResource("2_yy8iy")
+level = 17
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_wiwfc"]
+script = ExtResource("2_yy8iy")
+level = 22
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_kpoaq"]
+script = ExtResource("2_yy8iy")
+level = 26
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_3mfqd"]
+script = ExtResource("2_yy8iy")
+level = 29
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_lu347"]
+script = ExtResource("2_yy8iy")
+level = 33
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_y8vsx"]
+script = ExtResource("2_yy8iy")
+level = 38
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_sqht1"]
+script = ExtResource("2_yy8iy")
+level = 42
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_bptkv"]
+script = ExtResource("2_yy8iy")
+level = 45
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_8vlk5"]
+script = ExtResource("2_yy8iy")
+level = 49
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_wkxek"]
+script = ExtResource("2_yy8iy")
+level = 54
+move = &"SOAK"
+
+[resource]
+resource_name = "FINNEON"
+script = ExtResource("3_xpd1r")
+species = &"FINNEON"
+category = "Wing Fish"
+pokedex_entry = "After long exposure to sunlight, the patterns on its tail fins shine vividly when darkness arrives."
+types = Array[StringName]([&"WATER"])
+base_hp = 49
+base_attack = 49
+base_defense = 56
+base_special_attack = 49
+base_special_defense = 61
+base_speed = 66
+ev_speed = 1
+base_exp = 66
+growth_rate = &"Erratic"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yy8iy")]([SubResource("Resource_cwp23"), SubResource("Resource_wg4s1"), SubResource("Resource_unk82"), SubResource("Resource_wuu5p"), SubResource("Resource_b7730"), SubResource("Resource_wiwfc"), SubResource("Resource_kpoaq"), SubResource("Resource_3mfqd"), SubResource("Resource_lu347"), SubResource("Resource_y8vsx"), SubResource("Resource_sqht1"), SubResource("Resource_bptkv"), SubResource("Resource_8vlk5"), SubResource("Resource_wkxek")])
+tutor_moves = Array[StringName]([&"AIRCUTTER", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"OMINOUSWIND", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TWISTER", &"UTURN", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AGILITY", &"AQUATAIL", &"AURORABEAM", &"CHARM", &"CONFUSERAY", &"FLAIL", &"PSYBEAM", &"SPLASH", &"SWEETKISS", &"TICKLE"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"STORMDRAIN"])
+hidden_abilities = Array[StringName]([&"WATERVEIL"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_d7b1o")]([SubResource("Resource_7mahn")])
+height = 4
+weight = 70
+color = &"Blue"
+shape = &"Finned"
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 18)
+id = &"FINNEON"
+display_name = "Finneon"

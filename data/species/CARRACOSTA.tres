@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l8wep"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_parjl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3e1g3"]
+
+[sub_resource type="Resource" id="Resource_aqly2"]
+script = ExtResource("1_l8wep")
+species = &"TIRTOUGA"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_v8v21"]
+script = ExtResource("2_parjl")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_18luv"]
+script = ExtResource("2_parjl")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_x3grc"]
+script = ExtResource("2_parjl")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_cuogx"]
+script = ExtResource("2_parjl")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_52j8e"]
+script = ExtResource("2_parjl")
+level = 9
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_sw0h7"]
+script = ExtResource("2_parjl")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_2sfqt"]
+script = ExtResource("2_parjl")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_iclg7"]
+script = ExtResource("2_parjl")
+level = 18
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_by637"]
+script = ExtResource("2_parjl")
+level = 21
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_uyvr6"]
+script = ExtResource("2_parjl")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_qks08"]
+script = ExtResource("2_parjl")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_xm0q1"]
+script = ExtResource("2_parjl")
+level = 30
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_rycss"]
+script = ExtResource("2_parjl")
+level = 33
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_j4let"]
+script = ExtResource("2_parjl")
+level = 36
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_fnre7"]
+script = ExtResource("2_parjl")
+level = 41
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_ovv4v"]
+script = ExtResource("2_parjl")
+level = 46
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_fjk2b"]
+script = ExtResource("2_parjl")
+level = 51
+move = &"SHELLSMASH"
+
+[resource]
+resource_name = "CARRACOSTA"
+script = ExtResource("3_3e1g3")
+species = &"CARRACOSTA"
+category = "Prototurtle"
+pokedex_entry = "Incredible jaw strength enables them to chew up steel beams and rocks along with their prey."
+types = Array[StringName]([&"WATER", &"ROCK"])
+base_hp = 74
+base_attack = 108
+base_defense = 133
+base_special_attack = 83
+base_special_defense = 65
+base_speed = 32
+ev_defense = 2
+base_exp = 173
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_parjl")]([SubResource("Resource_v8v21"), SubResource("Resource_18luv"), SubResource("Resource_x3grc"), SubResource("Resource_cuogx"), SubResource("Resource_52j8e"), SubResource("Resource_sw0h7"), SubResource("Resource_2sfqt"), SubResource("Resource_iclg7"), SubResource("Resource_by637"), SubResource("Resource_uyvr6"), SubResource("Resource_qks08"), SubResource("Resource_xm0q1"), SubResource("Resource_rycss"), SubResource("Resource_j4let"), SubResource("Resource_fnre7"), SubResource("Resource_ovv4v"), SubResource("Resource_fjk2b")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIG", &"DIVE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GUARDSWAP", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LIQUIDATION", &"LOWKICK", &"METEORBEAM", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SOLIDROCK", &"STURDY"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_l8wep")]([SubResource("Resource_aqly2")])
+height = 12
+weight = 810
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(2, 48)
+front_sprite_offset = Vector2i(-5, 24)
+id = &"CARRACOSTA"
+display_name = "Carracosta"

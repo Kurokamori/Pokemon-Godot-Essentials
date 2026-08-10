@@ -1,0 +1,145 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qnuuy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_s7u1x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rbopo"]
+
+[sub_resource type="Resource" id="Resource_ewm2a"]
+script = ExtResource("1_qnuuy")
+species = &"GRIMER"
+method = &"Level"
+parameter = "38"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ke65o"]
+script = ExtResource("2_s7u1x")
+level = 0
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_vijpj"]
+script = ExtResource("2_s7u1x")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_ugp6f"]
+script = ExtResource("2_s7u1x")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_hsmun"]
+script = ExtResource("2_s7u1x")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_iyykn"]
+script = ExtResource("2_s7u1x")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ree1j"]
+script = ExtResource("2_s7u1x")
+level = 4
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_qt1j2"]
+script = ExtResource("2_s7u1x")
+level = 7
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_k81la"]
+script = ExtResource("2_s7u1x")
+level = 12
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_1fg6k"]
+script = ExtResource("2_s7u1x")
+level = 15
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_1sk3v"]
+script = ExtResource("2_s7u1x")
+level = 18
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_yef86"]
+script = ExtResource("2_s7u1x")
+level = 21
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_rvr35"]
+script = ExtResource("2_s7u1x")
+level = 26
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_mbmjs"]
+script = ExtResource("2_s7u1x")
+level = 29
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_48prd"]
+script = ExtResource("2_s7u1x")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_6bv0k"]
+script = ExtResource("2_s7u1x")
+level = 37
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_lt5a2"]
+script = ExtResource("2_s7u1x")
+level = 40
+move = &"GUNKSHOT"
+
+[sub_resource type="Resource" id="Resource_fv2ab"]
+script = ExtResource("2_s7u1x")
+level = 46
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_s2cb2"]
+script = ExtResource("2_s7u1x")
+level = 52
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_tfatc"]
+script = ExtResource("2_s7u1x")
+level = 57
+move = &"MEMENTO"
+
+[resource]
+resource_name = "MUK_1"
+script = ExtResource("3_rbopo")
+species = &"MUK"
+form = 1
+form_name = "Alolan"
+category = "Sludge"
+pokedex_entry = "The garbage it eats causes continuous chemical changes in its body, which produce its exceedingly vivid coloration."
+pokedex_form = 1
+types = Array[StringName]([&"POISON", &"DARK"])
+base_hp = 105
+base_attack = 105
+base_defense = 75
+base_special_attack = 65
+base_special_defense = 100
+base_speed = 50
+ev_hp = 1
+ev_attack = 1
+base_exp = 175
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_s7u1x")]([SubResource("Resource_ke65o"), SubResource("Resource_vijpj"), SubResource("Resource_ugp6f"), SubResource("Resource_hsmun"), SubResource("Resource_iyykn"), SubResource("Resource_ree1j"), SubResource("Resource_qt1j2"), SubResource("Resource_k81la"), SubResource("Resource_1fg6k"), SubResource("Resource_1sk3v"), SubResource("Resource_yef86"), SubResource("Resource_rvr35"), SubResource("Resource_mbmjs"), SubResource("Resource_48prd"), SubResource("Resource_6bv0k"), SubResource("Resource_lt5a2"), SubResource("Resource_fv2ab"), SubResource("Resource_s2cb2"), SubResource("Resource_tfatc")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EMBARGO", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GUNKSHOT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"INCINERATE", &"INFESTATION", &"KNOCKOFF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"QUASH", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNARL", &"SNORE", &"SPITE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"VENOSHOCK"])
+abilities = Array[StringName]([&"POISONTOUCH", &"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"POWEROFALCHEMY"])
+wild_item_common = Array[StringName]([&"BLACKSLUDGE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_qnuuy")]([SubResource("Resource_ewm2a")])
+height = 10
+weight = 520
+color = &"Green"
+shape = &"HeadArms"
+habitat = &"Urban"
+generation = 7
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-2, 27)
+shadow_size = 3
+id = &"MUK_1"
+display_name = "Muk"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

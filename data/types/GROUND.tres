@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_ewplm"]
+
+[resource]
+resource_name = "GROUND"
+script = ExtResource("1_ewplm")
+icon_position = 4
+weaknesses = Array[StringName]([&"WATER", &"GRASS", &"ICE"])
+resistances = Array[StringName]([&"POISON", &"ROCK"])
+immunities = Array[StringName]([&"ELECTRIC"])
+id = &"GROUND"
+display_name = "Ground"

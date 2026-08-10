@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_o1x80"]
+
+[resource]
+resource_name = "SANDSPIT"
+script = ExtResource("1_o1x80")
+description = "Creates a sandstorm when hit by an attack."
+id = &"SANDSPIT"
+display_name = "Sand Spit"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8waoc"]
+
+[resource]
+resource_name = "FLOATSTONE"
+script = ExtResource("1_8waoc")
+name_plural = "Float Stones"
+price = 3000
+sell_price = 2000
+bp_price = 10
+description = "A very light stone. It reduces the weight of a Pokémon when held."
+id = &"FLOATSTONE"
+display_name = "Float Stone"
+flags = Array[StringName]([&"Fling_30"])

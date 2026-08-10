@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_p06yp"]
+
+[resource]
+resource_name = "SWEETHEART"
+script = ExtResource("1_p06yp")
+name_plural = "Sweet Hearts"
+pocket = 2
+price = 3000
+sell_price = 1500
+field_use = 1
+battle_use = 1
+description = "Very sweet chocolate. It restores the HP of one Pokémon by only 20 points."
+id = &"SWEETHEART"
+display_name = "Sweet Heart"
+flags = Array[StringName]([&"Fling_30"])

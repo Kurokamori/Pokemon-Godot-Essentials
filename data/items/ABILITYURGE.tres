@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_nk5fs"]
+
+[resource]
+resource_name = "ABILITYURGE"
+script = ExtResource("1_nk5fs")
+name_plural = "Ability Urges"
+pocket = 7
+description = "When used, it activates the Ability of an ally Pokémon."
+id = &"ABILITYURGE"
+display_name = "Ability Urge"
+flags = Array[StringName]([&"Fling_30"])

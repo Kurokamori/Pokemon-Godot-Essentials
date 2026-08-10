@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_hqc3u"]
+
+[resource]
+resource_name = "SUCKERPUNCH"
+script = ExtResource("1_hqc3u")
+type = &"DARK"
+category = 0
+power = 70
+priority = 1
+function_code = &"FailsIfTargetActed"
+description = "This move enables the user to attack first. It fails if the target is not readying an attack, however."
+id = &"SUCKERPUNCH"
+display_name = "Sucker Punch"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

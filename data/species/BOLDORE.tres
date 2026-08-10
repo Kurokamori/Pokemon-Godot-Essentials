@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qqe5j"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gd0ps"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8hksu"]
+
+[sub_resource type="Resource" id="Resource_q8lkt"]
+script = ExtResource("1_qqe5j")
+species = &"GIGALITH"
+method = &"Trade"
+
+[sub_resource type="Resource" id="Resource_tdr5j"]
+script = ExtResource("1_qqe5j")
+species = &"ROGGENROLA"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_qbpsy"]
+script = ExtResource("2_gd0ps")
+level = 0
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_1krf8"]
+script = ExtResource("2_gd0ps")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_e5vnj"]
+script = ExtResource("2_gd0ps")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_c5ab0"]
+script = ExtResource("2_gd0ps")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_swcol"]
+script = ExtResource("2_gd0ps")
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_35n4j"]
+script = ExtResource("2_gd0ps")
+level = 12
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_280i7"]
+script = ExtResource("2_gd0ps")
+level = 16
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_dpgg0"]
+script = ExtResource("2_gd0ps")
+level = 20
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_dkqnn"]
+script = ExtResource("2_gd0ps")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_qeoeu"]
+script = ExtResource("2_gd0ps")
+level = 30
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_hieva"]
+script = ExtResource("2_gd0ps")
+level = 36
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_ofiu5"]
+script = ExtResource("2_gd0ps")
+level = 42
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_42aqu"]
+script = ExtResource("2_gd0ps")
+level = 48
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_bld54"]
+script = ExtResource("2_gd0ps")
+level = 54
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "BOLDORE"
+script = ExtResource("3_8hksu")
+species = &"BOLDORE"
+category = "Ore"
+pokedex_entry = "Because its energy was too great to be contained, the energy leaked and formed orange crystals."
+types = Array[StringName]([&"ROCK"])
+base_hp = 70
+base_attack = 105
+base_defense = 105
+base_special_attack = 50
+base_special_defense = 40
+base_speed = 20
+ev_attack = 1
+ev_defense = 1
+base_exp = 137
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gd0ps")]([SubResource("Resource_qbpsy"), SubResource("Resource_1krf8"), SubResource("Resource_e5vnj"), SubResource("Resource_c5ab0"), SubResource("Resource_swcol"), SubResource("Resource_35n4j"), SubResource("Resource_280i7"), SubResource("Resource_dpgg0"), SubResource("Resource_dkqnn"), SubResource("Resource_qeoeu"), SubResource("Resource_hieva"), SubResource("Resource_ofiu5"), SubResource("Resource_42aqu"), SubResource("Resource_bld54")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYPRESS", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GRAVITY", &"HEAVYSLAM", &"HIDDENPOWER", &"IRONDEFENSE", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POWERGEM", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"TOXIC"])
+abilities = Array[StringName]([&"STURDY", &"WEAKARMOR"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_common = Array[StringName]([&"EVERSTONE"])
+wild_item_uncommon = Array[StringName]([&"HARDSTONE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_qqe5j")]([SubResource("Resource_q8lkt"), SubResource("Resource_tdr5j")])
+height = 9
+weight = 1020
+color = &"Blue"
+shape = &"Multiped"
+generation = 5
+back_sprite_offset = Vector2i(-3, 52)
+front_sprite_offset = Vector2i(1, 32)
+id = &"BOLDORE"
+display_name = "Boldore"

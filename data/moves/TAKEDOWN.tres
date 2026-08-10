@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e8vc0"]
+
+[resource]
+resource_name = "TAKEDOWN"
+script = ExtResource("1_e8vc0")
+category = 0
+power = 90
+accuracy = 85
+total_pp = 20
+function_code = &"RecoilQuarterOfDamageDealt"
+description = "A reckless, full-body charge attack for slamming into the foe. It also damages the user a little."
+id = &"TAKEDOWN"
+display_name = "Take Down"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

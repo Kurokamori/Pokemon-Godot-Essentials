@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3kslo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8icma"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nr1ck"]
+
+[sub_resource type="Resource" id="Resource_jvc4j"]
+script = ExtResource("1_3kslo")
+species = &"TYPHLOSION"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_7unhb"]
+script = ExtResource("1_3kslo")
+species = &"CYNDAQUIL"
+method = &"Level"
+parameter = "14"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_rqs7s"]
+script = ExtResource("2_8icma")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_pjs6i"]
+script = ExtResource("2_8icma")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_exyli"]
+script = ExtResource("2_8icma")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_k1opy"]
+script = ExtResource("2_8icma")
+level = 6
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_lblnc"]
+script = ExtResource("2_8icma")
+level = 10
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_b4r27"]
+script = ExtResource("2_8icma")
+level = 13
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_xnymo"]
+script = ExtResource("2_8icma")
+level = 20
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_88im2"]
+script = ExtResource("2_8icma")
+level = 24
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_q1p3p"]
+script = ExtResource("2_8icma")
+level = 31
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_ssopp"]
+script = ExtResource("2_8icma")
+level = 35
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_ml2xq"]
+script = ExtResource("2_8icma")
+level = 42
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_aat75"]
+script = ExtResource("2_8icma")
+level = 46
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_kl6ec"]
+script = ExtResource("2_8icma")
+level = 53
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_ukr0g"]
+script = ExtResource("2_8icma")
+level = 57
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_gl58x"]
+script = ExtResource("2_8icma")
+level = 64
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_83l0q"]
+script = ExtResource("2_8icma")
+level = 68
+move = &"BURNUP"
+
+[sub_resource type="Resource" id="Resource_k1h5g"]
+script = ExtResource("2_8icma")
+level = 75
+move = &"ERUPTION"
+
+[resource]
+resource_name = "QUILAVA"
+script = ExtResource("3_nr1ck")
+species = &"QUILAVA"
+category = "Volcano"
+pokedex_entry = "It intimidates foes with intense gusts of flames and superheated air. Its quick nimbleness lets it dodge attacks even while scorching an enemy."
+types = Array[StringName]([&"FIRE"])
+base_hp = 58
+base_attack = 64
+base_defense = 58
+base_special_attack = 80
+base_special_defense = 65
+base_speed = 80
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8icma")]([SubResource("Resource_rqs7s"), SubResource("Resource_pjs6i"), SubResource("Resource_exyli"), SubResource("Resource_k1opy"), SubResource("Resource_lblnc"), SubResource("Resource_b4r27"), SubResource("Resource_xnymo"), SubResource("Resource_88im2"), SubResource("Resource_q1p3p"), SubResource("Resource_ssopp"), SubResource("Resource_ml2xq"), SubResource("Resource_aat75"), SubResource("Resource_kl6ec"), SubResource("Resource_ukr0g"), SubResource("Resource_gl58x"), SubResource("Resource_83l0q"), SubResource("Resource_k1h5g")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FLAMECHARGE", &"FLAMETHROWER", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"WILDCHARGE", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"FLASHFIRE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_3kslo")]([SubResource("Resource_jvc4j"), SubResource("Resource_7unhb")])
+height = 9
+weight = 190
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(2, 30)
+id = &"QUILAVA"
+display_name = "Quilava"

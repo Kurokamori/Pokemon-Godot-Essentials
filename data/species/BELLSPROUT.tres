@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_osqv8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0rvhk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jx3rp"]
+
+[sub_resource type="Resource" id="Resource_a66rc"]
+script = ExtResource("1_osqv8")
+species = &"WEEPINBELL"
+method = &"Level"
+parameter = "21"
+
+[sub_resource type="Resource" id="Resource_7438i"]
+script = ExtResource("2_0rvhk")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_p4q6n"]
+script = ExtResource("2_0rvhk")
+level = 7
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_mqywc"]
+script = ExtResource("2_0rvhk")
+level = 11
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_30uuu"]
+script = ExtResource("2_0rvhk")
+level = 13
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_wbu4u"]
+script = ExtResource("2_0rvhk")
+level = 15
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_jo1ss"]
+script = ExtResource("2_0rvhk")
+level = 17
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_exeik"]
+script = ExtResource("2_0rvhk")
+level = 23
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_ddcl3"]
+script = ExtResource("2_0rvhk")
+level = 27
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_q0ivf"]
+script = ExtResource("2_0rvhk")
+level = 29
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_faa6i"]
+script = ExtResource("2_0rvhk")
+level = 35
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_mxlh1"]
+script = ExtResource("2_0rvhk")
+level = 39
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_2uxum"]
+script = ExtResource("2_0rvhk")
+level = 41
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_7uknl"]
+script = ExtResource("2_0rvhk")
+level = 47
+move = &"SLAM"
+
+[resource]
+resource_name = "BELLSPROUT"
+script = ExtResource("3_jx3rp")
+species = &"BELLSPROUT"
+category = "Flower"
+pokedex_entry = "A Bellsprout's thin and flexible body lets it bend and sway to avoid any attack, however strong it may be. From its mouth, it leaks a fluid that melts even iron."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 50
+base_attack = 75
+base_defense = 35
+base_special_attack = 70
+base_special_defense = 30
+base_speed = 40
+ev_attack = 1
+base_exp = 60
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_0rvhk")]([SubResource("Resource_7438i"), SubResource("Resource_p4q6n"), SubResource("Resource_mqywc"), SubResource("Resource_30uuu"), SubResource("Resource_wbu4u"), SubResource("Resource_jo1ss"), SubResource("Resource_exeik"), SubResource("Resource_ddcl3"), SubResource("Resource_q0ivf"), SubResource("Resource_faa6i"), SubResource("Resource_mxlh1"), SubResource("Resource_2uxum"), SubResource("Resource_7uknl")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"INFESTATION", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POISONJAB", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"VENOSHOCK", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"ACIDSPRAY", &"BELCH", &"CLEARSMOG", &"ENCORE", &"INGRAIN", &"LEECHLIFE", &"MAGICALLEAF", &"POWERWHIP", &"STRENGTHSAP", &"SYNTHESIS", &"TICKLE", &"WEATHERBALL", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_osqv8")]([SubResource("Resource_a66rc")])
+height = 7
+weight = 40
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 27)
+shadow_size = 1
+id = &"BELLSPROUT"
+display_name = "Bellsprout"

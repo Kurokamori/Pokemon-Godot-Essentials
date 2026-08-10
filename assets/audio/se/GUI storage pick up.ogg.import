@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cx72fxw167aid"
+path="res://.godot/imported/GUI storage pick up.ogg-7afe5143c0530ea13bf8ca1aee638cca.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/GUI storage pick up.ogg"
+dest_files=["res://.godot/imported/GUI storage pick up.ogg-7afe5143c0530ea13bf8ca1aee638cca.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

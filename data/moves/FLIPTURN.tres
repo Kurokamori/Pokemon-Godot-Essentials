@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tm8de"]
+
+[resource]
+resource_name = "FLIPTURN"
+script = ExtResource("1_tm8de")
+type = &"WATER"
+category = 0
+power = 60
+total_pp = 20
+function_code = &"SwitchOutUserDamagingMove"
+description = "After making its attack, the user rushes back to switch places with a party Pokémon in waiting."
+id = &"FLIPTURN"
+display_name = "Flip Turn"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

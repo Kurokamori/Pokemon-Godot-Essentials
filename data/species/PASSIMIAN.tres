@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5j3ns"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_730rn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_b7e4e"]
+
+[sub_resource type="Resource" id="Resource_n8fc1"]
+script = ExtResource("2_730rn")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_yp4oi"]
+script = ExtResource("2_730rn")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_34eyq"]
+script = ExtResource("2_730rn")
+level = 5
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_qvmfm"]
+script = ExtResource("2_730rn")
+level = 10
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_oui0n"]
+script = ExtResource("2_730rn")
+level = 15
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_oqkqt"]
+script = ExtResource("2_730rn")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_brgaw"]
+script = ExtResource("2_730rn")
+level = 25
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_u5c8r"]
+script = ExtResource("2_730rn")
+level = 30
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_7cpvh"]
+script = ExtResource("2_730rn")
+level = 35
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_qa70o"]
+script = ExtResource("2_730rn")
+level = 40
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_q5wce"]
+script = ExtResource("2_730rn")
+level = 45
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_0d7vc"]
+script = ExtResource("2_730rn")
+level = 50
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_18ix1"]
+script = ExtResource("2_730rn")
+level = 55
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_we5ad"]
+script = ExtResource("2_730rn")
+level = 60
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "PASSIMIAN"
+script = ExtResource("3_b7e4e")
+species = &"PASSIMIAN"
+category = "Teamwork"
+pokedex_entry = "Berries are its weapons as well as the staple of its diet. The one that can throw a berry the farthest is the boss of the troop."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 100
+base_attack = 120
+base_defense = 90
+base_special_attack = 40
+base_special_defense = 60
+base_speed = 80
+ev_attack = 2
+base_exp = 172
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_730rn")]([SubResource("Resource_n8fc1"), SubResource("Resource_yp4oi"), SubResource("Resource_34eyq"), SubResource("Resource_qvmfm"), SubResource("Resource_oui0n"), SubResource("Resource_oqkqt"), SubResource("Resource_brgaw"), SubResource("Resource_u5c8r"), SubResource("Resource_7cpvh"), SubResource("Resource_qa70o"), SubResource("Resource_q5wce"), SubResource("Resource_0d7vc"), SubResource("Resource_18ix1"), SubResource("Resource_we5ad")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BLOCK", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DOUBLETEAM", &"DRAINPUNCH", &"EARTHQUAKE", &"ELECTROWEB", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"GYROBALL", &"HIDDENPOWER", &"HYPERBEAM", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"UPROAR", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"COUNTER", &"FEINT", &"KNOCKOFF", &"QUICKATTACK", &"QUICKGUARD", &"SEISMICTOSS", &"VITALTHROW"])
+abilities = Array[StringName]([&"RECEIVER"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 20
+weight = 828
+color = &"White"
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(4, 20)
+shadow_size = 3
+id = &"PASSIMIAN"
+display_name = "Passimian"

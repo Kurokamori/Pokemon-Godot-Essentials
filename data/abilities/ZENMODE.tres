@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_0fx53"]
+
+[resource]
+resource_name = "ZENMODE"
+script = ExtResource("1_0fx53")
+description = "Changes the Pokémon's shape when HP is halved."
+id = &"ZENMODE"
+display_name = "Zen Mode"

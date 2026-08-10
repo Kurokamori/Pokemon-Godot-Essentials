@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_05n0o"]
+
+[resource]
+resource_name = "TM01"
+script = ExtResource("1_05n0o")
+name_plural = "TM01s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"FOCUSPUNCH"
+description = "The user focuses its mind before launching a punch. This move fails if the user is hit before it is used."
+id = &"TM01"
+display_name = "TM01"
+flags = Array[StringName]([&"Fling_150"])

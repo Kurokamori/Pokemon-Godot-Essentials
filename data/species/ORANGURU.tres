@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_piq5d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jq4wk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xoihv"]
+
+[sub_resource type="Resource" id="Resource_wjly8"]
+script = ExtResource("2_jq4wk")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_m5nmy"]
+script = ExtResource("2_jq4wk")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_56ua5"]
+script = ExtResource("2_jq4wk")
+level = 5
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_xrwti"]
+script = ExtResource("2_jq4wk")
+level = 10
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_ewvac"]
+script = ExtResource("2_jq4wk")
+level = 15
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_1of8v"]
+script = ExtResource("2_jq4wk")
+level = 20
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_edrge"]
+script = ExtResource("2_jq4wk")
+level = 25
+move = &"QUASH"
+
+[sub_resource type="Resource" id="Resource_rln61"]
+script = ExtResource("2_jq4wk")
+level = 30
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_mvg47"]
+script = ExtResource("2_jq4wk")
+level = 35
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_yk41q"]
+script = ExtResource("2_jq4wk")
+level = 40
+move = &"TRICKROOM"
+
+[sub_resource type="Resource" id="Resource_7oeop"]
+script = ExtResource("2_jq4wk")
+level = 45
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_q1vnu"]
+script = ExtResource("2_jq4wk")
+level = 50
+move = &"INSTRUCT"
+
+[sub_resource type="Resource" id="Resource_r1xvf"]
+script = ExtResource("2_jq4wk")
+level = 55
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_vxpeg"]
+script = ExtResource("2_jq4wk")
+level = 60
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "ORANGURU"
+script = ExtResource("3_xoihv")
+species = &"ORANGURU"
+category = "Sage"
+pokedex_entry = "It normally spends its time meditating in the treetops. It throws Poké Balls and gives other Pokémon orders as it pleases."
+types = Array[StringName]([&"NORMAL", &"PSYCHIC"])
+base_hp = 90
+base_attack = 60
+base_defense = 80
+base_special_attack = 90
+base_special_defense = 110
+base_speed = 60
+ev_special_defense = 2
+base_exp = 172
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jq4wk")]([SubResource("Resource_wjly8"), SubResource("Resource_m5nmy"), SubResource("Resource_56ua5"), SubResource("Resource_xrwti"), SubResource("Resource_ewvac"), SubResource("Resource_1of8v"), SubResource("Resource_edrge"), SubResource("Resource_rln61"), SubResource("Resource_mvg47"), SubResource("Resource_yk41q"), SubResource("Resource_7oeop"), SubResource("Resource_q1vnu"), SubResource("Resource_r1xvf"), SubResource("Resource_vxpeg")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"BLOCK", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"DOUBLETEAM", &"DREAMEATER", &"EARTHQUAKE", &"EMBARGO", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRAVITY", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"KNOCKOFF", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"QUASH", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"TERRAINPULSE", &"THUNDER", &"THUNDERBOLT", &"TOXIC", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"DREAMEATER", &"EXTRASENSORY", &"LASTRESORT", &"YAWN"])
+abilities = Array[StringName]([&"INNERFOCUS", &"TELEPATHY"])
+hidden_abilities = Array[StringName]([&"SYMBIOSIS"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 15
+weight = 760
+color = &"White"
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(1, 23)
+shadow_size = 3
+id = &"ORANGURU"
+display_name = "Oranguru"

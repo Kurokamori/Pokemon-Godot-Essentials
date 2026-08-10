@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_o4c3a"]
+
+[resource]
+resource_name = "ROCKIUMZ"
+script = ExtResource("1_o4c3a")
+name_plural = "Rockium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Rock-type Pokémon holds to turn a Rock-type move into Continental Crush."
+id = &"ROCKIUMZ"
+display_name = "Rockium Z"
+flags = Array[StringName]([&"ZCrystal"])

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleTerrainData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_terrain_data.gd" id="1_h8ql7"]
+
+[resource]
+resource_name = "Psychic"
+script = ExtResource("1_h8ql7")
+animation = &"PsychicTerrain"
+id = &"Psychic"
+display_name = "Psychic"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_oys8x"]
+
+[resource]
+resource_name = "CONVERSION"
+script = ExtResource("1_oys8x")
+accuracy = 0
+total_pp = 30
+target = &"User"
+function_code = &"SetUserTypesToUserMoveType"
+description = "The user changes its type to become the same type as one of its moves."
+id = &"CONVERSION"
+display_name = "Conversion"

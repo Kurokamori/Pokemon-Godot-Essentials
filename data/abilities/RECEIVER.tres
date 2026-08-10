@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_1n113"]
+
+[resource]
+resource_name = "RECEIVER"
+script = ExtResource("1_1n113")
+description = "Copies the Ability of a defeated ally."
+id = &"RECEIVER"
+display_name = "Receiver"

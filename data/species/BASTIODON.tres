@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_osqwa"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b8gp3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j75fk"]
+
+[sub_resource type="Resource" id="Resource_auqhx"]
+script = ExtResource("1_osqwa")
+species = &"SHIELDON"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_uhucm"]
+script = ExtResource("2_b8gp3")
+level = 0
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_s4wxq"]
+script = ExtResource("2_b8gp3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ado5v"]
+script = ExtResource("2_b8gp3")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_o0gbp"]
+script = ExtResource("2_b8gp3")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_tnih4"]
+script = ExtResource("2_b8gp3")
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_24v0r"]
+script = ExtResource("2_b8gp3")
+level = 6
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_gwvol"]
+script = ExtResource("2_b8gp3")
+level = 10
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_y02fv"]
+script = ExtResource("2_b8gp3")
+level = 15
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_3ilmv"]
+script = ExtResource("2_b8gp3")
+level = 19
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_v4v4i"]
+script = ExtResource("2_b8gp3")
+level = 24
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_ciwie"]
+script = ExtResource("2_b8gp3")
+level = 28
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_wds75"]
+script = ExtResource("2_b8gp3")
+level = 36
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_xx2lb"]
+script = ExtResource("2_b8gp3")
+level = 43
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_1kmu5"]
+script = ExtResource("2_b8gp3")
+level = 51
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_fssam"]
+script = ExtResource("2_b8gp3")
+level = 58
+move = &"HEAVYSLAM"
+
+[resource]
+resource_name = "BASTIODON"
+script = ExtResource("3_j75fk")
+species = &"BASTIODON"
+category = "Shield"
+pokedex_entry = "Any frontal attack is repulsed. It is a docile Pokémon that feeds on grass and berries."
+types = Array[StringName]([&"ROCK", &"STEEL"])
+base_hp = 60
+base_attack = 52
+base_defense = 168
+base_special_attack = 47
+base_special_defense = 138
+base_speed = 30
+ev_defense = 2
+base_exp = 173
+growth_rate = &"Erratic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b8gp3")]([SubResource("Resource_uhucm"), SubResource("Resource_s4wxq"), SubResource("Resource_ado5v"), SubResource("Resource_o0gbp"), SubResource("Resource_tnih4"), SubResource("Resource_24v0r"), SubResource("Resource_gwvol"), SubResource("Resource_y02fv"), SubResource("Resource_3ilmv"), SubResource("Resource_v4v4i"), SubResource("Resource_ciwie"), SubResource("Resource_wds75"), SubResource("Resource_xx2lb"), SubResource("Resource_1kmu5"), SubResource("Resource_fssam")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"TORMENT"])
+abilities = Array[StringName]([&"STURDY"])
+hidden_abilities = Array[StringName]([&"SOUNDPROOF"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_osqwa")]([SubResource("Resource_auqhx")])
+height = 13
+weight = 1495
+color = &"Gray"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 3
+id = &"BASTIODON"
+display_name = "Bastiodon"

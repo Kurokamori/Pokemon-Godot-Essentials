@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_wevdm"]
+
+[resource]
+resource_name = "QUEENLYMAJESTY"
+script = ExtResource("1_wevdm")
+description = "Makes foes unable to use priority attacks."
+id = &"QUEENLYMAJESTY"
+display_name = "Queenly Majesty"

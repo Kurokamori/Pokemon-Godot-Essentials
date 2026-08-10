@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gkeql"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lb28x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_l7okc"]
+
+[sub_resource type="Resource" id="Resource_14egx"]
+script = ExtResource("1_gkeql")
+species = &"LUXIO"
+method = &"Level"
+parameter = "15"
+
+[sub_resource type="Resource" id="Resource_fes81"]
+script = ExtResource("2_lb28x")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_q7w5n"]
+script = ExtResource("2_lb28x")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_j62d8"]
+script = ExtResource("2_lb28x")
+level = 4
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_tqsf4"]
+script = ExtResource("2_lb28x")
+level = 8
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_fbvlr"]
+script = ExtResource("2_lb28x")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ne7jx"]
+script = ExtResource("2_lb28x")
+level = 16
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_cwhlk"]
+script = ExtResource("2_lb28x")
+level = 20
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_5e3mv"]
+script = ExtResource("2_lb28x")
+level = 24
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_nu8al"]
+script = ExtResource("2_lb28x")
+level = 28
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_n7m26"]
+script = ExtResource("2_lb28x")
+level = 32
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_0tc30"]
+script = ExtResource("2_lb28x")
+level = 36
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_8v5ki"]
+script = ExtResource("2_lb28x")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_lon0m"]
+script = ExtResource("2_lb28x")
+level = 44
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_yihdr"]
+script = ExtResource("2_lb28x")
+level = 48
+move = &"WILDCHARGE"
+
+[resource]
+resource_name = "SHINX"
+script = ExtResource("3_l7okc")
+species = &"SHINX"
+category = "Flash"
+pokedex_entry = "All of its fur dazzles if danger is sensed. It flees while the foe is momentarily blinded."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 45
+base_attack = 65
+base_defense = 34
+base_special_attack = 40
+base_special_defense = 34
+base_speed = 45
+ev_attack = 1
+base_exp = 53
+growth_rate = &"Parabolic"
+catch_rate = 235
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lb28x")]([SubResource("Resource_fes81"), SubResource("Resource_q7w5n"), SubResource("Resource_j62d8"), SubResource("Resource_tqsf4"), SubResource("Resource_fbvlr"), SubResource("Resource_ne7jx"), SubResource("Resource_cwhlk"), SubResource("Resource_5e3mv"), SubResource("Resource_nu8al"), SubResource("Resource_n7m26"), SubResource("Resource_0tc30"), SubResource("Resource_8v5ki"), SubResource("Resource_lon0m"), SubResource("Resource_yihdr")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREFANG", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEFANG", &"IRONTAIL", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROAR", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"BABYDOLLEYES", &"DOUBLEKICK", &"EERIEIMPULSE", &"FAKETEARS", &"FIREFANG", &"HELPINGHAND", &"HOWL", &"ICEFANG", &"NIGHTSLASH", &"QUICKATTACK", &"SHOCKWAVE", &"SWIFT", &"TAKEDOWN", &"THUNDERFANG"])
+abilities = Array[StringName]([&"RIVALRY", &"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"GUTS"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_gkeql")]([SubResource("Resource_14egx")])
+height = 5
+weight = 95
+color = &"Blue"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(2, 32)
+shadow_size = 1
+id = &"SHINX"
+display_name = "Shinx"

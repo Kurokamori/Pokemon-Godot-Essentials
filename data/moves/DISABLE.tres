@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_srnso"]
+
+[resource]
+resource_name = "DISABLE"
+script = ExtResource("1_srnso")
+total_pp = 20
+function_code = &"DisableTargetLastMoveUsed"
+description = "For four turns, this move prevents the target from using the move it last used."
+id = &"DISABLE"
+display_name = "Disable"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

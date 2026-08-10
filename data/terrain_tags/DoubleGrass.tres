@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_dblgr"]
+
+[resource]
+resource_name = "DoubleGrass"
+script = ExtResource("1_dblgr")
+tag_number = 18
+land_wild_encounters = true
+double_wild_encounters = true
+always_double_wild_encounters = true
+deep_bush = true
+shows_grass_rustle = true
+must_walk = true
+battle_environment = &"TallGrass"
+step_effect = &"GrassRustleVigorous"
+id = &"DoubleGrass"
+display_name = "Double Grass"

@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o7uv7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3bwui"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_q6foe"]
+
+[sub_resource type="Resource" id="Resource_rvcbc"]
+script = ExtResource("1_o7uv7")
+species = &"RUNERIGUS"
+method = &"EventAfterDamageTaken"
+parameter = "2"
+
+[sub_resource type="Resource" id="Resource_31hfr"]
+script = ExtResource("2_3bwui")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_hfjwg"]
+script = ExtResource("2_3bwui")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_658pf"]
+script = ExtResource("2_3bwui")
+level = 4
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_xmxvg"]
+script = ExtResource("2_3bwui")
+level = 8
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_vc8et"]
+script = ExtResource("2_3bwui")
+level = 12
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_qcpn1"]
+script = ExtResource("2_3bwui")
+level = 16
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_qj03i"]
+script = ExtResource("2_3bwui")
+level = 20
+move = &"CRAFTYSHIELD"
+
+[sub_resource type="Resource" id="Resource_1ooix"]
+script = ExtResource("2_3bwui")
+level = 24
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_53ukn"]
+script = ExtResource("2_3bwui")
+level = 28
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_p1la1"]
+script = ExtResource("2_3bwui")
+level = 32
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_41hmm"]
+script = ExtResource("2_3bwui")
+level = 36
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_mprul"]
+script = ExtResource("2_3bwui")
+level = 40
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_85agl"]
+script = ExtResource("2_3bwui")
+level = 44
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_vx3qx"]
+script = ExtResource("2_3bwui")
+level = 48
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_rapyf"]
+script = ExtResource("2_3bwui")
+level = 48
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_7jq5r"]
+script = ExtResource("2_3bwui")
+level = 52
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "YAMASK_1"
+script = ExtResource("3_q6foe")
+species = &"YAMASK"
+form = 1
+form_name = "Galarian"
+category = "Spirit"
+pokedex_entry = "A clay slab with cursed engravings took possession of a Yamask. The slab is said to be absorbing the Yamask's dark power."
+pokedex_form = 1
+types = Array[StringName]([&"GROUND", &"GHOST"])
+base_hp = 38
+base_attack = 55
+base_defense = 85
+base_special_attack = 30
+base_special_defense = 65
+base_speed = 30
+ev_defense = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3bwui")]([SubResource("Resource_31hfr"), SubResource("Resource_hfjwg"), SubResource("Resource_658pf"), SubResource("Resource_xmxvg"), SubResource("Resource_vc8et"), SubResource("Resource_qcpn1"), SubResource("Resource_qj03i"), SubResource("Resource_1ooix"), SubResource("Resource_53ukn"), SubResource("Resource_p1la1"), SubResource("Resource_41hmm"), SubResource("Resource_mprul"), SubResource("Resource_85agl"), SubResource("Resource_vx3qx"), SubResource("Resource_rapyf"), SubResource("Resource_7jq5r")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BRUTALSWING", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FRUSTRATION", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"IRONDEFENSE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"THIEF", &"TOXIC", &"TOXICSPIKES", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"MEMENTO"])
+abilities = Array[StringName]([&"WANDERINGSPIRIT"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Mineral", &"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_o7uv7")]([SubResource("Resource_rvcbc")])
+height = 5
+weight = 15
+color = &"Black"
+shape = &"HeadArms"
+generation = 8
+back_sprite_offset = Vector2i(-1, 52)
+front_sprite_offset = Vector2i(0, 14)
+shadow_size = 1
+id = &"YAMASK_1"
+display_name = "Yamask"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

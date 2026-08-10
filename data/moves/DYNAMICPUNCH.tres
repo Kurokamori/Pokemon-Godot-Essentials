@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_othhe"]
+
+[resource]
+resource_name = "DYNAMICPUNCH"
+script = ExtResource("1_othhe")
+type = &"FIGHTING"
+category = 0
+power = 100
+accuracy = 50
+function_code = &"ConfuseTarget"
+effect_chance = 100
+description = "The user punches the target with full, concentrated power. It confuses the target if it hits."
+id = &"DYNAMICPUNCH"
+display_name = "Dynamic Punch"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Punching"])

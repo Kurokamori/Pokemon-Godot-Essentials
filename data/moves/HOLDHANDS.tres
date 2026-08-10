@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_o2g8f"]
+
+[resource]
+resource_name = "HOLDHANDS"
+script = ExtResource("1_o2g8f")
+accuracy = 0
+total_pp = 40
+target = &"NearAlly"
+function_code = &"DoesNothingFailsIfNoAlly"
+description = "The user and an ally hold hands. This makes them very happy."
+id = &"HOLDHANDS"
+display_name = "Hold Hands"

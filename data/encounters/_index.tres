@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_lgi3e"]
+
+[resource]
+script = ExtResource("1_lgi3e")
+category = &"encounters"
+record_script = "res://src/data/encounter_data.gd"
+paths = {
+&"21_0": "res://data/encounters/21_0.tres",
+&"28_0": "res://data/encounters/28_0.tres",
+&"2_0": "res://data/encounters/2_0.tres",
+&"31_0": "res://data/encounters/31_0.tres",
+&"34_0": "res://data/encounters/34_0.tres",
+&"39_0": "res://data/encounters/39_0.tres",
+&"41_0": "res://data/encounters/41_0.tres",
+&"44_0": "res://data/encounters/44_0.tres",
+&"47_0": "res://data/encounters/47_0.tres",
+&"49_0": "res://data/encounters/49_0.tres",
+&"50_0": "res://data/encounters/50_0.tres",
+&"51_0": "res://data/encounters/51_0.tres",
+&"5_0": "res://data/encounters/5_0.tres",
+&"5_1": "res://data/encounters/5_1.tres",
+&"66_0": "res://data/encounters/66_0.tres",
+&"68_0": "res://data/encounters/68_0.tres",
+&"69_0": "res://data/encounters/69_0.tres",
+&"70_0": "res://data/encounters/70_0.tres",
+&"75_0": "res://data/encounters/75_0.tres"
+}
+ordered_ids = Array[StringName]([&"2_0", &"5_0", &"5_1", &"21_0", &"28_0", &"31_0", &"34_0", &"39_0", &"41_0", &"44_0", &"47_0", &"49_0", &"50_0", &"51_0", &"66_0", &"68_0", &"69_0", &"70_0", &"75_0"])

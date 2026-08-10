@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_clwbx"]
+
+[resource]
+resource_name = "SPIDERWEB"
+script = ExtResource("1_clwbx")
+type = &"BUG"
+accuracy = 0
+total_pp = 10
+function_code = &"TrapTargetInBattle"
+description = "The user ensnares the target with thin, gooey silk so it can't flee from battle."
+id = &"SPIDERWEB"
+display_name = "Spider Web"
+flags = Array[StringName]([&"CanMirrorMove"])

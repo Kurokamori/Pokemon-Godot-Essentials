@@ -1,0 +1,145 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_c1o15"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k03iw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mlots"]
+
+[sub_resource type="Resource" id="Resource_kir5v"]
+script = ExtResource("1_c1o15")
+species = &"RAICHU"
+method = &"Item"
+parameter = "THUNDERSTONE"
+
+[sub_resource type="Resource" id="Resource_uxkbw"]
+script = ExtResource("1_c1o15")
+species = &"PICHU"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_gkfjh"]
+script = ExtResource("2_k03iw")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_ll3ng"]
+script = ExtResource("2_k03iw")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_gaylp"]
+script = ExtResource("2_k03iw")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_a3ul6"]
+script = ExtResource("2_k03iw")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_770j4"]
+script = ExtResource("2_k03iw")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_2w688"]
+script = ExtResource("2_k03iw")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_18j50"]
+script = ExtResource("2_k03iw")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_5tkm1"]
+script = ExtResource("2_k03iw")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_ansop"]
+script = ExtResource("2_k03iw")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_76kmu"]
+script = ExtResource("2_k03iw")
+level = 4
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_fogbh"]
+script = ExtResource("2_k03iw")
+level = 8
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_00rvh"]
+script = ExtResource("2_k03iw")
+level = 12
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_af4r8"]
+script = ExtResource("2_k03iw")
+level = 16
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_c27i4"]
+script = ExtResource("2_k03iw")
+level = 20
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_7idav"]
+script = ExtResource("2_k03iw")
+level = 24
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_5smis"]
+script = ExtResource("2_k03iw")
+level = 28
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_334kl"]
+script = ExtResource("2_k03iw")
+level = 32
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_ddsct"]
+script = ExtResource("2_k03iw")
+level = 36
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_l515q"]
+script = ExtResource("2_k03iw")
+level = 40
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_0aw4f"]
+script = ExtResource("2_k03iw")
+level = 44
+move = &"THUNDER"
+
+[resource]
+resource_name = "PIKACHU"
+script = ExtResource("3_mlots")
+species = &"PIKACHU"
+category = "Mouse"
+pokedex_entry = "It stores electricity in the electric sacs on its cheeks. When it releases pent-up energy in a burst, the electric power is equal to a lightning bolt."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 35
+base_attack = 55
+base_defense = 40
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 90
+ev_speed = 2
+base_exp = 112
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k03iw")]([SubResource("Resource_gkfjh"), SubResource("Resource_ll3ng"), SubResource("Resource_gaylp"), SubResource("Resource_a3ul6"), SubResource("Resource_770j4"), SubResource("Resource_2w688"), SubResource("Resource_18j50"), SubResource("Resource_5tkm1"), SubResource("Resource_ansop"), SubResource("Resource_76kmu"), SubResource("Resource_fogbh"), SubResource("Resource_00rvh"), SubResource("Resource_af4r8"), SubResource("Resource_c27i4"), SubResource("Resource_7idav"), SubResource("Resource_5smis"), SubResource("Resource_334kl"), SubResource("Resource_ddsct"), SubResource("Resource_l515q"), SubResource("Resource_0aw4f")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"RISINGVOLTAGE", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"VOLTTACKLE", &"WILDCHARGE"])
+abilities = Array[StringName]([&"STATIC"])
+hidden_abilities = Array[StringName]([&"LIGHTNINGROD"])
+wild_item_uncommon = Array[StringName]([&"LIGHTBALL"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_c1o15")]([SubResource("Resource_kir5v"), SubResource("Resource_uxkbw")])
+height = 4
+weight = 60
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(2, 54)
+front_sprite_offset = Vector2i(5, 28)
+shadow_size = 1
+id = &"PIKACHU"
+display_name = "Pikachu"

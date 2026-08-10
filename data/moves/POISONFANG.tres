@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6pch7"]
+
+[resource]
+resource_name = "POISONFANG"
+script = ExtResource("1_6pch7")
+type = &"POISON"
+category = 0
+power = 50
+total_pp = 15
+function_code = &"BadPoisonTarget"
+effect_chance = 50
+description = "The user bites the target with toxic fangs. It may also leave the target badly poisoned."
+id = &"POISONFANG"
+display_name = "Poison Fang"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Biting"])

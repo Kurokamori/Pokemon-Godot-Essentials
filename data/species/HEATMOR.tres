@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vxbmf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_au3tl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4upvv"]
+
+[sub_resource type="Resource" id="Resource_cqb3w"]
+script = ExtResource("2_au3tl")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_t7wyj"]
+script = ExtResource("2_au3tl")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_viwxg"]
+script = ExtResource("2_au3tl")
+level = 5
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_kxoyv"]
+script = ExtResource("2_au3tl")
+level = 10
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_exi62"]
+script = ExtResource("2_au3tl")
+level = 15
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_whc1w"]
+script = ExtResource("2_au3tl")
+level = 20
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_v88of"]
+script = ExtResource("2_au3tl")
+level = 20
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_r552u"]
+script = ExtResource("2_au3tl")
+level = 20
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_w8evv"]
+script = ExtResource("2_au3tl")
+level = 25
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_w47bg"]
+script = ExtResource("2_au3tl")
+level = 30
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_qqav3"]
+script = ExtResource("2_au3tl")
+level = 35
+move = &"FIRELASH"
+
+[sub_resource type="Resource" id="Resource_t2tbi"]
+script = ExtResource("2_au3tl")
+level = 40
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_t28jl"]
+script = ExtResource("2_au3tl")
+level = 45
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_liime"]
+script = ExtResource("2_au3tl")
+level = 50
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_cdhcr"]
+script = ExtResource("2_au3tl")
+level = 55
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_d8w3j"]
+script = ExtResource("2_au3tl")
+level = 60
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "HEATMOR"
+script = ExtResource("3_4upvv")
+species = &"HEATMOR"
+category = "Anteater"
+pokedex_entry = "Using their very hot, flame-covered tongues, they burn through Durant's steel bodies and consume their insides."
+types = Array[StringName]([&"FIRE"])
+base_hp = 85
+base_attack = 97
+base_defense = 66
+base_special_attack = 105
+base_special_defense = 66
+base_speed = 65
+ev_special_attack = 2
+base_exp = 169
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_au3tl")]([SubResource("Resource_cqb3w"), SubResource("Resource_t7wyj"), SubResource("Resource_viwxg"), SubResource("Resource_kxoyv"), SubResource("Resource_exi62"), SubResource("Resource_whc1w"), SubResource("Resource_v88of"), SubResource("Resource_r552u"), SubResource("Resource_w8evv"), SubResource("Resource_w47bg"), SubResource("Resource_qqav3"), SubResource("Resource_t2tbi"), SubResource("Resource_t28jl"), SubResource("Resource_liime"), SubResource("Resource_cdhcr"), SubResource("Resource_d8w3j")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"ATTRACT", &"BIND", &"BODYSLAM", &"BRUTALSWING", &"BUGBITE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"KNOCKOFF", &"LOWKICK", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"TOXIC", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"BELCH", &"CURSE", &"NIGHTSLASH", &"SUCKERPUNCH", &"TICKLE"])
+abilities = Array[StringName]([&"GLUTTONY", &"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"WHITESMOKE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 14
+weight = 580
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(8, 54)
+front_sprite_offset = Vector2i(-3, 22)
+id = &"HEATMOR"
+display_name = "Heatmor"

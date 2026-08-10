@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_t4u7c"]
+
+[resource]
+resource_name = "WONDERROOM"
+script = ExtResource("1_t4u7c")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+priority = -7
+function_code = &"StartSwapAllBattlersBaseDefensiveStats"
+description = "The user creates a bizarre area in which Pokémon's Defense and Sp. Def stats are swapped for 5 turns."
+id = &"WONDERROOM"
+display_name = "Wonder Room"
+flags = Array[StringName]([&"CanMirrorMove"])

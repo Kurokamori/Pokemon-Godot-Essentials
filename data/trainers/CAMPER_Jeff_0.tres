@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_6dpmm"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_wudmi"]
+
+[sub_resource type="Resource" id="Resource_t077h"]
+script = ExtResource("1_6dpmm")
+species = &"SPEAROW"
+level = 16
+
+[sub_resource type="Resource" id="Resource_kaq1w"]
+script = ExtResource("1_6dpmm")
+species = &"SENTRET"
+level = 16
+
+[resource]
+resource_name = "CAMPER|Jeff|0"
+script = ExtResource("2_wudmi")
+trainer_type = &"CAMPER"
+lose_text = "A very good battle, indeed!"
+pokemon = Array[ExtResource("1_6dpmm")]([SubResource("Resource_t077h"), SubResource("Resource_kaq1w")])
+id = &"CAMPER|Jeff|0"
+display_name = "Jeff"

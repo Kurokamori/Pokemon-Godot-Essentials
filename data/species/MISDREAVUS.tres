@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3tomg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8wuhd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jmb75"]
+
+[sub_resource type="Resource" id="Resource_y34sx"]
+script = ExtResource("1_3tomg")
+species = &"MISMAGIUS"
+method = &"Item"
+parameter = "DUSKSTONE"
+
+[sub_resource type="Resource" id="Resource_yqdhh"]
+script = ExtResource("2_8wuhd")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_jp54s"]
+script = ExtResource("2_8wuhd")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_450bo"]
+script = ExtResource("2_8wuhd")
+level = 5
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_1v1x3"]
+script = ExtResource("2_8wuhd")
+level = 10
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_oolhs"]
+script = ExtResource("2_8wuhd")
+level = 14
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_8u4dm"]
+script = ExtResource("2_8wuhd")
+level = 19
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_vs1pc"]
+script = ExtResource("2_8wuhd")
+level = 23
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_vpp4q"]
+script = ExtResource("2_8wuhd")
+level = 28
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_0oy43"]
+script = ExtResource("2_8wuhd")
+level = 32
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_hgxsr"]
+script = ExtResource("2_8wuhd")
+level = 37
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_3aidw"]
+script = ExtResource("2_8wuhd")
+level = 41
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_7etti"]
+script = ExtResource("2_8wuhd")
+level = 46
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_8y6ob"]
+script = ExtResource("2_8wuhd")
+level = 50
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_xtnl8"]
+script = ExtResource("2_8wuhd")
+level = 55
+move = &"POWERGEM"
+
+[resource]
+resource_name = "MISDREAVUS"
+script = ExtResource("3_jmb75")
+species = &"MISDREAVUS"
+category = "Screech"
+pokedex_entry = "A Misdreavus frightens people with a creepy, sobbing cry. It apparently uses its red spheres to absorb the fear of foes as its nutrition."
+types = Array[StringName]([&"GHOST"])
+base_hp = 60
+base_attack = 60
+base_defense = 60
+base_special_attack = 85
+base_special_defense = 85
+base_speed = 85
+ev_special_defense = 1
+base_exp = 87
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_8wuhd")]([SubResource("Resource_yqdhh"), SubResource("Resource_jp54s"), SubResource("Resource_450bo"), SubResource("Resource_1v1x3"), SubResource("Resource_oolhs"), SubResource("Resource_8u4dm"), SubResource("Resource_vs1pc"), SubResource("Resource_vpp4q"), SubResource("Resource_0oy43"), SubResource("Resource_hgxsr"), SubResource("Resource_3aidw"), SubResource("Resource_7etti"), SubResource("Resource_8y6ob"), SubResource("Resource_xtnl8")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"HEADBUTT", &"HEALBELL", &"HIDDENPOWER", &"HYPERVOICE", &"ICYWIND", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"UPROAR", &"WILLOWISP", &"WONDERROOM"])
+egg_moves = Array[StringName]([&"CURSE", &"DESTINYBOND", &"IMPRISON", &"MEMENTO", &"SCREECH", &"SHADOWSNEAK", &"SPITE", &"SUCKERPUNCH", &"WONDERROOM"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_3tomg")]([SubResource("Resource_y34sx")])
+height = 7
+weight = 10
+color = &"Gray"
+habitat = &"Cave"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 18)
+shadow_size = 1
+id = &"MISDREAVUS"
+display_name = "Misdreavus"

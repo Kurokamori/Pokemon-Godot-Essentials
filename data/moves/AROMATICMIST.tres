@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rmjp2"]
+
+[resource]
+resource_name = "AROMATICMIST"
+script = ExtResource("1_rmjp2")
+type = &"FAIRY"
+accuracy = 0
+total_pp = 20
+target = &"NearAlly"
+function_code = &"RaiseTargetSpDef1"
+description = "The user raises the Sp. Def stat of an ally Pokémon by using a mysterious aroma."
+id = &"AROMATICMIST"
+display_name = "Aromatic Mist"

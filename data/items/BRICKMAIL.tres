@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_gmwb4"]
+
+[resource]
+resource_name = "BRICKMAIL"
+script = ExtResource("1_gmwb4")
+name_plural = "Brick Mail"
+portion_name = "piece of Brick Mail"
+portion_name_plural = "pieces of Brick Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of a tough-looking brick pattern. Let a Pokémon hold it for delivery."
+id = &"BRICKMAIL"
+display_name = "Brick Mail"
+flags = Array[StringName]([&"IconMail"])

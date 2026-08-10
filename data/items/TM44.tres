@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_73ipo"]
+
+[resource]
+resource_name = "TM44"
+script = ExtResource("1_73ipo")
+name_plural = "TM44s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"REST"
+description = "The user goes to sleep for two turns. This fully restores the user's HP and heals any status conditions."
+id = &"TM44"
+display_name = "TM44"
+flags = Array[StringName]([&"Fling_10"])

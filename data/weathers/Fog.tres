@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/weather_data.gd" id="1_q7rol"]
+
+[resource]
+resource_name = "Fog"
+script = ExtResource("1_q7rol")
+category = 5
+legacy_number = 8
+tile_delta_x = -32
+graphics = Array[String](["<null>", "fog_tile"])
+id = &"Fog"
+display_name = "Fog"

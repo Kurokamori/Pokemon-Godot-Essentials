@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3bj6f"]
+
+[resource]
+resource_name = "LUCKYCHANT"
+script = ExtResource("1_3bj6f")
+accuracy = 0
+total_pp = 30
+target = &"UserSide"
+function_code = &"StartPreventCriticalHitsAgainstUserSide"
+description = "The user chants an incantation toward the sky, preventing the foe from landing critical hits."
+id = &"LUCKYCHANT"
+display_name = "Lucky Chant"

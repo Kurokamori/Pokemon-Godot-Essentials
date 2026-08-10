@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_51urp"]
+
+[resource]
+resource_name = "OVERHEAT"
+script = ExtResource("1_51urp")
+type = &"FIRE"
+category = 1
+power = 130
+accuracy = 90
+function_code = &"LowerUserSpAtk2"
+description = "The user attacks the target at full power. The attack's recoil sharply reduces the user's Sp. Atk stat."
+id = &"OVERHEAT"
+display_name = "Overheat"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

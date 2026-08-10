@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bnm5b"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yof0o"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kba0c"]
+
+[sub_resource type="Resource" id="Resource_reuxm"]
+script = ExtResource("1_bnm5b")
+species = &"PANSAGE"
+method = &"Item"
+parameter = "LEAFSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_r3km7"]
+script = ExtResource("2_yof0o")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_rbtha"]
+script = ExtResource("2_yof0o")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_pnfqk"]
+script = ExtResource("2_yof0o")
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_dvl7i"]
+script = ExtResource("2_yof0o")
+move = &"SEEDBOMB"
+
+[resource]
+resource_name = "SIMISAGE"
+script = ExtResource("3_kba0c")
+species = &"SIMISAGE"
+category = "Thorn Monkey"
+pokedex_entry = "Ill tempered, it fights by swinging its barbed tail around wildly. The leaf growing on its head is very bitter."
+types = Array[StringName]([&"GRASS"])
+base_hp = 75
+base_attack = 98
+base_defense = 63
+base_special_attack = 98
+base_special_defense = 63
+base_speed = 101
+ev_speed = 2
+base_exp = 174
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yof0o")]([SubResource("Resource_r3km7"), SubResource("Resource_rbtha"), SubResource("Resource_pnfqk"), SubResource("Resource_dvl7i")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSPLEDGE", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONTAIL", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SYNTHESIS", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"TOXIC", &"UPROAR", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"OVERGROW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_bnm5b")]([SubResource("Resource_reuxm")])
+height = 11
+weight = 305
+color = &"Green"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(5, 18)
+id = &"SIMISAGE"
+display_name = "Simisage"

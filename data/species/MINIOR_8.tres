@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ir7rs"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hugaq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_30crm"]
+
+[sub_resource type="Resource" id="Resource_clql0"]
+script = ExtResource("2_hugaq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_s4uoc"]
+script = ExtResource("2_hugaq")
+level = 3
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_mu6aw"]
+script = ExtResource("2_hugaq")
+level = 8
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_mpvt1"]
+script = ExtResource("2_hugaq")
+level = 10
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_2uqkf"]
+script = ExtResource("2_hugaq")
+level = 15
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_y5wd1"]
+script = ExtResource("2_hugaq")
+level = 17
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_x1mth"]
+script = ExtResource("2_hugaq")
+level = 22
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_xbfi8"]
+script = ExtResource("2_hugaq")
+level = 24
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_3nxbe"]
+script = ExtResource("2_hugaq")
+level = 29
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_o8mua"]
+script = ExtResource("2_hugaq")
+level = 31
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_p7r83"]
+script = ExtResource("2_hugaq")
+level = 36
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_5pb8r"]
+script = ExtResource("2_hugaq")
+level = 38
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_li8nu"]
+script = ExtResource("2_hugaq")
+level = 43
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_wa0ng"]
+script = ExtResource("2_hugaq")
+level = 45
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_ige3v"]
+script = ExtResource("2_hugaq")
+level = 50
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "MINIOR_8"
+script = ExtResource("3_30crm")
+species = &"MINIOR"
+form = 8
+form_name = "Orange Core"
+category = "Meteor"
+pokedex_entry = "If its core stays exposed, it will soon die off. It's possible that it may survive if it's put into a Poké Ball quickly enough."
+pokedex_form = 8
+types = Array[StringName]([&"ROCK", &"FLYING"])
+base_hp = 60
+base_attack = 100
+base_defense = 60
+base_special_attack = 100
+base_special_defense = 60
+base_speed = 120
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 175
+growth_rate = &"Parabolic"
+gender_ratio = &"Genderless"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hugaq")]([SubResource("Resource_clql0"), SubResource("Resource_s4uoc"), SubResource("Resource_mu6aw"), SubResource("Resource_mpvt1"), SubResource("Resource_2uqkf"), SubResource("Resource_y5wd1"), SubResource("Resource_x1mth"), SubResource("Resource_xbfi8"), SubResource("Resource_3nxbe"), SubResource("Resource_o8mua"), SubResource("Resource_p7r83"), SubResource("Resource_5pb8r"), SubResource("Resource_li8nu"), SubResource("Resource_wa0ng"), SubResource("Resource_ige3v")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"EXPLOSION", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"GYROBALL", &"HIDDENPOWER", &"HYPERBEAM", &"IRONHEAD", &"LASTRESORT", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"TOXIC", &"UTURN", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SHIELDSDOWN"])
+wild_item_uncommon = Array[StringName]([&"STARPIECE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+height = 3
+weight = 3
+generation = 7
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 10)
+shadow_size = 1
+id = &"MINIOR_8"
+display_name = "Minior"
+flags = Array[StringName]([&"InheritFormFromMother"])

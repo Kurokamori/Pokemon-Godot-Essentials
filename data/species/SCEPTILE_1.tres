@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1al7c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_j20d6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n1c8o"]
+
+[sub_resource type="Resource" id="Resource_j5xr6"]
+script = ExtResource("1_1al7c")
+species = &"GROVYLE"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_wt8an"]
+script = ExtResource("2_j20d6")
+level = 0
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_k2ypv"]
+script = ExtResource("2_j20d6")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_stqcx"]
+script = ExtResource("2_j20d6")
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_n042i"]
+script = ExtResource("2_j20d6")
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_v42gv"]
+script = ExtResource("2_j20d6")
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_d7dmx"]
+script = ExtResource("2_j20d6")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_m77n4"]
+script = ExtResource("2_j20d6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_vuhth"]
+script = ExtResource("2_j20d6")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_mj5xf"]
+script = ExtResource("2_j20d6")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_4e843"]
+script = ExtResource("2_j20d6")
+level = 5
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_3o882"]
+script = ExtResource("2_j20d6")
+level = 12
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_buu8v"]
+script = ExtResource("2_j20d6")
+level = 15
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_b7y40"]
+script = ExtResource("2_j20d6")
+level = 20
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_4yro8"]
+script = ExtResource("2_j20d6")
+level = 25
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_juvu5"]
+script = ExtResource("2_j20d6")
+level = 30
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_ioyee"]
+script = ExtResource("2_j20d6")
+level = 35
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_yiiik"]
+script = ExtResource("2_j20d6")
+level = 42
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_8s381"]
+script = ExtResource("2_j20d6")
+level = 49
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_xc4v8"]
+script = ExtResource("2_j20d6")
+level = 56
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_nqkya"]
+script = ExtResource("2_j20d6")
+level = 63
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "SCEPTILE_1"
+script = ExtResource("3_n1c8o")
+species = &"SCEPTILE"
+form = 1
+form_name = "Mega Sceptile"
+category = "Forest"
+pokedex_entry = "In the jungle, its power is without equal. This Pokémon carefully grows trees and plants. It regulates its body temperature by basking in sunlight."
+pokedex_form = 1
+types = Array[StringName]([&"GRASS", &"DRAGON"])
+base_hp = 70
+base_attack = 110
+base_defense = 75
+base_special_attack = 145
+base_special_defense = 85
+base_speed = 145
+ev_speed = 3
+base_exp = 315
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_j20d6")]([SubResource("Resource_wt8an"), SubResource("Resource_k2ypv"), SubResource("Resource_stqcx"), SubResource("Resource_n042i"), SubResource("Resource_v42gv"), SubResource("Resource_d7dmx"), SubResource("Resource_m77n4"), SubResource("Resource_vuhth"), SubResource("Resource_mj5xf"), SubResource("Resource_4e843"), SubResource("Resource_3o882"), SubResource("Resource_buu8v"), SubResource("Resource_b7y40"), SubResource("Resource_4yro8"), SubResource("Resource_juvu5"), SubResource("Resource_ioyee"), SubResource("Resource_yiiik"), SubResource("Resource_8s381"), SubResource("Resource_xc4v8"), SubResource("Resource_nqkya")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CROSSPOISON", &"CRUNCH", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAINPUNCH", &"DUALCHOP", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRENZYPLANT", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONTAIL", &"LASERFOCUS", &"LEAFBLADE", &"LEAFSTORM", &"LOWKICK", &"LOWSWEEP", &"MAGICALLEAF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SCALESHOT", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"THROATCHOP", &"THUNDERPUNCH", &"WORKUP", &"WORRYSEED", &"XSCISSOR"])
+abilities = Array[StringName]([&"LIGHTNINGROD"])
+hidden_abilities = Array[StringName]([&"LIGHTNINGROD"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1al7c")]([SubResource("Resource_j5xr6")])
+height = 19
+weight = 552
+color = &"Green"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 6
+mega_stone = &"SCEPTILITE"
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(-10, 14)
+shadow_size = 3
+id = &"SCEPTILE_1"
+display_name = "Sceptile"

@@ -1,0 +1,147 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_u3rsk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_covhf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oe8si"]
+
+[sub_resource type="Resource" id="Resource_g7v8f"]
+script = ExtResource("1_u3rsk")
+species = &"CHINGLING"
+method = &"HappinessNight"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yhr4i"]
+script = ExtResource("2_covhf")
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_yr4bx"]
+script = ExtResource("2_covhf")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_uefpn"]
+script = ExtResource("2_covhf")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_skicc"]
+script = ExtResource("2_covhf")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_y2ax4"]
+script = ExtResource("2_covhf")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_6djx4"]
+script = ExtResource("2_covhf")
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_vvt31"]
+script = ExtResource("2_covhf")
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_mhm6m"]
+script = ExtResource("2_covhf")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_anb3a"]
+script = ExtResource("2_covhf")
+level = 7
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_jpnyv"]
+script = ExtResource("2_covhf")
+level = 10
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_rikrl"]
+script = ExtResource("2_covhf")
+level = 13
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_0j65l"]
+script = ExtResource("2_covhf")
+level = 16
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_rlo74"]
+script = ExtResource("2_covhf")
+level = 19
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_grqfm"]
+script = ExtResource("2_covhf")
+level = 22
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_nle45"]
+script = ExtResource("2_covhf")
+level = 27
+move = &"HEALBELL"
+
+[sub_resource type="Resource" id="Resource_bl2rp"]
+script = ExtResource("2_covhf")
+level = 32
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_3n27s"]
+script = ExtResource("2_covhf")
+level = 37
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_rmgbm"]
+script = ExtResource("2_covhf")
+level = 42
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_ysh4l"]
+script = ExtResource("2_covhf")
+level = 47
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_sq28h"]
+script = ExtResource("2_covhf")
+level = 52
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_bm6tn"]
+script = ExtResource("2_covhf")
+level = 57
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "CHIMECHO"
+script = ExtResource("3_oe8si")
+species = &"CHIMECHO"
+category = "Wind Chime"
+pokedex_entry = "They fly about very actively when the hot season arrives. They communicate among themselves using seven different and distinguishing cries."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 75
+base_attack = 50
+base_defense = 80
+base_special_attack = 95
+base_special_defense = 90
+base_speed = 65
+ev_special_attack = 1
+ev_special_defense = 1
+base_exp = 159
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_covhf")]([SubResource("Resource_yhr4i"), SubResource("Resource_yr4bx"), SubResource("Resource_uefpn"), SubResource("Resource_skicc"), SubResource("Resource_y2ax4"), SubResource("Resource_6djx4"), SubResource("Resource_vvt31"), SubResource("Resource_mhm6m"), SubResource("Resource_anb3a"), SubResource("Resource_jpnyv"), SubResource("Resource_rikrl"), SubResource("Resource_0j65l"), SubResource("Resource_rlo74"), SubResource("Resource_grqfm"), SubResource("Resource_nle45"), SubResource("Resource_bl2rp"), SubResource("Resource_3n27s"), SubResource("Resource_rmgbm"), SubResource("Resource_ysh4l"), SubResource("Resource_sq28h"), SubResource("Resource_bm6tn")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BIND", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICYWIND", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"UPROAR", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"COSMICPOWER", &"CURSE", &"DISABLE", &"FUTURESIGHT", &"HYPNOSIS", &"PERISHSONG", &"RECOVER", &"STOREDPOWER", &"WISH"])
+abilities = Array[StringName]([&"LEVITATE"])
+wild_item_uncommon = Array[StringName]([&"CLEANSETAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_u3rsk")]([SubResource("Resource_g7v8f")])
+height = 6
+weight = 10
+color = &"Blue"
+shape = &"HeadArms"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 12)
+id = &"CHIMECHO"
+display_name = "Chimecho"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ibvja"]
+
+[resource]
+resource_name = "POWERSPLIT"
+script = ExtResource("1_ibvja")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+function_code = &"UserTargetAverageBaseAtkSpAtk"
+description = "The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target."
+id = &"POWERSPLIT"
+display_name = "Power Split"
+flags = Array[StringName]([&"CanProtect"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ijwe3"]
+
+[resource]
+resource_name = "LUSTERPURGE"
+script = ExtResource("1_ijwe3")
+type = &"PSYCHIC"
+category = 1
+power = 70
+function_code = &"LowerTargetSpDef1"
+effect_chance = 50
+description = "The user lets loose a damaging burst of light. It may also reduce the target's Sp. Def stat."
+id = &"LUSTERPURGE"
+display_name = "Luster Purge"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5gjie"]
+
+[resource]
+resource_name = "GRASSPLEDGE"
+script = ExtResource("1_5gjie")
+type = &"GRASS"
+category = 1
+power = 80
+total_pp = 10
+function_code = &"GrassPledge"
+description = "A column of grass hits the foes. When used with its water equivalent, it creates a vast swamp."
+id = &"GRASSPLEDGE"
+display_name = "Grass Pledge"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

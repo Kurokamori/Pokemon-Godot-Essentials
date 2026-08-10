@@ -1,0 +1,143 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_yqqkr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5myht"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_33psi"]
+
+[sub_resource type="Resource" id="Resource_r51pf"]
+script = ExtResource("1_yqqkr")
+species = &"HOUNDOUR"
+method = &"Level"
+parameter = "24"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_oek01"]
+script = ExtResource("2_5myht")
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_kyedu"]
+script = ExtResource("2_5myht")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_l5n2o"]
+script = ExtResource("2_5myht")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_w7iy6"]
+script = ExtResource("2_5myht")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_2lveh"]
+script = ExtResource("2_5myht")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_7wti6"]
+script = ExtResource("2_5myht")
+level = 4
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_0l7w1"]
+script = ExtResource("2_5myht")
+level = 8
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_r2osf"]
+script = ExtResource("2_5myht")
+level = 13
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_j2gjm"]
+script = ExtResource("2_5myht")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_qgiw3"]
+script = ExtResource("2_5myht")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_5oxvt"]
+script = ExtResource("2_5myht")
+level = 26
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_bx5bq"]
+script = ExtResource("2_5myht")
+level = 30
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_ou4ot"]
+script = ExtResource("2_5myht")
+level = 35
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_sx7s4"]
+script = ExtResource("2_5myht")
+level = 41
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_bt8k5"]
+script = ExtResource("2_5myht")
+level = 45
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_u4wmv"]
+script = ExtResource("2_5myht")
+level = 50
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_woici"]
+script = ExtResource("2_5myht")
+level = 56
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ew6ru"]
+script = ExtResource("2_5myht")
+level = 60
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_oif23"]
+script = ExtResource("2_5myht")
+level = 65
+move = &"INFERNO"
+
+[resource]
+resource_name = "HOUNDOOM_1"
+script = ExtResource("3_33psi")
+species = &"HOUNDOOM"
+form = 1
+form_name = "Mega Houndoom"
+category = "Dark"
+pokedex_entry = "Its red claws and the tips of its tail are melting from high internal temperatures that are painful to Houndoom itself."
+pokedex_form = 1
+types = Array[StringName]([&"DARK", &"FIRE"])
+base_hp = 75
+base_attack = 90
+base_defense = 90
+base_special_attack = 140
+base_special_defense = 90
+base_speed = 115
+ev_special_attack = 2
+base_exp = 210
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_5myht")]([SubResource("Resource_oek01"), SubResource("Resource_kyedu"), SubResource("Resource_l5n2o"), SubResource("Resource_w7iy6"), SubResource("Resource_2lveh"), SubResource("Resource_7wti6"), SubResource("Resource_0l7w1"), SubResource("Resource_r2osf"), SubResource("Resource_j2gjm"), SubResource("Resource_qgiw3"), SubResource("Resource_5oxvt"), SubResource("Resource_bx5bq"), SubResource("Resource_ou4ot"), SubResource("Resource_sx7s4"), SubResource("Resource_bt8k5"), SubResource("Resource_u4wmv"), SubResource("Resource_woici"), SubResource("Resource_ew6ru"), SubResource("Resource_oif23")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"UPROAR", &"WILLOWISP"])
+abilities = Array[StringName]([&"SOLARPOWER"])
+hidden_abilities = Array[StringName]([&"SOLARPOWER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_yqqkr")]([SubResource("Resource_r51pf")])
+height = 19
+weight = 495
+color = &"Black"
+shape = &"Quadruped"
+habitat = &"RoughTerrain"
+generation = 6
+mega_stone = &"HOUNDOOMINITE"
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(9, 11)
+shadow_size = 3
+id = &"HOUNDOOM_1"
+display_name = "Houndoom"

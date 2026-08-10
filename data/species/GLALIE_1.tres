@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_t6wo0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hjww5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jv4ip"]
+
+[sub_resource type="Resource" id="Resource_orauc"]
+script = ExtResource("1_t6wo0")
+species = &"SNORUNT"
+method = &"Level"
+parameter = "42"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_mavxn"]
+script = ExtResource("2_hjww5")
+level = 0
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_otirc"]
+script = ExtResource("2_hjww5")
+move = &"SHEERCOLD"
+
+[sub_resource type="Resource" id="Resource_d87xv"]
+script = ExtResource("2_hjww5")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_iahqi"]
+script = ExtResource("2_hjww5")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_4xixw"]
+script = ExtResource("2_hjww5")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_dq1wk"]
+script = ExtResource("2_hjww5")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_mixbe"]
+script = ExtResource("2_hjww5")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_0iywp"]
+script = ExtResource("2_hjww5")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_eho7a"]
+script = ExtResource("2_hjww5")
+level = 25
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_3qqp6"]
+script = ExtResource("2_hjww5")
+level = 30
+move = &"FROSTBREATH"
+
+[sub_resource type="Resource" id="Resource_nruax"]
+script = ExtResource("2_hjww5")
+level = 35
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_di7pv"]
+script = ExtResource("2_hjww5")
+level = 40
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_sembg"]
+script = ExtResource("2_hjww5")
+level = 47
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_0g26n"]
+script = ExtResource("2_hjww5")
+level = 54
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_jpep1"]
+script = ExtResource("2_hjww5")
+level = 61
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_4mfj3"]
+script = ExtResource("2_hjww5")
+level = 68
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "GLALIE_1"
+script = ExtResource("3_jv4ip")
+species = &"GLALIE"
+form = 1
+form_name = "Mega Glalie"
+category = "Face"
+pokedex_entry = "It envelops prey in its mouth, freezing them instantly. But its jaw is dislocated, so it's unable to eat them."
+pokedex_form = 1
+types = Array[StringName]([&"ICE"])
+base_hp = 80
+base_attack = 120
+base_defense = 80
+base_special_attack = 120
+base_special_defense = 80
+base_speed = 100
+ev_hp = 2
+base_exp = 203
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hjww5")]([SubResource("Resource_mavxn"), SubResource("Resource_otirc"), SubResource("Resource_d87xv"), SubResource("Resource_iahqi"), SubResource("Resource_4xixw"), SubResource("Resource_dq1wk"), SubResource("Resource_mixbe"), SubResource("Resource_0iywp"), SubResource("Resource_eho7a"), SubResource("Resource_3qqp6"), SubResource("Resource_nruax"), SubResource("Resource_di7pv"), SubResource("Resource_sembg"), SubResource("Resource_0g26n"), SubResource("Resource_jpep1"), SubResource("Resource_4mfj3")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FAKETEARS", &"FLASH", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONHEAD", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SPIKES", &"SPITE", &"STEELROLLER", &"SUBSTITUTE", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"TORMENT", &"WATERPULSE", &"WEATHERBALL"])
+abilities = Array[StringName]([&"REFRIGERATE"])
+hidden_abilities = Array[StringName]([&"REFRIGERATE"])
+egg_groups = Array[StringName]([&"Fairy", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_t6wo0")]([SubResource("Resource_orauc")])
+height = 21
+weight = 3502
+color = &"Gray"
+habitat = &"Cave"
+generation = 6
+mega_stone = &"GLALITITE"
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 6)
+id = &"GLALIE_1"
+display_name = "Glalie"

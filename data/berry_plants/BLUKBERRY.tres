@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BerryPlantData" format=3]
+
+[ext_resource type="Script" path="res://src/data/berry_plant_data.gd" id="1_luthe"]
+
+[resource]
+resource_name = "BLUKBERRY"
+script = ExtResource("1_luthe")
+hours_per_stage = 2
+drying_per_hour = 35
+max_yield = 10
+id = &"BLUKBERRY"
+display_name = "BLUKBERRY"

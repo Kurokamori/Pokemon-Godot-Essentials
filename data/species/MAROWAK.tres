@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kiqag"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_n4suf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qosc7"]
+
+[sub_resource type="Resource" id="Resource_l0cps"]
+script = ExtResource("1_kiqag")
+species = &"CUBONE"
+method = &"Level"
+parameter = "28"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8rspr"]
+script = ExtResource("2_n4suf")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_7xt1j"]
+script = ExtResource("2_n4suf")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_c5udd"]
+script = ExtResource("2_n4suf")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_7ksy2"]
+script = ExtResource("2_n4suf")
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_n6jnm"]
+script = ExtResource("2_n4suf")
+level = 12
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ou5ka"]
+script = ExtResource("2_n4suf")
+level = 16
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_3d6l6"]
+script = ExtResource("2_n4suf")
+level = 20
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_2uj4p"]
+script = ExtResource("2_n4suf")
+level = 24
+move = &"STOMPINGTANTRUM"
+
+[sub_resource type="Resource" id="Resource_tyjyp"]
+script = ExtResource("2_n4suf")
+level = 31
+move = &"BONERUSH"
+
+[sub_resource type="Resource" id="Resource_mlm1g"]
+script = ExtResource("2_n4suf")
+level = 36
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_bc1r1"]
+script = ExtResource("2_n4suf")
+level = 42
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_c73j4"]
+script = ExtResource("2_n4suf")
+level = 48
+move = &"BONEMERANG"
+
+[sub_resource type="Resource" id="Resource_v3bhd"]
+script = ExtResource("2_n4suf")
+level = 54
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_qhcic"]
+script = ExtResource("2_n4suf")
+level = 60
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "MAROWAK"
+script = ExtResource("3_qosc7")
+species = &"MAROWAK"
+category = "Bone Keeper"
+pokedex_entry = "A Marowak is the evolved form of a Cubone that has grown tough by overcoming the grief of losing its mother. Its tempered and hardened spirit is not easily broken."
+types = Array[StringName]([&"GROUND"])
+base_hp = 60
+base_attack = 80
+base_defense = 110
+base_special_attack = 50
+base_special_defense = 80
+base_speed = 45
+ev_defense = 2
+base_exp = 149
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_n4suf")]([SubResource("Resource_8rspr"), SubResource("Resource_7xt1j"), SubResource("Resource_c5udd"), SubResource("Resource_7ksy2"), SubResource("Resource_n6jnm"), SubResource("Resource_ou5ka"), SubResource("Resource_3d6l6"), SubResource("Resource_2uj4p"), SubResource("Resource_tyjyp"), SubResource("Resource_mlm1g"), SubResource("Resource_bc1r1"), SubResource("Resource_c73j4"), SubResource("Resource_v3bhd"), SubResource("Resource_qhcic")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"UPROAR"])
+abilities = Array[StringName]([&"ROCKHEAD", &"LIGHTNINGROD"])
+hidden_abilities = Array[StringName]([&"BATTLEARMOR"])
+wild_item_uncommon = Array[StringName]([&"THICKCLUB"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kiqag")]([SubResource("Resource_l0cps")])
+height = 10
+weight = 450
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-9, 30)
+id = &"MAROWAK"
+display_name = "Marowak"

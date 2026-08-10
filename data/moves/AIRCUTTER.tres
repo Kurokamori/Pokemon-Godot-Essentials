@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ttmrk"]
+
+[resource]
+resource_name = "AIRCUTTER"
+script = ExtResource("1_ttmrk")
+type = &"FLYING"
+category = 1
+power = 60
+accuracy = 95
+total_pp = 25
+target = &"AllNearFoes"
+description = "The user launches razor-like wind to slash the opposing team. Critical hits land more easily."
+id = &"AIRCUTTER"
+display_name = "Air Cutter"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

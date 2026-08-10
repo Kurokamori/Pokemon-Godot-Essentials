@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ppo36"]
+
+[resource]
+resource_name = "SKITTERSMACK"
+script = ExtResource("1_ppo36")
+type = &"BUG"
+category = 0
+power = 70
+accuracy = 90
+total_pp = 10
+function_code = &"LowerTargetSpAtk1"
+effect_chance = 100
+description = "The user skitters behind the target to attack. This also lowers the target's Sp. Atk stat."
+id = &"SKITTERSMACK"
+display_name = "Skitter Smack"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

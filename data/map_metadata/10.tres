@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_50tcc"]
+
+[resource]
+resource_name = "10"
+script = ExtResource("1_50tcc")
+map_id = 10
+town_map_position = Array[int]([0, 13, 10])
+battle_background = "indoor3"
+battle_environment = &"Rock"
+id = &"10"
+display_name = "Cedolan City"
+flags = Array[StringName]([&"DisableBoxLink"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5l5n1"]
+
+[resource]
+resource_name = "COTTONGUARD"
+script = ExtResource("1_5l5n1")
+type = &"GRASS"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"RaiseUserDefense3"
+description = "The user protects itself by wrapping its body in soft cotton, drastically raising its Defense stat."
+id = &"COTTONGUARD"
+display_name = "Cotton Guard"

@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ly4ub"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fvyjy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sf15q"]
+
+[sub_resource type="Resource" id="Resource_7f4g5"]
+script = ExtResource("1_ly4ub")
+species = &"BRAIXEN"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_k4hg1"]
+script = ExtResource("2_fvyjy")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_6shgd"]
+script = ExtResource("2_fvyjy")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_ruvl7"]
+script = ExtResource("2_fvyjy")
+level = 5
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_mrex5"]
+script = ExtResource("2_fvyjy")
+level = 11
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_smj7s"]
+script = ExtResource("2_fvyjy")
+level = 14
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_u7gl7"]
+script = ExtResource("2_fvyjy")
+level = 17
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_c6wte"]
+script = ExtResource("2_fvyjy")
+level = 20
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_f7sco"]
+script = ExtResource("2_fvyjy")
+level = 25
+move = &"LUCKYCHANT"
+
+[sub_resource type="Resource" id="Resource_dsyq3"]
+script = ExtResource("2_fvyjy")
+level = 27
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_0rj2n"]
+script = ExtResource("2_fvyjy")
+level = 31
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_a60xw"]
+script = ExtResource("2_fvyjy")
+level = 35
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_kfarl"]
+script = ExtResource("2_fvyjy")
+level = 38
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_524iu"]
+script = ExtResource("2_fvyjy")
+level = 41
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_8iqim"]
+script = ExtResource("2_fvyjy")
+level = 43
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_5bo5e"]
+script = ExtResource("2_fvyjy")
+level = 46
+move = &"MAGICROOM"
+
+[sub_resource type="Resource" id="Resource_qui0m"]
+script = ExtResource("2_fvyjy")
+level = 48
+move = &"FIREBLAST"
+
+[resource]
+resource_name = "FENNEKIN"
+script = ExtResource("3_sf15q")
+species = &"FENNEKIN"
+category = "Fox"
+pokedex_entry = "As it walks, it munches on a twig in place of a snack. It intimidates opponents by puffing hot air out of its ears."
+types = Array[StringName]([&"FIRE"])
+base_hp = 40
+base_attack = 45
+base_defense = 40
+base_special_attack = 62
+base_special_defense = 60
+base_speed = 60
+ev_special_attack = 1
+base_exp = 61
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fvyjy")]([SubResource("Resource_k4hg1"), SubResource("Resource_6shgd"), SubResource("Resource_ruvl7"), SubResource("Resource_mrex5"), SubResource("Resource_smj7s"), SubResource("Resource_u7gl7"), SubResource("Resource_c6wte"), SubResource("Resource_f7sco"), SubResource("Resource_dsyq3"), SubResource("Resource_0rj2n"), SubResource("Resource_a60xw"), SubResource("Resource_kfarl"), SubResource("Resource_524iu"), SubResource("Resource_8iqim"), SubResource("Resource_5bo5e"), SubResource("Resource_qui0m")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FLAMECHARGE", &"FLAMETHROWER", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"IRONTAIL", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"TOXIC", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"HEATWAVE", &"HYPNOSIS", &"MAGICCOAT", &"PSYCHICTERRAIN", &"WISH"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"MAGICIAN"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ly4ub")]([SubResource("Resource_7f4g5")])
+height = 4
+weight = 94
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 29)
+shadow_size = 1
+id = &"FENNEKIN"
+display_name = "Fennekin"

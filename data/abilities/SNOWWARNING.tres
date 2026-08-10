@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_rcuuw"]
+
+[resource]
+resource_name = "SNOWWARNING"
+script = ExtResource("1_rcuuw")
+description = "The Pokémon summons a hailstorm in battle."
+id = &"SNOWWARNING"
+display_name = "Snow Warning"

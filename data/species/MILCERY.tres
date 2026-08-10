@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_41vkp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mahqi"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qtqfr"]
+
+[sub_resource type="Resource" id="Resource_ivuas"]
+script = ExtResource("1_41vkp")
+species = &"ALCREMIE"
+method = &"HoldItem"
+parameter = "STRAWBERRYSWEET"
+
+[sub_resource type="Resource" id="Resource_2j452"]
+script = ExtResource("1_41vkp")
+species = &"ALCREMIE"
+method = &"HoldItem"
+parameter = "BERRYSWEET"
+
+[sub_resource type="Resource" id="Resource_x4jnc"]
+script = ExtResource("1_41vkp")
+species = &"ALCREMIE"
+method = &"HoldItem"
+parameter = "LOVESWEET"
+
+[sub_resource type="Resource" id="Resource_qyemy"]
+script = ExtResource("1_41vkp")
+species = &"ALCREMIE"
+method = &"HoldItem"
+parameter = "STARSWEET"
+
+[sub_resource type="Resource" id="Resource_v83a3"]
+script = ExtResource("1_41vkp")
+species = &"ALCREMIE"
+method = &"HoldItem"
+parameter = "CLOVERSWEET"
+
+[sub_resource type="Resource" id="Resource_fsv8s"]
+script = ExtResource("1_41vkp")
+species = &"ALCREMIE"
+method = &"HoldItem"
+parameter = "FLOWERSWEET"
+
+[sub_resource type="Resource" id="Resource_1y0d2"]
+script = ExtResource("1_41vkp")
+species = &"ALCREMIE"
+method = &"HoldItem"
+parameter = "RIBBONSWEET"
+
+[sub_resource type="Resource" id="Resource_f8kqn"]
+script = ExtResource("2_mahqi")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_8wew1"]
+script = ExtResource("2_mahqi")
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_dok5o"]
+script = ExtResource("2_mahqi")
+level = 5
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_3ppml"]
+script = ExtResource("2_mahqi")
+level = 10
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_j46cx"]
+script = ExtResource("2_mahqi")
+level = 15
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_d16p6"]
+script = ExtResource("2_mahqi")
+level = 20
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_vp1lv"]
+script = ExtResource("2_mahqi")
+level = 25
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_jyxde"]
+script = ExtResource("2_mahqi")
+level = 30
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_p6o2g"]
+script = ExtResource("2_mahqi")
+level = 35
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_ridt0"]
+script = ExtResource("2_mahqi")
+level = 40
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_xe8p6"]
+script = ExtResource("2_mahqi")
+level = 45
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_3tokt"]
+script = ExtResource("2_mahqi")
+level = 50
+move = &"ENTRAINMENT"
+
+[resource]
+resource_name = "MILCERY"
+script = ExtResource("3_qtqfr")
+species = &"MILCERY"
+category = "Cream"
+pokedex_entry = "This Pokémon was born from sweet-smelling particles in the air. Its body is made of cream."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 45
+base_attack = 40
+base_defense = 40
+base_special_attack = 50
+base_special_defense = 61
+base_speed = 34
+ev_special_defense = 1
+base_exp = 54
+gender_ratio = &"AlwaysFemale"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mahqi")]([SubResource("Resource_f8kqn"), SubResource("Resource_8wew1"), SubResource("Resource_dok5o"), SubResource("Resource_3ppml"), SubResource("Resource_j46cx"), SubResource("Resource_d16p6"), SubResource("Resource_vp1lv"), SubResource("Resource_jyxde"), SubResource("Resource_p6o2g"), SubResource("Resource_ridt0"), SubResource("Resource_xe8p6"), SubResource("Resource_3tokt")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"MIMIC", &"MISTYTERRAIN", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TOXIC"])
+egg_moves = Array[StringName]([&"BABYDOLLEYES", &"LASTRESORT"])
+abilities = Array[StringName]([&"SWEETVEIL"])
+hidden_abilities = Array[StringName]([&"AROMAVEIL"])
+egg_groups = Array[StringName]([&"Fairy", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_41vkp")]([SubResource("Resource_ivuas"), SubResource("Resource_2j452"), SubResource("Resource_x4jnc"), SubResource("Resource_qyemy"), SubResource("Resource_v83a3"), SubResource("Resource_fsv8s"), SubResource("Resource_1y0d2")])
+height = 2
+weight = 3
+color = &"White"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(3, 34)
+id = &"MILCERY"
+display_name = "Milcery"

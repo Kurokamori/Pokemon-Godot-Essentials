@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7cocd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hkw1i"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fjx35"]
+
+[sub_resource type="Resource" id="Resource_nj7ix"]
+script = ExtResource("1_7cocd")
+species = &"KIRLIA"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_qtoix"]
+script = ExtResource("2_hkw1i")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_56l5f"]
+script = ExtResource("2_hkw1i")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_bjk5p"]
+script = ExtResource("2_hkw1i")
+level = 3
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_wxech"]
+script = ExtResource("2_hkw1i")
+level = 6
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_rmohq"]
+script = ExtResource("2_hkw1i")
+level = 9
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_5taky"]
+script = ExtResource("2_hkw1i")
+level = 12
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_r7867"]
+script = ExtResource("2_hkw1i")
+level = 15
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_61ps3"]
+script = ExtResource("2_hkw1i")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_m04o4"]
+script = ExtResource("2_hkw1i")
+level = 21
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_mh6lo"]
+script = ExtResource("2_hkw1i")
+level = 24
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_6w6xo"]
+script = ExtResource("2_hkw1i")
+level = 27
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_t2toa"]
+script = ExtResource("2_hkw1i")
+level = 30
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_mulxd"]
+script = ExtResource("2_hkw1i")
+level = 33
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_srnj4"]
+script = ExtResource("2_hkw1i")
+level = 36
+move = &"DREAMEATER"
+
+[sub_resource type="Resource" id="Resource_3d1ck"]
+script = ExtResource("2_hkw1i")
+level = 39
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "RALTS"
+script = ExtResource("3_fjx35")
+species = &"RALTS"
+category = "Feeling"
+pokedex_entry = "A Ralts has the power to sense the emotions of people and Pokémon with the horns on its head. It takes cover if it senses any hostility."
+types = Array[StringName]([&"PSYCHIC", &"FAIRY"])
+base_hp = 28
+base_attack = 25
+base_defense = 25
+base_special_attack = 45
+base_special_defense = 35
+base_speed = 40
+ev_special_attack = 1
+base_exp = 40
+growth_rate = &"Slow"
+catch_rate = 235
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_hkw1i")]([SubResource("Resource_qtoix"), SubResource("Resource_56l5f"), SubResource("Resource_bjk5p"), SubResource("Resource_wxech"), SubResource("Resource_rmohq"), SubResource("Resource_5taky"), SubResource("Resource_r7867"), SubResource("Resource_61ps3"), SubResource("Resource_m04o4"), SubResource("Resource_mh6lo"), SubResource("Resource_6w6xo"), SubResource("Resource_t2toa"), SubResource("Resource_mulxd"), SubResource("Resource_srnj4"), SubResource("Resource_3d1ck")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ALLYSWITCH", &"CONFUSERAY", &"DESTINYBOND", &"DISABLE", &"ENCORE", &"GRUDGE", &"KNOCKOFF", &"MEANLOOK", &"MEMENTO", &"MISTYTERRAIN", &"SHADOWSNEAK"])
+abilities = Array[StringName]([&"SYNCHRONIZE", &"TRACE"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Humanlike", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_7cocd")]([SubResource("Resource_nj7ix")])
+height = 4
+weight = 66
+color = &"White"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 3
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"RALTS"
+display_name = "Ralts"

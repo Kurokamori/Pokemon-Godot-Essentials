@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1lwqd"]
+
+[resource]
+resource_name = "CLOSECOMBAT"
+script = ExtResource("1_1lwqd")
+type = &"FIGHTING"
+category = 0
+power = 120
+function_code = &"LowerUserDefSpDef1"
+description = "The user fights the foe up close without guarding itself. It also cuts the user's Defense and Sp. Def."
+id = &"CLOSECOMBAT"
+display_name = "Close Combat"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

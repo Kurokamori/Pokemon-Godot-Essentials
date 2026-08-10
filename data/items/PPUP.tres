@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wapr7"]
+
+[resource]
+resource_name = "PPUP"
+script = ExtResource("1_wapr7")
+name_plural = "PP Ups"
+portion_name = "bottle of PP Up"
+portion_name_plural = "bottles of PP Up"
+pocket = 2
+price = 10000
+sell_price = 5000
+bp_price = 10
+field_use = 1
+description = "It slightly raises the maximum PP of a selected move that has been learned by the target Pokémon."
+id = &"PPUP"
+display_name = "PP Up"
+flags = Array[StringName]([&"Fling_30"])

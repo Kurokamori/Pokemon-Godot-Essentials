@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_abk21"]
+
+[resource]
+resource_name = "LOVELYKISS"
+script = ExtResource("1_abk21")
+accuracy = 75
+total_pp = 10
+function_code = &"SleepTarget"
+description = "With a scary face, the user tries to force a kiss on the target. If it suceeds, the target falls asleep."
+id = &"LOVELYKISS"
+display_name = "Lovely Kiss"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

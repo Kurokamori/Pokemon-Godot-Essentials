@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_odqby"]
+
+[resource]
+resource_name = "MOSAICMAIL"
+script = ExtResource("1_odqby")
+name_plural = "Mosaic Mail"
+portion_name = "piece of Mosaic Mail"
+portion_name_plural = "pieces of Mosaic Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of a vivid rainbow pattern. Let a Pokémon hold it for delivery."
+id = &"MOSAICMAIL"
+display_name = "Mosaic Mail"
+flags = Array[StringName]([&"IconMail"])

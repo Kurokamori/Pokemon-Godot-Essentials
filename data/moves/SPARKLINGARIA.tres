@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_x3cju"]
+
+[resource]
+resource_name = "SPARKLINGARIA"
+script = ExtResource("1_x3cju")
+type = &"WATER"
+category = 1
+power = 90
+total_pp = 10
+target = &"AllNearOthers"
+function_code = &"CureTargetBurn"
+effect_chance = 100
+description = "The user bursts into song, emitting many bubbles. Any burnt Pokémon will be healed by these bubbles."
+id = &"SPARKLINGARIA"
+display_name = "Sparkling Aria"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

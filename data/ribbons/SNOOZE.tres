@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_yptes"]
+
+[resource]
+resource_name = "SNOOZE"
+script = ExtResource("1_yptes")
+icon_position = 61
+description = "A Ribbon for recalling a deep slumber that made life soothing."
+id = &"SNOOZE"
+display_name = "Snooze Ribbon"

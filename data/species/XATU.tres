@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1u8sr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tkyg6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p4oy0"]
+
+[sub_resource type="Resource" id="Resource_a01bn"]
+script = ExtResource("1_1u8sr")
+species = &"NATU"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_lwpiu"]
+script = ExtResource("2_tkyg6")
+level = 0
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_bjuoq"]
+script = ExtResource("2_tkyg6")
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_lq2ff"]
+script = ExtResource("2_tkyg6")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_dcw6w"]
+script = ExtResource("2_tkyg6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_kfdt1"]
+script = ExtResource("2_tkyg6")
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_enb5x"]
+script = ExtResource("2_tkyg6")
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_1lvbv"]
+script = ExtResource("2_tkyg6")
+level = 15
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_5e5u4"]
+script = ExtResource("2_tkyg6")
+level = 20
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_3wmjp"]
+script = ExtResource("2_tkyg6")
+level = 28
+move = &"PSYCHOSHIFT"
+
+[sub_resource type="Resource" id="Resource_6848s"]
+script = ExtResource("2_tkyg6")
+level = 34
+move = &"POWERSWAP"
+
+[sub_resource type="Resource" id="Resource_cev0g"]
+script = ExtResource("2_tkyg6")
+level = 34
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_vmfjm"]
+script = ExtResource("2_tkyg6")
+level = 41
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_6wiyd"]
+script = ExtResource("2_tkyg6")
+level = 48
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_71sgv"]
+script = ExtResource("2_tkyg6")
+level = 55
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "XATU"
+script = ExtResource("3_p4oy0")
+species = &"XATU"
+category = "Mystic"
+pokedex_entry = "It has the enigmatic power of foreseeing the future. Some people in different lands have long believed that Xatu are emissaries from another world."
+types = Array[StringName]([&"PSYCHIC", &"FLYING"])
+base_hp = 65
+base_attack = 75
+base_defense = 70
+base_special_attack = 95
+base_special_defense = 70
+base_speed = 95
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 165
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tkyg6")]([SubResource("Resource_lwpiu"), SubResource("Resource_bjuoq"), SubResource("Resource_lq2ff"), SubResource("Resource_dcw6w"), SubResource("Resource_kfdt1"), SubResource("Resource_enb5x"), SubResource("Resource_1lvbv"), SubResource("Resource_5e5u4"), SubResource("Resource_3wmjp"), SubResource("Resource_6848s"), SubResource("Resource_cev0g"), SubResource("Resource_vmfjm"), SubResource("Resource_6wiyd"), SubResource("Resource_71sgv")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COSMICPOWER", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DUALWINGBEAT", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FLY", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PLUCK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SILVERWIND", &"SKILLSWAP", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THIEF", &"THUNDERWAVE", &"TRICK", &"TRICKROOM", &"TWISTER", &"UTURN", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SYNCHRONIZE", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"MAGICBOUNCE"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1u8sr")]([SubResource("Resource_a01bn")])
+height = 15
+weight = 150
+color = &"Green"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 59)
+front_sprite_offset = Vector2i(2, 24)
+shadow_size = 1
+id = &"XATU"
+display_name = "Xatu"

@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bkm7k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_oktja"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_iykl1"]
+
+[sub_resource type="Resource" id="Resource_v81ay"]
+script = ExtResource("2_oktja")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_myjki"]
+script = ExtResource("2_oktja")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_kypur"]
+script = ExtResource("2_oktja")
+level = 5
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_3gsgl"]
+script = ExtResource("2_oktja")
+level = 10
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_28m0y"]
+script = ExtResource("2_oktja")
+level = 15
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_uemq1"]
+script = ExtResource("2_oktja")
+level = 20
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_bylkd"]
+script = ExtResource("2_oktja")
+level = 25
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_tdaht"]
+script = ExtResource("2_oktja")
+level = 30
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_vqyy4"]
+script = ExtResource("2_oktja")
+level = 35
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_rapdc"]
+script = ExtResource("2_oktja")
+level = 40
+move = &"SUBSTITUTE"
+
+[sub_resource type="Resource" id="Resource_fo5w3"]
+script = ExtResource("2_oktja")
+level = 45
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_xlp3w"]
+script = ExtResource("2_oktja")
+level = 50
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_l83k0"]
+script = ExtResource("2_oktja")
+level = 55
+move = &"UPROAR"
+
+[resource]
+resource_name = "ROTOM_3"
+script = ExtResource("3_iykl1")
+species = &"ROTOM"
+form = 3
+form_name = "Frost Rotom"
+category = "Plasma"
+pokedex_entry = "Rotom assumes this form when it takes over a refrigerator powered by a special motor. It battles by spewing cold air."
+pokedex_form = 3
+types = Array[StringName]([&"ELECTRIC", &"ICE"])
+base_hp = 50
+base_attack = 65
+base_defense = 107
+base_special_attack = 105
+base_special_defense = 107
+base_speed = 86
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 182
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_oktja")]([SubResource("Resource_v81ay"), SubResource("Resource_myjki"), SubResource("Resource_kypur"), SubResource("Resource_3gsgl"), SubResource("Resource_28m0y"), SubResource("Resource_uemq1"), SubResource("Resource_bylkd"), SubResource("Resource_tdaht"), SubResource("Resource_vqyy4"), SubResource("Resource_rapdc"), SubResource("Resource_fo5w3"), SubResource("Resource_xlp3w"), SubResource("Resource_l83k0")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HYPERVOICE", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"UPROAR", &"VOLTSWITCH", &"WILLOWISP"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+height = 3
+weight = 3
+generation = 4
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 18)
+id = &"ROTOM_3"
+display_name = "Rotom"

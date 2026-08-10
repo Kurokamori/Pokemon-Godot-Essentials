@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tnxuw"]
+
+[resource]
+resource_name = "DRILLPECK"
+script = ExtResource("1_tnxuw")
+type = &"FLYING"
+category = 0
+power = 80
+total_pp = 20
+target = &"Other"
+description = "A corkscrewing attack with the sharp beak acting as a drill."
+id = &"DRILLPECK"
+display_name = "Drill Peck"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

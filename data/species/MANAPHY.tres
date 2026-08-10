@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_apixq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tjmij"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3g8fc"]
+
+[sub_resource type="Resource" id="Resource_glgd5"]
+script = ExtResource("2_tjmij")
+move = &"TAILGLOW"
+
+[sub_resource type="Resource" id="Resource_hdbe1"]
+script = ExtResource("2_tjmij")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_14kht"]
+script = ExtResource("2_tjmij")
+level = 9
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_dxfkd"]
+script = ExtResource("2_tjmij")
+level = 16
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_vl712"]
+script = ExtResource("2_tjmij")
+level = 24
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_pkkls"]
+script = ExtResource("2_tjmij")
+level = 31
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_qd022"]
+script = ExtResource("2_tjmij")
+level = 39
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_f4vlv"]
+script = ExtResource("2_tjmij")
+level = 46
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_negs1"]
+script = ExtResource("2_tjmij")
+level = 54
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_24ist"]
+script = ExtResource("2_tjmij")
+level = 61
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_qfd8f"]
+script = ExtResource("2_tjmij")
+level = 69
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_v7hkc"]
+script = ExtResource("2_tjmij")
+level = 76
+move = &"HEARTSWAP"
+
+[resource]
+resource_name = "MANAPHY"
+script = ExtResource("3_3g8fc")
+species = &"MANAPHY"
+category = "Seafaring"
+pokedex_entry = "Born on a cold seafloor, it will swim great distances to return to its birthplace."
+types = Array[StringName]([&"WATER"])
+base_hp = 100
+base_attack = 100
+base_defense = 100
+base_special_attack = 100
+base_special_defense = 100
+base_speed = 100
+ev_hp = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tjmij")]([SubResource("Resource_glgd5"), SubResource("Resource_hdbe1"), SubResource("Resource_14kht"), SubResource("Resource_dxfkd"), SubResource("Resource_vl712"), SubResource("Resource_pkkls"), SubResource("Resource_qd022"), SubResource("Resource_f4vlv"), SubResource("Resource_negs1"), SubResource("Resource_24ist"), SubResource("Resource_qfd8f"), SubResource("Resource_v7hkc")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CALMMIND", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HAIL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"KNOCKOFF", &"LASTRESORT", &"LIGHTSCREEN", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"UPROAR", &"UTURN", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"HYDRATION"])
+egg_groups = Array[StringName]([&"Water1", &"Fairy"])
+hatch_steps = 2560
+offspring = Array[StringName]([&"PHIONE"])
+height = 3
+weight = 14
+color = &"Blue"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(-4, 54)
+front_sprite_offset = Vector2i(9, 24)
+shadow_size = 1
+id = &"MANAPHY"
+display_name = "Manaphy"
+flags = Array[StringName]([&"Mythical"])

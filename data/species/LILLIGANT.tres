@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_syimn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1hxol"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ye6vp"]
+
+[sub_resource type="Resource" id="Resource_mc54n"]
+script = ExtResource("1_syimn")
+species = &"PETILIL"
+method = &"Item"
+parameter = "SUNSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_e8kaw"]
+script = ExtResource("2_1hxol")
+level = 0
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_6rbv6"]
+script = ExtResource("2_1hxol")
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_pb5qj"]
+script = ExtResource("2_1hxol")
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_u5bdu"]
+script = ExtResource("2_1hxol")
+move = &"TEETERDANCE"
+
+[sub_resource type="Resource" id="Resource_p1s37"]
+script = ExtResource("2_1hxol")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_pa7n6"]
+script = ExtResource("2_1hxol")
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_mdkmd"]
+script = ExtResource("2_1hxol")
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_fyua4"]
+script = ExtResource("2_1hxol")
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_tr561"]
+script = ExtResource("2_1hxol")
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_pfvet"]
+script = ExtResource("2_1hxol")
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_enbtg"]
+script = ExtResource("2_1hxol")
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_2s8nf"]
+script = ExtResource("2_1hxol")
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_ij0ku"]
+script = ExtResource("2_1hxol")
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_bhb4e"]
+script = ExtResource("2_1hxol")
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_bc8rj"]
+script = ExtResource("2_1hxol")
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_073dx"]
+script = ExtResource("2_1hxol")
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_okeit"]
+script = ExtResource("2_1hxol")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_tb4cq"]
+script = ExtResource("2_1hxol")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_ynoyd"]
+script = ExtResource("2_1hxol")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_1ef46"]
+script = ExtResource("2_1hxol")
+move = &"STUNSPORE"
+
+[resource]
+resource_name = "LILLIGANT"
+script = ExtResource("3_ye6vp")
+species = &"LILLIGANT"
+category = "Flowering"
+pokedex_entry = "The fragrance of the garland on its head has a relaxing effect. It withers if a Trainer does not take good care of it."
+types = Array[StringName]([&"GRASS"])
+base_hp = 70
+base_attack = 60
+base_defense = 75
+base_special_attack = 110
+base_special_defense = 75
+base_speed = 90
+ev_special_attack = 2
+base_exp = 168
+gender_ratio = &"AlwaysFemale"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1hxol")]([SubResource("Resource_e8kaw"), SubResource("Resource_6rbv6"), SubResource("Resource_pb5qj"), SubResource("Resource_u5bdu"), SubResource("Resource_p1s37"), SubResource("Resource_pa7n6"), SubResource("Resource_mdkmd"), SubResource("Resource_fyua4"), SubResource("Resource_tr561"), SubResource("Resource_pfvet"), SubResource("Resource_enbtg"), SubResource("Resource_2s8nf"), SubResource("Resource_ij0ku"), SubResource("Resource_bhb4e"), SubResource("Resource_bc8rj"), SubResource("Resource_073dx"), SubResource("Resource_okeit"), SubResource("Resource_tb4cq"), SubResource("Resource_ynoyd"), SubResource("Resource_1ef46")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DOUBLETEAM", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"LASERFOCUS", &"LEAFBLADE", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POLLENPUFF", &"PROTECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"OWNTEMPO"])
+hidden_abilities = Array[StringName]([&"LEAFGUARD"])
+wild_item_uncommon = Array[StringName]([&"ABSORBBULB"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_syimn")]([SubResource("Resource_mc54n")])
+height = 11
+weight = 163
+color = &"Green"
+shape = &"HeadBase"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 19)
+id = &"LILLIGANT"
+display_name = "Lilligant"

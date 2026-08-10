@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hc1gx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fksa6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mf1wy"]
+
+[sub_resource type="Resource" id="Resource_itlww"]
+script = ExtResource("1_hc1gx")
+species = &"SERVINE"
+method = &"Level"
+parameter = "17"
+
+[sub_resource type="Resource" id="Resource_ac4p8"]
+script = ExtResource("2_fksa6")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_dbaor"]
+script = ExtResource("2_fksa6")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_umfyi"]
+script = ExtResource("2_fksa6")
+level = 7
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_hta5u"]
+script = ExtResource("2_fksa6")
+level = 10
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_yb0xj"]
+script = ExtResource("2_fksa6")
+level = 13
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_ebkmy"]
+script = ExtResource("2_fksa6")
+level = 16
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_jp6fa"]
+script = ExtResource("2_fksa6")
+level = 19
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_spbi3"]
+script = ExtResource("2_fksa6")
+level = 22
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_lic2e"]
+script = ExtResource("2_fksa6")
+level = 25
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_853q7"]
+script = ExtResource("2_fksa6")
+level = 28
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_fufom"]
+script = ExtResource("2_fksa6")
+level = 31
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_1v8hs"]
+script = ExtResource("2_fksa6")
+level = 34
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_mjim4"]
+script = ExtResource("2_fksa6")
+level = 37
+move = &"WRINGOUT"
+
+[sub_resource type="Resource" id="Resource_p4fm4"]
+script = ExtResource("2_fksa6")
+level = 40
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_rme5s"]
+script = ExtResource("2_fksa6")
+level = 43
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "SNIVY"
+script = ExtResource("3_mf1wy")
+species = &"SNIVY"
+category = "Grass Snake"
+pokedex_entry = "They photosynthesize by bathing their tails in sunlight. When they are not feeling well, their tails droop."
+types = Array[StringName]([&"GRASS"])
+base_hp = 45
+base_attack = 45
+base_defense = 55
+base_special_attack = 45
+base_special_defense = 55
+base_speed = 63
+ev_speed = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fksa6")]([SubResource("Resource_ac4p8"), SubResource("Resource_dbaor"), SubResource("Resource_umfyi"), SubResource("Resource_hta5u"), SubResource("Resource_yb0xj"), SubResource("Resource_ebkmy"), SubResource("Resource_jp6fa"), SubResource("Resource_spbi3"), SubResource("Resource_lic2e"), SubResource("Resource_853q7"), SubResource("Resource_fufom"), SubResource("Resource_1v8hs"), SubResource("Resource_mjim4"), SubResource("Resource_p4fm4"), SubResource("Resource_rme5s")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BIND", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"HIDDENPOWER", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TAUNT", &"TORMENT", &"TOXIC", &"WORKUP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"CAPTIVATE", &"GLARE", &"GRASSYTERRAIN", &"IRONTAIL", &"MAGICALLEAF", &"MEANLOOK", &"MIRRORCOAT", &"NATURALGIFT", &"PURSUIT", &"SWEETSCENT", &"TWISTER"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"CONTRARY"])
+egg_groups = Array[StringName]([&"Field", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_hc1gx")]([SubResource("Resource_itlww")])
+height = 6
+weight = 81
+color = &"Green"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 32)
+shadow_size = 1
+id = &"SNIVY"
+display_name = "Snivy"

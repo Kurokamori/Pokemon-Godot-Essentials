@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_51275"]
+
+[resource]
+resource_name = "ANCHORSHOT"
+script = ExtResource("1_51275")
+type = &"STEEL"
+category = 0
+power = 80
+total_pp = 20
+function_code = &"TrapTargetInBattle"
+effect_chance = 100
+description = "The user entangles the target with its anchor chain. The target becomes unable to flee."
+id = &"ANCHORSHOT"
+display_name = "Anchor Shot"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

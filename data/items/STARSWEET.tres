@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_m5lkl"]
+
+[resource]
+resource_name = "STARSWEET"
+script = ExtResource("1_m5lkl")
+name_plural = "Star Sweets"
+price = 500
+sell_price = 250
+bp_price = 5
+description = "A star-shaped sweet. When a Milcery holds this, it spins around happily."
+id = &"STARSWEET"
+display_name = "Star Sweet"
+flags = Array[StringName]([&"Fling_10"])

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_tt0rk"]
+
+[resource]
+resource_name = "SOUVENIR"
+script = ExtResource("1_tt0rk")
+icon_position = 70
+description = "A Ribbon to cherish a special memory."
+id = &"SOUVENIR"
+display_name = "Souvenir Ribbon"

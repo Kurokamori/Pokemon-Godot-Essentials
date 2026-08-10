@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fbirg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ecvwt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vcypp"]
+
+[sub_resource type="Resource" id="Resource_b6wuy"]
+script = ExtResource("1_fbirg")
+species = &"PURUGLY"
+method = &"Level"
+parameter = "38"
+
+[sub_resource type="Resource" id="Resource_4gt6s"]
+script = ExtResource("2_ecvwt")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_7xywk"]
+script = ExtResource("2_ecvwt")
+level = 5
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_fdyhm"]
+script = ExtResource("2_ecvwt")
+level = 8
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_igaew"]
+script = ExtResource("2_ecvwt")
+level = 13
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_jh8j8"]
+script = ExtResource("2_ecvwt")
+level = 17
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_rhw4l"]
+script = ExtResource("2_ecvwt")
+level = 20
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_2mysc"]
+script = ExtResource("2_ecvwt")
+level = 25
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_cou8b"]
+script = ExtResource("2_ecvwt")
+level = 29
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_8pp1u"]
+script = ExtResource("2_ecvwt")
+level = 32
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_ne0u0"]
+script = ExtResource("2_ecvwt")
+level = 37
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_xwqxp"]
+script = ExtResource("2_ecvwt")
+level = 41
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_enqq3"]
+script = ExtResource("2_ecvwt")
+level = 44
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_60typ"]
+script = ExtResource("2_ecvwt")
+level = 48
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_1jq46"]
+script = ExtResource("2_ecvwt")
+level = 50
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "GLAMEOW"
+script = ExtResource("3_vcypp")
+species = &"GLAMEOW"
+category = "Catty"
+pokedex_entry = "It claws if displeased and purrs when affectionate. Its fickleness is very popular among some."
+base_hp = 49
+base_attack = 55
+base_defense = 42
+base_special_attack = 42
+base_special_defense = 37
+base_speed = 85
+ev_speed = 1
+base_exp = 62
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ecvwt")]([SubResource("Resource_4gt6s"), SubResource("Resource_7xywk"), SubResource("Resource_fdyhm"), SubResource("Resource_igaew"), SubResource("Resource_jh8j8"), SubResource("Resource_rhw4l"), SubResource("Resource_2mysc"), SubResource("Resource_cou8b"), SubResource("Resource_8pp1u"), SubResource("Resource_ne0u0"), SubResource("Resource_xwqxp"), SubResource("Resource_enqq3"), SubResource("Resource_60typ"), SubResource("Resource_1jq46")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERVOICE", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"UTURN", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"ASSURANCE", &"BITE", &"FAKETEARS", &"FLAIL", &"LASTRESORT", &"QUICKATTACK", &"SANDATTACK", &"TAILWHIP"])
+abilities = Array[StringName]([&"LIMBER", &"OWNTEMPO"])
+hidden_abilities = Array[StringName]([&"KEENEYE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_fbirg")]([SubResource("Resource_b6wuy")])
+height = 5
+weight = 39
+color = &"Gray"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(8, 23)
+shadow_size = 1
+id = &"GLAMEOW"
+display_name = "Glameow"

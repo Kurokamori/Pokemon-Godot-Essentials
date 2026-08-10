@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4vjqw"]
+
+[resource]
+resource_name = "RELAXEDMINT"
+script = ExtResource("1_4vjqw")
+name_plural = "Relaxed Mints"
+portion_name = "sprig of Relaxed Mint"
+portion_name_plural = "sprigs of Relaxed Mint"
+pocket = 2
+price = 20
+sell_price = 10
+bp_price = 50
+field_use = 1
+description = "When a Pokémon smells this mint, its Defense will grow more easily, but its Speed will grow more slowly."
+id = &"RELAXEDMINT"
+display_name = "Relaxed Mint"
+flags = Array[StringName]([&"Fling_10"])

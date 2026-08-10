@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8n8cq"]
+
+[resource]
+resource_name = "MUSCLEFEATHER"
+script = ExtResource("1_8n8cq")
+name_plural = "Muscle Feathers"
+pocket = 2
+price = 300
+sell_price = 150
+field_use = 1
+description = "An item for use on a Pokémon. It slightly increases the base Attack stat of a single Pokémon."
+id = &"MUSCLEFEATHER"
+display_name = "Muscle Feather"
+flags = Array[StringName]([&"Fling_20"])

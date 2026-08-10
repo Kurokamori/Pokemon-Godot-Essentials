@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_a021n"]
+
+[resource]
+resource_name = "DUALWINGBEAT"
+script = ExtResource("1_a021n")
+type = &"FLYING"
+category = 0
+power = 40
+accuracy = 90
+total_pp = 10
+function_code = &"HitTwoTimes"
+description = "The user slams the target with its wings. The target is hit twice in a row."
+id = &"DUALWINGBEAT"
+display_name = "Dual Wingbeat"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

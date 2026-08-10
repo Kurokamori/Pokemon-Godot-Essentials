@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_w0h0b"]
+
+[resource]
+resource_name = "DRAINPUNCH"
+script = ExtResource("1_w0h0b")
+type = &"FIGHTING"
+category = 0
+power = 75
+total_pp = 10
+function_code = &"HealUserByHalfOfDamageDone"
+description = "An energy-draining punch. The user's HP is restored by half the damage taken by the target."
+id = &"DRAINPUNCH"
+display_name = "Drain Punch"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Punching"])

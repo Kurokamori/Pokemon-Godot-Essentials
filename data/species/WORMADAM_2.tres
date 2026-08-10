@@ -1,0 +1,143 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pwa4p"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jf5hu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cc1t6"]
+
+[sub_resource type="Resource" id="Resource_yh87e"]
+script = ExtResource("1_pwa4p")
+species = &"BURMY"
+method = &"LevelFemale"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0jjln"]
+script = ExtResource("2_jf5hu")
+level = 0
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_5hj1q"]
+script = ExtResource("2_jf5hu")
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_objos"]
+script = ExtResource("2_jf5hu")
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_xctij"]
+script = ExtResource("2_jf5hu")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_4nh5e"]
+script = ExtResource("2_jf5hu")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_32hxd"]
+script = ExtResource("2_jf5hu")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_vhfck"]
+script = ExtResource("2_jf5hu")
+level = 10
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_wbnlp"]
+script = ExtResource("2_jf5hu")
+level = 15
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_b2uvx"]
+script = ExtResource("2_jf5hu")
+level = 20
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_x7y20"]
+script = ExtResource("2_jf5hu")
+level = 23
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_ysjsf"]
+script = ExtResource("2_jf5hu")
+level = 26
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_e2dsy"]
+script = ExtResource("2_jf5hu")
+level = 29
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_lvpc6"]
+script = ExtResource("2_jf5hu")
+level = 32
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_kdhsa"]
+script = ExtResource("2_jf5hu")
+level = 35
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_njt6l"]
+script = ExtResource("2_jf5hu")
+level = 38
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_8qiru"]
+script = ExtResource("2_jf5hu")
+level = 41
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_pgbwp"]
+script = ExtResource("2_jf5hu")
+level = 44
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_yrolx"]
+script = ExtResource("2_jf5hu")
+level = 47
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_5f0xj"]
+script = ExtResource("2_jf5hu")
+level = 50
+move = &"BUGBUZZ"
+
+[resource]
+resource_name = "WORMADAM_2"
+script = ExtResource("3_cc1t6")
+species = &"WORMADAM"
+form = 2
+form_name = "Trash Cloak"
+category = "Bagworm"
+pokedex_entry = "When Burmy evolved, its cloak became a part of this Pokémon's body. The cloak is never shed."
+pokedex_form = 2
+types = Array[StringName]([&"BUG", &"STEEL"])
+base_hp = 60
+base_attack = 69
+base_defense = 95
+base_special_attack = 69
+base_special_defense = 95
+base_speed = 36
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 148
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jf5hu")]([SubResource("Resource_0jjln"), SubResource("Resource_5hj1q"), SubResource("Resource_objos"), SubResource("Resource_xctij"), SubResource("Resource_4nh5e"), SubResource("Resource_32hxd"), SubResource("Resource_vhfck"), SubResource("Resource_wbnlp"), SubResource("Resource_b2uvx"), SubResource("Resource_x7y20"), SubResource("Resource_ysjsf"), SubResource("Resource_e2dsy"), SubResource("Resource_lvpc6"), SubResource("Resource_kdhsa"), SubResource("Resource_njt6l"), SubResource("Resource_8qiru"), SubResource("Resource_pgbwp"), SubResource("Resource_yrolx"), SubResource("Resource_5f0xj")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ELECTROWEB", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GUNKSHOT", &"GYROBALL", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"IRONDEFENSE", &"IRONHEAD", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"UPROAR", &"VENOSHOCK"])
+abilities = Array[StringName]([&"ANTICIPATION"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_uncommon = Array[StringName]([&"SILVERPOWDER"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_pwa4p")]([SubResource("Resource_yh87e")])
+height = 5
+weight = 65
+shape = &"HeadBase"
+generation = 4
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(0, 17)
+shadow_size = 1
+id = &"WORMADAM_2"
+display_name = "Wormadam"
+flags = Array[StringName]([&"InheritFormFromMother"])

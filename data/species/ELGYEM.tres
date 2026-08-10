@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tvyqo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_onp6y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qh0mv"]
+
+[sub_resource type="Resource" id="Resource_b6kpf"]
+script = ExtResource("1_tvyqo")
+species = &"BEHEEYEM"
+method = &"Level"
+parameter = "42"
+
+[sub_resource type="Resource" id="Resource_amjbr"]
+script = ExtResource("2_onp6y")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_oaarj"]
+script = ExtResource("2_onp6y")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_l0snf"]
+script = ExtResource("2_onp6y")
+level = 6
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_jx3ou"]
+script = ExtResource("2_onp6y")
+level = 12
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_1gltx"]
+script = ExtResource("2_onp6y")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_0o0iv"]
+script = ExtResource("2_onp6y")
+level = 24
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_s58x2"]
+script = ExtResource("2_onp6y")
+level = 24
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_4r1lc"]
+script = ExtResource("2_onp6y")
+level = 30
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ol8bs"]
+script = ExtResource("2_onp6y")
+level = 36
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_k6uvb"]
+script = ExtResource("2_onp6y")
+level = 43
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_aewgu"]
+script = ExtResource("2_onp6y")
+level = 48
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_eomip"]
+script = ExtResource("2_onp6y")
+level = 54
+move = &"WONDERROOM"
+
+[sub_resource type="Resource" id="Resource_0p1tc"]
+script = ExtResource("2_onp6y")
+level = 60
+move = &"PSYCHIC"
+
+[resource]
+resource_name = "ELGYEM"
+script = ExtResource("3_qh0mv")
+species = &"ELGYEM"
+category = "Cerebral"
+pokedex_entry = "This Pokémon had never been seen until it appeared from far in the desert 50 years ago."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 55
+base_attack = 55
+base_defense = 55
+base_special_attack = 85
+base_special_defense = 55
+base_speed = 30
+ev_special_attack = 1
+base_exp = 67
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_onp6y")]([SubResource("Resource_amjbr"), SubResource("Resource_oaarj"), SubResource("Resource_l0snf"), SubResource("Resource_jx3ou"), SubResource("Resource_1gltx"), SubResource("Resource_0o0iv"), SubResource("Resource_s58x2"), SubResource("Resource_4r1lc"), SubResource("Resource_ol8bs"), SubResource("Resource_k6uvb"), SubResource("Resource_aewgu"), SubResource("Resource_eomip"), SubResource("Resource_0p1tc")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COSMICPOWER", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GRAVITY", &"GUARDSWAP", &"HIDDENPOWER", &"IMPRISON", &"LIGHTSCREEN", &"MAGICCOAT", &"METEORBEAM", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ASTONISH", &"DESTINYBOND", &"DISABLE", &"PSYCHUP"])
+abilities = Array[StringName]([&"TELEPATHY", &"SYNCHRONIZE"])
+hidden_abilities = Array[StringName]([&"ANALYTIC"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tvyqo")]([SubResource("Resource_b6kpf")])
+height = 5
+weight = 90
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 17)
+shadow_size = 1
+id = &"ELGYEM"
+display_name = "Elgyem"

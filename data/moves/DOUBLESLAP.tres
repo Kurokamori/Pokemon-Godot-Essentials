@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_63w6e"]
+
+[resource]
+resource_name = "DOUBLESLAP"
+script = ExtResource("1_63w6e")
+category = 0
+power = 15
+accuracy = 85
+total_pp = 10
+function_code = &"HitTwoToFiveTimes"
+description = "The target is slapped repeatedly, back and forth, two to five times in a row."
+id = &"DOUBLESLAP"
+display_name = "Double Slap"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

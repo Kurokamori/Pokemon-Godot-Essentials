@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0d75n"]
+
+[resource]
+resource_name = "THICKCLUB"
+script = ExtResource("1_0d75n")
+name_plural = "Thick Clubs"
+price = 1000
+sell_price = 500
+description = "An item to be held by Cubone or Marowak. It is a hard bone of some sort that boosts the Attack stat."
+id = &"THICKCLUB"
+display_name = "Thick Club"
+flags = Array[StringName]([&"Fling_90"])

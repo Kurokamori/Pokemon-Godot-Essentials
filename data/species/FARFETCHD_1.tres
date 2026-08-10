@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ygn3h"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ahuji"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7lvpt"]
+
+[sub_resource type="Resource" id="Resource_vtsab"]
+script = ExtResource("1_ygn3h")
+species = &"SIRFETCHD"
+method = &"BattleDealCriticalHit"
+parameter = "3"
+
+[sub_resource type="Resource" id="Resource_hyjmw"]
+script = ExtResource("2_ahuji")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_jqjwr"]
+script = ExtResource("2_ahuji")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_alm8t"]
+script = ExtResource("2_ahuji")
+level = 5
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_5wgxo"]
+script = ExtResource("2_ahuji")
+level = 10
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_5pv0p"]
+script = ExtResource("2_ahuji")
+level = 15
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_2bs30"]
+script = ExtResource("2_ahuji")
+level = 20
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_y7blk"]
+script = ExtResource("2_ahuji")
+level = 25
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_kyiry"]
+script = ExtResource("2_ahuji")
+level = 30
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_bm2o2"]
+script = ExtResource("2_ahuji")
+level = 35
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_xb836"]
+script = ExtResource("2_ahuji")
+level = 40
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_8ys26"]
+script = ExtResource("2_ahuji")
+level = 45
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_ity4u"]
+script = ExtResource("2_ahuji")
+level = 50
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_rhjor"]
+script = ExtResource("2_ahuji")
+level = 55
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_byvos"]
+script = ExtResource("2_ahuji")
+level = 60
+move = &"FINALGAMBIT"
+
+[sub_resource type="Resource" id="Resource_jtxra"]
+script = ExtResource("2_ahuji")
+level = 65
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "FARFETCHD_1"
+script = ExtResource("3_7lvpt")
+species = &"FARFETCHD"
+form = 1
+form_name = "Galarian"
+category = "Wild Duck"
+pokedex_entry = "The stalks of leeks are thicker and longer in the Galar region. Farfetch'd that adapted to these stalks took on a unique form."
+pokedex_form = 1
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 52
+base_attack = 95
+base_defense = 55
+base_special_attack = 58
+base_special_defense = 62
+base_speed = 55
+ev_attack = 1
+base_exp = 132
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ahuji")]([SubResource("Resource_hyjmw"), SubResource("Resource_jqjwr"), SubResource("Resource_alm8t"), SubResource("Resource_5wgxo"), SubResource("Resource_5pv0p"), SubResource("Resource_2bs30"), SubResource("Resource_y7blk"), SubResource("Resource_kyiry"), SubResource("Resource_bm2o2"), SubResource("Resource_xb836"), SubResource("Resource_8ys26"), SubResource("Resource_ity4u"), SubResource("Resource_rhjor"), SubResource("Resource_byvos"), SubResource("Resource_jtxra")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRAVEBIRD", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"LEAFBLADE", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBLADE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"THROATCHOP", &"WORKUP"])
+egg_moves = Array[StringName]([&"COUNTER", &"COVET", &"CURSE", &"DOUBLEEDGE", &"FEINT", &"FLAIL", &"NIGHTSLASH", &"QUICKATTACK", &"QUICKGUARD", &"SIMPLEBEAM", &"SKYATTACK"])
+abilities = Array[StringName]([&"STEADFAST"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+wild_item_common = Array[StringName]([&"LEEK"])
+egg_groups = Array[StringName]([&"Flying", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ygn3h")]([SubResource("Resource_vtsab")])
+height = 8
+weight = 420
+color = &"Brown"
+shape = &"Winged"
+habitat = &"Grassland"
+generation = 8
+back_sprite_offset = Vector2i(-2, 58)
+front_sprite_offset = Vector2i(6, 27)
+id = &"FARFETCHD_1"
+display_name = "Farfetch'd"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_q1vwp"]
+
+[resource]
+resource_name = "PHOTONGEYSER"
+script = ExtResource("1_q1vwp")
+type = &"PSYCHIC"
+category = 1
+power = 100
+function_code = &"CategoryDependsOnHigherDamageIgnoreTargetAbility"
+description = "The user attacks with a pillar of light. This move the higher of the user's Attack or Sp. Atk stat."
+id = &"PHOTONGEYSER"
+display_name = "Photon Geyser"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

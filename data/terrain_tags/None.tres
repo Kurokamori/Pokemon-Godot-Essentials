@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_mt6hp"]
+
+[resource]
+resource_name = "None"
+script = ExtResource("1_mt6hp")
+id = &"None"
+display_name = "None"

@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_n43kn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yeqw0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_u88v6"]
+
+[sub_resource type="Resource" id="Resource_t47f6"]
+script = ExtResource("1_n43kn")
+species = &"STUNKY"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_weycw"]
+script = ExtResource("2_yeqw0")
+level = 0
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_7yyoc"]
+script = ExtResource("2_yeqw0")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_ptawn"]
+script = ExtResource("2_yeqw0")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_txvcx"]
+script = ExtResource("2_yeqw0")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_vor8w"]
+script = ExtResource("2_yeqw0")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_ifqbg"]
+script = ExtResource("2_yeqw0")
+level = 9
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_6k0go"]
+script = ExtResource("2_yeqw0")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_w4jx7"]
+script = ExtResource("2_yeqw0")
+level = 15
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_547yh"]
+script = ExtResource("2_yeqw0")
+level = 18
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_5alqg"]
+script = ExtResource("2_yeqw0")
+level = 21
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_iq7un"]
+script = ExtResource("2_yeqw0")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_nwrym"]
+script = ExtResource("2_yeqw0")
+level = 27
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_be0ye"]
+script = ExtResource("2_yeqw0")
+level = 30
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_6ht2o"]
+script = ExtResource("2_yeqw0")
+level = 33
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_2yo5r"]
+script = ExtResource("2_yeqw0")
+level = 38
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_j3bwp"]
+script = ExtResource("2_yeqw0")
+level = 43
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_m4eg2"]
+script = ExtResource("2_yeqw0")
+level = 48
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_fqgco"]
+script = ExtResource("2_yeqw0")
+level = 53
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "SKUNTANK"
+script = ExtResource("3_u88v6")
+species = &"SKUNTANK"
+category = "Skunk"
+pokedex_entry = "It sprays a vile-smelling fluid from the tip of its tail to attack. Its range is over 160 feet."
+types = Array[StringName]([&"POISON", &"DARK"])
+base_hp = 103
+base_attack = 93
+base_defense = 67
+base_special_attack = 71
+base_special_defense = 61
+base_speed = 84
+ev_hp = 2
+base_exp = 168
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yeqw0")]([SubResource("Resource_weycw"), SubResource("Resource_7yyoc"), SubResource("Resource_ptawn"), SubResource("Resource_txvcx"), SubResource("Resource_vor8w"), SubResource("Resource_ifqbg"), SubResource("Resource_6k0go"), SubResource("Resource_w4jx7"), SubResource("Resource_547yh"), SubResource("Resource_5alqg"), SubResource("Resource_iq7un"), SubResource("Resource_nwrym"), SubResource("Resource_be0ye"), SubResource("Resource_6ht2o"), SubResource("Resource_2yo5r"), SubResource("Resource_j3bwp"), SubResource("Resource_m4eg2"), SubResource("Resource_fqgco")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"CRUNCH", &"CUT", &"DARKPULSE", &"DEFOG", &"DIG", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMETHROWER", &"FOCUSENERGY", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"LASHOUT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"TOXIC", &"VENOMDRENCH", &"VENOSHOCK"])
+abilities = Array[StringName]([&"STENCH", &"AFTERMATH"])
+hidden_abilities = Array[StringName]([&"KEENEYE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_n43kn")]([SubResource("Resource_t47f6")])
+height = 10
+weight = 380
+color = &"Purple"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-4, 26)
+id = &"SKUNTANK"
+display_name = "Skuntank"

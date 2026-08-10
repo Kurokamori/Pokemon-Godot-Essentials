@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_wnaxa"]
+
+[resource]
+resource_name = "SEISMICTOSS"
+script = ExtResource("1_wnaxa")
+type = &"FIGHTING"
+category = 0
+power = 1
+total_pp = 20
+function_code = &"FixedDamageUserLevel"
+description = "The target is thrown using the power of gravity. It inflicts damage equal to the user's level."
+id = &"SEISMICTOSS"
+display_name = "Seismic Toss"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

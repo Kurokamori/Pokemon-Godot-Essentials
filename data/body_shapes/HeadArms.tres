@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BodyShapeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/body_shape_data.gd" id="1_t44wq"]
+
+[resource]
+resource_name = "HeadArms"
+script = ExtResource("1_t44wq")
+icon_position = 3
+id = &"HeadArms"
+display_name = "Head and arms"

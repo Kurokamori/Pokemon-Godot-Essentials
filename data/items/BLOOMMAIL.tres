@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xl2dm"]
+
+[resource]
+resource_name = "BLOOMMAIL"
+script = ExtResource("1_xl2dm")
+name_plural = "Bloom Mail"
+portion_name = "piece of Bloom Mail"
+portion_name_plural = "pieces of Bloom Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of pretty floral patterns. Let a Pokémon hold it for delivery."
+id = &"BLOOMMAIL"
+display_name = "Bloom Mail"
+flags = Array[StringName]([&"IconMail"])

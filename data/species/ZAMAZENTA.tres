@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cve3q"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tuw7c"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lonlr"]
+
+[sub_resource type="Resource" id="Resource_ii76i"]
+script = ExtResource("2_tuw7c")
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_pqnym"]
+script = ExtResource("2_tuw7c")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_rxn6g"]
+script = ExtResource("2_tuw7c")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_jlg2j"]
+script = ExtResource("2_tuw7c")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_ygycv"]
+script = ExtResource("2_tuw7c")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_2rfuy"]
+script = ExtResource("2_tuw7c")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_wliiu"]
+script = ExtResource("2_tuw7c")
+level = 11
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_1eykp"]
+script = ExtResource("2_tuw7c")
+level = 22
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_smn0r"]
+script = ExtResource("2_tuw7c")
+level = 33
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_i32nj"]
+script = ExtResource("2_tuw7c")
+level = 44
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_ck1jk"]
+script = ExtResource("2_tuw7c")
+level = 55
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_rn508"]
+script = ExtResource("2_tuw7c")
+level = 66
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_lttoe"]
+script = ExtResource("2_tuw7c")
+level = 77
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_el55b"]
+script = ExtResource("2_tuw7c")
+level = 88
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "ZAMAZENTA"
+script = ExtResource("3_lonlr")
+species = &"ZAMAZENTA"
+form_name = "Hero of Many Battles"
+category = "Warrior"
+pokedex_entry = "This Pokémon slept for aeons while in the form of a statue. It was asleep for so long, people forgot that it ever existed."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 92
+base_attack = 130
+base_defense = 115
+base_special_attack = 80
+base_special_defense = 115
+base_speed = 138
+ev_speed = 3
+base_exp = 335
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 10
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_tuw7c")]([SubResource("Resource_ii76i"), SubResource("Resource_pqnym"), SubResource("Resource_rxn6g"), SubResource("Resource_jlg2j"), SubResource("Resource_ygycv"), SubResource("Resource_2rfuy"), SubResource("Resource_wliiu"), SubResource("Resource_1eykp"), SubResource("Resource_smn0r"), SubResource("Resource_i32nj"), SubResource("Resource_ck1jk"), SubResource("Resource_rn508"), SubResource("Resource_lttoe"), SubResource("Resource_el55b")])
+tutor_moves = Array[StringName]([&"AGILITY", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CRUNCH", &"DAZZLINGGLEAM", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREFANG", &"FLASHCANNON", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"GUARDSWAP", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEFANG", &"IMPRISON", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"POWERSWAP", &"PROTECT", &"PSYCHICFANGS", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"STEELBEAM", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"THUNDERFANG", &"TOXIC", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"DAUNTLESSSHIELD"])
+wild_item_common = Array[StringName]([&"RUSTEDSHIELD"])
+wild_item_uncommon = Array[StringName]([&"RUSTEDSHIELD"])
+wild_item_rare = Array[StringName]([&"RUSTEDSHIELD"])
+hatch_steps = 30720
+height = 29
+weight = 2100
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-4, 12)
+shadow_size = 3
+id = &"ZAMAZENTA"
+display_name = "Zamazenta"
+flags = Array[StringName]([&"Legendary"])

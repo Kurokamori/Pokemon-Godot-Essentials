@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jndyc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pdgom"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4eqn2"]
+
+[sub_resource type="Resource" id="Resource_1idfo"]
+script = ExtResource("2_pdgom")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cfchs"]
+script = ExtResource("2_pdgom")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_2er8q"]
+script = ExtResource("2_pdgom")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_isk8j"]
+script = ExtResource("2_pdgom")
+level = 9
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_oy2m0"]
+script = ExtResource("2_pdgom")
+level = 12
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_pj1wx"]
+script = ExtResource("2_pdgom")
+level = 15
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_p4a6i"]
+script = ExtResource("2_pdgom")
+level = 22
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_surpo"]
+script = ExtResource("2_pdgom")
+level = 27
+move = &"ODORSLEUTH"
+
+[sub_resource type="Resource" id="Resource_aaskq"]
+script = ExtResource("2_pdgom")
+level = 33
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_ftmnl"]
+script = ExtResource("2_pdgom")
+level = 35
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_1jjt0"]
+script = ExtResource("2_pdgom")
+level = 38
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_34t7v"]
+script = ExtResource("2_pdgom")
+level = 42
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_eahwu"]
+script = ExtResource("2_pdgom")
+level = 48
+move = &"COTTONGUARD"
+
+[resource]
+resource_name = "FURFROU_2"
+script = ExtResource("3_4eqn2")
+species = &"FURFROU"
+form = 2
+form_name = "Star Trim"
+category = "Poodle"
+pokedex_entry = "Trimming its fluffy fur not only makes it more elegant but also increases the swiftness of its movements."
+pokedex_form = 2
+base_hp = 75
+base_attack = 80
+base_defense = 60
+base_special_attack = 65
+base_special_defense = 90
+base_speed = 102
+ev_speed = 1
+base_exp = 165
+catch_rate = 160
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pdgom")]([SubResource("Resource_1idfo"), SubResource("Resource_cfchs"), SubResource("Resource_2er8q"), SubResource("Resource_isk8j"), SubResource("Resource_oy2m0"), SubResource("Resource_pj1wx"), SubResource("Resource_p4a6i"), SubResource("Resource_surpo"), SubResource("Resource_aaskq"), SubResource("Resource_ftmnl"), SubResource("Resource_1jjt0"), SubResource("Resource_34t7v"), SubResource("Resource_eahwu")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"UTURN", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CAPTIVATE", &"MIMIC", &"REFRESH", &"ROLEPLAY", &"WORKUP"])
+abilities = Array[StringName]([&"FURCOAT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 12
+weight = 280
+color = &"White"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(2, 46)
+front_sprite_offset = Vector2i(-2, 20)
+id = &"FURFROU_2"
+display_name = "Furfrou"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_hf1df"]
+
+[resource]
+resource_name = "HPUP"
+script = ExtResource("1_hf1df")
+name_plural = "HP Ups"
+portion_name = "bottle of HP Up"
+portion_name_plural = "bottles of HP Up"
+pocket = 2
+price = 10000
+sell_price = 5000
+field_use = 1
+description = "A nutritious drink for Pokémon. It raises the base HP of a single Pokémon."
+id = &"HPUP"
+display_name = "HP Up"
+flags = Array[StringName]([&"Fling_30"])

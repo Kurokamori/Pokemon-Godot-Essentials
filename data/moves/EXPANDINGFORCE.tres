@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_iww8g"]
+
+[resource]
+resource_name = "EXPANDINGFORCE"
+script = ExtResource("1_iww8g")
+type = &"PSYCHIC"
+category = 1
+power = 80
+total_pp = 10
+function_code = &"HitsAllFoesAndPowersUpInPsychicTerrain"
+description = "The user attacks the target with psychic power. Powers up and hits all foes on Psychic Terrain."
+id = &"EXPANDINGFORCE"
+display_name = "Expanding Force"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

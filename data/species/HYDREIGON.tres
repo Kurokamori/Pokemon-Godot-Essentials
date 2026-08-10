@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pp7bl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0d1qy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bksvm"]
+
+[sub_resource type="Resource" id="Resource_ntfv6"]
+script = ExtResource("1_pp7bl")
+species = &"ZWEILOUS"
+method = &"Level"
+parameter = "64"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_lx4bi"]
+script = ExtResource("2_0d1qy")
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_164le"]
+script = ExtResource("2_0d1qy")
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_yodpj"]
+script = ExtResource("2_0d1qy")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bnoff"]
+script = ExtResource("2_0d1qy")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_rq1uf"]
+script = ExtResource("2_0d1qy")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_1d62o"]
+script = ExtResource("2_0d1qy")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_nn6g4"]
+script = ExtResource("2_0d1qy")
+level = 12
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_xe50e"]
+script = ExtResource("2_0d1qy")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_bc0bg"]
+script = ExtResource("2_0d1qy")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_x4a2x"]
+script = ExtResource("2_0d1qy")
+level = 24
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_tk0wk"]
+script = ExtResource("2_0d1qy")
+level = 28
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_1xy5y"]
+script = ExtResource("2_0d1qy")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_yswfw"]
+script = ExtResource("2_0d1qy")
+level = 36
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_dkf1a"]
+script = ExtResource("2_0d1qy")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_buxjl"]
+script = ExtResource("2_0d1qy")
+level = 44
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_pu7sq"]
+script = ExtResource("2_0d1qy")
+level = 48
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_wn80b"]
+script = ExtResource("2_0d1qy")
+level = 54
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_v4keu"]
+script = ExtResource("2_0d1qy")
+level = 60
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_x8sja"]
+script = ExtResource("2_0d1qy")
+level = 68
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_6r80o"]
+script = ExtResource("2_0d1qy")
+level = 76
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "HYDREIGON"
+script = ExtResource("3_bksvm")
+species = &"HYDREIGON"
+category = "Brutal"
+pokedex_entry = "The heads on their arms do not have brains. They use all three heads to consume and destroy everything."
+types = Array[StringName]([&"DARK", &"DRAGON"])
+base_hp = 92
+base_attack = 105
+base_defense = 90
+base_special_attack = 125
+base_special_defense = 90
+base_speed = 98
+ev_special_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_0d1qy")]([SubResource("Resource_lx4bi"), SubResource("Resource_164le"), SubResource("Resource_yodpj"), SubResource("Resource_bnoff"), SubResource("Resource_rq1uf"), SubResource("Resource_1d62o"), SubResource("Resource_nn6g4"), SubResource("Resource_xe50e"), SubResource("Resource_bc0bg"), SubResource("Resource_x4a2x"), SubResource("Resource_tk0wk"), SubResource("Resource_1xy5y"), SubResource("Resource_yswfw"), SubResource("Resource_dkf1a"), SubResource("Resource_buxjl"), SubResource("Resource_pu7sq"), SubResource("Resource_wn80b"), SubResource("Resource_v4keu"), SubResource("Resource_x8sja"), SubResource("Resource_6r80o")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BREAKINGSWIPE", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIRESPIN", &"FLAMETHROWER", &"FLASHCANNON", &"FLY", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEFANG", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SCALESHOT", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"SPITE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TAILWIND", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERFANG", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRIATTACK", &"UPROAR", &"UTURN", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_pp7bl")]([SubResource("Resource_ntfv6")])
+height = 18
+weight = 1600
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 6)
+id = &"HYDREIGON"
+display_name = "Hydreigon"

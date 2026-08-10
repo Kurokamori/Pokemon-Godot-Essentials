@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gt623"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kh0i4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_q5p3w"]
+
+[sub_resource type="Resource" id="Resource_4sk4l"]
+script = ExtResource("1_gt623")
+species = &"CROBAT"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_04emi"]
+script = ExtResource("1_gt623")
+species = &"ZUBAT"
+method = &"Level"
+parameter = "22"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_eyaxk"]
+script = ExtResource("2_kh0i4")
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_n1ejm"]
+script = ExtResource("2_kh0i4")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_5cf0s"]
+script = ExtResource("2_kh0i4")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_dae1v"]
+script = ExtResource("2_kh0i4")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_asl4f"]
+script = ExtResource("2_kh0i4")
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_asxa2"]
+script = ExtResource("2_kh0i4")
+level = 15
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_odm8d"]
+script = ExtResource("2_kh0i4")
+level = 20
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_ehtwh"]
+script = ExtResource("2_kh0i4")
+level = 27
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_r3kjh"]
+script = ExtResource("2_kh0i4")
+level = 34
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ly402"]
+script = ExtResource("2_kh0i4")
+level = 41
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_dsvii"]
+script = ExtResource("2_kh0i4")
+level = 48
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_t5dpo"]
+script = ExtResource("2_kh0i4")
+level = 55
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_ajxyc"]
+script = ExtResource("2_kh0i4")
+level = 62
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_xfhmn"]
+script = ExtResource("2_kh0i4")
+level = 69
+move = &"LEECHLIFE"
+
+[resource]
+resource_name = "GOLBAT"
+script = ExtResource("3_q5p3w")
+species = &"GOLBAT"
+category = "Bat"
+pokedex_entry = "Its fangs easily puncture even thick animal hide. It loves to feast on the blood of people and Pokémon. It flits about in darkness and strikes from behind."
+types = Array[StringName]([&"POISON", &"FLYING"])
+base_hp = 75
+base_attack = 80
+base_defense = 70
+base_special_attack = 65
+base_special_defense = 75
+base_speed = 90
+ev_speed = 2
+base_exp = 159
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_kh0i4")]([SubResource("Resource_eyaxk"), SubResource("Resource_n1ejm"), SubResource("Resource_5cf0s"), SubResource("Resource_dae1v"), SubResource("Resource_asl4f"), SubResource("Resource_asxa2"), SubResource("Resource_odm8d"), SubResource("Resource_ehtwh"), SubResource("Resource_r3kjh"), SubResource("Resource_ly402"), SubResource("Resource_dsvii"), SubResource("Resource_t5dpo"), SubResource("Resource_ajxyc"), SubResource("Resource_xfhmn")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"LEECHLIFE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SLUDGEBOMB", &"SNATCH", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TWISTER", &"UPROAR", &"UTURN", &"VENOMDRENCH", &"VENOSHOCK", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_gt623")]([SubResource("Resource_4sk4l"), SubResource("Resource_04emi")])
+height = 16
+weight = 550
+color = &"Purple"
+shape = &"Winged"
+habitat = &"Cave"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+id = &"GOLBAT"
+display_name = "Golbat"

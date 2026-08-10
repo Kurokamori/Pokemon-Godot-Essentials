@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5totg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_20k0b"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_alsxt"]
+
+[sub_resource type="Resource" id="Resource_73iwr"]
+script = ExtResource("1_5totg")
+species = &"GRIMMSNARL"
+method = &"Level"
+parameter = "42"
+
+[sub_resource type="Resource" id="Resource_jtaeh"]
+script = ExtResource("1_5totg")
+species = &"IMPIDIMP"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ss33o"]
+script = ExtResource("2_20k0b")
+level = 0
+move = &"FALSESURRENDER"
+
+[sub_resource type="Resource" id="Resource_dseg6"]
+script = ExtResource("2_20k0b")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_84p4m"]
+script = ExtResource("2_20k0b")
+move = &"CONFIDE"
+
+[sub_resource type="Resource" id="Resource_5kb8u"]
+script = ExtResource("2_20k0b")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_elkpj"]
+script = ExtResource("2_20k0b")
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_tchsp"]
+script = ExtResource("2_20k0b")
+level = 12
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_6rt4w"]
+script = ExtResource("2_20k0b")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_24j55"]
+script = ExtResource("2_20k0b")
+level = 20
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_ist30"]
+script = ExtResource("2_20k0b")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_l1kkp"]
+script = ExtResource("2_20k0b")
+level = 28
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_2lo30"]
+script = ExtResource("2_20k0b")
+level = 35
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_72erw"]
+script = ExtResource("2_20k0b")
+level = 40
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_wurpc"]
+script = ExtResource("2_20k0b")
+level = 46
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_gpl2r"]
+script = ExtResource("2_20k0b")
+level = 52
+move = &"FOULPLAY"
+
+[resource]
+resource_name = "MORGREM"
+script = ExtResource("3_alsxt")
+species = &"MORGREM"
+category = "Devious"
+pokedex_entry = "With sly cunning, it tries to lure people into the woods. Some believe it to have the power to make crops grow."
+types = Array[StringName]([&"DARK", &"FAIRY"])
+base_hp = 65
+base_attack = 60
+base_defense = 45
+base_special_attack = 75
+base_special_defense = 55
+base_speed = 70
+ev_special_attack = 2
+base_exp = 130
+gender_ratio = &"AlwaysMale"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_20k0b")]([SubResource("Resource_ss33o"), SubResource("Resource_dseg6"), SubResource("Resource_84p4m"), SubResource("Resource_5kb8u"), SubResource("Resource_elkpj"), SubResource("Resource_tchsp"), SubResource("Resource_6rt4w"), SubResource("Resource_24j55"), SubResource("Resource_ist30"), SubResource("Resource_l1kkp"), SubResource("Resource_2lo30"), SubResource("Resource_72erw"), SubResource("Resource_wurpc"), SubResource("Resource_gpl2r")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"ENDURE", &"FACADE", &"FAKETEARS", &"FOULPLAY", &"FRUSTRATION", &"HIDDENPOWER", &"LASHOUT", &"LEECHLIFE", &"LIGHTSCREEN", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"UPROAR"])
+abilities = Array[StringName]([&"PRANKSTER", &"FRISK"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+egg_groups = Array[StringName]([&"Fairy", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5totg")]([SubResource("Resource_73iwr"), SubResource("Resource_jtaeh")])
+height = 8
+weight = 125
+color = &"Pink"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 21)
+id = &"MORGREM"
+display_name = "Morgrem"

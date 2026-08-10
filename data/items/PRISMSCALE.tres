@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_uksfd"]
+
+[resource]
+resource_name = "PRISMSCALE"
+script = ExtResource("1_uksfd")
+name_plural = "Prism Scales"
+price = 3000
+sell_price = 1000
+bp_price = 10
+description = "A mysterious scale that evolves certain Pokémon. It shines in rainbow colors."
+id = &"PRISMSCALE"
+display_name = "Prism Scale"
+flags = Array[StringName]([&"Fling_30"])

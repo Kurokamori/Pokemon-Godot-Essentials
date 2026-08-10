@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_anwb3"]
+
+[resource]
+resource_name = "TM56"
+script = ExtResource("1_anwb3")
+name_plural = "TM56s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"FLING"
+description = "The user flings its held item at the target to attack. This move's power and effects depend on the item."
+id = &"TM56"
+display_name = "TM56"
+flags = Array[StringName]([&"Fling_10"])

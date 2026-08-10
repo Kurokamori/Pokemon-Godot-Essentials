@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kw4g3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wynlw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_br4aa"]
+
+[sub_resource type="Resource" id="Resource_p2k0c"]
+script = ExtResource("1_kw4g3")
+species = &"DARTRIX"
+method = &"Level"
+parameter = "17"
+
+[sub_resource type="Resource" id="Resource_q0t6w"]
+script = ExtResource("2_wynlw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_03fcy"]
+script = ExtResource("2_wynlw")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_bhj3b"]
+script = ExtResource("2_wynlw")
+level = 3
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_vop44"]
+script = ExtResource("2_wynlw")
+level = 6
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_8fwt1"]
+script = ExtResource("2_wynlw")
+level = 9
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_tft8m"]
+script = ExtResource("2_wynlw")
+level = 12
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_o6dwk"]
+script = ExtResource("2_wynlw")
+level = 15
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_rek7k"]
+script = ExtResource("2_wynlw")
+level = 18
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_0st5q"]
+script = ExtResource("2_wynlw")
+level = 21
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_lhey0"]
+script = ExtResource("2_wynlw")
+level = 24
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_bgy3h"]
+script = ExtResource("2_wynlw")
+level = 27
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_ydh77"]
+script = ExtResource("2_wynlw")
+level = 30
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_uwkp5"]
+script = ExtResource("2_wynlw")
+level = 33
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_7kgs6"]
+script = ExtResource("2_wynlw")
+level = 36
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "ROWLET"
+script = ExtResource("3_br4aa")
+species = &"ROWLET"
+category = "Grass Quill"
+pokedex_entry = "It sends its feathers, which are as sharp as blades, flying in attack. Its legs are strong, so its kicks are also formidable."
+types = Array[StringName]([&"GRASS", &"FLYING"])
+base_hp = 68
+base_attack = 55
+base_defense = 55
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 42
+ev_hp = 1
+base_exp = 64
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wynlw")]([SubResource("Resource_q0t6w"), SubResource("Resource_03fcy"), SubResource("Resource_bhj3b"), SubResource("Resource_vop44"), SubResource("Resource_8fwt1"), SubResource("Resource_tft8m"), SubResource("Resource_o6dwk"), SubResource("Resource_rek7k"), SubResource("Resource_0st5q"), SubResource("Resource_lhey0"), SubResource("Resource_bgy3h"), SubResource("Resource_ydh77"), SubResource("Resource_uwkp5"), SubResource("Resource_7kgs6")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"HIDDENPOWER", &"LEAFBLADE", &"LIGHTSCREEN", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWCLAW", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"WORKUP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"CONFUSERAY", &"DEFOG", &"DOUBLETEAM", &"KNOCKOFF"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"LONGREACH"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_kw4g3")]([SubResource("Resource_p2k0c")])
+height = 3
+weight = 15
+color = &"Brown"
+shape = &"Winged"
+generation = 7
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"ROWLET"
+display_name = "Rowlet"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_hihrf"]
+
+[resource]
+resource_name = "34"
+script = ExtResource("1_hihrf")
+map_id = 34
+can_bicycle = true
+town_map_position = Array[int]([0, 15, 6])
+battle_background = "cave1"
+battle_environment = &"Cave"
+id = &"34"
+display_name = "Route 3"
+flags = Array[StringName]([&"IceRock"])

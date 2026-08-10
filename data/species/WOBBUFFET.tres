@@ -1,0 +1,84 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8m8by"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ei1iw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mhopq"]
+
+[sub_resource type="Resource" id="Resource_70k0v"]
+script = ExtResource("1_8m8by")
+species = &"WYNAUT"
+method = &"Level"
+parameter = "15"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_dmp4v"]
+script = ExtResource("2_ei1iw")
+level = 0
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_m226c"]
+script = ExtResource("2_ei1iw")
+level = 0
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_5vw7k"]
+script = ExtResource("2_ei1iw")
+level = 0
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_811ba"]
+script = ExtResource("2_ei1iw")
+level = 0
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_t3rpj"]
+script = ExtResource("2_ei1iw")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_4fuea"]
+script = ExtResource("2_ei1iw")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_shrjt"]
+script = ExtResource("2_ei1iw")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_axe3n"]
+script = ExtResource("2_ei1iw")
+move = &"AMNESIA"
+
+[resource]
+resource_name = "WOBBUFFET"
+script = ExtResource("3_mhopq")
+species = &"WOBBUFFET"
+category = "Patient"
+pokedex_entry = "Usually docile, a Wobbuffet strikes back ferociously if its black tail is attacked. It makes its lair in caves where it waits for nightfall."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 190
+base_attack = 33
+base_defense = 58
+base_special_attack = 33
+base_special_defense = 58
+base_speed = 33
+ev_hp = 2
+base_exp = 142
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ei1iw")]([SubResource("Resource_dmp4v"), SubResource("Resource_m226c"), SubResource("Resource_5vw7k"), SubResource("Resource_811ba"), SubResource("Resource_t3rpj"), SubResource("Resource_4fuea"), SubResource("Resource_shrjt"), SubResource("Resource_axe3n")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"CHARM", &"ENCORE", &"SAFEGUARD"])
+abilities = Array[StringName]([&"SHADOWTAG"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_8m8by")]([SubResource("Resource_70k0v")])
+height = 13
+weight = 285
+color = &"Blue"
+shape = &"HeadBase"
+habitat = &"Cave"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 25)
+shadow_size = 1
+id = &"WOBBUFFET"
+display_name = "Wobbuffet"

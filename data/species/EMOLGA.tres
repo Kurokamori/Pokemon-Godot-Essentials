@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s4lqu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fqcgx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0y454"]
+
+[sub_resource type="Resource" id="Resource_c3gph"]
+script = ExtResource("2_fqcgx")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_k4oam"]
+script = ExtResource("2_fqcgx")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_sya7c"]
+script = ExtResource("2_fqcgx")
+level = 5
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_hd77e"]
+script = ExtResource("2_fqcgx")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_fm4al"]
+script = ExtResource("2_fqcgx")
+level = 15
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_xp8xg"]
+script = ExtResource("2_fqcgx")
+level = 20
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_qfqx7"]
+script = ExtResource("2_fqcgx")
+level = 25
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_snv14"]
+script = ExtResource("2_fqcgx")
+level = 30
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_fjgpk"]
+script = ExtResource("2_fqcgx")
+level = 35
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_dj6ri"]
+script = ExtResource("2_fqcgx")
+level = 40
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_u2764"]
+script = ExtResource("2_fqcgx")
+level = 45
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_x0hgi"]
+script = ExtResource("2_fqcgx")
+level = 50
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_optes"]
+script = ExtResource("2_fqcgx")
+level = 55
+move = &"AGILITY"
+
+[resource]
+resource_name = "EMOLGA"
+script = ExtResource("3_0y454")
+species = &"EMOLGA"
+category = "Sky Squirrel"
+pokedex_entry = "They live on treetops and glide using the inside of a cape-like membrane while discharging electricity."
+types = Array[StringName]([&"ELECTRIC", &"FLYING"])
+base_hp = 55
+base_attack = 75
+base_defense = 60
+base_special_attack = 75
+base_special_defense = 60
+base_speed = 103
+ev_speed = 2
+base_exp = 150
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fqcgx")]([SubResource("Resource_c3gph"), SubResource("Resource_k4oam"), SubResource("Resource_sya7c"), SubResource("Resource_hd77e"), SubResource("Resource_fm4al"), SubResource("Resource_xp8xg"), SubResource("Resource_qfqx7"), SubResource("Resource_snv14"), SubResource("Resource_fjgpk"), SubResource("Resource_dj6ri"), SubResource("Resource_u2764"), SubResource("Resource_x0hgi"), SubResource("Resource_optes")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRSLASH", &"ATTRACT", &"BATONPASS", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"EERIEIMPULSE", &"ELECTROBALL", &"ELECTROWEB", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"UTURN", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"ASTONISH", &"COVET", &"DEFOG", &"ROOST", &"SHOCKWAVE", &"TICKLE"])
+abilities = Array[StringName]([&"STATIC"])
+hidden_abilities = Array[StringName]([&"MOTORDRIVE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 4
+weight = 50
+color = &"White"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 14)
+shadow_size = 1
+id = &"EMOLGA"
+display_name = "Emolga"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_jdrhs"]
+
+[resource]
+script = ExtResource("1_jdrhs")
+category = &"gender_ratios"
+record_script = "res://src/data/gender_ratio_data.gd"
+paths = {
+&"AlwaysFemale": "res://data/gender_ratios/AlwaysFemale.tres",
+&"AlwaysMale": "res://data/gender_ratios/AlwaysMale.tres",
+&"Female25Percent": "res://data/gender_ratios/Female25Percent.tres",
+&"Female50Percent": "res://data/gender_ratios/Female50Percent.tres",
+&"Female75Percent": "res://data/gender_ratios/Female75Percent.tres",
+&"FemaleOneEighth": "res://data/gender_ratios/FemaleOneEighth.tres",
+&"FemaleSevenEighths": "res://data/gender_ratios/FemaleSevenEighths.tres",
+&"Genderless": "res://data/gender_ratios/Genderless.tres"
+}
+ordered_ids = Array[StringName]([&"AlwaysMale", &"AlwaysFemale", &"Genderless", &"FemaleOneEighth", &"Female25Percent", &"Female50Percent", &"Female75Percent", &"FemaleSevenEighths"])

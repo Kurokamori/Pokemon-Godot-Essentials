@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5h3qw"]
+
+[resource]
+resource_name = "SURGINGSTRIKES"
+script = ExtResource("1_5h3qw")
+type = &"WATER"
+category = 0
+power = 25
+function_code = &"HitThreeTimesAlwaysCriticalHit"
+description = "Hits three times in a row with mastery of the Water style. This attack always deals critical hits."
+id = &"SURGINGSTRIKES"
+display_name = "Surging Strikes"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

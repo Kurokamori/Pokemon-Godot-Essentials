@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rhpu7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hk0xh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_g8p6b"]
+
+[sub_resource type="Resource" id="Resource_pr6tg"]
+script = ExtResource("2_hk0xh")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_f05um"]
+script = ExtResource("2_hk0xh")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_apxuj"]
+script = ExtResource("2_hk0xh")
+level = 5
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_y1dt2"]
+script = ExtResource("2_hk0xh")
+level = 10
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_ugq3p"]
+script = ExtResource("2_hk0xh")
+level = 15
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_r75rr"]
+script = ExtResource("2_hk0xh")
+level = 20
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_h8uqs"]
+script = ExtResource("2_hk0xh")
+level = 25
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_01fwi"]
+script = ExtResource("2_hk0xh")
+level = 30
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_d8b5l"]
+script = ExtResource("2_hk0xh")
+level = 35
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_utq4b"]
+script = ExtResource("2_hk0xh")
+level = 40
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_hktb2"]
+script = ExtResource("2_hk0xh")
+level = 45
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_2v5y6"]
+script = ExtResource("2_hk0xh")
+level = 50
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_1n3sv"]
+script = ExtResource("2_hk0xh")
+level = 55
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_pm0o2"]
+script = ExtResource("2_hk0xh")
+level = 60
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_jytwy"]
+script = ExtResource("2_hk0xh")
+level = 65
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "LAPRAS"
+script = ExtResource("3_g8p6b")
+species = &"LAPRAS"
+category = "Transport"
+pokedex_entry = "People have driven Lapras almost to the point of extinction. In the evenings, it is said to sing plaintively as it seeks what few others of its kind still remain."
+types = Array[StringName]([&"WATER", &"ICE"])
+base_hp = 130
+base_attack = 85
+base_defense = 80
+base_special_attack = 85
+base_special_defense = 95
+base_speed = 60
+ev_hp = 2
+base_exp = 187
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hk0xh")]([SubResource("Resource_pr6tg"), SubResource("Resource_f05um"), SubResource("Resource_apxuj"), SubResource("Resource_y1dt2"), SubResource("Resource_ugq3p"), SubResource("Resource_r75rr"), SubResource("Resource_h8uqs"), SubResource("Resource_01fwi"), SubResource("Resource_d8b5l"), SubResource("Resource_utq4b"), SubResource("Resource_hktb2"), SubResource("Resource_2v5y6"), SubResource("Resource_1n3sv"), SubResource("Resource_pm0o2"), SubResource("Resource_jytwy")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"DRAGONPULSE", &"DREAMEATER", &"DRILLRUN", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONHEAD", &"IRONTAIL", &"LIQUIDATION", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"CURSE", &"DRAGONDANCE", &"FISSURE", &"FREEZEDRY", &"FUTURESIGHT", &"HORNDRILL", &"SPARKLINGARIA", &"TICKLE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"WATERABSORB", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+wild_item_common = Array[StringName]([&"MYSTICWATER"])
+wild_item_uncommon = Array[StringName]([&"MYSTICWATER"])
+wild_item_rare = Array[StringName]([&"MYSTICWATER"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 10240
+height = 25
+weight = 2200
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 19)
+id = &"LAPRAS"
+display_name = "Lapras"

@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7l623"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ykusb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_yy3vf"]
+
+[sub_resource type="Resource" id="Resource_34udk"]
+script = ExtResource("1_7l623")
+species = &"CHEWTLE"
+method = &"Level"
+parameter = "22"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ne5u4"]
+script = ExtResource("2_ykusb")
+level = 0
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_vs87t"]
+script = ExtResource("2_ykusb")
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_yw10v"]
+script = ExtResource("2_ykusb")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ob6p3"]
+script = ExtResource("2_ykusb")
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_00r8f"]
+script = ExtResource("2_ykusb")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_qit7x"]
+script = ExtResource("2_ykusb")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_7bvnb"]
+script = ExtResource("2_ykusb")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_c6pxk"]
+script = ExtResource("2_ykusb")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_af5b8"]
+script = ExtResource("2_ykusb")
+level = 21
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_prahk"]
+script = ExtResource("2_ykusb")
+level = 30
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_lcqnj"]
+script = ExtResource("2_ykusb")
+level = 39
+move = &"JAWLOCK"
+
+[sub_resource type="Resource" id="Resource_fgxa6"]
+script = ExtResource("2_ykusb")
+level = 48
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_4dtlu"]
+script = ExtResource("2_ykusb")
+level = 57
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_0iefd"]
+script = ExtResource("2_ykusb")
+level = 66
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "DREDNAW"
+script = ExtResource("3_yy3vf")
+species = &"DREDNAW"
+category = "Bite"
+pokedex_entry = "With jaws that can shear through steel rods, this highly aggressive Pokémon chomps down on its unfortunate prey."
+types = Array[StringName]([&"WATER", &"ROCK"])
+base_hp = 90
+base_attack = 115
+base_defense = 90
+base_special_attack = 48
+base_special_defense = 68
+base_speed = 74
+ev_attack = 2
+base_exp = 170
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ykusb")]([SubResource("Resource_ne5u4"), SubResource("Resource_vs87t"), SubResource("Resource_yw10v"), SubResource("Resource_ob6p3"), SubResource("Resource_00r8f"), SubResource("Resource_qit7x"), SubResource("Resource_7bvnb"), SubResource("Resource_c6pxk"), SubResource("Resource_af5b8"), SubResource("Resource_prahk"), SubResource("Resource_lcqnj"), SubResource("Resource_fgxa6"), SubResource("Resource_4dtlu"), SubResource("Resource_0iefd")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIG", &"DIVE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"IRONDEFENSE", &"IRONTAIL", &"LIQUIDATION", &"MEGAHORN", &"METEORBEAM", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"REVENGE", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALD", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THROATCHOP", &"TOXIC", &"WATERFALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"STRONGJAW", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_7l623")]([SubResource("Resource_34udk")])
+height = 10
+weight = 1155
+color = &"Green"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 30)
+id = &"DREDNAW"
+display_name = "Drednaw"

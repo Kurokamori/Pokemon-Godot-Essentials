@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_73bai"]
+
+[resource]
+resource_name = "DESOLATELAND"
+script = ExtResource("1_73bai")
+description = "Changes the weather to nullify Water-type moves."
+id = &"DESOLATELAND"
+display_name = "Desolate Land"

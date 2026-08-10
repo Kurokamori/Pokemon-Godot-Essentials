@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_kh0r4"]
+
+[resource]
+resource_name = "ETHER"
+script = ExtResource("1_kh0r4")
+name_plural = "Ethers"
+pocket = 2
+price = 1200
+sell_price = 600
+bp_price = 4
+field_use = 1
+battle_use = 2
+description = "It restores the PP of a Pokémon's selected move by a maximum of 10 points."
+id = &"ETHER"
+display_name = "Ether"
+flags = Array[StringName]([&"Fling_30"])

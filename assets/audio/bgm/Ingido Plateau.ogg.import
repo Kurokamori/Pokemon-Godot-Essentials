@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cagocsca1bxcp"
+path="res://.godot/imported/Ingido Plateau.ogg-a6d87a27ddb5f2b92ba97f3e84aff1d0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Ingido Plateau.ogg"
+dest_files=["res://.godot/imported/Ingido Plateau.ogg-a6d87a27ddb5f2b92ba97f3e84aff1d0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

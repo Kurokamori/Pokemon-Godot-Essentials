@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ekjxx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5x5ml"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7yxou"]
+
+[sub_resource type="Resource" id="Resource_4m5bk"]
+script = ExtResource("1_ekjxx")
+species = &"YAMASK"
+method = &"EventAfterDamageTaken"
+parameter = "2"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_atwtk"]
+script = ExtResource("2_5x5ml")
+level = 0
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_q7t5c"]
+script = ExtResource("2_5x5ml")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_eqojm"]
+script = ExtResource("2_5x5ml")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_c8mm0"]
+script = ExtResource("2_5x5ml")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_ojgl1"]
+script = ExtResource("2_5x5ml")
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_4gs7o"]
+script = ExtResource("2_5x5ml")
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_3p3am"]
+script = ExtResource("2_5x5ml")
+level = 12
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_bhdew"]
+script = ExtResource("2_5x5ml")
+level = 16
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_g0wow"]
+script = ExtResource("2_5x5ml")
+level = 20
+move = &"CRAFTYSHIELD"
+
+[sub_resource type="Resource" id="Resource_lcdvm"]
+script = ExtResource("2_5x5ml")
+level = 24
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_hto0a"]
+script = ExtResource("2_5x5ml")
+level = 28
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_tits7"]
+script = ExtResource("2_5x5ml")
+level = 32
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_27372"]
+script = ExtResource("2_5x5ml")
+level = 38
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_8r6eq"]
+script = ExtResource("2_5x5ml")
+level = 44
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_o2h6r"]
+script = ExtResource("2_5x5ml")
+level = 50
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_cgmq3"]
+script = ExtResource("2_5x5ml")
+level = 56
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_pvtu6"]
+script = ExtResource("2_5x5ml")
+level = 56
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_qaps7"]
+script = ExtResource("2_5x5ml")
+level = 62
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "RUNERIGUS"
+script = ExtResource("3_7yxou")
+species = &"RUNERIGUS"
+category = "Grudge"
+pokedex_entry = "A powerful curse was woven into an ancient painting. After absorbing the spirit of a Yamask, the painting began to move."
+types = Array[StringName]([&"GROUND", &"GHOST"])
+base_hp = 58
+base_attack = 95
+base_defense = 145
+base_special_attack = 50
+base_special_defense = 105
+base_speed = 30
+ev_defense = 2
+base_exp = 169
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5x5ml")]([SubResource("Resource_atwtk"), SubResource("Resource_q7t5c"), SubResource("Resource_eqojm"), SubResource("Resource_c8mm0"), SubResource("Resource_ojgl1"), SubResource("Resource_4gs7o"), SubResource("Resource_3p3am"), SubResource("Resource_bhdew"), SubResource("Resource_g0wow"), SubResource("Resource_lcdvm"), SubResource("Resource_hto0a"), SubResource("Resource_tits7"), SubResource("Resource_27372"), SubResource("Resource_8r6eq"), SubResource("Resource_o2h6r"), SubResource("Resource_cgmq3"), SubResource("Resource_pvtu6"), SubResource("Resource_qaps7")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"AMNESIA", &"ATTRACT", &"BODYPRESS", &"BRUTALSWING", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"IRONDEFENSE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"TOXICSPIKES", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"MEMENTO"])
+abilities = Array[StringName]([&"WANDERINGSPIRIT"])
+egg_groups = Array[StringName]([&"Mineral", &"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_ekjxx")]([SubResource("Resource_4m5bk")])
+height = 16
+weight = 666
+color = &"Gray"
+shape = &"HeadBase"
+generation = 8
+back_sprite_offset = Vector2i(4, 52)
+front_sprite_offset = Vector2i(0, 24)
+id = &"RUNERIGUS"
+display_name = "Runerigus"
+flags = Array[StringName]([&"DefaultForm_1", &"InheritFormWithEverStone"])

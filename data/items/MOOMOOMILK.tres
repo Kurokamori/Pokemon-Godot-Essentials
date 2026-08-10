@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_mjm5t"]
+
+[resource]
+resource_name = "MOOMOOMILK"
+script = ExtResource("1_mjm5t")
+name_plural = "Moomoo Milks"
+portion_name = "bottle of Moomoo Milk"
+portion_name_plural = "bottles of Moomoo Milk"
+pocket = 2
+price = 600
+sell_price = 300
+field_use = 1
+battle_use = 1
+description = "Milk with a very high nutrition content. It restores the HP of one Pokémon by 100 points."
+id = &"MOOMOOMILK"
+display_name = "Moomoo Milk"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_80rjf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5muvo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2ps43"]
+
+[sub_resource type="Resource" id="Resource_2sv86"]
+script = ExtResource("1_80rjf")
+species = &"SCRAFTY"
+method = &"Level"
+parameter = "39"
+
+[sub_resource type="Resource" id="Resource_24kh8"]
+script = ExtResource("2_5muvo")
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_xl53n"]
+script = ExtResource("2_5muvo")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_emb00"]
+script = ExtResource("2_5muvo")
+level = 4
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_n4cma"]
+script = ExtResource("2_5muvo")
+level = 8
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_yvgtr"]
+script = ExtResource("2_5muvo")
+level = 12
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_fs643"]
+script = ExtResource("2_5muvo")
+level = 16
+move = &"FACADE"
+
+[sub_resource type="Resource" id="Resource_3aaqn"]
+script = ExtResource("2_5muvo")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_3w65x"]
+script = ExtResource("2_5muvo")
+level = 24
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_r0tqq"]
+script = ExtResource("2_5muvo")
+level = 28
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_37ywx"]
+script = ExtResource("2_5muvo")
+level = 32
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_ges15"]
+script = ExtResource("2_5muvo")
+level = 36
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_uirvj"]
+script = ExtResource("2_5muvo")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_l5qdi"]
+script = ExtResource("2_5muvo")
+level = 44
+move = &"HIGHJUMPKICK"
+
+[sub_resource type="Resource" id="Resource_yafkm"]
+script = ExtResource("2_5muvo")
+level = 48
+move = &"FOCUSPUNCH"
+
+[sub_resource type="Resource" id="Resource_htbei"]
+script = ExtResource("2_5muvo")
+level = 52
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "SCRAGGY"
+script = ExtResource("3_2ps43")
+species = &"SCRAGGY"
+category = "Shedding"
+pokedex_entry = "It immediately headbutts anyone that makes eye contact with it. Its skull is massively thick."
+types = Array[StringName]([&"DARK", &"FIGHTING"])
+base_hp = 50
+base_attack = 75
+base_defense = 70
+base_special_attack = 35
+base_special_defense = 70
+base_speed = 48
+ev_attack = 1
+base_exp = 70
+catch_rate = 180
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_5muvo")]([SubResource("Resource_24kh8"), SubResource("Resource_xl53n"), SubResource("Resource_emb00"), SubResource("Resource_n4cma"), SubResource("Resource_yvgtr"), SubResource("Resource_fs643"), SubResource("Resource_3aaqn"), SubResource("Resource_3w65x"), SubResource("Resource_r0tqq"), SubResource("Resource_37ywx"), SubResource("Resource_ges15"), SubResource("Resource_uirvj"), SubResource("Resource_l5qdi"), SubResource("Resource_yafkm"), SubResource("Resource_htbei")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"COACHING", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DRAINPUNCH", &"DUALCHOP", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"HIDDENPOWER", &"ICEPUNCH", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ACIDSPRAY", &"COUNTER", &"DETECT", &"FAKEOUT", &"POWERUPPUNCH", &"QUICKGUARD"])
+abilities = Array[StringName]([&"SHEDSKIN", &"MOXIE"])
+hidden_abilities = Array[StringName]([&"INTIMIDATE"])
+wild_item_uncommon = Array[StringName]([&"SHEDSHELL"])
+egg_groups = Array[StringName]([&"Field", &"Dragon"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_80rjf")]([SubResource("Resource_2sv86")])
+height = 6
+weight = 118
+color = &"Yellow"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(4, 30)
+shadow_size = 1
+id = &"SCRAGGY"
+display_name = "Scraggy"

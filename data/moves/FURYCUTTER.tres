@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5umcd"]
+
+[resource]
+resource_name = "FURYCUTTER"
+script = ExtResource("1_5umcd")
+type = &"BUG"
+category = 0
+power = 40
+accuracy = 95
+total_pp = 20
+function_code = &"PowerHigherWithConsecutiveUse"
+description = "The target is slashed with scythes or claws. Its power increases if it hits in succession."
+id = &"FURYCUTTER"
+display_name = "Fury Cutter"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

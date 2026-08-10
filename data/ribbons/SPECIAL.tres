@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_8uqq3"]
+
+[resource]
+resource_name = "SPECIAL"
+script = ExtResource("1_8uqq3")
+icon_position = 67
+description = "A special Ribbon for a special day."
+id = &"SPECIAL"
+display_name = "Special Ribbon"

@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_d13jw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a5ocv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0ex1f"]
+
+[sub_resource type="Resource" id="Resource_hpq0y"]
+script = ExtResource("1_d13jw")
+species = &"BOLDORE"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_q5x6p"]
+script = ExtResource("2_a5ocv")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_86abe"]
+script = ExtResource("2_a5ocv")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_4iw6m"]
+script = ExtResource("2_a5ocv")
+level = 4
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_sjj31"]
+script = ExtResource("2_a5ocv")
+level = 8
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_p5mbj"]
+script = ExtResource("2_a5ocv")
+level = 12
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_rlo7s"]
+script = ExtResource("2_a5ocv")
+level = 16
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_otgob"]
+script = ExtResource("2_a5ocv")
+level = 20
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_v6c57"]
+script = ExtResource("2_a5ocv")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_wdv7n"]
+script = ExtResource("2_a5ocv")
+level = 28
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_nivlx"]
+script = ExtResource("2_a5ocv")
+level = 32
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_rbi8g"]
+script = ExtResource("2_a5ocv")
+level = 36
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_6b0y8"]
+script = ExtResource("2_a5ocv")
+level = 40
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_any2n"]
+script = ExtResource("2_a5ocv")
+level = 44
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "ROGGENROLA"
+script = ExtResource("3_0ex1f")
+species = &"ROGGENROLA"
+category = "Mantle"
+pokedex_entry = "They were discovered a hundred years ago in an earthquake fissure. Inside each one is an energy core."
+types = Array[StringName]([&"ROCK"])
+base_hp = 55
+base_attack = 75
+base_defense = 85
+base_special_attack = 25
+base_special_defense = 25
+base_speed = 15
+ev_defense = 1
+base_exp = 56
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_a5ocv")]([SubResource("Resource_q5x6p"), SubResource("Resource_86abe"), SubResource("Resource_4iw6m"), SubResource("Resource_sjj31"), SubResource("Resource_p5mbj"), SubResource("Resource_rlo7s"), SubResource("Resource_otgob"), SubResource("Resource_v6c57"), SubResource("Resource_wdv7n"), SubResource("Resource_nivlx"), SubResource("Resource_rbi8g"), SubResource("Resource_6b0y8"), SubResource("Resource_any2n")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYPRESS", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GRAVITY", &"HEAVYSLAM", &"HIDDENPOWER", &"IRONDEFENSE", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"TOXIC"])
+egg_moves = Array[StringName]([&"AUTOTOMIZE", &"CURSE", &"GRAVITY", &"TAKEDOWN", &"WIDEGUARD"])
+abilities = Array[StringName]([&"STURDY", &"WEAKARMOR"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_common = Array[StringName]([&"EVERSTONE"])
+wild_item_uncommon = Array[StringName]([&"HARDSTONE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_d13jw")]([SubResource("Resource_hpq0y")])
+height = 4
+weight = 180
+color = &"Blue"
+shape = &"HeadLegs"
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"ROGGENROLA"
+display_name = "Roggenrola"

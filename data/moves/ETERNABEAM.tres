@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_htuhq"]
+
+[resource]
+resource_name = "ETERNABEAM"
+script = ExtResource("1_htuhq")
+type = &"DRAGON"
+category = 1
+power = 160
+accuracy = 90
+function_code = &"AttackAndSkipNextTurn"
+description = "This is Eternatus's most powerful attack in its original form. The user can't move on the next turn."
+id = &"ETERNABEAM"
+display_name = "Eternabeam"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

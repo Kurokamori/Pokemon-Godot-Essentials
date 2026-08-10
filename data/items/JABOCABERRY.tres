@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_uxmlo"]
+
+[resource]
+resource_name = "JABOCABERRY"
+script = ExtResource("1_uxmlo")
+name_plural = "Jaboca Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "If held by a Pokémon and a physical attack lands, the attacker also takes damage."
+id = &"JABOCABERRY"
+display_name = "Jaboca Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_DRAGON_100"])

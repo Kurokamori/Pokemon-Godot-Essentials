@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_b1fgd"]
+
+[resource]
+resource_name = "BLUEORB"
+script = ExtResource("1_b1fgd")
+name_plural = "Blue Orbs"
+price = 10000
+bp_price = 50
+description = "A shiny blue orb that is said to have a legend tied to it. It's known to be connected with the Hoenn region."
+id = &"BLUEORB"
+display_name = "Blue Orb"

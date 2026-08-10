@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_iynda"]
+
+[resource]
+resource_name = "SKETCH"
+script = ExtResource("1_iynda")
+accuracy = 0
+total_pp = 1
+function_code = &"ReplaceMoveWithTargetLastMoveUsed"
+description = "It enables the user to permanently learn the move last used by the foe. Once used, Sketch disappears."
+id = &"SKETCH"
+display_name = "Sketch"

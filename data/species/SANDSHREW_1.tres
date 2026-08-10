@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_e2cas"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4j7lx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fd32n"]
+
+[sub_resource type="Resource" id="Resource_h6adh"]
+script = ExtResource("1_e2cas")
+species = &"SANDSLASH"
+method = &"Item"
+parameter = "ICESTONE"
+
+[sub_resource type="Resource" id="Resource_qlhjo"]
+script = ExtResource("2_4j7lx")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_wktq5"]
+script = ExtResource("2_4j7lx")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_45gm5"]
+script = ExtResource("2_4j7lx")
+level = 3
+move = &"BIDE"
+
+[sub_resource type="Resource" id="Resource_v78p0"]
+script = ExtResource("2_4j7lx")
+level = 5
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_fnm5e"]
+script = ExtResource("2_4j7lx")
+level = 7
+move = &"ICEBALL"
+
+[sub_resource type="Resource" id="Resource_n2aeb"]
+script = ExtResource("2_4j7lx")
+level = 9
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_peci6"]
+script = ExtResource("2_4j7lx")
+level = 11
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_lraxi"]
+script = ExtResource("2_4j7lx")
+level = 14
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_4n1qt"]
+script = ExtResource("2_4j7lx")
+level = 17
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_7enj6"]
+script = ExtResource("2_4j7lx")
+level = 20
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_40rak"]
+script = ExtResource("2_4j7lx")
+level = 23
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_t7jqn"]
+script = ExtResource("2_4j7lx")
+level = 26
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_2xkt7"]
+script = ExtResource("2_4j7lx")
+level = 30
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_x0jyk"]
+script = ExtResource("2_4j7lx")
+level = 34
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_s0cid"]
+script = ExtResource("2_4j7lx")
+level = 38
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_nb1m7"]
+script = ExtResource("2_4j7lx")
+level = 42
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_8qofw"]
+script = ExtResource("2_4j7lx")
+level = 46
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "SANDSHREW_1"
+script = ExtResource("3_fd32n")
+species = &"SANDSHREW"
+form = 1
+form_name = "Alolan"
+category = "Mouse"
+pokedex_entry = "The skin on its back is as hard as steel. Predators go after its soft belly, so it clings to the ground desperately."
+pokedex_form = 1
+types = Array[StringName]([&"ICE", &"STEEL"])
+base_hp = 50
+base_attack = 75
+base_defense = 90
+base_special_attack = 10
+base_special_defense = 35
+base_speed = 40
+ev_defense = 1
+base_exp = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4j7lx")]([SubResource("Resource_qlhjo"), SubResource("Resource_wktq5"), SubResource("Resource_45gm5"), SubResource("Resource_v78p0"), SubResource("Resource_fnm5e"), SubResource("Resource_n2aeb"), SubResource("Resource_peci6"), SubResource("Resource_lraxi"), SubResource("Resource_4n1qt"), SubResource("Resource_7enj6"), SubResource("Resource_40rak"), SubResource("Resource_t7jqn"), SubResource("Resource_2xkt7"), SubResource("Resource_x0jyk"), SubResource("Resource_s0cid"), SubResource("Resource_nb1m7"), SubResource("Resource_8qofw")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"AURORAVEIL", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"FURYCUTTER", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THIEF", &"THROATCHOP", &"TRIPLEAXEL", &"WORKUP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"AMNESIA", &"CHIPAWAY", &"COUNTER", &"CRUSHCLAW", &"CURSE", &"ENDURE", &"FLAIL", &"HONECLAWS", &"ICICLECRASH", &"ICICLESPEAR", &"METALCLAW", &"NIGHTSLASH"])
+abilities = Array[StringName]([&"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"SLUSHRUSH"])
+wild_item_uncommon = Array[StringName]([&"GRIPCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_e2cas")]([SubResource("Resource_h6adh")])
+height = 7
+weight = 400
+color = &"White"
+shape = &"BipedalTail"
+habitat = &"RoughTerrain"
+generation = 7
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(2, 30)
+shadow_size = 1
+id = &"SANDSHREW_1"
+display_name = "Sandshrew"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

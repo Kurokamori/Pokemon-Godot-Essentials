@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2hnxb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_82qcm"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cq1w2"]
+
+[sub_resource type="Resource" id="Resource_5bgn6"]
+script = ExtResource("1_2hnxb")
+species = &"BAYLEEF"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_3rllo"]
+script = ExtResource("2_82qcm")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_kd18c"]
+script = ExtResource("2_82qcm")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_hrxw7"]
+script = ExtResource("2_82qcm")
+level = 6
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_egbrm"]
+script = ExtResource("2_82qcm")
+level = 9
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_nnvm5"]
+script = ExtResource("2_82qcm")
+level = 12
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_tsh20"]
+script = ExtResource("2_82qcm")
+level = 17
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_l82y1"]
+script = ExtResource("2_82qcm")
+level = 20
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_y8sxj"]
+script = ExtResource("2_82qcm")
+level = 23
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_evodi"]
+script = ExtResource("2_82qcm")
+level = 28
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_6s6sp"]
+script = ExtResource("2_82qcm")
+level = 31
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_ld24f"]
+script = ExtResource("2_82qcm")
+level = 34
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_ik2ao"]
+script = ExtResource("2_82qcm")
+level = 39
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_sirr3"]
+script = ExtResource("2_82qcm")
+level = 42
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_s1ig7"]
+script = ExtResource("2_82qcm")
+level = 45
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "CHIKORITA"
+script = ExtResource("3_cq1w2")
+species = &"CHIKORITA"
+category = "Leaf"
+pokedex_entry = "It waves its leaf around to keep foes at bay. However, a sweet fragrance also wafts from the leaf, creating a friendly atmosphere that becalms the battlers."
+types = Array[StringName]([&"GRASS"])
+base_hp = 45
+base_attack = 49
+base_defense = 65
+base_special_attack = 49
+base_special_defense = 65
+base_speed = 45
+ev_special_defense = 1
+base_exp = 64
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_82qcm")]([SubResource("Resource_3rllo"), SubResource("Resource_kd18c"), SubResource("Resource_hrxw7"), SubResource("Resource_egbrm"), SubResource("Resource_nnvm5"), SubResource("Resource_tsh20"), SubResource("Resource_l82y1"), SubResource("Resource_y8sxj"), SubResource("Resource_evodi"), SubResource("Resource_6s6sp"), SubResource("Resource_ld24f"), SubResource("Resource_ik2ao"), SubResource("Resource_sirr3"), SubResource("Resource_s1ig7")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"HEADBUTT", &"HIDDENPOWER", &"IRONTAIL", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORKUP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"AROMATHERAPY", &"BODYSLAM", &"COUNTER", &"FLAIL", &"GRASSYTERRAIN", &"HEALPULSE", &"INGRAIN", &"LEAFSTORM", &"LEECHSEED", &"NATUREPOWER", &"VINEWHIP"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"LEAFGUARD"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_2hnxb")]([SubResource("Resource_5bgn6")])
+height = 9
+weight = 64
+color = &"Green"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 28)
+shadow_size = 1
+id = &"CHIKORITA"
+display_name = "Chikorita"

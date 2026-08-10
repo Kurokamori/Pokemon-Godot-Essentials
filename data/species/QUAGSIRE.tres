@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_n76mw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xqvf2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_u53u6"]
+
+[sub_resource type="Resource" id="Resource_g5eu2"]
+script = ExtResource("1_n76mw")
+species = &"WOOPER"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ne72d"]
+script = ExtResource("2_xqvf2")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_sdu26"]
+script = ExtResource("2_xqvf2")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_hl1lg"]
+script = ExtResource("2_xqvf2")
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_48a4t"]
+script = ExtResource("2_xqvf2")
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_yg4kh"]
+script = ExtResource("2_xqvf2")
+level = 12
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_s4nj0"]
+script = ExtResource("2_xqvf2")
+level = 12
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_kg664"]
+script = ExtResource("2_xqvf2")
+level = 16
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_0toby"]
+script = ExtResource("2_xqvf2")
+level = 23
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_62spf"]
+script = ExtResource("2_xqvf2")
+level = 28
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_f3ipv"]
+script = ExtResource("2_xqvf2")
+level = 34
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_5stkj"]
+script = ExtResource("2_xqvf2")
+level = 40
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_qjgbs"]
+script = ExtResource("2_xqvf2")
+level = 46
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_16ex1"]
+script = ExtResource("2_xqvf2")
+level = 52
+move = &"EARTHQUAKE"
+
+[resource]
+resource_name = "QUAGSIRE"
+script = ExtResource("3_u53u6")
+species = &"QUAGSIRE"
+category = "Water Fish"
+pokedex_entry = "A Quagsire hunts by leaving its mouth wide open in water and waiting for its prey to blunder in. Because it doesn't move, it does not get very hungry."
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 95
+base_attack = 85
+base_defense = 85
+base_special_attack = 65
+base_special_defense = 65
+base_speed = 35
+ev_hp = 2
+base_exp = 151
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xqvf2")]([SubResource("Resource_ne72d"), SubResource("Resource_sdu26"), SubResource("Resource_hl1lg"), SubResource("Resource_48a4t"), SubResource("Resource_yg4kh"), SubResource("Resource_s4nj0"), SubResource("Resource_kg664"), SubResource("Resource_0toby"), SubResource("Resource_62spf"), SubResource("Resource_f3ipv"), SubResource("Resource_5stkj"), SubResource("Resource_qjgbs"), SubResource("Resource_16ex1")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"EERIEIMPULSE", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GUARDSWAP", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INFESTATION", &"IRONTAIL", &"LIQUIDATION", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"TOXIC", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"DAMP", &"WATERABSORB"])
+hidden_abilities = Array[StringName]([&"UNAWARE"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_n76mw")]([SubResource("Resource_g5eu2")])
+height = 14
+weight = 750
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(2, 22)
+shadow_size = 1
+id = &"QUAGSIRE"
+display_name = "Quagsire"

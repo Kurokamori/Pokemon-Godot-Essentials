@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_y3kkd"]
+
+[resource]
+resource_name = "LASERFOCUS"
+script = ExtResource("1_y3kkd")
+accuracy = 0
+total_pp = 30
+target = &"User"
+function_code = &"EnsureNextCriticalHit"
+description = "The user focuses intensely. The attack on the next turn always results in a critical hit."
+id = &"LASERFOCUS"
+display_name = "Laser Focus"

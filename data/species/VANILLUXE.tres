@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qvqg4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ahlwy"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a4ni8"]
+
+[sub_resource type="Resource" id="Resource_ex0vw"]
+script = ExtResource("1_qvqg4")
+species = &"VANILLISH"
+method = &"Level"
+parameter = "47"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ref00"]
+script = ExtResource("2_ahlwy")
+move = &"WEATHERBALL"
+
+[sub_resource type="Resource" id="Resource_8mj1y"]
+script = ExtResource("2_ahlwy")
+move = &"ICICLECRASH"
+
+[sub_resource type="Resource" id="Resource_3ynw8"]
+script = ExtResource("2_ahlwy")
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_ud0d7"]
+script = ExtResource("2_ahlwy")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_vmw6t"]
+script = ExtResource("2_ahlwy")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_uwc4s"]
+script = ExtResource("2_ahlwy")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_sa88g"]
+script = ExtResource("2_ahlwy")
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_1xicc"]
+script = ExtResource("2_ahlwy")
+level = 12
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_qniuw"]
+script = ExtResource("2_ahlwy")
+level = 16
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_o4jvw"]
+script = ExtResource("2_ahlwy")
+level = 20
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_aaujq"]
+script = ExtResource("2_ahlwy")
+level = 24
+move = &"ICICLESPEAR"
+
+[sub_resource type="Resource" id="Resource_qwp0h"]
+script = ExtResource("2_ahlwy")
+level = 28
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_ny5fl"]
+script = ExtResource("2_ahlwy")
+level = 32
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_w4nwt"]
+script = ExtResource("2_ahlwy")
+level = 38
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_n2h4y"]
+script = ExtResource("2_ahlwy")
+level = 44
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_dwo6p"]
+script = ExtResource("2_ahlwy")
+level = 52
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_w5ilv"]
+script = ExtResource("2_ahlwy")
+level = 60
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "VANILLUXE"
+script = ExtResource("3_a4ni8")
+species = &"VANILLUXE"
+category = "Snowstorm"
+pokedex_entry = "If both heads get angry simultaneously, this Pokémon expels a blizzard, burying everything in snow."
+types = Array[StringName]([&"ICE"])
+base_hp = 71
+base_attack = 95
+base_defense = 85
+base_special_attack = 110
+base_special_defense = 95
+base_speed = 79
+ev_special_attack = 3
+base_exp = 268
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ahlwy")]([SubResource("Resource_ref00"), SubResource("Resource_8mj1y"), SubResource("Resource_3ynw8"), SubResource("Resource_ud0d7"), SubResource("Resource_vmw6t"), SubResource("Resource_uwc4s"), SubResource("Resource_sa88g"), SubResource("Resource_1xicc"), SubResource("Resource_qniuw"), SubResource("Resource_o4jvw"), SubResource("Resource_aaujq"), SubResource("Resource_qwp0h"), SubResource("Resource_ny5fl"), SubResource("Resource_w4nwt"), SubResource("Resource_n2h4y"), SubResource("Resource_dwo6p"), SubResource("Resource_w5ilv")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"AVALANCHE", &"BEATUP", &"BLIZZARD", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IMPRISON", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"TOXIC", &"UPROAR", &"WATERPULSE", &"WEATHERBALL"])
+abilities = Array[StringName]([&"ICEBODY", &"SNOWWARNING"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+wild_item_common = Array[StringName]([&"NEVERMELTICE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_qvqg4")]([SubResource("Resource_ex0vw")])
+height = 13
+weight = 575
+color = &"White"
+shape = &"MultiBody"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(3, 6)
+id = &"VANILLUXE"
+display_name = "Vanilluxe"

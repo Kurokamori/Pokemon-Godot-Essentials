@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_x13m4"]
+
+[resource]
+resource_name = "INSTRUCT"
+script = ExtResource("1_x13m4")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 15
+function_code = &"TargetUsesItsLastUsedMoveAgain"
+description = "The user instructs the target to use the target's last move again."
+id = &"INSTRUCT"
+display_name = "Instruct"
+flags = Array[StringName]([&"CanProtect"])

@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_k5a1m"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3ous6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wr35u"]
+
+[sub_resource type="Resource" id="Resource_h21iy"]
+script = ExtResource("1_k5a1m")
+species = &"ROCKRUFF"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0221d"]
+script = ExtResource("2_3ous6")
+level = 0
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_jvyyk"]
+script = ExtResource("2_3ous6")
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_ry88s"]
+script = ExtResource("2_3ous6")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_8lb8t"]
+script = ExtResource("2_3ous6")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ctuek"]
+script = ExtResource("2_3ous6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ao5vp"]
+script = ExtResource("2_3ous6")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_6njvu"]
+script = ExtResource("2_3ous6")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_sda2n"]
+script = ExtResource("2_3ous6")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_qwesi"]
+script = ExtResource("2_3ous6")
+level = 7
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_nv7r7"]
+script = ExtResource("2_3ous6")
+level = 12
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_u7fqn"]
+script = ExtResource("2_3ous6")
+level = 15
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_p5l27"]
+script = ExtResource("2_3ous6")
+level = 18
+move = &"ODORSLEUTH"
+
+[sub_resource type="Resource" id="Resource_pgc25"]
+script = ExtResource("2_3ous6")
+level = 23
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_6njyq"]
+script = ExtResource("2_3ous6")
+level = 26
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_ll8qp"]
+script = ExtResource("2_3ous6")
+level = 29
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_rvkrc"]
+script = ExtResource("2_3ous6")
+level = 34
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_xbfub"]
+script = ExtResource("2_3ous6")
+level = 37
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_8j5h1"]
+script = ExtResource("2_3ous6")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_f2ryq"]
+script = ExtResource("2_3ous6")
+level = 45
+move = &"ROCKCLIMB"
+
+[sub_resource type="Resource" id="Resource_twkkw"]
+script = ExtResource("2_3ous6")
+level = 48
+move = &"STONEEDGE"
+
+[resource]
+resource_name = "LYCANROC_1"
+script = ExtResource("3_wr35u")
+species = &"LYCANROC"
+form = 1
+form_name = "Midnight Form"
+category = "Wolf"
+pokedex_entry = "It goads its enemies into attacking, withstands the hits, and in return, delivers a headbutt, crushing their bones with its rocky mane."
+pokedex_form = 1
+types = Array[StringName]([&"ROCK"])
+base_hp = 85
+base_attack = 115
+base_defense = 75
+base_special_attack = 55
+base_special_defense = 75
+base_speed = 82
+ev_attack = 2
+base_exp = 170
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3ous6")]([SubResource("Resource_0221d"), SubResource("Resource_jvyyk"), SubResource("Resource_ry88s"), SubResource("Resource_8lb8t"), SubResource("Resource_ctuek"), SubResource("Resource_ao5vp"), SubResource("Resource_6njvu"), SubResource("Resource_sda2n"), SubResource("Resource_qwesi"), SubResource("Resource_nv7r7"), SubResource("Resource_u7fqn"), SubResource("Resource_p5l27"), SubResource("Resource_pgc25"), SubResource("Resource_6njyq"), SubResource("Resource_ll8qp"), SubResource("Resource_rvkrc"), SubResource("Resource_xbfub"), SubResource("Resource_8j5h1"), SubResource("Resource_f2ryq"), SubResource("Resource_twkkw")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"COVET", &"CRUNCH", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREFANG", &"FIREPUNCH", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERVOICE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"LASHOUT", &"LASTRESORT", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THROATCHOP", &"THUNDERFANG", &"THUNDERPUNCH", &"TOXIC", &"UPROAR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"KEENEYE", &"VITALSPIRIT"])
+hidden_abilities = Array[StringName]([&"NOGUARD"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_k5a1m")]([SubResource("Resource_h21iy")])
+height = 11
+weight = 250
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-9, 14)
+id = &"LYCANROC_1"
+display_name = "Lycanroc"

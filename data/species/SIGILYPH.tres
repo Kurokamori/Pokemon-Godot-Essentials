@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8cgub"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lq36n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_b6qcp"]
+
+[sub_resource type="Resource" id="Resource_5x4j3"]
+script = ExtResource("2_lq36n")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_p6ceq"]
+script = ExtResource("2_lq36n")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_uh248"]
+script = ExtResource("2_lq36n")
+level = 5
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_5f6df"]
+script = ExtResource("2_lq36n")
+level = 10
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_u86vl"]
+script = ExtResource("2_lq36n")
+level = 15
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_cbmta"]
+script = ExtResource("2_lq36n")
+level = 20
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_8dk3i"]
+script = ExtResource("2_lq36n")
+level = 25
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_v1hiy"]
+script = ExtResource("2_lq36n")
+level = 30
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_gkb6g"]
+script = ExtResource("2_lq36n")
+level = 35
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_kbtkq"]
+script = ExtResource("2_lq36n")
+level = 40
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_672i0"]
+script = ExtResource("2_lq36n")
+level = 45
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_ot3ij"]
+script = ExtResource("2_lq36n")
+level = 50
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_ba81t"]
+script = ExtResource("2_lq36n")
+level = 50
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_jbmy3"]
+script = ExtResource("2_lq36n")
+level = 55
+move = &"SKYATTACK"
+
+[sub_resource type="Resource" id="Resource_48ta4"]
+script = ExtResource("2_lq36n")
+level = 60
+move = &"SKILLSWAP"
+
+[resource]
+resource_name = "SIGILYPH"
+script = ExtResource("3_b6qcp")
+species = &"SIGILYPH"
+category = "Avianoid"
+pokedex_entry = "The guardians of an ancient city, they use their psychic power to attack enemies that invade their territory."
+types = Array[StringName]([&"PSYCHIC", &"FLYING"])
+base_hp = 72
+base_attack = 58
+base_defense = 80
+base_special_attack = 103
+base_special_defense = 80
+base_speed = 97
+ev_special_attack = 2
+base_exp = 172
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lq36n")]([SubResource("Resource_5x4j3"), SubResource("Resource_p6ceq"), SubResource("Resource_uh248"), SubResource("Resource_5f6df"), SubResource("Resource_u86vl"), SubResource("Resource_cbmta"), SubResource("Resource_8dk3i"), SubResource("Resource_v1hiy"), SubResource("Resource_gkb6g"), SubResource("Resource_kbtkq"), SubResource("Resource_672i0"), SubResource("Resource_ot3ij"), SubResource("Resource_ba81t"), SubResource("Resource_jbmy3"), SubResource("Resource_48ta4")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COSMICPOWER", &"DARKPULSE", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"DREAMEATER", &"DUALWINGBEAT", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FLY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRAVITY", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SKYATTACK", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THIEF", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"TRICKROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"PSYCHOSHIFT", &"ROOST"])
+abilities = Array[StringName]([&"WONDERSKIN", &"MAGICGUARD"])
+hidden_abilities = Array[StringName]([&"TINTEDLENS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+height = 14
+weight = 140
+color = &"Black"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-4, 6)
+id = &"SIGILYPH"
+display_name = "Sigilyph"

@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_57i8l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_55tb7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xhwqx"]
+
+[sub_resource type="Resource" id="Resource_gswv2"]
+script = ExtResource("1_57i8l")
+species = &"LICKITUNG"
+method = &"HasMove"
+parameter = "ROLLOUT"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_owuph"]
+script = ExtResource("2_55tb7")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_w3myn"]
+script = ExtResource("2_55tb7")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_s5qqq"]
+script = ExtResource("2_55tb7")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_hulqt"]
+script = ExtResource("2_55tb7")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_fusdb"]
+script = ExtResource("2_55tb7")
+level = 18
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_lh1ah"]
+script = ExtResource("2_55tb7")
+level = 24
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_8e51x"]
+script = ExtResource("2_55tb7")
+level = 30
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_cru20"]
+script = ExtResource("2_55tb7")
+level = 36
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_0igvb"]
+script = ExtResource("2_55tb7")
+level = 42
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_pyx42"]
+script = ExtResource("2_55tb7")
+level = 48
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_vog4w"]
+script = ExtResource("2_55tb7")
+level = 54
+move = &"POWERWHIP"
+
+[sub_resource type="Resource" id="Resource_ey7ji"]
+script = ExtResource("2_55tb7")
+level = 60
+move = &"BELLYDRUM"
+
+[resource]
+resource_name = "LICKILICKY"
+script = ExtResource("3_xhwqx")
+species = &"LICKILICKY"
+category = "Licking"
+pokedex_entry = "It wraps things with its extensible tongue. Getting too close to it will leave you soaked with drool."
+base_hp = 110
+base_attack = 85
+base_defense = 95
+base_special_attack = 80
+base_special_defense = 95
+base_speed = 50
+ev_hp = 3
+base_exp = 180
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_55tb7")]([SubResource("Resource_owuph"), SubResource("Resource_w3myn"), SubResource("Resource_s5qqq"), SubResource("Resource_hulqt"), SubResource("Resource_fusdb"), SubResource("Resource_lh1ah"), SubResource("Resource_8e51x"), SubResource("Resource_cru20"), SubResource("Resource_0igvb"), SubResource("Resource_pyx42"), SubResource("Resource_vog4w"), SubResource("Resource_ey7ji")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BIND", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONTAIL", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"POWERWHIP", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TERRAINPULSE", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"OWNTEMPO", &"OBLIVIOUS"])
+hidden_abilities = Array[StringName]([&"CLOUDNINE"])
+wild_item_uncommon = Array[StringName]([&"LAGGINGTAIL"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_57i8l")]([SubResource("Resource_gswv2")])
+height = 17
+weight = 1400
+color = &"Pink"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 19)
+id = &"LICKILICKY"
+display_name = "Lickilicky"

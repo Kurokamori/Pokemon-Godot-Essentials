@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_x4gfe"]
+
+[resource]
+resource_name = "TM54"
+script = ExtResource("1_x4gfe")
+name_plural = "TM54s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"FALSESWIPE"
+description = "A restrained attack that prevents the target from fainting. The target is left with at least 1 HP."
+id = &"TM54"
+display_name = "TM54"
+flags = Array[StringName]([&"Fling_40"])

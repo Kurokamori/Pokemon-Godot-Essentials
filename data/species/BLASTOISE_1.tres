@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_m2qf8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vysxm"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rgf1i"]
+
+[sub_resource type="Resource" id="Resource_snlu5"]
+script = ExtResource("1_m2qf8")
+species = &"WARTORTLE"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_gblhk"]
+script = ExtResource("2_vysxm")
+level = 0
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_shn1y"]
+script = ExtResource("2_vysxm")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1ka65"]
+script = ExtResource("2_vysxm")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_sc3i4"]
+script = ExtResource("2_vysxm")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_g7lv0"]
+script = ExtResource("2_vysxm")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_esul1"]
+script = ExtResource("2_vysxm")
+level = 9
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_b31it"]
+script = ExtResource("2_vysxm")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_dbsdk"]
+script = ExtResource("2_vysxm")
+level = 15
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_m0661"]
+script = ExtResource("2_vysxm")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_ws4a1"]
+script = ExtResource("2_vysxm")
+level = 25
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_y8jo5"]
+script = ExtResource("2_vysxm")
+level = 30
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_2br6y"]
+script = ExtResource("2_vysxm")
+level = 35
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_1l3up"]
+script = ExtResource("2_vysxm")
+level = 42
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_rlc1h"]
+script = ExtResource("2_vysxm")
+level = 49
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_jvefl"]
+script = ExtResource("2_vysxm")
+level = 56
+move = &"SKULLBASH"
+
+[resource]
+resource_name = "BLASTOISE_1"
+script = ExtResource("3_rgf1i")
+species = &"BLASTOISE"
+form = 1
+form_name = "Mega Blastoise"
+category = "Shellfish"
+pokedex_entry = "The cannon on its back is as powerful as a tank gun. Its tough legs and back enable it to withstand the recoil from firing the cannon."
+pokedex_form = 1
+types = Array[StringName]([&"WATER"])
+base_hp = 79
+base_attack = 103
+base_defense = 120
+base_special_attack = 135
+base_special_defense = 115
+base_speed = 78
+ev_special_defense = 3
+base_exp = 315
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vysxm")]([SubResource("Resource_gblhk"), SubResource("Resource_shn1y"), SubResource("Resource_1ka65"), SubResource("Resource_sc3i4"), SubResource("Resource_g7lv0"), SubResource("Resource_esul1"), SubResource("Resource_b31it"), SubResource("Resource_dbsdk"), SubResource("Resource_m0661"), SubResource("Resource_ws4a1"), SubResource("Resource_y8jo5"), SubResource("Resource_2br6y"), SubResource("Resource_1l3up"), SubResource("Resource_rlc1h"), SubResource("Resource_jvefl")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AURASPHERE", &"AVALANCHE", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAGONTAIL", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FLING", &"FLIPTURN", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROCANNON", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONTAIL", &"LIQUIDATION", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SIGNALBEAM", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TERRAINPULSE", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"MEGALAUNCHER"])
+hidden_abilities = Array[StringName]([&"MEGALAUNCHER"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_m2qf8")]([SubResource("Resource_snlu5")])
+height = 16
+weight = 1011
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 6
+mega_stone = &"BLASTOISINITE"
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(-12, 10)
+shadow_size = 3
+id = &"BLASTOISE_1"
+display_name = "Blastoise"

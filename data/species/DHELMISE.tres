@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_iplbg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5rjr2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3snvk"]
+
+[sub_resource type="Resource" id="Resource_kwuf2"]
+script = ExtResource("2_5rjr2")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_vtdkp"]
+script = ExtResource("2_5rjr2")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_j7ai5"]
+script = ExtResource("2_5rjr2")
+level = 4
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_ysrvs"]
+script = ExtResource("2_5rjr2")
+level = 8
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_swreu"]
+script = ExtResource("2_5rjr2")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_4u4xb"]
+script = ExtResource("2_5rjr2")
+level = 16
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_25bt1"]
+script = ExtResource("2_5rjr2")
+level = 20
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_k120n"]
+script = ExtResource("2_5rjr2")
+level = 24
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_gsbs1"]
+script = ExtResource("2_5rjr2")
+level = 28
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_h4cm6"]
+script = ExtResource("2_5rjr2")
+level = 32
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_pl12n"]
+script = ExtResource("2_5rjr2")
+level = 36
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_c0h7o"]
+script = ExtResource("2_5rjr2")
+level = 40
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_xb3m7"]
+script = ExtResource("2_5rjr2")
+level = 44
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_vo4vc"]
+script = ExtResource("2_5rjr2")
+level = 48
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_dp3or"]
+script = ExtResource("2_5rjr2")
+level = 52
+move = &"ANCHORSHOT"
+
+[sub_resource type="Resource" id="Resource_7bmkm"]
+script = ExtResource("2_5rjr2")
+level = 56
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_bjc7r"]
+script = ExtResource("2_5rjr2")
+level = 60
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_r30oh"]
+script = ExtResource("2_5rjr2")
+level = 64
+move = &"POWERWHIP"
+
+[resource]
+resource_name = "DHELMISE"
+script = ExtResource("3_3snvk")
+species = &"DHELMISE"
+category = "Sea Creeper"
+pokedex_entry = "The soul of seaweed adrift in the waves became reborn as this Pokémon. It maintains itself with new infusions of seabed detritus and seaweed."
+types = Array[StringName]([&"GHOST", &"GRASS"])
+base_hp = 70
+base_attack = 131
+base_defense = 100
+base_special_attack = 86
+base_special_defense = 90
+base_speed = 40
+ev_attack = 2
+base_exp = 181
+gender_ratio = &"Genderless"
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5rjr2")]([SubResource("Resource_kwuf2"), SubResource("Resource_vtdkp"), SubResource("Resource_j7ai5"), SubResource("Resource_ysrvs"), SubResource("Resource_swreu"), SubResource("Resource_4u4xb"), SubResource("Resource_25bt1"), SubResource("Resource_k120n"), SubResource("Resource_gsbs1"), SubResource("Resource_h4cm6"), SubResource("Resource_pl12n"), SubResource("Resource_c0h7o"), SubResource("Resource_xb3m7"), SubResource("Resource_vo4vc"), SubResource("Resource_dp3or"), SubResource("Resource_7bmkm"), SubResource("Resource_bjc7r"), SubResource("Resource_r30oh")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ASSURANCE", &"BLOCK", &"BODYPRESS", &"BRICKBREAK", &"BRINE", &"BRUTALSWING", &"BULLDOZE", &"CONFIDE", &"DOUBLETEAM", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GYROBALL", &"HEAVYSLAM", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"KNOCKOFF", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"POWERWHIP", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEWAVE", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SPITE", &"STEELROLLER", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TELEKINESIS", &"THIEF", &"TOXIC", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"STEELWORKER"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+height = 39
+weight = 2100
+color = &"Green"
+shape = &"HeadBase"
+generation = 7
+back_sprite_offset = Vector2i(0, 36)
+front_sprite_offset = Vector2i(1, 2)
+id = &"DHELMISE"
+display_name = "Dhelmise"

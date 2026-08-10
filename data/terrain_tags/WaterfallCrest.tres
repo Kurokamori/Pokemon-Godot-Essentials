@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_0ic2u"]
+
+[resource]
+resource_name = "WaterfallCrest"
+script = ExtResource("1_0ic2u")
+tag_number = 9
+can_surf = true
+waterfall_crest = true
+can_fish = true
+id = &"WaterfallCrest"
+display_name = "WaterfallCrest"

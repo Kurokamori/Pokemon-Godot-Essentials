@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_15qhs"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p25j0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_d3i1l"]
+
+[sub_resource type="Resource" id="Resource_5xsl6"]
+script = ExtResource("2_p25j0")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_m7h3x"]
+script = ExtResource("2_p25j0")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_xgq01"]
+script = ExtResource("2_p25j0")
+level = 5
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_48dio"]
+script = ExtResource("2_p25j0")
+level = 10
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_5lno8"]
+script = ExtResource("2_p25j0")
+level = 15
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_ueamh"]
+script = ExtResource("2_p25j0")
+level = 20
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_7sn21"]
+script = ExtResource("2_p25j0")
+level = 25
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_1akva"]
+script = ExtResource("2_p25j0")
+level = 30
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_5xy15"]
+script = ExtResource("2_p25j0")
+level = 35
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_tr1ea"]
+script = ExtResource("2_p25j0")
+level = 40
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_1cr4y"]
+script = ExtResource("2_p25j0")
+level = 45
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_gf4iw"]
+script = ExtResource("2_p25j0")
+level = 50
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_02qqm"]
+script = ExtResource("2_p25j0")
+level = 55
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_mbc6m"]
+script = ExtResource("2_p25j0")
+level = 60
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "TAUROS"
+script = ExtResource("3_d3i1l")
+species = &"TAUROS"
+category = "Wild Bull"
+pokedex_entry = "It is not satisfied unless it is rampaging at all times. If there is no opponent for Tauros to battle, it will charge at thick trees and knock them down to calm itself."
+base_hp = 75
+base_attack = 100
+base_defense = 95
+base_special_attack = 40
+base_special_defense = 70
+base_speed = 110
+ev_attack = 1
+ev_speed = 1
+base_exp = 172
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_p25j0")]([SubResource("Resource_5xsl6"), SubResource("Resource_m7h3x"), SubResource("Resource_xgq01"), SubResource("Resource_48dio"), SubResource("Resource_5lno8"), SubResource("Resource_ueamh"), SubResource("Resource_7sn21"), SubResource("Resource_1akva"), SubResource("Resource_5xy15"), SubResource("Resource_tr1ea"), SubResource("Resource_1cr4y"), SubResource("Resource_gf4iw"), SubResource("Resource_02qqm"), SubResource("Resource_mbc6m")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASHOUT", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SOLARBEAM", &"SPITE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INTIMIDATE", &"ANGERPOINT"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 14
+weight = 884
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(-4, 54)
+front_sprite_offset = Vector2i(-12, 24)
+id = &"TAUROS"
+display_name = "Tauros"

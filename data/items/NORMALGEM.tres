@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0pv66"]
+
+[resource]
+resource_name = "NORMALGEM"
+script = ExtResource("1_0pv66")
+name_plural = "Normal Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an ordinary essence. When held, it strengthens the power of a Normal-type move only once."
+id = &"NORMALGEM"
+display_name = "Normal Gem"
+flags = Array[StringName]([&"TypeGem"])

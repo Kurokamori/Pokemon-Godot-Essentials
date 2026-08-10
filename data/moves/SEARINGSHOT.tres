@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ui6ta"]
+
+[resource]
+resource_name = "SEARINGSHOT"
+script = ExtResource("1_ui6ta")
+type = &"FIRE"
+category = 1
+power = 100
+target = &"AllNearOthers"
+function_code = &"BurnTarget"
+effect_chance = 30
+description = "An inferno of scarlet flames torches everything around the user. It may leave the foe with a burn."
+id = &"SEARINGSHOT"
+display_name = "Searing Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

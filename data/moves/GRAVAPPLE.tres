@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_sfuwa"]
+
+[resource]
+resource_name = "GRAVAPPLE"
+script = ExtResource("1_sfuwa")
+type = &"GRASS"
+category = 0
+power = 80
+total_pp = 10
+function_code = &"LowerTargetDefense1PowersUpInGravity"
+effect_chance = 100
+description = "The user inflicts damage by dropping an apple from high above. This also lowers the target's Defense."
+id = &"GRAVAPPLE"
+display_name = "Grav Apple"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

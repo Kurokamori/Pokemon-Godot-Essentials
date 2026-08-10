@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_bnopa"]
+
+[resource]
+resource_name = "NATURALCURE"
+script = ExtResource("1_bnopa")
+description = "All status problems heal when it switches out."
+id = &"NATURALCURE"
+display_name = "Natural Cure"

@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_e3nis"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d71ki"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2an5i"]
+
+[sub_resource type="Resource" id="Resource_ryuyj"]
+script = ExtResource("1_e3nis")
+species = &"EMPOLEON"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_b3a1o"]
+script = ExtResource("1_e3nis")
+species = &"PIPLUP"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_xgt30"]
+script = ExtResource("2_d71ki")
+level = 0
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_n2tpx"]
+script = ExtResource("2_d71ki")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_r0lhn"]
+script = ExtResource("2_d71ki")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_es4jt"]
+script = ExtResource("2_d71ki")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_dhggg"]
+script = ExtResource("2_d71ki")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_sxhnn"]
+script = ExtResource("2_d71ki")
+level = 8
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_wn88t"]
+script = ExtResource("2_d71ki")
+level = 11
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_nllq2"]
+script = ExtResource("2_d71ki")
+level = 15
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_1ocee"]
+script = ExtResource("2_d71ki")
+level = 19
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_k7xab"]
+script = ExtResource("2_d71ki")
+level = 24
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_qlpu1"]
+script = ExtResource("2_d71ki")
+level = 28
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_5w5f1"]
+script = ExtResource("2_d71ki")
+level = 33
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_eoror"]
+script = ExtResource("2_d71ki")
+level = 37
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_iobxq"]
+script = ExtResource("2_d71ki")
+level = 42
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_r30ys"]
+script = ExtResource("2_d71ki")
+level = 46
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_l2om2"]
+script = ExtResource("2_d71ki")
+level = 50
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "PRINPLUP"
+script = ExtResource("3_2an5i")
+species = &"PRINPLUP"
+category = "Penguin"
+pokedex_entry = "It lives alone, away from others. Apparently, every one of them believes it is the most important."
+types = Array[StringName]([&"WATER"])
+base_hp = 64
+base_attack = 66
+base_defense = 68
+base_special_attack = 81
+base_special_defense = 76
+base_speed = 50
+ev_special_attack = 2
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_d71ki")]([SubResource("Resource_xgt30"), SubResource("Resource_n2tpx"), SubResource("Resource_r0lhn"), SubResource("Resource_es4jt"), SubResource("Resource_dhggg"), SubResource("Resource_sxhnn"), SubResource("Resource_wn88t"), SubResource("Resource_nllq2"), SubResource("Resource_1ocee"), SubResource("Resource_k7xab"), SubResource("Resource_qlpu1"), SubResource("Resource_5w5f1"), SubResource("Resource_eoror"), SubResource("Resource_iobxq"), SubResource("Resource_r30ys"), SubResource("Resource_l2om2")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLIZZARD", &"BRICKBREAK", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DEFOG", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_e3nis")]([SubResource("Resource_ryuyj"), SubResource("Resource_b3a1o")])
+height = 8
+weight = 230
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(4, 24)
+shadow_size = 1
+id = &"PRINPLUP"
+display_name = "Prinplup"

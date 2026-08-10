@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bntwg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_oloja"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1lrqe"]
+
+[sub_resource type="Resource" id="Resource_6rchj"]
+script = ExtResource("1_bntwg")
+species = &"WEEZING"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_dfgiy"]
+script = ExtResource("2_oloja")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_4siig"]
+script = ExtResource("2_oloja")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_njpl3"]
+script = ExtResource("2_oloja")
+level = 4
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_wo6ny"]
+script = ExtResource("2_oloja")
+level = 8
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_aqxl3"]
+script = ExtResource("2_oloja")
+level = 12
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_6136s"]
+script = ExtResource("2_oloja")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_t53l0"]
+script = ExtResource("2_oloja")
+level = 20
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_k2gp1"]
+script = ExtResource("2_oloja")
+level = 24
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_qopk0"]
+script = ExtResource("2_oloja")
+level = 28
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_b2atb"]
+script = ExtResource("2_oloja")
+level = 32
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_mcr3c"]
+script = ExtResource("2_oloja")
+level = 36
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_hg6b8"]
+script = ExtResource("2_oloja")
+level = 40
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_4cs5p"]
+script = ExtResource("2_oloja")
+level = 44
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_xupg6"]
+script = ExtResource("2_oloja")
+level = 48
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_hc6v6"]
+script = ExtResource("2_oloja")
+level = 52
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "KOFFING"
+script = ExtResource("3_1lrqe")
+species = &"KOFFING"
+category = "Poison Gas"
+pokedex_entry = "Getting up close to a Koffing will give you a chance to observe, through its thin skin, the toxic gases swirling inside. It blows up at the slightest stimulation."
+types = Array[StringName]([&"POISON"])
+base_hp = 40
+base_attack = 65
+base_defense = 95
+base_special_attack = 60
+base_special_defense = 45
+base_speed = 35
+ev_defense = 1
+base_exp = 68
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_oloja")]([SubResource("Resource_dfgiy"), SubResource("Resource_4siig"), SubResource("Resource_njpl3"), SubResource("Resource_wo6ny"), SubResource("Resource_aqxl3"), SubResource("Resource_6136s"), SubResource("Resource_t53l0"), SubResource("Resource_k2gp1"), SubResource("Resource_qopk0"), SubResource("Resource_b2atb"), SubResource("Resource_mcr3c"), SubResource("Resource_hg6b8"), SubResource("Resource_4cs5p"), SubResource("Resource_xupg6"), SubResource("Resource_hc6v6")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"DARKPULSE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"GYROBALL", &"HIDDENPOWER", &"INCINERATE", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"TOXIC", &"TOXICSPIKES", &"UPROAR", &"VENOMDRENCH", &"VENOSHOCK", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"CURSE", &"DESTINYBOND", &"GRUDGE", &"PAINSPLIT", &"PSYBEAM", &"SCREECH", &"SPITE", &"SPITUP", &"STOCKPILE", &"SWALLOW", &"TOXICSPIKES", &"VENOMDRENCH"])
+abilities = Array[StringName]([&"LEVITATE", &"NEUTRALIZINGGAS"])
+hidden_abilities = Array[StringName]([&"STENCH"])
+wild_item_uncommon = Array[StringName]([&"SMOKEBALL"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_bntwg")]([SubResource("Resource_6rchj")])
+height = 6
+weight = 10
+color = &"Purple"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 10)
+id = &"KOFFING"
+display_name = "Koffing"

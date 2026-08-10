@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_80oyl"]
+
+[resource]
+resource_name = "SHELLSIDEARM"
+script = ExtResource("1_80oyl")
+type = &"POISON"
+category = 1
+power = 90
+total_pp = 10
+function_code = &"CategoryDependsOnHigherDamagePoisonTarget"
+effect_chance = 20
+description = "Inflicts physical or special damage, whichever will be more effective. May also poison the target."
+id = &"SHELLSIDEARM"
+display_name = "Shell Side Arm"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

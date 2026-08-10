@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_flinm"]
+
+[resource]
+resource_name = "CROSSCHOP"
+script = ExtResource("1_flinm")
+type = &"FIGHTING"
+category = 0
+power = 100
+accuracy = 80
+description = "The user delivers a double chop with its forearms crossed. Critical hits land more easily."
+id = &"CROSSCHOP"
+display_name = "Cross Chop"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

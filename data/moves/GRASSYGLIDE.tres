@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_bsqqc"]
+
+[resource]
+resource_name = "GRASSYGLIDE"
+script = ExtResource("1_bsqqc")
+type = &"GRASS"
+category = 0
+power = 70
+total_pp = 20
+function_code = &"HigherPriorityInGrassyTerrain"
+description = "Gliding on the ground, the user attacks the target. This move always goes first on Grassy Terrain."
+id = &"GRASSYGLIDE"
+display_name = "Grassy Glide"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

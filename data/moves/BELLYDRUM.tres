@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fj4cn"]
+
+[resource]
+resource_name = "BELLYDRUM"
+script = ExtResource("1_fj4cn")
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"MaxUserAttackLoseHalfOfTotalHP"
+description = "The user maximizes its Attack stat in exchange for HP equal to half its max HP."
+id = &"BELLYDRUM"
+display_name = "Belly Drum"

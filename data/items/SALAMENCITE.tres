@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_7tc41"]
+
+[resource]
+resource_name = "SALAMENCITE"
+script = ExtResource("1_7tc41")
+name_plural = "Salamencites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Salamence hold it, and it will be able to Mega Evolve."
+id = &"SALAMENCITE"
+display_name = "Salamencite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

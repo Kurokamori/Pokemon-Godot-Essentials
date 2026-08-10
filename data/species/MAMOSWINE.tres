@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_utl5w"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5vjjj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2w245"]
+
+[sub_resource type="Resource" id="Resource_3wdxx"]
+script = ExtResource("1_utl5w")
+species = &"PILOSWINE"
+method = &"HasMove"
+parameter = "ANCIENTPOWER"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6nxtk"]
+script = ExtResource("2_5vjjj")
+level = 0
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_v8wc8"]
+script = ExtResource("2_5vjjj")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_pojv3"]
+script = ExtResource("2_5vjjj")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_f553c"]
+script = ExtResource("2_5vjjj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_lsftr"]
+script = ExtResource("2_5vjjj")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_w0oux"]
+script = ExtResource("2_5vjjj")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_kpmcp"]
+script = ExtResource("2_5vjjj")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_axdyl"]
+script = ExtResource("2_5vjjj")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_hpkxr"]
+script = ExtResource("2_5vjjj")
+level = 20
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_e41f8"]
+script = ExtResource("2_5vjjj")
+level = 25
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_326xy"]
+script = ExtResource("2_5vjjj")
+level = 30
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_ydavl"]
+script = ExtResource("2_5vjjj")
+level = 37
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_ih801"]
+script = ExtResource("2_5vjjj")
+level = 44
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_md6mu"]
+script = ExtResource("2_5vjjj")
+level = 51
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_uooc4"]
+script = ExtResource("2_5vjjj")
+level = 58
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_dn0wq"]
+script = ExtResource("2_5vjjj")
+level = 65
+move = &"THRASH"
+
+[resource]
+resource_name = "MAMOSWINE"
+script = ExtResource("3_2w245")
+species = &"MAMOSWINE"
+category = "Twin Tusk"
+pokedex_entry = "Its impressive tusks are made of ice. The population thinned when it turned warm after the ice age."
+types = Array[StringName]([&"ICE", &"GROUND"])
+base_hp = 110
+base_attack = 130
+base_defense = 80
+base_special_attack = 70
+base_special_defense = 60
+base_speed = 80
+ev_attack = 3
+base_exp = 265
+growth_rate = &"Slow"
+catch_rate = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5vjjj")]([SubResource("Resource_6nxtk"), SubResource("Resource_v8wc8"), SubResource("Resource_pojv3"), SubResource("Resource_f553c"), SubResource("Resource_lsftr"), SubResource("Resource_w0oux"), SubResource("Resource_kpmcp"), SubResource("Resource_axdyl"), SubResource("Resource_hpkxr"), SubResource("Resource_e41f8"), SubResource("Resource_326xy"), SubResource("Resource_ydavl"), SubResource("Resource_ih801"), SubResource("Resource_md6mu"), SubResource("Resource_uooc4"), SubResource("Resource_dn0wq")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONHEAD", &"KNOCKOFF", &"LIGHTSCREEN", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER"])
+abilities = Array[StringName]([&"OBLIVIOUS", &"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"THICKFAT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_utl5w")]([SubResource("Resource_3wdxx")])
+height = 25
+weight = 2910
+color = &"Brown"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-9, 20)
+shadow_size = 3
+id = &"MAMOSWINE"
+display_name = "Mamoswine"

@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fokox"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_aiwo4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ucjnp"]
+
+[sub_resource type="Resource" id="Resource_jhyvo"]
+script = ExtResource("1_fokox")
+species = &"QUAGSIRE"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_dgubq"]
+script = ExtResource("2_aiwo4")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_we5an"]
+script = ExtResource("2_aiwo4")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_cd28x"]
+script = ExtResource("2_aiwo4")
+level = 4
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_yhtbc"]
+script = ExtResource("2_aiwo4")
+level = 8
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_5rjxj"]
+script = ExtResource("2_aiwo4")
+level = 12
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_de12k"]
+script = ExtResource("2_aiwo4")
+level = 12
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_8020o"]
+script = ExtResource("2_aiwo4")
+level = 16
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_fepu4"]
+script = ExtResource("2_aiwo4")
+level = 21
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_mkt04"]
+script = ExtResource("2_aiwo4")
+level = 24
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_gy1r5"]
+script = ExtResource("2_aiwo4")
+level = 28
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_4trvr"]
+script = ExtResource("2_aiwo4")
+level = 32
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_ssq8o"]
+script = ExtResource("2_aiwo4")
+level = 36
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_5h8la"]
+script = ExtResource("2_aiwo4")
+level = 40
+move = &"EARTHQUAKE"
+
+[resource]
+resource_name = "WOOPER"
+script = ExtResource("3_ucjnp")
+species = &"WOOPER"
+category = "Water Fish"
+pokedex_entry = "Wooper usually live in water but come out onto land seeking food occasionally. On land, they coat their bodies with a gooey, toxic film."
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 55
+base_attack = 45
+base_defense = 45
+base_special_attack = 25
+base_special_defense = 25
+base_speed = 15
+ev_hp = 1
+base_exp = 42
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_aiwo4")]([SubResource("Resource_dgubq"), SubResource("Resource_we5an"), SubResource("Resource_cd28x"), SubResource("Resource_yhtbc"), SubResource("Resource_5rjxj"), SubResource("Resource_de12k"), SubResource("Resource_8020o"), SubResource("Resource_fepu4"), SubResource("Resource_mkt04"), SubResource("Resource_gy1r5"), SubResource("Resource_4trvr"), SubResource("Resource_ssq8o"), SubResource("Resource_5h8la")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"EERIEIMPULSE", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GUARDSWAP", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INFESTATION", &"IRONTAIL", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"ACIDSPRAY", &"AFTERYOU", &"ANCIENTPOWER", &"BODYSLAM", &"COUNTER", &"CURSE", &"DOUBLEKICK", &"EERIEIMPULSE", &"ENCORE", &"GUARDSWAP", &"POWERUPPUNCH", &"RECOVER", &"SPITUP", &"STOCKPILE", &"SWALLOW"])
+abilities = Array[StringName]([&"DAMP", &"WATERABSORB"])
+hidden_abilities = Array[StringName]([&"UNAWARE"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_fokox")]([SubResource("Resource_jhyvo")])
+height = 4
+weight = 85
+color = &"Blue"
+shape = &"HeadLegs"
+habitat = &"WatersEdge"
+generation = 2
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"WOOPER"
+display_name = "Wooper"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StatData" format=3]
+
+[ext_resource type="Script" path="res://src/data/stat_data.gd" id="1_8vahv"]
+
+[resource]
+resource_name = "SPECIAL_DEFENSE"
+script = ExtResource("1_8vahv")
+name_brief = "SpDef"
+pbs_order = 5
+id = &"SPECIAL_DEFENSE"
+display_name = "Special Defense"

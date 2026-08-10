@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_3076m"]
+
+[resource]
+resource_name = "CHEEKPOUCH"
+script = ExtResource("1_3076m")
+description = "Restores HP as well when the Pokémon eats a Berry."
+id = &"CHEEKPOUCH"
+display_name = "Cheek Pouch"

@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1243w"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2ep5m"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_yp31y"]
+
+[sub_resource type="Resource" id="Resource_upqap"]
+script = ExtResource("1_1243w")
+species = &"VANILLUXE"
+method = &"Level"
+parameter = "47"
+
+[sub_resource type="Resource" id="Resource_argvc"]
+script = ExtResource("1_1243w")
+species = &"VANILLITE"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_47k2j"]
+script = ExtResource("2_2ep5m")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_47x8k"]
+script = ExtResource("2_2ep5m")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_qap7h"]
+script = ExtResource("2_2ep5m")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_fd8fs"]
+script = ExtResource("2_2ep5m")
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_xf1ai"]
+script = ExtResource("2_2ep5m")
+level = 12
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_7tgl2"]
+script = ExtResource("2_2ep5m")
+level = 16
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_g261i"]
+script = ExtResource("2_2ep5m")
+level = 20
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_yftij"]
+script = ExtResource("2_2ep5m")
+level = 24
+move = &"ICICLESPEAR"
+
+[sub_resource type="Resource" id="Resource_tpm1q"]
+script = ExtResource("2_2ep5m")
+level = 28
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_4w7mn"]
+script = ExtResource("2_2ep5m")
+level = 32
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_obh06"]
+script = ExtResource("2_2ep5m")
+level = 38
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_jx442"]
+script = ExtResource("2_2ep5m")
+level = 44
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_k8n1u"]
+script = ExtResource("2_2ep5m")
+level = 50
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_oq2xs"]
+script = ExtResource("2_2ep5m")
+level = 56
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "VANILLISH"
+script = ExtResource("3_yp31y")
+species = &"VANILLISH"
+category = "Icy Snow"
+pokedex_entry = "It conceals itself from enemy eyes by creating many small ice particles and hiding among them."
+types = Array[StringName]([&"ICE"])
+base_hp = 51
+base_attack = 65
+base_defense = 65
+base_special_attack = 80
+base_special_defense = 75
+base_speed = 59
+ev_special_attack = 2
+base_exp = 138
+growth_rate = &"Slow"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2ep5m")]([SubResource("Resource_47k2j"), SubResource("Resource_47x8k"), SubResource("Resource_qap7h"), SubResource("Resource_fd8fs"), SubResource("Resource_xf1ai"), SubResource("Resource_7tgl2"), SubResource("Resource_g261i"), SubResource("Resource_yftij"), SubResource("Resource_tpm1q"), SubResource("Resource_4w7mn"), SubResource("Resource_obh06"), SubResource("Resource_jx442"), SubResource("Resource_k8n1u"), SubResource("Resource_oq2xs")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FROSTBREATH", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IMPRISON", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"TOXIC", &"UPROAR", &"WATERPULSE"])
+abilities = Array[StringName]([&"ICEBODY", &"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+wild_item_uncommon = Array[StringName]([&"NEVERMELTICE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1243w")]([SubResource("Resource_upqap"), SubResource("Resource_argvc")])
+height = 11
+weight = 410
+color = &"White"
+shape = &"HeadBase"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 8)
+shadow_size = 1
+id = &"VANILLISH"
+display_name = "Vanillish"

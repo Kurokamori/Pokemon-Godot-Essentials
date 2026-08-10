@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xxqyc"]
+
+[resource]
+resource_name = "PUREINCENSE"
+script = ExtResource("1_xxqyc")
+name_plural = "Pure Incenses"
+portion_name = "jar of Pure Incense"
+portion_name_plural = "jars of Pure Incense"
+price = 6000
+sell_price = 3000
+description = "An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party."
+id = &"PUREINCENSE"
+display_name = "Pure Incense"
+flags = Array[StringName]([&"Fling_10"])

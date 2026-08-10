@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_46j7m"]
+
+[resource]
+resource_name = "TM53"
+script = ExtResource("1_46j7m")
+name_plural = "TM53s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 64
+field_use = 5
+move = &"ENERGYBALL"
+description = "The user draws power from nature and fires it at the target. This may also lower the target's Sp. Def stat."
+id = &"TM53"
+display_name = "TM53"
+flags = Array[StringName]([&"Fling_90"])

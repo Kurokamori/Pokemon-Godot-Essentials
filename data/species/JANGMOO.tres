@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lu0si"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i7f4q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0muye"]
+
+[sub_resource type="Resource" id="Resource_owbbj"]
+script = ExtResource("1_lu0si")
+species = &"HAKAMOO"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_54k2w"]
+script = ExtResource("2_i7f4q")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_gljik"]
+script = ExtResource("2_i7f4q")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_xvbbi"]
+script = ExtResource("2_i7f4q")
+level = 4
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_jwldo"]
+script = ExtResource("2_i7f4q")
+level = 8
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_rv248"]
+script = ExtResource("2_i7f4q")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_h3fja"]
+script = ExtResource("2_i7f4q")
+level = 16
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_8omtj"]
+script = ExtResource("2_i7f4q")
+level = 20
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_w341q"]
+script = ExtResource("2_i7f4q")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_v6e2u"]
+script = ExtResource("2_i7f4q")
+level = 28
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_rrhgx"]
+script = ExtResource("2_i7f4q")
+level = 32
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_pk1r0"]
+script = ExtResource("2_i7f4q")
+level = 36
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_qjvdj"]
+script = ExtResource("2_i7f4q")
+level = 40
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_maej5"]
+script = ExtResource("2_i7f4q")
+level = 44
+move = &"OUTRAGE"
+
+[resource]
+resource_name = "JANGMOO"
+script = ExtResource("3_0muye")
+species = &"JANGMOO"
+category = "Scaly"
+pokedex_entry = "It expresses its feelings by smacking its scales. Metallic sounds echo through the tall mountains where Jangmo-o lives."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 45
+base_attack = 55
+base_defense = 65
+base_special_attack = 45
+base_special_defense = 45
+base_speed = 45
+ev_defense = 1
+base_exp = 60
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_i7f4q")]([SubResource("Resource_54k2w"), SubResource("Resource_gljik"), SubResource("Resource_xvbbi"), SubResource("Resource_jwldo"), SubResource("Resource_rv248"), SubResource("Resource_h3fja"), SubResource("Resource_8omtj"), SubResource("Resource_w341q"), SubResource("Resource_v6e2u"), SubResource("Resource_rrhgx"), SubResource("Resource_pk1r0"), SubResource("Resource_qjvdj"), SubResource("Resource_maej5")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALCHOP", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"HIDDENPOWER", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LOWKICK", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALESHOT", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"UPROAR", &"WORKUP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"COUNTER", &"DRAGONBREATH", &"FOCUSPUNCH"])
+abilities = Array[StringName]([&"BULLETPROOF", &"SOUNDPROOF"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_uncommon = Array[StringName]([&"RAZORCLAW"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_lu0si")]([SubResource("Resource_owbbj")])
+height = 6
+weight = 297
+color = &"Gray"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-1, 25)
+shadow_size = 1
+id = &"JANGMOO"
+display_name = "Jangmo-o"

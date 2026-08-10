@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_ef1j8"]
+
+[resource]
+resource_name = "FLYING"
+script = ExtResource("1_ef1j8")
+icon_position = 2
+weaknesses = Array[StringName]([&"ROCK", &"ELECTRIC", &"ICE"])
+resistances = Array[StringName]([&"FIGHTING", &"BUG", &"GRASS"])
+immunities = Array[StringName]([&"GROUND"])
+id = &"FLYING"
+display_name = "Flying"

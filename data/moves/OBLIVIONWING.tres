@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2uje0"]
+
+[resource]
+resource_name = "OBLIVIONWING"
+script = ExtResource("1_2uje0")
+type = &"FLYING"
+category = 1
+power = 80
+total_pp = 10
+target = &"Other"
+function_code = &"HealUserByThreeQuartersOfDamageDone"
+description = "The user absorbs its target's HP. The user's HP is restored by over half of the damage dealt."
+id = &"OBLIVIONWING"
+display_name = "Oblivion Wing"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

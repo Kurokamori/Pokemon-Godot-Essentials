@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lhkrv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a6ntg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_yb88h"]
+
+[sub_resource type="Resource" id="Resource_pahbq"]
+script = ExtResource("1_lhkrv")
+species = &"TRUBBISH"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_22x5i"]
+script = ExtResource("2_a6ntg")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_hvg5h"]
+script = ExtResource("2_a6ntg")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_52mfe"]
+script = ExtResource("2_a6ntg")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_xmoce"]
+script = ExtResource("2_a6ntg")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_wolam"]
+script = ExtResource("2_a6ntg")
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_woixh"]
+script = ExtResource("2_a6ntg")
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_4sp55"]
+script = ExtResource("2_a6ntg")
+level = 9
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_q5uvt"]
+script = ExtResource("2_a6ntg")
+level = 12
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_jh3mo"]
+script = ExtResource("2_a6ntg")
+level = 15
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_ui80o"]
+script = ExtResource("2_a6ntg")
+level = 18
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_ka2lr"]
+script = ExtResource("2_a6ntg")
+level = 21
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_8glmg"]
+script = ExtResource("2_a6ntg")
+level = 21
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_qlnfx"]
+script = ExtResource("2_a6ntg")
+level = 24
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_keljl"]
+script = ExtResource("2_a6ntg")
+level = 27
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_pidan"]
+script = ExtResource("2_a6ntg")
+level = 30
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_7wj27"]
+script = ExtResource("2_a6ntg")
+level = 33
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_nh13x"]
+script = ExtResource("2_a6ntg")
+level = 39
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_c6301"]
+script = ExtResource("2_a6ntg")
+level = 43
+move = &"GUNKSHOT"
+
+[sub_resource type="Resource" id="Resource_0u0pe"]
+script = ExtResource("2_a6ntg")
+level = 48
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "GARBODOR"
+script = ExtResource("3_yb88h")
+species = &"GARBODOR"
+category = "Trash Heap"
+pokedex_entry = "They absorb garbage and make it part of their bodies. They shoot a poisonous liquid from their right-hand fingertips."
+types = Array[StringName]([&"POISON"])
+base_hp = 80
+base_attack = 95
+base_defense = 82
+base_special_attack = 60
+base_special_defense = 82
+base_speed = 75
+ev_attack = 2
+base_exp = 166
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_a6ntg")]([SubResource("Resource_22x5i"), SubResource("Resource_hvg5h"), SubResource("Resource_52mfe"), SubResource("Resource_xmoce"), SubResource("Resource_wolam"), SubResource("Resource_woixh"), SubResource("Resource_4sp55"), SubResource("Resource_q5uvt"), SubResource("Resource_jh3mo"), SubResource("Resource_ui80o"), SubResource("Resource_ka2lr"), SubResource("Resource_8glmg"), SubResource("Resource_qlnfx"), SubResource("Resource_keljl"), SubResource("Resource_pidan"), SubResource("Resource_7wj27"), SubResource("Resource_nh13x"), SubResource("Resource_c6301"), SubResource("Resource_0u0pe")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"CROSSPOISON", &"DARKPULSE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GUNKSHOT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"SPIKES", &"SPITE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"THUNDERBOLT", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK"])
+abilities = Array[StringName]([&"STENCH", &"WEAKARMOR"])
+hidden_abilities = Array[StringName]([&"AFTERMATH"])
+wild_item_common = Array[StringName]([&"SILKSCARF"])
+wild_item_uncommon = Array[StringName]([&"BLACKSLUDGE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_lhkrv")]([SubResource("Resource_pahbq")])
+height = 19
+weight = 1073
+color = &"Green"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(8, 48)
+front_sprite_offset = Vector2i(-3, 18)
+id = &"GARBODOR"
+display_name = "Garbodor"

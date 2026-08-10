@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_i44et"]
+
+[resource]
+resource_name = "INGRAIN"
+script = ExtResource("1_i44et")
+type = &"GRASS"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"StartHealUserEachTurnTrapUserInBattle"
+description = "The user lays roots that restore its HP on every turn. Because it is rooted, it can't switch out."
+id = &"INGRAIN"
+display_name = "Ingrain"

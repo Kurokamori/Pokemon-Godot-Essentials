@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_063hs"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7n705"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_x85a7"]
+
+[sub_resource type="Resource" id="Resource_0p740"]
+script = ExtResource("1_063hs")
+species = &"SHELGON"
+method = &"Level"
+parameter = "50"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yu6f3"]
+script = ExtResource("2_7n705")
+level = 0
+move = &"FLY"
+
+[sub_resource type="Resource" id="Resource_x3g6w"]
+script = ExtResource("2_7n705")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_t7ceh"]
+script = ExtResource("2_7n705")
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_ie2px"]
+script = ExtResource("2_7n705")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_3gtr8"]
+script = ExtResource("2_7n705")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_8pohb"]
+script = ExtResource("2_7n705")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_wj1n0"]
+script = ExtResource("2_7n705")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_yqbir"]
+script = ExtResource("2_7n705")
+level = 15
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ek6so"]
+script = ExtResource("2_7n705")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_nkuft"]
+script = ExtResource("2_7n705")
+level = 25
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_7bk24"]
+script = ExtResource("2_7n705")
+level = 33
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_qj6vh"]
+script = ExtResource("2_7n705")
+level = 39
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_svp0k"]
+script = ExtResource("2_7n705")
+level = 46
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_jq27h"]
+script = ExtResource("2_7n705")
+level = 55
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_nrw3q"]
+script = ExtResource("2_7n705")
+level = 64
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_c8kwp"]
+script = ExtResource("2_7n705")
+level = 73
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "SALAMENCE_1"
+script = ExtResource("3_x85a7")
+species = &"SALAMENCE"
+form = 1
+form_name = "Mega Salamence"
+category = "Dragon"
+pokedex_entry = "It puts its forelegs inside its shell to streamline itself for flight. Salamence flies at high speeds over all kinds of topographical features."
+pokedex_form = 1
+types = Array[StringName]([&"DRAGON", &"FLYING"])
+base_hp = 95
+base_attack = 145
+base_defense = 130
+base_special_attack = 120
+base_special_defense = 90
+base_speed = 120
+ev_attack = 3
+base_exp = 350
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_7n705")]([SubResource("Resource_yu6f3"), SubResource("Resource_x3g6w"), SubResource("Resource_t7ceh"), SubResource("Resource_ie2px"), SubResource("Resource_3gtr8"), SubResource("Resource_8pohb"), SubResource("Resource_wj1n0"), SubResource("Resource_yqbir"), SubResource("Resource_ek6so"), SubResource("Resource_nkuft"), SubResource("Resource_7bk24"), SubResource("Resource_qj6vh"), SubResource("Resource_svp0k"), SubResource("Resource_jq27h"), SubResource("Resource_nrw3q"), SubResource("Resource_c8kwp")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"AQUATAIL", &"ATTRACT", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DEFENSECURL", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"INCINERATE", &"IRONDEFENSE", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROOST", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THUNDERFANG", &"TWISTER", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"AERILATE"])
+hidden_abilities = Array[StringName]([&"AERILATE"])
+wild_item_uncommon = Array[StringName]([&"DRAGONFANG"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_063hs")]([SubResource("Resource_0p740")])
+height = 18
+weight = 1126
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"RoughTerrain"
+generation = 6
+mega_stone = &"SALAMENCITE"
+back_sprite_offset = Vector2i(6, 44)
+front_sprite_offset = Vector2i(-6, 19)
+shadow_size = 3
+id = &"SALAMENCE_1"
+display_name = "Salamence"

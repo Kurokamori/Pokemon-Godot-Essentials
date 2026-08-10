@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_iy1xv"]
+
+[resource]
+resource_name = "WIDEGUARD"
+script = ExtResource("1_iy1xv")
+type = &"ROCK"
+accuracy = 0
+total_pp = 10
+target = &"UserSide"
+priority = 3
+function_code = &"ProtectUserSideFromMultiTargetDamagingMoves"
+description = "The user and its allies are protected from wide-ranging attacks for a turn. May fail if used in succession."
+id = &"WIDEGUARD"
+display_name = "Wide Guard"

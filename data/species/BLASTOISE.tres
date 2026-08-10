@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ql30d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_75trj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dncun"]
+
+[sub_resource type="Resource" id="Resource_l7lo8"]
+script = ExtResource("1_ql30d")
+species = &"WARTORTLE"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yrm8c"]
+script = ExtResource("2_75trj")
+level = 0
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_olh71"]
+script = ExtResource("2_75trj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_s1n6k"]
+script = ExtResource("2_75trj")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_24ybg"]
+script = ExtResource("2_75trj")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_rpphw"]
+script = ExtResource("2_75trj")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_dq2em"]
+script = ExtResource("2_75trj")
+level = 9
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_qx8t0"]
+script = ExtResource("2_75trj")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_bwevu"]
+script = ExtResource("2_75trj")
+level = 15
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_tmkwf"]
+script = ExtResource("2_75trj")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_5vrfv"]
+script = ExtResource("2_75trj")
+level = 25
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_70bky"]
+script = ExtResource("2_75trj")
+level = 30
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_mgyh3"]
+script = ExtResource("2_75trj")
+level = 35
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_thc6o"]
+script = ExtResource("2_75trj")
+level = 42
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_cn57v"]
+script = ExtResource("2_75trj")
+level = 49
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_vudo8"]
+script = ExtResource("2_75trj")
+level = 56
+move = &"SKULLBASH"
+
+[resource]
+resource_name = "BLASTOISE"
+script = ExtResource("3_dncun")
+species = &"BLASTOISE"
+category = "Shellfish"
+pokedex_entry = "The waterspouts that protrude from its shell are highly accurate. Their bullets of water can precisely nail tin cans from a distance of over 160 feet."
+types = Array[StringName]([&"WATER"])
+base_hp = 79
+base_attack = 83
+base_defense = 100
+base_special_attack = 85
+base_special_defense = 105
+base_speed = 78
+ev_special_defense = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_75trj")]([SubResource("Resource_yrm8c"), SubResource("Resource_olh71"), SubResource("Resource_s1n6k"), SubResource("Resource_24ybg"), SubResource("Resource_rpphw"), SubResource("Resource_dq2em"), SubResource("Resource_qx8t0"), SubResource("Resource_bwevu"), SubResource("Resource_tmkwf"), SubResource("Resource_5vrfv"), SubResource("Resource_70bky"), SubResource("Resource_mgyh3"), SubResource("Resource_thc6o"), SubResource("Resource_cn57v"), SubResource("Resource_vudo8")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AURASPHERE", &"AVALANCHE", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAGONTAIL", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FLING", &"FLIPTURN", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROCANNON", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONTAIL", &"LIQUIDATION", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SIGNALBEAM", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TERRAINPULSE", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ql30d")]([SubResource("Resource_l7lo8")])
+height = 16
+weight = 855
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 21)
+shadow_size = 3
+id = &"BLASTOISE"
+display_name = "Blastoise"

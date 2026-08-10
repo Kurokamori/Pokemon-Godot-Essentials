@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_4wpkv"]
+
+[resource]
+script = ExtResource("1_4wpkv")
+category = &"player_metadata"
+record_script = "res://src/data/player_metadata_data.gd"
+paths = {
+&"1": "res://data/player_metadata/1.tres",
+&"2": "res://data/player_metadata/2.tres"
+}
+ordered_ids = Array[StringName]([&"1", &"2"])

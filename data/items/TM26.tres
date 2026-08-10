@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_m65c4"]
+
+[resource]
+resource_name = "TM26"
+script = ExtResource("1_m65c4")
+name_plural = "TM26s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 80
+field_use = 5
+move = &"EARTHQUAKE"
+description = "The user sets off an earthquake that strikes every Pokémon around it."
+id = &"TM26"
+display_name = "TM26"
+flags = Array[StringName]([&"Fling_100"])

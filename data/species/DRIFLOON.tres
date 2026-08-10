@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qr5vh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rfblk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pdthf"]
+
+[sub_resource type="Resource" id="Resource_mb676"]
+script = ExtResource("1_qr5vh")
+species = &"DRIFBLIM"
+method = &"Level"
+parameter = "28"
+
+[sub_resource type="Resource" id="Resource_x7fqf"]
+script = ExtResource("2_rfblk")
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_7je75"]
+script = ExtResource("2_rfblk")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_g1bg4"]
+script = ExtResource("2_rfblk")
+level = 4
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_5o0o3"]
+script = ExtResource("2_rfblk")
+level = 8
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_daaky"]
+script = ExtResource("2_rfblk")
+level = 12
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_hrorp"]
+script = ExtResource("2_rfblk")
+level = 16
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_n3dpg"]
+script = ExtResource("2_rfblk")
+level = 20
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_npsli"]
+script = ExtResource("2_rfblk")
+level = 24
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_npgts"]
+script = ExtResource("2_rfblk")
+level = 24
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_qufus"]
+script = ExtResource("2_rfblk")
+level = 24
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_l2iny"]
+script = ExtResource("2_rfblk")
+level = 29
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_blsyi"]
+script = ExtResource("2_rfblk")
+level = 32
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_q07ce"]
+script = ExtResource("2_rfblk")
+level = 36
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_ve6qv"]
+script = ExtResource("2_rfblk")
+level = 40
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_e1n4s"]
+script = ExtResource("2_rfblk")
+level = 44
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "DRIFLOON"
+script = ExtResource("3_pdthf")
+species = &"DRIFLOON"
+category = "Balloon"
+pokedex_entry = "A Pokémon formed by the spirits of people and Pokémon. It loves damp, humid seasons."
+types = Array[StringName]([&"GHOST", &"FLYING"])
+base_hp = 90
+base_attack = 50
+base_defense = 34
+base_special_attack = 60
+base_special_defense = 44
+base_speed = 70
+ev_hp = 1
+base_exp = 70
+growth_rate = &"Fluctuating"
+catch_rate = 125
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rfblk")]([SubResource("Resource_x7fqf"), SubResource("Resource_7je75"), SubResource("Resource_g1bg4"), SubResource("Resource_5o0o3"), SubResource("Resource_daaky"), SubResource("Resource_hrorp"), SubResource("Resource_n3dpg"), SubResource("Resource_npsli"), SubResource("Resource_npgts"), SubResource("Resource_qufus"), SubResource("Resource_l2iny"), SubResource("Resource_blsyi"), SubResource("Resource_q07ce"), SubResource("Resource_ve6qv"), SubResource("Resource_e1n4s")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AIRCUTTER", &"ALLYSWITCH", &"AMNESIA", &"ATTRACT", &"BATONPASS", &"BIND", &"BODYSLAM", &"BRUTALSWING", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASH", &"FOCUSENERGY", &"FRUSTRATION", &"GYROBALL", &"HEX", &"HIDDENPOWER", &"ICYWIND", &"KNOCKOFF", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SILVERWIND", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"WEATHERBALL", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"BODYSLAM", &"CLEARSMOG", &"DEFOG", &"DESTINYBOND", &"DISABLE", &"HAZE", &"HYPNOSIS", &"MEMENTO", &"TAILWIND", &"WEATHERBALL"])
+abilities = Array[StringName]([&"AFTERMATH", &"UNBURDEN"])
+hidden_abilities = Array[StringName]([&"FLAREBOOST"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_qr5vh")]([SubResource("Resource_mb676")])
+height = 4
+weight = 12
+color = &"Purple"
+shape = &"HeadArms"
+generation = 4
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-2, 8)
+id = &"DRIFLOON"
+display_name = "Drifloon"

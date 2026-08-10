@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_28s10"]
+
+[resource]
+resource_name = "SHADOWCLAW"
+script = ExtResource("1_28s10")
+type = &"GHOST"
+category = 0
+power = 70
+total_pp = 15
+description = "The user slashes with a sharp claw made from shadows. Critical hits land more easily."
+id = &"SHADOWCLAW"
+display_name = "Shadow Claw"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

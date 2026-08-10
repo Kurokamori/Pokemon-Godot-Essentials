@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_47x4g"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vxruh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sdcv6"]
+
+[sub_resource type="Resource" id="Resource_xhrhh"]
+script = ExtResource("1_47x4g")
+species = &"GOLDUCK"
+method = &"Level"
+parameter = "33"
+
+[sub_resource type="Resource" id="Resource_ua1h1"]
+script = ExtResource("2_vxruh")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_gbaas"]
+script = ExtResource("2_vxruh")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_2xjq6"]
+script = ExtResource("2_vxruh")
+level = 3
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ockbq"]
+script = ExtResource("2_vxruh")
+level = 6
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_vf13w"]
+script = ExtResource("2_vxruh")
+level = 9
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_6x1c8"]
+script = ExtResource("2_vxruh")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_wrmie"]
+script = ExtResource("2_vxruh")
+level = 15
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_d6g7k"]
+script = ExtResource("2_vxruh")
+level = 18
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_pbdtv"]
+script = ExtResource("2_vxruh")
+level = 21
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_oyyoe"]
+script = ExtResource("2_vxruh")
+level = 24
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_qhu0c"]
+script = ExtResource("2_vxruh")
+level = 27
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_y1o0w"]
+script = ExtResource("2_vxruh")
+level = 30
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_mpgif"]
+script = ExtResource("2_vxruh")
+level = 34
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_0tfy2"]
+script = ExtResource("2_vxruh")
+level = 36
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_uofum"]
+script = ExtResource("2_vxruh")
+level = 39
+move = &"WONDERROOM"
+
+[resource]
+resource_name = "PSYDUCK"
+script = ExtResource("3_sdcv6")
+species = &"PSYDUCK"
+category = "Duck"
+pokedex_entry = "When its headache intensifies, it starts using strange powers. However, it has no recollection of its powers, so it always looks befuddled and bewildered."
+types = Array[StringName]([&"WATER"])
+base_hp = 50
+base_attack = 52
+base_defense = 48
+base_special_attack = 65
+base_special_defense = 50
+base_speed = 55
+ev_special_attack = 1
+base_exp = 64
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vxruh")]([SubResource("Resource_ua1h1"), SubResource("Resource_gbaas"), SubResource("Resource_2xjq6"), SubResource("Resource_ockbq"), SubResource("Resource_vf13w"), SubResource("Resource_6x1c8"), SubResource("Resource_wrmie"), SubResource("Resource_d6g7k"), SubResource("Resource_pbdtv"), SubResource("Resource_oyyoe"), SubResource("Resource_qhu0c"), SubResource("Resource_y1o0w"), SubResource("Resource_mpgif"), SubResource("Resource_0tfy2"), SubResource("Resource_uofum")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FUTURESIGHT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"LIGHTSCREEN", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYDAY", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WONDERROOM", &"WORRYSEED", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CLEARSMOG", &"CONFUSERAY", &"CROSSCHOP", &"ENCORE", &"FUTURESIGHT", &"HYPNOSIS", &"PSYBEAM", &"SIMPLEBEAM", &"YAWN"])
+abilities = Array[StringName]([&"DAMP", &"CLOUDNINE"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_47x4g")]([SubResource("Resource_xhrhh")])
+height = 8
+weight = 196
+color = &"Yellow"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 30)
+shadow_size = 1
+id = &"PSYDUCK"
+display_name = "Psyduck"

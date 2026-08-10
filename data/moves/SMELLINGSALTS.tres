@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_h5k65"]
+
+[resource]
+resource_name = "SMELLINGSALTS"
+script = ExtResource("1_h5k65")
+category = 0
+power = 70
+total_pp = 10
+function_code = &"DoublePowerIfTargetParalyzedCureTarget"
+description = "This attack inflicts double damage on a paralyzed foe. It also cures the target's paralysis, however."
+id = &"SMELLINGSALTS"
+display_name = "Smelling Salts"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

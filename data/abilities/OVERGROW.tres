@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_tlk6a"]
+
+[resource]
+resource_name = "OVERGROW"
+script = ExtResource("1_tlk6a")
+description = "Powers up Grass-type moves in a pinch."
+id = &"OVERGROW"
+display_name = "Overgrow"

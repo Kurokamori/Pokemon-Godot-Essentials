@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qhk08"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wkv6e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gel5f"]
+
+[sub_resource type="Resource" id="Resource_j3i04"]
+script = ExtResource("1_qhk08")
+species = &"DUCKLETT"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_va4vk"]
+script = ExtResource("2_wkv6e")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_1ppiv"]
+script = ExtResource("2_wkv6e")
+move = &"WATERSPORT"
+
+[sub_resource type="Resource" id="Resource_e3t4v"]
+script = ExtResource("2_wkv6e")
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_ue3af"]
+script = ExtResource("2_wkv6e")
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_2qk4u"]
+script = ExtResource("2_wkv6e")
+level = 3
+move = &"WATERSPORT"
+
+[sub_resource type="Resource" id="Resource_7wwyc"]
+script = ExtResource("2_wkv6e")
+level = 6
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_h4ee4"]
+script = ExtResource("2_wkv6e")
+level = 9
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_mygv8"]
+script = ExtResource("2_wkv6e")
+level = 13
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_cppje"]
+script = ExtResource("2_wkv6e")
+level = 15
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_a5mh7"]
+script = ExtResource("2_wkv6e")
+level = 19
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_y4tip"]
+script = ExtResource("2_wkv6e")
+level = 21
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_peu6h"]
+script = ExtResource("2_wkv6e")
+level = 24
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_lhi1a"]
+script = ExtResource("2_wkv6e")
+level = 27
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_du076"]
+script = ExtResource("2_wkv6e")
+level = 30
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_73khg"]
+script = ExtResource("2_wkv6e")
+level = 34
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_y7ehx"]
+script = ExtResource("2_wkv6e")
+level = 40
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_5lo00"]
+script = ExtResource("2_wkv6e")
+level = 47
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_a77pk"]
+script = ExtResource("2_wkv6e")
+level = 55
+move = &"HURRICANE"
+
+[resource]
+resource_name = "SWANNA"
+script = ExtResource("3_gel5f")
+species = &"SWANNA"
+category = "White Bird"
+pokedex_entry = "It administers sharp, powerful pecks with its bill. It whips its long neck to deliver forceful repeated strikes."
+types = Array[StringName]([&"WATER", &"FLYING"])
+base_hp = 75
+base_attack = 87
+base_defense = 63
+base_special_attack = 87
+base_special_defense = 63
+base_speed = 98
+ev_speed = 2
+base_exp = 166
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wkv6e")]([SubResource("Resource_va4vk"), SubResource("Resource_1ppiv"), SubResource("Resource_e3t4v"), SubResource("Resource_ue3af"), SubResource("Resource_2qk4u"), SubResource("Resource_7wwyc"), SubResource("Resource_h4ee4"), SubResource("Resource_mygv8"), SubResource("Resource_cppje"), SubResource("Resource_a5mh7"), SubResource("Resource_y4tip"), SubResource("Resource_peu6h"), SubResource("Resource_lhi1a"), SubResource("Resource_du076"), SubResource("Resource_73khg"), SubResource("Resource_y7ehx"), SubResource("Resource_5lo00"), SubResource("Resource_a77pk")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DIVE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCALD", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAILWIND", &"TOXIC", &"UPROAR", &"WATERPULSE"])
+abilities = Array[StringName]([&"KEENEYE", &"BIGPECKS"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+egg_groups = Array[StringName]([&"Water1", &"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_qhk08")]([SubResource("Resource_j3i04")])
+height = 13
+weight = 242
+color = &"White"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 19)
+shadow_size = 1
+id = &"SWANNA"
+display_name = "Swanna"

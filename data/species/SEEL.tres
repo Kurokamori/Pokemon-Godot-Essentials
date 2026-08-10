@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mxpm8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_uwpsu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wn7f3"]
+
+[sub_resource type="Resource" id="Resource_e8bgb"]
+script = ExtResource("1_mxpm8")
+species = &"DEWGONG"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_0mm6u"]
+script = ExtResource("2_uwpsu")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_4kom0"]
+script = ExtResource("2_uwpsu")
+level = 3
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_5tx8m"]
+script = ExtResource("2_uwpsu")
+level = 7
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_356af"]
+script = ExtResource("2_uwpsu")
+level = 11
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_0ji6l"]
+script = ExtResource("2_uwpsu")
+level = 13
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_krnad"]
+script = ExtResource("2_uwpsu")
+level = 17
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_nuwxs"]
+script = ExtResource("2_uwpsu")
+level = 21
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_h5c7u"]
+script = ExtResource("2_uwpsu")
+level = 23
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_i5fx2"]
+script = ExtResource("2_uwpsu")
+level = 27
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_p1e7i"]
+script = ExtResource("2_uwpsu")
+level = 31
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_fy0yr"]
+script = ExtResource("2_uwpsu")
+level = 33
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_qe5jm"]
+script = ExtResource("2_uwpsu")
+level = 37
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_pckg4"]
+script = ExtResource("2_uwpsu")
+level = 41
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_o8hnr"]
+script = ExtResource("2_uwpsu")
+level = 43
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_te542"]
+script = ExtResource("2_uwpsu")
+level = 47
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_r834v"]
+script = ExtResource("2_uwpsu")
+level = 51
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_8wm8t"]
+script = ExtResource("2_uwpsu")
+level = 53
+move = &"HAIL"
+
+[resource]
+resource_name = "SEEL"
+script = ExtResource("3_wn7f3")
+species = &"SEEL"
+category = "Sea Lion"
+pokedex_entry = "Seel hunt for prey in frigid, ice-covered seas. When it needs to breathe, it punches a hole through the ice with the sharply protruding section of its head."
+types = Array[StringName]([&"WATER"])
+base_hp = 65
+base_attack = 45
+base_defense = 55
+base_special_attack = 45
+base_special_defense = 70
+base_speed = 45
+ev_special_defense = 1
+base_exp = 65
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_uwpsu")]([SubResource("Resource_0mm6u"), SubResource("Resource_4kom0"), SubResource("Resource_5tx8m"), SubResource("Resource_356af"), SubResource("Resource_0ji6l"), SubResource("Resource_krnad"), SubResource("Resource_nuwxs"), SubResource("Resource_h5c7u"), SubResource("Resource_i5fx2"), SubResource("Resource_p1e7i"), SubResource("Resource_fy0yr"), SubResource("Resource_qe5jm"), SubResource("Resource_pckg4"), SubResource("Resource_o8hnr"), SubResource("Resource_te542"), SubResource("Resource_r834v"), SubResource("Resource_8wm8t")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"BELCH", &"DISABLE", &"ENCORE", &"ENTRAINMENT", &"FAKEOUT", &"HORNDRILL", &"ICICLESPEAR", &"LICK", &"PERISHSONG", &"SLAM", &"SPITUP", &"STOCKPILE", &"SWALLOW"])
+abilities = Array[StringName]([&"THICKFAT", &"HYDRATION"])
+hidden_abilities = Array[StringName]([&"ICEBODY"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mxpm8")]([SubResource("Resource_e8bgb")])
+height = 11
+weight = 900
+color = &"White"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 28)
+id = &"SEEL"
+display_name = "Seel"

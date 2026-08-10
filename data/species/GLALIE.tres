@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_f8ttd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7ehsh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uy431"]
+
+[sub_resource type="Resource" id="Resource_ybhm7"]
+script = ExtResource("1_f8ttd")
+species = &"SNORUNT"
+method = &"Level"
+parameter = "42"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_dydx3"]
+script = ExtResource("2_7ehsh")
+level = 0
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_51vrr"]
+script = ExtResource("2_7ehsh")
+move = &"SHEERCOLD"
+
+[sub_resource type="Resource" id="Resource_e2y4g"]
+script = ExtResource("2_7ehsh")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_ge1jq"]
+script = ExtResource("2_7ehsh")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_hgyl5"]
+script = ExtResource("2_7ehsh")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_tupi7"]
+script = ExtResource("2_7ehsh")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_vhy0v"]
+script = ExtResource("2_7ehsh")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_555m6"]
+script = ExtResource("2_7ehsh")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_8ysj0"]
+script = ExtResource("2_7ehsh")
+level = 25
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_3nu5v"]
+script = ExtResource("2_7ehsh")
+level = 30
+move = &"FROSTBREATH"
+
+[sub_resource type="Resource" id="Resource_baa1w"]
+script = ExtResource("2_7ehsh")
+level = 35
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_xxneb"]
+script = ExtResource("2_7ehsh")
+level = 40
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_3ugyu"]
+script = ExtResource("2_7ehsh")
+level = 47
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_uowcv"]
+script = ExtResource("2_7ehsh")
+level = 54
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_8mll1"]
+script = ExtResource("2_7ehsh")
+level = 61
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_k8ust"]
+script = ExtResource("2_7ehsh")
+level = 68
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "GLALIE"
+script = ExtResource("3_uy431")
+species = &"GLALIE"
+category = "Face"
+pokedex_entry = "A Glalie has the power to instantaneously freeze moisture in the atmosphere. A dazzling cloud of diamondlike ice crystals forms around its body."
+types = Array[StringName]([&"ICE"])
+base_hp = 80
+base_attack = 80
+base_defense = 80
+base_special_attack = 80
+base_special_defense = 80
+base_speed = 80
+ev_hp = 2
+base_exp = 168
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7ehsh")]([SubResource("Resource_dydx3"), SubResource("Resource_51vrr"), SubResource("Resource_e2y4g"), SubResource("Resource_ge1jq"), SubResource("Resource_hgyl5"), SubResource("Resource_tupi7"), SubResource("Resource_vhy0v"), SubResource("Resource_555m6"), SubResource("Resource_8ysj0"), SubResource("Resource_3nu5v"), SubResource("Resource_baa1w"), SubResource("Resource_xxneb"), SubResource("Resource_3ugyu"), SubResource("Resource_uowcv"), SubResource("Resource_8mll1"), SubResource("Resource_k8ust")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FAKETEARS", &"FLASH", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONHEAD", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SPIKES", &"SPITE", &"STEELROLLER", &"SUBSTITUTE", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"TORMENT", &"WATERPULSE", &"WEATHERBALL"])
+abilities = Array[StringName]([&"INNERFOCUS", &"ICEBODY"])
+hidden_abilities = Array[StringName]([&"MOODY"])
+egg_groups = Array[StringName]([&"Fairy", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_f8ttd")]([SubResource("Resource_ybhm7")])
+height = 15
+weight = 2565
+color = &"Gray"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 8)
+id = &"GLALIE"
+display_name = "Glalie"

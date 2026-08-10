@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_f7aeu"]
+
+[resource]
+resource_name = "67"
+script = ExtResource("1_f7aeu")
+map_id = 67
+town_map_position = Array[int]([0, 12, 12])
+id = &"67"
+display_name = "Safari Zone"

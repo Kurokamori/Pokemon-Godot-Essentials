@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wx2k1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8q34o"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dxyq1"]
+
+[sub_resource type="Resource" id="Resource_ymqiv"]
+script = ExtResource("1_wx2k1")
+species = &"PRINPLUP"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_ifofd"]
+script = ExtResource("2_8q34o")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_lwgvy"]
+script = ExtResource("2_8q34o")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_6v1mf"]
+script = ExtResource("2_8q34o")
+level = 6
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_6l51f"]
+script = ExtResource("2_8q34o")
+level = 11
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_hlafn"]
+script = ExtResource("2_8q34o")
+level = 15
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_lp6wb"]
+script = ExtResource("2_8q34o")
+level = 18
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_py48n"]
+script = ExtResource("2_8q34o")
+level = 22
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_xrodd"]
+script = ExtResource("2_8q34o")
+level = 25
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_xcura"]
+script = ExtResource("2_8q34o")
+level = 29
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_usqhx"]
+script = ExtResource("2_8q34o")
+level = 32
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_psb80"]
+script = ExtResource("2_8q34o")
+level = 36
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_s4gxd"]
+script = ExtResource("2_8q34o")
+level = 39
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_h2mms"]
+script = ExtResource("2_8q34o")
+level = 43
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "PIPLUP"
+script = ExtResource("3_dxyq1")
+species = &"PIPLUP"
+category = "Penguin"
+pokedex_entry = "Because it is very proud, it hates accepting food from people. Its thick down guards it from cold."
+types = Array[StringName]([&"WATER"])
+base_hp = 53
+base_attack = 51
+base_defense = 53
+base_special_attack = 61
+base_special_defense = 56
+base_speed = 40
+ev_special_attack = 1
+base_exp = 63
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8q34o")]([SubResource("Resource_ifofd"), SubResource("Resource_lwgvy"), SubResource("Resource_6v1mf"), SubResource("Resource_6l51f"), SubResource("Resource_hlafn"), SubResource("Resource_lp6wb"), SubResource("Resource_py48n"), SubResource("Resource_xrodd"), SubResource("Resource_xcura"), SubResource("Resource_usqhx"), SubResource("Resource_psb80"), SubResource("Resource_s4gxd"), SubResource("Resource_h2mms")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLIZZARD", &"BRICKBREAK", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DEFOG", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETURN", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+egg_moves = Array[StringName]([&"AGILITY", &"AQUARING", &"DOUBLEHIT", &"FEATHERDANCE", &"FLAIL", &"HYDROPUMP", &"ICYWIND", &"MUDSLAP", &"SNORE", &"SUPERSONIC", &"YAWN"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_wx2k1")]([SubResource("Resource_ymqiv")])
+height = 4
+weight = 52
+color = &"Blue"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 36)
+shadow_size = 1
+id = &"PIPLUP"
+display_name = "Piplup"

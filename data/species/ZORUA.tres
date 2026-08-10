@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wd5r0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fk0t5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3p7x7"]
+
+[sub_resource type="Resource" id="Resource_k6m70"]
+script = ExtResource("1_wd5r0")
+species = &"ZOROARK"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_pk3jc"]
+script = ExtResource("2_fk0t5")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_o4e8s"]
+script = ExtResource("2_fk0t5")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_rnp6x"]
+script = ExtResource("2_fk0t5")
+level = 4
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_0fson"]
+script = ExtResource("2_fk0t5")
+level = 8
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_3qt4s"]
+script = ExtResource("2_fk0t5")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_jrhcv"]
+script = ExtResource("2_fk0t5")
+level = 16
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_2deg6"]
+script = ExtResource("2_fk0t5")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_ib5ll"]
+script = ExtResource("2_fk0t5")
+level = 24
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_v03e0"]
+script = ExtResource("2_fk0t5")
+level = 28
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_nbf53"]
+script = ExtResource("2_fk0t5")
+level = 32
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_sgwmd"]
+script = ExtResource("2_fk0t5")
+level = 36
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_5nsbf"]
+script = ExtResource("2_fk0t5")
+level = 40
+move = &"NIGHTDAZE"
+
+[sub_resource type="Resource" id="Resource_1hst4"]
+script = ExtResource("2_fk0t5")
+level = 44
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_3ganw"]
+script = ExtResource("2_fk0t5")
+level = 48
+move = &"FOULPLAY"
+
+[resource]
+resource_name = "ZORUA"
+script = ExtResource("3_3p7x7")
+species = &"ZORUA"
+category = "Tricky Fox"
+pokedex_entry = "To protect themselves from danger, they hide their true identities by transforming into people and Pokémon."
+types = Array[StringName]([&"DARK"])
+base_hp = 40
+base_attack = 65
+base_defense = 40
+base_special_attack = 80
+base_special_defense = 40
+base_speed = 65
+ev_special_attack = 1
+base_exp = 66
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fk0t5")]([SubResource("Resource_pk3jc"), SubResource("Resource_o4e8s"), SubResource("Resource_rnp6x"), SubResource("Resource_0fson"), SubResource("Resource_3qt4s"), SubResource("Resource_jrhcv"), SubResource("Resource_2deg6"), SubResource("Resource_ib5ll"), SubResource("Resource_v03e0"), SubResource("Resource_nbf53"), SubResource("Resource_sgwmd"), SubResource("Resource_5nsbf"), SubResource("Resource_1hst4"), SubResource("Resource_3ganw")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BOUNCE", &"BURNINGJEALOUSY", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"HYPERVOICE", &"IMPRISON", &"INCINERATE", &"KNOCKOFF", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROAR", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"TRICK", &"UPROAR", &"UTURN"])
+egg_moves = Array[StringName]([&"COPYCAT", &"COUNTER", &"DETECT", &"EXTRASENSORY", &"MEMENTO", &"SUCKERPUNCH"])
+abilities = Array[StringName]([&"ILLUSION"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_wd5r0")]([SubResource("Resource_k6m70")])
+height = 7
+weight = 125
+color = &"Gray"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 28)
+shadow_size = 1
+id = &"ZORUA"
+display_name = "Zorua"

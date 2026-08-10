@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ybo65"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mv72f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_advsi"]
+
+[sub_resource type="Resource" id="Resource_mtob8"]
+script = ExtResource("1_ybo65")
+species = &"TEDDIURSA"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ror57"]
+script = ExtResource("2_mv72f")
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_3cujs"]
+script = ExtResource("2_mv72f")
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_etkx6"]
+script = ExtResource("2_mv72f")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_lk6kq"]
+script = ExtResource("2_mv72f")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_5xxdx"]
+script = ExtResource("2_mv72f")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_1n72d"]
+script = ExtResource("2_mv72f")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_c4nmx"]
+script = ExtResource("2_mv72f")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_cjir0"]
+script = ExtResource("2_mv72f")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_cl4oh"]
+script = ExtResource("2_mv72f")
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_gjxbo"]
+script = ExtResource("2_mv72f")
+level = 8
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_k3hno"]
+script = ExtResource("2_mv72f")
+level = 15
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_e3luw"]
+script = ExtResource("2_mv72f")
+level = 22
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_yd8jv"]
+script = ExtResource("2_mv72f")
+level = 25
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_c0hrp"]
+script = ExtResource("2_mv72f")
+level = 29
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_wx4jn"]
+script = ExtResource("2_mv72f")
+level = 38
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_mctvk"]
+script = ExtResource("2_mv72f")
+level = 47
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_cynew"]
+script = ExtResource("2_mv72f")
+level = 49
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_obav1"]
+script = ExtResource("2_mv72f")
+level = 58
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_mh4jn"]
+script = ExtResource("2_mv72f")
+level = 67
+move = &"HAMMERARM"
+
+[resource]
+resource_name = "URSARING"
+script = ExtResource("3_advsi")
+species = &"URSARING"
+category = "Hibernator"
+pokedex_entry = "In forests, it is said that there are many streams and towering trees where an Ursaring gathers food. It walks through its forest collecting food every day."
+base_hp = 90
+base_attack = 130
+base_defense = 75
+base_special_attack = 75
+base_special_defense = 75
+base_speed = 55
+ev_attack = 2
+base_exp = 175
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mv72f")]([SubResource("Resource_ror57"), SubResource("Resource_3cujs"), SubResource("Resource_etkx6"), SubResource("Resource_lk6kq"), SubResource("Resource_5xxdx"), SubResource("Resource_1n72d"), SubResource("Resource_c4nmx"), SubResource("Resource_cjir0"), SubResource("Resource_cl4oh"), SubResource("Resource_gjxbo"), SubResource("Resource_k3hno"), SubResource("Resource_e3luw"), SubResource("Resource_yd8jv"), SubResource("Resource_c0hrp"), SubResource("Resource_wx4jn"), SubResource("Resource_mctvk"), SubResource("Resource_cynew"), SubResource("Resource_obav1"), SubResource("Resource_mh4jn")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"AVALANCHE", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEPUNCH", &"LASERFOCUS", &"LASTRESORT", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"TORMENT", &"UPROAR", &"WORKUP"])
+abilities = Array[StringName]([&"GUTS", &"QUICKFEET"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ybo65")]([SubResource("Resource_mtob8")])
+height = 18
+weight = 1258
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 16)
+id = &"URSARING"
+display_name = "Ursaring"

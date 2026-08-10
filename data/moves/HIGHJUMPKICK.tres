@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ykdim"]
+
+[resource]
+resource_name = "HIGHJUMPKICK"
+script = ExtResource("1_ykdim")
+type = &"FIGHTING"
+category = 0
+power = 130
+accuracy = 90
+total_pp = 10
+function_code = &"CrashDamageIfFailsUnusableInGravity"
+description = "The target is attacked with a knee kick from a jump. If it misses, the user is hurt instead."
+id = &"HIGHJUMPKICK"
+display_name = "High Jump Kick"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

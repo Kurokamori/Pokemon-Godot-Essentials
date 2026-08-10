@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_yyp5f"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2ffm4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_62bmq"]
+
+[sub_resource type="Resource" id="Resource_2u3vg"]
+script = ExtResource("1_yyp5f")
+species = &"RATICATE"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_trj6c"]
+script = ExtResource("2_2ffm4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_p545v"]
+script = ExtResource("2_2ffm4")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_82ass"]
+script = ExtResource("2_2ffm4")
+level = 4
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_cdu1e"]
+script = ExtResource("2_2ffm4")
+level = 7
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_l0p1n"]
+script = ExtResource("2_2ffm4")
+level = 10
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_xuamt"]
+script = ExtResource("2_2ffm4")
+level = 13
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_wdmyk"]
+script = ExtResource("2_2ffm4")
+level = 16
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_oan2p"]
+script = ExtResource("2_2ffm4")
+level = 19
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_12n4n"]
+script = ExtResource("2_2ffm4")
+level = 22
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_4dpg0"]
+script = ExtResource("2_2ffm4")
+level = 25
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_ruvus"]
+script = ExtResource("2_2ffm4")
+level = 28
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_3ni7k"]
+script = ExtResource("2_2ffm4")
+level = 31
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_g81rp"]
+script = ExtResource("2_2ffm4")
+level = 34
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "RATTATA"
+script = ExtResource("3_62bmq")
+species = &"RATTATA"
+category = "Mouse"
+pokedex_entry = "A Rattata is cautious in the extreme. Even while it is asleep, it constantly moves its ears and listens for danger. It will make its nest anywhere."
+base_hp = 30
+base_attack = 56
+base_defense = 35
+base_special_attack = 25
+base_special_defense = 35
+base_speed = 72
+ev_speed = 1
+base_exp = 51
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2ffm4")]([SubResource("Resource_trj6c"), SubResource("Resource_p545v"), SubResource("Resource_82ass"), SubResource("Resource_cdu1e"), SubResource("Resource_l0p1n"), SubResource("Resource_xuamt"), SubResource("Resource_wdmyk"), SubResource("Resource_oan2p"), SubResource("Resource_12n4n"), SubResource("Resource_4dpg0"), SubResource("Resource_ruvus"), SubResource("Resource_3ni7k"), SubResource("Resource_g81rp")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"UPROAR", &"UTURN", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BITE", &"COUNTER", &"FINALGAMBIT", &"FLAMEWHEEL", &"FURYSWIPES", &"LASTRESORT", &"REVENGE", &"REVERSAL", &"SCREECH", &"UPROAR"])
+abilities = Array[StringName]([&"RUNAWAY", &"GUTS"])
+hidden_abilities = Array[StringName]([&"HUSTLE"])
+wild_item_uncommon = Array[StringName]([&"CHILANBERRY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_yyp5f")]([SubResource("Resource_2u3vg")])
+height = 3
+weight = 35
+color = &"Purple"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(0, 36)
+shadow_size = 1
+id = &"RATTATA"
+display_name = "Rattata"

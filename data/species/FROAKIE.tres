@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7rktn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b23sv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1bqm0"]
+
+[sub_resource type="Resource" id="Resource_6e6kt"]
+script = ExtResource("1_7rktn")
+species = &"FROGADIER"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_0w0dw"]
+script = ExtResource("2_b23sv")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_8ffqq"]
+script = ExtResource("2_b23sv")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_gtnk0"]
+script = ExtResource("2_b23sv")
+level = 5
+move = &"BUBBLE"
+
+[sub_resource type="Resource" id="Resource_u0n0o"]
+script = ExtResource("2_b23sv")
+level = 8
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_7lyp8"]
+script = ExtResource("2_b23sv")
+level = 10
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_us80i"]
+script = ExtResource("2_b23sv")
+level = 14
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_rirrh"]
+script = ExtResource("2_b23sv")
+level = 18
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_vx5en"]
+script = ExtResource("2_b23sv")
+level = 21
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_x7bug"]
+script = ExtResource("2_b23sv")
+level = 25
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_bvc64"]
+script = ExtResource("2_b23sv")
+level = 29
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_aviea"]
+script = ExtResource("2_b23sv")
+level = 35
+move = &"SUBSTITUTE"
+
+[sub_resource type="Resource" id="Resource_rgh6t"]
+script = ExtResource("2_b23sv")
+level = 39
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_nkxgb"]
+script = ExtResource("2_b23sv")
+level = 43
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_76ccm"]
+script = ExtResource("2_b23sv")
+level = 48
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "FROAKIE"
+script = ExtResource("3_1bqm0")
+species = &"FROAKIE"
+category = "Bubble Frog"
+pokedex_entry = "It protects its skin by covering its body in delicate bubbles. Beneath its happy-go-lucky air, it keeps a watchful eye on its surroundings."
+types = Array[StringName]([&"WATER"])
+base_hp = 41
+base_attack = 56
+base_defense = 40
+base_special_attack = 62
+base_special_defense = 44
+base_speed = 71
+ev_speed = 1
+base_exp = 63
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b23sv")]([SubResource("Resource_0w0dw"), SubResource("Resource_8ffqq"), SubResource("Resource_gtnk0"), SubResource("Resource_u0n0o"), SubResource("Resource_7lyp8"), SubResource("Resource_us80i"), SubResource("Resource_rirrh"), SubResource("Resource_vx5en"), SubResource("Resource_x7bug"), SubResource("Resource_bvc64"), SubResource("Resource_aviea"), SubResource("Resource_rgh6t"), SubResource("Resource_nkxgb"), SubResource("Resource_76ccm")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"UTURN", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"BESTOW", &"CAMOUFLAGE", &"MINDREADER", &"MUDSPORT", &"POWERUPPUNCH", &"TOXICSPIKES", &"WATERSPORT"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"PROTEAN"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_7rktn")]([SubResource("Resource_6e6kt")])
+height = 3
+weight = 70
+color = &"Blue"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 62)
+front_sprite_offset = Vector2i(0, 35)
+id = &"FROAKIE"
+display_name = "Froakie"

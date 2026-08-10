@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_yockj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gs3v8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bku1y"]
+
+[sub_resource type="Resource" id="Resource_741ly"]
+script = ExtResource("1_yockj")
+species = &"OBSTAGOON"
+
+[sub_resource type="Resource" id="Resource_48skq"]
+script = ExtResource("1_yockj")
+species = &"ZIGZAGOON"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_20klg"]
+script = ExtResource("2_gs3v8")
+level = 0
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_7avte"]
+script = ExtResource("2_gs3v8")
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_saqke"]
+script = ExtResource("2_gs3v8")
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_h3rbf"]
+script = ExtResource("2_gs3v8")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_0mtty"]
+script = ExtResource("2_gs3v8")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_2t2ea"]
+script = ExtResource("2_gs3v8")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_ticcn"]
+script = ExtResource("2_gs3v8")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_kq4tu"]
+script = ExtResource("2_gs3v8")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_jvws1"]
+script = ExtResource("2_gs3v8")
+level = 9
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_roq7a"]
+script = ExtResource("2_gs3v8")
+level = 12
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_k85qn"]
+script = ExtResource("2_gs3v8")
+level = 15
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_8ea8r"]
+script = ExtResource("2_gs3v8")
+level = 18
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_oq2t6"]
+script = ExtResource("2_gs3v8")
+level = 23
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_wfsr7"]
+script = ExtResource("2_gs3v8")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_wa2pi"]
+script = ExtResource("2_gs3v8")
+level = 33
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_d67wi"]
+script = ExtResource("2_gs3v8")
+level = 38
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_fln3s"]
+script = ExtResource("2_gs3v8")
+level = 43
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_t7c1k"]
+script = ExtResource("2_gs3v8")
+level = 48
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "LINOONE"
+script = ExtResource("3_bku1y")
+species = &"LINOONE"
+category = "Rushing"
+pokedex_entry = "It is exceedingly fast if it only has to run in a straight line. When it spots pond- dwelling prey underwater, it quickly leaps in and catches it with its sharp claws."
+base_hp = 78
+base_attack = 70
+base_defense = 61
+base_special_attack = 50
+base_special_defense = 61
+base_speed = 100
+ev_speed = 2
+base_exp = 147
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gs3v8")]([SubResource("Resource_20klg"), SubResource("Resource_7avte"), SubResource("Resource_saqke"), SubResource("Resource_h3rbf"), SubResource("Resource_0mtty"), SubResource("Resource_2t2ea"), SubResource("Resource_ticcn"), SubResource("Resource_kq4tu"), SubResource("Resource_jvws1"), SubResource("Resource_roq7a"), SubResource("Resource_k85qn"), SubResource("Resource_8ea8r"), SubResource("Resource_oq2t6"), SubResource("Resource_wfsr7"), SubResource("Resource_wa2pi"), SubResource("Resource_d67wi"), SubResource("Resource_fln3s"), SubResource("Resource_t7c1k")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASHOUT", &"LASTRESORT", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PINMISSILE", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SURF", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"PICKUP", &"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"QUICKFEET"])
+wild_item_common = Array[StringName]([&"POTION"])
+wild_item_uncommon = Array[StringName]([&"MAXREVIVE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_yockj")]([SubResource("Resource_741ly"), SubResource("Resource_48skq")])
+height = 5
+weight = 325
+color = &"White"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(7, 35)
+id = &"LINOONE"
+display_name = "Linoone"

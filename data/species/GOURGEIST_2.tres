@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kccwe"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_obaia"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cefqb"]
+
+[sub_resource type="Resource" id="Resource_hkm30"]
+script = ExtResource("1_kccwe")
+species = &"PUMPKABOO"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fkvod"]
+script = ExtResource("2_obaia")
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_pf4wd"]
+script = ExtResource("2_obaia")
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_yj1le"]
+script = ExtResource("2_obaia")
+move = &"TRICKORTREAT"
+
+[sub_resource type="Resource" id="Resource_fmju0"]
+script = ExtResource("2_obaia")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_gm8eo"]
+script = ExtResource("2_obaia")
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_x5esa"]
+script = ExtResource("2_obaia")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_ay24a"]
+script = ExtResource("2_obaia")
+level = 12
+move = &"TRICKORTREAT"
+
+[sub_resource type="Resource" id="Resource_b1xir"]
+script = ExtResource("2_obaia")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_c3f75"]
+script = ExtResource("2_obaia")
+level = 16
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_5vuf0"]
+script = ExtResource("2_obaia")
+level = 20
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_2qbt1"]
+script = ExtResource("2_obaia")
+level = 24
+move = &"TRICKORTREAT"
+
+[sub_resource type="Resource" id="Resource_17agw"]
+script = ExtResource("2_obaia")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_tibbq"]
+script = ExtResource("2_obaia")
+level = 28
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_el5hr"]
+script = ExtResource("2_obaia")
+level = 32
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_ifu3q"]
+script = ExtResource("2_obaia")
+level = 36
+move = &"TRICKORTREAT"
+
+[sub_resource type="Resource" id="Resource_courn"]
+script = ExtResource("2_obaia")
+level = 36
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_4j63l"]
+script = ExtResource("2_obaia")
+level = 40
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_13oux"]
+script = ExtResource("2_obaia")
+level = 44
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_0j71n"]
+script = ExtResource("2_obaia")
+level = 48
+move = &"PHANTOMFORCE"
+
+[resource]
+resource_name = "GOURGEIST_2"
+script = ExtResource("3_cefqb")
+species = &"GOURGEIST"
+form = 2
+form_name = "Large Size"
+category = "Pumpkin"
+pokedex_entry = "Large Gourgeist put on the guise of adults, taking the hands of children to lead them to the afterlife."
+pokedex_form = 2
+types = Array[StringName]([&"GHOST", &"GRASS"])
+base_hp = 75
+base_attack = 95
+base_defense = 122
+base_special_attack = 58
+base_special_defense = 75
+base_speed = 69
+ev_defense = 2
+base_exp = 173
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_obaia")]([SubResource("Resource_fkvod"), SubResource("Resource_pf4wd"), SubResource("Resource_yj1le"), SubResource("Resource_fmju0"), SubResource("Resource_gm8eo"), SubResource("Resource_x5esa"), SubResource("Resource_ay24a"), SubResource("Resource_b1xir"), SubResource("Resource_c3f75"), SubResource("Resource_5vuf0"), SubResource("Resource_2qbt1"), SubResource("Resource_17agw"), SubResource("Resource_tibbq"), SubResource("Resource_el5hr"), SubResource("Resource_ifu3q"), SubResource("Resource_courn"), SubResource("Resource_4j63l"), SubResource("Resource_13oux"), SubResource("Resource_0j71n")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BRUTALSWING", &"BULLETSEED", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASH", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GYROBALL", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"INCINERATE", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MYSTICALFIRE", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PHANTOMFORCE", &"POLTERGEIST", &"POWERWHIP", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WORRYSEED"])
+abilities = Array[StringName]([&"PICKUP", &"FRISK"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kccwe")]([SubResource("Resource_hkm30")])
+height = 11
+weight = 140
+color = &"Brown"
+shape = &"HeadBase"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 16)
+id = &"GOURGEIST_2"
+display_name = "Gourgeist"
+flags = Array[StringName]([&"InheritFormFromMother"])

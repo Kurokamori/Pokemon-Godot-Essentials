@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_pjw18"]
+
+[resource]
+resource_name = "TM86"
+script = ExtResource("1_pjw18")
+name_plural = "TM86s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"GRASSKNOT"
+description = "The user snares the target with grass and trips it. The heavier the target, the strong the move is."
+id = &"TM86"
+display_name = "TM86"
+flags = Array[StringName]([&"Fling_10"])

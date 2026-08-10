@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_d84ki"]
+
+[resource]
+resource_name = "CORROSIVEGAS"
+script = ExtResource("1_d84ki")
+type = &"POISON"
+total_pp = 40
+target = &"AllNearOthers"
+function_code = &"CorrodeTargetItem"
+description = "The user surrounds everything around it with highly acidic gas and melts away items they hold."
+id = &"CORROSIVEGAS"
+display_name = "Corrosive Gas"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

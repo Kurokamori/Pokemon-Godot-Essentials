@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_lu6lo"]
+
+[resource]
+resource_name = "FAIRYGEM"
+script = ExtResource("1_lu6lo")
+name_plural = "Fairy Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of the fey. When held, it strengthens the power of a Fairy-type move only once."
+id = &"FAIRYGEM"
+display_name = "Fairy Gem"
+flags = Array[StringName]([&"TypeGem"])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_c6s8f"]
+
+[resource]
+resource_name = "TM38"
+script = ExtResource("1_c6s8f")
+name_plural = "TM38s"
+pocket = 4
+price = 5500
+sell_price = 2750
+bp_price = 32
+field_use = 5
+move = &"FIREBLAST"
+description = "The target is attacked with an intense blast of all-consuming fire. This may also leave them with a burn."
+id = &"TM38"
+display_name = "TM38"
+flags = Array[StringName]([&"Fling_110"])

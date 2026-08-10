@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fmq8y"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h2bgq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ybc8c"]
+
+[sub_resource type="Resource" id="Resource_4s4y0"]
+script = ExtResource("2_h2bgq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_erkei"]
+script = ExtResource("2_h2bgq")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_spisn"]
+script = ExtResource("2_h2bgq")
+level = 7
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_bw0j2"]
+script = ExtResource("2_h2bgq")
+level = 14
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_wsrbm"]
+script = ExtResource("2_h2bgq")
+level = 21
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_6dg2p"]
+script = ExtResource("2_h2bgq")
+level = 28
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_lljlq"]
+script = ExtResource("2_h2bgq")
+level = 35
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_cccq2"]
+script = ExtResource("2_h2bgq")
+level = 42
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_2j6ok"]
+script = ExtResource("2_h2bgq")
+level = 49
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_owutc"]
+script = ExtResource("2_h2bgq")
+level = 56
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_5x5wi"]
+script = ExtResource("2_h2bgq")
+level = 63
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_cxyo0"]
+script = ExtResource("2_h2bgq")
+level = 70
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_bjedt"]
+script = ExtResource("2_h2bgq")
+level = 77
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_uaumh"]
+script = ExtResource("2_h2bgq")
+level = 84
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_3kger"]
+script = ExtResource("2_h2bgq")
+level = 91
+move = &"DIAMONDSTORM"
+
+[resource]
+resource_name = "DIANCIE"
+script = ExtResource("3_ybc8c")
+species = &"DIANCIE"
+category = "Jewel"
+pokedex_entry = "A sudden transformation of Carbink, its pink, glimmering body is said to be the loveliest sight in the whole world."
+types = Array[StringName]([&"ROCK", &"FAIRY"])
+base_hp = 50
+base_attack = 100
+base_defense = 150
+base_special_attack = 100
+base_special_defense = 150
+base_speed = 50
+ev_defense = 1
+ev_special_defense = 2
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h2bgq")]([SubResource("Resource_4s4y0"), SubResource("Resource_erkei"), SubResource("Resource_spisn"), SubResource("Resource_bw0j2"), SubResource("Resource_wsrbm"), SubResource("Resource_6dg2p"), SubResource("Resource_lljlq"), SubResource("Resource_cccq2"), SubResource("Resource_2j6ok"), SubResource("Resource_owutc"), SubResource("Resource_5x5wi"), SubResource("Resource_cxyo0"), SubResource("Resource_bjedt"), SubResource("Resource_uaumh"), SubResource("Resource_3kger")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"AMNESIA", &"BATONPASS", &"BODYPRESS", &"CALMMIND", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"EARTHPOWER", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"EXPLOSION", &"FACADE", &"FAKETEARS", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HAIL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"LASTRESORT", &"LIGHTSCREEN", &"MAGNETRISE", &"METEORBEAM", &"METRONOME", &"MIMIC", &"MISTYEXPLOSION", &"MYSTICALFIRE", &"NATURALGIFT", &"NATUREPOWER", &"PLAYROUGH", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SKILLSWAP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"TERRAINPULSE", &"TOXIC", &"TRICKROOM", &"WONDERROOM"])
+abilities = Array[StringName]([&"CLEARBODY"])
+hatch_steps = 6400
+height = 7
+weight = 88
+color = &"Pink"
+shape = &"HeadArms"
+generation = 6
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 9)
+id = &"DIANCIE"
+display_name = "Diancie"
+flags = Array[StringName]([&"Mythical"])

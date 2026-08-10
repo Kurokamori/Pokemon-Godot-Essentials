@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_oqkru"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5f862"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tpqq3"]
+
+[sub_resource type="Resource" id="Resource_xiupv"]
+script = ExtResource("2_5f862")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_sq3b0"]
+script = ExtResource("2_5f862")
+level = 10
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_tfimb"]
+script = ExtResource("2_5f862")
+level = 10
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_jhgxp"]
+script = ExtResource("2_5f862")
+level = 10
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_vw404"]
+script = ExtResource("2_5f862")
+level = 15
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_pk8ln"]
+script = ExtResource("2_5f862")
+level = 20
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_xfp0x"]
+script = ExtResource("2_5f862")
+level = 20
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_4yye3"]
+script = ExtResource("2_5f862")
+level = 20
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_c8wju"]
+script = ExtResource("2_5f862")
+level = 25
+move = &"WEATHERBALL"
+
+[sub_resource type="Resource" id="Resource_j7xiw"]
+script = ExtResource("2_5f862")
+level = 35
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_dpoms"]
+script = ExtResource("2_5f862")
+level = 35
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_8gqtm"]
+script = ExtResource("2_5f862")
+level = 35
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_312jd"]
+script = ExtResource("2_5f862")
+level = 45
+move = &"HURRICANE"
+
+[resource]
+resource_name = "CASTFORM_3"
+script = ExtResource("3_tpqq3")
+species = &"CASTFORM"
+form = 3
+form_name = "Snowy Form"
+category = "Weather"
+pokedex_entry = "This is the form Castform takes when covered in snow. Its body becomes an ice-like material, with a temperature near -5 degrees Celsius."
+pokedex_form = 3
+types = Array[StringName]([&"ICE"])
+base_hp = 70
+base_attack = 70
+base_defense = 70
+base_special_attack = 70
+base_special_defense = 70
+base_speed = 70
+ev_hp = 1
+base_exp = 147
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5f862")]([SubResource("Resource_xiupv"), SubResource("Resource_sq3b0"), SubResource("Resource_tfimb"), SubResource("Resource_jhgxp"), SubResource("Resource_vw404"), SubResource("Resource_pk8ln"), SubResource("Resource_xfp0x"), SubResource("Resource_4yye3"), SubResource("Resource_c8wju"), SubResource("Resource_j7xiw"), SubResource("Resource_dpoms"), SubResource("Resource_8gqtm"), SubResource("Resource_312jd")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"AMNESIA", &"CLEARSMOG", &"COSMICPOWER", &"DISABLE", &"FUTURESIGHT", &"GUARDSWAP", &"HEX", &"REFLECTTYPE"])
+abilities = Array[StringName]([&"FORECAST"])
+wild_item_common = Array[StringName]([&"MYSTICWATER"])
+wild_item_uncommon = Array[StringName]([&"MYSTICWATER"])
+wild_item_rare = Array[StringName]([&"MYSTICWATER"])
+egg_groups = Array[StringName]([&"Fairy", &"Amorphous"])
+hatch_steps = 6400
+height = 3
+weight = 8
+color = &"White"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 51)
+front_sprite_offset = Vector2i(1, 19)
+id = &"CASTFORM_3"
+display_name = "Castform"

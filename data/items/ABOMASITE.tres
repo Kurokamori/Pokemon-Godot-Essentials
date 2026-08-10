@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_tvg6f"]
+
+[resource]
+resource_name = "ABOMASITE"
+script = ExtResource("1_tvg6f")
+name_plural = "Abomasites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Abomasnow hold it, and it will be able to Mega Evolve."
+id = &"ABOMASITE"
+display_name = "Abomasite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

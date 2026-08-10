@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_faco8"]
+
+[resource]
+resource_name = "MAGICGUARD"
+script = ExtResource("1_faco8")
+description = "The Pokémon only takes damage from attacks."
+id = &"MAGICGUARD"
+display_name = "Magic Guard"

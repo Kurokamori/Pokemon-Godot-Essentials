@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_aq4fl"]
+
+[resource]
+resource_name = "BLUNDERPOLICY"
+script = ExtResource("1_aq4fl")
+name_plural = "Blunder Policies"
+price = 4000
+sell_price = 2000
+bp_price = 20
+description = "Raises Speed sharply when a Pokémon misses with a move because of accuracy."
+id = &"BLUNDERPOLICY"
+display_name = "Blunder Policy"
+flags = Array[StringName]([&"Fling_80"])

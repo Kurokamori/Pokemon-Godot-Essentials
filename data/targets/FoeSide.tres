@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TargetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/target_data.gd" id="1_2xyth"]
+
+[resource]
+resource_name = "FoeSide"
+script = ExtResource("1_2xyth")
+num_targets = 0
+affects_foe_side = true
+id = &"FoeSide"
+display_name = "Foe Side"

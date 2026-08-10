@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nnkv0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wlx5e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1kqqo"]
+
+[sub_resource type="Resource" id="Resource_dg4w8"]
+script = ExtResource("2_wlx5e")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_72yhd"]
+script = ExtResource("2_wlx5e")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_t8djj"]
+script = ExtResource("2_wlx5e")
+level = 5
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_qhsqd"]
+script = ExtResource("2_wlx5e")
+level = 10
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_qescc"]
+script = ExtResource("2_wlx5e")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_8wlfi"]
+script = ExtResource("2_wlx5e")
+level = 20
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_380d8"]
+script = ExtResource("2_wlx5e")
+level = 25
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ajyv0"]
+script = ExtResource("2_wlx5e")
+level = 30
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_cq0kw"]
+script = ExtResource("2_wlx5e")
+level = 35
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_j336p"]
+script = ExtResource("2_wlx5e")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_q6llp"]
+script = ExtResource("2_wlx5e")
+level = 45
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_0rfnp"]
+script = ExtResource("2_wlx5e")
+level = 50
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_poyks"]
+script = ExtResource("2_wlx5e")
+level = 55
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_bakwu"]
+script = ExtResource("2_wlx5e")
+level = 60
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_xh1jy"]
+script = ExtResource("2_wlx5e")
+level = 65
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_fpfd2"]
+script = ExtResource("2_wlx5e")
+level = 70
+move = &"THRASH"
+
+[resource]
+resource_name = "TORNADUS_1"
+script = ExtResource("3_1kqqo")
+species = &"TORNADUS"
+form = 1
+form_name = "Therian Forme"
+category = "Cyclone"
+pokedex_entry = "Tornadus expels massive energy from its tail, causing severe storms. Its power is great enough to blow houses away."
+pokedex_form = 1
+types = Array[StringName]([&"FLYING"])
+base_hp = 79
+base_attack = 100
+base_defense = 80
+base_special_attack = 110
+base_special_defense = 90
+base_speed = 121
+ev_speed = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 3
+base_happiness = 90
+level_up_moves = Array[ExtResource("2_wlx5e")]([SubResource("Resource_dg4w8"), SubResource("Resource_72yhd"), SubResource("Resource_t8djj"), SubResource("Resource_qhsqd"), SubResource("Resource_qescc"), SubResource("Resource_8wlfi"), SubResource("Resource_380d8"), SubResource("Resource_ajyv0"), SubResource("Resource_cq0kw"), SubResource("Resource_j336p"), SubResource("Resource_q6llp"), SubResource("Resource_0rfnp"), SubResource("Resource_poyks"), SubResource("Resource_bakwu"), SubResource("Resource_xh1jy"), SubResource("Resource_fpfd2")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"FACADE", &"FLING", &"FLY", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SKYDROP", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"WEATHERBALL"])
+abilities = Array[StringName]([&"REGENERATOR"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+hatch_steps = 30720
+height = 14
+weight = 630
+color = &"Green"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(7, 13)
+shadow_size = 3
+id = &"TORNADUS_1"
+display_name = "Tornadus"
+flags = Array[StringName]([&"Legendary"])

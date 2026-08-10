@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_u1sl1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8jtv2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_m8un6"]
+
+[sub_resource type="Resource" id="Resource_7338o"]
+script = ExtResource("1_u1sl1")
+species = &"KRICKETOT"
+method = &"Level"
+parameter = "10"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jig7x"]
+script = ExtResource("2_8jtv2")
+level = 0
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_iqk2m"]
+script = ExtResource("2_8jtv2")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_41vda"]
+script = ExtResource("2_8jtv2")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_gyqkw"]
+script = ExtResource("2_8jtv2")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_8jxr2"]
+script = ExtResource("2_8jtv2")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_ccf6n"]
+script = ExtResource("2_8jtv2")
+level = 14
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_4b0df"]
+script = ExtResource("2_8jtv2")
+level = 18
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_s7d2v"]
+script = ExtResource("2_8jtv2")
+level = 22
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_fg6fo"]
+script = ExtResource("2_8jtv2")
+level = 26
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ttd45"]
+script = ExtResource("2_8jtv2")
+level = 30
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_ef5j2"]
+script = ExtResource("2_8jtv2")
+level = 34
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6qg4f"]
+script = ExtResource("2_8jtv2")
+level = 36
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_g3prv"]
+script = ExtResource("2_8jtv2")
+level = 38
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_dif0m"]
+script = ExtResource("2_8jtv2")
+level = 42
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_sj2s6"]
+script = ExtResource("2_8jtv2")
+level = 44
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_seq0t"]
+script = ExtResource("2_8jtv2")
+level = 46
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_6r1o4"]
+script = ExtResource("2_8jtv2")
+level = 50
+move = &"PERISHSONG"
+
+[resource]
+resource_name = "KRICKETUNE"
+script = ExtResource("3_m8un6")
+species = &"KRICKETUNE"
+category = "Cricket"
+pokedex_entry = "It crosses its knifelike arms in front of its chest when it cries. It can compose melodies ad lib."
+types = Array[StringName]([&"BUG"])
+base_hp = 77
+base_attack = 85
+base_defense = 51
+base_special_attack = 55
+base_special_defense = 51
+base_speed = 65
+ev_attack = 2
+base_exp = 134
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8jtv2")]([SubResource("Resource_jig7x"), SubResource("Resource_iqk2m"), SubResource("Resource_41vda"), SubResource("Resource_gyqkw"), SubResource("Resource_8jxr2"), SubResource("Resource_ccf6n"), SubResource("Resource_4b0df"), SubResource("Resource_s7d2v"), SubResource("Resource_fg6fo"), SubResource("Resource_ttd45"), SubResource("Resource_ef5j2"), SubResource("Resource_6qg4f"), SubResource("Resource_g3prv"), SubResource("Resource_dif0m"), SubResource("Resource_sj2s6"), SubResource("Resource_seq0t"), SubResource("Resource_6r1o4")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEALBELL", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"INFESTATION", &"KNOCKOFF", &"LASERFOCUS", &"LEECHLIFE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THROATCHOP", &"UPROAR", &"XSCISSOR"])
+abilities = Array[StringName]([&"SWARM"])
+hidden_abilities = Array[StringName]([&"TECHNICIAN"])
+wild_item_uncommon = Array[StringName]([&"METRONOME"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_u1sl1")]([SubResource("Resource_7338o")])
+height = 10
+weight = 255
+shape = &"MultiWinged"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(3, 22)
+shadow_size = 1
+id = &"KRICKETUNE"
+display_name = "Kricketune"

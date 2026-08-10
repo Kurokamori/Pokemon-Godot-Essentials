@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0f7vr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7j3s0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gtc7l"]
+
+[sub_resource type="Resource" id="Resource_qwn7j"]
+script = ExtResource("1_0f7vr")
+species = &"SCOLIPEDE"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_t5tsr"]
+script = ExtResource("1_0f7vr")
+species = &"VENIPEDE"
+method = &"Level"
+parameter = "22"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3hjyo"]
+script = ExtResource("2_7j3s0")
+level = 0
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_ux4lo"]
+script = ExtResource("2_7j3s0")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_3d7mk"]
+script = ExtResource("2_7j3s0")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_bpm2r"]
+script = ExtResource("2_7j3s0")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_dq2vj"]
+script = ExtResource("2_7j3s0")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_cke8c"]
+script = ExtResource("2_7j3s0")
+level = 12
+move = &"POISONTAIL"
+
+[sub_resource type="Resource" id="Resource_xytwg"]
+script = ExtResource("2_7j3s0")
+level = 16
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_kct51"]
+script = ExtResource("2_7j3s0")
+level = 20
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_8pb3l"]
+script = ExtResource("2_7j3s0")
+level = 26
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_3chuy"]
+script = ExtResource("2_7j3s0")
+level = 32
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_22f77"]
+script = ExtResource("2_7j3s0")
+level = 38
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_thabh"]
+script = ExtResource("2_7j3s0")
+level = 44
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_odej7"]
+script = ExtResource("2_7j3s0")
+level = 50
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_kl0we"]
+script = ExtResource("2_7j3s0")
+level = 56
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "WHIRLIPEDE"
+script = ExtResource("3_gtc7l")
+species = &"WHIRLIPEDE"
+category = "Curlipede"
+pokedex_entry = "It is usually motionless, but when attacked, it rotates at high speed and then crashes into its opponent."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 40
+base_attack = 55
+base_defense = 99
+base_special_attack = 40
+base_special_defense = 79
+base_speed = 47
+ev_defense = 2
+base_exp = 126
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7j3s0")]([SubResource("Resource_3hjyo"), SubResource("Resource_ux4lo"), SubResource("Resource_3d7mk"), SubResource("Resource_bpm2r"), SubResource("Resource_dq2vj"), SubResource("Resource_cke8c"), SubResource("Resource_xytwg"), SubResource("Resource_kct51"), SubResource("Resource_8pb3l"), SubResource("Resource_3chuy"), SubResource("Resource_22f77"), SubResource("Resource_thabh"), SubResource("Resource_odej7"), SubResource("Resource_kl0we")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BUGBITE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GYROBALL", &"HEX", &"HIDDENPOWER", &"INFESTATION", &"IRONDEFENSE", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SPIKES", &"STEELROLLER", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK"])
+abilities = Array[StringName]([&"POISONPOINT", &"SWARM"])
+hidden_abilities = Array[StringName]([&"SPEEDBOOST"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_0f7vr")]([SubResource("Resource_qwn7j"), SubResource("Resource_t5tsr")])
+height = 12
+weight = 585
+color = &"Gray"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 30)
+id = &"WHIRLIPEDE"
+display_name = "Whirlipede"

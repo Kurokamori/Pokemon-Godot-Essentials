@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yo1n4"]
+
+[resource]
+resource_name = "PAINSPLIT"
+script = ExtResource("1_yo1n4")
+accuracy = 0
+total_pp = 20
+function_code = &"UserTargetAverageHP"
+description = "The user adds its HP to the target's HP, then equally shares the combined HP with the target."
+id = &"PAINSPLIT"
+display_name = "Pain Split"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1fc23"]
+
+[resource]
+resource_name = "GRASSMEMORY"
+script = ExtResource("1_1fc23")
+name_plural = "Grass Memories"
+price = 1000
+sell_price = 500
+description = "A memory disc containing Grass-type data. It changes the holder's type if held by a certain Pokémon."
+id = &"GRASSMEMORY"
+display_name = "Grass Memory"
+flags = Array[StringName]([&"Fling_50"])

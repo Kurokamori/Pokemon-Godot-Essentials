@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l0fre"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_exc7f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dixkh"]
+
+[sub_resource type="Resource" id="Resource_67s2a"]
+script = ExtResource("1_l0fre")
+species = &"CUBONE"
+method = &"LevelNight"
+parameter = "28"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8bnu5"]
+script = ExtResource("2_exc7f")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_8lwjk"]
+script = ExtResource("2_exc7f")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_15qir"]
+script = ExtResource("2_exc7f")
+move = &"BONECLUB"
+
+[sub_resource type="Resource" id="Resource_0bmdu"]
+script = ExtResource("2_exc7f")
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_t5vjf"]
+script = ExtResource("2_exc7f")
+level = 3
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_yt1rn"]
+script = ExtResource("2_exc7f")
+level = 7
+move = &"BONECLUB"
+
+[sub_resource type="Resource" id="Resource_s7qbr"]
+script = ExtResource("2_exc7f")
+level = 11
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_l2163"]
+script = ExtResource("2_exc7f")
+level = 13
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_6umd4"]
+script = ExtResource("2_exc7f")
+level = 17
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_fvou8"]
+script = ExtResource("2_exc7f")
+level = 21
+move = &"BONEMERANG"
+
+[sub_resource type="Resource" id="Resource_yyesd"]
+script = ExtResource("2_exc7f")
+level = 23
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_r86yx"]
+script = ExtResource("2_exc7f")
+level = 27
+move = &"SHADOWBONE"
+
+[sub_resource type="Resource" id="Resource_v3n6b"]
+script = ExtResource("2_exc7f")
+level = 33
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_tgnhh"]
+script = ExtResource("2_exc7f")
+level = 37
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_c3tk6"]
+script = ExtResource("2_exc7f")
+level = 43
+move = &"STOMPINGTANTRUM"
+
+[sub_resource type="Resource" id="Resource_4xqni"]
+script = ExtResource("2_exc7f")
+level = 49
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_mkk1b"]
+script = ExtResource("2_exc7f")
+level = 53
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_fbsta"]
+script = ExtResource("2_exc7f")
+level = 59
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_ajfh3"]
+script = ExtResource("2_exc7f")
+level = 65
+move = &"BONERUSH"
+
+[resource]
+resource_name = "MAROWAK_1"
+script = ExtResource("3_dixkh")
+species = &"MAROWAK"
+form = 1
+form_name = "Alolan"
+category = "Bone Keeper"
+pokedex_entry = "Its custom is to mourn its lost companions. Mounds of dirt by the side of the road mark the graves of the Marowak."
+pokedex_form = 1
+types = Array[StringName]([&"FIRE", &"GHOST"])
+base_hp = 60
+base_attack = 80
+base_defense = 110
+base_special_attack = 50
+base_special_defense = 80
+base_speed = 45
+ev_defense = 2
+base_exp = 149
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_exc7f")]([SubResource("Resource_8bnu5"), SubResource("Resource_8lwjk"), SubResource("Resource_15qir"), SubResource("Resource_0bmdu"), SubResource("Resource_t5vjf"), SubResource("Resource_yt1rn"), SubResource("Resource_s7qbr"), SubResource("Resource_l2163"), SubResource("Resource_6umd4"), SubResource("Resource_fvou8"), SubResource("Resource_yyesd"), SubResource("Resource_r86yx"), SubResource("Resource_v3n6b"), SubResource("Resource_tgnhh"), SubResource("Resource_c3tk6"), SubResource("Resource_4xqni"), SubResource("Resource_mkk1b"), SubResource("Resource_fbsta"), SubResource("Resource_ajfh3")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PAINSPLIT", &"POLTERGEIST", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"UPROAR", &"WILLOWISP"])
+abilities = Array[StringName]([&"CURSEDBODY", &"LIGHTNINGROD"])
+hidden_abilities = Array[StringName]([&"ROCKHEAD"])
+wild_item_uncommon = Array[StringName]([&"THICKCLUB"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_l0fre")]([SubResource("Resource_67s2a")])
+height = 10
+weight = 340
+color = &"Purple"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 7
+back_sprite_offset = Vector2i(-6, 32)
+front_sprite_offset = Vector2i(3, 16)
+id = &"MAROWAK_1"
+display_name = "Marowak"

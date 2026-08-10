@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fibey"]
+
+[resource]
+resource_name = "TOPSYTURVY"
+script = ExtResource("1_fibey")
+type = &"DARK"
+accuracy = 0
+total_pp = 20
+function_code = &"InvertTargetStatStages"
+description = "All stat changes affecting the target turn topsy-turvy and become the opposite of what they were."
+id = &"TOPSYTURVY"
+display_name = "Topsy-Turvy"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_wkby7"]
+
+[resource]
+resource_name = "BLUEFLARE"
+script = ExtResource("1_wkby7")
+type = &"FIRE"
+category = 1
+power = 130
+accuracy = 85
+function_code = &"BurnTarget"
+effect_chance = 20
+description = "The user attacks by engulfing the foe in a beautiful, yet intense, blue flame. It may also burn the foe."
+id = &"BLUEFLARE"
+display_name = "Blue Flare"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

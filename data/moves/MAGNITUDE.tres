@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_s1qgv"]
+
+[resource]
+resource_name = "MAGNITUDE"
+script = ExtResource("1_s1qgv")
+type = &"GROUND"
+category = 0
+power = 1
+total_pp = 30
+target = &"AllNearOthers"
+function_code = &"RandomPowerDoublePowerIfTargetUnderground"
+description = "The user looses a ground-shaking quake affecting everyone around the user. Its power varies."
+id = &"MAGNITUDE"
+display_name = "Magnitude"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_x3i1u"]
+
+[resource]
+resource_name = "PAYDAY"
+script = ExtResource("1_x3i1u")
+category = 0
+power = 40
+total_pp = 20
+function_code = &"AddMoneyGainedFromBattle"
+description = "Numerous coins are hurled at the target to inflict damage. Money is earned after battle."
+id = &"PAYDAY"
+display_name = "Pay Day"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

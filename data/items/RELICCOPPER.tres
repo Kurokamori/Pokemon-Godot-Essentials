@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2lgtd"]
+
+[resource]
+resource_name = "RELICCOPPER"
+script = ExtResource("1_2lgtd")
+name_plural = "Relic Coppers"
+portion_name = "Relic Copper coin"
+portion_name_plural = "Relic Copper coins"
+description = "A copper coin used in a civilization about 3,000 years ago. A maniac will buy it for a high price."
+id = &"RELICCOPPER"
+display_name = "Relic Copper"
+flags = Array[StringName]([&"Fling_30"])

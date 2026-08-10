@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MiningSkin" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/mining/mining_skin.gd" id="1_skin"]
+
+[resource]
+script = ExtResource("1_skin")
+display_name = "Mining"
+panel_color = Color(0.180392, 0.141176, 0.109804, 1)
+panel_border_color = Color(0.435294, 0.329412, 0.203922, 1)
+cursor_color = Color(0.972549, 0.933333, 0.6, 1)
+highlight_color = Color(0.972549, 0.6, 0.219608, 1)
+cursor_sound = "Mining cursor"
+cell_size = 26
+cell_spacing = 0

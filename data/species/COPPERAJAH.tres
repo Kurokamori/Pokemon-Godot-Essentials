@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_yyqrw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_56jpo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_m1law"]
+
+[sub_resource type="Resource" id="Resource_qmv7k"]
+script = ExtResource("1_yyqrw")
+species = &"CUFANT"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_h0ery"]
+script = ExtResource("2_56jpo")
+level = 0
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_1p4rp"]
+script = ExtResource("2_56jpo")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_42fio"]
+script = ExtResource("2_56jpo")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_k1760"]
+script = ExtResource("2_56jpo")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_0q14w"]
+script = ExtResource("2_56jpo")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_5pbae"]
+script = ExtResource("2_56jpo")
+level = 15
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_l7n20"]
+script = ExtResource("2_56jpo")
+level = 20
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_06qly"]
+script = ExtResource("2_56jpo")
+level = 25
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_2qg5x"]
+script = ExtResource("2_56jpo")
+level = 30
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_iuaxg"]
+script = ExtResource("2_56jpo")
+level = 37
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_ueitv"]
+script = ExtResource("2_56jpo")
+level = 44
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_q14yi"]
+script = ExtResource("2_56jpo")
+level = 51
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_j3rdn"]
+script = ExtResource("2_56jpo")
+level = 58
+move = &"HIGHHORSEPOWER"
+
+[sub_resource type="Resource" id="Resource_pbque"]
+script = ExtResource("2_56jpo")
+level = 65
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "COPPERAJAH"
+script = ExtResource("3_m1law")
+species = &"COPPERAJAH"
+category = "Copperderm"
+pokedex_entry = "These Pokémon live in herds. Their trunks have incredible grip strength, strong enough to crush giant rocks into powder."
+types = Array[StringName]([&"STEEL"])
+base_hp = 122
+base_attack = 130
+base_defense = 69
+base_special_attack = 80
+base_special_defense = 69
+base_speed = 30
+ev_attack = 2
+base_exp = 175
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_56jpo")]([SubResource("Resource_h0ery"), SubResource("Resource_1p4rp"), SubResource("Resource_42fio"), SubResource("Resource_k1760"), SubResource("Resource_0q14w"), SubResource("Resource_5pbae"), SubResource("Resource_l7n20"), SubResource("Resource_06qly"), SubResource("Resource_2qg5x"), SubResource("Resource_iuaxg"), SubResource("Resource_ueitv"), SubResource("Resource_q14yi"), SubResource("Resource_j3rdn"), SubResource("Resource_pbque")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLING", &"FRUSTRATION", &"GIGAIMPACT", &"HEATCRASH", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"MEGAKICK", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PLAYROUGH", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SHEERFORCE"])
+hidden_abilities = Array[StringName]([&"HEAVYMETAL"])
+wild_item_uncommon = Array[StringName]([&"LAGGINGTAIL"])
+egg_groups = Array[StringName]([&"Field", &"Mineral"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_yyqrw")]([SubResource("Resource_qmv7k")])
+height = 30
+weight = 6500
+color = &"Green"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-3, 20)
+shadow_size = 3
+id = &"COPPERAJAH"
+display_name = "Copperajah"

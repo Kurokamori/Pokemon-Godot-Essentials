@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cdlrh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nf8gn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_e4o5p"]
+
+[sub_resource type="Resource" id="Resource_gtbll"]
+script = ExtResource("1_cdlrh")
+species = &"WOOLOO"
+method = &"Level"
+parameter = "24"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_555or"]
+script = ExtResource("2_nf8gn")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_m3mxg"]
+script = ExtResource("2_nf8gn")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_cwf3h"]
+script = ExtResource("2_nf8gn")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_n7bdt"]
+script = ExtResource("2_nf8gn")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_3jt10"]
+script = ExtResource("2_nf8gn")
+level = 12
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_10qsv"]
+script = ExtResource("2_nf8gn")
+level = 16
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_5u8pd"]
+script = ExtResource("2_nf8gn")
+level = 21
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_1ojpx"]
+script = ExtResource("2_nf8gn")
+level = 27
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_vvbc6"]
+script = ExtResource("2_nf8gn")
+level = 32
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_61q3t"]
+script = ExtResource("2_nf8gn")
+level = 38
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_msgds"]
+script = ExtResource("2_nf8gn")
+level = 44
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_54h2g"]
+script = ExtResource("2_nf8gn")
+level = 50
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_brrf5"]
+script = ExtResource("2_nf8gn")
+level = 56
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "DUBWOOL"
+script = ExtResource("3_e4o5p")
+species = &"DUBWOOL"
+category = "Sheep"
+pokedex_entry = "Its majestic horns are meant only to impress the opposite gender. They never see use in battle."
+base_hp = 72
+base_attack = 80
+base_defense = 100
+base_special_attack = 60
+base_special_defense = 90
+base_speed = 88
+ev_defense = 2
+base_exp = 172
+catch_rate = 127
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nf8gn")]([SubResource("Resource_555or"), SubResource("Resource_m3mxg"), SubResource("Resource_cwf3h"), SubResource("Resource_n7bdt"), SubResource("Resource_3jt10"), SubResource("Resource_10qsv"), SubResource("Resource_5u8pd"), SubResource("Resource_1ojpx"), SubResource("Resource_vvbc6"), SubResource("Resource_61q3t"), SubResource("Resource_msgds"), SubResource("Resource_54h2g"), SubResource("Resource_brrf5")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BATONPASS", &"BODYPRESS", &"BODYSLAM", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSYGLIDE", &"GUARDSWAP", &"HIDDENPOWER", &"HYPERBEAM", &"MEGAKICK", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"THUNDERWAVE", &"TOXIC", &"WILDCHARGE", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"FLUFFY", &"STEADFAST"])
+hidden_abilities = Array[StringName]([&"BULLETPROOF"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_cdlrh")]([SubResource("Resource_gtbll")])
+height = 13
+weight = 430
+color = &"White"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-3, 16)
+id = &"DUBWOOL"
+display_name = "Dubwool"

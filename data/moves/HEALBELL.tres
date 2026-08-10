@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_mi7m2"]
+
+[resource]
+resource_name = "HEALBELL"
+script = ExtResource("1_mi7m2")
+accuracy = 0
+target = &"UserAndAllies"
+function_code = &"CureUserPartyStatus"
+description = "The user makes a soothing bell chime to heal the status problems of all the party Pokémon."
+id = &"HEALBELL"
+display_name = "Heal Bell"
+flags = Array[StringName]([&"Sound"])

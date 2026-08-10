@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ru1vy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7u3s8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tudhu"]
+
+[sub_resource type="Resource" id="Resource_cyydt"]
+script = ExtResource("1_ru1vy")
+species = &"AVALUGG"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_m7w0t"]
+script = ExtResource("2_7u3s8")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_rwrve"]
+script = ExtResource("2_7u3s8")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_v4cvv"]
+script = ExtResource("2_7u3s8")
+level = 3
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bm0rf"]
+script = ExtResource("2_7u3s8")
+level = 6
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_xpy0d"]
+script = ExtResource("2_7u3s8")
+level = 9
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_1haxc"]
+script = ExtResource("2_7u3s8")
+level = 12
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_1lyb4"]
+script = ExtResource("2_7u3s8")
+level = 15
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_i1v7o"]
+script = ExtResource("2_7u3s8")
+level = 18
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_u4v2m"]
+script = ExtResource("2_7u3s8")
+level = 21
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_iv6s2"]
+script = ExtResource("2_7u3s8")
+level = 24
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_4322k"]
+script = ExtResource("2_7u3s8")
+level = 27
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_0fk6m"]
+script = ExtResource("2_7u3s8")
+level = 30
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_qun0x"]
+script = ExtResource("2_7u3s8")
+level = 33
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_05c0q"]
+script = ExtResource("2_7u3s8")
+level = 36
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_4eq3g"]
+script = ExtResource("2_7u3s8")
+level = 39
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_g6pht"]
+script = ExtResource("2_7u3s8")
+level = 42
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "BERGMITE"
+script = ExtResource("3_tudhu")
+species = &"BERGMITE"
+category = "Ice Chunk"
+pokedex_entry = "It blocks opponents' attacks with the ice that shields its body. It uses cold air to repair any cracks with new ice."
+types = Array[StringName]([&"ICE"])
+base_hp = 55
+base_attack = 69
+base_defense = 85
+base_special_attack = 32
+base_special_defense = 35
+base_speed = 28
+ev_defense = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7u3s8")]([SubResource("Resource_m7w0t"), SubResource("Resource_rwrve"), SubResource("Resource_v4cvv"), SubResource("Resource_bm0rf"), SubResource("Resource_xpy0d"), SubResource("Resource_1haxc"), SubResource("Resource_1lyb4"), SubResource("Resource_i1v7o"), SubResource("Resource_u4v2m"), SubResource("Resource_iv6s2"), SubResource("Resource_4322k"), SubResource("Resource_0fk6m"), SubResource("Resource_qun0x"), SubResource("Resource_05c0q"), SubResource("Resource_4eq3g"), SubResource("Resource_g6pht")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FROSTBREATH", &"FRUSTRATION", &"GYROBALL", &"HAIL", &"HIDDENPOWER", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"AURORAVEIL", &"MIRRORCOAT", &"MIST"])
+abilities = Array[StringName]([&"OWNTEMPO", &"ICEBODY"])
+hidden_abilities = Array[StringName]([&"STURDY"])
+egg_groups = Array[StringName]([&"Monster", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ru1vy")]([SubResource("Resource_cyydt")])
+height = 10
+weight = 995
+color = &"Blue"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 30)
+shadow_size = 1
+id = &"BERGMITE"
+display_name = "Bergmite"

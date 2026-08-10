@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wbfus"]
+
+[resource]
+resource_name = "DEEPSEATOOTH"
+script = ExtResource("1_wbfus")
+name_plural = "Deep Sea Teeth"
+price = 2000
+sell_price = 1000
+bp_price = 5
+description = "An item to be held by Clamperl. A fang that gleams a sharp silver, it raises the Sp. Atk stat."
+id = &"DEEPSEATOOTH"
+display_name = "Deep Sea Tooth"
+flags = Array[StringName]([&"Fling_90"])

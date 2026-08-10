@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_qymo5"]
+
+[resource]
+resource_name = "SINNOHTOUGHSUPER"
+script = ExtResource("1_qymo5")
+icon_position = 37
+description = "Super Contest Tough Category Great Rank winner!"
+id = &"SINNOHTOUGHSUPER"
+display_name = "Tough Ribbon Great"

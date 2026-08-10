@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_p07kk"]
+
+[resource]
+resource_name = "GALARICAWREATH"
+script = ExtResource("1_p07kk")
+name_plural = "Galarica Wreaths"
+price = 6000
+sell_price = 3000
+bp_price = 5
+field_use = 1
+description = "A wreath made from woven-together Galarica Twigs. A Galarian Slowpoke wearing this would be very happy."
+id = &"GALARICAWREATH"
+display_name = "Galarica Wreath"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_30"])

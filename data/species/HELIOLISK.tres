@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7dvux"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_87awv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_os03b"]
+
+[sub_resource type="Resource" id="Resource_g76gs"]
+script = ExtResource("1_7dvux")
+species = &"HELIOPTILE"
+method = &"Item"
+parameter = "SUNSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_po1b7"]
+script = ExtResource("2_87awv")
+move = &"EERIEIMPULSE"
+
+[sub_resource type="Resource" id="Resource_0x4il"]
+script = ExtResource("2_87awv")
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_apu57"]
+script = ExtResource("2_87awv")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_t0o0n"]
+script = ExtResource("2_87awv")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_xuqr8"]
+script = ExtResource("2_87awv")
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_34qsg"]
+script = ExtResource("2_87awv")
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_ljrol"]
+script = ExtResource("2_87awv")
+move = &"PARABOLICCHARGE"
+
+[sub_resource type="Resource" id="Resource_few6i"]
+script = ExtResource("2_87awv")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_jkvrr"]
+script = ExtResource("2_87awv")
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_ntq3s"]
+script = ExtResource("2_87awv")
+move = &"ELECTRIFY"
+
+[sub_resource type="Resource" id="Resource_wufom"]
+script = ExtResource("2_87awv")
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_dh5nx"]
+script = ExtResource("2_87awv")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_emaik"]
+script = ExtResource("2_87awv")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_6mncj"]
+script = ExtResource("2_87awv")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_jsb7u"]
+script = ExtResource("2_87awv")
+move = &"THUNDERSHOCK"
+
+[resource]
+resource_name = "HELIOLISK"
+script = ExtResource("3_os03b")
+species = &"HELIOLISK"
+category = "Generator"
+pokedex_entry = "They flare their frills and generate energy. A single Heliolisk can generate sufficient electricity to power a skyscraper."
+types = Array[StringName]([&"ELECTRIC", &"NORMAL"])
+base_hp = 62
+base_attack = 55
+base_defense = 52
+base_special_attack = 109
+base_special_defense = 94
+base_speed = 109
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 168
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_87awv")]([SubResource("Resource_po1b7"), SubResource("Resource_0x4il"), SubResource("Resource_apu57"), SubResource("Resource_t0o0n"), SubResource("Resource_xuqr8"), SubResource("Resource_34qsg"), SubResource("Resource_ljrol"), SubResource("Resource_few6i"), SubResource("Resource_jkvrr"), SubResource("Resource_ntq3s"), SubResource("Resource_wufom"), SubResource("Resource_dh5nx"), SubResource("Resource_emaik"), SubResource("Resource_6mncj"), SubResource("Resource_jsb7u")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"BREAKINGSWIPE", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAGONTAIL", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCALESHOT", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"UTURN", &"VOLTSWITCH", &"WEATHERBALL", &"WILDCHARGE"])
+abilities = Array[StringName]([&"DRYSKIN", &"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"SOLARPOWER"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_7dvux")]([SubResource("Resource_g76gs")])
+height = 10
+weight = 210
+color = &"Yellow"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(4, 50)
+front_sprite_offset = Vector2i(-11, 16)
+id = &"HELIOLISK"
+display_name = "Heliolisk"

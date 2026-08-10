@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_um1sj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ahovu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nuq11"]
+
+[sub_resource type="Resource" id="Resource_48pqo"]
+script = ExtResource("1_um1sj")
+species = &"MACHAMP"
+method = &"Trade"
+
+[sub_resource type="Resource" id="Resource_p3pvt"]
+script = ExtResource("1_um1sj")
+species = &"MACHOP"
+method = &"Level"
+parameter = "28"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_cffcu"]
+script = ExtResource("2_ahovu")
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_4wcux"]
+script = ExtResource("2_ahovu")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ctsh0"]
+script = ExtResource("2_ahovu")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_eeqhl"]
+script = ExtResource("2_ahovu")
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_c3pkj"]
+script = ExtResource("2_ahovu")
+level = 12
+move = &"LOWSWEEP"
+
+[sub_resource type="Resource" id="Resource_mpxok"]
+script = ExtResource("2_ahovu")
+level = 16
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_03tc3"]
+script = ExtResource("2_ahovu")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_1glty"]
+script = ExtResource("2_ahovu")
+level = 24
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_p715o"]
+script = ExtResource("2_ahovu")
+level = 31
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_iukdi"]
+script = ExtResource("2_ahovu")
+level = 36
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_tonxa"]
+script = ExtResource("2_ahovu")
+level = 42
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_sytlb"]
+script = ExtResource("2_ahovu")
+level = 48
+move = &"SEISMICTOSS"
+
+[sub_resource type="Resource" id="Resource_0jvdl"]
+script = ExtResource("2_ahovu")
+level = 54
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_wmpxj"]
+script = ExtResource("2_ahovu")
+level = 60
+move = &"CROSSCHOP"
+
+[sub_resource type="Resource" id="Resource_yc0b1"]
+script = ExtResource("2_ahovu")
+level = 66
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "MACHOKE"
+script = ExtResource("3_nuq11")
+species = &"MACHOKE"
+category = "Superpower"
+pokedex_entry = "A belt is worn by a Machoke to keep its overwhelming power under control. Because it is so dangerous, no one has ever removed the belt."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 80
+base_attack = 100
+base_defense = 70
+base_special_attack = 50
+base_special_defense = 60
+base_speed = 45
+ev_attack = 2
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"Female25Percent"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ahovu")]([SubResource("Resource_cffcu"), SubResource("Resource_4wcux"), SubResource("Resource_ctsh0"), SubResource("Resource_eeqhl"), SubResource("Resource_c3pkj"), SubResource("Resource_mpxok"), SubResource("Resource_03tc3"), SubResource("Resource_1glty"), SubResource("Resource_p715o"), SubResource("Resource_iukdi"), SubResource("Resource_tonxa"), SubResource("Resource_sytlb"), SubResource("Resource_0jvdl"), SubResource("Resource_wmpxj"), SubResource("Resource_yc0b1")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COUNTER", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENCORE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"HEADBUTT", &"HEAVYSLAM", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"INCINERATE", &"KNOCKOFF", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THIEF", &"THUNDERPUNCH", &"VACUUMWAVE", &"WORKUP"])
+abilities = Array[StringName]([&"GUTS", &"NOGUARD"])
+hidden_abilities = Array[StringName]([&"STEADFAST"])
+wild_item_uncommon = Array[StringName]([&"FOCUSBAND"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_um1sj")]([SubResource("Resource_48pqo"), SubResource("Resource_p3pvt")])
+height = 15
+weight = 705
+color = &"Gray"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 18)
+id = &"MACHOKE"
+display_name = "Machoke"

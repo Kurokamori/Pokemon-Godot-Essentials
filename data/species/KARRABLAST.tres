@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_35epc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qt5b6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jkvij"]
+
+[sub_resource type="Resource" id="Resource_btbp7"]
+script = ExtResource("1_35epc")
+species = &"ESCAVALIER"
+method = &"TradeSpecies"
+parameter = "SHELMET"
+
+[sub_resource type="Resource" id="Resource_x1o4s"]
+script = ExtResource("2_qt5b6")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_kec7q"]
+script = ExtResource("2_qt5b6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_gkjuu"]
+script = ExtResource("2_qt5b6")
+level = 4
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_yf4vt"]
+script = ExtResource("2_qt5b6")
+level = 8
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_gn5gk"]
+script = ExtResource("2_qt5b6")
+level = 12
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_gs88y"]
+script = ExtResource("2_qt5b6")
+level = 16
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_5xenu"]
+script = ExtResource("2_qt5b6")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_43u02"]
+script = ExtResource("2_qt5b6")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_j7itn"]
+script = ExtResource("2_qt5b6")
+level = 28
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_70esh"]
+script = ExtResource("2_qt5b6")
+level = 32
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_k24lc"]
+script = ExtResource("2_qt5b6")
+level = 36
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_lbujg"]
+script = ExtResource("2_qt5b6")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_62axm"]
+script = ExtResource("2_qt5b6")
+level = 44
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_ewg51"]
+script = ExtResource("2_qt5b6")
+level = 48
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "KARRABLAST"
+script = ExtResource("3_jkvij")
+species = &"KARRABLAST"
+category = "Clamping"
+pokedex_entry = "When they feel threatened, they spit an acidic liquid to drive attackers away. This Pokémon targets Shelmet."
+types = Array[StringName]([&"BUG"])
+base_hp = 50
+base_attack = 75
+base_defense = 45
+base_special_attack = 40
+base_special_defense = 45
+base_speed = 60
+ev_attack = 1
+base_exp = 63
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qt5b6")]([SubResource("Resource_x1o4s"), SubResource("Resource_kec7q"), SubResource("Resource_gkjuu"), SubResource("Resource_yf4vt"), SubResource("Resource_gn5gk"), SubResource("Resource_gs88y"), SubResource("Resource_5xenu"), SubResource("Resource_43u02"), SubResource("Resource_j7itn"), SubResource("Resource_70esh"), SubResource("Resource_k24lc"), SubResource("Resource_lbujg"), SubResource("Resource_62axm"), SubResource("Resource_ewg51")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"DRILLRUN", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FRUSTRATION", &"GIGADRAIN", &"HIDDENPOWER", &"INFESTATION", &"IRONDEFENSE", &"KNOCKOFF", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TOXIC", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"BUGBITE", &"COUNTER", &"KNOCKOFF", &"NIGHTSLASH", &"SLASH"])
+abilities = Array[StringName]([&"SWARM", &"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"NOGUARD"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_35epc")]([SubResource("Resource_btbp7")])
+height = 5
+weight = 59
+color = &"Blue"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 35)
+shadow_size = 1
+id = &"KARRABLAST"
+display_name = "Karrablast"

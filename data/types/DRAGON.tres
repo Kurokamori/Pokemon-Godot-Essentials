@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_li6tm"]
+
+[resource]
+resource_name = "DRAGON"
+script = ExtResource("1_li6tm")
+icon_position = 16
+special_type = true
+weaknesses = Array[StringName]([&"ICE", &"DRAGON", &"FAIRY"])
+resistances = Array[StringName]([&"FIRE", &"WATER", &"GRASS", &"ELECTRIC"])
+id = &"DRAGON"
+display_name = "Dragon"

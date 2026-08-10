@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_sg0vr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5mxiu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mye5j"]
+
+[sub_resource type="Resource" id="Resource_ixim2"]
+script = ExtResource("1_sg0vr")
+species = &"GLOOM"
+method = &"Level"
+parameter = "21"
+
+[sub_resource type="Resource" id="Resource_u2pb2"]
+script = ExtResource("2_5mxiu")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_1lxjb"]
+script = ExtResource("2_5mxiu")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_2td6f"]
+script = ExtResource("2_5mxiu")
+level = 4
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_yn10g"]
+script = ExtResource("2_5mxiu")
+level = 8
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_sn1f5"]
+script = ExtResource("2_5mxiu")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_dtw7x"]
+script = ExtResource("2_5mxiu")
+level = 14
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_tqgn8"]
+script = ExtResource("2_5mxiu")
+level = 16
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_ru75k"]
+script = ExtResource("2_5mxiu")
+level = 18
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_33mlw"]
+script = ExtResource("2_5mxiu")
+level = 20
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_fgkdc"]
+script = ExtResource("2_5mxiu")
+level = 24
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_7c3wf"]
+script = ExtResource("2_5mxiu")
+level = 28
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_5yurl"]
+script = ExtResource("2_5mxiu")
+level = 32
+move = &"GRASSYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_6irvf"]
+script = ExtResource("2_5mxiu")
+level = 36
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_3p06g"]
+script = ExtResource("2_5mxiu")
+level = 40
+move = &"PETALDANCE"
+
+[resource]
+resource_name = "ODDISH"
+script = ExtResource("3_mye5j")
+species = &"ODDISH"
+category = "Weed"
+pokedex_entry = "It grows by absorbing moonlight. During the daytime, it buries itself in the ground, leaving only its leaves exposed to avoid detection by its enemies."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 45
+base_attack = 50
+base_defense = 55
+base_special_attack = 75
+base_special_defense = 65
+base_speed = 30
+ev_special_attack = 1
+base_exp = 64
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5mxiu")]([SubResource("Resource_u2pb2"), SubResource("Resource_1lxjb"), SubResource("Resource_2td6f"), SubResource("Resource_yn10g"), SubResource("Resource_sn1f5"), SubResource("Resource_dtw7x"), SubResource("Resource_tqgn8"), SubResource("Resource_ru75k"), SubResource("Resource_33mlw"), SubResource("Resource_fgkdc"), SubResource("Resource_7c3wf"), SubResource("Resource_5yurl"), SubResource("Resource_6irvf"), SubResource("Resource_3p06g")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CUT", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HIDDENPOWER", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"VENOSHOCK", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AFTERYOU", &"CHARM", &"FLAIL", &"INGRAIN", &"LEECHSEED", &"NATUREPOWER", &"RAZORLEAF", &"STRENGTHSAP", &"SYNTHESIS", &"TEETERDANCE", &"TICKLE"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"RUNAWAY"])
+wild_item_uncommon = Array[StringName]([&"ABSORBBULB"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_sg0vr")]([SubResource("Resource_ixim2")])
+height = 5
+weight = 54
+color = &"Blue"
+shape = &"HeadLegs"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(2, 31)
+shadow_size = 1
+id = &"ODDISH"
+display_name = "Oddish"

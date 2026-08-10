@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_upppr"]
+
+[resource]
+resource_name = "HEX"
+script = ExtResource("1_upppr")
+type = &"GHOST"
+category = 1
+power = 65
+total_pp = 10
+function_code = &"DoublePowerIfTargetStatusProblem"
+description = "This relentless attack does massive damage to a target affected by status problems."
+id = &"HEX"
+display_name = "Hex"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

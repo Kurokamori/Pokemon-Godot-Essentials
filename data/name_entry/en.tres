@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="NameEntryCharsetData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/data/name_entry_charset_data.gd" id="1_charset"]
+
+[resource]
+script = ExtResource("1_charset")
+locale = &"en"
+pages = Array[String](["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", "0123456789 !?.,-'\"/()&:;"])
+page_names = Array[String](["ABC", "abc", "123"])
+columns = 9
+max_length = 0

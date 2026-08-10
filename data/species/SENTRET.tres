@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0fbyn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1agns"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wh4j7"]
+
+[sub_resource type="Resource" id="Resource_30rl6"]
+script = ExtResource("1_0fbyn")
+species = &"FURRET"
+method = &"Level"
+parameter = "15"
+
+[sub_resource type="Resource" id="Resource_2x6f6"]
+script = ExtResource("2_1agns")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_w8nfn"]
+script = ExtResource("2_1agns")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_pnvlc"]
+script = ExtResource("2_1agns")
+level = 4
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_gtcwc"]
+script = ExtResource("2_1agns")
+level = 7
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_yq7y2"]
+script = ExtResource("2_1agns")
+level = 13
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_orh0w"]
+script = ExtResource("2_1agns")
+level = 16
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_yxunh"]
+script = ExtResource("2_1agns")
+level = 19
+move = &"FOLLOWME"
+
+[sub_resource type="Resource" id="Resource_34sfl"]
+script = ExtResource("2_1agns")
+level = 25
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_p4bke"]
+script = ExtResource("2_1agns")
+level = 28
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_64unc"]
+script = ExtResource("2_1agns")
+level = 31
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_2ki1o"]
+script = ExtResource("2_1agns")
+level = 36
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_82p4i"]
+script = ExtResource("2_1agns")
+level = 39
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_7cj30"]
+script = ExtResource("2_1agns")
+level = 42
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_4gt8x"]
+script = ExtResource("2_1agns")
+level = 47
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "SENTRET"
+script = ExtResource("3_wh4j7")
+species = &"SENTRET"
+category = "Scout"
+pokedex_entry = "They take turns standing guard when it is time to sleep. The sentry awakens the others if it senses danger. If one gets separated, it turns sleepless with fear."
+base_hp = 35
+base_attack = 46
+base_defense = 34
+base_special_attack = 35
+base_special_defense = 45
+base_speed = 20
+ev_attack = 1
+base_exp = 43
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1agns")]([SubResource("Resource_2x6f6"), SubResource("Resource_w8nfn"), SubResource("Resource_pnvlc"), SubResource("Resource_gtcwc"), SubResource("Resource_yq7y2"), SubResource("Resource_orh0w"), SubResource("Resource_yxunh"), SubResource("Resource_34sfl"), SubResource("Resource_p4bke"), SubResource("Resource_64unc"), SubResource("Resource_2ki1o"), SubResource("Resource_82p4i"), SubResource("Resource_7cj30"), SubResource("Resource_4gt8x")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SURF", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDERBOLT", &"THUNDERPUNCH", &"TRICK", &"UPROAR", &"UTURN", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+egg_moves = Array[StringName]([&"BABYDOLLEYES", &"CHARM", &"COVET", &"DOUBLEEDGE", &"FOCUSENERGY", &"LASTRESORT", &"REVERSAL", &"SLASH", &"TRICK"])
+abilities = Array[StringName]([&"RUNAWAY", &"KEENEYE"])
+hidden_abilities = Array[StringName]([&"FRISK"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_0fbyn")]([SubResource("Resource_30rl6")])
+height = 8
+weight = 60
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(6, 20)
+shadow_size = 1
+id = &"SENTRET"
+display_name = "Sentret"

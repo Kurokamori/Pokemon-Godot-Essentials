@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_gdvtr"]
+
+[resource]
+resource_name = "ANALYTIC"
+script = ExtResource("1_gdvtr")
+description = "Boosts move power when the Pokémon moves last."
+id = &"ANALYTIC"
+display_name = "Analytic"

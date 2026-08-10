@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5eeck"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bei6n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_g5ebl"]
+
+[sub_resource type="Resource" id="Resource_8l3q3"]
+script = ExtResource("1_5eeck")
+species = &"JELLICENT"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_tbfui"]
+script = ExtResource("2_bei6n")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_u5oc5"]
+script = ExtResource("2_bei6n")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_e6s5w"]
+script = ExtResource("2_bei6n")
+level = 4
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_gyg2e"]
+script = ExtResource("2_bei6n")
+level = 8
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_pcq8q"]
+script = ExtResource("2_bei6n")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_o48u3"]
+script = ExtResource("2_bei6n")
+level = 16
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_w4x34"]
+script = ExtResource("2_bei6n")
+level = 20
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_qa02y"]
+script = ExtResource("2_bei6n")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_ea3fr"]
+script = ExtResource("2_bei6n")
+level = 28
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_3w5yp"]
+script = ExtResource("2_bei6n")
+level = 32
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_uh8hx"]
+script = ExtResource("2_bei6n")
+level = 36
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_dlxc1"]
+script = ExtResource("2_bei6n")
+level = 41
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_1tjt2"]
+script = ExtResource("2_bei6n")
+level = 44
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_0jlt1"]
+script = ExtResource("2_bei6n")
+level = 48
+move = &"WATERSPOUT"
+
+[resource]
+resource_name = "FRILLISH"
+script = ExtResource("3_g5ebl")
+species = &"FRILLISH"
+category = "Floating"
+pokedex_entry = "They paralyze prey with poison, then drag them down to their lairs, five miles below the surface."
+types = Array[StringName]([&"WATER", &"GHOST"])
+base_hp = 55
+base_attack = 40
+base_defense = 50
+base_special_attack = 65
+base_special_defense = 85
+base_speed = 40
+ev_special_defense = 1
+base_exp = 67
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bei6n")]([SubResource("Resource_tbfui"), SubResource("Resource_u5oc5"), SubResource("Resource_e6s5w"), SubResource("Resource_gyg2e"), SubResource("Resource_pcq8q"), SubResource("Resource_o48u3"), SubResource("Resource_w4x34"), SubResource("Resource_qa02y"), SubResource("Resource_ea3fr"), SubResource("Resource_3w5yp"), SubResource("Resource_uh8hx"), SubResource("Resource_dlxc1"), SubResource("Resource_1tjt2"), SubResource("Resource_0jlt1")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"HAIL", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAUNT", &"TOXIC", &"TRICK", &"TRICKROOM", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"ACIDARMOR", &"BUBBLEBEAM", &"CONFUSERAY", &"MIST", &"PAINSPLIT", &"STRENGTHSAP"])
+abilities = Array[StringName]([&"WATERABSORB", &"CURSEDBODY"])
+hidden_abilities = Array[StringName]([&"DAMP"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5eeck")]([SubResource("Resource_8l3q3")])
+height = 12
+weight = 330
+color = &"White"
+shape = &"Multiped"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+id = &"FRILLISH"
+display_name = "Frillish"

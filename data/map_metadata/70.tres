@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_lb65g"]
+
+[resource]
+resource_name = "70"
+script = ExtResource("1_lb65g")
+map_id = 70
+town_map_position = Array[int]([0, 13, 13])
+battle_background = "underwater"
+battle_environment = &"Underwater"
+id = &"70"
+display_name = "Route 8"

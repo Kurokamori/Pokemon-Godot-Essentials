@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ajhrq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8wbpc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_543f6"]
+
+[sub_resource type="Resource" id="Resource_ar5jl"]
+script = ExtResource("1_ajhrq")
+species = &"CINDERACE"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_cbomb"]
+script = ExtResource("1_ajhrq")
+species = &"SCORBUNNY"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_t0yeh"]
+script = ExtResource("2_8wbpc")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_kr3qg"]
+script = ExtResource("2_8wbpc")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_10uwx"]
+script = ExtResource("2_8wbpc")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_b1wqe"]
+script = ExtResource("2_8wbpc")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_suttl"]
+script = ExtResource("2_8wbpc")
+level = 12
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_wsrwm"]
+script = ExtResource("2_8wbpc")
+level = 19
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_8cpje"]
+script = ExtResource("2_8wbpc")
+level = 24
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_4bwix"]
+script = ExtResource("2_8wbpc")
+level = 30
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_5gqao"]
+script = ExtResource("2_8wbpc")
+level = 36
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_wtqx0"]
+script = ExtResource("2_8wbpc")
+level = 42
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_2awq3"]
+script = ExtResource("2_8wbpc")
+level = 48
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "RABOOT"
+script = ExtResource("3_543f6")
+species = &"RABOOT"
+category = "Rabbit"
+pokedex_entry = "It kicks berries right off the branches of trees and then juggles them with its feet, practicing its footwork."
+types = Array[StringName]([&"FIRE"])
+base_hp = 65
+base_attack = 86
+base_defense = 60
+base_special_attack = 55
+base_special_defense = 60
+base_speed = 94
+ev_speed = 2
+base_exp = 147
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8wbpc")]([SubResource("Resource_t0yeh"), SubResource("Resource_kr3qg"), SubResource("Resource_10uwx"), SubResource("Resource_b1wqe"), SubResource("Resource_suttl"), SubResource("Resource_wsrwm"), SubResource("Resource_8cpje"), SubResource("Resource_4bwix"), SubResource("Resource_5gqao"), SubResource("Resource_wtqx0"), SubResource("Resource_2awq3")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BLAZEKICK", &"BOUNCE", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPLEDGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FOCUSENERGY", &"FRUSTRATION", &"GUNKSHOT", &"HEATWAVE", &"HIDDENPOWER", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TOXIC", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"LIBERO"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ajhrq")]([SubResource("Resource_ar5jl"), SubResource("Resource_cbomb")])
+height = 6
+weight = 90
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(4, 22)
+shadow_size = 1
+id = &"RABOOT"
+display_name = "Raboot"

@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uvat2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2pxnl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_faml7"]
+
+[sub_resource type="Resource" id="Resource_kucmn"]
+script = ExtResource("1_uvat2")
+species = &"GARCHOMP"
+method = &"Level"
+parameter = "48"
+
+[sub_resource type="Resource" id="Resource_jxsit"]
+script = ExtResource("1_uvat2")
+species = &"GIBLE"
+method = &"Level"
+parameter = "24"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_vipvc"]
+script = ExtResource("2_2pxnl")
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_el214"]
+script = ExtResource("2_2pxnl")
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_epfr3"]
+script = ExtResource("2_2pxnl")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_2vj0x"]
+script = ExtResource("2_2pxnl")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_orqa0"]
+script = ExtResource("2_2pxnl")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_6gwv4"]
+script = ExtResource("2_2pxnl")
+level = 18
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_fh4of"]
+script = ExtResource("2_2pxnl")
+level = 27
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_yq6gd"]
+script = ExtResource("2_2pxnl")
+level = 34
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_k6dyo"]
+script = ExtResource("2_2pxnl")
+level = 42
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_pwifo"]
+script = ExtResource("2_2pxnl")
+level = 50
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_gog0d"]
+script = ExtResource("2_2pxnl")
+level = 58
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_r2bmk"]
+script = ExtResource("2_2pxnl")
+level = 66
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_xsrdt"]
+script = ExtResource("2_2pxnl")
+level = 74
+move = &"DRAGONRUSH"
+
+[resource]
+resource_name = "GABITE"
+script = ExtResource("3_faml7")
+species = &"GABITE"
+category = "Cave"
+pokedex_entry = "There is a long-held belief that medicine made from its scales will heal even incurable illnesses."
+types = Array[StringName]([&"DRAGON", &"GROUND"])
+base_hp = 68
+base_attack = 90
+base_defense = 65
+base_special_attack = 50
+base_special_defense = 55
+base_speed = 82
+ev_attack = 2
+base_exp = 144
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2pxnl")]([SubResource("Resource_vipvc"), SubResource("Resource_el214"), SubResource("Resource_epfr3"), SubResource("Resource_2vj0x"), SubResource("Resource_orqa0"), SubResource("Resource_6gwv4"), SubResource("Resource_fh4of"), SubResource("Resource_yq6gd"), SubResource("Resource_k6dyo"), SubResource("Resource_pwifo"), SubResource("Resource_gog0d"), SubResource("Resource_r2bmk"), SubResource("Resource_xsrdt")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"DUALCHOP", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALESHOT", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TWISTER"])
+abilities = Array[StringName]([&"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"ROUGHSKIN"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_uvat2")]([SubResource("Resource_kucmn"), SubResource("Resource_jxsit")])
+height = 14
+weight = 560
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(-2, 48)
+front_sprite_offset = Vector2i(-5, 23)
+id = &"GABITE"
+display_name = "Gabite"

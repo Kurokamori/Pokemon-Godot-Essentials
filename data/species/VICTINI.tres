@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_phx8y"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p6nlg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bari6"]
+
+[sub_resource type="Resource" id="Resource_irna1"]
+script = ExtResource("2_p6nlg")
+move = &"VCREATE"
+
+[sub_resource type="Resource" id="Resource_o020o"]
+script = ExtResource("2_p6nlg")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_0civw"]
+script = ExtResource("2_p6nlg")
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_55pl4"]
+script = ExtResource("2_p6nlg")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_dgt58"]
+script = ExtResource("2_p6nlg")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_tm3iw"]
+script = ExtResource("2_p6nlg")
+level = 7
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_whwud"]
+script = ExtResource("2_p6nlg")
+level = 14
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_2rfib"]
+script = ExtResource("2_p6nlg")
+level = 21
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_loals"]
+script = ExtResource("2_p6nlg")
+level = 28
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_56645"]
+script = ExtResource("2_p6nlg")
+level = 35
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_0rdkf"]
+script = ExtResource("2_p6nlg")
+level = 42
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_11qsj"]
+script = ExtResource("2_p6nlg")
+level = 49
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_k6kji"]
+script = ExtResource("2_p6nlg")
+level = 56
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_lcxkr"]
+script = ExtResource("2_p6nlg")
+level = 63
+move = &"SEARINGSHOT"
+
+[sub_resource type="Resource" id="Resource_qvw35"]
+script = ExtResource("2_p6nlg")
+level = 70
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_hw0el"]
+script = ExtResource("2_p6nlg")
+level = 77
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_h4q2g"]
+script = ExtResource("2_p6nlg")
+level = 84
+move = &"OVERHEAT"
+
+[sub_resource type="Resource" id="Resource_m2n2p"]
+script = ExtResource("2_p6nlg")
+level = 91
+move = &"FINALGAMBIT"
+
+[resource]
+resource_name = "VICTINI"
+script = ExtResource("3_bari6")
+species = &"VICTINI"
+category = "Victory"
+pokedex_entry = "This Pokémon brings victory. It is said that Trainers with Victini always win, regardless of the type of encounter."
+types = Array[StringName]([&"PSYCHIC", &"FIRE"])
+base_hp = 100
+base_attack = 100
+base_defense = 100
+base_special_attack = 100
+base_special_defense = 100
+base_speed = 100
+ev_hp = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_p6nlg")]([SubResource("Resource_irna1"), SubResource("Resource_o020o"), SubResource("Resource_0civw"), SubResource("Resource_55pl4"), SubResource("Resource_dgt58"), SubResource("Resource_tm3iw"), SubResource("Resource_whwud"), SubResource("Resource_2rfib"), SubResource("Resource_loals"), SubResource("Resource_56645"), SubResource("Resource_0rdkf"), SubResource("Resource_11qsj"), SubResource("Resource_k6kji"), SubResource("Resource_lcxkr"), SubResource("Resource_qvw35"), SubResource("Resource_hw0el"), SubResource("Resource_h4q2g"), SubResource("Resource_m2n2p")])
+tutor_moves = Array[StringName]([&"BATONPASS", &"BLAZEKICK", &"BOUNCE", &"BRICKBREAK", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"EMBARGO", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"REST", &"RETURN", &"REVERSAL", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"UTURN", &"WILDCHARGE", &"WILLOWISP", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"VICTORYSTAR"])
+hatch_steps = 30720
+height = 4
+weight = 40
+color = &"Yellow"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-6, 22)
+shadow_size = 1
+id = &"VICTINI"
+display_name = "Victini"
+flags = Array[StringName]([&"Mythical"])

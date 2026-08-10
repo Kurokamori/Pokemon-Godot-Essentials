@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wqc43"]
+
+[resource]
+resource_name = "DRAGONSCALE"
+script = ExtResource("1_wqc43")
+name_plural = "Dragon Scales"
+price = 3000
+sell_price = 1000
+bp_price = 5
+description = "A thick and tough scale. Dragon-type Pokémon may be holding this item when caught."
+id = &"DRAGONSCALE"
+display_name = "Dragon Scale"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8msy4"]
+
+[resource]
+resource_name = "HM02"
+script = ExtResource("1_8msy4")
+name_plural = "HM02s"
+pocket = 4
+field_use = 4
+consumable = false
+show_quantity = false
+move = &"FLY"
+description = "The user soars and then strikes on the next turn. This can also be used to fly to any familiar town."
+id = &"HM02"
+display_name = "HM02"

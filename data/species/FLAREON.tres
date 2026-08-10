@@ -1,0 +1,152 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kjqj3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5tojk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ry0yi"]
+
+[sub_resource type="Resource" id="Resource_amkyq"]
+script = ExtResource("1_kjqj3")
+species = &"EEVEE"
+method = &"Item"
+parameter = "FIRESTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kf5vy"]
+script = ExtResource("2_5tojk")
+level = 0
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_rdfow"]
+script = ExtResource("2_5tojk")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_gekbu"]
+script = ExtResource("2_5tojk")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_capgy"]
+script = ExtResource("2_5tojk")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_hgimw"]
+script = ExtResource("2_5tojk")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_utqvg"]
+script = ExtResource("2_5tojk")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_rlskm"]
+script = ExtResource("2_5tojk")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_ggv6u"]
+script = ExtResource("2_5tojk")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_v00wk"]
+script = ExtResource("2_5tojk")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_rvudw"]
+script = ExtResource("2_5tojk")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bvcgd"]
+script = ExtResource("2_5tojk")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_q4rkv"]
+script = ExtResource("2_5tojk")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_jakwy"]
+script = ExtResource("2_5tojk")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_5q8n3"]
+script = ExtResource("2_5tojk")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ljpq1"]
+script = ExtResource("2_5tojk")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_omnpd"]
+script = ExtResource("2_5tojk")
+level = 20
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_6ietp"]
+script = ExtResource("2_5tojk")
+level = 25
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_hocdu"]
+script = ExtResource("2_5tojk")
+level = 30
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_s3x1r"]
+script = ExtResource("2_5tojk")
+level = 35
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_ug7bi"]
+script = ExtResource("2_5tojk")
+level = 40
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_xrpae"]
+script = ExtResource("2_5tojk")
+level = 45
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_v646x"]
+script = ExtResource("2_5tojk")
+level = 50
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_6gdbt"]
+script = ExtResource("2_5tojk")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "FLAREON"
+script = ExtResource("3_ry0yi")
+species = &"FLAREON"
+category = "Flame"
+pokedex_entry = "Flareon's fluffy fur releases heat into the air so that its body does not get excessively hot. Its body temperature can rise to a maximum of 1,650 degrees F."
+types = Array[StringName]([&"FIRE"])
+base_hp = 65
+base_attack = 130
+base_defense = 60
+base_special_attack = 95
+base_special_defense = 110
+base_speed = 65
+ev_attack = 2
+base_exp = 184
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5tojk")]([SubResource("Resource_kf5vy"), SubResource("Resource_rdfow"), SubResource("Resource_gekbu"), SubResource("Resource_capgy"), SubResource("Resource_hgimw"), SubResource("Resource_utqvg"), SubResource("Resource_rlskm"), SubResource("Resource_ggv6u"), SubResource("Resource_v00wk"), SubResource("Resource_rvudw"), SubResource("Resource_bvcgd"), SubResource("Resource_q4rkv"), SubResource("Resource_jakwy"), SubResource("Resource_5q8n3"), SubResource("Resource_ljpq1"), SubResource("Resource_omnpd"), SubResource("Resource_6ietp"), SubResource("Resource_hocdu"), SubResource("Resource_s3x1r"), SubResource("Resource_ug7bi"), SubResource("Resource_xrpae"), SubResource("Resource_v646x"), SubResource("Resource_6gdbt")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BODYSLAM", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FIREFANG", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEALBELL", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"PAYDAY", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"WEATHERBALL", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"FLASHFIRE"])
+hidden_abilities = Array[StringName]([&"GUTS"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_kjqj3")]([SubResource("Resource_amkyq")])
+height = 9
+weight = 250
+shape = &"Quadruped"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(5, 26)
+shadow_size = 1
+id = &"FLAREON"
+display_name = "Flareon"

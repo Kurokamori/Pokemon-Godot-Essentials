@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ohg8q"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8ehhk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_b260x"]
+
+[sub_resource type="Resource" id="Resource_agii1"]
+script = ExtResource("2_8ehhk")
+move = &"SEISMICTOSS"
+
+[sub_resource type="Resource" id="Resource_nnjk0"]
+script = ExtResource("2_8ehhk")
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_f7epw"]
+script = ExtResource("2_8ehhk")
+level = 10
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_rykjf"]
+script = ExtResource("2_8ehhk")
+level = 20
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_3ecf0"]
+script = ExtResource("2_8ehhk")
+level = 30
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_l2gb4"]
+script = ExtResource("2_8ehhk")
+level = 40
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_6bgn8"]
+script = ExtResource("2_8ehhk")
+level = 50
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_tuwyk"]
+script = ExtResource("2_8ehhk")
+level = 60
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_0qg1d"]
+script = ExtResource("2_8ehhk")
+level = 70
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_8h1g2"]
+script = ExtResource("2_8ehhk")
+level = 80
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_y1w70"]
+script = ExtResource("2_8ehhk")
+level = 90
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_i7hi1"]
+script = ExtResource("2_8ehhk")
+level = 100
+move = &"JUDGMENT"
+
+[resource]
+resource_name = "ARCEUS_10"
+script = ExtResource("3_b260x")
+species = &"ARCEUS"
+form = 10
+form_name = "Fire Type"
+category = "Alpha"
+pokedex_entry = "It is described in mythology as the Pokémon that shaped the universe with its 1,000 arms."
+pokedex_form = 10
+types = Array[StringName]([&"FIRE"])
+base_hp = 120
+base_attack = 120
+base_defense = 120
+base_special_attack = 120
+base_special_defense = 120
+base_speed = 120
+ev_hp = 3
+base_exp = 360
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_8ehhk")]([SubResource("Resource_agii1"), SubResource("Resource_nnjk0"), SubResource("Resource_f7epw"), SubResource("Resource_rykjf"), SubResource("Resource_3ecf0"), SubResource("Resource_l2gb4"), SubResource("Resource_6bgn8"), SubResource("Resource_tuwyk"), SubResource("Resource_0qg1d"), SubResource("Resource_8h1g2"), SubResource("Resource_y1w70"), SubResource("Resource_i7hi1")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AQUATAIL", &"AVALANCHE", &"BLIZZARD", &"BRICKBREAK", &"BRINE", &"BULLDOZE", &"BULLETSEED", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFOG", &"DIVE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"DREAMEATER", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FLASHCANNON", &"FLY", &"FOCUSBLAST", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HAIL", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"LIQUIDATION", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"OVERHEAT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"QUASH", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"TRICKROOM", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WILLOWISP", &"WORKUP", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"MULTITYPE"])
+hatch_steps = 30720
+height = 32
+weight = 3200
+color = &"White"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(2, 14)
+shadow_size = 3
+id = &"ARCEUS_10"
+display_name = "Arceus"
+flags = Array[StringName]([&"Mythical"])

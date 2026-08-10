@@ -1,0 +1,74 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_30bui"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h0eae"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qolqe"]
+
+[sub_resource type="Resource" id="Resource_q2u72"]
+script = ExtResource("1_30bui")
+species = &"WORMADAM"
+method = &"LevelFemale"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_w6cvs"]
+script = ExtResource("1_30bui")
+species = &"MOTHIM"
+method = &"LevelMale"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_l2d3l"]
+script = ExtResource("2_h0eae")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_o0ff5"]
+script = ExtResource("2_h0eae")
+level = 10
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_c4ygk"]
+script = ExtResource("2_h0eae")
+level = 15
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_3d5vx"]
+script = ExtResource("2_h0eae")
+level = 20
+move = &"STRINGSHOT"
+
+[resource]
+resource_name = "BURMY_2"
+script = ExtResource("3_qolqe")
+species = &"BURMY"
+form = 2
+form_name = "Trash Cloak"
+category = "Bagworm"
+pokedex_entry = "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves."
+pokedex_form = 2
+types = Array[StringName]([&"BUG"])
+base_hp = 40
+base_attack = 29
+base_defense = 45
+base_special_attack = 29
+base_special_defense = 45
+base_speed = 36
+ev_special_defense = 1
+base_exp = 45
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h0eae")]([SubResource("Resource_l2d3l"), SubResource("Resource_o0ff5"), SubResource("Resource_c4ygk"), SubResource("Resource_3d5vx")])
+tutor_moves = Array[StringName]([&"BUGBITE", &"ELECTROWEB", &"HIDDENPOWER", &"PROTECT", &"SNORE", &"STRINGSHOT"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_30bui")]([SubResource("Resource_q2u72"), SubResource("Resource_w6cvs")])
+height = 2
+weight = 34
+shape = &"HeadBase"
+generation = 4
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 1
+id = &"BURMY_2"
+display_name = "Burmy"
+flags = Array[StringName]([&"InheritFormFromMother"])

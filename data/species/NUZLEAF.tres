@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_b4j8s"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wmp1a"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7ykau"]
+
+[sub_resource type="Resource" id="Resource_gvltb"]
+script = ExtResource("1_b4j8s")
+species = &"SHIFTRY"
+method = &"Item"
+parameter = "LEAFSTONE"
+
+[sub_resource type="Resource" id="Resource_wbgp0"]
+script = ExtResource("1_b4j8s")
+species = &"SEEDOT"
+method = &"Level"
+parameter = "14"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_qlv0n"]
+script = ExtResource("2_wmp1a")
+level = 0
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_drc1j"]
+script = ExtResource("2_wmp1a")
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_rewdg"]
+script = ExtResource("2_wmp1a")
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_wkvjp"]
+script = ExtResource("2_wmp1a")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_b2loj"]
+script = ExtResource("2_wmp1a")
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_1d7wn"]
+script = ExtResource("2_wmp1a")
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_1hv5l"]
+script = ExtResource("2_wmp1a")
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_eom0y"]
+script = ExtResource("2_wmp1a")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_q2el6"]
+script = ExtResource("2_wmp1a")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_sxlok"]
+script = ExtResource("2_wmp1a")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_tndeu"]
+script = ExtResource("2_wmp1a")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_p4v50"]
+script = ExtResource("2_wmp1a")
+level = 9
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_fefoy"]
+script = ExtResource("2_wmp1a")
+level = 12
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_utn6l"]
+script = ExtResource("2_wmp1a")
+level = 18
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_7trpv"]
+script = ExtResource("2_wmp1a")
+level = 24
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_go2g6"]
+script = ExtResource("2_wmp1a")
+level = 30
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_ad75i"]
+script = ExtResource("2_wmp1a")
+level = 36
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_1yts1"]
+script = ExtResource("2_wmp1a")
+level = 43
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_bq4r3"]
+script = ExtResource("2_wmp1a")
+level = 50
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_4r2yl"]
+script = ExtResource("2_wmp1a")
+level = 57
+move = &"LEAFBLADE"
+
+[resource]
+resource_name = "NUZLEAF"
+script = ExtResource("3_7ykau")
+species = &"NUZLEAF"
+category = "Wily"
+pokedex_entry = "A forest-dwelling Pokémon that is skilled at climbing trees. Its long and pointed nose is its weak point. It loses power if the nose is gripped."
+types = Array[StringName]([&"GRASS", &"DARK"])
+base_hp = 70
+base_attack = 70
+base_defense = 40
+base_special_attack = 60
+base_special_defense = 40
+base_speed = 60
+ev_attack = 2
+base_exp = 119
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wmp1a")]([SubResource("Resource_qlv0n"), SubResource("Resource_drc1j"), SubResource("Resource_rewdg"), SubResource("Resource_wkvjp"), SubResource("Resource_b2loj"), SubResource("Resource_1d7wn"), SubResource("Resource_1hv5l"), SubResource("Resource_eom0y"), SubResource("Resource_q2el6"), SubResource("Resource_sxlok"), SubResource("Resource_tndeu"), SubResource("Resource_p4v50"), SubResource("Resource_fefoy"), SubResource("Resource_utn6l"), SubResource("Resource_7trpv"), SubResource("Resource_go2g6"), SubResource("Resource_ad75i"), SubResource("Resource_1yts1"), SubResource("Resource_bq4r3"), SubResource("Resource_4r2yl")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BRICKBREAK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FALSESWIPE", &"FLASH", &"FLING", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"LASHOUT", &"LEAFBLADE", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"TORMENT", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+wild_item_uncommon = Array[StringName]([&"POWERHERB"])
+egg_groups = Array[StringName]([&"Field", &"Grass"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_b4j8s")]([SubResource("Resource_gvltb"), SubResource("Resource_wbgp0")])
+height = 10
+weight = 280
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(4, 24)
+shadow_size = 1
+id = &"NUZLEAF"
+display_name = "Nuzleaf"

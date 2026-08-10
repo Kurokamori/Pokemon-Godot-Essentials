@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3inok"]
+
+[resource]
+resource_name = "PEARL"
+script = ExtResource("1_3inok")
+name_plural = "Pearls"
+price = 2000
+sell_price = 1000
+description = "A somewhat-small pearl that sparkles in a pretty silver color. It can be sold cheaply to shops."
+id = &"PEARL"
+display_name = "Pearl"
+flags = Array[StringName]([&"Fling_30"])

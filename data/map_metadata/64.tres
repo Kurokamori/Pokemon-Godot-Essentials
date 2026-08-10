@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_snny0"]
+
+[resource]
+resource_name = "64"
+script = ExtResource("1_snny0")
+map_id = 64
+town_map_position = Array[int]([0, 17, 10])
+battle_background = "indoor1"
+id = &"64"
+display_name = "Battle Frontier"
+flags = Array[StringName]([&"DisableBoxLink"])

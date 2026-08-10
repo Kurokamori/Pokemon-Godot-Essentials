@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_reec4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yhv7p"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mp0fk"]
+
+[sub_resource type="Resource" id="Resource_vgq8x"]
+script = ExtResource("1_reec4")
+species = &"BEAUTIFLY"
+method = &"Level"
+parameter = "10"
+
+[sub_resource type="Resource" id="Resource_jumhq"]
+script = ExtResource("1_reec4")
+species = &"WURMPLE"
+method = &"Silcoon"
+parameter = "7"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_wa8qo"]
+script = ExtResource("2_yhv7p")
+level = 0
+move = &"HARDEN"
+
+[resource]
+resource_name = "SILCOON"
+script = ExtResource("3_mp0fk")
+species = &"SILCOON"
+category = "Cocoon"
+pokedex_entry = "It prepares for evolution using the energy it stored while it was a Wurmple. It keeps watch over the surroundings with its two eyes."
+types = Array[StringName]([&"BUG"])
+base_hp = 50
+base_attack = 35
+base_defense = 55
+base_special_attack = 25
+base_special_defense = 25
+base_speed = 15
+ev_defense = 2
+base_exp = 72
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yhv7p")]([SubResource("Resource_wa8qo")])
+tutor_moves = Array[StringName]([&"BUGBITE", &"ELECTROWEB", &"IRONDEFENSE", &"STRINGSHOT"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_reec4")]([SubResource("Resource_vgq8x"), SubResource("Resource_jumhq")])
+height = 6
+weight = 100
+color = &"White"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 26)
+id = &"SILCOON"
+display_name = "Silcoon"

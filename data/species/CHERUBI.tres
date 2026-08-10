@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_n5gx2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ahgd2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a8cmu"]
+
+[sub_resource type="Resource" id="Resource_2miho"]
+script = ExtResource("1_n5gx2")
+species = &"CHERRIM"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_35mqt"]
+script = ExtResource("2_ahgd2")
+move = &"MORNINGSUN"
+
+[sub_resource type="Resource" id="Resource_irj7b"]
+script = ExtResource("2_ahgd2")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_twthy"]
+script = ExtResource("2_ahgd2")
+level = 5
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_4hc4i"]
+script = ExtResource("2_ahgd2")
+level = 10
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_skts8"]
+script = ExtResource("2_ahgd2")
+level = 15
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_r8h4m"]
+script = ExtResource("2_ahgd2")
+level = 20
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_m5f1p"]
+script = ExtResource("2_ahgd2")
+level = 26
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_ay4ja"]
+script = ExtResource("2_ahgd2")
+level = 30
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_qfhly"]
+script = ExtResource("2_ahgd2")
+level = 35
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_yf2xt"]
+script = ExtResource("2_ahgd2")
+level = 40
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_ptov8"]
+script = ExtResource("2_ahgd2")
+level = 45
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "CHERUBI"
+script = ExtResource("3_a8cmu")
+species = &"CHERUBI"
+category = "Cherry"
+pokedex_entry = "The small ball holds the nutrients needed for evolution. Apparently, it is very sweet and tasty."
+types = Array[StringName]([&"GRASS"])
+base_hp = 45
+base_attack = 35
+base_defense = 45
+base_special_attack = 62
+base_special_defense = 53
+base_speed = 35
+ev_special_attack = 1
+base_exp = 55
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ahgd2")]([SubResource("Resource_35mqt"), SubResource("Resource_irj7b"), SubResource("Resource_twthy"), SubResource("Resource_4hc4i"), SubResource("Resource_skts8"), SubResource("Resource_r8h4m"), SubResource("Resource_m5f1p"), SubResource("Resource_ay4ja"), SubResource("Resource_qfhly"), SubResource("Resource_yf2xt"), SubResource("Resource_ptov8")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HELPINGHAND", &"HIDDENPOWER", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POLLENPUFF", &"PROTECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WEATHERBALL", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AROMATHERAPY", &"DEFENSECURL", &"FLOWERSHIELD", &"GRASSYTERRAIN", &"HEALINGWISH", &"HEALPULSE", &"NATUREPOWER", &"RAZORLEAF", &"ROLLOUT", &"SEEDBOMB", &"SWEETSCENT", &"TICKLE", &"WEATHERBALL"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+wild_item_uncommon = Array[StringName]([&"MIRACLESEED"])
+egg_groups = Array[StringName]([&"Fairy", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_n5gx2")]([SubResource("Resource_2miho")])
+height = 4
+weight = 33
+color = &"Pink"
+shape = &"MultiBody"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 35)
+shadow_size = 1
+id = &"CHERUBI"
+display_name = "Cherubi"

@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_es5n3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d7dl7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_icut3"]
+
+[sub_resource type="Resource" id="Resource_vs8rq"]
+script = ExtResource("1_es5n3")
+species = &"KINGDRA"
+method = &"TradeItem"
+parameter = "DRAGONSCALE"
+
+[sub_resource type="Resource" id="Resource_2ucqx"]
+script = ExtResource("1_es5n3")
+species = &"HORSEA"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0ch7q"]
+script = ExtResource("2_d7dl7")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_w3f8d"]
+script = ExtResource("2_d7dl7")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_c8y5k"]
+script = ExtResource("2_d7dl7")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_xg84b"]
+script = ExtResource("2_d7dl7")
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_6hv0t"]
+script = ExtResource("2_d7dl7")
+level = 15
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_7ivba"]
+script = ExtResource("2_d7dl7")
+level = 20
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_r7kw1"]
+script = ExtResource("2_d7dl7")
+level = 25
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_wm31h"]
+script = ExtResource("2_d7dl7")
+level = 30
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_cun3j"]
+script = ExtResource("2_d7dl7")
+level = 37
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_rywu4"]
+script = ExtResource("2_d7dl7")
+level = 44
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_b0p44"]
+script = ExtResource("2_d7dl7")
+level = 51
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_57sf7"]
+script = ExtResource("2_d7dl7")
+level = 58
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_01pho"]
+script = ExtResource("2_d7dl7")
+level = 65
+move = &"RAINDANCE"
+
+[resource]
+resource_name = "SEADRA"
+script = ExtResource("3_icut3")
+species = &"SEADRA"
+category = "Dragon"
+pokedex_entry = "The poisonous barbs all over its body are highly valued as ingredients for making traditional herbal medicine. It shows no mercy to anything approaching its nest."
+types = Array[StringName]([&"WATER"])
+base_hp = 55
+base_attack = 65
+base_defense = 95
+base_special_attack = 95
+base_special_defense = 45
+base_speed = 85
+ev_defense = 1
+ev_special_attack = 1
+base_exp = 154
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_d7dl7")]([SubResource("Resource_0ch7q"), SubResource("Resource_w3f8d"), SubResource("Resource_c8y5k"), SubResource("Resource_xg84b"), SubResource("Resource_6hv0t"), SubResource("Resource_7ivba"), SubResource("Resource_r7kw1"), SubResource("Resource_wm31h"), SubResource("Resource_cun3j"), SubResource("Resource_rywu4"), SubResource("Resource_b0p44"), SubResource("Resource_57sf7"), SubResource("Resource_01pho")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLIPTURN", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LASERFOCUS", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"POISONPOINT", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"DAMP"])
+wild_item_uncommon = Array[StringName]([&"DRAGONSCALE"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_es5n3")]([SubResource("Resource_vs8rq"), SubResource("Resource_2ucqx")])
+height = 12
+weight = 250
+color = &"Blue"
+shape = &"HeadBase"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 14)
+shadow_size = 1
+id = &"SEADRA"
+display_name = "Seadra"

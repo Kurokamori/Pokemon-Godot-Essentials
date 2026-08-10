@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_df3qr"]
+
+[resource]
+resource_name = "PREMIER"
+script = ExtResource("1_df3qr")
+icon_position = 69
+description = "Special Holiday Ribbon."
+id = &"PREMIER"
+display_name = "Premier Ribbon"

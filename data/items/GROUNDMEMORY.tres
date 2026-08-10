@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_i7jh6"]
+
+[resource]
+resource_name = "GROUNDMEMORY"
+script = ExtResource("1_i7jh6")
+name_plural = "Ground Memories"
+price = 1000
+sell_price = 500
+description = "A memory disc containing Ground-type data. It changes the holder's type if held by a certain Pokémon."
+id = &"GROUNDMEMORY"
+display_name = "Ground Memory"
+flags = Array[StringName]([&"Fling_50"])

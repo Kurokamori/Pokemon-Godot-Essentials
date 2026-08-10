@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wocga"]
+
+[resource]
+resource_name = "SOOTHEBELL"
+script = ExtResource("1_wocga")
+name_plural = "Soothe Bells"
+price = 4000
+sell_price = 2000
+bp_price = 15
+description = "An item to be held by a Pokémon. The comforting chime of this bell calms the holder, making it friendly."
+id = &"SOOTHEBELL"
+display_name = "Soothe Bell"
+flags = Array[StringName]([&"Fling_10"])

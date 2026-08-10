@@ -1,0 +1,152 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_q6uk5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ldflv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_im1sc"]
+
+[sub_resource type="Resource" id="Resource_7ul53"]
+script = ExtResource("1_q6uk5")
+species = &"NINETALES"
+method = &"Item"
+parameter = "ICESTONE"
+
+[sub_resource type="Resource" id="Resource_t8tei"]
+script = ExtResource("2_ldflv")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_gghh1"]
+script = ExtResource("2_ldflv")
+level = 4
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_rtocx"]
+script = ExtResource("2_ldflv")
+level = 7
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_nj0ny"]
+script = ExtResource("2_ldflv")
+level = 9
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_nqy1p"]
+script = ExtResource("2_ldflv")
+level = 10
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_tggc3"]
+script = ExtResource("2_ldflv")
+level = 12
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_8qnim"]
+script = ExtResource("2_ldflv")
+level = 15
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_ll7ep"]
+script = ExtResource("2_ldflv")
+level = 18
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_c1s64"]
+script = ExtResource("2_ldflv")
+level = 20
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_5l874"]
+script = ExtResource("2_ldflv")
+level = 23
+move = &"FEINTATTACK"
+
+[sub_resource type="Resource" id="Resource_7y7dy"]
+script = ExtResource("2_ldflv")
+level = 26
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_e7xiv"]
+script = ExtResource("2_ldflv")
+level = 28
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_bju88"]
+script = ExtResource("2_ldflv")
+level = 31
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_ctmtp"]
+script = ExtResource("2_ldflv")
+level = 34
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_u18hi"]
+script = ExtResource("2_ldflv")
+level = 36
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_htbne"]
+script = ExtResource("2_ldflv")
+level = 39
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_t8fke"]
+script = ExtResource("2_ldflv")
+level = 42
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_vu84k"]
+script = ExtResource("2_ldflv")
+level = 44
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_828ef"]
+script = ExtResource("2_ldflv")
+level = 47
+move = &"CAPTIVATE"
+
+[sub_resource type="Resource" id="Resource_ec6aj"]
+script = ExtResource("2_ldflv")
+level = 50
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "VULPIX_1"
+script = ExtResource("3_im1sc")
+species = &"VULPIX"
+form = 1
+form_name = "Alolan"
+category = "Fox"
+pokedex_entry = "In hot weather, this Pokémon makes ice shards with its six tails and sprays them around to cool itself off."
+pokedex_form = 1
+types = Array[StringName]([&"ICE"])
+base_hp = 38
+base_attack = 41
+base_defense = 40
+base_special_attack = 50
+base_special_defense = 65
+base_speed = 65
+ev_speed = 1
+base_exp = 60
+gender_ratio = &"Female75Percent"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ldflv")]([SubResource("Resource_t8tei"), SubResource("Resource_gghh1"), SubResource("Resource_rtocx"), SubResource("Resource_nj0ny"), SubResource("Resource_nqy1p"), SubResource("Resource_tggc3"), SubResource("Resource_8qnim"), SubResource("Resource_ll7ep"), SubResource("Resource_c1s64"), SubResource("Resource_5l874"), SubResource("Resource_7y7dy"), SubResource("Resource_e7xiv"), SubResource("Resource_bju88"), SubResource("Resource_ctmtp"), SubResource("Resource_u18hi"), SubResource("Resource_htbne"), SubResource("Resource_t8fke"), SubResource("Resource_vu84k"), SubResource("Resource_828ef"), SubResource("Resource_ec6aj")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AQUATAIL", &"ATTRACT", &"AURORAVEIL", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"ENCORE", &"ENDURE", &"FACADE", &"FOULPLAY", &"FROSTBREATH", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HEX", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"WEATHERBALL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AGILITY", &"CHARM", &"DISABLE", &"ENCORE", &"EXTRASENSORY", &"FLAIL", &"FREEZEDRY", &"HOWL", &"HYPNOSIS", &"MOONBLAST", &"POWERSWAP", &"SECRETPOWER", &"SPITE", &"TAILSLAP"])
+abilities = Array[StringName]([&"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"SNOWWARNING"])
+wild_item_uncommon = Array[StringName]([&"SNOWBALL"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_q6uk5")]([SubResource("Resource_7ul53")])
+height = 6
+weight = 99
+color = &"White"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 7
+back_sprite_offset = Vector2i(-2, 56)
+front_sprite_offset = Vector2i(0, 28)
+id = &"VULPIX_1"
+display_name = "Vulpix"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

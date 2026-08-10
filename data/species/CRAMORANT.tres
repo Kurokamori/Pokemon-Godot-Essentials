@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tw5g5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_sloim"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vs27g"]
+
+[sub_resource type="Resource" id="Resource_b2xgg"]
+script = ExtResource("2_sloim")
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_sxfes"]
+script = ExtResource("2_sloim")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_yc66q"]
+script = ExtResource("2_sloim")
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_4uwv6"]
+script = ExtResource("2_sloim")
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_qxfuq"]
+script = ExtResource("2_sloim")
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_q25re"]
+script = ExtResource("2_sloim")
+level = 7
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_t4qpq"]
+script = ExtResource("2_sloim")
+level = 14
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_hbp70"]
+script = ExtResource("2_sloim")
+level = 21
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_8kuyn"]
+script = ExtResource("2_sloim")
+level = 28
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_0hj60"]
+script = ExtResource("2_sloim")
+level = 35
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_xrwr6"]
+script = ExtResource("2_sloim")
+level = 42
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_g2byo"]
+script = ExtResource("2_sloim")
+level = 49
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_66rq8"]
+script = ExtResource("2_sloim")
+level = 56
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "CRAMORANT"
+script = ExtResource("3_vs27g")
+species = &"CRAMORANT"
+category = "Gulp"
+pokedex_entry = "It's so strong that it can knock out some opponents in a single hit, but it also may forget what it's battling midfight."
+types = Array[StringName]([&"FLYING", &"WATER"])
+base_hp = 70
+base_attack = 85
+base_defense = 55
+base_special_attack = 85
+base_special_defense = 95
+base_speed = 85
+ev_special_defense = 2
+base_exp = 166
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_sloim")]([SubResource("Resource_b2xgg"), SubResource("Resource_sxfes"), SubResource("Resource_yc66q"), SubResource("Resource_4uwv6"), SubResource("Resource_qxfuq"), SubResource("Resource_q25re"), SubResource("Resource_t4qpq"), SubResource("Resource_hbp70"), SubResource("Resource_8kuyn"), SubResource("Resource_0hj60"), SubResource("Resource_xrwr6"), SubResource("Resource_g2byo"), SubResource("Resource_66rq8")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"THIEF", &"THROATCHOP", &"TOXIC", &"UPROAR", &"WEATHERBALL", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AERIALACE", &"AQUARING", &"DEFOG", &"FEATHERDANCE", &"ROOST"])
+abilities = Array[StringName]([&"GULPMISSILE"])
+egg_groups = Array[StringName]([&"Water1", &"Flying"])
+hatch_steps = 5120
+height = 8
+weight = 180
+color = &"Blue"
+shape = &"Winged"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 14)
+id = &"CRAMORANT"
+display_name = "Cramorant"

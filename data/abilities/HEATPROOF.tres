@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_lbreh"]
+
+[resource]
+resource_name = "HEATPROOF"
+script = ExtResource("1_lbreh")
+description = "Weakens the power of Fire-type moves."
+id = &"HEATPROOF"
+display_name = "Heatproof"

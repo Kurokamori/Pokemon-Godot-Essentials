@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TargetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/target_data.gd" id="1_hqgn7"]
+
+[resource]
+resource_name = "None"
+script = ExtResource("1_hqgn7")
+num_targets = 0
+id = &"None"
+display_name = "None"

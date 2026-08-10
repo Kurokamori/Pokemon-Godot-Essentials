@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_bxpio"]
+
+[resource]
+resource_name = "VINEWHIP"
+script = ExtResource("1_bxpio")
+type = &"GRASS"
+category = 0
+power = 45
+total_pp = 25
+description = "The target is struck with slender, whiplike vines to inflict damage."
+id = &"VINEWHIP"
+display_name = "Vine Whip"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

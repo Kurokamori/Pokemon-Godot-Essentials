@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_f2s1o"]
+
+[resource]
+resource_name = "HARVEST"
+script = ExtResource("1_f2s1o")
+description = "May create another Berry after one is used."
+id = &"HARVEST"
+display_name = "Harvest"

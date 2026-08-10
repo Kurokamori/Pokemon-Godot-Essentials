@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_i0453"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k4cx8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_re4mo"]
+
+[sub_resource type="Resource" id="Resource_y0g4d"]
+script = ExtResource("1_i0453")
+species = &"STUFFUL"
+method = &"Level"
+parameter = "27"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_usmxx"]
+script = ExtResource("2_k4cx8")
+level = 0
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_fah83"]
+script = ExtResource("2_k4cx8")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7x8cs"]
+script = ExtResource("2_k4cx8")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_3k72i"]
+script = ExtResource("2_k4cx8")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_40eo5"]
+script = ExtResource("2_k4cx8")
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_jd4pv"]
+script = ExtResource("2_k4cx8")
+level = 12
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_2xqsg"]
+script = ExtResource("2_k4cx8")
+level = 16
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_ytij0"]
+script = ExtResource("2_k4cx8")
+level = 20
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_nubff"]
+script = ExtResource("2_k4cx8")
+level = 24
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_tfb4i"]
+script = ExtResource("2_k4cx8")
+level = 30
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_7dbtq"]
+script = ExtResource("2_k4cx8")
+level = 36
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_41rvu"]
+script = ExtResource("2_k4cx8")
+level = 42
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_8jww4"]
+script = ExtResource("2_k4cx8")
+level = 48
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_owyta"]
+script = ExtResource("2_k4cx8")
+level = 54
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_8h2hi"]
+script = ExtResource("2_k4cx8")
+level = 60
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "BEWEAR"
+script = ExtResource("3_re4mo")
+species = &"BEWEAR"
+category = "Strong Arm"
+pokedex_entry = "It waves its hands wildly in intimidation and warning. Life is over for anyone who doesn't run away as fast as possible."
+types = Array[StringName]([&"NORMAL", &"FIGHTING"])
+base_hp = 120
+base_attack = 125
+base_defense = 80
+base_special_attack = 55
+base_special_defense = 60
+base_speed = 60
+ev_attack = 2
+base_exp = 175
+catch_rate = 70
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k4cx8")]([SubResource("Resource_usmxx"), SubResource("Resource_fah83"), SubResource("Resource_7x8cs"), SubResource("Resource_3k72i"), SubResource("Resource_40eo5"), SubResource("Resource_jd4pv"), SubResource("Resource_2xqsg"), SubResource("Resource_ytij0"), SubResource("Resource_nubff"), SubResource("Resource_tfb4i"), SubResource("Resource_7dbtq"), SubResource("Resource_41rvu"), SubResource("Resource_8jww4"), SubResource("Resource_owyta"), SubResource("Resource_8h2hi")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BIND", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DARKESTLARIAT", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IRONHEAD", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"FLUFFY", &"KLUTZ"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_i0453")]([SubResource("Resource_y0g4d")])
+height = 21
+weight = 1350
+color = &"Pink"
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(-1, 17)
+id = &"BEWEAR"
+display_name = "Bewear"

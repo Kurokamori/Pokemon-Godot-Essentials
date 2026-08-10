@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_uwxfy"]
+
+[resource]
+resource_name = "ALERT"
+script = ExtResource("1_uwxfy")
+icon_position = 56
+description = "A Ribbon for recalling an invigorating event that created life energy."
+id = &"ALERT"
+display_name = "Alert Ribbon"

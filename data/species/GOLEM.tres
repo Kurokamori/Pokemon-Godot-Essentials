@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rljly"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4rtah"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_34lfj"]
+
+[sub_resource type="Resource" id="Resource_7fsip"]
+script = ExtResource("1_rljly")
+species = &"GRAVELER"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kxayr"]
+script = ExtResource("2_4rtah")
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_jk77u"]
+script = ExtResource("2_4rtah")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_m2o0c"]
+script = ExtResource("2_4rtah")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_i0ig3"]
+script = ExtResource("2_4rtah")
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_5i6tc"]
+script = ExtResource("2_4rtah")
+level = 4
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_s2mag"]
+script = ExtResource("2_4rtah")
+level = 6
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_awthy"]
+script = ExtResource("2_4rtah")
+level = 10
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_mc4v7"]
+script = ExtResource("2_4rtah")
+level = 12
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_2rfao"]
+script = ExtResource("2_4rtah")
+level = 16
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_ertxx"]
+script = ExtResource("2_4rtah")
+level = 18
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_o3hig"]
+script = ExtResource("2_4rtah")
+level = 22
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_byflo"]
+script = ExtResource("2_4rtah")
+level = 24
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_3wl2o"]
+script = ExtResource("2_4rtah")
+level = 30
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_cf03c"]
+script = ExtResource("2_4rtah")
+level = 34
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_k2wby"]
+script = ExtResource("2_4rtah")
+level = 40
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_1w5lj"]
+script = ExtResource("2_4rtah")
+level = 44
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_q2pv5"]
+script = ExtResource("2_4rtah")
+level = 50
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_aaski"]
+script = ExtResource("2_4rtah")
+level = 54
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_nxfeo"]
+script = ExtResource("2_4rtah")
+level = 60
+move = &"HEAVYSLAM"
+
+[resource]
+resource_name = "GOLEM"
+script = ExtResource("3_34lfj")
+species = &"GOLEM"
+category = "Megaton"
+pokedex_entry = "It is said to live in volcanic craters on mountain peaks. Once a year, it sheds its hide and grows larger. The shed hide crumbles and returns to the soil."
+types = Array[StringName]([&"ROCK", &"GROUND"])
+base_hp = 80
+base_attack = 120
+base_defense = 130
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 45
+ev_defense = 3
+base_exp = 248
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4rtah")]([SubResource("Resource_kxayr"), SubResource("Resource_jk77u"), SubResource("Resource_m2o0c"), SubResource("Resource_i0ig3"), SubResource("Resource_5i6tc"), SubResource("Resource_s2mag"), SubResource("Resource_awthy"), SubResource("Resource_mc4v7"), SubResource("Resource_2rfao"), SubResource("Resource_ertxx"), SubResource("Resource_o3hig"), SubResource("Resource_byflo"), SubResource("Resource_3wl2o"), SubResource("Resource_cf03c"), SubResource("Resource_k2wby"), SubResource("Resource_1w5lj"), SubResource("Resource_q2pv5"), SubResource("Resource_aaski"), SubResource("Resource_nxfeo")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDERPUNCH"])
+abilities = Array[StringName]([&"ROCKHEAD", &"STURDY"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+wild_item_uncommon = Array[StringName]([&"EVERSTONE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_rljly")]([SubResource("Resource_7fsip")])
+height = 14
+weight = 3000
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 21)
+id = &"GOLEM"
+display_name = "Golem"

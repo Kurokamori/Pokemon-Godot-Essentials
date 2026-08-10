@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ka5bt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hhe4y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lqh0l"]
+
+[sub_resource type="Resource" id="Resource_bgo86"]
+script = ExtResource("1_ka5bt")
+species = &"BOLDORE"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_21ohd"]
+script = ExtResource("2_hhe4y")
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_nuiuc"]
+script = ExtResource("2_hhe4y")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_nmav7"]
+script = ExtResource("2_hhe4y")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cq46k"]
+script = ExtResource("2_hhe4y")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_37r6k"]
+script = ExtResource("2_hhe4y")
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_8j0ln"]
+script = ExtResource("2_hhe4y")
+level = 12
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_k32ew"]
+script = ExtResource("2_hhe4y")
+level = 16
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_woshf"]
+script = ExtResource("2_hhe4y")
+level = 20
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_3dqcv"]
+script = ExtResource("2_hhe4y")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ap0jq"]
+script = ExtResource("2_hhe4y")
+level = 30
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_sp4sq"]
+script = ExtResource("2_hhe4y")
+level = 36
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_u1lti"]
+script = ExtResource("2_hhe4y")
+level = 42
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_0eg2q"]
+script = ExtResource("2_hhe4y")
+level = 48
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_i8lhc"]
+script = ExtResource("2_hhe4y")
+level = 54
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "GIGALITH"
+script = ExtResource("3_lqh0l")
+species = &"GIGALITH"
+category = "Compressed"
+pokedex_entry = "The solar energy absorbed by its body's orange crystals is magnified internally and fired from its mouth."
+types = Array[StringName]([&"ROCK"])
+base_hp = 85
+base_attack = 135
+base_defense = 130
+base_special_attack = 60
+base_special_defense = 80
+base_speed = 25
+ev_attack = 3
+base_exp = 258
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hhe4y")]([SubResource("Resource_21ohd"), SubResource("Resource_nuiuc"), SubResource("Resource_nmav7"), SubResource("Resource_cq46k"), SubResource("Resource_37r6k"), SubResource("Resource_8j0ln"), SubResource("Resource_k32ew"), SubResource("Resource_woshf"), SubResource("Resource_3dqcv"), SubResource("Resource_ap0jq"), SubResource("Resource_sp4sq"), SubResource("Resource_u1lti"), SubResource("Resource_0eg2q"), SubResource("Resource_i8lhc")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYPRESS", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HEAVYSLAM", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POWERGEM", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"THROATCHOP", &"TOXIC", &"WEATHERBALL"])
+abilities = Array[StringName]([&"STURDY", &"SANDSTREAM"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_common = Array[StringName]([&"EVERSTONE"])
+wild_item_uncommon = Array[StringName]([&"HARDSTONE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ka5bt")]([SubResource("Resource_bgo86")])
+height = 17
+weight = 2600
+color = &"Blue"
+shape = &"Multiped"
+generation = 5
+back_sprite_offset = Vector2i(5, 48)
+front_sprite_offset = Vector2i(-1, 20)
+shadow_size = 3
+id = &"GIGALITH"
+display_name = "Gigalith"

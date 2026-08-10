@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_afo4b"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ptpmg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2ql1x"]
+
+[sub_resource type="Resource" id="Resource_jbyx1"]
+script = ExtResource("1_afo4b")
+species = &"SHARPEDO"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_rlvsy"]
+script = ExtResource("2_ptpmg")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_2n72f"]
+script = ExtResource("2_ptpmg")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_0gh0x"]
+script = ExtResource("2_ptpmg")
+level = 4
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_wvtd6"]
+script = ExtResource("2_ptpmg")
+level = 8
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_gguc3"]
+script = ExtResource("2_ptpmg")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_le8nt"]
+script = ExtResource("2_ptpmg")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_t8bg4"]
+script = ExtResource("2_ptpmg")
+level = 20
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_py3gw"]
+script = ExtResource("2_ptpmg")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_it6st"]
+script = ExtResource("2_ptpmg")
+level = 28
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_wicv8"]
+script = ExtResource("2_ptpmg")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_v641i"]
+script = ExtResource("2_ptpmg")
+level = 36
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ee7ox"]
+script = ExtResource("2_ptpmg")
+level = 40
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_4jyxc"]
+script = ExtResource("2_ptpmg")
+level = 44
+move = &"TAKEDOWN"
+
+[resource]
+resource_name = "CARVANHA"
+script = ExtResource("3_2ql1x")
+species = &"CARVANHA"
+category = "Savage"
+pokedex_entry = "Carvanha attack ships in swarms, making them sink. Although it is said to be a very vicious Pokémon, it timidly flees as soon as it finds itself alone."
+types = Array[StringName]([&"WATER", &"DARK"])
+base_hp = 45
+base_attack = 90
+base_defense = 20
+base_special_attack = 65
+base_special_defense = 20
+base_speed = 65
+ev_attack = 1
+base_exp = 61
+growth_rate = &"Slow"
+catch_rate = 225
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_ptpmg")]([SubResource("Resource_rlvsy"), SubResource("Resource_2n72f"), SubResource("Resource_0gh0x"), SubResource("Resource_wvtd6"), SubResource("Resource_gguc3"), SubResource("Resource_le8nt"), SubResource("Resource_t8bg4"), SubResource("Resource_py3gw"), SubResource("Resource_it6st"), SubResource("Resource_wicv8"), SubResource("Resource_v641i"), SubResource("Resource_ee7ox"), SubResource("Resource_4jyxc")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ANCIENTPOWER", &"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLIPTURN", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICEFANG", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUPERFANG", &"SURF", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"TORMENT", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"DESTINYBOND", &"DOUBLEEDGE", &"HYDROPUMP", &"SWIFT", &"THRASH", &"WATERPULSE"])
+abilities = Array[StringName]([&"ROUGHSKIN"])
+hidden_abilities = Array[StringName]([&"SPEEDBOOST"])
+wild_item_uncommon = Array[StringName]([&"DEEPSEATOOTH"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_afo4b")]([SubResource("Resource_jbyx1")])
+height = 8
+weight = 208
+shape = &"Finned"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 1
+id = &"CARVANHA"
+display_name = "Carvanha"

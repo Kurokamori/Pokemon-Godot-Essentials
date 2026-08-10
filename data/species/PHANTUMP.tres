@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l34dg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_l04vb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_046k1"]
+
+[sub_resource type="Resource" id="Resource_l4ytf"]
+script = ExtResource("1_l34dg")
+species = &"TREVENANT"
+method = &"Trade"
+
+[sub_resource type="Resource" id="Resource_la0q3"]
+script = ExtResource("2_l04vb")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_veqng"]
+script = ExtResource("2_l04vb")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_84bn0"]
+script = ExtResource("2_l04vb")
+level = 4
+move = &"BRANCHPOKE"
+
+[sub_resource type="Resource" id="Resource_cdty3"]
+script = ExtResource("2_l04vb")
+level = 8
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_f52mc"]
+script = ExtResource("2_l04vb")
+level = 12
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_6fxt6"]
+script = ExtResource("2_l04vb")
+level = 16
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_e6n33"]
+script = ExtResource("2_l04vb")
+level = 20
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_h5y63"]
+script = ExtResource("2_l04vb")
+level = 24
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_5wx50"]
+script = ExtResource("2_l04vb")
+level = 28
+move = &"HORNLEECH"
+
+[sub_resource type="Resource" id="Resource_l1s52"]
+script = ExtResource("2_l04vb")
+level = 32
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_ejxp0"]
+script = ExtResource("2_l04vb")
+level = 36
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_c6st5"]
+script = ExtResource("2_l04vb")
+level = 40
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_p3wus"]
+script = ExtResource("2_l04vb")
+level = 44
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_ax2mb"]
+script = ExtResource("2_l04vb")
+level = 48
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_ttwmo"]
+script = ExtResource("2_l04vb")
+level = 52
+move = &"FORESTSCURSE"
+
+[resource]
+resource_name = "PHANTUMP"
+script = ExtResource("3_046k1")
+species = &"PHANTUMP"
+category = "Stump"
+pokedex_entry = "These Pokémon are stumps possessed by the spirits of children who died in the forest. Their cries sound like eerie screams."
+types = Array[StringName]([&"GHOST", &"GRASS"])
+base_hp = 43
+base_attack = 70
+base_defense = 48
+base_special_attack = 50
+base_special_defense = 60
+base_speed = 38
+ev_attack = 1
+base_exp = 62
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_l04vb")]([SubResource("Resource_la0q3"), SubResource("Resource_veqng"), SubResource("Resource_84bn0"), SubResource("Resource_cdty3"), SubResource("Resource_f52mc"), SubResource("Resource_6fxt6"), SubResource("Resource_e6n33"), SubResource("Resource_h5y63"), SubResource("Resource_5wx50"), SubResource("Resource_l1s52"), SubResource("Resource_ejxp0"), SubResource("Resource_c6st5"), SubResource("Resource_p3wus"), SubResource("Resource_ax2mb"), SubResource("Resource_ttwmo")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"MAGICALLEAF", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PHANTOMFORCE", &"POISONJAB", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"TRICKROOM", &"VENOMDRENCH", &"WILLOWISP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"DISABLE", &"GRUDGE", &"SUCKERPUNCH"])
+abilities = Array[StringName]([&"NATURALCURE", &"FRISK"])
+hidden_abilities = Array[StringName]([&"HARVEST"])
+egg_groups = Array[StringName]([&"Grass", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_l34dg")]([SubResource("Resource_l4ytf")])
+height = 4
+weight = 70
+color = &"Brown"
+shape = &"HeadArms"
+generation = 6
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 14)
+shadow_size = 1
+id = &"PHANTUMP"
+display_name = "Phantump"

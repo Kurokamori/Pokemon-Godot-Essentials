@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8fnjo"]
+
+[resource]
+resource_name = "NESTBALL"
+script = ExtResource("1_8fnjo")
+name_plural = "Nest Balls"
+pocket = 3
+price = 1000
+sell_price = 500
+battle_use = 4
+description = "A somewhat different Poké Ball that works especially well on weaker Pokémon in the wild."
+id = &"NESTBALL"
+display_name = "Nest Ball"
+flags = Array[StringName]([&"PokeBall"])

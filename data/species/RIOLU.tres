@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ajgy0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_6wsyn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tqao6"]
+
+[sub_resource type="Resource" id="Resource_uqbtl"]
+script = ExtResource("1_ajgy0")
+species = &"LUCARIO"
+method = &"HappinessDay"
+
+[sub_resource type="Resource" id="Resource_52kqc"]
+script = ExtResource("2_6wsyn")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_vcgsw"]
+script = ExtResource("2_6wsyn")
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_8w4y6"]
+script = ExtResource("2_6wsyn")
+level = 4
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_0ip41"]
+script = ExtResource("2_6wsyn")
+level = 8
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_os36y"]
+script = ExtResource("2_6wsyn")
+level = 12
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_5og6g"]
+script = ExtResource("2_6wsyn")
+level = 16
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_2ryfc"]
+script = ExtResource("2_6wsyn")
+level = 20
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_6mt34"]
+script = ExtResource("2_6wsyn")
+level = 24
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_aacex"]
+script = ExtResource("2_6wsyn")
+level = 28
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_72xok"]
+script = ExtResource("2_6wsyn")
+level = 32
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_c02ek"]
+script = ExtResource("2_6wsyn")
+level = 36
+move = &"FORCEPALM"
+
+[sub_resource type="Resource" id="Resource_eh30b"]
+script = ExtResource("2_6wsyn")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_q2487"]
+script = ExtResource("2_6wsyn")
+level = 44
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_4yj4f"]
+script = ExtResource("2_6wsyn")
+level = 48
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_gk8lf"]
+script = ExtResource("2_6wsyn")
+level = 52
+move = &"FINALGAMBIT"
+
+[sub_resource type="Resource" id="Resource_o6hk0"]
+script = ExtResource("2_6wsyn")
+level = 56
+move = &"REVERSAL"
+
+[resource]
+resource_name = "RIOLU"
+script = ExtResource("3_tqao6")
+species = &"RIOLU"
+category = "Emanation"
+pokedex_entry = "The aura that emanates from its body intensifies to alert others if it is afraid or sad."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 40
+base_attack = 70
+base_defense = 40
+base_special_attack = 35
+base_special_defense = 40
+base_speed = 60
+ev_attack = 1
+base_exp = 57
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_6wsyn")]([SubResource("Resource_52kqc"), SubResource("Resource_vcgsw"), SubResource("Resource_8w4y6"), SubResource("Resource_0ip41"), SubResource("Resource_os36y"), SubResource("Resource_5og6g"), SubResource("Resource_2ryfc"), SubResource("Resource_6mt34"), SubResource("Resource_aacex"), SubResource("Resource_72xok"), SubResource("Resource_c02ek"), SubResource("Resource_eh30b"), SubResource("Resource_q2487"), SubResource("Resource_4yj4f"), SubResource("Resource_gk8lf"), SubResource("Resource_o6hk0")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BLAZEKICK", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"COACHING", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"IRONDEFENSE", &"IRONTAIL", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THUNDERPUNCH", &"VACUUMWAVE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AGILITY", &"BITE", &"BLAZEKICK", &"BULLETPUNCH", &"CIRCLETHROW", &"CROSSCHOP", &"CRUNCH", &"DETECT", &"FOLLOWME", &"HIGHJUMPKICK", &"HOWL", &"IRONDEFENSE", &"LOWKICK", &"METEORMASH", &"MINDREADER", &"VACUUMWAVE"])
+abilities = Array[StringName]([&"STEADFAST", &"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"PRANKSTER"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_ajgy0")]([SubResource("Resource_uqbtl")])
+height = 7
+weight = 202
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 28)
+shadow_size = 1
+id = &"RIOLU"
+display_name = "Riolu"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_jhsx6"]
+
+[resource]
+resource_name = "BLACKBELT"
+script = ExtResource("1_jhsx6")
+name_plural = "Black Belts"
+price = 3000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a belt that boosts determination and Fighting-type moves."
+id = &"BLACKBELT"
+display_name = "Black Belt"
+flags = Array[StringName]([&"Fling_30"])

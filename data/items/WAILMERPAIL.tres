@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_yu3hl"]
+
+[resource]
+resource_name = "WAILMERPAIL"
+script = ExtResource("1_yu3hl")
+name_plural = "Wailmer Pails"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A nifty watering pail. Use it to promote strong growth in Berries planted in soft soil."
+id = &"WAILMERPAIL"
+display_name = "Wailmer Pail"
+flags = Array[StringName]([&"KeyItem"])

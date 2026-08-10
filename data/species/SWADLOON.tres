@@ -1,0 +1,78 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nskqk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2vf0m"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_efmu1"]
+
+[sub_resource type="Resource" id="Resource_nf5cn"]
+script = ExtResource("1_nskqk")
+species = &"LEAVANNY"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_4h8xw"]
+script = ExtResource("1_nskqk")
+species = &"SEWADDLE"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_sd2wq"]
+script = ExtResource("2_2vf0m")
+level = 0
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_sgdet"]
+script = ExtResource("2_2vf0m")
+move = &"GRASSWHISTLE"
+
+[sub_resource type="Resource" id="Resource_jrqai"]
+script = ExtResource("2_2vf0m")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_fninv"]
+script = ExtResource("2_2vf0m")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_tqfsh"]
+script = ExtResource("2_2vf0m")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_kutqm"]
+script = ExtResource("2_2vf0m")
+move = &"RAZORLEAF"
+
+[resource]
+resource_name = "SWADLOON"
+script = ExtResource("3_efmu1")
+species = &"SWADLOON"
+category = "Leaf-Wrapped"
+pokedex_entry = "It protects itself from the cold by wrapping up in leaves. It stays on the move, eating leaves in forests."
+types = Array[StringName]([&"BUG", &"GRASS"])
+base_hp = 55
+base_attack = 63
+base_defense = 90
+base_special_attack = 50
+base_special_defense = 80
+base_speed = 42
+ev_defense = 2
+base_exp = 133
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2vf0m")]([SubResource("Resource_sd2wq"), SubResource("Resource_sgdet"), SubResource("Resource_jrqai"), SubResource("Resource_fninv"), SubResource("Resource_tqfsh"), SubResource("Resource_kutqm")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BUGBITE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"DREAMEATER", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"WORRYSEED"])
+abilities = Array[StringName]([&"LEAFGUARD", &"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_uncommon = Array[StringName]([&"MENTALHERB"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_nskqk")]([SubResource("Resource_nf5cn"), SubResource("Resource_4h8xw")])
+height = 5
+weight = 73
+color = &"Green"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-1, 32)
+id = &"SWADLOON"
+display_name = "Swadloon"

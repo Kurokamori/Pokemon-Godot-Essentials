@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4syx6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b3why"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4x8jr"]
+
+[sub_resource type="Resource" id="Resource_vaj0w"]
+script = ExtResource("1_4syx6")
+species = &"WHIRLIPEDE"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_d1r3r"]
+script = ExtResource("2_b3why")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_74j0s"]
+script = ExtResource("2_b3why")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_t8lly"]
+script = ExtResource("2_b3why")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_upa4f"]
+script = ExtResource("2_b3why")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_va1y2"]
+script = ExtResource("2_b3why")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_l5aqv"]
+script = ExtResource("2_b3why")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_gpnef"]
+script = ExtResource("2_b3why")
+level = 12
+move = &"POISONTAIL"
+
+[sub_resource type="Resource" id="Resource_jqit1"]
+script = ExtResource("2_b3why")
+level = 16
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_yyknl"]
+script = ExtResource("2_b3why")
+level = 20
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_v25le"]
+script = ExtResource("2_b3why")
+level = 26
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_ljjv5"]
+script = ExtResource("2_b3why")
+level = 34
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_btbkn"]
+script = ExtResource("2_b3why")
+level = 42
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_561xt"]
+script = ExtResource("2_b3why")
+level = 50
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_ix1py"]
+script = ExtResource("2_b3why")
+level = 58
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_4q61s"]
+script = ExtResource("2_b3why")
+level = 66
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_ko7me"]
+script = ExtResource("2_b3why")
+level = 74
+move = &"MEGAHORN"
+
+[resource]
+resource_name = "SCOLIPEDE"
+script = ExtResource("3_4x8jr")
+species = &"SCOLIPEDE"
+category = "Megapede"
+pokedex_entry = "Highly aggressive, it uses the claws near its neck to dig into its opponents and poison them."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 60
+base_attack = 100
+base_defense = 89
+base_special_attack = 55
+base_special_defense = 69
+base_speed = 112
+ev_speed = 3
+base_exp = 243
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b3why")]([SubResource("Resource_d1r3r"), SubResource("Resource_74j0s"), SubResource("Resource_t8lly"), SubResource("Resource_upa4f"), SubResource("Resource_va1y2"), SubResource("Resource_l5aqv"), SubResource("Resource_gpnef"), SubResource("Resource_jqit1"), SubResource("Resource_yyknl"), SubResource("Resource_v25le"), SubResource("Resource_ljjv5"), SubResource("Resource_btbkn"), SubResource("Resource_561xt"), SubResource("Resource_ix1py"), SubResource("Resource_4q61s"), SubResource("Resource_ko7me")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BUGBITE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"CUT", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"IRONDEFENSE", &"IRONTAIL", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SMARTSTRIKE", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SPIKES", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"THROATCHOP", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"XSCISSOR"])
+abilities = Array[StringName]([&"POISONPOINT", &"SWARM"])
+hidden_abilities = Array[StringName]([&"SPEEDBOOST"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4syx6")]([SubResource("Resource_vaj0w")])
+height = 25
+weight = 2005
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-4, 12)
+id = &"SCOLIPEDE"
+display_name = "Scolipede"

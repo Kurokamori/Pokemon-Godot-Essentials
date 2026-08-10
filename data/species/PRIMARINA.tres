@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6yrqg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nrqju"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2m1di"]
+
+[sub_resource type="Resource" id="Resource_o4ukv"]
+script = ExtResource("1_6yrqg")
+species = &"BRIONNE"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_j608t"]
+script = ExtResource("2_nrqju")
+level = 0
+move = &"SPARKLINGARIA"
+
+[sub_resource type="Resource" id="Resource_736cd"]
+script = ExtResource("2_nrqju")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_nxqg6"]
+script = ExtResource("2_nrqju")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_7qbpn"]
+script = ExtResource("2_nrqju")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_l3f2u"]
+script = ExtResource("2_nrqju")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_viid2"]
+script = ExtResource("2_nrqju")
+level = 9
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_nctng"]
+script = ExtResource("2_nrqju")
+level = 12
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_gtw78"]
+script = ExtResource("2_nrqju")
+level = 15
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_cvl0l"]
+script = ExtResource("2_nrqju")
+level = 20
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_tksrf"]
+script = ExtResource("2_nrqju")
+level = 25
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_vea2b"]
+script = ExtResource("2_nrqju")
+level = 30
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_xwkae"]
+script = ExtResource("2_nrqju")
+level = 37
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_05tiu"]
+script = ExtResource("2_nrqju")
+level = 44
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_yxcps"]
+script = ExtResource("2_nrqju")
+level = 51
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_0ixxj"]
+script = ExtResource("2_nrqju")
+level = 58
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "PRIMARINA"
+script = ExtResource("3_2m1di")
+species = &"PRIMARINA"
+category = "Soloist"
+pokedex_entry = "It controls its water balloons with song. The melody is learned from others of its kind and is passed down from one generation to the next."
+types = Array[StringName]([&"WATER", &"FAIRY"])
+base_hp = 80
+base_attack = 74
+base_defense = 74
+base_special_attack = 126
+base_special_defense = 116
+base_speed = 60
+ev_special_attack = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nrqju")]([SubResource("Resource_j608t"), SubResource("Resource_736cd"), SubResource("Resource_nxqg6"), SubResource("Resource_7qbpn"), SubResource("Resource_l3f2u"), SubResource("Resource_viid2"), SubResource("Resource_nctng"), SubResource("Resource_gtw78"), SubResource("Resource_cvl0l"), SubResource("Resource_tksrf"), SubResource("Resource_vea2b"), SubResource("Resource_xwkae"), SubResource("Resource_05tiu"), SubResource("Resource_yxcps"), SubResource("Resource_0ixxj")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BRINE", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLETEAM", &"DRAININGKISS", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROCANNON", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LIGHTSCREEN", &"LIQUIDATION", &"MAGICCOAT", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"TRIPLEAXEL", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WONDERROOM", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"LIQUIDVOICE"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_6yrqg")]([SubResource("Resource_o4ukv")])
+height = 18
+weight = 440
+color = &"Blue"
+shape = &"Finned"
+generation = 7
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(6, 18)
+id = &"PRIMARINA"
+display_name = "Primarina"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_p3djj"]
+
+[resource]
+resource_name = "PRECIPICEBLADES"
+script = ExtResource("1_p3djj")
+type = &"GROUND"
+category = 0
+power = 120
+accuracy = 85
+total_pp = 10
+target = &"AllNearFoes"
+description = "The user attacks its foes by manifesting the power of the land in fearsome blades of stone."
+id = &"PRECIPICEBLADES"
+display_name = "Precipice Blades"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

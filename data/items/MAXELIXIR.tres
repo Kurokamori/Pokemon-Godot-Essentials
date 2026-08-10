@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6b6vg"]
+
+[resource]
+resource_name = "MAXELIXIR"
+script = ExtResource("1_6b6vg")
+name_plural = "Max Elixirs"
+pocket = 2
+price = 4500
+sell_price = 2250
+field_use = 1
+battle_use = 1
+description = "It fully restores the PP of all the moves learned by the targeted Pokémon."
+id = &"MAXELIXIR"
+display_name = "Max Elixir"
+flags = Array[StringName]([&"Fling_30"])

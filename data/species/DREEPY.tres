@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_64dnn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_54hg7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fqjbl"]
+
+[sub_resource type="Resource" id="Resource_6c86s"]
+script = ExtResource("1_64dnn")
+species = &"DRAKLOAK"
+method = &"Level"
+parameter = "50"
+
+[sub_resource type="Resource" id="Resource_s5cjn"]
+script = ExtResource("2_54hg7")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_b1n0j"]
+script = ExtResource("2_54hg7")
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_mc38i"]
+script = ExtResource("2_54hg7")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_e753b"]
+script = ExtResource("2_54hg7")
+move = &"BITE"
+
+[resource]
+resource_name = "DREEPY"
+script = ExtResource("3_fqjbl")
+species = &"DREEPY"
+category = "Lingering"
+pokedex_entry = "After being reborn as a ghost Pokémon, Dreepy wanders the areas it used to inhabit back when it was alive in prehistoric seas."
+types = Array[StringName]([&"DRAGON", &"GHOST"])
+base_hp = 28
+base_attack = 60
+base_defense = 30
+base_special_attack = 40
+base_special_defense = 30
+base_speed = 82
+ev_speed = 1
+base_exp = 54
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_54hg7")]([SubResource("Resource_s5cjn"), SubResource("Resource_b1n0j"), SubResource("Resource_mc38i"), SubResource("Resource_e753b")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THUNDERWAVE", &"TOXIC"])
+egg_moves = Array[StringName]([&"CONFUSERAY", &"CURSE", &"DISABLE", &"DOUBLETEAM", &"DRAGONTAIL", &"GRUDGE", &"SUCKERPUNCH"])
+abilities = Array[StringName]([&"CLEARBODY", &"INFILTRATOR"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+egg_groups = Array[StringName]([&"Amorphous", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_64dnn")]([SubResource("Resource_6c86s")])
+height = 5
+weight = 20
+color = &"Green"
+shape = &"Serpentine"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 16)
+id = &"DREEPY"
+display_name = "Dreepy"

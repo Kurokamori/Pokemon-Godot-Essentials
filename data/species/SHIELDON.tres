@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_p8kdk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_g1iyw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0vpm5"]
+
+[sub_resource type="Resource" id="Resource_qbfy0"]
+script = ExtResource("1_p8kdk")
+species = &"BASTIODON"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_2kllk"]
+script = ExtResource("2_g1iyw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_t80av"]
+script = ExtResource("2_g1iyw")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_iipgm"]
+script = ExtResource("2_g1iyw")
+level = 6
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_v0cqw"]
+script = ExtResource("2_g1iyw")
+level = 10
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_swc45"]
+script = ExtResource("2_g1iyw")
+level = 15
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_xvour"]
+script = ExtResource("2_g1iyw")
+level = 19
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_tinwi"]
+script = ExtResource("2_g1iyw")
+level = 24
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_fpop6"]
+script = ExtResource("2_g1iyw")
+level = 28
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_rrwwf"]
+script = ExtResource("2_g1iyw")
+level = 33
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_74pb3"]
+script = ExtResource("2_g1iyw")
+level = 37
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_hv6ms"]
+script = ExtResource("2_g1iyw")
+level = 42
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_6sxrd"]
+script = ExtResource("2_g1iyw")
+level = 46
+move = &"HEAVYSLAM"
+
+[resource]
+resource_name = "SHIELDON"
+script = ExtResource("3_0vpm5")
+species = &"SHIELDON"
+category = "Shield"
+pokedex_entry = "A Pokémon that lived in jungles around 100 million years ago. Its facial hide is extremely hard."
+types = Array[StringName]([&"ROCK", &"STEEL"])
+base_hp = 30
+base_attack = 42
+base_defense = 118
+base_special_attack = 42
+base_special_defense = 88
+base_speed = 30
+ev_defense = 1
+base_exp = 70
+growth_rate = &"Erratic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_g1iyw")]([SubResource("Resource_2kllk"), SubResource("Resource_t80av"), SubResource("Resource_iipgm"), SubResource("Resource_v0cqw"), SubResource("Resource_swc45"), SubResource("Resource_xvour"), SubResource("Resource_tinwi"), SubResource("Resource_fpop6"), SubResource("Resource_rrwwf"), SubResource("Resource_74pb3"), SubResource("Resource_hv6ms"), SubResource("Resource_6sxrd")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASHCANNON", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"TORMENT"])
+egg_moves = Array[StringName]([&"BODYSLAM", &"COUNTER", &"CURSE", &"DOUBLEEDGE", &"FISSURE", &"FOCUSENERGY", &"GUARDSPLIT", &"HEADBUTT", &"ROCKBLAST", &"SCARYFACE", &"SCREECH", &"WIDEGUARD"])
+abilities = Array[StringName]([&"STURDY"])
+hidden_abilities = Array[StringName]([&"SOUNDPROOF"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_p8kdk")]([SubResource("Resource_qbfy0")])
+height = 5
+weight = 570
+color = &"Gray"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-2, 32)
+shadow_size = 1
+id = &"SHIELDON"
+display_name = "Shieldon"

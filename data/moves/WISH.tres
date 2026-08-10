@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fllc1"]
+
+[resource]
+resource_name = "WISH"
+script = ExtResource("1_fllc1")
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"HealUserPositionNextTurn"
+description = "One turn after this move is used, the target's HP is restored by half the user's maximum HP."
+id = &"WISH"
+display_name = "Wish"

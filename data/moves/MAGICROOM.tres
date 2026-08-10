@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_jwdqo"]
+
+[resource]
+resource_name = "MAGICROOM"
+script = ExtResource("1_jwdqo")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+function_code = &"StartNegateHeldItems"
+description = "The user creates a bizarre area in which Pokémon's held items lose their effects for five turns."
+id = &"MAGICROOM"
+display_name = "Magic Room"
+flags = Array[StringName]([&"CanMirrorMove"])

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_upur2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_anady"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_osmlw"]
+
+[sub_resource type="Resource" id="Resource_mnppj"]
+script = ExtResource("1_upur2")
+species = &"SWADLOON"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_701kc"]
+script = ExtResource("2_anady")
+level = 0
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_iglfl"]
+script = ExtResource("2_anady")
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_ayh1m"]
+script = ExtResource("2_anady")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_gwv4y"]
+script = ExtResource("2_anady")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_gvhb6"]
+script = ExtResource("2_anady")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_8tcfp"]
+script = ExtResource("2_anady")
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_b0vra"]
+script = ExtResource("2_anady")
+level = 8
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_2ux4i"]
+script = ExtResource("2_anady")
+level = 15
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_le31g"]
+script = ExtResource("2_anady")
+level = 22
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_hmdtv"]
+script = ExtResource("2_anady")
+level = 29
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_vqt8b"]
+script = ExtResource("2_anady")
+level = 32
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_g3n1m"]
+script = ExtResource("2_anady")
+level = 36
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_vf0c1"]
+script = ExtResource("2_anady")
+level = 39
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_6ecwb"]
+script = ExtResource("2_anady")
+level = 43
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_y6nqe"]
+script = ExtResource("2_anady")
+level = 46
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_naty4"]
+script = ExtResource("2_anady")
+level = 50
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "LEAVANNY"
+script = ExtResource("3_osmlw")
+species = &"LEAVANNY"
+category = "Nurturing"
+pokedex_entry = "It keeps its eggs warm with heat from fermenting leaves. It also uses leaves to make warm wrappings for Sewaddle."
+types = Array[StringName]([&"BUG", &"GRASS"])
+base_hp = 75
+base_attack = 103
+base_defense = 80
+base_special_attack = 70
+base_special_defense = 80
+base_speed = 92
+ev_attack = 3
+base_exp = 250
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_anady")]([SubResource("Resource_701kc"), SubResource("Resource_iglfl"), SubResource("Resource_ayh1m"), SubResource("Resource_gwv4y"), SubResource("Resource_gvhb6"), SubResource("Resource_8tcfp"), SubResource("Resource_b0vra"), SubResource("Resource_2ux4i"), SubResource("Resource_le31g"), SubResource("Resource_hmdtv"), SubResource("Resource_vqt8b"), SubResource("Resource_g3n1m"), SubResource("Resource_vf0c1"), SubResource("Resource_6ecwb"), SubResource("Resource_y6nqe"), SubResource("Resource_naty4")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BUGBITE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"DREAMEATER", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THROATCHOP", &"TOXIC", &"WORRYSEED", &"XSCISSOR"])
+abilities = Array[StringName]([&"SWARM", &"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_uncommon = Array[StringName]([&"MENTALHERB"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_upur2")]([SubResource("Resource_mnppj")])
+height = 12
+weight = 205
+color = &"Yellow"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(-3, 10)
+shadow_size = 1
+id = &"LEAVANNY"
+display_name = "Leavanny"

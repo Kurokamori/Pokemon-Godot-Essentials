@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_d21c0"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_h8mlo"]
+
+[sub_resource type="Resource" id="Resource_ukfad"]
+script = ExtResource("1_d21c0")
+species = &"DIGLETT"
+level = 10
+
+[sub_resource type="Resource" id="Resource_edjfb"]
+script = ExtResource("1_d21c0")
+species = &"BONSLY"
+level = 11
+
+[resource]
+resource_name = "CAMPER|Liam|0"
+script = ExtResource("2_h8mlo")
+trainer_type = &"CAMPER"
+lose_text = "A very good battle, indeed!"
+pokemon = Array[ExtResource("1_d21c0")]([SubResource("Resource_ukfad"), SubResource("Resource_edjfb")])
+id = &"CAMPER|Liam|0"
+display_name = "Liam"

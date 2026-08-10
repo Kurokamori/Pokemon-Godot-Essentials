@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5x5lc"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hh2q1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mpgte"]
+
+[sub_resource type="Resource" id="Resource_5enaj"]
+script = ExtResource("2_hh2q1")
+move = &"FAIRYLOCK"
+
+[sub_resource type="Resource" id="Resource_5b2e7"]
+script = ExtResource("2_hh2q1")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_mxw0e"]
+script = ExtResource("2_hh2q1")
+level = 4
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_er4m5"]
+script = ExtResource("2_hh2q1")
+level = 8
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_4j4ud"]
+script = ExtResource("2_hh2q1")
+level = 12
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_oqp5r"]
+script = ExtResource("2_hh2q1")
+level = 16
+move = &"CRAFTYSHIELD"
+
+[sub_resource type="Resource" id="Resource_6lgxn"]
+script = ExtResource("2_hh2q1")
+level = 20
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_h0yao"]
+script = ExtResource("2_hh2q1")
+level = 24
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_b2i07"]
+script = ExtResource("2_hh2q1")
+level = 28
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_7qj6a"]
+script = ExtResource("2_hh2q1")
+level = 32
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_kp3km"]
+script = ExtResource("2_hh2q1")
+level = 36
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_oef7w"]
+script = ExtResource("2_hh2q1")
+level = 40
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_dgsql"]
+script = ExtResource("2_hh2q1")
+level = 44
+move = &"MAGICROOM"
+
+[sub_resource type="Resource" id="Resource_0fprb"]
+script = ExtResource("2_hh2q1")
+level = 48
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_fdef0"]
+script = ExtResource("2_hh2q1")
+level = 52
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "KLEFKI"
+script = ExtResource("3_mpgte")
+species = &"KLEFKI"
+category = "Key Ring"
+pokedex_entry = "It never lets go of a key that it likes, so people give it the keys to vaults and safes as a way to prevent crime."
+types = Array[StringName]([&"STEEL", &"FAIRY"])
+base_hp = 57
+base_attack = 80
+base_defense = 91
+base_special_attack = 80
+base_special_defense = 87
+base_speed = 75
+ev_defense = 1
+base_exp = 165
+growth_rate = &"Fast"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hh2q1")]([SubResource("Resource_5enaj"), SubResource("Resource_5b2e7"), SubResource("Resource_mxw0e"), SubResource("Resource_er4m5"), SubResource("Resource_4j4ud"), SubResource("Resource_oqp5r"), SubResource("Resource_6lgxn"), SubResource("Resource_h0yao"), SubResource("Resource_b2i07"), SubResource("Resource_7qj6a"), SubResource("Resource_kp3km"), SubResource("Resource_oef7w"), SubResource("Resource_dgsql"), SubResource("Resource_0fprb"), SubResource("Resource_fdef0")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"DRAININGKISS", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"IRONDEFENSE", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MAGNETRISE", &"MIMIC", &"MISTYTERRAIN", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SPIKES", &"STEELBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"THUNDERWAVE", &"TORMENT", &"TOXIC"])
+egg_moves = Array[StringName]([&"MAGNETRISE", &"SWITCHEROO"])
+abilities = Array[StringName]([&"PRANKSTER"])
+hidden_abilities = Array[StringName]([&"MAGICIAN"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+height = 2
+weight = 30
+color = &"Gray"
+generation = 6
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 6)
+id = &"KLEFKI"
+display_name = "Klefki"

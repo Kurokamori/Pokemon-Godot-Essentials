@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_m7qvb"]
+
+[resource]
+resource_name = "ITEMURGE"
+script = ExtResource("1_m7qvb")
+name_plural = "Item Urges"
+pocket = 7
+description = "When used, it causes an ally Pokémon to use its held item."
+id = &"ITEMURGE"
+display_name = "Item Urge"
+flags = Array[StringName]([&"Fling_30"])

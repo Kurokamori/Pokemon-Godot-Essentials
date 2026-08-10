@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_svacb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kpu34"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_l7ht4"]
+
+[sub_resource type="Resource" id="Resource_d5flr"]
+script = ExtResource("2_kpu34")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_vyugw"]
+script = ExtResource("2_kpu34")
+move = &"HEALBELL"
+
+[sub_resource type="Resource" id="Resource_53rhg"]
+script = ExtResource("2_kpu34")
+level = 10
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_pctl6"]
+script = ExtResource("2_kpu34")
+level = 20
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_6kvip"]
+script = ExtResource("2_kpu34")
+level = 30
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_k876n"]
+script = ExtResource("2_kpu34")
+level = 40
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_laosg"]
+script = ExtResource("2_kpu34")
+level = 50
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_2j8gi"]
+script = ExtResource("2_kpu34")
+level = 60
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_m078i"]
+script = ExtResource("2_kpu34")
+level = 70
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_qmoy4"]
+script = ExtResource("2_kpu34")
+level = 80
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_idiii"]
+script = ExtResource("2_kpu34")
+level = 90
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_sj7kx"]
+script = ExtResource("2_kpu34")
+level = 100
+move = &"PERISHSONG"
+
+[resource]
+resource_name = "CELEBI"
+script = ExtResource("3_l7ht4")
+species = &"CELEBI"
+category = "Time Travel"
+pokedex_entry = "This Pokémon came from the future by crossing over time. It is thought that so long as Celebi appears, a bright and shining future awaits us."
+types = Array[StringName]([&"PSYCHIC", &"GRASS"])
+base_hp = 100
+base_attack = 100
+base_defense = 100
+base_special_attack = 100
+base_special_defense = 100
+base_speed = 100
+ev_hp = 3
+base_exp = 300
+growth_rate = &"Parabolic"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_kpu34")]([SubResource("Resource_d5flr"), SubResource("Resource_vyugw"), SubResource("Resource_53rhg"), SubResource("Resource_pctl6"), SubResource("Resource_6kvip"), SubResource("Resource_k876n"), SubResource("Resource_laosg"), SubResource("Resource_2j8gi"), SubResource("Resource_m078i"), SubResource("Resource_qmoy4"), SubResource("Resource_idiii"), SubResource("Resource_sj7kx")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ANCIENTPOWER", &"AURASPHERE", &"BATONPASS", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DUALWINGBEAT", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LASERFOCUS", &"LASTRESORT", &"LEAFBLADE", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"POLLENPUFF", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SILVERWIND", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STEALTHROCK", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TELEKINESIS", &"THUNDERWAVE", &"TRICK", &"TRICKROOM", &"UPROAR", &"UTURN", &"WATERPULSE", &"WEATHERBALL", &"WONDERROOM", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"NATURALCURE"])
+wild_item_common = Array[StringName]([&"LUMBERRY"])
+wild_item_uncommon = Array[StringName]([&"LUMBERRY"])
+wild_item_rare = Array[StringName]([&"LUMBERRY"])
+hatch_steps = 30720
+height = 6
+weight = 50
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(1, 23)
+shadow_size = 1
+id = &"CELEBI"
+display_name = "Celebi"
+flags = Array[StringName]([&"Mythical"])

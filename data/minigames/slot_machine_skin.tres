@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SlotMachineSkin" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/slots/slot_machine_skin.gd" id="1_skin"]
+
+[resource]
+script = ExtResource("1_skin")
+display_name = "Slot Machine"
+panel_color = Color(0.129412, 0.109804, 0.180392, 1)
+panel_border_color = Color(0.470588, 0.360784, 0.180392, 1)
+cursor_color = Color(0.972549, 0.815686, 0.188235, 1)
+highlight_color = Color(0.972549, 0.345098, 0.219608, 1)
+music_track = "Game Corner"
+symbol_size = 44
+visible_symbols = 3

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_dc0cb"]
+
+[resource]
+resource_name = "CHIPPEDPOT"
+script = ExtResource("1_dc0cb")
+name_plural = "Chipped Pots"
+price = 3000
+sell_price = 19000
+bp_price = 5
+field_use = 1
+description = "A peculiar chipped teapot that can make a certain species of Pokémon evolve. It makes delicious tea."
+id = &"CHIPPEDPOT"
+display_name = "Chipped Pot"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_80"])

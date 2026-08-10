@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_47tfd"]
+
+[resource]
+resource_name = "FISHIOUSREND"
+script = ExtResource("1_47tfd")
+type = &"WATER"
+category = 0
+power = 85
+total_pp = 10
+function_code = &"DoublePowerIfTargetNotActed"
+description = "The user rends the target with its hard gills. Power doubles if the user moves first."
+id = &"FISHIOUSREND"
+display_name = "Fishious Rend"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xlsud"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8hkjn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6nd6i"]
+
+[sub_resource type="Resource" id="Resource_4l31e"]
+script = ExtResource("2_8hkjn")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_et8j0"]
+script = ExtResource("2_8hkjn")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_03nwq"]
+script = ExtResource("2_8hkjn")
+level = 11
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_a570j"]
+script = ExtResource("2_8hkjn")
+level = 20
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_db21f"]
+script = ExtResource("2_8hkjn")
+level = 29
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_igamr"]
+script = ExtResource("2_8hkjn")
+level = 38
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_li5x8"]
+script = ExtResource("2_8hkjn")
+level = 47
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_iog0o"]
+script = ExtResource("2_8hkjn")
+level = 57
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_dd376"]
+script = ExtResource("2_8hkjn")
+level = 66
+move = &"DARKVOID"
+
+[sub_resource type="Resource" id="Resource_qq2y2"]
+script = ExtResource("2_8hkjn")
+level = 75
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_cp2pi"]
+script = ExtResource("2_8hkjn")
+level = 84
+move = &"DREAMEATER"
+
+[sub_resource type="Resource" id="Resource_63uha"]
+script = ExtResource("2_8hkjn")
+level = 93
+move = &"DARKPULSE"
+
+[resource]
+resource_name = "DARKRAI"
+script = ExtResource("3_6nd6i")
+species = &"DARKRAI"
+category = "Pitch-Black"
+pokedex_entry = "It can lull people to sleep and make them dream. It is active during nights of the new moon."
+types = Array[StringName]([&"DARK"])
+base_hp = 70
+base_attack = 90
+base_defense = 90
+base_special_attack = 135
+base_special_defense = 90
+base_speed = 125
+ev_special_attack = 2
+ev_speed = 1
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_8hkjn")]([SubResource("Resource_4l31e"), SubResource("Resource_et8j0"), SubResource("Resource_03nwq"), SubResource("Resource_a570j"), SubResource("Resource_db21f"), SubResource("Resource_igamr"), SubResource("Resource_li5x8"), SubResource("Resource_iog0o"), SubResource("Resource_dd376"), SubResource("Resource_qq2y2"), SubResource("Resource_cp2pi"), SubResource("Resource_63uha")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"BLIZZARD", &"BRICKBREAK", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DARKPULSE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"KNOCKOFF", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"WILLOWISP", &"WONDERROOM", &"XSCISSOR"])
+abilities = Array[StringName]([&"BADDREAMS"])
+hatch_steps = 30720
+height = 15
+weight = 505
+color = &"Black"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(4, 8)
+id = &"DARKRAI"
+display_name = "Darkrai"
+flags = Array[StringName]([&"Mythical"])

@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ffsxq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8xlw2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kqplt"]
+
+[sub_resource type="Resource" id="Resource_tv4p5"]
+script = ExtResource("1_ffsxq")
+species = &"SCRAGGY"
+method = &"Level"
+parameter = "39"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_hvy2d"]
+script = ExtResource("2_8xlw2")
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_pv7fm"]
+script = ExtResource("2_8xlw2")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_7ve5s"]
+script = ExtResource("2_8xlw2")
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_tblox"]
+script = ExtResource("2_8xlw2")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_bp652"]
+script = ExtResource("2_8xlw2")
+level = 12
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_6eau8"]
+script = ExtResource("2_8xlw2")
+level = 16
+move = &"FACADE"
+
+[sub_resource type="Resource" id="Resource_gbe8t"]
+script = ExtResource("2_8xlw2")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_ymkfm"]
+script = ExtResource("2_8xlw2")
+level = 24
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_rv822"]
+script = ExtResource("2_8xlw2")
+level = 28
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_mdnlq"]
+script = ExtResource("2_8xlw2")
+level = 32
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_nu5r8"]
+script = ExtResource("2_8xlw2")
+level = 36
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_wivnt"]
+script = ExtResource("2_8xlw2")
+level = 42
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_m5cls"]
+script = ExtResource("2_8xlw2")
+level = 48
+move = &"HIGHJUMPKICK"
+
+[sub_resource type="Resource" id="Resource_bkgxl"]
+script = ExtResource("2_8xlw2")
+level = 54
+move = &"FOCUSPUNCH"
+
+[sub_resource type="Resource" id="Resource_ny71n"]
+script = ExtResource("2_8xlw2")
+level = 60
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "SCRAFTY"
+script = ExtResource("3_kqplt")
+species = &"SCRAFTY"
+category = "Hoodlum"
+pokedex_entry = "It can smash concrete blocks with its kicking attacks. The one with the biggest crest is the group leader."
+types = Array[StringName]([&"DARK", &"FIGHTING"])
+base_hp = 65
+base_attack = 90
+base_defense = 115
+base_special_attack = 45
+base_special_defense = 115
+base_speed = 58
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 171
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8xlw2")]([SubResource("Resource_hvy2d"), SubResource("Resource_pv7fm"), SubResource("Resource_7ve5s"), SubResource("Resource_tblox"), SubResource("Resource_bp652"), SubResource("Resource_6eau8"), SubResource("Resource_gbe8t"), SubResource("Resource_ymkfm"), SubResource("Resource_rv822"), SubResource("Resource_mdnlq"), SubResource("Resource_nu5r8"), SubResource("Resource_wivnt"), SubResource("Resource_m5cls"), SubResource("Resource_bkgxl"), SubResource("Resource_ny71n")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DRAINPUNCH", &"DUALCHOP", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SHEDSKIN", &"MOXIE"])
+hidden_abilities = Array[StringName]([&"INTIMIDATE"])
+wild_item_uncommon = Array[StringName]([&"SHEDSHELL"])
+egg_groups = Array[StringName]([&"Field", &"Dragon"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ffsxq")]([SubResource("Resource_tv4p5")])
+height = 11
+weight = 300
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 20)
+id = &"SCRAFTY"
+display_name = "Scrafty"

@@ -1,0 +1,153 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_notu1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_t0egd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_s2np4"]
+
+[sub_resource type="Resource" id="Resource_43koc"]
+script = ExtResource("1_notu1")
+species = &"WIGGLYTUFF"
+method = &"Item"
+parameter = "MOONSTONE"
+
+[sub_resource type="Resource" id="Resource_1sdbu"]
+script = ExtResource("1_notu1")
+species = &"IGGLYBUFF"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7nndq"]
+script = ExtResource("2_t0egd")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_0rb5w"]
+script = ExtResource("2_t0egd")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_uhsih"]
+script = ExtResource("2_t0egd")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_llhdp"]
+script = ExtResource("2_t0egd")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_o5hmv"]
+script = ExtResource("2_t0egd")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_qjx5y"]
+script = ExtResource("2_t0egd")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_0pypq"]
+script = ExtResource("2_t0egd")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_l64nc"]
+script = ExtResource("2_t0egd")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_2mega"]
+script = ExtResource("2_t0egd")
+level = 4
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_sjsk6"]
+script = ExtResource("2_t0egd")
+level = 8
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_08hmc"]
+script = ExtResource("2_t0egd")
+level = 12
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_pwywr"]
+script = ExtResource("2_t0egd")
+level = 12
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_kd4o1"]
+script = ExtResource("2_t0egd")
+level = 12
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_ck1aq"]
+script = ExtResource("2_t0egd")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_32cuo"]
+script = ExtResource("2_t0egd")
+level = 20
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_7g3n5"]
+script = ExtResource("2_t0egd")
+level = 24
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_3seba"]
+script = ExtResource("2_t0egd")
+level = 28
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_nr4ph"]
+script = ExtResource("2_t0egd")
+level = 32
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_0j666"]
+script = ExtResource("2_t0egd")
+level = 36
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_75bpy"]
+script = ExtResource("2_t0egd")
+level = 40
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_6lrsu"]
+script = ExtResource("2_t0egd")
+level = 44
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "JIGGLYPUFF"
+script = ExtResource("3_s2np4")
+species = &"JIGGLYPUFF"
+category = "Balloon"
+pokedex_entry = "Nothing can avoid falling asleep hearing a Jigglypuff's song. The sound waves of its singing voice match the brain waves of someone in a deep sleep."
+types = Array[StringName]([&"NORMAL", &"FAIRY"])
+base_hp = 115
+base_attack = 45
+base_defense = 20
+base_special_attack = 45
+base_special_defense = 25
+base_speed = 20
+ev_hp = 2
+base_exp = 95
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 170
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_t0egd")]([SubResource("Resource_7nndq"), SubResource("Resource_0rb5w"), SubResource("Resource_uhsih"), SubResource("Resource_llhdp"), SubResource("Resource_o5hmv"), SubResource("Resource_qjx5y"), SubResource("Resource_0pypq"), SubResource("Resource_l64nc"), SubResource("Resource_2mega"), SubResource("Resource_sjsk6"), SubResource("Resource_08hmc"), SubResource("Resource_pwywr"), SubResource("Resource_kd4o1"), SubResource("Resource_ck1aq"), SubResource("Resource_32cuo"), SubResource("Resource_7g3n5"), SubResource("Resource_3seba"), SubResource("Resource_nr4ph"), SubResource("Resource_0j666"), SubResource("Resource_75bpy"), SubResource("Resource_6lrsu")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"KNOCKOFF", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIATTACK", &"UPROAR", &"WATERPULSE", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"CUTECHARM", &"COMPETITIVE"])
+hidden_abilities = Array[StringName]([&"FRIENDGUARD"])
+wild_item_uncommon = Array[StringName]([&"MOONSTONE"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_notu1")]([SubResource("Resource_43koc"), SubResource("Resource_1sdbu")])
+height = 5
+weight = 55
+color = &"Pink"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(-2, 34)
+shadow_size = 1
+id = &"JIGGLYPUFF"
+display_name = "Jigglypuff"

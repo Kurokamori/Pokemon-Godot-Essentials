@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_nyqdf"]
+
+[resource]
+resource_name = "RAREBONE"
+script = ExtResource("1_nyqdf")
+name_plural = "Rare Bones"
+price = 5000
+sell_price = 2500
+description = "A bone that is extremely valuable for Pokémon archaeology. It can be sold for a high price to shops."
+id = &"RAREBONE"
+display_name = "Rare Bone"
+flags = Array[StringName]([&"Fling_100"])

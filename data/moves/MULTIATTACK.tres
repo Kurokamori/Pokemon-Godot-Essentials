@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4466o"]
+
+[resource]
+resource_name = "MULTIATTACK"
+script = ExtResource("1_4466o")
+category = 0
+power = 120
+total_pp = 10
+function_code = &"TypeDependsOnUserMemory"
+description = "Cloaking itself in high energy, the user slams into the target. This move's type depends on the held memory."
+id = &"MULTIATTACK"
+display_name = "Multi-Attack"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

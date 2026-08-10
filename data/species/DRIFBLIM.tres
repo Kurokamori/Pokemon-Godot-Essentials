@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2x15w"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i2p7c"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jq5uc"]
+
+[sub_resource type="Resource" id="Resource_ugf6e"]
+script = ExtResource("1_2x15w")
+species = &"DRIFLOON"
+method = &"Level"
+parameter = "28"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yqaqh"]
+script = ExtResource("2_i2p7c")
+level = 0
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_2ce8x"]
+script = ExtResource("2_i2p7c")
+move = &"STRENGTHSAP"
+
+[sub_resource type="Resource" id="Resource_8xykp"]
+script = ExtResource("2_i2p7c")
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_m86uo"]
+script = ExtResource("2_i2p7c")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_ke305"]
+script = ExtResource("2_i2p7c")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_k6ke3"]
+script = ExtResource("2_i2p7c")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_b2sld"]
+script = ExtResource("2_i2p7c")
+level = 12
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_7q2ox"]
+script = ExtResource("2_i2p7c")
+level = 16
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_uddvf"]
+script = ExtResource("2_i2p7c")
+level = 20
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_0xle0"]
+script = ExtResource("2_i2p7c")
+level = 24
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_vfclo"]
+script = ExtResource("2_i2p7c")
+level = 24
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_4a61g"]
+script = ExtResource("2_i2p7c")
+level = 24
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_iybw8"]
+script = ExtResource("2_i2p7c")
+level = 31
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_ymbgc"]
+script = ExtResource("2_i2p7c")
+level = 36
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_h61nh"]
+script = ExtResource("2_i2p7c")
+level = 42
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_3s7bf"]
+script = ExtResource("2_i2p7c")
+level = 48
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_1df6b"]
+script = ExtResource("2_i2p7c")
+level = 54
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "DRIFBLIM"
+script = ExtResource("3_jq5uc")
+species = &"DRIFBLIM"
+category = "Blimp"
+pokedex_entry = "It's drowzy in daytime, but flies off in the evening in big groups. No one knows where they go."
+types = Array[StringName]([&"GHOST", &"FLYING"])
+base_hp = 150
+base_attack = 80
+base_defense = 44
+base_special_attack = 90
+base_special_defense = 54
+base_speed = 80
+ev_hp = 2
+base_exp = 174
+growth_rate = &"Fluctuating"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_i2p7c")]([SubResource("Resource_yqaqh"), SubResource("Resource_2ce8x"), SubResource("Resource_8xykp"), SubResource("Resource_m86uo"), SubResource("Resource_ke305"), SubResource("Resource_k6ke3"), SubResource("Resource_b2sld"), SubResource("Resource_7q2ox"), SubResource("Resource_uddvf"), SubResource("Resource_0xle0"), SubResource("Resource_vfclo"), SubResource("Resource_4a61g"), SubResource("Resource_iybw8"), SubResource("Resource_ymbgc"), SubResource("Resource_h61nh"), SubResource("Resource_3s7bf"), SubResource("Resource_1df6b")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AIRCUTTER", &"ALLYSWITCH", &"AMNESIA", &"ATTRACT", &"BATONPASS", &"BIND", &"BODYSLAM", &"BRUTALSWING", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASH", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICYWIND", &"IMPRISON", &"KNOCKOFF", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"PHANTOMFORCE", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SILVERWIND", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"WEATHERBALL", &"WILLOWISP"])
+abilities = Array[StringName]([&"AFTERMATH", &"UNBURDEN"])
+hidden_abilities = Array[StringName]([&"FLAREBOOST"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_2x15w")]([SubResource("Resource_ugf6e")])
+height = 12
+weight = 150
+color = &"Purple"
+shape = &"HeadArms"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 6)
+id = &"DRIFBLIM"
+display_name = "Drifblim"

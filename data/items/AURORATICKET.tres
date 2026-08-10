@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_i0ff2"]
+
+[resource]
+resource_name = "AURORATICKET"
+script = ExtResource("1_i0ff2")
+name_plural = "Aurora Tickets"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A ticket required to board the ship to Doxy Island. It glows beautifully."
+id = &"AURORATICKET"
+display_name = "Aurora Ticket"
+flags = Array[StringName]([&"KeyItem"])

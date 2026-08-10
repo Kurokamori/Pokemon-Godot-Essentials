@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_72kd5"]
+
+[resource]
+resource_name = "BULLDOZE"
+script = ExtResource("1_72kd5")
+type = &"GROUND"
+category = 0
+power = 60
+total_pp = 20
+target = &"AllNearOthers"
+function_code = &"LowerTargetSpeed1WeakerInGrassyTerrain"
+effect_chance = 100
+description = "The user strikes everything around it by stomping on the ground. It reduces hit Pokémon's Speed."
+id = &"BULLDOZE"
+display_name = "Bulldoze"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

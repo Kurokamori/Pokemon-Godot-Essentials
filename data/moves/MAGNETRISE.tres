@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nclt1"]
+
+[resource]
+resource_name = "MAGNETRISE"
+script = ExtResource("1_nclt1")
+type = &"ELECTRIC"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"StartUserAirborne"
+description = "The user levitates using electrically generated magnetism for five turns."
+id = &"MAGNETRISE"
+display_name = "Magnet Rise"

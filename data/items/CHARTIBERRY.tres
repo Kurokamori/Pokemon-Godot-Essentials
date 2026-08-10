@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_tua6y"]
+
+[resource]
+resource_name = "CHARTIBERRY"
+script = ExtResource("1_tua6y")
+name_plural = "Charti Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "Weakens a supereffective Rock-type attack against the holding Pokémon."
+id = &"CHARTIBERRY"
+display_name = "Charti Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_ROCK_80"])

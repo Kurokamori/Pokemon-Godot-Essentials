@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_b1dvg"]
+
+[resource]
+resource_name = "FRIENDGUARD"
+script = ExtResource("1_b1dvg")
+description = "Reduces damage done to allies."
+id = &"FRIENDGUARD"
+display_name = "Friend Guard"

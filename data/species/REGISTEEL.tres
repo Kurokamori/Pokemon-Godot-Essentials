@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l6ds0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d61ge"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fysni"]
+
+[sub_resource type="Resource" id="Resource_s48uo"]
+script = ExtResource("2_d61ge")
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_7f7gp"]
+script = ExtResource("2_d61ge")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_jq7yc"]
+script = ExtResource("2_d61ge")
+level = 6
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_70804"]
+script = ExtResource("2_d61ge")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_ioqyc"]
+script = ExtResource("2_d61ge")
+level = 18
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_6l1is"]
+script = ExtResource("2_d61ge")
+level = 24
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_nr2xq"]
+script = ExtResource("2_d61ge")
+level = 24
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_7ngyu"]
+script = ExtResource("2_d61ge")
+level = 30
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_27bav"]
+script = ExtResource("2_d61ge")
+level = 36
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_dfpu1"]
+script = ExtResource("2_d61ge")
+level = 36
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_fh054"]
+script = ExtResource("2_d61ge")
+level = 42
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_mwx46"]
+script = ExtResource("2_d61ge")
+level = 48
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_o58jm"]
+script = ExtResource("2_d61ge")
+level = 54
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_tklpk"]
+script = ExtResource("2_d61ge")
+level = 60
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_32q84"]
+script = ExtResource("2_d61ge")
+level = 66
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_l1s54"]
+script = ExtResource("2_d61ge")
+level = 72
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_xt1x8"]
+script = ExtResource("2_d61ge")
+level = 78
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "REGISTEEL"
+script = ExtResource("3_fysni")
+species = &"REGISTEEL"
+category = "Iron"
+pokedex_entry = "Its body is harder than any other kind of metal. The body metal is composed of a mysterious substance. Not only is it hard, it shrinks and stretches flexibly."
+types = Array[StringName]([&"STEEL"])
+base_hp = 80
+base_attack = 75
+base_defense = 150
+base_special_attack = 75
+base_special_defense = 150
+base_speed = 50
+ev_defense = 2
+ev_special_defense = 1
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_d61ge")]([SubResource("Resource_s48uo"), SubResource("Resource_7f7gp"), SubResource("Resource_jq7yc"), SubResource("Resource_70804"), SubResource("Resource_ioqyc"), SubResource("Resource_6l1is"), SubResource("Resource_nr2xq"), SubResource("Resource_7ngyu"), SubResource("Resource_27bav"), SubResource("Resource_dfpu1"), SubResource("Resource_fh054"), SubResource("Resource_mwx46"), SubResource("Resource_o58jm"), SubResource("Resource_tklpk"), SubResource("Resource_32q84"), SubResource("Resource_l1s54"), SubResource("Resource_xt1x8")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"ANCIENTPOWER", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEPUNCH", &"IRONDEFENSE", &"IRONHEAD", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE"])
+abilities = Array[StringName]([&"CLEARBODY"])
+hidden_abilities = Array[StringName]([&"LIGHTMETAL"])
+hatch_steps = 20480
+height = 19
+weight = 2050
+color = &"Gray"
+shape = &"Bipedal"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-6, 20)
+id = &"REGISTEEL"
+display_name = "Registeel"
+flags = Array[StringName]([&"Legendary"])

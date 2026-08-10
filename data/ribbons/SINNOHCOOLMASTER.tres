@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_vrood"]
+
+[resource]
+resource_name = "SINNOHCOOLMASTER"
+script = ExtResource("1_vrood")
+icon_position = 23
+description = "Super Contest Cool Category Master Rank winner!"
+id = &"SINNOHCOOLMASTER"
+display_name = "Cool Ribbon Master"

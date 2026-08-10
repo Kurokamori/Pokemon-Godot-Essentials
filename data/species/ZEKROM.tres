@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_v1u71"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5hsyu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7at2r"]
+
+[sub_resource type="Resource" id="Resource_dleee"]
+script = ExtResource("2_5hsyu")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_xm7qb"]
+script = ExtResource("2_5hsyu")
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_fg8xt"]
+script = ExtResource("2_5hsyu")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_lg73h"]
+script = ExtResource("2_5hsyu")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_wi4dq"]
+script = ExtResource("2_5hsyu")
+level = 8
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ytawi"]
+script = ExtResource("2_5hsyu")
+level = 16
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_hsuvn"]
+script = ExtResource("2_5hsyu")
+level = 24
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_8uoto"]
+script = ExtResource("2_5hsyu")
+level = 32
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_wn8yt"]
+script = ExtResource("2_5hsyu")
+level = 40
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_hnoa2"]
+script = ExtResource("2_5hsyu")
+level = 48
+move = &"FUSIONBOLT"
+
+[sub_resource type="Resource" id="Resource_rkvsu"]
+script = ExtResource("2_5hsyu")
+level = 56
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_xvfx4"]
+script = ExtResource("2_5hsyu")
+level = 64
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_gfa13"]
+script = ExtResource("2_5hsyu")
+level = 72
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_8vna3"]
+script = ExtResource("2_5hsyu")
+level = 80
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_eksgl"]
+script = ExtResource("2_5hsyu")
+level = 88
+move = &"BOLTSTRIKE"
+
+[resource]
+resource_name = "ZEKROM"
+script = ExtResource("3_7at2r")
+species = &"ZEKROM"
+category = "Deep Black"
+pokedex_entry = "This Pokémon appears in legends. In its tail, it has a giant generator that creates electricity."
+types = Array[StringName]([&"DRAGON", &"ELECTRIC"])
+base_hp = 100
+base_attack = 150
+base_defense = 120
+base_special_attack = 120
+base_special_defense = 100
+base_speed = 90
+ev_attack = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_5hsyu")]([SubResource("Resource_dleee"), SubResource("Resource_xm7qb"), SubResource("Resource_fg8xt"), SubResource("Resource_lg73h"), SubResource("Resource_wi4dq"), SubResource("Resource_ytawi"), SubResource("Resource_hsuvn"), SubResource("Resource_8uoto"), SubResource("Resource_wn8yt"), SubResource("Resource_hnoa2"), SubResource("Resource_rkvsu"), SubResource("Resource_xvfx4"), SubResource("Resource_gfa13"), SubResource("Resource_8vna3"), SubResource("Resource_eksgl")])
+tutor_moves = Array[StringName]([&"BODYPRESS", &"BREAKINGSWIPE", &"BRUTALSWING", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHPOWER", &"ECHOEDVOICE", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FLING", &"FLY", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SAFEGUARD", &"SCALESHOT", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"VOLTSWITCH", &"WEATHERBALL", &"WILDCHARGE", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TERAVOLT"])
+hatch_steps = 30720
+height = 29
+weight = 3450
+color = &"Black"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 7)
+shadow_size = 3
+id = &"ZEKROM"
+display_name = "Zekrom"
+flags = Array[StringName]([&"Legendary"])

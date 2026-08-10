@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_cmbtx"]
+
+[resource]
+resource_name = "FREEZESHOCK"
+script = ExtResource("1_cmbtx")
+type = &"ICE"
+category = 0
+power = 140
+accuracy = 90
+function_code = &"TwoTurnAttackParalyzeTarget"
+effect_chance = 30
+description = "On the second turn, the user hits the foe with electrically charged ice. It may also paralyze the foe."
+id = &"FREEZESHOCK"
+display_name = "Freeze Shock"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_dfg8g"]
+
+[resource]
+resource_name = "TERAORB"
+script = ExtResource("1_dfg8g")
+name_plural = "Tera Orbs"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "An orb that gathers Terastal energy, letting a Pokémon Terastallize."
+id = &"TERAORB"
+display_name = "Tera Orb"
+flags = Array[StringName]([&"KeyItem", &"TeraOrb"])

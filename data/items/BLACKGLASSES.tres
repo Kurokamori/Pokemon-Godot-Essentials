@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4v03f"]
+
+[resource]
+resource_name = "BLACKGLASSES"
+script = ExtResource("1_4v03f")
+name_plural = "Black Glasses"
+portion_name = "pair of Black Glasses"
+portion_name_plural = "pairs of Black Glasses"
+price = 3000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a shady-looking pair of glasses that boosts Dark-type moves."
+id = &"BLACKGLASSES"
+display_name = "Black Glasses"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e6es7"]
+
+[resource]
+resource_name = "NOBLEROAR"
+script = ExtResource("1_e6es7")
+accuracy = 0
+total_pp = 30
+function_code = &"LowerTargetAtkSpAtk1"
+description = "Letting out a noble roar, the user intimidates the target and lowers its Attack and Sp. Atk."
+id = &"NOBLEROAR"
+display_name = "Noble Roar"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

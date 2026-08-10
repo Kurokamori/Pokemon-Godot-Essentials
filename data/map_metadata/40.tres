@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_pebga"]
+
+[resource]
+resource_name = "40"
+script = ExtResource("1_pebga")
+map_id = 40
+outdoor_map = true
+announce_location = true
+always_bicycle = true
+town_map_position = Array[int]([0, 11, 6])
+id = &"40"
+display_name = "Route 4"

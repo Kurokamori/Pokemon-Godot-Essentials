@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_e7utj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xtrmw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_b50mw"]
+
+[sub_resource type="Resource" id="Resource_780i2"]
+script = ExtResource("1_e7utj")
+species = &"DRAGONAIR"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_ygteu"]
+script = ExtResource("2_xtrmw")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_b11hh"]
+script = ExtResource("2_xtrmw")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_k50yd"]
+script = ExtResource("2_xtrmw")
+level = 5
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_b01lh"]
+script = ExtResource("2_xtrmw")
+level = 10
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_yvllk"]
+script = ExtResource("2_xtrmw")
+level = 15
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_fusrc"]
+script = ExtResource("2_xtrmw")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_48elb"]
+script = ExtResource("2_xtrmw")
+level = 25
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_w1wy7"]
+script = ExtResource("2_xtrmw")
+level = 31
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_yiwdb"]
+script = ExtResource("2_xtrmw")
+level = 35
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_26txj"]
+script = ExtResource("2_xtrmw")
+level = 40
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_bvbqh"]
+script = ExtResource("2_xtrmw")
+level = 45
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_mwg7a"]
+script = ExtResource("2_xtrmw")
+level = 50
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_u40at"]
+script = ExtResource("2_xtrmw")
+level = 55
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_jvifs"]
+script = ExtResource("2_xtrmw")
+level = 60
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "DRATINI"
+script = ExtResource("3_b50mw")
+species = &"DRATINI"
+category = "Dragon"
+pokedex_entry = "A Dratini continually molts and sloughs off its old skin. It does so because the life energy within its body steadily builds to reach uncontrollable levels."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 41
+base_attack = 64
+base_defense = 45
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 50
+ev_attack = 1
+base_exp = 60
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_xtrmw")]([SubResource("Resource_ygteu"), SubResource("Resource_b11hh"), SubResource("Resource_k50yd"), SubResource("Resource_b01lh"), SubResource("Resource_yvllk"), SubResource("Resource_fusrc"), SubResource("Resource_48elb"), SubResource("Resource_w1wy7"), SubResource("Resource_yiwdb"), SubResource("Resource_26txj"), SubResource("Resource_bvbqh"), SubResource("Resource_mwg7a"), SubResource("Resource_u40at"), SubResource("Resource_jvifs")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AQUATAIL", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BREAKINGSWIPE", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMETHROWER", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALESHOT", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AQUAJET", &"DRAGONBREATH", &"DRAGONDANCE", &"DRAGONRUSH", &"EXTREMESPEED", &"HAZE", &"MIST", &"SUPERSONIC", &"WATERPULSE"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"MARVELSCALE"])
+wild_item_uncommon = Array[StringName]([&"DRAGONSCALE"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_e7utj")]([SubResource("Resource_780i2")])
+height = 18
+weight = 33
+color = &"Blue"
+shape = &"Serpentine"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 30)
+id = &"DRATINI"
+display_name = "Dratini"

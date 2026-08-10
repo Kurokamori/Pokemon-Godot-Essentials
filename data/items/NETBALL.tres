@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_28tk3"]
+
+[resource]
+resource_name = "NETBALL"
+script = ExtResource("1_28tk3")
+name_plural = "Net Balls"
+pocket = 3
+price = 1000
+sell_price = 500
+battle_use = 4
+description = "A somewhat different Poké Ball that works especially well on Water- and Bug-type Pokémon."
+id = &"NETBALL"
+display_name = "Net Ball"
+flags = Array[StringName]([&"PokeBall"])

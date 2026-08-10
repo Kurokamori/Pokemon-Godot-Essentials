@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_oi8cv"]
+
+[resource]
+resource_name = "SLEEPTALK"
+script = ExtResource("1_oi8cv")
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"UseRandomUserMoveIfAsleep"
+description = "While it is asleep, the user randomly uses one of the moves it knows."
+id = &"SLEEPTALK"
+display_name = "Sleep Talk"

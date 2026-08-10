@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mt32r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pqwka"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_q4eba"]
+
+[sub_resource type="Resource" id="Resource_8el2s"]
+script = ExtResource("1_mt32r")
+species = &"WARTORTLE"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_wx34d"]
+script = ExtResource("2_pqwka")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_uk770"]
+script = ExtResource("2_pqwka")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_5gadf"]
+script = ExtResource("2_pqwka")
+level = 3
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_vpdcj"]
+script = ExtResource("2_pqwka")
+level = 6
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_g5ln7"]
+script = ExtResource("2_pqwka")
+level = 9
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_p1anl"]
+script = ExtResource("2_pqwka")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_0fcy0"]
+script = ExtResource("2_pqwka")
+level = 15
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_4ybow"]
+script = ExtResource("2_pqwka")
+level = 18
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_62ffb"]
+script = ExtResource("2_pqwka")
+level = 21
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_cow7c"]
+script = ExtResource("2_pqwka")
+level = 24
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_e7p5k"]
+script = ExtResource("2_pqwka")
+level = 27
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_bus5n"]
+script = ExtResource("2_pqwka")
+level = 30
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_ghj75"]
+script = ExtResource("2_pqwka")
+level = 33
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_hum4e"]
+script = ExtResource("2_pqwka")
+level = 36
+move = &"SKULLBASH"
+
+[resource]
+resource_name = "SQUIRTLE"
+script = ExtResource("3_q4eba")
+species = &"SQUIRTLE"
+category = "Tiny Turtle"
+pokedex_entry = "Its shell is not just for protection. Its rounded shape and the grooves on its surface minimize resistance in water, enabling Squirtle to swim at high speeds."
+types = Array[StringName]([&"WATER"])
+base_hp = 44
+base_attack = 48
+base_defense = 65
+base_special_attack = 50
+base_special_defense = 64
+base_speed = 43
+ev_defense = 1
+base_exp = 63
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pqwka")]([SubResource("Resource_wx34d"), SubResource("Resource_uk770"), SubResource("Resource_5gadf"), SubResource("Resource_vpdcj"), SubResource("Resource_g5ln7"), SubResource("Resource_p1anl"), SubResource("Resource_0fcy0"), SubResource("Resource_4ybow"), SubResource("Resource_62ffb"), SubResource("Resource_cow7c"), SubResource("Resource_e7p5k"), SubResource("Resource_bus5n"), SubResource("Resource_ghj75"), SubResource("Resource_hum4e")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AURASPHERE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FLIPTURN", &"FOCUSPUNCH", &"FRUSTRATION", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONTAIL", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AQUAJET", &"AQUARING", &"AURASPHERE", &"FAKEOUT", &"FLAIL", &"HAZE", &"LIFEDEW", &"MIRRORCOAT", &"MIST", &"MUDDYWATER", &"WATERSPOUT", &"YAWN"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mt32r")]([SubResource("Resource_8el2s")])
+height = 5
+weight = 90
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(3, 30)
+shadow_size = 1
+id = &"SQUIRTLE"
+display_name = "Squirtle"

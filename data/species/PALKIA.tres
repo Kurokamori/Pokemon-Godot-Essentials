@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s1nqj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_74d43"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7ge0t"]
+
+[sub_resource type="Resource" id="Resource_i1kvg"]
+script = ExtResource("2_74d43")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_1tq1w"]
+script = ExtResource("2_74d43")
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_n0qmy"]
+script = ExtResource("2_74d43")
+level = 8
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_jca4s"]
+script = ExtResource("2_74d43")
+level = 16
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_4x5j6"]
+script = ExtResource("2_74d43")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_tqt0b"]
+script = ExtResource("2_74d43")
+level = 32
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_htf47"]
+script = ExtResource("2_74d43")
+level = 40
+move = &"SPACIALREND"
+
+[sub_resource type="Resource" id="Resource_m343l"]
+script = ExtResource("2_74d43")
+level = 48
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_yvbcu"]
+script = ExtResource("2_74d43")
+level = 56
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_ssorg"]
+script = ExtResource("2_74d43")
+level = 64
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_g10i0"]
+script = ExtResource("2_74d43")
+level = 72
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_5vafl"]
+script = ExtResource("2_74d43")
+level = 80
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_x0i6r"]
+script = ExtResource("2_74d43")
+level = 88
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "PALKIA"
+script = ExtResource("3_7ge0t")
+species = &"PALKIA"
+category = "Spatial"
+pokedex_entry = "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology."
+types = Array[StringName]([&"WATER", &"DRAGON"])
+base_hp = 90
+base_attack = 120
+base_defense = 100
+base_special_attack = 150
+base_special_defense = 120
+base_speed = 100
+ev_special_attack = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_74d43")]([SubResource("Resource_i1kvg"), SubResource("Resource_1tq1w"), SubResource("Resource_n0qmy"), SubResource("Resource_jca4s"), SubResource("Resource_4x5j6"), SubResource("Resource_tqt0b"), SubResource("Resource_htf47"), SubResource("Resource_m343l"), SubResource("Resource_yvbcu"), SubResource("Resource_ssorg"), SubResource("Resource_g10i0"), SubResource("Resource_5vafl"), SubResource("Resource_x0i6r")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AQUATAIL", &"AURASPHERE", &"AVALANCHE", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRINE", &"BULKUP", &"BULLDOZE", &"CONFIDE", &"CUT", &"DIVE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRAVITY", &"HAIL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"INCINERATE", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POWERGEM", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICKROOM", &"TWISTER", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+hatch_steps = 30720
+height = 42
+weight = 3360
+color = &"Purple"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 3
+id = &"PALKIA"
+display_name = "Palkia"
+flags = Array[StringName]([&"Legendary"])

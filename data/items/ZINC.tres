@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_iaju2"]
+
+[resource]
+resource_name = "ZINC"
+script = ExtResource("1_iaju2")
+name_plural = "Zincs"
+portion_name = "bottle of Zinc"
+portion_name_plural = "bottles of Zinc"
+pocket = 2
+price = 10000
+sell_price = 5000
+field_use = 1
+description = "A nutritious drink for Pokémon. It raises the base Sp. Def (Special Defense) stat of a single Pokémon."
+id = &"ZINC"
+display_name = "Zinc"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ChallengeRules" format=3]
+
+[ext_resource type="Script" path="res://src/battle/challenge_format_tournament.gd" id="1_m47gl"]
+[ext_resource type="Script" path="res://src/battle/challenge_rules.gd" id="2_gjefs"]
+
+[sub_resource type="Resource" id="Resource_n7uwk"]
+script = ExtResource("1_m47gl")
+entry_message = "The whole bracket is posted before the first match. Study it."
+
+[resource]
+script = ExtResource("2_gjefs")
+display_name = "Battle Dome"
+facility_id = &"BATTLEDOME"
+format = SubResource("Resource_n7uwk")
+banned_species = Array[StringName]([&"MEWTWO", &"MEW", &"LUGIA", &"HOOH", &"CELEBI", &"KYOGRE", &"GROUDON", &"RAYQUAZA", &"JIRACHI", &"DEOXYS", &"DIALGA", &"PALKIA", &"GIRATINA", &"PHIONE", &"MANAPHY", &"DARKRAI", &"SHAYMIN", &"ARCEUS", &"RESHIRAM", &"ZEKROM", &"KYUREM", &"VICTINI", &"KELDEO", &"MELOETTA", &"GENESECT", &"XERNEAS", &"YVELTAL", &"ZYGARDE", &"DIANCIE", &"HOOPA", &"VOLCANION", &"COSMOG", &"COSMOEM", &"SOLGALEO", &"LUNALA", &"NECROZMA", &"MAGEARNA", &"MARSHADOW", &"ZERAORA", &"ZACIAN", &"ZAMAZENTA", &"ETERNATUS", &"ZARUDE", &"CALYREX"])
+rounds = 4

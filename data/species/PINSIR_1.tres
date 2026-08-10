@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xh4iq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h5n6g"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5odd1"]
+
+[sub_resource type="Resource" id="Resource_takff"]
+script = ExtResource("2_h5n6g")
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_s24qj"]
+script = ExtResource("2_h5n6g")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_rwt87"]
+script = ExtResource("2_h5n6g")
+level = 4
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_v3ld8"]
+script = ExtResource("2_h5n6g")
+level = 8
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_gqurp"]
+script = ExtResource("2_h5n6g")
+level = 12
+move = &"SEISMICTOSS"
+
+[sub_resource type="Resource" id="Resource_ud2ay"]
+script = ExtResource("2_h5n6g")
+level = 16
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_4vyru"]
+script = ExtResource("2_h5n6g")
+level = 20
+move = &"STORMTHROW"
+
+[sub_resource type="Resource" id="Resource_lr2di"]
+script = ExtResource("2_h5n6g")
+level = 24
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_tkp5u"]
+script = ExtResource("2_h5n6g")
+level = 28
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_bc37e"]
+script = ExtResource("2_h5n6g")
+level = 32
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_xs4f7"]
+script = ExtResource("2_h5n6g")
+level = 36
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_l5rfc"]
+script = ExtResource("2_h5n6g")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_mcdv0"]
+script = ExtResource("2_h5n6g")
+level = 44
+move = &"SUBMISSION"
+
+[sub_resource type="Resource" id="Resource_7hydb"]
+script = ExtResource("2_h5n6g")
+level = 48
+move = &"GUILLOTINE"
+
+[sub_resource type="Resource" id="Resource_4xy8l"]
+script = ExtResource("2_h5n6g")
+level = 52
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "PINSIR_1"
+script = ExtResource("3_5odd1")
+species = &"PINSIR"
+form = 1
+form_name = "Mega Pinsir"
+category = "Stag Beetle"
+pokedex_entry = "It zips around at blistering speeds, looking for an opening to skewer its opponent on its giant pincers."
+pokedex_form = 1
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 65
+base_attack = 155
+base_defense = 120
+base_special_attack = 65
+base_special_defense = 90
+base_speed = 105
+ev_attack = 2
+base_exp = 210
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h5n6g")]([SubResource("Resource_takff"), SubResource("Resource_s24qj"), SubResource("Resource_rwt87"), SubResource("Resource_v3ld8"), SubResource("Resource_gqurp"), SubResource("Resource_ud2ay"), SubResource("Resource_4vyru"), SubResource("Resource_lr2di"), SubResource("Resource_tkp5u"), SubResource("Resource_bc37e"), SubResource("Resource_xs4f7"), SubResource("Resource_l5rfc"), SubResource("Resource_mcdv0"), SubResource("Resource_7hydb"), SubResource("Resource_4xy8l")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BUGBITE", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"THROATCHOP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"BUGBITE", &"CLOSECOMBAT", &"FEINT", &"FLAIL", &"FURYATTACK", &"QUICKATTACK", &"SUPERPOWER", &"THRASH"])
+abilities = Array[StringName]([&"AERILATE"])
+hidden_abilities = Array[StringName]([&"AERILATE"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 6400
+height = 17
+weight = 590
+color = &"Brown"
+shape = &"MultiWinged"
+habitat = &"Forest"
+generation = 6
+mega_stone = &"PINSIRITE"
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(4, 8)
+id = &"PINSIR_1"
+display_name = "Pinsir"

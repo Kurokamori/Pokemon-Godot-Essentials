@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_mtt1m"]
+
+[resource]
+resource_name = "CLANGOROUSSOUL"
+script = ExtResource("1_mtt1m")
+type = &"DRAGON"
+accuracy = 0
+target = &"User"
+function_code = &"RaiseUserMainStats1LoseThirdOfTotalHP"
+description = "The user raises all its stats by using some of its HP."
+id = &"CLANGOROUSSOUL"
+display_name = "Clangorous Soul"
+flags = Array[StringName]([&"Sound", &"CannotMetronome", &"Dance"])

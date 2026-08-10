@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tptlp"]
+
+[resource]
+resource_name = "AMNESIA"
+script = ExtResource("1_tptlp")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserSpDef2"
+description = "The user temporarily empties its mind to forget its concerns. It sharply raises the user's Sp. Def stat."
+id = &"AMNESIA"
+display_name = "Amnesia"

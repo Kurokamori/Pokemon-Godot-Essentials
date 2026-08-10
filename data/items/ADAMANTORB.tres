@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wqhb4"]
+
+[resource]
+resource_name = "ADAMANTORB"
+script = ExtResource("1_wqhb4")
+name_plural = "Adamant Orbs"
+price = 10000
+description = "A brightly gleaming orb to be held by Dialga. It boosts the power of Dragon- and Steel-type moves."
+id = &"ADAMANTORB"
+display_name = "Adamant Orb"
+flags = Array[StringName]([&"Fling_60"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4sfnf"]
+
+[resource]
+resource_name = "PLASMAFISTS"
+script = ExtResource("1_4sfnf")
+type = &"ELECTRIC"
+category = 0
+power = 100
+total_pp = 15
+function_code = &"NormalMovesBecomeElectric"
+description = "The user attacks with electrically charged fists. Normal-type moves become Electric-type."
+id = &"PLASMAFISTS"
+display_name = "Plasma Fists"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Punching", &"CannotMetronome"])

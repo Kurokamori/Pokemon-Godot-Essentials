@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2y8us"]
+
+[resource]
+resource_name = "FLAIL"
+script = ExtResource("1_2y8us")
+category = 0
+power = 1
+total_pp = 15
+function_code = &"PowerLowerWithUserHP"
+description = "The user flails about aimlessly to attack. It becomes more powerful the less HP the user has."
+id = &"FLAIL"
+display_name = "Flail"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

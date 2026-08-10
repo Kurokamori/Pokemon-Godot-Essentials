@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_140tw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pvq2j"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1ddp6"]
+
+[sub_resource type="Resource" id="Resource_3u01v"]
+script = ExtResource("1_140tw")
+species = &"BUIZEL"
+method = &"Level"
+parameter = "26"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_4reta"]
+script = ExtResource("2_pvq2j")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_rbgdj"]
+script = ExtResource("2_pvq2j")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_3rfmh"]
+script = ExtResource("2_pvq2j")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_c8b1v"]
+script = ExtResource("2_pvq2j")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_b55n8"]
+script = ExtResource("2_pvq2j")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_3yvof"]
+script = ExtResource("2_pvq2j")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_tdlxl"]
+script = ExtResource("2_pvq2j")
+level = 7
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_h0c3r"]
+script = ExtResource("2_pvq2j")
+level = 11
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_84ftr"]
+script = ExtResource("2_pvq2j")
+level = 15
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_aye6x"]
+script = ExtResource("2_pvq2j")
+level = 18
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_afk6t"]
+script = ExtResource("2_pvq2j")
+level = 21
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_bxp7s"]
+script = ExtResource("2_pvq2j")
+level = 24
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_7qksd"]
+script = ExtResource("2_pvq2j")
+level = 29
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_5n8vq"]
+script = ExtResource("2_pvq2j")
+level = 35
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_5c1fo"]
+script = ExtResource("2_pvq2j")
+level = 41
+move = &"WATERFALL"
+
+[sub_resource type="Resource" id="Resource_ksgdy"]
+script = ExtResource("2_pvq2j")
+level = 46
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_66i3r"]
+script = ExtResource("2_pvq2j")
+level = 51
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_e75vj"]
+script = ExtResource("2_pvq2j")
+level = 57
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "FLOATZEL"
+script = ExtResource("3_1ddp6")
+species = &"FLOATZEL"
+category = "Sea Weasel"
+pokedex_entry = "It floats using its well-developed flotation sac. It assists in the rescues of drowning people."
+types = Array[StringName]([&"WATER"])
+base_hp = 85
+base_attack = 105
+base_defense = 55
+base_special_attack = 85
+base_special_defense = 50
+base_speed = 115
+ev_speed = 2
+base_exp = 173
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pvq2j")]([SubResource("Resource_4reta"), SubResource("Resource_rbgdj"), SubResource("Resource_3rfmh"), SubResource("Resource_c8b1v"), SubResource("Resource_b55n8"), SubResource("Resource_3yvof"), SubResource("Resource_tdlxl"), SubResource("Resource_h0c3r"), SubResource("Resource_84ftr"), SubResource("Resource_aye6x"), SubResource("Resource_afk6t"), SubResource("Resource_bxp7s"), SubResource("Resource_7qksd"), SubResource("Resource_5n8vq"), SubResource("Resource_5c1fo"), SubResource("Resource_ksgdy"), SubResource("Resource_66i3r"), SubResource("Resource_e75vj")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BRICKBREAK", &"BRINE", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"LIQUIDATION", &"LOWKICK", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TAUNT", &"TORMENT", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"WATERVEIL"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_140tw")]([SubResource("Resource_3u01v")])
+height = 11
+weight = 335
+color = &"Brown"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 18)
+id = &"FLOATZEL"
+display_name = "Floatzel"

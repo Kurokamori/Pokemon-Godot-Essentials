@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_i8l28"]
+
+[resource]
+resource_name = "CRUSHGRIP"
+script = ExtResource("1_i8l28")
+category = 0
+power = 1
+function_code = &"PowerHigherWithTargetHP"
+description = "The target is crushed with great force. The attack is more powerful the more HP the target has left."
+id = &"CRUSHGRIP"
+display_name = "Crush Grip"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

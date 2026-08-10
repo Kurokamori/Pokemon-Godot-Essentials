@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ne2pf"]
+
+[resource]
+resource_name = "LEER"
+script = ExtResource("1_ne2pf")
+total_pp = 30
+target = &"AllNearFoes"
+function_code = &"LowerTargetDefense1"
+description = "The user gains an intimidating leer with sharp eyes. The target's Defense stat is reduced."
+id = &"LEER"
+display_name = "Leer"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qp1vj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x6nhl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a8aod"]
+
+[sub_resource type="Resource" id="Resource_iinin"]
+script = ExtResource("2_x6nhl")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_n8syw"]
+script = ExtResource("2_x6nhl")
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_c11lk"]
+script = ExtResource("2_x6nhl")
+level = 4
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_8ojjt"]
+script = ExtResource("2_x6nhl")
+level = 8
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_pfnpq"]
+script = ExtResource("2_x6nhl")
+level = 12
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_rsbbg"]
+script = ExtResource("2_x6nhl")
+level = 16
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_0d34f"]
+script = ExtResource("2_x6nhl")
+level = 20
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_ycgpx"]
+script = ExtResource("2_x6nhl")
+level = 20
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_fvhgy"]
+script = ExtResource("2_x6nhl")
+level = 24
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_huj47"]
+script = ExtResource("2_x6nhl")
+level = 28
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_6yd8x"]
+script = ExtResource("2_x6nhl")
+level = 32
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ecd4q"]
+script = ExtResource("2_x6nhl")
+level = 32
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_5tk0u"]
+script = ExtResource("2_x6nhl")
+level = 36
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_cav0g"]
+script = ExtResource("2_x6nhl")
+level = 40
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_bky78"]
+script = ExtResource("2_x6nhl")
+level = 40
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_sjtbl"]
+script = ExtResource("2_x6nhl")
+level = 44
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_lyuc6"]
+script = ExtResource("2_x6nhl")
+level = 48
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_i4wc2"]
+script = ExtResource("2_x6nhl")
+level = 52
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_e0gtl"]
+script = ExtResource("2_x6nhl")
+level = 56
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_ykm7j"]
+script = ExtResource("2_x6nhl")
+level = 60
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "CRYOGONAL"
+script = ExtResource("3_a8aod")
+species = &"CRYOGONAL"
+category = "Crystallizing"
+pokedex_entry = "They are born in snow clouds. They use chains made of ice crystals to capture prey."
+types = Array[StringName]([&"ICE"])
+base_hp = 80
+base_attack = 50
+base_defense = 50
+base_special_attack = 95
+base_special_defense = 135
+base_speed = 105
+ev_special_defense = 2
+base_exp = 180
+gender_ratio = &"Genderless"
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_x6nhl")]([SubResource("Resource_iinin"), SubResource("Resource_n8syw"), SubResource("Resource_c11lk"), SubResource("Resource_8ojjt"), SubResource("Resource_pfnpq"), SubResource("Resource_rsbbg"), SubResource("Resource_0d34f"), SubResource("Resource_ycgpx"), SubResource("Resource_fvhgy"), SubResource("Resource_huj47"), SubResource("Resource_6yd8x"), SubResource("Resource_ecd4q"), SubResource("Resource_5tk0u"), SubResource("Resource_cav0g"), SubResource("Resource_bky78"), SubResource("Resource_sjtbl"), SubResource("Resource_lyuc6"), SubResource("Resource_i4wc2"), SubResource("Resource_e0gtl"), SubResource("Resource_ykm7j")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AURORAVEIL", &"AVALANCHE", &"BIND", &"BLIZZARD", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FROSTBREATH", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SELFDESTRUCT", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRIPLEAXEL", &"WATERPULSE"])
+abilities = Array[StringName]([&"LEVITATE"])
+wild_item_uncommon = Array[StringName]([&"NEVERMELTICE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+height = 11
+weight = 1480
+color = &"Blue"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 10)
+id = &"CRYOGONAL"
+display_name = "Cryogonal"

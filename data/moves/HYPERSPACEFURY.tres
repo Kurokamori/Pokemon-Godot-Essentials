@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ehtmg"]
+
+[resource]
+resource_name = "HYPERSPACEFURY"
+script = ExtResource("1_ehtmg")
+type = &"DARK"
+category = 0
+power = 100
+accuracy = 0
+function_code = &"HoopaRemoveProtectionsBypassSubstituteLowerUserDef1"
+description = "Unleashes a barrage of multi-arm attacks, skipping protections. The user's Defense stat falls."
+id = &"HYPERSPACEFURY"
+display_name = "Hyperspace Fury"
+flags = Array[StringName]([&"CanMirrorMove", &"CannotMetronome"])

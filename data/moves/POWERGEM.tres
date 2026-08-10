@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xd1hk"]
+
+[resource]
+resource_name = "POWERGEM"
+script = ExtResource("1_xd1hk")
+type = &"ROCK"
+category = 1
+power = 80
+total_pp = 20
+description = "The user attacks with a ray of light that sparkles as if it were made of gemstones."
+id = &"POWERGEM"
+display_name = "Power Gem"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

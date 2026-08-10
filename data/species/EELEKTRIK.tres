@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ihehp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0qdf8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2tbd6"]
+
+[sub_resource type="Resource" id="Resource_755da"]
+script = ExtResource("1_ihehp")
+species = &"EELEKTROSS"
+method = &"Item"
+parameter = "THUNDERSTONE"
+
+[sub_resource type="Resource" id="Resource_o5jqm"]
+script = ExtResource("1_ihehp")
+species = &"TYNAMO"
+method = &"Level"
+parameter = "39"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nbdhf"]
+script = ExtResource("2_0qdf8")
+level = 0
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_qytb6"]
+script = ExtResource("2_0qdf8")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_uogrq"]
+script = ExtResource("2_0qdf8")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_qyc5c"]
+script = ExtResource("2_0qdf8")
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_sduwr"]
+script = ExtResource("2_0qdf8")
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_eeayk"]
+script = ExtResource("2_0qdf8")
+level = 9
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_mtwt7"]
+script = ExtResource("2_0qdf8")
+level = 19
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_q7r34"]
+script = ExtResource("2_0qdf8")
+level = 29
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_rdx1l"]
+script = ExtResource("2_0qdf8")
+level = 44
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_5fj7g"]
+script = ExtResource("2_0qdf8")
+level = 49
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_0c5vv"]
+script = ExtResource("2_0qdf8")
+level = 54
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_51ft5"]
+script = ExtResource("2_0qdf8")
+level = 59
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_fbcd1"]
+script = ExtResource("2_0qdf8")
+level = 64
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_0b6pi"]
+script = ExtResource("2_0qdf8")
+level = 69
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_wexm4"]
+script = ExtResource("2_0qdf8")
+level = 74
+move = &"THRASH"
+
+[resource]
+resource_name = "EELEKTRIK"
+script = ExtResource("3_2tbd6")
+species = &"EELEKTRIK"
+category = "EleFish"
+pokedex_entry = "These Pokémon have a big appetite. When they spot their prey, they attack it and paralyze it with electricity."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 65
+base_attack = 85
+base_defense = 70
+base_special_attack = 75
+base_special_defense = 70
+base_speed = 40
+ev_attack = 2
+base_exp = 142
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_0qdf8")]([SubResource("Resource_nbdhf"), SubResource("Resource_qytb6"), SubResource("Resource_uogrq"), SubResource("Resource_qyc5c"), SubResource("Resource_sduwr"), SubResource("Resource_eeayk"), SubResource("Resource_mtwt7"), SubResource("Resource_q7r34"), SubResource("Resource_rdx1l"), SubResource("Resource_5fj7g"), SubResource("Resource_0c5vv"), SubResource("Resource_51ft5"), SubResource("Resource_fbcd1"), SubResource("Resource_0b6pi"), SubResource("Resource_wexm4")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AQUATAIL", &"ATTRACT", &"BIND", &"BOUNCE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"HIDDENPOWER", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUPERFANG", &"SWAGGER", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"UTURN", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ihehp")]([SubResource("Resource_755da"), SubResource("Resource_o5jqm")])
+height = 12
+weight = 220
+color = &"Blue"
+shape = &"Finned"
+generation = 5
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(-2, 20)
+id = &"EELEKTRIK"
+display_name = "Eelektrik"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_jue3d"]
+
+[resource]
+resource_name = "SKULLFOSSIL"
+script = ExtResource("1_jue3d")
+name_plural = "Skull Fossils"
+price = 7000
+sell_price = 3500
+description = "A fossil from a prehistoric Pokémon that lived on the land. It appears to be part of a head."
+id = &"SKULLFOSSIL"
+display_name = "Skull Fossil"
+flags = Array[StringName]([&"Fossil", &"Fling_100"])

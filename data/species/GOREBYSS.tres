@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_l717t"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_oidl6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_su0oi"]
+
+[sub_resource type="Resource" id="Resource_f1lwg"]
+script = ExtResource("1_l717t")
+species = &"CLAMPERL"
+method = &"TradeItem"
+parameter = "DEEPSEASCALE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_py022"]
+script = ExtResource("2_oidl6")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_pt2dh"]
+script = ExtResource("2_oidl6")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_ln4nc"]
+script = ExtResource("2_oidl6")
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_h1cy2"]
+script = ExtResource("2_oidl6")
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_355yo"]
+script = ExtResource("2_oidl6")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_jcf3f"]
+script = ExtResource("2_oidl6")
+level = 5
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_uu4bo"]
+script = ExtResource("2_oidl6")
+level = 9
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ecny4"]
+script = ExtResource("2_oidl6")
+level = 11
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_5h6ik"]
+script = ExtResource("2_oidl6")
+level = 14
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_qw7f5"]
+script = ExtResource("2_oidl6")
+level = 16
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_ys3t2"]
+script = ExtResource("2_oidl6")
+level = 19
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_0mwti"]
+script = ExtResource("2_oidl6")
+level = 23
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_j3cg1"]
+script = ExtResource("2_oidl6")
+level = 26
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_j2xyd"]
+script = ExtResource("2_oidl6")
+level = 29
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_mwnct"]
+script = ExtResource("2_oidl6")
+level = 34
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_rwt6a"]
+script = ExtResource("2_oidl6")
+level = 39
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_0o45k"]
+script = ExtResource("2_oidl6")
+level = 45
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_5spx6"]
+script = ExtResource("2_oidl6")
+level = 50
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "GOREBYSS"
+script = ExtResource("3_su0oi")
+species = &"GOREBYSS"
+category = "South Sea"
+pokedex_entry = "A Gorebyss siphons the body fluids of prey through its thin, tubular mouth. Its light pink body color turns vivid when it finishes feeding."
+types = Array[StringName]([&"WATER"])
+base_hp = 55
+base_attack = 84
+base_defense = 105
+base_special_attack = 114
+base_special_defense = 75
+base_speed = 52
+ev_special_attack = 2
+base_exp = 170
+growth_rate = &"Erratic"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_oidl6")]([SubResource("Resource_py022"), SubResource("Resource_pt2dh"), SubResource("Resource_ln4nc"), SubResource("Resource_h1cy2"), SubResource("Resource_355yo"), SubResource("Resource_jcf3f"), SubResource("Resource_uu4bo"), SubResource("Resource_ecny4"), SubResource("Resource_5h6ik"), SubResource("Resource_qw7f5"), SubResource("Resource_ys3t2"), SubResource("Resource_0mwti"), SubResource("Resource_j3cg1"), SubResource("Resource_j2xyd"), SubResource("Resource_mwnct"), SubResource("Resource_rwt6a"), SubResource("Resource_0o45k"), SubResource("Resource_5spx6")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+wild_item_uncommon = Array[StringName]([&"DEEPSEASCALE"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_l717t")]([SubResource("Resource_f1lwg")])
+height = 18
+weight = 226
+color = &"Pink"
+shape = &"Serpentine"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 27)
+id = &"GOREBYSS"
+display_name = "Gorebyss"

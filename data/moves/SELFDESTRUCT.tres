@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fhkdc"]
+
+[resource]
+resource_name = "SELFDESTRUCT"
+script = ExtResource("1_fhkdc")
+category = 0
+power = 200
+target = &"AllNearOthers"
+function_code = &"UserFaintsExplosive"
+description = "The user blows up to inflict damage on all Pokémon in battle. The user faints upon using this move."
+id = &"SELFDESTRUCT"
+display_name = "Self-Destruct"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

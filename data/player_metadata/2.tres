@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="PlayerMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/player_metadata_data.gd" id="1_vk7tk"]
+
+[resource]
+resource_name = "2"
+script = ExtResource("1_vk7tk")
+player_id = 2
+trainer_type = &"POKEMONTRAINER_Leaf"
+character_name = "Girl"
+gender = 1
+intro_picture = "introGirl"
+suggested_names = Array[String](["Leaf", "Misty", "Kris", "Lyra", "May"])
+walk_charset = "trainer_POKEMONTRAINER_Leaf"
+run_charset = "girl_run"
+cycle_charset = "girl_bike"
+surf_charset = "girl_surf"
+dive_charset = "girl_surf"
+fish_charset = "girl_fish_offset"
+surf_fish_charset = "girl_fish_offset"
+id = &"2"
+display_name = "Player 2"

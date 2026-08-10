@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TargetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/target_data.gd" id="1_rhh0r"]
+
+[resource]
+resource_name = "UserSide"
+script = ExtResource("1_rhh0r")
+num_targets = 0
+id = &"UserSide"
+display_name = "User Side"

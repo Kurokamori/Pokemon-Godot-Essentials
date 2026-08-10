@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_x0p30"]
+
+[resource]
+resource_name = "TRUMPCARD"
+script = ExtResource("1_x0p30")
+category = 1
+power = 1
+accuracy = 0
+function_code = &"PowerHigherWithLessPP"
+description = "The fewer PP this move has, the greater its attack power."
+id = &"TRUMPCARD"
+display_name = "Trump Card"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

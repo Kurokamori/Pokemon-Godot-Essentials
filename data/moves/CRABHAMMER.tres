@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_bo57t"]
+
+[resource]
+resource_name = "CRABHAMMER"
+script = ExtResource("1_bo57t")
+type = &"WATER"
+category = 0
+power = 100
+accuracy = 90
+total_pp = 10
+description = "The target is hammered with a large pincer. Critical hits land more easily."
+id = &"CRABHAMMER"
+display_name = "Crabhammer"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

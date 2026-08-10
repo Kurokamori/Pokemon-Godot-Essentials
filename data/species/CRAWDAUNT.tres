@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o44mm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d51nh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5nkkx"]
+
+[sub_resource type="Resource" id="Resource_w7nj1"]
+script = ExtResource("1_o44mm")
+species = &"CORPHISH"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6op3b"]
+script = ExtResource("2_d51nh")
+level = 0
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_nmcxh"]
+script = ExtResource("2_d51nh")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_nbnai"]
+script = ExtResource("2_d51nh")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_e8cn8"]
+script = ExtResource("2_d51nh")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_cwqev"]
+script = ExtResource("2_d51nh")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_g65nj"]
+script = ExtResource("2_d51nh")
+level = 12
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_5tpnj"]
+script = ExtResource("2_d51nh")
+level = 16
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_8y0eg"]
+script = ExtResource("2_d51nh")
+level = 20
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_3c24q"]
+script = ExtResource("2_d51nh")
+level = 24
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_s8v1v"]
+script = ExtResource("2_d51nh")
+level = 28
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_1dkqb"]
+script = ExtResource("2_d51nh")
+level = 34
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_pw3ri"]
+script = ExtResource("2_d51nh")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_y8hqw"]
+script = ExtResource("2_d51nh")
+level = 46
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_qn352"]
+script = ExtResource("2_d51nh")
+level = 52
+move = &"CRABHAMMER"
+
+[sub_resource type="Resource" id="Resource_kc7id"]
+script = ExtResource("2_d51nh")
+level = 58
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_iux6b"]
+script = ExtResource("2_d51nh")
+level = 64
+move = &"GUILLOTINE"
+
+[resource]
+resource_name = "CRAWDAUNT"
+script = ExtResource("3_5nkkx")
+species = &"CRAWDAUNT"
+category = "Rogue"
+pokedex_entry = "A brutish Pokémon that loves to battle. A veteran Crawdaunt that has prevailed in hundreds of battles has giant pincers marked with countless scars."
+types = Array[StringName]([&"WATER", &"DARK"])
+base_hp = 63
+base_attack = 120
+base_defense = 85
+base_special_attack = 90
+base_special_defense = 55
+base_speed = 55
+ev_attack = 2
+base_exp = 164
+growth_rate = &"Fluctuating"
+catch_rate = 155
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_d51nh")]([SubResource("Resource_6op3b"), SubResource("Resource_nmcxh"), SubResource("Resource_nbnai"), SubResource("Resource_e8cn8"), SubResource("Resource_cwqev"), SubResource("Resource_g65nj"), SubResource("Resource_5tpnj"), SubResource("Resource_8y0eg"), SubResource("Resource_3c24q"), SubResource("Resource_s8v1v"), SubResource("Resource_1dkqb"), SubResource("Resource_pw3ri"), SubResource("Resource_y8hqw"), SubResource("Resource_qn352"), SubResource("Resource_kc7id"), SubResource("Resource_iux6b")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DARKPULSE", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"LASHOUT", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNARL", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"XSCISSOR"])
+abilities = Array[StringName]([&"HYPERCUTTER", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_o44mm")]([SubResource("Resource_w7nj1")])
+height = 11
+weight = 328
+shape = &"Insectoid"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-8, 22)
+id = &"CRAWDAUNT"
+display_name = "Crawdaunt"

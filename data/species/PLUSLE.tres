@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_w4dna"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7p8e0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_k6ld1"]
+
+[sub_resource type="Resource" id="Resource_x8rbl"]
+script = ExtResource("2_7p8e0")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_m8kdl"]
+script = ExtResource("2_7p8e0")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_5iq5j"]
+script = ExtResource("2_7p8e0")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_rl3gk"]
+script = ExtResource("2_7p8e0")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_2vw08"]
+script = ExtResource("2_7p8e0")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_eegm3"]
+script = ExtResource("2_7p8e0")
+level = 4
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_xmlf2"]
+script = ExtResource("2_7p8e0")
+level = 7
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_akwy3"]
+script = ExtResource("2_7p8e0")
+level = 10
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_imnmc"]
+script = ExtResource("2_7p8e0")
+level = 13
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_k7c84"]
+script = ExtResource("2_7p8e0")
+level = 16
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_emuao"]
+script = ExtResource("2_7p8e0")
+level = 19
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_6xg51"]
+script = ExtResource("2_7p8e0")
+level = 22
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_wxm82"]
+script = ExtResource("2_7p8e0")
+level = 25
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_8nmsj"]
+script = ExtResource("2_7p8e0")
+level = 28
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_rgc4y"]
+script = ExtResource("2_7p8e0")
+level = 31
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_m3je6"]
+script = ExtResource("2_7p8e0")
+level = 34
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_4j5pe"]
+script = ExtResource("2_7p8e0")
+level = 37
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_uqsme"]
+script = ExtResource("2_7p8e0")
+level = 40
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_hxqsp"]
+script = ExtResource("2_7p8e0")
+level = 43
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_s5r1j"]
+script = ExtResource("2_7p8e0")
+level = 46
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_x5caf"]
+script = ExtResource("2_7p8e0")
+level = 49
+move = &"ENTRAINMENT"
+
+[resource]
+resource_name = "PLUSLE"
+script = ExtResource("3_k6ld1")
+species = &"PLUSLE"
+category = "Cheering"
+pokedex_entry = "It has the trait of cheering on its fellow Pokémon. By shorting out the electricity it releases from its paws, it creates pom-poms for cheering."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 60
+base_attack = 50
+base_defense = 40
+base_special_attack = 85
+base_special_defense = 75
+base_speed = 95
+ev_speed = 1
+base_exp = 142
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7p8e0")]([SubResource("Resource_x8rbl"), SubResource("Resource_m8kdl"), SubResource("Resource_5iq5j"), SubResource("Resource_rl3gk"), SubResource("Resource_2vw08"), SubResource("Resource_eegm3"), SubResource("Resource_xmlf2"), SubResource("Resource_akwy3"), SubResource("Resource_imnmc"), SubResource("Resource_k7c84"), SubResource("Resource_emuao"), SubResource("Resource_6xg51"), SubResource("Resource_wxm82"), SubResource("Resource_8nmsj"), SubResource("Resource_rgc4y"), SubResource("Resource_m3je6"), SubResource("Resource_4j5pe"), SubResource("Resource_uqsme"), SubResource("Resource_hxqsp"), SubResource("Resource_s5r1j"), SubResource("Resource_x5caf")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"LASTRESORT", &"LIGHTSCREEN", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"CHARM", &"DISCHARGE", &"FAKETEARS", &"SING", &"SWEETKISS", &"TEARFULLOOK", &"WISH"])
+abilities = Array[StringName]([&"PLUS"])
+hidden_abilities = Array[StringName]([&"LIGHTNINGROD"])
+wild_item_uncommon = Array[StringName]([&"CELLBATTERY"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+height = 4
+weight = 42
+color = &"Yellow"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 28)
+shadow_size = 1
+id = &"PLUSLE"
+display_name = "Plusle"

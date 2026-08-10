@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4nxla"]
+
+[resource]
+resource_name = "SOAK"
+script = ExtResource("1_4nxla")
+type = &"WATER"
+total_pp = 20
+function_code = &"SetTargetTypesToWater"
+description = "The user shoots a torrent of water at the target and changes the target's type to Water."
+id = &"SOAK"
+display_name = "Soak"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

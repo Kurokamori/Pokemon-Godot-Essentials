@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6uuoc"]
+
+[resource]
+resource_name = "MAGICPOWDER"
+script = ExtResource("1_6uuoc")
+type = &"PSYCHIC"
+total_pp = 20
+function_code = &"SetTargetTypesToPsychic"
+description = "The user scatters a cloud of magic powder that changes the target to Psychic type."
+id = &"MAGICPOWDER"
+display_name = "Magic Powder"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Powder"])

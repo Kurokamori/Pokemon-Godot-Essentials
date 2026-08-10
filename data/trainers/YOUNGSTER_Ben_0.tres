@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_nxddu"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_ulqyb"]
+
+[sub_resource type="Resource" id="Resource_v6iak"]
+script = ExtResource("1_nxddu")
+species = &"RATTATA"
+level = 11
+
+[sub_resource type="Resource" id="Resource_ayvsn"]
+script = ExtResource("1_nxddu")
+species = &"EKANS"
+level = 11
+
+[resource]
+resource_name = "YOUNGSTER|Ben|0"
+script = ExtResource("2_ulqyb")
+trainer_type = &"YOUNGSTER"
+lose_text = "Aww, I lost."
+pokemon = Array[ExtResource("1_nxddu")]([SubResource("Resource_v6iak"), SubResource("Resource_ayvsn")])
+id = &"YOUNGSTER|Ben|0"
+display_name = "Ben"

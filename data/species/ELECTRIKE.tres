@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cfl0n"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jlth4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ww4fe"]
+
+[sub_resource type="Resource" id="Resource_15554"]
+script = ExtResource("1_cfl0n")
+species = &"MANECTRIC"
+method = &"Level"
+parameter = "26"
+
+[sub_resource type="Resource" id="Resource_73j8a"]
+script = ExtResource("2_jlth4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_0vo3e"]
+script = ExtResource("2_jlth4")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_h67wv"]
+script = ExtResource("2_jlth4")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ha3ey"]
+script = ExtResource("2_jlth4")
+level = 8
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_74q0s"]
+script = ExtResource("2_jlth4")
+level = 12
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_5vo6c"]
+script = ExtResource("2_jlth4")
+level = 16
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_ads5p"]
+script = ExtResource("2_jlth4")
+level = 20
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_cwvid"]
+script = ExtResource("2_jlth4")
+level = 24
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_0yohj"]
+script = ExtResource("2_jlth4")
+level = 28
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_i3s31"]
+script = ExtResource("2_jlth4")
+level = 32
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_ijyxa"]
+script = ExtResource("2_jlth4")
+level = 36
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_pccfb"]
+script = ExtResource("2_jlth4")
+level = 40
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_2ky6c"]
+script = ExtResource("2_jlth4")
+level = 44
+move = &"THUNDER"
+
+[resource]
+resource_name = "ELECTRIKE"
+script = ExtResource("3_ww4fe")
+species = &"ELECTRIKE"
+category = "Lightning"
+pokedex_entry = "It generates electricity using friction from the atmosphere. In seasons with especially arid air, its entire body blazes with violent showers of sparks."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 40
+base_attack = 45
+base_defense = 40
+base_special_attack = 65
+base_special_defense = 40
+base_speed = 65
+ev_speed = 1
+base_exp = 59
+growth_rate = &"Slow"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jlth4")]([SubResource("Resource_73j8a"), SubResource("Resource_0vo3e"), SubResource("Resource_h67wv"), SubResource("Resource_ha3ey"), SubResource("Resource_74q0s"), SubResource("Resource_5vo6c"), SubResource("Resource_ads5p"), SubResource("Resource_cwvid"), SubResource("Resource_0yohj"), SubResource("Resource_i3s31"), SubResource("Resource_ijyxa"), SubResource("Resource_pccfb"), SubResource("Resource_2ky6c")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DOUBLEEDGE", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FIREFANG", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"ICEFANG", &"IRONTAIL", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROAR", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"CRUNCH", &"CURSE", &"DISCHARGE", &"EERIEIMPULSE", &"ELECTROBALL", &"FIREFANG", &"HEADBUTT", &"ICEFANG", &"SPARK", &"SWIFT", &"SWITCHEROO", &"THUNDERFANG", &"UPROAR"])
+abilities = Array[StringName]([&"STATIC", &"LIGHTNINGROD"])
+hidden_abilities = Array[StringName]([&"MINUS"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_cfl0n")]([SubResource("Resource_15554")])
+height = 6
+weight = 152
+color = &"Green"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-4, 33)
+id = &"ELECTRIKE"
+display_name = "Electrike"

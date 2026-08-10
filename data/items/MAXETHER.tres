@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_o6k2u"]
+
+[resource]
+resource_name = "MAXETHER"
+script = ExtResource("1_o6k2u")
+name_plural = "Max Ethers"
+pocket = 2
+price = 2000
+sell_price = 1000
+field_use = 1
+battle_use = 2
+description = "It fully restores the PP of a single selected move that has been learned by the target Pokémon."
+id = &"MAXETHER"
+display_name = "Max Ether"
+flags = Array[StringName]([&"Fling_30"])

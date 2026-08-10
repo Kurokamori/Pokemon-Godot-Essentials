@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0fu20"]
+
+[resource]
+resource_name = "DOUBLEKICK"
+script = ExtResource("1_0fu20")
+type = &"FIGHTING"
+category = 0
+power = 30
+total_pp = 30
+function_code = &"HitTwoTimes"
+description = "The target is quickly kicked twice in succession using both feet."
+id = &"DOUBLEKICK"
+display_name = "Double Kick"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

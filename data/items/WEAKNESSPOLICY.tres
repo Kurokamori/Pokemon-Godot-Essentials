@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2nhgc"]
+
+[resource]
+resource_name = "WEAKNESSPOLICY"
+script = ExtResource("1_2nhgc")
+name_plural = "Weakness Policies"
+price = 1000
+sell_price = 500
+bp_price = 20
+description = "An item to be held by a Pokémon. The holder's Attack and Sp. Atk sharply increase if hit by a move it's weak to."
+id = &"WEAKNESSPOLICY"
+display_name = "Weakness Policy"
+flags = Array[StringName]([&"Fling_80"])

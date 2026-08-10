@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7u02k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_o2tp5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nbw8p"]
+
+[sub_resource type="Resource" id="Resource_8jr2y"]
+script = ExtResource("1_7u02k")
+species = &"METANG"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_h8rj3"]
+script = ExtResource("2_o2tp5")
+move = &"TACKLE"
+
+[resource]
+resource_name = "BELDUM"
+script = ExtResource("3_nbw8p")
+species = &"BELDUM"
+category = "Iron Ball"
+pokedex_entry = "When Beldum gather in a swarm, they move in perfect unison as if they were but one Pokémon. They communicate with each other using brain waves."
+types = Array[StringName]([&"STEEL", &"PSYCHIC"])
+base_hp = 40
+base_attack = 55
+base_defense = 80
+base_special_attack = 35
+base_special_defense = 60
+base_speed = 30
+ev_defense = 1
+base_exp = 60
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_o2tp5")]([SubResource("Resource_h8rj3")])
+tutor_moves = Array[StringName]([&"HEADBUTT", &"IRONDEFENSE", &"IRONHEAD", &"STEELBEAM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"CLEARBODY"])
+hidden_abilities = Array[StringName]([&"LIGHTMETAL"])
+wild_item_uncommon = Array[StringName]([&"METALCOAT"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_7u02k")]([SubResource("Resource_8jr2y")])
+height = 6
+weight = 952
+color = &"Blue"
+shape = &"HeadBase"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-1, 14)
+shadow_size = 1
+id = &"BELDUM"
+display_name = "Beldum"

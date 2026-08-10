@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_tobr5"]
+
+[resource]
+resource_name = "BIGNUGGET"
+script = ExtResource("1_tobr5")
+name_plural = "Big Nuggets"
+price = 40000
+sell_price = 20000
+description = "A big nugget of pure gold that gives off a lustrous gleam. A maniac will buy it for a high price."
+id = &"BIGNUGGET"
+display_name = "Big Nugget"
+flags = Array[StringName]([&"Fling_30"])

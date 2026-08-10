@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_coqj3"]
+
+[resource]
+resource_name = "COREENFORCER"
+script = ExtResource("1_coqj3")
+type = &"DRAGON"
+category = 1
+power = 100
+total_pp = 10
+target = &"AllNearFoes"
+function_code = &"NegateTargetAbilityIfTargetActed"
+description = "If the target has already moved this turn, the effect of its Ability is negated."
+id = &"COREENFORCER"
+display_name = "Core Enforcer"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_sk6af"]
+
+[resource]
+resource_name = "HAZE"
+script = ExtResource("1_sk6af")
+type = &"ICE"
+accuracy = 0
+total_pp = 30
+target = &"BothSides"
+function_code = &"ResetAllBattlersStatStages"
+description = "The user creates a haze that eliminates every stat change among all the Pokémon engaged in battle."
+id = &"HAZE"
+display_name = "Haze"

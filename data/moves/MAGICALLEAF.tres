@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7arga"]
+
+[resource]
+resource_name = "MAGICALLEAF"
+script = ExtResource("1_7arga")
+type = &"GRASS"
+category = 1
+power = 60
+accuracy = 0
+total_pp = 20
+description = "The user scatters curious leaves that chase the target. This attack will not miss."
+id = &"MAGICALLEAF"
+display_name = "Magical Leaf"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dxvm1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ds8x2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sr8ko"]
+
+[sub_resource type="Resource" id="Resource_ahg4t"]
+script = ExtResource("1_dxvm1")
+species = &"SPINARAK"
+method = &"Level"
+parameter = "22"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_qjhqc"]
+script = ExtResource("2_ds8x2")
+level = 0
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_tl5v7"]
+script = ExtResource("2_ds8x2")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_xyqq0"]
+script = ExtResource("2_ds8x2")
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_a8n47"]
+script = ExtResource("2_ds8x2")
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_qdqok"]
+script = ExtResource("2_ds8x2")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_jle12"]
+script = ExtResource("2_ds8x2")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_x57bw"]
+script = ExtResource("2_ds8x2")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_v52mb"]
+script = ExtResource("2_ds8x2")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_8gtqn"]
+script = ExtResource("2_ds8x2")
+level = 5
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_7d2yj"]
+script = ExtResource("2_ds8x2")
+level = 8
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_bt7fn"]
+script = ExtResource("2_ds8x2")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_d6bgh"]
+script = ExtResource("2_ds8x2")
+level = 15
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_bw5yg"]
+script = ExtResource("2_ds8x2")
+level = 19
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_lnekx"]
+script = ExtResource("2_ds8x2")
+level = 23
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_xqvew"]
+script = ExtResource("2_ds8x2")
+level = 28
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_7ijdy"]
+script = ExtResource("2_ds8x2")
+level = 32
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_3ouuh"]
+script = ExtResource("2_ds8x2")
+level = 37
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_52xjl"]
+script = ExtResource("2_ds8x2")
+level = 41
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_fwhyt"]
+script = ExtResource("2_ds8x2")
+level = 46
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_5c1dl"]
+script = ExtResource("2_ds8x2")
+level = 50
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_par5r"]
+script = ExtResource("2_ds8x2")
+level = 55
+move = &"CROSSPOISON"
+
+[sub_resource type="Resource" id="Resource_efnan"]
+script = ExtResource("2_ds8x2")
+level = 58
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_vj3jh"]
+script = ExtResource("2_ds8x2")
+level = 63
+move = &"TOXICTHREAD"
+
+[resource]
+resource_name = "ARIADOS"
+script = ExtResource("3_sr8ko")
+species = &"ARIADOS"
+category = "Long Leg"
+pokedex_entry = "Its feet are tipped with tiny hooked claws that enable it to scuttle on ceilings and vertical walls. It constricts its foe with thin and strong silk webbing."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 70
+base_attack = 90
+base_defense = 70
+base_special_attack = 60
+base_special_defense = 70
+base_speed = 40
+ev_attack = 2
+base_exp = 140
+growth_rate = &"Fast"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ds8x2")]([SubResource("Resource_qjhqc"), SubResource("Resource_tl5v7"), SubResource("Resource_xyqq0"), SubResource("Resource_a8n47"), SubResource("Resource_qdqok"), SubResource("Resource_jle12"), SubResource("Resource_x57bw"), SubResource("Resource_v52mb"), SubResource("Resource_8gtqn"), SubResource("Resource_7d2yj"), SubResource("Resource_bt7fn"), SubResource("Resource_d6bgh"), SubResource("Resource_bw5yg"), SubResource("Resource_lnekx"), SubResource("Resource_xqvew"), SubResource("Resource_7ijdy"), SubResource("Resource_3ouuh"), SubResource("Resource_52xjl"), SubResource("Resource_fwhyt"), SubResource("Resource_5c1dl"), SubResource("Resource_par5r"), SubResource("Resource_efnan"), SubResource("Resource_vj3jh")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BOUNCE", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"INFESTATION", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SLUDGEBOMB", &"SMARTSTRIKE", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"THROATCHOP", &"VENOSHOCK", &"XSCISSOR"])
+abilities = Array[StringName]([&"SWARM", &"INSOMNIA"])
+hidden_abilities = Array[StringName]([&"SNIPER"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_dxvm1")]([SubResource("Resource_ahg4t")])
+height = 11
+weight = 335
+shape = &"Insectoid"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(6, 29)
+id = &"ARIADOS"
+display_name = "Ariados"

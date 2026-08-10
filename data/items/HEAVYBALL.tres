@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_48o5h"]
+
+[resource]
+resource_name = "HEAVYBALL"
+script = ExtResource("1_48o5h")
+name_plural = "Heavy Balls"
+pocket = 3
+price = 300
+sell_price = 150
+battle_use = 4
+description = "A Poké Ball for catching very heavy Pokémon."
+id = &"HEAVYBALL"
+display_name = "Heavy Ball"
+flags = Array[StringName]([&"PokeBall"])

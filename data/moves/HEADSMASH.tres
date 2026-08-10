@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3j4kv"]
+
+[resource]
+resource_name = "HEADSMASH"
+script = ExtResource("1_3j4kv")
+type = &"ROCK"
+category = 0
+power = 150
+accuracy = 80
+function_code = &"RecoilHalfOfDamageDealt"
+description = "The user attacks the foe with a hazardous, full-power headbutt. The user also takes terrible damage."
+id = &"HEADSMASH"
+display_name = "Head Smash"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

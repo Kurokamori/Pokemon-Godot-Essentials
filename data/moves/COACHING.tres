@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_07yo4"]
+
+[resource]
+resource_name = "COACHING"
+script = ExtResource("1_07yo4")
+type = &"FIGHTING"
+accuracy = 0
+total_pp = 10
+target = &"AllAllies"
+function_code = &"RaiseAlliesAtkDef1"
+description = "The user properly coaches its ally Pokémon, boosting their Attack and Defense stats."
+id = &"COACHING"
+display_name = "Coaching"
+flags = Array[StringName]([&"CanMirrorMove"])

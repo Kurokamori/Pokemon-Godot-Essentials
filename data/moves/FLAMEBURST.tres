@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_s287j"]
+
+[resource]
+resource_name = "FLAMEBURST"
+script = ExtResource("1_s287j")
+type = &"FIRE"
+category = 1
+power = 70
+total_pp = 15
+function_code = &"DamageTargetAlly"
+description = "The user attacks the foe with a bursting flame. It also damages Pokémon next to the target."
+id = &"FLAMEBURST"
+display_name = "Flame Burst"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

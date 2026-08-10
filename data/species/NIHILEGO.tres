@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hyol8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_p8kxf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wif4n"]
+
+[sub_resource type="Resource" id="Resource_v6xfa"]
+script = ExtResource("2_p8kxf")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_16gn7"]
+script = ExtResource("2_p8kxf")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_gonwx"]
+script = ExtResource("2_p8kxf")
+level = 5
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_ooav0"]
+script = ExtResource("2_p8kxf")
+level = 10
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_2fsi7"]
+script = ExtResource("2_p8kxf")
+level = 15
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_73uky"]
+script = ExtResource("2_p8kxf")
+level = 20
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_3cnhc"]
+script = ExtResource("2_p8kxf")
+level = 25
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_2ixal"]
+script = ExtResource("2_p8kxf")
+level = 25
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_r5c3p"]
+script = ExtResource("2_p8kxf")
+level = 30
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_jhfkr"]
+script = ExtResource("2_p8kxf")
+level = 35
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_rlt72"]
+script = ExtResource("2_p8kxf")
+level = 40
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_gyxj1"]
+script = ExtResource("2_p8kxf")
+level = 45
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_q4qxj"]
+script = ExtResource("2_p8kxf")
+level = 50
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_turjr"]
+script = ExtResource("2_p8kxf")
+level = 55
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_1sx5e"]
+script = ExtResource("2_p8kxf")
+level = 60
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_wl6y4"]
+script = ExtResource("2_p8kxf")
+level = 65
+move = &"WONDERROOM"
+
+[sub_resource type="Resource" id="Resource_caffo"]
+script = ExtResource("2_p8kxf")
+level = 70
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "NIHILEGO"
+script = ExtResource("3_wif4n")
+species = &"NIHILEGO"
+category = "Parasite"
+pokedex_entry = "One of several mysterious Ultra Beasts. People on the street report observing those infested by it suddenly becoming violent."
+types = Array[StringName]([&"ROCK", &"POISON"])
+base_hp = 109
+base_attack = 53
+base_defense = 47
+base_special_attack = 127
+base_special_defense = 131
+base_speed = 103
+ev_special_defense = 3
+base_exp = 285
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_p8kxf")]([SubResource("Resource_v6xfa"), SubResource("Resource_16gn7"), SubResource("Resource_gonwx"), SubResource("Resource_ooav0"), SubResource("Resource_2fsi7"), SubResource("Resource_73uky"), SubResource("Resource_3cnhc"), SubResource("Resource_2ixal"), SubResource("Resource_r5c3p"), SubResource("Resource_jhfkr"), SubResource("Resource_rlt72"), SubResource("Resource_gyxj1"), SubResource("Resource_q4qxj"), SubResource("Resource_turjr"), SubResource("Resource_1sx5e"), SubResource("Resource_wl6y4"), SubResource("Resource_caffo")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"BIND", &"BODYSLAM", &"BRUTALSWING", &"CHARGEBEAM", &"CONFIDE", &"CORROSIVEGAS", &"CROSSPOISON", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HEX", &"HIDDENPOWER", &"IRONHEAD", &"KNOCKOFF", &"LIGHTSCREEN", &"MAGICCOAT", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POISONJAB", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPITE", &"STEALTHROCK", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TOXICSPIKES", &"TRICKROOM", &"VENOMDRENCH", &"VENOSHOCK", &"WONDERROOM", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"BEASTBOOST"])
+hatch_steps = 30720
+height = 12
+weight = 555
+color = &"White"
+shape = &"Multiped"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 10)
+id = &"NIHILEGO"
+display_name = "Nihilego"
+flags = Array[StringName]([&"UltraBeast"])

@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6a75g"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kljnl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sg1ts"]
+
+[sub_resource type="Resource" id="Resource_n2ill"]
+script = ExtResource("2_kljnl")
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_qxovw"]
+script = ExtResource("2_kljnl")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ov82r"]
+script = ExtResource("2_kljnl")
+level = 6
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ytv3p"]
+script = ExtResource("2_kljnl")
+level = 12
+move = &"WEATHERBALL"
+
+[sub_resource type="Resource" id="Resource_nfjqt"]
+script = ExtResource("2_kljnl")
+level = 18
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_7xuwq"]
+script = ExtResource("2_kljnl")
+level = 24
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_pculv"]
+script = ExtResource("2_kljnl")
+level = 30
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_0f1wp"]
+script = ExtResource("2_kljnl")
+level = 36
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_3t5ii"]
+script = ExtResource("2_kljnl")
+level = 42
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_v3xm0"]
+script = ExtResource("2_kljnl")
+level = 48
+move = &"SCALD"
+
+[sub_resource type="Resource" id="Resource_wvlcc"]
+script = ExtResource("2_kljnl")
+level = 54
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_o63jk"]
+script = ExtResource("2_kljnl")
+level = 60
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_3pc0q"]
+script = ExtResource("2_kljnl")
+level = 60
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_iad0s"]
+script = ExtResource("2_kljnl")
+level = 66
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_5h4t3"]
+script = ExtResource("2_kljnl")
+level = 72
+move = &"STEAMERUPTION"
+
+[sub_resource type="Resource" id="Resource_0uhae"]
+script = ExtResource("2_kljnl")
+level = 78
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_c3a6h"]
+script = ExtResource("2_kljnl")
+level = 84
+move = &"OVERHEAT"
+
+[sub_resource type="Resource" id="Resource_8ncfg"]
+script = ExtResource("2_kljnl")
+level = 90
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "VOLCANION"
+script = ExtResource("3_sg1ts")
+species = &"VOLCANION"
+category = "Steam"
+pokedex_entry = "It lets out billows of steam and disappears into the dense fog. It's said to live in mountains where humans do not tread."
+types = Array[StringName]([&"FIRE", &"WATER"])
+base_hp = 80
+base_attack = 110
+base_defense = 120
+base_special_attack = 130
+base_special_defense = 90
+base_speed = 70
+ev_special_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_kljnl")]([SubResource("Resource_n2ill"), SubResource("Resource_qxovw"), SubResource("Resource_ov82r"), SubResource("Resource_ytv3p"), SubResource("Resource_nfjqt"), SubResource("Resource_7xuwq"), SubResource("Resource_pculv"), SubResource("Resource_0f1wp"), SubResource("Resource_3t5ii"), SubResource("Resource_v3xm0"), SubResource("Resource_wvlcc"), SubResource("Resource_o63jk"), SubResource("Resource_3pc0q"), SubResource("Resource_iad0s"), SubResource("Resource_5h4t3"), SubResource("Resource_0uhae"), SubResource("Resource_c3a6h"), SubResource("Resource_8ncfg")])
+tutor_moves = Array[StringName]([&"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEATCRASH", &"HEATWAVE", &"HEAVYSLAM", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"INCINERATE", &"LIQUIDATION", &"MIMIC", &"MISTYTERRAIN", &"MUDSHOT", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SCALD", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDERFANG", &"TOXIC", &"WATERPULSE", &"WEATHERBALL", &"WILLOWISP"])
+abilities = Array[StringName]([&"WATERABSORB"])
+hatch_steps = 30720
+height = 17
+weight = 1950
+color = &"Brown"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 10)
+shadow_size = 3
+id = &"VOLCANION"
+display_name = "Volcanion"
+flags = Array[StringName]([&"Mythical"])

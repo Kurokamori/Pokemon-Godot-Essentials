@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_sfrsw"]
+
+[resource]
+resource_name = "REFRIGERATE"
+script = ExtResource("1_sfrsw")
+description = "Normal-type moves become Ice-type and powered up."
+id = &"REFRIGERATE"
+display_name = "Refrigerate"

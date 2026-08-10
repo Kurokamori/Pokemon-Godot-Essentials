@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8dtku"]
+
+[resource]
+resource_name = "GHOSTIUMZ"
+script = ExtResource("1_8dtku")
+name_plural = "Ghostium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Ghost-type Pokémon holds to turn a Ghost-type move into Never-Ending Nightmare."
+id = &"GHOSTIUMZ"
+display_name = "Ghostium Z"
+flags = Array[StringName]([&"ZCrystal"])

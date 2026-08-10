@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_f1xtl"]
+
+[resource]
+resource_name = "ITEMFINDER"
+script = ExtResource("1_f1xtl")
+name_plural = "Itemfinders"
+pocket = 8
+field_use = 2
+consumable = false
+show_quantity = false
+description = "A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal."
+id = &"ITEMFINDER"
+display_name = "Itemfinder"
+flags = Array[StringName]([&"KeyItem"])

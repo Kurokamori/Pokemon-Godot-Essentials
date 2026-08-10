@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_104hg"]
+
+[resource]
+resource_name = "DYNAMAXBAND"
+script = ExtResource("1_104hg")
+name_plural = "Dynamax Bands"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A band set with a Wishing Star, which lets a Pokémon Dynamax."
+id = &"DYNAMAXBAND"
+display_name = "Dynamax Band"
+flags = Array[StringName]([&"KeyItem", &"DynamaxBand"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bl00h"]
+
+[resource]
+resource_name = "ICYROCK"
+script = ExtResource("1_bl00h")
+name_plural = "Icy Rocks"
+price = 4000
+sell_price = 2000
+bp_price = 15
+description = "A Pokémon held item that extends the duration of the move Hail used by the holder."
+id = &"ICYROCK"
+display_name = "Icy Rock"
+flags = Array[StringName]([&"Fling_40"])

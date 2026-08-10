@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5xjq6"]
+
+[resource]
+resource_name = "REPEATBALL"
+script = ExtResource("1_5xjq6")
+name_plural = "Repeat Balls"
+pocket = 3
+price = 1000
+sell_price = 500
+battle_use = 4
+description = "A somewhat different Poké Ball that works especially well on Pokémon species that were previously caught."
+id = &"REPEATBALL"
+display_name = "Repeat Ball"
+flags = Array[StringName]([&"PokeBall"])

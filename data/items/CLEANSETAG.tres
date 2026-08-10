@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_f264m"]
+
+[resource]
+resource_name = "CLEANSETAG"
+script = ExtResource("1_f264m")
+name_plural = "Cleanse Tags"
+price = 5000
+sell_price = 2500
+description = "An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party."
+id = &"CLEANSETAG"
+display_name = "Cleanse Tag"
+flags = Array[StringName]([&"Fling_30"])

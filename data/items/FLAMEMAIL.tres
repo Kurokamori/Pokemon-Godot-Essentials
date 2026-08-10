@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_naqdf"]
+
+[resource]
+resource_name = "FLAMEMAIL"
+script = ExtResource("1_naqdf")
+name_plural = "Flame Mail"
+portion_name = "piece of Flame Mail"
+portion_name_plural = "pieces of Flame Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of flames in blazing red. Let a Pokémon hold it for delivery."
+id = &"FLAMEMAIL"
+display_name = "Flame Mail"
+flags = Array[StringName]([&"IconMail"])

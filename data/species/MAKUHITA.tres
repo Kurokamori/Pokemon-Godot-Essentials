@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_36vvq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yg1jt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_30p0t"]
+
+[sub_resource type="Resource" id="Resource_p0jn6"]
+script = ExtResource("1_36vvq")
+species = &"HARIYAMA"
+method = &"Level"
+parameter = "24"
+
+[sub_resource type="Resource" id="Resource_w838f"]
+script = ExtResource("2_yg1jt")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_wwnq5"]
+script = ExtResource("2_yg1jt")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_nocws"]
+script = ExtResource("2_yg1jt")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_2gddt"]
+script = ExtResource("2_yg1jt")
+level = 7
+move = &"ARMTHRUST"
+
+[sub_resource type="Resource" id="Resource_npw67"]
+script = ExtResource("2_yg1jt")
+level = 10
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_l4nyh"]
+script = ExtResource("2_yg1jt")
+level = 13
+move = &"FORCEPALM"
+
+[sub_resource type="Resource" id="Resource_oopy5"]
+script = ExtResource("2_yg1jt")
+level = 16
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_u7g6o"]
+script = ExtResource("2_yg1jt")
+level = 19
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_cgg55"]
+script = ExtResource("2_yg1jt")
+level = 22
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_y64ag"]
+script = ExtResource("2_yg1jt")
+level = 25
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_us3wk"]
+script = ExtResource("2_yg1jt")
+level = 28
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_chul6"]
+script = ExtResource("2_yg1jt")
+level = 31
+move = &"SEISMICTOSS"
+
+[sub_resource type="Resource" id="Resource_s5vem"]
+script = ExtResource("2_yg1jt")
+level = 34
+move = &"FOCUSPUNCH"
+
+[sub_resource type="Resource" id="Resource_472yg"]
+script = ExtResource("2_yg1jt")
+level = 37
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_g55r0"]
+script = ExtResource("2_yg1jt")
+level = 40
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_2l1jh"]
+script = ExtResource("2_yg1jt")
+level = 43
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_0kto1"]
+script = ExtResource("2_yg1jt")
+level = 46
+move = &"HEAVYSLAM"
+
+[resource]
+resource_name = "MAKUHITA"
+script = ExtResource("3_30p0t")
+species = &"MAKUHITA"
+category = "Guts"
+pokedex_entry = "It loves to toughen up its body above all else. If you hear quaking rumbles in a cave, it is the sound of Makuhita undertaking strenuous training."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 72
+base_attack = 60
+base_defense = 30
+base_special_attack = 20
+base_special_defense = 30
+base_speed = 25
+ev_hp = 1
+base_exp = 47
+growth_rate = &"Fluctuating"
+gender_ratio = &"Female25Percent"
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yg1jt")]([SubResource("Resource_w838f"), SubResource("Resource_wwnq5"), SubResource("Resource_nocws"), SubResource("Resource_2gddt"), SubResource("Resource_npw67"), SubResource("Resource_l4nyh"), SubResource("Resource_oopy5"), SubResource("Resource_u7g6o"), SubResource("Resource_cgg55"), SubResource("Resource_y64ag"), SubResource("Resource_us3wk"), SubResource("Resource_chul6"), SubResource("Resource_s5vem"), SubResource("Resource_472yg"), SubResource("Resource_g55r0"), SubResource("Resource_2l1jh"), SubResource("Resource_0kto1")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"THUNDERPUNCH", &"VACUUMWAVE", &"WHIRLPOOL", &"WORKUP"])
+egg_moves = Array[StringName]([&"BULLETPUNCH", &"COUNTER", &"CROSSCHOP", &"DETECT", &"DYNAMICPUNCH", &"FEINT", &"HELPINGHAND", &"REVENGE", &"WIDEGUARD"])
+abilities = Array[StringName]([&"THICKFAT", &"GUTS"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+wild_item_uncommon = Array[StringName]([&"BLACKBELT"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_36vvq")]([SubResource("Resource_p0jn6")])
+height = 10
+weight = 864
+color = &"Yellow"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 26)
+id = &"MAKUHITA"
+display_name = "Makuhita"

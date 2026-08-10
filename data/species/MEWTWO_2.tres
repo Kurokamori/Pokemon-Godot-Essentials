@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xgmov"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2a4lc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nf10w"]
+
+[sub_resource type="Resource" id="Resource_edgoe"]
+script = ExtResource("2_2a4lc")
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_vv18v"]
+script = ExtResource("2_2a4lc")
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_xk03h"]
+script = ExtResource("2_2a4lc")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_vq1fs"]
+script = ExtResource("2_2a4lc")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_eh7l3"]
+script = ExtResource("2_2a4lc")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_n5vt5"]
+script = ExtResource("2_2a4lc")
+level = 8
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_m5uuo"]
+script = ExtResource("2_2a4lc")
+level = 16
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_02qxs"]
+script = ExtResource("2_2a4lc")
+level = 24
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_gsrkr"]
+script = ExtResource("2_2a4lc")
+level = 32
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_m5sn8"]
+script = ExtResource("2_2a4lc")
+level = 40
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_3nr7k"]
+script = ExtResource("2_2a4lc")
+level = 48
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_gmtw8"]
+script = ExtResource("2_2a4lc")
+level = 56
+move = &"POWERSWAP"
+
+[sub_resource type="Resource" id="Resource_nae8h"]
+script = ExtResource("2_2a4lc")
+level = 56
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_02fhn"]
+script = ExtResource("2_2a4lc")
+level = 64
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_n8vhn"]
+script = ExtResource("2_2a4lc")
+level = 72
+move = &"PSYSTRIKE"
+
+[sub_resource type="Resource" id="Resource_3nd3p"]
+script = ExtResource("2_2a4lc")
+level = 80
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_36qr6"]
+script = ExtResource("2_2a4lc")
+level = 88
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "MEWTWO_2"
+script = ExtResource("3_nf10w")
+species = &"MEWTWO"
+form = 2
+form_name = "Mega Mewtwo Y"
+category = "Genetic"
+pokedex_entry = "Despite its diminished size, its mental power has grown phenomenally. With a mere thought, it can smash a skyscraper to smithereens."
+pokedex_form = 2
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 106
+base_attack = 150
+base_defense = 70
+base_special_attack = 194
+base_special_defense = 120
+base_speed = 140
+ev_special_attack = 3
+base_exp = 390
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_2a4lc")]([SubResource("Resource_edgoe"), SubResource("Resource_vv18v"), SubResource("Resource_xk03h"), SubResource("Resource_vq1fs"), SubResource("Resource_eh7l3"), SubResource("Resource_n5vt5"), SubResource("Resource_m5uuo"), SubResource("Resource_02qxs"), SubResource("Resource_gsrkr"), SubResource("Resource_m5sn8"), SubResource("Resource_3nr7k"), SubResource("Resource_gmtw8"), SubResource("Resource_nae8h"), SubResource("Resource_02fhn"), SubResource("Resource_n8vhn"), SubResource("Resource_3nd3p"), SubResource("Resource_36qr6")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"AMNESIA", &"AQUATAIL", &"AURASPHERE", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ELECTROBALL", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYDAY", &"POISONJAB", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"STONEEDGE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WATERPULSE", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INSOMNIA"])
+hidden_abilities = Array[StringName]([&"INSOMNIA"])
+hatch_steps = 30720
+height = 15
+weight = 330
+color = &"Purple"
+shape = &"BipedalTail"
+habitat = &"Rare"
+generation = 6
+mega_stone = &"MEWTWONITEY"
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 10)
+id = &"MEWTWO_2"
+display_name = "Mewtwo"
+flags = Array[StringName]([&"Legendary"])

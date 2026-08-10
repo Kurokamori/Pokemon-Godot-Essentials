@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_x5bem"]
+
+[resource]
+resource_name = "OLDAMBER"
+script = ExtResource("1_x5bem")
+name_plural = "Old Ambers"
+price = 1000
+sell_price = 500
+description = "A piece of amber that contains the genes of an ancient Pokémon. It is clear with a reddish tint."
+id = &"OLDAMBER"
+display_name = "Old Amber"
+flags = Array[StringName]([&"Fossil", &"Fling_100"])

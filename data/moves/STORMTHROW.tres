@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ngc4h"]
+
+[resource]
+resource_name = "STORMTHROW"
+script = ExtResource("1_ngc4h")
+type = &"FIGHTING"
+category = 0
+power = 60
+total_pp = 10
+function_code = &"AlwaysCriticalHit"
+description = "The user strikes the target with a fierce blow. This attack always results in a critical hit."
+id = &"STORMTHROW"
+display_name = "Storm Throw"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

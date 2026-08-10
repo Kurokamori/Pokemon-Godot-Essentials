@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vixml"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_f8vpv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nthr3"]
+
+[sub_resource type="Resource" id="Resource_flfau"]
+script = ExtResource("1_vixml")
+species = &"MELMETAL"
+method = &"Level"
+parameter = "45"
+
+[sub_resource type="Resource" id="Resource_vctlq"]
+script = ExtResource("2_f8vpv")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_he5k1"]
+script = ExtResource("2_f8vpv")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_uer4m"]
+script = ExtResource("2_f8vpv")
+level = 8
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_w0hft"]
+script = ExtResource("2_f8vpv")
+level = 16
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_lvcub"]
+script = ExtResource("2_f8vpv")
+level = 24
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_krwpi"]
+script = ExtResource("2_f8vpv")
+level = 32
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_g5b13"]
+script = ExtResource("2_f8vpv")
+level = 40
+move = &"FLASHCANNON"
+
+[resource]
+resource_name = "MELTAN"
+script = ExtResource("3_nthr3")
+species = &"MELTAN"
+category = "Hex Nut"
+pokedex_entry = "It melts particles of iron and other metals found in the subsoil, so it can absorb them into its body of molten steel."
+types = Array[StringName]([&"STEEL"])
+base_hp = 46
+base_attack = 65
+base_defense = 65
+base_special_attack = 55
+base_special_defense = 35
+base_speed = 34
+ev_attack = 1
+base_exp = 150
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_f8vpv")]([SubResource("Resource_vctlq"), SubResource("Resource_he5k1"), SubResource("Resource_uer4m"), SubResource("Resource_w0hft"), SubResource("Resource_lvcub"), SubResource("Resource_krwpi"), SubResource("Resource_g5b13")])
+tutor_moves = Array[StringName]([&"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"IRONDEFENSE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"SUBSTITUTE", &"SWAGGER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC"])
+abilities = Array[StringName]([&"MAGNETPULL"])
+hatch_steps = 30720
+evolutions = Array[ExtResource("1_vixml")]([SubResource("Resource_flfau")])
+height = 2
+weight = 80
+color = &"Gray"
+generation = 7
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"MELTAN"
+display_name = "Meltan"
+flags = Array[StringName]([&"Mythical"])

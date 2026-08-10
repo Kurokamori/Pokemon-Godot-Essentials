@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kvig7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_goqx7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6touu"]
+
+[sub_resource type="Resource" id="Resource_rfmku"]
+script = ExtResource("1_kvig7")
+species = &"BRAVIARY"
+method = &"Level"
+parameter = "54"
+
+[sub_resource type="Resource" id="Resource_2udvd"]
+script = ExtResource("2_goqx7")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_vxa3x"]
+script = ExtResource("2_goqx7")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_aud3s"]
+script = ExtResource("2_goqx7")
+level = 6
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_186j8"]
+script = ExtResource("2_goqx7")
+level = 12
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_acl07"]
+script = ExtResource("2_goqx7")
+level = 18
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_hprfi"]
+script = ExtResource("2_goqx7")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_whhoa"]
+script = ExtResource("2_goqx7")
+level = 30
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_mrtvx"]
+script = ExtResource("2_goqx7")
+level = 36
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ub5q6"]
+script = ExtResource("2_goqx7")
+level = 42
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_0m8ak"]
+script = ExtResource("2_goqx7")
+level = 48
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_v7y0d"]
+script = ExtResource("2_goqx7")
+level = 55
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_8fpii"]
+script = ExtResource("2_goqx7")
+level = 60
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_qo1vo"]
+script = ExtResource("2_goqx7")
+level = 66
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_mi335"]
+script = ExtResource("2_goqx7")
+level = 72
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "RUFFLET"
+script = ExtResource("3_6touu")
+species = &"RUFFLET"
+category = "Eaglet"
+pokedex_entry = "They will challenge anything, even strong opponents, without fear. Their frequent fights help them become stronger."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 70
+base_attack = 83
+base_defense = 50
+base_special_attack = 37
+base_special_defense = 50
+base_speed = 60
+ev_attack = 1
+base_exp = 70
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_goqx7")]([SubResource("Resource_2udvd"), SubResource("Resource_vxa3x"), SubResource("Resource_aud3s"), SubResource("Resource_186j8"), SubResource("Resource_acl07"), SubResource("Resource_hprfi"), SubResource("Resource_whhoa"), SubResource("Resource_mrtvx"), SubResource("Resource_ub5q6"), SubResource("Resource_0m8ak"), SubResource("Resource_v7y0d"), SubResource("Resource_8fpii"), SubResource("Resource_qo1vo"), SubResource("Resource_mi335")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BRAVEBIRD", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TOXIC", &"UTURN", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"KEENEYE", &"SHEERFORCE"])
+hidden_abilities = Array[StringName]([&"HUSTLE"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kvig7")]([SubResource("Resource_rfmku")])
+height = 5
+weight = 105
+color = &"White"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 28)
+shadow_size = 1
+id = &"RUFFLET"
+display_name = "Rufflet"

@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4k1x5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_npob7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wilib"]
+
+[sub_resource type="Resource" id="Resource_lm5od"]
+script = ExtResource("1_4k1x5")
+species = &"SNOVER"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jo7n6"]
+script = ExtResource("2_npob7")
+level = 0
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_0blhs"]
+script = ExtResource("2_npob7")
+move = &"AURORAVEIL"
+
+[sub_resource type="Resource" id="Resource_8ymas"]
+script = ExtResource("2_npob7")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_r61l0"]
+script = ExtResource("2_npob7")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_rkex0"]
+script = ExtResource("2_npob7")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_qe81t"]
+script = ExtResource("2_npob7")
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_6vj20"]
+script = ExtResource("2_npob7")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_6p6i5"]
+script = ExtResource("2_npob7")
+level = 20
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_c1hot"]
+script = ExtResource("2_npob7")
+level = 25
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_c6m0g"]
+script = ExtResource("2_npob7")
+level = 30
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_y5fic"]
+script = ExtResource("2_npob7")
+level = 35
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_ms1oj"]
+script = ExtResource("2_npob7")
+level = 43
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_72ay4"]
+script = ExtResource("2_npob7")
+level = 49
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_awymn"]
+script = ExtResource("2_npob7")
+level = 56
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "ABOMASNOW_1"
+script = ExtResource("3_wilib")
+species = &"ABOMASNOW"
+form = 1
+form_name = "Mega Abomasnow"
+category = "Frost Tree"
+pokedex_entry = "It whips up blizzards in mountains that are always buried in snow. It is the abominable snowman."
+pokedex_form = 1
+types = Array[StringName]([&"GRASS", &"ICE"])
+base_hp = 90
+base_attack = 132
+base_defense = 105
+base_special_attack = 132
+base_special_defense = 105
+base_speed = 30
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 208
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_npob7")]([SubResource("Resource_jo7n6"), SubResource("Resource_0blhs"), SubResource("Resource_8ymas"), SubResource("Resource_r61l0"), SubResource("Resource_rkex0"), SubResource("Resource_qe81t"), SubResource("Resource_6vj20"), SubResource("Resource_6p6i5"), SubResource("Resource_c1hot"), SubResource("Resource_c6m0g"), SubResource("Resource_y5fic"), SubResource("Resource_ms1oj"), SubResource("Resource_72ay4"), SubResource("Resource_awymn")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BRICKBREAK", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"IRONTAIL", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WATERPULSE", &"WEATHERBALL", &"WORRYSEED"])
+abilities = Array[StringName]([&"SNOWWARNING"])
+hidden_abilities = Array[StringName]([&"SNOWWARNING"])
+wild_item_uncommon = Array[StringName]([&"NEVERMELTICE"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4k1x5")]([SubResource("Resource_lm5od")])
+height = 27
+weight = 1850
+color = &"White"
+shape = &"BipedalTail"
+generation = 6
+mega_stone = &"ABOMASITE"
+back_sprite_offset = Vector2i(0, 45)
+front_sprite_offset = Vector2i(3, 15)
+shadow_size = 3
+id = &"ABOMASNOW_1"
+display_name = "Abomasnow"

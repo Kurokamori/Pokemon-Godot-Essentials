@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_cg8vn"]
+
+[resource]
+resource_name = "KEBIABERRY"
+script = ExtResource("1_cg8vn")
+name_plural = "Kebia Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "Weakens a supereffective Poison-type attack against the holding Pokémon."
+id = &"KEBIABERRY"
+display_name = "Kebia Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_POISON_80"])

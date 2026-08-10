@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0sane"]
+
+[resource]
+resource_name = "ASPEARBERRY"
+script = ExtResource("1_0sane")
+name_plural = "Aspear Berries"
+pocket = 5
+price = 20
+sell_price = 10
+field_use = 1
+battle_use = 1
+description = "It may be used or held by a Pokémon to defrost it."
+id = &"ASPEARBERRY"
+display_name = "Aspear Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_ICE_80"])

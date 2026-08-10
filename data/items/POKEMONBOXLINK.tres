@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ivucp"]
+
+[resource]
+resource_name = "POKEMONBOXLINK"
+script = ExtResource("1_ivucp")
+name_plural = "Pokémon Box Links"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A device that allows you to access the Pokémon storage system. There are some places where it won't work."
+id = &"POKEMONBOXLINK"
+display_name = "Pokémon Box Link"
+flags = Array[StringName]([&"KeyItem"])

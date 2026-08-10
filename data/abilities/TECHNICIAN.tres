@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_2tcgq"]
+
+[resource]
+resource_name = "TECHNICIAN"
+script = ExtResource("1_2tcgq")
+description = "Powers up the Pokémon's weaker moves."
+id = &"TECHNICIAN"
+display_name = "Technician"

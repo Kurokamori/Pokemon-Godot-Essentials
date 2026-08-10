@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8ocvj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x5se1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mhogw"]
+
+[sub_resource type="Resource" id="Resource_p6yw8"]
+script = ExtResource("2_x5se1")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_5j52y"]
+script = ExtResource("2_x5se1")
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_wq2og"]
+script = ExtResource("2_x5se1")
+level = 5
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_ash2x"]
+script = ExtResource("2_x5se1")
+level = 10
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_yp76k"]
+script = ExtResource("2_x5se1")
+level = 15
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_76kwn"]
+script = ExtResource("2_x5se1")
+level = 20
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_e2ixr"]
+script = ExtResource("2_x5se1")
+level = 25
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_v5icp"]
+script = ExtResource("2_x5se1")
+level = 30
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_mnmqf"]
+script = ExtResource("2_x5se1")
+level = 35
+move = &"HORNLEECH"
+
+[sub_resource type="Resource" id="Resource_4thwf"]
+script = ExtResource("2_x5se1")
+level = 40
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_06rt2"]
+script = ExtResource("2_x5se1")
+level = 45
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_i5l2v"]
+script = ExtResource("2_x5se1")
+level = 50
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_siixv"]
+script = ExtResource("2_x5se1")
+level = 55
+move = &"GEOMANCY"
+
+[sub_resource type="Resource" id="Resource_b8pkb"]
+script = ExtResource("2_x5se1")
+level = 60
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_0o08j"]
+script = ExtResource("2_x5se1")
+level = 65
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_7j5ay"]
+script = ExtResource("2_x5se1")
+level = 70
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_2yvas"]
+script = ExtResource("2_x5se1")
+level = 75
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_n8b8x"]
+script = ExtResource("2_x5se1")
+level = 80
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_r8pv1"]
+script = ExtResource("2_x5se1")
+level = 85
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "XERNEAS"
+script = ExtResource("3_mhogw")
+species = &"XERNEAS"
+form_name = "Neutral Mode"
+category = "Life"
+pokedex_entry = "Legends say it can share eternal life. It slept for a thousand years in the form of a tree before its revival."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 126
+base_attack = 131
+base_defense = 95
+base_special_attack = 131
+base_special_defense = 98
+base_speed = 99
+ev_hp = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_x5se1")]([SubResource("Resource_p6yw8"), SubResource("Resource_5j52y"), SubResource("Resource_wq2og"), SubResource("Resource_ash2x"), SubResource("Resource_yp76k"), SubResource("Resource_76kwn"), SubResource("Resource_e2ixr"), SubResource("Resource_v5icp"), SubResource("Resource_mnmqf"), SubResource("Resource_4thwf"), SubResource("Resource_06rt2"), SubResource("Resource_i5l2v"), SubResource("Resource_siixv"), SubResource("Resource_b8pkb"), SubResource("Resource_0o08j"), SubResource("Resource_7j5ay"), SubResource("Resource_2yvas"), SubResource("Resource_n8b8x"), SubResource("Resource_r8pv1")])
+tutor_moves = Array[StringName]([&"BLOCK", &"BODYSLAM", &"CALMMIND", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"DRAININGKISS", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"LASERFOCUS", &"LIGHTSCREEN", &"MEGAHORN", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"NATURALGIFT", &"NATUREPOWER", &"OUTRAGE", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TERRAINPULSE", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"FAIRYAURA"])
+hatch_steps = 30720
+height = 30
+weight = 2150
+color = &"Blue"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-4, 4)
+id = &"XERNEAS"
+display_name = "Xerneas"
+flags = Array[StringName]([&"Legendary"])

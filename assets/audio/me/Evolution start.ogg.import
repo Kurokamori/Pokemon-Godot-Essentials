@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d066xoj4fugoy"
+path="res://.godot/imported/Evolution start.ogg-f5c2389921927db74388904af88da5b3.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/me/Evolution start.ogg"
+dest_files=["res://.godot/imported/Evolution start.ogg-f5c2389921927db74388904af88da5b3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

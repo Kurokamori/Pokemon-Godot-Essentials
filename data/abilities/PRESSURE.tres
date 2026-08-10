@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_kr11j"]
+
+[resource]
+resource_name = "PRESSURE"
+script = ExtResource("1_kr11j")
+description = "The Pokémon raises the foe's PP usage."
+id = &"PRESSURE"
+display_name = "Pressure"

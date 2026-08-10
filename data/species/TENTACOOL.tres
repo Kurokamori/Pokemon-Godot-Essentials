@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_d4iop"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q4sex"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_maxhd"]
+
+[sub_resource type="Resource" id="Resource_7vasu"]
+script = ExtResource("1_d4iop")
+species = &"TENTACRUEL"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_jtt0e"]
+script = ExtResource("2_q4sex")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_0h7og"]
+script = ExtResource("2_q4sex")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_oq1nw"]
+script = ExtResource("2_q4sex")
+level = 4
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_1vmdv"]
+script = ExtResource("2_q4sex")
+level = 8
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_pqs1u"]
+script = ExtResource("2_q4sex")
+level = 12
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_gpktw"]
+script = ExtResource("2_q4sex")
+level = 16
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_1prjs"]
+script = ExtResource("2_q4sex")
+level = 20
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6a8p0"]
+script = ExtResource("2_q4sex")
+level = 24
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_rtb07"]
+script = ExtResource("2_q4sex")
+level = 28
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_lfo2e"]
+script = ExtResource("2_q4sex")
+level = 32
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_toah5"]
+script = ExtResource("2_q4sex")
+level = 36
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_66obv"]
+script = ExtResource("2_q4sex")
+level = 40
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_wgoe7"]
+script = ExtResource("2_q4sex")
+level = 44
+move = &"SLUDGEWAVE"
+
+[sub_resource type="Resource" id="Resource_p885p"]
+script = ExtResource("2_q4sex")
+level = 48
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "TENTACOOL"
+script = ExtResource("3_maxhd")
+species = &"TENTACOOL"
+category = "Jellyfish"
+pokedex_entry = "Its body is almost entirely composed of water. It ensnares its foe with its two long tentacles, then stabs with the poison stingers at their tips."
+types = Array[StringName]([&"WATER", &"POISON"])
+base_hp = 40
+base_attack = 40
+base_defense = 35
+base_special_attack = 50
+base_special_defense = 100
+base_speed = 70
+ev_special_defense = 1
+base_exp = 67
+growth_rate = &"Slow"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_q4sex")]([SubResource("Resource_jtt0e"), SubResource("Resource_0h7og"), SubResource("Resource_oq1nw"), SubResource("Resource_1vmdv"), SubResource("Resource_pqs1u"), SubResource("Resource_gpktw"), SubResource("Resource_1prjs"), SubResource("Resource_6a8p0"), SubResource("Resource_rtb07"), SubResource("Resource_lfo2e"), SubResource("Resource_toah5"), SubResource("Resource_66obv"), SubResource("Resource_wgoe7"), SubResource("Resource_p885p")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BLIZZARD", &"BRINE", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"CUT", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"HAIL", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"KNOCKOFF", &"MAGICCOAT", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"TOXICSPIKES", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"ACUPRESSURE", &"AQUARING", &"AURORABEAM", &"CONFUSERAY", &"HAZE", &"KNOCKOFF", &"MIRRORCOAT", &"MUDDYWATER", &"RAPIDSPIN", &"TICKLE"])
+abilities = Array[StringName]([&"CLEARBODY", &"LIQUIDOOZE"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_d4iop")]([SubResource("Resource_7vasu")])
+height = 9
+weight = 455
+color = &"Blue"
+shape = &"Multiped"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 8)
+shadow_size = 1
+id = &"TENTACOOL"
+display_name = "Tentacool"

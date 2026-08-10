@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7trwh"]
+
+[resource]
+resource_name = "BEATUP"
+script = ExtResource("1_7trwh")
+type = &"DARK"
+category = 0
+power = 1
+total_pp = 10
+function_code = &"HitOncePerUserTeamMember"
+description = "The user gets all the party Pokémon to attack the foe. The more party Pokémon, the more damage."
+id = &"BEATUP"
+display_name = "Beat Up"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

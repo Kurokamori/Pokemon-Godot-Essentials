@@ -1,0 +1,161 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2sdki"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_86ldv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mijs2"]
+
+[sub_resource type="Resource" id="Resource_ancuj"]
+script = ExtResource("1_2sdki")
+species = &"GLIGAR"
+method = &"NightHoldItem"
+parameter = "RAZORFANG"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_cxxrn"]
+script = ExtResource("2_86ldv")
+move = &"GUILLOTINE"
+
+[sub_resource type="Resource" id="Resource_cktwi"]
+script = ExtResource("2_86ldv")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_tu52g"]
+script = ExtResource("2_86ldv")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_cqp74"]
+script = ExtResource("2_86ldv")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_ca0wq"]
+script = ExtResource("2_86ldv")
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_duqnb"]
+script = ExtResource("2_86ldv")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_2damd"]
+script = ExtResource("2_86ldv")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_sttlg"]
+script = ExtResource("2_86ldv")
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_4tfqk"]
+script = ExtResource("2_86ldv")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_vi6is"]
+script = ExtResource("2_86ldv")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_wp3us"]
+script = ExtResource("2_86ldv")
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_2qbo1"]
+script = ExtResource("2_86ldv")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_rng8t"]
+script = ExtResource("2_86ldv")
+level = 7
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_e8gic"]
+script = ExtResource("2_86ldv")
+level = 10
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_5rjuc"]
+script = ExtResource("2_86ldv")
+level = 13
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_7btgk"]
+script = ExtResource("2_86ldv")
+level = 16
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_ah2jp"]
+script = ExtResource("2_86ldv")
+level = 19
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_sn7j2"]
+script = ExtResource("2_86ldv")
+level = 22
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_loikh"]
+script = ExtResource("2_86ldv")
+level = 27
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_s7h2d"]
+script = ExtResource("2_86ldv")
+level = 30
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_s5067"]
+script = ExtResource("2_86ldv")
+level = 35
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_wpye6"]
+script = ExtResource("2_86ldv")
+level = 40
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_meq47"]
+script = ExtResource("2_86ldv")
+level = 45
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_yshfm"]
+script = ExtResource("2_86ldv")
+level = 50
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_1ema1"]
+script = ExtResource("2_86ldv")
+level = 55
+move = &"GUILLOTINE"
+
+[resource]
+resource_name = "GLISCOR"
+script = ExtResource("3_mijs2")
+species = &"GLISCOR"
+category = "Fang Scorpion"
+pokedex_entry = "It observes prey while hanging inverted from branches. When the chance presents itself, it swoops!"
+types = Array[StringName]([&"GROUND", &"FLYING"])
+base_hp = 75
+base_attack = 95
+base_defense = 125
+base_special_attack = 45
+base_special_defense = 75
+base_speed = 95
+ev_defense = 2
+base_exp = 179
+growth_rate = &"Parabolic"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_86ldv")]([SubResource("Resource_cxxrn"), SubResource("Resource_cktwi"), SubResource("Resource_tu52g"), SubResource("Resource_cqp74"), SubResource("Resource_ca0wq"), SubResource("Resource_duqnb"), SubResource("Resource_2damd"), SubResource("Resource_sttlg"), SubResource("Resource_4tfqk"), SubResource("Resource_vi6is"), SubResource("Resource_wp3us"), SubResource("Resource_2qbo1"), SubResource("Resource_rng8t"), SubResource("Resource_e8gic"), SubResource("Resource_5rjuc"), SubResource("Resource_7btgk"), SubResource("Resource_ah2jp"), SubResource("Resource_sn7j2"), SubResource("Resource_loikh"), SubResource("Resource_s7h2d"), SubResource("Resource_s5067"), SubResource("Resource_wpye6"), SubResource("Resource_meq47"), SubResource("Resource_yshfm"), SubResource("Resource_1ema1")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BRICKBREAK", &"BRUTALSWING", &"BUGBITE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DEFOG", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONTAIL", &"KNOCKOFF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STEALTHROCK", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"UTURN", &"VENOSHOCK", &"XSCISSOR"])
+abilities = Array[StringName]([&"HYPERCUTTER", &"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"POISONHEAL"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_2sdki")]([SubResource("Resource_ancuj")])
+height = 20
+weight = 425
+color = &"Purple"
+shape = &"Winged"
+generation = 4
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 8)
+id = &"GLISCOR"
+display_name = "Gliscor"

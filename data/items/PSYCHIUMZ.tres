@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_voepr"]
+
+[resource]
+resource_name = "PSYCHIUMZ"
+script = ExtResource("1_voepr")
+name_plural = "Psychium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Psychic-type Pokémon holds to turn a Psychic-type move into Shattered Psyche."
+id = &"PSYCHIUMZ"
+display_name = "Psychium Z"
+flags = Array[StringName]([&"ZCrystal"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_03chv"]
+
+[resource]
+resource_name = "CRACKEDPOT"
+script = ExtResource("1_03chv")
+name_plural = "Cracked Pots"
+price = 3000
+sell_price = 800
+bp_price = 5
+field_use = 1
+description = "A peculiar cracked teapot that can make a certain species of Pokémon evolve. It makes delicious tea."
+id = &"CRACKEDPOT"
+display_name = "Cracked Pot"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_80"])

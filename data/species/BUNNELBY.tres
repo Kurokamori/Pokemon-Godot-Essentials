@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5ku1y"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fesn6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vl26m"]
+
+[sub_resource type="Resource" id="Resource_nes5e"]
+script = ExtResource("1_5ku1y")
+species = &"DIGGERSBY"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_rnv1m"]
+script = ExtResource("2_fesn6")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_lnshm"]
+script = ExtResource("2_fesn6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_yf8bg"]
+script = ExtResource("2_fesn6")
+level = 3
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_x7bfu"]
+script = ExtResource("2_fesn6")
+level = 6
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_jqfpx"]
+script = ExtResource("2_fesn6")
+level = 9
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_k574d"]
+script = ExtResource("2_fesn6")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_a18tu"]
+script = ExtResource("2_fesn6")
+level = 15
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_k5rf6"]
+script = ExtResource("2_fesn6")
+level = 18
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_fnil2"]
+script = ExtResource("2_fesn6")
+level = 21
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_q0on4"]
+script = ExtResource("2_fesn6")
+level = 24
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_qplgv"]
+script = ExtResource("2_fesn6")
+level = 27
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_17njb"]
+script = ExtResource("2_fesn6")
+level = 30
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_qr8h0"]
+script = ExtResource("2_fesn6")
+level = 33
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_ey0pu"]
+script = ExtResource("2_fesn6")
+level = 36
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_5keuv"]
+script = ExtResource("2_fesn6")
+level = 39
+move = &"SUPERFANG"
+
+[resource]
+resource_name = "BUNNELBY"
+script = ExtResource("3_vl26m")
+species = &"BUNNELBY"
+category = "Digging"
+pokedex_entry = "It has ears like shovels. Digging holes strengthens its ears so much that they can sever thick roots effortlessly."
+base_hp = 38
+base_attack = 36
+base_defense = 38
+base_special_attack = 32
+base_special_defense = 36
+base_speed = 57
+ev_speed = 1
+base_exp = 47
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fesn6")]([SubResource("Resource_rnv1m"), SubResource("Resource_lnshm"), SubResource("Resource_yf8bg"), SubResource("Resource_x7bfu"), SubResource("Resource_jqfpx"), SubResource("Resource_k574d"), SubResource("Resource_a18tu"), SubResource("Resource_k5rf6"), SubResource("Resource_fnil2"), SubResource("Resource_q0on4"), SubResource("Resource_qplgv"), SubResource("Resource_17njb"), SubResource("Resource_qr8h0"), SubResource("Resource_ey0pu"), SubResource("Resource_5keuv")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BOUNCE", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HIDDENPOWER", &"IRONHEAD", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNORE", &"SPIKES", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERFANG", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"TORMENT", &"TOXIC", &"UTURN", &"WILDCHARGE", &"WORKUP"])
+egg_moves = Array[StringName]([&"DEFENSECURL", &"ROLLOUT"])
+abilities = Array[StringName]([&"PICKUP", &"CHEEKPOUCH"])
+hidden_abilities = Array[StringName]([&"HUGEPOWER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_5ku1y")]([SubResource("Resource_nes5e")])
+height = 4
+weight = 50
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(-1, 21)
+shadow_size = 1
+id = &"BUNNELBY"
+display_name = "Bunnelby"

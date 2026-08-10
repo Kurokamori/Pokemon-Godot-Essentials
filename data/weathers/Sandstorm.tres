@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/weather_data.gd" id="1_887e4"]
+
+[resource]
+resource_name = "Sandstorm"
+script = ExtResource("1_887e4")
+category = 4
+legacy_number = 5
+particle_delta_x = -1200
+particle_delta_y = 640
+tile_delta_x = -800
+tile_delta_y = 400
+graphics = Array[String](["sandstorm_1", "sandstorm_2", "sandstorm_3", "sandstorm_4", "sandstorm_tile"])
+id = &"Sandstorm"
+display_name = "Sandstorm"

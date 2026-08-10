@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_yn0gu"]
+
+[resource]
+resource_name = "COMETSHARD"
+script = ExtResource("1_yn0gu")
+name_plural = "Comet Shards"
+price = 25000
+sell_price = 12500
+description = "A shard which fell to the ground when a comet approached. A maniac will buy it for a high price."
+id = &"COMETSHARD"
+display_name = "Comet Shard"
+flags = Array[StringName]([&"Fling_30"])

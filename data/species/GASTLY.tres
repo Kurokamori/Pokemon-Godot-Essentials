@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qjcex"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_njihm"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wyk6c"]
+
+[sub_resource type="Resource" id="Resource_7p0i2"]
+script = ExtResource("1_qjcex")
+species = &"HAUNTER"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_ymwqh"]
+script = ExtResource("2_njihm")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_4gi0i"]
+script = ExtResource("2_njihm")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_wtp84"]
+script = ExtResource("2_njihm")
+level = 4
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_7t8dr"]
+script = ExtResource("2_njihm")
+level = 8
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_wnxfa"]
+script = ExtResource("2_njihm")
+level = 12
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_hqo2f"]
+script = ExtResource("2_njihm")
+level = 16
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_3rjoe"]
+script = ExtResource("2_njihm")
+level = 20
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_jlwur"]
+script = ExtResource("2_njihm")
+level = 24
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_5j4bg"]
+script = ExtResource("2_njihm")
+level = 28
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_lmhdy"]
+script = ExtResource("2_njihm")
+level = 32
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_j17rc"]
+script = ExtResource("2_njihm")
+level = 36
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_ft7ya"]
+script = ExtResource("2_njihm")
+level = 40
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_ifr6d"]
+script = ExtResource("2_njihm")
+level = 44
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_jqijt"]
+script = ExtResource("2_njihm")
+level = 48
+move = &"DREAMEATER"
+
+[resource]
+resource_name = "GASTLY"
+script = ExtResource("3_wyk6c")
+species = &"GASTLY"
+category = "Gas"
+pokedex_entry = "When exposed to a strong wind, a Gastly's gaseous body quickly dwindles away. They cluster under the eaves of houses to escape the ravages of wind."
+types = Array[StringName]([&"GHOST", &"POISON"])
+base_hp = 30
+base_attack = 35
+base_defense = 30
+base_special_attack = 100
+base_special_defense = 35
+base_speed = 80
+ev_special_attack = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_njihm")]([SubResource("Resource_ymwqh"), SubResource("Resource_4gi0i"), SubResource("Resource_wtp84"), SubResource("Resource_7t8dr"), SubResource("Resource_wnxfa"), SubResource("Resource_hqo2f"), SubResource("Resource_3rjoe"), SubResource("Resource_jlwur"), SubResource("Resource_5j4bg"), SubResource("Resource_lmhdy"), SubResource("Resource_j17rc"), SubResource("Resource_ft7ya"), SubResource("Resource_ifr6d"), SubResource("Resource_jqijt")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"HEX", &"HIDDENPOWER", &"ICEPUNCH", &"ICYWIND", &"INFESTATION", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"UPROAR", &"VENOSHOCK", &"WILLOWISP", &"WONDERROOM"])
+egg_moves = Array[StringName]([&"ASTONISH", &"CLEARSMOG", &"DISABLE", &"FIREPUNCH", &"GRUDGE", &"HAZE", &"ICEPUNCH", &"PERISHSONG", &"REFLECTTYPE", &"SCARYFACE", &"SMOG", &"THUNDERPUNCH", &"TOXIC"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_qjcex")]([SubResource("Resource_7p0i2")])
+height = 13
+color = &"Purple"
+habitat = &"Cave"
+generation = 1
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 6)
+shadow_size = 1
+id = &"GASTLY"
+display_name = "Gastly"

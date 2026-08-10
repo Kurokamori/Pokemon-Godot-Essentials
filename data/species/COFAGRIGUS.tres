@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kywns"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_40c2g"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_l6ad1"]
+
+[sub_resource type="Resource" id="Resource_kfrof"]
+script = ExtResource("1_kywns")
+species = &"YAMASK"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_hju0y"]
+script = ExtResource("2_40c2g")
+level = 0
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_ef7lx"]
+script = ExtResource("2_40c2g")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_ydkuj"]
+script = ExtResource("2_40c2g")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_tpn3i"]
+script = ExtResource("2_40c2g")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_xmluh"]
+script = ExtResource("2_40c2g")
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_75w5p"]
+script = ExtResource("2_40c2g")
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_pes6w"]
+script = ExtResource("2_40c2g")
+level = 12
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_xor6f"]
+script = ExtResource("2_40c2g")
+level = 16
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_wg82v"]
+script = ExtResource("2_40c2g")
+level = 20
+move = &"CRAFTYSHIELD"
+
+[sub_resource type="Resource" id="Resource_ucbr7"]
+script = ExtResource("2_40c2g")
+level = 24
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_iwqtr"]
+script = ExtResource("2_40c2g")
+level = 28
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_s3l1g"]
+script = ExtResource("2_40c2g")
+level = 32
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_7ftfv"]
+script = ExtResource("2_40c2g")
+level = 38
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_mdsok"]
+script = ExtResource("2_40c2g")
+level = 44
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_hc1dd"]
+script = ExtResource("2_40c2g")
+level = 50
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_ly132"]
+script = ExtResource("2_40c2g")
+level = 56
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_djkfw"]
+script = ExtResource("2_40c2g")
+level = 56
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_qcb5e"]
+script = ExtResource("2_40c2g")
+level = 62
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "COFAGRIGUS"
+script = ExtResource("3_l6ad1")
+species = &"COFAGRIGUS"
+category = "Coffin"
+pokedex_entry = "They pretend to be elaborate coffins to teach lessons to grave robbers. Their bodies are covered in pure gold."
+types = Array[StringName]([&"GHOST"])
+base_hp = 58
+base_attack = 50
+base_defense = 145
+base_special_attack = 95
+base_special_defense = 105
+base_speed = 30
+ev_defense = 2
+base_exp = 169
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_40c2g")]([SubResource("Resource_hju0y"), SubResource("Resource_ef7lx"), SubResource("Resource_ydkuj"), SubResource("Resource_tpn3i"), SubResource("Resource_xmluh"), SubResource("Resource_75w5p"), SubResource("Resource_pes6w"), SubResource("Resource_xor6f"), SubResource("Resource_wg82v"), SubResource("Resource_ucbr7"), SubResource("Resource_iwqtr"), SubResource("Resource_s3l1g"), SubResource("Resource_7ftfv"), SubResource("Resource_mdsok"), SubResource("Resource_hc1dd"), SubResource("Resource_ly132"), SubResource("Resource_djkfw"), SubResource("Resource_qcb5e")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"BLOCK", &"BODYPRESS", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"INFESTATION", &"IRONDEFENSE", &"KNOCKOFF", &"MAGICCOAT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TOXICSPIKES", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"MUMMY"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Mineral", &"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_kywns")]([SubResource("Resource_kfrof")])
+height = 17
+weight = 765
+color = &"Yellow"
+shape = &"HeadBase"
+generation = 5
+back_sprite_offset = Vector2i(12, 48)
+front_sprite_offset = Vector2i(-8, 2)
+id = &"COFAGRIGUS"
+display_name = "Cofagrigus"

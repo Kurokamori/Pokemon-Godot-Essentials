@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_c27pd"]
+
+[resource]
+resource_name = "XATTACK"
+script = ExtResource("1_c27pd")
+name_plural = "X Attacks"
+pocket = 7
+price = 1000
+sell_price = 500
+battle_use = 3
+description = "An item that sharply boosts the Attack stat of a Pokémon while it remains in battle."
+id = &"XATTACK"
+display_name = "X Attack"
+flags = Array[StringName]([&"Fling_30"])

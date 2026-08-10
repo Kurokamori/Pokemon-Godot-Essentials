@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6xg7k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1yvgg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1ypl5"]
+
+[sub_resource type="Resource" id="Resource_7u4mu"]
+script = ExtResource("1_6xg7k")
+species = &"AMPHAROS"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_1ricq"]
+script = ExtResource("1_6xg7k")
+species = &"MAREEP"
+method = &"Level"
+parameter = "15"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_rf7ji"]
+script = ExtResource("2_1yvgg")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_b7li2"]
+script = ExtResource("2_1yvgg")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_xkbeh"]
+script = ExtResource("2_1yvgg")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_kq3g0"]
+script = ExtResource("2_1yvgg")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_d0hnf"]
+script = ExtResource("2_1yvgg")
+level = 4
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_mlwqv"]
+script = ExtResource("2_1yvgg")
+level = 8
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_l4igg"]
+script = ExtResource("2_1yvgg")
+level = 11
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_p8ocn"]
+script = ExtResource("2_1yvgg")
+level = 16
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_glx5n"]
+script = ExtResource("2_1yvgg")
+level = 20
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_o7q8v"]
+script = ExtResource("2_1yvgg")
+level = 25
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_hb3ue"]
+script = ExtResource("2_1yvgg")
+level = 29
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_q8isq"]
+script = ExtResource("2_1yvgg")
+level = 34
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_plxqs"]
+script = ExtResource("2_1yvgg")
+level = 38
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_s3uxo"]
+script = ExtResource("2_1yvgg")
+level = 43
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_vaa6p"]
+script = ExtResource("2_1yvgg")
+level = 47
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_mmfq8"]
+script = ExtResource("2_1yvgg")
+level = 52
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_tttm5"]
+script = ExtResource("2_1yvgg")
+level = 56
+move = &"THUNDER"
+
+[resource]
+resource_name = "FLAAFFY"
+script = ExtResource("3_1ypl5")
+species = &"FLAAFFY"
+category = "Wool"
+pokedex_entry = "Its fleece quality changes to generate strong static electricity with a small amount of wool. The bare, slick parts of its hide are shielded against electricity."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 70
+base_attack = 55
+base_defense = 55
+base_special_attack = 80
+base_special_defense = 60
+base_speed = 45
+ev_special_attack = 2
+base_exp = 128
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1yvgg")]([SubResource("Resource_rf7ji"), SubResource("Resource_b7li2"), SubResource("Resource_xkbeh"), SubResource("Resource_kq3g0"), SubResource("Resource_d0hnf"), SubResource("Resource_mlwqv"), SubResource("Resource_l4igg"), SubResource("Resource_p8ocn"), SubResource("Resource_glx5n"), SubResource("Resource_o7q8v"), SubResource("Resource_hb3ue"), SubResource("Resource_q8isq"), SubResource("Resource_plxqs"), SubResource("Resource_s3uxo"), SubResource("Resource_vaa6p"), SubResource("Resource_mmfq8"), SubResource("Resource_tttm5")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"HEADBUTT", &"HEALBELL", &"HIDDENPOWER", &"IRONTAIL", &"LIGHTSCREEN", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"STATIC"])
+hidden_abilities = Array[StringName]([&"PLUS"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6xg7k")]([SubResource("Resource_7u4mu"), SubResource("Resource_1ricq")])
+height = 8
+weight = 133
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(2, 26)
+shadow_size = 1
+id = &"FLAAFFY"
+display_name = "Flaaffy"

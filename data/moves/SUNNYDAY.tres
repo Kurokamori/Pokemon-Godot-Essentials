@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_p3355"]
+
+[resource]
+resource_name = "SUNNYDAY"
+script = ExtResource("1_p3355")
+type = &"FIRE"
+accuracy = 0
+target = &"BothSides"
+function_code = &"StartSunWeather"
+description = "The user intensifies the sun for five turns, powering up Fire-type moves."
+id = &"SUNNYDAY"
+display_name = "Sunny Day"

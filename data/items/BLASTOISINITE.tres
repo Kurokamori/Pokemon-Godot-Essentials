@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wba2f"]
+
+[resource]
+resource_name = "BLASTOISINITE"
+script = ExtResource("1_wba2f")
+name_plural = "Blastoisinites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Blastoise hold it, and it will be able to Mega Evolve."
+id = &"BLASTOISINITE"
+display_name = "Blastoisinite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

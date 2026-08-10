@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TargetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/target_data.gd" id="1_b30pb"]
+
+[resource]
+resource_name = "AllBattlers"
+script = ExtResource("1_b30pb")
+num_targets = 2
+targets_foe = true
+targets_ally = true
+includes_user = true
+targets_all = true
+long_range = true
+id = &"AllBattlers"
+display_name = "All Battlers"

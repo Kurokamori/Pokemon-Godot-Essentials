@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_o4a7l"]
+
+[resource]
+resource_name = "TM31"
+script = ExtResource("1_o4a7l")
+name_plural = "TM31s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 40
+field_use = 5
+move = &"BRICKBREAK"
+description = "The user attacks with a swift chop. It can also break barriers, such as Light Screen and Reflect."
+id = &"TM31"
+display_name = "TM31"
+flags = Array[StringName]([&"Fling_75"])

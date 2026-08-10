@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_c3c5a"]
+
+[resource]
+resource_name = "TOXIC"
+script = ExtResource("1_c3c5a")
+type = &"POISON"
+accuracy = 90
+total_pp = 10
+function_code = &"BadPoisonTarget"
+description = "A move that leaves the target badly poisoned. Its poison damage worsens every turn."
+id = &"TOXIC"
+display_name = "Toxic"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

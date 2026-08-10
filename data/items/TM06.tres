@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_hf00s"]
+
+[resource]
+resource_name = "TM06"
+script = ExtResource("1_hf00s")
+name_plural = "TM06s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"TOXIC"
+description = "A move that leaves the target badly poisoned. Its poison damage worsens every turn."
+id = &"TM06"
+display_name = "TM06"
+flags = Array[StringName]([&"Fling_10"])

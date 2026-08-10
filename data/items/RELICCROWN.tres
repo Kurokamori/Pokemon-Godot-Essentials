@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_hfd0e"]
+
+[resource]
+resource_name = "RELICCROWN"
+script = ExtResource("1_hfd0e")
+name_plural = "Relic Crowns"
+description = "A crown made in a civilization about 3,000 years ago. A maniac will buy it for a high price."
+id = &"RELICCROWN"
+display_name = "Relic Crown"
+flags = Array[StringName]([&"Fling_30"])

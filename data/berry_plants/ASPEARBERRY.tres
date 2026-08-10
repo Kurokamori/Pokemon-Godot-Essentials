@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BerryPlantData" format=3]
+
+[ext_resource type="Script" path="res://src/data/berry_plant_data.gd" id="1_rfsnj"]
+
+[resource]
+resource_name = "ASPEARBERRY"
+script = ExtResource("1_rfsnj")
+id = &"ASPEARBERRY"
+display_name = "ASPEARBERRY"

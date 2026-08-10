@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_oroeu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_havji"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_31c0j"]
+
+[sub_resource type="Resource" id="Resource_21fkh"]
+script = ExtResource("1_oroeu")
+species = &"MILCERY"
+method = &"HoldItem"
+parameter = "STRAWBERRYSWEET"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kvme3"]
+script = ExtResource("2_havji")
+level = 0
+move = &"DECORATE"
+
+[sub_resource type="Resource" id="Resource_vnq2b"]
+script = ExtResource("2_havji")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ca0f7"]
+script = ExtResource("2_havji")
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_wpsxq"]
+script = ExtResource("2_havji")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_8sxuh"]
+script = ExtResource("2_havji")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_7njjw"]
+script = ExtResource("2_havji")
+level = 15
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_mu70a"]
+script = ExtResource("2_havji")
+level = 20
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_u4ra6"]
+script = ExtResource("2_havji")
+level = 25
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_yprh5"]
+script = ExtResource("2_havji")
+level = 30
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_wf3q1"]
+script = ExtResource("2_havji")
+level = 35
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_v0am7"]
+script = ExtResource("2_havji")
+level = 40
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_54wev"]
+script = ExtResource("2_havji")
+level = 45
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_2dvo7"]
+script = ExtResource("2_havji")
+level = 50
+move = &"ENTRAINMENT"
+
+[resource]
+resource_name = "ALCREMIE_21"
+script = ExtResource("3_31c0j")
+species = &"ALCREMIE"
+form = 21
+form_name = "Mint Cream"
+category = "Cream"
+pokedex_entry = "The cells that compose its cream fluctuated suddenly during evolution, giving the cream a refreshing flavor."
+pokedex_form = 21
+types = Array[StringName]([&"FAIRY"])
+base_hp = 65
+base_attack = 60
+base_defense = 75
+base_special_attack = 110
+base_special_defense = 121
+base_speed = 64
+ev_special_defense = 2
+base_exp = 173
+gender_ratio = &"AlwaysFemale"
+catch_rate = 100
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_havji")]([SubResource("Resource_kvme3"), SubResource("Resource_vnq2b"), SubResource("Resource_ca0f7"), SubResource("Resource_wpsxq"), SubResource("Resource_8sxuh"), SubResource("Resource_7njjw"), SubResource("Resource_mu70a"), SubResource("Resource_u4ra6"), SubResource("Resource_yprh5"), SubResource("Resource_wf3q1"), SubResource("Resource_v0am7"), SubResource("Resource_54wev"), SubResource("Resource_2dvo7")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICROOM", &"METRONOME", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"MYSTICALFIRE", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRIATTACK", &"WONDERROOM"])
+abilities = Array[StringName]([&"SWEETVEIL"])
+hidden_abilities = Array[StringName]([&"AROMAVEIL"])
+egg_groups = Array[StringName]([&"Fairy", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_oroeu")]([SubResource("Resource_21fkh")])
+height = 3
+weight = 5
+color = &"Blue"
+shape = &"HeadBase"
+generation = 8
+back_sprite_offset = Vector2i(-2, 51)
+front_sprite_offset = Vector2i(0, 25)
+shadow_size = 1
+id = &"ALCREMIE_21"
+display_name = "Alcremie"

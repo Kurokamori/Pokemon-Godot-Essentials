@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lmedy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xddl5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5e0xd"]
+
+[sub_resource type="Resource" id="Resource_l0rup"]
+script = ExtResource("1_lmedy")
+species = &"SEAKING"
+method = &"Level"
+parameter = "33"
+
+[sub_resource type="Resource" id="Resource_sqfi3"]
+script = ExtResource("2_xddl5")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_qcwgm"]
+script = ExtResource("2_xddl5")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_kk0i2"]
+script = ExtResource("2_xddl5")
+level = 5
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_h6ogy"]
+script = ExtResource("2_xddl5")
+level = 10
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_niaxh"]
+script = ExtResource("2_xddl5")
+level = 15
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_3f1lf"]
+script = ExtResource("2_xddl5")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_rbn50"]
+script = ExtResource("2_xddl5")
+level = 25
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_yh0px"]
+script = ExtResource("2_xddl5")
+level = 30
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_2a4uq"]
+script = ExtResource("2_xddl5")
+level = 35
+move = &"WATERFALL"
+
+[sub_resource type="Resource" id="Resource_yvf5p"]
+script = ExtResource("2_xddl5")
+level = 40
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_l4tip"]
+script = ExtResource("2_xddl5")
+level = 45
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_vuo3r"]
+script = ExtResource("2_xddl5")
+level = 50
+move = &"HORNDRILL"
+
+[resource]
+resource_name = "GOLDEEN"
+script = ExtResource("3_5e0xd")
+species = &"GOLDEEN"
+category = "Goldfish"
+pokedex_entry = "In the springtime, schools of Goldeen can be seen swimming up falls and rivers. It metes out staggering damage with its single horn."
+types = Array[StringName]([&"WATER"])
+base_hp = 45
+base_attack = 67
+base_defense = 60
+base_special_attack = 35
+base_special_defense = 50
+base_speed = 63
+ev_attack = 1
+base_exp = 64
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xddl5")]([SubResource("Resource_sqfi3"), SubResource("Resource_qcwgm"), SubResource("Resource_kk0i2"), SubResource("Resource_h6ogy"), SubResource("Resource_niaxh"), SubResource("Resource_3f1lf"), SubResource("Resource_rbn50"), SubResource("Resource_yh0px"), SubResource("Resource_2a4uq"), SubResource("Resource_yvf5p"), SubResource("Resource_l4tip"), SubResource("Resource_vuo3r")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ENDURE", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"FURYCUTTER", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"KNOCKOFF", &"MEGAHORN", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THROATCHOP", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"ACUPRESSURE", &"AQUATAIL", &"BODYSLAM", &"HAZE", &"HYDROPUMP", &"MUDSHOT", &"MUDSLAP", &"PSYBEAM", &"SKULLBASH"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"WATERVEIL"])
+hidden_abilities = Array[StringName]([&"LIGHTNINGROD"])
+wild_item_uncommon = Array[StringName]([&"MYSTICWATER"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_lmedy")]([SubResource("Resource_l0rup")])
+height = 6
+weight = 150
+shape = &"Finned"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(8, 34)
+id = &"GOLDEEN"
+display_name = "Goldeen"

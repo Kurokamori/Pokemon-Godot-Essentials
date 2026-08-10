@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_h38qw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_inw28"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_61vxv"]
+
+[sub_resource type="Resource" id="Resource_yss5j"]
+script = ExtResource("1_h38qw")
+species = &"SILVALLY"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_q2j5d"]
+script = ExtResource("2_inw28")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_0e61g"]
+script = ExtResource("2_inw28")
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_hcfop"]
+script = ExtResource("2_inw28")
+level = 5
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_8lglh"]
+script = ExtResource("2_inw28")
+level = 10
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_fu5wr"]
+script = ExtResource("2_inw28")
+level = 15
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_yo532"]
+script = ExtResource("2_inw28")
+level = 20
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_t4mag"]
+script = ExtResource("2_inw28")
+level = 25
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_x3gst"]
+script = ExtResource("2_inw28")
+level = 30
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_cnu8t"]
+script = ExtResource("2_inw28")
+level = 35
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_rxvt5"]
+script = ExtResource("2_inw28")
+level = 40
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_71ctm"]
+script = ExtResource("2_inw28")
+level = 45
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_d1l1e"]
+script = ExtResource("2_inw28")
+level = 50
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_tesr6"]
+script = ExtResource("2_inw28")
+level = 55
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "TYPENULL"
+script = ExtResource("3_61vxv")
+species = &"TYPENULL"
+category = "Synthetic"
+pokedex_entry = "The heavy control mask it wears suppresses its intrinsic capabilities. This Pokémon has some hidden special power."
+base_hp = 95
+base_attack = 95
+base_defense = 95
+base_special_attack = 95
+base_special_defense = 95
+base_speed = 59
+ev_hp = 2
+base_exp = 107
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_inw28")]([SubResource("Resource_q2j5d"), SubResource("Resource_0e61g"), SubResource("Resource_hcfop"), SubResource("Resource_8lglh"), SubResource("Resource_fu5wr"), SubResource("Resource_yo532"), SubResource("Resource_t4mag"), SubResource("Resource_x3gst"), SubResource("Resource_cnu8t"), SubResource("Resource_rxvt5"), SubResource("Resource_71ctm"), SubResource("Resource_d1l1e"), SubResource("Resource_tesr6")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"CONFIDE", &"DOUBLETEAM", &"DRAGONCLAW", &"ENDURE", &"FACADE", &"FLAMECHARGE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"ICYWIND", &"IMPRISON", &"IRONDEFENSE", &"IRONHEAD", &"LASTRESORT", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TERRAINPULSE", &"THUNDERWAVE", &"TOXIC", &"TRIATTACK", &"UTURN", &"WORKUP", &"XSCISSOR"])
+abilities = Array[StringName]([&"BATTLEARMOR"])
+hatch_steps = 30720
+evolutions = Array[ExtResource("1_h38qw")]([SubResource("Resource_yss5j")])
+height = 19
+weight = 1205
+color = &"Gray"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 15)
+shadow_size = 3
+id = &"TYPENULL"
+display_name = "Type: Null"
+flags = Array[StringName]([&"Legendary"])

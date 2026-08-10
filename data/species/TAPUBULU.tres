@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_p1dvw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x1n2y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_w70ip"]
+
+[sub_resource type="Resource" id="Resource_ck6bc"]
+script = ExtResource("2_x1n2y")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_rwdc6"]
+script = ExtResource("2_x1n2y")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_wiuei"]
+script = ExtResource("2_x1n2y")
+level = 5
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_a7c2h"]
+script = ExtResource("2_x1n2y")
+level = 10
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_cgs2l"]
+script = ExtResource("2_x1n2y")
+level = 15
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_yahvt"]
+script = ExtResource("2_x1n2y")
+level = 20
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_6ph4l"]
+script = ExtResource("2_x1n2y")
+level = 25
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_tk3xh"]
+script = ExtResource("2_x1n2y")
+level = 30
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_fd1ws"]
+script = ExtResource("2_x1n2y")
+level = 35
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_2oj7c"]
+script = ExtResource("2_x1n2y")
+level = 40
+move = &"HORNLEECH"
+
+[sub_resource type="Resource" id="Resource_8owtv"]
+script = ExtResource("2_x1n2y")
+level = 45
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_11o6f"]
+script = ExtResource("2_x1n2y")
+level = 50
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_kfpr1"]
+script = ExtResource("2_x1n2y")
+level = 55
+move = &"NATURESMADNESS"
+
+[sub_resource type="Resource" id="Resource_pws6e"]
+script = ExtResource("2_x1n2y")
+level = 60
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_f0cw8"]
+script = ExtResource("2_x1n2y")
+level = 65
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_miwj2"]
+script = ExtResource("2_x1n2y")
+level = 70
+move = &"SKULLBASH"
+
+[sub_resource type="Resource" id="Resource_g1qj5"]
+script = ExtResource("2_x1n2y")
+level = 75
+move = &"GRASSYTERRAIN"
+
+[resource]
+resource_name = "TAPUBULU"
+script = ExtResource("3_w70ip")
+species = &"TAPUBULU"
+category = "Land Spirit"
+pokedex_entry = "It pulls large trees up by the roots and swings them around. It causes vegetation to grow, and then it absorbs energy from the growth."
+types = Array[StringName]([&"GRASS", &"FAIRY"])
+base_hp = 70
+base_attack = 130
+base_defense = 115
+base_special_attack = 85
+base_special_defense = 95
+base_speed = 75
+ev_attack = 3
+base_exp = 285
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_x1n2y")]([SubResource("Resource_ck6bc"), SubResource("Resource_rwdc6"), SubResource("Resource_wiuei"), SubResource("Resource_a7c2h"), SubResource("Resource_cgs2l"), SubResource("Resource_yahvt"), SubResource("Resource_6ph4l"), SubResource("Resource_tk3xh"), SubResource("Resource_fd1ws"), SubResource("Resource_2oj7c"), SubResource("Resource_8owtv"), SubResource("Resource_11o6f"), SubResource("Resource_kfpr1"), SubResource("Resource_pws6e"), SubResource("Resource_f0cw8"), SubResource("Resource_miwj2"), SubResource("Resource_g1qj5")])
+tutor_moves = Array[StringName]([&"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLETSEED", &"CALMMIND", &"CLOSECOMBAT", &"CONFIDE", &"DARKESTLARIAT", &"DAZZLINGGLEAM", &"DUALCHOP", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYTERRAIN", &"GUARDSWAP", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"LIGHTSCREEN", &"MEGAHORN", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SMARTSTRIKE", &"SNARL", &"SNORE", &"SOLARBEAM", &"STONEEDGE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TAUNT", &"TELEKINESIS", &"TORMENT", &"TOXIC", &"WORKUP", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"GRASSYSURGE"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+hatch_steps = 3840
+height = 19
+weight = 455
+shape = &"HeadArms"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 8)
+id = &"TAPUBULU"
+display_name = "Tapu Bulu"
+flags = Array[StringName]([&"Legendary"])

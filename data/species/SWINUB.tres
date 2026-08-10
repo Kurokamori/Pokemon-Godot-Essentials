@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_g76v2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hqrmh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3rm2g"]
+
+[sub_resource type="Resource" id="Resource_isni4"]
+script = ExtResource("1_g76v2")
+species = &"PILOSWINE"
+method = &"Level"
+parameter = "33"
+
+[sub_resource type="Resource" id="Resource_7fpnv"]
+script = ExtResource("2_hqrmh")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_3q5ub"]
+script = ExtResource("2_hqrmh")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_1kv1k"]
+script = ExtResource("2_hqrmh")
+level = 5
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_n75d6"]
+script = ExtResource("2_hqrmh")
+level = 10
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_68ct1"]
+script = ExtResource("2_hqrmh")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_hbgbu"]
+script = ExtResource("2_hqrmh")
+level = 20
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_xvou6"]
+script = ExtResource("2_hqrmh")
+level = 25
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_c7ewt"]
+script = ExtResource("2_hqrmh")
+level = 30
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_rp4o4"]
+script = ExtResource("2_hqrmh")
+level = 35
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_jopgg"]
+script = ExtResource("2_hqrmh")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_t5nu1"]
+script = ExtResource("2_hqrmh")
+level = 45
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_6ur0x"]
+script = ExtResource("2_hqrmh")
+level = 50
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "SWINUB"
+script = ExtResource("3_3rm2g")
+species = &"SWINUB"
+category = "Pig"
+pokedex_entry = "It roots for food by rubbing its snout against the ground. Its favorite food is a mushroom that grows under dried grass. It occasionally roots out hot springs."
+types = Array[StringName]([&"ICE", &"GROUND"])
+base_hp = 50
+base_attack = 50
+base_defense = 40
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 50
+ev_attack = 1
+base_exp = 50
+growth_rate = &"Slow"
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hqrmh")]([SubResource("Resource_7fpnv"), SubResource("Resource_3q5ub"), SubResource("Resource_1kv1k"), SubResource("Resource_n75d6"), SubResource("Resource_68ct1"), SubResource("Resource_hbgbu"), SubResource("Resource_xvou6"), SubResource("Resource_c7ewt"), SubResource("Resource_rp4o4"), SubResource("Resource_jopgg"), SubResource("Resource_t5nu1"), SubResource("Resource_6ur0x")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"LIGHTSCREEN", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"BITE", &"BODYSLAM", &"CURSE", &"DOUBLEEDGE", &"FISSURE", &"FREEZEDRY", &"ICICLECRASH", &"ICICLESPEAR", &"MUDSHOT", &"TAKEDOWN"])
+abilities = Array[StringName]([&"OBLIVIOUS", &"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"THICKFAT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_g76v2")]([SubResource("Resource_isni4")])
+height = 4
+weight = 65
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Cave"
+generation = 2
+back_sprite_offset = Vector2i(0, 62)
+front_sprite_offset = Vector2i(0, 37)
+shadow_size = 1
+id = &"SWINUB"
+display_name = "Swinub"

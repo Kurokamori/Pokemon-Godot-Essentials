@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2ng3c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vdhwi"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6vc4d"]
+
+[sub_resource type="Resource" id="Resource_h7d7n"]
+script = ExtResource("2_vdhwi")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_sp682"]
+script = ExtResource("2_vdhwi")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_c5ccc"]
+script = ExtResource("2_vdhwi")
+level = 4
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_a3y1g"]
+script = ExtResource("2_vdhwi")
+level = 9
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_410g6"]
+script = ExtResource("2_vdhwi")
+level = 12
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_hk0k4"]
+script = ExtResource("2_vdhwi")
+level = 16
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_1repq"]
+script = ExtResource("2_vdhwi")
+level = 20
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_pgyve"]
+script = ExtResource("2_vdhwi")
+level = 24
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_v47g5"]
+script = ExtResource("2_vdhwi")
+level = 28
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_8r2cj"]
+script = ExtResource("2_vdhwi")
+level = 32
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_yo442"]
+script = ExtResource("2_vdhwi")
+level = 36
+move = &"SIMPLEBEAM"
+
+[sub_resource type="Resource" id="Resource_441x6"]
+script = ExtResource("2_vdhwi")
+level = 40
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_7y8xq"]
+script = ExtResource("2_vdhwi")
+level = 44
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_xxufu"]
+script = ExtResource("2_vdhwi")
+level = 48
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_53rd8"]
+script = ExtResource("2_vdhwi")
+level = 52
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_jp267"]
+script = ExtResource("2_vdhwi")
+level = 56
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_woa4n"]
+script = ExtResource("2_vdhwi")
+level = 60
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "AUDINO_1"
+script = ExtResource("3_6vc4d")
+species = &"AUDINO"
+form = 1
+form_name = "Mega Audino"
+category = "Hearing"
+pokedex_entry = "Its auditory sense is astounding. It has a radar-like ability to understand its surrounding through slight sounds."
+pokedex_form = 1
+types = Array[StringName]([&"NORMAL", &"FAIRY"])
+base_hp = 103
+base_attack = 60
+base_defense = 126
+base_special_attack = 80
+base_special_defense = 126
+base_speed = 50
+ev_hp = 2
+base_exp = 425
+growth_rate = &"Fast"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vdhwi")]([SubResource("Resource_h7d7n"), SubResource("Resource_sp682"), SubResource("Resource_c5ccc"), SubResource("Resource_a3y1g"), SubResource("Resource_410g6"), SubResource("Resource_hk0k4"), SubResource("Resource_1repq"), SubResource("Resource_pgyve"), SubResource("Resource_v47g5"), SubResource("Resource_8r2cj"), SubResource("Resource_yo442"), SubResource("Resource_441x6"), SubResource("Resource_7y8xq"), SubResource("Resource_xxufu"), SubResource("Resource_53rd8"), SubResource("Resource_jp267"), SubResource("Resource_woa4n")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"AMNESIA", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DIG", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"LOWKICK", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYTERRAIN", &"NATURALGIFT", &"PAINSPLIT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"TELEKINESIS", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"TRICKROOM", &"UPROAR", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"HEALINGWISH", &"SWEETKISS", &"WISH", &"YAWN"])
+abilities = Array[StringName]([&"HEALER"])
+hidden_abilities = Array[StringName]([&"HEALER"])
+wild_item_common = Array[StringName]([&"ORANBERRY"])
+wild_item_uncommon = Array[StringName]([&"SITRUSBERRY"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+height = 15
+weight = 320
+color = &"White"
+shape = &"BipedalTail"
+generation = 6
+mega_stone = &"AUDINITE"
+back_sprite_offset = Vector2i(-6, 48)
+front_sprite_offset = Vector2i(0, 20)
+shadow_size = 1
+id = &"AUDINO_1"
+display_name = "Audino"

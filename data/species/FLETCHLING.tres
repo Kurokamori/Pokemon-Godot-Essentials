@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_v4yiy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_08qu6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6o6yh"]
+
+[sub_resource type="Resource" id="Resource_78h8l"]
+script = ExtResource("1_v4yiy")
+species = &"FLETCHINDER"
+method = &"Level"
+parameter = "17"
+
+[sub_resource type="Resource" id="Resource_5kor7"]
+script = ExtResource("2_08qu6")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_qcmsx"]
+script = ExtResource("2_08qu6")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_el1gt"]
+script = ExtResource("2_08qu6")
+level = 5
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_abdex"]
+script = ExtResource("2_08qu6")
+level = 10
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_josme"]
+script = ExtResource("2_08qu6")
+level = 15
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_m4yh4"]
+script = ExtResource("2_08qu6")
+level = 20
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_4bjy4"]
+script = ExtResource("2_08qu6")
+level = 25
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_cp84p"]
+script = ExtResource("2_08qu6")
+level = 30
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_lggka"]
+script = ExtResource("2_08qu6")
+level = 35
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_w2av6"]
+script = ExtResource("2_08qu6")
+level = 40
+move = &"STEELWING"
+
+[sub_resource type="Resource" id="Resource_g0a2k"]
+script = ExtResource("2_08qu6")
+level = 45
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_6hihy"]
+script = ExtResource("2_08qu6")
+level = 50
+move = &"FLY"
+
+[resource]
+resource_name = "FLETCHLING"
+script = ExtResource("3_6o6yh")
+species = &"FLETCHLING"
+category = "Tiny Robin"
+pokedex_entry = "These friendly Pokémon send signals to one another with beautiful chirps and tail-feather movements."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 45
+base_attack = 50
+base_defense = 43
+base_special_attack = 40
+base_special_defense = 38
+base_speed = 62
+ev_speed = 1
+base_exp = 56
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_08qu6")]([SubResource("Resource_5kor7"), SubResource("Resource_qcmsx"), SubResource("Resource_el1gt"), SubResource("Resource_abdex"), SubResource("Resource_josme"), SubResource("Resource_m4yh4"), SubResource("Resource_4bjy4"), SubResource("Resource_cp84p"), SubResource("Resource_lggka"), SubResource("Resource_w2av6"), SubResource("Resource_g0a2k"), SubResource("Resource_6hihy")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLAMECHARGE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"TAUNT", &"THIEF", &"TOXIC", &"UTURN", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"DEFOG", &"FLAMECHARGE", &"QUICKGUARD"])
+abilities = Array[StringName]([&"BIGPECKS"])
+hidden_abilities = Array[StringName]([&"GALEWINGS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_v4yiy")]([SubResource("Resource_78h8l")])
+height = 3
+weight = 17
+shape = &"Winged"
+generation = 6
+back_sprite_offset = Vector2i(0, 53)
+front_sprite_offset = Vector2i(2, 31)
+shadow_size = 1
+id = &"FLETCHLING"
+display_name = "Fletchling"

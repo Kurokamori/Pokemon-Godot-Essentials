@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_nobhp"]
+
+[resource]
+resource_name = "MERCILESS"
+script = ExtResource("1_nobhp")
+description = "Its attacks are critical hits when it is poisoned."
+id = &"MERCILESS"
+display_name = "Merciless"

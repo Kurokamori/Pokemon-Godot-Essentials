@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_b8xgg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vehdp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n8l0v"]
+
+[sub_resource type="Resource" id="Resource_s7teu"]
+script = ExtResource("1_b8xgg")
+species = &"FRILLISH"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_4t0dq"]
+script = ExtResource("2_vehdp")
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_0tern"]
+script = ExtResource("2_vehdp")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_17ae2"]
+script = ExtResource("2_vehdp")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_huxv0"]
+script = ExtResource("2_vehdp")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_5dodb"]
+script = ExtResource("2_vehdp")
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_vtdgp"]
+script = ExtResource("2_vehdp")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_y13x3"]
+script = ExtResource("2_vehdp")
+level = 16
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_wepy8"]
+script = ExtResource("2_vehdp")
+level = 20
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_lja03"]
+script = ExtResource("2_vehdp")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_t30ko"]
+script = ExtResource("2_vehdp")
+level = 28
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_dkyqq"]
+script = ExtResource("2_vehdp")
+level = 32
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_shgbc"]
+script = ExtResource("2_vehdp")
+level = 36
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_v5nn0"]
+script = ExtResource("2_vehdp")
+level = 43
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_k4hx6"]
+script = ExtResource("2_vehdp")
+level = 48
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_c1dkr"]
+script = ExtResource("2_vehdp")
+level = 54
+move = &"WATERSPOUT"
+
+[resource]
+resource_name = "JELLICENT"
+script = ExtResource("3_n8l0v")
+species = &"JELLICENT"
+category = "Floating"
+pokedex_entry = "They propel themselves by expelling absorbed seawater from their bodies. Their favorite food is life energy."
+types = Array[StringName]([&"WATER", &"GHOST"])
+base_hp = 100
+base_attack = 60
+base_defense = 70
+base_special_attack = 85
+base_special_defense = 105
+base_speed = 60
+ev_special_defense = 2
+base_exp = 168
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vehdp")]([SubResource("Resource_4t0dq"), SubResource("Resource_0tern"), SubResource("Resource_17ae2"), SubResource("Resource_huxv0"), SubResource("Resource_5dodb"), SubResource("Resource_vtdgp"), SubResource("Resource_y13x3"), SubResource("Resource_wepy8"), SubResource("Resource_lja03"), SubResource("Resource_t30ko"), SubResource("Resource_dkyqq"), SubResource("Resource_shgbc"), SubResource("Resource_v5nn0"), SubResource("Resource_k4hx6"), SubResource("Resource_c1dkr")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BIND", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HAIL", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"MAGICCOAT", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAUNT", &"TOXIC", &"TRICK", &"TRICKROOM", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WILLOWISP"])
+abilities = Array[StringName]([&"WATERABSORB", &"CURSEDBODY"])
+hidden_abilities = Array[StringName]([&"DAMP"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_b8xgg")]([SubResource("Resource_s7teu")])
+height = 22
+weight = 1350
+color = &"White"
+shape = &"Multiped"
+generation = 5
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 8)
+id = &"JELLICENT"
+display_name = "Jellicent"

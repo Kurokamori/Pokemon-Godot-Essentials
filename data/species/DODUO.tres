@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nlf3e"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qaers"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_thn0s"]
+
+[sub_resource type="Resource" id="Resource_qlk2k"]
+script = ExtResource("1_nlf3e")
+species = &"DODRIO"
+method = &"Level"
+parameter = "31"
+
+[sub_resource type="Resource" id="Resource_ptfvy"]
+script = ExtResource("2_qaers")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_no87h"]
+script = ExtResource("2_qaers")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_rxtyn"]
+script = ExtResource("2_qaers")
+level = 5
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_qxgvu"]
+script = ExtResource("2_qaers")
+level = 8
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_0g6bf"]
+script = ExtResource("2_qaers")
+level = 12
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_4dxhu"]
+script = ExtResource("2_qaers")
+level = 15
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_bwbm0"]
+script = ExtResource("2_qaers")
+level = 19
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_vh16t"]
+script = ExtResource("2_qaers")
+level = 22
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_trfn8"]
+script = ExtResource("2_qaers")
+level = 26
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_3qrfy"]
+script = ExtResource("2_qaers")
+level = 29
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_qi24j"]
+script = ExtResource("2_qaers")
+level = 33
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_vxatm"]
+script = ExtResource("2_qaers")
+level = 36
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_fgkg4"]
+script = ExtResource("2_qaers")
+level = 40
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_so101"]
+script = ExtResource("2_qaers")
+level = 43
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_fuinl"]
+script = ExtResource("2_qaers")
+level = 47
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_yqiva"]
+script = ExtResource("2_qaers")
+level = 50
+move = &"THRASH"
+
+[resource]
+resource_name = "DODUO"
+script = ExtResource("3_thn0s")
+species = &"DODUO"
+category = "Twin Bird"
+pokedex_entry = "Even while eating or sleeping, one of the heads remains always vigilant for any sign of danger. When threatened, it flees at over 60 miles per hour."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 35
+base_attack = 85
+base_defense = 45
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 75
+ev_attack = 1
+base_exp = 62
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qaers")]([SubResource("Resource_ptfvy"), SubResource("Resource_no87h"), SubResource("Resource_rxtyn"), SubResource("Resource_qxgvu"), SubResource("Resource_0g6bf"), SubResource("Resource_4dxhu"), SubResource("Resource_bwbm0"), SubResource("Resource_vh16t"), SubResource("Resource_trfn8"), SubResource("Resource_3qrfy"), SubResource("Resource_qi24j"), SubResource("Resource_vxatm"), SubResource("Resource_fgkg4"), SubResource("Resource_so101"), SubResource("Resource_fuinl"), SubResource("Resource_yqiva")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HIDDENPOWER", &"KNOCKOFF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THIEF", &"UPROAR", &"WORKUP"])
+egg_moves = Array[StringName]([&"ASSURANCE", &"BRAVEBIRD", &"ENDEAVOR", &"FLAIL", &"HAZE", &"QUICKATTACK", &"SUPERSONIC"])
+abilities = Array[StringName]([&"RUNAWAY", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"TANGLEDFEET"])
+wild_item_uncommon = Array[StringName]([&"SHARPBEAK"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nlf3e")]([SubResource("Resource_qlk2k")])
+height = 14
+weight = 392
+color = &"Brown"
+shape = &"HeadLegs"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-3, 26)
+shadow_size = 1
+id = &"DODUO"
+display_name = "Doduo"

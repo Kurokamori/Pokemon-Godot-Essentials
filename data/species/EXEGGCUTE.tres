@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pvp0y"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ff2ey"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5j8vt"]
+
+[sub_resource type="Resource" id="Resource_yt0og"]
+script = ExtResource("1_pvp0y")
+species = &"EXEGGUTOR"
+method = &"Item"
+parameter = "LEAFSTONE"
+
+[sub_resource type="Resource" id="Resource_7biwx"]
+script = ExtResource("2_ff2ey")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_brsev"]
+script = ExtResource("2_ff2ey")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_2g8eq"]
+script = ExtResource("2_ff2ey")
+level = 5
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_13uwb"]
+script = ExtResource("2_ff2ey")
+level = 10
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_eum1j"]
+script = ExtResource("2_ff2ey")
+level = 15
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_vidvc"]
+script = ExtResource("2_ff2ey")
+level = 20
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_t4cue"]
+script = ExtResource("2_ff2ey")
+level = 25
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_8jjgp"]
+script = ExtResource("2_ff2ey")
+level = 30
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_rnbpg"]
+script = ExtResource("2_ff2ey")
+level = 35
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_7p1ho"]
+script = ExtResource("2_ff2ey")
+level = 40
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_cbaa7"]
+script = ExtResource("2_ff2ey")
+level = 45
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_5uuax"]
+script = ExtResource("2_ff2ey")
+level = 50
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_uivu5"]
+script = ExtResource("2_ff2ey")
+level = 55
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "EXEGGCUTE"
+script = ExtResource("3_5j8vt")
+species = &"EXEGGCUTE"
+category = "Egg"
+pokedex_entry = "It consists of six eggs that care for each other. The eggs attract each other and spin around. When cracks increasingly appear, it is close to evolution."
+types = Array[StringName]([&"GRASS", &"PSYCHIC"])
+base_hp = 60
+base_attack = 40
+base_defense = 80
+base_special_attack = 60
+base_special_defense = 45
+base_speed = 40
+ev_defense = 1
+base_exp = 65
+growth_rate = &"Slow"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ff2ey")]([SubResource("Resource_7biwx"), SubResource("Resource_brsev"), SubResource("Resource_2g8eq"), SubResource("Resource_13uwb"), SubResource("Resource_eum1j"), SubResource("Resource_vidvc"), SubResource("Resource_t4cue"), SubResource("Resource_8jjgp"), SubResource("Resource_rnbpg"), SubResource("Resource_7p1ho"), SubResource("Resource_cbaa7"), SubResource("Resource_5uuax"), SubResource("Resource_uivu5")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BLOCK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"EXPLOSION", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"GRAVITY", &"HIDDENPOWER", &"INFESTATION", &"LEAFSTORM", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SELFDESTRUCT", &"SKILLSWAP", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TELEKINESIS", &"THIEF", &"TRICKROOM", &"UPROAR", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"BLOCK", &"CURSE", &"GRASSYTERRAIN", &"INGRAIN", &"LEAFSTORM", &"MOONLIGHT", &"NATUREPOWER", &"POISONPOWDER", &"POWERSWAP", &"SLEEPPOWDER", &"STUNSPORE", &"SYNTHESIS"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"HARVEST"])
+wild_item_uncommon = Array[StringName]([&"PSYCHICSEED"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_pvp0y")]([SubResource("Resource_yt0og")])
+height = 4
+weight = 25
+color = &"Pink"
+shape = &"MultiBody"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 65)
+front_sprite_offset = Vector2i(0, 34)
+id = &"EXEGGCUTE"
+display_name = "Exeggcute"

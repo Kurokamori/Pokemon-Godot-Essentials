@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_spjmm"]
+
+[resource]
+resource_name = "DOWNLOAD"
+script = ExtResource("1_spjmm")
+description = "Adjusts power according to a foe's defenses."
+id = &"DOWNLOAD"
+display_name = "Download"

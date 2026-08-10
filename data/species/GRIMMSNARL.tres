@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2142r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jcywj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4cfp8"]
+
+[sub_resource type="Resource" id="Resource_xlp21"]
+script = ExtResource("1_2142r")
+species = &"MORGREM"
+method = &"Level"
+parameter = "42"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ilif5"]
+script = ExtResource("2_jcywj")
+level = 0
+move = &"SPIRITBREAK"
+
+[sub_resource type="Resource" id="Resource_514np"]
+script = ExtResource("2_jcywj")
+move = &"FALSESURRENDER"
+
+[sub_resource type="Resource" id="Resource_ui8fw"]
+script = ExtResource("2_jcywj")
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_ljf7r"]
+script = ExtResource("2_jcywj")
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_ov1aj"]
+script = ExtResource("2_jcywj")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_acbay"]
+script = ExtResource("2_jcywj")
+move = &"CONFIDE"
+
+[sub_resource type="Resource" id="Resource_h72i4"]
+script = ExtResource("2_jcywj")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_1528w"]
+script = ExtResource("2_jcywj")
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_fbqt2"]
+script = ExtResource("2_jcywj")
+level = 12
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_78yrw"]
+script = ExtResource("2_jcywj")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_gce1i"]
+script = ExtResource("2_jcywj")
+level = 20
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_nq5e0"]
+script = ExtResource("2_jcywj")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_umkf4"]
+script = ExtResource("2_jcywj")
+level = 28
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_wox02"]
+script = ExtResource("2_jcywj")
+level = 35
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_t8i0l"]
+script = ExtResource("2_jcywj")
+level = 40
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_recua"]
+script = ExtResource("2_jcywj")
+level = 48
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_yln2l"]
+script = ExtResource("2_jcywj")
+level = 56
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_wtqvb"]
+script = ExtResource("2_jcywj")
+level = 64
+move = &"HAMMERARM"
+
+[resource]
+resource_name = "GRIMMSNARL"
+script = ExtResource("3_4cfp8")
+species = &"GRIMMSNARL"
+category = "Bulk Up"
+pokedex_entry = "Its hairs work like muscle fibers. When its hairs unfurl, they latch on to opponents, ensnaring them as tentacles would."
+types = Array[StringName]([&"DARK", &"FAIRY"])
+base_hp = 95
+base_attack = 120
+base_defense = 65
+base_special_attack = 95
+base_special_defense = 75
+base_speed = 60
+ev_attack = 3
+base_exp = 255
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jcywj")]([SubResource("Resource_ilif5"), SubResource("Resource_514np"), SubResource("Resource_ui8fw"), SubResource("Resource_ljf7r"), SubResource("Resource_ov1aj"), SubResource("Resource_acbay"), SubResource("Resource_h72i4"), SubResource("Resource_1528w"), SubResource("Resource_fbqt2"), SubResource("Resource_78yrw"), SubResource("Resource_gce1i"), SubResource("Resource_nq5e0"), SubResource("Resource_umkf4"), SubResource("Resource_wox02"), SubResource("Resource_t8i0l"), SubResource("Resource_recua"), SubResource("Resource_yln2l"), SubResource("Resource_wtqvb")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKESTLARIAT", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREPUNCH", &"FOCUSBLAST", &"FOCUSENERGY", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"LASHOUT", &"LEECHLIFE", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"POWERSWAP", &"POWERWHIP", &"PROTECT", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"UPROAR", &"WONDERROOM"])
+abilities = Array[StringName]([&"PRANKSTER", &"FRISK"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+egg_groups = Array[StringName]([&"Fairy", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_2142r")]([SubResource("Resource_xlp21")])
+height = 15
+weight = 610
+color = &"Purple"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(2, 42)
+front_sprite_offset = Vector2i(-3, 13)
+id = &"GRIMMSNARL"
+display_name = "Grimmsnarl"

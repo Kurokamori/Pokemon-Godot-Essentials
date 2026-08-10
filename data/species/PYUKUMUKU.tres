@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7s4e4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_m17hq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oorat"]
+
+[sub_resource type="Resource" id="Resource_a0kyv"]
+script = ExtResource("2_m17hq")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_n4i35"]
+script = ExtResource("2_m17hq")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_t30v5"]
+script = ExtResource("2_m17hq")
+level = 5
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_aq055"]
+script = ExtResource("2_m17hq")
+level = 10
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_rtkvo"]
+script = ExtResource("2_m17hq")
+level = 15
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_h8mjx"]
+script = ExtResource("2_m17hq")
+level = 20
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_dwgf3"]
+script = ExtResource("2_m17hq")
+level = 25
+move = &"PURIFY"
+
+[sub_resource type="Resource" id="Resource_7qyyg"]
+script = ExtResource("2_m17hq")
+level = 30
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_x1li5"]
+script = ExtResource("2_m17hq")
+level = 35
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_8pgje"]
+script = ExtResource("2_m17hq")
+level = 40
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_l5e0n"]
+script = ExtResource("2_m17hq")
+level = 45
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_5q7di"]
+script = ExtResource("2_m17hq")
+level = 50
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_3bknx"]
+script = ExtResource("2_m17hq")
+level = 55
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_efc45"]
+script = ExtResource("2_m17hq")
+level = 60
+move = &"MEMENTO"
+
+[resource]
+resource_name = "PYUKUMUKU"
+script = ExtResource("3_oorat")
+species = &"PYUKUMUKU"
+category = "Sea Cucumber"
+pokedex_entry = "It lives in shallow seas, such as areas near a beach. It can eject its internal organs, which it uses to engulf its prey or battle enemies."
+types = Array[StringName]([&"WATER"])
+base_hp = 55
+base_attack = 60
+base_defense = 130
+base_special_attack = 30
+base_special_defense = 130
+base_speed = 5
+ev_special_defense = 2
+base_exp = 144
+growth_rate = &"Fast"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_m17hq")]([SubResource("Resource_a0kyv"), SubResource("Resource_n4i35"), SubResource("Resource_t30v5"), SubResource("Resource_aq055"), SubResource("Resource_rtkvo"), SubResource("Resource_h8mjx"), SubResource("Resource_dwgf3"), SubResource("Resource_7qyyg"), SubResource("Resource_x1li5"), SubResource("Resource_8pgje"), SubResource("Resource_l5e0n"), SubResource("Resource_5q7di"), SubResource("Resource_3bknx"), SubResource("Resource_efc45")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BLOCK", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"GASTROACID", &"HAIL", &"HELPINGHAND", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"PSYCHUP", &"QUASH", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SPITE", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"TOXIC", &"VENOMDRENCH"])
+egg_moves = Array[StringName]([&"MIRRORCOAT", &"SPITE", &"SWAGGER", &"TICKLE"])
+abilities = Array[StringName]([&"INNARDSOUT"])
+hidden_abilities = Array[StringName]([&"UNAWARE"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 3840
+height = 3
+weight = 12
+color = &"Black"
+shape = &"Serpentine"
+generation = 7
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(2, 38)
+shadow_size = 1
+id = &"PYUKUMUKU"
+display_name = "Pyukumuku"

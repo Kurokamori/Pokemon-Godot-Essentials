@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_px7cd"]
+
+[resource]
+resource_name = "VISEGRIP"
+script = ExtResource("1_px7cd")
+category = 0
+power = 55
+total_pp = 30
+description = "The target is gripped and squeezed from both sides to inflict damage."
+id = &"VISEGRIP"
+display_name = "Vise Grip"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

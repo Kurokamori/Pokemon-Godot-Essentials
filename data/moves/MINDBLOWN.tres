@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_r8k4y"]
+
+[resource]
+resource_name = "MINDBLOWN"
+script = ExtResource("1_r8k4y")
+type = &"FIRE"
+category = 1
+power = 150
+target = &"AllNearOthers"
+function_code = &"UserLosesHalfOfTotalHPExplosive"
+description = "The user attacks everything by causing its own head to explode. This also damages the user."
+id = &"MINDBLOWN"
+display_name = "Mind Blown"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

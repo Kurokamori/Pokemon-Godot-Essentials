@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6b0u2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a821h"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_8wwve"]
+
+[sub_resource type="Resource" id="Resource_m0ky5"]
+script = ExtResource("1_6b0u2")
+species = &"NOIVERN"
+method = &"Level"
+parameter = "48"
+
+[sub_resource type="Resource" id="Resource_rwknm"]
+script = ExtResource("2_a821h")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_a1lt3"]
+script = ExtResource("2_a821h")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_b3qsb"]
+script = ExtResource("2_a821h")
+level = 4
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_0520x"]
+script = ExtResource("2_a821h")
+level = 8
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_dfct4"]
+script = ExtResource("2_a821h")
+level = 12
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_xiwxm"]
+script = ExtResource("2_a821h")
+level = 16
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_1n32j"]
+script = ExtResource("2_a821h")
+level = 20
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_xy83g"]
+script = ExtResource("2_a821h")
+level = 24
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_8qkac"]
+script = ExtResource("2_a821h")
+level = 28
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_p2j7v"]
+script = ExtResource("2_a821h")
+level = 32
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_s5o12"]
+script = ExtResource("2_a821h")
+level = 36
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_u76fg"]
+script = ExtResource("2_a821h")
+level = 40
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_vcaca"]
+script = ExtResource("2_a821h")
+level = 44
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_j2vci"]
+script = ExtResource("2_a821h")
+level = 49
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_5l10l"]
+script = ExtResource("2_a821h")
+level = 52
+move = &"HURRICANE"
+
+[resource]
+resource_name = "NOIBAT"
+script = ExtResource("3_8wwve")
+species = &"NOIBAT"
+category = "Sound Wave"
+pokedex_entry = "Even a robust wrestler will become dizzy and unable to stand when exposed to its 200,000-hertz ultrasonic waves."
+types = Array[StringName]([&"FLYING", &"DRAGON"])
+base_hp = 40
+base_attack = 30
+base_defense = 35
+base_special_attack = 45
+base_special_defense = 40
+base_speed = 55
+ev_speed = 1
+base_exp = 49
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_a821h")]([SubResource("Resource_rwknm"), SubResource("Resource_a1lt3"), SubResource("Resource_b3qsb"), SubResource("Resource_0520x"), SubResource("Resource_dfct4"), SubResource("Resource_xiwxm"), SubResource("Resource_1n32j"), SubResource("Resource_xy83g"), SubResource("Resource_8qkac"), SubResource("Resource_p2j7v"), SubResource("Resource_s5o12"), SubResource("Resource_u76fg"), SubResource("Resource_vcaca"), SubResource("Resource_j2vci"), SubResource("Resource_5l10l")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRSLASH", &"ATTRACT", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"DREAMEATER", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"HURRICANE", &"HYPERVOICE", &"IRONTAIL", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SKYATTACK", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"WATERPULSE", &"WILDCHARGE", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"DEFOG", &"DRAGONRUSH"])
+abilities = Array[StringName]([&"FRISK", &"INFILTRATOR"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Flying", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6b0u2")]([SubResource("Resource_m0ky5")])
+height = 5
+weight = 80
+color = &"Purple"
+shape = &"Winged"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+shadow_size = 1
+id = &"NOIBAT"
+display_name = "Noibat"

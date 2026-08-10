@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_224so"]
+
+[resource]
+resource_name = "SQUIRTBOTTLE"
+script = ExtResource("1_224so")
+name_plural = "Squirt Bottles"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A watering can shaped like a Squirtle. It helps promote healthy growth of Berries planted in soft soil."
+id = &"SQUIRTBOTTLE"
+display_name = "Squirt Bottle"
+flags = Array[StringName]([&"KeyItem"])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_74hv7"]
+
+[resource]
+resource_name = "TM91"
+script = ExtResource("1_74hv7")
+name_plural = "TM91s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"FLASHCANNON"
+description = "The user gathers all its light energy and releases it all at once. This may also lower the target's Sp. Def stat."
+id = &"TM91"
+display_name = "TM91"
+flags = Array[StringName]([&"Fling_80"])

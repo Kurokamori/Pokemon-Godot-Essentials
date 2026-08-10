@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xm7ar"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ocmg1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_clrxq"]
+
+[sub_resource type="Resource" id="Resource_ssmas"]
+script = ExtResource("1_xm7ar")
+species = &"LAIRON"
+method = &"Level"
+parameter = "42"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_f6cbn"]
+script = ExtResource("2_ocmg1")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_jgau4"]
+script = ExtResource("2_ocmg1")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_24o84"]
+script = ExtResource("2_ocmg1")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_0i3vp"]
+script = ExtResource("2_ocmg1")
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_87nbe"]
+script = ExtResource("2_ocmg1")
+level = 12
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_so4xd"]
+script = ExtResource("2_ocmg1")
+level = 16
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_h5ri6"]
+script = ExtResource("2_ocmg1")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_pfjre"]
+script = ExtResource("2_ocmg1")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_ya54h"]
+script = ExtResource("2_ocmg1")
+level = 28
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_nf5if"]
+script = ExtResource("2_ocmg1")
+level = 35
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_wlxru"]
+script = ExtResource("2_ocmg1")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_8lhj7"]
+script = ExtResource("2_ocmg1")
+level = 48
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_5d7jp"]
+script = ExtResource("2_ocmg1")
+level = 56
+move = &"IRONTAIL"
+
+[sub_resource type="Resource" id="Resource_ejqlh"]
+script = ExtResource("2_ocmg1")
+level = 64
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_tqmxy"]
+script = ExtResource("2_ocmg1")
+level = 72
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_0ceq6"]
+script = ExtResource("2_ocmg1")
+level = 80
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_y76x8"]
+script = ExtResource("2_ocmg1")
+level = 88
+move = &"METALBURST"
+
+[resource]
+resource_name = "AGGRON"
+script = ExtResource("3_clrxq")
+species = &"AGGRON"
+category = "Iron Armor"
+pokedex_entry = "Its iron horns grow longer a little at a time. They are used to determine the Aggron's age. The gouges in its armor are worn with pride as mementos from battles."
+types = Array[StringName]([&"STEEL", &"ROCK"])
+base_hp = 70
+base_attack = 110
+base_defense = 180
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 50
+ev_defense = 3
+base_exp = 265
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_ocmg1")]([SubResource("Resource_f6cbn"), SubResource("Resource_jgau4"), SubResource("Resource_24o84"), SubResource("Resource_0i3vp"), SubResource("Resource_87nbe"), SubResource("Resource_so4xd"), SubResource("Resource_h5ri6"), SubResource("Resource_pfjre"), SubResource("Resource_ya54h"), SubResource("Resource_nf5if"), SubResource("Resource_wlxru"), SubResource("Resource_8lhj7"), SubResource("Resource_5d7jp"), SubResource("Resource_ejqlh"), SubResource("Resource_tqmxy"), SubResource("Resource_0ceq6"), SubResource("Resource_y76x8")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LOWKICK", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SMARTSTRIKE", &"SNORE", &"SOLARBEAM", &"SPITE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"STURDY", &"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"HEAVYMETAL"])
+wild_item_uncommon = Array[StringName]([&"HARDSTONE"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_xm7ar")]([SubResource("Resource_ssmas")])
+height = 21
+weight = 3600
+color = &"Gray"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-7, 16)
+shadow_size = 3
+id = &"AGGRON"
+display_name = "Aggron"

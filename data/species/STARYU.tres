@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_thy38"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q6njp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4lqkv"]
+
+[sub_resource type="Resource" id="Resource_6fj4q"]
+script = ExtResource("1_thy38")
+species = &"STARMIE"
+method = &"Item"
+parameter = "WATERSTONE"
+
+[sub_resource type="Resource" id="Resource_w0glf"]
+script = ExtResource("2_q6njp")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_c4xlc"]
+script = ExtResource("2_q6njp")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_1rsba"]
+script = ExtResource("2_q6njp")
+level = 4
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_p3aow"]
+script = ExtResource("2_q6njp")
+level = 8
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_p4xf3"]
+script = ExtResource("2_q6njp")
+level = 12
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_juaub"]
+script = ExtResource("2_q6njp")
+level = 16
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_q7q11"]
+script = ExtResource("2_q6njp")
+level = 20
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_pc1jf"]
+script = ExtResource("2_q6njp")
+level = 24
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_juvqj"]
+script = ExtResource("2_q6njp")
+level = 28
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_0nd4v"]
+script = ExtResource("2_q6njp")
+level = 32
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_7rqtf"]
+script = ExtResource("2_q6njp")
+level = 36
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_pxe3o"]
+script = ExtResource("2_q6njp")
+level = 40
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_o7bax"]
+script = ExtResource("2_q6njp")
+level = 44
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_yk33r"]
+script = ExtResource("2_q6njp")
+level = 48
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_3y402"]
+script = ExtResource("2_q6njp")
+level = 52
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_kyaol"]
+script = ExtResource("2_q6njp")
+level = 56
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "STARYU"
+script = ExtResource("3_4lqkv")
+species = &"STARYU"
+category = "Star Shape"
+pokedex_entry = "It gathers with others in the night and makes its red core glow on and off with the twinkling stars. It can regenerate limbs if they are severed from its body."
+types = Array[StringName]([&"WATER"])
+base_hp = 30
+base_attack = 45
+base_defense = 55
+base_special_attack = 70
+base_special_defense = 55
+base_speed = 85
+ev_speed = 1
+base_exp = 68
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_q6njp")]([SubResource("Resource_w0glf"), SubResource("Resource_c4xlc"), SubResource("Resource_1rsba"), SubResource("Resource_p3aow"), SubResource("Resource_p4xf3"), SubResource("Resource_juaub"), SubResource("Resource_q7q11"), SubResource("Resource_pc1jf"), SubResource("Resource_juvqj"), SubResource("Resource_0nd4v"), SubResource("Resource_7rqtf"), SubResource("Resource_pxe3o"), SubResource("Resource_o7bax"), SubResource("Resource_yk33r"), SubResource("Resource_3y402"), SubResource("Resource_kyaol")])
+tutor_moves = Array[StringName]([&"BLIZZARD", &"BRINE", &"CONFIDE", &"COSMICPOWER", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FLIPTURN", &"FRUSTRATION", &"GRAVITY", &"GYROBALL", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRIATTACK", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"ILLUMINATE", &"NATURALCURE"])
+hidden_abilities = Array[StringName]([&"ANALYTIC"])
+wild_item_common = Array[StringName]([&"STARDUST"])
+wild_item_uncommon = Array[StringName]([&"STARPIECE"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_thy38")]([SubResource("Resource_6fj4q")])
+height = 8
+weight = 345
+color = &"Brown"
+shape = &"HeadBase"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(5, 31)
+id = &"STARYU"
+display_name = "Staryu"

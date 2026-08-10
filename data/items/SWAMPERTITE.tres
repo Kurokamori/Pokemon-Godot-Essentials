@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_vklt3"]
+
+[resource]
+resource_name = "SWAMPERTITE"
+script = ExtResource("1_vklt3")
+name_plural = "Swampertites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Swampert hold it, and it will be able to Mega Evolve."
+id = &"SWAMPERTITE"
+display_name = "Swampertite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

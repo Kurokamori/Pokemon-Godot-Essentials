@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_a524a"]
+
+[resource]
+resource_name = "BRAVEMINT"
+script = ExtResource("1_a524a")
+name_plural = "Brave Mints"
+portion_name = "sprig of Brave Mint"
+portion_name_plural = "sprigs of Brave Mint"
+pocket = 2
+price = 20
+sell_price = 10
+bp_price = 50
+field_use = 1
+description = "When a Pokémon smells this mint, its Attack will grow more easily, but its Speed will grow more slowly."
+id = &"BRAVEMINT"
+display_name = "Brave Mint"
+flags = Array[StringName]([&"Fling_10"])

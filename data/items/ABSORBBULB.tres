@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bebm2"]
+
+[resource]
+resource_name = "ABSORBBULB"
+script = ExtResource("1_bebm2")
+name_plural = "Absorb Bulbs"
+price = 4000
+sell_price = 2000
+bp_price = 10
+description = "A consumable bulb. If the holder is hit by a Water-type move, its Sp. Atk will rise."
+id = &"ABSORBBULB"
+display_name = "Absorb Bulb"
+flags = Array[StringName]([&"Fling_30"])

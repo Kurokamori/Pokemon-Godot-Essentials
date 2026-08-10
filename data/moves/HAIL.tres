@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_03kte"]
+
+[resource]
+resource_name = "HAIL"
+script = ExtResource("1_03kte")
+type = &"ICE"
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+function_code = &"StartHailWeather"
+description = "The user summons a hail storm lasting five turns. It damages all Pokémon except the Ice type."
+id = &"HAIL"
+display_name = "Hail"

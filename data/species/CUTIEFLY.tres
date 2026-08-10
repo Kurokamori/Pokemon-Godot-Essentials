@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_m0wdb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d83ra"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_61pui"]
+
+[sub_resource type="Resource" id="Resource_ck6ts"]
+script = ExtResource("1_m0wdb")
+species = &"RIBOMBEE"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_d4yc8"]
+script = ExtResource("2_d83ra")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_q61qt"]
+script = ExtResource("2_d83ra")
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_id8sv"]
+script = ExtResource("2_d83ra")
+level = 6
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_t2pmb"]
+script = ExtResource("2_d83ra")
+level = 12
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_nkuhj"]
+script = ExtResource("2_d83ra")
+level = 18
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_mwxn2"]
+script = ExtResource("2_d83ra")
+level = 24
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_48vpm"]
+script = ExtResource("2_d83ra")
+level = 30
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_5871f"]
+script = ExtResource("2_d83ra")
+level = 36
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_hb7nb"]
+script = ExtResource("2_d83ra")
+level = 42
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_uus1h"]
+script = ExtResource("2_d83ra")
+level = 48
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_3rlb8"]
+script = ExtResource("2_d83ra")
+level = 54
+move = &"QUIVERDANCE"
+
+[resource]
+resource_name = "CUTIEFLY"
+script = ExtResource("3_61pui")
+species = &"CUTIEFLY"
+category = "Bee Fly"
+pokedex_entry = "It feeds on the nectar and pollen of flowers. Because it's able to sense auras, it can identify which flowers are about to bloom."
+types = Array[StringName]([&"BUG", &"FAIRY"])
+base_hp = 40
+base_attack = 45
+base_defense = 40
+base_special_attack = 55
+base_special_defense = 40
+base_speed = 84
+ev_speed = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_d83ra")]([SubResource("Resource_d4yc8"), SubResource("Resource_q61qt"), SubResource("Resource_id8sv"), SubResource("Resource_t2pmb"), SubResource("Resource_nkuhj"), SubResource("Resource_mwxn2"), SubResource("Resource_48vpm"), SubResource("Resource_5871f"), SubResource("Resource_hb7nb"), SubResource("Resource_uus1h"), SubResource("Resource_3rlb8")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BUGBITE", &"BUGBUZZ", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"DUALWINGBEAT", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"IMPRISON", &"INFESTATION", &"LASTRESORT", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SPEEDSWAP", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THIEF", &"TOXIC", &"TRICK", &"UTURN", &"WONDERROOM"])
+egg_moves = Array[StringName]([&"AROMATICMIST", &"MOONBLAST", &"STICKYWEB"])
+abilities = Array[StringName]([&"HONEYGATHER", &"SHIELDDUST"])
+hidden_abilities = Array[StringName]([&"SWEETVEIL"])
+wild_item_uncommon = Array[StringName]([&"HONEY"])
+egg_groups = Array[StringName]([&"Bug", &"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_m0wdb")]([SubResource("Resource_ck6ts")])
+weight = 2
+color = &"Yellow"
+shape = &"Insectoid"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 12)
+shadow_size = 1
+id = &"CUTIEFLY"
+display_name = "Cutiefly"

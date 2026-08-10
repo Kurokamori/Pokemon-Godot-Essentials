@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_v0ddq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qxbxs"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n1rgb"]
+
+[sub_resource type="Resource" id="Resource_prdnp"]
+script = ExtResource("2_qxbxs")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_80kpo"]
+script = ExtResource("2_qxbxs")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_ybpl6"]
+script = ExtResource("2_qxbxs")
+level = 5
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_nyd7q"]
+script = ExtResource("2_qxbxs")
+level = 10
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_h0hvt"]
+script = ExtResource("2_qxbxs")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_rmahv"]
+script = ExtResource("2_qxbxs")
+level = 20
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_4q2o8"]
+script = ExtResource("2_qxbxs")
+level = 25
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_p2dqi"]
+script = ExtResource("2_qxbxs")
+level = 30
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_amxai"]
+script = ExtResource("2_qxbxs")
+level = 35
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_cikew"]
+script = ExtResource("2_qxbxs")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_j8asn"]
+script = ExtResource("2_qxbxs")
+level = 45
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_o7bgn"]
+script = ExtResource("2_qxbxs")
+level = 50
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_msmj3"]
+script = ExtResource("2_qxbxs")
+level = 55
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_v21dx"]
+script = ExtResource("2_qxbxs")
+level = 60
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_ouerb"]
+script = ExtResource("2_qxbxs")
+level = 65
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_ukemh"]
+script = ExtResource("2_qxbxs")
+level = 70
+move = &"THRASH"
+
+[resource]
+resource_name = "THUNDURUS_1"
+script = ExtResource("3_n1rgb")
+species = &"THUNDURUS"
+form = 1
+form_name = "Therian Forme"
+category = "Bolt Strike"
+pokedex_entry = "The spikes on its tail discharge immense bolts of lightning. It flies around the Unova region firing off lightning bolts."
+pokedex_form = 1
+types = Array[StringName]([&"ELECTRIC", &"FLYING"])
+base_hp = 79
+base_attack = 105
+base_defense = 70
+base_special_attack = 145
+base_special_defense = 80
+base_speed = 101
+ev_special_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 3
+base_happiness = 90
+level_up_moves = Array[ExtResource("2_qxbxs")]([SubResource("Resource_prdnp"), SubResource("Resource_80kpo"), SubResource("Resource_ybpl6"), SubResource("Resource_nyd7q"), SubResource("Resource_h0hvt"), SubResource("Resource_rmahv"), SubResource("Resource_4q2o8"), SubResource("Resource_p2dqi"), SubResource("Resource_amxai"), SubResource("Resource_cikew"), SubResource("Resource_j8asn"), SubResource("Resource_o7bgn"), SubResource("Resource_msmj3"), SubResource("Resource_v21dx"), SubResource("Resource_ouerb"), SubResource("Resource_ukemh")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTROBALL", &"ELECTROWEB", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLING", &"FLY", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"RISINGVOLTAGE", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SKYDROP", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SMARTSTRIKE", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"VOLTSWITCH", &"WEATHERBALL", &"WILDCHARGE"])
+abilities = Array[StringName]([&"VOLTABSORB"])
+hidden_abilities = Array[StringName]([&"VOLTABSORB"])
+hatch_steps = 30720
+height = 30
+weight = 610
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 8)
+id = &"THUNDURUS_1"
+display_name = "Thundurus"
+flags = Array[StringName]([&"Legendary"])

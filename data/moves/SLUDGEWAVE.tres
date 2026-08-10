@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1l8xo"]
+
+[resource]
+resource_name = "SLUDGEWAVE"
+script = ExtResource("1_1l8xo")
+type = &"POISON"
+category = 1
+power = 95
+total_pp = 10
+target = &"AllNearOthers"
+function_code = &"PoisonTarget"
+effect_chance = 10
+description = "It swamps the area around the user with a giant sludge wave. It may also poison those hit."
+id = &"SLUDGEWAVE"
+display_name = "Sludge Wave"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

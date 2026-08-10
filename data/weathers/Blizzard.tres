@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="WeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/weather_data.gd" id="1_a25b6"]
+
+[resource]
+resource_name = "Blizzard"
+script = ExtResource("1_a25b6")
+legacy_number = 4
+particle_delta_x = -720
+particle_delta_y = 240
+tile_delta_x = -1200
+tile_delta_y = 600
+graphics = Array[String](["blizzard_1", "blizzard_2", "blizzard_3", "blizzard_4", "blizzard_tile"])
+id = &"Blizzard"
+display_name = "Blizzard"

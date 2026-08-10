@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_s7dyf"]
+
+[resource]
+resource_name = "TAILWIND"
+script = ExtResource("1_s7dyf")
+type = &"FLYING"
+accuracy = 0
+total_pp = 15
+target = &"UserSide"
+function_code = &"StartUserSideDoubleSpeed"
+description = "The user whips up a turbulent whirlwind that ups the Speed of all party Pokémon for four turns."
+id = &"TAILWIND"
+display_name = "Tailwind"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_wp22c"]
+
+[resource]
+resource_name = "SPIRITBREAK"
+script = ExtResource("1_wp22c")
+type = &"FAIRY"
+category = 0
+power = 75
+total_pp = 15
+function_code = &"LowerTargetSpAtk1"
+effect_chance = 100
+description = "The user attacks the target with immense force. This also lowers the target's Sp. Atk stat."
+id = &"SPIRITBREAK"
+display_name = "Spirit Break"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

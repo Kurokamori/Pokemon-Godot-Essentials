@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4bex0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_a88u3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7n5do"]
+
+[sub_resource type="Resource" id="Resource_xk77d"]
+script = ExtResource("1_4bex0")
+species = &"TYROGUE"
+method = &"AttackGreater"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ed8eg"]
+script = ExtResource("2_a88u3")
+level = 0
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_0r8eg"]
+script = ExtResource("2_a88u3")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_0etwe"]
+script = ExtResource("2_a88u3")
+move = &"LOWSWEEP"
+
+[sub_resource type="Resource" id="Resource_qqyjp"]
+script = ExtResource("2_a88u3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_g0ea6"]
+script = ExtResource("2_a88u3")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_iok40"]
+script = ExtResource("2_a88u3")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_pqlk6"]
+script = ExtResource("2_a88u3")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_mt471"]
+script = ExtResource("2_a88u3")
+level = 4
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_b01ir"]
+script = ExtResource("2_a88u3")
+level = 8
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_xtgjl"]
+script = ExtResource("2_a88u3")
+level = 12
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_up5by"]
+script = ExtResource("2_a88u3")
+level = 16
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_pe3vu"]
+script = ExtResource("2_a88u3")
+level = 21
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_vg6iy"]
+script = ExtResource("2_a88u3")
+level = 24
+move = &"BLAZEKICK"
+
+[sub_resource type="Resource" id="Resource_sknt7"]
+script = ExtResource("2_a88u3")
+level = 28
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_vl830"]
+script = ExtResource("2_a88u3")
+level = 32
+move = &"MEGAKICK"
+
+[sub_resource type="Resource" id="Resource_de7pa"]
+script = ExtResource("2_a88u3")
+level = 36
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_d7f5i"]
+script = ExtResource("2_a88u3")
+level = 40
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_o7th1"]
+script = ExtResource("2_a88u3")
+level = 44
+move = &"HIGHJUMPKICK"
+
+[resource]
+resource_name = "HITMONLEE"
+script = ExtResource("3_7n5do")
+species = &"HITMONLEE"
+category = "Kicking"
+pokedex_entry = "Its legs freely stretch and contract. Using these springlike limbs, it bowls over foes with devastating kicks. After battle, it rubs down its tired legs."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 50
+base_attack = 120
+base_defense = 53
+base_special_attack = 35
+base_special_defense = 110
+base_speed = 87
+ev_attack = 2
+base_exp = 159
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_a88u3")]([SubResource("Resource_ed8eg"), SubResource("Resource_0r8eg"), SubResource("Resource_0etwe"), SubResource("Resource_qqyjp"), SubResource("Resource_g0ea6"), SubResource("Resource_iok40"), SubResource("Resource_pqlk6"), SubResource("Resource_mt471"), SubResource("Resource_b01ir"), SubResource("Resource_xtgjl"), SubResource("Resource_up5by"), SubResource("Resource_pe3vu"), SubResource("Resource_vg6iy"), SubResource("Resource_sknt7"), SubResource("Resource_vl830"), SubResource("Resource_de7pa"), SubResource("Resource_d7f5i"), SubResource("Resource_o7th1")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AURASPHERE", &"BLAZEKICK", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"KNOCKOFF", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"THIEF", &"THROATCHOP", &"UPROAR", &"VACUUMWAVE", &"WORKUP"])
+abilities = Array[StringName]([&"LIMBER", &"RECKLESS"])
+hidden_abilities = Array[StringName]([&"UNBURDEN"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_4bex0")]([SubResource("Resource_xk77d")])
+height = 15
+weight = 498
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 19)
+shadow_size = 1
+id = &"HITMONLEE"
+display_name = "Hitmonlee"

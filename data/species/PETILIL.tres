@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kpxpf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_poeip"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6d6nl"]
+
+[sub_resource type="Resource" id="Resource_xv340"]
+script = ExtResource("1_kpxpf")
+species = &"LILLIGANT"
+method = &"Item"
+parameter = "SUNSTONE"
+
+[sub_resource type="Resource" id="Resource_ruade"]
+script = ExtResource("2_poeip")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_xjqhy"]
+script = ExtResource("2_poeip")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_6j4nn"]
+script = ExtResource("2_poeip")
+level = 3
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_vcb0t"]
+script = ExtResource("2_poeip")
+level = 6
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_qyjg2"]
+script = ExtResource("2_poeip")
+level = 9
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_25i0n"]
+script = ExtResource("2_poeip")
+level = 12
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_drp0h"]
+script = ExtResource("2_poeip")
+level = 15
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_r30e8"]
+script = ExtResource("2_poeip")
+level = 18
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_dmgek"]
+script = ExtResource("2_poeip")
+level = 21
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ghnas"]
+script = ExtResource("2_poeip")
+level = 24
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_crane"]
+script = ExtResource("2_poeip")
+level = 27
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_qdlw3"]
+script = ExtResource("2_poeip")
+level = 30
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_ay3so"]
+script = ExtResource("2_poeip")
+level = 33
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_rwjaa"]
+script = ExtResource("2_poeip")
+level = 36
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_byw1a"]
+script = ExtResource("2_poeip")
+level = 39
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_hpm2d"]
+script = ExtResource("2_poeip")
+level = 42
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "PETILIL"
+script = ExtResource("3_6d6nl")
+species = &"PETILIL"
+category = "Bulb"
+pokedex_entry = "Since they prefer moist, nutrient-rich soil, the areas where Petilil live are known to be good for growing plants."
+types = Array[StringName]([&"GRASS"])
+base_hp = 45
+base_attack = 35
+base_defense = 50
+base_special_attack = 70
+base_special_defense = 50
+base_speed = 30
+ev_special_attack = 1
+base_exp = 56
+gender_ratio = &"AlwaysFemale"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_poeip")]([SubResource("Resource_ruade"), SubResource("Resource_xjqhy"), SubResource("Resource_6j4nn"), SubResource("Resource_vcb0t"), SubResource("Resource_qyjg2"), SubResource("Resource_25i0n"), SubResource("Resource_drp0h"), SubResource("Resource_r30e8"), SubResource("Resource_dmgek"), SubResource("Resource_ghnas"), SubResource("Resource_crane"), SubResource("Resource_qdlw3"), SubResource("Resource_ay3so"), SubResource("Resource_rwjaa"), SubResource("Resource_byw1a"), SubResource("Resource_hpm2d")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DOUBLETEAM", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"LASERFOCUS", &"LEAFSTORM", &"MAGICALLEAF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POLLENPUFF", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"HEALINGWISH", &"INGRAIN", &"SWEETSCENT", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"OWNTEMPO"])
+hidden_abilities = Array[StringName]([&"LEAFGUARD"])
+wild_item_uncommon = Array[StringName]([&"ABSORBBULB"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kpxpf")]([SubResource("Resource_xv340")])
+height = 5
+weight = 66
+color = &"Green"
+shape = &"HeadBase"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 20)
+shadow_size = 1
+id = &"PETILIL"
+display_name = "Petilil"

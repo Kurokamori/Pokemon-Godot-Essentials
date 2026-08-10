@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_t6yim"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_api3q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_us0uy"]
+
+[sub_resource type="Resource" id="Resource_scqcg"]
+script = ExtResource("2_api3q")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_rhygx"]
+script = ExtResource("2_api3q")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_48yd2"]
+script = ExtResource("2_api3q")
+level = 5
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_k3c3s"]
+script = ExtResource("2_api3q")
+level = 10
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_bgtqd"]
+script = ExtResource("2_api3q")
+level = 15
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_ecb4w"]
+script = ExtResource("2_api3q")
+level = 20
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_usha1"]
+script = ExtResource("2_api3q")
+level = 25
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_yvdnu"]
+script = ExtResource("2_api3q")
+level = 30
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_tt8hd"]
+script = ExtResource("2_api3q")
+level = 35
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_qchiw"]
+script = ExtResource("2_api3q")
+level = 40
+move = &"ELECTRICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_mib25"]
+script = ExtResource("2_api3q")
+level = 45
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_34hxv"]
+script = ExtResource("2_api3q")
+level = 50
+move = &"ZINGZAP"
+
+[sub_resource type="Resource" id="Resource_2blfb"]
+script = ExtResource("2_api3q")
+level = 55
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_btpki"]
+script = ExtResource("2_api3q")
+level = 60
+move = &"DISCHARGE"
+
+[resource]
+resource_name = "PINCURCHIN"
+script = ExtResource("3_us0uy")
+species = &"PINCURCHIN"
+category = "Sea Urchin"
+pokedex_entry = "It stores electricity in each spine. Even if one gets broken off, it still continues to emit electricity for at least three hours."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 48
+base_attack = 101
+base_defense = 95
+base_special_attack = 91
+base_special_defense = 85
+base_speed = 15
+ev_attack = 2
+base_exp = 152
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_api3q")]([SubResource("Resource_scqcg"), SubResource("Resource_rhygx"), SubResource("Resource_48yd2"), SubResource("Resource_k3c3s"), SubResource("Resource_bgtqd"), SubResource("Resource_ecb4w"), SubResource("Resource_usha1"), SubResource("Resource_yvdnu"), SubResource("Resource_tt8hd"), SubResource("Resource_qchiw"), SubResource("Resource_mib25"), SubResource("Resource_34hxv"), SubResource("Resource_2blfb"), SubResource("Resource_btpki")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ELECTRICTERRAIN", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"RISINGVOLTAGE", &"ROUND", &"SCALD", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SPIKES", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"MEMENTO", &"SUCKERPUNCH"])
+abilities = Array[StringName]([&"LIGHTNINGROD"])
+hidden_abilities = Array[StringName]([&"ELECTRICSURGE"])
+egg_groups = Array[StringName]([&"Water1", &"Amorphous"])
+hatch_steps = 5120
+height = 3
+weight = 10
+color = &"Purple"
+shape = &"Multiped"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 32)
+id = &"PINCURCHIN"
+display_name = "Pincurchin"

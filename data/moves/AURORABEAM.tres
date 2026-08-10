@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_552re"]
+
+[resource]
+resource_name = "AURORABEAM"
+script = ExtResource("1_552re")
+type = &"ICE"
+category = 1
+power = 65
+total_pp = 20
+function_code = &"LowerTargetAttack1"
+effect_chance = 10
+description = "The target is hit with a rainbow-colored beam. This may also lower the target's Attack stat."
+id = &"AURORABEAM"
+display_name = "Aurora Beam"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

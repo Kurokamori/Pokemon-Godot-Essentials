@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uchg3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_llaku"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4gi5i"]
+
+[sub_resource type="Resource" id="Resource_uluox"]
+script = ExtResource("2_llaku")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_bjxcd"]
+script = ExtResource("2_llaku")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ap0gc"]
+script = ExtResource("2_llaku")
+level = 6
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_ijru8"]
+script = ExtResource("2_llaku")
+level = 12
+move = &"WEATHERBALL"
+
+[sub_resource type="Resource" id="Resource_hrgvy"]
+script = ExtResource("2_llaku")
+level = 18
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_a50n5"]
+script = ExtResource("2_llaku")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_1vd0h"]
+script = ExtResource("2_llaku")
+level = 30
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_v1sql"]
+script = ExtResource("2_llaku")
+level = 36
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_mk11a"]
+script = ExtResource("2_llaku")
+level = 42
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_81wfv"]
+script = ExtResource("2_llaku")
+level = 48
+move = &"AURORAVEIL"
+
+[sub_resource type="Resource" id="Resource_0upsp"]
+script = ExtResource("2_llaku")
+level = 54
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_v1dcw"]
+script = ExtResource("2_llaku")
+level = 60
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "EISCUE"
+script = ExtResource("3_4gi5i")
+species = &"EISCUE"
+form_name = "Ice Face"
+category = "Penguin"
+pokedex_entry = "It drifted in on the flow of ocean waters from a frigid place. It keeps its head iced constantly to make sure it stays nice and cold."
+types = Array[StringName]([&"ICE"])
+base_hp = 75
+base_attack = 80
+base_defense = 110
+base_special_attack = 65
+base_special_defense = 90
+base_speed = 50
+ev_defense = 2
+base_exp = 165
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_llaku")]([SubResource("Resource_uluox"), SubResource("Resource_bjxcd"), SubResource("Resource_ap0gc"), SubResource("Resource_ijru8"), SubResource("Resource_hrgvy"), SubResource("Resource_a50n5"), SubResource("Resource_1vd0h"), SubResource("Resource_v1sql"), SubResource("Resource_mk11a"), SubResource("Resource_81wfv"), SubResource("Resource_0upsp"), SubResource("Resource_v1dcw")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AMNESIA", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WEATHERBALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AQUARING", &"BELLYDRUM", &"DOUBLEEDGE", &"HEADSMASH", &"ICICLECRASH", &"SOAK"])
+abilities = Array[StringName]([&"ICEFACE"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 6400
+height = 14
+weight = 890
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 36)
+front_sprite_offset = Vector2i(0, 10)
+id = &"EISCUE"
+display_name = "Eiscue"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_21dgl"]
+
+[resource]
+resource_name = "PROTEAN"
+script = ExtResource("1_21dgl")
+description = "It changes type to that of the move it's about to use."
+id = &"PROTEAN"
+display_name = "Protean"

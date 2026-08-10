@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rhupv"]
+
+[resource]
+resource_name = "ICEPUNCH"
+script = ExtResource("1_rhupv")
+type = &"ICE"
+category = 0
+power = 75
+total_pp = 15
+function_code = &"FreezeTarget"
+effect_chance = 10
+description = "The target is punched with an icy fist. It may also leave the target frozen."
+id = &"ICEPUNCH"
+display_name = "Ice Punch"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Punching"])

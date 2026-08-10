@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ac8k4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qrhf2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4ftmv"]
+
+[sub_resource type="Resource" id="Resource_jsyg8"]
+script = ExtResource("1_ac8k4")
+species = &"LIEPARD"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_3bith"]
+script = ExtResource("2_qrhf2")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_hsghq"]
+script = ExtResource("2_qrhf2")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_i8qvw"]
+script = ExtResource("2_qrhf2")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_igo0d"]
+script = ExtResource("2_qrhf2")
+level = 5
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_lms3o"]
+script = ExtResource("2_qrhf2")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_v525e"]
+script = ExtResource("2_qrhf2")
+level = 16
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_g6f3n"]
+script = ExtResource("2_qrhf2")
+level = 21
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_ngm1u"]
+script = ExtResource("2_qrhf2")
+level = 24
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_24iy5"]
+script = ExtResource("2_qrhf2")
+level = 28
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_xru4x"]
+script = ExtResource("2_qrhf2")
+level = 32
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_e2xkh"]
+script = ExtResource("2_qrhf2")
+level = 36
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_13lql"]
+script = ExtResource("2_qrhf2")
+level = 40
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "PURRLOIN"
+script = ExtResource("3_4ftmv")
+species = &"PURRLOIN"
+category = "Devious"
+pokedex_entry = "Its cute act is a ruse. When victims let down their guard, they find their items taken. It attacks with sharp claws."
+types = Array[StringName]([&"DARK"])
+base_hp = 41
+base_attack = 50
+base_defense = 37
+base_special_attack = 50
+base_special_defense = 37
+base_speed = 66
+ev_speed = 1
+base_exp = 56
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qrhf2")]([SubResource("Resource_3bith"), SubResource("Resource_hsghq"), SubResource("Resource_i8qvw"), SubResource("Resource_igo0d"), SubResource("Resource_lms3o"), SubResource("Resource_v525e"), SubResource("Resource_g6f3n"), SubResource("Resource_ngm1u"), SubResource("Resource_24iy5"), SubResource("Resource_xru4x"), SubResource("Resource_e2xkh"), SubResource("Resource_13lql")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERVOICE", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"UTURN"])
+egg_moves = Array[StringName]([&"COPYCAT", &"COVET", &"DOUBLETEAM", &"QUICKATTACK", &"SLASH", &"YAWN"])
+abilities = Array[StringName]([&"LIMBER", &"UNBURDEN"])
+hidden_abilities = Array[StringName]([&"PRANKSTER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ac8k4")]([SubResource("Resource_jsyg8")])
+height = 4
+weight = 101
+color = &"Purple"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 26)
+shadow_size = 1
+id = &"PURRLOIN"
+display_name = "Purrloin"

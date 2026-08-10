@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0866j"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_43k1u"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_63kc4"]
+
+[sub_resource type="Resource" id="Resource_dybvj"]
+script = ExtResource("1_0866j")
+species = &"CARKOL"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_ouuoc"]
+script = ExtResource("2_43k1u")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cjn2p"]
+script = ExtResource("2_43k1u")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_uy4rw"]
+script = ExtResource("2_43k1u")
+level = 5
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_8wg3s"]
+script = ExtResource("2_43k1u")
+level = 10
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_2075a"]
+script = ExtResource("2_43k1u")
+level = 15
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_gamxv"]
+script = ExtResource("2_43k1u")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_gjn21"]
+script = ExtResource("2_43k1u")
+level = 25
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_bddbd"]
+script = ExtResource("2_43k1u")
+level = 30
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_nknn0"]
+script = ExtResource("2_43k1u")
+level = 35
+move = &"HEATCRASH"
+
+[sub_resource type="Resource" id="Resource_48vwx"]
+script = ExtResource("2_43k1u")
+level = 40
+move = &"ROCKBLAST"
+
+[resource]
+resource_name = "ROLYCOLY"
+script = ExtResource("3_63kc4")
+species = &"ROLYCOLY"
+category = "Coal"
+pokedex_entry = "Most of its body has the same composition as coal. Fittingly, this Pokémon was first discovered in coal mines about 400 years ago."
+types = Array[StringName]([&"ROCK"])
+base_hp = 30
+base_attack = 40
+base_defense = 50
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 30
+ev_defense = 1
+base_exp = 48
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_43k1u")]([SubResource("Resource_ouuoc"), SubResource("Resource_cjn2p"), SubResource("Resource_uy4rw"), SubResource("Resource_8wg3s"), SubResource("Resource_2075a"), SubResource("Resource_gamxv"), SubResource("Resource_gjn21"), SubResource("Resource_bddbd"), SubResource("Resource_nknn0"), SubResource("Resource_48vwx")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GYROBALL", &"HEATCRASH", &"HIDDENPOWER", &"IRONDEFENSE", &"IRONHEAD", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"SPIKES", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"BLOCK", &"EXPLOSION", &"MUDSLAP"])
+abilities = Array[StringName]([&"STEAMENGINE", &"HEATPROOF"])
+hidden_abilities = Array[StringName]([&"FLASHFIRE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_0866j")]([SubResource("Resource_dybvj")])
+height = 3
+weight = 120
+color = &"Black"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 30)
+shadow_size = 1
+id = &"ROLYCOLY"
+display_name = "Rolycoly"

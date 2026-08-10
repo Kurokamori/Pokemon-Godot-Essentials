@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tf4cn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xy3r6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_yi41e"]
+
+[sub_resource type="Resource" id="Resource_338ub"]
+script = ExtResource("2_xy3r6")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_0uhv4"]
+script = ExtResource("2_xy3r6")
+move = &"PSYCHOSHIFT"
+
+[sub_resource type="Resource" id="Resource_hampw"]
+script = ExtResource("2_xy3r6")
+level = 5
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_xhhmp"]
+script = ExtResource("2_xy3r6")
+level = 10
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_8r4go"]
+script = ExtResource("2_xy3r6")
+level = 15
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_tb2ye"]
+script = ExtResource("2_xy3r6")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_fd67i"]
+script = ExtResource("2_xy3r6")
+level = 25
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_1ow81"]
+script = ExtResource("2_xy3r6")
+level = 30
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_ocvpj"]
+script = ExtResource("2_xy3r6")
+level = 35
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_177lt"]
+script = ExtResource("2_xy3r6")
+level = 40
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_isfkq"]
+script = ExtResource("2_xy3r6")
+level = 45
+move = &"FREEZINGGLARE"
+
+[sub_resource type="Resource" id="Resource_qya3q"]
+script = ExtResource("2_xy3r6")
+level = 50
+move = &"DREAMEATER"
+
+[sub_resource type="Resource" id="Resource_0jxbn"]
+script = ExtResource("2_xy3r6")
+level = 55
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_um2ng"]
+script = ExtResource("2_xy3r6")
+level = 60
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_et1co"]
+script = ExtResource("2_xy3r6")
+level = 65
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_fl3uh"]
+script = ExtResource("2_xy3r6")
+level = 70
+move = &"TRICKROOM"
+
+[resource]
+resource_name = "ARTICUNO_1"
+script = ExtResource("3_yi41e")
+species = &"ARTICUNO"
+form = 1
+form_name = "Galarian"
+category = "Cruel"
+pokedex_entry = "Its feather-like blades are composed of psychic energy and can shear through thick iron sheets as if they were paper."
+pokedex_form = 1
+types = Array[StringName]([&"PSYCHIC", &"FLYING"])
+base_hp = 90
+base_attack = 85
+base_defense = 85
+base_special_attack = 125
+base_special_defense = 100
+base_speed = 95
+ev_special_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_xy3r6")]([SubResource("Resource_338ub"), SubResource("Resource_0uhv4"), SubResource("Resource_hampw"), SubResource("Resource_xhhmp"), SubResource("Resource_8r4go"), SubResource("Resource_tb2ye"), SubResource("Resource_fd67i"), SubResource("Resource_1ow81"), SubResource("Resource_ocvpj"), SubResource("Resource_177lt"), SubResource("Resource_isfkq"), SubResource("Resource_qya3q"), SubResource("Resource_0jxbn"), SubResource("Resource_um2ng"), SubResource("Resource_et1co"), SubResource("Resource_fl3uh")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"ALLYSWITCH", &"BRAVEBIRD", &"CALMMIND", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FLY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GUARDSWAP", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SHADOWBALL", &"SKILLSWAP", &"SNORE", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TRICKROOM", &"UTURN"])
+abilities = Array[StringName]([&"COMPETITIVE"])
+hidden_abilities = Array[StringName]([&"COMPETITIVE"])
+hatch_steps = 20480
+height = 17
+weight = 509
+color = &"Purple"
+shape = &"Winged"
+habitat = &"Rare"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 12)
+shadow_x = 7
+id = &"ARTICUNO_1"
+display_name = "Articuno"
+flags = Array[StringName]([&"Legendary"])

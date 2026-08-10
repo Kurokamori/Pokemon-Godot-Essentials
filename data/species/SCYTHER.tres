@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1sb25"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_m32vo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_alwmj"]
+
+[sub_resource type="Resource" id="Resource_7jnv0"]
+script = ExtResource("1_1sb25")
+species = &"SCIZOR"
+method = &"TradeItem"
+parameter = "METALCOAT"
+
+[sub_resource type="Resource" id="Resource_ihior"]
+script = ExtResource("2_m32vo")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_tip8s"]
+script = ExtResource("2_m32vo")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_bym0r"]
+script = ExtResource("2_m32vo")
+level = 4
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_cdvvp"]
+script = ExtResource("2_m32vo")
+level = 8
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_suwoo"]
+script = ExtResource("2_m32vo")
+level = 12
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_8d3s8"]
+script = ExtResource("2_m32vo")
+level = 16
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_1au8l"]
+script = ExtResource("2_m32vo")
+level = 20
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_sgany"]
+script = ExtResource("2_m32vo")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_ict4x"]
+script = ExtResource("2_m32vo")
+level = 28
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_c6ppm"]
+script = ExtResource("2_m32vo")
+level = 32
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_37dqc"]
+script = ExtResource("2_m32vo")
+level = 36
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_fnqrm"]
+script = ExtResource("2_m32vo")
+level = 40
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_mi400"]
+script = ExtResource("2_m32vo")
+level = 44
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_ybdc0"]
+script = ExtResource("2_m32vo")
+level = 48
+move = &"SWORDSDANCE"
+
+[resource]
+resource_name = "SCYTHER"
+script = ExtResource("3_alwmj")
+species = &"SCYTHER"
+category = "Mantis"
+pokedex_entry = "Its blindingly fast speed adds to the sharpness of its twin forearm scythes. The scythes can slice through thick logs in one wicked stroke."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 70
+base_attack = 110
+base_defense = 80
+base_special_attack = 55
+base_special_defense = 80
+base_speed = 105
+ev_attack = 1
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_m32vo")]([SubResource("Resource_ihior"), SubResource("Resource_tip8s"), SubResource("Resource_bym0r"), SubResource("Resource_cdvvp"), SubResource("Resource_suwoo"), SubResource("Resource_8d3s8"), SubResource("Resource_1au8l"), SubResource("Resource_sgany"), SubResource("Resource_ict4x"), SubResource("Resource_c6ppm"), SubResource("Resource_37dqc"), SubResource("Resource_fnqrm"), SubResource("Resource_mi400"), SubResource("Resource_ybdc0")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BRICKBREAK", &"BRUTALSWING", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CROSSPOISON", &"CUT", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"KNOCKOFF", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHOCUT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROCKSMASH", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"THIEF", &"UTURN", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"BATONPASS", &"COUNTER", &"DEFOG", &"FEINT", &"NIGHTSLASH", &"QUICKGUARD", &"REVERSAL"])
+abilities = Array[StringName]([&"SWARM", &"TECHNICIAN"])
+hidden_abilities = Array[StringName]([&"STEADFAST"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_1sb25")]([SubResource("Resource_7jnv0")])
+height = 15
+weight = 560
+color = &"Green"
+shape = &"MultiWinged"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-2, 24)
+id = &"SCYTHER"
+display_name = "Scyther"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_na1ut"]
+
+[resource]
+resource_name = "HONDEWBERRY"
+script = ExtResource("1_na1ut")
+name_plural = "Hondew Berries"
+pocket = 5
+price = 20
+sell_price = 10
+field_use = 1
+description = "Using it on a Pokémon makes it more friendly, but it also lowers its base Sp. Atk stat."
+id = &"HONDEWBERRY"
+display_name = "Hondew Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_GROUND_90"])

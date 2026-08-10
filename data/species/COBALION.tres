@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_k2wvh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q5e0k"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lxtlu"]
+
+[sub_resource type="Resource" id="Resource_itg4i"]
+script = ExtResource("2_q5e0k")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ra7uw"]
+script = ExtResource("2_q5e0k")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_k2ude"]
+script = ExtResource("2_q5e0k")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_toat4"]
+script = ExtResource("2_q5e0k")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_otfxy"]
+script = ExtResource("2_q5e0k")
+level = 7
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_shtwi"]
+script = ExtResource("2_q5e0k")
+level = 14
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_gw66r"]
+script = ExtResource("2_q5e0k")
+level = 21
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_24e32"]
+script = ExtResource("2_q5e0k")
+level = 28
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_h3tf7"]
+script = ExtResource("2_q5e0k")
+level = 35
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_16s3t"]
+script = ExtResource("2_q5e0k")
+level = 42
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_war8l"]
+script = ExtResource("2_q5e0k")
+level = 49
+move = &"SACREDSWORD"
+
+[sub_resource type="Resource" id="Resource_2ba3w"]
+script = ExtResource("2_q5e0k")
+level = 56
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_0rmii"]
+script = ExtResource("2_q5e0k")
+level = 63
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_lx0n0"]
+script = ExtResource("2_q5e0k")
+level = 70
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "COBALION"
+script = ExtResource("3_lxtlu")
+species = &"COBALION"
+category = "Iron Will"
+pokedex_entry = "It has a body and heart of steel. Its glare is sufficient to make even an unruly Pokémon obey it."
+types = Array[StringName]([&"STEEL", &"FIGHTING"])
+base_hp = 91
+base_attack = 90
+base_defense = 129
+base_special_attack = 90
+base_special_defense = 72
+base_speed = 108
+ev_defense = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_q5e0k")]([SubResource("Resource_itg4i"), SubResource("Resource_ra7uw"), SubResource("Resource_k2ude"), SubResource("Resource_toat4"), SubResource("Resource_otfxy"), SubResource("Resource_shtwi"), SubResource("Resource_gw66r"), SubResource("Resource_24e32"), SubResource("Resource_h3tf7"), SubResource("Resource_16s3t"), SubResource("Resource_war8l"), SubResource("Resource_2ba3w"), SubResource("Resource_0rmii"), SubResource("Resource_lx0n0")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"BLOCK", &"BOUNCE", &"BRICKBREAK", &"CALMMIND", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"MAGNETRISE", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"PSYCHUP", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKPOLISH", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THUNDERWAVE", &"TOXIC", &"VOLTSWITCH", &"WORKUP", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"JUSTIFIED"])
+hatch_steps = 20480
+height = 21
+weight = 2500
+color = &"Blue"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(0, 14)
+id = &"COBALION"
+display_name = "Cobalion"
+flags = Array[StringName]([&"Legendary"])

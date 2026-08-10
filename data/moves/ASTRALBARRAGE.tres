@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_s6108"]
+
+[resource]
+resource_name = "ASTRALBARRAGE"
+script = ExtResource("1_s6108")
+type = &"GHOST"
+category = 1
+power = 120
+target = &"AllNearFoes"
+description = "The user attacks by sending a frightful amount of small ghosts at opposing Pokémon."
+id = &"ASTRALBARRAGE"
+display_name = "Astral Barrage"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

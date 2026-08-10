@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o1ypo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qvn3k"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jj3ic"]
+
+[sub_resource type="Resource" id="Resource_u1l2q"]
+script = ExtResource("1_o1ypo")
+species = &"FROGADIER"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_q50xp"]
+script = ExtResource("2_qvn3k")
+level = 0
+move = &"WATERSHURIKEN"
+
+[sub_resource type="Resource" id="Resource_jib6w"]
+script = ExtResource("2_qvn3k")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_u351h"]
+script = ExtResource("2_qvn3k")
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_8mph4"]
+script = ExtResource("2_qvn3k")
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_1v5qu"]
+script = ExtResource("2_qvn3k")
+move = &"MATBLOCK"
+
+[sub_resource type="Resource" id="Resource_6a6pe"]
+script = ExtResource("2_qvn3k")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_xrmsj"]
+script = ExtResource("2_qvn3k")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_jdwc3"]
+script = ExtResource("2_qvn3k")
+move = &"BUBBLE"
+
+[sub_resource type="Resource" id="Resource_v8sus"]
+script = ExtResource("2_qvn3k")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_1kfv7"]
+script = ExtResource("2_qvn3k")
+level = 5
+move = &"BUBBLE"
+
+[sub_resource type="Resource" id="Resource_g5xs8"]
+script = ExtResource("2_qvn3k")
+level = 8
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_g18ai"]
+script = ExtResource("2_qvn3k")
+level = 10
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_1jprp"]
+script = ExtResource("2_qvn3k")
+level = 14
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_du5rb"]
+script = ExtResource("2_qvn3k")
+level = 19
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_8qabm"]
+script = ExtResource("2_qvn3k")
+level = 23
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_psrdq"]
+script = ExtResource("2_qvn3k")
+level = 28
+move = &"SPIKES"
+
+[sub_resource type="Resource" id="Resource_7iohg"]
+script = ExtResource("2_qvn3k")
+level = 33
+move = &"FEINTATTACK"
+
+[sub_resource type="Resource" id="Resource_oeai8"]
+script = ExtResource("2_qvn3k")
+level = 42
+move = &"SUBSTITUTE"
+
+[sub_resource type="Resource" id="Resource_32552"]
+script = ExtResource("2_qvn3k")
+level = 49
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_qib7u"]
+script = ExtResource("2_qvn3k")
+level = 56
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_py2al"]
+script = ExtResource("2_qvn3k")
+level = 68
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_o618v"]
+script = ExtResource("2_qvn3k")
+level = 70
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_heg5v"]
+script = ExtResource("2_qvn3k")
+level = 77
+move = &"NIGHTSLASH"
+
+[resource]
+resource_name = "GRENINJA"
+script = ExtResource("3_jj3ic")
+species = &"GRENINJA"
+category = "Ninja"
+pokedex_entry = "It appears and vanishes with a ninja's grace. It toys with its enemies using swift movements, while slicing them with throwing stars of sharpest water."
+types = Array[StringName]([&"WATER", &"DARK"])
+base_hp = 72
+base_attack = 95
+base_defense = 67
+base_special_attack = 103
+base_special_defense = 71
+base_speed = 122
+ev_speed = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qvn3k")]([SubResource("Resource_q50xp"), SubResource("Resource_jib6w"), SubResource("Resource_u351h"), SubResource("Resource_8mph4"), SubResource("Resource_1v5qu"), SubResource("Resource_6a6pe"), SubResource("Resource_xrmsj"), SubResource("Resource_jdwc3"), SubResource("Resource_v8sus"), SubResource("Resource_1kfv7"), SubResource("Resource_g5xs8"), SubResource("Resource_g18ai"), SubResource("Resource_1jprp"), SubResource("Resource_du5rb"), SubResource("Resource_8qabm"), SubResource("Resource_psrdq"), SubResource("Resource_7iohg"), SubResource("Resource_oeai8"), SubResource("Resource_32552"), SubResource("Resource_qib7u"), SubResource("Resource_py2al"), SubResource("Resource_o618v"), SubResource("Resource_heg5v")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HIDDENPOWER", &"HYDROCANNON", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"LOWKICK", &"MIMIC", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"UTURN", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"PROTEAN"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_o1ypo")]([SubResource("Resource_u1l2q")])
+height = 15
+weight = 400
+color = &"Blue"
+shape = &"Bipedal"
+generation = 6
+back_sprite_offset = Vector2i(1, 52)
+front_sprite_offset = Vector2i(6, 20)
+id = &"GRENINJA"
+display_name = "Greninja"

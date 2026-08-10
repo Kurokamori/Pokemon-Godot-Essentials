@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_m3oqn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_phhe4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gcbbr"]
+
+[sub_resource type="Resource" id="Resource_tww3a"]
+script = ExtResource("1_m3oqn")
+species = &"FARFETCHD"
+method = &"BattleDealCriticalHit"
+parameter = "3"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yooqk"]
+script = ExtResource("2_phhe4")
+level = 0
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_d4nl8"]
+script = ExtResource("2_phhe4")
+move = &"FIRSTIMPRESSION"
+
+[sub_resource type="Resource" id="Resource_crxo2"]
+script = ExtResource("2_phhe4")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_nwdbq"]
+script = ExtResource("2_phhe4")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_g74x7"]
+script = ExtResource("2_phhe4")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_y1nw7"]
+script = ExtResource("2_phhe4")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_jvqmd"]
+script = ExtResource("2_phhe4")
+level = 15
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_al6fl"]
+script = ExtResource("2_phhe4")
+level = 20
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_j63o6"]
+script = ExtResource("2_phhe4")
+level = 25
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_hbadh"]
+script = ExtResource("2_phhe4")
+level = 30
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_ioynt"]
+script = ExtResource("2_phhe4")
+level = 35
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_raxok"]
+script = ExtResource("2_phhe4")
+level = 40
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_dbf5s"]
+script = ExtResource("2_phhe4")
+level = 45
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_dxrjw"]
+script = ExtResource("2_phhe4")
+level = 50
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_fdlaf"]
+script = ExtResource("2_phhe4")
+level = 55
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_e1t0r"]
+script = ExtResource("2_phhe4")
+level = 60
+move = &"FINALGAMBIT"
+
+[sub_resource type="Resource" id="Resource_hnh2s"]
+script = ExtResource("2_phhe4")
+level = 65
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_2rvl2"]
+script = ExtResource("2_phhe4")
+level = 70
+move = &"METEORASSAULT"
+
+[resource]
+resource_name = "SIRFETCHD"
+script = ExtResource("3_gcbbr")
+species = &"SIRFETCHD"
+category = "Wild Duck"
+pokedex_entry = "After deflecting attacks with its hard leaf shield, it strikes back with its sharp leek stalk. The leek stalk is both weapon and food."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 62
+base_attack = 135
+base_defense = 95
+base_special_attack = 68
+base_special_defense = 82
+base_speed = 65
+ev_attack = 2
+base_exp = 177
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_phhe4")]([SubResource("Resource_yooqk"), SubResource("Resource_d4nl8"), SubResource("Resource_crxo2"), SubResource("Resource_nwdbq"), SubResource("Resource_g74x7"), SubResource("Resource_y1nw7"), SubResource("Resource_jvqmd"), SubResource("Resource_al6fl"), SubResource("Resource_j63o6"), SubResource("Resource_hbadh"), SubResource("Resource_ioynt"), SubResource("Resource_raxok"), SubResource("Resource_dbf5s"), SubResource("Resource_dxrjw"), SubResource("Resource_fdlaf"), SubResource("Resource_e1t0r"), SubResource("Resource_hnh2s"), SubResource("Resource_2rvl2")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRAVEBIRD", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"GRASSYGLIDE", &"HELPINGHAND", &"HIDDENPOWER", &"IRONDEFENSE", &"LEAFBLADE", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SOLARBLADE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"THROATCHOP", &"WORKUP"])
+egg_moves = Array[StringName]([&"COUNTER", &"COVET", &"CURSE", &"DOUBLEEDGE", &"FEINT", &"FLAIL", &"NIGHTSLASH", &"QUICKATTACK", &"QUICKGUARD", &"SIMPLEBEAM", &"SKYATTACK"])
+abilities = Array[StringName]([&"STEADFAST"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+wild_item_uncommon = Array[StringName]([&"LEEK"])
+egg_groups = Array[StringName]([&"Flying", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_m3oqn")]([SubResource("Resource_tww3a")])
+height = 8
+weight = 1170
+color = &"White"
+shape = &"Winged"
+generation = 8
+back_sprite_offset = Vector2i(0, 34)
+front_sprite_offset = Vector2i(0, 4)
+id = &"SIRFETCHD"
+display_name = "Sirfetch'd"
+flags = Array[StringName]([&"DefaultForm_1", &"InheritFormWithEverStone"])

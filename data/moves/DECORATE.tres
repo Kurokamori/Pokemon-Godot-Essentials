@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3paoq"]
+
+[resource]
+resource_name = "DECORATE"
+script = ExtResource("1_3paoq")
+type = &"FAIRY"
+accuracy = 0
+total_pp = 15
+function_code = &"RaiseTargetAtkSpAtk2"
+description = "The user sharply raises the target's Attack and Sp. Atk stats by decorating the target."
+id = &"DECORATE"
+display_name = "Decorate"
+flags = Array[StringName]([&"CannotMetronome"])

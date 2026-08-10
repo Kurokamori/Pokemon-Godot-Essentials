@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_kmh5d"]
+
+[resource]
+resource_name = "QUICKCLAW"
+script = ExtResource("1_kmh5d")
+name_plural = "Quick Claws"
+price = 3000
+sell_price = 2000
+bp_price = 25
+description = "An item to be held by a Pokémon. A light, sharp claw that lets the bearer move first occasionally."
+id = &"QUICKCLAW"
+display_name = "Quick Claw"
+flags = Array[StringName]([&"Fling_80"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qua0i"]
+
+[resource]
+resource_name = "SPLASH"
+script = ExtResource("1_qua0i")
+accuracy = 0
+total_pp = 40
+target = &"User"
+function_code = &"DoesNothingUnusableInGravity"
+description = "The user just flops and splashes around to no effect at all..."
+id = &"SPLASH"
+display_name = "Splash"

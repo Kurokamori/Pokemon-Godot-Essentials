@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vsar8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nvlyd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rudx3"]
+
+[sub_resource type="Resource" id="Resource_s5eq0"]
+script = ExtResource("1_vsar8")
+species = &"BAYLEEF"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_02u6e"]
+script = ExtResource("2_nvlyd")
+level = 0
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_smi63"]
+script = ExtResource("2_nvlyd")
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_tdxno"]
+script = ExtResource("2_nvlyd")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_b3mu6"]
+script = ExtResource("2_nvlyd")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_qkfbs"]
+script = ExtResource("2_nvlyd")
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_lo4x6"]
+script = ExtResource("2_nvlyd")
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_0mqyv"]
+script = ExtResource("2_nvlyd")
+level = 6
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_rygm3"]
+script = ExtResource("2_nvlyd")
+level = 9
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_h5jh1"]
+script = ExtResource("2_nvlyd")
+level = 12
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_cxako"]
+script = ExtResource("2_nvlyd")
+level = 18
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_7tfjv"]
+script = ExtResource("2_nvlyd")
+level = 22
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_f40q7"]
+script = ExtResource("2_nvlyd")
+level = 26
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_yui7w"]
+script = ExtResource("2_nvlyd")
+level = 34
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_khhey"]
+script = ExtResource("2_nvlyd")
+level = 40
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_1ylkw"]
+script = ExtResource("2_nvlyd")
+level = 46
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_fhcoe"]
+script = ExtResource("2_nvlyd")
+level = 54
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_7hae4"]
+script = ExtResource("2_nvlyd")
+level = 60
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_he5ig"]
+script = ExtResource("2_nvlyd")
+level = 66
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_3r73s"]
+script = ExtResource("2_nvlyd")
+level = 70
+move = &"PETALBLIZZARD"
+
+[resource]
+resource_name = "MEGANIUM"
+script = ExtResource("3_rudx3")
+species = &"MEGANIUM"
+category = "Herb"
+pokedex_entry = "The fragrance of a Meganium's flower soothes and calms emotions. In battle, it gives off more of its becalming scent to blunt the foe's fighting spirit."
+types = Array[StringName]([&"GRASS"])
+base_hp = 80
+base_attack = 82
+base_defense = 100
+base_special_attack = 83
+base_special_defense = 100
+base_speed = 80
+ev_defense = 1
+ev_special_defense = 2
+base_exp = 263
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nvlyd")]([SubResource("Resource_02u6e"), SubResource("Resource_smi63"), SubResource("Resource_tdxno"), SubResource("Resource_b3mu6"), SubResource("Resource_qkfbs"), SubResource("Resource_lo4x6"), SubResource("Resource_0mqyv"), SubResource("Resource_rygm3"), SubResource("Resource_h5jh1"), SubResource("Resource_cxako"), SubResource("Resource_7tfjv"), SubResource("Resource_f40q7"), SubResource("Resource_yui7w"), SubResource("Resource_khhey"), SubResource("Resource_1ylkw"), SubResource("Resource_fhcoe"), SubResource("Resource_7hae4"), SubResource("Resource_he5ig"), SubResource("Resource_3r73s")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONTAIL", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRENZYPLANT", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSPLEDGE", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OUTRAGE", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"LEAFGUARD"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_vsar8")]([SubResource("Resource_s5eq0")])
+height = 18
+weight = 1005
+color = &"Green"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 12)
+id = &"MEGANIUM"
+display_name = "Meganium"

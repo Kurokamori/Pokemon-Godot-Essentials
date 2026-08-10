@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5g5ip"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_084r6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wj446"]
+
+[sub_resource type="Resource" id="Resource_1j05v"]
+script = ExtResource("1_5g5ip")
+species = &"SAMUROTT"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_qaeg3"]
+script = ExtResource("1_5g5ip")
+species = &"OSHAWOTT"
+method = &"Level"
+parameter = "17"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6iox5"]
+script = ExtResource("2_084r6")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_12l4e"]
+script = ExtResource("2_084r6")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_7cir1"]
+script = ExtResource("2_084r6")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_l2yb5"]
+script = ExtResource("2_084r6")
+move = &"WATERSPORT"
+
+[sub_resource type="Resource" id="Resource_t7g2i"]
+script = ExtResource("2_084r6")
+level = 5
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_mmstp"]
+script = ExtResource("2_084r6")
+level = 7
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_xehew"]
+script = ExtResource("2_084r6")
+level = 11
+move = &"WATERSPORT"
+
+[sub_resource type="Resource" id="Resource_cbcni"]
+script = ExtResource("2_084r6")
+level = 13
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_yjeoo"]
+script = ExtResource("2_084r6")
+level = 18
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_esp8m"]
+script = ExtResource("2_084r6")
+level = 21
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_oacd4"]
+script = ExtResource("2_084r6")
+level = 26
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_3vhlj"]
+script = ExtResource("2_084r6")
+level = 29
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_8ebs8"]
+script = ExtResource("2_084r6")
+level = 34
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_xvd1k"]
+script = ExtResource("2_084r6")
+level = 37
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_d80dm"]
+script = ExtResource("2_084r6")
+level = 42
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_mqiuh"]
+script = ExtResource("2_084r6")
+level = 45
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_woyq5"]
+script = ExtResource("2_084r6")
+level = 50
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_b1vlg"]
+script = ExtResource("2_084r6")
+level = 53
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "DEWOTT"
+script = ExtResource("3_wj446")
+species = &"DEWOTT"
+category = "Discipline"
+pokedex_entry = "Scalchop techniques differ from one Dewott to another. It never neglects maintaining its scalchops."
+types = Array[StringName]([&"WATER"])
+base_hp = 75
+base_attack = 75
+base_defense = 60
+base_special_attack = 83
+base_special_defense = 60
+base_speed = 60
+ev_special_attack = 2
+base_exp = 145
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_084r6")]([SubResource("Resource_6iox5"), SubResource("Resource_12l4e"), SubResource("Resource_7cir1"), SubResource("Resource_l2yb5"), SubResource("Resource_t7g2i"), SubResource("Resource_mmstp"), SubResource("Resource_xehew"), SubResource("Resource_cbcni"), SubResource("Resource_yjeoo"), SubResource("Resource_esp8m"), SubResource("Resource_oacd4"), SubResource("Resource_3vhlj"), SubResource("Resource_8ebs8"), SubResource("Resource_xvd1k"), SubResource("Resource_d80dm"), SubResource("Resource_mqiuh"), SubResource("Resource_woyq5"), SubResource("Resource_b1vlg")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WORKUP", &"XSCISSOR"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"SHELLARMOR"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5g5ip")]([SubResource("Resource_1j05v"), SubResource("Resource_qaeg3")])
+height = 8
+weight = 245
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(5, 23)
+id = &"DEWOTT"
+display_name = "Dewott"

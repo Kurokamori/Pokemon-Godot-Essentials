@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7hcxk"]
+
+[resource]
+resource_name = "OCTAZOOKA"
+script = ExtResource("1_7hcxk")
+type = &"WATER"
+category = 1
+power = 65
+accuracy = 85
+total_pp = 10
+function_code = &"LowerTargetAccuracy1"
+effect_chance = 50
+description = "The user attacks by spraying ink in the foe's face or eyes. It may also lower the target's accuracy."
+id = &"OCTAZOOKA"
+display_name = "Octazooka"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

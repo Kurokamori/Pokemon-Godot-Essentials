@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_27f0n"]
+
+[resource]
+resource_name = "DEFOG"
+script = ExtResource("1_27f0n")
+type = &"FLYING"
+accuracy = 0
+total_pp = 15
+function_code = &"LowerTargetEvasion1RemoveSideEffects"
+description = "A strong wind blows away the foe's obstacles such as Light Screen. It also lowers their evasion."
+id = &"DEFOG"
+display_name = "Defog"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

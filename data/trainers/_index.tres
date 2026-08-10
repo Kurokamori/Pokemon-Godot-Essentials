@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_njyh5"]
+
+[resource]
+script = ExtResource("1_njyh5")
+category = &"trainers"
+record_script = "res://src/data/trainer_data.gd"
+paths = {
+&"BEAUTY|Bridget|0": "res://data/trainers/BEAUTY_Bridget_0.tres",
+&"CAMPER|Jeff|0": "res://data/trainers/CAMPER_Jeff_0.tres",
+&"CAMPER|Jeff|1": "res://data/trainers/CAMPER_Jeff_1.tres",
+&"CAMPER|Liam|0": "res://data/trainers/CAMPER_Liam_0.tres",
+&"CHAMPION|Blue|0": "res://data/trainers/CHAMPION_Blue_0.tres",
+&"COOLCOUPLE|Alice & Bob|0": "res://data/trainers/COOLCOUPLE_Alice___Bob_0.tres",
+&"FISHERMAN|Andrew|0": "res://data/trainers/FISHERMAN_Andrew_0.tres",
+&"HIKER|Ford|0": "res://data/trainers/HIKER_Ford_0.tres",
+&"LASS|Crissy|0": "res://data/trainers/LASS_Crissy_0.tres",
+&"LEADER_Brock|Brock|0": "res://data/trainers/LEADER_Brock_Brock_0.tres",
+&"PICNICKER|Susie|0": "res://data/trainers/PICNICKER_Susie_0.tres",
+&"PICNICKER|Susie|1": "res://data/trainers/PICNICKER_Susie_1.tres",
+&"POKEMONTRAINER_May|May|0": "res://data/trainers/POKEMONTRAINER_May_May_0.tres",
+&"RIVAL1|Blue|0": "res://data/trainers/RIVAL1_Blue_0.tres",
+&"RIVAL1|Blue|1": "res://data/trainers/RIVAL1_Blue_1.tres",
+&"RIVAL1|Blue|2": "res://data/trainers/RIVAL1_Blue_2.tres",
+&"SWIMMER2_F|Ariel|0": "res://data/trainers/SWIMMER2_F_Ariel_0.tres",
+&"TEAMROCKET_F|Grunt|1": "res://data/trainers/TEAMROCKET_F_Grunt_1.tres",
+&"TEAMROCKET_M|Grunt|1": "res://data/trainers/TEAMROCKET_M_Grunt_1.tres",
+&"YOUNGSTER|Ben|0": "res://data/trainers/YOUNGSTER_Ben_0.tres"
+}
+ordered_ids = Array[StringName]([&"CAMPER|Liam|0", &"LEADER_Brock|Brock|0", &"TEAMROCKET_M|Grunt|1", &"TEAMROCKET_F|Grunt|1", &"YOUNGSTER|Ben|0", &"CAMPER|Jeff|0", &"CAMPER|Jeff|1", &"PICNICKER|Susie|0", &"PICNICKER|Susie|1", &"HIKER|Ford|0", &"FISHERMAN|Andrew|0", &"BEAUTY|Bridget|0", &"LASS|Crissy|0", &"COOLCOUPLE|Alice & Bob|0", &"POKEMONTRAINER_May|May|0", &"SWIMMER2_F|Ariel|0", &"RIVAL1|Blue|0", &"RIVAL1|Blue|1", &"RIVAL1|Blue|2", &"CHAMPION|Blue|0"])

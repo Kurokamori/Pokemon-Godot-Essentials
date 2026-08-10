@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_g64db"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mhn2q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wbaj1"]
+
+[sub_resource type="Resource" id="Resource_rl6wp"]
+script = ExtResource("1_g64db")
+species = &"TOGETIC"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_831gb"]
+script = ExtResource("2_mhn2q")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_3ktvd"]
+script = ExtResource("2_mhn2q")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_00c3r"]
+script = ExtResource("2_mhn2q")
+level = 4
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_l4idu"]
+script = ExtResource("2_mhn2q")
+level = 8
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_0cn16"]
+script = ExtResource("2_mhn2q")
+level = 12
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_0885b"]
+script = ExtResource("2_mhn2q")
+level = 16
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_1jk3m"]
+script = ExtResource("2_mhn2q")
+level = 20
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_yep3w"]
+script = ExtResource("2_mhn2q")
+level = 24
+move = &"METRONOME"
+
+[sub_resource type="Resource" id="Resource_4nqmq"]
+script = ExtResource("2_mhn2q")
+level = 28
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_oc66x"]
+script = ExtResource("2_mhn2q")
+level = 32
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_exmqu"]
+script = ExtResource("2_mhn2q")
+level = 36
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_4vikr"]
+script = ExtResource("2_mhn2q")
+level = 40
+move = &"FOLLOWME"
+
+[sub_resource type="Resource" id="Resource_noykf"]
+script = ExtResource("2_mhn2q")
+level = 44
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_wnnk5"]
+script = ExtResource("2_mhn2q")
+level = 48
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_70c6g"]
+script = ExtResource("2_mhn2q")
+level = 52
+move = &"WISH"
+
+[resource]
+resource_name = "TOGEPI"
+script = ExtResource("3_wbaj1")
+species = &"TOGEPI"
+category = "Spike Ball"
+pokedex_entry = "As its energy, it uses the feelings of compassion and pleasure exuded by people and Pokémon. It stores up happy feelings in its shell, then shares them out."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 35
+base_attack = 20
+base_defense = 65
+base_special_attack = 40
+base_special_defense = 65
+base_speed = 20
+ev_special_defense = 1
+base_exp = 49
+growth_rate = &"Fast"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mhn2q")]([SubResource("Resource_831gb"), SubResource("Resource_3ktvd"), SubResource("Resource_00c3r"), SubResource("Resource_l4idu"), SubResource("Resource_0cn16"), SubResource("Resource_0885b"), SubResource("Resource_1jk3m"), SubResource("Resource_yep3w"), SubResource("Resource_4nqmq"), SubResource("Resource_oc66x"), SubResource("Resource_exmqu"), SubResource("Resource_4vikr"), SubResource("Resource_noykf"), SubResource("Resource_wnnk5"), SubResource("Resource_70c6g")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ANCIENTPOWER", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ECHOEDVOICE", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"INCINERATE", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"MYSTICALFIRE", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOFTBOILED", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"UPROAR", &"WATERPULSE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AERIALACE", &"EXTRASENSORY", &"FUTURESIGHT", &"MORNINGSUN", &"PECK", &"PRESENT", &"PSYCHOSHIFT", &"STOREDPOWER"])
+abilities = Array[StringName]([&"HUSTLE", &"SERENEGRACE"])
+hidden_abilities = Array[StringName]([&"SUPERLUCK"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_g64db")]([SubResource("Resource_rl6wp")])
+height = 3
+weight = 15
+color = &"White"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(3, 36)
+shadow_size = 1
+id = &"TOGEPI"
+display_name = "Togepi"

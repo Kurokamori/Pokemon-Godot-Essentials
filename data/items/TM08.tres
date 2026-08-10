@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_qbdog"]
+
+[resource]
+resource_name = "TM08"
+script = ExtResource("1_qbdog")
+name_plural = "TM08s"
+pocket = 4
+price = 1500
+sell_price = 750
+bp_price = 48
+field_use = 5
+move = &"BULKUP"
+description = "The user tenses its muscles to bulk up its body, raising both its Attack and Defense stats."
+id = &"TM08"
+display_name = "TM08"
+flags = Array[StringName]([&"Fling_10"])

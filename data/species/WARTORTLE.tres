@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4cmr8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5s103"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0j2cd"]
+
+[sub_resource type="Resource" id="Resource_h6my3"]
+script = ExtResource("1_4cmr8")
+species = &"BLASTOISE"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_j0iap"]
+script = ExtResource("1_4cmr8")
+species = &"SQUIRTLE"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_y5cxk"]
+script = ExtResource("2_5s103")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_rx1x7"]
+script = ExtResource("2_5s103")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_vwr54"]
+script = ExtResource("2_5s103")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_g1fgj"]
+script = ExtResource("2_5s103")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_b00g8"]
+script = ExtResource("2_5s103")
+level = 9
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_q5aoh"]
+script = ExtResource("2_5s103")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_yt4mw"]
+script = ExtResource("2_5s103")
+level = 15
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_lrg2a"]
+script = ExtResource("2_5s103")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_o5paj"]
+script = ExtResource("2_5s103")
+level = 25
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_hbq32"]
+script = ExtResource("2_5s103")
+level = 30
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_lwln4"]
+script = ExtResource("2_5s103")
+level = 35
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_44rix"]
+script = ExtResource("2_5s103")
+level = 40
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_8jc4a"]
+script = ExtResource("2_5s103")
+level = 45
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_snlgd"]
+script = ExtResource("2_5s103")
+level = 50
+move = &"SKULLBASH"
+
+[resource]
+resource_name = "WARTORTLE"
+script = ExtResource("3_0j2cd")
+species = &"WARTORTLE"
+category = "Turtle"
+pokedex_entry = "Its large tail is covered with rich, thick fur that deepens in color with age. The scratches on its shell are evidence of this Pokémon's toughness in battle."
+types = Array[StringName]([&"WATER"])
+base_hp = 59
+base_attack = 63
+base_defense = 80
+base_special_attack = 65
+base_special_defense = 80
+base_speed = 58
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5s103")]([SubResource("Resource_y5cxk"), SubResource("Resource_rx1x7"), SubResource("Resource_vwr54"), SubResource("Resource_g1fgj"), SubResource("Resource_b00g8"), SubResource("Resource_q5aoh"), SubResource("Resource_yt4mw"), SubResource("Resource_lrg2a"), SubResource("Resource_o5paj"), SubResource("Resource_hbq32"), SubResource("Resource_lwln4"), SubResource("Resource_44rix"), SubResource("Resource_8jc4a"), SubResource("Resource_snlgd")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AURASPHERE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FLIPTURN", &"FOCUSPUNCH", &"FRUSTRATION", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONTAIL", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4cmr8")]([SubResource("Resource_h6my3"), SubResource("Resource_j0iap")])
+height = 10
+weight = 225
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 21)
+id = &"WARTORTLE"
+display_name = "Wartortle"

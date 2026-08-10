@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="StatusData" format=3]
+
+[ext_resource type="Script" path="res://src/data/status_data.gd" id="1_tr7sv"]
+
+[resource]
+resource_name = "SLEEP"
+script = ExtResource("1_tr7sv")
+animation = &"Sleep"
+id = &"SLEEP"
+display_name = "Sleep"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e06cy"]
+
+[resource]
+resource_name = "WAKEUPSLAP"
+script = ExtResource("1_e06cy")
+type = &"FIGHTING"
+category = 0
+power = 70
+total_pp = 10
+function_code = &"DoublePowerIfTargetAsleepCureTarget"
+description = "This attack inflicts big damage on a sleeping target. It also wakes the target up, however."
+id = &"WAKEUPSLAP"
+display_name = "Wake-Up Slap"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

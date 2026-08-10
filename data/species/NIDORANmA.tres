@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_w076t"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4i1se"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_do48o"]
+
+[sub_resource type="Resource" id="Resource_ms0gf"]
+script = ExtResource("1_w076t")
+species = &"NIDORINO"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_axhqg"]
+script = ExtResource("2_4i1se")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_xuqlf"]
+script = ExtResource("2_4i1se")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_h88c8"]
+script = ExtResource("2_4i1se")
+level = 5
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_wywdu"]
+script = ExtResource("2_4i1se")
+level = 10
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_v7a7d"]
+script = ExtResource("2_4i1se")
+level = 15
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_qfggn"]
+script = ExtResource("2_4i1se")
+level = 20
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_70tq6"]
+script = ExtResource("2_4i1se")
+level = 25
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_ev7yv"]
+script = ExtResource("2_4i1se")
+level = 30
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_sajxr"]
+script = ExtResource("2_4i1se")
+level = 35
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_dbavu"]
+script = ExtResource("2_4i1se")
+level = 40
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_56qax"]
+script = ExtResource("2_4i1se")
+level = 45
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_cp1kw"]
+script = ExtResource("2_4i1se")
+level = 50
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_uofrf"]
+script = ExtResource("2_4i1se")
+level = 55
+move = &"EARTHPOWER"
+
+[resource]
+resource_name = "NIDORANmA"
+script = ExtResource("3_do48o")
+species = &"NIDORANmA"
+category = "Poison Pin"
+pokedex_entry = "The male Nidoran has developed muscles that freely move its ears in any direction. Even the slightest sound does not escape this Pokémon's notice."
+types = Array[StringName]([&"POISON"])
+base_hp = 46
+base_attack = 57
+base_defense = 40
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 50
+ev_attack = 1
+base_exp = 55
+growth_rate = &"Parabolic"
+gender_ratio = &"AlwaysMale"
+catch_rate = 235
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4i1se")]([SubResource("Resource_axhqg"), SubResource("Resource_xuqlf"), SubResource("Resource_h88c8"), SubResource("Resource_wywdu"), SubResource("Resource_v7a7d"), SubResource("Resource_qfggn"), SubResource("Resource_70tq6"), SubResource("Resource_ev7yv"), SubResource("Resource_sajxr"), SubResource("Resource_dbavu"), SubResource("Resource_56qax"), SubResource("Resource_cp1kw"), SubResource("Resource_uofrf")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BEATUP", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SMARTSTRIKE", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"AMNESIA", &"BEATUP", &"CONFUSION", &"COUNTER", &"DISABLE", &"HEADSMASH", &"HORNDRILL", &"POISONTAIL", &"SUCKERPUNCH", &"SUPERSONIC", &"TAKEDOWN", &"THRASH", &"VENOMDRENCH"])
+abilities = Array[StringName]([&"POISONPOINT", &"RIVALRY"])
+hidden_abilities = Array[StringName]([&"HUSTLE"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+offspring = Array[StringName]([&"NIDORANfE", &"NIDORANmA"])
+evolutions = Array[ExtResource("1_w076t")]([SubResource("Resource_ms0gf")])
+height = 5
+weight = 90
+color = &"Purple"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(3, 36)
+shadow_size = 1
+id = &"NIDORANmA"
+display_name = "Nidoran♂"

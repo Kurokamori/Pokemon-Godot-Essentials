@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_q3xf6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qhsk4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xx4xs"]
+
+[sub_resource type="Resource" id="Resource_8vyu5"]
+script = ExtResource("1_q3xf6")
+species = &"CRUSTLE"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_kwnuu"]
+script = ExtResource("2_qhsk4")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_iyei0"]
+script = ExtResource("2_qhsk4")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_xcarv"]
+script = ExtResource("2_qhsk4")
+level = 4
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_wtd0r"]
+script = ExtResource("2_qhsk4")
+level = 8
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_5sdds"]
+script = ExtResource("2_qhsk4")
+level = 12
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_eykgh"]
+script = ExtResource("2_qhsk4")
+level = 16
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_yk0p2"]
+script = ExtResource("2_qhsk4")
+level = 20
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_s5rt1"]
+script = ExtResource("2_qhsk4")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_7v1m2"]
+script = ExtResource("2_qhsk4")
+level = 28
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_0n1hj"]
+script = ExtResource("2_qhsk4")
+level = 32
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_0ob4n"]
+script = ExtResource("2_qhsk4")
+level = 36
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_gfjs3"]
+script = ExtResource("2_qhsk4")
+level = 40
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_ychgb"]
+script = ExtResource("2_qhsk4")
+level = 44
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_cq8ep"]
+script = ExtResource("2_qhsk4")
+level = 48
+move = &"ROCKWRECKER"
+
+[resource]
+resource_name = "DWEBBLE"
+script = ExtResource("3_xx4xs")
+species = &"DWEBBLE"
+category = "Rock Inn"
+pokedex_entry = "It makes a hole in a suitable rock. If that rock breaks, the Pokémon remains agitated until it locates a replacement."
+types = Array[StringName]([&"BUG", &"ROCK"])
+base_hp = 50
+base_attack = 65
+base_defense = 85
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 55
+ev_defense = 1
+base_exp = 65
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qhsk4")]([SubResource("Resource_kwnuu"), SubResource("Resource_iyei0"), SubResource("Resource_xcarv"), SubResource("Resource_wtd0r"), SubResource("Resource_5sdds"), SubResource("Resource_eykgh"), SubResource("Resource_yk0p2"), SubResource("Resource_s5rt1"), SubResource("Resource_7v1m2"), SubResource("Resource_0n1hj"), SubResource("Resource_0ob4n"), SubResource("Resource_gfjs3"), SubResource("Resource_ychgb"), SubResource("Resource_cq8ep")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLOCK", &"BUGBITE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"KNOCKOFF", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"SPIKES", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TOXIC", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"BLOCK", &"COUNTER", &"CURSE", &"KNOCKOFF", &"NIGHTSLASH", &"WIDEGUARD"])
+abilities = Array[StringName]([&"STURDY", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+wild_item_uncommon = Array[StringName]([&"HARDSTONE"])
+egg_groups = Array[StringName]([&"Bug", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_q3xf6")]([SubResource("Resource_8vyu5")])
+height = 3
+weight = 145
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 36)
+id = &"DWEBBLE"
+display_name = "Dwebble"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2xcf3"]
+
+[resource]
+resource_name = "LEPPABERRY"
+script = ExtResource("1_2xcf3")
+name_plural = "Leppa Berries"
+pocket = 5
+price = 20
+sell_price = 10
+field_use = 1
+battle_use = 2
+description = "It may be used or held by a Pokémon to restore a move's PP by 10."
+id = &"LEPPABERRY"
+display_name = "Leppa Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_FIGHTING_80"])

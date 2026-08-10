@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_exss8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5la0x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ski32"]
+
+[sub_resource type="Resource" id="Resource_fuda3"]
+script = ExtResource("1_exss8")
+species = &"BALTOY"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_xyw5n"]
+script = ExtResource("2_5la0x")
+level = 0
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_fr623"]
+script = ExtResource("2_5la0x")
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_mv72p"]
+script = ExtResource("2_5la0x")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_l3pih"]
+script = ExtResource("2_5la0x")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_jqhnl"]
+script = ExtResource("2_5la0x")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_7v78c"]
+script = ExtResource("2_5la0x")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_hdhvr"]
+script = ExtResource("2_5la0x")
+level = 9
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_kjkex"]
+script = ExtResource("2_5la0x")
+level = 12
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_3do4l"]
+script = ExtResource("2_5la0x")
+level = 15
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_ymd63"]
+script = ExtResource("2_5la0x")
+level = 18
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_73g5y"]
+script = ExtResource("2_5la0x")
+level = 21
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_hrvpi"]
+script = ExtResource("2_5la0x")
+level = 24
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_646tu"]
+script = ExtResource("2_5la0x")
+level = 27
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_1os1j"]
+script = ExtResource("2_5la0x")
+level = 30
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_n3s5d"]
+script = ExtResource("2_5la0x")
+level = 33
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_gpabj"]
+script = ExtResource("2_5la0x")
+level = 38
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_bdkx8"]
+script = ExtResource("2_5la0x")
+level = 38
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_vg52h"]
+script = ExtResource("2_5la0x")
+level = 43
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_sm2wd"]
+script = ExtResource("2_5la0x")
+level = 48
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "CLAYDOL"
+script = ExtResource("3_ski32")
+species = &"CLAYDOL"
+category = "Clay Doll"
+pokedex_entry = "A Claydol sleeps while hovering in midair. Its arms are separate from its body. They are kept floating by the Pokémon's manipulation of psychic power."
+types = Array[StringName]([&"GROUND", &"PSYCHIC"])
+base_hp = 60
+base_attack = 70
+base_defense = 105
+base_special_attack = 70
+base_special_defense = 120
+base_speed = 75
+ev_special_defense = 2
+base_exp = 175
+gender_ratio = &"Genderless"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5la0x")]([SubResource("Resource_xyw5n"), SubResource("Resource_fr623"), SubResource("Resource_mv72p"), SubResource("Resource_l3pih"), SubResource("Resource_jqhnl"), SubResource("Resource_7v78c"), SubResource("Resource_hdhvr"), SubResource("Resource_kjkex"), SubResource("Resource_3do4l"), SubResource("Resource_ymd63"), SubResource("Resource_73g5y"), SubResource("Resource_hrvpi"), SubResource("Resource_646tu"), SubResource("Resource_1os1j"), SubResource("Resource_n3s5d"), SubResource("Resource_gpabj"), SubResource("Resource_bdkx8"), SubResource("Resource_vg52h"), SubResource("Resource_sm2wd")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ANCIENTPOWER", &"BODYPRESS", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COSMICPOWER", &"DAZZLINGGLEAM", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"EERIEIMPULSE", &"ENDURE", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FLASH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"IMPRISON", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STONEEDGE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+wild_item_uncommon = Array[StringName]([&"LIGHTCLAY"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_exss8")]([SubResource("Resource_fuda3")])
+height = 15
+weight = 1080
+color = &"Black"
+shape = &"HeadArms"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+id = &"CLAYDOL"
+display_name = "Claydol"

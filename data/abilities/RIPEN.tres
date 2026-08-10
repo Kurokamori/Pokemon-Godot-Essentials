@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_08reo"]
+
+[resource]
+resource_name = "RIPEN"
+script = ExtResource("1_08reo")
+description = "Ripens Berries and doubles their effect."
+id = &"RIPEN"
+display_name = "Ripen"

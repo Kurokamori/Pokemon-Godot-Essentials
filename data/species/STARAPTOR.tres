@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_stvty"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_v6n3m"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0mucu"]
+
+[sub_resource type="Resource" id="Resource_vxjd1"]
+script = ExtResource("1_stvty")
+species = &"STARAVIA"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fb1hd"]
+script = ExtResource("2_v6n3m")
+level = 0
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_4ajnq"]
+script = ExtResource("2_v6n3m")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_otqpc"]
+script = ExtResource("2_v6n3m")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_syfnf"]
+script = ExtResource("2_v6n3m")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_yxu4l"]
+script = ExtResource("2_v6n3m")
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_74i52"]
+script = ExtResource("2_v6n3m")
+level = 5
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_78c3m"]
+script = ExtResource("2_v6n3m")
+level = 9
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_6yh2e"]
+script = ExtResource("2_v6n3m")
+level = 13
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_0lt1b"]
+script = ExtResource("2_v6n3m")
+level = 18
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_eg34a"]
+script = ExtResource("2_v6n3m")
+level = 23
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_d0ic8"]
+script = ExtResource("2_v6n3m")
+level = 28
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_6r783"]
+script = ExtResource("2_v6n3m")
+level = 33
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_fr1lt"]
+script = ExtResource("2_v6n3m")
+level = 41
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_u0cvy"]
+script = ExtResource("2_v6n3m")
+level = 49
+move = &"BRAVEBIRD"
+
+[sub_resource type="Resource" id="Resource_gjed3"]
+script = ExtResource("2_v6n3m")
+level = 57
+move = &"FINALGAMBIT"
+
+[resource]
+resource_name = "STARAPTOR"
+script = ExtResource("3_0mucu")
+species = &"STARAPTOR"
+category = "Predator"
+pokedex_entry = "It has a savage nature. It will courageously challenge foes that are much larger."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 85
+base_attack = 120
+base_defense = 70
+base_special_attack = 50
+base_special_defense = 60
+base_speed = 100
+ev_attack = 3
+base_exp = 243
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_v6n3m")]([SubResource("Resource_fb1hd"), SubResource("Resource_4ajnq"), SubResource("Resource_otqpc"), SubResource("Resource_syfnf"), SubResource("Resource_yxu4l"), SubResource("Resource_74i52"), SubResource("Resource_78c3m"), SubResource("Resource_6yh2e"), SubResource("Resource_0lt1b"), SubResource("Resource_eg34a"), SubResource("Resource_d0ic8"), SubResource("Resource_6r783"), SubResource("Resource_fr1lt"), SubResource("Resource_u0cvy"), SubResource("Resource_gjed3")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"RECKLESS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_stvty")]([SubResource("Resource_vxjd1")])
+height = 12
+weight = 249
+color = &"Brown"
+shape = &"Winged"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 24)
+id = &"STARAPTOR"
+display_name = "Staraptor"

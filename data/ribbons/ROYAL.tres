@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_8kerj"]
+
+[resource]
+resource_name = "ROYAL"
+script = ExtResource("1_8kerj")
+icon_position = 54
+description = "An incredibly regal Ribbon with an air of nobility."
+id = &"ROYAL"
+display_name = "Royal Ribbon"

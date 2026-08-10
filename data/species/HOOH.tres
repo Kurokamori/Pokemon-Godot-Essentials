@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o04cs"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xelj5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tbsuy"]
+
+[sub_resource type="Resource" id="Resource_1r0qt"]
+script = ExtResource("2_xelj5")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_kn57x"]
+script = ExtResource("2_xelj5")
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_nc4hd"]
+script = ExtResource("2_xelj5")
+move = &"WEATHERBALL"
+
+[sub_resource type="Resource" id="Resource_2rhlj"]
+script = ExtResource("2_xelj5")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_mehap"]
+script = ExtResource("2_xelj5")
+level = 9
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_4b5a3"]
+script = ExtResource("2_xelj5")
+level = 18
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_e3d4v"]
+script = ExtResource("2_xelj5")
+level = 27
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_vcgy2"]
+script = ExtResource("2_xelj5")
+level = 36
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_amg6s"]
+script = ExtResource("2_xelj5")
+level = 45
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_m6ggx"]
+script = ExtResource("2_xelj5")
+level = 54
+move = &"SACREDFIRE"
+
+[sub_resource type="Resource" id="Resource_8ep5y"]
+script = ExtResource("2_xelj5")
+level = 63
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_hnrws"]
+script = ExtResource("2_xelj5")
+level = 72
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_3h0s1"]
+script = ExtResource("2_xelj5")
+level = 81
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_ek3f0"]
+script = ExtResource("2_xelj5")
+level = 90
+move = &"SKYATTACK"
+
+[sub_resource type="Resource" id="Resource_722xv"]
+script = ExtResource("2_xelj5")
+level = 99
+move = &"BURNUP"
+
+[resource]
+resource_name = "HOOH"
+script = ExtResource("3_tbsuy")
+species = &"HOOH"
+category = "Rainbow"
+pokedex_entry = "Its feathers--which glow in seven colors depending on the angle at which light strikes them--are thought to bring joy. It is said to live at the foot of a rainbow."
+types = Array[StringName]([&"FIRE", &"FLYING"])
+base_hp = 106
+base_attack = 130
+base_defense = 90
+base_special_attack = 110
+base_special_defense = 154
+base_speed = 90
+ev_special_defense = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_xelj5")]([SubResource("Resource_1r0qt"), SubResource("Resource_kn57x"), SubResource("Resource_nc4hd"), SubResource("Resource_2rhlj"), SubResource("Resource_mehap"), SubResource("Resource_4b5a3"), SubResource("Resource_e3d4v"), SubResource("Resource_vcgy2"), SubResource("Resource_amg6s"), SubResource("Resource_m6ggx"), SubResource("Resource_8ep5y"), SubResource("Resource_hnrws"), SubResource("Resource_3h0s1"), SubResource("Resource_ek3f0"), SubResource("Resource_722xv")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"ANCIENTPOWER", &"BRAVEBIRD", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLASH", &"FLY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"INCINERATE", &"IRONHEAD", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"OMINOUSWIND", &"OVERHEAT", &"PLUCK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROOST", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TWISTER", &"WEATHERBALL", &"WILLOWISP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+wild_item_common = Array[StringName]([&"SACREDASH"])
+wild_item_uncommon = Array[StringName]([&"SACREDASH"])
+wild_item_rare = Array[StringName]([&"SACREDASH"])
+hatch_steps = 30720
+height = 38
+weight = 1990
+shape = &"Winged"
+habitat = &"Rare"
+generation = 2
+back_sprite_offset = Vector2i(10, 42)
+front_sprite_offset = Vector2i(0, 4)
+shadow_size = 3
+id = &"HOOH"
+display_name = "Ho-Oh"
+flags = Array[StringName]([&"Legendary"])

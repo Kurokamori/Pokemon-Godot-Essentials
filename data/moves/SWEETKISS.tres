@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_glse3"]
+
+[resource]
+resource_name = "SWEETKISS"
+script = ExtResource("1_glse3")
+type = &"FAIRY"
+accuracy = 75
+total_pp = 10
+function_code = &"ConfuseTarget"
+description = "The user kisses the target with a sweet, angelic cuteness that causes confusion."
+id = &"SWEETKISS"
+display_name = "Sweet Kiss"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

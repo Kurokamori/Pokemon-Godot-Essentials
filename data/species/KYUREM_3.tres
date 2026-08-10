@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_egsfy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_grhik"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_il00y"]
+
+[sub_resource type="Resource" id="Resource_24wvt"]
+script = ExtResource("2_grhik")
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_08wom"]
+script = ExtResource("2_grhik")
+move = &"DRAGONRAGE"
+
+[sub_resource type="Resource" id="Resource_bmyy2"]
+script = ExtResource("2_grhik")
+level = 8
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_5xtv3"]
+script = ExtResource("2_grhik")
+level = 15
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_qlwfm"]
+script = ExtResource("2_grhik")
+level = 22
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_1x8xl"]
+script = ExtResource("2_grhik")
+level = 29
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_bjtpi"]
+script = ExtResource("2_grhik")
+level = 36
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_86o47"]
+script = ExtResource("2_grhik")
+level = 43
+move = &"FUSIONFLARE"
+
+[sub_resource type="Resource" id="Resource_tdh7s"]
+script = ExtResource("2_grhik")
+level = 50
+move = &"ICEBURN"
+
+[sub_resource type="Resource" id="Resource_gwdbc"]
+script = ExtResource("2_grhik")
+level = 57
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_roh7e"]
+script = ExtResource("2_grhik")
+level = 64
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_8esha"]
+script = ExtResource("2_grhik")
+level = 71
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_1royi"]
+script = ExtResource("2_grhik")
+level = 78
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_nm543"]
+script = ExtResource("2_grhik")
+level = 85
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_p4f7x"]
+script = ExtResource("2_grhik")
+level = 92
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "KYUREM_3"
+script = ExtResource("3_il00y")
+species = &"KYUREM"
+form = 3
+category = "Boundary"
+pokedex_entry = "It generates a powerful, freezing energy inside itself, but its body became frozen when the energy leaked out."
+pokedex_form = 1
+types = Array[StringName]([&"DRAGON", &"ICE"])
+base_hp = 125
+base_attack = 120
+base_defense = 90
+base_special_attack = 170
+base_special_defense = 100
+base_speed = 95
+ev_special_attack = 3
+base_exp = 350
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_grhik")]([SubResource("Resource_24wvt"), SubResource("Resource_08wom"), SubResource("Resource_bmyy2"), SubResource("Resource_5xtv3"), SubResource("Resource_qlwfm"), SubResource("Resource_1x8xl"), SubResource("Resource_bjtpi"), SubResource("Resource_86o47"), SubResource("Resource_tdh7s"), SubResource("Resource_gwdbc"), SubResource("Resource_roh7e"), SubResource("Resource_8esha"), SubResource("Resource_1royi"), SubResource("Resource_nm543"), SubResource("Resource_p4f7x")])
+tutor_moves = Array[StringName]([&"BLIZZARD", &"BODYPRESS", &"BREAKINGSWIPE", &"BRUTALSWING", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLING", &"FLY", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IMPRISON", &"IRONHEAD", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SAFEGUARD", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TOXIC", &"WEATHERBALL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TURBOBLAZE"])
+hatch_steps = 30720
+height = 36
+weight = 3250
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(20, 50)
+front_sprite_offset = Vector2i(8, 8)
+shadow_size = 3
+id = &"KYUREM_3"
+display_name = "Kyurem"
+flags = Array[StringName]([&"Legendary"])

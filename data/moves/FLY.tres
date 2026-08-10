@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_hgwkt"]
+
+[resource]
+resource_name = "FLY"
+script = ExtResource("1_hgwkt")
+type = &"FLYING"
+category = 0
+power = 90
+accuracy = 95
+total_pp = 15
+target = &"Other"
+function_code = &"TwoTurnAttackInvulnerableInSky"
+description = "The user soars, then strikes on the second turn. It can also be used for flying to any familiar town."
+id = &"FLY"
+display_name = "Fly"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

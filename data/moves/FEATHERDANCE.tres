@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3cnm1"]
+
+[resource]
+resource_name = "FEATHERDANCE"
+script = ExtResource("1_3cnm1")
+type = &"FLYING"
+total_pp = 15
+function_code = &"LowerTargetAttack2"
+description = "The user covers the target's body with a mass of down that harshly lowers its Attack stat."
+id = &"FEATHERDANCE"
+display_name = "Feather Dance"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Dance"])

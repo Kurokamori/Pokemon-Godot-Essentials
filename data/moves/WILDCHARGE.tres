@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2hglu"]
+
+[resource]
+resource_name = "WILDCHARGE"
+script = ExtResource("1_2hglu")
+type = &"ELECTRIC"
+category = 0
+power = 90
+total_pp = 15
+function_code = &"RecoilQuarterOfDamageDealt"
+description = "The user shrouds itself in electricity and smashes into its foe. It also damages the user a little."
+id = &"WILDCHARGE"
+display_name = "Wild Charge"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

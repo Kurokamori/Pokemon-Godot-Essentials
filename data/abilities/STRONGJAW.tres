@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ke4ja"]
+
+[resource]
+resource_name = "STRONGJAW"
+script = ExtResource("1_ke4ja")
+description = "Boosts the power of biting moves."
+id = &"STRONGJAW"
+display_name = "Strong Jaw"

@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hfcgw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8b168"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_37ijv"]
+
+[sub_resource type="Resource" id="Resource_shmgu"]
+script = ExtResource("1_hfcgw")
+species = &"MANTINE"
+method = &"HasInParty"
+parameter = "REMORAID"
+
+[sub_resource type="Resource" id="Resource_75mkp"]
+script = ExtResource("2_8b168")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_rklf0"]
+script = ExtResource("2_8b168")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_b2ctl"]
+script = ExtResource("2_8b168")
+level = 4
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_dbo3t"]
+script = ExtResource("2_8b168")
+level = 8
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_lchjw"]
+script = ExtResource("2_8b168")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_85kdj"]
+script = ExtResource("2_8b168")
+level = 16
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_wh12i"]
+script = ExtResource("2_8b168")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_ve4oh"]
+script = ExtResource("2_8b168")
+level = 24
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_x1nqp"]
+script = ExtResource("2_8b168")
+level = 28
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ey6qd"]
+script = ExtResource("2_8b168")
+level = 32
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_yg7ib"]
+script = ExtResource("2_8b168")
+level = 36
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_jlfki"]
+script = ExtResource("2_8b168")
+level = 40
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_ymp74"]
+script = ExtResource("2_8b168")
+level = 44
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_r2kek"]
+script = ExtResource("2_8b168")
+level = 48
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "MANTYKE"
+script = ExtResource("3_37ijv")
+species = &"MANTYKE"
+category = "Kite"
+pokedex_entry = "A friendly Pokémon that captures the subtle flows of seawater using its two antennae."
+types = Array[StringName]([&"WATER", &"FLYING"])
+base_hp = 45
+base_attack = 20
+base_defense = 50
+base_special_attack = 60
+base_special_defense = 120
+base_speed = 50
+ev_special_defense = 1
+base_exp = 69
+growth_rate = &"Slow"
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8b168")]([SubResource("Resource_75mkp"), SubResource("Resource_rklf0"), SubResource("Resource_b2ctl"), SubResource("Resource_dbo3t"), SubResource("Resource_lchjw"), SubResource("Resource_85kdj"), SubResource("Resource_wh12i"), SubResource("Resource_ve4oh"), SubResource("Resource_x1nqp"), SubResource("Resource_ey6qd"), SubResource("Resource_yg7ib"), SubResource("Resource_jlfki"), SubResource("Resource_ymp74"), SubResource("Resource_r2kek")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"AMNESIA", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROUND", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AMNESIA", &"CONFUSERAY", &"HAZE", &"HYDROPUMP", &"MIRRORCOAT", &"SLAM", &"SPLASH", &"TAILWIND", &"TWISTER", &"WIDEGUARD"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"WATERABSORB"])
+hidden_abilities = Array[StringName]([&"WATERVEIL"])
+hatch_steps = 6400
+incense = &"WAVEINCENSE"
+evolutions = Array[ExtResource("1_hfcgw")]([SubResource("Resource_shmgu")])
+height = 10
+weight = 650
+color = &"Blue"
+shape = &"Winged"
+generation = 4
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 10)
+id = &"MANTYKE"
+display_name = "Mantyke"

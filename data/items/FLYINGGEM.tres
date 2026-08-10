@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_v7xdb"]
+
+[resource]
+resource_name = "FLYINGGEM"
+script = ExtResource("1_v7xdb")
+name_plural = "Flying Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of air. When held, it strengthens the power of a Flying-type move only once."
+id = &"FLYINGGEM"
+display_name = "Flying Gem"
+flags = Array[StringName]([&"TypeGem"])

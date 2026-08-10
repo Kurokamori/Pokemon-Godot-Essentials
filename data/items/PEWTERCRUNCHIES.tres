@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6xpeo"]
+
+[resource]
+resource_name = "PEWTERCRUNCHIES"
+script = ExtResource("1_6xpeo")
+name_plural = "Pewter Crunchies"
+portion_name = "bag of Pewter Crunchies"
+portion_name_plural = "bags of Pewter Crunchies"
+pocket = 2
+price = 250
+sell_price = 125
+field_use = 1
+battle_use = 1
+description = "Pewter City's famous crunchy snack. They can be used to heal all status conditions of a single Pokémon."
+id = &"PEWTERCRUNCHIES"
+display_name = "Pewter Crunchies"
+flags = Array[StringName]([&"Fling_30"])

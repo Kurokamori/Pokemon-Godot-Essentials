@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ficw7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_foay0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ksmfs"]
+
+[sub_resource type="Resource" id="Resource_g5xfn"]
+script = ExtResource("1_ficw7")
+species = &"ACCELGOR"
+method = &"TradeSpecies"
+parameter = "KARRABLAST"
+
+[sub_resource type="Resource" id="Resource_81hid"]
+script = ExtResource("2_foay0")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_co8r2"]
+script = ExtResource("2_foay0")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_11ggo"]
+script = ExtResource("2_foay0")
+level = 4
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_k8feu"]
+script = ExtResource("2_foay0")
+level = 8
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_uvbti"]
+script = ExtResource("2_foay0")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_iu0vx"]
+script = ExtResource("2_foay0")
+level = 16
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_yknmg"]
+script = ExtResource("2_foay0")
+level = 20
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_i7f58"]
+script = ExtResource("2_foay0")
+level = 24
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_vyodk"]
+script = ExtResource("2_foay0")
+level = 28
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_wd0sp"]
+script = ExtResource("2_foay0")
+level = 32
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_axhye"]
+script = ExtResource("2_foay0")
+level = 36
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_70b5l"]
+script = ExtResource("2_foay0")
+level = 40
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_7xv5o"]
+script = ExtResource("2_foay0")
+level = 44
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_lrphv"]
+script = ExtResource("2_foay0")
+level = 48
+move = &"FINALGAMBIT"
+
+[resource]
+resource_name = "SHELMET"
+script = ExtResource("3_ksmfs")
+species = &"SHELMET"
+category = "Snail"
+pokedex_entry = "It evolves when bathed in an electric-like energy along with Karrablast. The reason is still unknown."
+types = Array[StringName]([&"BUG"])
+base_hp = 50
+base_attack = 40
+base_defense = 85
+base_special_attack = 40
+base_special_defense = 65
+base_speed = 25
+ev_defense = 1
+base_exp = 61
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_foay0")]([SubResource("Resource_81hid"), SubResource("Resource_co8r2"), SubResource("Resource_11ggo"), SubResource("Resource_k8feu"), SubResource("Resource_uvbti"), SubResource("Resource_iu0vx"), SubResource("Resource_yknmg"), SubResource("Resource_i7f58"), SubResource("Resource_vyodk"), SubResource("Resource_wd0sp"), SubResource("Resource_axhye"), SubResource("Resource_70b5l"), SubResource("Resource_7xv5o"), SubResource("Resource_lrphv")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BODYSLAM", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GUARDSWAP", &"HIDDENPOWER", &"INFESTATION", &"LEECHLIFE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SPIKES", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TOXICSPIKES", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"DOUBLEEDGE", &"FEINT", &"GUARDSPLIT", &"MINDREADER"])
+abilities = Array[StringName]([&"HYDRATION", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ficw7")]([SubResource("Resource_g5xfn")])
+height = 4
+weight = 77
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(2, 36)
+shadow_size = 1
+id = &"SHELMET"
+display_name = "Shelmet"

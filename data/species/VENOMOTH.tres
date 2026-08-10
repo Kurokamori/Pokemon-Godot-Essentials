@@ -1,0 +1,147 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gkt74"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3k1vr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tvk53"]
+
+[sub_resource type="Resource" id="Resource_ymgmi"]
+script = ExtResource("1_gkt74")
+species = &"VENONAT"
+method = &"Level"
+parameter = "31"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_5bk87"]
+script = ExtResource("2_3k1vr")
+level = 0
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_l4qum"]
+script = ExtResource("2_3k1vr")
+move = &"QUIVERDANCE"
+
+[sub_resource type="Resource" id="Resource_bv2cy"]
+script = ExtResource("2_3k1vr")
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_l7nx4"]
+script = ExtResource("2_3k1vr")
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_ufp2c"]
+script = ExtResource("2_3k1vr")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_rnsmj"]
+script = ExtResource("2_3k1vr")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_gsby3"]
+script = ExtResource("2_3k1vr")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_ob10i"]
+script = ExtResource("2_3k1vr")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_4rfip"]
+script = ExtResource("2_3k1vr")
+level = 5
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_5f84s"]
+script = ExtResource("2_3k1vr")
+level = 11
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_88s88"]
+script = ExtResource("2_3k1vr")
+level = 13
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_aw6aa"]
+script = ExtResource("2_3k1vr")
+level = 17
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_7ul0q"]
+script = ExtResource("2_3k1vr")
+level = 23
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_4agrv"]
+script = ExtResource("2_3k1vr")
+level = 25
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_qinv6"]
+script = ExtResource("2_3k1vr")
+level = 29
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_la3u7"]
+script = ExtResource("2_3k1vr")
+level = 37
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_ruqjs"]
+script = ExtResource("2_3k1vr")
+level = 41
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_cn1ky"]
+script = ExtResource("2_3k1vr")
+level = 47
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_wukcc"]
+script = ExtResource("2_3k1vr")
+level = 55
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_5s47w"]
+script = ExtResource("2_3k1vr")
+level = 59
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_sp3sh"]
+script = ExtResource("2_3k1vr")
+level = 63
+move = &"QUIVERDANCE"
+
+[resource]
+resource_name = "VENOMOTH"
+script = ExtResource("3_tvk53")
+species = &"VENOMOTH"
+category = "Poison Moth"
+pokedex_entry = "Venomoth are nocturnal--they only are active at night. Their favorite prey are insects that gather around streetlights, attracted by the light in the darkness."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 70
+base_attack = 65
+base_defense = 60
+base_special_attack = 90
+base_special_defense = 75
+base_speed = 90
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 158
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3k1vr")]([SubResource("Resource_5bk87"), SubResource("Resource_l4qum"), SubResource("Resource_bv2cy"), SubResource("Resource_l7nx4"), SubResource("Resource_ufp2c"), SubResource("Resource_rnsmj"), SubResource("Resource_gsby3"), SubResource("Resource_ob10i"), SubResource("Resource_4rfip"), SubResource("Resource_5f84s"), SubResource("Resource_88s88"), SubResource("Resource_aw6aa"), SubResource("Resource_7ul0q"), SubResource("Resource_4agrv"), SubResource("Resource_qinv6"), SubResource("Resource_la3u7"), SubResource("Resource_ruqjs"), SubResource("Resource_cn1ky"), SubResource("Resource_wukcc"), SubResource("Resource_5s47w"), SubResource("Resource_sp3sh")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SIGNALBEAM", &"SILVERWIND", &"SKILLSWAP", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UTURN", &"VENOSHOCK", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SHIELDDUST", &"TINTEDLENS"])
+hidden_abilities = Array[StringName]([&"WONDERSKIN"])
+wild_item_uncommon = Array[StringName]([&"SHEDSHELL"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_gkt74")]([SubResource("Resource_ymgmi")])
+height = 15
+weight = 125
+color = &"Purple"
+shape = &"MultiWinged"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 8)
+id = &"VENOMOTH"
+display_name = "Venomoth"

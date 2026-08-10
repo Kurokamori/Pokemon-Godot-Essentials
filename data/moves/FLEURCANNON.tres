@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ae5bx"]
+
+[resource]
+resource_name = "FLEURCANNON"
+script = ExtResource("1_ae5bx")
+type = &"FAIRY"
+category = 1
+power = 130
+accuracy = 90
+function_code = &"LowerUserSpAtk2"
+description = "The user unleashes a strong beam. The attack's recoil harshly lowers the user's Sp. Atk stat."
+id = &"FLEURCANNON"
+display_name = "Fleur Cannon"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

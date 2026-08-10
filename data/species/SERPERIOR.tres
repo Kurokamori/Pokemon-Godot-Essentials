@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_subbu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bl670"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j7bfn"]
+
+[sub_resource type="Resource" id="Resource_vn4ib"]
+script = ExtResource("1_subbu")
+species = &"SERVINE"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7bqlr"]
+script = ExtResource("2_bl670")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_aq2at"]
+script = ExtResource("2_bl670")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_b8tlp"]
+script = ExtResource("2_bl670")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_1n4ll"]
+script = ExtResource("2_bl670")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_7u7qd"]
+script = ExtResource("2_bl670")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_dwmkm"]
+script = ExtResource("2_bl670")
+level = 7
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_s46iq"]
+script = ExtResource("2_bl670")
+level = 10
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_4kpi8"]
+script = ExtResource("2_bl670")
+level = 13
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_8xjgo"]
+script = ExtResource("2_bl670")
+level = 16
+move = &"LEAFTORNADO"
+
+[sub_resource type="Resource" id="Resource_x86sl"]
+script = ExtResource("2_bl670")
+level = 20
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_i7get"]
+script = ExtResource("2_bl670")
+level = 24
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_o8h8r"]
+script = ExtResource("2_bl670")
+level = 28
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_3fuds"]
+script = ExtResource("2_bl670")
+level = 32
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_x56rq"]
+script = ExtResource("2_bl670")
+level = 38
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_rvn4q"]
+script = ExtResource("2_bl670")
+level = 44
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_i1eox"]
+script = ExtResource("2_bl670")
+level = 50
+move = &"WRINGOUT"
+
+[sub_resource type="Resource" id="Resource_b8shp"]
+script = ExtResource("2_bl670")
+level = 56
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_pokqs"]
+script = ExtResource("2_bl670")
+level = 62
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "SERPERIOR"
+script = ExtResource("3_j7bfn")
+species = &"SERPERIOR"
+category = "Regal"
+pokedex_entry = "They raise their heads to intimidate opponents, but only give it their all when fighting a powerful opponent."
+types = Array[StringName]([&"GRASS"])
+base_hp = 75
+base_attack = 75
+base_defense = 95
+base_special_attack = 75
+base_special_defense = 95
+base_speed = 113
+ev_speed = 3
+base_exp = 264
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bl670")]([SubResource("Resource_7bqlr"), SubResource("Resource_aq2at"), SubResource("Resource_b8tlp"), SubResource("Resource_1n4ll"), SubResource("Resource_7u7qd"), SubResource("Resource_dwmkm"), SubResource("Resource_s46iq"), SubResource("Resource_4kpi8"), SubResource("Resource_8xjgo"), SubResource("Resource_x86sl"), SubResource("Resource_i7get"), SubResource("Resource_o8h8r"), SubResource("Resource_3fuds"), SubResource("Resource_x56rq"), SubResource("Resource_rvn4q"), SubResource("Resource_i1eox"), SubResource("Resource_b8shp"), SubResource("Resource_pokqs")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ATTRACT", &"BIND", &"BRUTALSWING", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAGONTAIL", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRENZYPLANT", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSPLEDGE", &"HIDDENPOWER", &"HYPERBEAM", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"OUTRAGE", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TAUNT", &"TORMENT", &"TOXIC", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"CONTRARY"])
+egg_groups = Array[StringName]([&"Field", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_subbu")]([SubResource("Resource_vn4ib")])
+height = 33
+weight = 630
+color = &"Green"
+shape = &"Serpentine"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 18)
+shadow_size = 3
+id = &"SERPERIOR"
+display_name = "Serperior"

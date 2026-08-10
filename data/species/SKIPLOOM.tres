@@ -1,0 +1,161 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_x7l75"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_o8ooj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1dufm"]
+
+[sub_resource type="Resource" id="Resource_avi7c"]
+script = ExtResource("1_x7l75")
+species = &"JUMPLUFF"
+method = &"Level"
+parameter = "27"
+
+[sub_resource type="Resource" id="Resource_14og0"]
+script = ExtResource("1_x7l75")
+species = &"HOPPIP"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7wn7u"]
+script = ExtResource("2_o8ooj")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_lq474"]
+script = ExtResource("2_o8ooj")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_gg28p"]
+script = ExtResource("2_o8ooj")
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_tjkv2"]
+script = ExtResource("2_o8ooj")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_4y8go"]
+script = ExtResource("2_o8ooj")
+level = 4
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_n8y6v"]
+script = ExtResource("2_o8ooj")
+level = 6
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_n84nf"]
+script = ExtResource("2_o8ooj")
+level = 8
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_lehi7"]
+script = ExtResource("2_o8ooj")
+level = 10
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_nrij6"]
+script = ExtResource("2_o8ooj")
+level = 12
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_hqjhg"]
+script = ExtResource("2_o8ooj")
+level = 14
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_d8dx7"]
+script = ExtResource("2_o8ooj")
+level = 16
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_re6bf"]
+script = ExtResource("2_o8ooj")
+level = 20
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_ioben"]
+script = ExtResource("2_o8ooj")
+level = 24
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_vlwbi"]
+script = ExtResource("2_o8ooj")
+level = 28
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_yndf1"]
+script = ExtResource("2_o8ooj")
+level = 32
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_kr7yh"]
+script = ExtResource("2_o8ooj")
+level = 36
+move = &"RAGEPOWDER"
+
+[sub_resource type="Resource" id="Resource_0riue"]
+script = ExtResource("2_o8ooj")
+level = 40
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_oyweg"]
+script = ExtResource("2_o8ooj")
+level = 44
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_dh2y5"]
+script = ExtResource("2_o8ooj")
+level = 48
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_5sj3h"]
+script = ExtResource("2_o8ooj")
+level = 52
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_8tupu"]
+script = ExtResource("2_o8ooj")
+level = 56
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_d0deh"]
+script = ExtResource("2_o8ooj")
+level = 60
+move = &"MEMENTO"
+
+[resource]
+resource_name = "SKIPLOOM"
+script = ExtResource("3_1dufm")
+species = &"SKIPLOOM"
+category = "Cottonweed"
+pokedex_entry = "It blossoms when the temperature rises above 64 degrees F. Because its flower's blooming changes with the temperature, it is sometimes used as a thermometer."
+types = Array[StringName]([&"GRASS", &"FLYING"])
+base_hp = 55
+base_attack = 45
+base_defense = 50
+base_special_attack = 45
+base_special_defense = 65
+base_speed = 80
+ev_speed = 2
+base_exp = 119
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_o8ooj")]([SubResource("Resource_7wn7u"), SubResource("Resource_lq474"), SubResource("Resource_gg28p"), SubResource("Resource_tjkv2"), SubResource("Resource_4y8go"), SubResource("Resource_n8y6v"), SubResource("Resource_n84nf"), SubResource("Resource_lehi7"), SubResource("Resource_nrij6"), SubResource("Resource_hqjhg"), SubResource("Resource_d8dx7"), SubResource("Resource_re6bf"), SubResource("Resource_ioben"), SubResource("Resource_vlwbi"), SubResource("Resource_yndf1"), SubResource("Resource_kr7yh"), SubResource("Resource_0riue"), SubResource("Resource_oyweg"), SubResource("Resource_dh2y5"), SubResource("Resource_5sj3h"), SubResource("Resource_8tupu"), SubResource("Resource_d0deh")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BOUNCE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"UTURN", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"LEAFGUARD"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Fairy", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_x7l75")]([SubResource("Resource_avi7c"), SubResource("Resource_14og0")])
+height = 6
+weight = 10
+color = &"Green"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"SKIPLOOM"
+display_name = "Skiploom"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_gmxml"]
+
+[resource]
+resource_name = "ZRING"
+script = ExtResource("1_gmxml")
+name_plural = "Z-Rings"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A ring that resonates with a Z-Crystal, letting a Pokémon unleash a Z-Move."
+id = &"ZRING"
+display_name = "Z-Ring"
+flags = Array[StringName]([&"KeyItem", &"ZRing"])

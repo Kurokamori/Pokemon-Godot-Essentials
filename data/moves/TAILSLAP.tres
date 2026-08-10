@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_f8g8u"]
+
+[resource]
+resource_name = "TAILSLAP"
+script = ExtResource("1_f8g8u")
+category = 0
+power = 25
+accuracy = 85
+total_pp = 10
+function_code = &"HitTwoToFiveTimes"
+description = "The user attacks by striking the target with its hard tail. It hits the Pokémon two to five times in a row."
+id = &"TAILSLAP"
+display_name = "Tail Slap"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

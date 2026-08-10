@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5wqdo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ev8lg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_l4y6c"]
+
+[sub_resource type="Resource" id="Resource_cgyy7"]
+script = ExtResource("1_5wqdo")
+species = &"MUDBRAY"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_rdxj4"]
+script = ExtResource("2_ev8lg")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_6ibrv"]
+script = ExtResource("2_ev8lg")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_fowdr"]
+script = ExtResource("2_ev8lg")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_nlmko"]
+script = ExtResource("2_ev8lg")
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_hkkir"]
+script = ExtResource("2_ev8lg")
+level = 12
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_04h2k"]
+script = ExtResource("2_ev8lg")
+level = 16
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_nicsq"]
+script = ExtResource("2_ev8lg")
+level = 20
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_3s5nu"]
+script = ExtResource("2_ev8lg")
+level = 24
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_p2dsp"]
+script = ExtResource("2_ev8lg")
+level = 28
+move = &"HIGHHORSEPOWER"
+
+[sub_resource type="Resource" id="Resource_wydyw"]
+script = ExtResource("2_ev8lg")
+level = 34
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_7katv"]
+script = ExtResource("2_ev8lg")
+level = 40
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_m1o2n"]
+script = ExtResource("2_ev8lg")
+level = 46
+move = &"MEGAKICK"
+
+[sub_resource type="Resource" id="Resource_uu6oe"]
+script = ExtResource("2_ev8lg")
+level = 52
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "MUDSDALE"
+script = ExtResource("3_l4y6c")
+species = &"MUDSDALE"
+category = "Draft Horse"
+pokedex_entry = "It remains calm and unmoving no matter the situation. It mixes dirt with the saliva in its mouth to make a special kind of mud."
+types = Array[StringName]([&"GROUND"])
+base_hp = 100
+base_attack = 125
+base_defense = 100
+base_special_attack = 55
+base_special_defense = 85
+base_speed = 35
+ev_attack = 2
+base_exp = 175
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ev8lg")]([SubResource("Resource_rdxj4"), SubResource("Resource_6ibrv"), SubResource("Resource_fowdr"), SubResource("Resource_nlmko"), SubResource("Resource_hkkir"), SubResource("Resource_04h2k"), SubResource("Resource_nicsq"), SubResource("Resource_3s5nu"), SubResource("Resource_p2dsp"), SubResource("Resource_wydyw"), SubResource("Resource_7katv"), SubResource("Resource_m1o2n"), SubResource("Resource_uu6oe")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TOXIC"])
+abilities = Array[StringName]([&"OWNTEMPO", &"STAMINA"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+wild_item_uncommon = Array[StringName]([&"LIGHTCLAY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5wqdo")]([SubResource("Resource_cgyy7")])
+height = 25
+weight = 9200
+color = &"Brown"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 3
+id = &"MUDSDALE"
+display_name = "Mudsdale"

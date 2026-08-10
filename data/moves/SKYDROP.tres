@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_a06r6"]
+
+[resource]
+resource_name = "SKYDROP"
+script = ExtResource("1_a06r6")
+type = &"FLYING"
+category = 0
+power = 60
+total_pp = 10
+target = &"Other"
+function_code = &"TwoTurnAttackInvulnerableInSkyTargetCannotAct"
+description = "The user takes the foe into the sky, then drops it on the next turn. The foe cannot attack while airborne."
+id = &"SKYDROP"
+display_name = "Sky Drop"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

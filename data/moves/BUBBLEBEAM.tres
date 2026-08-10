@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_h7bob"]
+
+[resource]
+resource_name = "BUBBLEBEAM"
+script = ExtResource("1_h7bob")
+type = &"WATER"
+category = 1
+power = 65
+total_pp = 20
+function_code = &"LowerTargetSpeed1"
+effect_chance = 10
+description = "A spray of bubbles is forcefully ejected at the target. It may also lower its Speed stat."
+id = &"BUBBLEBEAM"
+display_name = "Bubble Beam"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

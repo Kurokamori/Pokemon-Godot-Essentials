@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_r6tvt"]
+
+[resource]
+resource_name = "MUDSLAP"
+script = ExtResource("1_r6tvt")
+type = &"GROUND"
+category = 1
+power = 20
+total_pp = 10
+function_code = &"LowerTargetAccuracy1"
+effect_chance = 100
+description = "The user hurls mud in the target's face to inflict damage and lower its accuracy."
+id = &"MUDSLAP"
+display_name = "Mud-Slap"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

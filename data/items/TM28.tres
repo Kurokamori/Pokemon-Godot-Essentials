@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6u5pl"]
+
+[resource]
+resource_name = "TM28"
+script = ExtResource("1_6u5pl")
+name_plural = "TM28s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"DIG"
+description = "The user burrows into the ground, then attacks on the next turn. It can also be used to exit dungeons."
+id = &"TM28"
+display_name = "TM28"
+flags = Array[StringName]([&"Fling_80"])

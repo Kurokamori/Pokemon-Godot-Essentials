@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_se1gb"]
+
+[resource]
+resource_name = "SPIKYSHIELD"
+script = ExtResource("1_se1gb")
+type = &"GRASS"
+accuracy = 0
+total_pp = 10
+target = &"User"
+priority = 4
+function_code = &"ProtectUserFromTargetingMovesSpikyShield"
+description = "Protects the user from attacks. Also damages attackers that make contact with the user."
+id = &"SPIKYSHIELD"
+display_name = "Spiky Shield"

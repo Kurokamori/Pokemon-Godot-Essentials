@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1iuyn"]
+
+[resource]
+resource_name = "HM04"
+script = ExtResource("1_1iuyn")
+name_plural = "HM04s"
+pocket = 4
+field_use = 4
+consumable = false
+show_quantity = false
+move = &"STRENGTH"
+description = "The target is slugged with a punch thrown at maximum power. This can also be used to move heavy boulders."
+id = &"HM04"
+display_name = "HM04"

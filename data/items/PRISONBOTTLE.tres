@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_18jeq"]
+
+[resource]
+resource_name = "PRISONBOTTLE"
+script = ExtResource("1_18jeq")
+name_plural = "Prison Bottles"
+pocket = 8
+field_use = 1
+consumable = false
+show_quantity = false
+description = "A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago."
+id = &"PRISONBOTTLE"
+display_name = "Prison Bottle"
+flags = Array[StringName]([&"KeyItem"])

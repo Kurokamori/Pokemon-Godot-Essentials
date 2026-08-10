@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_tkub2"]
+
+[resource]
+resource_name = "POWERBELT"
+script = ExtResource("1_tkub2")
+name_plural = "Power Belts"
+price = 3000
+sell_price = 1500
+bp_price = 10
+description = "A Pokémon held item that promotes Defense gain on leveling, but reduces the Speed stat."
+id = &"POWERBELT"
+display_name = "Power Belt"
+flags = Array[StringName]([&"Fling_70"])

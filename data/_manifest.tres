@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="DataManifest" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_manifest.gd" id="1_78xqr"]
+
+[resource]
+script = ExtResource("1_78xqr")
+indexes = {
+&"abilities": "res://data/abilities/_index.tres",
+&"battle_animations": "res://data/battle_animations/_index.tres",
+&"battle_terrains": "res://data/battle_terrains/_index.tres",
+&"battle_weathers": "res://data/battle_weathers/_index.tres",
+&"berry_plants": "res://data/berry_plants/_index.tres",
+&"body_colors": "res://data/body_colors/_index.tres",
+&"body_shapes": "res://data/body_shapes/_index.tres",
+&"dungeon_parameters": "res://data/dungeon_parameters/_index.tres",
+&"dungeon_tilesets": "res://data/dungeon_tilesets/_index.tres",
+&"egg_groups": "res://data/egg_groups/_index.tres",
+&"encounter_types": "res://data/encounter_types/_index.tres",
+&"encounters": "res://data/encounters/_index.tres",
+&"environments": "res://data/environments/_index.tres",
+&"evolution_methods": "res://data/evolution_methods/_index.tres",
+&"gender_ratios": "res://data/gender_ratios/_index.tres",
+&"growth_rates": "res://data/growth_rates/_index.tres",
+&"habitats": "res://data/habitats/_index.tres",
+&"items": "res://data/items/_index.tres",
+&"map_metadata": "res://data/map_metadata/_index.tres",
+&"metadata": "res://data/metadata/_index.tres",
+&"moves": "res://data/moves/_index.tres",
+&"natures": "res://data/natures/_index.tres",
+&"phone_messages": "res://data/phone_messages/_index.tres",
+&"player_metadata": "res://data/player_metadata/_index.tres",
+&"regional_dexes": "res://data/regional_dexes/_index.tres",
+&"ribbons": "res://data/ribbons/_index.tres",
+&"species": "res://data/species/_index.tres",
+&"stats": "res://data/stats/_index.tres",
+&"statuses": "res://data/statuses/_index.tres",
+&"targets": "res://data/targets/_index.tres",
+&"terrain_tags": "res://data/terrain_tags/_index.tres",
+&"tilesets": "res://data/tilesets/_index.tres",
+&"town_maps": "res://data/town_maps/_index.tres",
+&"trainer_types": "res://data/trainer_types/_index.tres",
+&"trainers": "res://data/trainers/_index.tres",
+&"types": "res://data/types/_index.tres",
+&"weathers": "res://data/weathers/_index.tres"
+}

@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2gvp0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qsyvq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a04wh"]
+
+[sub_resource type="Resource" id="Resource_jbmm7"]
+script = ExtResource("1_2gvp0")
+species = &"QUILLADIN"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0i7oy"]
+script = ExtResource("2_qsyvq")
+level = 0
+move = &"SPIKYSHIELD"
+
+[sub_resource type="Resource" id="Resource_p2r2m"]
+script = ExtResource("2_qsyvq")
+move = &"NEEDLEARM"
+
+[sub_resource type="Resource" id="Resource_yu341"]
+script = ExtResource("2_qsyvq")
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_cryvv"]
+script = ExtResource("2_qsyvq")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_demth"]
+script = ExtResource("2_qsyvq")
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_8bgh1"]
+script = ExtResource("2_qsyvq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_itbcc"]
+script = ExtResource("2_qsyvq")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_b31nf"]
+script = ExtResource("2_qsyvq")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_jkfd0"]
+script = ExtResource("2_qsyvq")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_ajb0q"]
+script = ExtResource("2_qsyvq")
+level = 5
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_uaj8u"]
+script = ExtResource("2_qsyvq")
+level = 8
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_67wwe"]
+script = ExtResource("2_qsyvq")
+level = 11
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_it83a"]
+script = ExtResource("2_qsyvq")
+level = 15
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_gdg03"]
+script = ExtResource("2_qsyvq")
+level = 19
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_2r0j0"]
+script = ExtResource("2_qsyvq")
+level = 29
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_ioeag"]
+script = ExtResource("2_qsyvq")
+level = 35
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_pytlh"]
+script = ExtResource("2_qsyvq")
+level = 41
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_26udd"]
+script = ExtResource("2_qsyvq")
+level = 48
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_g8umv"]
+script = ExtResource("2_qsyvq")
+level = 54
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_wgtrq"]
+script = ExtResource("2_qsyvq")
+level = 60
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_86qnh"]
+script = ExtResource("2_qsyvq")
+level = 66
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_aqdnp"]
+script = ExtResource("2_qsyvq")
+level = 72
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_5kgui"]
+script = ExtResource("2_qsyvq")
+level = 78
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "CHESNAUGHT"
+script = ExtResource("3_a04wh")
+species = &"CHESNAUGHT"
+category = "Spiny Armor"
+pokedex_entry = "Its Tackle is forceful enough to flip a 50-ton tank. It shields its allies from danger with its own body."
+types = Array[StringName]([&"GRASS", &"FIGHTING"])
+base_hp = 88
+base_attack = 107
+base_defense = 122
+base_special_attack = 74
+base_special_defense = 75
+base_speed = 64
+ev_defense = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qsyvq")]([SubResource("Resource_0i7oy"), SubResource("Resource_p2r2m"), SubResource("Resource_yu341"), SubResource("Resource_cryvv"), SubResource("Resource_demth"), SubResource("Resource_8bgh1"), SubResource("Resource_itbcc"), SubResource("Resource_b31nf"), SubResource("Resource_jkfd0"), SubResource("Resource_ajb0q"), SubResource("Resource_uaj8u"), SubResource("Resource_67wwe"), SubResource("Resource_it83a"), SubResource("Resource_gdg03"), SubResource("Resource_2r0j0"), SubResource("Resource_ioeag"), SubResource("Resource_pytlh"), SubResource("Resource_26udd"), SubResource("Resource_g8umv"), SubResource("Resource_wgtrq"), SubResource("Resource_86qnh"), SubResource("Resource_aqdnp"), SubResource("Resource_5kgui")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLOCK", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRENZYPLANT", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSPLEDGE", &"GYROBALL", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"BULLETPROOF"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_2gvp0")]([SubResource("Resource_jbmm7")])
+height = 16
+weight = 900
+color = &"Green"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(9, 40)
+front_sprite_offset = Vector2i(-4, 15)
+id = &"CHESNAUGHT"
+display_name = "Chesnaught"

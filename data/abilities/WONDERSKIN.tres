@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_h7h4h"]
+
+[resource]
+resource_name = "WONDERSKIN"
+script = ExtResource("1_h7h4h")
+description = "Makes status-changing moves more likely to miss."
+id = &"WONDERSKIN"
+display_name = "Wonder Skin"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_tsweb"]
+
+[resource]
+resource_name = "WATERSPOUT"
+script = ExtResource("1_tsweb")
+type = &"WATER"
+category = 1
+power = 150
+target = &"AllNearFoes"
+function_code = &"PowerHigherWithUserHP"
+description = "The user spouts water to damage the foe. The lower the user's HP, the less powerful it becomes."
+id = &"WATERSPOUT"
+display_name = "Water Spout"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

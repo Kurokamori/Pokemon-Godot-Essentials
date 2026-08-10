@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ms16v"]
+
+[resource]
+resource_name = "HORNDRILL"
+script = ExtResource("1_ms16v")
+category = 0
+power = 1
+accuracy = 30
+function_code = &"OHKO"
+description = "The user stabs the foe with a horn that rotates like a drill. If it hits, the target faints instantly."
+id = &"HORNDRILL"
+display_name = "Horn Drill"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

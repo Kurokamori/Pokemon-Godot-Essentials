@@ -1,0 +1,147 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xwjwf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_t4k6b"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_luyyc"]
+
+[sub_resource type="Resource" id="Resource_maq6u"]
+script = ExtResource("1_xwjwf")
+species = &"SUNKERN"
+method = &"Item"
+parameter = "SUNSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_b8am1"]
+script = ExtResource("2_t4k6b")
+move = &"FLOWERSHIELD"
+
+[sub_resource type="Resource" id="Resource_86spd"]
+script = ExtResource("2_t4k6b")
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_u27co"]
+script = ExtResource("2_t4k6b")
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_ixk3g"]
+script = ExtResource("2_t4k6b")
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_iq1d5"]
+script = ExtResource("2_t4k6b")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_dhyf1"]
+script = ExtResource("2_t4k6b")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ngqpb"]
+script = ExtResource("2_t4k6b")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_f67op"]
+script = ExtResource("2_t4k6b")
+level = 4
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_dcowv"]
+script = ExtResource("2_t4k6b")
+level = 7
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_3w6xt"]
+script = ExtResource("2_t4k6b")
+level = 10
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_8h2gf"]
+script = ExtResource("2_t4k6b")
+level = 13
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_s67i6"]
+script = ExtResource("2_t4k6b")
+level = 16
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_c0le0"]
+script = ExtResource("2_t4k6b")
+level = 19
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_7i8n2"]
+script = ExtResource("2_t4k6b")
+level = 22
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_gjne5"]
+script = ExtResource("2_t4k6b")
+level = 25
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_3fvcx"]
+script = ExtResource("2_t4k6b")
+level = 28
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_psryy"]
+script = ExtResource("2_t4k6b")
+level = 34
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_7gxm4"]
+script = ExtResource("2_t4k6b")
+level = 37
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_8sji7"]
+script = ExtResource("2_t4k6b")
+level = 40
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_k25sn"]
+script = ExtResource("2_t4k6b")
+level = 43
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_ayn20"]
+script = ExtResource("2_t4k6b")
+level = 50
+move = &"PETALBLIZZARD"
+
+[resource]
+resource_name = "SUNFLORA"
+script = ExtResource("3_luyyc")
+species = &"SUNFLORA"
+category = "Sun"
+pokedex_entry = "Sunflora convert solar energy into nutrition. They are highly active in the warm daytime but suddenly stop moving as soon as the sun sets."
+types = Array[StringName]([&"GRASS"])
+base_hp = 75
+base_attack = 75
+base_defense = 55
+base_special_attack = 105
+base_special_defense = 85
+base_speed = 30
+ev_special_attack = 2
+base_exp = 149
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_t4k6b")]([SubResource("Resource_b8am1"), SubResource("Resource_86spd"), SubResource("Resource_u27co"), SubResource("Resource_ixk3g"), SubResource("Resource_iq1d5"), SubResource("Resource_dhyf1"), SubResource("Resource_ngqpb"), SubResource("Resource_f67op"), SubResource("Resource_dcowv"), SubResource("Resource_3w6xt"), SubResource("Resource_8h2gf"), SubResource("Resource_s67i6"), SubResource("Resource_c0le0"), SubResource("Resource_7i8n2"), SubResource("Resource_gjne5"), SubResource("Resource_3fvcx"), SubResource("Resource_psryy"), SubResource("Resource_7gxm4"), SubResource("Resource_8sji7"), SubResource("Resource_k25sn"), SubResource("Resource_ayn20")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"UPROAR", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"SOLARPOWER"])
+hidden_abilities = Array[StringName]([&"EARLYBIRD"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xwjwf")]([SubResource("Resource_maq6u")])
+height = 8
+weight = 85
+color = &"Yellow"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 27)
+shadow_size = 1
+id = &"SUNFLORA"
+display_name = "Sunflora"

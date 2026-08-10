@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ik6y1"]
+
+[resource]
+resource_name = "PSYBEAM"
+script = ExtResource("1_ik6y1")
+type = &"PSYCHIC"
+category = 1
+power = 65
+total_pp = 20
+function_code = &"ConfuseTarget"
+effect_chance = 10
+description = "The target is attacked with a peculiar ray. It may also cause confusion."
+id = &"PSYBEAM"
+display_name = "Psybeam"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

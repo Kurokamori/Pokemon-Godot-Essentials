@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rlb03"]
+
+[resource]
+resource_name = "FURYSWIPES"
+script = ExtResource("1_rlb03")
+category = 0
+power = 18
+accuracy = 80
+total_pp = 15
+function_code = &"HitTwoToFiveTimes"
+description = "The target is raked with sharp claws or scythes for two to five times in quick succession."
+id = &"FURYSWIPES"
+display_name = "Fury Swipes"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

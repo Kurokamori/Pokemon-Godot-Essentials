@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_lj7iq"]
+
+[resource]
+resource_name = "DRAGONCLAW"
+script = ExtResource("1_lj7iq")
+type = &"DRAGON"
+category = 0
+power = 80
+total_pp = 15
+description = "The user slashes the target with huge, sharp claws."
+id = &"DRAGONCLAW"
+display_name = "Dragon Claw"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

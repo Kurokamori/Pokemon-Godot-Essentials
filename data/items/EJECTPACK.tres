@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_rx2qo"]
+
+[resource]
+resource_name = "EJECTPACK"
+script = ExtResource("1_rx2qo")
+name_plural = "Eject Packs"
+price = 3000
+sell_price = 2000
+bp_price = 20
+description = "An item to be held by a Pokémon. When the holder's stats are lowered, it will be switched out of battle."
+id = &"EJECTPACK"
+display_name = "Eject Pack"
+flags = Array[StringName]([&"Fling_50"])

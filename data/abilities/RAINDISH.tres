@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_n8snw"]
+
+[resource]
+resource_name = "RAINDISH"
+script = ExtResource("1_n8snw")
+description = "The Pokémon gradually regains HP in rain."
+id = &"RAINDISH"
+display_name = "Rain Dish"

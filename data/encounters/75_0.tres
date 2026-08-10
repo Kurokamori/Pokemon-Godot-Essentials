@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_rt8vo"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_38gyu"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_vu4cd"]
+
+[sub_resource type="Resource" id="Resource_xt4n0"]
+script = ExtResource("3_vu4cd")
+weight = 20
+species = &"GEODUDE_1"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_rjxvn"]
+script = ExtResource("3_vu4cd")
+weight = 20
+species = &"RATTATA_1"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_3rhdk"]
+script = ExtResource("3_vu4cd")
+species = &"CUBONE"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_jvje0"]
+script = ExtResource("3_vu4cd")
+species = &"DIGLETT_1"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_liop8"]
+script = ExtResource("3_vu4cd")
+species = &"MEOWTH_1"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_e8qtv"]
+script = ExtResource("3_vu4cd")
+species = &"PIKACHU"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_tkij1"]
+script = ExtResource("3_vu4cd")
+species = &"SANDSHREW_1"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_f12wd"]
+script = ExtResource("3_vu4cd")
+species = &"VULPIX_1"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_oglfb"]
+script = ExtResource("2_38gyu")
+step_chance = 21
+slots = Array[ExtResource("3_vu4cd")]([SubResource("Resource_xt4n0"), SubResource("Resource_rjxvn"), SubResource("Resource_3rhdk"), SubResource("Resource_jvje0"), SubResource("Resource_liop8"), SubResource("Resource_e8qtv"), SubResource("Resource_tkij1"), SubResource("Resource_f12wd")])
+
+[resource]
+resource_name = "75_0"
+script = ExtResource("1_rt8vo")
+map_id = 75
+tables = Array[ExtResource("2_38gyu")]([SubResource("Resource_oglfb")])
+id = &"75_0"
+display_name = "Map 75 v0"

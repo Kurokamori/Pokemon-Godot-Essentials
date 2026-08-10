@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6ip7p"]
+
+[resource]
+resource_name = "LUCARIONITE"
+script = ExtResource("1_6ip7p")
+name_plural = "Lucarionites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Lucario hold it, and it will be able to Mega Evolve."
+id = &"LUCARIONITE"
+display_name = "Lucarionite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

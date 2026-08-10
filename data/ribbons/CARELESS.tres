@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_1ya80"]
+
+[resource]
+resource_name = "CARELESS"
+script = ExtResource("1_1ya80")
+icon_position = 59
+description = "A Ribbon for recalling a careless error that helped steer life decisions."
+id = &"CARELESS"
+display_name = "Careless Ribbon"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_eulgv"]
+
+[resource]
+resource_name = "LOCKON"
+script = ExtResource("1_eulgv")
+accuracy = 0
+function_code = &"EnsureNextMoveAlwaysHits"
+description = "The user takes sure aim at the target. It ensures the next attack does not fail to hit the target."
+id = &"LOCKON"
+display_name = "Lock-On"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

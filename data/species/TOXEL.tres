@@ -1,0 +1,71 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nwyxo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fiuu7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qausw"]
+
+[sub_resource type="Resource" id="Resource_v8og4"]
+script = ExtResource("1_nwyxo")
+species = &"TOXTRICITY"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_n6vmo"]
+script = ExtResource("2_fiuu7")
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_8i6be"]
+script = ExtResource("2_fiuu7")
+move = &"TEARFULLOOK"
+
+[sub_resource type="Resource" id="Resource_wkcit"]
+script = ExtResource("2_fiuu7")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_5whi4"]
+script = ExtResource("2_fiuu7")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_f1fis"]
+script = ExtResource("2_fiuu7")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_28nrd"]
+script = ExtResource("2_fiuu7")
+move = &"ACID"
+
+[resource]
+resource_name = "TOXEL"
+script = ExtResource("3_qausw")
+species = &"TOXEL"
+category = "Baby"
+pokedex_entry = "It manipulates the chemical makeup of its poison to produce electricity. The voltage is weak, but it can cause a tingling paralysis."
+types = Array[StringName]([&"ELECTRIC", &"POISON"])
+base_hp = 40
+base_attack = 38
+base_defense = 35
+base_special_attack = 54
+base_special_defense = 35
+base_speed = 40
+ev_special_attack = 1
+base_exp = 48
+growth_rate = &"Parabolic"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fiuu7")]([SubResource("Resource_n6vmo"), SubResource("Resource_8i6be"), SubResource("Resource_wkcit"), SubResource("Resource_5whi4"), SubResource("Resource_f1fis"), SubResource("Resource_28nrd")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENCORE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TOXIC"])
+egg_moves = Array[StringName]([&"ENDEAVOR", &"METALSOUND", &"POWERUPPUNCH"])
+abilities = Array[StringName]([&"RATTLED", &"STATIC"])
+hidden_abilities = Array[StringName]([&"KLUTZ"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_nwyxo")]([SubResource("Resource_v8og4")])
+height = 4
+weight = 110
+color = &"Purple"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 26)
+shadow_size = 1
+id = &"TOXEL"
+display_name = "Toxel"

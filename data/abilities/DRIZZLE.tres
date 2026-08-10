@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_lwlpk"]
+
+[resource]
+resource_name = "DRIZZLE"
+script = ExtResource("1_lwlpk")
+description = "The Pokémon makes it rain if it appears in battle."
+id = &"DRIZZLE"
+display_name = "Drizzle"

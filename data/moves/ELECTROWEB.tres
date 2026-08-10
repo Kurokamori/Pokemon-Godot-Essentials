@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_gfvqr"]
+
+[resource]
+resource_name = "ELECTROWEB"
+script = ExtResource("1_gfvqr")
+type = &"ELECTRIC"
+category = 1
+power = 55
+accuracy = 95
+total_pp = 15
+target = &"AllNearFoes"
+function_code = &"LowerTargetSpeed1"
+effect_chance = 100
+description = "The user captures and attacks foes by using an electric net, which lowers their Speed stat."
+id = &"ELECTROWEB"
+display_name = "Electroweb"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

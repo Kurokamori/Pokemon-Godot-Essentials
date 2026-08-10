@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_muycv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3sku2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vf8se"]
+
+[sub_resource type="Resource" id="Resource_ejxmd"]
+script = ExtResource("2_3sku2")
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_y8uku"]
+script = ExtResource("2_3sku2")
+move = &"DRAGONRAGE"
+
+[sub_resource type="Resource" id="Resource_4gl7l"]
+script = ExtResource("2_3sku2")
+level = 8
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_rtjkk"]
+script = ExtResource("2_3sku2")
+level = 15
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_64ykr"]
+script = ExtResource("2_3sku2")
+level = 22
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_e5exe"]
+script = ExtResource("2_3sku2")
+level = 29
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_nth1o"]
+script = ExtResource("2_3sku2")
+level = 36
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_n3lrp"]
+script = ExtResource("2_3sku2")
+level = 43
+move = &"FUSIONBOLT"
+
+[sub_resource type="Resource" id="Resource_7ibru"]
+script = ExtResource("2_3sku2")
+level = 50
+move = &"FREEZESHOCK"
+
+[sub_resource type="Resource" id="Resource_hmva7"]
+script = ExtResource("2_3sku2")
+level = 57
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_ombqv"]
+script = ExtResource("2_3sku2")
+level = 64
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_jwiu2"]
+script = ExtResource("2_3sku2")
+level = 71
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_gs1c6"]
+script = ExtResource("2_3sku2")
+level = 78
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_7kqw0"]
+script = ExtResource("2_3sku2")
+level = 85
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_gwta0"]
+script = ExtResource("2_3sku2")
+level = 92
+move = &"HYPERVOICE"
+
+[resource]
+resource_name = "KYUREM_2"
+script = ExtResource("3_vf8se")
+species = &"KYUREM"
+form = 2
+form_name = "Black Kyurem"
+category = "Boundary"
+pokedex_entry = "It's said that this Pokémon battles in order to protect the ideal world that will exist in the future for people and Pokémon."
+pokedex_form = 2
+types = Array[StringName]([&"DRAGON", &"ICE"])
+base_hp = 125
+base_attack = 170
+base_defense = 100
+base_special_attack = 120
+base_special_defense = 90
+base_speed = 95
+ev_attack = 3
+base_exp = 350
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_3sku2")]([SubResource("Resource_ejxmd"), SubResource("Resource_y8uku"), SubResource("Resource_4gl7l"), SubResource("Resource_rtjkk"), SubResource("Resource_64ykr"), SubResource("Resource_e5exe"), SubResource("Resource_nth1o"), SubResource("Resource_n3lrp"), SubResource("Resource_7ibru"), SubResource("Resource_hmva7"), SubResource("Resource_ombqv"), SubResource("Resource_jwiu2"), SubResource("Resource_gs1c6"), SubResource("Resource_7kqw0"), SubResource("Resource_gwta0")])
+tutor_moves = Array[StringName]([&"BLIZZARD", &"BODYPRESS", &"BREAKINGSWIPE", &"BRUTALSWING", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLING", &"FLY", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IMPRISON", &"IRONHEAD", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SAFEGUARD", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TOXIC", &"WEATHERBALL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TERAVOLT"])
+hatch_steps = 30720
+height = 33
+weight = 3250
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(9, 4)
+shadow_size = 3
+id = &"KYUREM_2"
+display_name = "Kyurem"
+flags = Array[StringName]([&"Legendary"])

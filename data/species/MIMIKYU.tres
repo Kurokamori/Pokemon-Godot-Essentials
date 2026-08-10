@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xa255"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mbnou"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ctgv3"]
+
+[sub_resource type="Resource" id="Resource_4ioff"]
+script = ExtResource("2_mbnou")
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_lbpyg"]
+script = ExtResource("2_mbnou")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_b5uhn"]
+script = ExtResource("2_mbnou")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_or0lo"]
+script = ExtResource("2_mbnou")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_lpf01"]
+script = ExtResource("2_mbnou")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_m1yoe"]
+script = ExtResource("2_mbnou")
+level = 6
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_s6wqk"]
+script = ExtResource("2_mbnou")
+level = 12
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_4xgnb"]
+script = ExtResource("2_mbnou")
+level = 18
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_ll2ew"]
+script = ExtResource("2_mbnou")
+level = 24
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_wvq1l"]
+script = ExtResource("2_mbnou")
+level = 30
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_mvph0"]
+script = ExtResource("2_mbnou")
+level = 36
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_4gua4"]
+script = ExtResource("2_mbnou")
+level = 42
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_7trqn"]
+script = ExtResource("2_mbnou")
+level = 48
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_31i0m"]
+script = ExtResource("2_mbnou")
+level = 54
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_bhann"]
+script = ExtResource("2_mbnou")
+level = 60
+move = &"PAINSPLIT"
+
+[resource]
+resource_name = "MIMIKYU"
+script = ExtResource("3_ctgv3")
+species = &"MIMIKYU"
+form_name = "Disguised Form"
+category = "Disguise"
+pokedex_entry = "A lonely Pokémon, it conceals its terrifying appearance beneath an old rag so it can get closer to people and other Pokémon."
+types = Array[StringName]([&"GHOST", &"FAIRY"])
+base_hp = 55
+base_attack = 90
+base_defense = 80
+base_special_attack = 50
+base_special_defense = 105
+base_speed = 96
+ev_special_defense = 2
+base_exp = 167
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mbnou")]([SubResource("Resource_4ioff"), SubResource("Resource_lbpyg"), SubResource("Resource_b5uhn"), SubResource("Resource_or0lo"), SubResource("Resource_lpf01"), SubResource("Resource_m1yoe"), SubResource("Resource_s6wqk"), SubResource("Resource_4xgnb"), SubResource("Resource_ll2ew"), SubResource("Resource_wvq1l"), SubResource("Resource_mvph0"), SubResource("Resource_4gua4"), SubResource("Resource_7trqn"), SubResource("Resource_31i0m"), SubResource("Resource_bhann")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BEATUP", &"BULKUP", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LASTRESORT", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PHANTOMFORCE", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WORKUP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"CURSE", &"DESTINYBOND", &"GRUDGE"])
+abilities = Array[StringName]([&"DISGUISE"])
+wild_item_uncommon = Array[StringName]([&"CHESTOBERRY"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+height = 2
+weight = 7
+color = &"Yellow"
+shape = &"Serpentine"
+generation = 7
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(6, 27)
+shadow_size = 1
+id = &"MIMIKYU"
+display_name = "Mimikyu"

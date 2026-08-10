@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3orxp"]
+
+[resource]
+resource_name = "OVALSTONE"
+script = ExtResource("1_3orxp")
+name_plural = "Oval Stones"
+price = 3000
+sell_price = 1000
+bp_price = 5
+description = "A peculiar stone that makes certain species of Pokémon evolve. It is shaped like an egg."
+id = &"OVALSTONE"
+display_name = "Oval Stone"
+flags = Array[StringName]([&"Fling_80"])

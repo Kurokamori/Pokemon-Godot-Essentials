@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="VoltorbFlipRules" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/voltorb/voltorb_flip_rules.gd" id="1_rules"]
+
+[resource]
+script = ExtResource("1_rules")
+grid_size = 5
+max_level = 8
+voltorbs_at_first_level = 6
+extra_voltorbs_per_level = 1
+highest_card = 3
+softening_chance = 10

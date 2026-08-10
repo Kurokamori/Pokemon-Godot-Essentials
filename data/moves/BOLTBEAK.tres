@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_cufj1"]
+
+[resource]
+resource_name = "BOLTBEAK"
+script = ExtResource("1_cufj1")
+type = &"ELECTRIC"
+category = 0
+power = 85
+total_pp = 10
+function_code = &"DoublePowerIfTargetNotActed"
+description = "Stabs the target with an electrified beak. Power is doubled if the user attacks first."
+id = &"BOLTBEAK"
+display_name = "Bolt Beak"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0qhii"]
+
+[resource]
+resource_name = "GALARICACUFF"
+script = ExtResource("1_0qhii")
+name_plural = "Galarica Cuffs"
+price = 6000
+sell_price = 3000
+bp_price = 5
+field_use = 1
+description = "A cuff made from woven-together Galarica Twigs. Giving it to a Galarian Slowpoke would make it very happy."
+id = &"GALARICACUFF"
+display_name = "Galarica Cuff"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_30"])

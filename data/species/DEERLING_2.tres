@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ppn33"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pbx3p"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ihr5h"]
+
+[sub_resource type="Resource" id="Resource_jo0cj"]
+script = ExtResource("1_ppn33")
+species = &"SAWSBUCK"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_waivc"]
+script = ExtResource("2_pbx3p")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_21akl"]
+script = ExtResource("2_pbx3p")
+move = &"CAMOUFLAGE"
+
+[sub_resource type="Resource" id="Resource_v7s5q"]
+script = ExtResource("2_pbx3p")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_wjpap"]
+script = ExtResource("2_pbx3p")
+level = 7
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_vvk0n"]
+script = ExtResource("2_pbx3p")
+level = 10
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_pj5yk"]
+script = ExtResource("2_pbx3p")
+level = 13
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_7vv8c"]
+script = ExtResource("2_pbx3p")
+level = 16
+move = &"FEINTATTACK"
+
+[sub_resource type="Resource" id="Resource_mvf4e"]
+script = ExtResource("2_pbx3p")
+level = 20
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_bex4q"]
+script = ExtResource("2_pbx3p")
+level = 24
+move = &"JUMPKICK"
+
+[sub_resource type="Resource" id="Resource_qv0ar"]
+script = ExtResource("2_pbx3p")
+level = 28
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_6ki3h"]
+script = ExtResource("2_pbx3p")
+level = 32
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_yhk7n"]
+script = ExtResource("2_pbx3p")
+level = 36
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_5qv7s"]
+script = ExtResource("2_pbx3p")
+level = 41
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_ijpxb"]
+script = ExtResource("2_pbx3p")
+level = 46
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_ywu3r"]
+script = ExtResource("2_pbx3p")
+level = 51
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "DEERLING_2"
+script = ExtResource("3_ihr5h")
+species = &"DEERLING"
+form = 2
+form_name = "Autumn Form"
+category = "Season"
+pokedex_entry = "The turning of the seasons changes the color and scent of this Pokémon's fur. People use it to mark the seasons."
+pokedex_form = 2
+types = Array[StringName]([&"NORMAL", &"GRASS"])
+base_hp = 60
+base_attack = 60
+base_defense = 50
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 75
+ev_speed = 1
+base_exp = 67
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pbx3p")]([SubResource("Resource_waivc"), SubResource("Resource_21akl"), SubResource("Resource_v7s5q"), SubResource("Resource_wjpap"), SubResource("Resource_vvk0n"), SubResource("Resource_pj5yk"), SubResource("Resource_7vv8c"), SubResource("Resource_mvf4e"), SubResource("Resource_bex4q"), SubResource("Resource_qv0ar"), SubResource("Resource_6ki3h"), SubResource("Resource_yhk7n"), SubResource("Resource_5qv7s"), SubResource("Resource_ijpxb"), SubResource("Resource_ywu3r")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"LASTRESORT", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"THUNDERWAVE", &"TOXIC", &"WILDCHARGE", &"WORKUP", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AGILITY", &"BATONPASS", &"FAKETEARS", &"GRASSWHISTLE", &"HEADBUTT", &"NATURALGIFT", &"ODORSLEUTH", &"SLEEPTALK", &"SYNTHESIS", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"SAPSIPPER"])
+hidden_abilities = Array[StringName]([&"SERENEGRACE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ppn33")]([SubResource("Resource_jo0cj")])
+height = 6
+weight = 195
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(-1, 52)
+front_sprite_offset = Vector2i(-2, 28)
+shadow_size = 1
+id = &"DEERLING_2"
+display_name = "Deerling"

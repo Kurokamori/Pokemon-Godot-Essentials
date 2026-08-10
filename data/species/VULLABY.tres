@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cwcyu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_520dl"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lw3uq"]
+
+[sub_resource type="Resource" id="Resource_7guyi"]
+script = ExtResource("1_cwcyu")
+species = &"MANDIBUZZ"
+method = &"Level"
+parameter = "54"
+
+[sub_resource type="Resource" id="Resource_q7ire"]
+script = ExtResource("2_520dl")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_xhv12"]
+script = ExtResource("2_520dl")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_yf3v2"]
+script = ExtResource("2_520dl")
+level = 6
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_ffibl"]
+script = ExtResource("2_520dl")
+level = 12
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_5lyeb"]
+script = ExtResource("2_520dl")
+level = 18
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_xi4a4"]
+script = ExtResource("2_520dl")
+level = 24
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_v3njb"]
+script = ExtResource("2_520dl")
+level = 30
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_x38al"]
+script = ExtResource("2_520dl")
+level = 36
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_28aow"]
+script = ExtResource("2_520dl")
+level = 42
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_8mv0j"]
+script = ExtResource("2_520dl")
+level = 48
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_afkhj"]
+script = ExtResource("2_520dl")
+level = 54
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_4efll"]
+script = ExtResource("2_520dl")
+level = 60
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_2078e"]
+script = ExtResource("2_520dl")
+level = 66
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_mjwll"]
+script = ExtResource("2_520dl")
+level = 72
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "VULLABY"
+script = ExtResource("3_lw3uq")
+species = &"VULLABY"
+category = "Diapered"
+pokedex_entry = "They tend to guard their posteriors with suitable bones they have found. They pursue weak Pokémon."
+types = Array[StringName]([&"DARK", &"FLYING"])
+base_hp = 70
+base_attack = 55
+base_defense = 75
+base_special_attack = 45
+base_special_defense = 65
+base_speed = 60
+ev_defense = 1
+base_exp = 74
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 190
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_520dl")]([SubResource("Resource_q7ire"), SubResource("Resource_xhv12"), SubResource("Resource_yf3v2"), SubResource("Resource_ffibl"), SubResource("Resource_5lyeb"), SubResource("Resource_xi4a4"), SubResource("Resource_v3njb"), SubResource("Resource_x38al"), SubResource("Resource_28aow"), SubResource("Resource_8mv0j"), SubResource("Resource_afkhj"), SubResource("Resource_4efll"), SubResource("Resource_2078e"), SubResource("Resource_mjwll")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BLOCK", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"EMBARGO", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLY", &"FOULPLAY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"IRONDEFENSE", &"KNOCKOFF", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PLUCK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UTURN"])
+egg_moves = Array[StringName]([&"MEANLOOK", &"ROOST", &"TOXIC"])
+abilities = Array[StringName]([&"BIGPECKS", &"OVERCOAT"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_cwcyu")]([SubResource("Resource_7guyi")])
+height = 5
+weight = 90
+color = &"Brown"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(1, 26)
+shadow_size = 1
+id = &"VULLABY"
+display_name = "Vullaby"

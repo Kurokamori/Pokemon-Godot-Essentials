@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ce6yx"]
+
+[resource]
+resource_name = "SLEEPPOWDER"
+script = ExtResource("1_ce6yx")
+type = &"GRASS"
+accuracy = 75
+total_pp = 15
+function_code = &"SleepTarget"
+description = "The user scatters a big cloud of sleep-inducing dust around the target."
+id = &"SLEEPPOWDER"
+display_name = "Sleep Powder"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Powder"])

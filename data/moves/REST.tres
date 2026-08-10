@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_5n2h7"]
+
+[resource]
+resource_name = "REST"
+script = ExtResource("1_5n2h7")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"HealUserFullyAndFallAsleep"
+description = "The user goes to sleep for two turns. It fully restores the user's HP and heals any status problem."
+id = &"REST"
+display_name = "Rest"

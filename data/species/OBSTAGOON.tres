@@ -1,0 +1,144 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ki0ow"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8dfo0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_12ooc"]
+
+[sub_resource type="Resource" id="Resource_kc2b8"]
+script = ExtResource("1_ki0ow")
+species = &"LINOONE"
+method = &"LevelNight"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yxroq"]
+script = ExtResource("2_8dfo0")
+level = 0
+move = &"OBSTRUCT"
+
+[sub_resource type="Resource" id="Resource_e4r3v"]
+script = ExtResource("2_8dfo0")
+move = &"CROSSCHOP"
+
+[sub_resource type="Resource" id="Resource_ujykd"]
+script = ExtResource("2_8dfo0")
+move = &"SUBMISSION"
+
+[sub_resource type="Resource" id="Resource_xpd4u"]
+script = ExtResource("2_8dfo0")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_sngjn"]
+script = ExtResource("2_8dfo0")
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_ajuxw"]
+script = ExtResource("2_8dfo0")
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_b31i0"]
+script = ExtResource("2_8dfo0")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_4gmbc"]
+script = ExtResource("2_8dfo0")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_r6seg"]
+script = ExtResource("2_8dfo0")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_mr68u"]
+script = ExtResource("2_8dfo0")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_r6rop"]
+script = ExtResource("2_8dfo0")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_dl4wr"]
+script = ExtResource("2_8dfo0")
+level = 9
+move = &"SNARL"
+
+[sub_resource type="Resource" id="Resource_6bldw"]
+script = ExtResource("2_8dfo0")
+level = 12
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_lfj5s"]
+script = ExtResource("2_8dfo0")
+level = 15
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_oy6jr"]
+script = ExtResource("2_8dfo0")
+level = 18
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_lu72h"]
+script = ExtResource("2_8dfo0")
+level = 23
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_i4kgj"]
+script = ExtResource("2_8dfo0")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_aexu2"]
+script = ExtResource("2_8dfo0")
+level = 35
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_wxy20"]
+script = ExtResource("2_8dfo0")
+level = 42
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_mawbm"]
+script = ExtResource("2_8dfo0")
+level = 49
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_k3p6s"]
+script = ExtResource("2_8dfo0")
+level = 56
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "OBSTAGOON"
+script = ExtResource("3_12ooc")
+species = &"OBSTAGOON"
+category = "Blocking"
+pokedex_entry = "It evolved after experiencing numerous fights. While crossing its arms, it lets out a shout that would make any opponent flinch."
+types = Array[StringName]([&"DARK", &"NORMAL"])
+base_hp = 93
+base_attack = 90
+base_defense = 101
+base_special_attack = 60
+base_special_defense = 81
+base_speed = 95
+ev_defense = 3
+base_exp = 260
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8dfo0")]([SubResource("Resource_yxroq"), SubResource("Resource_e4r3v"), SubResource("Resource_ujykd"), SubResource("Resource_xpd4u"), SubResource("Resource_sngjn"), SubResource("Resource_ajuxw"), SubResource("Resource_b31i0"), SubResource("Resource_4gmbc"), SubResource("Resource_r6seg"), SubResource("Resource_mr68u"), SubResource("Resource_r6rop"), SubResource("Resource_dl4wr"), SubResource("Resource_6bldw"), SubResource("Resource_lfj5s"), SubResource("Resource_oy6jr"), SubResource("Resource_lu72h"), SubResource("Resource_i4kgj"), SubResource("Resource_aexu2"), SubResource("Resource_wxy20"), SubResource("Resource_mawbm"), SubResource("Resource_k3p6s")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CROSSPOISON", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREPUNCH", &"FLING", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONTAIL", &"LASHOUT", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNARL", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRICK", &"WHIRLPOOL", &"WORKUP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"KNOCKOFF", &"PARTINGSHOT", &"QUICKGUARD"])
+abilities = Array[StringName]([&"RECKLESS", &"GUTS"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ki0ow")]([SubResource("Resource_kc2b8")])
+height = 16
+weight = 460
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(2, 44)
+front_sprite_offset = Vector2i(-3, 12)
+shadow_size = 3
+id = &"OBSTAGOON"
+display_name = "Obstagoon"
+flags = Array[StringName]([&"DefaultForm_1", &"InheritFormWithEverStone"])

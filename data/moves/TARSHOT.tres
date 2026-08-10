@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6pqdm"]
+
+[resource]
+resource_name = "TARSHOT"
+script = ExtResource("1_6pqdm")
+type = &"ROCK"
+total_pp = 15
+function_code = &"LowerTargetSpeed1MakeTargetWeakerToFire"
+description = "Pours sticky tar over the target, lowering its Speed and making it weaker to Fire-type moves."
+id = &"TARSHOT"
+display_name = "Tar Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

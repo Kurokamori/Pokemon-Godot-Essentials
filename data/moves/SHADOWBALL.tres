@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fuxue"]
+
+[resource]
+resource_name = "SHADOWBALL"
+script = ExtResource("1_fuxue")
+type = &"GHOST"
+category = 1
+power = 80
+total_pp = 15
+function_code = &"LowerTargetSpDef1"
+effect_chance = 20
+description = "The user hurls a shadowy blob at the target. It may also lower the target's Sp. Def stat."
+id = &"SHADOWBALL"
+display_name = "Shadow Ball"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

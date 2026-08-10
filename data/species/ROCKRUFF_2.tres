@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2on66"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_01tm4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rtscq"]
+
+[sub_resource type="Resource" id="Resource_d7rhy"]
+script = ExtResource("1_2on66")
+species = &"LYCANROC"
+method = &"LevelEvening"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_urvhd"]
+script = ExtResource("2_01tm4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_v2gbk"]
+script = ExtResource("2_01tm4")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_geini"]
+script = ExtResource("2_01tm4")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_gil72"]
+script = ExtResource("2_01tm4")
+level = 8
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_8jtng"]
+script = ExtResource("2_01tm4")
+level = 12
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_porqs"]
+script = ExtResource("2_01tm4")
+level = 16
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_a2ckh"]
+script = ExtResource("2_01tm4")
+level = 20
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ak1u7"]
+script = ExtResource("2_01tm4")
+level = 24
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_j1m3w"]
+script = ExtResource("2_01tm4")
+level = 28
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_3v15f"]
+script = ExtResource("2_01tm4")
+level = 32
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_oyfiw"]
+script = ExtResource("2_01tm4")
+level = 36
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_stngt"]
+script = ExtResource("2_01tm4")
+level = 40
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_sa2q6"]
+script = ExtResource("2_01tm4")
+level = 44
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_gabv6"]
+script = ExtResource("2_01tm4")
+level = 48
+move = &"STONEEDGE"
+
+[resource]
+resource_name = "ROCKRUFF_2"
+script = ExtResource("3_rtscq")
+species = &"ROCKRUFF"
+form = 2
+category = "Puppy"
+pokedex_entry = "This Pokémon has lived with people since times long ago. It can sense when its Trainer is in the dumps and will stick close by its Trainer's side."
+pokedex_form = 2
+types = Array[StringName]([&"ROCK"])
+base_hp = 45
+base_attack = 65
+base_defense = 40
+base_special_attack = 30
+base_special_defense = 40
+base_speed = 60
+ev_attack = 1
+base_exp = 56
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_01tm4")]([SubResource("Resource_urvhd"), SubResource("Resource_v2gbk"), SubResource("Resource_geini"), SubResource("Resource_gil72"), SubResource("Resource_8jtng"), SubResource("Resource_porqs"), SubResource("Resource_a2ckh"), SubResource("Resource_ak1u7"), SubResource("Resource_j1m3w"), SubResource("Resource_3v15f"), SubResource("Resource_oyfiw"), SubResource("Resource_stngt"), SubResource("Resource_sa2q6"), SubResource("Resource_gabv6")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CRUNCH", &"DOUBLETEAM", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"HIDDENPOWER", &"HYPERVOICE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THUNDERFANG", &"TOXIC", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ENDEAVOR", &"LASTRESORT", &"THRASH"])
+abilities = Array[StringName]([&"OWNTEMPO"])
+hidden_abilities = Array[StringName]([&"OWNTEMPO"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_2on66")]([SubResource("Resource_d7rhy")])
+height = 5
+weight = 92
+color = &"Brown"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 28)
+shadow_size = 1
+id = &"ROCKRUFF_2"
+display_name = "Rockruff"
+flags = Array[StringName]([&"InheritFormFromMother"])

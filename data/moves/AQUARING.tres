@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_baewl"]
+
+[resource]
+resource_name = "AQUARING"
+script = ExtResource("1_baewl")
+type = &"WATER"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"StartHealUserEachTurn"
+description = "The user envelops itself in a veil made of water. It regains some HP on every turn."
+id = &"AQUARING"
+display_name = "Aqua Ring"

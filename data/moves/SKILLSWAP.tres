@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nxpf4"]
+
+[resource]
+resource_name = "SKILLSWAP"
+script = ExtResource("1_nxpf4")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+function_code = &"UserTargetSwapAbilities"
+description = "The user employs its psychic power to exchange Abilities with the target."
+id = &"SKILLSWAP"
+display_name = "Skill Swap"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

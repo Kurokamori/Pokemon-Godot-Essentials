@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7y31h"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pvbn4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xm077"]
+
+[sub_resource type="Resource" id="Resource_xy5vh"]
+script = ExtResource("1_7y31h")
+species = &"SEADRA"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_kqg4p"]
+script = ExtResource("2_pvbn4")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_572ya"]
+script = ExtResource("2_pvbn4")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_5tcir"]
+script = ExtResource("2_pvbn4")
+level = 5
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_7dwh1"]
+script = ExtResource("2_pvbn4")
+level = 10
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_njfm5"]
+script = ExtResource("2_pvbn4")
+level = 15
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_6bjst"]
+script = ExtResource("2_pvbn4")
+level = 20
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_57i1f"]
+script = ExtResource("2_pvbn4")
+level = 25
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_ercm6"]
+script = ExtResource("2_pvbn4")
+level = 30
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_5ucjm"]
+script = ExtResource("2_pvbn4")
+level = 35
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_jwta4"]
+script = ExtResource("2_pvbn4")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_75pyh"]
+script = ExtResource("2_pvbn4")
+level = 45
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_puilq"]
+script = ExtResource("2_pvbn4")
+level = 50
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_rcsok"]
+script = ExtResource("2_pvbn4")
+level = 55
+move = &"RAINDANCE"
+
+[resource]
+resource_name = "HORSEA"
+script = ExtResource("3_xm077")
+species = &"HORSEA"
+category = "Dragon"
+pokedex_entry = "By cleverly flicking the fins on its back side to side, it moves in any direction while facing forward. It spits ink to escape if it senses danger."
+types = Array[StringName]([&"WATER"])
+base_hp = 30
+base_attack = 40
+base_defense = 70
+base_special_attack = 70
+base_special_defense = 25
+base_speed = 60
+ev_special_attack = 1
+base_exp = 59
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pvbn4")]([SubResource("Resource_kqg4p"), SubResource("Resource_572ya"), SubResource("Resource_5tcir"), SubResource("Resource_7dwh1"), SubResource("Resource_njfm5"), SubResource("Resource_6bjst"), SubResource("Resource_57i1f"), SubResource("Resource_ercm6"), SubResource("Resource_5ucjm"), SubResource("Resource_jwta4"), SubResource("Resource_75pyh"), SubResource("Resource_puilq"), SubResource("Resource_rcsok")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLIPTURN", &"FOCUSENERGY", &"FRUSTRATION", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AURORABEAM", &"CLEARSMOG", &"DISABLE", &"DRAGONBREATH", &"FLAIL", &"MUDDYWATER", &"OCTAZOOKA", &"OUTRAGE", &"SPLASH", &"WATERPULSE"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"DAMP"])
+wild_item_uncommon = Array[StringName]([&"DRAGONSCALE"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_7y31h")]([SubResource("Resource_xy5vh")])
+height = 4
+weight = 80
+color = &"Blue"
+shape = &"HeadBase"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 22)
+shadow_size = 1
+id = &"HORSEA"
+display_name = "Horsea"

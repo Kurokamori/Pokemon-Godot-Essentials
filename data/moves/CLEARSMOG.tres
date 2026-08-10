@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_pubqv"]
+
+[resource]
+resource_name = "CLEARSMOG"
+script = ExtResource("1_pubqv")
+type = &"POISON"
+category = 1
+power = 50
+accuracy = 0
+total_pp = 15
+function_code = &"ResetTargetStatStages"
+description = "The user attacks by throwing a clump of special mud. All status changes are returned to normal."
+id = &"CLEARSMOG"
+display_name = "Clear Smog"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

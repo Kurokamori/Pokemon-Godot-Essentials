@@ -1,0 +1,104 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3yvuv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3nr02"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fmbf7"]
+
+[sub_resource type="Resource" id="Resource_02g2a"]
+script = ExtResource("1_3yvuv")
+species = &"CORVIKNIGHT"
+method = &"Level"
+parameter = "38"
+
+[sub_resource type="Resource" id="Resource_k86ct"]
+script = ExtResource("1_3yvuv")
+species = &"ROOKIDEE"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_2h3ri"]
+script = ExtResource("2_3nr02")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_p6lbu"]
+script = ExtResource("2_3nr02")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_w8nge"]
+script = ExtResource("2_3nr02")
+move = &"POWERTRIP"
+
+[sub_resource type="Resource" id="Resource_2ftly"]
+script = ExtResource("2_3nr02")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_is4pr"]
+script = ExtResource("2_3nr02")
+level = 12
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_hwemx"]
+script = ExtResource("2_3nr02")
+level = 16
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_2ftes"]
+script = ExtResource("2_3nr02")
+level = 22
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_r6ath"]
+script = ExtResource("2_3nr02")
+level = 28
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_dynye"]
+script = ExtResource("2_3nr02")
+level = 34
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_88vbe"]
+script = ExtResource("2_3nr02")
+level = 40
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_3ram8"]
+script = ExtResource("2_3nr02")
+level = 46
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "CORVISQUIRE"
+script = ExtResource("3_fmbf7")
+species = &"CORVISQUIRE"
+category = "Raven"
+pokedex_entry = "Smart enough to use tools in battle, these Pokémon have been seen picking up rocks and flinging them or using ropes to wrap up enemies."
+types = Array[StringName]([&"FLYING"])
+base_hp = 68
+base_attack = 67
+base_defense = 55
+base_special_attack = 43
+base_special_defense = 55
+base_speed = 77
+ev_speed = 2
+base_exp = 128
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3nr02")]([SubResource("Resource_2h3ri"), SubResource("Resource_p6lbu"), SubResource("Resource_w8nge"), SubResource("Resource_2ftly"), SubResource("Resource_is4pr"), SubResource("Resource_hwemx"), SubResource("Resource_2ftes"), SubResource("Resource_r6ath"), SubResource("Resource_dynye"), SubResource("Resource_88vbe"), SubResource("Resource_3ram8")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"HIDDENPOWER", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"TOXIC", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"KEENEYE", &"UNNERVE"])
+hidden_abilities = Array[StringName]([&"BIGPECKS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_3yvuv")]([SubResource("Resource_02g2a"), SubResource("Resource_k86ct")])
+height = 8
+weight = 160
+color = &"Blue"
+shape = &"Winged"
+generation = 8
+back_sprite_offset = Vector2i(3, 38)
+front_sprite_offset = Vector2i(-1, 8)
+id = &"CORVISQUIRE"
+display_name = "Corvisquire"

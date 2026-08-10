@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xks5a"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2o40e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5uq6q"]
+
+[sub_resource type="Resource" id="Resource_a08y8"]
+script = ExtResource("2_2o40e")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_hxeo1"]
+script = ExtResource("2_2o40e")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_2djms"]
+script = ExtResource("2_2o40e")
+level = 5
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_v3mfr"]
+script = ExtResource("2_2o40e")
+level = 10
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_kpoks"]
+script = ExtResource("2_2o40e")
+level = 15
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_0hh6x"]
+script = ExtResource("2_2o40e")
+level = 20
+move = &"HEALBELL"
+
+[sub_resource type="Resource" id="Resource_gs6sg"]
+script = ExtResource("2_2o40e")
+level = 25
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_e0mmx"]
+script = ExtResource("2_2o40e")
+level = 30
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_x81rm"]
+script = ExtResource("2_2o40e")
+level = 35
+move = &"MILKDRINK"
+
+[sub_resource type="Resource" id="Resource_e24g4"]
+script = ExtResource("2_2o40e")
+level = 40
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_rly2h"]
+script = ExtResource("2_2o40e")
+level = 45
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_52ffs"]
+script = ExtResource("2_2o40e")
+level = 50
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_b45p3"]
+script = ExtResource("2_2o40e")
+level = 55
+move = &"HIGHHORSEPOWER"
+
+[resource]
+resource_name = "MILTANK"
+script = ExtResource("3_5uq6q")
+species = &"MILTANK"
+category = "Milk Cow"
+pokedex_entry = "It gives over five gallons of milk daily. Its sweet milk is enjoyed by children and adults alike. People who can't drink milk turn it into yogurt and eat it instead."
+base_hp = 95
+base_attack = 80
+base_defense = 105
+base_special_attack = 40
+base_special_defense = 70
+base_speed = 100
+ev_defense = 2
+base_exp = 172
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2o40e")]([SubResource("Resource_a08y8"), SubResource("Resource_hxeo1"), SubResource("Resource_2djms"), SubResource("Resource_v3mfr"), SubResource("Resource_kpoks"), SubResource("Resource_0hh6x"), SubResource("Resource_gs6sg"), SubResource("Resource_e0mmx"), SubResource("Resource_x81rm"), SubResource("Resource_e24g4"), SubResource("Resource_rly2h"), SubResource("Resource_52ffs"), SubResource("Resource_b45p3")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HEALBELL", &"HEAVYSLAM", &"HELPINGHAND", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONHEAD", &"IRONTAIL", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BELCH", &"CURSE", &"DOUBLEEDGE", &"FOCUSPUNCH", &"HAMMERARM", &"HELPINGHAND", &"PRESENT", &"REVERSAL", &"SEISMICTOSS"])
+abilities = Array[StringName]([&"THICKFAT", &"SCRAPPY"])
+hidden_abilities = Array[StringName]([&"SAPSIPPER"])
+wild_item_common = Array[StringName]([&"MOOMOOMILK"])
+wild_item_uncommon = Array[StringName]([&"MOOMOOMILK"])
+wild_item_rare = Array[StringName]([&"MOOMOOMILK"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 12
+weight = 755
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(5, 28)
+id = &"MILTANK"
+display_name = "Miltank"

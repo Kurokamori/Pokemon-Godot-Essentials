@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ao2yg"]
+
+[resource]
+resource_name = "ROTOTILLER"
+script = ExtResource("1_ao2yg")
+type = &"GROUND"
+accuracy = 0
+total_pp = 10
+target = &"AllBattlers"
+function_code = &"RaiseGroundedGrassBattlersAtkSpAtk1"
+description = "The user tills the soil to encourage plant growth. This raises the Attack and Sp. Atk of Grass types."
+id = &"ROTOTILLER"
+display_name = "Rototiller"

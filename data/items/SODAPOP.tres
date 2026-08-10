@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_osipu"]
+
+[resource]
+resource_name = "SODAPOP"
+script = ExtResource("1_osipu")
+name_plural = "Soda Pops"
+portion_name = "bottle of Soda Pop"
+portion_name_plural = "bottles of Soda Pop"
+pocket = 2
+price = 300
+sell_price = 150
+field_use = 1
+battle_use = 1
+description = "A highly carbonated soda drink. It can be used to restore 50 HP to a single Pokémon."
+id = &"SODAPOP"
+display_name = "Soda Pop"
+flags = Array[StringName]([&"Fling_30"])

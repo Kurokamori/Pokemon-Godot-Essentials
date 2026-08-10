@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ap560"]
+
+[resource]
+resource_name = "HEALER"
+script = ExtResource("1_ap560")
+description = "May heal an ally's status conditions."
+id = &"HEALER"
+display_name = "Healer"

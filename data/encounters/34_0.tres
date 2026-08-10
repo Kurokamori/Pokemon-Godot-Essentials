@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_h31cu"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_1ls0r"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_hlybq"]
+
+[sub_resource type="Resource" id="Resource_74u06"]
+script = ExtResource("3_hlybq")
+weight = 40
+species = &"SWINUB"
+min_level = 16
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_vss4g"]
+script = ExtResource("3_hlybq")
+weight = 20
+species = &"SNEASEL"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_87jau"]
+script = ExtResource("3_hlybq")
+weight = 20
+species = &"SNORUNT"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_c0k8r"]
+script = ExtResource("3_hlybq")
+species = &"SMOOCHUM"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_f06oq"]
+script = ExtResource("3_hlybq")
+species = &"SNOVER"
+min_level = 14
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_34qww"]
+script = ExtResource("2_1ls0r")
+encounter_type = &"Cave"
+step_chance = 5
+slots = Array[ExtResource("3_hlybq")]([SubResource("Resource_74u06"), SubResource("Resource_vss4g"), SubResource("Resource_87jau"), SubResource("Resource_c0k8r"), SubResource("Resource_f06oq")])
+
+[resource]
+resource_name = "34_0"
+script = ExtResource("1_h31cu")
+map_id = 34
+tables = Array[ExtResource("2_1ls0r")]([SubResource("Resource_34qww")])
+id = &"34_0"
+display_name = "Map 34 v0"

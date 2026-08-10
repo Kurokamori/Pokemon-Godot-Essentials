@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wfuta"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bv61j"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wctdx"]
+
+[sub_resource type="Resource" id="Resource_kc5ss"]
+script = ExtResource("1_wfuta")
+species = &"KAKUNA"
+method = &"Level"
+parameter = "10"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6mpu6"]
+script = ExtResource("2_bv61j")
+level = 0
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_dgs5n"]
+script = ExtResource("2_bv61j")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_cuxfl"]
+script = ExtResource("2_bv61j")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_wl18g"]
+script = ExtResource("2_bv61j")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_mo78p"]
+script = ExtResource("2_bv61j")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_jwtqw"]
+script = ExtResource("2_bv61j")
+level = 11
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_y8rly"]
+script = ExtResource("2_bv61j")
+level = 14
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_pt01y"]
+script = ExtResource("2_bv61j")
+level = 17
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_xlrl3"]
+script = ExtResource("2_bv61j")
+level = 20
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_sev86"]
+script = ExtResource("2_bv61j")
+level = 23
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_7jp7i"]
+script = ExtResource("2_bv61j")
+level = 26
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_ast2k"]
+script = ExtResource("2_bv61j")
+level = 29
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_kfsvo"]
+script = ExtResource("2_bv61j")
+level = 32
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_5aa5c"]
+script = ExtResource("2_bv61j")
+level = 35
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_rdmgp"]
+script = ExtResource("2_bv61j")
+level = 38
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_23cb8"]
+script = ExtResource("2_bv61j")
+level = 41
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_jy7t8"]
+script = ExtResource("2_bv61j")
+level = 44
+move = &"FELLSTINGER"
+
+[resource]
+resource_name = "BEEDRILL_1"
+script = ExtResource("3_wctdx")
+species = &"BEEDRILL"
+form = 1
+form_name = "Mega Beedrill"
+category = "Poison Bee"
+pokedex_entry = "Its legs have become poison stingers. It stabs its prey repeatedly with the stingers on its limbs, dealing the final blow with the stinger on its rear."
+pokedex_form = 1
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 65
+base_attack = 150
+base_defense = 40
+base_special_attack = 15
+base_special_defense = 80
+base_speed = 145
+ev_attack = 2
+ev_special_defense = 1
+base_exp = 284
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bv61j")]([SubResource("Resource_6mpu6"), SubResource("Resource_dgs5n"), SubResource("Resource_cuxfl"), SubResource("Resource_wl18g"), SubResource("Resource_mo78p"), SubResource("Resource_jwtqw"), SubResource("Resource_y8rly"), SubResource("Resource_pt01y"), SubResource("Resource_xlrl3"), SubResource("Resource_sev86"), SubResource("Resource_7jp7i"), SubResource("Resource_ast2k"), SubResource("Resource_kfsvo"), SubResource("Resource_5aa5c"), SubResource("Resource_rdmgp"), SubResource("Resource_23cb8"), SubResource("Resource_jy7t8")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BRICKBREAK", &"BRUTALSWING", &"BUGBITE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ELECTROWEB", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"KNOCKOFF", &"LASERFOCUS", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROOST", &"ROUND", &"SECRETPOWER", &"SILVERWIND", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"THIEF", &"THROATCHOP", &"UTURN", &"VENOSHOCK", &"XSCISSOR"])
+abilities = Array[StringName]([&"ADAPTABILITY"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_wfuta")]([SubResource("Resource_kc5ss")])
+height = 14
+weight = 405
+color = &"Yellow"
+shape = &"MultiWinged"
+habitat = &"Forest"
+generation = 6
+mega_stone = &"BEEDRILLITE"
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(-1, 8)
+id = &"BEEDRILL_1"
+display_name = "Beedrill"

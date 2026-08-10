@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5423g"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_w74mp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_drlak"]
+
+[sub_resource type="Resource" id="Resource_o2o14"]
+script = ExtResource("2_w74mp")
+move = &"THOUSANDARROWS"
+
+[sub_resource type="Resource" id="Resource_y4qij"]
+script = ExtResource("2_w74mp")
+move = &"THOUSANDWAVES"
+
+[sub_resource type="Resource" id="Resource_0os3r"]
+script = ExtResource("2_w74mp")
+move = &"COREENFORCER"
+
+[sub_resource type="Resource" id="Resource_mk776"]
+script = ExtResource("2_w74mp")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_d6a8y"]
+script = ExtResource("2_w74mp")
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_2qjb8"]
+script = ExtResource("2_w74mp")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_42wwu"]
+script = ExtResource("2_w74mp")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_4q0xx"]
+script = ExtResource("2_w74mp")
+level = 8
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_aiwg8"]
+script = ExtResource("2_w74mp")
+level = 16
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_la4ls"]
+script = ExtResource("2_w74mp")
+level = 24
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_i5550"]
+script = ExtResource("2_w74mp")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_vk2mo"]
+script = ExtResource("2_w74mp")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_txp7j"]
+script = ExtResource("2_w74mp")
+level = 48
+move = &"LANDSWRATH"
+
+[sub_resource type="Resource" id="Resource_rawud"]
+script = ExtResource("2_w74mp")
+level = 56
+move = &"GLARE"
+
+[sub_resource type="Resource" id="Resource_b5aig"]
+script = ExtResource("2_w74mp")
+level = 64
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_jxgq8"]
+script = ExtResource("2_w74mp")
+level = 72
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_i7h6l"]
+script = ExtResource("2_w74mp")
+level = 80
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_fyj02"]
+script = ExtResource("2_w74mp")
+level = 88
+move = &"OUTRAGE"
+
+[resource]
+resource_name = "ZYGARDE_2"
+script = ExtResource("3_drlak")
+species = &"ZYGARDE"
+form = 2
+form_name = "Complete Forme"
+category = "Order"
+pokedex_entry = "This is Zygarde's perfected form. From the orifice on its chest, it radiates high-powered energy that eliminates everything."
+pokedex_form = 2
+types = Array[StringName]([&"DRAGON", &"GROUND"])
+base_hp = 216
+base_attack = 100
+base_defense = 121
+base_special_attack = 91
+base_special_defense = 95
+base_speed = 85
+ev_hp = 3
+base_exp = 354
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_w74mp")]([SubResource("Resource_o2o14"), SubResource("Resource_y4qij"), SubResource("Resource_0os3r"), SubResource("Resource_mk776"), SubResource("Resource_d6a8y"), SubResource("Resource_2qjb8"), SubResource("Resource_42wwu"), SubResource("Resource_4q0xx"), SubResource("Resource_aiwg8"), SubResource("Resource_la4ls"), SubResource("Resource_i5550"), SubResource("Resource_vk2mo"), SubResource("Resource_txp7j"), SubResource("Resource_rawud"), SubResource("Resource_b5aig"), SubResource("Resource_jxgq8"), SubResource("Resource_i7h6l"), SubResource("Resource_fyj02")])
+tutor_moves = Array[StringName]([&"BIND", &"BLOCK", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BULLDOZE", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALESHOT", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHOCKWAVE", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEWAVE", &"SNORE", &"SPITE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TOXIC", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"POWERCONSTRUCT"])
+hidden_abilities = Array[StringName]([&"POWERCONSTRUCT"])
+hatch_steps = 30720
+height = 45
+weight = 6100
+color = &"Black"
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(0, 49)
+front_sprite_offset = Vector2i(11, 4)
+shadow_size = 3
+id = &"ZYGARDE_2"
+display_name = "Zygarde"
+flags = Array[StringName]([&"Legendary"])

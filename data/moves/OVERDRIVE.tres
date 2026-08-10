@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_hd8hw"]
+
+[resource]
+resource_name = "OVERDRIVE"
+script = ExtResource("1_hd8hw")
+type = &"ELECTRIC"
+category = 1
+power = 80
+total_pp = 10
+target = &"AllNearFoes"
+description = "The user attacks all foes by twanging a guitar or bass guitar, causing a huge echo and strong vibration."
+id = &"OVERDRIVE"
+display_name = "Overdrive"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound", &"CannotMetronome"])

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_2m3ss"]
+
+[resource]
+resource_name = "1"
+script = ExtResource("1_2m3ss")
+map_id = 1
+id = &"1"
+display_name = "Intro"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_1e4x0"]
+
+[resource]
+resource_name = "5"
+script = ExtResource("1_1e4x0")
+map_id = 5
+outdoor_map = true
+announce_location = true
+town_map_position = Array[int]([0, 13, 11])
+battle_background = "field"
+id = &"5"
+display_name = "Route 1"

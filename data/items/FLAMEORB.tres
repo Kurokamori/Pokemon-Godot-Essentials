@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_78w4h"]
+
+[resource]
+resource_name = "FLAMEORB"
+script = ExtResource("1_78w4h")
+name_plural = "Flame Orbs"
+price = 4000
+sell_price = 2000
+bp_price = 16
+description = "An item to be held by a Pokémon. It is a bizarre orb that inflicts a burn on the holder in battle."
+id = &"FLAMEORB"
+display_name = "Flame Orb"
+flags = Array[StringName]([&"Fling_30"])

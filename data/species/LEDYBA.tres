@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uvswt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vt832"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oe136"]
+
+[sub_resource type="Resource" id="Resource_4p0al"]
+script = ExtResource("1_uvswt")
+species = &"LEDIAN"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_au514"]
+script = ExtResource("2_vt832")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_3jgrr"]
+script = ExtResource("2_vt832")
+level = 5
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_5l3jb"]
+script = ExtResource("2_vt832")
+level = 8
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_8ghtb"]
+script = ExtResource("2_vt832")
+level = 12
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_ic7ky"]
+script = ExtResource("2_vt832")
+level = 12
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_5yaqj"]
+script = ExtResource("2_vt832")
+level = 12
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_qibs6"]
+script = ExtResource("2_vt832")
+level = 15
+move = &"MACHPUNCH"
+
+[sub_resource type="Resource" id="Resource_0gadt"]
+script = ExtResource("2_vt832")
+level = 19
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_w6f57"]
+script = ExtResource("2_vt832")
+level = 22
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_igwb5"]
+script = ExtResource("2_vt832")
+level = 26
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_kpbqq"]
+script = ExtResource("2_vt832")
+level = 29
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_on3de"]
+script = ExtResource("2_vt832")
+level = 33
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_uie1v"]
+script = ExtResource("2_vt832")
+level = 36
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_a3fpe"]
+script = ExtResource("2_vt832")
+level = 40
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "LEDYBA"
+script = ExtResource("3_oe136")
+species = &"LEDYBA"
+category = "Five Star"
+pokedex_entry = "Ledyba communicate using a fluid that they secrete from where the legs join the body. They are said to convey feelings to others by altering the fluid's scent."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 40
+base_attack = 20
+base_defense = 30
+base_special_attack = 40
+base_special_defense = 80
+base_speed = 55
+ev_special_defense = 1
+base_exp = 53
+growth_rate = &"Fast"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vt832")]([SubResource("Resource_au514"), SubResource("Resource_3jgrr"), SubResource("Resource_5l3jb"), SubResource("Resource_8ghtb"), SubResource("Resource_ic7ky"), SubResource("Resource_5yaqj"), SubResource("Resource_qibs6"), SubResource("Resource_0gadt"), SubResource("Resource_w6f57"), SubResource("Resource_igwb5"), SubResource("Resource_kpbqq"), SubResource("Resource_on3de"), SubResource("Resource_uie1v"), SubResource("Resource_a3fpe")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BRICKBREAK", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGADRAIN", &"HEADBUTT", &"HIDDENPOWER", &"ICEPUNCH", &"INFESTATION", &"KNOCKOFF", &"LIGHTSCREEN", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"POWERUPPUNCH", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROLLOUT", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"THIEF", &"THUNDERPUNCH", &"UPROAR", &"UTURN"])
+egg_moves = Array[StringName]([&"BUGBITE", &"COUNTER", &"ENCORE", &"KNOCKOFF", &"PSYBEAM", &"SCREECH", &"TAILWIND"])
+abilities = Array[StringName]([&"SWARM", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_uvswt")]([SubResource("Resource_4p0al")])
+height = 10
+weight = 108
+shape = &"Winged"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 26)
+shadow_size = 1
+id = &"LEDYBA"
+display_name = "Ledyba"

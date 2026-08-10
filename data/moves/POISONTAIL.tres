@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_8plcn"]
+
+[resource]
+resource_name = "POISONTAIL"
+script = ExtResource("1_8plcn")
+type = &"POISON"
+category = 0
+power = 50
+total_pp = 25
+function_code = &"PoisonTarget"
+effect_chance = 10
+description = "The user hits the target with its tail. It may also poison the target. Critical hits land more easily."
+id = &"POISONTAIL"
+display_name = "Poison Tail"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

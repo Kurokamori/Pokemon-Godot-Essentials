@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cn43x"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dsxwx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j4vdb"]
+
+[sub_resource type="Resource" id="Resource_nwbpm"]
+script = ExtResource("1_cn43x")
+species = &"PIKACHU"
+
+[sub_resource type="Resource" id="Resource_k76j8"]
+script = ExtResource("2_dsxwx")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_yuorv"]
+script = ExtResource("2_dsxwx")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_v4jrf"]
+script = ExtResource("2_dsxwx")
+level = 4
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_fd4ct"]
+script = ExtResource("2_dsxwx")
+level = 8
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_4m3eg"]
+script = ExtResource("2_dsxwx")
+level = 12
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_h1i2d"]
+script = ExtResource("2_dsxwx")
+level = 16
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_t2udj"]
+script = ExtResource("2_dsxwx")
+level = 20
+move = &"CHARM"
+
+[resource]
+resource_name = "PICHU_2"
+script = ExtResource("3_j4vdb")
+species = &"PICHU"
+form = 2
+form_name = "Spiky-Eared"
+category = "Tiny Mouse"
+pokedex_entry = "It is still inept at retaining electricity. When it is startled, it discharges power accidentally. It gets better at holding power as it grows older."
+pokedex_form = 2
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 20
+base_attack = 40
+base_defense = 15
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 60
+ev_speed = 1
+base_exp = 41
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dsxwx")]([SubResource("Resource_k76j8"), SubResource("Resource_yuorv"), SubResource("Resource_v4jrf"), SubResource("Resource_fd4ct"), SubResource("Resource_4m3eg"), SubResource("Resource_h1i2d"), SubResource("Resource_t2udj")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ELECTRICTERRAIN", &"ELECTROWEB", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"LIGHTSCREEN", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"CHARGE", &"DISARMINGVOICE", &"ELECTRICTERRAIN", &"ENCORE", &"FAKEOUT", &"FLAIL", &"PRESENT", &"REVERSAL", &"THUNDERPUNCH", &"TICKLE", &"WISH"])
+abilities = Array[StringName]([&"STATIC"])
+hidden_abilities = Array[StringName]([&"LIGHTNINGROD"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_cn43x")]([SubResource("Resource_nwbpm")])
+height = 3
+weight = 20
+color = &"Yellow"
+shape = &"Quadruped"
+habitat = &"Forest"
+generation = 4
+back_sprite_offset = Vector2i(0, 8)
+front_sprite_offset = Vector2i(2, 24)
+shadow_size = 1
+id = &"PICHU_2"
+display_name = "Pichu"

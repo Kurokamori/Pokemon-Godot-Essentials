@@ -1,0 +1,152 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_na54l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_itjxt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ta2ef"]
+
+[sub_resource type="Resource" id="Resource_qvoca"]
+script = ExtResource("1_na54l")
+species = &"EEVEE"
+method = &"Item"
+parameter = "ICESTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_t5442"]
+script = ExtResource("2_itjxt")
+level = 0
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_7mbmt"]
+script = ExtResource("2_itjxt")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_fshkd"]
+script = ExtResource("2_itjxt")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_5v82v"]
+script = ExtResource("2_itjxt")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_scfl6"]
+script = ExtResource("2_itjxt")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_wvhti"]
+script = ExtResource("2_itjxt")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_5hot3"]
+script = ExtResource("2_itjxt")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_xqgvg"]
+script = ExtResource("2_itjxt")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_mr6dh"]
+script = ExtResource("2_itjxt")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_w5kqj"]
+script = ExtResource("2_itjxt")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_mtuyv"]
+script = ExtResource("2_itjxt")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_sootm"]
+script = ExtResource("2_itjxt")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_cr27r"]
+script = ExtResource("2_itjxt")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_1656w"]
+script = ExtResource("2_itjxt")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_8r3e6"]
+script = ExtResource("2_itjxt")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_5m6rs"]
+script = ExtResource("2_itjxt")
+level = 20
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_y4qp6"]
+script = ExtResource("2_itjxt")
+level = 25
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_a4qpj"]
+script = ExtResource("2_itjxt")
+level = 30
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_yrffj"]
+script = ExtResource("2_itjxt")
+level = 35
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_i5i5d"]
+script = ExtResource("2_itjxt")
+level = 40
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_rt26u"]
+script = ExtResource("2_itjxt")
+level = 45
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_6q0qa"]
+script = ExtResource("2_itjxt")
+level = 50
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_v2kh3"]
+script = ExtResource("2_itjxt")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "GLACEON"
+script = ExtResource("3_ta2ef")
+species = &"GLACEON"
+category = "Fresh Snow"
+pokedex_entry = "As a protective technique, it can completely freeze its fur to make its hairs stand like needles."
+types = Array[StringName]([&"ICE"])
+base_hp = 65
+base_attack = 60
+base_defense = 110
+base_special_attack = 130
+base_special_defense = 95
+base_speed = 65
+ev_special_attack = 2
+base_exp = 184
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_itjxt")]([SubResource("Resource_t5442"), SubResource("Resource_7mbmt"), SubResource("Resource_fshkd"), SubResource("Resource_5v82v"), SubResource("Resource_scfl6"), SubResource("Resource_wvhti"), SubResource("Resource_5hot3"), SubResource("Resource_xqgvg"), SubResource("Resource_mr6dh"), SubResource("Resource_w5kqj"), SubResource("Resource_mtuyv"), SubResource("Resource_sootm"), SubResource("Resource_cr27r"), SubResource("Resource_1656w"), SubResource("Resource_8r3e6"), SubResource("Resource_5m6rs"), SubResource("Resource_y4qp6"), SubResource("Resource_a4qpj"), SubResource("Resource_yrffj"), SubResource("Resource_i5i5d"), SubResource("Resource_rt26u"), SubResource("Resource_6q0qa"), SubResource("Resource_v2kh3")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AURORAVEIL", &"AVALANCHE", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FOCUSENERGY", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYDAY", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TRIPLEAXEL", &"WATERPULSE", &"WEATHERBALL", &"WORKUP"])
+abilities = Array[StringName]([&"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"ICEBODY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_na54l")]([SubResource("Resource_qvoca")])
+height = 8
+weight = 259
+color = &"Blue"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-4, 23)
+shadow_size = 1
+id = &"GLACEON"
+display_name = "Glaceon"

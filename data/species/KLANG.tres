@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_b57mm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nsr6s"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0g5bi"]
+
+[sub_resource type="Resource" id="Resource_8btkc"]
+script = ExtResource("1_b57mm")
+species = &"KLINKLANG"
+method = &"Level"
+parameter = "49"
+
+[sub_resource type="Resource" id="Resource_w5emn"]
+script = ExtResource("1_b57mm")
+species = &"KLINK"
+method = &"Level"
+parameter = "38"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kc0kv"]
+script = ExtResource("2_nsr6s")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_wcaad"]
+script = ExtResource("2_nsr6s")
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_ip1a7"]
+script = ExtResource("2_nsr6s")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_sx6yx"]
+script = ExtResource("2_nsr6s")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_acw4g"]
+script = ExtResource("2_nsr6s")
+level = 12
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_t1el8"]
+script = ExtResource("2_nsr6s")
+level = 16
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_8fomh"]
+script = ExtResource("2_nsr6s")
+level = 20
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_fepkf"]
+script = ExtResource("2_nsr6s")
+level = 24
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_dr4dd"]
+script = ExtResource("2_nsr6s")
+level = 28
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_6dgut"]
+script = ExtResource("2_nsr6s")
+level = 32
+move = &"GEARGRIND"
+
+[sub_resource type="Resource" id="Resource_ujb5k"]
+script = ExtResource("2_nsr6s")
+level = 36
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_tmpp7"]
+script = ExtResource("2_nsr6s")
+level = 42
+move = &"SHIFTGEAR"
+
+[sub_resource type="Resource" id="Resource_ym8c4"]
+script = ExtResource("2_nsr6s")
+level = 48
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_nqmps"]
+script = ExtResource("2_nsr6s")
+level = 54
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "KLANG"
+script = ExtResource("3_0g5bi")
+species = &"KLANG"
+category = "Gear"
+pokedex_entry = "Spinning minigears are rotated at high speed and repeatedly fired away. It is dangerous if the gears don't return."
+types = Array[StringName]([&"STEEL"])
+base_hp = 60
+base_attack = 80
+base_defense = 95
+base_special_attack = 70
+base_special_defense = 85
+base_speed = 50
+ev_defense = 2
+base_exp = 154
+growth_rate = &"Parabolic"
+gender_ratio = &"Genderless"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nsr6s")]([SubResource("Resource_kc0kv"), SubResource("Resource_wcaad"), SubResource("Resource_ip1a7"), SubResource("Resource_sx6yx"), SubResource("Resource_acw4g"), SubResource("Resource_t1el8"), SubResource("Resource_8fomh"), SubResource("Resource_fepkf"), SubResource("Resource_dr4dd"), SubResource("Resource_6dgut"), SubResource("Resource_ujb5k"), SubResource("Resource_tmpp7"), SubResource("Resource_ym8c4"), SubResource("Resource_nqmps")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ASSURANCE", &"BIND", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GRAVITY", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"POWERGEM", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKPOLISH", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"STEELROLLER", &"SUBSTITUTE", &"SWAGGER", &"TELEKINESIS", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"PLUS", &"MINUS"])
+hidden_abilities = Array[StringName]([&"CLEARBODY"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_b57mm")]([SubResource("Resource_8btkc"), SubResource("Resource_w5emn")])
+height = 6
+weight = 510
+color = &"Gray"
+shape = &"MultiBody"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 14)
+id = &"KLANG"
+display_name = "Klang"

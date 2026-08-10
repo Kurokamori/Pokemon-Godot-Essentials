@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s0im5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cwa1f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_t8uiy"]
+
+[sub_resource type="Resource" id="Resource_r25ro"]
+script = ExtResource("1_s0im5")
+species = &"DREDNAW"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_un6r8"]
+script = ExtResource("2_cwa1f")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bpyjs"]
+script = ExtResource("2_cwa1f")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_tyjax"]
+script = ExtResource("2_cwa1f")
+level = 7
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_8edlh"]
+script = ExtResource("2_cwa1f")
+level = 14
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_tth05"]
+script = ExtResource("2_cwa1f")
+level = 21
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_w82td"]
+script = ExtResource("2_cwa1f")
+level = 28
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_3n1i8"]
+script = ExtResource("2_cwa1f")
+level = 35
+move = &"JAWLOCK"
+
+[sub_resource type="Resource" id="Resource_vy1gc"]
+script = ExtResource("2_cwa1f")
+level = 42
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_ud8tx"]
+script = ExtResource("2_cwa1f")
+level = 49
+move = &"BODYSLAM"
+
+[resource]
+resource_name = "CHEWTLE"
+script = ExtResource("3_t8uiy")
+species = &"CHEWTLE"
+category = "Snapping"
+pokedex_entry = "It starts off battles by attacking with its rock-hard horn, but as soon as the opponent flinches, this Pokémon bites down and never lets go."
+types = Array[StringName]([&"WATER"])
+base_hp = 50
+base_attack = 64
+base_defense = 50
+base_special_attack = 38
+base_special_defense = 38
+base_speed = 44
+ev_attack = 1
+base_exp = 57
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cwa1f")]([SubResource("Resource_un6r8"), SubResource("Resource_bpyjs"), SubResource("Resource_tyjax"), SubResource("Resource_8edlh"), SubResource("Resource_tth05"), SubResource("Resource_w82td"), SubResource("Resource_3n1i8"), SubResource("Resource_vy1gc"), SubResource("Resource_ud8tx")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"HYDROPUMP", &"ICEFANG", &"LIQUIDATION", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"ROUND", &"SCALESHOT", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"DRAGONTAIL", &"GASTROACID", &"SKULLBASH"])
+abilities = Array[StringName]([&"STRONGJAW", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_s0im5")]([SubResource("Resource_r25ro")])
+height = 3
+weight = 85
+color = &"Green"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-3, 27)
+shadow_size = 1
+id = &"CHEWTLE"
+display_name = "Chewtle"

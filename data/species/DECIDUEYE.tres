@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_r558k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xvqqc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_l1man"]
+
+[sub_resource type="Resource" id="Resource_x8lx0"]
+script = ExtResource("1_r558k")
+species = &"DARTRIX"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_g43lt"]
+script = ExtResource("2_xvqqc")
+level = 0
+move = &"SPIRITSHACKLE"
+
+[sub_resource type="Resource" id="Resource_iesd7"]
+script = ExtResource("2_xvqqc")
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_1sn6j"]
+script = ExtResource("2_xvqqc")
+move = &"LEAFSTORM"
+
+[sub_resource type="Resource" id="Resource_p8t7o"]
+script = ExtResource("2_xvqqc")
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_glwsq"]
+script = ExtResource("2_xvqqc")
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_wtqdh"]
+script = ExtResource("2_xvqqc")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_kakam"]
+script = ExtResource("2_xvqqc")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_hg4ob"]
+script = ExtResource("2_xvqqc")
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_76bma"]
+script = ExtResource("2_xvqqc")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_v2uwy"]
+script = ExtResource("2_xvqqc")
+level = 9
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_ccv5t"]
+script = ExtResource("2_xvqqc")
+level = 12
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_d1q15"]
+script = ExtResource("2_xvqqc")
+level = 15
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_fgpkq"]
+script = ExtResource("2_xvqqc")
+level = 20
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_fxxql"]
+script = ExtResource("2_xvqqc")
+level = 25
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_lj87p"]
+script = ExtResource("2_xvqqc")
+level = 30
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_4i5w7"]
+script = ExtResource("2_xvqqc")
+level = 37
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_q710n"]
+script = ExtResource("2_xvqqc")
+level = 44
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_a1mrr"]
+script = ExtResource("2_xvqqc")
+level = 51
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_buevb"]
+script = ExtResource("2_xvqqc")
+level = 58
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "DECIDUEYE"
+script = ExtResource("3_l1man")
+species = &"DECIDUEYE"
+category = "Arrow Quill"
+pokedex_entry = "It fires arrow quills from its wings with such precision, they can pierce a pebble at distances over a hundred yards."
+types = Array[StringName]([&"GRASS", &"GHOST"])
+base_hp = 78
+base_attack = 107
+base_defense = 75
+base_special_attack = 100
+base_special_defense = 100
+base_speed = 70
+ev_attack = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xvqqc")]([SubResource("Resource_g43lt"), SubResource("Resource_iesd7"), SubResource("Resource_1sn6j"), SubResource("Resource_p8t7o"), SubResource("Resource_glwsq"), SubResource("Resource_wtqdh"), SubResource("Resource_kakam"), SubResource("Resource_hg4ob"), SubResource("Resource_76bma"), SubResource("Resource_v2uwy"), SubResource("Resource_ccv5t"), SubResource("Resource_d1q15"), SubResource("Resource_fgpkq"), SubResource("Resource_fxxql"), SubResource("Resource_lj87p"), SubResource("Resource_4i5w7"), SubResource("Resource_q710n"), SubResource("Resource_a1mrr"), SubResource("Resource_buevb")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AIRSLASH", &"ATTRACT", &"BATONPASS", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FRENZYPLANT", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"HEX", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"IMPRISON", &"LASERFOCUS", &"LEAFBLADE", &"LEAFSTORM", &"LIGHTSCREEN", &"LOWSWEEP", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"PHANTOMFORCE", &"POLTERGEIST", &"PROTECT", &"PSYCHOCUT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SKITTERSMACK", &"SKYATTACK", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SPITE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TAILWIND", &"TOXIC", &"UTURN", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"LONGREACH"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_r558k")]([SubResource("Resource_x8lx0")])
+height = 16
+weight = 366
+color = &"Brown"
+shape = &"Winged"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 15)
+id = &"DECIDUEYE"
+display_name = "Decidueye"

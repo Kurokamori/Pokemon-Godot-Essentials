@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_m8qr4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_026mt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5g213"]
+
+[sub_resource type="Resource" id="Resource_ss3e4"]
+script = ExtResource("1_m8qr4")
+species = &"CORSOLA"
+method = &"Level"
+parameter = "38"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ep3js"]
+script = ExtResource("2_026mt")
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_uw4xn"]
+script = ExtResource("2_026mt")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_j2n7j"]
+script = ExtResource("2_026mt")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_43hnn"]
+script = ExtResource("2_026mt")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_ac37l"]
+script = ExtResource("2_026mt")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_1nd3w"]
+script = ExtResource("2_026mt")
+level = 15
+move = &"SPITE"
+
+[sub_resource type="Resource" id="Resource_fw2dc"]
+script = ExtResource("2_026mt")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_ea40p"]
+script = ExtResource("2_026mt")
+level = 25
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_5njhq"]
+script = ExtResource("2_026mt")
+level = 30
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_18ht3"]
+script = ExtResource("2_026mt")
+level = 35
+move = &"STRENGTHSAP"
+
+[sub_resource type="Resource" id="Resource_so6e2"]
+script = ExtResource("2_026mt")
+level = 40
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_gekov"]
+script = ExtResource("2_026mt")
+level = 45
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_7ipg2"]
+script = ExtResource("2_026mt")
+level = 50
+move = &"GRUDGE"
+
+[sub_resource type="Resource" id="Resource_qbfau"]
+script = ExtResource("2_026mt")
+level = 55
+move = &"MIRRORCOAT"
+
+[resource]
+resource_name = "CURSOLA"
+script = ExtResource("3_5g213")
+species = &"CURSOLA"
+category = "Coral"
+pokedex_entry = "Its shell is overflowing with its heightened otherworldly energy. The ectoplasm serves as protection for this Pokémon's core spirit."
+types = Array[StringName]([&"GHOST"])
+base_hp = 60
+base_attack = 95
+base_defense = 50
+base_special_attack = 145
+base_special_defense = 130
+base_speed = 30
+ev_special_attack = 2
+base_exp = 179
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_026mt")]([SubResource("Resource_ep3js"), SubResource("Resource_uw4xn"), SubResource("Resource_j2n7j"), SubResource("Resource_43hnn"), SubResource("Resource_ac37l"), SubResource("Resource_1nd3w"), SubResource("Resource_fw2dc"), SubResource("Resource_ea40p"), SubResource("Resource_5njhq"), SubResource("Resource_18ht3"), SubResource("Resource_so6e2"), SubResource("Resource_gekov"), SubResource("Resource_7ipg2"), SubResource("Resource_qbfau")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"BURNINGJEALOUSY", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HAIL", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"LEECHLIFE", &"LIGHTSCREEN", &"LIQUIDATION", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PINMISSILE", &"POLTERGEIST", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"REVENGE", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"THROATCHOP", &"WHIRLPOOL", &"WILLOWISP"])
+egg_moves = Array[StringName]([&"CONFUSERAY", &"DESTINYBOND", &"HAZE", &"HEADSMASH", &"NATUREPOWER", &"WATERPULSE"])
+abilities = Array[StringName]([&"WEAKARMOR"])
+hidden_abilities = Array[StringName]([&"PERISHBODY"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_m8qr4")]([SubResource("Resource_ss3e4")])
+height = 10
+weight = 4
+color = &"White"
+shape = &"HeadArms"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(2, 9)
+id = &"CURSOLA"
+display_name = "Cursola"
+flags = Array[StringName]([&"DefaultForm_1", &"InheritFormWithEverStone"])

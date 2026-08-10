@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_6fljm"]
+
+[resource]
+resource_name = "SNOWCLOAK"
+script = ExtResource("1_6fljm")
+description = "Raises evasion in a hailstorm."
+id = &"SNOWCLOAK"
+display_name = "Snow Cloak"

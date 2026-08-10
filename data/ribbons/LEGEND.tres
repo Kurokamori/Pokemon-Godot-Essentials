@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_6t6nh"]
+
+[resource]
+resource_name = "LEGEND"
+script = ExtResource("1_6t6nh")
+icon_position = 52
+description = "A Ribbon awarded for setting a legendary record."
+id = &"LEGEND"
+display_name = "Legend Ribbon"

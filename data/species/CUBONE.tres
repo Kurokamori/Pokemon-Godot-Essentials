@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_eyikv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vpqsr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_w0idd"]
+
+[sub_resource type="Resource" id="Resource_jwsx5"]
+script = ExtResource("1_eyikv")
+species = &"MAROWAK"
+method = &"Level"
+parameter = "28"
+
+[sub_resource type="Resource" id="Resource_w8mr5"]
+script = ExtResource("2_vpqsr")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_6bvnf"]
+script = ExtResource("2_vpqsr")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_01u7l"]
+script = ExtResource("2_vpqsr")
+level = 4
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_eivok"]
+script = ExtResource("2_vpqsr")
+level = 8
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_utooy"]
+script = ExtResource("2_vpqsr")
+level = 12
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_aba4u"]
+script = ExtResource("2_vpqsr")
+level = 16
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_aipi6"]
+script = ExtResource("2_vpqsr")
+level = 20
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_xf6w5"]
+script = ExtResource("2_vpqsr")
+level = 24
+move = &"STOMPINGTANTRUM"
+
+[sub_resource type="Resource" id="Resource_jl4if"]
+script = ExtResource("2_vpqsr")
+level = 29
+move = &"BONERUSH"
+
+[sub_resource type="Resource" id="Resource_tvwrj"]
+script = ExtResource("2_vpqsr")
+level = 32
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_0tfdg"]
+script = ExtResource("2_vpqsr")
+level = 36
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_fr76d"]
+script = ExtResource("2_vpqsr")
+level = 40
+move = &"BONEMERANG"
+
+[sub_resource type="Resource" id="Resource_di3ij"]
+script = ExtResource("2_vpqsr")
+level = 44
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_lwh4s"]
+script = ExtResource("2_vpqsr")
+level = 48
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "CUBONE"
+script = ExtResource("3_w0idd")
+species = &"CUBONE"
+category = "Lonely"
+pokedex_entry = "It pines for the mother it will never see again. Seeing a likeness of its mother in the full moon, it cries. The stains on the skull it wears are from its tears."
+types = Array[StringName]([&"GROUND"])
+base_hp = 50
+base_attack = 50
+base_defense = 95
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 35
+ev_defense = 1
+base_exp = 64
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vpqsr")]([SubResource("Resource_w8mr5"), SubResource("Resource_6bvnf"), SubResource("Resource_01u7l"), SubResource("Resource_eivok"), SubResource("Resource_utooy"), SubResource("Resource_aba4u"), SubResource("Resource_aipi6"), SubResource("Resource_xf6w5"), SubResource("Resource_jl4if"), SubResource("Resource_tvwrj"), SubResource("Resource_0tfdg"), SubResource("Resource_fr76d"), SubResource("Resource_di3ij"), SubResource("Resource_lwh4s")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THIEF", &"THUNDERPUNCH", &"UPROAR"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"BELLYDRUM", &"CURSE", &"DETECT", &"DOUBLEKICK", &"IRONHEAD", &"LEER", &"PERISHSONG", &"SCREECH", &"SKULLBASH"])
+abilities = Array[StringName]([&"ROCKHEAD", &"LIGHTNINGROD"])
+hidden_abilities = Array[StringName]([&"BATTLEARMOR"])
+wild_item_uncommon = Array[StringName]([&"THICKCLUB"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_eyikv")]([SubResource("Resource_jwsx5")])
+height = 4
+weight = 65
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"CUBONE"
+display_name = "Cubone"

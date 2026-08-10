@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_yrhpg"]
+
+[resource]
+resource_name = "MEGARING"
+script = ExtResource("1_yrhpg")
+name_plural = "Mega Rings"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "This ring contains an untold power that somehow enables Pokémon carrying Mega Stones to Mega Evolve."
+id = &"MEGARING"
+display_name = "Mega Ring"
+flags = Array[StringName]([&"KeyItem", &"MegaRing"])

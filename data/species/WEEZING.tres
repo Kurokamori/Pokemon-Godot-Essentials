@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_iigyb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qs671"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fvnsf"]
+
+[sub_resource type="Resource" id="Resource_4qgwx"]
+script = ExtResource("1_iigyb")
+species = &"KOFFING"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_x64x8"]
+script = ExtResource("2_qs671")
+level = 0
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_wg7dh"]
+script = ExtResource("2_qs671")
+move = &"HEATWAVE"
+
+[sub_resource type="Resource" id="Resource_86atn"]
+script = ExtResource("2_qs671")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_7x5s2"]
+script = ExtResource("2_qs671")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_fe8cl"]
+script = ExtResource("2_qs671")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_qa8db"]
+script = ExtResource("2_qs671")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_r65m5"]
+script = ExtResource("2_qs671")
+level = 12
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_4vmy1"]
+script = ExtResource("2_qs671")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_g1c3v"]
+script = ExtResource("2_qs671")
+level = 20
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_egbvr"]
+script = ExtResource("2_qs671")
+level = 24
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_psjbq"]
+script = ExtResource("2_qs671")
+level = 28
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_4mndp"]
+script = ExtResource("2_qs671")
+level = 32
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_m3j5i"]
+script = ExtResource("2_qs671")
+level = 38
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_eromo"]
+script = ExtResource("2_qs671")
+level = 44
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_6a7y4"]
+script = ExtResource("2_qs671")
+level = 50
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_ui8sl"]
+script = ExtResource("2_qs671")
+level = 56
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_jy77m"]
+script = ExtResource("2_qs671")
+level = 62
+move = &"DESTINYBOND"
+
+[resource]
+resource_name = "WEEZING"
+script = ExtResource("3_fvnsf")
+species = &"WEEZING"
+category = "Poison Gas"
+pokedex_entry = "By diluting its toxic gases with a special process, the highest grade of perfume can be made. To Weezing, gases emanating from garbage are the ultimate feast."
+types = Array[StringName]([&"POISON"])
+base_hp = 65
+base_attack = 90
+base_defense = 120
+base_special_attack = 85
+base_special_defense = 70
+base_speed = 60
+ev_defense = 2
+base_exp = 172
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_qs671")]([SubResource("Resource_x64x8"), SubResource("Resource_wg7dh"), SubResource("Resource_86atn"), SubResource("Resource_7x5s2"), SubResource("Resource_fe8cl"), SubResource("Resource_qa8db"), SubResource("Resource_r65m5"), SubResource("Resource_4vmy1"), SubResource("Resource_g1c3v"), SubResource("Resource_egbvr"), SubResource("Resource_psjbq"), SubResource("Resource_4mndp"), SubResource("Resource_m3j5i"), SubResource("Resource_eromo"), SubResource("Resource_6a7y4"), SubResource("Resource_ui8sl"), SubResource("Resource_jy77m")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"DARKPULSE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"TOXIC", &"TOXICSPIKES", &"UPROAR", &"VENOMDRENCH", &"VENOSHOCK", &"WILLOWISP"])
+abilities = Array[StringName]([&"LEVITATE", &"NEUTRALIZINGGAS"])
+hidden_abilities = Array[StringName]([&"STENCH"])
+wild_item_uncommon = Array[StringName]([&"SMOKEBALL"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_iigyb")]([SubResource("Resource_4qgwx")])
+height = 12
+weight = 95
+color = &"Purple"
+shape = &"MultiBody"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 7)
+id = &"WEEZING"
+display_name = "Weezing"

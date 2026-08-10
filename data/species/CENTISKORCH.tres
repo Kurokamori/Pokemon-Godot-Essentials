@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5qo1h"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8ya1d"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xqvuh"]
+
+[sub_resource type="Resource" id="Resource_vw6tf"]
+script = ExtResource("1_5qo1h")
+species = &"SIZZLIPEDE"
+method = &"Level"
+parameter = "28"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7cs0v"]
+script = ExtResource("2_8ya1d")
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_f64wd"]
+script = ExtResource("2_8ya1d")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_g23wx"]
+script = ExtResource("2_8ya1d")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_yy070"]
+script = ExtResource("2_8ya1d")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_2ngls"]
+script = ExtResource("2_8ya1d")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ynohy"]
+script = ExtResource("2_8ya1d")
+level = 15
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_gc3nw"]
+script = ExtResource("2_8ya1d")
+level = 20
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_c3p84"]
+script = ExtResource("2_8ya1d")
+level = 25
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_mdvmp"]
+script = ExtResource("2_8ya1d")
+level = 32
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_jvj3m"]
+script = ExtResource("2_8ya1d")
+level = 39
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_qecrq"]
+script = ExtResource("2_8ya1d")
+level = 46
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_e0jgh"]
+script = ExtResource("2_8ya1d")
+level = 53
+move = &"FIRELASH"
+
+[sub_resource type="Resource" id="Resource_isbhh"]
+script = ExtResource("2_8ya1d")
+level = 60
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_txapp"]
+script = ExtResource("2_8ya1d")
+level = 67
+move = &"BURNUP"
+
+[resource]
+resource_name = "CENTISKORCH"
+script = ExtResource("3_xqvuh")
+species = &"CENTISKORCH"
+category = "Radiator"
+pokedex_entry = "While its burning body is already dangerous on its own, this excessively hostile Pokémon also has large and very sharp fangs."
+types = Array[StringName]([&"FIRE", &"BUG"])
+base_hp = 100
+base_attack = 115
+base_defense = 65
+base_special_attack = 90
+base_special_defense = 90
+base_speed = 65
+ev_attack = 2
+base_exp = 184
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8ya1d")]([SubResource("Resource_7cs0v"), SubResource("Resource_f64wd"), SubResource("Resource_g23wx"), SubResource("Resource_yy070"), SubResource("Resource_2ngls"), SubResource("Resource_ynohy"), SubResource("Resource_gc3nw"), SubResource("Resource_c3p84"), SubResource("Resource_mdvmp"), SubResource("Resource_jvj3m"), SubResource("Resource_qecrq"), SubResource("Resource_e0jgh"), SubResource("Resource_isbhh"), SubResource("Resource_txapp")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BRUTALSWING", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIRESPIN", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"GIGAIMPACT", &"HEATCRASH", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"LEECHLIFE", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCORCHINGSANDS", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERFANG", &"TOXIC", &"VENOSHOCK", &"WILLOWISP", &"XSCISSOR"])
+abilities = Array[StringName]([&"FLASHFIRE", &"WHITESMOKE"])
+hidden_abilities = Array[StringName]([&"FLAMEBODY"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5qo1h")]([SubResource("Resource_vw6tf")])
+height = 30
+weight = 1200
+shape = &"Multiped"
+generation = 8
+back_sprite_offset = Vector2i(5, 44)
+front_sprite_offset = Vector2i(5, 16)
+id = &"CENTISKORCH"
+display_name = "Centiskorch"

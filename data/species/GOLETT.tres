@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5t1in"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_o2hbu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_htkgp"]
+
+[sub_resource type="Resource" id="Resource_uurjt"]
+script = ExtResource("1_5t1in")
+species = &"GOLURK"
+method = &"Level"
+parameter = "43"
+
+[sub_resource type="Resource" id="Resource_0wjeo"]
+script = ExtResource("2_o2hbu")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_y7dfo"]
+script = ExtResource("2_o2hbu")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_katb8"]
+script = ExtResource("2_o2hbu")
+level = 4
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_ealqk"]
+script = ExtResource("2_o2hbu")
+level = 8
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_6ojg8"]
+script = ExtResource("2_o2hbu")
+level = 12
+move = &"SHADOWPUNCH"
+
+[sub_resource type="Resource" id="Resource_6v08j"]
+script = ExtResource("2_o2hbu")
+level = 16
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_nv58e"]
+script = ExtResource("2_o2hbu")
+level = 20
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_22brl"]
+script = ExtResource("2_o2hbu")
+level = 24
+move = &"STOMPINGTANTRUM"
+
+[sub_resource type="Resource" id="Resource_awtbx"]
+script = ExtResource("2_o2hbu")
+level = 28
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_fi3n5"]
+script = ExtResource("2_o2hbu")
+level = 32
+move = &"MEGAPUNCH"
+
+[sub_resource type="Resource" id="Resource_o0hl7"]
+script = ExtResource("2_o2hbu")
+level = 36
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_6qxhe"]
+script = ExtResource("2_o2hbu")
+level = 40
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_0ytuw"]
+script = ExtResource("2_o2hbu")
+level = 44
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_scx2y"]
+script = ExtResource("2_o2hbu")
+level = 48
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_5w5t0"]
+script = ExtResource("2_o2hbu")
+level = 52
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_ilyk6"]
+script = ExtResource("2_o2hbu")
+level = 56
+move = &"DYNAMICPUNCH"
+
+[resource]
+resource_name = "GOLETT"
+script = ExtResource("3_htkgp")
+species = &"GOLETT"
+category = "Automaton"
+pokedex_entry = "These Pokémon are thought to have been created by the science of an ancient and mysterious civilization."
+types = Array[StringName]([&"GROUND", &"GHOST"])
+base_hp = 59
+base_attack = 74
+base_defense = 50
+base_special_attack = 35
+base_special_defense = 50
+base_speed = 35
+ev_attack = 1
+base_exp = 61
+gender_ratio = &"Genderless"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_o2hbu")]([SubResource("Resource_0wjeo"), SubResource("Resource_y7dfo"), SubResource("Resource_katb8"), SubResource("Resource_ealqk"), SubResource("Resource_6ojg8"), SubResource("Resource_6v08j"), SubResource("Resource_nv58e"), SubResource("Resource_22brl"), SubResource("Resource_awtbx"), SubResource("Resource_fi3n5"), SubResource("Resource_o0hl7"), SubResource("Resource_6qxhe"), SubResource("Resource_0ytuw"), SubResource("Resource_scx2y"), SubResource("Resource_5w5t0"), SubResource("Resource_ilyk6")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"BLOCK", &"BRICKBREAK", &"BULLDOZE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HEAVYSLAM", &"HELPINGHAND", &"HIDDENPOWER", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"IRONDEFENSE", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PHANTOMFORCE", &"POLTERGEIST", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SCORCHINGSANDS", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"TOXIC"])
+abilities = Array[StringName]([&"IRONFIST", &"KLUTZ"])
+hidden_abilities = Array[StringName]([&"NOGUARD"])
+wild_item_uncommon = Array[StringName]([&"LIGHTCLAY"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_5t1in")]([SubResource("Resource_uurjt")])
+height = 10
+weight = 920
+color = &"Green"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 22)
+id = &"GOLETT"
+display_name = "Golett"

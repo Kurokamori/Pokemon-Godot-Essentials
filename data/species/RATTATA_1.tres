@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_j41t0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_upss6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_02db5"]
+
+[sub_resource type="Resource" id="Resource_udwi8"]
+script = ExtResource("1_j41t0")
+species = &"RATICATE"
+method = &"LevelNight"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_1r2rc"]
+script = ExtResource("2_upss6")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ki52h"]
+script = ExtResource("2_upss6")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_vyu8j"]
+script = ExtResource("2_upss6")
+level = 4
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_sb6iu"]
+script = ExtResource("2_upss6")
+level = 7
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_epvc3"]
+script = ExtResource("2_upss6")
+level = 10
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_yfq5x"]
+script = ExtResource("2_upss6")
+level = 13
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_lxmvq"]
+script = ExtResource("2_upss6")
+level = 16
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_pk2pv"]
+script = ExtResource("2_upss6")
+level = 19
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_ry5vh"]
+script = ExtResource("2_upss6")
+level = 22
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_421im"]
+script = ExtResource("2_upss6")
+level = 25
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_b5s4x"]
+script = ExtResource("2_upss6")
+level = 28
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_lopkc"]
+script = ExtResource("2_upss6")
+level = 31
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_kc2k6"]
+script = ExtResource("2_upss6")
+level = 34
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "RATTATA_1"
+script = ExtResource("3_02db5")
+species = &"RATTATA"
+form = 1
+form_name = "Alolan"
+category = "Mouse"
+pokedex_entry = "With its incisors, it gnaws through doors and infiltrates people's homes. Then, with a twitch of its whiskers, it steals whatever food it finds."
+pokedex_form = 1
+types = Array[StringName]([&"DARK", &"NORMAL"])
+base_hp = 30
+base_attack = 56
+base_defense = 35
+base_special_attack = 25
+base_special_defense = 35
+base_speed = 72
+ev_speed = 1
+base_exp = 51
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_upss6")]([SubResource("Resource_1r2rc"), SubResource("Resource_ki52h"), SubResource("Resource_vyu8j"), SubResource("Resource_sb6iu"), SubResource("Resource_epvc3"), SubResource("Resource_yfq5x"), SubResource("Resource_lxmvq"), SubResource("Resource_pk2pv"), SubResource("Resource_ry5vh"), SubResource("Resource_421im"), SubResource("Resource_b5s4x"), SubResource("Resource_lopkc"), SubResource("Resource_kc2k6")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DARKPULSE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EMBARGO", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"TORMENT", &"UPROAR", &"UTURN", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"COUNTER", &"FINALGAMBIT", &"FURYSWIPES", &"MEFIRST", &"REVENGE", &"REVERSAL", &"SNATCH", &"STOCKPILE", &"SWALLOW", &"SWITCHEROO", &"UPROAR"])
+abilities = Array[StringName]([&"GLUTTONY", &"HUSTLE"])
+hidden_abilities = Array[StringName]([&"THICKFAT"])
+wild_item_uncommon = Array[StringName]([&"PECHABERRY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_j41t0")]([SubResource("Resource_udwi8")])
+height = 3
+weight = 38
+color = &"Black"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(4, 26)
+shadow_size = 1
+id = &"RATTATA_1"
+display_name = "Rattata"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

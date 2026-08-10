@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5hx7d"]
+
+[resource]
+resource_name = "HEATROCK"
+script = ExtResource("1_5hx7d")
+name_plural = "Heat Rocks"
+price = 4000
+sell_price = 2000
+bp_price = 15
+description = "A Pokémon held item that extends the duration of the move Sunny Day used by the holder."
+id = &"HEATROCK"
+display_name = "Heat Rock"
+flags = Array[StringName]([&"Fling_60"])

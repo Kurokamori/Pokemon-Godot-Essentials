@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_4p0xl"]
+
+[resource]
+resource_name = "LIQUIDOOZE"
+script = ExtResource("1_4p0xl")
+description = "Damages attackers using any draining move."
+id = &"LIQUIDOOZE"
+display_name = "Liquid Ooze"

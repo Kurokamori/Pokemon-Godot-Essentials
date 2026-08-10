@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ajgjr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8a4v4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_t2jmi"]
+
+[sub_resource type="Resource" id="Resource_amrnx"]
+script = ExtResource("1_ajgjr")
+species = &"DOUBLADE"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_tdmwp"]
+script = ExtResource("2_8a4v4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_hlqya"]
+script = ExtResource("2_8a4v4")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_t2y0r"]
+script = ExtResource("2_8a4v4")
+level = 4
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_juh6e"]
+script = ExtResource("2_8a4v4")
+level = 8
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_ielxf"]
+script = ExtResource("2_8a4v4")
+level = 12
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_jbycv"]
+script = ExtResource("2_8a4v4")
+level = 16
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_dh3nf"]
+script = ExtResource("2_8a4v4")
+level = 20
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_pfkn5"]
+script = ExtResource("2_8a4v4")
+level = 24
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_4n2sn"]
+script = ExtResource("2_8a4v4")
+level = 28
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_ovywe"]
+script = ExtResource("2_8a4v4")
+level = 32
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_dbgyk"]
+script = ExtResource("2_8a4v4")
+level = 36
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_yrrx2"]
+script = ExtResource("2_8a4v4")
+level = 40
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_8cmm0"]
+script = ExtResource("2_8a4v4")
+level = 44
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_63p7w"]
+script = ExtResource("2_8a4v4")
+level = 48
+move = &"SACREDSWORD"
+
+[resource]
+resource_name = "HONEDGE"
+script = ExtResource("3_t2jmi")
+species = &"HONEDGE"
+category = "Sword"
+pokedex_entry = "Apparently this Pokémon is born when a departed spirit inhabits a sword. It attaches itself to people and drinks their life force."
+types = Array[StringName]([&"STEEL", &"GHOST"])
+base_hp = 45
+base_attack = 80
+base_defense = 100
+base_special_attack = 35
+base_special_defense = 37
+base_speed = 28
+ev_defense = 1
+base_exp = 65
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8a4v4")]([SubResource("Resource_tdmwp"), SubResource("Resource_hlqya"), SubResource("Resource_t2y0r"), SubResource("Resource_juh6e"), SubResource("Resource_ielxf"), SubResource("Resource_jbycv"), SubResource("Resource_dh3nf"), SubResource("Resource_pfkn5"), SubResource("Resource_4n2sn"), SubResource("Resource_ovywe"), SubResource("Resource_dbgyk"), SubResource("Resource_yrrx2"), SubResource("Resource_8cmm0"), SubResource("Resource_63p7w")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FRUSTRATION", &"GYROBALL", &"HIDDENPOWER", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHOCUT", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBLADE", &"SPITE", &"STEELBEAM", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TOXIC"])
+egg_moves = Array[StringName]([&"BLOCK", &"DESTINYBOND", &"WIDEGUARD"])
+abilities = Array[StringName]([&"NOGUARD"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ajgjr")]([SubResource("Resource_amrnx")])
+height = 8
+weight = 20
+color = &"Brown"
+shape = &"HeadBase"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 18)
+id = &"HONEDGE"
+display_name = "Honedge"

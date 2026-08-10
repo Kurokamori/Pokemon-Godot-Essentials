@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_0pybr"]
+
+[resource]
+resource_name = "MOVE_HEADBUTT"
+script = ExtResource("1_0pybr")
+graphic = "003-Attack01"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 94, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 94, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 94, 100, 100, 90, 0, 1, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 94, 100, 100, 0, 0, 2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 94, 120, 120, 0, 0, 2, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 94, 120, 120, 0, 0, 2, 100, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(0)
+timing_sounds = PackedStringArray("Blow3")
+timing_volumes = PackedInt32Array(80)
+timing_pitches = PackedInt32Array(100)
+id = &"MOVE_HEADBUTT"
+display_name = "Move:HEADBUTT"

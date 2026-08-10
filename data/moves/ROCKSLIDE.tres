@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2y2nn"]
+
+[resource]
+resource_name = "ROCKSLIDE"
+script = ExtResource("1_2y2nn")
+type = &"ROCK"
+category = 0
+power = 75
+accuracy = 90
+total_pp = 10
+target = &"AllNearFoes"
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "Large boulders are hurled at the foes to inflict damage. It may also make the targets flinch."
+id = &"ROCKSLIDE"
+display_name = "Rock Slide"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

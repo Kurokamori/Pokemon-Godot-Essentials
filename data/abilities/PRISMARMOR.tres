@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_3nly8"]
+
+[resource]
+resource_name = "PRISMARMOR"
+script = ExtResource("1_3nly8")
+description = "Reduces damage from super-effective attacks."
+id = &"PRISMARMOR"
+display_name = "Prism Armor"

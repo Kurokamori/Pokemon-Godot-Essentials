@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_jdbrj"]
+
+[resource]
+resource_name = "HM05"
+script = ExtResource("1_jdbrj")
+name_plural = "HM05s"
+pocket = 4
+field_use = 4
+consumable = false
+show_quantity = false
+move = &"WATERFALL"
+description = "The user charges at the target and may make it flinch. It can also be used to climb a waterfall."
+id = &"HM05"
+display_name = "HM05"

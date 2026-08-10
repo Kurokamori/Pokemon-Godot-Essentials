@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_gcdwr"]
+
+[resource]
+resource_name = "DELTASTREAM"
+script = ExtResource("1_gcdwr")
+description = "Alters weather to remove Flying-type's weaknesses."
+id = &"DELTASTREAM"
+display_name = "Delta Stream"

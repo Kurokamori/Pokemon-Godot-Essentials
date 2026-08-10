@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_8e4rj"]
+
+[resource]
+resource_name = "FIERYDANCE"
+script = ExtResource("1_8e4rj")
+type = &"FIRE"
+category = 1
+power = 80
+total_pp = 10
+function_code = &"RaiseUserSpAtk1"
+effect_chance = 50
+description = "Cloaked in flames, the user dances and flaps its wings. It may also raise the user's Sp. Atk stat."
+id = &"FIERYDANCE"
+display_name = "Fiery Dance"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Dance"])

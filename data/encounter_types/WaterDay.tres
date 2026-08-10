@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EncounterTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_type_data.gd" id="1_wad6m"]
+
+[resource]
+resource_name = "WaterDay"
+script = ExtResource("1_wad6m")
+kind = 3
+trigger_chance = 2
+id = &"WaterDay"
+display_name = "WaterDay"

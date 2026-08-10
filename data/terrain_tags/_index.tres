@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_tvdc5"]
+
+[resource]
+script = ExtResource("1_tvdc5")
+category = &"terrain_tags"
+record_script = "res://src/data/terrain_tag_data.gd"
+paths = {
+&"Bridge": "res://data/terrain_tags/Bridge.tres",
+&"DeepWater": "res://data/terrain_tags/DeepWater.tres",
+&"DoubleGrass": "res://data/terrain_tags/DoubleGrass.tres",
+&"Grass": "res://data/terrain_tags/Grass.tres",
+&"Ice": "res://data/terrain_tags/Ice.tres",
+&"Ledge": "res://data/terrain_tags/Ledge.tres",
+&"Neutral": "res://data/terrain_tags/Neutral.tres",
+&"NoEffect": "res://data/terrain_tags/NoEffect.tres",
+&"None": "res://data/terrain_tags/None.tres",
+&"Puddle": "res://data/terrain_tags/Puddle.tres",
+&"Rock": "res://data/terrain_tags/Rock.tres",
+&"Sand": "res://data/terrain_tags/Sand.tres",
+&"SootGrass": "res://data/terrain_tags/SootGrass.tres",
+&"StillWater": "res://data/terrain_tags/StillWater.tres",
+&"TallGrass": "res://data/terrain_tags/TallGrass.tres",
+&"UnderwaterGrass": "res://data/terrain_tags/UnderwaterGrass.tres",
+&"Water": "res://data/terrain_tags/Water.tres",
+&"Waterfall": "res://data/terrain_tags/Waterfall.tres",
+&"WaterfallCrest": "res://data/terrain_tags/WaterfallCrest.tres"
+}
+ordered_ids = Array[StringName]([&"None", &"Ledge", &"Grass", &"Sand", &"Rock", &"DeepWater", &"StillWater", &"Water", &"Waterfall", &"WaterfallCrest", &"TallGrass", &"UnderwaterGrass", &"Ice", &"Neutral", &"SootGrass", &"Bridge", &"Puddle", &"NoEffect", &"DoubleGrass"])

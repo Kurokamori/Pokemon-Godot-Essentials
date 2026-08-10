@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_iy8co"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2q47q"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lx25u"]
+
+[sub_resource type="Resource" id="Resource_6pxeg"]
+script = ExtResource("1_iy8co")
+species = &"AURORUS"
+method = &"LevelNight"
+parameter = "39"
+
+[sub_resource type="Resource" id="Resource_7v321"]
+script = ExtResource("2_2q47q")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_855bi"]
+script = ExtResource("2_2q47q")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_xltyh"]
+script = ExtResource("2_2q47q")
+level = 4
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_p8m2e"]
+script = ExtResource("2_2q47q")
+level = 8
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_roriy"]
+script = ExtResource("2_2q47q")
+level = 12
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_2xj2j"]
+script = ExtResource("2_2q47q")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_v5fx4"]
+script = ExtResource("2_2q47q")
+level = 20
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_dc7fi"]
+script = ExtResource("2_2q47q")
+level = 24
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_2xg8a"]
+script = ExtResource("2_2q47q")
+level = 28
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_xrctd"]
+script = ExtResource("2_2q47q")
+level = 32
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_3p8ph"]
+script = ExtResource("2_2q47q")
+level = 36
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_0wfau"]
+script = ExtResource("2_2q47q")
+level = 40
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_118oe"]
+script = ExtResource("2_2q47q")
+level = 44
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_5oy73"]
+script = ExtResource("2_2q47q")
+level = 48
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_h71ey"]
+script = ExtResource("2_2q47q")
+level = 52
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_1tgkq"]
+script = ExtResource("2_2q47q")
+level = 56
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "AMAURA"
+script = ExtResource("3_lx25u")
+species = &"AMAURA"
+category = "Tundra"
+pokedex_entry = "This ancient Pokémon was restored from part of its body that had been frozen in ice for over 100 million years."
+types = Array[StringName]([&"ROCK", &"ICE"])
+base_hp = 77
+base_attack = 59
+base_defense = 50
+base_special_attack = 67
+base_special_defense = 63
+base_speed = 46
+ev_hp = 1
+base_exp = 72
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2q47q")]([SubResource("Resource_7v321"), SubResource("Resource_855bi"), SubResource("Resource_xltyh"), SubResource("Resource_p8m2e"), SubResource("Resource_roriy"), SubResource("Resource_2xj2j"), SubResource("Resource_v5fx4"), SubResource("Resource_dc7fi"), SubResource("Resource_2xg8a"), SubResource("Resource_xrctd"), SubResource("Resource_3p8ph"), SubResource("Resource_0wfau"), SubResource("Resource_118oe"), SubResource("Resource_5oy73"), SubResource("Resource_h71ey"), SubResource("Resource_1tgkq")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DRAGONTAIL", &"DREAMEATER", &"EARTHPOWER", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FROSTBREATH", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LIGHTSCREEN", &"MAGNETRISE", &"METEORBEAM", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"NATUREPOWER", &"OUTRAGE", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"WATERPULSE", &"WEATHERBALL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AURORAVEIL", &"DISCHARGE", &"HAZE", &"MIRRORCOAT", &"ROCKTHROW", &"TAKEDOWN"])
+abilities = Array[StringName]([&"REFRIGERATE"])
+hidden_abilities = Array[StringName]([&"SNOWWARNING"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_iy8co")]([SubResource("Resource_6pxeg")])
+height = 13
+weight = 252
+color = &"Blue"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(-4, 46)
+front_sprite_offset = Vector2i(-1, 23)
+shadow_size = 1
+id = &"AMAURA"
+display_name = "Amaura"

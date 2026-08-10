@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_cx6ms"]
+
+[resource]
+resource_name = "PAIRABILITY"
+script = ExtResource("1_cx6ms")
+icon_position = 46
+description = "A Ribbon awarded for completing the Battle Tower Link Multi challenge."
+id = &"PAIRABILITY"
+display_name = "Pair Ability Ribbon"

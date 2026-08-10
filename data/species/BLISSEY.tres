@@ -1,0 +1,148 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5vbvw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pba75"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_84u32"]
+
+[sub_resource type="Resource" id="Resource_05lb1"]
+script = ExtResource("1_5vbvw")
+species = &"CHANSEY"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_2yvdp"]
+script = ExtResource("2_pba75")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_k8xon"]
+script = ExtResource("2_pba75")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_djdxb"]
+script = ExtResource("2_pba75")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_ovwml"]
+script = ExtResource("2_pba75")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_hnjun"]
+script = ExtResource("2_pba75")
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_35kpw"]
+script = ExtResource("2_pba75")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_wulw5"]
+script = ExtResource("2_pba75")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_5k815"]
+script = ExtResource("2_pba75")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_j2i8v"]
+script = ExtResource("2_pba75")
+level = 4
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_ihm48"]
+script = ExtResource("2_pba75")
+level = 8
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_ls2dm"]
+script = ExtResource("2_pba75")
+level = 12
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_rhpj0"]
+script = ExtResource("2_pba75")
+level = 16
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_24ae0"]
+script = ExtResource("2_pba75")
+level = 20
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_fxjpu"]
+script = ExtResource("2_pba75")
+level = 24
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_kig54"]
+script = ExtResource("2_pba75")
+level = 28
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_hslwn"]
+script = ExtResource("2_pba75")
+level = 32
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_ccr6w"]
+script = ExtResource("2_pba75")
+level = 36
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_jsu8l"]
+script = ExtResource("2_pba75")
+level = 40
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_rv4en"]
+script = ExtResource("2_pba75")
+level = 44
+move = &"SOFTBOILED"
+
+[sub_resource type="Resource" id="Resource_yr627"]
+script = ExtResource("2_pba75")
+level = 48
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_s5lno"]
+script = ExtResource("2_pba75")
+level = 52
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "BLISSEY"
+script = ExtResource("3_84u32")
+species = &"BLISSEY"
+category = "Happiness"
+pokedex_entry = "If it senses sadness with its fluffy fur, a Blissey will rush over to the sad person, however far away, to share an egg of happiness that brings a smile to any face."
+base_hp = 255
+base_attack = 10
+base_defense = 10
+base_special_attack = 75
+base_special_defense = 135
+base_speed = 55
+ev_hp = 3
+base_exp = 635
+growth_rate = &"Fast"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 30
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_pba75")]([SubResource("Resource_2yvdp"), SubResource("Resource_k8xon"), SubResource("Resource_djdxb"), SubResource("Resource_ovwml"), SubResource("Resource_hnjun"), SubResource("Resource_35kpw"), SubResource("Resource_wulw5"), SubResource("Resource_5k815"), SubResource("Resource_j2i8v"), SubResource("Resource_ihm48"), SubResource("Resource_ls2dm"), SubResource("Resource_rhpj0"), SubResource("Resource_24ae0"), SubResource("Resource_fxjpu"), SubResource("Resource_kig54"), SubResource("Resource_hslwn"), SubResource("Resource_ccr6w"), SubResource("Resource_jsu8l"), SubResource("Resource_rv4en"), SubResource("Resource_yr627"), SubResource("Resource_s5lno")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOFTBOILED", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIATTACK", &"UPROAR", &"WATERPULSE", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"NATURALCURE", &"SERENEGRACE"])
+hidden_abilities = Array[StringName]([&"HEALER"])
+wild_item_common = Array[StringName]([&"LUCKYEGG"])
+wild_item_uncommon = Array[StringName]([&"LUCKYEGG"])
+wild_item_rare = Array[StringName]([&"LUCKYEGG"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_5vbvw")]([SubResource("Resource_05lb1")])
+height = 15
+weight = 468
+color = &"Pink"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(1, 24)
+shadow_size = 1
+id = &"BLISSEY"
+display_name = "Blissey"

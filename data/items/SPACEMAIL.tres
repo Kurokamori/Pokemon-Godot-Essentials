@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_m3tud"]
+
+[resource]
+resource_name = "SPACEMAIL"
+script = ExtResource("1_m3tud")
+name_plural = "Space Mail"
+portion_name = "piece of Space Mail"
+portion_name_plural = "pieces of Space Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print depicting the huge expanse of space. Let a Pokémon hold it for delivery."
+id = &"SPACEMAIL"
+display_name = "Space Mail"
+flags = Array[StringName]([&"IconMail"])

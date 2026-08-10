@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3d47o"]
+
+[resource]
+resource_name = "ELECTRIFY"
+script = ExtResource("1_3d47o")
+type = &"ELECTRIC"
+accuracy = 0
+total_pp = 20
+function_code = &"TargetMovesBecomeElectric"
+description = "If the target uses a move after being electrified, that move becomes Electric-type."
+id = &"ELECTRIFY"
+display_name = "Electrify"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_k1mrv"]
+
+[resource]
+resource_name = "AIRBALLOON"
+script = ExtResource("1_k1mrv")
+name_plural = "Air Balloons"
+price = 3000
+sell_price = 2000
+bp_price = 15
+description = "An item to be held by a Pokémon. The holder will float in the air until hit. Once hit, this item will burst."
+id = &"AIRBALLOON"
+display_name = "Air Balloon"
+flags = Array[StringName]([&"Fling_10"])

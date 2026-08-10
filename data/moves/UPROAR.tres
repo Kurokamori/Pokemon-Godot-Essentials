@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_m6tlh"]
+
+[resource]
+resource_name = "UPROAR"
+script = ExtResource("1_m6tlh")
+category = 1
+power = 90
+total_pp = 10
+target = &"RandomNearFoe"
+function_code = &"MultiTurnAttackPreventSleeping"
+description = "The user attacks in an uproar for three turns. Over that time, no one can fall asleep."
+id = &"UPROAR"
+display_name = "Uproar"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5x3ye"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_npjab"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mbtdt"]
+
+[sub_resource type="Resource" id="Resource_7qj43"]
+script = ExtResource("1_5x3ye")
+species = &"PALOSSAND"
+method = &"Level"
+parameter = "42"
+
+[sub_resource type="Resource" id="Resource_jtho4"]
+script = ExtResource("2_npjab")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_0nx87"]
+script = ExtResource("2_npjab")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_24ndj"]
+script = ExtResource("2_npjab")
+level = 5
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_8iv5h"]
+script = ExtResource("2_npjab")
+level = 10
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_jq88e"]
+script = ExtResource("2_npjab")
+level = 15
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_8wp2x"]
+script = ExtResource("2_npjab")
+level = 20
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_wfg72"]
+script = ExtResource("2_npjab")
+level = 25
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_1tmwq"]
+script = ExtResource("2_npjab")
+level = 30
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_o7ibm"]
+script = ExtResource("2_npjab")
+level = 35
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_6c2wm"]
+script = ExtResource("2_npjab")
+level = 40
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_3p6vi"]
+script = ExtResource("2_npjab")
+level = 45
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_etleh"]
+script = ExtResource("2_npjab")
+level = 50
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_eiyra"]
+script = ExtResource("2_npjab")
+level = 55
+move = &"SHOREUP"
+
+[sub_resource type="Resource" id="Resource_3agwj"]
+script = ExtResource("2_npjab")
+level = 60
+move = &"SANDSTORM"
+
+[resource]
+resource_name = "SANDYGAST"
+script = ExtResource("3_mbtdt")
+species = &"SANDYGAST"
+category = "Sand Heap"
+pokedex_entry = "It likes the shovel on its head, so Sandygast will get serious and fight any children who come to take it back."
+types = Array[StringName]([&"GHOST", &"GROUND"])
+base_hp = 55
+base_attack = 55
+base_defense = 80
+base_special_attack = 70
+base_special_defense = 45
+base_speed = 15
+ev_defense = 1
+base_exp = 64
+catch_rate = 140
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_npjab")]([SubResource("Resource_jtho4"), SubResource("Resource_0nx87"), SubResource("Resource_24ndj"), SubResource("Resource_8iv5h"), SubResource("Resource_jq88e"), SubResource("Resource_8wp2x"), SubResource("Resource_wfg72"), SubResource("Resource_1tmwq"), SubResource("Resource_o7ibm"), SubResource("Resource_6c2wm"), SubResource("Resource_3p6vi"), SubResource("Resource_etleh"), SubResource("Resource_eiyra"), SubResource("Resource_3agwj")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"BLOCK", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GRAVITY", &"HIDDENPOWER", &"INFESTATION", &"IRONDEFENSE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"RECYCLE", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SPITE", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRICK"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"CURSE", &"DESTINYBOND", &"SPITUP", &"STOCKPILE", &"SWALLOW"])
+abilities = Array[StringName]([&"WATERCOMPACTION"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_5x3ye")]([SubResource("Resource_7qj43")])
+height = 5
+weight = 700
+color = &"Brown"
+shape = &"Serpentine"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 30)
+id = &"SANDYGAST"
+display_name = "Sandygast"

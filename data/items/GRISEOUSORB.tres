@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_rpnj2"]
+
+[resource]
+resource_name = "GRISEOUSORB"
+script = ExtResource("1_rpnj2")
+name_plural = "Griseous Orbs"
+price = 10000
+description = "A glowing orb to be held by Giratina. It boosts the power of Dragon- and Ghost-type moves."
+id = &"GRISEOUSORB"
+display_name = "Griseous Orb"
+flags = Array[StringName]([&"Fling_60"])

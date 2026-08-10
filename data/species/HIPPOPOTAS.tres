@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dfsdt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_se35d"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_d8248"]
+
+[sub_resource type="Resource" id="Resource_8xqbw"]
+script = ExtResource("1_dfsdt")
+species = &"HIPPOWDON"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_fb4h7"]
+script = ExtResource("2_se35d")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_aoosh"]
+script = ExtResource("2_se35d")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_346a2"]
+script = ExtResource("2_se35d")
+level = 4
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_bpfds"]
+script = ExtResource("2_se35d")
+level = 8
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_4rwwi"]
+script = ExtResource("2_se35d")
+level = 12
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_jb8k3"]
+script = ExtResource("2_se35d")
+level = 16
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_h8pxf"]
+script = ExtResource("2_se35d")
+level = 20
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ulank"]
+script = ExtResource("2_se35d")
+level = 24
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_xxgm4"]
+script = ExtResource("2_se35d")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_gl250"]
+script = ExtResource("2_se35d")
+level = 32
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_vkohh"]
+script = ExtResource("2_se35d")
+level = 36
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_npjha"]
+script = ExtResource("2_se35d")
+level = 40
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_0ady8"]
+script = ExtResource("2_se35d")
+level = 44
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_2d0eq"]
+script = ExtResource("2_se35d")
+level = 48
+move = &"FISSURE"
+
+[sub_resource type="Resource" id="Resource_uexri"]
+script = ExtResource("2_se35d")
+level = 52
+move = &"SLACKOFF"
+
+[resource]
+resource_name = "HIPPOPOTAS"
+script = ExtResource("3_d8248")
+species = &"HIPPOPOTAS"
+category = "Hippo"
+pokedex_entry = "It lives in arid places. Instead of perspiration, it expels grainy sand from its body."
+types = Array[StringName]([&"GROUND"])
+base_hp = 68
+base_attack = 72
+base_defense = 78
+base_special_attack = 38
+base_special_defense = 42
+base_speed = 32
+ev_defense = 1
+base_exp = 66
+growth_rate = &"Slow"
+catch_rate = 140
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_se35d")]([SubResource("Resource_fb4h7"), SubResource("Resource_aoosh"), SubResource("Resource_346a2"), SubResource("Resource_bpfds"), SubResource("Resource_4rwwi"), SubResource("Resource_jb8k3"), SubResource("Resource_h8pxf"), SubResource("Resource_ulank"), SubResource("Resource_xxgm4"), SubResource("Resource_gl250"), SubResource("Resource_vkohh"), SubResource("Resource_npjha"), SubResource("Resource_0ady8"), SubResource("Resource_2d0eq"), SubResource("Resource_uexri")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"IRONTAIL", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"WATERPULSE", &"WEATHERBALL"])
+egg_moves = Array[StringName]([&"BODYSLAM", &"CURSE", &"REVENGE", &"SANDTOMB", &"SLACKOFF", &"SPITUP", &"STOCKPILE", &"SWALLOW", &"WHIRLWIND"])
+abilities = Array[StringName]([&"SANDSTREAM"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_dfsdt")]([SubResource("Resource_8xqbw")])
+height = 8
+weight = 495
+color = &"Brown"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+id = &"HIPPOPOTAS"
+display_name = "Hippopotas"

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_c1aqp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xiwp8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_01onf"]
+
+[sub_resource type="Resource" id="Resource_266ot"]
+script = ExtResource("2_xiwp8")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_ticen"]
+script = ExtResource("2_xiwp8")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_isxnv"]
+script = ExtResource("2_xiwp8")
+level = 6
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_y7hxo"]
+script = ExtResource("2_xiwp8")
+level = 12
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_a76av"]
+script = ExtResource("2_xiwp8")
+level = 18
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_vkjjx"]
+script = ExtResource("2_xiwp8")
+level = 24
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_iflg8"]
+script = ExtResource("2_xiwp8")
+level = 30
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_4ijei"]
+script = ExtResource("2_xiwp8")
+level = 36
+move = &"GRASSKNOT"
+
+[sub_resource type="Resource" id="Resource_wdyu2"]
+script = ExtResource("2_xiwp8")
+level = 42
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_f5n7c"]
+script = ExtResource("2_xiwp8")
+level = 48
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_0ofq2"]
+script = ExtResource("2_xiwp8")
+level = 54
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_v7l2v"]
+script = ExtResource("2_xiwp8")
+level = 60
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_fxmpl"]
+script = ExtResource("2_xiwp8")
+level = 66
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_qft1i"]
+script = ExtResource("2_xiwp8")
+level = 72
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_0swms"]
+script = ExtResource("2_xiwp8")
+level = 78
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_tho3q"]
+script = ExtResource("2_xiwp8")
+level = 84
+move = &"POWERWHIP"
+
+[sub_resource type="Resource" id="Resource_52sfr"]
+script = ExtResource("2_xiwp8")
+level = 90
+move = &"JUNGLEHEALING"
+
+[resource]
+resource_name = "ZARUDE"
+script = ExtResource("3_01onf")
+species = &"ZARUDE"
+category = "Rogue Monkey"
+pokedex_entry = "Once the vines on Zarude's body tear off, they become nutrients in the soil. This helps the plants of the forest grow."
+types = Array[StringName]([&"DARK", &"GRASS"])
+base_hp = 105
+base_attack = 120
+base_defense = 105
+base_special_attack = 70
+base_special_defense = 95
+base_speed = 105
+ev_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_xiwp8")]([SubResource("Resource_266ot"), SubResource("Resource_ticen"), SubResource("Resource_isxnv"), SubResource("Resource_y7hxo"), SubResource("Resource_a76av"), SubResource("Resource_vkjjx"), SubResource("Resource_iflg8"), SubResource("Resource_4ijei"), SubResource("Resource_wdyu2"), SubResource("Resource_f5n7c"), SubResource("Resource_0ofq2"), SubResource("Resource_v7l2v"), SubResource("Resource_fxmpl"), SubResource("Resource_qft1i"), SubResource("Resource_0swms"), SubResource("Resource_tho3q"), SubResource("Resource_52sfr")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ASSURANCE", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLETSEED", &"CLOSECOMBAT", &"CONFIDE", &"CRUNCH", &"DARKESTLARIAT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"LASHOUT", &"LOWKICK", &"MAGICALLEAF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSHOT", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"TOXIC", &"UTURN"])
+abilities = Array[StringName]([&"LEAFGUARD"])
+hatch_steps = 30720
+height = 18
+weight = 700
+color = &"Black"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 53)
+front_sprite_offset = Vector2i(-6, 18)
+shadow_size = 3
+id = &"ZARUDE"
+display_name = "Zarude"
+flags = Array[StringName]([&"Mythical"])

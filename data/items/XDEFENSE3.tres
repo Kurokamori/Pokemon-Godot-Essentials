@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1gkaq"]
+
+[resource]
+resource_name = "XDEFENSE3"
+script = ExtResource("1_1gkaq")
+name_plural = "X Defense 3s"
+pocket = 7
+battle_use = 3
+description = "It drastically raises the Defense stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+id = &"XDEFENSE3"
+display_name = "X Defense 3"
+flags = Array[StringName]([&"Fling_30"])

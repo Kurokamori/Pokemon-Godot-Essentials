@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qv8xa"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yaxq4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xjhbq"]
+
+[sub_resource type="Resource" id="Resource_hbtcm"]
+script = ExtResource("1_qv8xa")
+species = &"KINGLER"
+method = &"Level"
+parameter = "28"
+
+[sub_resource type="Resource" id="Resource_eb3qq"]
+script = ExtResource("2_yaxq4")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_2snlm"]
+script = ExtResource("2_yaxq4")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_x4idf"]
+script = ExtResource("2_yaxq4")
+level = 4
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_3i0u7"]
+script = ExtResource("2_yaxq4")
+level = 8
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_62jrb"]
+script = ExtResource("2_yaxq4")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_pebyy"]
+script = ExtResource("2_yaxq4")
+level = 16
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_y7knc"]
+script = ExtResource("2_yaxq4")
+level = 20
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_kwujo"]
+script = ExtResource("2_yaxq4")
+level = 24
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_p2dy8"]
+script = ExtResource("2_yaxq4")
+level = 29
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_1wf0i"]
+script = ExtResource("2_yaxq4")
+level = 32
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_r8fyk"]
+script = ExtResource("2_yaxq4")
+level = 36
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_7bpdt"]
+script = ExtResource("2_yaxq4")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_x5758"]
+script = ExtResource("2_yaxq4")
+level = 44
+move = &"CRABHAMMER"
+
+[sub_resource type="Resource" id="Resource_682el"]
+script = ExtResource("2_yaxq4")
+level = 48
+move = &"GUILLOTINE"
+
+[resource]
+resource_name = "KRABBY"
+script = ExtResource("3_xjhbq")
+species = &"KRABBY"
+category = "River Crab"
+pokedex_entry = "Krabby live in holes dug into beaches. On sandy shores with little in the way of food, they can be seen squabbling with each other over territory."
+types = Array[StringName]([&"WATER"])
+base_hp = 30
+base_attack = 105
+base_defense = 90
+base_special_attack = 25
+base_special_defense = 25
+base_speed = 50
+ev_attack = 1
+base_exp = 65
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yaxq4")]([SubResource("Resource_eb3qq"), SubResource("Resource_2snlm"), SubResource("Resource_x4idf"), SubResource("Resource_3i0u7"), SubResource("Resource_62jrb"), SubResource("Resource_pebyy"), SubResource("Resource_y7knc"), SubResource("Resource_kwujo"), SubResource("Resource_p2dy8"), SubResource("Resource_1wf0i"), SubResource("Resource_r8fyk"), SubResource("Resource_7bpdt"), SubResource("Resource_x5758"), SubResource("Resource_682el")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"HAIL", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"LIQUIDATION", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"WATERPULSE", &"WHIRLPOOL", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"AMNESIA", &"ANCIENTPOWER", &"FLAIL", &"HAMMERARM", &"HAZE", &"KNOCKOFF", &"NIGHTSLASH", &"SLAM", &"SLASH", &"TICKLE"])
+abilities = Array[StringName]([&"HYPERCUTTER", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_qv8xa")]([SubResource("Resource_hbtcm")])
+height = 4
+weight = 65
+shape = &"Insectoid"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-1, 32)
+id = &"KRABBY"
+display_name = "Krabby"

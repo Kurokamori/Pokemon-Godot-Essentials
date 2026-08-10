@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_050mb"]
+
+[resource]
+resource_name = "SPOTLIGHT"
+script = ExtResource("1_050mb")
+accuracy = 0
+total_pp = 15
+priority = 3
+function_code = &"RedirectAllMovesToTarget"
+description = "The user shines a spotlight on the target so that only it will be attacked during the turn."
+id = &"SPOTLIGHT"
+display_name = "Spotlight"
+flags = Array[StringName]([&"CanProtect"])

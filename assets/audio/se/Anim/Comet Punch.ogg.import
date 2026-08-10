@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bipiufdo46xrr"
+path="res://.godot/imported/Comet Punch.ogg-848a860628c9e97e2f41084ac1d4b171.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Anim/Comet Punch.ogg"
+dest_files=["res://.godot/imported/Comet Punch.ogg-848a860628c9e97e2f41084ac1d4b171.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

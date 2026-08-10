@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fi8sl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_qaywc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2h3fa"]
+
+[sub_resource type="Resource" id="Resource_g8ioo"]
+script = ExtResource("1_fi8sl")
+species = &"ZWEILOUS"
+method = &"Level"
+parameter = "50"
+
+[sub_resource type="Resource" id="Resource_mq83l"]
+script = ExtResource("2_qaywc")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cg5es"]
+script = ExtResource("2_qaywc")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_o3qvq"]
+script = ExtResource("2_qaywc")
+level = 4
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_hwtjr"]
+script = ExtResource("2_qaywc")
+level = 8
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_qqxxn"]
+script = ExtResource("2_qaywc")
+level = 12
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_if6h3"]
+script = ExtResource("2_qaywc")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_ysvre"]
+script = ExtResource("2_qaywc")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_8oqkf"]
+script = ExtResource("2_qaywc")
+level = 24
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_f8yai"]
+script = ExtResource("2_qaywc")
+level = 28
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_jcymf"]
+script = ExtResource("2_qaywc")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ajv73"]
+script = ExtResource("2_qaywc")
+level = 36
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_o40lt"]
+script = ExtResource("2_qaywc")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_yn0vt"]
+script = ExtResource("2_qaywc")
+level = 44
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_ot1ds"]
+script = ExtResource("2_qaywc")
+level = 48
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_4wuf8"]
+script = ExtResource("2_qaywc")
+level = 52
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_im0sp"]
+script = ExtResource("2_qaywc")
+level = 56
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_6urw3"]
+script = ExtResource("2_qaywc")
+level = 60
+move = &"OUTRAGE"
+
+[resource]
+resource_name = "DEINO"
+script = ExtResource("3_2h3fa")
+species = &"DEINO"
+category = "Irate"
+pokedex_entry = "They cannot see, so they tackle and bite to learn about their surroundings. Their bodies are covered in wounds."
+types = Array[StringName]([&"DARK", &"DRAGON"])
+base_hp = 52
+base_attack = 65
+base_defense = 50
+base_special_attack = 45
+base_special_defense = 50
+base_speed = 38
+ev_attack = 1
+base_exp = 60
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_qaywc")]([SubResource("Resource_mq83l"), SubResource("Resource_cg5es"), SubResource("Resource_o3qvq"), SubResource("Resource_hwtjr"), SubResource("Resource_qqxxn"), SubResource("Resource_if6h3"), SubResource("Resource_ysvre"), SubResource("Resource_8oqkf"), SubResource("Resource_f8yai"), SubResource("Resource_jcymf"), SubResource("Resource_ajv73"), SubResource("Resource_o40lt"), SubResource("Resource_yn0vt"), SubResource("Resource_ot1ds"), SubResource("Resource_4wuf8"), SubResource("Resource_im0sp"), SubResource("Resource_6urw3")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FIREFANG", &"FOCUSENERGY", &"FRUSTRATION", &"HIDDENPOWER", &"HYPERVOICE", &"ICEFANG", &"INCINERATE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERFANG", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"UPROAR", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ASTONISH", &"BELCH", &"DOUBLEHIT", &"HEADSMASH"])
+abilities = Array[StringName]([&"HUSTLE"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_fi8sl")]([SubResource("Resource_g8ioo")])
+height = 8
+weight = 173
+color = &"Blue"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 31)
+shadow_size = 1
+id = &"DEINO"
+display_name = "Deino"

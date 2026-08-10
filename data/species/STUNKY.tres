@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_igfra"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_sneht"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1hcew"]
+
+[sub_resource type="Resource" id="Resource_byudd"]
+script = ExtResource("1_igfra")
+species = &"SKUNTANK"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_he04n"]
+script = ExtResource("2_sneht")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_ctaav"]
+script = ExtResource("2_sneht")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_nuj1t"]
+script = ExtResource("2_sneht")
+level = 3
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_50kaa"]
+script = ExtResource("2_sneht")
+level = 6
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_b57dc"]
+script = ExtResource("2_sneht")
+level = 9
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_sj2ow"]
+script = ExtResource("2_sneht")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_p1sk8"]
+script = ExtResource("2_sneht")
+level = 15
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_barkl"]
+script = ExtResource("2_sneht")
+level = 18
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_p55mr"]
+script = ExtResource("2_sneht")
+level = 21
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_4nmbn"]
+script = ExtResource("2_sneht")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_b81hx"]
+script = ExtResource("2_sneht")
+level = 27
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_1pw1o"]
+script = ExtResource("2_sneht")
+level = 30
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_5odgt"]
+script = ExtResource("2_sneht")
+level = 33
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_n8s3c"]
+script = ExtResource("2_sneht")
+level = 36
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_gw5k5"]
+script = ExtResource("2_sneht")
+level = 39
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_js83i"]
+script = ExtResource("2_sneht")
+level = 42
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_6vadv"]
+script = ExtResource("2_sneht")
+level = 45
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "STUNKY"
+script = ExtResource("3_1hcew")
+species = &"STUNKY"
+category = "Skunk"
+pokedex_entry = "It protects itself by spraying a noxious fluid from its rear. The stench lingers for 24 hours."
+types = Array[StringName]([&"POISON", &"DARK"])
+base_hp = 63
+base_attack = 63
+base_defense = 47
+base_special_attack = 41
+base_special_defense = 41
+base_speed = 74
+ev_speed = 1
+base_exp = 66
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_sneht")]([SubResource("Resource_he04n"), SubResource("Resource_ctaav"), SubResource("Resource_nuj1t"), SubResource("Resource_50kaa"), SubResource("Resource_b57dc"), SubResource("Resource_sj2ow"), SubResource("Resource_p1sk8"), SubResource("Resource_barkl"), SubResource("Resource_p55mr"), SubResource("Resource_4nmbn"), SubResource("Resource_b81hx"), SubResource("Resource_1pw1o"), SubResource("Resource_5odgt"), SubResource("Resource_n8s3c"), SubResource("Resource_gw5k5"), SubResource("Resource_js83i"), SubResource("Resource_6vadv")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"CRUNCH", &"CUT", &"DARKPULSE", &"DEFOG", &"DIG", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FOCUSENERGY", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"LASHOUT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"TOXIC", &"VENOMDRENCH", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"ASTONISH", &"CRUNCH", &"DOUBLEEDGE", &"FOULPLAY", &"HAZE", &"LEER", &"PLAYROUGH", &"SCARYFACE", &"SLASH", &"SMOG"])
+abilities = Array[StringName]([&"STENCH", &"AFTERMATH"])
+hidden_abilities = Array[StringName]([&"KEENEYE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_igfra")]([SubResource("Resource_byudd")])
+height = 4
+weight = 192
+color = &"Purple"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(5, 31)
+shadow_size = 1
+id = &"STUNKY"
+display_name = "Stunky"

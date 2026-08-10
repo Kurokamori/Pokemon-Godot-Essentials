@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SimpleNameData" format=3]
+
+[ext_resource type="Script" path="res://src/data/simple_name_data.gd" id="1_txvuq"]
+
+[resource]
+resource_name = "Grassland"
+script = ExtResource("1_txvuq")
+id = &"Grassland"
+display_name = "Grassland"

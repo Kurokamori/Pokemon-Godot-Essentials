@@ -1,0 +1,178 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ylxn5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x2ic3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5fxnt"]
+
+[sub_resource type="Resource" id="Resource_s2p7o"]
+script = ExtResource("1_ylxn5")
+species = &"RIOLU"
+method = &"HappinessDay"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_k1j52"]
+script = ExtResource("2_x2ic3")
+level = 0
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_lhdvi"]
+script = ExtResource("2_x2ic3")
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_tpoxs"]
+script = ExtResource("2_x2ic3")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_kacj7"]
+script = ExtResource("2_x2ic3")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_xx78q"]
+script = ExtResource("2_x2ic3")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_82rjq"]
+script = ExtResource("2_x2ic3")
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_kx57u"]
+script = ExtResource("2_x2ic3")
+move = &"FORCEPALM"
+
+[sub_resource type="Resource" id="Resource_aofiw"]
+script = ExtResource("2_x2ic3")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_50hrb"]
+script = ExtResource("2_x2ic3")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_2tvl2"]
+script = ExtResource("2_x2ic3")
+move = &"FINALGAMBIT"
+
+[sub_resource type="Resource" id="Resource_oj8h3"]
+script = ExtResource("2_x2ic3")
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_0pjnd"]
+script = ExtResource("2_x2ic3")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_insp1"]
+script = ExtResource("2_x2ic3")
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_mt2b4"]
+script = ExtResource("2_x2ic3")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_c71yi"]
+script = ExtResource("2_x2ic3")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_7m7vl"]
+script = ExtResource("2_x2ic3")
+level = 12
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_qruum"]
+script = ExtResource("2_x2ic3")
+level = 16
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_5jyyv"]
+script = ExtResource("2_x2ic3")
+level = 20
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_y2r21"]
+script = ExtResource("2_x2ic3")
+level = 24
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_vnu8m"]
+script = ExtResource("2_x2ic3")
+level = 28
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_miv5v"]
+script = ExtResource("2_x2ic3")
+level = 32
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_my4ww"]
+script = ExtResource("2_x2ic3")
+level = 36
+move = &"BONERUSH"
+
+[sub_resource type="Resource" id="Resource_ccdei"]
+script = ExtResource("2_x2ic3")
+level = 40
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_gcttr"]
+script = ExtResource("2_x2ic3")
+level = 44
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_eebhd"]
+script = ExtResource("2_x2ic3")
+level = 48
+move = &"METEORMASH"
+
+[sub_resource type="Resource" id="Resource_ijijc"]
+script = ExtResource("2_x2ic3")
+level = 52
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_fi26j"]
+script = ExtResource("2_x2ic3")
+level = 56
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_a6pc7"]
+script = ExtResource("2_x2ic3")
+level = 60
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "LUCARIO_1"
+script = ExtResource("3_5fxnt")
+species = &"LUCARIO"
+form = 1
+form_name = "Mega Lucario"
+category = "Aura"
+pokedex_entry = "It readies itself to face its enemies by focusing its mental energies. Its fighting style can be summed up in a single word: heartless."
+pokedex_form = 1
+types = Array[StringName]([&"FIGHTING", &"STEEL"])
+base_hp = 70
+base_attack = 145
+base_defense = 88
+base_special_attack = 140
+base_special_defense = 70
+base_speed = 112
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 219
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_x2ic3")]([SubResource("Resource_k1j52"), SubResource("Resource_lhdvi"), SubResource("Resource_tpoxs"), SubResource("Resource_kacj7"), SubResource("Resource_xx78q"), SubResource("Resource_82rjq"), SubResource("Resource_kx57u"), SubResource("Resource_aofiw"), SubResource("Resource_50hrb"), SubResource("Resource_2tvl2"), SubResource("Resource_oj8h3"), SubResource("Resource_0pjnd"), SubResource("Resource_insp1"), SubResource("Resource_mt2b4"), SubResource("Resource_c71yi"), SubResource("Resource_7m7vl"), SubResource("Resource_qruum"), SubResource("Resource_5jyyv"), SubResource("Resource_y2r21"), SubResource("Resource_vnu8m"), SubResource("Resource_miv5v"), SubResource("Resource_my4ww"), SubResource("Resource_ccdei"), SubResource("Resource_gcttr"), SubResource("Resource_eebhd"), SubResource("Resource_ijijc"), SubResource("Resource_fi26j"), SubResource("Resource_a6pc7")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"AURASPHERE", &"BLAZEKICK", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONPULSE", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEPUNCH", &"IRONDEFENSE", &"IRONTAIL", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TERRAINPULSE", &"THUNDERPUNCH", &"VACUUMWAVE", &"WATERPULSE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"ADAPTABILITY"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_ylxn5")]([SubResource("Resource_s2p7o")])
+height = 13
+weight = 575
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 6
+mega_stone = &"LUCARIONITE"
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(3, 18)
+id = &"LUCARIO_1"
+display_name = "Lucario"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_iwe5d"]
+
+[resource]
+resource_name = "MAXREVIVE"
+script = ExtResource("1_iwe5d")
+name_plural = "Max Revives"
+pocket = 2
+price = 4000
+sell_price = 2000
+bp_price = 20
+field_use = 1
+battle_use = 1
+description = "A medicine that revives a fainted Pokémon. It fully restores the Pokémon's HP."
+id = &"MAXREVIVE"
+display_name = "Max Revive"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,181 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_64ylv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_oj5og"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_w2phy"]
+
+[sub_resource type="Resource" id="Resource_n4h6y"]
+script = ExtResource("1_64ylv")
+species = &"KIRLIA"
+method = &"ItemMale"
+parameter = "DAWNSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_g35fb"]
+script = ExtResource("2_oj5og")
+level = 0
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_24xig"]
+script = ExtResource("2_oj5og")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_laj5d"]
+script = ExtResource("2_oj5og")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_160nu"]
+script = ExtResource("2_oj5og")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_j2ur5"]
+script = ExtResource("2_oj5og")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_4ev7h"]
+script = ExtResource("2_oj5og")
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_8m56v"]
+script = ExtResource("2_oj5og")
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_1aeqp"]
+script = ExtResource("2_oj5og")
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_s71ok"]
+script = ExtResource("2_oj5og")
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_i0e1r"]
+script = ExtResource("2_oj5og")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_gxbfy"]
+script = ExtResource("2_oj5og")
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_8yxs4"]
+script = ExtResource("2_oj5og")
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_mihye"]
+script = ExtResource("2_oj5og")
+move = &"DREAMEATER"
+
+[sub_resource type="Resource" id="Resource_5j5db"]
+script = ExtResource("2_oj5og")
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_m5yej"]
+script = ExtResource("2_oj5og")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ppy4n"]
+script = ExtResource("2_oj5og")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_dao30"]
+script = ExtResource("2_oj5og")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_yxlyx"]
+script = ExtResource("2_oj5og")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_p52as"]
+script = ExtResource("2_oj5og")
+level = 9
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_50gfb"]
+script = ExtResource("2_oj5og")
+level = 12
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_kgog2"]
+script = ExtResource("2_oj5og")
+level = 15
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_ee48s"]
+script = ExtResource("2_oj5og")
+level = 18
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_nnirs"]
+script = ExtResource("2_oj5og")
+level = 23
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_yfjmh"]
+script = ExtResource("2_oj5og")
+level = 28
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_iob63"]
+script = ExtResource("2_oj5og")
+level = 35
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_wqugt"]
+script = ExtResource("2_oj5og")
+level = 42
+move = &"PSYCHOCUT"
+
+[sub_resource type="Resource" id="Resource_dlbpe"]
+script = ExtResource("2_oj5og")
+level = 49
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_yrbq8"]
+script = ExtResource("2_oj5og")
+level = 56
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_nceb8"]
+script = ExtResource("2_oj5og")
+level = 56
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_4w5vp"]
+script = ExtResource("2_oj5og")
+level = 63
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "GALLADE"
+script = ExtResource("3_w2phy")
+species = &"GALLADE"
+category = "Blade"
+pokedex_entry = "A master of courtesy and swordsmanship, it fights using extending swords on its elbows."
+types = Array[StringName]([&"PSYCHIC", &"FIGHTING"])
+base_hp = 68
+base_attack = 125
+base_defense = 65
+base_special_attack = 65
+base_special_defense = 115
+base_speed = 80
+ev_attack = 3
+base_exp = 259
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_oj5og")]([SubResource("Resource_g35fb"), SubResource("Resource_24xig"), SubResource("Resource_laj5d"), SubResource("Resource_160nu"), SubResource("Resource_j2ur5"), SubResource("Resource_4ev7h"), SubResource("Resource_8m56v"), SubResource("Resource_1aeqp"), SubResource("Resource_s71ok"), SubResource("Resource_i0e1r"), SubResource("Resource_gxbfy"), SubResource("Resource_8yxs4"), SubResource("Resource_mihye"), SubResource("Resource_5j5db"), SubResource("Resource_m5yej"), SubResource("Resource_ppy4n"), SubResource("Resource_dao30"), SubResource("Resource_yxlyx"), SubResource("Resource_p52as"), SubResource("Resource_50gfb"), SubResource("Resource_kgog2"), SubResource("Resource_ee48s"), SubResource("Resource_nnirs"), SubResource("Resource_yfjmh"), SubResource("Resource_iob63"), SubResource("Resource_wqugt"), SubResource("Resource_dlbpe"), SubResource("Resource_yrbq8"), SubResource("Resource_nceb8"), SubResource("Resource_4w5vp")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"ALLYSWITCH", &"ATTRACT", &"AURASPHERE", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CUT", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"DUALCHOP", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FALSESWIPE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"KNOCKOFF", &"LASERFOCUS", &"LEAFBLADE", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGICALLEAF", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBLADE", &"STONEEDGE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THROATCHOP", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"TRIPLEAXEL", &"VACUUMWAVE", &"WILLOWISP", &"WONDERROOM", &"WORKUP", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"STEADFAST"])
+hidden_abilities = Array[StringName]([&"JUSTIFIED"])
+egg_groups = Array[StringName]([&"Humanlike", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_64ylv")]([SubResource("Resource_n4h6y")])
+height = 16
+weight = 520
+color = &"White"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(2, 40)
+front_sprite_offset = Vector2i(-4, 16)
+id = &"GALLADE"
+display_name = "Gallade"

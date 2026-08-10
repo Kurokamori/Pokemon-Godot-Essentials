@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8ufxi"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0knh8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vmmuy"]
+
+[sub_resource type="Resource" id="Resource_me30a"]
+script = ExtResource("1_8ufxi")
+species = &"DUGTRIO"
+method = &"Level"
+parameter = "26"
+
+[sub_resource type="Resource" id="Resource_7blhl"]
+script = ExtResource("2_0knh8")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_uscur"]
+script = ExtResource("2_0knh8")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_2md2d"]
+script = ExtResource("2_0knh8")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_4k7rp"]
+script = ExtResource("2_0knh8")
+level = 7
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_60if7"]
+script = ExtResource("2_0knh8")
+level = 10
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_o2a4r"]
+script = ExtResource("2_0knh8")
+level = 14
+move = &"MAGNITUDE"
+
+[sub_resource type="Resource" id="Resource_s5cvg"]
+script = ExtResource("2_0knh8")
+level = 18
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_n8nd6"]
+script = ExtResource("2_0knh8")
+level = 22
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_3bp74"]
+script = ExtResource("2_0knh8")
+level = 25
+move = &"MUDBOMB"
+
+[sub_resource type="Resource" id="Resource_mlbyb"]
+script = ExtResource("2_0knh8")
+level = 28
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_et87s"]
+script = ExtResource("2_0knh8")
+level = 31
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_68e6d"]
+script = ExtResource("2_0knh8")
+level = 35
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_7fl52"]
+script = ExtResource("2_0knh8")
+level = 39
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_l0snf"]
+script = ExtResource("2_0knh8")
+level = 43
+move = &"FISSURE"
+
+[resource]
+resource_name = "DIGLETT_1"
+script = ExtResource("3_vmmuy")
+species = &"DIGLETT"
+form = 1
+form_name = "Alolan"
+category = "Mole"
+pokedex_entry = "Its head sports an altered form of whiskers made of metal. When in communication with its comrades, its whiskers wobble to and fro."
+pokedex_form = 1
+types = Array[StringName]([&"GROUND", &"STEEL"])
+base_hp = 10
+base_attack = 55
+base_defense = 30
+base_special_attack = 35
+base_special_defense = 45
+base_speed = 90
+ev_speed = 1
+base_exp = 53
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_0knh8")]([SubResource("Resource_7blhl"), SubResource("Resource_uscur"), SubResource("Resource_2md2d"), SubResource("Resource_4k7rp"), SubResource("Resource_60if7"), SubResource("Resource_o2a4r"), SubResource("Resource_s5cvg"), SubResource("Resource_n8nd6"), SubResource("Resource_3bp74"), SubResource("Resource_mlbyb"), SubResource("Resource_et87s"), SubResource("Resource_68e6d"), SubResource("Resource_7fl52"), SubResource("Resource_l0snf")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STEELBEAM", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"UPROAR", &"WORKUP"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"BEATUP", &"ENDURE", &"FEINTATTACK", &"FINALGAMBIT", &"HEADBUTT", &"MEMENTO", &"METALSOUND", &"PURSUIT", &"REVERSAL", &"THRASH"])
+abilities = Array[StringName]([&"SANDVEIL", &"TANGLINGHAIR"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_uncommon = Array[StringName]([&"SOFTSAND"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_8ufxi")]([SubResource("Resource_me30a")])
+height = 2
+weight = 10
+color = &"Brown"
+shape = &"HeadBase"
+habitat = &"Cave"
+generation = 7
+back_sprite_offset = Vector2i(2, 56)
+front_sprite_offset = Vector2i(1, 37)
+shadow_size = 1
+id = &"DIGLETT_1"
+display_name = "Diglett"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_el38s"]
+
+[resource]
+resource_name = "FUSIONBOLT"
+script = ExtResource("1_el38s")
+type = &"ELECTRIC"
+category = 0
+power = 100
+function_code = &"DoublePowerAfterFusionFlare"
+description = "The user throws down a giant thunderbolt. It does more damage if influenced by an enormous flame."
+id = &"FUSIONBOLT"
+display_name = "Fusion Bolt"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

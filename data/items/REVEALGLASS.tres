@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_voivd"]
+
+[resource]
+resource_name = "REVEALGLASS"
+script = ExtResource("1_voivd")
+name_plural = "Reveal Glasses"
+pocket = 8
+field_use = 1
+consumable = false
+show_quantity = false
+description = "A glass that reveals the truth. It is a mysterious glass that returns a Pokémon back to its original shape."
+id = &"REVEALGLASS"
+display_name = "Reveal Glass"
+flags = Array[StringName]([&"KeyItem"])

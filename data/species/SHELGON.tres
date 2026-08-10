@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1cwkg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1rii4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xhdl0"]
+
+[sub_resource type="Resource" id="Resource_k2dmq"]
+script = ExtResource("1_1cwkg")
+species = &"SALAMENCE"
+method = &"Level"
+parameter = "50"
+
+[sub_resource type="Resource" id="Resource_ks1vf"]
+script = ExtResource("1_1cwkg")
+species = &"BAGON"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ha11c"]
+script = ExtResource("2_1rii4")
+level = 0
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_m66rw"]
+script = ExtResource("2_1rii4")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_v6pwu"]
+script = ExtResource("2_1rii4")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ywhs4"]
+script = ExtResource("2_1rii4")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_aet2j"]
+script = ExtResource("2_1rii4")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_u81nm"]
+script = ExtResource("2_1rii4")
+level = 15
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_a8bvc"]
+script = ExtResource("2_1rii4")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_u7nas"]
+script = ExtResource("2_1rii4")
+level = 25
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_c7r2i"]
+script = ExtResource("2_1rii4")
+level = 33
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_ub0jd"]
+script = ExtResource("2_1rii4")
+level = 39
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_55r4n"]
+script = ExtResource("2_1rii4")
+level = 46
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_h3cb3"]
+script = ExtResource("2_1rii4")
+level = 53
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_1228f"]
+script = ExtResource("2_1rii4")
+level = 60
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_o665l"]
+script = ExtResource("2_1rii4")
+level = 67
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "SHELGON"
+script = ExtResource("3_xhdl0")
+species = &"SHELGON"
+category = "Endurance"
+pokedex_entry = "It hardly eats while it awaits evolution. It becomes hardier by enduring hunger. Its shell peels off the instant it begins to evolve."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 65
+base_attack = 95
+base_defense = 100
+base_special_attack = 60
+base_special_defense = 50
+base_speed = 50
+ev_defense = 2
+base_exp = 147
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_1rii4")]([SubResource("Resource_ha11c"), SubResource("Resource_m66rw"), SubResource("Resource_v6pwu"), SubResource("Resource_ywhs4"), SubResource("Resource_aet2j"), SubResource("Resource_u81nm"), SubResource("Resource_a8bvc"), SubResource("Resource_u7nas"), SubResource("Resource_c7r2i"), SubResource("Resource_ub0jd"), SubResource("Resource_55r4n"), SubResource("Resource_h3cb3"), SubResource("Resource_1228f"), SubResource("Resource_o665l")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERVOICE", &"INCINERATE", &"IRONDEFENSE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TWISTER", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_uncommon = Array[StringName]([&"DRAGONFANG"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_1cwkg")]([SubResource("Resource_k2dmq"), SubResource("Resource_ks1vf")])
+height = 11
+weight = 1105
+color = &"White"
+shape = &"Quadruped"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 30)
+id = &"SHELGON"
+display_name = "Shelgon"

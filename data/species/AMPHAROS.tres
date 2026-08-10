@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mbllf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_opnue"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gtxnl"]
+
+[sub_resource type="Resource" id="Resource_6y6bt"]
+script = ExtResource("1_mbllf")
+species = &"FLAAFFY"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_aqo07"]
+script = ExtResource("2_opnue")
+level = 0
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_5xw7e"]
+script = ExtResource("2_opnue")
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_nhvhf"]
+script = ExtResource("2_opnue")
+move = &"MAGNETICFLUX"
+
+[sub_resource type="Resource" id="Resource_cpyns"]
+script = ExtResource("2_opnue")
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_cp73y"]
+script = ExtResource("2_opnue")
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_n4ksh"]
+script = ExtResource("2_opnue")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_8hd1c"]
+script = ExtResource("2_opnue")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_iykfu"]
+script = ExtResource("2_opnue")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_0qlsh"]
+script = ExtResource("2_opnue")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_x8ypr"]
+script = ExtResource("2_opnue")
+level = 4
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_3ihjy"]
+script = ExtResource("2_opnue")
+level = 8
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_npaje"]
+script = ExtResource("2_opnue")
+level = 11
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_j1bhh"]
+script = ExtResource("2_opnue")
+level = 16
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_iil72"]
+script = ExtResource("2_opnue")
+level = 20
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_q4pm2"]
+script = ExtResource("2_opnue")
+level = 25
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_t3q48"]
+script = ExtResource("2_opnue")
+level = 29
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_b1vfu"]
+script = ExtResource("2_opnue")
+level = 35
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_t6pdb"]
+script = ExtResource("2_opnue")
+level = 40
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_bm67g"]
+script = ExtResource("2_opnue")
+level = 46
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_26fd8"]
+script = ExtResource("2_opnue")
+level = 51
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_8jen2"]
+script = ExtResource("2_opnue")
+level = 57
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_36a6d"]
+script = ExtResource("2_opnue")
+level = 62
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_1qv3i"]
+script = ExtResource("2_opnue")
+level = 65
+move = &"DRAGONPULSE"
+
+[resource]
+resource_name = "AMPHAROS"
+script = ExtResource("3_gtxnl")
+species = &"AMPHAROS"
+category = "Light"
+pokedex_entry = "It gives off so much light that it can be seen even from space. People in the old days used its light to send signals back and forth with others far away."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 90
+base_attack = 75
+base_defense = 85
+base_special_attack = 115
+base_special_defense = 90
+base_speed = 55
+ev_special_attack = 3
+base_exp = 255
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_opnue")]([SubResource("Resource_aqo07"), SubResource("Resource_5xw7e"), SubResource("Resource_nhvhf"), SubResource("Resource_cpyns"), SubResource("Resource_cp73y"), SubResource("Resource_n4ksh"), SubResource("Resource_8hd1c"), SubResource("Resource_iykfu"), SubResource("Resource_0qlsh"), SubResource("Resource_x8ypr"), SubResource("Resource_3ihjy"), SubResource("Resource_npaje"), SubResource("Resource_j1bhh"), SubResource("Resource_iil72"), SubResource("Resource_q4pm2"), SubResource("Resource_t3q48"), SubResource("Resource_b1vfu"), SubResource("Resource_t6pdb"), SubResource("Resource_bm67g"), SubResource("Resource_26fd8"), SubResource("Resource_8jen2"), SubResource("Resource_36a6d"), SubResource("Resource_1qv3i")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEALBELL", &"HIDDENPOWER", &"HYPERBEAM", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"STATIC"])
+hidden_abilities = Array[StringName]([&"PLUS"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mbllf")]([SubResource("Resource_6y6bt")])
+height = 14
+weight = 615
+color = &"Yellow"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(-5, 44)
+front_sprite_offset = Vector2i(-1, 20)
+id = &"AMPHAROS"
+display_name = "Ampharos"

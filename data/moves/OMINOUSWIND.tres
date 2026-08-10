@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7tx7x"]
+
+[resource]
+resource_name = "OMINOUSWIND"
+script = ExtResource("1_7tx7x")
+type = &"GHOST"
+category = 1
+power = 60
+function_code = &"RaiseUserMainStats1"
+effect_chance = 10
+description = "The user blasts the target with a gust of repulsive wind. It may also raise all the user's stats at once."
+id = &"OMINOUSWIND"
+display_name = "Ominous Wind"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

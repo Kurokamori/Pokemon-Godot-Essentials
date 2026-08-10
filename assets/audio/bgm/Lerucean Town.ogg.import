@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cs14mejpseccd"
+path="res://.godot/imported/Lerucean Town.ogg-73abe7e9af363e7c17767dfa7d64b82d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Lerucean Town.ogg"
+dest_files=["res://.godot/imported/Lerucean Town.ogg-73abe7e9af363e7c17767dfa7d64b82d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

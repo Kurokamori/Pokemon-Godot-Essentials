@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_mmkqh"]
+
+[resource]
+resource_name = "BODYPRESS"
+script = ExtResource("1_mmkqh")
+type = &"FIGHTING"
+category = 0
+power = 80
+total_pp = 10
+function_code = &"UseUserDefenseInsteadOfUserAttack"
+description = "The user attacks by slamming its body into the target. Power increases the higher the user's Defense is."
+id = &"BODYPRESS"
+display_name = "Body Press"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_8hsva"]
+
+[resource]
+resource_name = "ICEHAMMER"
+script = ExtResource("1_8hsva")
+type = &"ICE"
+category = 0
+power = 100
+accuracy = 90
+total_pp = 10
+function_code = &"LowerUserSpeed1"
+description = "The user swings and hits with its strong, heavy fist. It lowers the user's Speed, however."
+id = &"ICEHAMMER"
+display_name = "Ice Hammer"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Punching"])

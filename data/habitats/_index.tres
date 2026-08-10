@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_e33oi"]
+
+[resource]
+script = ExtResource("1_e33oi")
+category = &"habitats"
+record_script = "res://src/data/simple_name_data.gd"
+paths = {
+&"Cave": "res://data/habitats/Cave.tres",
+&"Forest": "res://data/habitats/Forest.tres",
+&"Grassland": "res://data/habitats/Grassland.tres",
+&"Mountain": "res://data/habitats/Mountain.tres",
+&"None": "res://data/habitats/None.tres",
+&"Rare": "res://data/habitats/Rare.tres",
+&"RoughTerrain": "res://data/habitats/RoughTerrain.tres",
+&"Sea": "res://data/habitats/Sea.tres",
+&"Urban": "res://data/habitats/Urban.tres",
+&"WatersEdge": "res://data/habitats/WatersEdge.tres"
+}
+ordered_ids = Array[StringName]([&"None", &"Grassland", &"Forest", &"WatersEdge", &"Sea", &"Cave", &"Mountain", &"RoughTerrain", &"Urban", &"Rare"])

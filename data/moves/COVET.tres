@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3g8cg"]
+
+[resource]
+resource_name = "COVET"
+script = ExtResource("1_3g8cg")
+category = 0
+power = 60
+total_pp = 25
+function_code = &"UserTakesTargetItem"
+description = "The user endearingly approaches the target, then steals the target's held item."
+id = &"COVET"
+display_name = "Covet"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

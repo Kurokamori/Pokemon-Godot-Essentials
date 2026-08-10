@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4ne1i"]
+
+[resource]
+resource_name = "PRISMATICLASER"
+script = ExtResource("1_4ne1i")
+type = &"PSYCHIC"
+category = 1
+power = 160
+total_pp = 10
+function_code = &"AttackAndSkipNextTurn"
+description = "The user shoots powerful lasers using the power of a prism. The user can't move on the next turn."
+id = &"PRISMATICLASER"
+display_name = "Prismatic Laser"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

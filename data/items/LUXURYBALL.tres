@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_7lje4"]
+
+[resource]
+resource_name = "LUXURYBALL"
+script = ExtResource("1_7lje4")
+name_plural = "Luxury Balls"
+pocket = 3
+price = 3000
+sell_price = 1500
+battle_use = 4
+description = "A comfortable Poké Ball that makes a caught wild Pokémon quickly grow friendly."
+id = &"LUXURYBALL"
+display_name = "Luxury Ball"
+flags = Array[StringName]([&"PokeBall"])

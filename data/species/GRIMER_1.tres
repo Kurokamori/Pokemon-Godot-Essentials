@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7xuih"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ywj57"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qj6p7"]
+
+[sub_resource type="Resource" id="Resource_c1bqm"]
+script = ExtResource("1_7xuih")
+species = &"MUK"
+method = &"Level"
+parameter = "38"
+
+[sub_resource type="Resource" id="Resource_wg5qr"]
+script = ExtResource("2_ywj57")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_s52qa"]
+script = ExtResource("2_ywj57")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_4t1uj"]
+script = ExtResource("2_ywj57")
+level = 4
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_yxp86"]
+script = ExtResource("2_ywj57")
+level = 7
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_etd12"]
+script = ExtResource("2_ywj57")
+level = 12
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_wrfvg"]
+script = ExtResource("2_ywj57")
+level = 15
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_dby5k"]
+script = ExtResource("2_ywj57")
+level = 18
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_ad1lu"]
+script = ExtResource("2_ywj57")
+level = 21
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_urjgt"]
+script = ExtResource("2_ywj57")
+level = 26
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_tlbgo"]
+script = ExtResource("2_ywj57")
+level = 29
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_q4wi4"]
+script = ExtResource("2_ywj57")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_8nddv"]
+script = ExtResource("2_ywj57")
+level = 37
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_rnbig"]
+script = ExtResource("2_ywj57")
+level = 40
+move = &"GUNKSHOT"
+
+[sub_resource type="Resource" id="Resource_elyi7"]
+script = ExtResource("2_ywj57")
+level = 43
+move = &"ACIDARMOR"
+
+[sub_resource type="Resource" id="Resource_ilrm3"]
+script = ExtResource("2_ywj57")
+level = 46
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_hx6qb"]
+script = ExtResource("2_ywj57")
+level = 48
+move = &"MEMENTO"
+
+[resource]
+resource_name = "GRIMER_1"
+script = ExtResource("3_qj6p7")
+species = &"GRIMER"
+form = 1
+form_name = "Alolan"
+category = "Sludge"
+pokedex_entry = "A Grimer, which had been brought in to solve a problem with garbage, developed over time into this form."
+pokedex_form = 1
+types = Array[StringName]([&"POISON", &"DARK"])
+base_hp = 80
+base_attack = 80
+base_defense = 50
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 25
+ev_hp = 1
+base_exp = 65
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ywj57")]([SubResource("Resource_wg5qr"), SubResource("Resource_s52qa"), SubResource("Resource_4t1uj"), SubResource("Resource_yxp86"), SubResource("Resource_etd12"), SubResource("Resource_wrfvg"), SubResource("Resource_dby5k"), SubResource("Resource_ad1lu"), SubResource("Resource_urjgt"), SubResource("Resource_tlbgo"), SubResource("Resource_q4wi4"), SubResource("Resource_8nddv"), SubResource("Resource_rnbig"), SubResource("Resource_elyi7"), SubResource("Resource_ilrm3"), SubResource("Resource_hx6qb")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EMBARGO", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GUNKSHOT", &"HIDDENPOWER", &"ICEPUNCH", &"INCINERATE", &"INFESTATION", &"KNOCKOFF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNARL", &"SNORE", &"SPITE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"ASSURANCE", &"CLEARSMOG", &"CURSE", &"IMPRISON", &"MEANLOOK", &"POWERUPPUNCH", &"PURSUIT", &"SCARYFACE", &"SHADOWSNEAK", &"SPITE", &"SPITUP", &"STOCKPILE", &"SWALLOW"])
+abilities = Array[StringName]([&"POISONTOUCH", &"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"POWEROFALCHEMY"])
+wild_item_uncommon = Array[StringName]([&"BLACKSLUDGE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_7xuih")]([SubResource("Resource_c1bqm")])
+height = 7
+weight = 420
+color = &"Green"
+shape = &"HeadArms"
+habitat = &"Urban"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 31)
+id = &"GRIMER_1"
+display_name = "Grimer"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

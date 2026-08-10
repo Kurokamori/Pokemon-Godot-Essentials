@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fm73d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cqj15"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_spsfn"]
+
+[sub_resource type="Resource" id="Resource_bk1mx"]
+script = ExtResource("1_fm73d")
+species = &"AMOONGUSS"
+method = &"Level"
+parameter = "39"
+
+[sub_resource type="Resource" id="Resource_ncial"]
+script = ExtResource("2_cqj15")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_g86eu"]
+script = ExtResource("2_cqj15")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_jg8yh"]
+script = ExtResource("2_cqj15")
+level = 4
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_a5xlc"]
+script = ExtResource("2_cqj15")
+level = 8
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_5pcgd"]
+script = ExtResource("2_cqj15")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_4hgdx"]
+script = ExtResource("2_cqj15")
+level = 16
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_p77ej"]
+script = ExtResource("2_cqj15")
+level = 20
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_q1c56"]
+script = ExtResource("2_cqj15")
+level = 24
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_hg2g0"]
+script = ExtResource("2_cqj15")
+level = 28
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_5euxo"]
+script = ExtResource("2_cqj15")
+level = 32
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_kdw27"]
+script = ExtResource("2_cqj15")
+level = 36
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_wo8fo"]
+script = ExtResource("2_cqj15")
+level = 40
+move = &"RAGEPOWDER"
+
+[sub_resource type="Resource" id="Resource_01wo1"]
+script = ExtResource("2_cqj15")
+level = 44
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_4k6mx"]
+script = ExtResource("2_cqj15")
+level = 48
+move = &"SPORE"
+
+[resource]
+resource_name = "FOONGUS"
+script = ExtResource("3_spsfn")
+species = &"FOONGUS"
+category = "Mushroom"
+pokedex_entry = "For some reason, this Pokémon resembles a Poké Ball. They release poison spores to repel those who try to catch them."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 69
+base_attack = 55
+base_defense = 45
+base_special_attack = 55
+base_special_defense = 55
+base_speed = 15
+ev_hp = 1
+base_exp = 59
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cqj15")]([SubResource("Resource_ncial"), SubResource("Resource_g86eu"), SubResource("Resource_jg8yh"), SubResource("Resource_a5xlc"), SubResource("Resource_5pcgd"), SubResource("Resource_4hgdx"), SubResource("Resource_p77ej"), SubResource("Resource_q1c56"), SubResource("Resource_hg2g0"), SubResource("Resource_5euxo"), SubResource("Resource_kdw27"), SubResource("Resource_wo8fo"), SubResource("Resource_01wo1"), SubResource("Resource_4k6mx")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POLLENPUFF", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"VENOSHOCK", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"DEFENSECURL", &"POISONPOWDER", &"ROLLOUT", &"WORRYSEED"])
+abilities = Array[StringName]([&"EFFECTSPORE"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+wild_item_common = Array[StringName]([&"TINYMUSHROOM"])
+wild_item_uncommon = Array[StringName]([&"BIGMUSHROOM"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_fm73d")]([SubResource("Resource_bk1mx")])
+height = 2
+weight = 10
+color = &"White"
+shape = &"HeadArms"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 34)
+shadow_size = 1
+id = &"FOONGUS"
+display_name = "Foongus"

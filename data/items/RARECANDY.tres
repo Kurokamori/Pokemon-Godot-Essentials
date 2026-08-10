@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_05jj3"]
+
+[resource]
+resource_name = "RARECANDY"
+script = ExtResource("1_05jj3")
+name_plural = "Rare Candies"
+pocket = 2
+price = 10000
+sell_price = 5000
+bp_price = 20
+field_use = 1
+description = "A candy that is packed with energy. It raises the level of a single Pokémon by one."
+id = &"RARECANDY"
+display_name = "Rare Candy"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_ts2v1"]
+
+[resource]
+resource_name = "47"
+script = ExtResource("1_ts2v1")
+map_id = 47
+outdoor_map = true
+announce_location = true
+weather = ["Rain", 0]
+town_map_position = Array[int]([0, 15, 10])
+town_map_size = Array[int]([2, 11])
+battle_background = "rocky"
+battle_environment = &"Rock"
+id = &"47"
+display_name = "Route 7"

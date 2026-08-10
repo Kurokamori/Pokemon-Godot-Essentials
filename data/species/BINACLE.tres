@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_i2whw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_mwi6j"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1ogbt"]
+
+[sub_resource type="Resource" id="Resource_t8d3x"]
+script = ExtResource("1_i2whw")
+species = &"BARBARACLE"
+method = &"Level"
+parameter = "39"
+
+[sub_resource type="Resource" id="Resource_eoh72"]
+script = ExtResource("2_mwi6j")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_2bdca"]
+script = ExtResource("2_mwi6j")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_7mgpj"]
+script = ExtResource("2_mwi6j")
+level = 4
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_cqmd1"]
+script = ExtResource("2_mwi6j")
+level = 8
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_jlkvf"]
+script = ExtResource("2_mwi6j")
+level = 12
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_rolfp"]
+script = ExtResource("2_mwi6j")
+level = 16
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_36vmq"]
+script = ExtResource("2_mwi6j")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_hvlc2"]
+script = ExtResource("2_mwi6j")
+level = 24
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_urfek"]
+script = ExtResource("2_mwi6j")
+level = 28
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_opdx0"]
+script = ExtResource("2_mwi6j")
+level = 32
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_ua83d"]
+script = ExtResource("2_mwi6j")
+level = 36
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_0afcq"]
+script = ExtResource("2_mwi6j")
+level = 40
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_8cd30"]
+script = ExtResource("2_mwi6j")
+level = 44
+move = &"CROSSCHOP"
+
+[resource]
+resource_name = "BINACLE"
+script = ExtResource("3_1ogbt")
+species = &"BINACLE"
+category = "Two-Handed"
+pokedex_entry = "They stretch and then contract, yanking their rocks along with them in bold hops. They eat seaweed that washes up on the shoreline."
+types = Array[StringName]([&"ROCK", &"WATER"])
+base_hp = 42
+base_attack = 52
+base_defense = 67
+base_special_attack = 39
+base_special_defense = 56
+base_speed = 50
+ev_attack = 1
+base_exp = 61
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_mwi6j")]([SubResource("Resource_eoh72"), SubResource("Resource_2bdca"), SubResource("Resource_7mgpj"), SubResource("Resource_cqmd1"), SubResource("Resource_jlkvf"), SubResource("Resource_rolfp"), SubResource("Resource_36vmq"), SubResource("Resource_hvlc2"), SubResource("Resource_urfek"), SubResource("Resource_opdx0"), SubResource("Resource_ua83d"), SubResource("Resource_0afcq"), SubResource("Resource_8cd30")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BLIZZARD", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DUALCHOP", &"EARTHQUAKE", &"EMBARGO", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"LIQUIDATION", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"WATERPULSE", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"NIGHTSLASH", &"SANDATTACK", &"SWITCHEROO"])
+abilities = Array[StringName]([&"TOUGHCLAWS", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_i2whw")]([SubResource("Resource_t8d3x")])
+height = 5
+weight = 310
+color = &"Brown"
+shape = &"MultiBody"
+generation = 6
+back_sprite_offset = Vector2i(1, 42)
+front_sprite_offset = Vector2i(0, 25)
+shadow_size = 1
+id = &"BINACLE"
+display_name = "Binacle"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_fm5gv"]
+
+[resource]
+resource_name = "MOVE_ROLLINGKICK"
+script = ExtResource("1_fm5gv")
+graphic = "normal1"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 232, 102, 75, 75, 0, 0, 7, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 264, 54, 75, 75, 0, 0, 7, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 288, 22, 75, 75, 0, 0, 7, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 312, 30, 75, 75, 0, 0, 7, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 360, 78, 75, 75, 0, 0, 7, 255, 0, 0, 0, 1, 1, 360, 78, 100, 100, 0, 0, 7, 50, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 416, 126, 75, 75, 0, 0, 7, 255, 0, 0, 0, 1, 1, 384, 94, 100, 100, 0, 0, 7, 50, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 440, 150, 75, 75, 0, 0, 7, 255, 0, 0, 0, 1, 1, 400, 110, 100, 100, 0, 0, 7, 25, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 448, 158, 75, 75, 0, 0, 7, 255, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(4)
+timing_sounds = PackedStringArray("Blow4")
+timing_volumes = PackedInt32Array(80)
+timing_pitches = PackedInt32Array(100)
+id = &"MOVE_ROLLINGKICK"
+display_name = "Move:ROLLINGKICK"

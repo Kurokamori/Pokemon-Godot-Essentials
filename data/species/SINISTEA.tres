@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_i1an0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x58xg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_g3h0y"]
+
+[sub_resource type="Resource" id="Resource_5ttil"]
+script = ExtResource("1_i1an0")
+species = &"POLTEAGEIST"
+method = &"Item"
+parameter = "CRACKEDPOT"
+
+[sub_resource type="Resource" id="Resource_ejxam"]
+script = ExtResource("2_x58xg")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_e0drx"]
+script = ExtResource("2_x58xg")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_ixm37"]
+script = ExtResource("2_x58xg")
+level = 6
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_70leu"]
+script = ExtResource("2_x58xg")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_yggds"]
+script = ExtResource("2_x58xg")
+level = 18
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_3n2lp"]
+script = ExtResource("2_x58xg")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_2av6d"]
+script = ExtResource("2_x58xg")
+level = 30
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_aa76c"]
+script = ExtResource("2_x58xg")
+level = 36
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_85u44"]
+script = ExtResource("2_x58xg")
+level = 42
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_uq1np"]
+script = ExtResource("2_x58xg")
+level = 48
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_v8fki"]
+script = ExtResource("2_x58xg")
+level = 54
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_d5xko"]
+script = ExtResource("2_x58xg")
+level = 60
+move = &"SHELLSMASH"
+
+[resource]
+resource_name = "SINISTEA"
+script = ExtResource("3_g3h0y")
+species = &"SINISTEA"
+form_name = "Phony Form"
+category = "Black Tea"
+pokedex_entry = "The teacup in which this Pokémon makes its home is a famous piece of antique tableware. Many forgeries are in circulation."
+types = Array[StringName]([&"GHOST"])
+base_hp = 40
+base_attack = 45
+base_defense = 45
+base_special_attack = 74
+base_special_defense = 54
+base_speed = 50
+ev_special_attack = 1
+base_exp = 62
+gender_ratio = &"Genderless"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_x58xg")]([SubResource("Resource_ejxam"), SubResource("Resource_e0drx"), SubResource("Resource_ixm37"), SubResource("Resource_70leu"), SubResource("Resource_yggds"), SubResource("Resource_3n2lp"), SubResource("Resource_2av6d"), SubResource("Resource_aa76c"), SubResource("Resource_85u44"), SubResource("Resource_uq1np"), SubResource("Resource_v8fki"), SubResource("Resource_d5xko")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"BATONPASS", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GIGADRAIN", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PHANTOMFORCE", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYSHOCK", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRICK", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"WEAKARMOR"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+egg_groups = Array[StringName]([&"Mineral", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_i1an0")]([SubResource("Resource_5ttil")])
+weight = 2
+color = &"Purple"
+generation = 8
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 18)
+id = &"SINISTEA"
+display_name = "Sinistea"

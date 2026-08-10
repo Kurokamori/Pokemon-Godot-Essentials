@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3f3q7"]
+
+[resource]
+resource_name = "YELLOWSHARD"
+script = ExtResource("1_3f3q7")
+name_plural = "Yellow Shards"
+price = 1000
+sell_price = 500
+description = "A small yellow shard. It appears to be from some sort of implement made long ago."
+id = &"YELLOWSHARD"
+display_name = "Yellow Shard"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_d1j4m"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1gebp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p2ihh"]
+
+[sub_resource type="Resource" id="Resource_qju0a"]
+script = ExtResource("2_1gebp")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_g6iym"]
+script = ExtResource("2_1gebp")
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_4leah"]
+script = ExtResource("2_1gebp")
+level = 6
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_gqmsq"]
+script = ExtResource("2_1gebp")
+level = 12
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_7aujn"]
+script = ExtResource("2_1gebp")
+level = 18
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_8h0rb"]
+script = ExtResource("2_1gebp")
+level = 24
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_if6r3"]
+script = ExtResource("2_1gebp")
+level = 30
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_s6oxo"]
+script = ExtResource("2_1gebp")
+level = 36
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_21q2g"]
+script = ExtResource("2_1gebp")
+level = 42
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_lohf5"]
+script = ExtResource("2_1gebp")
+level = 48
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_8tov8"]
+script = ExtResource("2_1gebp")
+level = 54
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_46385"]
+script = ExtResource("2_1gebp")
+level = 60
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_7i6op"]
+script = ExtResource("2_1gebp")
+level = 66
+move = &"MEGAKICK"
+
+[resource]
+resource_name = "STONJOURNER"
+script = ExtResource("3_p2ihh")
+species = &"STONJOURNER"
+category = "Big Rock"
+pokedex_entry = "Once a year, on a specific date and at a specific time, they gather out of nowhere and form up in a circle."
+types = Array[StringName]([&"ROCK"])
+base_hp = 100
+base_attack = 125
+base_defense = 135
+base_special_attack = 20
+base_special_defense = 20
+base_speed = 70
+ev_defense = 2
+base_exp = 165
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1gebp")]([SubResource("Resource_qju0a"), SubResource("Resource_g6iym"), SubResource("Resource_4leah"), SubResource("Resource_gqmsq"), SubResource("Resource_7aujn"), SubResource("Resource_8h0rb"), SubResource("Resource_if6r3"), SubResource("Resource_s6oxo"), SubResource("Resource_21q2g"), SubResource("Resource_lohf5"), SubResource("Resource_8tov8"), SubResource("Resource_46385"), SubResource("Resource_7i6op")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HEATCRASH", &"HEAVYSLAM", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"IRONDEFENSE", &"MEGAKICK", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TOXIC", &"WONDERROOM"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"CURSE"])
+abilities = Array[StringName]([&"POWERSPOT"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+height = 25
+weight = 5200
+color = &"Gray"
+shape = &"HeadLegs"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 14)
+shadow_size = 3
+id = &"STONJOURNER"
+display_name = "Stonjourner"

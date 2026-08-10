@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wr2b6"]
+
+[resource]
+resource_name = "TYRANITARITE"
+script = ExtResource("1_wr2b6")
+name_plural = "Tyranitarites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Tyranitar hold it, and it will be able to Mega Evolve."
+id = &"TYRANITARITE"
+display_name = "Tyranitarite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

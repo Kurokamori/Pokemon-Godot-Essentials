@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_a6qxd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1ufso"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fde5b"]
+
+[sub_resource type="Resource" id="Resource_h3jxj"]
+script = ExtResource("1_a6qxd")
+species = &"BONSLY"
+method = &"HasMove"
+parameter = "MIMIC"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_77lrv"]
+script = ExtResource("2_1ufso")
+level = 0
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_p3fui"]
+script = ExtResource("2_1ufso")
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_wsvje"]
+script = ExtResource("2_1ufso")
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_10k5l"]
+script = ExtResource("2_1ufso")
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_e8ycb"]
+script = ExtResource("2_1ufso")
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_0xgsc"]
+script = ExtResource("2_1ufso")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_8hpb7"]
+script = ExtResource("2_1ufso")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_gis63"]
+script = ExtResource("2_1ufso")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_eud2c"]
+script = ExtResource("2_1ufso")
+level = 12
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_0ggq4"]
+script = ExtResource("2_1ufso")
+level = 16
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_1v7ft"]
+script = ExtResource("2_1ufso")
+level = 20
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_gf5be"]
+script = ExtResource("2_1ufso")
+level = 24
+move = &"TEARFULLOOK"
+
+[sub_resource type="Resource" id="Resource_bdg32"]
+script = ExtResource("2_1ufso")
+level = 28
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_mafxn"]
+script = ExtResource("2_1ufso")
+level = 32
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_w80bi"]
+script = ExtResource("2_1ufso")
+level = 36
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_ltmyv"]
+script = ExtResource("2_1ufso")
+level = 40
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_1cbt1"]
+script = ExtResource("2_1ufso")
+level = 44
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_y67qb"]
+script = ExtResource("2_1ufso")
+level = 48
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "SUDOWOODO"
+script = ExtResource("3_fde5b")
+species = &"SUDOWOODO"
+category = "Imitation"
+pokedex_entry = "It mimics a tree to avoid being attacked by enemies. But since its forelegs remain green throughout the year, it is easily identified as a fake in the winter."
+types = Array[StringName]([&"ROCK"])
+base_hp = 70
+base_attack = 100
+base_defense = 115
+base_special_attack = 30
+base_special_defense = 65
+base_speed = 30
+ev_defense = 2
+base_exp = 144
+catch_rate = 65
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1ufso")]([SubResource("Resource_77lrv"), SubResource("Resource_p3fui"), SubResource("Resource_wsvje"), SubResource("Resource_10k5l"), SubResource("Resource_e8ycb"), SubResource("Resource_0xgsc"), SubResource("Resource_8hpb7"), SubResource("Resource_gis63"), SubResource("Resource_eud2c"), SubResource("Resource_0ggq4"), SubResource("Resource_1v7ft"), SubResource("Resource_gf5be"), SubResource("Resource_bdg32"), SubResource("Resource_mafxn"), SubResource("Resource_w80bi"), SubResource("Resource_ltmyv"), SubResource("Resource_1cbt1"), SubResource("Resource_y67qb")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FAKETEARS", &"FIREPUNCH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"IRONDEFENSE", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"UPROAR"])
+egg_moves = Array[StringName]([&"CURSE", &"DEFENSECURL", &"HARDEN", &"HEADBUTT", &"ROCKPOLISH", &"ROLLOUT", &"SANDTOMB", &"SELFDESTRUCT"])
+abilities = Array[StringName]([&"STURDY", &"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_a6qxd")]([SubResource("Resource_h3jxj")])
+height = 12
+weight = 380
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 26)
+shadow_size = 1
+id = &"SUDOWOODO"
+display_name = "Sudowoodo"

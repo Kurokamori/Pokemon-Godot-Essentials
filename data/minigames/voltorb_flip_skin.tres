@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="VoltorbFlipSkin" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/voltorb/voltorb_flip_skin.gd" id="1_skin"]
+
+[resource]
+script = ExtResource("1_skin")
+display_name = "Voltorb Flip"
+panel_color = Color(0.109804, 0.141176, 0.219608, 1)
+panel_border_color = Color(0.282353, 0.345098, 0.486275, 1)
+cursor_color = Color(0.972549, 0.815686, 0.188235, 1)
+highlight_color = Color(0.972549, 0.345098, 0.219608, 1)
+card_size = 40
+card_spacing = 3

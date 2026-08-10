@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8nl2j"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cekcx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1lbap"]
+
+[sub_resource type="Resource" id="Resource_gmtml"]
+script = ExtResource("1_8nl2j")
+species = &"SEISMITOAD"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_l1dht"]
+script = ExtResource("1_8nl2j")
+species = &"TYMPOLE"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_wph3e"]
+script = ExtResource("2_cekcx")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_4hkto"]
+script = ExtResource("2_cekcx")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_juwkw"]
+script = ExtResource("2_cekcx")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_mw360"]
+script = ExtResource("2_cekcx")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_f0rhh"]
+script = ExtResource("2_cekcx")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_kv4m0"]
+script = ExtResource("2_cekcx")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_bsedl"]
+script = ExtResource("2_cekcx")
+level = 20
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_cgwch"]
+script = ExtResource("2_cekcx")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_ic05v"]
+script = ExtResource("2_cekcx")
+level = 30
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_twp51"]
+script = ExtResource("2_cekcx")
+level = 37
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_hjtba"]
+script = ExtResource("2_cekcx")
+level = 42
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_ax8ci"]
+script = ExtResource("2_cekcx")
+level = 48
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_6g7xm"]
+script = ExtResource("2_cekcx")
+level = 54
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_i7ndx"]
+script = ExtResource("2_cekcx")
+level = 60
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "PALPITOAD"
+script = ExtResource("3_1lbap")
+species = &"PALPITOAD"
+category = "Vibration"
+pokedex_entry = "It lives in the water and on land. It uses its long, sticky tongue to capture prey."
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 75
+base_attack = 65
+base_defense = 55
+base_special_attack = 65
+base_special_defense = 55
+base_speed = 69
+ev_hp = 2
+base_exp = 134
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cekcx")]([SubResource("Resource_wph3e"), SubResource("Resource_4hkto"), SubResource("Resource_juwkw"), SubResource("Resource_mw360"), SubResource("Resource_f0rhh"), SubResource("Resource_kv4m0"), SubResource("Resource_bsedl"), SubResource("Resource_cgwch"), SubResource("Resource_ic05v"), SubResource("Resource_twp51"), SubResource("Resource_hjtba"), SubResource("Resource_ax8ci"), SubResource("Resource_6g7xm"), SubResource("Resource_i7ndx")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BOUNCE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERVOICE", &"ICYWIND", &"INFESTATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"POWERWHIP", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STEALTHROCK", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"UPROAR", &"VENOMDRENCH", &"WATERPULSE", &"WEATHERBALL"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"HYDRATION"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_8nl2j")]([SubResource("Resource_gmtml"), SubResource("Resource_l1dht")])
+height = 8
+weight = 170
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 26)
+shadow_size = 1
+id = &"PALPITOAD"
+display_name = "Palpitoad"

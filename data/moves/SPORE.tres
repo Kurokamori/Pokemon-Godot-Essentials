@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rbq87"]
+
+[resource]
+resource_name = "SPORE"
+script = ExtResource("1_rbq87")
+type = &"GRASS"
+total_pp = 15
+function_code = &"SleepTarget"
+description = "The user scatters bursts of spores that induce sleep."
+id = &"SPORE"
+display_name = "Spore"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Powder"])

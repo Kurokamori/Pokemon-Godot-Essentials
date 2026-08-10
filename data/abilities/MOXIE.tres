@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_8cssa"]
+
+[resource]
+resource_name = "MOXIE"
+script = ExtResource("1_8cssa")
+description = "Boosts Attack after knocking out any Pokémon."
+id = &"MOXIE"
+display_name = "Moxie"

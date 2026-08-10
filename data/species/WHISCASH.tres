@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_is412"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_prjvk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jpvdw"]
+
+[sub_resource type="Resource" id="Resource_iirp4"]
+script = ExtResource("1_is412")
+species = &"BARBOACH"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yn683"]
+script = ExtResource("2_prjvk")
+level = 0
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_qjtro"]
+script = ExtResource("2_prjvk")
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_7x4n5"]
+script = ExtResource("2_prjvk")
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_mw206"]
+script = ExtResource("2_prjvk")
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_odhet"]
+script = ExtResource("2_prjvk")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_3stch"]
+script = ExtResource("2_prjvk")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ak30f"]
+script = ExtResource("2_prjvk")
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_4fhbm"]
+script = ExtResource("2_prjvk")
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_4saxo"]
+script = ExtResource("2_prjvk")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_chymg"]
+script = ExtResource("2_prjvk")
+level = 18
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_w5hlc"]
+script = ExtResource("2_prjvk")
+level = 24
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_pxi8s"]
+script = ExtResource("2_prjvk")
+level = 33
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_o6675"]
+script = ExtResource("2_prjvk")
+level = 40
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_b0nqj"]
+script = ExtResource("2_prjvk")
+level = 48
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_krjk7"]
+script = ExtResource("2_prjvk")
+level = 56
+move = &"FISSURE"
+
+[resource]
+resource_name = "WHISCASH"
+script = ExtResource("3_jpvdw")
+species = &"WHISCASH"
+category = "Whiskers"
+pokedex_entry = "Mysteriously, it can foretell earthquakes. In the daytime, it sleeps in mud at the bottom of a pond. When it awakens, it continually feeds throughout the night."
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 110
+base_attack = 78
+base_defense = 73
+base_special_attack = 76
+base_special_defense = 71
+base_speed = 60
+ev_hp = 2
+base_exp = 164
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_prjvk")]([SubResource("Resource_yn683"), SubResource("Resource_qjtro"), SubResource("Resource_7x4n5"), SubResource("Resource_mw206"), SubResource("Resource_odhet"), SubResource("Resource_3stch"), SubResource("Resource_ak30f"), SubResource("Resource_4fhbm"), SubResource("Resource_4saxo"), SubResource("Resource_chymg"), SubResource("Resource_w5hlc"), SubResource("Resource_pxi8s"), SubResource("Resource_o6675"), SubResource("Resource_b0nqj"), SubResource("Resource_krjk7")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"OBLIVIOUS", &"ANTICIPATION"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_is412")]([SubResource("Resource_iirp4")])
+height = 9
+weight = 236
+color = &"Blue"
+shape = &"Finned"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(1, 21)
+id = &"WHISCASH"
+display_name = "Whiscash"

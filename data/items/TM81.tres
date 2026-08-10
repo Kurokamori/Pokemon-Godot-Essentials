@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_qecot"]
+
+[resource]
+resource_name = "TM81"
+script = ExtResource("1_qecot")
+name_plural = "TM81s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 64
+field_use = 5
+move = &"XSCISSOR"
+description = "The user slashes at the target by crossing its scythes or claws as if they were a pair of scissors."
+id = &"TM81"
+display_name = "TM81"
+flags = Array[StringName]([&"Fling_80"])

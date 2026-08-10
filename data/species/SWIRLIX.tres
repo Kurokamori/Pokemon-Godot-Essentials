@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nhwik"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gq0ks"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xc70x"]
+
+[sub_resource type="Resource" id="Resource_wy7by"]
+script = ExtResource("1_nhwik")
+species = &"SLURPUFF"
+method = &"TradeItem"
+parameter = "WHIPPEDDREAM"
+
+[sub_resource type="Resource" id="Resource_frsnq"]
+script = ExtResource("2_gq0ks")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7aocp"]
+script = ExtResource("2_gq0ks")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_he16h"]
+script = ExtResource("2_gq0ks")
+level = 3
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_560al"]
+script = ExtResource("2_gq0ks")
+level = 6
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_1osr3"]
+script = ExtResource("2_gq0ks")
+level = 9
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_w6wv5"]
+script = ExtResource("2_gq0ks")
+level = 12
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_40mop"]
+script = ExtResource("2_gq0ks")
+level = 15
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_sm7tt"]
+script = ExtResource("2_gq0ks")
+level = 18
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_t7r71"]
+script = ExtResource("2_gq0ks")
+level = 21
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_8ije7"]
+script = ExtResource("2_gq0ks")
+level = 24
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_67qn1"]
+script = ExtResource("2_gq0ks")
+level = 27
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_3krmq"]
+script = ExtResource("2_gq0ks")
+level = 30
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_32ybr"]
+script = ExtResource("2_gq0ks")
+level = 33
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_u7bk5"]
+script = ExtResource("2_gq0ks")
+level = 36
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_efaiw"]
+script = ExtResource("2_gq0ks")
+level = 39
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "SWIRLIX"
+script = ExtResource("3_xc70x")
+species = &"SWIRLIX"
+category = "Cotton Candy"
+pokedex_entry = "To entangle its opponents in battle, it extrudes white threads as sweet and sticky as cotton candy."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 62
+base_attack = 48
+base_defense = 66
+base_special_attack = 59
+base_special_defense = 57
+base_speed = 49
+ev_defense = 1
+base_exp = 68
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gq0ks")]([SubResource("Resource_frsnq"), SubResource("Resource_7aocp"), SubResource("Resource_he16h"), SubResource("Resource_560al"), SubResource("Resource_1osr3"), SubResource("Resource_w6wv5"), SubResource("Resource_40mop"), SubResource("Resource_sm7tt"), SubResource("Resource_t7r71"), SubResource("Resource_8ije7"), SubResource("Resource_67qn1"), SubResource("Resource_3krmq"), SubResource("Resource_32ybr"), SubResource("Resource_u7bk5"), SubResource("Resource_efaiw")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MISTYEXPLOSION", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"THIEF", &"THUNDERBOLT", &"TOXIC"])
+egg_moves = Array[StringName]([&"AFTERYOU", &"COPYCAT", &"STICKYWEB", &"YAWN"])
+abilities = Array[StringName]([&"SWEETVEIL"])
+hidden_abilities = Array[StringName]([&"UNBURDEN"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nhwik")]([SubResource("Resource_wy7by")])
+height = 4
+weight = 35
+color = &"White"
+shape = &"HeadLegs"
+generation = 6
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 33)
+shadow_size = 1
+id = &"SWIRLIX"
+display_name = "Swirlix"

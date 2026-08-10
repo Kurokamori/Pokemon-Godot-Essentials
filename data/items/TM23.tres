@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_vahpd"]
+
+[resource]
+resource_name = "TM23"
+script = ExtResource("1_vahpd")
+name_plural = "TM23s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"IRONTAIL"
+description = "The target is slammed with a steel-hard tail. This may also lower the target's Defense stat."
+id = &"TM23"
+display_name = "TM23"
+flags = Array[StringName]([&"Fling_100"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_b7834"]
+
+[resource]
+resource_name = "CONFIDE"
+script = ExtResource("1_b7834")
+accuracy = 0
+total_pp = 20
+function_code = &"LowerTargetSpAtk1"
+description = "The user tells the target a secret. The target loses focus and its Sp. Atk stat is lowered."
+id = &"CONFIDE"
+display_name = "Confide"
+flags = Array[StringName]([&"CanMirrorMove", &"Sound"])

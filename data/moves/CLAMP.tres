@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rub6v"]
+
+[resource]
+resource_name = "CLAMP"
+script = ExtResource("1_rub6v")
+type = &"WATER"
+category = 0
+power = 35
+accuracy = 85
+total_pp = 15
+function_code = &"BindTarget"
+description = "The target is clamped and squeezed by the user's very thick and sturdy shell for four to five turns."
+id = &"CLAMP"
+display_name = "Clamp"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

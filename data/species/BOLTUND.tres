@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1cb1q"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_poj5d"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p2hfy"]
+
+[sub_resource type="Resource" id="Resource_qlcbt"]
+script = ExtResource("1_1cb1q")
+species = &"YAMPER"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_rcl7e"]
+script = ExtResource("2_poj5d")
+move = &"ELECTRIFY"
+
+[sub_resource type="Resource" id="Resource_q3abm"]
+script = ExtResource("2_poj5d")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7dv16"]
+script = ExtResource("2_poj5d")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_06ryk"]
+script = ExtResource("2_poj5d")
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_pw68h"]
+script = ExtResource("2_poj5d")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_gxy6p"]
+script = ExtResource("2_poj5d")
+level = 15
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_msane"]
+script = ExtResource("2_poj5d")
+level = 20
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_2df37"]
+script = ExtResource("2_poj5d")
+level = 28
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_8txdm"]
+script = ExtResource("2_poj5d")
+level = 34
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_73qxj"]
+script = ExtResource("2_poj5d")
+level = 41
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_7ojix"]
+script = ExtResource("2_poj5d")
+level = 48
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_4bfm0"]
+script = ExtResource("2_poj5d")
+level = 55
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_rc514"]
+script = ExtResource("2_poj5d")
+level = 62
+move = &"ELECTRICTERRAIN"
+
+[resource]
+resource_name = "BOLTUND"
+script = ExtResource("3_p2hfy")
+species = &"BOLTUND"
+category = "Dog"
+pokedex_entry = "This Pokémon generates electricity and channels it into its legs to keep them going strong. Boltund can run nonstop for three full days."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 69
+base_attack = 90
+base_defense = 60
+base_special_attack = 90
+base_special_defense = 60
+base_speed = 121
+ev_speed = 2
+base_exp = 172
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_poj5d")]([SubResource("Resource_rcl7e"), SubResource("Resource_q3abm"), SubResource("Resource_7dv16"), SubResource("Resource_06ryk"), SubResource("Resource_pw68h"), SubResource("Resource_gxy6p"), SubResource("Resource_msane"), SubResource("Resource_2df37"), SubResource("Resource_8txdm"), SubResource("Resource_73qxj"), SubResource("Resource_7ojix"), SubResource("Resource_4bfm0"), SubResource("Resource_rc514")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BULKUP", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FIREFANG", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"STRONGJAW"])
+hidden_abilities = Array[StringName]([&"COMPETITIVE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1cb1q")]([SubResource("Resource_qlcbt")])
+height = 10
+weight = 340
+color = &"Yellow"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(2, 50)
+front_sprite_offset = Vector2i(-1, 18)
+id = &"BOLTUND"
+display_name = "Boltund"

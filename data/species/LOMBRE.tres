@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_id1ec"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_d04ne"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ggifh"]
+
+[sub_resource type="Resource" id="Resource_82ksx"]
+script = ExtResource("1_id1ec")
+species = &"LUDICOLO"
+method = &"Item"
+parameter = "WATERSTONE"
+
+[sub_resource type="Resource" id="Resource_vyol1"]
+script = ExtResource("1_id1ec")
+species = &"LOTAD"
+method = &"Level"
+parameter = "14"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_caj4s"]
+script = ExtResource("2_d04ne")
+move = &"TEETERDANCE"
+
+[sub_resource type="Resource" id="Resource_fan0o"]
+script = ExtResource("2_d04ne")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_gbmuw"]
+script = ExtResource("2_d04ne")
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_gmeea"]
+script = ExtResource("2_d04ne")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_btjgf"]
+script = ExtResource("2_d04ne")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_b4myb"]
+script = ExtResource("2_d04ne")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_kq77m"]
+script = ExtResource("2_d04ne")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_t6et8"]
+script = ExtResource("2_d04ne")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_s35d8"]
+script = ExtResource("2_d04ne")
+level = 9
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_h4fh5"]
+script = ExtResource("2_d04ne")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_21hr7"]
+script = ExtResource("2_d04ne")
+level = 18
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_6qcg5"]
+script = ExtResource("2_d04ne")
+level = 24
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_xe370"]
+script = ExtResource("2_d04ne")
+level = 30
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_lyrk5"]
+script = ExtResource("2_d04ne")
+level = 36
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_mbnod"]
+script = ExtResource("2_d04ne")
+level = 43
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_nt8wc"]
+script = ExtResource("2_d04ne")
+level = 50
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_k7nw2"]
+script = ExtResource("2_d04ne")
+level = 57
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_vu5ov"]
+script = ExtResource("2_d04ne")
+level = 64
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "LOMBRE"
+script = ExtResource("3_ggifh")
+species = &"LOMBRE"
+category = "Jolly"
+pokedex_entry = "In the evening, it takes great delight in popping out of rivers and startling people. It feeds on aquatic moss that grows on rocks in the riverbed."
+types = Array[StringName]([&"WATER", &"GRASS"])
+base_hp = 60
+base_attack = 50
+base_defense = 50
+base_special_attack = 60
+base_special_defense = 70
+base_speed = 50
+ev_special_defense = 2
+base_exp = 119
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_d04ne")]([SubResource("Resource_caj4s"), SubResource("Resource_fan0o"), SubResource("Resource_gbmuw"), SubResource("Resource_gmeea"), SubResource("Resource_btjgf"), SubResource("Resource_b4myb"), SubResource("Resource_kq77m"), SubResource("Resource_t6et8"), SubResource("Resource_s35d8"), SubResource("Resource_h4fh5"), SubResource("Resource_21hr7"), SubResource("Resource_6qcg5"), SubResource("Resource_xe370"), SubResource("Resource_lyrk5"), SubResource("Resource_mbnod"), SubResource("Resource_nt8wc"), SubResource("Resource_k7nw2"), SubResource("Resource_vu5ov")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"KNOCKOFF", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"THUNDERPUNCH", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"RAINDISH"])
+hidden_abilities = Array[StringName]([&"OWNTEMPO"])
+wild_item_uncommon = Array[StringName]([&"MENTALHERB"])
+egg_groups = Array[StringName]([&"Water1", &"Grass"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_id1ec")]([SubResource("Resource_82ksx"), SubResource("Resource_vyol1")])
+height = 12
+weight = 325
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 29)
+id = &"LOMBRE"
+display_name = "Lombre"

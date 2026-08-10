@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_clvuk"]
+
+[resource]
+resource_name = "BLAZEKICK"
+script = ExtResource("1_clvuk")
+type = &"FIRE"
+category = 0
+power = 85
+accuracy = 90
+total_pp = 10
+function_code = &"BurnTarget"
+effect_chance = 10
+description = "The user launches a kick with a high critical-hit ratio. It may also leave the target with a burn."
+id = &"BLAZEKICK"
+display_name = "Blaze Kick"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

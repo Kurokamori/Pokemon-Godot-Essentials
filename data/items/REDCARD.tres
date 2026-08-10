@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_s2fgx"]
+
+[resource]
+resource_name = "REDCARD"
+script = ExtResource("1_s2fgx")
+name_plural = "Red Cards"
+price = 3000
+sell_price = 2000
+bp_price = 20
+description = "A card with a mysterious power. When the holder is struck by a foe, the attacker is removed from battle."
+id = &"REDCARD"
+display_name = "Red Card"
+flags = Array[StringName]([&"Fling_10"])

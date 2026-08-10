@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1dow4"]
+
+[resource]
+resource_name = "TM99"
+script = ExtResource("1_1dow4")
+name_plural = "TM99s"
+pocket = 4
+price = 2500
+sell_price = 1250
+bp_price = 64
+field_use = 5
+move = &"WATERFALL"
+description = "The user charges at the target and may make it flinch."
+id = &"TM99"
+display_name = "TM99"
+flags = Array[StringName]([&"Fling_80"])

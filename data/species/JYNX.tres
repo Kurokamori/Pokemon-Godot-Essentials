@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6wpxm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_erx3c"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uqofk"]
+
+[sub_resource type="Resource" id="Resource_2hcj1"]
+script = ExtResource("1_6wpxm")
+species = &"SMOOCHUM"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_dpk0a"]
+script = ExtResource("2_erx3c")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_o8d1y"]
+script = ExtResource("2_erx3c")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_kxvyj"]
+script = ExtResource("2_erx3c")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_6g1ie"]
+script = ExtResource("2_erx3c")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_krvu8"]
+script = ExtResource("2_erx3c")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_vyrqf"]
+script = ExtResource("2_erx3c")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_0ka2i"]
+script = ExtResource("2_erx3c")
+level = 16
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_ur14w"]
+script = ExtResource("2_erx3c")
+level = 20
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_iv2gi"]
+script = ExtResource("2_erx3c")
+level = 24
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_jpr7f"]
+script = ExtResource("2_erx3c")
+level = 28
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_ssgbe"]
+script = ExtResource("2_erx3c")
+level = 34
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_atv8f"]
+script = ExtResource("2_erx3c")
+level = 40
+move = &"LOVELYKISS"
+
+[sub_resource type="Resource" id="Resource_if3hw"]
+script = ExtResource("2_erx3c")
+level = 46
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_4onvx"]
+script = ExtResource("2_erx3c")
+level = 52
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_wgdbt"]
+script = ExtResource("2_erx3c")
+level = 58
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "JYNX"
+script = ExtResource("3_uqofk")
+species = &"JYNX"
+category = "Human Shape"
+pokedex_entry = "A Jynx sashays rhythmically as if it were dancing. Its motions are so bouncingly alluring, people seeing it are compelled to shake their hips without noticing."
+types = Array[StringName]([&"ICE", &"PSYCHIC"])
+base_hp = 65
+base_attack = 50
+base_defense = 35
+base_special_attack = 115
+base_special_defense = 95
+base_speed = 95
+ev_special_attack = 2
+base_exp = 159
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_erx3c")]([SubResource("Resource_dpk0a"), SubResource("Resource_o8d1y"), SubResource("Resource_kxvyj"), SubResource("Resource_6g1ie"), SubResource("Resource_krvu8"), SubResource("Resource_vyrqf"), SubResource("Resource_0ka2i"), SubResource("Resource_ur14w"), SubResource("Resource_iv2gi"), SubResource("Resource_jpr7f"), SubResource("Resource_ssgbe"), SubResource("Resource_atv8f"), SubResource("Resource_if3hw"), SubResource("Resource_4onvx"), SubResource("Resource_wgdbt")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"AURORAVEIL", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"TORMENT", &"TRICK", &"TRICKROOM", &"TRIPLEAXEL", &"UPROAR", &"WATERPULSE", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"OBLIVIOUS", &"FOREWARN"])
+hidden_abilities = Array[StringName]([&"DRYSKIN"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_6wpxm")]([SubResource("Resource_2hcj1")])
+height = 14
+weight = 406
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 27)
+id = &"JYNX"
+display_name = "Jynx"

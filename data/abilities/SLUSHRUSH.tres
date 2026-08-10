@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_t8iwu"]
+
+[resource]
+resource_name = "SLUSHRUSH"
+script = ExtResource("1_t8iwu")
+description = "Boosts the Pokémon's Speed stat in a hailstorm."
+id = &"SLUSHRUSH"
+display_name = "Slush Rush"

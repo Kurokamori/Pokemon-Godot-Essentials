@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TrainerTypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_type_data.gd" id="1_ndmxn"]
+
+[resource]
+resource_name = "PSYCHIC_M"
+script = ExtResource("1_ndmxn")
+gender = 0
+base_money = 32
+skill_level = 32
+id = &"PSYCHIC_M"
+display_name = "Psychic"

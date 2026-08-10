@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e2fje"]
+
+[resource]
+resource_name = "ROOST"
+script = ExtResource("1_e2fje")
+type = &"FLYING"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"HealUserHalfOfTotalHPLoseFlyingTypeThisTurn"
+description = "The user lands and rests its body. It restores the user's HP by up to half of its max HP."
+id = &"ROOST"
+display_name = "Roost"

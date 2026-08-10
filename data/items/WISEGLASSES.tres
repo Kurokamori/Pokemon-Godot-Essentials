@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0ddyg"]
+
+[resource]
+resource_name = "WISEGLASSES"
+script = ExtResource("1_0ddyg")
+name_plural = "Wise Glasses"
+portion_name = "pair of Wise Glasses"
+portion_name_plural = "pairs of Wise Glasses"
+price = 4000
+sell_price = 2000
+bp_price = 48
+description = "An item to be held by a Pokémon. It is a thick pair of glasses that slightly boosts the power of special moves."
+id = &"WISEGLASSES"
+display_name = "Wise Glasses"
+flags = Array[StringName]([&"Fling_10"])

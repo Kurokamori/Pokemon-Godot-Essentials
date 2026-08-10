@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_kh0hw"]
+
+[resource]
+resource_name = "QUICKBALL"
+script = ExtResource("1_kh0hw")
+name_plural = "Quick Balls"
+pocket = 3
+price = 1000
+sell_price = 500
+battle_use = 4
+description = "A somewhat different Poké Ball that provides a better catch rate if used at the start of a wild encounter."
+id = &"QUICKBALL"
+display_name = "Quick Ball"
+flags = Array[StringName]([&"PokeBall"])

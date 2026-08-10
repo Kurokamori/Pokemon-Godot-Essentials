@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_cqpml"]
+
+[resource]
+resource_name = "SHALOURSABLE"
+script = ExtResource("1_cqpml")
+name_plural = "Shalour Sables"
+pocket = 2
+price = 350
+sell_price = 175
+field_use = 1
+battle_use = 1
+description = "Shalour City's famous shortbread. It can be used once to heal all the status conditions of a Pokémon."
+id = &"SHALOURSABLE"
+display_name = "Shalour Sable"
+flags = Array[StringName]([&"Fling_30"])

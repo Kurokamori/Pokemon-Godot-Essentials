@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_h141m"]
+
+[resource]
+resource_name = "MARVELSCALE"
+script = ExtResource("1_h141m")
+description = "Ups Defense if there is a status problem."
+id = &"MARVELSCALE"
+display_name = "Marvel Scale"

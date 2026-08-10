@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_mfyqb"]
+
+[resource]
+resource_name = "38"
+script = ExtResource("1_mfyqb")
+map_id = 38
+town_map_position = Array[int]([0, 13, 6])
+id = &"38"
+display_name = "Ingido Plateau"
+flags = Array[StringName]([&"DisableBoxLink"])

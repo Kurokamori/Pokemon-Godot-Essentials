@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tbf5q"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e7kj1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_elim5"]
+
+[sub_resource type="Resource" id="Resource_faeo2"]
+script = ExtResource("1_tbf5q")
+species = &"DOTTLER"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pcb2w"]
+script = ExtResource("2_e7kj1")
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_16mss"]
+script = ExtResource("2_e7kj1")
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_u25uv"]
+script = ExtResource("2_e7kj1")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_rxiy0"]
+script = ExtResource("2_e7kj1")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_7xd58"]
+script = ExtResource("2_e7kj1")
+level = 4
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_piwf5"]
+script = ExtResource("2_e7kj1")
+level = 8
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_mkdro"]
+script = ExtResource("2_e7kj1")
+level = 12
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_1153a"]
+script = ExtResource("2_e7kj1")
+level = 16
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_nx74u"]
+script = ExtResource("2_e7kj1")
+level = 20
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_5re03"]
+script = ExtResource("2_e7kj1")
+level = 24
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_kowwq"]
+script = ExtResource("2_e7kj1")
+level = 28
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_c1j7r"]
+script = ExtResource("2_e7kj1")
+level = 32
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_m7kfv"]
+script = ExtResource("2_e7kj1")
+level = 36
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_fr5o5"]
+script = ExtResource("2_e7kj1")
+level = 40
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_dhm3n"]
+script = ExtResource("2_e7kj1")
+level = 44
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_cxgr8"]
+script = ExtResource("2_e7kj1")
+level = 48
+move = &"PSYCHICTERRAIN"
+
+[resource]
+resource_name = "ORBEETLE"
+script = ExtResource("3_elim5")
+species = &"ORBEETLE"
+category = "Seven Spot"
+pokedex_entry = "It's famous for its high level of intelligence, and the large size of its brain is proof that it also possesses immense psychic power."
+types = Array[StringName]([&"BUG", &"PSYCHIC"])
+base_hp = 60
+base_attack = 45
+base_defense = 110
+base_special_attack = 80
+base_special_defense = 120
+base_speed = 90
+ev_special_defense = 3
+base_exp = 253
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_e7kj1")]([SubResource("Resource_pcb2w"), SubResource("Resource_16mss"), SubResource("Resource_u25uv"), SubResource("Resource_rxiy0"), SubResource("Resource_7xd58"), SubResource("Resource_piwf5"), SubResource("Resource_mkdro"), SubResource("Resource_1153a"), SubResource("Resource_nx74u"), SubResource("Resource_5re03"), SubResource("Resource_kowwq"), SubResource("Resource_c1j7r"), SubResource("Resource_m7kfv"), SubResource("Resource_fr5o5"), SubResource("Resource_dhm3n"), SubResource("Resource_cxgr8")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BODYPRESS", &"BUGBUZZ", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GIGAIMPACT", &"GUARDSWAP", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"IRONDEFENSE", &"LEECHLIFE", &"LIGHTSCREEN", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRICK", &"TRICKROOM", &"UTURN", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SWARM", &"FRISK"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+wild_item_uncommon = Array[StringName]([&"PSYCHICSEED"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_tbf5q")]([SubResource("Resource_faeo2")])
+height = 4
+weight = 408
+shape = &"Winged"
+generation = 8
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(1, 8)
+shadow_size = 3
+id = &"ORBEETLE"
+display_name = "Orbeetle"

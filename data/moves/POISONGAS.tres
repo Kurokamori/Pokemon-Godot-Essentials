@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ebrt5"]
+
+[resource]
+resource_name = "POISONGAS"
+script = ExtResource("1_ebrt5")
+type = &"POISON"
+accuracy = 90
+total_pp = 40
+target = &"AllNearFoes"
+function_code = &"PoisonTarget"
+description = "A cloud of poison gas is sprayed in the face of opposing Pokémon. It may poison those hit."
+id = &"POISONGAS"
+display_name = "Poison Gas"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

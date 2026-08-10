@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_hcugr"]
+
+[resource]
+resource_name = "DIVE"
+script = ExtResource("1_hcugr")
+type = &"WATER"
+category = 0
+power = 80
+total_pp = 10
+function_code = &"TwoTurnAttackInvulnerableUnderwater"
+description = "Diving on the first turn, the user rises and hits on the next turn. It can be used to dive in the ocean."
+id = &"DIVE"
+display_name = "Dive"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

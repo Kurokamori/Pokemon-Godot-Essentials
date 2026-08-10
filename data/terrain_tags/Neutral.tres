@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_o3wff"]
+
+[resource]
+resource_name = "Neutral"
+script = ExtResource("1_o3wff")
+tag_number = 13
+ignore_passability = true
+id = &"Neutral"
+display_name = "Neutral"

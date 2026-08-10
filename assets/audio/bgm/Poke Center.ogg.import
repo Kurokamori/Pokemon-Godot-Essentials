@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d3vjo25208xl1"
+path="res://.godot/imported/Poke Center.ogg-660a543d424ccfeda1584b532be1b83d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Poke Center.ogg"
+dest_files=["res://.godot/imported/Poke Center.ogg-660a543d424ccfeda1584b532be1b83d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

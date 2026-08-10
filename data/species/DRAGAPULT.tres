@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8ingk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fgav3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ycsvb"]
+
+[sub_resource type="Resource" id="Resource_8ka6g"]
+script = ExtResource("1_8ingk")
+species = &"DRAKLOAK"
+method = &"Level"
+parameter = "60"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nsjjp"]
+script = ExtResource("2_fgav3")
+level = 0
+move = &"DRAGONDARTS"
+
+[sub_resource type="Resource" id="Resource_k82xk"]
+script = ExtResource("2_fgav3")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_vegmk"]
+script = ExtResource("2_fgav3")
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_vaow5"]
+script = ExtResource("2_fgav3")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_smppf"]
+script = ExtResource("2_fgav3")
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_idjjk"]
+script = ExtResource("2_fgav3")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_6iqje"]
+script = ExtResource("2_fgav3")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_2c60h"]
+script = ExtResource("2_fgav3")
+level = 6
+move = &"LOCKON"
+
+[sub_resource type="Resource" id="Resource_oullp"]
+script = ExtResource("2_fgav3")
+level = 12
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_mc6or"]
+script = ExtResource("2_fgav3")
+level = 18
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_qh4l7"]
+script = ExtResource("2_fgav3")
+level = 24
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_1cd1d"]
+script = ExtResource("2_fgav3")
+level = 30
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_frvfl"]
+script = ExtResource("2_fgav3")
+level = 36
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_5td6l"]
+script = ExtResource("2_fgav3")
+level = 42
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_qghfk"]
+script = ExtResource("2_fgav3")
+level = 48
+move = &"PHANTOMFORCE"
+
+[sub_resource type="Resource" id="Resource_xaoim"]
+script = ExtResource("2_fgav3")
+level = 54
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_y5i3g"]
+script = ExtResource("2_fgav3")
+level = 63
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_7jevc"]
+script = ExtResource("2_fgav3")
+level = 70
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_yywqs"]
+script = ExtResource("2_fgav3")
+level = 78
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "DRAGAPULT"
+script = ExtResource("3_ycsvb")
+species = &"DRAGAPULT"
+category = "Stealth"
+pokedex_entry = "When it isn't battling, it keeps Dreepy in the holes on its horns. Once a fight starts, it launches the Dreepy like supersonic missiles."
+types = Array[StringName]([&"DRAGON", &"GHOST"])
+base_hp = 88
+base_attack = 120
+base_defense = 75
+base_special_attack = 100
+base_special_defense = 75
+base_speed = 142
+ev_speed = 3
+base_exp = 300
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fgav3")]([SubResource("Resource_nsjjp"), SubResource("Resource_k82xk"), SubResource("Resource_vegmk"), SubResource("Resource_vaow5"), SubResource("Resource_smppf"), SubResource("Resource_idjjk"), SubResource("Resource_6iqje"), SubResource("Resource_2c60h"), SubResource("Resource_oullp"), SubResource("Resource_mc6or"), SubResource("Resource_qh4l7"), SubResource("Resource_1cd1d"), SubResource("Resource_frvfl"), SubResource("Resource_5td6l"), SubResource("Resource_qghfk"), SubResource("Resource_xaoim"), SubResource("Resource_y5i3g"), SubResource("Resource_7jevc"), SubResource("Resource_yywqs")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BEATUP", &"BODYSLAM", &"BREAKINGSWIPE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PHANTOMFORCE", &"PROTECT", &"PSYCHICFANGS", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRIATTACK", &"UTURN", &"WILLOWISP"])
+abilities = Array[StringName]([&"CLEARBODY", &"INFILTRATOR"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+egg_groups = Array[StringName]([&"Amorphous", &"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_8ingk")]([SubResource("Resource_8ka6g")])
+height = 30
+weight = 500
+color = &"Green"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(1, 3)
+id = &"DRAGAPULT"
+display_name = "Dragapult"

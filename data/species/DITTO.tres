@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_giedv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_krtha"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_appmh"]
+
+[sub_resource type="Resource" id="Resource_dgkob"]
+script = ExtResource("2_krtha")
+move = &"TRANSFORM"
+
+[resource]
+resource_name = "DITTO"
+script = ExtResource("3_appmh")
+species = &"DITTO"
+category = "Transform"
+pokedex_entry = "A Ditto rearranges its cell structure to transform itself. However, if it tries to change based on its memory, it will get details wrong."
+base_hp = 48
+base_attack = 48
+base_defense = 48
+base_special_attack = 48
+base_special_defense = 48
+base_speed = 48
+ev_hp = 1
+base_exp = 101
+gender_ratio = &"Genderless"
+catch_rate = 35
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_krtha")]([SubResource("Resource_dgkob")])
+abilities = Array[StringName]([&"LIMBER"])
+hidden_abilities = Array[StringName]([&"IMPOSTER"])
+wild_item_common = Array[StringName]([&"QUICKPOWDER"])
+wild_item_uncommon = Array[StringName]([&"METALPOWDER"])
+egg_groups = Array[StringName]([&"Ditto"])
+hatch_steps = 5120
+height = 3
+weight = 40
+color = &"Purple"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 38)
+shadow_size = 1
+id = &"DITTO"
+display_name = "Ditto"

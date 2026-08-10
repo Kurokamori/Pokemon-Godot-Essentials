@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_plx8f"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gbmxs"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_61w76"]
+
+[sub_resource type="Resource" id="Resource_fikv5"]
+script = ExtResource("1_plx8f")
+species = &"MIENFOO"
+method = &"Level"
+parameter = "50"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8fxuf"]
+script = ExtResource("2_gbmxs")
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_y6hye"]
+script = ExtResource("2_gbmxs")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_xk37q"]
+script = ExtResource("2_gbmxs")
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_6yx8j"]
+script = ExtResource("2_gbmxs")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_1uh6d"]
+script = ExtResource("2_gbmxs")
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_p55db"]
+script = ExtResource("2_gbmxs")
+level = 15
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_siohh"]
+script = ExtResource("2_gbmxs")
+level = 20
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_q3xe3"]
+script = ExtResource("2_gbmxs")
+level = 25
+move = &"FORCEPALM"
+
+[sub_resource type="Resource" id="Resource_yxytr"]
+script = ExtResource("2_gbmxs")
+level = 30
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_kp6ku"]
+script = ExtResource("2_gbmxs")
+level = 35
+move = &"DRAINPUNCH"
+
+[sub_resource type="Resource" id="Resource_ydhlf"]
+script = ExtResource("2_gbmxs")
+level = 40
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_v3hig"]
+script = ExtResource("2_gbmxs")
+level = 45
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_jgdxo"]
+script = ExtResource("2_gbmxs")
+level = 53
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_m2tu1"]
+script = ExtResource("2_gbmxs")
+level = 59
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_q307m"]
+script = ExtResource("2_gbmxs")
+level = 66
+move = &"HIGHJUMPKICK"
+
+[resource]
+resource_name = "MIENSHAO"
+script = ExtResource("3_61w76")
+species = &"MIENSHAO"
+category = "Martial Arts"
+pokedex_entry = "They use the long fur on their arms as a whip to strike their opponents."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 65
+base_attack = 125
+base_defense = 60
+base_special_attack = 95
+base_special_defense = 60
+base_speed = 105
+ev_attack = 2
+base_exp = 179
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gbmxs")]([SubResource("Resource_8fxuf"), SubResource("Resource_y6hye"), SubResource("Resource_xk37q"), SubResource("Resource_6yx8j"), SubResource("Resource_1uh6d"), SubResource("Resource_p55db"), SubResource("Resource_siohh"), SubResource("Resource_q3xe3"), SubResource("Resource_yxytr"), SubResource("Resource_kp6ku"), SubResource("Resource_ydhlf"), SubResource("Resource_v3hig"), SubResource("Resource_jgdxo"), SubResource("Resource_m2tu1"), SubResource("Resource_q307m")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"AURASPHERE", &"BATONPASS", &"BLAZEKICK", &"BOUNCE", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"CALMMIND", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"KNOCKOFF", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"INNERFOCUS", &"REGENERATOR"])
+hidden_abilities = Array[StringName]([&"RECKLESS"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_plx8f")]([SubResource("Resource_fikv5")])
+height = 14
+weight = 355
+color = &"Purple"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-1, 20)
+id = &"MIENSHAO"
+display_name = "Mienshao"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6va7p"]
+
+[resource]
+resource_name = "HARDEN"
+script = ExtResource("1_6va7p")
+accuracy = 0
+total_pp = 30
+target = &"User"
+function_code = &"RaiseUserDefense1"
+description = "The user stiffens all the muscles in its body to raise its Defense stat."
+id = &"HARDEN"
+display_name = "Harden"

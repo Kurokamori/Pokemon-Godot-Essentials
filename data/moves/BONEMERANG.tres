@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rfibo"]
+
+[resource]
+resource_name = "BONEMERANG"
+script = ExtResource("1_rfibo")
+type = &"GROUND"
+category = 0
+power = 50
+accuracy = 90
+total_pp = 10
+function_code = &"HitTwoTimes"
+description = "The user throws the bone it holds. The bone loops to hit the target twice, coming and going."
+id = &"BONEMERANG"
+display_name = "Bonemerang"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

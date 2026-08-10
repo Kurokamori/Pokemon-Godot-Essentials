@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_yxbpa"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_m1k84"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_o38qg"]
+
+[sub_resource type="Resource" id="Resource_2mqs0"]
+script = ExtResource("1_yxbpa")
+species = &"HIPPOPOTAS"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_wtmqu"]
+script = ExtResource("2_m1k84")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_g67e5"]
+script = ExtResource("2_m1k84")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_7y233"]
+script = ExtResource("2_m1k84")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_rmxrx"]
+script = ExtResource("2_m1k84")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_mrsv4"]
+script = ExtResource("2_m1k84")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_5a5ep"]
+script = ExtResource("2_m1k84")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_16lud"]
+script = ExtResource("2_m1k84")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_klivb"]
+script = ExtResource("2_m1k84")
+level = 12
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_xjit6"]
+script = ExtResource("2_m1k84")
+level = 16
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_q045t"]
+script = ExtResource("2_m1k84")
+level = 20
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_bpeh3"]
+script = ExtResource("2_m1k84")
+level = 24
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_0m7yp"]
+script = ExtResource("2_m1k84")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_mm0xa"]
+script = ExtResource("2_m1k84")
+level = 32
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_fvxbe"]
+script = ExtResource("2_m1k84")
+level = 38
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_ikeui"]
+script = ExtResource("2_m1k84")
+level = 44
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_cq3pm"]
+script = ExtResource("2_m1k84")
+level = 50
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_p13jl"]
+script = ExtResource("2_m1k84")
+level = 56
+move = &"FISSURE"
+
+[sub_resource type="Resource" id="Resource_ftn0l"]
+script = ExtResource("2_m1k84")
+level = 62
+move = &"SLACKOFF"
+
+[resource]
+resource_name = "HIPPOWDON"
+script = ExtResource("3_o38qg")
+species = &"HIPPOWDON"
+category = "Heavyweight"
+pokedex_entry = "It blasts internally stored sand from ports on its body to create a towering twister for attack."
+types = Array[StringName]([&"GROUND"])
+base_hp = 108
+base_attack = 112
+base_defense = 118
+base_special_attack = 68
+base_special_defense = 72
+base_speed = 47
+ev_defense = 2
+base_exp = 184
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_m1k84")]([SubResource("Resource_wtmqu"), SubResource("Resource_g67e5"), SubResource("Resource_7y233"), SubResource("Resource_rmxrx"), SubResource("Resource_mrsv4"), SubResource("Resource_5a5ep"), SubResource("Resource_16lud"), SubResource("Resource_klivb"), SubResource("Resource_xjit6"), SubResource("Resource_q045t"), SubResource("Resource_bpeh3"), SubResource("Resource_0m7yp"), SubResource("Resource_mm0xa"), SubResource("Resource_fvxbe"), SubResource("Resource_ikeui"), SubResource("Resource_cq3pm"), SubResource("Resource_p13jl"), SubResource("Resource_ftn0l")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEFANG", &"IRONHEAD", &"IRONTAIL", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THUNDERFANG", &"WATERPULSE", &"WEATHERBALL"])
+abilities = Array[StringName]([&"SANDSTREAM"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_yxbpa")]([SubResource("Resource_2mqs0")])
+height = 20
+weight = 3000
+color = &"Brown"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 25)
+shadow_size = 3
+id = &"HIPPOWDON"
+display_name = "Hippowdon"

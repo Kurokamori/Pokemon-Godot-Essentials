@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://u1qqx3q8lge3"
+path="res://.godot/imported/Berry get.ogg-1f211e2de81e2e56ebb27595008fc6dd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/me/Berry get.ogg"
+dest_files=["res://.godot/imported/Berry get.ogg-1f211e2de81e2e56ebb27595008fc6dd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

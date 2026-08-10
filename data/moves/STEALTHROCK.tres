@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xfqkp"]
+
+[resource]
+resource_name = "STEALTHROCK"
+script = ExtResource("1_xfqkp")
+type = &"ROCK"
+accuracy = 0
+total_pp = 20
+target = &"FoeSide"
+function_code = &"AddStealthRocksToFoeSide"
+description = "The user lays a trap of levitating stones around the foe. The trap hurts foes that switch into battle."
+id = &"STEALTHROCK"
+display_name = "Stealth Rock"

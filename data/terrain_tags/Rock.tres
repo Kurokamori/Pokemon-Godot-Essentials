@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_kkju4"]
+
+[resource]
+resource_name = "Rock"
+script = ExtResource("1_kkju4")
+tag_number = 4
+battle_environment = &"Rock"
+id = &"Rock"
+display_name = "Rock"

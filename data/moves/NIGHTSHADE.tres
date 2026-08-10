@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1lgil"]
+
+[resource]
+resource_name = "NIGHTSHADE"
+script = ExtResource("1_1lgil")
+type = &"GHOST"
+category = 1
+power = 1
+total_pp = 15
+function_code = &"FixedDamageUserLevel"
+description = "The user makes the foe see a frightening mirage. It inflicts damage matching the user's level."
+id = &"NIGHTSHADE"
+display_name = "Night Shade"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

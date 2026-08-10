@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0kjx6"]
+
+[resource]
+resource_name = "CRAFTYSHIELD"
+script = ExtResource("1_0kjx6")
+type = &"FAIRY"
+accuracy = 0
+total_pp = 10
+target = &"UserSide"
+priority = 3
+function_code = &"ProtectUserSideFromStatusMoves"
+description = "The user protects itself and its allies from status moves with a mysterious power."
+id = &"CRAFTYSHIELD"
+display_name = "Crafty Shield"

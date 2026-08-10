@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_dbb22"]
+
+[resource]
+resource_name = "MEGAKICK"
+script = ExtResource("1_dbb22")
+category = 0
+power = 120
+accuracy = 75
+description = "The target is attacked by a kick launched with muscle-packed power."
+id = &"MEGAKICK"
+display_name = "Mega Kick"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

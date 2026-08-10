@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_k7ebg"]
+
+[resource]
+resource_name = "TM74"
+script = ExtResource("1_k7ebg")
+name_plural = "TM74s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"GYROBALL"
+description = "The user tackles with a high-speed spin. This move is stronger the slower the user is than the target."
+id = &"TM74"
+display_name = "TM74"
+flags = Array[StringName]([&"Fling_10"])

@@ -1,0 +1,149 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4c5g3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cllwr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cxpvb"]
+
+[sub_resource type="Resource" id="Resource_5upwy"]
+script = ExtResource("1_4c5g3")
+species = &"TYPENULL"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_lgmnq"]
+script = ExtResource("2_cllwr")
+level = 0
+move = &"MULTIATTACK"
+
+[sub_resource type="Resource" id="Resource_016p1"]
+script = ExtResource("2_cllwr")
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_ilex6"]
+script = ExtResource("2_cllwr")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_dpguj"]
+script = ExtResource("2_cllwr")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_21m82"]
+script = ExtResource("2_cllwr")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_28qpc"]
+script = ExtResource("2_cllwr")
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_8dqfy"]
+script = ExtResource("2_cllwr")
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_ij1r4"]
+script = ExtResource("2_cllwr")
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_rjuto"]
+script = ExtResource("2_cllwr")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_0v38i"]
+script = ExtResource("2_cllwr")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_qi3vq"]
+script = ExtResource("2_cllwr")
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_o716b"]
+script = ExtResource("2_cllwr")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_5dydg"]
+script = ExtResource("2_cllwr")
+level = 15
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_d467b"]
+script = ExtResource("2_cllwr")
+level = 20
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_fcdk7"]
+script = ExtResource("2_cllwr")
+level = 25
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_nl1t5"]
+script = ExtResource("2_cllwr")
+level = 30
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_atvfr"]
+script = ExtResource("2_cllwr")
+level = 35
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_5glsm"]
+script = ExtResource("2_cllwr")
+level = 40
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_rkoj4"]
+script = ExtResource("2_cllwr")
+level = 45
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_f5878"]
+script = ExtResource("2_cllwr")
+level = 50
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_yi8w0"]
+script = ExtResource("2_cllwr")
+level = 55
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_b4yat"]
+script = ExtResource("2_cllwr")
+level = 60
+move = &"PARTINGSHOT"
+
+[resource]
+resource_name = "SILVALLY_8"
+script = ExtResource("3_cxpvb")
+species = &"SILVALLY"
+form = 8
+form_name = "Type: Steel"
+category = "Synthetic"
+pokedex_entry = "Its trust in its partner is what awakens it. This Pokémon is capable of changing its type, a flexibility that is well displayed in battle."
+pokedex_form = 8
+types = Array[StringName]([&"STEEL"])
+base_hp = 95
+base_attack = 95
+base_defense = 95
+base_special_attack = 95
+base_special_defense = 95
+base_speed = 95
+ev_hp = 3
+base_exp = 285
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_cllwr")]([SubResource("Resource_lgmnq"), SubResource("Resource_016p1"), SubResource("Resource_ilex6"), SubResource("Resource_dpguj"), SubResource("Resource_21m82"), SubResource("Resource_28qpc"), SubResource("Resource_8dqfy"), SubResource("Resource_ij1r4"), SubResource("Resource_rjuto"), SubResource("Resource_0v38i"), SubResource("Resource_qi3vq"), SubResource("Resource_o716b"), SubResource("Resource_5dydg"), SubResource("Resource_d467b"), SubResource("Resource_fcdk7"), SubResource("Resource_nl1t5"), SubResource("Resource_atvfr"), SubResource("Resource_5glsm"), SubResource("Resource_rkoj4"), SubResource("Resource_f5878"), SubResource("Resource_yi8w0"), SubResource("Resource_b4yat")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"CONFIDE", &"CRUNCH", &"DEFOG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREFANG", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSPLEDGE", &"HAIL", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEFANG", &"ICYWIND", &"IMPRISON", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"LASTRESORT", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSLIDE", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"STEELBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"TERRAINPULSE", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"TOXIC", &"TRIATTACK", &"UTURN", &"WORKUP", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"RKSSYSTEM"])
+hatch_steps = 30720
+evolutions = Array[ExtResource("1_4c5g3")]([SubResource("Resource_5upwy")])
+height = 23
+weight = 1005
+color = &"Gray"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(0, 12)
+shadow_size = 3
+id = &"SILVALLY_8"
+display_name = "Silvally"
+flags = Array[StringName]([&"Legendary"])

@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_c2g8d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wv46x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_v4out"]
+
+[sub_resource type="Resource" id="Resource_yd1qt"]
+script = ExtResource("1_c2g8d")
+species = &"NINJASK"
+method = &"Ninjask"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_hh1dy"]
+script = ExtResource("1_c2g8d")
+species = &"SHEDINJA"
+method = &"Shedinja"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_alada"]
+script = ExtResource("2_wv46x")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_pq6mq"]
+script = ExtResource("2_wv46x")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_oqxp4"]
+script = ExtResource("2_wv46x")
+level = 5
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_8pqva"]
+script = ExtResource("2_wv46x")
+level = 10
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_k42bt"]
+script = ExtResource("2_wv46x")
+level = 15
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_7jlaw"]
+script = ExtResource("2_wv46x")
+level = 21
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_qha5a"]
+script = ExtResource("2_wv46x")
+level = 25
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_4dwnx"]
+script = ExtResource("2_wv46x")
+level = 30
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_jp3es"]
+script = ExtResource("2_wv46x")
+level = 35
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_sicm0"]
+script = ExtResource("2_wv46x")
+level = 40
+move = &"DIG"
+
+[resource]
+resource_name = "NINCADA"
+script = ExtResource("3_v4out")
+species = &"NINCADA"
+category = "Trainee"
+pokedex_entry = "It makes its nest at the roots of a mighty tree. Using its whiskerlike antennae, it probes its surroundings in the pitch-black darkness of soil."
+types = Array[StringName]([&"BUG", &"GROUND"])
+base_hp = 31
+base_attack = 45
+base_defense = 90
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 40
+ev_defense = 1
+base_exp = 53
+growth_rate = &"Erratic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wv46x")]([SubResource("Resource_alada"), SubResource("Resource_pq6mq"), SubResource("Resource_oqxp4"), SubResource("Resource_8pqva"), SubResource("Resource_k42bt"), SubResource("Resource_7jlaw"), SubResource("Resource_qha5a"), SubResource("Resource_4dwnx"), SubResource("Resource_jp3es"), SubResource("Resource_sicm0")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"BUGBITE", &"BUGBUZZ", &"CONFIDE", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"HIDDENPOWER", &"HONECLAWS", &"LEECHLIFE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"BUGBITE", &"FINALGAMBIT", &"FLAIL", &"GUST", &"NIGHTSLASH"])
+abilities = Array[StringName]([&"COMPOUNDEYES"])
+hidden_abilities = Array[StringName]([&"RUNAWAY"])
+wild_item_uncommon = Array[StringName]([&"SOFTSAND"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_c2g8d")]([SubResource("Resource_yd1qt"), SubResource("Resource_hh1dy")])
+height = 5
+weight = 55
+color = &"Gray"
+shape = &"Insectoid"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(-2, 38)
+id = &"NINCADA"
+display_name = "Nincada"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nqtiv"]
+
+[resource]
+resource_name = "MEMENTO"
+script = ExtResource("1_nqtiv")
+type = &"DARK"
+total_pp = 10
+function_code = &"UserFaintsLowerTargetAtkSpAtk2"
+description = "The user faints when using this move. In return, it harshly lowers the target's Attack and Sp. Atk."
+id = &"MEMENTO"
+display_name = "Memento"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

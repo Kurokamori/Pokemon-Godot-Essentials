@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://biai4pofc3w06"
+path="res://.godot/imported/Natural Park.ogg-c3ae92192605011752012995b729d93c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/bgm/Natural Park.ogg"
+dest_files=["res://.godot/imported/Natural Park.ogg-c3ae92192605011752012995b729d93c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

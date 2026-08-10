@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_oh66p"]
+
+[resource]
+resource_name = "STEELIXITE"
+script = ExtResource("1_oh66p")
+name_plural = "Steelixites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Steelix hold it, and it will be able to Mega Evolve."
+id = &"STEELIXITE"
+display_name = "Steelixite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

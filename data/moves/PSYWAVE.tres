@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_jj7t2"]
+
+[resource]
+resource_name = "PSYWAVE"
+script = ExtResource("1_jj7t2")
+type = &"PSYCHIC"
+category = 1
+power = 1
+total_pp = 15
+function_code = &"FixedDamageUserLevelRandom"
+description = "The target is attacked with an odd psychic wave. The attack varies in intensity."
+id = &"PSYWAVE"
+display_name = "Psywave"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

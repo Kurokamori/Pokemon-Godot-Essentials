@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_kqocq"]
+
+[resource]
+resource_name = "TM20"
+script = ExtResource("1_kqocq")
+name_plural = "TM20s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"SAFEGUARD"
+description = "The user creates a protective field that prevents status conditions for five turns."
+id = &"TM20"
+display_name = "TM20"
+flags = Array[StringName]([&"Fling_10"])

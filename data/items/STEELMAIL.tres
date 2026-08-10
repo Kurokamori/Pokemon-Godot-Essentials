@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_hhhhl"]
+
+[resource]
+resource_name = "STEELMAIL"
+script = ExtResource("1_hhhhl")
+name_plural = "Steel Mail"
+portion_name = "piece of Steel Mail"
+portion_name_plural = "pieces of Steel Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of cool mechanical designs. Let a Pokémon hold it for delivery."
+id = &"STEELMAIL"
+display_name = "Steel Mail"
+flags = Array[StringName]([&"IconMail"])

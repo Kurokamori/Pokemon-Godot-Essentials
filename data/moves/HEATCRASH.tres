@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yra76"]
+
+[resource]
+resource_name = "HEATCRASH"
+script = ExtResource("1_yra76")
+type = &"FIRE"
+category = 0
+power = 1
+total_pp = 10
+function_code = &"PowerHigherWithUserHeavierThanTarget"
+description = "The user slams the foe with its flaming body. The heavier the user is, the greater the damage."
+id = &"HEATCRASH"
+display_name = "Heat Crash"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"TramplesMinimize"])

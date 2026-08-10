@@ -1,0 +1,220 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_g1wn7"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_auc5t"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_o3u6c"]
+
+[sub_resource type="Resource" id="Resource_a75ci"]
+script = ExtResource("3_o3u6c")
+weight = 50
+species = &"RATTATA"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_taohx"]
+script = ExtResource("3_o3u6c")
+weight = 30
+species = &"POOCHYENA"
+min_level = 11
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_8ae2n"]
+script = ExtResource("3_o3u6c")
+species = &"SHINX"
+min_level = 10
+max_level = 11
+
+[sub_resource type="Resource" id="Resource_7q2nx"]
+script = ExtResource("3_o3u6c")
+species = &"SHINX"
+min_level = 10
+max_level = 12
+
+[sub_resource type="Resource" id="Resource_1ulpv"]
+script = ExtResource("2_auc5t")
+step_chance = 21
+slots = Array[ExtResource("3_o3u6c")]([SubResource("Resource_a75ci"), SubResource("Resource_taohx"), SubResource("Resource_8ae2n"), SubResource("Resource_7q2nx")])
+
+[sub_resource type="Resource" id="Resource_yht4a"]
+script = ExtResource("3_o3u6c")
+weight = 60
+species = &"MAGIKARP"
+min_level = 7
+max_level = 10
+
+[sub_resource type="Resource" id="Resource_dypjc"]
+script = ExtResource("3_o3u6c")
+weight = 30
+species = &"GOLDEEN"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_0ul21"]
+script = ExtResource("3_o3u6c")
+species = &"STARYU"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_6rv8f"]
+script = ExtResource("2_auc5t")
+encounter_type = &"Water"
+step_chance = 2
+slots = Array[ExtResource("3_o3u6c")]([SubResource("Resource_yht4a"), SubResource("Resource_dypjc"), SubResource("Resource_0ul21")])
+
+[sub_resource type="Resource" id="Resource_al1lo"]
+script = ExtResource("3_o3u6c")
+weight = 70
+species = &"MAGIKARP"
+min_level = 7
+max_level = 10
+
+[sub_resource type="Resource" id="Resource_hmejq"]
+script = ExtResource("3_o3u6c")
+weight = 30
+species = &"MAGIKARP"
+min_level = 9
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_e4kgs"]
+script = ExtResource("2_auc5t")
+encounter_type = &"OldRod"
+slots = Array[ExtResource("3_o3u6c")]([SubResource("Resource_al1lo"), SubResource("Resource_hmejq")])
+
+[sub_resource type="Resource" id="Resource_3qivf"]
+script = ExtResource("3_o3u6c")
+weight = 60
+species = &"GOLDEEN"
+min_level = 12
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_63xda"]
+script = ExtResource("3_o3u6c")
+weight = 20
+species = &"FINNEON"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_ijc0d"]
+script = ExtResource("3_o3u6c")
+weight = 20
+species = &"MAGIKARP"
+min_level = 12
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_6rveo"]
+script = ExtResource("2_auc5t")
+encounter_type = &"GoodRod"
+slots = Array[ExtResource("3_o3u6c")]([SubResource("Resource_3qivf"), SubResource("Resource_63xda"), SubResource("Resource_ijc0d")])
+
+[sub_resource type="Resource" id="Resource_6yooa"]
+script = ExtResource("3_o3u6c")
+weight = 40
+species = &"FINNEON"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_2f5yt"]
+script = ExtResource("3_o3u6c")
+weight = 40
+species = &"GOLDEEN"
+min_level = 12
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_052t5"]
+script = ExtResource("3_o3u6c")
+weight = 15
+species = &"STARYU"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_nvloa"]
+script = ExtResource("3_o3u6c")
+weight = 5
+species = &"STARYU"
+min_level = 14
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_vmtou"]
+script = ExtResource("2_auc5t")
+encounter_type = &"SuperRod"
+slots = Array[ExtResource("3_o3u6c")]([SubResource("Resource_6yooa"), SubResource("Resource_2f5yt"), SubResource("Resource_052t5"), SubResource("Resource_nvloa")])
+
+[sub_resource type="Resource" id="Resource_taqet"]
+script = ExtResource("3_o3u6c")
+weight = 50
+species = &"PINECO"
+min_level = 11
+max_level = 13
+
+[sub_resource type="Resource" id="Resource_3wbq0"]
+script = ExtResource("3_o3u6c")
+weight = 30
+species = &"LEDYBA"
+min_level = 6
+max_level = 8
+
+[sub_resource type="Resource" id="Resource_vo7pr"]
+script = ExtResource("3_o3u6c")
+weight = 19
+species = &"SPINARAK"
+min_level = 9
+max_level = 12
+
+[sub_resource type="Resource" id="Resource_skae1"]
+script = ExtResource("3_o3u6c")
+weight = 1
+species = &"MUNCHLAX"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_0avms"]
+script = ExtResource("2_auc5t")
+encounter_type = &"HeadbuttLow"
+slots = Array[ExtResource("3_o3u6c")]([SubResource("Resource_taqet"), SubResource("Resource_3wbq0"), SubResource("Resource_vo7pr"), SubResource("Resource_skae1")])
+
+[sub_resource type="Resource" id="Resource_fpvnv"]
+script = ExtResource("3_o3u6c")
+weight = 50
+species = &"PINECO"
+min_level = 11
+max_level = 13
+
+[sub_resource type="Resource" id="Resource_2egju"]
+script = ExtResource("3_o3u6c")
+weight = 30
+species = &"WURMPLE"
+min_level = 6
+max_level = 8
+
+[sub_resource type="Resource" id="Resource_mt7fl"]
+script = ExtResource("3_o3u6c")
+weight = 20
+species = &"SPINARAK"
+min_level = 9
+max_level = 12
+
+[sub_resource type="Resource" id="Resource_srfn4"]
+script = ExtResource("2_auc5t")
+encounter_type = &"HeadbuttHigh"
+slots = Array[ExtResource("3_o3u6c")]([SubResource("Resource_fpvnv"), SubResource("Resource_2egju"), SubResource("Resource_mt7fl")])
+
+[sub_resource type="Resource" id="Resource_c461h"]
+script = ExtResource("3_o3u6c")
+weight = 100
+species = &"STANTLER"
+min_level = 14
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_dbfcs"]
+script = ExtResource("2_auc5t")
+encounter_type = &"PokeRadar"
+step_chance = 10
+slots = Array[ExtResource("3_o3u6c")]([SubResource("Resource_c461h")])
+
+[resource]
+resource_name = "21_0"
+script = ExtResource("1_g1wn7")
+map_id = 21
+tables = Array[ExtResource("2_auc5t")]([SubResource("Resource_1ulpv"), SubResource("Resource_6rv8f"), SubResource("Resource_e4kgs"), SubResource("Resource_6rveo"), SubResource("Resource_vmtou"), SubResource("Resource_0avms"), SubResource("Resource_srfn4"), SubResource("Resource_dbfcs")])
+id = &"21_0"
+display_name = "Map 21 v0"

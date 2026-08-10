@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3g24f"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_g1y75"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_e6yj1"]
+
+[sub_resource type="Resource" id="Resource_d26t0"]
+script = ExtResource("1_3g24f")
+species = &"LOPUNNY"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_sg7p7"]
+script = ExtResource("2_g1y75")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_1t7hr"]
+script = ExtResource("2_g1y75")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_4meqs"]
+script = ExtResource("2_g1y75")
+level = 4
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_6tcre"]
+script = ExtResource("2_g1y75")
+level = 8
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_smmxq"]
+script = ExtResource("2_g1y75")
+level = 12
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_th7nf"]
+script = ExtResource("2_g1y75")
+level = 16
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_chihv"]
+script = ExtResource("2_g1y75")
+level = 20
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_j4unb"]
+script = ExtResource("2_g1y75")
+level = 24
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_5uiyw"]
+script = ExtResource("2_g1y75")
+level = 28
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_whcrx"]
+script = ExtResource("2_g1y75")
+level = 32
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_v5ord"]
+script = ExtResource("2_g1y75")
+level = 36
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_2bkpt"]
+script = ExtResource("2_g1y75")
+level = 40
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_of2mt"]
+script = ExtResource("2_g1y75")
+level = 44
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_0k4yv"]
+script = ExtResource("2_g1y75")
+level = 48
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_7pjwj"]
+script = ExtResource("2_g1y75")
+level = 52
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "BUNEARY"
+script = ExtResource("3_e6yj1")
+species = &"BUNEARY"
+category = "Rabbit"
+pokedex_entry = "It slams foes by sharply uncoiling its rolled ears. It stings enough to make a grown-up cry in pain."
+base_hp = 55
+base_attack = 66
+base_defense = 44
+base_special_attack = 44
+base_special_defense = 56
+base_speed = 85
+ev_speed = 1
+base_exp = 70
+catch_rate = 190
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_g1y75")]([SubResource("Resource_sg7p7"), SubResource("Resource_1t7hr"), SubResource("Resource_4meqs"), SubResource("Resource_6tcre"), SubResource("Resource_smmxq"), SubResource("Resource_th7nf"), SubResource("Resource_chihv"), SubResource("Resource_j4unb"), SubResource("Resource_5uiyw"), SubResource("Resource_whcrx"), SubResource("Resource_v5ord"), SubResource("Resource_2bkpt"), SubResource("Resource_of2mt"), SubResource("Resource_0k4yv"), SubResource("Resource_7pjwj")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BOUNCE", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COSMICPOWER", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREPUNCH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"IRONTAIL", &"LASTRESORT", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIPLEAXEL", &"UPROAR", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"CIRCLETHROW", &"COPYCAT", &"COSMICPOWER", &"DOUBLEHIT", &"ENCORE", &"FAKEOUT", &"FAKETEARS", &"FIREPUNCH", &"FLAIL", &"FOCUSPUNCH", &"ICEPUNCH", &"LOWKICK", &"POWERUPPUNCH", &"SWEETKISS", &"SWITCHEROO", &"TEETERDANCE", &"THUNDERPUNCH"])
+abilities = Array[StringName]([&"RUNAWAY", &"KLUTZ"])
+hidden_abilities = Array[StringName]([&"LIMBER"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_3g24f")]([SubResource("Resource_d26t0")])
+height = 4
+weight = 55
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 38)
+front_sprite_offset = Vector2i(-3, 22)
+shadow_size = 1
+id = &"BUNEARY"
+display_name = "Buneary"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_pascv"]
+
+[resource]
+resource_name = "TM75"
+script = ExtResource("1_pascv")
+name_plural = "TM75s"
+pocket = 4
+price = 1500
+sell_price = 750
+bp_price = 32
+field_use = 5
+move = &"SWORDSDANCE"
+description = "A frenetic dance to uplift the fighting spirit. This sharply raises the user's Attack stat."
+id = &"TM75"
+display_name = "TM75"
+flags = Array[StringName]([&"Fling_10"])

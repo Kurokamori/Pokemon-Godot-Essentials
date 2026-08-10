@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tw484"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_s2xph"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_t4sea"]
+
+[sub_resource type="Resource" id="Resource_nbp5w"]
+script = ExtResource("1_tw484")
+species = &"SKORUPI"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8xi5m"]
+script = ExtResource("2_s2xph")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_1tjgn"]
+script = ExtResource("2_s2xph")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_4yiid"]
+script = ExtResource("2_s2xph")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_ed3qf"]
+script = ExtResource("2_s2xph")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_pn8y7"]
+script = ExtResource("2_s2xph")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_6eawc"]
+script = ExtResource("2_s2xph")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_clb43"]
+script = ExtResource("2_s2xph")
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_0xt0r"]
+script = ExtResource("2_s2xph")
+level = 9
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_061r2"]
+script = ExtResource("2_s2xph")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_yaxhn"]
+script = ExtResource("2_s2xph")
+level = 15
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_231pn"]
+script = ExtResource("2_s2xph")
+level = 18
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_hiq5f"]
+script = ExtResource("2_s2xph")
+level = 21
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_bkt3m"]
+script = ExtResource("2_s2xph")
+level = 24
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_l048r"]
+script = ExtResource("2_s2xph")
+level = 27
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_6csmy"]
+script = ExtResource("2_s2xph")
+level = 30
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_xdred"]
+script = ExtResource("2_s2xph")
+level = 33
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_xoviw"]
+script = ExtResource("2_s2xph")
+level = 36
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_nwsgn"]
+script = ExtResource("2_s2xph")
+level = 39
+move = &"CROSSPOISON"
+
+[sub_resource type="Resource" id="Resource_xt7ye"]
+script = ExtResource("2_s2xph")
+level = 44
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_cyg3y"]
+script = ExtResource("2_s2xph")
+level = 49
+move = &"ACUPRESSURE"
+
+[sub_resource type="Resource" id="Resource_8kh3n"]
+script = ExtResource("2_s2xph")
+level = 54
+move = &"CRUNCH"
+
+[resource]
+resource_name = "DRAPION"
+script = ExtResource("3_t4sea")
+species = &"DRAPION"
+category = "Ogre Scorpion"
+pokedex_entry = "It has the power in its clawed arms to make scrap of a car. The tips of its claws release poison."
+types = Array[StringName]([&"POISON", &"DARK"])
+base_hp = 70
+base_attack = 90
+base_defense = 110
+base_special_attack = 60
+base_special_defense = 75
+base_speed = 95
+ev_defense = 2
+base_exp = 175
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_s2xph")]([SubResource("Resource_8xi5m"), SubResource("Resource_1tjgn"), SubResource("Resource_4yiid"), SubResource("Resource_ed3qf"), SubResource("Resource_pn8y7"), SubResource("Resource_6eawc"), SubResource("Resource_clb43"), SubResource("Resource_0xt0r"), SubResource("Resource_061r2"), SubResource("Resource_yaxhn"), SubResource("Resource_231pn"), SubResource("Resource_hiq5f"), SubResource("Resource_bkt3m"), SubResource("Resource_l048r"), SubResource("Resource_6csmy"), SubResource("Resource_xdred"), SubResource("Resource_xoviw"), SubResource("Resource_nwsgn"), SubResource("Resource_xt7ye"), SubResource("Resource_cyg3y"), SubResource("Resource_8kh3n")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BRICKBREAK", &"BRUTALSWING", &"BUGBITE", &"BUGBUZZ", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"CRUNCH", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREFANG", &"FLASH", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEFANG", &"INFESTATION", &"IRONDEFENSE", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"LEECHLIFE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDTOMB", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERFANG", &"TORMENT", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"XSCISSOR"])
+abilities = Array[StringName]([&"BATTLEARMOR", &"SNIPER"])
+hidden_abilities = Array[StringName]([&"KEENEYE"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Bug", &"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tw484")]([SubResource("Resource_nbp5w")])
+height = 13
+weight = 615
+color = &"Purple"
+shape = &"Insectoid"
+generation = 4
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-12, 21)
+id = &"DRAPION"
+display_name = "Drapion"

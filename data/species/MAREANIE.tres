@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hkb86"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_l1226"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_77wh1"]
+
+[sub_resource type="Resource" id="Resource_tw0r6"]
+script = ExtResource("1_hkb86")
+species = &"TOXAPEX"
+method = &"Level"
+parameter = "38"
+
+[sub_resource type="Resource" id="Resource_77hfu"]
+script = ExtResource("2_l1226")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_gxlpb"]
+script = ExtResource("2_l1226")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_2ncm4"]
+script = ExtResource("2_l1226")
+level = 5
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_l4h3y"]
+script = ExtResource("2_l1226")
+level = 10
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ewy82"]
+script = ExtResource("2_l1226")
+level = 15
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_xw63v"]
+script = ExtResource("2_l1226")
+level = 20
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_pr1oo"]
+script = ExtResource("2_l1226")
+level = 25
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_pi440"]
+script = ExtResource("2_l1226")
+level = 30
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_snj82"]
+script = ExtResource("2_l1226")
+level = 35
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_36jka"]
+script = ExtResource("2_l1226")
+level = 40
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_rcuba"]
+script = ExtResource("2_l1226")
+level = 45
+move = &"POISONJAB"
+
+[sub_resource type="Resource" id="Resource_dp6i6"]
+script = ExtResource("2_l1226")
+level = 50
+move = &"TOXIC"
+
+[resource]
+resource_name = "MAREANIE"
+script = ExtResource("3_77wh1")
+species = &"MAREANIE"
+category = "Brutal Star"
+pokedex_entry = "It plunges the poison spike on its head into its prey. When the prey has weakened, Mareanie deals the finishing blow with its 10 tentacles."
+types = Array[StringName]([&"POISON", &"WATER"])
+base_hp = 50
+base_attack = 53
+base_defense = 62
+base_special_attack = 43
+base_special_defense = 52
+base_speed = 45
+ev_defense = 1
+base_exp = 61
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_l1226")]([SubResource("Resource_77hfu"), SubResource("Resource_gxlpb"), SubResource("Resource_2ncm4"), SubResource("Resource_l4h3y"), SubResource("Resource_ewy82"), SubResource("Resource_xw63v"), SubResource("Resource_pr1oo"), SubResource("Resource_pi440"), SubResource("Resource_snj82"), SubResource("Resource_36jka"), SubResource("Resource_rcuba"), SubResource("Resource_dp6i6")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"GASTROACID", &"GUNKSHOT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"KNOCKOFF", &"LIQUIDATION", &"MAGICCOAT", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"HAZE", &"INFESTATION", &"SPITUP", &"STOCKPILE", &"SWALLOW"])
+abilities = Array[StringName]([&"MERCILESS", &"LIMBER"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+wild_item_uncommon = Array[StringName]([&"POISONBARB"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_hkb86")]([SubResource("Resource_tw0r6")])
+height = 4
+weight = 80
+color = &"Blue"
+shape = &"HeadBase"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(4, 29)
+id = &"MAREANIE"
+display_name = "Mareanie"

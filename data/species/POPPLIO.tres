@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4r7pp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_00grw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kv8d8"]
+
+[sub_resource type="Resource" id="Resource_jrdbp"]
+script = ExtResource("1_4r7pp")
+species = &"BRIONNE"
+method = &"Level"
+parameter = "17"
+
+[sub_resource type="Resource" id="Resource_nwock"]
+script = ExtResource("2_00grw")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_0606d"]
+script = ExtResource("2_00grw")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_j1v5o"]
+script = ExtResource("2_00grw")
+level = 3
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_x3sok"]
+script = ExtResource("2_00grw")
+level = 6
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_2jr6s"]
+script = ExtResource("2_00grw")
+level = 9
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_nqrdx"]
+script = ExtResource("2_00grw")
+level = 12
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_x1t5g"]
+script = ExtResource("2_00grw")
+level = 15
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_cev57"]
+script = ExtResource("2_00grw")
+level = 18
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_ugv7e"]
+script = ExtResource("2_00grw")
+level = 21
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_b0ghj"]
+script = ExtResource("2_00grw")
+level = 24
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_dsvvx"]
+script = ExtResource("2_00grw")
+level = 27
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_lomu2"]
+script = ExtResource("2_00grw")
+level = 30
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_u0a2m"]
+script = ExtResource("2_00grw")
+level = 33
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_f3bd6"]
+script = ExtResource("2_00grw")
+level = 36
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "POPPLIO"
+script = ExtResource("3_kv8d8")
+species = &"POPPLIO"
+category = "Sea Lion"
+pokedex_entry = "This Pokémon snorts body fluids from its nose, blowing balloons to smash into its foes. It's famous for being a hard worker."
+types = Array[StringName]([&"WATER"])
+base_hp = 50
+base_attack = 54
+base_defense = 54
+base_special_attack = 66
+base_special_defense = 56
+base_speed = 40
+ev_special_attack = 1
+base_exp = 64
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_00grw")]([SubResource("Resource_nwock"), SubResource("Resource_0606d"), SubResource("Resource_j1v5o"), SubResource("Resource_x3sok"), SubResource("Resource_2jr6s"), SubResource("Resource_nqrdx"), SubResource("Resource_x1t5g"), SubResource("Resource_cev57"), SubResource("Resource_ugv7e"), SubResource("Resource_b0ghj"), SubResource("Resource_dsvvx"), SubResource("Resource_lomu2"), SubResource("Resource_u0a2m"), SubResource("Resource_f3bd6")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DIVE", &"DOUBLETEAM", &"DRAININGKISS", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"MISTYTERRAIN", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"TRIPLEAXEL", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WONDERROOM", &"WORKUP"])
+egg_moves = Array[StringName]([&"AQUARING", &"LIFEDEW", &"PERISHSONG"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"LIQUIDVOICE"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_4r7pp")]([SubResource("Resource_jrdbp")])
+height = 4
+weight = 75
+color = &"Blue"
+shape = &"Finned"
+generation = 7
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 34)
+id = &"POPPLIO"
+display_name = "Popplio"

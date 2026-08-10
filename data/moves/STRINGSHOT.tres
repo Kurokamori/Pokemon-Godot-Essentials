@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_wic1h"]
+
+[resource]
+resource_name = "STRINGSHOT"
+script = ExtResource("1_wic1h")
+type = &"BUG"
+accuracy = 95
+total_pp = 40
+target = &"AllNearFoes"
+function_code = &"LowerTargetSpeed2"
+description = "The foe is bound with silk blown from the user's mouth. This silk reduces the target's Speed."
+id = &"STRINGSHOT"
+display_name = "String Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_nln06"]
+
+[resource]
+resource_name = "TM61"
+script = ExtResource("1_nln06")
+name_plural = "TM61s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"WILLOWISP"
+description = "The user shoots a sinister flame at the target to inflict a burn."
+id = &"TM61"
+display_name = "TM61"
+flags = Array[StringName]([&"Fling_10"])

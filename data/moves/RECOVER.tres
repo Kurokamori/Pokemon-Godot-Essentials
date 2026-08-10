@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_f30v4"]
+
+[resource]
+resource_name = "RECOVER"
+script = ExtResource("1_f30v4")
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"HealUserHalfOfTotalHP"
+description = "Restoring its own cells, the user restores its own HP by half of its max HP."
+id = &"RECOVER"
+display_name = "Recover"

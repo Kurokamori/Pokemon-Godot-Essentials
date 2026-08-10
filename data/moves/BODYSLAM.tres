@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_58yav"]
+
+[resource]
+resource_name = "BODYSLAM"
+script = ExtResource("1_58yav")
+category = 0
+power = 85
+total_pp = 15
+function_code = &"ParalyzeTarget"
+effect_chance = 30
+description = "The user drops onto the target with its full body weight. It may leave the target with paralysis."
+id = &"BODYSLAM"
+display_name = "Body Slam"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"TramplesMinimize"])

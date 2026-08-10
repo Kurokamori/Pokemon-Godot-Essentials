@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_m5d0d"]
+
+[resource]
+resource_name = "TM04"
+script = ExtResource("1_m5d0d")
+name_plural = "TM04s"
+pocket = 4
+price = 1500
+sell_price = 750
+bp_price = 48
+field_use = 5
+move = &"CALMMIND"
+description = "The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats."
+id = &"TM04"
+display_name = "TM04"
+flags = Array[StringName]([&"Fling_10"])

@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gek0p"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ck6ma"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wic0n"]
+
+[sub_resource type="Resource" id="Resource_8y6ti"]
+script = ExtResource("1_gek0p")
+species = &"LILEEP"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ri3uh"]
+script = ExtResource("2_ck6ma")
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_o14ox"]
+script = ExtResource("2_ck6ma")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_koyk1"]
+script = ExtResource("2_ck6ma")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_krc4v"]
+script = ExtResource("2_ck6ma")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_q8btm"]
+script = ExtResource("2_ck6ma")
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_qwt1p"]
+script = ExtResource("2_ck6ma")
+level = 12
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_faxe2"]
+script = ExtResource("2_ck6ma")
+level = 16
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_kktws"]
+script = ExtResource("2_ck6ma")
+level = 20
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_7nep7"]
+script = ExtResource("2_ck6ma")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_fh2d4"]
+script = ExtResource("2_ck6ma")
+level = 28
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_ysmd0"]
+script = ExtResource("2_ck6ma")
+level = 32
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_cccx8"]
+script = ExtResource("2_ck6ma")
+level = 36
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_0ktn6"]
+script = ExtResource("2_ck6ma")
+level = 43
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_ot3y8"]
+script = ExtResource("2_ck6ma")
+level = 43
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_3gbkm"]
+script = ExtResource("2_ck6ma")
+level = 43
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_f677k"]
+script = ExtResource("2_ck6ma")
+level = 48
+move = &"ENERGYBALL"
+
+[resource]
+resource_name = "CRADILY"
+script = ExtResource("3_wic0n")
+species = &"CRADILY"
+category = "Barnacle"
+pokedex_entry = "It drags its heavy body along the seafloor. It makes its nest in the shallows of warm seas. Cradily can be seen on beaches when the tide goes out."
+types = Array[StringName]([&"ROCK", &"GRASS"])
+base_hp = 86
+base_attack = 81
+base_defense = 97
+base_special_attack = 81
+base_special_defense = 107
+base_speed = 43
+ev_special_defense = 2
+base_exp = 173
+growth_rate = &"Erratic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ck6ma")]([SubResource("Resource_ri3uh"), SubResource("Resource_o14ox"), SubResource("Resource_koyk1"), SubResource("Resource_krc4v"), SubResource("Resource_q8btm"), SubResource("Resource_qwt1p"), SubResource("Resource_faxe2"), SubResource("Resource_kktws"), SubResource("Resource_7nep7"), SubResource("Resource_fh2d4"), SubResource("Resource_ysmd0"), SubResource("Resource_cccx8"), SubResource("Resource_0ktn6"), SubResource("Resource_ot3y8"), SubResource("Resource_3gbkm"), SubResource("Resource_f677k")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BIND", &"BLOCK", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYTERRAIN", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"METEORBEAM", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"STRINGSHOT", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORRYSEED"])
+abilities = Array[StringName]([&"SUCTIONCUPS"])
+hidden_abilities = Array[StringName]([&"STORMDRAIN"])
+wild_item_uncommon = Array[StringName]([&"BIGROOT"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_gek0p")]([SubResource("Resource_8y6ti")])
+height = 15
+weight = 604
+color = &"Green"
+shape = &"HeadBase"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(-3, 42)
+front_sprite_offset = Vector2i(-4, 14)
+id = &"CRADILY"
+display_name = "Cradily"

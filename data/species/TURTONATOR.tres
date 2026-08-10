@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7lmbo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_v6db2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j0ag1"]
+
+[sub_resource type="Resource" id="Resource_hgxs2"]
+script = ExtResource("2_v6db2")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_y3kkm"]
+script = ExtResource("2_v6db2")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_jle0i"]
+script = ExtResource("2_v6db2")
+level = 4
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_ka354"]
+script = ExtResource("2_v6db2")
+level = 8
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_a10g4"]
+script = ExtResource("2_v6db2")
+level = 12
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_7s4s4"]
+script = ExtResource("2_v6db2")
+level = 16
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_rggc6"]
+script = ExtResource("2_v6db2")
+level = 20
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_igwov"]
+script = ExtResource("2_v6db2")
+level = 24
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_qui66"]
+script = ExtResource("2_v6db2")
+level = 28
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_tjx2l"]
+script = ExtResource("2_v6db2")
+level = 32
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_k143c"]
+script = ExtResource("2_v6db2")
+level = 36
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_jah2p"]
+script = ExtResource("2_v6db2")
+level = 40
+move = &"SHELLTRAP"
+
+[sub_resource type="Resource" id="Resource_e0kqd"]
+script = ExtResource("2_v6db2")
+level = 44
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_6wugx"]
+script = ExtResource("2_v6db2")
+level = 48
+move = &"OVERHEAT"
+
+[sub_resource type="Resource" id="Resource_sb8mh"]
+script = ExtResource("2_v6db2")
+level = 52
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "TURTONATOR"
+script = ExtResource("3_j0ag1")
+species = &"TURTONATOR"
+category = "Blast Turtle"
+pokedex_entry = "It lives in volcanoes and eats sulfur and other minerals. Materials from the food it eats form the basis of its explosive shell."
+types = Array[StringName]([&"FIRE", &"DRAGON"])
+base_hp = 60
+base_attack = 78
+base_defense = 135
+base_special_attack = 91
+base_special_defense = 85
+base_speed = 36
+ev_defense = 2
+base_exp = 170
+catch_rate = 70
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_v6db2")]([SubResource("Resource_hgxs2"), SubResource("Resource_y3kkm"), SubResource("Resource_jle0i"), SubResource("Resource_ka354"), SubResource("Resource_a10g4"), SubResource("Resource_7s4s4"), SubResource("Resource_rggc6"), SubResource("Resource_igwov"), SubResource("Resource_qui66"), SubResource("Resource_tjx2l"), SubResource("Resource_k143c"), SubResource("Resource_jah2p"), SubResource("Resource_e0kqd"), SubResource("Resource_6wugx"), SubResource("Resource_sb8mh")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLASHCANNON", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HEATCRASH", &"HEATWAVE", &"HEAVYSLAM", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LASHOUT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROAR", &"ROCKTOMB", &"ROUND", &"SCALESHOT", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TOXIC", &"UPROAR", &"VENOSHOCK", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"CURSE", &"HEADSMASH", &"RAPIDSPIN", &"WIDEGUARD"])
+abilities = Array[StringName]([&"SHELLARMOR"])
+wild_item_uncommon = Array[StringName]([&"CHARCOAL"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+height = 20
+weight = 2120
+shape = &"BipedalTail"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 20)
+id = &"TURTONATOR"
+display_name = "Turtonator"

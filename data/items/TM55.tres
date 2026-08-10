@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_16q4w"]
+
+[resource]
+resource_name = "TM55"
+script = ExtResource("1_16q4w")
+name_plural = "TM55s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"BRINE"
+description = "If the target's HP is half or less, this attack will hit with double the power."
+id = &"TM55"
+display_name = "TM55"
+flags = Array[StringName]([&"Fling_65"])

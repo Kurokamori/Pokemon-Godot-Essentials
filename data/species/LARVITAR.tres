@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_iuvyq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k63yr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sfdf1"]
+
+[sub_resource type="Resource" id="Resource_uwl5u"]
+script = ExtResource("1_iuvyq")
+species = &"PUPITAR"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_uckpi"]
+script = ExtResource("2_k63yr")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_gd31e"]
+script = ExtResource("2_k63yr")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_7yscx"]
+script = ExtResource("2_k63yr")
+level = 3
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_vwwwc"]
+script = ExtResource("2_k63yr")
+level = 6
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_3tg4k"]
+script = ExtResource("2_k63yr")
+level = 9
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_om0re"]
+script = ExtResource("2_k63yr")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_nxecv"]
+script = ExtResource("2_k63yr")
+level = 15
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_oc8ie"]
+script = ExtResource("2_k63yr")
+level = 18
+move = &"STOMPINGTANTRUM"
+
+[sub_resource type="Resource" id="Resource_ahlg0"]
+script = ExtResource("2_k63yr")
+level = 21
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_ymhmu"]
+script = ExtResource("2_k63yr")
+level = 24
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_ceknt"]
+script = ExtResource("2_k63yr")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_waohg"]
+script = ExtResource("2_k63yr")
+level = 31
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_bw13p"]
+script = ExtResource("2_k63yr")
+level = 33
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_jyqxy"]
+script = ExtResource("2_k63yr")
+level = 36
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_ryh8c"]
+script = ExtResource("2_k63yr")
+level = 39
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_5ewb2"]
+script = ExtResource("2_k63yr")
+level = 42
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "LARVITAR"
+script = ExtResource("3_sfdf1")
+species = &"LARVITAR"
+category = "Rock Skin"
+pokedex_entry = "A Larvitar is born deep under the ground. It must eat its way through the soil above and reach the surface for it to see its parents' faces."
+types = Array[StringName]([&"ROCK", &"GROUND"])
+base_hp = 50
+base_attack = 64
+base_defense = 50
+base_special_attack = 45
+base_special_defense = 50
+base_speed = 41
+ev_attack = 1
+base_exp = 60
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_k63yr")]([SubResource("Resource_uckpi"), SubResource("Resource_gd31e"), SubResource("Resource_7yscx"), SubResource("Resource_vwwwc"), SubResource("Resource_3tg4k"), SubResource("Resource_om0re"), SubResource("Resource_nxecv"), SubResource("Resource_oc8ie"), SubResource("Resource_ahlg0"), SubResource("Resource_ymhmu"), SubResource("Resource_ceknt"), SubResource("Resource_waohg"), SubResource("Resource_bw13p"), SubResource("Resource_jyqxy"), SubResource("Resource_ryh8c"), SubResource("Resource_5ewb2")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNARL", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"TORMENT", &"UPROAR"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"ASSURANCE", &"CURSE", &"DRAGONDANCE", &"FOCUSENERGY", &"IRONDEFENSE", &"IRONHEAD", &"OUTRAGE", &"STOMP"])
+abilities = Array[StringName]([&"GUTS"])
+hidden_abilities = Array[StringName]([&"SANDVEIL"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_iuvyq")]([SubResource("Resource_uwl5u")])
+height = 6
+weight = 720
+color = &"Green"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(1, 27)
+shadow_size = 1
+id = &"LARVITAR"
+display_name = "Larvitar"

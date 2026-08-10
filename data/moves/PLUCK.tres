@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_stxxp"]
+
+[resource]
+resource_name = "PLUCK"
+script = ExtResource("1_stxxp")
+type = &"FLYING"
+category = 0
+power = 60
+total_pp = 20
+target = &"Other"
+function_code = &"UserConsumeTargetBerry"
+description = "The user pecks the target. If the target is holding a Berry, the user eats it and gains its effect."
+id = &"PLUCK"
+display_name = "Pluck"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

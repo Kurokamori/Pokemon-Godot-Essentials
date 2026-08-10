@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_r06gr"]
+
+[resource]
+resource_name = "PETALBLIZZARD"
+script = ExtResource("1_r06gr")
+type = &"GRASS"
+category = 0
+power = 90
+total_pp = 15
+target = &"AllNearOthers"
+description = "The user stirs up a violent petal blizzard and attacks everything around it."
+id = &"PETALBLIZZARD"
+display_name = "Petal Blizzard"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

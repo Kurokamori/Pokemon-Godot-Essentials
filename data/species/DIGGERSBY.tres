@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qpaa2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k0qv4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_agt8x"]
+
+[sub_resource type="Resource" id="Resource_r23n4"]
+script = ExtResource("1_qpaa2")
+species = &"BUNNELBY"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_hbd8a"]
+script = ExtResource("2_k0qv4")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_uvqw7"]
+script = ExtResource("2_k0qv4")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_lanxb"]
+script = ExtResource("2_k0qv4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_hdt57"]
+script = ExtResource("2_k0qv4")
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_gne81"]
+script = ExtResource("2_k0qv4")
+level = 9
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_bdd4g"]
+script = ExtResource("2_k0qv4")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_qq7kv"]
+script = ExtResource("2_k0qv4")
+level = 15
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_8chox"]
+script = ExtResource("2_k0qv4")
+level = 18
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_3p2wu"]
+script = ExtResource("2_k0qv4")
+level = 23
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_jlxik"]
+script = ExtResource("2_k0qv4")
+level = 28
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_eivya"]
+script = ExtResource("2_k0qv4")
+level = 33
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_sitku"]
+script = ExtResource("2_k0qv4")
+level = 38
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_13uu1"]
+script = ExtResource("2_k0qv4")
+level = 43
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_5lq41"]
+script = ExtResource("2_k0qv4")
+level = 48
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_udumq"]
+script = ExtResource("2_k0qv4")
+level = 53
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_barnp"]
+script = ExtResource("2_k0qv4")
+level = 58
+move = &"HAMMERARM"
+
+[resource]
+resource_name = "DIGGERSBY"
+script = ExtResource("3_agt8x")
+species = &"DIGGERSBY"
+category = "Digging"
+pokedex_entry = "As powerful as an excavator, its ears can reduce dense bedrock to rubble. When it's finished digging, it lounges lazily."
+types = Array[StringName]([&"NORMAL", &"GROUND"])
+base_hp = 85
+base_attack = 56
+base_defense = 77
+base_special_attack = 50
+base_special_defense = 77
+base_speed = 78
+ev_hp = 2
+base_exp = 148
+catch_rate = 127
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k0qv4")]([SubResource("Resource_hbd8a"), SubResource("Resource_uvqw7"), SubResource("Resource_lanxb"), SubResource("Resource_hdt57"), SubResource("Resource_gne81"), SubResource("Resource_bdd4g"), SubResource("Resource_qq7kv"), SubResource("Resource_8chox"), SubResource("Resource_3p2wu"), SubResource("Resource_jlxik"), SubResource("Resource_eivya"), SubResource("Resource_sitku"), SubResource("Resource_13uu1"), SubResource("Resource_5lq41"), SubResource("Resource_udumq"), SubResource("Resource_barnp")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ATTRACT", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GASTROACID", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNATCH", &"SNORE", &"SPIKES", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERFANG", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"PICKUP", &"CHEEKPOUCH"])
+hidden_abilities = Array[StringName]([&"HUGEPOWER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_qpaa2")]([SubResource("Resource_r23n4")])
+height = 10
+weight = 424
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(8, 46)
+front_sprite_offset = Vector2i(-11, 18)
+id = &"DIGGERSBY"
+display_name = "Diggersby"

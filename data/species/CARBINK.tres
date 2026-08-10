@@ -1,0 +1,108 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1ju0c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3kj51"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4rmea"]
+
+[sub_resource type="Resource" id="Resource_8q7s8"]
+script = ExtResource("2_3kj51")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1yet6"]
+script = ExtResource("2_3kj51")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_f6g78"]
+script = ExtResource("2_3kj51")
+level = 5
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_cbmwj"]
+script = ExtResource("2_3kj51")
+level = 10
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_iq3l7"]
+script = ExtResource("2_3kj51")
+level = 15
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_t566o"]
+script = ExtResource("2_3kj51")
+level = 20
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_sa08g"]
+script = ExtResource("2_3kj51")
+level = 25
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_if8h5"]
+script = ExtResource("2_3kj51")
+level = 30
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_qfuaj"]
+script = ExtResource("2_3kj51")
+level = 35
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_ks2ry"]
+script = ExtResource("2_3kj51")
+level = 40
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_yjsut"]
+script = ExtResource("2_3kj51")
+level = 45
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_qfc2n"]
+script = ExtResource("2_3kj51")
+level = 50
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_4kdau"]
+script = ExtResource("2_3kj51")
+level = 55
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_30ypb"]
+script = ExtResource("2_3kj51")
+level = 60
+move = &"STONEEDGE"
+
+[resource]
+resource_name = "CARBINK"
+script = ExtResource("3_4rmea")
+species = &"CARBINK"
+category = "Jewel"
+pokedex_entry = "Born from the high temperatures and pressures deep underground, it defends itself by firing beams from the jewel part of its body."
+types = Array[StringName]([&"ROCK", &"FAIRY"])
+base_hp = 50
+base_attack = 50
+base_defense = 150
+base_special_attack = 50
+base_special_defense = 150
+base_speed = 50
+ev_defense = 1
+ev_special_defense = 1
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3kj51")]([SubResource("Resource_8q7s8"), SubResource("Resource_1yet6"), SubResource("Resource_f6g78"), SubResource("Resource_cbmwj"), SubResource("Resource_iq3l7"), SubResource("Resource_t566o"), SubResource("Resource_sa08g"), SubResource("Resource_if8h5"), SubResource("Resource_qfuaj"), SubResource("Resource_ks2ry"), SubResource("Resource_yjsut"), SubResource("Resource_qfc2n"), SubResource("Resource_4kdau"), SubResource("Resource_30ypb")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"BODYPRESS", &"CALMMIND", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASH", &"FRUSTRATION", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HAIL", &"HIDDENPOWER", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGNETRISE", &"METEORBEAM", &"MIMIC", &"MISTYEXPLOSION", &"NATURALGIFT", &"NATUREPOWER", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SKILLSWAP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"TERRAINPULSE", &"TOXIC", &"TRICKROOM", &"WONDERROOM"])
+abilities = Array[StringName]([&"CLEARBODY"])
+hidden_abilities = Array[StringName]([&"STURDY"])
+egg_groups = Array[StringName]([&"Fairy", &"Mineral"])
+hatch_steps = 6400
+height = 3
+weight = 57
+color = &"Gray"
+generation = 6
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 22)
+shadow_size = 1
+id = &"CARBINK"
+display_name = "Carbink"

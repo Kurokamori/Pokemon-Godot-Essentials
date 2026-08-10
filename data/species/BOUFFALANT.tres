@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pc2ug"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vka62"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tq4jm"]
+
+[sub_resource type="Resource" id="Resource_a4s2b"]
+script = ExtResource("2_vka62")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_4u2rf"]
+script = ExtResource("2_vka62")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_8r76c"]
+script = ExtResource("2_vka62")
+level = 5
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_iyg54"]
+script = ExtResource("2_vka62")
+level = 10
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_0db4n"]
+script = ExtResource("2_vka62")
+level = 15
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_nle25"]
+script = ExtResource("2_vka62")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_ljqk6"]
+script = ExtResource("2_vka62")
+level = 25
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_t7oqg"]
+script = ExtResource("2_vka62")
+level = 30
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_7vdnq"]
+script = ExtResource("2_vka62")
+level = 35
+move = &"THROATCHOP"
+
+[sub_resource type="Resource" id="Resource_3rrd8"]
+script = ExtResource("2_vka62")
+level = 40
+move = &"HEADCHARGE"
+
+[sub_resource type="Resource" id="Resource_gh2xj"]
+script = ExtResource("2_vka62")
+level = 45
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_6s8ye"]
+script = ExtResource("2_vka62")
+level = 50
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_8s63n"]
+script = ExtResource("2_vka62")
+level = 55
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "BOUFFALANT"
+script = ExtResource("3_tq4jm")
+species = &"BOUFFALANT"
+category = "Bash Buffalo"
+pokedex_entry = "They charge wildly and headbutt everything. They headbutts have enough destructive force to derail a train."
+base_hp = 95
+base_attack = 110
+base_defense = 95
+base_special_attack = 40
+base_special_defense = 95
+base_speed = 55
+ev_attack = 2
+base_exp = 172
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vka62")]([SubResource("Resource_a4s2b"), SubResource("Resource_4u2rf"), SubResource("Resource_8r76c"), SubResource("Resource_iyg54"), SubResource("Resource_0db4n"), SubResource("Resource_nle25"), SubResource("Resource_ljqk6"), SubResource("Resource_t7oqg"), SubResource("Resource_7vdnq"), SubResource("Resource_3rrd8"), SubResource("Resource_gh2xj"), SubResource("Resource_6s8ye"), SubResource("Resource_8s63n")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"IRONHEAD", &"LASHOUT", &"MEGAHORN", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THROATCHOP", &"TOXIC", &"UPROAR", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BELCH", &"COTTONGUARD", &"ENDEAVOR", &"HEADBUTT", &"MUDSLAP", &"SKULLBASH", &"STOMP"])
+abilities = Array[StringName]([&"RECKLESS", &"SAPSIPPER"])
+hidden_abilities = Array[StringName]([&"SOUNDPROOF"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 16
+weight = 945
+color = &"Brown"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(1, 52)
+front_sprite_offset = Vector2i(-7, 24)
+shadow_x = 3
+id = &"BOUFFALANT"
+display_name = "Bouffalant"

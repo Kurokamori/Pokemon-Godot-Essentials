@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fgts1"]
+
+[resource]
+resource_name = "PERISHSONG"
+script = ExtResource("1_fgts1")
+accuracy = 0
+target = &"AllBattlers"
+function_code = &"StartPerishCountsForAllBattlers"
+description = "Any Pokémon that hears this song faints in three turns, unless it switches out of battle."
+id = &"PERISHSONG"
+display_name = "Perish Song"
+flags = Array[StringName]([&"Sound"])

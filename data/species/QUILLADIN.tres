@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8n811"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kn6hj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4rdfr"]
+
+[sub_resource type="Resource" id="Resource_50ke3"]
+script = ExtResource("1_8n811")
+species = &"CHESNAUGHT"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_bheog"]
+script = ExtResource("1_8n811")
+species = &"CHESPIN"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_0cw6s"]
+script = ExtResource("2_kn6hj")
+level = 0
+move = &"NEEDLEARM"
+
+[sub_resource type="Resource" id="Resource_hftdv"]
+script = ExtResource("2_kn6hj")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_0wibh"]
+script = ExtResource("2_kn6hj")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_rrov6"]
+script = ExtResource("2_kn6hj")
+level = 5
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_34lqo"]
+script = ExtResource("2_kn6hj")
+level = 8
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_6r1l7"]
+script = ExtResource("2_kn6hj")
+level = 11
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ix754"]
+script = ExtResource("2_kn6hj")
+level = 15
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_rpaky"]
+script = ExtResource("2_kn6hj")
+level = 19
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_p5eb1"]
+script = ExtResource("2_kn6hj")
+level = 29
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_5myk2"]
+script = ExtResource("2_kn6hj")
+level = 35
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_o6pvj"]
+script = ExtResource("2_kn6hj")
+level = 39
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_m7wp8"]
+script = ExtResource("2_kn6hj")
+level = 44
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_28u25"]
+script = ExtResource("2_kn6hj")
+level = 48
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_ty1u3"]
+script = ExtResource("2_kn6hj")
+level = 52
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_n537b"]
+script = ExtResource("2_kn6hj")
+level = 56
+move = &"WOODHAMMER"
+
+[resource]
+resource_name = "QUILLADIN"
+script = ExtResource("3_4rdfr")
+species = &"QUILLADIN"
+category = "Spiny Armor"
+pokedex_entry = "They strengthen their lower bodies by running into one another. They are very kind and won't start fights."
+types = Array[StringName]([&"GRASS"])
+base_hp = 61
+base_attack = 78
+base_defense = 95
+base_special_attack = 56
+base_special_defense = 58
+base_speed = 57
+ev_defense = 2
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_kn6hj")]([SubResource("Resource_0cw6s"), SubResource("Resource_hftdv"), SubResource("Resource_0wibh"), SubResource("Resource_rrov6"), SubResource("Resource_34lqo"), SubResource("Resource_6r1l7"), SubResource("Resource_ix754"), SubResource("Resource_rpaky"), SubResource("Resource_p5eb1"), SubResource("Resource_5myk2"), SubResource("Resource_o6pvj"), SubResource("Resource_m7wp8"), SubResource("Resource_28u25"), SubResource("Resource_ty1u3"), SubResource("Resource_n537b")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GYROBALL", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"BULLETPROOF"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_8n811")]([SubResource("Resource_50ke3"), SubResource("Resource_bheog")])
+height = 7
+weight = 290
+color = &"Green"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(-2, 26)
+shadow_size = 1
+id = &"QUILLADIN"
+display_name = "Quilladin"

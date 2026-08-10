@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_b85f1"]
+
+[resource]
+resource_name = "DRAGONBREATH"
+script = ExtResource("1_b85f1")
+type = &"DRAGON"
+category = 1
+power = 60
+total_pp = 20
+function_code = &"ParalyzeTarget"
+effect_chance = 30
+description = "The user exhales a mighty gust that inflicts damage. It may also leave the target with paralysis."
+id = &"DRAGONBREATH"
+display_name = "Dragon Breath"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

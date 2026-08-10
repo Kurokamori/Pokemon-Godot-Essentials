@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_58eje"]
+
+[resource]
+resource_name = "QUICKFEET"
+script = ExtResource("1_58eje")
+description = "Boosts Speed if there is a status problem."
+id = &"QUICKFEET"
+display_name = "Quick Feet"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_uaa22"]
+
+[resource]
+resource_name = "SIMPLE"
+script = ExtResource("1_uaa22")
+description = "The Pokémon is prone to wild stat changes."
+id = &"SIMPLE"
+display_name = "Simple"

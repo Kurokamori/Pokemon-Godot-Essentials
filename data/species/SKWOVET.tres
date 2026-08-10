@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cf6b6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7clni"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ityru"]
+
+[sub_resource type="Resource" id="Resource_d6i1o"]
+script = ExtResource("1_cf6b6")
+species = &"GREEDENT"
+method = &"Level"
+parameter = "24"
+
+[sub_resource type="Resource" id="Resource_xm0rs"]
+script = ExtResource("2_7clni")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1tscl"]
+script = ExtResource("2_7clni")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_yhc30"]
+script = ExtResource("2_7clni")
+level = 5
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_oxw1h"]
+script = ExtResource("2_7clni")
+level = 10
+move = &"STUFFCHEEKS"
+
+[sub_resource type="Resource" id="Resource_oybf8"]
+script = ExtResource("2_7clni")
+level = 15
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_dblgs"]
+script = ExtResource("2_7clni")
+level = 15
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_ocxmt"]
+script = ExtResource("2_7clni")
+level = 15
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_7tk74"]
+script = ExtResource("2_7clni")
+level = 20
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_2b814"]
+script = ExtResource("2_7clni")
+level = 25
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_5fc72"]
+script = ExtResource("2_7clni")
+level = 30
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_ikawo"]
+script = ExtResource("2_7clni")
+level = 35
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_4c7y6"]
+script = ExtResource("2_7clni")
+level = 40
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_vensf"]
+script = ExtResource("2_7clni")
+level = 45
+move = &"BELCH"
+
+[resource]
+resource_name = "SKWOVET"
+script = ExtResource("3_ityru")
+species = &"SKWOVET"
+category = "Cheeky"
+pokedex_entry = "It eats berries nonstop—a habit that has made it more resilient than it looks. It'll show up on farms, searching for yet more berries."
+base_hp = 70
+base_attack = 55
+base_defense = 55
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 25
+ev_hp = 1
+base_exp = 55
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7clni")]([SubResource("Resource_xm0rs"), SubResource("Resource_1tscl"), SubResource("Resource_yhc30"), SubResource("Resource_oxw1h"), SubResource("Resource_oybf8"), SubResource("Resource_dblgs"), SubResource("Resource_ocxmt"), SubResource("Resource_7tk74"), SubResource("Resource_2b814"), SubResource("Resource_5fc72"), SubResource("Resource_ikawo"), SubResource("Resource_4c7y6"), SubResource("Resource_vensf")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRUTALSWING", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GYROBALL", &"HIDDENPOWER", &"HYPERVOICE", &"IRONTAIL", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TAILSLAP", &"THIEF", &"TOXIC", &"UPROAR"])
+egg_moves = Array[StringName]([&"BELLYDRUM", &"DEFENSECURL", &"LASTRESORT", &"ROLLOUT"])
+abilities = Array[StringName]([&"CHEEKPOUCH"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+wild_item_uncommon = Array[StringName]([&"ORANBERRY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_cf6b6")]([SubResource("Resource_d6i1o")])
+height = 3
+weight = 25
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(6, 26)
+shadow_size = 1
+id = &"SKWOVET"
+display_name = "Skwovet"

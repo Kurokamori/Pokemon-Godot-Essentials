@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3sjjx"]
+
+[resource]
+resource_name = "WINGATTACK"
+script = ExtResource("1_3sjjx")
+type = &"FLYING"
+category = 0
+power = 60
+total_pp = 35
+target = &"Other"
+description = "The target is struck with large, imposing wings spread wide to inflict damage."
+id = &"WINGATTACK"
+display_name = "Wing Attack"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

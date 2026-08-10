@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4pds4"]
+
+[resource]
+resource_name = "POISONGEM"
+script = ExtResource("1_4pds4")
+name_plural = "Poison Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of poison. When held, it strengthens the power of a Poison-type move only once."
+id = &"POISONGEM"
+display_name = "Poison Gem"
+flags = Array[StringName]([&"TypeGem"])

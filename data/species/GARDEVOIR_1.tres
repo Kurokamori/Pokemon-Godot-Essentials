@@ -1,0 +1,144 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kjghm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_218iw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4euck"]
+
+[sub_resource type="Resource" id="Resource_5lw0u"]
+script = ExtResource("1_kjghm")
+species = &"KIRLIA"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_x7yx8"]
+script = ExtResource("2_218iw")
+level = 0
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_80c2m"]
+script = ExtResource("2_218iw")
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_n03j4"]
+script = ExtResource("2_218iw")
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_vd51o"]
+script = ExtResource("2_218iw")
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_jwrqj"]
+script = ExtResource("2_218iw")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_jbqbn"]
+script = ExtResource("2_218iw")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_fsbtd"]
+script = ExtResource("2_218iw")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_5g71a"]
+script = ExtResource("2_218iw")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_iuj7y"]
+script = ExtResource("2_218iw")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_bsuyy"]
+script = ExtResource("2_218iw")
+level = 9
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_7xfqg"]
+script = ExtResource("2_218iw")
+level = 12
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_t77eg"]
+script = ExtResource("2_218iw")
+level = 15
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_vv01u"]
+script = ExtResource("2_218iw")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_1mtn6"]
+script = ExtResource("2_218iw")
+level = 23
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_kggtu"]
+script = ExtResource("2_218iw")
+level = 28
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_a12sk"]
+script = ExtResource("2_218iw")
+level = 35
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_etu26"]
+script = ExtResource("2_218iw")
+level = 42
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_r0u2o"]
+script = ExtResource("2_218iw")
+level = 49
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_4ghwc"]
+script = ExtResource("2_218iw")
+level = 56
+move = &"DREAMEATER"
+
+[sub_resource type="Resource" id="Resource_er8jk"]
+script = ExtResource("2_218iw")
+level = 63
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "GARDEVOIR_1"
+script = ExtResource("3_4euck")
+species = &"GARDEVOIR"
+form = 1
+form_name = "Mega Gardevoir"
+category = "Embrace"
+pokedex_entry = "It apparently does not feel the pull of gravity because it supports itself with psychic power. It will give its life to protect its trainer."
+pokedex_form = 1
+types = Array[StringName]([&"PSYCHIC", &"FAIRY"])
+base_hp = 68
+base_attack = 85
+base_defense = 65
+base_special_attack = 165
+base_special_defense = 135
+base_speed = 100
+ev_special_attack = 3
+base_exp = 309
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_218iw")]([SubResource("Resource_x7yx8"), SubResource("Resource_80c2m"), SubResource("Resource_n03j4"), SubResource("Resource_vd51o"), SubResource("Resource_jwrqj"), SubResource("Resource_jbqbn"), SubResource("Resource_fsbtd"), SubResource("Resource_5g71a"), SubResource("Resource_iuj7y"), SubResource("Resource_bsuyy"), SubResource("Resource_7xfqg"), SubResource("Resource_t77eg"), SubResource("Resource_vv01u"), SubResource("Resource_1mtn6"), SubResource("Resource_kggtu"), SubResource("Resource_a12sk"), SubResource("Resource_etu26"), SubResource("Resource_r0u2o"), SubResource("Resource_4ghwc"), SubResource("Resource_er8jk")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"TRIPLEAXEL", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"PIXILATE"])
+hidden_abilities = Array[StringName]([&"PIXILATE"])
+egg_groups = Array[StringName]([&"Humanlike", &"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kjghm")]([SubResource("Resource_5lw0u")])
+height = 16
+weight = 484
+color = &"White"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 6
+mega_stone = &"GARDEVOIRITE"
+back_sprite_offset = Vector2i(1, 42)
+front_sprite_offset = Vector2i(-1, 15)
+id = &"GARDEVOIR_1"
+display_name = "Gardevoir"

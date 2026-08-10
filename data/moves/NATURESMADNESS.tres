@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_myi4s"]
+
+[resource]
+resource_name = "NATURESMADNESS"
+script = ExtResource("1_myi4s")
+type = &"FAIRY"
+category = 1
+power = 1
+accuracy = 90
+total_pp = 10
+function_code = &"FixedDamageHalfTargetHP"
+description = "The user hits the target with the force of nature. It halves the target's HP."
+id = &"NATURESMADNESS"
+display_name = "Nature's Madness"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

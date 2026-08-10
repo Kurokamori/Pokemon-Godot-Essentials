@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ivk2j"]
+
+[resource]
+resource_name = "POISONJAB"
+script = ExtResource("1_ivk2j")
+type = &"POISON"
+category = 0
+power = 80
+total_pp = 20
+function_code = &"PoisonTarget"
+effect_chance = 30
+description = "The target is stabbed with a tentacle or arm seeped with poison. It may also poison the target."
+id = &"POISONJAB"
+display_name = "Poison Jab"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

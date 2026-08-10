@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_noouq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_y3vo3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_k2ya6"]
+
+[sub_resource type="Resource" id="Resource_p7ly7"]
+script = ExtResource("1_noouq")
+species = &"MONFERNO"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_aalvy"]
+script = ExtResource("2_y3vo3")
+level = 0
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_u55k2"]
+script = ExtResource("2_y3vo3")
+move = &"MACHPUNCH"
+
+[sub_resource type="Resource" id="Resource_mpf32"]
+script = ExtResource("2_y3vo3")
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_oress"]
+script = ExtResource("2_y3vo3")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_5lhsf"]
+script = ExtResource("2_y3vo3")
+move = &"FACADE"
+
+[sub_resource type="Resource" id="Resource_vdb0p"]
+script = ExtResource("2_y3vo3")
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_smg27"]
+script = ExtResource("2_y3vo3")
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_cvqv6"]
+script = ExtResource("2_y3vo3")
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_ed1fa"]
+script = ExtResource("2_y3vo3")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_bn2sx"]
+script = ExtResource("2_y3vo3")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_jfnxe"]
+script = ExtResource("2_y3vo3")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_epnoy"]
+script = ExtResource("2_y3vo3")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_qua77"]
+script = ExtResource("2_y3vo3")
+level = 7
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_nw3wm"]
+script = ExtResource("2_y3vo3")
+level = 9
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_784sa"]
+script = ExtResource("2_y3vo3")
+level = 12
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_uhmif"]
+script = ExtResource("2_y3vo3")
+level = 16
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_17u6j"]
+script = ExtResource("2_y3vo3")
+level = 19
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_buaca"]
+script = ExtResource("2_y3vo3")
+level = 26
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_ok4yc"]
+script = ExtResource("2_y3vo3")
+level = 29
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_lg5vf"]
+script = ExtResource("2_y3vo3")
+level = 42
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_msbdx"]
+script = ExtResource("2_y3vo3")
+level = 52
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_7nqpu"]
+script = ExtResource("2_y3vo3")
+level = 58
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_5wv8e"]
+script = ExtResource("2_y3vo3")
+level = 68
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "INFERNAPE"
+script = ExtResource("3_k2ya6")
+species = &"INFERNAPE"
+category = "Flame"
+pokedex_entry = "It uses a special kind of martial arts involving all its limbs. Its fire never goes out."
+types = Array[StringName]([&"FIRE", &"FIGHTING"])
+base_hp = 76
+base_attack = 104
+base_defense = 71
+base_special_attack = 104
+base_special_defense = 71
+base_speed = 108
+ev_attack = 1
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 267
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_y3vo3")]([SubResource("Resource_aalvy"), SubResource("Resource_u55k2"), SubResource("Resource_mpf32"), SubResource("Resource_oress"), SubResource("Resource_5lhsf"), SubResource("Resource_vdb0p"), SubResource("Resource_smg27"), SubResource("Resource_cvqv6"), SubResource("Resource_ed1fa"), SubResource("Resource_bn2sx"), SubResource("Resource_jfnxe"), SubResource("Resource_epnoy"), SubResource("Resource_qua77"), SubResource("Resource_nw3wm"), SubResource("Resource_784sa"), SubResource("Resource_uhmif"), SubResource("Resource_17u6j"), SubResource("Resource_buaca"), SubResource("Resource_ok4yc"), SubResource("Resource_lg5vf"), SubResource("Resource_msbdx"), SubResource("Resource_7nqpu"), SubResource("Resource_5wv8e")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BLASTBURN", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"DUALCHOP", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OVERHEAT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THUNDERPUNCH", &"TORMENT", &"UTURN", &"VACUUMWAVE", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"IRONFIST"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_noouq")]([SubResource("Resource_p7ly7")])
+height = 12
+weight = 550
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(6, 21)
+shadow_size = 3
+id = &"INFERNAPE"
+display_name = "Infernape"

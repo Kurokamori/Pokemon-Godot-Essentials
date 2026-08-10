@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_77kgl"]
+
+[resource]
+resource_name = "CAMERUPTITE"
+script = ExtResource("1_77kgl")
+name_plural = "Cameruptites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Camerupt hold it, and it will be able to Mega Evolve."
+id = &"CAMERUPTITE"
+display_name = "Cameruptite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

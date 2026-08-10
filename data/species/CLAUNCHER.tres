@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_m4nbp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q24lr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jl2vr"]
+
+[sub_resource type="Resource" id="Resource_ivbjh"]
+script = ExtResource("1_m4nbp")
+species = &"CLAWITZER"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_wgav2"]
+script = ExtResource("2_q24lr")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_cha5o"]
+script = ExtResource("2_q24lr")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_j3a0r"]
+script = ExtResource("2_q24lr")
+level = 5
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_iquc7"]
+script = ExtResource("2_q24lr")
+level = 10
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_2b827"]
+script = ExtResource("2_q24lr")
+level = 15
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_wokso"]
+script = ExtResource("2_q24lr")
+level = 20
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_8jlme"]
+script = ExtResource("2_q24lr")
+level = 25
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_vt34k"]
+script = ExtResource("2_q24lr")
+level = 30
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_8rgl3"]
+script = ExtResource("2_q24lr")
+level = 35
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_cwjyw"]
+script = ExtResource("2_q24lr")
+level = 40
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_7vrmm"]
+script = ExtResource("2_q24lr")
+level = 45
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_q0lo5"]
+script = ExtResource("2_q24lr")
+level = 50
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_e0o0p"]
+script = ExtResource("2_q24lr")
+level = 55
+move = &"CRABHAMMER"
+
+[resource]
+resource_name = "CLAUNCHER"
+script = ExtResource("3_jl2vr")
+species = &"CLAUNCHER"
+category = "Water Gun"
+pokedex_entry = "Through controlled expulsions of internal gas, it can expel water like a pistol shot. At close distances, it can shatter rock."
+types = Array[StringName]([&"WATER"])
+base_hp = 50
+base_attack = 53
+base_defense = 62
+base_special_attack = 58
+base_special_defense = 63
+base_speed = 44
+ev_special_attack = 1
+base_exp = 66
+growth_rate = &"Slow"
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_q24lr")]([SubResource("Resource_wgav2"), SubResource("Resource_cha5o"), SubResource("Resource_j3a0r"), SubResource("Resource_iquc7"), SubResource("Resource_2b827"), SubResource("Resource_wokso"), SubResource("Resource_8jlme"), SubResource("Resource_vt34k"), SubResource("Resource_8rgl3"), SubResource("Resource_cwjyw"), SubResource("Resource_7vrmm"), SubResource("Resource_q0lo5"), SubResource("Resource_e0o0p")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AURASPHERE", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIVE", &"DOUBLETEAM", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLIPTURN", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TERRAINPULSE", &"TOXIC", &"UTURN", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"AQUATAIL", &"BUBBLEBEAM", &"ENTRAINMENT"])
+abilities = Array[StringName]([&"MEGALAUNCHER"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_m4nbp")]([SubResource("Resource_ivbjh")])
+height = 5
+weight = 83
+color = &"Blue"
+shape = &"Insectoid"
+generation = 6
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 35)
+id = &"CLAUNCHER"
+display_name = "Clauncher"

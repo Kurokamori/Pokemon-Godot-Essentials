@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_x1w12"]
+
+[resource]
+resource_name = "DOWNCAST"
+script = ExtResource("1_x1w12")
+icon_position = 58
+description = "A Ribbon for recalling feelings of sadness that added spice to life."
+id = &"DOWNCAST"
+display_name = "Downcast Ribbon"

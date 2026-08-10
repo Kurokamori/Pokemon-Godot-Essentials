@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="PhoneMessageData" format=3]
+
+[ext_resource type="Script" path="res://src/data/phone_message_data.gd" id="1_ft3qe"]
+
+[resource]
+resource_name = "default"
+script = ExtResource("1_ft3qe")
+trainer_type = &"default"
+intro = Array[String](["Hello. This is \\TN.", "Good day, \\PN! Hi. This is \\TN.", "How are you doing? \\PN, howdy! This is \\TN. Isn't it nice out?", "\\PN, good day! It's me, \\TN. Got a minute?", "Hello, \\PN. This is \\TN. How are things?"])
+intro_morning = Array[String](["Good morning, \\PN. This is \\TN. Did I wake you?"])
+intro_afternoon = Array[String](["Good afternoon, \\PN! It's \\TN here."])
+intro_evening = Array[String](["\\PN, good evening! Hi. This is \\TN."])
+body = Array[String](["How are your Pokémon doing?\\mMy \\TP's really energetic. It's a handful!\\mOh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger.", "My \\TP's looking really awesome. I wish I could show you.\\mHey, listen! I almost caught a \\TE the other day.\\mOh, it was sooooooo close, too!"])
+body1 = Array[String](["How are your Pokémon doing?\\mMy \\TP's really energetic. It's a handful!", "How are your Pokémon doing?\\mI always keep my \\TP in top shape by going to Pokémon Centers.", "My \\TP's looking really awesome. I wish I could show you.", "I dressed my \\TP and it looks even cuter than before."])
+body2 = Array[String](["Oh yeah, I managed to beat a tough \\TE.\\mI need to make my party stronger.", "You have to hear this! I battled \\TE the other day.\\mIt was easy! I had a type advantage.", "Hey, listen! I almost caught \\TE the other day.\\mOh, it was sooooooo close, too!", "Guess what happened the other day. I missed catching \\TE again.\\mMaybe I'm not very good at this."])
+battle_request = Array[String](["Want to battle? It's not going to be a repeat of the last time we met.\\mI'll be waiting for you around \\TM.", "Do you want to battle? I'm going to win this time!\\mI'll be waiting for you around \\TM.\\mLook for me, OK? My \\TP will be expecting you."])
+id = &"default"

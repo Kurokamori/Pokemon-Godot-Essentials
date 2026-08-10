@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_moecb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wuj6u"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_huqdt"]
+
+[sub_resource type="Resource" id="Resource_umbo7"]
+script = ExtResource("1_moecb")
+species = &"MURKROW"
+method = &"Item"
+parameter = "DUSKSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7wtpd"]
+script = ExtResource("2_wuj6u")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_rtpnb"]
+script = ExtResource("2_wuj6u")
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_wnkay"]
+script = ExtResource("2_wuj6u")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_wpxio"]
+script = ExtResource("2_wuj6u")
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_n4bjj"]
+script = ExtResource("2_wuj6u")
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_1gx77"]
+script = ExtResource("2_wuj6u")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_ui86v"]
+script = ExtResource("2_wuj6u")
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_cyx4n"]
+script = ExtResource("2_wuj6u")
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_3erkb"]
+script = ExtResource("2_wuj6u")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_8sgxa"]
+script = ExtResource("2_wuj6u")
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_exqaf"]
+script = ExtResource("2_wuj6u")
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_vck1w"]
+script = ExtResource("2_wuj6u")
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_x8n8x"]
+script = ExtResource("2_wuj6u")
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_k8cp1"]
+script = ExtResource("2_wuj6u")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_w5ojg"]
+script = ExtResource("2_wuj6u")
+level = 25
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_mdcr4"]
+script = ExtResource("2_wuj6u")
+level = 35
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_adjfu"]
+script = ExtResource("2_wuj6u")
+level = 45
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_cnayk"]
+script = ExtResource("2_wuj6u")
+level = 55
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_ut4iu"]
+script = ExtResource("2_wuj6u")
+level = 65
+move = &"QUASH"
+
+[sub_resource type="Resource" id="Resource_nykji"]
+script = ExtResource("2_wuj6u")
+level = 75
+move = &"DARKPULSE"
+
+[resource]
+resource_name = "HONCHKROW"
+script = ExtResource("3_huqdt")
+species = &"HONCHKROW"
+category = "Big Boss"
+pokedex_entry = "Becoming active at night, it is known to swarm with numerous Murkrow in tow."
+types = Array[StringName]([&"DARK", &"FLYING"])
+base_hp = 100
+base_attack = 125
+base_defense = 52
+base_special_attack = 105
+base_special_defense = 52
+base_speed = 71
+ev_attack = 2
+base_exp = 177
+growth_rate = &"Parabolic"
+catch_rate = 30
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_wuj6u")]([SubResource("Resource_7wtpd"), SubResource("Resource_rtpnb"), SubResource("Resource_wnkay"), SubResource("Resource_wpxio"), SubResource("Resource_n4bjj"), SubResource("Resource_1gx77"), SubResource("Resource_ui86v"), SubResource("Resource_cyx4n"), SubResource("Resource_3erkb"), SubResource("Resource_8sgxa"), SubResource("Resource_exqaf"), SubResource("Resource_vck1w"), SubResource("Resource_x8n8x"), SubResource("Resource_k8cp1"), SubResource("Resource_w5ojg"), SubResource("Resource_mdcr4"), SubResource("Resource_adjfu"), SubResource("Resource_cnayk"), SubResource("Resource_ut4iu"), SubResource("Resource_nykji")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLY", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"ICYWIND", &"INCINERATE", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAYBACK", &"PLUCK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"QUASH", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SKYATTACK", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STEELWING", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"THUNDERWAVE", &"TORMENT", &"TWISTER", &"UPROAR"])
+abilities = Array[StringName]([&"INSOMNIA", &"SUPERLUCK"])
+hidden_abilities = Array[StringName]([&"MOXIE"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_moecb")]([SubResource("Resource_umbo7")])
+height = 9
+weight = 273
+color = &"Black"
+shape = &"Winged"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(3, 24)
+id = &"HONCHKROW"
+display_name = "Honchkrow"

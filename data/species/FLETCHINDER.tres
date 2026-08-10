@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5q3rg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7i1bp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_3hxh1"]
+
+[sub_resource type="Resource" id="Resource_p5oie"]
+script = ExtResource("1_5q3rg")
+species = &"TALONFLAME"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_yjehj"]
+script = ExtResource("1_5q3rg")
+species = &"FLETCHLING"
+method = &"Level"
+parameter = "17"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_5h24y"]
+script = ExtResource("2_7i1bp")
+level = 0
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_edkyg"]
+script = ExtResource("2_7i1bp")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_641ab"]
+script = ExtResource("2_7i1bp")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_gsm50"]
+script = ExtResource("2_7i1bp")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_78s0u"]
+script = ExtResource("2_7i1bp")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_cxtld"]
+script = ExtResource("2_7i1bp")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_feikh"]
+script = ExtResource("2_7i1bp")
+level = 15
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_47a7x"]
+script = ExtResource("2_7i1bp")
+level = 22
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_8nii1"]
+script = ExtResource("2_7i1bp")
+level = 29
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_4d6ai"]
+script = ExtResource("2_7i1bp")
+level = 36
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_7erbv"]
+script = ExtResource("2_7i1bp")
+level = 43
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_6qhv6"]
+script = ExtResource("2_7i1bp")
+level = 50
+move = &"STEELWING"
+
+[sub_resource type="Resource" id="Resource_emtah"]
+script = ExtResource("2_7i1bp")
+level = 57
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_ddlb6"]
+script = ExtResource("2_7i1bp")
+level = 64
+move = &"FLY"
+
+[resource]
+resource_name = "FLETCHINDER"
+script = ExtResource("3_3hxh1")
+species = &"FLETCHINDER"
+category = "Ember"
+pokedex_entry = "From its beak, it expels embers that set the tall grass on fire. Then it pounces on the bewildered prey that pop out of the grass."
+types = Array[StringName]([&"FIRE", &"FLYING"])
+base_hp = 62
+base_attack = 73
+base_defense = 55
+base_special_attack = 56
+base_special_defense = 52
+base_speed = 84
+ev_speed = 2
+base_exp = 134
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7i1bp")]([SubResource("Resource_5h24y"), SubResource("Resource_edkyg"), SubResource("Resource_641ab"), SubResource("Resource_gsm50"), SubResource("Resource_78s0u"), SubResource("Resource_cxtld"), SubResource("Resource_feikh"), SubResource("Resource_47a7x"), SubResource("Resource_8nii1"), SubResource("Resource_4d6ai"), SubResource("Resource_7erbv"), SubResource("Resource_6qhv6"), SubResource("Resource_emtah"), SubResource("Resource_ddlb6")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNATCH", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"TAUNT", &"THIEF", &"TOXIC", &"UTURN", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"GALEWINGS"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_5q3rg")]([SubResource("Resource_p5oie"), SubResource("Resource_yjehj")])
+height = 7
+weight = 160
+shape = &"Winged"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+id = &"FLETCHINDER"
+display_name = "Fletchinder"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_4wgjw"]
+
+[resource]
+resource_name = "BLACKSLUDGE"
+script = ExtResource("1_4wgjw")
+name_plural = "Black Sludges"
+portion_name = "blob of Black Sludge"
+portion_name_plural = "blobs of Black Sludge"
+price = 3000
+sell_price = 2000
+bp_price = 25
+description = "A held item that gradually restores the HP of Poison-type Pokémon. It inflicts damage on all other types."
+id = &"BLACKSLUDGE"
+display_name = "Black Sludge"
+flags = Array[StringName]([&"Fling_30"])

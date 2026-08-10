@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tnxsw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_725p1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ls7si"]
+
+[sub_resource type="Resource" id="Resource_p0pu2"]
+script = ExtResource("2_725p1")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_mvyhp"]
+script = ExtResource("2_725p1")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_uqqms"]
+script = ExtResource("2_725p1")
+level = 7
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_iufyf"]
+script = ExtResource("2_725p1")
+level = 14
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_2l7rn"]
+script = ExtResource("2_725p1")
+level = 21
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_3hy5y"]
+script = ExtResource("2_725p1")
+level = 28
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_6p4lt"]
+script = ExtResource("2_725p1")
+level = 35
+move = &"AURORAVEIL"
+
+[sub_resource type="Resource" id="Resource_l1hp5"]
+script = ExtResource("2_725p1")
+level = 42
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_jffe3"]
+script = ExtResource("2_725p1")
+level = 49
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_n0uf4"]
+script = ExtResource("2_725p1")
+level = 56
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_iamw2"]
+script = ExtResource("2_725p1")
+level = 63
+move = &"FISHIOUSREND"
+
+[sub_resource type="Resource" id="Resource_0mk2p"]
+script = ExtResource("2_725p1")
+level = 70
+move = &"ICICLECRASH"
+
+[sub_resource type="Resource" id="Resource_y4pac"]
+script = ExtResource("2_725p1")
+level = 77
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "ARCTOVISH"
+script = ExtResource("3_ls7si")
+species = &"ARCTOVISH"
+category = "Fossil"
+pokedex_entry = "Though it's able to capture prey by freezing its surroundings, it has trouble eating the prey afterward because its mouth is on top of its head."
+types = Array[StringName]([&"WATER", &"ICE"])
+base_hp = 90
+base_attack = 90
+base_defense = 100
+base_special_attack = 80
+base_special_defense = 90
+base_speed = 55
+ev_defense = 2
+base_exp = 177
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_725p1")]([SubResource("Resource_p0pu2"), SubResource("Resource_mvyhp"), SubResource("Resource_uqqms"), SubResource("Resource_iufyf"), SubResource("Resource_2l7rn"), SubResource("Resource_3hy5y"), SubResource("Resource_6p4lt"), SubResource("Resource_l1hp5"), SubResource("Resource_jffe3"), SubResource("Resource_n0uf4"), SubResource("Resource_iamw2"), SubResource("Resource_0mk2p"), SubResource("Resource_y4pac")])
+tutor_moves = Array[StringName]([&"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CONFIDE", &"CRUNCH", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"LIQUIDATION", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"WATERABSORB", &"ICEBODY"])
+hidden_abilities = Array[StringName]([&"SLUSHRUSH"])
+hatch_steps = 8960
+height = 20
+weight = 1750
+color = &"Blue"
+shape = &"Finned"
+generation = 8
+back_sprite_offset = Vector2i(-1, 56)
+front_sprite_offset = Vector2i(-7, 12)
+id = &"ARCTOVISH"
+display_name = "Arctovish"

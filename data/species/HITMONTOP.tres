@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_h46km"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bjuw2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5ca0y"]
+
+[sub_resource type="Resource" id="Resource_27vsa"]
+script = ExtResource("1_h46km")
+species = &"TYROGUE"
+method = &"AtkDefEqual"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_syd84"]
+script = ExtResource("2_bjuw2")
+level = 0
+move = &"TRIPLEKICK"
+
+[sub_resource type="Resource" id="Resource_rk175"]
+script = ExtResource("2_bjuw2")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_7jtde"]
+script = ExtResource("2_bjuw2")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_ms7jg"]
+script = ExtResource("2_bjuw2")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ciadl"]
+script = ExtResource("2_bjuw2")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_nvc27"]
+script = ExtResource("2_bjuw2")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_17og5"]
+script = ExtResource("2_bjuw2")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_0xqjy"]
+script = ExtResource("2_bjuw2")
+level = 4
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_a7axd"]
+script = ExtResource("2_bjuw2")
+level = 8
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_4fhe1"]
+script = ExtResource("2_bjuw2")
+level = 12
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_otmn7"]
+script = ExtResource("2_bjuw2")
+level = 16
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_haucd"]
+script = ExtResource("2_bjuw2")
+level = 21
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_lbao8"]
+script = ExtResource("2_bjuw2")
+level = 21
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_0yx30"]
+script = ExtResource("2_bjuw2")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_dqwwm"]
+script = ExtResource("2_bjuw2")
+level = 28
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_qfgtx"]
+script = ExtResource("2_bjuw2")
+level = 32
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_hxxd1"]
+script = ExtResource("2_bjuw2")
+level = 36
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_3p76p"]
+script = ExtResource("2_bjuw2")
+level = 40
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_ta6go"]
+script = ExtResource("2_bjuw2")
+level = 44
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "HITMONTOP"
+script = ExtResource("3_5ca0y")
+species = &"HITMONTOP"
+category = "Handstand"
+pokedex_entry = "Its technique of kicking while spinning is a remarkable mix of both offense and defense. Hitmontop travel faster spinning than they do walking."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 50
+base_attack = 95
+base_defense = 95
+base_special_attack = 35
+base_special_defense = 110
+base_speed = 70
+ev_special_defense = 2
+base_exp = 159
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bjuw2")]([SubResource("Resource_syd84"), SubResource("Resource_rk175"), SubResource("Resource_7jtde"), SubResource("Resource_ms7jg"), SubResource("Resource_ciadl"), SubResource("Resource_nvc27"), SubResource("Resource_17og5"), SubResource("Resource_0xqjy"), SubResource("Resource_a7axd"), SubResource("Resource_4fhe1"), SubResource("Resource_otmn7"), SubResource("Resource_haucd"), SubResource("Resource_lbao8"), SubResource("Resource_0yx30"), SubResource("Resource_dqwwm"), SubResource("Resource_qfgtx"), SubResource("Resource_hxxd1"), SubResource("Resource_3p76p"), SubResource("Resource_ta6go")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COUNTER", &"COVET", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FOCUSBLAST", &"FOCUSENERGY", &"FRUSTRATION", &"GYROBALL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROCKSLIDE", &"ROCKSMASH", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"TRIPLEAXEL", &"TWISTER", &"UPROAR", &"VACUUMWAVE", &"WORKUP"])
+abilities = Array[StringName]([&"INTIMIDATE", &"TECHNICIAN"])
+hidden_abilities = Array[StringName]([&"STEADFAST"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_h46km")]([SubResource("Resource_27vsa")])
+height = 14
+weight = 480
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 27)
+id = &"HITMONTOP"
+display_name = "Hitmontop"

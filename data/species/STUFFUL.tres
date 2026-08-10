@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5dxd5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e8opo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tnh8f"]
+
+[sub_resource type="Resource" id="Resource_6acyt"]
+script = ExtResource("1_5dxd5")
+species = &"BEWEAR"
+method = &"Level"
+parameter = "27"
+
+[sub_resource type="Resource" id="Resource_al221"]
+script = ExtResource("2_e8opo")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_seq6l"]
+script = ExtResource("2_e8opo")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_l8w21"]
+script = ExtResource("2_e8opo")
+level = 4
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_v7drc"]
+script = ExtResource("2_e8opo")
+level = 8
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_d7yu2"]
+script = ExtResource("2_e8opo")
+level = 12
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_g8wqk"]
+script = ExtResource("2_e8opo")
+level = 16
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_mb868"]
+script = ExtResource("2_e8opo")
+level = 20
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_wnfge"]
+script = ExtResource("2_e8opo")
+level = 24
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_teagp"]
+script = ExtResource("2_e8opo")
+level = 28
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_ws5rj"]
+script = ExtResource("2_e8opo")
+level = 32
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_qy54t"]
+script = ExtResource("2_e8opo")
+level = 36
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_xyvy5"]
+script = ExtResource("2_e8opo")
+level = 40
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_0vgwe"]
+script = ExtResource("2_e8opo")
+level = 44
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_cw2qe"]
+script = ExtResource("2_e8opo")
+level = 48
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "STUFFUL"
+script = ExtResource("3_tnh8f")
+species = &"STUFFUL"
+category = "Flailing"
+pokedex_entry = "Despite its adorable appearance, when it gets angry and flails about, its arms and legs could knock a pro wrestler sprawling."
+types = Array[StringName]([&"NORMAL", &"FIGHTING"])
+base_hp = 70
+base_attack = 75
+base_defense = 50
+base_special_attack = 45
+base_special_defense = 50
+base_speed = 50
+ev_attack = 1
+base_exp = 68
+catch_rate = 140
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_e8opo")]([SubResource("Resource_al221"), SubResource("Resource_seq6l"), SubResource("Resource_l8w21"), SubResource("Resource_v7drc"), SubResource("Resource_d7yu2"), SubResource("Resource_g8wqk"), SubResource("Resource_mb868"), SubResource("Resource_wnfge"), SubResource("Resource_teagp"), SubResource("Resource_ws5rj"), SubResource("Resource_qy54t"), SubResource("Resource_xyvy5"), SubResource("Resource_0vgwe"), SubResource("Resource_cw2qe")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BIND", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"COACHING", &"CONFIDE", &"DOUBLETEAM", &"DUALCHOP", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"HIDDENPOWER", &"ICEPUNCH", &"IRONHEAD", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"DEFENSECURL", &"FORCEPALM", &"ROLLOUT", &"STOMP"])
+abilities = Array[StringName]([&"FLUFFY", &"KLUTZ"])
+hidden_abilities = Array[StringName]([&"CUTECHARM"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_5dxd5")]([SubResource("Resource_6acyt")])
+height = 5
+weight = 68
+color = &"Pink"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(1, 31)
+shadow_size = 1
+id = &"STUFFUL"
+display_name = "Stufful"

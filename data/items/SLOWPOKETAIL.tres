@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_pni1x"]
+
+[resource]
+resource_name = "SLOWPOKETAIL"
+script = ExtResource("1_pni1x")
+name_plural = "Slowpoke Tails"
+price = 10000
+sell_price = 5000
+description = "A very tasty tail of something. It can be sold at a high price to shops."
+id = &"SLOWPOKETAIL"
+display_name = "Slowpoke Tail"

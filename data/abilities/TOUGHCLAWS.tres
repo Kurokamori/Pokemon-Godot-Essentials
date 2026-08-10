@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_nkiu8"]
+
+[resource]
+resource_name = "TOUGHCLAWS"
+script = ExtResource("1_nkiu8")
+description = "Powers up moves that make direct contact."
+id = &"TOUGHCLAWS"
+display_name = "Tough Claws"

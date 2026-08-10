@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_x1ocd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e5xw7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_o2hy5"]
+
+[sub_resource type="Resource" id="Resource_qvn7p"]
+script = ExtResource("2_e5xw7")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_2jn7t"]
+script = ExtResource("2_e5xw7")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_huyjd"]
+script = ExtResource("2_e5xw7")
+level = 6
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_ftgtn"]
+script = ExtResource("2_e5xw7")
+level = 12
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_00jea"]
+script = ExtResource("2_e5xw7")
+level = 18
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_udfhr"]
+script = ExtResource("2_e5xw7")
+level = 24
+move = &"BREAKINGSWIPE"
+
+[sub_resource type="Resource" id="Resource_ebsf6"]
+script = ExtResource("2_e5xw7")
+level = 30
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_dhery"]
+script = ExtResource("2_e5xw7")
+level = 36
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_ehn5t"]
+script = ExtResource("2_e5xw7")
+level = 42
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_fxvsf"]
+script = ExtResource("2_e5xw7")
+level = 48
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_vn6s5"]
+script = ExtResource("2_e5xw7")
+level = 54
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_f144q"]
+script = ExtResource("2_e5xw7")
+level = 60
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_mrvno"]
+script = ExtResource("2_e5xw7")
+level = 66
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "DURALUDON"
+script = ExtResource("3_o2hy5")
+species = &"DURALUDON"
+category = "Alloy"
+pokedex_entry = "Its body resembles polished metal, and it's both lightweight and strong. The only drawback is that it rusts easily."
+types = Array[StringName]([&"STEEL", &"DRAGON"])
+base_hp = 70
+base_attack = 95
+base_defense = 115
+base_special_attack = 120
+base_special_defense = 50
+base_speed = 85
+ev_special_attack = 2
+base_exp = 187
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_e5xw7")]([SubResource("Resource_qvn7p"), SubResource("Resource_2jn7t"), SubResource("Resource_huyjd"), SubResource("Resource_ftgtn"), SubResource("Resource_00jea"), SubResource("Resource_udfhr"), SubResource("Resource_ebsf6"), SubResource("Resource_dhery"), SubResource("Resource_ehn5t"), SubResource("Resource_fxvsf"), SubResource("Resource_vn6s5"), SubResource("Resource_f144q"), SubResource("Resource_mrvno")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEAVYSLAM", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC"])
+egg_moves = Array[StringName]([&"MIRRORCOAT", &"NIGHTSLASH", &"SLASH"])
+abilities = Array[StringName]([&"LIGHTMETAL", &"HEAVYMETAL"])
+hidden_abilities = Array[StringName]([&"STALWART"])
+egg_groups = Array[StringName]([&"Mineral", &"Dragon"])
+hatch_steps = 7680
+height = 18
+weight = 400
+color = &"White"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-1, 16)
+id = &"DURALUDON"
+display_name = "Duraludon"

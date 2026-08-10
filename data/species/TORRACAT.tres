@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_sowjr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fqw5i"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_26upa"]
+
+[sub_resource type="Resource" id="Resource_64gac"]
+script = ExtResource("1_sowjr")
+species = &"INCINEROAR"
+method = &"Level"
+parameter = "34"
+
+[sub_resource type="Resource" id="Resource_c4qf1"]
+script = ExtResource("1_sowjr")
+species = &"LITTEN"
+method = &"Level"
+parameter = "17"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_2f74a"]
+script = ExtResource("2_fqw5i")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_xu7so"]
+script = ExtResource("2_fqw5i")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_7hfv6"]
+script = ExtResource("2_fqw5i")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_x3mg1"]
+script = ExtResource("2_fqw5i")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_rxemr"]
+script = ExtResource("2_fqw5i")
+level = 9
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_xok7o"]
+script = ExtResource("2_fqw5i")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_cpp42"]
+script = ExtResource("2_fqw5i")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_3o0bn"]
+script = ExtResource("2_fqw5i")
+level = 20
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_yuxim"]
+script = ExtResource("2_fqw5i")
+level = 25
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_l2tiw"]
+script = ExtResource("2_fqw5i")
+level = 30
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_wpf4m"]
+script = ExtResource("2_fqw5i")
+level = 35
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_tfwd4"]
+script = ExtResource("2_fqw5i")
+level = 40
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_217yo"]
+script = ExtResource("2_fqw5i")
+level = 45
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_1v5n7"]
+script = ExtResource("2_fqw5i")
+level = 50
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "TORRACAT"
+script = ExtResource("3_26upa")
+species = &"TORRACAT"
+category = "Fire Cat"
+pokedex_entry = "It can act spoiled if it grows close to its Trainer. A powerful Pokémon, its sharp claws can leave its Trainer's whole body covered in scratches."
+types = Array[StringName]([&"FIRE"])
+base_hp = 65
+base_attack = 85
+base_defense = 50
+base_special_attack = 80
+base_special_defense = 50
+base_speed = 90
+ev_speed = 2
+base_exp = 147
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fqw5i")]([SubResource("Resource_2f74a"), SubResource("Resource_xu7so"), SubResource("Resource_7hfv6"), SubResource("Resource_x3mg1"), SubResource("Resource_rxemr"), SubResource("Resource_xok7o"), SubResource("Resource_cpp42"), SubResource("Resource_3o0bn"), SubResource("Resource_yuxim"), SubResource("Resource_l2tiw"), SubResource("Resource_wpf4m"), SubResource("Resource_tfwd4"), SubResource("Resource_217yo"), SubResource("Resource_1v5n7")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BODYSLAM", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CRUNCH", &"DOUBLETEAM", &"DUALCHOP", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPLEDGE", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"LEECHLIFE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PAYDAY", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROAR", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TORMENT", &"TOXIC", &"UTURN", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"INTIMIDATE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_sowjr")]([SubResource("Resource_64gac"), SubResource("Resource_c4qf1")])
+height = 7
+weight = 250
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-2, 20)
+id = &"TORRACAT"
+display_name = "Torracat"

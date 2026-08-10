@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="TrainerData" format=3]
+
+[ext_resource type="Script" path="res://src/data/trainer_pokemon.gd" id="1_rqmc0"]
+[ext_resource type="Script" path="res://src/data/trainer_data.gd" id="2_qmhgt"]
+
+[sub_resource type="Resource" id="Resource_65w8m"]
+script = ExtResource("1_rqmc0")
+species = &"MACHOP"
+level = 19
+
+[resource]
+resource_name = "HIKER|Ford|0"
+script = ExtResource("2_qmhgt")
+trainer_type = &"HIKER"
+lose_text = "You're too good for me!"
+pokemon = Array[ExtResource("1_rqmc0")]([SubResource("Resource_65w8m")])
+id = &"HIKER|Ford|0"
+display_name = "Ford"

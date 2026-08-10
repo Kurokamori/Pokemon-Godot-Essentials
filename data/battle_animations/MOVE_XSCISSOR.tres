@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_vgn14"]
+
+[resource]
+resource_name = "MOVE_XSCISSOR"
+script = ExtResource("1_vgn14")
+graphic = "X-Scizzor"
+frames = Array[PackedFloat32Array]([PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 455, 37, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1, 319, 36, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 420, 62, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1, 351, 62, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 384, 96, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1, 384, 96, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 418, 135, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1, 347, 135, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(128, 224, 100, 100, 0, 0, -1, 255, 0, 0, 0, 1, 2, 384, 96, 100, 100, 0, 0, -2, 255, 0, 0, 0, 1, 1, 307, 164, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1, 455, 165, 100, 100, 0, 0, 1, 255, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(0)
+timing_sounds = PackedStringArray("Slash")
+timing_volumes = PackedInt32Array(80)
+timing_pitches = PackedInt32Array(100)
+id = &"MOVE_XSCISSOR"
+display_name = "Move:XSCISSOR"

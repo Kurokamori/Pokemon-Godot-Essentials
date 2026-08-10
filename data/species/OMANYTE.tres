@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cr7wi"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1oxl5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_iapns"]
+
+[sub_resource type="Resource" id="Resource_h52ud"]
+script = ExtResource("1_cr7wi")
+species = &"OMASTAR"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_lq1bx"]
+script = ExtResource("2_1oxl5")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_tcsn5"]
+script = ExtResource("2_1oxl5")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_jw0yc"]
+script = ExtResource("2_1oxl5")
+level = 5
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_x5ep7"]
+script = ExtResource("2_1oxl5")
+level = 10
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_lm4fr"]
+script = ExtResource("2_1oxl5")
+level = 15
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_g5eof"]
+script = ExtResource("2_1oxl5")
+level = 20
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_u84qq"]
+script = ExtResource("2_1oxl5")
+level = 25
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_qclaw"]
+script = ExtResource("2_1oxl5")
+level = 30
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_lt8pw"]
+script = ExtResource("2_1oxl5")
+level = 35
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_jk270"]
+script = ExtResource("2_1oxl5")
+level = 41
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_t6irj"]
+script = ExtResource("2_1oxl5")
+level = 45
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_vf6pr"]
+script = ExtResource("2_1oxl5")
+level = 50
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_tnmug"]
+script = ExtResource("2_1oxl5")
+level = 55
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_7wgdv"]
+script = ExtResource("2_1oxl5")
+level = 60
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "OMANYTE"
+script = ExtResource("3_iapns")
+species = &"OMANYTE"
+category = "Spiral"
+pokedex_entry = "One of the ancient and long-since-extinct Pokémon that have been regenerated from fossils by humans. If attacked, it withdraws into its hard shell."
+types = Array[StringName]([&"ROCK", &"WATER"])
+base_hp = 35
+base_attack = 40
+base_defense = 100
+base_special_attack = 90
+base_special_defense = 55
+base_speed = 35
+ev_defense = 1
+base_exp = 71
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1oxl5")]([SubResource("Resource_lq1bx"), SubResource("Resource_tcsn5"), SubResource("Resource_jw0yc"), SubResource("Resource_x5ep7"), SubResource("Resource_lm4fr"), SubResource("Resource_g5eof"), SubResource("Resource_u84qq"), SubResource("Resource_qclaw"), SubResource("Resource_lt8pw"), SubResource("Resource_jk270"), SubResource("Resource_t6irj"), SubResource("Resource_vf6pr"), SubResource("Resource_tnmug"), SubResource("Resource_7wgdv")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"METEORBEAM", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SPIKES", &"STEALTHROCK", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"TOXICSPIKES", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AURORABEAM", &"BITE", &"BUBBLEBEAM", &"HAZE", &"KNOCKOFF", &"MUDDYWATER", &"REFLECTTYPE", &"SLAM", &"SPIKES", &"SUPERSONIC", &"TICKLE", &"TOXICSPIKES", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_cr7wi")]([SubResource("Resource_h52ud")])
+height = 4
+weight = 75
+color = &"Blue"
+shape = &"Multiped"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"OMANYTE"
+display_name = "Omanyte"

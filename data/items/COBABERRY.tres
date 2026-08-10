@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_cgikc"]
+
+[resource]
+resource_name = "COBABERRY"
+script = ExtResource("1_cgikc")
+name_plural = "Coba Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "Weakens a supereffective Flying-type attack against the holding Pokémon."
+id = &"COBABERRY"
+display_name = "Coba Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_FLYING_80"])

@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2o5yy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_iqjrf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5f3ju"]
+
+[sub_resource type="Resource" id="Resource_yfo8u"]
+script = ExtResource("1_2o5yy")
+species = &"HELIOLISK"
+method = &"Item"
+parameter = "SUNSTONE"
+
+[sub_resource type="Resource" id="Resource_jqfin"]
+script = ExtResource("2_iqjrf")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_6vin1"]
+script = ExtResource("2_iqjrf")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_e7kny"]
+script = ExtResource("2_iqjrf")
+level = 4
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_yqamn"]
+script = ExtResource("2_iqjrf")
+level = 8
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_l8sry"]
+script = ExtResource("2_iqjrf")
+level = 12
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_nx2yu"]
+script = ExtResource("2_iqjrf")
+level = 16
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_nnblb"]
+script = ExtResource("2_iqjrf")
+level = 20
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_1gin7"]
+script = ExtResource("2_iqjrf")
+level = 24
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_2utd7"]
+script = ExtResource("2_iqjrf")
+level = 28
+move = &"PARABOLICCHARGE"
+
+[sub_resource type="Resource" id="Resource_a2lrt"]
+script = ExtResource("2_iqjrf")
+level = 32
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_jsahe"]
+script = ExtResource("2_iqjrf")
+level = 36
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_thidg"]
+script = ExtResource("2_iqjrf")
+level = 40
+move = &"ELECTRIFY"
+
+[sub_resource type="Resource" id="Resource_gxrdd"]
+script = ExtResource("2_iqjrf")
+level = 44
+move = &"THUNDER"
+
+[resource]
+resource_name = "HELIOPTILE"
+script = ExtResource("3_5f3ju")
+species = &"HELIOPTILE"
+category = "Generator"
+pokedex_entry = "They make their home in deserts. They can generate their energy from basking in the sun, so eating food is not a requirement."
+types = Array[StringName]([&"ELECTRIC", &"NORMAL"])
+base_hp = 44
+base_attack = 38
+base_defense = 33
+base_special_attack = 61
+base_special_defense = 43
+base_speed = 70
+ev_speed = 1
+base_exp = 58
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_iqjrf")]([SubResource("Resource_jqfin"), SubResource("Resource_6vin1"), SubResource("Resource_e7kny"), SubResource("Resource_yqamn"), SubResource("Resource_l8sry"), SubResource("Resource_nx2yu"), SubResource("Resource_nnblb"), SubResource("Resource_1gin7"), SubResource("Resource_2utd7"), SubResource("Resource_a2lrt"), SubResource("Resource_jsahe"), SubResource("Resource_thidg"), SubResource("Resource_gxrdd")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"ATTRACT", &"BULLDOZE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DRAGONTAIL", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GRASSKNOT", &"HIDDENPOWER", &"IRONTAIL", &"LIGHTSCREEN", &"LOWSWEEP", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCALESHOT", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"UTURN", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"DRAGONRUSH", &"DRAGONTAIL", &"GLARE"])
+abilities = Array[StringName]([&"DRYSKIN", &"SANDVEIL"])
+hidden_abilities = Array[StringName]([&"SOLARPOWER"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_2o5yy")]([SubResource("Resource_yfo8u")])
+height = 5
+weight = 60
+color = &"Yellow"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 31)
+shadow_size = 1
+id = &"HELIOPTILE"
+display_name = "Helioptile"

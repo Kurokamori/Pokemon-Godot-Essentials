@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jrv8m"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ijx2x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qm73v"]
+
+[sub_resource type="Resource" id="Resource_toq5g"]
+script = ExtResource("1_jrv8m")
+species = &"ARAQUANID"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_31331"]
+script = ExtResource("2_ijx2x")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_wf3h0"]
+script = ExtResource("2_ijx2x")
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_t0dwg"]
+script = ExtResource("2_ijx2x")
+level = 4
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_gc454"]
+script = ExtResource("2_ijx2x")
+level = 8
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_scvdy"]
+script = ExtResource("2_ijx2x")
+level = 12
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_1qyyo"]
+script = ExtResource("2_ijx2x")
+level = 16
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_aw072"]
+script = ExtResource("2_ijx2x")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ew5f4"]
+script = ExtResource("2_ijx2x")
+level = 24
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_vwglf"]
+script = ExtResource("2_ijx2x")
+level = 28
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_7o1lx"]
+script = ExtResource("2_ijx2x")
+level = 32
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_b86yx"]
+script = ExtResource("2_ijx2x")
+level = 36
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_340tq"]
+script = ExtResource("2_ijx2x")
+level = 40
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_t3spx"]
+script = ExtResource("2_ijx2x")
+level = 44
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_e0jdg"]
+script = ExtResource("2_ijx2x")
+level = 48
+move = &"MIRRORCOAT"
+
+[resource]
+resource_name = "DEWPIDER"
+script = ExtResource("3_qm73v")
+species = &"DEWPIDER"
+category = "Water Bubble"
+pokedex_entry = "When two Dewpider meet, they display their water bubbles to each other. Then the one with the smaller bubble gets out of the other's way."
+types = Array[StringName]([&"WATER", &"BUG"])
+base_hp = 38
+base_attack = 40
+base_defense = 52
+base_special_attack = 40
+base_special_defense = 72
+base_speed = 27
+ev_special_defense = 1
+base_exp = 54
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ijx2x")]([SubResource("Resource_31331"), SubResource("Resource_wf3h0"), SubResource("Resource_t0dwg"), SubResource("Resource_gc454"), SubResource("Resource_scvdy"), SubResource("Resource_1qyyo"), SubResource("Resource_aw072"), SubResource("Resource_ew5f4"), SubResource("Resource_vwglf"), SubResource("Resource_7o1lx"), SubResource("Resource_b86yx"), SubResource("Resource_340tq"), SubResource("Resource_t3spx"), SubResource("Resource_e0jdg")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"GIGADRAIN", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"LEECHLIFE", &"LIQUIDATION", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WATERPULSE", &"WONDERROOM", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"POWERSPLIT", &"SPITUP", &"STICKYWEB", &"STOCKPILE"])
+abilities = Array[StringName]([&"WATERBUBBLE"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+wild_item_uncommon = Array[StringName]([&"MYSTICWATER"])
+egg_groups = Array[StringName]([&"Water1", &"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_jrv8m")]([SubResource("Resource_toq5g")])
+height = 3
+weight = 40
+color = &"Green"
+shape = &"HeadLegs"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 29)
+shadow_size = 1
+id = &"DEWPIDER"
+display_name = "Dewpider"

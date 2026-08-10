@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_6xowh"]
+
+[resource]
+resource_name = "MACHOBRACE"
+script = ExtResource("1_6xowh")
+name_plural = "Macho Braces"
+price = 3000
+sell_price = 1500
+bp_price = 10
+description = "An item to be held by a Pokémon. It is a stiff, heavy brace that promotes strong growth but lowers Speed."
+id = &"MACHOBRACE"
+display_name = "Macho Brace"
+flags = Array[StringName]([&"Fling_60"])

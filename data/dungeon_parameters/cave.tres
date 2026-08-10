@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DungeonParametersData" format=3]
+
+[ext_resource type="Script" path="res://src/data/dungeon_parameters_data.gd" id="1_fc0l2"]
+
+[resource]
+resource_name = "cave"
+script = ExtResource("1_fc0l2")
+area = &"cave"
+id = &"cave"
+display_name = "cave"

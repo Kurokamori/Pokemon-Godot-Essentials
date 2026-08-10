@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_vk16r"]
+
+[resource]
+resource_name = "SHIELDSDOWN"
+script = ExtResource("1_vk16r")
+description = "Its shell breaks if its HP becomes half or less."
+id = &"SHIELDSDOWN"
+display_name = "Shields Down"

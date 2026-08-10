@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_fui80"]
+
+[resource]
+resource_name = "SANDSTREAM"
+script = ExtResource("1_fui80")
+description = "The Pokémon summons a sandstorm in battle."
+id = &"SANDSTREAM"
+display_name = "Sand Stream"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ml60o"]
+
+[resource]
+resource_name = "FORCEPALM"
+script = ExtResource("1_ml60o")
+type = &"FIGHTING"
+category = 0
+power = 60
+total_pp = 10
+function_code = &"ParalyzeTarget"
+effect_chance = 30
+description = "The target is attacked with a shock wave. It may also leave the target with paralysis."
+id = &"FORCEPALM"
+display_name = "Force Palm"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

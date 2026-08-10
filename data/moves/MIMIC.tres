@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4wjmk"]
+
+[resource]
+resource_name = "MIMIC"
+script = ExtResource("1_4wjmk")
+accuracy = 0
+total_pp = 10
+function_code = &"ReplaceMoveThisBattleWithTargetLastMoveUsed"
+description = "The user copies the move last used by the foe. The move can be used until the user is switched out."
+id = &"MIMIC"
+display_name = "Mimic"
+flags = Array[StringName]([&"CanProtect"])

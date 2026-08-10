@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s4deb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kbnpv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_seke2"]
+
+[sub_resource type="Resource" id="Resource_gddvg"]
+script = ExtResource("2_kbnpv")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_3707n"]
+script = ExtResource("2_kbnpv")
+move = &"REFLECTTYPE"
+
+[sub_resource type="Resource" id="Resource_l5yit"]
+script = ExtResource("2_kbnpv")
+level = 10
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_eruhm"]
+script = ExtResource("2_kbnpv")
+level = 20
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_86j8c"]
+script = ExtResource("2_kbnpv")
+level = 30
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_jk3qa"]
+script = ExtResource("2_kbnpv")
+level = 40
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_sx0kc"]
+script = ExtResource("2_kbnpv")
+level = 50
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_4o4eh"]
+script = ExtResource("2_kbnpv")
+level = 60
+move = &"METRONOME"
+
+[sub_resource type="Resource" id="Resource_3bt2t"]
+script = ExtResource("2_kbnpv")
+level = 70
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_q236i"]
+script = ExtResource("2_kbnpv")
+level = 80
+move = &"TRANSFORM"
+
+[sub_resource type="Resource" id="Resource_leyaq"]
+script = ExtResource("2_kbnpv")
+level = 90
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_lwss4"]
+script = ExtResource("2_kbnpv")
+level = 100
+move = &"PSYCHIC"
+
+[resource]
+resource_name = "MEW"
+script = ExtResource("3_seke2")
+species = &"MEW"
+category = "New Species"
+pokedex_entry = "A Mew is said to possess the genes of all Pokémon. It is capable of making itself invisible at will, so it entirely avoids notice even if it approaches people."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 100
+base_attack = 100
+base_defense = 100
+base_special_attack = 100
+base_special_defense = 100
+base_speed = 100
+ev_hp = 3
+base_exp = 300
+growth_rate = &"Parabolic"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_kbnpv")]([SubResource("Resource_gddvg"), SubResource("Resource_3707n"), SubResource("Resource_l5yit"), SubResource("Resource_eruhm"), SubResource("Resource_86j8c"), SubResource("Resource_jk3qa"), SubResource("Resource_sx0kc"), SubResource("Resource_4o4eh"), SubResource("Resource_3bt2t"), SubResource("Resource_q236i"), SubResource("Resource_leyaq"), SubResource("Resource_lwss4")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AFTERYOU", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"ALLYSWITCH", &"AMNESIA", &"ANCIENTPOWER", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"AURASPHERE", &"AURORAVEIL", &"AVALANCHE", &"BATONPASS", &"BEATUP", &"BIND", &"BLAZEKICK", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BOUNCE", &"BRAVEBIRD", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRINE", &"BRUTALSWING", &"BUGBITE", &"BUGBUZZ", &"BULKUP", &"BULLDOZE", &"BULLETSEED", &"BURNINGJEALOUSY", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CORROSIVEGAS", &"COSMICPOWER", &"COUNTER", &"COVET", &"CROSSPOISON", &"CRUNCH", &"CUT", &"DARKESTLARIAT", &"DARKPULSE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DEFOG", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"DRILLRUN", &"DUALCHOP", &"DUALWINGBEAT", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"EMBARGO", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FAKETEARS", &"FALSESWIPE", &"FIREBLAST", &"FIREFANG", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLASH", &"FLASHCANNON", &"FLING", &"FLIPTURN", &"FLY", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FOULPLAY", &"FROSTBREATH", &"FRUSTRATION", &"FURYCUTTER", &"FUTURESIGHT", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"GRAVITY", &"GUARDSWAP", &"GUNKSHOT", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HEATCRASH", &"HEATWAVE", &"HEAVYSLAM", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"IMPRISON", &"INCINERATE", &"INFESTATION", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASHOUT", &"LASTRESORT", &"LEAFBLADE", &"LEAFSTORM", &"LEECHLIFE", &"LIGHTSCREEN", &"LIQUIDATION", &"LOWKICK", &"LOWSWEEP", &"MAGICALLEAF", &"MAGICCOAT", &"MAGICROOM", &"MAGNETRISE", &"MEGAHORN", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"METRONOME", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"MYSTICALFIRE", &"NASTYPLOT", &"NATURALGIFT", &"NATUREPOWER", &"OMINOUSWIND", &"OUTRAGE", &"OVERHEAT", &"PAINSPLIT", &"PAYBACK", &"PAYDAY", &"PHANTOMFORCE", &"PINMISSILE", &"PLAYROUGH", &"PLUCK", &"POISONJAB", &"POLLENPUFF", &"POLTERGEIST", &"POWERGEM", &"POWERSWAP", &"POWERUPPUNCH", &"POWERWHIP", &"PROTECT", &"PSYCHIC", &"PSYCHICFANGS", &"PSYCHICTERRAIN", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"QUASH", &"RAINDANCE", &"RAZORSHELL", &"RECYCLE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"RISINGVOLTAGE", &"ROAR", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROLLOUT", &"ROOST", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SCALD", &"SCALESHOT", &"SCARYFACE", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SIGNALBEAM", &"SILVERWIND", &"SKILLSWAP", &"SKITTERSMACK", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SMACKDOWN", &"SMARTSTRIKE", &"SNARL", &"SNATCH", &"SNORE", &"SOFTBOILED", &"SOLARBEAM", &"SOLARBLADE", &"SPEEDSWAP", &"SPIKES", &"SPITE", &"STEALTHROCK", &"STEELROLLER", &"STEELWING", &"STOMPINGTANTRUM", &"STONEEDGE", &"STOREDPOWER", &"STRENGTH", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TAILSLAP", &"TAILWIND", &"TAUNT", &"TELEKINESIS", &"TERRAINPULSE", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TOXICSPIKES", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"TRIPLEAXEL", &"TWISTER", &"UPROAR", &"UTURN", &"VACUUMWAVE", &"VENOMDRENCH", &"VENOSHOCK", &"VOLTSWITCH", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WILDCHARGE", &"WILLOWISP", &"WONDERROOM", &"WORKUP", &"WORRYSEED", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SYNCHRONIZE"])
+wild_item_common = Array[StringName]([&"LUMBERRY"])
+wild_item_uncommon = Array[StringName]([&"LUMBERRY"])
+wild_item_rare = Array[StringName]([&"LUMBERRY"])
+hatch_steps = 30720
+height = 4
+weight = 40
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Rare"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"MEW"
+display_name = "Mew"
+flags = Array[StringName]([&"Mythical"])

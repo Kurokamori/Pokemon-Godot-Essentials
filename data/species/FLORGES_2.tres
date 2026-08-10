@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xu4qj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kbp4n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_v3sc1"]
+
+[sub_resource type="Resource" id="Resource_ac1et"]
+script = ExtResource("1_xu4qj")
+species = &"FLOETTE"
+method = &"Item"
+parameter = "SHINYSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_w1qv6"]
+script = ExtResource("2_kbp4n")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_03s7n"]
+script = ExtResource("2_kbp4n")
+move = &"LUCKYCHANT"
+
+[sub_resource type="Resource" id="Resource_wtks4"]
+script = ExtResource("2_kbp4n")
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_lji7u"]
+script = ExtResource("2_kbp4n")
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_ckd4p"]
+script = ExtResource("2_kbp4n")
+move = &"FLOWERSHIELD"
+
+[sub_resource type="Resource" id="Resource_a42u8"]
+script = ExtResource("2_kbp4n")
+move = &"GRASSKNOT"
+
+[sub_resource type="Resource" id="Resource_e54ub"]
+script = ExtResource("2_kbp4n")
+move = &"GRASSYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_ix1u4"]
+script = ExtResource("2_kbp4n")
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_vguf2"]
+script = ExtResource("2_kbp4n")
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_bwnj3"]
+script = ExtResource("2_kbp4n")
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_848ho"]
+script = ExtResource("2_kbp4n")
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_x0kss"]
+script = ExtResource("2_kbp4n")
+move = &"AROMATHERAPY"
+
+[resource]
+resource_name = "FLORGES_2"
+script = ExtResource("3_v3sc1")
+species = &"FLORGES"
+form = 2
+form_name = "Orange Flower"
+category = "Garden"
+pokedex_entry = "It claims exquisite flower gardens as its territory, and it obtains power from basking in the energy emitted by flowering plants."
+pokedex_form = 2
+types = Array[StringName]([&"FAIRY"])
+base_hp = 78
+base_attack = 65
+base_defense = 68
+base_special_attack = 112
+base_special_defense = 154
+base_speed = 75
+ev_special_defense = 3
+base_exp = 276
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_kbp4n")]([SubResource("Resource_w1qv6"), SubResource("Resource_03s7n"), SubResource("Resource_wtks4"), SubResource("Resource_lji7u"), SubResource("Resource_ckd4p"), SubResource("Resource_a42u8"), SubResource("Resource_e54ub"), SubResource("Resource_ix1u4"), SubResource("Resource_vguf2"), SubResource("Resource_bwnj3"), SubResource("Resource_848ho"), SubResource("Resource_x0kss")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"WORRYSEED"])
+abilities = Array[StringName]([&"FLOWERVEIL"])
+hidden_abilities = Array[StringName]([&"SYMBIOSIS"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xu4qj")]([SubResource("Resource_ac1et")])
+height = 11
+weight = 100
+color = &"White"
+shape = &"HeadArms"
+generation = 6
+back_sprite_offset = Vector2i(3, 48)
+front_sprite_offset = Vector2i(5, 14)
+id = &"FLORGES_2"
+display_name = "Florges"
+flags = Array[StringName]([&"InheritFormFromMother"])

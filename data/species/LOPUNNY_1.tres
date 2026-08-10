@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pjy5i"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tareb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jshmf"]
+
+[sub_resource type="Resource" id="Resource_w5mvl"]
+script = ExtResource("1_pjy5i")
+species = &"BUNEARY"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_8ogyt"]
+script = ExtResource("2_tareb")
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_m38u7"]
+script = ExtResource("2_tareb")
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_8fxut"]
+script = ExtResource("2_tareb")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_bqkc8"]
+script = ExtResource("2_tareb")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_a0my8"]
+script = ExtResource("2_tareb")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_ht441"]
+script = ExtResource("2_tareb")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_nunk6"]
+script = ExtResource("2_tareb")
+level = 12
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_py3rg"]
+script = ExtResource("2_tareb")
+level = 16
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_uxpnj"]
+script = ExtResource("2_tareb")
+level = 20
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_g7ueg"]
+script = ExtResource("2_tareb")
+level = 24
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_ahpmr"]
+script = ExtResource("2_tareb")
+level = 28
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_p0aiu"]
+script = ExtResource("2_tareb")
+level = 32
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_sgs86"]
+script = ExtResource("2_tareb")
+level = 36
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_avha3"]
+script = ExtResource("2_tareb")
+level = 40
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_0ii3d"]
+script = ExtResource("2_tareb")
+level = 44
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_acd18"]
+script = ExtResource("2_tareb")
+level = 48
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_pdrkx"]
+script = ExtResource("2_tareb")
+level = 52
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_odwuk"]
+script = ExtResource("2_tareb")
+level = 56
+move = &"HIGHJUMPKICK"
+
+[resource]
+resource_name = "LOPUNNY_1"
+script = ExtResource("3_jshmf")
+species = &"LOPUNNY"
+form = 1
+form_name = "Mega Lopunny"
+category = "Rabbit"
+pokedex_entry = "It swings its ears like whips and strikes its enemies with them. It has an intensely combative disposition."
+pokedex_form = 1
+types = Array[StringName]([&"NORMAL", &"FIGHTING"])
+base_hp = 65
+base_attack = 136
+base_defense = 94
+base_special_attack = 54
+base_special_defense = 96
+base_speed = 135
+ev_speed = 2
+base_exp = 203
+catch_rate = 60
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_tareb")]([SubResource("Resource_8ogyt"), SubResource("Resource_m38u7"), SubResource("Resource_8fxut"), SubResource("Resource_bqkc8"), SubResource("Resource_a0my8"), SubResource("Resource_ht441"), SubResource("Resource_nunk6"), SubResource("Resource_py3rg"), SubResource("Resource_uxpnj"), SubResource("Resource_g7ueg"), SubResource("Resource_ahpmr"), SubResource("Resource_p0aiu"), SubResource("Resource_sgs86"), SubResource("Resource_avha3"), SubResource("Resource_0ii3d"), SubResource("Resource_acd18"), SubResource("Resource_pdrkx"), SubResource("Resource_odwuk")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AFTERYOU", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"AURASPHERE", &"BATONPASS", &"BLIZZARD", &"BOUNCE", &"BRUTALSWING", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CLOSECOMBAT", &"CONFIDE", &"COSMICPOWER", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIPLEAXEL", &"UPROAR", &"UTURN", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"SCRAPPY"])
+hidden_abilities = Array[StringName]([&"SCRAPPY"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_pjy5i")]([SubResource("Resource_w5mvl")])
+height = 13
+weight = 283
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 6
+mega_stone = &"LOPUNNITE"
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 15)
+shadow_size = 1
+id = &"LOPUNNY_1"
+display_name = "Lopunny"

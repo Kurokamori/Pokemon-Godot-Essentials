@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2wxtn"]
+
+[resource]
+resource_name = "SWEETAPPLE"
+script = ExtResource("1_2wxtn")
+name_plural = "Sweet Apples"
+price = 2200
+sell_price = 1100
+bp_price = 5
+field_use = 1
+description = "A peculiar apple that can make a certain species of Pokémon evolve. It's exceptionally sweet."
+id = &"SWEETAPPLE"
+display_name = "Sweet Apple"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_30"])

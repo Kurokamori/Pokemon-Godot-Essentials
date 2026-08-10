@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_kfyw1"]
+
+[resource]
+resource_name = "HEAVYDUTYBOOTS"
+script = ExtResource("1_kfyw1")
+name_plural = "Heavy-Duty Boots"
+portion_name = "pair of Heavy-Duty Boots"
+portion_name_plural = "pairs of Heavy-Duty Boots"
+price = 3000
+sell_price = 2000
+bp_price = 25
+description = "These boots prevent the effects of traps set on the battlefield."
+id = &"HEAVYDUTYBOOTS"
+display_name = "Heavy-Duty Boots"
+flags = Array[StringName]([&"Fling_80"])

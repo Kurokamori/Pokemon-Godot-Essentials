@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3wwqd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i12j0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_m24yk"]
+
+[sub_resource type="Resource" id="Resource_vba0h"]
+script = ExtResource("2_i12j0")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_808no"]
+script = ExtResource("2_i12j0")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_gk357"]
+script = ExtResource("2_i12j0")
+level = 3
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_jw3p2"]
+script = ExtResource("2_i12j0")
+level = 6
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_nep0q"]
+script = ExtResource("2_i12j0")
+level = 9
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_7qs62"]
+script = ExtResource("2_i12j0")
+level = 12
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_t0wd0"]
+script = ExtResource("2_i12j0")
+level = 15
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_ku2g6"]
+script = ExtResource("2_i12j0")
+level = 18
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_6d3ad"]
+script = ExtResource("2_i12j0")
+level = 21
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_ua5ts"]
+script = ExtResource("2_i12j0")
+level = 24
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_0fxbv"]
+script = ExtResource("2_i12j0")
+level = 27
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_q6ctb"]
+script = ExtResource("2_i12j0")
+level = 30
+move = &"QUASH"
+
+[sub_resource type="Resource" id="Resource_uocws"]
+script = ExtResource("2_i12j0")
+level = 33
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_idg1u"]
+script = ExtResource("2_i12j0")
+level = 36
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_i42lp"]
+script = ExtResource("2_i12j0")
+level = 39
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_w1wbb"]
+script = ExtResource("2_i12j0")
+level = 42
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_tu6f3"]
+script = ExtResource("2_i12j0")
+level = 45
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_alorr"]
+script = ExtResource("2_i12j0")
+level = 48
+move = &"FOULPLAY"
+
+[resource]
+resource_name = "SABLEYE_1"
+script = ExtResource("3_m24yk")
+species = &"SABLEYE"
+form = 1
+form_name = "Mega Sableye"
+category = "Darkness"
+pokedex_entry = "Supporting a giant heavy jewel, it can't change direction very nimbly and is vulnerable to attack from behind."
+pokedex_form = 1
+types = Array[StringName]([&"DARK", &"GHOST"])
+base_hp = 50
+base_attack = 85
+base_defense = 125
+base_special_attack = 85
+base_special_defense = 115
+base_speed = 20
+ev_attack = 1
+ev_defense = 1
+base_exp = 168
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_i12j0")]([SubResource("Resource_vba0h"), SubResource("Resource_808no"), SubResource("Resource_gk357"), SubResource("Resource_jw3p2"), SubResource("Resource_nep0q"), SubResource("Resource_7qs62"), SubResource("Resource_t0wd0"), SubResource("Resource_ku2g6"), SubResource("Resource_6d3ad"), SubResource("Resource_ua5ts"), SubResource("Resource_0fxbv"), SubResource("Resource_q6ctb"), SubResource("Resource_uocws"), SubResource("Resource_idg1u"), SubResource("Resource_i42lp"), SubResource("Resource_w1wbb"), SubResource("Resource_tu6f3"), SubResource("Resource_alorr")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DARKPULSE", &"DAZZLINGGLEAM", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EMBARGO", &"ENCORE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GRAVITY", &"GYROBALL", &"HEADBUTT", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"INCINERATE", &"KNOCKOFF", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POLTERGEIST", &"POWERGEM", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"QUASH", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"TORMENT", &"TRICK", &"WATERPULSE", &"WILLOWISP", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"FEINT", &"FLATTER", &"IMPRISON", &"MEANLOOK", &"METALBURST", &"MOONLIGHT", &"RECOVER", &"SUCKERPUNCH", &"TORMENT", &"TRICK"])
+abilities = Array[StringName]([&"MAGICBOUNCE"])
+hidden_abilities = Array[StringName]([&"MAGICBOUNCE"])
+wild_item_uncommon = Array[StringName]([&"WIDELENS"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+height = 5
+weight = 1610
+color = &"Purple"
+shape = &"Bipedal"
+habitat = &"Cave"
+generation = 6
+mega_stone = &"SABLENITE"
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 20)
+id = &"SABLEYE_1"
+display_name = "Sableye"

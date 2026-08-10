@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nowk8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rq2my"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_jef80"]
+
+[sub_resource type="Resource" id="Resource_w2g7y"]
+script = ExtResource("1_nowk8")
+species = &"XATU"
+method = &"Level"
+parameter = "25"
+
+[sub_resource type="Resource" id="Resource_cfd3f"]
+script = ExtResource("2_rq2my")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_e4nff"]
+script = ExtResource("2_rq2my")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_rtwh8"]
+script = ExtResource("2_rq2my")
+level = 5
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_jlfsu"]
+script = ExtResource("2_rq2my")
+level = 10
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_8d6li"]
+script = ExtResource("2_rq2my")
+level = 15
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_2hq1a"]
+script = ExtResource("2_rq2my")
+level = 20
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_w8ejm"]
+script = ExtResource("2_rq2my")
+level = 26
+move = &"PSYCHOSHIFT"
+
+[sub_resource type="Resource" id="Resource_i28rv"]
+script = ExtResource("2_rq2my")
+level = 30
+move = &"POWERSWAP"
+
+[sub_resource type="Resource" id="Resource_y1dpl"]
+script = ExtResource("2_rq2my")
+level = 35
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_0s4se"]
+script = ExtResource("2_rq2my")
+level = 35
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_tfiyo"]
+script = ExtResource("2_rq2my")
+level = 40
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_bcck5"]
+script = ExtResource("2_rq2my")
+level = 45
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "NATU"
+script = ExtResource("3_jef80")
+species = &"NATU"
+category = "Tiny Bird"
+pokedex_entry = "It runs up short trees that grow on the savanna to peck at new shoots. A Natu's eyes look as if they are always observing something."
+types = Array[StringName]([&"PSYCHIC", &"FLYING"])
+base_hp = 40
+base_attack = 50
+base_defense = 45
+base_special_attack = 70
+base_special_defense = 45
+base_speed = 70
+ev_special_attack = 1
+base_exp = 64
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rq2my")]([SubResource("Resource_cfd3f"), SubResource("Resource_e4nff"), SubResource("Resource_rtwh8"), SubResource("Resource_jlfsu"), SubResource("Resource_8d6li"), SubResource("Resource_2hq1a"), SubResource("Resource_w8ejm"), SubResource("Resource_i28rv"), SubResource("Resource_y1dpl"), SubResource("Resource_0s4se"), SubResource("Resource_tfiyo"), SubResource("Resource_bcck5")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COSMICPOWER", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DUALWINGBEAT", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGADRAIN", &"GRASSKNOT", &"GUARDSWAP", &"HEATWAVE", &"HIDDENPOWER", &"IMPRISON", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PLUCK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SILVERWIND", &"SKILLSWAP", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THIEF", &"THUNDERWAVE", &"TRICK", &"TRICKROOM", &"TWISTER", &"UTURN", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"ALLYSWITCH", &"DRILLPECK", &"FEATHERDANCE", &"HAZE", &"QUICKATTACK", &"ROOST", &"SIMPLEBEAM", &"SUCKERPUNCH", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SYNCHRONIZE", &"EARLYBIRD"])
+hidden_abilities = Array[StringName]([&"MAGICBOUNCE"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nowk8")]([SubResource("Resource_w2g7y")])
+height = 2
+weight = 20
+color = &"Green"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(4, 35)
+shadow_size = 1
+id = &"NATU"
+display_name = "Natu"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_jy7hd"]
+
+[resource]
+resource_name = "STEAMROLLER"
+script = ExtResource("1_jy7hd")
+type = &"BUG"
+category = 0
+power = 65
+total_pp = 20
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "The user crushes its foes by rolling over them. This attack may make the target flinch."
+id = &"STEAMROLLER"
+display_name = "Steamroller"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"TramplesMinimize"])

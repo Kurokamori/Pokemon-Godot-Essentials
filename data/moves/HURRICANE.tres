@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qjntj"]
+
+[resource]
+resource_name = "HURRICANE"
+script = ExtResource("1_qjntj")
+type = &"FLYING"
+category = 1
+power = 110
+accuracy = 70
+total_pp = 10
+target = &"Other"
+function_code = &"ConfuseTargetAlwaysHitsInRainHitsTargetInSky"
+effect_chance = 30
+description = "The user wraps its foe in a fierce wind that flies up into the sky. It may also confuse the foe."
+id = &"HURRICANE"
+display_name = "Hurricane"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

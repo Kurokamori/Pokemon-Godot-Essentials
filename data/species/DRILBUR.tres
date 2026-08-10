@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2ixtw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_svier"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vv8ti"]
+
+[sub_resource type="Resource" id="Resource_cupe4"]
+script = ExtResource("1_2ixtw")
+species = &"EXCADRILL"
+method = &"Level"
+parameter = "31"
+
+[sub_resource type="Resource" id="Resource_txb6x"]
+script = ExtResource("2_svier")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_wsww5"]
+script = ExtResource("2_svier")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_lqvle"]
+script = ExtResource("2_svier")
+level = 4
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_wdnt8"]
+script = ExtResource("2_svier")
+level = 8
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_unhi2"]
+script = ExtResource("2_svier")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_eaqf3"]
+script = ExtResource("2_svier")
+level = 16
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_cq66l"]
+script = ExtResource("2_svier")
+level = 20
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_mx12r"]
+script = ExtResource("2_svier")
+level = 24
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_7ni60"]
+script = ExtResource("2_svier")
+level = 28
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_2rkdv"]
+script = ExtResource("2_svier")
+level = 32
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_eyvon"]
+script = ExtResource("2_svier")
+level = 36
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_nr6sx"]
+script = ExtResource("2_svier")
+level = 40
+move = &"DRILLRUN"
+
+[sub_resource type="Resource" id="Resource_yexf3"]
+script = ExtResource("2_svier")
+level = 44
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_c847q"]
+script = ExtResource("2_svier")
+level = 48
+move = &"FISSURE"
+
+[resource]
+resource_name = "DRILBUR"
+script = ExtResource("3_vv8ti")
+species = &"DRILBUR"
+category = "Mole"
+pokedex_entry = "It makes its way swiftly through the soil by putting both claws together and rotating at high speed."
+types = Array[StringName]([&"GROUND"])
+base_hp = 60
+base_attack = 85
+base_defense = 40
+base_special_attack = 30
+base_special_defense = 45
+base_speed = 68
+ev_attack = 1
+base_exp = 66
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_svier")]([SubResource("Resource_txb6x"), SubResource("Resource_wsww5"), SubResource("Resource_lqvle"), SubResource("Resource_wdnt8"), SubResource("Resource_unhi2"), SubResource("Resource_eaqf3"), SubResource("Resource_cq66l"), SubResource("Resource_mx12r"), SubResource("Resource_7ni60"), SubResource("Resource_2rkdv"), SubResource("Resource_eyvon"), SubResource("Resource_nr6sx"), SubResource("Resource_yexf3"), SubResource("Resource_c847q")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"IRONDEFENSE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TOXIC", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"METALSOUND", &"SLASH", &"SUBMISSION"])
+abilities = Array[StringName]([&"SANDRUSH", &"SANDFORCE"])
+hidden_abilities = Array[StringName]([&"MOLDBREAKER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_2ixtw")]([SubResource("Resource_cupe4")])
+height = 3
+weight = 85
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 26)
+id = &"DRILBUR"
+display_name = "Drilbur"

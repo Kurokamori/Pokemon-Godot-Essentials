@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_opeuf"]
+
+[resource]
+resource_name = "COSMICPOWER"
+script = ExtResource("1_opeuf")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserDefSpDef1"
+description = "The user absorbs a mystical power from space to raise its Defense and Sp. Def stats."
+id = &"COSMICPOWER"
+display_name = "Cosmic Power"

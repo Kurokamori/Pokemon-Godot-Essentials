@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4p5wm"]
+
+[resource]
+resource_name = "GRASSWHISTLE"
+script = ExtResource("1_4p5wm")
+type = &"GRASS"
+accuracy = 55
+total_pp = 15
+function_code = &"SleepTarget"
+description = "The user plays a pleasant melody that lulls the target into a deep sleep."
+id = &"GRASSWHISTLE"
+display_name = "Grass Whistle"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qf4qg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cgc18"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1yvye"]
+
+[sub_resource type="Resource" id="Resource_6rvab"]
+script = ExtResource("2_cgc18")
+move = &"SECRETSWORD"
+
+[sub_resource type="Resource" id="Resource_idobq"]
+script = ExtResource("2_cgc18")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_uoihb"]
+script = ExtResource("2_cgc18")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ufe6k"]
+script = ExtResource("2_cgc18")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_t4nj1"]
+script = ExtResource("2_cgc18")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_g26b3"]
+script = ExtResource("2_cgc18")
+level = 7
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_io7dg"]
+script = ExtResource("2_cgc18")
+level = 14
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_aty2k"]
+script = ExtResource("2_cgc18")
+level = 21
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_d7iin"]
+script = ExtResource("2_cgc18")
+level = 28
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_6tkkp"]
+script = ExtResource("2_cgc18")
+level = 35
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_pdq20"]
+script = ExtResource("2_cgc18")
+level = 42
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_lh230"]
+script = ExtResource("2_cgc18")
+level = 49
+move = &"SACREDSWORD"
+
+[sub_resource type="Resource" id="Resource_h8usv"]
+script = ExtResource("2_cgc18")
+level = 56
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_pevge"]
+script = ExtResource("2_cgc18")
+level = 63
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_kthn5"]
+script = ExtResource("2_cgc18")
+level = 70
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "KELDEO_1"
+script = ExtResource("3_1yvye")
+species = &"KELDEO"
+form = 1
+form_name = "Resolute Form"
+category = "Colt"
+pokedex_entry = "The power that lay hidden in its body now covers its horn, turning it into a sword that can slice through anything."
+pokedex_form = 1
+types = Array[StringName]([&"WATER", &"FIGHTING"])
+base_hp = 91
+base_attack = 72
+base_defense = 90
+base_special_attack = 129
+base_special_defense = 90
+base_speed = 108
+ev_special_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_cgc18")]([SubResource("Resource_6rvab"), SubResource("Resource_idobq"), SubResource("Resource_uoihb"), SubResource("Resource_ufe6k"), SubResource("Resource_t4nj1"), SubResource("Resource_g26b3"), SubResource("Resource_io7dg"), SubResource("Resource_aty2k"), SubResource("Resource_d7iin"), SubResource("Resource_6tkkp"), SubResource("Resource_pdq20"), SubResource("Resource_lh230"), SubResource("Resource_h8usv"), SubResource("Resource_pevge"), SubResource("Resource_kthn5")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"AQUATAIL", &"AURASPHERE", &"BOUNCE", &"BRICKBREAK", &"CALMMIND", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"COVET", &"CUT", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLIPTURN", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICYWIND", &"LASTRESORT", &"LIQUIDATION", &"LOWKICK", &"MEGAHORN", &"MIMIC", &"MUDDYWATER", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SECRETSWORD", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"WATERPULSE", &"WORKUP", &"XSCISSOR"])
+abilities = Array[StringName]([&"JUSTIFIED"])
+hatch_steps = 20480
+height = 14
+weight = 485
+color = &"Yellow"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 21)
+id = &"KELDEO_1"
+display_name = "Keldeo"
+flags = Array[StringName]([&"Mythical"])

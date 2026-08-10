@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_jbp3g"]
+
+[resource]
+resource_name = "DRYSKIN"
+script = ExtResource("1_jbp3g")
+description = "Reduces HP if it is hot. Water restores HP."
+id = &"DRYSKIN"
+display_name = "Dry Skin"

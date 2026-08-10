@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ylu2q"]
+
+[resource]
+resource_name = "FRIENDBALL"
+script = ExtResource("1_ylu2q")
+name_plural = "Friend Balls"
+pocket = 3
+price = 300
+sell_price = 150
+battle_use = 4
+description = "A Poké Ball that makes caught Pokémon more friendly."
+id = &"FRIENDBALL"
+display_name = "Friend Ball"
+flags = Array[StringName]([&"PokeBall"])

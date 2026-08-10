@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1toms"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_17kvc"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ba76l"]
+
+[sub_resource type="Resource" id="Resource_hwsrm"]
+script = ExtResource("1_1toms")
+species = &"QUILLADIN"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_3n0a0"]
+script = ExtResource("2_17kvc")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_1iodi"]
+script = ExtResource("2_17kvc")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_vxv7v"]
+script = ExtResource("2_17kvc")
+level = 5
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_i30kx"]
+script = ExtResource("2_17kvc")
+level = 8
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_yopjk"]
+script = ExtResource("2_17kvc")
+level = 11
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_o6bho"]
+script = ExtResource("2_17kvc")
+level = 15
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_ars3q"]
+script = ExtResource("2_17kvc")
+level = 18
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_lhl5m"]
+script = ExtResource("2_17kvc")
+level = 27
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_s0gue"]
+script = ExtResource("2_17kvc")
+level = 32
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_ihn16"]
+script = ExtResource("2_17kvc")
+level = 35
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_732db"]
+script = ExtResource("2_17kvc")
+level = 39
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_xfv7i"]
+script = ExtResource("2_17kvc")
+level = 42
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_imm1k"]
+script = ExtResource("2_17kvc")
+level = 45
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_bs10v"]
+script = ExtResource("2_17kvc")
+level = 48
+move = &"WOODHAMMER"
+
+[resource]
+resource_name = "CHESPIN"
+script = ExtResource("3_ba76l")
+species = &"CHESPIN"
+category = "Spiny Nut"
+pokedex_entry = "The quills on its head are usually soft. When it flexes them, the points become so hard and sharp that they can pierce rock."
+types = Array[StringName]([&"GRASS"])
+base_hp = 56
+base_attack = 61
+base_defense = 65
+base_special_attack = 48
+base_special_defense = 45
+base_speed = 38
+ev_defense = 1
+base_exp = 63
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_17kvc")]([SubResource("Resource_3n0a0"), SubResource("Resource_1iodi"), SubResource("Resource_vxv7v"), SubResource("Resource_i30kx"), SubResource("Resource_yopjk"), SubResource("Resource_o6bho"), SubResource("Resource_ars3q"), SubResource("Resource_lhl5m"), SubResource("Resource_s0gue"), SubResource("Resource_ihn16"), SubResource("Resource_732db"), SubResource("Resource_xfv7i"), SubResource("Resource_imm1k"), SubResource("Resource_bs10v")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GYROBALL", &"HELPINGHAND", &"HIDDENPOWER", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"WORRYSEED", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BELLYDRUM", &"CURSE", &"DEFENSECURL", &"POWERUPPUNCH", &"QUICKGUARD", &"ROLLOUT", &"SPIKES", &"SYNTHESIS"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"BULLETPROOF"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1toms")]([SubResource("Resource_hwsrm")])
+height = 4
+weight = 90
+color = &"Green"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(1, 28)
+shadow_size = 1
+id = &"CHESPIN"
+display_name = "Chespin"

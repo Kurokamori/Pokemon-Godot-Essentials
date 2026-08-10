@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cdwfr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_x5m08"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_68hnp"]
+
+[sub_resource type="Resource" id="Resource_l267g"]
+script = ExtResource("1_cdwfr")
+species = &"PURRLOIN"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nrnlg"]
+script = ExtResource("2_x5m08")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_fimtb"]
+script = ExtResource("2_x5m08")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_wwgst"]
+script = ExtResource("2_x5m08")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_suhsw"]
+script = ExtResource("2_x5m08")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_e5mnh"]
+script = ExtResource("2_x5m08")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_0alo8"]
+script = ExtResource("2_x5m08")
+level = 16
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_ehs0n"]
+script = ExtResource("2_x5m08")
+level = 23
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_jls1e"]
+script = ExtResource("2_x5m08")
+level = 28
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_qj70k"]
+script = ExtResource("2_x5m08")
+level = 34
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_qassv"]
+script = ExtResource("2_x5m08")
+level = 40
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_8q8q8"]
+script = ExtResource("2_x5m08")
+level = 46
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_fatyt"]
+script = ExtResource("2_x5m08")
+level = 52
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "LIEPARD"
+script = ExtResource("3_68hnp")
+species = &"LIEPARD"
+category = "Cruel"
+pokedex_entry = "Stealthily, it sneaks up on its target, striking from behind before its victim has a chance to react."
+types = Array[StringName]([&"DARK"])
+base_hp = 64
+base_attack = 88
+base_defense = 50
+base_special_attack = 88
+base_special_defense = 50
+base_speed = 106
+ev_speed = 2
+base_exp = 156
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_x5m08")]([SubResource("Resource_nrnlg"), SubResource("Resource_fimtb"), SubResource("Resource_wwgst"), SubResource("Resource_suhsw"), SubResource("Resource_e5mnh"), SubResource("Resource_0alo8"), SubResource("Resource_ehs0n"), SubResource("Resource_jls1e"), SubResource("Resource_qj70k"), SubResource("Resource_qassv"), SubResource("Resource_8q8q8"), SubResource("Resource_fatyt")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHOCUT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"UTURN"])
+abilities = Array[StringName]([&"LIMBER", &"UNBURDEN"])
+hidden_abilities = Array[StringName]([&"PRANKSTER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_cdwfr")]([SubResource("Resource_l267g")])
+height = 11
+weight = 375
+color = &"Purple"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 20)
+id = &"LIEPARD"
+display_name = "Liepard"

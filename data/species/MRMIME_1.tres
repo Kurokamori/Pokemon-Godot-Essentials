@@ -1,0 +1,173 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pyfpo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ss7io"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_amx6u"]
+
+[sub_resource type="Resource" id="Resource_n4u3k"]
+script = ExtResource("1_pyfpo")
+species = &"MRRIME"
+method = &"Level"
+parameter = "42"
+
+[sub_resource type="Resource" id="Resource_kgk0i"]
+script = ExtResource("1_pyfpo")
+species = &"MIMEJR"
+method = &"HasMove"
+parameter = "MIMIC"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_gjh0h"]
+script = ExtResource("2_ss7io")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_h5sbp"]
+script = ExtResource("2_ss7io")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_k7rha"]
+script = ExtResource("2_ss7io")
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_464gf"]
+script = ExtResource("2_ss7io")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_mwu2b"]
+script = ExtResource("2_ss7io")
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_lgcdp"]
+script = ExtResource("2_ss7io")
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_7m7gj"]
+script = ExtResource("2_ss7io")
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_tegc1"]
+script = ExtResource("2_ss7io")
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_bdqe6"]
+script = ExtResource("2_ss7io")
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_w2mbj"]
+script = ExtResource("2_ss7io")
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_oi8fi"]
+script = ExtResource("2_ss7io")
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_ciygb"]
+script = ExtResource("2_ss7io")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_a3xlt"]
+script = ExtResource("2_ss7io")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_mb4p1"]
+script = ExtResource("2_ss7io")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_upjca"]
+script = ExtResource("2_ss7io")
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_ww8ga"]
+script = ExtResource("2_ss7io")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_r3v7r"]
+script = ExtResource("2_ss7io")
+level = 16
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_fckkp"]
+script = ExtResource("2_ss7io")
+level = 20
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_vk8wf"]
+script = ExtResource("2_ss7io")
+level = 24
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_a0mim"]
+script = ExtResource("2_ss7io")
+level = 28
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_unu8v"]
+script = ExtResource("2_ss7io")
+level = 32
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_jf3cg"]
+script = ExtResource("2_ss7io")
+level = 36
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_0tho2"]
+script = ExtResource("2_ss7io")
+level = 40
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_3jiy7"]
+script = ExtResource("2_ss7io")
+level = 44
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_177bl"]
+script = ExtResource("2_ss7io")
+level = 48
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_25pv4"]
+script = ExtResource("2_ss7io")
+level = 52
+move = &"TEETERDANCE"
+
+[resource]
+resource_name = "MRMIME_1"
+script = ExtResource("3_amx6u")
+species = &"MRMIME"
+form = 1
+form_name = "Galarian"
+category = "Dancing"
+pokedex_entry = "Its talent is tap-dancing. It can also manipulate temperatures to create a floor of ice, which this Pokémon can kick up to use as a barrier."
+pokedex_form = 1
+types = Array[StringName]([&"ICE", &"PSYCHIC"])
+base_hp = 50
+base_attack = 65
+base_defense = 65
+base_special_attack = 90
+base_special_defense = 90
+base_speed = 100
+ev_speed = 2
+base_exp = 161
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ss7io")]([SubResource("Resource_gjh0h"), SubResource("Resource_h5sbp"), SubResource("Resource_k7rha"), SubResource("Resource_464gf"), SubResource("Resource_mwu2b"), SubResource("Resource_lgcdp"), SubResource("Resource_7m7gj"), SubResource("Resource_tegc1"), SubResource("Resource_bdqe6"), SubResource("Resource_w2mbj"), SubResource("Resource_oi8fi"), SubResource("Resource_ciygb"), SubResource("Resource_a3xlt"), SubResource("Resource_mb4p1"), SubResource("Resource_upjca"), SubResource("Resource_ww8ga"), SubResource("Resource_r3v7r"), SubResource("Resource_fckkp"), SubResource("Resource_vk8wf"), SubResource("Resource_a0mim"), SubResource("Resource_unu8v"), SubResource("Resource_jf3cg"), SubResource("Resource_0tho2"), SubResource("Resource_3jiy7"), SubResource("Resource_177bl"), SubResource("Resource_25pv4")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"AVALANCHE", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FUTURESIGHT", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"TRIPLEAXEL", &"UPROAR", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CHARM", &"CONFUSERAY", &"FAKEOUT", &"FUTURESIGHT", &"HEALINGWISH", &"HYPNOSIS", &"ICYWIND", &"MAGICROOM", &"MIMIC", &"POWERSPLIT", &"TEETERDANCE", &"TICKLE", &"TRICK"])
+abilities = Array[StringName]([&"VITALSPIRIT", &"SCREENCLEANER"])
+hidden_abilities = Array[StringName]([&"ICEBODY"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_pyfpo")]([SubResource("Resource_n4u3k"), SubResource("Resource_kgk0i")])
+height = 14
+weight = 568
+color = &"White"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 25)
+id = &"MRMIME_1"
+display_name = "Mr. Mime"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_xpcyy"]
+
+[resource]
+resource_name = "EFFECTSPORE"
+script = ExtResource("1_xpcyy")
+description = "Contact may poison or cause paralysis or sleep."
+id = &"EFFECTSPORE"
+display_name = "Effect Spore"

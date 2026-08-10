@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_45e8r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1bikp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sqqhb"]
+
+[sub_resource type="Resource" id="Resource_tn7vx"]
+script = ExtResource("1_45e8r")
+species = &"CASCOON"
+method = &"Level"
+parameter = "10"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3udjr"]
+script = ExtResource("2_1bikp")
+level = 0
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_jh3tb"]
+script = ExtResource("2_1bikp")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_1ypc7"]
+script = ExtResource("2_1bikp")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_cqwf8"]
+script = ExtResource("2_1bikp")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_v2chf"]
+script = ExtResource("2_1bikp")
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_0hexo"]
+script = ExtResource("2_1bikp")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_i3ggo"]
+script = ExtResource("2_1bikp")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_bo4kf"]
+script = ExtResource("2_1bikp")
+level = 15
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_jmgfe"]
+script = ExtResource("2_1bikp")
+level = 17
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_yrd34"]
+script = ExtResource("2_1bikp")
+level = 20
+move = &"VENOSHOCK"
+
+[sub_resource type="Resource" id="Resource_2ar2f"]
+script = ExtResource("2_1bikp")
+level = 22
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_4umpo"]
+script = ExtResource("2_1bikp")
+level = 25
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_hdx7e"]
+script = ExtResource("2_1bikp")
+level = 27
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_oyjw7"]
+script = ExtResource("2_1bikp")
+level = 30
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_ae824"]
+script = ExtResource("2_1bikp")
+level = 32
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_wmgrl"]
+script = ExtResource("2_1bikp")
+level = 35
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_fo5lt"]
+script = ExtResource("2_1bikp")
+level = 37
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_frnex"]
+script = ExtResource("2_1bikp")
+level = 40
+move = &"QUIVERDANCE"
+
+[resource]
+resource_name = "DUSTOX"
+script = ExtResource("3_sqqhb")
+species = &"DUSTOX"
+category = "Poison Moth"
+pokedex_entry = "It is a nocturnal Pokémon that flies from fields and mountains to the attraction of streetlights at night. It looses highly toxic powder from its wings."
+types = Array[StringName]([&"BUG", &"POISON"])
+base_hp = 60
+base_attack = 50
+base_defense = 70
+base_special_attack = 50
+base_special_defense = 90
+base_speed = 65
+ev_special_defense = 3
+base_exp = 193
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1bikp")]([SubResource("Resource_3udjr"), SubResource("Resource_jh3tb"), SubResource("Resource_1ypc7"), SubResource("Resource_cqwf8"), SubResource("Resource_v2chf"), SubResource("Resource_0hexo"), SubResource("Resource_i3ggo"), SubResource("Resource_bo4kf"), SubResource("Resource_jmgfe"), SubResource("Resource_yrd34"), SubResource("Resource_2ar2f"), SubResource("Resource_4umpo"), SubResource("Resource_hdx7e"), SubResource("Resource_oyjw7"), SubResource("Resource_ae824"), SubResource("Resource_wmgrl"), SubResource("Resource_fo5lt"), SubResource("Resource_frnex")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TOXIC", &"TWISTER", &"UTURN", &"VENOSHOCK"])
+abilities = Array[StringName]([&"SHIELDDUST"])
+hidden_abilities = Array[StringName]([&"COMPOUNDEYES"])
+wild_item_uncommon = Array[StringName]([&"SHEDSHELL"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_45e8r")]([SubResource("Resource_tn7vx")])
+height = 12
+weight = 316
+color = &"Green"
+shape = &"MultiWinged"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 9)
+id = &"DUSTOX"
+display_name = "Dustox"

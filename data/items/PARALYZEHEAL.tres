@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_wyw6r"]
+
+[resource]
+resource_name = "PARALYZEHEAL"
+script = ExtResource("1_wyw6r")
+name_plural = "Paralyze Heals"
+pocket = 2
+price = 200
+sell_price = 100
+field_use = 1
+battle_use = 1
+description = "A spray-type medicine. It eliminates paralysis from a single Pokémon."
+id = &"PARALYZEHEAL"
+display_name = "Paralyze Heal"
+flags = Array[StringName]([&"Fling_30"])

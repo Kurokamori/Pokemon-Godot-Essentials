@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_q6gq4"]
+
+[resource]
+resource_name = "TWISTER"
+script = ExtResource("1_q6gq4")
+type = &"DRAGON"
+category = 1
+power = 40
+total_pp = 20
+target = &"AllNearFoes"
+function_code = &"FlinchTargetDoublePowerIfTargetInSky"
+effect_chance = 20
+description = "The user whips up a vicious tornado to tear at the opposing team. It may also make targets flinch."
+id = &"TWISTER"
+display_name = "Twister"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

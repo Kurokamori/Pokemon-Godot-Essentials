@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4l2ro"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b510o"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xt4vn"]
+
+[sub_resource type="Resource" id="Resource_cbkq4"]
+script = ExtResource("1_4l2ro")
+species = &"WAILMER"
+method = &"Level"
+parameter = "40"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_42qe6"]
+script = ExtResource("2_b510o")
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_cr4dy"]
+script = ExtResource("2_b510o")
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_s4t87"]
+script = ExtResource("2_b510o")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_nyprn"]
+script = ExtResource("2_b510o")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_gj2cb"]
+script = ExtResource("2_b510o")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_rg4et"]
+script = ExtResource("2_b510o")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_o6m7w"]
+script = ExtResource("2_b510o")
+level = 15
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_6doa8"]
+script = ExtResource("2_b510o")
+level = 18
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_npr0o"]
+script = ExtResource("2_b510o")
+level = 21
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_mcrga"]
+script = ExtResource("2_b510o")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_laq7w"]
+script = ExtResource("2_b510o")
+level = 27
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_7giss"]
+script = ExtResource("2_b510o")
+level = 30
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_su1qg"]
+script = ExtResource("2_b510o")
+level = 33
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_rpnjh"]
+script = ExtResource("2_b510o")
+level = 36
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_62kfv"]
+script = ExtResource("2_b510o")
+level = 39
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_ogncy"]
+script = ExtResource("2_b510o")
+level = 44
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_f6qpt"]
+script = ExtResource("2_b510o")
+level = 49
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_7cag4"]
+script = ExtResource("2_b510o")
+level = 54
+move = &"WATERSPOUT"
+
+[resource]
+resource_name = "WAILORD"
+script = ExtResource("3_xt4vn")
+species = &"WAILORD"
+category = "Float Whale"
+pokedex_entry = "It breathes through nostrils that it raises above the sea. By inhaling to its maximum capacity, a Wailord can dive close to 10,000 feet beneath the waves."
+types = Array[StringName]([&"WATER"])
+base_hp = 170
+base_attack = 90
+base_defense = 45
+base_special_attack = 90
+base_special_defense = 45
+base_speed = 60
+ev_hp = 2
+base_exp = 175
+growth_rate = &"Fluctuating"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_b510o")]([SubResource("Resource_42qe6"), SubResource("Resource_cr4dy"), SubResource("Resource_s4t87"), SubResource("Resource_nyprn"), SubResource("Resource_gj2cb"), SubResource("Resource_rg4et"), SubResource("Resource_o6m7w"), SubResource("Resource_6doa8"), SubResource("Resource_npr0o"), SubResource("Resource_mcrga"), SubResource("Resource_laq7w"), SubResource("Resource_7giss"), SubResource("Resource_su1qg"), SubResource("Resource_rpnjh"), SubResource("Resource_62kfv"), SubResource("Resource_ogncy"), SubResource("Resource_f6qpt"), SubResource("Resource_7cag4")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BOUNCE", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONHEAD", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SELFDESTRUCT", &"SLEEPTALK", &"SNORE", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"WATERVEIL", &"OBLIVIOUS"])
+hidden_abilities = Array[StringName]([&"PRESSURE"])
+egg_groups = Array[StringName]([&"Field", &"Water2"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_4l2ro")]([SubResource("Resource_cbkq4")])
+height = 145
+weight = 3980
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 59)
+front_sprite_offset = Vector2i(0, 15)
+shadow_size = 3
+id = &"WAILORD"
+display_name = "Wailord"

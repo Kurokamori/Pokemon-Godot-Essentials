@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_0evt4"]
+
+[resource]
+resource_name = "36"
+script = ExtResource("1_0evt4")
+map_id = 36
+teleport_destination = Array[int]([35, 17, 7])
+town_map_position = Array[int]([0, 13, 6])
+id = &"36"
+display_name = "Ingido Plateau"

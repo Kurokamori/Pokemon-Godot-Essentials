@@ -1,0 +1,141 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_r0rff"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3kmnt"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_r868l"]
+
+[sub_resource type="Resource" id="Resource_kowbj"]
+script = ExtResource("1_r0rff")
+species = &"CROCONAW"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_u45i8"]
+script = ExtResource("2_3kmnt")
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_gw5qn"]
+script = ExtResource("2_3kmnt")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_r5uvd"]
+script = ExtResource("2_3kmnt")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_727pe"]
+script = ExtResource("2_3kmnt")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_qv4ra"]
+script = ExtResource("2_3kmnt")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_dk4x4"]
+script = ExtResource("2_3kmnt")
+level = 6
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_w3iss"]
+script = ExtResource("2_3kmnt")
+level = 8
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_m4sso"]
+script = ExtResource("2_3kmnt")
+level = 13
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_7dnhy"]
+script = ExtResource("2_3kmnt")
+level = 15
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_y6lcm"]
+script = ExtResource("2_3kmnt")
+level = 21
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_y4f4d"]
+script = ExtResource("2_3kmnt")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_3xmg8"]
+script = ExtResource("2_3kmnt")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_ji46d"]
+script = ExtResource("2_3kmnt")
+level = 37
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_6ud2o"]
+script = ExtResource("2_3kmnt")
+level = 45
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_rsw0b"]
+script = ExtResource("2_3kmnt")
+level = 50
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_cehdt"]
+script = ExtResource("2_3kmnt")
+level = 58
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_hsyb2"]
+script = ExtResource("2_3kmnt")
+level = 63
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_cip37"]
+script = ExtResource("2_3kmnt")
+level = 71
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_ylhn6"]
+script = ExtResource("2_3kmnt")
+level = 76
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "FERALIGATR"
+script = ExtResource("3_r868l")
+species = &"FERALIGATR"
+category = "Big Jaw"
+pokedex_entry = "It opens its huge mouth to intimidate enemies. In battle, it runs using its thick and powerful hind legs to charge the foe with incredible speed."
+types = Array[StringName]([&"WATER"])
+base_hp = 85
+base_attack = 105
+base_defense = 100
+base_special_attack = 79
+base_special_defense = 83
+base_speed = 78
+ev_attack = 2
+ev_defense = 1
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3kmnt")]([SubResource("Resource_u45i8"), SubResource("Resource_gw5qn"), SubResource("Resource_r5uvd"), SubResource("Resource_727pe"), SubResource("Resource_qv4ra"), SubResource("Resource_dk4x4"), SubResource("Resource_w3iss"), SubResource("Resource_m4sso"), SubResource("Resource_7dnhy"), SubResource("Resource_y6lcm"), SubResource("Resource_y4f4d"), SubResource("Resource_3xmg8"), SubResource("Resource_ji46d"), SubResource("Resource_6ud2o"), SubResource("Resource_rsw0b"), SubResource("Resource_cehdt"), SubResource("Resource_hsyb2"), SubResource("Resource_cip37"), SubResource("Resource_ylhn6")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYDROCANNON", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"LIQUIDATION", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_r0rff")]([SubResource("Resource_kowbj")])
+height = 23
+weight = 888
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 2
+back_sprite_offset = Vector2i(6, 48)
+front_sprite_offset = Vector2i(-3, 17)
+shadow_size = 3
+id = &"FERALIGATR"
+display_name = "Feraligatr"

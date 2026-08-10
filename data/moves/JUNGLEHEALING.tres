@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0vcvb"]
+
+[resource]
+resource_name = "JUNGLEHEALING"
+script = ExtResource("1_0vcvb")
+type = &"GRASS"
+accuracy = 0
+total_pp = 10
+target = &"UserAndAllies"
+function_code = &"HealUserAndAlliesQuarterOfTotalHPCureStatus"
+description = "The user becomes one with the jungle, and restores HP and cures status conditions of itself and allies."
+id = &"JUNGLEHEALING"
+display_name = "Jungle Healing"
+flags = Array[StringName]([&"CannotMetronome"])

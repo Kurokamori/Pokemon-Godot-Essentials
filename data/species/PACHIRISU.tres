@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uo7ed"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0w6hd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j1unn"]
+
+[sub_resource type="Resource" id="Resource_en2x6"]
+script = ExtResource("2_0w6hd")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_mxy4l"]
+script = ExtResource("2_0w6hd")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_p75k7"]
+script = ExtResource("2_0w6hd")
+level = 5
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_nhwny"]
+script = ExtResource("2_0w6hd")
+level = 9
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_yoiyt"]
+script = ExtResource("2_0w6hd")
+level = 13
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_pu6ec"]
+script = ExtResource("2_0w6hd")
+level = 17
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_j7js3"]
+script = ExtResource("2_0w6hd")
+level = 19
+move = &"NUZZLE"
+
+[sub_resource type="Resource" id="Resource_0mu4x"]
+script = ExtResource("2_0w6hd")
+level = 21
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_ad0qh"]
+script = ExtResource("2_0w6hd")
+level = 25
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_lwnpt"]
+script = ExtResource("2_0w6hd")
+level = 29
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_ctaaq"]
+script = ExtResource("2_0w6hd")
+level = 33
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_bdo23"]
+script = ExtResource("2_0w6hd")
+level = 37
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_iko31"]
+script = ExtResource("2_0w6hd")
+level = 41
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_6t3d2"]
+script = ExtResource("2_0w6hd")
+level = 45
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_vy03a"]
+script = ExtResource("2_0w6hd")
+level = 49
+move = &"THUNDER"
+
+[resource]
+resource_name = "PACHIRISU"
+script = ExtResource("3_j1unn")
+species = &"PACHIRISU"
+category = "EleSquirrel"
+pokedex_entry = "It makes fur balls that crackle with static electricity. It stores them with berries in tree holes."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 60
+base_attack = 45
+base_defense = 70
+base_special_attack = 45
+base_special_defense = 90
+base_speed = 95
+ev_speed = 1
+base_exp = 142
+catch_rate = 200
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_0w6hd")]([SubResource("Resource_en2x6"), SubResource("Resource_mxy4l"), SubResource("Resource_p75k7"), SubResource("Resource_nhwny"), SubResource("Resource_yoiyt"), SubResource("Resource_pu6ec"), SubResource("Resource_j7js3"), SubResource("Resource_0mu4x"), SubResource("Resource_ad0qh"), SubResource("Resource_lwnpt"), SubResource("Resource_ctaaq"), SubResource("Resource_bdo23"), SubResource("Resource_iko31"), SubResource("Resource_6t3d2"), SubResource("Resource_vy03a")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"UTURN", &"VOLTSWITCH"])
+egg_moves = Array[StringName]([&"BABYDOLLEYES", &"BITE", &"CHARGE", &"COVET", &"DEFENSECURL", &"FAKETEARS", &"FLAIL", &"FLATTER", &"FOLLOWME", &"ROLLOUT", &"TAILWHIP"])
+abilities = Array[StringName]([&"RUNAWAY", &"PICKUP"])
+hidden_abilities = Array[StringName]([&"VOLTABSORB"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 2560
+height = 4
+weight = 39
+color = &"White"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(6, 26)
+shadow_size = 1
+id = &"PACHIRISU"
+display_name = "Pachirisu"

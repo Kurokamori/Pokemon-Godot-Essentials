@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_h7opm"]
+
+[resource]
+script = ExtResource("1_h7opm")
+category = &"weathers"
+record_script = "res://src/data/weather_data.gd"
+paths = {
+&"Blizzard": "res://data/weathers/Blizzard.tres",
+&"Fog": "res://data/weathers/Fog.tres",
+&"HeavyRain": "res://data/weathers/HeavyRain.tres",
+&"None": "res://data/weathers/None.tres",
+&"Rain": "res://data/weathers/Rain.tres",
+&"Sandstorm": "res://data/weathers/Sandstorm.tres",
+&"Snow": "res://data/weathers/Snow.tres",
+&"Storm": "res://data/weathers/Storm.tres",
+&"Sun": "res://data/weathers/Sun.tres"
+}
+ordered_ids = Array[StringName]([&"None", &"Rain", &"Storm", &"Snow", &"Blizzard", &"Sandstorm", &"HeavyRain", &"Sun", &"Fog"])

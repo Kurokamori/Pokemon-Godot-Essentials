@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_yjhvv"]
+
+[resource]
+resource_name = "SCEPTILITE"
+script = ExtResource("1_yjhvv")
+name_plural = "Sceptilites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Sceptile hold it, and it will be able to Mega Evolve."
+id = &"SCEPTILITE"
+display_name = "Sceptilite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s63jb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cxown"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_05u3m"]
+
+[sub_resource type="Resource" id="Resource_7sy85"]
+script = ExtResource("1_s63jb")
+species = &"THIEVUL"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_rq4mt"]
+script = ExtResource("2_cxown")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_0l582"]
+script = ExtResource("2_cxown")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_jsa1m"]
+script = ExtResource("2_cxown")
+level = 4
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_7tpmd"]
+script = ExtResource("2_cxown")
+level = 8
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_6dmc6"]
+script = ExtResource("2_cxown")
+level = 12
+move = &"SNARL"
+
+[sub_resource type="Resource" id="Resource_lmni6"]
+script = ExtResource("2_cxown")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_pxrb8"]
+script = ExtResource("2_cxown")
+level = 20
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_0gywh"]
+script = ExtResource("2_cxown")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_xr2ld"]
+script = ExtResource("2_cxown")
+level = 28
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_7ksua"]
+script = ExtResource("2_cxown")
+level = 32
+move = &"TAILSLAP"
+
+[sub_resource type="Resource" id="Resource_dhgt1"]
+script = ExtResource("2_cxown")
+level = 36
+move = &"FOULPLAY"
+
+[resource]
+resource_name = "NICKIT"
+script = ExtResource("3_05u3m")
+species = &"NICKIT"
+category = "Fox"
+pokedex_entry = "Aided by the soft pads on its feet, it silently raids the food stores of other Pokémon. It survives off its ill-gotten gains."
+types = Array[StringName]([&"DARK"])
+base_hp = 40
+base_attack = 28
+base_defense = 28
+base_special_attack = 47
+base_special_defense = 52
+base_speed = 50
+ev_special_defense = 1
+base_exp = 49
+growth_rate = &"Fast"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cxown")]([SubResource("Resource_rq4mt"), SubResource("Resource_0l582"), SubResource("Resource_jsa1m"), SubResource("Resource_7tpmd"), SubResource("Resource_6dmc6"), SubResource("Resource_lmni6"), SubResource("Resource_pxrb8"), SubResource("Resource_0gywh"), SubResource("Resource_xr2ld"), SubResource("Resource_7ksua"), SubResource("Resource_dhgt1")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BEATUP", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FAKETEARS", &"FOULPLAY", &"FRUSTRATION", &"HIDDENPOWER", &"LASHOUT", &"MIMIC", &"MUDSHOT", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"TAUNT", &"THIEF", &"TOXIC"])
+egg_moves = Array[StringName]([&"HOWL", &"KNOCKOFF", &"QUICKGUARD", &"TORMENT"])
+abilities = Array[StringName]([&"RUNAWAY", &"UNBURDEN"])
+hidden_abilities = Array[StringName]([&"STAKEOUT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_s63jb")]([SubResource("Resource_7sy85")])
+height = 6
+weight = 89
+color = &"Brown"
+shape = &"Quadruped"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(8, 24)
+shadow_size = 1
+id = &"NICKIT"
+display_name = "Nickit"

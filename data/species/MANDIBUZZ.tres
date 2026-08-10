@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_14q17"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1kfl3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_g6uis"]
+
+[sub_resource type="Resource" id="Resource_6j3jq"]
+script = ExtResource("1_14q17")
+species = &"VULLABY"
+method = &"Level"
+parameter = "54"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_wgro7"]
+script = ExtResource("2_1kfl3")
+level = 0
+move = &"BONERUSH"
+
+[sub_resource type="Resource" id="Resource_jtolw"]
+script = ExtResource("2_1kfl3")
+move = &"SKYATTACK"
+
+[sub_resource type="Resource" id="Resource_4pm1n"]
+script = ExtResource("2_1kfl3")
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_r4ds6"]
+script = ExtResource("2_1kfl3")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_gblaw"]
+script = ExtResource("2_1kfl3")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_w2sj2"]
+script = ExtResource("2_1kfl3")
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_wcxx6"]
+script = ExtResource("2_1kfl3")
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_a8ncu"]
+script = ExtResource("2_1kfl3")
+level = 18
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_tst1m"]
+script = ExtResource("2_1kfl3")
+level = 24
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_6ll6g"]
+script = ExtResource("2_1kfl3")
+level = 30
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_h68bw"]
+script = ExtResource("2_1kfl3")
+level = 36
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_8i6kw"]
+script = ExtResource("2_1kfl3")
+level = 42
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_cncoo"]
+script = ExtResource("2_1kfl3")
+level = 48
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_mq3qb"]
+script = ExtResource("2_1kfl3")
+level = 57
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_6cdct"]
+script = ExtResource("2_1kfl3")
+level = 64
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_ipsp5"]
+script = ExtResource("2_1kfl3")
+level = 72
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_23cel"]
+script = ExtResource("2_1kfl3")
+level = 80
+move = &"BRAVEBIRD"
+
+[resource]
+resource_name = "MANDIBUZZ"
+script = ExtResource("3_g6uis")
+species = &"MANDIBUZZ"
+category = "Bone Vulture"
+pokedex_entry = "Watching from the sky, they swoop to strike weakened Pokémon on the ground. They decorate themselves with bones."
+types = Array[StringName]([&"DARK", &"FLYING"])
+base_hp = 110
+base_attack = 65
+base_defense = 105
+base_special_attack = 55
+base_special_defense = 95
+base_speed = 80
+ev_special_attack = 2
+base_exp = 179
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 60
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_1kfl3")]([SubResource("Resource_wgro7"), SubResource("Resource_jtolw"), SubResource("Resource_4pm1n"), SubResource("Resource_r4ds6"), SubResource("Resource_gblaw"), SubResource("Resource_w2sj2"), SubResource("Resource_wcxx6"), SubResource("Resource_a8ncu"), SubResource("Resource_tst1m"), SubResource("Resource_6ll6g"), SubResource("Resource_h68bw"), SubResource("Resource_8i6kw"), SubResource("Resource_cncoo"), SubResource("Resource_mq3qb"), SubResource("Resource_6cdct"), SubResource("Resource_ipsp5"), SubResource("Resource_23cel")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"ASSURANCE", &"ATTRACT", &"BLOCK", &"BRAVEBIRD", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DEFOG", &"DOUBLETEAM", &"DUALWINGBEAT", &"EMBARGO", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLY", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONDEFENSE", &"KNOCKOFF", &"LASHOUT", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PLUCK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SKYATTACK", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UTURN"])
+abilities = Array[StringName]([&"BIGPECKS", &"OVERCOAT"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_14q17")]([SubResource("Resource_6j3jq")])
+height = 12
+weight = 395
+color = &"Brown"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-1, 20)
+shadow_size = 1
+id = &"MANDIBUZZ"
+display_name = "Mandibuzz"

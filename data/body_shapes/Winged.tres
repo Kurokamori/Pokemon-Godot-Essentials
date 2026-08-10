@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BodyShapeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/body_shape_data.gd" id="1_nf6pf"]
+
+[resource]
+resource_name = "Winged"
+script = ExtResource("1_nf6pf")
+icon_position = 8
+id = &"Winged"
+display_name = "Winged"

@@ -1,0 +1,145 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2847w"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tw24w"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ylh0p"]
+
+[sub_resource type="Resource" id="Resource_frxq6"]
+script = ExtResource("1_2847w")
+species = &"PUPITAR"
+method = &"Level"
+parameter = "55"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_yes0p"]
+script = ExtResource("2_tw24w")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_joy82"]
+script = ExtResource("2_tw24w")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_ggyoy"]
+script = ExtResource("2_tw24w")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_c1oul"]
+script = ExtResource("2_tw24w")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_hbl0f"]
+script = ExtResource("2_tw24w")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_8u8l2"]
+script = ExtResource("2_tw24w")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ry7hf"]
+script = ExtResource("2_tw24w")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_ardl8"]
+script = ExtResource("2_tw24w")
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_1p6tu"]
+script = ExtResource("2_tw24w")
+level = 9
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_qybgq"]
+script = ExtResource("2_tw24w")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_w06ql"]
+script = ExtResource("2_tw24w")
+level = 15
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_bx3ll"]
+script = ExtResource("2_tw24w")
+level = 18
+move = &"STOMPINGTANTRUM"
+
+[sub_resource type="Resource" id="Resource_ahilf"]
+script = ExtResource("2_tw24w")
+level = 21
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_3a5vi"]
+script = ExtResource("2_tw24w")
+level = 24
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_8fjym"]
+script = ExtResource("2_tw24w")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_k0oek"]
+script = ExtResource("2_tw24w")
+level = 33
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_nbw3u"]
+script = ExtResource("2_tw24w")
+level = 37
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_aq8f5"]
+script = ExtResource("2_tw24w")
+level = 42
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_her7n"]
+script = ExtResource("2_tw24w")
+level = 47
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_orhmy"]
+script = ExtResource("2_tw24w")
+level = 52
+move = &"HYPERBEAM"
+
+[sub_resource type="Resource" id="Resource_mfc7a"]
+script = ExtResource("2_tw24w")
+level = 59
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "TYRANITAR"
+script = ExtResource("3_ylh0p")
+species = &"TYRANITAR"
+category = "Armor"
+pokedex_entry = "A Tyranitar is so overwhelmingly powerful, it can bring down a whole mountain to make its nest. It roams in mountains seeking new opponents to fight."
+types = Array[StringName]([&"ROCK", &"DARK"])
+base_hp = 100
+base_attack = 134
+base_defense = 110
+base_special_attack = 95
+base_special_defense = 100
+base_speed = 61
+ev_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_tw24w")]([SubResource("Resource_yes0p"), SubResource("Resource_joy82"), SubResource("Resource_ggyoy"), SubResource("Resource_c1oul"), SubResource("Resource_hbl0f"), SubResource("Resource_8u8l2"), SubResource("Resource_ry7hf"), SubResource("Resource_ardl8"), SubResource("Resource_1p6tu"), SubResource("Resource_qybgq"), SubResource("Resource_w06ql"), SubResource("Resource_bx3ll"), SubResource("Resource_ahilf"), SubResource("Resource_3a5vi"), SubResource("Resource_8fjym"), SubResource("Resource_k0oek"), SubResource("Resource_nbw3u"), SubResource("Resource_aq8f5"), SubResource("Resource_her7n"), SubResource("Resource_orhmy"), SubResource("Resource_mfc7a")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"LASHOUT", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROAR", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNARL", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SANDSTREAM"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_2847w")]([SubResource("Resource_frxq6")])
+height = 20
+weight = 2020
+color = &"Green"
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(1, 48)
+front_sprite_offset = Vector2i(10, 14)
+id = &"TYRANITAR"
+display_name = "Tyranitar"

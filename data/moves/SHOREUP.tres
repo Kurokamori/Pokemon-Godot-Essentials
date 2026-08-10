@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fbu35"]
+
+[resource]
+resource_name = "SHOREUP"
+script = ExtResource("1_fbu35")
+type = &"GROUND"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"HealUserDependingOnSandstorm"
+description = "The user regains up to half of its max HP. It restores more HP in a sandstorm."
+id = &"SHOREUP"
+display_name = "Shore Up"

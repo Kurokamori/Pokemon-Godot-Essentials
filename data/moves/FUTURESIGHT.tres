@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6aojp"]
+
+[resource]
+resource_name = "FUTURESIGHT"
+script = ExtResource("1_6aojp")
+type = &"PSYCHIC"
+category = 1
+power = 120
+total_pp = 10
+function_code = &"AttackTwoTurnsLater"
+description = "Two turns after this move is used, a hunk of psychic energy attacks the target."
+id = &"FUTURESIGHT"
+display_name = "Future Sight"

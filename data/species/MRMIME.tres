@@ -1,0 +1,149 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nwcks"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8sppd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hw7th"]
+
+[sub_resource type="Resource" id="Resource_ouy66"]
+script = ExtResource("1_nwcks")
+species = &"MRRIME"
+
+[sub_resource type="Resource" id="Resource_dwscp"]
+script = ExtResource("1_nwcks")
+species = &"MIMEJR"
+method = &"HasMove"
+parameter = "MIMIC"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_f2qmx"]
+script = ExtResource("2_8sppd")
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_1xhh8"]
+script = ExtResource("2_8sppd")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_l7pju"]
+script = ExtResource("2_8sppd")
+move = &"POWERSWAP"
+
+[sub_resource type="Resource" id="Resource_jrxhb"]
+script = ExtResource("2_8sppd")
+move = &"GUARDSWAP"
+
+[sub_resource type="Resource" id="Resource_wr0eu"]
+script = ExtResource("2_8sppd")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_8cua3"]
+script = ExtResource("2_8sppd")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_aqafb"]
+script = ExtResource("2_8sppd")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_721f4"]
+script = ExtResource("2_8sppd")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_wn63e"]
+script = ExtResource("2_8sppd")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_mh8we"]
+script = ExtResource("2_8sppd")
+level = 16
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_1350w"]
+script = ExtResource("2_8sppd")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_1irsm"]
+script = ExtResource("2_8sppd")
+level = 24
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_5fn0d"]
+script = ExtResource("2_8sppd")
+level = 28
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_0fnig"]
+script = ExtResource("2_8sppd")
+level = 32
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_uyuig"]
+script = ExtResource("2_8sppd")
+level = 36
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_al884"]
+script = ExtResource("2_8sppd")
+level = 36
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_v4khb"]
+script = ExtResource("2_8sppd")
+level = 36
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_yugot"]
+script = ExtResource("2_8sppd")
+level = 40
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_3hhoc"]
+script = ExtResource("2_8sppd")
+level = 44
+move = &"DAZZLINGGLEAM"
+
+[sub_resource type="Resource" id="Resource_5wed4"]
+script = ExtResource("2_8sppd")
+level = 48
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_ly17x"]
+script = ExtResource("2_8sppd")
+level = 52
+move = &"TEETERDANCE"
+
+[resource]
+resource_name = "MRMIME"
+script = ExtResource("3_hw7th")
+species = &"MRMIME"
+category = "Barrier"
+pokedex_entry = "A Mr. Mime is a master of pantomime. It can convince others that something unseeable actually exists. Once believed, the imaginary object does become real."
+types = Array[StringName]([&"PSYCHIC", &"FAIRY"])
+base_hp = 40
+base_attack = 45
+base_defense = 65
+base_special_attack = 100
+base_special_defense = 120
+base_speed = 90
+ev_special_defense = 2
+base_exp = 161
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8sppd")]([SubResource("Resource_f2qmx"), SubResource("Resource_1xhh8"), SubResource("Resource_l7pju"), SubResource("Resource_jrxhb"), SubResource("Resource_wr0eu"), SubResource("Resource_8cua3"), SubResource("Resource_aqafb"), SubResource("Resource_721f4"), SubResource("Resource_wn63e"), SubResource("Resource_mh8we"), SubResource("Resource_1350w"), SubResource("Resource_1irsm"), SubResource("Resource_5fn0d"), SubResource("Resource_0fnig"), SubResource("Resource_uyuig"), SubResource("Resource_al884"), SubResource("Resource_v4khb"), SubResource("Resource_yugot"), SubResource("Resource_3hhoc"), SubResource("Resource_5wed4"), SubResource("Resource_ly17x")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"INFESTATION", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"MYSTICALFIRE", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"UPROAR", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CHARM", &"CONFUSERAY", &"FAKEOUT", &"FUTURESIGHT", &"HEALINGWISH", &"HYPNOSIS", &"ICYWIND", &"MAGICROOM", &"MIMIC", &"POWERSPLIT", &"TEETERDANCE", &"TICKLE", &"TRICK"])
+abilities = Array[StringName]([&"SOUNDPROOF", &"FILTER"])
+hidden_abilities = Array[StringName]([&"TECHNICIAN"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_nwcks")]([SubResource("Resource_ouy66"), SubResource("Resource_dwscp")])
+height = 13
+weight = 545
+color = &"Pink"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 26)
+id = &"MRMIME"
+display_name = "Mr. Mime"

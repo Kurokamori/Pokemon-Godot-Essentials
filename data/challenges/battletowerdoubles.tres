@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ChallengeRules" format=3]
+
+[ext_resource type="Script" path="res://src/battle/challenge_rules.gd" id="1_xcdp6"]
+
+[resource]
+script = ExtResource("1_xcdp6")
+display_name = "Battle Tower (Doubles)"
+facility_id = &"BATTLETOWERDOUBLES"
+party_size = 4
+banned_species = Array[StringName]([&"MEWTWO", &"MEW", &"LUGIA", &"HOOH", &"CELEBI", &"KYOGRE", &"GROUDON", &"RAYQUAZA", &"JIRACHI", &"DEOXYS", &"DIALGA", &"PALKIA", &"GIRATINA", &"PHIONE", &"MANAPHY", &"DARKRAI", &"SHAYMIN", &"ARCEUS", &"RESHIRAM", &"ZEKROM", &"KYUREM", &"VICTINI", &"KELDEO", &"MELOETTA", &"GENESECT", &"XERNEAS", &"YVELTAL", &"ZYGARDE", &"DIANCIE", &"HOOPA", &"VOLCANION", &"COSMOG", &"COSMOEM", &"SOLGALEO", &"LUNALA", &"NECROZMA", &"MAGEARNA", &"MARSHADOW", &"ZERAORA", &"ZACIAN", &"ZAMAZENTA", &"ETERNATUS", &"ZARUDE", &"CALYREX"])
+battlers_per_side = 2

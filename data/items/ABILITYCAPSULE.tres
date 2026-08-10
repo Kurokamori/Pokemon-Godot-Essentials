@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_62i88"]
+
+[resource]
+resource_name = "ABILITYCAPSULE"
+script = ExtResource("1_62i88")
+name_plural = "Ability Capsule"
+pocket = 2
+price = 10000
+sell_price = 5000
+bp_price = 50
+field_use = 1
+description = "A capsule that allows a Pokémon with two Abilities to switch between these Abilities when it is used."
+id = &"ABILITYCAPSULE"
+display_name = "Ability Capsule"

@@ -1,0 +1,152 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1nmni"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_etgp8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mprgd"]
+
+[sub_resource type="Resource" id="Resource_wbq3a"]
+script = ExtResource("1_1nmni")
+species = &"EEVEE"
+method = &"HappinessDay"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_rn75j"]
+script = ExtResource("2_etgp8")
+level = 0
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_iaew6"]
+script = ExtResource("2_etgp8")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_s0xr8"]
+script = ExtResource("2_etgp8")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_abylo"]
+script = ExtResource("2_etgp8")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_vlnub"]
+script = ExtResource("2_etgp8")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_ti6bo"]
+script = ExtResource("2_etgp8")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_0dmng"]
+script = ExtResource("2_etgp8")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_tsags"]
+script = ExtResource("2_etgp8")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_fn3tk"]
+script = ExtResource("2_etgp8")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_7m1si"]
+script = ExtResource("2_etgp8")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_pd1y0"]
+script = ExtResource("2_etgp8")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_q112f"]
+script = ExtResource("2_etgp8")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_oalnf"]
+script = ExtResource("2_etgp8")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_qnfjl"]
+script = ExtResource("2_etgp8")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_hobyv"]
+script = ExtResource("2_etgp8")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_bv21e"]
+script = ExtResource("2_etgp8")
+level = 20
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_njjm1"]
+script = ExtResource("2_etgp8")
+level = 25
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_vis1o"]
+script = ExtResource("2_etgp8")
+level = 30
+move = &"MORNINGSUN"
+
+[sub_resource type="Resource" id="Resource_np2i6"]
+script = ExtResource("2_etgp8")
+level = 35
+move = &"POWERSWAP"
+
+[sub_resource type="Resource" id="Resource_14074"]
+script = ExtResource("2_etgp8")
+level = 40
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_qme0x"]
+script = ExtResource("2_etgp8")
+level = 45
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_wns7b"]
+script = ExtResource("2_etgp8")
+level = 50
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_k8aom"]
+script = ExtResource("2_etgp8")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "ESPEON"
+script = ExtResource("3_mprgd")
+species = &"ESPEON"
+category = "Sun"
+pokedex_entry = "An Espeon is extremely loyal to any trainer it considers to be worthy. It is said to have developed precognitive powers to protect its trainer from harm."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 65
+base_attack = 65
+base_defense = 60
+base_special_attack = 130
+base_special_defense = 95
+base_speed = 110
+ev_special_attack = 2
+base_exp = 184
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_etgp8")]([SubResource("Resource_rn75j"), SubResource("Resource_iaew6"), SubResource("Resource_s0xr8"), SubResource("Resource_abylo"), SubResource("Resource_vlnub"), SubResource("Resource_ti6bo"), SubResource("Resource_0dmng"), SubResource("Resource_tsags"), SubResource("Resource_fn3tk"), SubResource("Resource_7m1si"), SubResource("Resource_pd1y0"), SubResource("Resource_q112f"), SubResource("Resource_oalnf"), SubResource("Resource_qnfjl"), SubResource("Resource_hobyv"), SubResource("Resource_bv21e"), SubResource("Resource_njjm1"), SubResource("Resource_vis1o"), SubResource("Resource_np2i6"), SubResource("Resource_14074"), SubResource("Resource_qme0x"), SubResource("Resource_wns7b"), SubResource("Resource_k8aom")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DAZZLINGGLEAM", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLASH", &"FOCUSENERGY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYDAY", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICFANGS", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"TRICK", &"TRICKROOM", &"WEATHERBALL", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SYNCHRONIZE"])
+hidden_abilities = Array[StringName]([&"MAGICBOUNCE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_1nmni")]([SubResource("Resource_wbq3a")])
+height = 9
+weight = 265
+color = &"Purple"
+shape = &"Quadruped"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-1, 25)
+shadow_size = 1
+id = &"ESPEON"
+display_name = "Espeon"

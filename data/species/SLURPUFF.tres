@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1eb2b"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dgut3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hlbt5"]
+
+[sub_resource type="Resource" id="Resource_saja5"]
+script = ExtResource("1_1eb2b")
+species = &"SWIRLIX"
+method = &"TradeItem"
+parameter = "WHIPPEDDREAM"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_felrn"]
+script = ExtResource("2_dgut3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_5khkj"]
+script = ExtResource("2_dgut3")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_10f81"]
+script = ExtResource("2_dgut3")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_b3425"]
+script = ExtResource("2_dgut3")
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_e2u8j"]
+script = ExtResource("2_dgut3")
+level = 9
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_k8kja"]
+script = ExtResource("2_dgut3")
+level = 12
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_goimn"]
+script = ExtResource("2_dgut3")
+level = 15
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_5m153"]
+script = ExtResource("2_dgut3")
+level = 18
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_gdb8q"]
+script = ExtResource("2_dgut3")
+level = 21
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_o41us"]
+script = ExtResource("2_dgut3")
+level = 24
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_ja38p"]
+script = ExtResource("2_dgut3")
+level = 27
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_x8b4s"]
+script = ExtResource("2_dgut3")
+level = 30
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_7cdpm"]
+script = ExtResource("2_dgut3")
+level = 33
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_msw4r"]
+script = ExtResource("2_dgut3")
+level = 36
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_fw0v0"]
+script = ExtResource("2_dgut3")
+level = 39
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_k8mpo"]
+script = ExtResource("2_dgut3")
+level = 42
+move = &"STICKYWEB"
+
+[resource]
+resource_name = "SLURPUFF"
+script = ExtResource("3_hlbt5")
+species = &"SLURPUFF"
+category = "Meringue"
+pokedex_entry = "It can distinguish the faintest of scents. It puts its sensitive sense of smell to use by helping pastry chefs in their work."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 82
+base_attack = 80
+base_defense = 86
+base_special_attack = 85
+base_special_defense = 75
+base_speed = 72
+ev_defense = 2
+base_exp = 168
+catch_rate = 140
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dgut3")]([SubResource("Resource_felrn"), SubResource("Resource_5khkj"), SubResource("Resource_10f81"), SubResource("Resource_b3425"), SubResource("Resource_e2u8j"), SubResource("Resource_k8kja"), SubResource("Resource_goimn"), SubResource("Resource_5m153"), SubResource("Resource_gdb8q"), SubResource("Resource_o41us"), SubResource("Resource_ja38p"), SubResource("Resource_x8b4s"), SubResource("Resource_7cdpm"), SubResource("Resource_msw4r"), SubResource("Resource_fw0v0"), SubResource("Resource_k8mpo")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FAKETEARS", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGAIMPACT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MAGICCOAT", &"METRONOME", &"MIMIC", &"MISTYEXPLOSION", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"TOXIC"])
+abilities = Array[StringName]([&"SWEETVEIL"])
+hidden_abilities = Array[StringName]([&"UNBURDEN"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1eb2b")]([SubResource("Resource_saja5")])
+height = 8
+weight = 50
+color = &"White"
+shape = &"Bipedal"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 26)
+id = &"SLURPUFF"
+display_name = "Slurpuff"

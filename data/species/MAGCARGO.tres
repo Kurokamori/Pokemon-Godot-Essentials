@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rj80l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7xgqd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lw0q1"]
+
+[sub_resource type="Resource" id="Resource_7u2yb"]
+script = ExtResource("1_rj80l")
+species = &"SLUGMA"
+method = &"Level"
+parameter = "38"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fa3xu"]
+script = ExtResource("2_7xgqd")
+level = 0
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_ehc6g"]
+script = ExtResource("2_7xgqd")
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_bni4l"]
+script = ExtResource("2_7xgqd")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_f2mwo"]
+script = ExtResource("2_7xgqd")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_pa8bp"]
+script = ExtResource("2_7xgqd")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_hi0mx"]
+script = ExtResource("2_7xgqd")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_nqpm5"]
+script = ExtResource("2_7xgqd")
+level = 6
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_73uco"]
+script = ExtResource("2_7xgqd")
+level = 8
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_kqg4h"]
+script = ExtResource("2_7xgqd")
+level = 13
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_tm5kp"]
+script = ExtResource("2_7xgqd")
+level = 15
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_r5wsp"]
+script = ExtResource("2_7xgqd")
+level = 20
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_xpdcq"]
+script = ExtResource("2_7xgqd")
+level = 22
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_8p42u"]
+script = ExtResource("2_7xgqd")
+level = 29
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_yeh1i"]
+script = ExtResource("2_7xgqd")
+level = 34
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_gdjbk"]
+script = ExtResource("2_7xgqd")
+level = 36
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_jwmhr"]
+script = ExtResource("2_7xgqd")
+level = 43
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_j6myg"]
+script = ExtResource("2_7xgqd")
+level = 47
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_l8yyc"]
+script = ExtResource("2_7xgqd")
+level = 54
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_bx6y2"]
+script = ExtResource("2_7xgqd")
+level = 58
+move = &"EARTHPOWER"
+
+[resource]
+resource_name = "MAGCARGO"
+script = ExtResource("3_lw0q1")
+species = &"MAGCARGO"
+category = "Lava"
+pokedex_entry = "The shell on its back is made of hardened magma. Tens of thousands of years spent living in volcanic craters have turned Magcargo's bodies into magma."
+types = Array[StringName]([&"FIRE", &"ROCK"])
+base_hp = 60
+base_attack = 50
+base_defense = 120
+base_special_attack = 90
+base_special_defense = 80
+base_speed = 30
+ev_defense = 2
+base_exp = 151
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7xgqd")]([SubResource("Resource_fa3xu"), SubResource("Resource_ehc6g"), SubResource("Resource_bni4l"), SubResource("Resource_f2mwo"), SubResource("Resource_pa8bp"), SubResource("Resource_hi0mx"), SubResource("Resource_nqpm5"), SubResource("Resource_73uco"), SubResource("Resource_kqg4h"), SubResource("Resource_tm5kp"), SubResource("Resource_r5wsp"), SubResource("Resource_xpdcq"), SubResource("Resource_8p42u"), SubResource("Resource_yeh1i"), SubResource("Resource_gdjbk"), SubResource("Resource_jwmhr"), SubResource("Resource_j6myg"), SubResource("Resource_l8yyc"), SubResource("Resource_bx6y2")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ANCIENTPOWER", &"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMECHARGE", &"FLAMETHROWER", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"INFESTATION", &"IRONDEFENSE", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"PAINSPLIT", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"WILLOWISP"])
+abilities = Array[StringName]([&"MAGMAARMOR", &"FLAMEBODY"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_rj80l")]([SubResource("Resource_7u2yb")])
+height = 8
+weight = 550
+shape = &"Serpentine"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(1, 25)
+id = &"MAGCARGO"
+display_name = "Magcargo"

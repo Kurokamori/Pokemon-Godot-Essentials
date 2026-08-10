@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_mjqw5"]
+
+[resource]
+resource_name = "SACHET"
+script = ExtResource("1_mjqw5")
+name_plural = "Sachets"
+price = 3000
+sell_price = 1000
+bp_price = 5
+description = "A sachet filled with slightly overwhelming fragrant perfumes. Yet it's loved by a certain Pokémon."
+id = &"SACHET"
+display_name = "Sachet"
+flags = Array[StringName]([&"Fling_80"])

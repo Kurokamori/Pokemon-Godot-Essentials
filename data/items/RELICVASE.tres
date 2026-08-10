@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ngv6r"]
+
+[resource]
+resource_name = "RELICVASE"
+script = ExtResource("1_ngv6r")
+name_plural = "Relic Vases"
+description = "A vase made in a civilization about 3,000 years ago. A maniac will buy it for a high price."
+id = &"RELICVASE"
+display_name = "Relic Vase"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3k1hb"]
+
+[resource]
+resource_name = "POWERANKLET"
+script = ExtResource("1_3k1hb")
+name_plural = "Power Anklets"
+price = 3000
+sell_price = 1500
+bp_price = 10
+description = "A Pokémon held item that promotes Speed gain on leveling, but reduces the Speed stat."
+id = &"POWERANKLET"
+display_name = "Power Anklet"
+flags = Array[StringName]([&"Fling_70"])

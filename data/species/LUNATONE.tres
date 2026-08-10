@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_r8kbh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_u7vpx"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ypr46"]
+
+[sub_resource type="Resource" id="Resource_23gpj"]
+script = ExtResource("2_u7vpx")
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_iu64p"]
+script = ExtResource("2_u7vpx")
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_vnj8f"]
+script = ExtResource("2_u7vpx")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_orxe1"]
+script = ExtResource("2_u7vpx")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_jjovw"]
+script = ExtResource("2_u7vpx")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_k216o"]
+script = ExtResource("2_u7vpx")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_onibe"]
+script = ExtResource("2_u7vpx")
+level = 5
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_2eyvk"]
+script = ExtResource("2_u7vpx")
+level = 10
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_l7h1r"]
+script = ExtResource("2_u7vpx")
+level = 15
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_f4x8q"]
+script = ExtResource("2_u7vpx")
+level = 20
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_ty8j4"]
+script = ExtResource("2_u7vpx")
+level = 25
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_dljt8"]
+script = ExtResource("2_u7vpx")
+level = 30
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_3fabx"]
+script = ExtResource("2_u7vpx")
+level = 35
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_8fkw0"]
+script = ExtResource("2_u7vpx")
+level = 40
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_7yfrs"]
+script = ExtResource("2_u7vpx")
+level = 45
+move = &"MAGICROOM"
+
+[sub_resource type="Resource" id="Resource_mmofo"]
+script = ExtResource("2_u7vpx")
+level = 50
+move = &"EXPLOSION"
+
+[resource]
+resource_name = "LUNATONE"
+script = ExtResource("3_ypr46")
+species = &"LUNATONE"
+category = "Meteorite"
+pokedex_entry = "It becomes very active on the night of a full moon. This Pokémon was first discovered 40 years ago at the site of a meteor strike."
+types = Array[StringName]([&"ROCK", &"PSYCHIC"])
+base_hp = 90
+base_attack = 55
+base_defense = 65
+base_special_attack = 95
+base_special_defense = 85
+base_speed = 70
+ev_special_attack = 2
+base_exp = 161
+growth_rate = &"Fast"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_u7vpx")]([SubResource("Resource_23gpj"), SubResource("Resource_iu64p"), SubResource("Resource_vnj8f"), SubResource("Resource_orxe1"), SubResource("Resource_jjovw"), SubResource("Resource_k216o"), SubResource("Resource_onibe"), SubResource("Resource_2eyvk"), SubResource("Resource_l7h1r"), SubResource("Resource_f4x8q"), SubResource("Resource_ty8j4"), SubResource("Resource_dljt8"), SubResource("Resource_3fabx"), SubResource("Resource_8fkw0"), SubResource("Resource_7yfrs"), SubResource("Resource_mmofo")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ALLYSWITCH", &"ANCIENTPOWER", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"COSMICPOWER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EARTHPOWER", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONHEAD", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"METEORBEAM", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAINSPLIT", &"POWERGEM", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"TRICKROOM", &"WEATHERBALL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+wild_item_common = Array[StringName]([&"STARDUST"])
+wild_item_uncommon = Array[StringName]([&"MOONSTONE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 6400
+height = 10
+weight = 1680
+color = &"Yellow"
+habitat = &"Cave"
+generation = 3
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(0, 12)
+id = &"LUNATONE"
+display_name = "Lunatone"

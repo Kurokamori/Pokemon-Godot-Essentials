@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1tb3x"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_y3njo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_k1i2m"]
+
+[sub_resource type="Resource" id="Resource_fvmbr"]
+script = ExtResource("2_y3njo")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_jah6e"]
+script = ExtResource("2_y3njo")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_45sf0"]
+script = ExtResource("2_y3njo")
+level = 5
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_ffcoj"]
+script = ExtResource("2_y3njo")
+level = 10
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_kebng"]
+script = ExtResource("2_y3njo")
+level = 15
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_l6yi2"]
+script = ExtResource("2_y3njo")
+level = 20
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_o5ntx"]
+script = ExtResource("2_y3njo")
+level = 25
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_0smfc"]
+script = ExtResource("2_y3njo")
+level = 30
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_vaf6s"]
+script = ExtResource("2_y3njo")
+level = 35
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_4mbvd"]
+script = ExtResource("2_y3njo")
+level = 40
+move = &"SUBSTITUTE"
+
+[sub_resource type="Resource" id="Resource_el6lt"]
+script = ExtResource("2_y3njo")
+level = 45
+move = &"TRICK"
+
+[sub_resource type="Resource" id="Resource_wb1fv"]
+script = ExtResource("2_y3njo")
+level = 50
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_l0orq"]
+script = ExtResource("2_y3njo")
+level = 55
+move = &"UPROAR"
+
+[resource]
+resource_name = "ROTOM_5"
+script = ExtResource("3_k1i2m")
+species = &"ROTOM"
+form = 5
+form_name = "Mow Rotom"
+category = "Plasma"
+pokedex_entry = "This is Rotom after it's seized control of a lawn mower that has a special motor. As it mows down grass, it scatters the clippings everywhere."
+pokedex_form = 5
+types = Array[StringName]([&"ELECTRIC", &"GRASS"])
+base_hp = 50
+base_attack = 65
+base_defense = 107
+base_special_attack = 105
+base_special_defense = 107
+base_speed = 86
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 182
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_y3njo")]([SubResource("Resource_fvmbr"), SubResource("Resource_jah6e"), SubResource("Resource_45sf0"), SubResource("Resource_ffcoj"), SubResource("Resource_kebng"), SubResource("Resource_l6yi2"), SubResource("Resource_o5ntx"), SubResource("Resource_0smfc"), SubResource("Resource_vaf6s"), SubResource("Resource_4mbvd"), SubResource("Resource_el6lt"), SubResource("Resource_wb1fv"), SubResource("Resource_l0orq")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLETEAM", &"DREAMEATER", &"EERIEIMPULSE", &"ELECTRICTERRAIN", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"HYPERVOICE", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"POLTERGEIST", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"STOREDPOWER", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"UPROAR", &"VOLTSWITCH", &"WILLOWISP"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+height = 3
+weight = 3
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 19)
+id = &"ROTOM_5"
+display_name = "Rotom"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_8pqfa"]
+
+[resource]
+resource_name = "SHOCK"
+script = ExtResource("1_8pqfa")
+icon_position = 57
+description = "A Ribbon for recalling a thrilling event that made life more exciting."
+id = &"SHOCK"
+display_name = "Shock Ribbon"

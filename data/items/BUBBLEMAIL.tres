@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_efof7"]
+
+[resource]
+resource_name = "BUBBLEMAIL"
+script = ExtResource("1_efof7")
+name_plural = "Bubble Mail"
+portion_name = "piece of Bubble Mail"
+portion_name_plural = "pieces of Bubble Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of a blue world underwater. Let a Pokémon hold it for delivery."
+id = &"BUBBLEMAIL"
+display_name = "Bubble Mail"
+flags = Array[StringName]([&"IconMail"])

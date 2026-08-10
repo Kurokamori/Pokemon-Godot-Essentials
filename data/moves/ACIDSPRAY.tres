@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_k3ti0"]
+
+[resource]
+resource_name = "ACIDSPRAY"
+script = ExtResource("1_k3ti0")
+type = &"POISON"
+category = 1
+power = 40
+total_pp = 20
+function_code = &"LowerTargetSpDef2"
+effect_chance = 100
+description = "The user spits fluid that works to melt the target. This harshly reduces the target's Sp. Def stat."
+id = &"ACIDSPRAY"
+display_name = "Acid Spray"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

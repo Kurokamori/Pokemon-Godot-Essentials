@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_vry8m"]
+
+[resource]
+resource_name = "AMPHAROSITE"
+script = ExtResource("1_vry8m")
+name_plural = "Ampharosites"
+bp_price = 50
+description = "One of a variety of mysterious Mega Stones. Have Ampharos hold it, and it will be able to Mega Evolve."
+id = &"AMPHAROSITE"
+display_name = "Ampharosite"
+flags = Array[StringName]([&"MegaStone", &"Fling_80"])

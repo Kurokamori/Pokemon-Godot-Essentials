@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_50uwk"]
+
+[resource]
+resource_name = "Bridge"
+script = ExtResource("1_50uwk")
+tag_number = 15
+bridge = true
+id = &"Bridge"
+display_name = "Bridge"

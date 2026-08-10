@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_i5vml"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ypxl5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_rvo2j"]
+
+[sub_resource type="Resource" id="Resource_aoqk2"]
+script = ExtResource("1_i5vml")
+species = &"BRONZONG"
+method = &"Level"
+parameter = "33"
+
+[sub_resource type="Resource" id="Resource_yrxno"]
+script = ExtResource("2_ypxl5")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_0oc6u"]
+script = ExtResource("2_ypxl5")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_ry240"]
+script = ExtResource("2_ypxl5")
+level = 4
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_ifaq2"]
+script = ExtResource("2_ypxl5")
+level = 8
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_qyfmw"]
+script = ExtResource("2_ypxl5")
+level = 12
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_il8cp"]
+script = ExtResource("2_ypxl5")
+level = 16
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_jx38x"]
+script = ExtResource("2_ypxl5")
+level = 20
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_y1x6w"]
+script = ExtResource("2_ypxl5")
+level = 24
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_3h71d"]
+script = ExtResource("2_ypxl5")
+level = 28
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_3gc4m"]
+script = ExtResource("2_ypxl5")
+level = 32
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_tbgg5"]
+script = ExtResource("2_ypxl5")
+level = 36
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_evlx6"]
+script = ExtResource("2_ypxl5")
+level = 40
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_30riv"]
+script = ExtResource("2_ypxl5")
+level = 44
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "BRONZOR"
+script = ExtResource("3_rvo2j")
+species = &"BRONZOR"
+category = "Bronze"
+pokedex_entry = "Implements shaped like it were discovered in ancient tombs. It is unknown if they are related."
+types = Array[StringName]([&"STEEL", &"PSYCHIC"])
+base_hp = 57
+base_attack = 24
+base_defense = 86
+base_special_attack = 24
+base_special_defense = 86
+base_speed = 23
+ev_defense = 1
+base_exp = 60
+gender_ratio = &"Genderless"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ypxl5")]([SubResource("Resource_yrxno"), SubResource("Resource_0oc6u"), SubResource("Resource_ry240"), SubResource("Resource_ifaq2"), SubResource("Resource_qyfmw"), SubResource("Resource_il8cp"), SubResource("Resource_jx38x"), SubResource("Resource_y1x6w"), SubResource("Resource_3h71d"), SubResource("Resource_3gc4m"), SubResource("Resource_tbgg5"), SubResource("Resource_evlx6"), SubResource("Resource_30riv")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ANCIENTPOWER", &"BULLDOZE", &"CALMMIND", &"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"DREAMEATER", &"EARTHQUAKE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"FUTURESIGHT", &"GRASSKNOT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HEAVYSLAM", &"HEX", &"HIDDENPOWER", &"IMPRISON", &"IRONDEFENSE", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPEEDSWAP", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"TRICK", &"TRICKROOM", &"WONDERROOM"])
+abilities = Array[StringName]([&"LEVITATE", &"HEATPROOF"])
+hidden_abilities = Array[StringName]([&"HEAVYMETAL"])
+wild_item_uncommon = Array[StringName]([&"METALCOAT"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_i5vml")]([SubResource("Resource_aoqk2")])
+height = 5
+weight = 605
+color = &"Green"
+generation = 4
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 1
+id = &"BRONZOR"
+display_name = "Bronzor"

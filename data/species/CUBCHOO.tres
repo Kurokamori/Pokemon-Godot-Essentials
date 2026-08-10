@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1ptxt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_pnbft"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n83so"]
+
+[sub_resource type="Resource" id="Resource_jgf7k"]
+script = ExtResource("1_1ptxt")
+species = &"BEARTIC"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_s3e0g"]
+script = ExtResource("2_pnbft")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_i0wmt"]
+script = ExtResource("2_pnbft")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_e3857"]
+script = ExtResource("2_pnbft")
+level = 3
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_xc25m"]
+script = ExtResource("2_pnbft")
+level = 6
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_k6c7e"]
+script = ExtResource("2_pnbft")
+level = 9
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_2epgb"]
+script = ExtResource("2_pnbft")
+level = 12
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_ttgx3"]
+script = ExtResource("2_pnbft")
+level = 15
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_uucab"]
+script = ExtResource("2_pnbft")
+level = 18
+move = &"FROSTBREATH"
+
+[sub_resource type="Resource" id="Resource_s7eir"]
+script = ExtResource("2_pnbft")
+level = 21
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_f5bqi"]
+script = ExtResource("2_pnbft")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_bdn7v"]
+script = ExtResource("2_pnbft")
+level = 27
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_63y2r"]
+script = ExtResource("2_pnbft")
+level = 30
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_khqib"]
+script = ExtResource("2_pnbft")
+level = 33
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_pvwvo"]
+script = ExtResource("2_pnbft")
+level = 36
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_bbo6i"]
+script = ExtResource("2_pnbft")
+level = 39
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_wq623"]
+script = ExtResource("2_pnbft")
+level = 42
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "CUBCHOO"
+script = ExtResource("3_n83so")
+species = &"CUBCHOO"
+category = "Chill"
+pokedex_entry = "Its nose is always running. It sniffs the snot back up because the mucus provides the raw material for its moves."
+types = Array[StringName]([&"ICE"])
+base_hp = 55
+base_attack = 70
+base_defense = 40
+base_special_attack = 60
+base_special_defense = 40
+base_speed = 40
+ev_attack = 1
+base_exp = 61
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_pnbft")]([SubResource("Resource_s3e0g"), SubResource("Resource_i0wmt"), SubResource("Resource_e3857"), SubResource("Resource_xc25m"), SubResource("Resource_k6c7e"), SubResource("Resource_2epgb"), SubResource("Resource_ttgx3"), SubResource("Resource_uucab"), SubResource("Resource_s7eir"), SubResource("Resource_f5bqi"), SubResource("Resource_bdn7v"), SubResource("Resource_63y2r"), SubResource("Resource_khqib"), SubResource("Resource_pvwvo"), SubResource("Resource_bbo6i"), SubResource("Resource_wq623")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BRINE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"GRASSKNOT", &"HAIL", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"ICYWIND", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TOXIC", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"FOCUSPUNCH", &"NIGHTSLASH", &"YAWN"])
+abilities = Array[StringName]([&"SNOWCLOAK", &"SLUSHRUSH"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1ptxt")]([SubResource("Resource_jgf7k")])
+height = 5
+weight = 85
+color = &"White"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 35)
+shadow_size = 1
+id = &"CUBCHOO"
+display_name = "Cubchoo"

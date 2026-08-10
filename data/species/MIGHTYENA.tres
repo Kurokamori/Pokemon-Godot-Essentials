@@ -1,0 +1,163 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_coqpi"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vad31"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0esfn"]
+
+[sub_resource type="Resource" id="Resource_al51e"]
+script = ExtResource("1_coqpi")
+species = &"POOCHYENA"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_663ra"]
+script = ExtResource("2_vad31")
+level = 0
+move = &"SNARL"
+
+[sub_resource type="Resource" id="Resource_sa7w3"]
+script = ExtResource("2_vad31")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_ylkc7"]
+script = ExtResource("2_vad31")
+move = &"THUNDERFANG"
+
+[sub_resource type="Resource" id="Resource_g1afa"]
+script = ExtResource("2_vad31")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_1y6ma"]
+script = ExtResource("2_vad31")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_0o5dj"]
+script = ExtResource("2_vad31")
+move = &"THIEF"
+
+[sub_resource type="Resource" id="Resource_o4dsq"]
+script = ExtResource("2_vad31")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ck5h7"]
+script = ExtResource("2_vad31")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_n635m"]
+script = ExtResource("2_vad31")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_i7bml"]
+script = ExtResource("2_vad31")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_0wmkf"]
+script = ExtResource("2_vad31")
+level = 4
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_iebsc"]
+script = ExtResource("2_vad31")
+level = 7
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_503m6"]
+script = ExtResource("2_vad31")
+level = 10
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_q5of6"]
+script = ExtResource("2_vad31")
+level = 13
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_my0hl"]
+script = ExtResource("2_vad31")
+level = 16
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_tj800"]
+script = ExtResource("2_vad31")
+level = 20
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_au6p7"]
+script = ExtResource("2_vad31")
+level = 24
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_wk7db"]
+script = ExtResource("2_vad31")
+level = 28
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_2ggyo"]
+script = ExtResource("2_vad31")
+level = 32
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_8gdre"]
+script = ExtResource("2_vad31")
+level = 36
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_ak33r"]
+script = ExtResource("2_vad31")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_okden"]
+script = ExtResource("2_vad31")
+level = 44
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_ckgct"]
+script = ExtResource("2_vad31")
+level = 48
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_r4ruj"]
+script = ExtResource("2_vad31")
+level = 52
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_47gbi"]
+script = ExtResource("2_vad31")
+level = 56
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "MIGHTYENA"
+script = ExtResource("3_0esfn")
+species = &"MIGHTYENA"
+category = "Bite"
+pokedex_entry = "In the wild, Mightyena live in a pack. They never defy their leader's orders. They defeat foes with perfectly coordinated teamwork."
+types = Array[StringName]([&"DARK"])
+base_hp = 70
+base_attack = 90
+base_defense = 70
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 70
+ev_attack = 2
+base_exp = 147
+catch_rate = 127
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vad31")]([SubResource("Resource_663ra"), SubResource("Resource_sa7w3"), SubResource("Resource_ylkc7"), SubResource("Resource_g1afa"), SubResource("Resource_1y6ma"), SubResource("Resource_0o5dj"), SubResource("Resource_o4dsq"), SubResource("Resource_ck5h7"), SubResource("Resource_n635m"), SubResource("Resource_i7bml"), SubResource("Resource_0wmkf"), SubResource("Resource_iebsc"), SubResource("Resource_503m6"), SubResource("Resource_q5of6"), SubResource("Resource_my0hl"), SubResource("Resource_tj800"), SubResource("Resource_au6p7"), SubResource("Resource_wk7db"), SubResource("Resource_2ggyo"), SubResource("Resource_8gdre"), SubResource("Resource_ak33r"), SubResource("Resource_okden"), SubResource("Resource_ckgct"), SubResource("Resource_r4ruj"), SubResource("Resource_47gbi")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"UPROAR"])
+abilities = Array[StringName]([&"INTIMIDATE", &"QUICKFEET"])
+hidden_abilities = Array[StringName]([&"MOXIE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_coqpi")]([SubResource("Resource_al51e")])
+height = 10
+weight = 370
+color = &"Gray"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 22)
+id = &"MIGHTYENA"
+display_name = "Mightyena"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_25iym"]
+
+[resource]
+resource_name = "NIGHTSLASH"
+script = ExtResource("1_25iym")
+type = &"DARK"
+category = 0
+power = 70
+total_pp = 15
+description = "The user slashes the target the instant an opportunity arises. Critical hits land more easily."
+id = &"NIGHTSLASH"
+display_name = "Night Slash"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

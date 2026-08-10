@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8vh2q"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_5y87l"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_aovu6"]
+
+[sub_resource type="Resource" id="Resource_1vjau"]
+script = ExtResource("1_8vh2q")
+species = &"JIGGLYPUFF"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_fxh8w"]
+script = ExtResource("2_5y87l")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_0qtkt"]
+script = ExtResource("2_5y87l")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_vr2aj"]
+script = ExtResource("2_5y87l")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_lp3bw"]
+script = ExtResource("2_5y87l")
+level = 4
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_eu2p4"]
+script = ExtResource("2_5y87l")
+level = 8
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_00ydh"]
+script = ExtResource("2_5y87l")
+level = 12
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_728pb"]
+script = ExtResource("2_5y87l")
+level = 16
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_uyjf5"]
+script = ExtResource("2_5y87l")
+level = 20
+move = &"CHARM"
+
+[resource]
+resource_name = "IGGLYBUFF"
+script = ExtResource("3_aovu6")
+species = &"IGGLYBUFF"
+category = "Balloon"
+pokedex_entry = "Its soft and pliable body is very bouncy. When it sings continuously with all its might, its body steadily turns a deepening pink color."
+types = Array[StringName]([&"NORMAL", &"FAIRY"])
+base_hp = 90
+base_attack = 30
+base_defense = 15
+base_special_attack = 40
+base_special_defense = 20
+base_speed = 15
+ev_hp = 1
+base_exp = 42
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 170
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_5y87l")]([SubResource("Resource_fxh8w"), SubResource("Resource_0qtkt"), SubResource("Resource_vr2aj"), SubResource("Resource_lp3bw"), SubResource("Resource_eu2p4"), SubResource("Resource_00ydh"), SubResource("Resource_728pb"), SubResource("Resource_uyjf5")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BOUNCE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"GRAVITY", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICYWIND", &"INCINERATE", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYTERRAIN", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERWAVE", &"UPROAR", &"WATERPULSE", &"WILDCHARGE", &"WORKUP"])
+egg_moves = Array[StringName]([&"COVET", &"FAKETEARS", &"GRAVITY", &"HEALPULSE", &"LASTRESORT", &"MISTYTERRAIN", &"PERISHSONG", &"PRESENT", &"ROLLOUT", &"WISH"])
+abilities = Array[StringName]([&"CUTECHARM", &"COMPETITIVE"])
+hidden_abilities = Array[StringName]([&"FRIENDGUARD"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_8vh2q")]([SubResource("Resource_1vjau")])
+height = 3
+weight = 10
+color = &"Pink"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-1, 33)
+shadow_size = 1
+id = &"IGGLYBUFF"
+display_name = "Igglybuff"

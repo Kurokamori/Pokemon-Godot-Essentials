@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_qmdt7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_b574u"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ewt6l"]
+
+[sub_resource type="Resource" id="Resource_36h0f"]
+script = ExtResource("2_b574u")
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_mcyrx"]
+script = ExtResource("2_b574u")
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_ykq3y"]
+script = ExtResource("2_b574u")
+level = 5
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_v36lv"]
+script = ExtResource("2_b574u")
+level = 10
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_iegri"]
+script = ExtResource("2_b574u")
+level = 15
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_uvm8w"]
+script = ExtResource("2_b574u")
+level = 20
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_x84cs"]
+script = ExtResource("2_b574u")
+level = 25
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_i8j4x"]
+script = ExtResource("2_b574u")
+level = 30
+move = &"ALLYSWITCH"
+
+[sub_resource type="Resource" id="Resource_5i3m6"]
+script = ExtResource("2_b574u")
+level = 35
+move = &"LUSTERPURGE"
+
+[sub_resource type="Resource" id="Resource_3ntb5"]
+script = ExtResource("2_b574u")
+level = 40
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ol4t6"]
+script = ExtResource("2_b574u")
+level = 45
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_613kr"]
+script = ExtResource("2_b574u")
+level = 50
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_83jh7"]
+script = ExtResource("2_b574u")
+level = 55
+move = &"SIMPLEBEAM"
+
+[sub_resource type="Resource" id="Resource_4tcef"]
+script = ExtResource("2_b574u")
+level = 60
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_2k5j4"]
+script = ExtResource("2_b574u")
+level = 65
+move = &"POWERSPLIT"
+
+[sub_resource type="Resource" id="Resource_1cner"]
+script = ExtResource("2_b574u")
+level = 70
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_u7mif"]
+script = ExtResource("2_b574u")
+level = 75
+move = &"PSYCHOSHIFT"
+
+[resource]
+resource_name = "LATIOS"
+script = ExtResource("3_ewt6l")
+species = &"LATIOS"
+category = "Eon"
+pokedex_entry = "Even in hiding, it can detect the locations of others and sense their emotions since it has telepathy. Its intelligence allows it to understand human languages."
+types = Array[StringName]([&"DRAGON", &"PSYCHIC"])
+base_hp = 80
+base_attack = 90
+base_defense = 80
+base_special_attack = 130
+base_special_defense = 110
+base_speed = 110
+ev_special_attack = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"AlwaysMale"
+catch_rate = 3
+base_happiness = 90
+level_up_moves = Array[ExtResource("2_b574u")]([SubResource("Resource_36h0f"), SubResource("Resource_mcyrx"), SubResource("Resource_ykq3y"), SubResource("Resource_v36lv"), SubResource("Resource_iegri"), SubResource("Resource_uvm8w"), SubResource("Resource_x84cs"), SubResource("Resource_i8j4x"), SubResource("Resource_5i3m6"), SubResource("Resource_3ntb5"), SubResource("Resource_ol4t6"), SubResource("Resource_613kr"), SubResource("Resource_83jh7"), SubResource("Resource_4tcef"), SubResource("Resource_2k5j4"), SubResource("Resource_1cner"), SubResource("Resource_u7mif")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRSLASH", &"ALLYSWITCH", &"ATTRACT", &"AURASPHERE", &"BATONPASS", &"BODYSLAM", &"BREAKINGSWIPE", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DEFOG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DREAMEATER", &"DUALWINGBEAT", &"EARTHQUAKE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLY", &"FRUSTRATION", &"FURYCUTTER", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROOST", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCALESHOT", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"LEVITATE"])
+hatch_steps = 30720
+height = 20
+weight = 600
+color = &"Blue"
+shape = &"Winged"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(2, 4)
+id = &"LATIOS"
+display_name = "Latios"
+flags = Array[StringName]([&"Legendary"])

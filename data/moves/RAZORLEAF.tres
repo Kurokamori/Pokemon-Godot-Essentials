@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vx6lo"]
+
+[resource]
+resource_name = "RAZORLEAF"
+script = ExtResource("1_vx6lo")
+type = &"GRASS"
+category = 0
+power = 55
+accuracy = 95
+total_pp = 25
+target = &"AllNearFoes"
+description = "Sharp-edged leaves are launched to slash at the opposing team. Critical hits land more easily."
+id = &"RAZORLEAF"
+display_name = "Razor Leaf"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

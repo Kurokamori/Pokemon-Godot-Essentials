@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0cb6p"]
+
+[resource]
+resource_name = "BIGMUSHROOM"
+script = ExtResource("1_0cb6p")
+name_plural = "Big Mushrooms"
+price = 5000
+sell_price = 2500
+description = "A large and rare mushroom. It is sought after by collectors."
+id = &"BIGMUSHROOM"
+display_name = "Big Mushroom"
+flags = Array[StringName]([&"Fling_30"])

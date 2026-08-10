@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7hhuw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wc5w6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oaxwk"]
+
+[sub_resource type="Resource" id="Resource_hrylp"]
+script = ExtResource("2_wc5w6")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_o0ikj"]
+script = ExtResource("2_wc5w6")
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_xysrn"]
+script = ExtResource("2_wc5w6")
+level = 7
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_xdh2c"]
+script = ExtResource("2_wc5w6")
+level = 14
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_yp6g2"]
+script = ExtResource("2_wc5w6")
+level = 21
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_k77q7"]
+script = ExtResource("2_wc5w6")
+level = 28
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_63gi2"]
+script = ExtResource("2_wc5w6")
+level = 35
+move = &"GRAVITY"
+
+[sub_resource type="Resource" id="Resource_75qgx"]
+script = ExtResource("2_wc5w6")
+level = 42
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_7pj5u"]
+script = ExtResource("2_wc5w6")
+level = 49
+move = &"METEORMASH"
+
+[sub_resource type="Resource" id="Resource_x50ir"]
+script = ExtResource("2_wc5w6")
+level = 56
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_hpu4f"]
+script = ExtResource("2_wc5w6")
+level = 63
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_48t86"]
+script = ExtResource("2_wc5w6")
+level = 70
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_4yfio"]
+script = ExtResource("2_wc5w6")
+level = 77
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_2n1bp"]
+script = ExtResource("2_wc5w6")
+level = 84
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_ums1d"]
+script = ExtResource("2_wc5w6")
+level = 91
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_xyatb"]
+script = ExtResource("2_wc5w6")
+level = 98
+move = &"DOOMDESIRE"
+
+[resource]
+resource_name = "JIRACHI"
+script = ExtResource("3_oaxwk")
+species = &"JIRACHI"
+category = "Wish"
+pokedex_entry = "Jirachi is said to make wishes come true. While it sleeps, a tough crystalline shell envelops the body to protect it from enemies."
+types = Array[StringName]([&"STEEL", &"PSYCHIC"])
+base_hp = 100
+base_attack = 100
+base_defense = 100
+base_special_attack = 100
+base_special_defense = 100
+base_speed = 100
+ev_hp = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_wc5w6")]([SubResource("Resource_hrylp"), SubResource("Resource_o0ikj"), SubResource("Resource_xysrn"), SubResource("Resource_xdh2c"), SubResource("Resource_yp6g2"), SubResource("Resource_k77q7"), SubResource("Resource_63gi2"), SubResource("Resource_75qgx"), SubResource("Resource_7pj5u"), SubResource("Resource_x50ir"), SubResource("Resource_hpu4f"), SubResource("Resource_48t86"), SubResource("Resource_4yfio"), SubResource("Resource_2n1bp"), SubResource("Resource_ums1d"), SubResource("Resource_xyatb")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ALLYSWITCH", &"AMNESIA", &"ANCIENTPOWER", &"AURASPHERE", &"BATONPASS", &"BODYSLAM", &"CALMMIND", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COSMICPOWER", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLASHCANNON", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"IRONDEFENSE", &"IRONHEAD", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRICK", &"TRICKROOM", &"UPROAR", &"UTURN", &"WATERPULSE", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SERENEGRACE"])
+wild_item_common = Array[StringName]([&"STARPIECE"])
+wild_item_uncommon = Array[StringName]([&"STARPIECE"])
+wild_item_rare = Array[StringName]([&"STARPIECE"])
+hatch_steps = 30720
+height = 3
+weight = 11
+color = &"Yellow"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(-1, 48)
+front_sprite_offset = Vector2i(-1, 25)
+id = &"JIRACHI"
+display_name = "Jirachi"
+flags = Array[StringName]([&"Mythical"])

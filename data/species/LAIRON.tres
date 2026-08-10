@@ -1,0 +1,136 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_125pi"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_g12yn"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ghqmk"]
+
+[sub_resource type="Resource" id="Resource_rql03"]
+script = ExtResource("1_125pi")
+species = &"AGGRON"
+method = &"Level"
+parameter = "42"
+
+[sub_resource type="Resource" id="Resource_gcngd"]
+script = ExtResource("1_125pi")
+species = &"ARON"
+method = &"Level"
+parameter = "32"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_x4168"]
+script = ExtResource("2_g12yn")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7cwak"]
+script = ExtResource("2_g12yn")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_yjni0"]
+script = ExtResource("2_g12yn")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_qa2ao"]
+script = ExtResource("2_g12yn")
+move = &"ROCKTOMB"
+
+[sub_resource type="Resource" id="Resource_o17by"]
+script = ExtResource("2_g12yn")
+level = 12
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_yg6vq"]
+script = ExtResource("2_g12yn")
+level = 16
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_c6r0e"]
+script = ExtResource("2_g12yn")
+level = 20
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_daqf8"]
+script = ExtResource("2_g12yn")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_f4aqn"]
+script = ExtResource("2_g12yn")
+level = 28
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_na1uj"]
+script = ExtResource("2_g12yn")
+level = 35
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_rk1f1"]
+script = ExtResource("2_g12yn")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_w4n1y"]
+script = ExtResource("2_g12yn")
+level = 46
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_k5u6e"]
+script = ExtResource("2_g12yn")
+level = 52
+move = &"IRONTAIL"
+
+[sub_resource type="Resource" id="Resource_c3nv5"]
+script = ExtResource("2_g12yn")
+level = 58
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_0a3ac"]
+script = ExtResource("2_g12yn")
+level = 64
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_f6cqx"]
+script = ExtResource("2_g12yn")
+level = 70
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_wkh7d"]
+script = ExtResource("2_g12yn")
+level = 76
+move = &"METALBURST"
+
+[resource]
+resource_name = "LAIRON"
+script = ExtResource("3_ghqmk")
+species = &"LAIRON"
+category = "Iron Armor"
+pokedex_entry = "When two Lairon meet in the wild, they fight for territory by bashing into each other with their steel bodies. The sound of their collision carries for miles."
+types = Array[StringName]([&"STEEL", &"ROCK"])
+base_hp = 60
+base_attack = 90
+base_defense = 140
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 40
+ev_defense = 2
+base_exp = 151
+growth_rate = &"Slow"
+catch_rate = 90
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_g12yn")]([SubResource("Resource_x4168"), SubResource("Resource_7cwak"), SubResource("Resource_yjni0"), SubResource("Resource_qa2ao"), SubResource("Resource_o17by"), SubResource("Resource_yg6vq"), SubResource("Resource_c6r0e"), SubResource("Resource_daqf8"), SubResource("Resource_f4aqn"), SubResource("Resource_na1uj"), SubResource("Resource_rk1f1"), SubResource("Resource_w4n1y"), SubResource("Resource_k5u6e"), SubResource("Resource_c3nv5"), SubResource("Resource_0a3ac"), SubResource("Resource_f6cqx"), SubResource("Resource_wkh7d")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SPITE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"UPROAR", &"WATERPULSE"])
+abilities = Array[StringName]([&"STURDY", &"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"HEAVYMETAL"])
+wild_item_uncommon = Array[StringName]([&"HARDSTONE"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_125pi")]([SubResource("Resource_rql03"), SubResource("Resource_gcngd")])
+height = 9
+weight = 1200
+color = &"Gray"
+shape = &"Quadruped"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 30)
+id = &"LAIRON"
+display_name = "Lairon"

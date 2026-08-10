@@ -1,0 +1,87 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_st2ui"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_r74l8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7mdpy"]
+
+[sub_resource type="Resource" id="Resource_gj6ym"]
+script = ExtResource("1_st2ui")
+species = &"EELEKTRIK"
+method = &"Item"
+parameter = "THUNDERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_xnm84"]
+script = ExtResource("2_r74l8")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_qnoow"]
+script = ExtResource("2_r74l8")
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_1d7xu"]
+script = ExtResource("2_r74l8")
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_pf4tw"]
+script = ExtResource("2_r74l8")
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_kk44q"]
+script = ExtResource("2_r74l8")
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_arh37"]
+script = ExtResource("2_r74l8")
+move = &"IONDELUGE"
+
+[sub_resource type="Resource" id="Resource_44j7i"]
+script = ExtResource("2_r74l8")
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_wik7j"]
+script = ExtResource("2_r74l8")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_rm1be"]
+script = ExtResource("2_r74l8")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_osu55"]
+script = ExtResource("2_r74l8")
+move = &"DISCHARGE"
+
+[resource]
+resource_name = "EELEKTROSS"
+script = ExtResource("3_7mdpy")
+species = &"EELEKTROSS"
+category = "EleFish"
+pokedex_entry = "With their sucker mouths, they suck in prey. Then they use their fangs to shock the prey with electricity."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 85
+base_attack = 115
+base_defense = 80
+base_special_attack = 105
+base_special_defense = 80
+base_speed = 50
+ev_attack = 3
+base_exp = 258
+growth_rate = &"Slow"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_r74l8")]([SubResource("Resource_xnm84"), SubResource("Resource_qnoow"), SubResource("Resource_1d7xu"), SubResource("Resource_pf4tw"), SubResource("Resource_kk44q"), SubResource("Resource_arh37"), SubResource("Resource_44j7i"), SubResource("Resource_wik7j"), SubResource("Resource_rm1be"), SubResource("Resource_osu55")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AQUATAIL", &"ATTRACT", &"BIND", &"BOUNCE", &"BRICKBREAK", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONPULSE", &"DRAGONTAIL", &"DRAINPUNCH", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLASHCANNON", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONTAIL", &"KNOCKOFF", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUPERFANG", &"SUPERPOWER", &"SWAGGER", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"UTURN", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_st2ui")]([SubResource("Resource_gj6ym")])
+height = 21
+weight = 805
+color = &"Blue"
+shape = &"Finned"
+generation = 5
+back_sprite_offset = Vector2i(0, 45)
+front_sprite_offset = Vector2i(-4, 21)
+shadow_size = 3
+id = &"EELEKTROSS"
+display_name = "Eelektross"

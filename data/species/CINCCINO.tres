@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tpcdb"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_r2l4s"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4lu2l"]
+
+[sub_resource type="Resource" id="Resource_rj6ur"]
+script = ExtResource("1_tpcdb")
+species = &"MINCCINO"
+method = &"Item"
+parameter = "SHINYSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_i2fgt"]
+script = ExtResource("2_r2l4s")
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_vansn"]
+script = ExtResource("2_r2l4s")
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_u4h8e"]
+script = ExtResource("2_r2l4s")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_wy4y7"]
+script = ExtResource("2_r2l4s")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_6qvc5"]
+script = ExtResource("2_r2l4s")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_81f68"]
+script = ExtResource("2_r2l4s")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_2fr1y"]
+script = ExtResource("2_r2l4s")
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_hxe3q"]
+script = ExtResource("2_r2l4s")
+move = &"TAILSLAP"
+
+[sub_resource type="Resource" id="Resource_alie1"]
+script = ExtResource("2_r2l4s")
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_o74n7"]
+script = ExtResource("2_r2l4s")
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_oyp4r"]
+script = ExtResource("2_r2l4s")
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_gvln2"]
+script = ExtResource("2_r2l4s")
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_pka7c"]
+script = ExtResource("2_r2l4s")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_gniro"]
+script = ExtResource("2_r2l4s")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_ik7l8"]
+script = ExtResource("2_r2l4s")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_qvl7b"]
+script = ExtResource("2_r2l4s")
+move = &"ECHOEDVOICE"
+
+[resource]
+resource_name = "CINCCINO"
+script = ExtResource("3_4lu2l")
+species = &"CINCCINO"
+category = "Scarf"
+pokedex_entry = "Their white fur feels amazing to touch. Their fur repels dust and prevents static electricity from building up."
+base_hp = 75
+base_attack = 95
+base_defense = 60
+base_special_attack = 65
+base_special_defense = 60
+base_speed = 115
+ev_speed = 2
+base_exp = 165
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_r2l4s")]([SubResource("Resource_i2fgt"), SubResource("Resource_vansn"), SubResource("Resource_u4h8e"), SubResource("Resource_wy4y7"), SubResource("Resource_6qvc5"), SubResource("Resource_81f68"), SubResource("Resource_2fr1y"), SubResource("Resource_hxe3q"), SubResource("Resource_alie1"), SubResource("Resource_o74n7"), SubResource("Resource_oyp4r"), SubResource("Resource_gvln2"), SubResource("Resource_pka7c"), SubResource("Resource_gniro"), SubResource("Resource_ik7l8"), SubResource("Resource_qvl7b")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AQUATAIL", &"ATTRACT", &"BULLETSEED", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DIG", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKBLAST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRIPLEAXEL", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"CUTECHARM", &"TECHNICIAN"])
+hidden_abilities = Array[StringName]([&"SKILLLINK"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_tpcdb")]([SubResource("Resource_rj6ur")])
+height = 5
+weight = 75
+color = &"Gray"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 22)
+id = &"CINCCINO"
+display_name = "Cinccino"

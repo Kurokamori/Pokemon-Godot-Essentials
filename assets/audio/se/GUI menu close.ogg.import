@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://xajhxgx6wdy4"
+path="res://.godot/imported/GUI menu close.ogg-9d9df16a6159b353726f1eb2cc98328b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/GUI menu close.ogg"
+dest_files=["res://.godot/imported/GUI menu close.ogg-9d9df16a6159b353726f1eb2cc98328b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

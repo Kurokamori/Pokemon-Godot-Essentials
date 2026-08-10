@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_j548l"]
+
+[resource]
+resource_name = "CONFUSERAY"
+script = ExtResource("1_j548l")
+type = &"GHOST"
+total_pp = 10
+function_code = &"ConfuseTarget"
+description = "The target is exposed to a sinister ray that triggers confusion."
+id = &"CONFUSERAY"
+display_name = "Confuse Ray"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

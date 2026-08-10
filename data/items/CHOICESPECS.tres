@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_fgiqc"]
+
+[resource]
+resource_name = "CHOICESPECS"
+script = ExtResource("1_fgiqc")
+name_plural = "Choice Specs"
+portion_name = "pair of Choice Specs"
+portion_name_plural = "pairs of Choice Specs"
+price = 4000
+sell_price = 2000
+bp_price = 25
+description = "An item to be held by a Pokémon. These curious glasses boost Sp. Atk but allows the use of only one move."
+id = &"CHOICESPECS"
+display_name = "Choice Specs"
+flags = Array[StringName]([&"Fling_10"])

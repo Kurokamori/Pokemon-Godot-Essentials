@@ -1,0 +1,175 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_wfnd8"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_tf53n"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7ni0a"]
+
+[sub_resource type="Resource" id="Resource_kihne"]
+script = ExtResource("1_wfnd8")
+species = &"VAPOREON"
+method = &"Item"
+parameter = "WATERSTONE"
+
+[sub_resource type="Resource" id="Resource_g1g40"]
+script = ExtResource("1_wfnd8")
+species = &"JOLTEON"
+method = &"Item"
+parameter = "THUNDERSTONE"
+
+[sub_resource type="Resource" id="Resource_wuj7a"]
+script = ExtResource("1_wfnd8")
+species = &"FLAREON"
+method = &"Item"
+parameter = "FIRESTONE"
+
+[sub_resource type="Resource" id="Resource_6kpl0"]
+script = ExtResource("1_wfnd8")
+species = &"LEAFEON"
+method = &"Item"
+parameter = "LEAFSTONE"
+
+[sub_resource type="Resource" id="Resource_wc7g0"]
+script = ExtResource("1_wfnd8")
+species = &"LEAFEON"
+method = &"LocationFlag"
+parameter = "MossRock"
+
+[sub_resource type="Resource" id="Resource_25mdk"]
+script = ExtResource("1_wfnd8")
+species = &"GLACEON"
+method = &"Item"
+parameter = "ICESTONE"
+
+[sub_resource type="Resource" id="Resource_o228p"]
+script = ExtResource("1_wfnd8")
+species = &"GLACEON"
+method = &"LocationFlag"
+parameter = "IceRock"
+
+[sub_resource type="Resource" id="Resource_cxvoj"]
+script = ExtResource("1_wfnd8")
+species = &"SYLVEON"
+method = &"HappinessMoveType"
+parameter = "FAIRY"
+
+[sub_resource type="Resource" id="Resource_2nmum"]
+script = ExtResource("1_wfnd8")
+species = &"ESPEON"
+method = &"HappinessDay"
+
+[sub_resource type="Resource" id="Resource_vqx8u"]
+script = ExtResource("1_wfnd8")
+species = &"UMBREON"
+method = &"HappinessNight"
+
+[sub_resource type="Resource" id="Resource_gfo2n"]
+script = ExtResource("2_tf53n")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_ubvxo"]
+script = ExtResource("2_tf53n")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_f6wji"]
+script = ExtResource("2_tf53n")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_d3ht1"]
+script = ExtResource("2_tf53n")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_s2umv"]
+script = ExtResource("2_tf53n")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_qn5eu"]
+script = ExtResource("2_tf53n")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_751rx"]
+script = ExtResource("2_tf53n")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_qpk5n"]
+script = ExtResource("2_tf53n")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_amoyc"]
+script = ExtResource("2_tf53n")
+level = 20
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_qjkg7"]
+script = ExtResource("2_tf53n")
+level = 25
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_k40s1"]
+script = ExtResource("2_tf53n")
+level = 30
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_863vr"]
+script = ExtResource("2_tf53n")
+level = 35
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_iwyxq"]
+script = ExtResource("2_tf53n")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_ba735"]
+script = ExtResource("2_tf53n")
+level = 45
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_jlkrm"]
+script = ExtResource("2_tf53n")
+level = 50
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_buifd"]
+script = ExtResource("2_tf53n")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "EEVEE"
+script = ExtResource("3_7ni0a")
+species = &"EEVEE"
+category = "Evolution"
+pokedex_entry = "An Eevee has an unstable genetic makeup that suddenly mutates due to its environment. Radiation from various stones causes this Pokémon to evolve."
+base_hp = 55
+base_attack = 55
+base_defense = 50
+base_special_attack = 45
+base_special_defense = 65
+base_speed = 55
+ev_special_defense = 1
+base_exp = 65
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_tf53n")]([SubResource("Resource_gfo2n"), SubResource("Resource_ubvxo"), SubResource("Resource_f6wji"), SubResource("Resource_d3ht1"), SubResource("Resource_s2umv"), SubResource("Resource_qn5eu"), SubResource("Resource_751rx"), SubResource("Resource_qpk5n"), SubResource("Resource_amoyc"), SubResource("Resource_qjkg7"), SubResource("Resource_k40s1"), SubResource("Resource_863vr"), SubResource("Resource_iwyxq"), SubResource("Resource_ba735"), SubResource("Resource_jlkrm"), SubResource("Resource_buifd")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FOCUSENERGY", &"FRUSTRATION", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYDAY", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"WEATHERBALL", &"WORKUP"])
+egg_moves = Array[StringName]([&"CHARM", &"COVET", &"CURSE", &"DETECT", &"DOUBLEKICK", &"FAKETEARS", &"FLAIL", &"MUDSLAP", &"STOREDPOWER", &"TICKLE", &"WISH", &"YAWN"])
+abilities = Array[StringName]([&"RUNAWAY", &"ADAPTABILITY"])
+hidden_abilities = Array[StringName]([&"ANTICIPATION"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_wfnd8")]([SubResource("Resource_kihne"), SubResource("Resource_g1g40"), SubResource("Resource_wuj7a"), SubResource("Resource_6kpl0"), SubResource("Resource_wc7g0"), SubResource("Resource_25mdk"), SubResource("Resource_o228p"), SubResource("Resource_cxvoj"), SubResource("Resource_2nmum"), SubResource("Resource_vqx8u")])
+height = 3
+weight = 65
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 31)
+shadow_size = 1
+id = &"EEVEE"
+display_name = "Eevee"

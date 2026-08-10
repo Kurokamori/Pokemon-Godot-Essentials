@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vjket"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_opaxg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_s1tgr"]
+
+[sub_resource type="Resource" id="Resource_caf7b"]
+script = ExtResource("1_vjket")
+species = &"ELECTIVIRE"
+method = &"TradeItem"
+parameter = "ELECTIRIZER"
+
+[sub_resource type="Resource" id="Resource_nmdp7"]
+script = ExtResource("1_vjket")
+species = &"ELEKID"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ch1ba"]
+script = ExtResource("2_opaxg")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_bpt0b"]
+script = ExtResource("2_opaxg")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_o4ljw"]
+script = ExtResource("2_opaxg")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_fw8sh"]
+script = ExtResource("2_opaxg")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_wkxnq"]
+script = ExtResource("2_opaxg")
+level = 12
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_xw1lc"]
+script = ExtResource("2_opaxg")
+level = 16
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_dv7nk"]
+script = ExtResource("2_opaxg")
+level = 20
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_pcv6b"]
+script = ExtResource("2_opaxg")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_h0n2v"]
+script = ExtResource("2_opaxg")
+level = 28
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_moa7k"]
+script = ExtResource("2_opaxg")
+level = 34
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_rgy4m"]
+script = ExtResource("2_opaxg")
+level = 40
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_4qq44"]
+script = ExtResource("2_opaxg")
+level = 46
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_u1m68"]
+script = ExtResource("2_opaxg")
+level = 52
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_4wq7t"]
+script = ExtResource("2_opaxg")
+level = 58
+move = &"THUNDER"
+
+[sub_resource type="Resource" id="Resource_kg4rn"]
+script = ExtResource("2_opaxg")
+level = 64
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "ELECTABUZZ"
+script = ExtResource("3_s1tgr")
+species = &"ELECTABUZZ"
+category = "Electric"
+pokedex_entry = "When a storm approaches, it competes with others to scale heights that are likely to be stricken by lightning. Some towns use Electabuzz as lightning rods."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 65
+base_attack = 83
+base_defense = 57
+base_special_attack = 95
+base_special_defense = 85
+base_speed = 105
+ev_speed = 2
+base_exp = 172
+gender_ratio = &"Female25Percent"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_opaxg")]([SubResource("Resource_ch1ba"), SubResource("Resource_bpt0b"), SubResource("Resource_o4ljw"), SubResource("Resource_fw8sh"), SubResource("Resource_wkxnq"), SubResource("Resource_xw1lc"), SubResource("Resource_dv7nk"), SubResource("Resource_pcv6b"), SubResource("Resource_h0n2v"), SubResource("Resource_moa7k"), SubResource("Resource_rgy4m"), SubResource("Resource_4qq44"), SubResource("Resource_u1m68"), SubResource("Resource_4wq7t"), SubResource("Resource_kg4rn")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IRONTAIL", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"STATIC"])
+hidden_abilities = Array[StringName]([&"VITALSPIRIT"])
+wild_item_uncommon = Array[StringName]([&"ELECTIRIZER"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_vjket")]([SubResource("Resource_caf7b"), SubResource("Resource_nmdp7")])
+height = 11
+weight = 300
+color = &"Yellow"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(0, 23)
+id = &"ELECTABUZZ"
+display_name = "Electabuzz"

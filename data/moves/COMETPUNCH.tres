@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_us1so"]
+
+[resource]
+resource_name = "COMETPUNCH"
+script = ExtResource("1_us1so")
+category = 0
+power = 18
+accuracy = 85
+total_pp = 15
+function_code = &"HitTwoToFiveTimes"
+description = "The target is hit with a flurry of punches that strike two to five times in a row."
+id = &"COMETPUNCH"
+display_name = "Comet Punch"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"Punching"])

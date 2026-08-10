@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xsmxp"]
+
+[resource]
+resource_name = "SILKSCARF"
+script = ExtResource("1_xsmxp")
+name_plural = "Silk Scarves"
+price = 3000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a sumptuous scarf that boosts the power of Normal-type moves."
+id = &"SILKSCARF"
+display_name = "Silk Scarf"
+flags = Array[StringName]([&"Fling_10"])

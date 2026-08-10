@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_36yf2"]
+
+[resource]
+resource_name = "IRONHEAD"
+script = ExtResource("1_36yf2")
+type = &"STEEL"
+category = 0
+power = 80
+total_pp = 15
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "The foe slams the target with its steel-hard head. It may also make the target flinch."
+id = &"IRONHEAD"
+display_name = "Iron Head"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

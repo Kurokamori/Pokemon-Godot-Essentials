@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_xcht6"]
+
+[resource]
+resource_name = "MAGNETPULL"
+script = ExtResource("1_xcht6")
+description = "Prevents Steel-type Pokémon from escaping."
+id = &"MAGNETPULL"
+display_name = "Magnet Pull"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_nlqh8"]
+
+[resource]
+resource_name = "RATTLED"
+script = ExtResource("1_nlqh8")
+description = "Some move types scare it and boost its Speed."
+id = &"RATTLED"
+display_name = "Rattled"

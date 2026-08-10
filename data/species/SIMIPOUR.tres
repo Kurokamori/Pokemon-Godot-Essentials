@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_geo8s"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ub0k6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ygkg0"]
+
+[sub_resource type="Resource" id="Resource_ip2ta"]
+script = ExtResource("1_geo8s")
+species = &"PANPOUR"
+method = &"Item"
+parameter = "WATERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_xxvdx"]
+script = ExtResource("2_ub0k6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_03y87"]
+script = ExtResource("2_ub0k6")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_0xgkj"]
+script = ExtResource("2_ub0k6")
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_whxyk"]
+script = ExtResource("2_ub0k6")
+move = &"SCALD"
+
+[resource]
+resource_name = "SIMIPOUR"
+script = ExtResource("3_ygkg0")
+species = &"SIMIPOUR"
+category = "Geyser"
+pokedex_entry = "The high-pressure water expelled from its tail is so powerful, it can destroy a concrete wall."
+types = Array[StringName]([&"WATER"])
+base_hp = 75
+base_attack = 98
+base_defense = 63
+base_special_attack = 98
+base_special_defense = 63
+base_speed = 101
+ev_speed = 2
+base_exp = 174
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ub0k6")]([SubResource("Resource_xxvdx"), SubResource("Resource_03y87"), SubResource("Resource_0xgkj"), SubResource("Resource_whxyk")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DIVE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONTAIL", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"TOXIC", &"UPROAR", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"TORRENT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_geo8s")]([SubResource("Resource_ip2ta")])
+height = 10
+weight = 290
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 22)
+id = &"SIMIPOUR"
+display_name = "Simipour"

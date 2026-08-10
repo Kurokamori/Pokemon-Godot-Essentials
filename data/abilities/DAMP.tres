@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_284sg"]
+
+[resource]
+resource_name = "DAMP"
+script = ExtResource("1_284sg")
+description = "Prevents the use of self-destructing moves."
+id = &"DAMP"
+display_name = "Damp"

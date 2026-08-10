@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_uoyev"]
+
+[resource]
+resource_name = "TOXICBOOST"
+script = ExtResource("1_uoyev")
+description = "Powers up physical attacks when poisoned."
+id = &"TOXICBOOST"
+display_name = "Toxic Boost"

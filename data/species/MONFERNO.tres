@@ -1,0 +1,144 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mgx72"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_15iaf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fqw55"]
+
+[sub_resource type="Resource" id="Resource_tyvcs"]
+script = ExtResource("1_mgx72")
+species = &"INFERNAPE"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_02htx"]
+script = ExtResource("1_mgx72")
+species = &"CHIMCHAR"
+method = &"Level"
+parameter = "14"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_xmq3x"]
+script = ExtResource("2_15iaf")
+level = 0
+move = &"MACHPUNCH"
+
+[sub_resource type="Resource" id="Resource_i76o7"]
+script = ExtResource("2_15iaf")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_u0ytk"]
+script = ExtResource("2_15iaf")
+move = &"FACADE"
+
+[sub_resource type="Resource" id="Resource_1e7dq"]
+script = ExtResource("2_15iaf")
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_l6o50"]
+script = ExtResource("2_15iaf")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_g4ixg"]
+script = ExtResource("2_15iaf")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_jr3im"]
+script = ExtResource("2_15iaf")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_0o30g"]
+script = ExtResource("2_15iaf")
+level = 7
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_rtnq2"]
+script = ExtResource("2_15iaf")
+level = 9
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_7dqt0"]
+script = ExtResource("2_15iaf")
+level = 12
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_na665"]
+script = ExtResource("2_15iaf")
+level = 16
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_o72aa"]
+script = ExtResource("2_15iaf")
+level = 19
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_k2kny"]
+script = ExtResource("2_15iaf")
+level = 26
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_ox7eg"]
+script = ExtResource("2_15iaf")
+level = 29
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_qm6v0"]
+script = ExtResource("2_15iaf")
+level = 36
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_erpkt"]
+script = ExtResource("2_15iaf")
+level = 39
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_5kkx1"]
+script = ExtResource("2_15iaf")
+level = 46
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_4ko4j"]
+script = ExtResource("2_15iaf")
+level = 49
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_5pr62"]
+script = ExtResource("2_15iaf")
+level = 56
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "MONFERNO"
+script = ExtResource("3_fqw55")
+species = &"MONFERNO"
+category = "Playful"
+pokedex_entry = "To intimidate attackers, it stretches the fire on its tail to make itself appear bigger."
+types = Array[StringName]([&"FIRE", &"FIGHTING"])
+base_hp = 64
+base_attack = 78
+base_defense = 52
+base_special_attack = 78
+base_special_defense = 52
+base_speed = 81
+ev_special_attack = 1
+ev_speed = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_15iaf")]([SubResource("Resource_xmq3x"), SubResource("Resource_i76o7"), SubResource("Resource_u0ytk"), SubResource("Resource_1e7dq"), SubResource("Resource_l6o50"), SubResource("Resource_g4ixg"), SubResource("Resource_jr3im"), SubResource("Resource_0o30g"), SubResource("Resource_rtnq2"), SubResource("Resource_7dqt0"), SubResource("Resource_na665"), SubResource("Resource_o72aa"), SubResource("Resource_k2kny"), SubResource("Resource_ox7eg"), SubResource("Resource_qm6v0"), SubResource("Resource_erpkt"), SubResource("Resource_5kkx1"), SubResource("Resource_4ko4j"), SubResource("Resource_5pr62")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"DUALCHOP", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"OVERHEAT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THUNDERPUNCH", &"TORMENT", &"UTURN", &"VACUUMWAVE", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"IRONFIST"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mgx72")]([SubResource("Resource_tyvcs"), SubResource("Resource_02htx")])
+height = 9
+weight = 220
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 27)
+id = &"MONFERNO"
+display_name = "Monferno"

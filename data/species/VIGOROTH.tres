@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bsx5w"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2v60r"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_u63en"]
+
+[sub_resource type="Resource" id="Resource_hb61i"]
+script = ExtResource("1_bsx5w")
+species = &"SLAKING"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_gxkk1"]
+script = ExtResource("1_bsx5w")
+species = &"SLAKOTH"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_4bges"]
+script = ExtResource("2_2v60r")
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_nlwug"]
+script = ExtResource("2_2v60r")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_6s7nk"]
+script = ExtResource("2_2v60r")
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_fnr7j"]
+script = ExtResource("2_2v60r")
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_481pu"]
+script = ExtResource("2_2v60r")
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_7wu6m"]
+script = ExtResource("2_2v60r")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_jmkus"]
+script = ExtResource("2_2v60r")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_25g8e"]
+script = ExtResource("2_2v60r")
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_6upvb"]
+script = ExtResource("2_2v60r")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_21cey"]
+script = ExtResource("2_2v60r")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_1uwro"]
+script = ExtResource("2_2v60r")
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_rwmsm"]
+script = ExtResource("2_2v60r")
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_y67bu"]
+script = ExtResource("2_2v60r")
+level = 6
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_nju1l"]
+script = ExtResource("2_2v60r")
+level = 9
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_0n7pw"]
+script = ExtResource("2_2v60r")
+level = 14
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_rmw2g"]
+script = ExtResource("2_2v60r")
+level = 17
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_hgp4s"]
+script = ExtResource("2_2v60r")
+level = 23
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_imogi"]
+script = ExtResource("2_2v60r")
+level = 27
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_qteff"]
+script = ExtResource("2_2v60r")
+level = 33
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_d282j"]
+script = ExtResource("2_2v60r")
+level = 37
+move = &"FOCUSPUNCH"
+
+[sub_resource type="Resource" id="Resource_h7qtc"]
+script = ExtResource("2_2v60r")
+level = 43
+move = &"REVERSAL"
+
+[resource]
+resource_name = "VIGOROTH"
+script = ExtResource("3_u63en")
+species = &"VIGOROTH"
+category = "Wild Monkey"
+pokedex_entry = "It can't keep still because its blood boils with energy. It runs through the fields and mountains all day to calm itself. If it doesn't, it can't sleep at night."
+base_hp = 80
+base_attack = 80
+base_defense = 80
+base_special_attack = 55
+base_special_defense = 55
+base_speed = 90
+ev_speed = 2
+base_exp = 154
+growth_rate = &"Slow"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2v60r")]([SubResource("Resource_4bges"), SubResource("Resource_nlwug"), SubResource("Resource_6s7nk"), SubResource("Resource_fnr7j"), SubResource("Resource_481pu"), SubResource("Resource_7wu6m"), SubResource("Resource_jmkus"), SubResource("Resource_25g8e"), SubResource("Resource_6upvb"), SubResource("Resource_21cey"), SubResource("Resource_1uwro"), SubResource("Resource_rwmsm"), SubResource("Resource_y67bu"), SubResource("Resource_nju1l"), SubResource("Resource_0n7pw"), SubResource("Resource_rmw2g"), SubResource("Resource_hgp4s"), SubResource("Resource_imogi"), SubResource("Resource_qteff"), SubResource("Resource_d282j"), SubResource("Resource_h7qtc")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"UPROAR", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"VITALSPIRIT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_bsx5w")]([SubResource("Resource_hb61i"), SubResource("Resource_gxkk1")])
+height = 14
+weight = 465
+color = &"White"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 23)
+shadow_size = 1
+id = &"VIGOROTH"
+display_name = "Vigoroth"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bhs8j"]
+
+[resource]
+resource_name = "BURNDRIVE"
+script = ExtResource("1_bhs8j")
+name_plural = "Burn Drives"
+description = "A cassette to be held by Genesect. It changes Techno Blast to a Fire-type move."
+id = &"BURNDRIVE"
+display_name = "Burn Drive"
+flags = Array[StringName]([&"Fling_70"])

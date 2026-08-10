@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_vq7br"]
+
+[resource]
+resource_name = "VITALSPIRIT"
+script = ExtResource("1_vq7br")
+description = "Prevents the Pokémon from falling asleep."
+id = &"VITALSPIRIT"
+display_name = "Vital Spirit"

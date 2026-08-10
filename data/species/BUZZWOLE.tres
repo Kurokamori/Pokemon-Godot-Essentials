@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kv2ut"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_csqos"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gho1m"]
+
+[sub_resource type="Resource" id="Resource_1ohxf"]
+script = ExtResource("2_csqos")
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_2fpj1"]
+script = ExtResource("2_csqos")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_xqkc2"]
+script = ExtResource("2_csqos")
+level = 5
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_30qte"]
+script = ExtResource("2_csqos")
+level = 10
+move = &"FELLSTINGER"
+
+[sub_resource type="Resource" id="Resource_each1"]
+script = ExtResource("2_csqos")
+level = 15
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_7wxqd"]
+script = ExtResource("2_csqos")
+level = 20
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_6j06n"]
+script = ExtResource("2_csqos")
+level = 25
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_e4tq6"]
+script = ExtResource("2_csqos")
+level = 30
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_1pb0h"]
+script = ExtResource("2_csqos")
+level = 35
+move = &"MEGAPUNCH"
+
+[sub_resource type="Resource" id="Resource_e8vvd"]
+script = ExtResource("2_csqos")
+level = 40
+move = &"LUNGE"
+
+[sub_resource type="Resource" id="Resource_qk7xe"]
+script = ExtResource("2_csqos")
+level = 45
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_lqviu"]
+script = ExtResource("2_csqos")
+level = 50
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_yb3pt"]
+script = ExtResource("2_csqos")
+level = 55
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_7vydb"]
+script = ExtResource("2_csqos")
+level = 60
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_akkr3"]
+script = ExtResource("2_csqos")
+level = 65
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_q06cp"]
+script = ExtResource("2_csqos")
+level = 70
+move = &"FOCUSPUNCH"
+
+[resource]
+resource_name = "BUZZWOLE"
+script = ExtResource("3_gho1m")
+species = &"BUZZWOLE"
+category = "Swollen"
+pokedex_entry = "This Ultra Beast appeared from another world. It shows off its body, but whether that display is a boast or a threat remains unclear."
+types = Array[StringName]([&"BUG", &"FIGHTING"])
+base_hp = 107
+base_attack = 139
+base_defense = 139
+base_special_attack = 53
+base_special_defense = 53
+base_speed = 79
+ev_attack = 1
+ev_defense = 2
+base_exp = 285
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_csqos")]([SubResource("Resource_1ohxf"), SubResource("Resource_2fpj1"), SubResource("Resource_xqkc2"), SubResource("Resource_30qte"), SubResource("Resource_each1"), SubResource("Resource_7wxqd"), SubResource("Resource_6j06n"), SubResource("Resource_e4tq6"), SubResource("Resource_1pb0h"), SubResource("Resource_e8vvd"), SubResource("Resource_qk7xe"), SubResource("Resource_lqviu"), SubResource("Resource_yb3pt"), SubResource("Resource_7vydb"), SubResource("Resource_akkr3"), SubResource("Resource_q06cp")])
+tutor_moves = Array[StringName]([&"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"BUGBITE", &"BULKUP", &"BULLDOZE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DARKESTLARIAT", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"DUALWINGBEAT", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"ICEPUNCH", &"IRONHEAD", &"LEECHLIFE", &"LOWSWEEP", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKTOMB", &"ROOST", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP"])
+abilities = Array[StringName]([&"BEASTBOOST"])
+hatch_steps = 30720
+height = 24
+weight = 3336
+shape = &"Multiped"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 4)
+shadow_size = 3
+id = &"BUZZWOLE"
+display_name = "Buzzwole"
+flags = Array[StringName]([&"UltraBeast"])

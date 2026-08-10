@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_n8dkm"]
+
+[resource]
+resource_name = "TERRAINPULSE"
+script = ExtResource("1_n8dkm")
+category = 1
+power = 50
+total_pp = 10
+function_code = &"TypeAndPowerDependOnTerrain"
+description = "Utilizes the power of the terrain to attack. This move's type and power vary with the terrain."
+id = &"TERRAINPULSE"
+display_name = "Terrain Pulse"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Pulse"])

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TargetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/target_data.gd" id="1_gjb4d"]
+
+[resource]
+resource_name = "User"
+script = ExtResource("1_gjb4d")
+num_targets = 0
+includes_user = true
+id = &"User"
+display_name = "User"

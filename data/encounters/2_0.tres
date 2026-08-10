@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_bxkeq"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_xpclc"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_wbw2i"]
+
+[sub_resource type="Resource" id="Resource_d2716"]
+script = ExtResource("3_wbw2i")
+weight = 60
+species = &"TENTACOOL"
+min_level = 14
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_giydl"]
+script = ExtResource("3_wbw2i")
+weight = 30
+species = &"MANTYKE"
+min_level = 15
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_qribi"]
+script = ExtResource("3_wbw2i")
+species = &"REMORAID"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_pm4aj"]
+script = ExtResource("2_xpclc")
+encounter_type = &"Water"
+step_chance = 2
+slots = Array[ExtResource("3_wbw2i")]([SubResource("Resource_d2716"), SubResource("Resource_giydl"), SubResource("Resource_qribi")])
+
+[sub_resource type="Resource" id="Resource_q0v0u"]
+script = ExtResource("3_wbw2i")
+weight = 100
+species = &"MAGIKARP"
+min_level = 16
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_j0vgd"]
+script = ExtResource("2_xpclc")
+encounter_type = &"OldRod"
+slots = Array[ExtResource("3_wbw2i")]([SubResource("Resource_q0v0u")])
+
+[sub_resource type="Resource" id="Resource_c37r6"]
+script = ExtResource("3_wbw2i")
+weight = 60
+species = &"BARBOACH"
+min_level = 17
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_2a70a"]
+script = ExtResource("3_wbw2i")
+weight = 20
+species = &"KRABBY"
+min_level = 15
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_631jq"]
+script = ExtResource("3_wbw2i")
+weight = 20
+species = &"SHELLDER"
+min_level = 16
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_mn47v"]
+script = ExtResource("2_xpclc")
+encounter_type = &"GoodRod"
+slots = Array[ExtResource("3_wbw2i")]([SubResource("Resource_c37r6"), SubResource("Resource_2a70a"), SubResource("Resource_631jq")])
+
+[sub_resource type="Resource" id="Resource_i0jwp"]
+script = ExtResource("3_wbw2i")
+weight = 40
+species = &"CHINCHOU"
+min_level = 17
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_2kncb"]
+script = ExtResource("3_wbw2i")
+weight = 40
+species = &"QWILFISH"
+min_level = 16
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_t1ibd"]
+script = ExtResource("3_wbw2i")
+weight = 15
+species = &"CORSOLA"
+min_level = 15
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_aqrdv"]
+script = ExtResource("3_wbw2i")
+weight = 5
+species = &"STARYU"
+min_level = 15
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_gpvdn"]
+script = ExtResource("2_xpclc")
+encounter_type = &"SuperRod"
+slots = Array[ExtResource("3_wbw2i")]([SubResource("Resource_i0jwp"), SubResource("Resource_2kncb"), SubResource("Resource_t1ibd"), SubResource("Resource_aqrdv")])
+
+[resource]
+resource_name = "2_0"
+script = ExtResource("1_bxkeq")
+map_id = 2
+tables = Array[ExtResource("2_xpclc")]([SubResource("Resource_pm4aj"), SubResource("Resource_j0vgd"), SubResource("Resource_mn47v"), SubResource("Resource_gpvdn")])
+id = &"2_0"
+display_name = "Map 2 v0"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_y7as8"]
+
+[resource]
+resource_name = "28"
+script = ExtResource("1_y7as8")
+map_id = 28
+outdoor_map = true
+announce_location = true
+town_map_position = Array[int]([0, 16, 8])
+battle_background = "field"
+id = &"28"
+display_name = "Natural Park"
+flags = Array[StringName]([&"MossRock", &"BugContest"])

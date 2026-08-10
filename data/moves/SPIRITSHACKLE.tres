@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rjsks"]
+
+[resource]
+resource_name = "SPIRITSHACKLE"
+script = ExtResource("1_rjsks")
+type = &"GHOST"
+category = 0
+power = 80
+total_pp = 10
+function_code = &"TrapTargetInBattle"
+effect_chance = 100
+description = "The user attacks while also stitching the target's shadow to the ground to prevent it fleeing."
+id = &"SPIRITSHACKLE"
+display_name = "Spirit Shackle"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

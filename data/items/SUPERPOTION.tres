@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8eqpf"]
+
+[resource]
+resource_name = "SUPERPOTION"
+script = ExtResource("1_8eqpf")
+name_plural = "Super Potions"
+pocket = 2
+price = 700
+sell_price = 350
+field_use = 1
+battle_use = 1
+description = "A spray-type medicine for treating wounds. It can be used to restore 60 HP to a single Pokémon."
+id = &"SUPERPOTION"
+display_name = "Super Potion"
+flags = Array[StringName]([&"Fling_30"])

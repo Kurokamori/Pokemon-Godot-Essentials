@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kix86"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_f14o1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_pklub"]
+
+[sub_resource type="Resource" id="Resource_mdg8b"]
+script = ExtResource("1_kix86")
+species = &"MAMOSWINE"
+method = &"HasMove"
+parameter = "ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_kv7bk"]
+script = ExtResource("1_kix86")
+species = &"SWINUB"
+method = &"Level"
+parameter = "33"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_usipa"]
+script = ExtResource("2_f14o1")
+level = 0
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_1f1gu"]
+script = ExtResource("2_f14o1")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_edvy5"]
+script = ExtResource("2_f14o1")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_mrdey"]
+script = ExtResource("2_f14o1")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_6dxgt"]
+script = ExtResource("2_f14o1")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_yn8cg"]
+script = ExtResource("2_f14o1")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_rhfwd"]
+script = ExtResource("2_f14o1")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_qlfpb"]
+script = ExtResource("2_f14o1")
+level = 20
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_rhokq"]
+script = ExtResource("2_f14o1")
+level = 25
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_duaix"]
+script = ExtResource("2_f14o1")
+level = 30
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_p8u23"]
+script = ExtResource("2_f14o1")
+level = 37
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_d6g51"]
+script = ExtResource("2_f14o1")
+level = 44
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_uke30"]
+script = ExtResource("2_f14o1")
+level = 51
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_kut0g"]
+script = ExtResource("2_f14o1")
+level = 58
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_rns21"]
+script = ExtResource("2_f14o1")
+level = 65
+move = &"THRASH"
+
+[resource]
+resource_name = "PILOSWINE"
+script = ExtResource("3_pklub")
+species = &"PILOSWINE"
+category = "Swine"
+pokedex_entry = "A Piloswine is covered by a thick coat of long hair for enduring freezing cold. It uses its tusks to dig up food that has been buried under ice."
+types = Array[StringName]([&"ICE", &"GROUND"])
+base_hp = 100
+base_attack = 100
+base_defense = 80
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 50
+ev_hp = 1
+ev_attack = 1
+base_exp = 158
+growth_rate = &"Slow"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_f14o1")]([SubResource("Resource_usipa"), SubResource("Resource_1f1gu"), SubResource("Resource_edvy5"), SubResource("Resource_mrdey"), SubResource("Resource_6dxgt"), SubResource("Resource_yn8cg"), SubResource("Resource_rhfwd"), SubResource("Resource_qlfpb"), SubResource("Resource_rhokq"), SubResource("Resource_duaix"), SubResource("Resource_p8u23"), SubResource("Resource_d6g51"), SubResource("Resource_uke30"), SubResource("Resource_kut0g"), SubResource("Resource_rns21")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"LIGHTSCREEN", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER"])
+abilities = Array[StringName]([&"OBLIVIOUS", &"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"THICKFAT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_kix86")]([SubResource("Resource_mdg8b"), SubResource("Resource_kv7bk")])
+height = 11
+weight = 558
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Cave"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 24)
+id = &"PILOSWINE"
+display_name = "Piloswine"

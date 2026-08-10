@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_dwxpp"]
+
+[resource]
+resource_name = "WATERGUN"
+script = ExtResource("1_dwxpp")
+type = &"WATER"
+category = 1
+power = 40
+total_pp = 25
+description = "The target is blasted with a forceful shot of water."
+id = &"WATERGUN"
+display_name = "Water Gun"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

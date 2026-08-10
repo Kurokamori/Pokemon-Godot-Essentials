@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_mqw8w"]
+
+[resource]
+resource_name = "TM03"
+script = ExtResource("1_mqw8w")
+name_plural = "TM03s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"WATERPULSE"
+description = "The user attacks the target with a pulsing blast of water. This may also confuse the target."
+id = &"TM03"
+display_name = "TM03"
+flags = Array[StringName]([&"Fling_60"])

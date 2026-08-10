@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5qxrk"]
+
+[resource]
+resource_name = "CAREFULMINT"
+script = ExtResource("1_5qxrk")
+name_plural = "Careful Mints"
+portion_name = "sprig of Careful Mint"
+portion_name_plural = "sprigs of Careful Mint"
+pocket = 2
+price = 20
+sell_price = 10
+bp_price = 50
+field_use = 1
+description = "When a Pokémon smells this mint, its Sp. Def will grow more easily, but its Sp. Atk will grow more slowly."
+id = &"CAREFULMINT"
+display_name = "Careful Mint"
+flags = Array[StringName]([&"Fling_10"])

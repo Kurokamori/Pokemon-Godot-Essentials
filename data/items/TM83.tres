@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_q8j8h"]
+
+[resource]
+resource_name = "TM83"
+script = ExtResource("1_q8j8h")
+name_plural = "TM83s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"BULLDOZE"
+description = "The user strikes everything around it by stomping down on the ground. This lowers the Speed of those hit."
+id = &"TM83"
+display_name = "TM83"
+flags = Array[StringName]([&"Fling_60"])

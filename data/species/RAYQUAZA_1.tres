@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8fuwi"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_y124b"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fp2pp"]
+
+[sub_resource type="Resource" id="Resource_eddno"]
+script = ExtResource("2_y124b")
+move = &"DRAGONASCENT"
+
+[sub_resource type="Resource" id="Resource_bjieu"]
+script = ExtResource("2_y124b")
+move = &"TWISTER"
+
+[sub_resource type="Resource" id="Resource_nqieu"]
+script = ExtResource("2_y124b")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_gme0l"]
+script = ExtResource("2_y124b")
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_3hdf2"]
+script = ExtResource("2_y124b")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_yqhj1"]
+script = ExtResource("2_y124b")
+level = 9
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_d8gnn"]
+script = ExtResource("2_y124b")
+level = 18
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_tv0oh"]
+script = ExtResource("2_y124b")
+level = 27
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_8j5pg"]
+script = ExtResource("2_y124b")
+level = 36
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_eeasx"]
+script = ExtResource("2_y124b")
+level = 45
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_elbd2"]
+script = ExtResource("2_y124b")
+level = 54
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_jy68t"]
+script = ExtResource("2_y124b")
+level = 63
+move = &"FLY"
+
+[sub_resource type="Resource" id="Resource_dpsth"]
+script = ExtResource("2_y124b")
+level = 72
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_hlcg6"]
+script = ExtResource("2_y124b")
+level = 81
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_xlida"]
+script = ExtResource("2_y124b")
+level = 90
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "RAYQUAZA_1"
+script = ExtResource("3_fp2pp")
+species = &"RAYQUAZA"
+form = 1
+form_name = "Mega Rayquaza"
+category = "Sky High"
+pokedex_entry = "A Pokémon that flies endlessly in the ozone layer. It is said it would descend to the ground if Kyogre and Groudon were to fight."
+pokedex_form = 1
+types = Array[StringName]([&"DRAGON", &"FLYING"])
+base_hp = 105
+base_attack = 180
+base_defense = 100
+base_special_attack = 180
+base_special_defense = 100
+base_speed = 115
+ev_attack = 2
+ev_special_attack = 1
+base_exp = 390
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_y124b")]([SubResource("Resource_eddno"), SubResource("Resource_bjieu"), SubResource("Resource_nqieu"), SubResource("Resource_gme0l"), SubResource("Resource_3hdf2"), SubResource("Resource_yqhj1"), SubResource("Resource_d8gnn"), SubResource("Resource_tv0oh"), SubResource("Resource_8j5pg"), SubResource("Resource_eeasx"), SubResource("Resource_elbd2"), SubResource("Resource_jy68t"), SubResource("Resource_dpsth"), SubResource("Resource_hlcg6"), SubResource("Resource_xlida")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"ANCIENTPOWER", &"AQUATAIL", &"AVALANCHE", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BREAKINGSWIPE", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CONFIDE", &"COSMICPOWER", &"CRUNCH", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONASCENT", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLING", &"FLY", &"FOCUSBLAST", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SHOCKWAVE", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAILWIND", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TWISTER", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"DELTASTREAM"])
+hidden_abilities = Array[StringName]([&"DELTASTREAM"])
+hatch_steps = 30720
+height = 108
+weight = 3920
+color = &"Green"
+shape = &"Serpentine"
+habitat = &"Rare"
+generation = 6
+mega_move = &"DRAGONASCENT"
+mega_message = 1
+back_sprite_offset = Vector2i(0, 34)
+front_sprite_offset = Vector2i(0, 2)
+shadow_size = 3
+id = &"RAYQUAZA_1"
+display_name = "Rayquaza"
+flags = Array[StringName]([&"Legendary"])

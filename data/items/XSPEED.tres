@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_fr0wj"]
+
+[resource]
+resource_name = "XSPEED"
+script = ExtResource("1_fr0wj")
+name_plural = "X Speeds"
+pocket = 7
+price = 1000
+sell_price = 500
+battle_use = 3
+description = "An item that sharply boosts the Speed stat of a Pokémon while it remains in battle."
+id = &"XSPEED"
+display_name = "X Speed"
+flags = Array[StringName]([&"Fling_30"])

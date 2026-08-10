@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_gjapa"]
+
+[resource]
+resource_name = "Ledge"
+script = ExtResource("1_gjapa")
+tag_number = 1
+ledge = true
+id = &"Ledge"
+display_name = "Ledge"

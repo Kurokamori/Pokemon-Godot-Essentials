@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2msou"]
+
+[resource]
+resource_name = "RISINGVOLTAGE"
+script = ExtResource("1_2msou")
+type = &"ELECTRIC"
+category = 1
+power = 70
+total_pp = 20
+function_code = &"DoublePowerInElectricTerrain"
+description = "The user attacks with electric voltage rising from the ground. Power is doubled on Electric Terrain."
+id = &"RISINGVOLTAGE"
+display_name = "Rising Voltage"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

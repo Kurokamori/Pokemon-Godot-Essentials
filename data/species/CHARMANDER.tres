@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0vs3h"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_oqers"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_86foy"]
+
+[sub_resource type="Resource" id="Resource_7ofev"]
+script = ExtResource("1_0vs3h")
+species = &"CHARMELEON"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_1hk40"]
+script = ExtResource("2_oqers")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_7wrfk"]
+script = ExtResource("2_oqers")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_yqixr"]
+script = ExtResource("2_oqers")
+level = 4
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_onnml"]
+script = ExtResource("2_oqers")
+level = 8
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_q6fip"]
+script = ExtResource("2_oqers")
+level = 12
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_4mm5k"]
+script = ExtResource("2_oqers")
+level = 17
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_ds47q"]
+script = ExtResource("2_oqers")
+level = 20
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_nknd0"]
+script = ExtResource("2_oqers")
+level = 24
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_8rclj"]
+script = ExtResource("2_oqers")
+level = 28
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_p5pm8"]
+script = ExtResource("2_oqers")
+level = 32
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_lomcg"]
+script = ExtResource("2_oqers")
+level = 36
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_axpms"]
+script = ExtResource("2_oqers")
+level = 40
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "CHARMANDER"
+script = ExtResource("3_86foy")
+species = &"CHARMANDER"
+category = "Lizard"
+pokedex_entry = "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is happy, and blazes when it is enraged."
+types = Array[StringName]([&"FIRE"])
+base_hp = 39
+base_attack = 52
+base_defense = 43
+base_special_attack = 60
+base_special_defense = 50
+base_speed = 65
+ev_speed = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_oqers")]([SubResource("Resource_1hk40"), SubResource("Resource_7wrfk"), SubResource("Resource_yqixr"), SubResource("Resource_onnml"), SubResource("Resource_q6fip"), SubResource("Resource_4mm5k"), SubResource("Resource_ds47q"), SubResource("Resource_nknd0"), SubResource("Resource_8rclj"), SubResource("Resource_p5pm8"), SubResource("Resource_lomcg"), SubResource("Resource_axpms")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREFANG", &"FIREPLEDGE", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THUNDERPUNCH", &"WEATHERBALL", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"AIRCUTTER", &"ANCIENTPOWER", &"BEATUP", &"BELLYDRUM", &"BITE", &"COUNTER", &"CRUNCH", &"DRAGONDANCE", &"DRAGONRUSH", &"DRAGONTAIL", &"FLAREBLITZ", &"METALCLAW", &"OUTRAGE", &"WINGATTACK"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"SOLARPOWER"])
+egg_groups = Array[StringName]([&"Monster", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0vs3h")]([SubResource("Resource_7ofev")])
+height = 6
+weight = 85
+shape = &"BipedalTail"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(2, 27)
+shadow_size = 1
+id = &"CHARMANDER"
+display_name = "Charmander"

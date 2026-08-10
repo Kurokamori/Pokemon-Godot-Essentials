@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1nn0k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_uqj8t"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_yntib"]
+
+[sub_resource type="Resource" id="Resource_u3uxr"]
+script = ExtResource("1_1nn0k")
+species = &"CARVANHA"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fnts7"]
+script = ExtResource("2_uqj8t")
+level = 0
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_v7t2a"]
+script = ExtResource("2_uqj8t")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_rbisr"]
+script = ExtResource("2_uqj8t")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_xlmra"]
+script = ExtResource("2_uqj8t")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_md2ww"]
+script = ExtResource("2_uqj8t")
+move = &"POISONFANG"
+
+[sub_resource type="Resource" id="Resource_87p21"]
+script = ExtResource("2_uqj8t")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_3seag"]
+script = ExtResource("2_uqj8t")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_jjd73"]
+script = ExtResource("2_uqj8t")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_wwbbc"]
+script = ExtResource("2_uqj8t")
+level = 20
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_m60cu"]
+script = ExtResource("2_uqj8t")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_ycms0"]
+script = ExtResource("2_uqj8t")
+level = 28
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_0tfq4"]
+script = ExtResource("2_uqj8t")
+level = 34
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_1dr26"]
+script = ExtResource("2_uqj8t")
+level = 40
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_7iody"]
+script = ExtResource("2_uqj8t")
+level = 46
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_rrmdl"]
+script = ExtResource("2_uqj8t")
+level = 52
+move = &"TAKEDOWN"
+
+[resource]
+resource_name = "SHARPEDO"
+script = ExtResource("3_yntib")
+species = &"SHARPEDO"
+category = "Brutal"
+pokedex_entry = "The vicious and sly gangster of the sea. Its skin is specially textured to minimize drag in water. Its speed tops out at over 75 miles per hour."
+types = Array[StringName]([&"WATER", &"DARK"])
+base_hp = 70
+base_attack = 120
+base_defense = 40
+base_special_attack = 95
+base_special_defense = 40
+base_speed = 95
+ev_attack = 2
+base_exp = 161
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_uqj8t")]([SubResource("Resource_fnts7"), SubResource("Resource_v7t2a"), SubResource("Resource_rbisr"), SubResource("Resource_xlmra"), SubResource("Resource_md2ww"), SubResource("Resource_87p21"), SubResource("Resource_3seag"), SubResource("Resource_jjd73"), SubResource("Resource_wwbbc"), SubResource("Resource_m60cu"), SubResource("Resource_ycms0"), SubResource("Resource_0tfq4"), SubResource("Resource_1dr26"), SubResource("Resource_7iody"), SubResource("Resource_rrmdl")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ANCIENTPOWER", &"ASSURANCE", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BOUNCE", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLIPTURN", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SCALESHOT", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SNARL", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUPERFANG", &"SURF", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"TORMENT", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"ROUGHSKIN"])
+hidden_abilities = Array[StringName]([&"SPEEDBOOST"])
+wild_item_uncommon = Array[StringName]([&"DEEPSEATOOTH"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1nn0k")]([SubResource("Resource_u3uxr")])
+height = 18
+weight = 888
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 12)
+id = &"SHARPEDO"
+display_name = "Sharpedo"

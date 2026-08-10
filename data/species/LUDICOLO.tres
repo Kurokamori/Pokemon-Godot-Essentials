@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8bp1f"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xc0n0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vqgv7"]
+
+[sub_resource type="Resource" id="Resource_adiew"]
+script = ExtResource("1_8bp1f")
+species = &"LOMBRE"
+method = &"Item"
+parameter = "WATERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ov1fh"]
+script = ExtResource("2_xc0n0")
+move = &"TEETERDANCE"
+
+[sub_resource type="Resource" id="Resource_82bws"]
+script = ExtResource("2_xc0n0")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_h6w8q"]
+script = ExtResource("2_xc0n0")
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_448s8"]
+script = ExtResource("2_xc0n0")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_jof2q"]
+script = ExtResource("2_xc0n0")
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_mpbg6"]
+script = ExtResource("2_xc0n0")
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_q7vhj"]
+script = ExtResource("2_xc0n0")
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_ln32g"]
+script = ExtResource("2_xc0n0")
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_qqyy1"]
+script = ExtResource("2_xc0n0")
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_g2qem"]
+script = ExtResource("2_xc0n0")
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_ij41u"]
+script = ExtResource("2_xc0n0")
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_6aiqu"]
+script = ExtResource("2_xc0n0")
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_n32o4"]
+script = ExtResource("2_xc0n0")
+move = &"ENERGYBALL"
+
+[sub_resource type="Resource" id="Resource_s0fu0"]
+script = ExtResource("2_xc0n0")
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_5xpmh"]
+script = ExtResource("2_xc0n0")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_s3viy"]
+script = ExtResource("2_xc0n0")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_gn5lv"]
+script = ExtResource("2_xc0n0")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_6wic1"]
+script = ExtResource("2_xc0n0")
+move = &"WATERGUN"
+
+[resource]
+resource_name = "LUDICOLO"
+script = ExtResource("3_vqgv7")
+species = &"LUDICOLO"
+category = "Carefree"
+pokedex_entry = "When it hears festive music, all the cells in its body become stimulated, and it begins moving in rhythm. It does not quail even when it faces a tough opponent."
+types = Array[StringName]([&"WATER", &"GRASS"])
+base_hp = 80
+base_attack = 70
+base_defense = 70
+base_special_attack = 90
+base_special_defense = 100
+base_speed = 70
+ev_special_defense = 3
+base_exp = 240
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xc0n0")]([SubResource("Resource_ov1fh"), SubResource("Resource_82bws"), SubResource("Resource_h6w8q"), SubResource("Resource_448s8"), SubResource("Resource_jof2q"), SubResource("Resource_mpbg6"), SubResource("Resource_q7vhj"), SubResource("Resource_ln32g"), SubResource("Resource_qqyy1"), SubResource("Resource_g2qem"), SubResource("Resource_ij41u"), SubResource("Resource_6aiqu"), SubResource("Resource_n32o4"), SubResource("Resource_s0fu0"), SubResource("Resource_5xpmh"), SubResource("Resource_s3viy"), SubResource("Resource_gn5lv"), SubResource("Resource_6wic1")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"KNOCKOFF", &"LEAFSTORM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"THUNDERPUNCH", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"RAINDISH"])
+hidden_abilities = Array[StringName]([&"OWNTEMPO"])
+wild_item_uncommon = Array[StringName]([&"MENTALHERB"])
+egg_groups = Array[StringName]([&"Water1", &"Grass"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_8bp1f")]([SubResource("Resource_adiew")])
+height = 15
+weight = 550
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 15)
+id = &"LUDICOLO"
+display_name = "Ludicolo"

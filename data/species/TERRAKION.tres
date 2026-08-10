@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fnf0x"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_77dds"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_17gn0"]
+
+[sub_resource type="Resource" id="Resource_3w2j7"]
+script = ExtResource("2_77dds")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_6gjn7"]
+script = ExtResource("2_77dds")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_tkhb8"]
+script = ExtResource("2_77dds")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_ic11v"]
+script = ExtResource("2_77dds")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_3yy3s"]
+script = ExtResource("2_77dds")
+level = 7
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_yddeh"]
+script = ExtResource("2_77dds")
+level = 14
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_l7mxa"]
+script = ExtResource("2_77dds")
+level = 21
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_1c7rt"]
+script = ExtResource("2_77dds")
+level = 28
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_wugot"]
+script = ExtResource("2_77dds")
+level = 35
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_w77p6"]
+script = ExtResource("2_77dds")
+level = 42
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_ohx5u"]
+script = ExtResource("2_77dds")
+level = 49
+move = &"SACREDSWORD"
+
+[sub_resource type="Resource" id="Resource_d02mp"]
+script = ExtResource("2_77dds")
+level = 56
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_235we"]
+script = ExtResource("2_77dds")
+level = 63
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_vmj3g"]
+script = ExtResource("2_77dds")
+level = 70
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "TERRAKION"
+script = ExtResource("3_17gn0")
+species = &"TERRAKION"
+category = "Cavern"
+pokedex_entry = "Its charge is strong enough to break through a giant castle wall in one blow. This Pokémon is spoken of in legends."
+types = Array[StringName]([&"ROCK", &"FIGHTING"])
+base_hp = 91
+base_attack = 129
+base_defense = 90
+base_special_attack = 72
+base_special_defense = 90
+base_speed = 108
+ev_attack = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_77dds")]([SubResource("Resource_3w2j7"), SubResource("Resource_6gjn7"), SubResource("Resource_tkhb8"), SubResource("Resource_ic11v"), SubResource("Resource_3yy3s"), SubResource("Resource_yddeh"), SubResource("Resource_l7mxa"), SubResource("Resource_1c7rt"), SubResource("Resource_wugot"), SubResource("Resource_w77p6"), SubResource("Resource_ohx5u"), SubResource("Resource_d02mp"), SubResource("Resource_235we"), SubResource("Resource_vmj3g")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"BLOCK", &"BRICKBREAK", &"BULLDOZE", &"CALMMIND", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IRONHEAD", &"LASERFOCUS", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"PSYCHUP", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SMARTSTRIKE", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"TOXIC", &"WORKUP", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"JUSTIFIED"])
+hatch_steps = 20480
+height = 19
+weight = 2600
+color = &"Gray"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 22)
+id = &"TERRAKION"
+display_name = "Terrakion"
+flags = Array[StringName]([&"Legendary"])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_exyao"]
+
+[resource]
+resource_name = "TM25"
+script = ExtResource("1_exyao")
+name_plural = "TM25s"
+pocket = 4
+price = 5500
+sell_price = 2750
+bp_price = 32
+field_use = 5
+move = &"THUNDER"
+description = "A wicked thunderbolt is dropped on the target to inflict damage. This may also leave them with paralysis."
+id = &"TM25"
+display_name = "TM25"
+flags = Array[StringName]([&"Fling_110"])

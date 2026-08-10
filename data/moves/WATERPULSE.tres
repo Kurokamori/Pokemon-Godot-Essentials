@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_n7yix"]
+
+[resource]
+resource_name = "WATERPULSE"
+script = ExtResource("1_n7yix")
+type = &"WATER"
+category = 1
+power = 60
+total_pp = 20
+target = &"Other"
+function_code = &"ConfuseTarget"
+effect_chance = 20
+description = "The user attacks the target with a pulsing blast of water. It may also confuse the target."
+id = &"WATERPULSE"
+display_name = "Water Pulse"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Pulse"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xw38m"]
+
+[resource]
+resource_name = "PSYCHICTERRAIN"
+script = ExtResource("1_xw38m")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+function_code = &"StartPsychicTerrain"
+description = "Protects grounded Pokémon from priority moves and powers up Psychic-type moves for five turns."
+id = &"PSYCHICTERRAIN"
+display_name = "Psychic Terrain"

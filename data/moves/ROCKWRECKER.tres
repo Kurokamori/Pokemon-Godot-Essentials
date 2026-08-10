@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3hi0e"]
+
+[resource]
+resource_name = "ROCKWRECKER"
+script = ExtResource("1_3hi0e")
+type = &"ROCK"
+category = 0
+power = 150
+accuracy = 90
+function_code = &"AttackAndSkipNextTurn"
+description = "The user launches a huge boulder at the target to attack. It must rest on the next turn, however."
+id = &"ROCKWRECKER"
+display_name = "Rock Wrecker"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

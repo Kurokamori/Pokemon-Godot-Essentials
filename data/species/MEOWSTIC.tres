@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_smhwi"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fbjx8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_j7yft"]
+
+[sub_resource type="Resource" id="Resource_75iq7"]
+script = ExtResource("1_smhwi")
+species = &"ESPURR"
+method = &"Level"
+parameter = "25"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_b5rcs"]
+script = ExtResource("2_fbjx8")
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_xt44a"]
+script = ExtResource("2_fbjx8")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_vcbb0"]
+script = ExtResource("2_fbjx8")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_omnwx"]
+script = ExtResource("2_fbjx8")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_g2kjw"]
+script = ExtResource("2_fbjx8")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_mnf7y"]
+script = ExtResource("2_fbjx8")
+level = 9
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_1485m"]
+script = ExtResource("2_fbjx8")
+level = 12
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_tdqmo"]
+script = ExtResource("2_fbjx8")
+level = 15
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_rlqpl"]
+script = ExtResource("2_fbjx8")
+level = 18
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_isxwy"]
+script = ExtResource("2_fbjx8")
+level = 21
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_7xs1p"]
+script = ExtResource("2_fbjx8")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_7egsf"]
+script = ExtResource("2_fbjx8")
+level = 29
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_yhh2s"]
+script = ExtResource("2_fbjx8")
+level = 34
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_prpeo"]
+script = ExtResource("2_fbjx8")
+level = 34
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_t1ear"]
+script = ExtResource("2_fbjx8")
+level = 39
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_pq667"]
+script = ExtResource("2_fbjx8")
+level = 44
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_rpt72"]
+script = ExtResource("2_fbjx8")
+level = 49
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_0gmti"]
+script = ExtResource("2_fbjx8")
+level = 54
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_us0yg"]
+script = ExtResource("2_fbjx8")
+level = 59
+move = &"MISTYTERRAIN"
+
+[resource]
+resource_name = "MEOWSTIC"
+script = ExtResource("3_j7yft")
+species = &"MEOWSTIC"
+form_name = "Male"
+category = "Constraint"
+pokedex_entry = "Revealing the eyelike patterns on the insides of its ears will unleash its psychic powers. It normally keeps the patterns hidden, however."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 74
+base_attack = 48
+base_defense = 76
+base_special_attack = 83
+base_special_defense = 81
+base_speed = 104
+ev_speed = 2
+base_exp = 163
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fbjx8")]([SubResource("Resource_b5rcs"), SubResource("Resource_xt44a"), SubResource("Resource_vcbb0"), SubResource("Resource_omnwx"), SubResource("Resource_g2kjw"), SubResource("Resource_mnf7y"), SubResource("Resource_1485m"), SubResource("Resource_tdqmo"), SubResource("Resource_rlqpl"), SubResource("Resource_isxwy"), SubResource("Resource_7xs1p"), SubResource("Resource_7egsf"), SubResource("Resource_yhh2s"), SubResource("Resource_prpeo"), SubResource("Resource_t1ear"), SubResource("Resource_pq667"), SubResource("Resource_rpt72"), SubResource("Resource_0gmti"), SubResource("Resource_us0yg")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"IRONTAIL", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"MISTYTERRAIN", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PAYDAY", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILSLAP", &"TELEKINESIS", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"KEENEYE", &"INFILTRATOR"])
+hidden_abilities = Array[StringName]([&"PRANKSTER"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_smhwi")]([SubResource("Resource_75iq7")])
+height = 6
+weight = 85
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(4, 22)
+shadow_size = 1
+id = &"MEOWSTIC"
+display_name = "Meowstic"

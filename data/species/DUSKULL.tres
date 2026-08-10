@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cdudv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rq6qb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_32oa4"]
+
+[sub_resource type="Resource" id="Resource_y8kiu"]
+script = ExtResource("1_cdudv")
+species = &"DUSCLOPS"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_hqv6j"]
+script = ExtResource("2_rq6qb")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_vk2v8"]
+script = ExtResource("2_rq6qb")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_s8vkm"]
+script = ExtResource("2_rq6qb")
+level = 4
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_nvpl6"]
+script = ExtResource("2_rq6qb")
+level = 8
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_uopgc"]
+script = ExtResource("2_rq6qb")
+level = 12
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_8c35j"]
+script = ExtResource("2_rq6qb")
+level = 16
+move = &"NIGHTSHADE"
+
+[sub_resource type="Resource" id="Resource_42ux3"]
+script = ExtResource("2_rq6qb")
+level = 20
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_rntj0"]
+script = ExtResource("2_rq6qb")
+level = 24
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_heygf"]
+script = ExtResource("2_rq6qb")
+level = 28
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_hayvu"]
+script = ExtResource("2_rq6qb")
+level = 32
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_kcsqf"]
+script = ExtResource("2_rq6qb")
+level = 36
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_babq4"]
+script = ExtResource("2_rq6qb")
+level = 40
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_dyxnu"]
+script = ExtResource("2_rq6qb")
+level = 44
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "DUSKULL"
+script = ExtResource("3_32oa4")
+species = &"DUSKULL"
+category = "Requiem"
+pokedex_entry = "A glare from its single scarlet eye makes even burly grown-ups freeze in utter fear. It is a nocturnal Pokémon that roams about under the cloak of darkness."
+types = Array[StringName]([&"GHOST"])
+base_hp = 20
+base_attack = 40
+base_defense = 90
+base_special_attack = 30
+base_special_defense = 90
+base_speed = 25
+ev_special_defense = 1
+base_exp = 59
+growth_rate = &"Fast"
+catch_rate = 190
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_rq6qb")]([SubResource("Resource_hqv6j"), SubResource("Resource_vk2v8"), SubResource("Resource_s8vkm"), SubResource("Resource_nvpl6"), SubResource("Resource_uopgc"), SubResource("Resource_8c35j"), SubResource("Resource_42ux3"), SubResource("Resource_rntj0"), SubResource("Resource_heygf"), SubResource("Resource_hayvu"), SubResource("Resource_kcsqf"), SubResource("Resource_babq4"), SubResource("Resource_dyxnu")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DARKPULSE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"FUTURESIGHT", &"GRAVITY", &"HEADBUTT", &"HELPINGHAND", &"HEX", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"IMPRISON", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SKITTERSMACK", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"TORMENT", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WONDERROOM"])
+egg_moves = Array[StringName]([&"DESTINYBOND", &"GRUDGE", &"HAZE", &"IMPRISON", &"MEMENTO", &"PAINSPLIT"])
+abilities = Array[StringName]([&"LEVITATE"])
+hidden_abilities = Array[StringName]([&"FRISK"])
+wild_item_uncommon = Array[StringName]([&"SPELLTAG"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_cdudv")]([SubResource("Resource_y8kiu")])
+height = 8
+weight = 150
+color = &"Black"
+shape = &"HeadArms"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 10)
+id = &"DUSKULL"
+display_name = "Duskull"

@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_r88yu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xuhqv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tbdt1"]
+
+[sub_resource type="Resource" id="Resource_ycpa5"]
+script = ExtResource("1_r88yu")
+species = &"HERDIER"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_7f73a"]
+script = ExtResource("2_xuhqv")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_lh72a"]
+script = ExtResource("2_xuhqv")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_olbyf"]
+script = ExtResource("2_xuhqv")
+level = 4
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_s0avh"]
+script = ExtResource("2_xuhqv")
+level = 8
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_s0olv"]
+script = ExtResource("2_xuhqv")
+level = 12
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_ad5fi"]
+script = ExtResource("2_xuhqv")
+level = 17
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_85f8i"]
+script = ExtResource("2_xuhqv")
+level = 20
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_4kbye"]
+script = ExtResource("2_xuhqv")
+level = 24
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_56uva"]
+script = ExtResource("2_xuhqv")
+level = 28
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_ihwyj"]
+script = ExtResource("2_xuhqv")
+level = 32
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_b825b"]
+script = ExtResource("2_xuhqv")
+level = 36
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_ci3qa"]
+script = ExtResource("2_xuhqv")
+level = 40
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_wgqvi"]
+script = ExtResource("2_xuhqv")
+level = 44
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_0tbja"]
+script = ExtResource("2_xuhqv")
+level = 48
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "LILLIPUP"
+script = ExtResource("3_tbdt1")
+species = &"LILLIPUP"
+category = "Puppy"
+pokedex_entry = "The long hair around its face provides an amazing radar that lets it sense subtle changes in its surroundings."
+base_hp = 45
+base_attack = 60
+base_defense = 45
+base_special_attack = 25
+base_special_defense = 45
+base_speed = 55
+ev_attack = 1
+base_exp = 55
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xuhqv")]([SubResource("Resource_7f73a"), SubResource("Resource_lh72a"), SubResource("Resource_olbyf"), SubResource("Resource_s0avh"), SubResource("Resource_s0olv"), SubResource("Resource_ad5fi"), SubResource("Resource_85f8i"), SubResource("Resource_4kbye"), SubResource("Resource_56uva"), SubResource("Resource_ihwyj"), SubResource("Resource_b825b"), SubResource("Resource_ci3qa"), SubResource("Resource_wgqvi"), SubResource("Resource_0tbja")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREFANG", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEFANG", &"LASTRESORT", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNARL", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"TOXIC", &"UPROAR", &"WILDCHARGE", &"WORKUP"])
+egg_moves = Array[StringName]([&"AFTERYOU", &"COVET", &"HOWL", &"LICK", &"MUDSLAP", &"YAWN"])
+abilities = Array[StringName]([&"VITALSPIRIT", &"PICKUP"])
+hidden_abilities = Array[StringName]([&"RUNAWAY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_r88yu")]([SubResource("Resource_ycpa5")])
+height = 4
+weight = 41
+color = &"Brown"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 29)
+shadow_size = 1
+id = &"LILLIPUP"
+display_name = "Lillipup"

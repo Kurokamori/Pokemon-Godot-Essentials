@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6tp04"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ufhw4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_10rwc"]
+
+[sub_resource type="Resource" id="Resource_cbav7"]
+script = ExtResource("1_6tp04")
+species = &"KROKOROK"
+method = &"Level"
+parameter = "29"
+
+[sub_resource type="Resource" id="Resource_w0o84"]
+script = ExtResource("2_ufhw4")
+move = &"POWERTRIP"
+
+[sub_resource type="Resource" id="Resource_kbdw1"]
+script = ExtResource("2_ufhw4")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_j16nc"]
+script = ExtResource("2_ufhw4")
+level = 3
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_ij0vn"]
+script = ExtResource("2_ufhw4")
+level = 6
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_wfdle"]
+script = ExtResource("2_ufhw4")
+level = 9
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_q0xxf"]
+script = ExtResource("2_ufhw4")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_otapv"]
+script = ExtResource("2_ufhw4")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_bwbmr"]
+script = ExtResource("2_ufhw4")
+level = 18
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_r47r5"]
+script = ExtResource("2_ufhw4")
+level = 21
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_tl07j"]
+script = ExtResource("2_ufhw4")
+level = 24
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_5hs8e"]
+script = ExtResource("2_ufhw4")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_0uvub"]
+script = ExtResource("2_ufhw4")
+level = 30
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_sfly8"]
+script = ExtResource("2_ufhw4")
+level = 33
+move = &"FOULPLAY"
+
+[sub_resource type="Resource" id="Resource_kgjut"]
+script = ExtResource("2_ufhw4")
+level = 36
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_mytuw"]
+script = ExtResource("2_ufhw4")
+level = 39
+move = &"THRASH"
+
+[resource]
+resource_name = "SANDILE"
+script = ExtResource("3_10rwc")
+species = &"SANDILE"
+category = "Desert Croc"
+pokedex_entry = "It moves along below the sand's surface, except for its nose and eyes. A dark membrane shields its eyes from the sun."
+types = Array[StringName]([&"GROUND", &"DARK"])
+base_hp = 50
+base_attack = 72
+base_defense = 35
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 65
+ev_attack = 1
+base_exp = 58
+growth_rate = &"Parabolic"
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ufhw4")]([SubResource("Resource_w0o84"), SubResource("Resource_kbdw1"), SubResource("Resource_j16nc"), SubResource("Resource_ij0vn"), SubResource("Resource_wfdle"), SubResource("Resource_q0xxf"), SubResource("Resource_otapv"), SubResource("Resource_bwbmr"), SubResource("Resource_r47r5"), SubResource("Resource_tl07j"), SubResource("Resource_5hs8e"), SubResource("Resource_0uvub"), SubResource("Resource_sfly8"), SubResource("Resource_kgjut"), SubResource("Resource_mytuw")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREFANG", &"FOCUSENERGY", &"FOULPLAY", &"FRUSTRATION", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"LASHOUT", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERFANG", &"TORMENT", &"TOXIC", &"UPROAR"])
+egg_moves = Array[StringName]([&"AQUATAIL", &"COUNTER", &"DOUBLEEDGE", &"SPITE"])
+abilities = Array[StringName]([&"INTIMIDATE", &"MOXIE"])
+hidden_abilities = Array[StringName]([&"ANGERPOINT"])
+wild_item_uncommon = Array[StringName]([&"BLACKGLASSES"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6tp04")]([SubResource("Resource_cbav7")])
+height = 7
+weight = 152
+color = &"Brown"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 64)
+front_sprite_offset = Vector2i(-2, 38)
+shadow_size = 1
+id = &"SANDILE"
+display_name = "Sandile"

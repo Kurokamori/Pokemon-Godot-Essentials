@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_knidk"]
+
+[resource]
+resource_name = "WATERFALL"
+script = ExtResource("1_knidk")
+type = &"WATER"
+category = 0
+power = 80
+total_pp = 15
+function_code = &"FlinchTarget"
+effect_chance = 20
+description = "The user charges at the target and may make it flinch. It can also be used to climb a waterfall."
+id = &"WATERFALL"
+display_name = "Waterfall"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pg6ea"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_drka8"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7tih4"]
+
+[sub_resource type="Resource" id="Resource_espdw"]
+script = ExtResource("2_drka8")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_0vieu"]
+script = ExtResource("2_drka8")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_peyao"]
+script = ExtResource("2_drka8")
+level = 7
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_xt0xo"]
+script = ExtResource("2_drka8")
+level = 14
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_1oq7w"]
+script = ExtResource("2_drka8")
+level = 21
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_augym"]
+script = ExtResource("2_drka8")
+level = 28
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_03ycq"]
+script = ExtResource("2_drka8")
+level = 35
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_llo7f"]
+script = ExtResource("2_drka8")
+level = 42
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_gf0ma"]
+script = ExtResource("2_drka8")
+level = 49
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_4yggp"]
+script = ExtResource("2_drka8")
+level = 56
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_a82bu"]
+script = ExtResource("2_drka8")
+level = 63
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_5lxeh"]
+script = ExtResource("2_drka8")
+level = 70
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_vf52m"]
+script = ExtResource("2_drka8")
+level = 77
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_s5a3y"]
+script = ExtResource("2_drka8")
+level = 84
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_77648"]
+script = ExtResource("2_drka8")
+level = 91
+move = &"DIAMONDSTORM"
+
+[resource]
+resource_name = "DIANCIE_1"
+script = ExtResource("3_7tih4")
+species = &"DIANCIE"
+form = 1
+form_name = "Mega Diancie"
+category = "Jewel"
+pokedex_entry = "A sudden transformation of Carbink, its pink, glimmering body is said to be the loveliest sight in the whole world."
+pokedex_form = 1
+types = Array[StringName]([&"ROCK", &"FAIRY"])
+base_hp = 50
+base_attack = 160
+base_defense = 110
+base_special_attack = 160
+base_special_defense = 110
+base_speed = 110
+ev_defense = 1
+ev_special_defense = 2
+base_exp = 350
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_drka8")]([SubResource("Resource_espdw"), SubResource("Resource_0vieu"), SubResource("Resource_peyao"), SubResource("Resource_xt0xo"), SubResource("Resource_1oq7w"), SubResource("Resource_augym"), SubResource("Resource_03ycq"), SubResource("Resource_llo7f"), SubResource("Resource_gf0ma"), SubResource("Resource_4yggp"), SubResource("Resource_a82bu"), SubResource("Resource_5lxeh"), SubResource("Resource_vf52m"), SubResource("Resource_s5a3y"), SubResource("Resource_77648")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"AMNESIA", &"BATONPASS", &"BODYPRESS", &"CALMMIND", &"CHARM", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"EARTHPOWER", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"EXPLOSION", &"FACADE", &"FAKETEARS", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HAIL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"LASTRESORT", &"LIGHTSCREEN", &"MAGNETRISE", &"METEORBEAM", &"METRONOME", &"MIMIC", &"MISTYEXPLOSION", &"MYSTICALFIRE", &"NATURALGIFT", &"NATUREPOWER", &"PLAYROUGH", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SKILLSWAP", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"TERRAINPULSE", &"TOXIC", &"TRICKROOM", &"WONDERROOM"])
+abilities = Array[StringName]([&"MAGICBOUNCE"])
+hidden_abilities = Array[StringName]([&"MAGICBOUNCE"])
+hatch_steps = 6400
+height = 11
+weight = 278
+color = &"Pink"
+shape = &"HeadArms"
+generation = 6
+mega_stone = &"DIANCITE"
+back_sprite_offset = Vector2i(11, 48)
+front_sprite_offset = Vector2i(-1, 3)
+shadow_size = 3
+id = &"DIANCIE_1"
+display_name = "Diancie"
+flags = Array[StringName]([&"Mythical"])

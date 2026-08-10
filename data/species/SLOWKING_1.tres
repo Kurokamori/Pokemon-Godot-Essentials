@@ -1,0 +1,150 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bg3y7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4rw5e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lsyfn"]
+
+[sub_resource type="Resource" id="Resource_d6k7b"]
+script = ExtResource("1_bg3y7")
+species = &"SLOWPOKE"
+method = &"Item"
+parameter = "GALARICAWREATH"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_5x7vn"]
+script = ExtResource("2_4rw5e")
+level = 0
+move = &"EERIESPELL"
+
+[sub_resource type="Resource" id="Resource_o10ur"]
+script = ExtResource("2_4rw5e")
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_hxo0x"]
+script = ExtResource("2_4rw5e")
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_qw1ri"]
+script = ExtResource("2_4rw5e")
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_wqnut"]
+script = ExtResource("2_4rw5e")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_2pb1h"]
+script = ExtResource("2_4rw5e")
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_tbone"]
+script = ExtResource("2_4rw5e")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_3p8qk"]
+script = ExtResource("2_4rw5e")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_mqlbo"]
+script = ExtResource("2_4rw5e")
+level = 9
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_xus0g"]
+script = ExtResource("2_4rw5e")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_rk2wt"]
+script = ExtResource("2_4rw5e")
+level = 15
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_6yqlh"]
+script = ExtResource("2_4rw5e")
+level = 18
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_nekll"]
+script = ExtResource("2_4rw5e")
+level = 21
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_cr2cw"]
+script = ExtResource("2_4rw5e")
+level = 24
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_qoak5"]
+script = ExtResource("2_4rw5e")
+level = 27
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_5trqn"]
+script = ExtResource("2_4rw5e")
+level = 30
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_6u05g"]
+script = ExtResource("2_4rw5e")
+level = 33
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_40iki"]
+script = ExtResource("2_4rw5e")
+level = 36
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_vifk1"]
+script = ExtResource("2_4rw5e")
+level = 39
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_epo7n"]
+script = ExtResource("2_4rw5e")
+level = 42
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_1vkvt"]
+script = ExtResource("2_4rw5e")
+level = 45
+move = &"HEALPULSE"
+
+[resource]
+resource_name = "SLOWKING_1"
+script = ExtResource("3_lsyfn")
+species = &"SLOWKING"
+form = 1
+form_name = "Galarian"
+category = "Hexpert"
+pokedex_entry = "While chanting strange spells, this Pokémon combines its internal toxins with what it's eaten, creating strange potions."
+pokedex_form = 1
+types = Array[StringName]([&"POISON", &"PSYCHIC"])
+base_hp = 95
+base_attack = 65
+base_defense = 80
+base_special_attack = 110
+base_special_defense = 110
+base_speed = 30
+ev_special_defense = 2
+base_exp = 172
+catch_rate = 70
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4rw5e")]([SubResource("Resource_5x7vn"), SubResource("Resource_o10ur"), SubResource("Resource_hxo0x"), SubResource("Resource_qw1ri"), SubResource("Resource_wqnut"), SubResource("Resource_2pb1h"), SubResource("Resource_tbone"), SubResource("Resource_3p8qk"), SubResource("Resource_mqlbo"), SubResource("Resource_xus0g"), SubResource("Resource_rk2wt"), SubResource("Resource_6yqlh"), SubResource("Resource_nekll"), SubResource("Resource_cr2cw"), SubResource("Resource_qoak5"), SubResource("Resource_5trqn"), SubResource("Resource_6u05g"), SubResource("Resource_40iki"), SubResource("Resource_vifk1"), SubResource("Resource_epo7n"), SubResource("Resource_1vkvt")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"EARTHQUAKE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HAIL", &"HEX", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"IRONDEFENSE", &"IRONTAIL", &"LIGHTSCREEN", &"LIQUIDATION", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NASTYPLOT", &"NATURALGIFT", &"PAYDAY", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYSHOCK", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"VENOMDRENCH", &"VENOSHOCK", &"WEATHERBALL", &"WHIRLPOOL", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"CURIOUSMEDICINE", &"OWNTEMPO"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+wild_item_uncommon = Array[StringName]([&"KINGSROCK"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_bg3y7")]([SubResource("Resource_d6k7b")])
+height = 18
+weight = 795
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"WatersEdge"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 18)
+id = &"SLOWKING_1"
+display_name = "Slowking"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

@@ -1,0 +1,174 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_prrmy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rmttr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6bck4"]
+
+[sub_resource type="Resource" id="Resource_p3ebh"]
+script = ExtResource("1_prrmy")
+species = &"MUNCHLAX"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ecro1"]
+script = ExtResource("2_rmttr")
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_n3uhj"]
+script = ExtResource("2_rmttr")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_r5bb4"]
+script = ExtResource("2_rmttr")
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_4cy61"]
+script = ExtResource("2_rmttr")
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_g4jto"]
+script = ExtResource("2_rmttr")
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_bbmqr"]
+script = ExtResource("2_rmttr")
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_modd8"]
+script = ExtResource("2_rmttr")
+move = &"METRONOME"
+
+[sub_resource type="Resource" id="Resource_tehim"]
+script = ExtResource("2_rmttr")
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_64ssa"]
+script = ExtResource("2_rmttr")
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_asglv"]
+script = ExtResource("2_rmttr")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_hmrtu"]
+script = ExtResource("2_rmttr")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_wl758"]
+script = ExtResource("2_rmttr")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_23oqu"]
+script = ExtResource("2_rmttr")
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_h1lt5"]
+script = ExtResource("2_rmttr")
+level = 12
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_e2xw3"]
+script = ExtResource("2_rmttr")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_f5gnn"]
+script = ExtResource("2_rmttr")
+level = 20
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_n8lta"]
+script = ExtResource("2_rmttr")
+level = 20
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_uplmt"]
+script = ExtResource("2_rmttr")
+level = 20
+move = &"SLEEPTALK"
+
+[sub_resource type="Resource" id="Resource_ovlvt"]
+script = ExtResource("2_rmttr")
+level = 24
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_kqf0p"]
+script = ExtResource("2_rmttr")
+level = 28
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_ixlx7"]
+script = ExtResource("2_rmttr")
+level = 32
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_od4pp"]
+script = ExtResource("2_rmttr")
+level = 36
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_ecq4m"]
+script = ExtResource("2_rmttr")
+level = 40
+move = &"HIGHHORSEPOWER"
+
+[sub_resource type="Resource" id="Resource_7n8rm"]
+script = ExtResource("2_rmttr")
+level = 44
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_dmo8t"]
+script = ExtResource("2_rmttr")
+level = 48
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_y0523"]
+script = ExtResource("2_rmttr")
+level = 52
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_kl3ty"]
+script = ExtResource("2_rmttr")
+level = 56
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "SNORLAX"
+script = ExtResource("3_6bck4")
+species = &"SNORLAX"
+category = "Sleeping"
+pokedex_entry = "Snorlax's typical day consists of nothing more than eating and sleeping. It is such a docile Pokémon that there are children who use its big belly as a place to play."
+base_hp = 160
+base_attack = 110
+base_defense = 65
+base_special_attack = 65
+base_special_defense = 110
+base_speed = 30
+ev_hp = 2
+base_exp = 189
+growth_rate = &"Slow"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rmttr")]([SubResource("Resource_ecro1"), SubResource("Resource_n3uhj"), SubResource("Resource_r5bb4"), SubResource("Resource_4cy61"), SubResource("Resource_g4jto"), SubResource("Resource_bbmqr"), SubResource("Resource_modd8"), SubResource("Resource_tehim"), SubResource("Resource_64ssa"), SubResource("Resource_asglv"), SubResource("Resource_hmrtu"), SubResource("Resource_wl758"), SubResource("Resource_23oqu"), SubResource("Resource_h1lt5"), SubResource("Resource_e2xw3"), SubResource("Resource_f5gnn"), SubResource("Resource_n8lta"), SubResource("Resource_uplmt"), SubResource("Resource_ovlvt"), SubResource("Resource_kqf0p"), SubResource("Resource_ixlx7"), SubResource("Resource_od4pp"), SubResource("Resource_ecq4m"), SubResource("Resource_7n8rm"), SubResource("Resource_dmo8t"), SubResource("Resource_y0523"), SubResource("Resource_kl3ty")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"AMNESIA", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"CRUNCH", &"DARKESTLARIAT", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENCORE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HEATCRASH", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONHEAD", &"LASTRESORT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PAYDAY", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"RECYCLE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TERRAINPULSE", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AFTERYOU", &"BELCH", &"CHARM", &"COUNTER", &"CURSE", &"DOUBLEEDGE", &"FISSURE", &"GASTROACID", &"LICK", &"POWERUPPUNCH", &"SELFDESTRUCT", &"WHIRLWIND", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"IMMUNITY", &"THICKFAT"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+wild_item_common = Array[StringName]([&"LEFTOVERS"])
+wild_item_uncommon = Array[StringName]([&"LEFTOVERS"])
+wild_item_rare = Array[StringName]([&"LEFTOVERS"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_prrmy")]([SubResource("Resource_p3ebh")])
+height = 21
+weight = 4600
+color = &"Black"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-2, 18)
+shadow_size = 3
+id = &"SNORLAX"
+display_name = "Snorlax"

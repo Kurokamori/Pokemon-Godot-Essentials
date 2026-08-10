@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_42h3s"]
+
+[resource]
+resource_name = "XSPDEF2"
+script = ExtResource("1_42h3s")
+name_plural = "X Sp. Def 2s"
+pocket = 7
+battle_use = 3
+description = "It sharply raises the Sp. Def stat of a Pokémon in battle. It wears off if the Pokémon is withdrawn."
+id = &"XSPDEF2"
+display_name = "X Sp. Def 2"
+flags = Array[StringName]([&"Fling_30"])

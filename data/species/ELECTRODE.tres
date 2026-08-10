@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_5w5cm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_youj3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xovbj"]
+
+[sub_resource type="Resource" id="Resource_2umai"]
+script = ExtResource("1_5w5cm")
+species = &"VOLTORB"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nktp5"]
+script = ExtResource("2_youj3")
+move = &"MAGNETICFLUX"
+
+[sub_resource type="Resource" id="Resource_0jmv0"]
+script = ExtResource("2_youj3")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_7mvbv"]
+script = ExtResource("2_youj3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_ygm5u"]
+script = ExtResource("2_youj3")
+move = &"EERIEIMPULSE"
+
+[sub_resource type="Resource" id="Resource_smid3"]
+script = ExtResource("2_youj3")
+level = 4
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_xq3so"]
+script = ExtResource("2_youj3")
+level = 6
+move = &"EERIEIMPULSE"
+
+[sub_resource type="Resource" id="Resource_dnqug"]
+script = ExtResource("2_youj3")
+level = 9
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_pvhp3"]
+script = ExtResource("2_youj3")
+level = 11
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_fp4si"]
+script = ExtResource("2_youj3")
+level = 13
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_w76h0"]
+script = ExtResource("2_youj3")
+level = 16
+move = &"CHARGEBEAM"
+
+[sub_resource type="Resource" id="Resource_32it1"]
+script = ExtResource("2_youj3")
+level = 20
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_eueui"]
+script = ExtResource("2_youj3")
+level = 22
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_ulptd"]
+script = ExtResource("2_youj3")
+level = 26
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_ak6yu"]
+script = ExtResource("2_youj3")
+level = 29
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_fophc"]
+script = ExtResource("2_youj3")
+level = 36
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_cgdns"]
+script = ExtResource("2_youj3")
+level = 41
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_exu0d"]
+script = ExtResource("2_youj3")
+level = 47
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_nheon"]
+script = ExtResource("2_youj3")
+level = 54
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_alm2l"]
+script = ExtResource("2_youj3")
+level = 58
+move = &"MIRRORCOAT"
+
+[resource]
+resource_name = "ELECTRODE"
+script = ExtResource("3_xovbj")
+species = &"ELECTRODE"
+category = "Ball"
+pokedex_entry = "They appear in great numbers at electric power plants. Because they feed on electricity, they cause massive and chaotic blackouts in nearby cities."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 60
+base_attack = 50
+base_defense = 70
+base_special_attack = 80
+base_special_defense = 80
+base_speed = 150
+ev_speed = 2
+base_exp = 172
+gender_ratio = &"Genderless"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_youj3")]([SubResource("Resource_nktp5"), SubResource("Resource_0jmv0"), SubResource("Resource_7mvbv"), SubResource("Resource_ygm5u"), SubResource("Resource_smid3"), SubResource("Resource_xq3so"), SubResource("Resource_dnqug"), SubResource("Resource_pvhp3"), SubResource("Resource_fp4si"), SubResource("Resource_w76h0"), SubResource("Resource_32it1"), SubResource("Resource_eueui"), SubResource("Resource_ulptd"), SubResource("Resource_ak6yu"), SubResource("Resource_fophc"), SubResource("Resource_cgdns"), SubResource("Resource_exu0d"), SubResource("Resource_nheon"), SubResource("Resource_alm2l")])
+tutor_moves = Array[StringName]([&"CHARGEBEAM", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASH", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SWAGGER", &"SWIFT", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"SOUNDPROOF", &"STATIC"])
+hidden_abilities = Array[StringName]([&"AFTERMATH"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_5w5cm")]([SubResource("Resource_2umai")])
+height = 12
+weight = 666
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 29)
+id = &"ELECTRODE"
+display_name = "Electrode"

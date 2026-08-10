@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="TriadSkin" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/triad/triad_skin.gd" id="1_skin"]
+
+[resource]
+script = ExtResource("1_skin")
+display_name = "Triple Triad"
+panel_color = Color(0.113725, 0.145098, 0.180392, 1)
+panel_border_color = Color(0.360784, 0.435294, 0.501961, 1)
+cursor_color = Color(0.972549, 0.815686, 0.188235, 1)
+highlight_color = Color(0.972549, 0.345098, 0.219608, 1)
+music_track = "Triple Triad"
+card_size = Vector2i(56, 72)
+player_color = Color(0.282353, 0.470588, 0.847059, 1)
+opponent_color = Color(0.847059, 0.282353, 0.282353, 1)
+empty_color = Color(1, 1, 1, 0.0784314)
+type_colors = {
+&"BUG": Color(0.658824, 0.72549, 0.101961, 1),
+&"DARK": Color(0.439216, 0.34902, 0.278431, 1),
+&"DRAGON": Color(0.439216, 0.219608, 1, 1),
+&"ELECTRIC": Color(0.972549, 0.815686, 0.188235, 1),
+&"FAIRY": Color(0.933333, 0.6, 0.686275, 1),
+&"FIGHTING": Color(0.760784, 0.32549, 0.243137, 1),
+&"FIRE": Color(0.933333, 0.505882, 0.188235, 1),
+&"FLYING": Color(0.658824, 0.564706, 0.945098, 1),
+&"GHOST": Color(0.439216, 0.352941, 0.596078, 1),
+&"GRASS": Color(0.470588, 0.788235, 0.313726, 1),
+&"GROUND": Color(0.878431, 0.752941, 0.411765, 1),
+&"ICE": Color(0.596078, 0.847059, 0.847059, 1),
+&"NORMAL": Color(0.658824, 0.658824, 0.47451, 1),
+&"POISON": Color(0.639216, 0.243137, 0.639216, 1),
+&"PSYCHIC": Color(0.976471, 0.34902, 0.529412, 1),
+&"ROCK": Color(0.713726, 0.631373, 0.211765, 1),
+&"STEEL": Color(0.717647, 0.717647, 0.815686, 1),
+&"WATER": Color(0.388235, 0.564706, 0.945098, 1)
+}
+hand_overlap = 38
+place_seconds = 0.25
+flip_seconds = 0.12
+thinking_seconds = 0.6

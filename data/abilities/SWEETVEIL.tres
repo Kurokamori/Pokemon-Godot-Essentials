@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_2dnoe"]
+
+[resource]
+resource_name = "SWEETVEIL"
+script = ExtResource("1_2dnoe")
+description = "Prevents itself and allies from falling asleep."
+id = &"SWEETVEIL"
+display_name = "Sweet Veil"

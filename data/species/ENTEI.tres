@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uqh8x"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ggwvr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_i7a8g"]
+
+[sub_resource type="Resource" id="Resource_5u7ju"]
+script = ExtResource("2_ggwvr")
+move = &"SACREDFIRE"
+
+[sub_resource type="Resource" id="Resource_g7oio"]
+script = ExtResource("2_ggwvr")
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_uq1wt"]
+script = ExtResource("2_ggwvr")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_xtov2"]
+script = ExtResource("2_ggwvr")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_vh7rj"]
+script = ExtResource("2_ggwvr")
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_5eqas"]
+script = ExtResource("2_ggwvr")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_8pxhm"]
+script = ExtResource("2_ggwvr")
+level = 6
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_4ekhm"]
+script = ExtResource("2_ggwvr")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_uewqv"]
+script = ExtResource("2_ggwvr")
+level = 18
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_eq6kh"]
+script = ExtResource("2_ggwvr")
+level = 24
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_dqoxd"]
+script = ExtResource("2_ggwvr")
+level = 30
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_1uspx"]
+script = ExtResource("2_ggwvr")
+level = 36
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_m28uy"]
+script = ExtResource("2_ggwvr")
+level = 42
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_dgtul"]
+script = ExtResource("2_ggwvr")
+level = 48
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_mjj6p"]
+script = ExtResource("2_ggwvr")
+level = 54
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_50aeg"]
+script = ExtResource("2_ggwvr")
+level = 60
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_gjc1q"]
+script = ExtResource("2_ggwvr")
+level = 66
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_quj14"]
+script = ExtResource("2_ggwvr")
+level = 72
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_ymkmc"]
+script = ExtResource("2_ggwvr")
+level = 78
+move = &"ERUPTION"
+
+[resource]
+resource_name = "ENTEI"
+script = ExtResource("3_i7a8g")
+species = &"ENTEI"
+category = "Volcano"
+pokedex_entry = "Entei embodies the passion of magma. It is thought to have been born in the eruption of a volcano. It blasts fire that consumes all that it touches."
+types = Array[StringName]([&"FIRE"])
+base_hp = 115
+base_attack = 115
+base_defense = 85
+base_special_attack = 90
+base_special_defense = 75
+base_speed = 100
+ev_hp = 1
+ev_attack = 2
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_ggwvr")]([SubResource("Resource_5u7ju"), SubResource("Resource_g7oio"), SubResource("Resource_uq1wt"), SubResource("Resource_xtov2"), SubResource("Resource_vh7rj"), SubResource("Resource_5eqas"), SubResource("Resource_8pxhm"), SubResource("Resource_4ekhm"), SubResource("Resource_uewqv"), SubResource("Resource_eq6kh"), SubResource("Resource_dqoxd"), SubResource("Resource_1uspx"), SubResource("Resource_m28uy"), SubResource("Resource_dgtul"), SubResource("Resource_mjj6p"), SubResource("Resource_50aeg"), SubResource("Resource_gjc1q"), SubResource("Resource_quj14"), SubResource("Resource_ymkmc")])
+tutor_moves = Array[StringName]([&"AGILITY", &"BODYSLAM", &"BULLDOZE", &"CALMMIND", &"CONFIDE", &"CRUNCH", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONHEAD", &"IRONTAIL", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"PSYCHUP", &"QUASH", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"WEATHERBALL", &"WILLOWISP"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+hatch_steps = 20480
+height = 21
+weight = 1980
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-3, 19)
+shadow_size = 3
+id = &"ENTEI"
+display_name = "Entei"
+flags = Array[StringName]([&"Legendary"])

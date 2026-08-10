@@ -1,0 +1,140 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nkllw"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nm4up"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wft88"]
+
+[sub_resource type="Resource" id="Resource_qnhhb"]
+script = ExtResource("1_nkllw")
+species = &"CUBCHOO"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_vyp3t"]
+script = ExtResource("2_nm4up")
+level = 0
+move = &"ICICLECRASH"
+
+[sub_resource type="Resource" id="Resource_ig65g"]
+script = ExtResource("2_nm4up")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_whrvs"]
+script = ExtResource("2_nm4up")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_yvvfp"]
+script = ExtResource("2_nm4up")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_m3wm5"]
+script = ExtResource("2_nm4up")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_xaoo2"]
+script = ExtResource("2_nm4up")
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_g7wp0"]
+script = ExtResource("2_nm4up")
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_8ckim"]
+script = ExtResource("2_nm4up")
+level = 9
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_3aqe1"]
+script = ExtResource("2_nm4up")
+level = 12
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_a2qcj"]
+script = ExtResource("2_nm4up")
+level = 15
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_xpmgm"]
+script = ExtResource("2_nm4up")
+level = 18
+move = &"FROSTBREATH"
+
+[sub_resource type="Resource" id="Resource_470p4"]
+script = ExtResource("2_nm4up")
+level = 21
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_cf4eb"]
+script = ExtResource("2_nm4up")
+level = 24
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_wcmgd"]
+script = ExtResource("2_nm4up")
+level = 27
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_dtv5h"]
+script = ExtResource("2_nm4up")
+level = 30
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_xkp84"]
+script = ExtResource("2_nm4up")
+level = 33
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_8mp65"]
+script = ExtResource("2_nm4up")
+level = 36
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_224as"]
+script = ExtResource("2_nm4up")
+level = 41
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_twcmn"]
+script = ExtResource("2_nm4up")
+level = 46
+move = &"SHEERCOLD"
+
+[sub_resource type="Resource" id="Resource_hhsar"]
+script = ExtResource("2_nm4up")
+level = 51
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "BEARTIC"
+script = ExtResource("3_wft88")
+species = &"BEARTIC"
+category = "Freezing"
+pokedex_entry = "It freezes its breath to create fangs and claws of ice to fight with. Cold northern areas are its habitat."
+types = Array[StringName]([&"ICE"])
+base_hp = 95
+base_attack = 130
+base_defense = 80
+base_special_attack = 70
+base_special_defense = 80
+base_speed = 50
+ev_attack = 2
+base_exp = 177
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nm4up")]([SubResource("Resource_vyp3t"), SubResource("Resource_ig65g"), SubResource("Resource_whrvs"), SubResource("Resource_yvvfp"), SubResource("Resource_m3wm5"), SubResource("Resource_xaoo2"), SubResource("Resource_g7wp0"), SubResource("Resource_8ckim"), SubResource("Resource_3aqe1"), SubResource("Resource_a2qcj"), SubResource("Resource_xpmgm"), SubResource("Resource_470p4"), SubResource("Resource_cf4eb"), SubResource("Resource_wcmgd"), SubResource("Resource_dtv5h"), SubResource("Resource_xkp84"), SubResource("Resource_8mp65"), SubResource("Resource_224as"), SubResource("Resource_twcmn"), SubResource("Resource_hhsar")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ASSURANCE", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BODYPRESS", &"BRICKBREAK", &"BRINE", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HAIL", &"HEAVYSLAM", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"LIQUIDATION", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"THROATCHOP", &"TOXIC", &"WATERPULSE"])
+abilities = Array[StringName]([&"SNOWCLOAK", &"SLUSHRUSH"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nkllw")]([SubResource("Resource_qnhhb")])
+height = 26
+weight = 2600
+color = &"White"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 15)
+id = &"BEARTIC"
+display_name = "Beartic"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_1ereh"]
+
+[resource]
+resource_name = "LIGHTBALL"
+script = ExtResource("1_1ereh")
+name_plural = "Light Balls"
+price = 1000
+sell_price = 500
+description = "An item to be held by Pikachu. It is a puzzling orb that raises the Attack and Sp. Atk stat."
+id = &"LIGHTBALL"
+display_name = "Light Ball"
+flags = Array[StringName]([&"Fling_30"])

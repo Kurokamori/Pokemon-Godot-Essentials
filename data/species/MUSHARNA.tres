@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_13pt3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rl1sh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_q6kka"]
+
+[sub_resource type="Resource" id="Resource_b2kl0"]
+script = ExtResource("1_13pt3")
+species = &"MUNNA"
+method = &"Item"
+parameter = "MOONSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_38lyx"]
+script = ExtResource("2_rl1sh")
+move = &"PSYCHICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_1lnsp"]
+script = ExtResource("2_rl1sh")
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_2k71v"]
+script = ExtResource("2_rl1sh")
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_ahdsa"]
+script = ExtResource("2_rl1sh")
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_v6erq"]
+script = ExtResource("2_rl1sh")
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_koltx"]
+script = ExtResource("2_rl1sh")
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_rsjlm"]
+script = ExtResource("2_rl1sh")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_qo0we"]
+script = ExtResource("2_rl1sh")
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_p666k"]
+script = ExtResource("2_rl1sh")
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_xc3ca"]
+script = ExtResource("2_rl1sh")
+move = &"DREAMEATER"
+
+[sub_resource type="Resource" id="Resource_4qgey"]
+script = ExtResource("2_rl1sh")
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_75c15"]
+script = ExtResource("2_rl1sh")
+move = &"WONDERROOM"
+
+[sub_resource type="Resource" id="Resource_bnov1"]
+script = ExtResource("2_rl1sh")
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_62w8h"]
+script = ExtResource("2_rl1sh")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_jiag3"]
+script = ExtResource("2_rl1sh")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_xcu5a"]
+script = ExtResource("2_rl1sh")
+move = &"PSYBEAM"
+
+[resource]
+resource_name = "MUSHARNA"
+script = ExtResource("3_q6kka")
+species = &"MUSHARNA"
+category = "Drowsing"
+pokedex_entry = "With the mist from its forehead, it can create shapes of things from dreams it has eaten."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 116
+base_attack = 55
+base_defense = 85
+base_special_attack = 107
+base_special_defense = 95
+base_speed = 29
+ev_hp = 2
+base_exp = 170
+growth_rate = &"Fast"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rl1sh")]([SubResource("Resource_38lyx"), SubResource("Resource_1lnsp"), SubResource("Resource_2k71v"), SubResource("Resource_ahdsa"), SubResource("Resource_v6erq"), SubResource("Resource_koltx"), SubResource("Resource_rsjlm"), SubResource("Resource_qo0we"), SubResource("Resource_p666k"), SubResource("Resource_xc3ca"), SubResource("Resource_4qgey"), SubResource("Resource_75c15"), SubResource("Resource_bnov1"), SubResource("Resource_62w8h"), SubResource("Resource_jiag3"), SubResource("Resource_xcu5a")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"AMNESIA", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"IMPRISON", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MISTYEXPLOSION", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"WORRYSEED", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"FOREWARN", &"SYNCHRONIZE"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_13pt3")]([SubResource("Resource_b2kl0")])
+height = 11
+weight = 605
+color = &"Pink"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-12, 6)
+id = &"MUSHARNA"
+display_name = "Musharna"

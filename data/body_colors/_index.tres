@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_oj3f0"]
+
+[resource]
+script = ExtResource("1_oj3f0")
+category = &"body_colors"
+record_script = "res://src/data/simple_name_data.gd"
+paths = {
+&"Black": "res://data/body_colors/Black.tres",
+&"Blue": "res://data/body_colors/Blue.tres",
+&"Brown": "res://data/body_colors/Brown.tres",
+&"Gray": "res://data/body_colors/Gray.tres",
+&"Green": "res://data/body_colors/Green.tres",
+&"Pink": "res://data/body_colors/Pink.tres",
+&"Purple": "res://data/body_colors/Purple.tres",
+&"Red": "res://data/body_colors/Red.tres",
+&"White": "res://data/body_colors/White.tres",
+&"Yellow": "res://data/body_colors/Yellow.tres"
+}
+ordered_ids = Array[StringName]([&"Red", &"Blue", &"Yellow", &"Green", &"Black", &"Brown", &"Purple", &"Gray", &"White", &"Pink"])

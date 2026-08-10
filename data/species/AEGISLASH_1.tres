@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_n5y6u"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_l08vk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hp48x"]
+
+[sub_resource type="Resource" id="Resource_wsahm"]
+script = ExtResource("1_n5y6u")
+species = &"DOUBLADE"
+method = &"Item"
+parameter = "DUSKSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_iw0t6"]
+script = ExtResource("2_l08vk")
+level = 0
+move = &"KINGSSHIELD"
+
+[sub_resource type="Resource" id="Resource_0b3iv"]
+script = ExtResource("2_l08vk")
+move = &"HEADSMASH"
+
+[sub_resource type="Resource" id="Resource_3fykp"]
+script = ExtResource("2_l08vk")
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_cwx12"]
+script = ExtResource("2_l08vk")
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_wgy1b"]
+script = ExtResource("2_l08vk")
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_m2p8t"]
+script = ExtResource("2_l08vk")
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_rpjg4"]
+script = ExtResource("2_l08vk")
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_771ve"]
+script = ExtResource("2_l08vk")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_yoe6v"]
+script = ExtResource("2_l08vk")
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_fgsm2"]
+script = ExtResource("2_l08vk")
+move = &"POWERTRICK"
+
+[sub_resource type="Resource" id="Resource_3x7cp"]
+script = ExtResource("2_l08vk")
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_meo7d"]
+script = ExtResource("2_l08vk")
+move = &"SACREDSWORD"
+
+[sub_resource type="Resource" id="Resource_dwy2e"]
+script = ExtResource("2_l08vk")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7l7fn"]
+script = ExtResource("2_l08vk")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_q2v11"]
+script = ExtResource("2_l08vk")
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_syp4t"]
+script = ExtResource("2_l08vk")
+move = &"AUTOTOMIZE"
+
+[resource]
+resource_name = "AEGISLASH_1"
+script = ExtResource("3_hp48x")
+species = &"AEGISLASH"
+form = 1
+form_name = "Blade Forme"
+category = "Royal Sword"
+pokedex_entry = "Once upon a time, a king with an Aegislash reigned over the land. His Pokémon eventually drained him of life, and his kingdom fell with him."
+pokedex_form = 1
+types = Array[StringName]([&"STEEL", &"GHOST"])
+base_hp = 60
+base_attack = 140
+base_defense = 50
+base_special_attack = 140
+base_special_defense = 50
+base_speed = 60
+ev_attack = 2
+ev_special_attack = 1
+base_exp = 250
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_l08vk")]([SubResource("Resource_iw0t6"), SubResource("Resource_0b3iv"), SubResource("Resource_3fykp"), SubResource("Resource_cwx12"), SubResource("Resource_wgy1b"), SubResource("Resource_m2p8t"), SubResource("Resource_rpjg4"), SubResource("Resource_771ve"), SubResource("Resource_yoe6v"), SubResource("Resource_fgsm2"), SubResource("Resource_3x7cp"), SubResource("Resource_meo7d"), SubResource("Resource_dwy2e"), SubResource("Resource_7l7fn"), SubResource("Resource_q2v11"), SubResource("Resource_syp4t")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"AIRSLASH", &"ATTRACT", &"BLOCK", &"BRICKBREAK", &"BRUTALSWING", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHOCUT", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBLADE", &"SPITE", &"STEELBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TOXIC"])
+abilities = Array[StringName]([&"STANCECHANGE"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_n5y6u")]([SubResource("Resource_wsahm")])
+height = 17
+weight = 530
+color = &"Brown"
+shape = &"HeadBase"
+generation = 6
+back_sprite_offset = Vector2i(0, 57)
+front_sprite_offset = Vector2i(5, 9)
+id = &"AEGISLASH_1"
+display_name = "Aegislash"

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kgs5x"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fcghb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1y7w4"]
+
+[sub_resource type="Resource" id="Resource_g165w"]
+script = ExtResource("1_kgs5x")
+species = &"DOTTLER"
+method = &"Level"
+parameter = "10"
+
+[sub_resource type="Resource" id="Resource_842os"]
+script = ExtResource("2_fcghb")
+move = &"STRUGGLEBUG"
+
+[resource]
+resource_name = "BLIPBUG"
+script = ExtResource("3_1y7w4")
+species = &"BLIPBUG"
+category = "Larva"
+pokedex_entry = "Often found in gardens, this Pokémon has hairs on its body that it uses to assess its surroundings."
+types = Array[StringName]([&"BUG"])
+base_hp = 25
+base_attack = 20
+base_defense = 20
+base_special_attack = 25
+base_special_defense = 45
+base_speed = 45
+ev_special_defense = 1
+base_exp = 36
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fcghb")]([SubResource("Resource_842os")])
+egg_moves = Array[StringName]([&"INFESTATION", &"RECOVER", &"STICKYWEB", &"SUPERSONIC"])
+abilities = Array[StringName]([&"SWARM", &"COMPOUNDEYES"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_kgs5x")]([SubResource("Resource_g165w")])
+height = 4
+weight = 80
+color = &"Blue"
+shape = &"Insectoid"
+generation = 8
+back_sprite_offset = Vector2i(-4, 48)
+front_sprite_offset = Vector2i(-1, 29)
+shadow_size = 1
+id = &"BLIPBUG"
+display_name = "Blipbug"

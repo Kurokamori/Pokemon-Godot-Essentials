@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_hnmgt"]
+
+[resource]
+resource_name = "DEFEATIST"
+script = ExtResource("1_hnmgt")
+description = "Lowers stats when HP becomes half or less."
+id = &"DEFEATIST"
+display_name = "Defeatist"

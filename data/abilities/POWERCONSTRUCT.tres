@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_emip7"]
+
+[resource]
+resource_name = "POWERCONSTRUCT"
+script = ExtResource("1_emip7")
+description = "Changes with other Cells if HP becomes half or less."
+id = &"POWERCONSTRUCT"
+display_name = "Power Construct"

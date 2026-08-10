@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bbornkxx5ghjp"
+path="res://.godot/imported/Vs flash.ogg-769a2c2a7d2a4000a30829e8835180dc.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/Vs flash.ogg"
+dest_files=["res://.godot/imported/Vs flash.ogg-769a2c2a7d2a4000a30829e8835180dc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

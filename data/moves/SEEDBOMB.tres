@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2jmwc"]
+
+[resource]
+resource_name = "SEEDBOMB"
+script = ExtResource("1_2jmwc")
+type = &"GRASS"
+category = 0
+power = 80
+total_pp = 15
+description = "The user slams a barrage of hard-shelled seeds down on the target from above."
+id = &"SEEDBOMB"
+display_name = "Seed Bomb"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

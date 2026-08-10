@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jfdy2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2q6xp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_a8rhd"]
+
+[sub_resource type="Resource" id="Resource_frbdk"]
+script = ExtResource("1_jfdy2")
+species = &"COSMOEM"
+method = &"LevelDay"
+parameter = "53"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_vlr8c"]
+script = ExtResource("2_2q6xp")
+level = 0
+move = &"SUNSTEELSTRIKE"
+
+[sub_resource type="Resource" id="Resource_ngtvs"]
+script = ExtResource("2_2q6xp")
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_cvg5a"]
+script = ExtResource("2_2q6xp")
+move = &"TELEPORT"
+
+[sub_resource type="Resource" id="Resource_b1u1g"]
+script = ExtResource("2_2q6xp")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_8qokq"]
+script = ExtResource("2_2q6xp")
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_s7v71"]
+script = ExtResource("2_2q6xp")
+level = 7
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_pvykh"]
+script = ExtResource("2_2q6xp")
+level = 14
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_mtlpg"]
+script = ExtResource("2_2q6xp")
+level = 21
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_hebi6"]
+script = ExtResource("2_2q6xp")
+level = 28
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_ursf5"]
+script = ExtResource("2_2q6xp")
+level = 35
+move = &"MORNINGSUN"
+
+[sub_resource type="Resource" id="Resource_a81hv"]
+script = ExtResource("2_2q6xp")
+level = 42
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_sulwj"]
+script = ExtResource("2_2q6xp")
+level = 49
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_e5q6a"]
+script = ExtResource("2_2q6xp")
+level = 56
+move = &"WILDCHARGE"
+
+[sub_resource type="Resource" id="Resource_iywxr"]
+script = ExtResource("2_2q6xp")
+level = 63
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_hockk"]
+script = ExtResource("2_2q6xp")
+level = 70
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_64b0k"]
+script = ExtResource("2_2q6xp")
+level = 77
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_5yy2o"]
+script = ExtResource("2_2q6xp")
+level = 84
+move = &"GIGAIMPACT"
+
+[resource]
+resource_name = "SOLGALEO"
+script = ExtResource("3_a8rhd")
+species = &"SOLGALEO"
+category = "Sunne"
+pokedex_entry = "It is said to live in another world. The intense light it radiates from the surface of its body can make the darkest of nights light up like midday."
+types = Array[StringName]([&"PSYCHIC", &"STEEL"])
+base_hp = 137
+base_attack = 137
+base_defense = 107
+base_special_attack = 113
+base_special_defense = 89
+base_speed = 97
+ev_attack = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_2q6xp")]([SubResource("Resource_vlr8c"), SubResource("Resource_ngtvs"), SubResource("Resource_cvg5a"), SubResource("Resource_b1u1g"), SubResource("Resource_8qokq"), SubResource("Resource_s7v71"), SubResource("Resource_pvykh"), SubResource("Resource_mtlpg"), SubResource("Resource_hebi6"), SubResource("Resource_ursf5"), SubResource("Resource_a81hv"), SubResource("Resource_sulwj"), SubResource("Resource_e5q6a"), SubResource("Resource_iywxr"), SubResource("Resource_hockk"), SubResource("Resource_64b0k"), SubResource("Resource_5yy2o")])
+tutor_moves = Array[StringName]([&"AGILITY", &"BULLDOZE", &"CALMMIND", &"CLOSECOMBAT", &"CONFIDE", &"COSMICPOWER", &"CRUNCH", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FIREBLAST", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLASHCANNON", &"FOCUSBLAST", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GYROBALL", &"HEATCRASH", &"HEAVYSLAM", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"LIGHTSCREEN", &"METEORBEAM", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"PSYCHIC", &"PSYCHICFANGS", &"PSYCHUP", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SNARL", &"SNORE", &"SOLARBEAM", &"STEELBEAM", &"STEELROLLER", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"TRICKROOM", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"FULLMETALBODY"])
+hatch_steps = 30720
+evolutions = Array[ExtResource("1_jfdy2")]([SubResource("Resource_frbdk")])
+height = 34
+weight = 2300
+color = &"White"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+shadow_size = 3
+id = &"SOLGALEO"
+display_name = "Solgaleo"
+flags = Array[StringName]([&"Legendary"])

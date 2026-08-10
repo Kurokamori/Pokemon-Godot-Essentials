@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WeatherData" format=3]
+
+[ext_resource type="Script" path="res://src/data/weather_data.gd" id="1_p3d7w"]
+
+[resource]
+resource_name = "HeavyRain"
+script = ExtResource("1_p3d7w")
+category = 1
+legacy_number = 6
+particle_delta_x = -3600
+particle_delta_y = 3600
+graphics = Array[String](["storm_1", "storm_2", "storm_3", "storm_4"])
+id = &"HeavyRain"
+display_name = "HeavyRain"

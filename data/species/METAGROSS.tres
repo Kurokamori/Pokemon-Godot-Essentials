@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s6doo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ago16"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7d768"]
+
+[sub_resource type="Resource" id="Resource_d7vss"]
+script = ExtResource("1_s6doo")
+species = &"METANG"
+method = &"Level"
+parameter = "45"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_wbjqp"]
+script = ExtResource("2_ago16")
+level = 0
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_1rgny"]
+script = ExtResource("2_ago16")
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_i81hc"]
+script = ExtResource("2_ago16")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_lxh18"]
+script = ExtResource("2_ago16")
+move = &"BULLETPUNCH"
+
+[sub_resource type="Resource" id="Resource_4sw5h"]
+script = ExtResource("2_ago16")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bvchn"]
+script = ExtResource("2_ago16")
+level = 6
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_g2rcn"]
+script = ExtResource("2_ago16")
+level = 12
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_4ca8c"]
+script = ExtResource("2_ago16")
+level = 18
+move = &"FLASHCANNON"
+
+[sub_resource type="Resource" id="Resource_jelk7"]
+script = ExtResource("2_ago16")
+level = 26
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_5x6tc"]
+script = ExtResource("2_ago16")
+level = 34
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_3brmw"]
+script = ExtResource("2_ago16")
+level = 42
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_dfoba"]
+script = ExtResource("2_ago16")
+level = 52
+move = &"METEORMASH"
+
+[sub_resource type="Resource" id="Resource_chxkx"]
+script = ExtResource("2_ago16")
+level = 62
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_nug6f"]
+script = ExtResource("2_ago16")
+level = 72
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_qnnq0"]
+script = ExtResource("2_ago16")
+level = 82
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "METAGROSS"
+script = ExtResource("3_7d768")
+species = &"METAGROSS"
+category = "Iron Leg"
+pokedex_entry = "Metagross has four brains that are joined by a complex neural network. As a result of integration, this Pokémon is smarter than a supercomputer."
+types = Array[StringName]([&"STEEL", &"PSYCHIC"])
+base_hp = 80
+base_attack = 135
+base_defense = 130
+base_special_attack = 95
+base_special_defense = 90
+base_speed = 70
+ev_defense = 3
+base_exp = 300
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_ago16")]([SubResource("Resource_wbjqp"), SubResource("Resource_1rgny"), SubResource("Resource_i81hc"), SubResource("Resource_lxh18"), SubResource("Resource_4sw5h"), SubResource("Resource_bvchn"), SubResource("Resource_g2rcn"), SubResource("Resource_4ca8c"), SubResource("Resource_jelk7"), SubResource("Resource_5x6tc"), SubResource("Resource_3brmw"), SubResource("Resource_dfoba"), SubResource("Resource_chxkx"), SubResource("Resource_nug6f"), SubResource("Resource_qnnq0")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"CONFIDE", &"COSMICPOWER", &"CUT", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"EXPANDINGFORCE", &"EXPLOSION", &"FACADE", &"FLASH", &"FLASHCANNON", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"METEORBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERPUNCH", &"TRICK", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"CLEARBODY"])
+hidden_abilities = Array[StringName]([&"LIGHTMETAL"])
+wild_item_uncommon = Array[StringName]([&"METALCOAT"])
+egg_groups = Array[StringName]([&"Mineral"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_s6doo")]([SubResource("Resource_d7vss")])
+height = 16
+weight = 5500
+color = &"Blue"
+shape = &"MultiBody"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 62)
+front_sprite_offset = Vector2i(-1, 29)
+shadow_size = 3
+id = &"METAGROSS"
+display_name = "Metagross"

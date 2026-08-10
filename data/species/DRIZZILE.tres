@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_b21nu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_830b5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1l6b7"]
+
+[sub_resource type="Resource" id="Resource_5odjf"]
+script = ExtResource("1_b21nu")
+species = &"INTELEON"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_qbmuv"]
+script = ExtResource("1_b21nu")
+species = &"SOBBLE"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_k38gk"]
+script = ExtResource("2_830b5")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_x4wbx"]
+script = ExtResource("2_830b5")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_y3tmo"]
+script = ExtResource("2_830b5")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_hkiri"]
+script = ExtResource("2_830b5")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_mv55g"]
+script = ExtResource("2_830b5")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_fsjel"]
+script = ExtResource("2_830b5")
+level = 19
+move = &"TEARFULLOOK"
+
+[sub_resource type="Resource" id="Resource_31biv"]
+script = ExtResource("2_830b5")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_k7kk2"]
+script = ExtResource("2_830b5")
+level = 30
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_iwne6"]
+script = ExtResource("2_830b5")
+level = 36
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_rdbmd"]
+script = ExtResource("2_830b5")
+level = 42
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_uihj3"]
+script = ExtResource("2_830b5")
+level = 48
+move = &"RAINDANCE"
+
+[resource]
+resource_name = "DRIZZILE"
+script = ExtResource("3_1l6b7")
+species = &"DRIZZILE"
+category = "Water Lizard"
+pokedex_entry = "A clever combatant, this Pokémon battles using water balloons created with moisture secreted from its palms."
+types = Array[StringName]([&"WATER"])
+base_hp = 65
+base_attack = 60
+base_defense = 55
+base_special_attack = 95
+base_special_defense = 55
+base_speed = 90
+ev_special_attack = 2
+base_exp = 147
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_830b5")]([SubResource("Resource_k38gk"), SubResource("Resource_x4wbx"), SubResource("Resource_y3tmo"), SubResource("Resource_hkiri"), SubResource("Resource_mv55g"), SubResource("Resource_fsjel"), SubResource("Resource_31biv"), SubResource("Resource_k7kk2"), SubResource("Resource_iwne6"), SubResource("Resource_rdbmd"), SubResource("Resource_uihj3")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"HIDDENPOWER", &"LIGHTSCREEN", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TOXIC", &"UTURN", &"WATERPLEDGE", &"WEATHERBALL", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"SNIPER"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_b21nu")]([SubResource("Resource_5odjf"), SubResource("Resource_qbmuv")])
+height = 7
+weight = 115
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-5, 26)
+id = &"DRIZZILE"
+display_name = "Drizzile"

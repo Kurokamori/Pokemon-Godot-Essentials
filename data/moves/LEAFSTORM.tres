@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0mw7u"]
+
+[resource]
+resource_name = "LEAFSTORM"
+script = ExtResource("1_0mw7u")
+type = &"GRASS"
+category = 1
+power = 130
+accuracy = 90
+function_code = &"LowerUserSpAtk2"
+description = "A storm of sharp is whipped up. The attack's recoil harshly reduces the user's Sp. Atk stat."
+id = &"LEAFSTORM"
+display_name = "Leaf Storm"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

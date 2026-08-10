@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cqe71"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_n1320"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_nlqfu"]
+
+[sub_resource type="Resource" id="Resource_lj8nw"]
+script = ExtResource("2_n1320")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_g1s55"]
+script = ExtResource("2_n1320")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_yo6e6"]
+script = ExtResource("2_n1320")
+level = 7
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_8of1w"]
+script = ExtResource("2_n1320")
+level = 14
+move = &"BRUTALSWING"
+
+[sub_resource type="Resource" id="Resource_0tcbq"]
+script = ExtResource("2_n1320")
+level = 21
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_fbexq"]
+script = ExtResource("2_n1320")
+level = 28
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_6seex"]
+script = ExtResource("2_n1320")
+level = 35
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_gogew"]
+script = ExtResource("2_n1320")
+level = 42
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_lq64l"]
+script = ExtResource("2_n1320")
+level = 49
+move = &"SUPERFANG"
+
+[sub_resource type="Resource" id="Resource_l3f8u"]
+script = ExtResource("2_n1320")
+level = 56
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_tvk3t"]
+script = ExtResource("2_n1320")
+level = 63
+move = &"FISHIOUSREND"
+
+[sub_resource type="Resource" id="Resource_dx3vp"]
+script = ExtResource("2_n1320")
+level = 70
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_3514q"]
+script = ExtResource("2_n1320")
+level = 77
+move = &"DRAGONRUSH"
+
+[resource]
+resource_name = "DRACOVISH"
+script = ExtResource("3_nlqfu")
+species = &"DRACOVISH"
+category = "Fossil"
+pokedex_entry = "Powerful legs and jaws made it the apex predator of its time. Its own overhunting of its prey was what drove it to extinction."
+types = Array[StringName]([&"WATER", &"DRAGON"])
+base_hp = 90
+base_attack = 90
+base_defense = 100
+base_special_attack = 70
+base_special_defense = 80
+base_speed = 75
+ev_defense = 2
+base_exp = 177
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_n1320")]([SubResource("Resource_lj8nw"), SubResource("Resource_g1s55"), SubResource("Resource_yo6e6"), SubResource("Resource_8of1w"), SubResource("Resource_0tcbq"), SubResource("Resource_fbexq"), SubResource("Resource_6seex"), SubResource("Resource_gogew"), SubResource("Resource_lq64l"), SubResource("Resource_l3f8u"), SubResource("Resource_tvk3t"), SubResource("Resource_dx3vp"), SubResource("Resource_3514q")])
+tutor_moves = Array[StringName]([&"BODYSLAM", &"BRINE", &"BRUTALSWING", &"BULLDOZE", &"CONFIDE", &"CRUNCH", &"DIVE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEFANG", &"IRONHEAD", &"LEECHLIFE", &"LIQUIDATION", &"LOWKICK", &"MEGAKICK", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"WATERABSORB", &"STRONGJAW"])
+hidden_abilities = Array[StringName]([&"SANDRUSH"])
+hatch_steps = 8960
+height = 23
+weight = 2150
+color = &"Green"
+shape = &"HeadLegs"
+generation = 8
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(-3, 13)
+id = &"DRACOVISH"
+display_name = "Dracovish"

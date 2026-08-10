@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_op3si"]
+
+[resource]
+resource_name = "COURTCHANGE"
+script = ExtResource("1_op3si")
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+function_code = &"SwapSideEffects"
+description = "With its mysterious power, the user swaps the effects on either side of the field."
+id = &"COURTCHANGE"
+display_name = "Court Change"
+flags = Array[StringName]([&"CanMirrorMove"])

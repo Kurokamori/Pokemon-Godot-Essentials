@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_dmibu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_inj2j"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bcs8s"]
+
+[sub_resource type="Resource" id="Resource_7c0vu"]
+script = ExtResource("2_inj2j")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_7ycig"]
+script = ExtResource("2_inj2j")
+move = &"NOBLEROAR"
+
+[sub_resource type="Resource" id="Resource_87uno"]
+script = ExtResource("2_inj2j")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_hny4f"]
+script = ExtResource("2_inj2j")
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_0p0yq"]
+script = ExtResource("2_inj2j")
+level = 8
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_xjd7y"]
+script = ExtResource("2_inj2j")
+level = 16
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_um6j7"]
+script = ExtResource("2_inj2j")
+level = 24
+move = &"EXTRASENSORY"
+
+[sub_resource type="Resource" id="Resource_uy6p7"]
+script = ExtResource("2_inj2j")
+level = 32
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_fmf8p"]
+script = ExtResource("2_inj2j")
+level = 40
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_7t08m"]
+script = ExtResource("2_inj2j")
+level = 48
+move = &"FUSIONFLARE"
+
+[sub_resource type="Resource" id="Resource_24xms"]
+script = ExtResource("2_inj2j")
+level = 56
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_myqpy"]
+script = ExtResource("2_inj2j")
+level = 64
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_2k7g2"]
+script = ExtResource("2_inj2j")
+level = 72
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_effvl"]
+script = ExtResource("2_inj2j")
+level = 80
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_fs3xa"]
+script = ExtResource("2_inj2j")
+level = 88
+move = &"BLUEFLARE"
+
+[resource]
+resource_name = "RESHIRAM"
+script = ExtResource("3_bcs8s")
+species = &"RESHIRAM"
+category = "Vast White"
+pokedex_entry = "When Reshiram's tail flares, the heat energy moves the atmosphere and changes the world's weather."
+types = Array[StringName]([&"DRAGON", &"FIRE"])
+base_hp = 100
+base_attack = 120
+base_defense = 100
+base_special_attack = 150
+base_special_defense = 120
+base_speed = 90
+ev_special_attack = 3
+base_exp = 340
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_inj2j")]([SubResource("Resource_7c0vu"), SubResource("Resource_7ycig"), SubResource("Resource_87uno"), SubResource("Resource_hny4f"), SubResource("Resource_0p0yq"), SubResource("Resource_xjd7y"), SubResource("Resource_um6j7"), SubResource("Resource_uy6p7"), SubResource("Resource_fmf8p"), SubResource("Resource_7t08m"), SubResource("Resource_24xms"), SubResource("Resource_myqpy"), SubResource("Resource_2k7g2"), SubResource("Resource_effvl"), SubResource("Resource_fs3xa")])
+tutor_moves = Array[StringName]([&"BODYPRESS", &"BREAKINGSWIPE", &"BRUTALSWING", &"CONFIDE", &"CRUNCH", &"CUT", &"DEFOG", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHPOWER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FLY", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"HEATCRASH", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"INCINERATE", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SAFEGUARD", &"SCALESHOT", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TOXIC", &"WEATHERBALL", &"WILLOWISP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"TURBOBLAZE"])
+hatch_steps = 30720
+height = 32
+weight = 3300
+color = &"White"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(5, 12)
+shadow_size = 3
+id = &"RESHIRAM"
+display_name = "Reshiram"
+flags = Array[StringName]([&"Legendary"])

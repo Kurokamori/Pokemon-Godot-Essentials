@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_d75ah"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jrjg5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6d5wk"]
+
+[sub_resource type="Resource" id="Resource_shw2k"]
+script = ExtResource("1_d75ah")
+species = &"FLOETTE"
+method = &"Level"
+parameter = "19"
+
+[sub_resource type="Resource" id="Resource_a2fd7"]
+script = ExtResource("2_jrjg5")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_g88rl"]
+script = ExtResource("2_jrjg5")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_tk0s7"]
+script = ExtResource("2_jrjg5")
+level = 6
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_mnj1b"]
+script = ExtResource("2_jrjg5")
+level = 10
+move = &"LUCKYCHANT"
+
+[sub_resource type="Resource" id="Resource_aitw7"]
+script = ExtResource("2_jrjg5")
+level = 15
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_sfxin"]
+script = ExtResource("2_jrjg5")
+level = 20
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_t4mva"]
+script = ExtResource("2_jrjg5")
+level = 22
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_wxxjl"]
+script = ExtResource("2_jrjg5")
+level = 24
+move = &"GRASSYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_rxuih"]
+script = ExtResource("2_jrjg5")
+level = 28
+move = &"PETALBLIZZARD"
+
+[sub_resource type="Resource" id="Resource_5yxkg"]
+script = ExtResource("2_jrjg5")
+level = 33
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_cjgw5"]
+script = ExtResource("2_jrjg5")
+level = 37
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_27cg6"]
+script = ExtResource("2_jrjg5")
+level = 41
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_cokry"]
+script = ExtResource("2_jrjg5")
+level = 45
+move = &"PETALDANCE"
+
+[sub_resource type="Resource" id="Resource_p0wjs"]
+script = ExtResource("2_jrjg5")
+level = 48
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "FLABEBE_1"
+script = ExtResource("3_6d5wk")
+species = &"FLABEBE"
+form = 1
+form_name = "Yellow Flower"
+category = "Single Bloom"
+pokedex_entry = "When it finds a flower it likes, it dwells on that flower its whole life long. It floats in the wind's embrace with an untroubled heart."
+pokedex_form = 1
+types = Array[StringName]([&"FAIRY"])
+base_hp = 44
+base_attack = 38
+base_defense = 39
+base_special_attack = 61
+base_special_defense = 79
+base_speed = 42
+ev_special_defense = 1
+base_exp = 61
+gender_ratio = &"AlwaysFemale"
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jrjg5")]([SubResource("Resource_a2fd7"), SubResource("Resource_g88rl"), SubResource("Resource_tk0s7"), SubResource("Resource_mnj1b"), SubResource("Resource_aitw7"), SubResource("Resource_sfxin"), SubResource("Resource_t4mva"), SubResource("Resource_wxxjl"), SubResource("Resource_rxuih"), SubResource("Resource_5yxkg"), SubResource("Resource_cjgw5"), SubResource("Resource_27cg6"), SubResource("Resource_cokry"), SubResource("Resource_p0wjs")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"CAMOUFLAGE", &"CAPTIVATE", &"COPYCAT", &"TEARFULLOOK"])
+abilities = Array[StringName]([&"FLOWERVEIL"])
+hidden_abilities = Array[StringName]([&"SYMBIOSIS"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_d75ah")]([SubResource("Resource_shw2k")])
+color = &"White"
+shape = &"HeadArms"
+generation = 6
+back_sprite_offset = Vector2i(2, 48)
+front_sprite_offset = Vector2i(-4, 20)
+shadow_size = 1
+id = &"FLABEBE_1"
+display_name = "Flabébé"
+flags = Array[StringName]([&"InheritFormFromMother"])

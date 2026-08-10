@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_oxx0a"]
+
+[resource]
+resource_name = "ICESTONE"
+script = ExtResource("1_oxx0a")
+name_plural = "Ice Stones"
+price = 3000
+sell_price = 1500
+bp_price = 5
+field_use = 1
+description = "A peculiar stone that makes certain species of Pokémon evolve. It has a snowflake pattern."
+id = &"ICESTONE"
+display_name = "Ice Stone"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_30"])

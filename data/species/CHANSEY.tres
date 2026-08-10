@@ -1,0 +1,152 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_q1o5r"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_sll0t"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_64x0k"]
+
+[sub_resource type="Resource" id="Resource_h41u4"]
+script = ExtResource("1_q1o5r")
+species = &"BLISSEY"
+method = &"Happiness"
+
+[sub_resource type="Resource" id="Resource_v0hhp"]
+script = ExtResource("1_q1o5r")
+species = &"HAPPINY"
+method = &"DayHoldItem"
+parameter = "OVALSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_cx6ux"]
+script = ExtResource("2_sll0t")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_66nk1"]
+script = ExtResource("2_sll0t")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_wdon1"]
+script = ExtResource("2_sll0t")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_rjb6x"]
+script = ExtResource("2_sll0t")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_ebra6"]
+script = ExtResource("2_sll0t")
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_caryg"]
+script = ExtResource("2_sll0t")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_8rf76"]
+script = ExtResource("2_sll0t")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_me740"]
+script = ExtResource("2_sll0t")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_p4ycq"]
+script = ExtResource("2_sll0t")
+level = 4
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_7d4qt"]
+script = ExtResource("2_sll0t")
+level = 8
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_ugfq8"]
+script = ExtResource("2_sll0t")
+level = 12
+move = &"LIFEDEW"
+
+[sub_resource type="Resource" id="Resource_gp12y"]
+script = ExtResource("2_sll0t")
+level = 16
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_gb3m3"]
+script = ExtResource("2_sll0t")
+level = 20
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_1456r"]
+script = ExtResource("2_sll0t")
+level = 24
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_uyx7h"]
+script = ExtResource("2_sll0t")
+level = 28
+move = &"HEALPULSE"
+
+[sub_resource type="Resource" id="Resource_x3k6j"]
+script = ExtResource("2_sll0t")
+level = 32
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_8webq"]
+script = ExtResource("2_sll0t")
+level = 36
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_rhrv5"]
+script = ExtResource("2_sll0t")
+level = 40
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_fonph"]
+script = ExtResource("2_sll0t")
+level = 44
+move = &"SOFTBOILED"
+
+[sub_resource type="Resource" id="Resource_tg3vr"]
+script = ExtResource("2_sll0t")
+level = 48
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_knyc4"]
+script = ExtResource("2_sll0t")
+level = 52
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "CHANSEY"
+script = ExtResource("3_64x0k")
+species = &"CHANSEY"
+category = "Egg"
+pokedex_entry = "Chansey lay nutritionally excellent eggs every day. The eggs are so delicious, they are eagerly devoured by even those who have lost their appetite."
+base_hp = 250
+base_attack = 5
+base_defense = 5
+base_special_attack = 35
+base_special_defense = 105
+base_speed = 50
+ev_hp = 2
+base_exp = 395
+growth_rate = &"Fast"
+gender_ratio = &"AlwaysFemale"
+catch_rate = 30
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_sll0t")]([SubResource("Resource_cx6ux"), SubResource("Resource_66nk1"), SubResource("Resource_wdon1"), SubResource("Resource_rjb6x"), SubResource("Resource_ebra6"), SubResource("Resource_caryg"), SubResource("Resource_8rf76"), SubResource("Resource_me740"), SubResource("Resource_p4ycq"), SubResource("Resource_7d4qt"), SubResource("Resource_ugfq8"), SubResource("Resource_gp12y"), SubResource("Resource_gb3m3"), SubResource("Resource_1456r"), SubResource("Resource_uyx7h"), SubResource("Resource_x3k6j"), SubResource("Resource_8webq"), SubResource("Resource_rhrv5"), SubResource("Resource_fonph"), SubResource("Resource_tg3vr"), SubResource("Resource_knyc4")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"HAIL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOFTBOILED", &"SOLARBEAM", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIATTACK", &"UPROAR", &"WATERPULSE", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"AROMATHERAPY", &"COUNTER", &"GRAVITY", &"HEALBELL", &"HELPINGHAND", &"METRONOME", &"PRESENT", &"SEISMICTOSS"])
+abilities = Array[StringName]([&"NATURALCURE", &"SERENEGRACE"])
+hidden_abilities = Array[StringName]([&"HEALER"])
+wild_item_common = Array[StringName]([&"LUCKYPUNCH"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_q1o5r")]([SubResource("Resource_h41u4"), SubResource("Resource_v0hhp")])
+height = 11
+weight = 346
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Urban"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 28)
+id = &"CHANSEY"
+display_name = "Chansey"

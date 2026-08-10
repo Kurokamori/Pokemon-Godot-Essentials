@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_002sa"]
+
+[resource]
+resource_name = "DISGUISE"
+script = ExtResource("1_002sa")
+description = "Its shroud protects it from an attack just once."
+id = &"DISGUISE"
+display_name = "Disguise"

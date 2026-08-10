@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_br25h"]
+
+[resource]
+resource_name = "FLUFFY"
+script = ExtResource("1_br25h")
+description = "Resists contact damage but weaker to Fire-type."
+id = &"FLUFFY"
+display_name = "Fluffy"

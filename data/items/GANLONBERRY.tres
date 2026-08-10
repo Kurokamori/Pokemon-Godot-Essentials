@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_uvkti"]
+
+[resource]
+resource_name = "GANLONBERRY"
+script = ExtResource("1_uvkti")
+name_plural = "Ganlon Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "If held by a Pokémon, it raises its Defense stat in a pinch."
+id = &"GANLONBERRY"
+display_name = "Ganlon Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_ICE_100"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_lskan"]
+
+[resource]
+resource_name = "AURASPHERE"
+script = ExtResource("1_lskan")
+type = &"FIGHTING"
+category = 1
+power = 80
+accuracy = 0
+total_pp = 20
+target = &"Other"
+description = "The user looses a blast of aura power from deep within its body. This move is certain to hit."
+id = &"AURASPHERE"
+display_name = "Aura Sphere"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Pulse", &"Bomb"])

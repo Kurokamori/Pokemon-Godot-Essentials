@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_atdgn"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_4640g"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_g7tce"]
+
+[sub_resource type="Resource" id="Resource_a7ksm"]
+script = ExtResource("3_g7tce")
+weight = 20
+species = &"MAGNETON"
+min_level = 14
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_nmyt3"]
+script = ExtResource("3_g7tce")
+weight = 20
+species = &"MAGNETON"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_nlgeu"]
+script = ExtResource("3_g7tce")
+weight = 20
+species = &"NOSEPASS"
+min_level = 13
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_pvfvj"]
+script = ExtResource("3_g7tce")
+weight = 20
+species = &"NOSEPASS"
+min_level = 14
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_x6l7q"]
+script = ExtResource("3_g7tce")
+species = &"BURMY"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_tj4mv"]
+script = ExtResource("3_g7tce")
+species = &"GEODUDE"
+min_level = 13
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_1tcim"]
+script = ExtResource("2_4640g")
+encounter_type = &"Cave"
+step_chance = 5
+slots = Array[ExtResource("3_g7tce")]([SubResource("Resource_a7ksm"), SubResource("Resource_nmyt3"), SubResource("Resource_nlgeu"), SubResource("Resource_pvfvj"), SubResource("Resource_x6l7q"), SubResource("Resource_tj4mv")])
+
+[resource]
+resource_name = "50_0"
+script = ExtResource("1_atdgn")
+map_id = 50
+tables = Array[ExtResource("2_4640g")]([SubResource("Resource_1tcim")])
+id = &"50_0"
+display_name = "Map 50 v0"

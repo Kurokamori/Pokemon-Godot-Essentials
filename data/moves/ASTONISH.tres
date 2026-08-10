@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_p52pq"]
+
+[resource]
+resource_name = "ASTONISH"
+script = ExtResource("1_p52pq")
+type = &"GHOST"
+category = 0
+power = 30
+total_pp = 15
+function_code = &"FlinchTarget"
+effect_chance = 30
+description = "The user attacks the target while shouting in a startling fashion. It may also make the target flinch."
+id = &"ASTONISH"
+display_name = "Astonish"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

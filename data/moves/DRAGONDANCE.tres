@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3cfle"]
+
+[resource]
+resource_name = "DRAGONDANCE"
+script = ExtResource("1_3cfle")
+type = &"DRAGON"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserAtkSpd1"
+description = "The user vigorously performs a mystic, powerful dance that boosts its Attack and Speed stats."
+id = &"DRAGONDANCE"
+display_name = "Dragon Dance"
+flags = Array[StringName]([&"Dance"])

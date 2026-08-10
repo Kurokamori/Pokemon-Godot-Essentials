@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_fvhte"]
+
+[resource]
+resource_name = "FUSIONFLARE"
+script = ExtResource("1_fvhte")
+type = &"FIRE"
+category = 1
+power = 100
+function_code = &"DoublePowerAfterFusionBolt"
+description = "The user brings down a giant flame. It does more damage if influenced by an enormous thunderbolt."
+id = &"FUSIONFLARE"
+display_name = "Fusion Flare"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"ThawsUser"])

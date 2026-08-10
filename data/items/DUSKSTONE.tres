@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_twgt8"]
+
+[resource]
+resource_name = "DUSKSTONE"
+script = ExtResource("1_twgt8")
+name_plural = "Dusk Stones"
+price = 3000
+sell_price = 1500
+bp_price = 5
+field_use = 1
+description = "A peculiar stone that makes certain species of Pokémon evolve. It is as dark as dark can be."
+id = &"DUSKSTONE"
+display_name = "Dusk Stone"
+flags = Array[StringName]([&"EvolutionStone", &"Fling_80"])

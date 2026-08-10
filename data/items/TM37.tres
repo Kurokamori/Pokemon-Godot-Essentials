@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5b3ox"]
+
+[resource]
+resource_name = "TM37"
+script = ExtResource("1_5b3ox")
+name_plural = "TM37s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"SANDSTORM"
+description = "A five-turn sandstorm is summoned to hurt all combatants except Rock, Ground, and Steel types."
+id = &"TM37"
+display_name = "TM37"
+flags = Array[StringName]([&"Fling_10"])

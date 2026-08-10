@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nkfwp"]
+
+[resource]
+resource_name = "MIST"
+script = ExtResource("1_nkfwp")
+type = &"ICE"
+accuracy = 0
+total_pp = 30
+target = &"UserSide"
+function_code = &"StartUserSideImmunityToStatStageLowering"
+description = "The user cloaks its body with a white mist that prevents any of its stats from being cut for five turns."
+id = &"MIST"
+display_name = "Mist"

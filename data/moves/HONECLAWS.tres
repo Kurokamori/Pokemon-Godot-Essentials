@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7prad"]
+
+[resource]
+resource_name = "HONECLAWS"
+script = ExtResource("1_7prad")
+type = &"DARK"
+accuracy = 0
+total_pp = 15
+target = &"User"
+function_code = &"RaiseUserAtkAcc1"
+description = "The user sharpens its claws to boost its Attack stat and accuracy."
+id = &"HONECLAWS"
+display_name = "Hone Claws"

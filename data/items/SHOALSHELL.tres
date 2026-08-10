@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_cpwwr"]
+
+[resource]
+resource_name = "SHOALSHELL"
+script = ExtResource("1_cpwwr")
+name_plural = "Shoal Shells"
+price = 20
+sell_price = 10
+description = "A pretty seashell that can be found deep inside the Shoal Cave. A maniac will buy it for a high price."
+id = &"SHOALSHELL"
+display_name = "Shoal Shell"
+flags = Array[StringName]([&"Fling_30"])

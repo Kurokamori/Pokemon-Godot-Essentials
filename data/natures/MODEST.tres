@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="NatureData" format=3]
+
+[ext_resource type="Script" path="res://src/data/nature_data.gd" id="1_qaof4"]
+
+[resource]
+resource_name = "MODEST"
+script = ExtResource("1_qaof4")
+stat_changes = {
+&"ATTACK": -10,
+&"SPECIAL_ATTACK": 10
+}
+id = &"MODEST"
+display_name = "Modest"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0x2qo"]
+
+[resource]
+resource_name = "TM93"
+script = ExtResource("1_0x2qo")
+name_plural = "TM93s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"CUT"
+description = "The target is cut with a scythe or claw."
+id = &"TM93"
+display_name = "TM93"
+flags = Array[StringName]([&"Fling_50"])

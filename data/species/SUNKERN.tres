@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2smeg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gg70y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_kbf45"]
+
+[sub_resource type="Resource" id="Resource_njjwx"]
+script = ExtResource("1_2smeg")
+species = &"SUNFLORA"
+method = &"Item"
+parameter = "SUNSTONE"
+
+[sub_resource type="Resource" id="Resource_18tcv"]
+script = ExtResource("2_gg70y")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bwhwj"]
+script = ExtResource("2_gg70y")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_iqgws"]
+script = ExtResource("2_gg70y")
+level = 4
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_a6gmk"]
+script = ExtResource("2_gg70y")
+level = 7
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_aml3n"]
+script = ExtResource("2_gg70y")
+level = 10
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_1qto4"]
+script = ExtResource("2_gg70y")
+level = 13
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_cno7s"]
+script = ExtResource("2_gg70y")
+level = 16
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_ue6hf"]
+script = ExtResource("2_gg70y")
+level = 19
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_lwaii"]
+script = ExtResource("2_gg70y")
+level = 22
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_qh5s6"]
+script = ExtResource("2_gg70y")
+level = 25
+move = &"ENDEAVOR"
+
+[sub_resource type="Resource" id="Resource_vow2q"]
+script = ExtResource("2_gg70y")
+level = 28
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_1mabn"]
+script = ExtResource("2_gg70y")
+level = 34
+move = &"SOLARBEAM"
+
+[sub_resource type="Resource" id="Resource_clun8"]
+script = ExtResource("2_gg70y")
+level = 37
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_hxffb"]
+script = ExtResource("2_gg70y")
+level = 40
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_lvgdc"]
+script = ExtResource("2_gg70y")
+level = 43
+move = &"SEEDBOMB"
+
+[resource]
+resource_name = "SUNKERN"
+script = ExtResource("3_kbf45")
+species = &"SUNKERN"
+category = "Seed"
+pokedex_entry = "Sunkern try to minimize movement to conserve the nutrients they have stored in their bodies for evolution. They will not eat, subsisting only on morning dew."
+types = Array[StringName]([&"GRASS"])
+base_hp = 30
+base_attack = 30
+base_defense = 30
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 30
+ev_special_attack = 1
+base_exp = 36
+growth_rate = &"Parabolic"
+catch_rate = 235
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gg70y")]([SubResource("Resource_18tcv"), SubResource("Resource_bwhwj"), SubResource("Resource_iqgws"), SubResource("Resource_a6gmk"), SubResource("Resource_aml3n"), SubResource("Resource_1qto4"), SubResource("Resource_cno7s"), SubResource("Resource_ue6hf"), SubResource("Resource_lwaii"), SubResource("Resource_qh5s6"), SubResource("Resource_vow2q"), SubResource("Resource_1mabn"), SubResource("Resource_clun8"), SubResource("Resource_hxffb"), SubResource("Resource_lvgdc")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"UPROAR", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"CURSE", &"ENCORE", &"GRASSYTERRAIN", &"HELPINGHAND", &"INGRAIN", &"LEECHSEED", &"MORNINGSUN", &"NATUREPOWER", &"SWEETSCENT"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"SOLARPOWER"])
+hidden_abilities = Array[StringName]([&"EARLYBIRD"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_2smeg")]([SubResource("Resource_njjwx")])
+height = 3
+weight = 18
+color = &"Yellow"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(4, 35)
+shadow_size = 1
+id = &"SUNKERN"
+display_name = "Sunkern"

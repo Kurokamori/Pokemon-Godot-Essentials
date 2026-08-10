@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1vgl8"]
+
+[resource]
+resource_name = "SWITCHEROO"
+script = ExtResource("1_1vgl8")
+type = &"DARK"
+total_pp = 10
+function_code = &"UserTargetSwapItems"
+description = "The user trades held items with the target faster than the eye can follow."
+id = &"SWITCHEROO"
+display_name = "Switcheroo"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_jinbq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_iv31m"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p1ghs"]
+
+[sub_resource type="Resource" id="Resource_8lpe2"]
+script = ExtResource("1_jinbq")
+species = &"SPEWPA"
+method = &"Level"
+parameter = "9"
+
+[sub_resource type="Resource" id="Resource_gvurs"]
+script = ExtResource("2_iv31m")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_2o38i"]
+script = ExtResource("2_iv31m")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_ti7f7"]
+script = ExtResource("2_iv31m")
+level = 6
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_c886o"]
+script = ExtResource("2_iv31m")
+level = 15
+move = &"BUGBITE"
+
+[resource]
+resource_name = "SCATTERBUG"
+script = ExtResource("3_p1ghs")
+species = &"SCATTERBUG"
+category = "Scatterdust"
+pokedex_entry = "When under attack from bird Pokémon, it spews a poisonous black powder that causes paralysis on contact."
+types = Array[StringName]([&"BUG"])
+base_hp = 38
+base_attack = 35
+base_defense = 40
+base_special_attack = 27
+base_special_defense = 25
+base_speed = 35
+ev_defense = 1
+base_exp = 40
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_iv31m")]([SubResource("Resource_gvurs"), SubResource("Resource_2o38i"), SubResource("Resource_ti7f7"), SubResource("Resource_c886o")])
+tutor_moves = Array[StringName]([&"BUGBITE"])
+egg_moves = Array[StringName]([&"POISONPOWDER", &"RAGEPOWDER", &"STUNSPORE"])
+abilities = Array[StringName]([&"SHIELDDUST", &"COMPOUNDEYES"])
+hidden_abilities = Array[StringName]([&"FRIENDGUARD"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_jinbq")]([SubResource("Resource_8lpe2")])
+height = 3
+weight = 25
+color = &"Black"
+shape = &"Insectoid"
+generation = 6
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 28)
+shadow_size = 1
+id = &"SCATTERBUG"
+display_name = "Scatterbug"

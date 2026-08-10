@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3vci5"]
+
+[resource]
+resource_name = "SPIKES"
+script = ExtResource("1_3vci5")
+type = &"GROUND"
+accuracy = 0
+total_pp = 20
+target = &"FoeSide"
+function_code = &"AddSpikesToFoeSide"
+description = "The user lays a trap of spikes at the foe's feet. The trap hurts foes that switch into battle."
+id = &"SPIKES"
+display_name = "Spikes"

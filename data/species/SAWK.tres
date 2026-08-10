@@ -1,0 +1,103 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3bmgl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_wk04g"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oqr44"]
+
+[sub_resource type="Resource" id="Resource_10ljq"]
+script = ExtResource("2_wk04g")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_bbbwd"]
+script = ExtResource("2_wk04g")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_nehgb"]
+script = ExtResource("2_wk04g")
+level = 5
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_bt1q3"]
+script = ExtResource("2_wk04g")
+level = 10
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_s0nr8"]
+script = ExtResource("2_wk04g")
+level = 15
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_mayiq"]
+script = ExtResource("2_wk04g")
+level = 20
+move = &"LOWSWEEP"
+
+[sub_resource type="Resource" id="Resource_0r1p5"]
+script = ExtResource("2_wk04g")
+level = 25
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_guyox"]
+script = ExtResource("2_wk04g")
+level = 30
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_520wg"]
+script = ExtResource("2_wk04g")
+level = 35
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_nrlq2"]
+script = ExtResource("2_wk04g")
+level = 40
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_8m2jr"]
+script = ExtResource("2_wk04g")
+level = 45
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_sm381"]
+script = ExtResource("2_wk04g")
+level = 50
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_pqfj3"]
+script = ExtResource("2_wk04g")
+level = 55
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "SAWK"
+script = ExtResource("3_oqr44")
+species = &"SAWK"
+category = "Karate"
+pokedex_entry = "Tying their belts gets them pumped and makes their punches more destructive. Disturbing their training angers them."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 75
+base_attack = 125
+base_defense = 75
+base_special_attack = 30
+base_special_defense = 75
+base_speed = 85
+ev_attack = 2
+base_exp = 163
+gender_ratio = &"AlwaysMale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_wk04g")]([SubResource("Resource_10ljq"), SubResource("Resource_bbbwd"), SubResource("Resource_nehgb"), SubResource("Resource_bt1q3"), SubResource("Resource_s0nr8"), SubResource("Resource_mayiq"), SubResource("Resource_0r1p5"), SubResource("Resource_guyox"), SubResource("Resource_520wg"), SubResource("Resource_nrlq2"), SubResource("Resource_8m2jr"), SubResource("Resource_sm381"), SubResource("Resource_pqfj3")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DUALCHOP", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"KNOCKOFF", &"LASERFOCUS", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THROATCHOP", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"STURDY", &"INNERFOCUS"])
+hidden_abilities = Array[StringName]([&"MOLDBREAKER"])
+wild_item_uncommon = Array[StringName]([&"BLACKBELT"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+height = 14
+weight = 510
+color = &"Blue"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 24)
+id = &"SAWK"
+display_name = "Sawk"

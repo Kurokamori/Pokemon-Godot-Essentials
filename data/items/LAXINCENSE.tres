@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bvufl"]
+
+[resource]
+resource_name = "LAXINCENSE"
+script = ExtResource("1_bvufl")
+name_plural = "Lax Incenses"
+portion_name = "jar of Lax Incense"
+portion_name_plural = "jars of Lax Incense"
+price = 5000
+sell_price = 2500
+description = "An item to be held by a Pokémon. The tricky aroma of this incense may make attacks miss the holder."
+id = &"LAXINCENSE"
+display_name = "Lax Incense"
+flags = Array[StringName]([&"Fling_10"])

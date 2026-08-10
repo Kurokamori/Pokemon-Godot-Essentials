@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_smi7a"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k58fp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xt7fj"]
+
+[sub_resource type="Resource" id="Resource_dtcj1"]
+script = ExtResource("1_smi7a")
+species = &"KRICKETUNE"
+method = &"Level"
+parameter = "10"
+
+[sub_resource type="Resource" id="Resource_o2u3r"]
+script = ExtResource("2_k58fp")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_uhnxy"]
+script = ExtResource("2_k58fp")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_7rf15"]
+script = ExtResource("2_k58fp")
+level = 6
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_s6jyu"]
+script = ExtResource("2_k58fp")
+level = 16
+move = &"BUGBITE"
+
+[resource]
+resource_name = "KRICKETOT"
+script = ExtResource("3_xt7fj")
+species = &"KRICKETOT"
+category = "Cricket"
+pokedex_entry = "It shakes its head back to front, causing its antennae to hit each other and sound like a xylophone."
+types = Array[StringName]([&"BUG"])
+base_hp = 37
+base_attack = 25
+base_defense = 41
+base_special_attack = 25
+base_special_defense = 41
+base_speed = 25
+ev_defense = 1
+base_exp = 39
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k58fp")]([SubResource("Resource_o2u3r"), SubResource("Resource_uhnxy"), SubResource("Resource_7rf15"), SubResource("Resource_s6jyu")])
+tutor_moves = Array[StringName]([&"BUGBITE", &"ENDEAVOR", &"MUDSLAP", &"SNORE", &"STRINGSHOT", &"STRUGGLEBUG", &"UPROAR"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"RUNAWAY"])
+wild_item_uncommon = Array[StringName]([&"METRONOME"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_smi7a")]([SubResource("Resource_dtcj1")])
+height = 3
+weight = 22
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(2, 28)
+shadow_size = 1
+id = &"KRICKETOT"
+display_name = "Kricketot"

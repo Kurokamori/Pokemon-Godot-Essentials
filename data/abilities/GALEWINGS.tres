@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_233mf"]
+
+[resource]
+resource_name = "GALEWINGS"
+script = ExtResource("1_233mf")
+description = "Flying-type moves gain priority when its HP is full."
+id = &"GALEWINGS"
+display_name = "Gale Wings"

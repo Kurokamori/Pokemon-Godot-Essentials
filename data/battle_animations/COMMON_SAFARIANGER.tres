@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BattleAnimationData" format=3]
+
+[ext_resource type="Script" path="res://src/data/battle_animation_data.gd" id="1_qmbj0"]
+
+[resource]
+resource_name = "COMMON_SAFARIANGER"
+script = ExtResource("1_qmbj0")
+graphic = "safari_anger"
+sheet_columns = 1
+cel_side = 48
+frames = Array[PackedFloat32Array]([PackedFloat32Array(412, 44, 40, 40, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(412, 44, 130, 130, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(412, 44, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(412, 44, 115, 115, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(412, 44, 100, 100, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(412, 44, 110, 110, 0, 0, 0, 255, 0, 0, 0, 1, 1), PackedFloat32Array(412, 44, 100, 100, 0, 0, 0, 127.5, 0, 0, 0, 1, 1), PackedFloat32Array(412, 44, 100, 100, 0, 0, 0, 0, 0, 0, 0, 1, 1)])
+timing_frames = PackedInt32Array(0)
+timing_sounds = PackedStringArray("Swagger")
+timing_volumes = PackedInt32Array(80)
+timing_pitches = PackedInt32Array(100)
+id = &"COMMON_SAFARIANGER"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_mnnnr"]
+
+[resource]
+resource_name = "FISSURE"
+script = ExtResource("1_mnnnr")
+type = &"GROUND"
+category = 0
+power = 1
+accuracy = 30
+function_code = &"OHKOHitsUndergroundTarget"
+description = "The user opens up a fissure in the ground and drops the foe in. The target instantly faints if it hits."
+id = &"FISSURE"
+display_name = "Fissure"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

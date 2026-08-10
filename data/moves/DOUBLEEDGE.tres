@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_gd1mm"]
+
+[resource]
+resource_name = "DOUBLEEDGE"
+script = ExtResource("1_gd1mm")
+category = 0
+power = 120
+total_pp = 15
+function_code = &"RecoilThirdOfDamageDealt"
+description = "A reckless, life-risking tackle. It also damages the user by a fairly large amount, however."
+id = &"DOUBLEEDGE"
+display_name = "Double-Edge"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e3nnd"]
+
+[resource]
+resource_name = "COTTONSPORE"
+script = ExtResource("1_e3nnd")
+type = &"GRASS"
+total_pp = 40
+target = &"AllNearFoes"
+function_code = &"LowerTargetSpeed2"
+description = "The user releases cotton-like spores that cling to the foe, harshly reducing its Speed stat."
+id = &"COTTONSPORE"
+display_name = "Cotton Spore"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Powder"])

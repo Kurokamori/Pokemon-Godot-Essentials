@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_rp7kj"]
+
+[resource]
+resource_name = "WATERIUMZ"
+script = ExtResource("1_rp7kj")
+name_plural = "Waterium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Water-type Pokémon holds to turn a Water-type move into Hydro Vortex."
+id = &"WATERIUMZ"
+display_name = "Waterium Z"
+flags = Array[StringName]([&"ZCrystal"])

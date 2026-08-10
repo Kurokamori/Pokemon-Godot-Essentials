@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_t3al0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_rlkyq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_y2lca"]
+
+[sub_resource type="Resource" id="Resource_i83rc"]
+script = ExtResource("1_t3al0")
+species = &"ARBOK"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_ecibh"]
+script = ExtResource("2_rlkyq")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_1ktbr"]
+script = ExtResource("2_rlkyq")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_4xt4r"]
+script = ExtResource("2_rlkyq")
+level = 4
+move = &"POISONSTING"
+
+[sub_resource type="Resource" id="Resource_w0ykh"]
+script = ExtResource("2_rlkyq")
+level = 9
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_q2sjp"]
+script = ExtResource("2_rlkyq")
+level = 12
+move = &"GLARE"
+
+[sub_resource type="Resource" id="Resource_j7r6u"]
+script = ExtResource("2_rlkyq")
+level = 17
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_uc8d8"]
+script = ExtResource("2_rlkyq")
+level = 20
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_b6svk"]
+script = ExtResource("2_rlkyq")
+level = 25
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_euw77"]
+script = ExtResource("2_rlkyq")
+level = 25
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_nclf0"]
+script = ExtResource("2_rlkyq")
+level = 25
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_5blse"]
+script = ExtResource("2_rlkyq")
+level = 28
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_75lmg"]
+script = ExtResource("2_rlkyq")
+level = 33
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_vfvv2"]
+script = ExtResource("2_rlkyq")
+level = 36
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_mqp6s"]
+script = ExtResource("2_rlkyq")
+level = 38
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_3p8hm"]
+script = ExtResource("2_rlkyq")
+level = 41
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_ucf1f"]
+script = ExtResource("2_rlkyq")
+level = 44
+move = &"COIL"
+
+[sub_resource type="Resource" id="Resource_cjlk0"]
+script = ExtResource("2_rlkyq")
+level = 49
+move = &"GUNKSHOT"
+
+[resource]
+resource_name = "EKANS"
+script = ExtResource("3_y2lca")
+species = &"EKANS"
+category = "Snake"
+pokedex_entry = "An Ekans curls itself up in a spiral while it rests. This position allows it to quickly respond to an enemy from any direction with a threat from its upraised head."
+types = Array[StringName]([&"POISON"])
+base_hp = 35
+base_attack = 60
+base_defense = 44
+base_special_attack = 40
+base_special_defense = 54
+base_speed = 55
+ev_attack = 1
+base_exp = 58
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_rlkyq")]([SubResource("Resource_ecibh"), SubResource("Resource_1ktbr"), SubResource("Resource_4xt4r"), SubResource("Resource_w0ykh"), SubResource("Resource_q2sjp"), SubResource("Resource_j7r6u"), SubResource("Resource_uc8d8"), SubResource("Resource_b6svk"), SubResource("Resource_euw77"), SubResource("Resource_nclf0"), SubResource("Resource_5blse"), SubResource("Resource_75lmg"), SubResource("Resource_vfvv2"), SubResource("Resource_mqp6s"), SubResource("Resource_3p8hm"), SubResource("Resource_ucf1f"), SubResource("Resource_cjlk0")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BIND", &"BODYSLAM", &"BRUTALSWING", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"INFESTATION", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"TORMENT", &"VENOSHOCK"])
+egg_moves = Array[StringName]([&"BEATUP", &"DISABLE", &"POISONFANG", &"POISONTAIL", &"SCARYFACE", &"SLAM", &"SPITE", &"SUCKERPUNCH", &"SWITCHEROO"])
+abilities = Array[StringName]([&"INTIMIDATE", &"SHEDSKIN"])
+hidden_abilities = Array[StringName]([&"UNNERVE"])
+egg_groups = Array[StringName]([&"Field", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_t3al0")]([SubResource("Resource_i83rc")])
+height = 20
+weight = 69
+color = &"Purple"
+shape = &"Serpentine"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 31)
+id = &"EKANS"
+display_name = "Ekans"

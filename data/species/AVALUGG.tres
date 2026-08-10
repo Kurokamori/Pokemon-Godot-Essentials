@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rw842"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2yp6a"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vlfis"]
+
+[sub_resource type="Resource" id="Resource_wi4n8"]
+script = ExtResource("1_rw842")
+species = &"BERGMITE"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_702lc"]
+script = ExtResource("2_2yp6a")
+level = 0
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_wghod"]
+script = ExtResource("2_2yp6a")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_uvlns"]
+script = ExtResource("2_2yp6a")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_kcwtq"]
+script = ExtResource("2_2yp6a")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_qwmgl"]
+script = ExtResource("2_2yp6a")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_65g4i"]
+script = ExtResource("2_2yp6a")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_2nanp"]
+script = ExtResource("2_2yp6a")
+level = 9
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_rg706"]
+script = ExtResource("2_2yp6a")
+level = 12
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_motd4"]
+script = ExtResource("2_2yp6a")
+level = 15
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_4vxe5"]
+script = ExtResource("2_2yp6a")
+level = 18
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_pxm0v"]
+script = ExtResource("2_2yp6a")
+level = 21
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_qa62m"]
+script = ExtResource("2_2yp6a")
+level = 24
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_w1vpp"]
+script = ExtResource("2_2yp6a")
+level = 27
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_vmxxi"]
+script = ExtResource("2_2yp6a")
+level = 30
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_41ify"]
+script = ExtResource("2_2yp6a")
+level = 33
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_41155"]
+script = ExtResource("2_2yp6a")
+level = 36
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_m03jf"]
+script = ExtResource("2_2yp6a")
+level = 41
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_yrduk"]
+script = ExtResource("2_2yp6a")
+level = 46
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_i7jla"]
+script = ExtResource("2_2yp6a")
+level = 51
+move = &"SKULLBASH"
+
+[resource]
+resource_name = "AVALUGG"
+script = ExtResource("3_vlfis")
+species = &"AVALUGG"
+category = "Iceberg"
+pokedex_entry = "Its ice-covered body is as hard as steel. Its cumbersome frame crushes anything that stands in its way."
+types = Array[StringName]([&"ICE"])
+base_hp = 95
+base_attack = 117
+base_defense = 184
+base_special_attack = 44
+base_special_defense = 46
+base_speed = 28
+ev_defense = 2
+base_exp = 180
+catch_rate = 55
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2yp6a")]([SubResource("Resource_702lc"), SubResource("Resource_wghod"), SubResource("Resource_uvlns"), SubResource("Resource_kcwtq"), SubResource("Resource_qwmgl"), SubResource("Resource_65g4i"), SubResource("Resource_2nanp"), SubResource("Resource_rg706"), SubResource("Resource_motd4"), SubResource("Resource_4vxe5"), SubResource("Resource_pxm0v"), SubResource("Resource_qa62m"), SubResource("Resource_w1vpp"), SubResource("Resource_vmxxi"), SubResource("Resource_41ify"), SubResource("Resource_41155"), SubResource("Resource_m03jf"), SubResource("Resource_yrduk"), SubResource("Resource_i7jla")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HAIL", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"TOXIC", &"WATERPULSE"])
+abilities = Array[StringName]([&"OWNTEMPO", &"ICEBODY"])
+hidden_abilities = Array[StringName]([&"STURDY"])
+egg_groups = Array[StringName]([&"Monster", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_rw842")]([SubResource("Resource_wi4n8")])
+height = 20
+weight = 5050
+color = &"Blue"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 64)
+front_sprite_offset = Vector2i(-4, 28)
+shadow_size = 3
+id = &"AVALUGG"
+display_name = "Avalugg"

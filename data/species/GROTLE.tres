@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ary08"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h461s"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7amse"]
+
+[sub_resource type="Resource" id="Resource_304n8"]
+script = ExtResource("1_ary08")
+species = &"TORTERRA"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_bij2y"]
+script = ExtResource("1_ary08")
+species = &"TURTWIG"
+method = &"Level"
+parameter = "18"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ohqjb"]
+script = ExtResource("2_h461s")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_1nulu"]
+script = ExtResource("2_h461s")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_xoye3"]
+script = ExtResource("2_h461s")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_y4c6s"]
+script = ExtResource("2_h461s")
+level = 5
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_nxnls"]
+script = ExtResource("2_h461s")
+level = 6
+move = &"LEAFAGE"
+
+[sub_resource type="Resource" id="Resource_tt2oj"]
+script = ExtResource("2_h461s")
+level = 10
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_bfevu"]
+script = ExtResource("2_h461s")
+level = 13
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_pbahu"]
+script = ExtResource("2_h461s")
+level = 17
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_4kone"]
+script = ExtResource("2_h461s")
+level = 22
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_rg28m"]
+script = ExtResource("2_h461s")
+level = 27
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_mi322"]
+script = ExtResource("2_h461s")
+level = 32
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_nd8pb"]
+script = ExtResource("2_h461s")
+level = 37
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_8quw2"]
+script = ExtResource("2_h461s")
+level = 42
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_omxdg"]
+script = ExtResource("2_h461s")
+level = 47
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_brqak"]
+script = ExtResource("2_h461s")
+level = 52
+move = &"LEAFSTORM"
+
+[resource]
+resource_name = "GROTLE"
+script = ExtResource("3_7amse")
+species = &"GROTLE"
+category = "Grove"
+pokedex_entry = "It lives along water in forests. In the daytime, it leaves the forest to sunbathe its treed shell."
+types = Array[StringName]([&"GRASS"])
+base_hp = 75
+base_attack = 89
+base_defense = 85
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 36
+ev_attack = 1
+ev_defense = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h461s")]([SubResource("Resource_ohqjb"), SubResource("Resource_1nulu"), SubResource("Resource_xoye3"), SubResource("Resource_y4c6s"), SubResource("Resource_nxnls"), SubResource("Resource_tt2oj"), SubResource("Resource_bfevu"), SubResource("Resource_pbahu"), SubResource("Resource_4kone"), SubResource("Resource_rg28m"), SubResource("Resource_mi322"), SubResource("Resource_nd8pb"), SubResource("Resource_8quw2"), SubResource("Resource_omxdg"), SubResource("Resource_brqak")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"HEADBUTT", &"HIDDENPOWER", &"IRONTAIL", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"SHELLARMOR"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ary08")]([SubResource("Resource_304n8"), SubResource("Resource_bij2y")])
+height = 11
+weight = 970
+color = &"Green"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(-1, 30)
+id = &"GROTLE"
+display_name = "Grotle"

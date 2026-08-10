@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kfud4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_afrlk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_r4miu"]
+
+[sub_resource type="Resource" id="Resource_81lcb"]
+script = ExtResource("1_kfud4")
+species = &"JIGGLYPUFF"
+method = &"Item"
+parameter = "MOONSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_kknwm"]
+script = ExtResource("2_afrlk")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_jxptg"]
+script = ExtResource("2_afrlk")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_kdcjk"]
+script = ExtResource("2_afrlk")
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_aoh86"]
+script = ExtResource("2_afrlk")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_052bb"]
+script = ExtResource("2_afrlk")
+move = &"ECHOEDVOICE"
+
+[sub_resource type="Resource" id="Resource_5exjx"]
+script = ExtResource("2_afrlk")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_frsv7"]
+script = ExtResource("2_afrlk")
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_wo0fx"]
+script = ExtResource("2_afrlk")
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_f6xf6"]
+script = ExtResource("2_afrlk")
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_oaeb1"]
+script = ExtResource("2_afrlk")
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_w3v14"]
+script = ExtResource("2_afrlk")
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_fmy11"]
+script = ExtResource("2_afrlk")
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_ork7f"]
+script = ExtResource("2_afrlk")
+move = &"MIMIC"
+
+[sub_resource type="Resource" id="Resource_tytll"]
+script = ExtResource("2_afrlk")
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_ji61w"]
+script = ExtResource("2_afrlk")
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_gwqjr"]
+script = ExtResource("2_afrlk")
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_6k7bj"]
+script = ExtResource("2_afrlk")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_67b0m"]
+script = ExtResource("2_afrlk")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_vnmly"]
+script = ExtResource("2_afrlk")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_oqtt7"]
+script = ExtResource("2_afrlk")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_nxi3l"]
+script = ExtResource("2_afrlk")
+move = &"DEFENSECURL"
+
+[resource]
+resource_name = "WIGGLYTUFF"
+script = ExtResource("3_r4miu")
+species = &"WIGGLYTUFF"
+category = "Balloon"
+pokedex_entry = "Its fur is the ultimate in luxuriousness. Sleeping alongside a Wigglytuff is simply divine. Its body expands seemingly without end when it inhales."
+types = Array[StringName]([&"NORMAL", &"FAIRY"])
+base_hp = 140
+base_attack = 70
+base_defense = 45
+base_special_attack = 85
+base_special_defense = 50
+base_speed = 45
+ev_hp = 3
+base_exp = 218
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 50
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_afrlk")]([SubResource("Resource_kknwm"), SubResource("Resource_jxptg"), SubResource("Resource_kdcjk"), SubResource("Resource_aoh86"), SubResource("Resource_052bb"), SubResource("Resource_5exjx"), SubResource("Resource_frsv7"), SubResource("Resource_wo0fx"), SubResource("Resource_f6xf6"), SubResource("Resource_oaeb1"), SubResource("Resource_w3v14"), SubResource("Resource_fmy11"), SubResource("Resource_ork7f"), SubResource("Resource_tytll"), SubResource("Resource_ji61w"), SubResource("Resource_gwqjr"), SubResource("Resource_6k7bj"), SubResource("Resource_67b0m"), SubResource("Resource_vnmly"), SubResource("Resource_oqtt7"), SubResource("Resource_nxi3l")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENDEAVOR", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FAKETEARS", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIATTACK", &"UPROAR", &"WATERPULSE", &"WILDCHARGE", &"WORKUP"])
+abilities = Array[StringName]([&"CUTECHARM", &"COMPETITIVE"])
+hidden_abilities = Array[StringName]([&"FRISK"])
+wild_item_uncommon = Array[StringName]([&"MOONSTONE"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_kfud4")]([SubResource("Resource_81lcb")])
+height = 10
+weight = 120
+color = &"Pink"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 22)
+shadow_size = 1
+id = &"WIGGLYTUFF"
+display_name = "Wigglytuff"

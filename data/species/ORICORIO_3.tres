@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_d3vbk"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cl4ak"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fbaso"]
+
+[sub_resource type="Resource" id="Resource_0jj8h"]
+script = ExtResource("2_cl4ak")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_wxqp0"]
+script = ExtResource("2_cl4ak")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_afuia"]
+script = ExtResource("2_cl4ak")
+level = 6
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_1iq7a"]
+script = ExtResource("2_cl4ak")
+level = 10
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_mh70u"]
+script = ExtResource("2_cl4ak")
+level = 13
+move = &"AIRCUTTER"
+
+[sub_resource type="Resource" id="Resource_gbp2h"]
+script = ExtResource("2_cl4ak")
+level = 16
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_k6nxw"]
+script = ExtResource("2_cl4ak")
+level = 20
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_8nc4m"]
+script = ExtResource("2_cl4ak")
+level = 23
+move = &"DOUBLESLAP"
+
+[sub_resource type="Resource" id="Resource_hlas0"]
+script = ExtResource("2_cl4ak")
+level = 26
+move = &"TEETERDANCE"
+
+[sub_resource type="Resource" id="Resource_l3y14"]
+script = ExtResource("2_cl4ak")
+level = 30
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_7hgwh"]
+script = ExtResource("2_cl4ak")
+level = 33
+move = &"CAPTIVATE"
+
+[sub_resource type="Resource" id="Resource_r065n"]
+script = ExtResource("2_cl4ak")
+level = 36
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_c8auj"]
+script = ExtResource("2_cl4ak")
+level = 40
+move = &"REVELATIONDANCE"
+
+[sub_resource type="Resource" id="Resource_h1pcg"]
+script = ExtResource("2_cl4ak")
+level = 43
+move = &"MIRRORMOVE"
+
+[sub_resource type="Resource" id="Resource_djb6b"]
+script = ExtResource("2_cl4ak")
+level = 46
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_2881m"]
+script = ExtResource("2_cl4ak")
+level = 50
+move = &"HURRICANE"
+
+[resource]
+resource_name = "ORICORIO_3"
+script = ExtResource("3_fbaso")
+species = &"ORICORIO"
+form = 3
+form_name = "Sensu Style"
+category = "Dancing"
+pokedex_entry = "It summons the dead with its dreamy dancing. From their malice, it draws power with which to curse its enemies."
+pokedex_form = 3
+types = Array[StringName]([&"GHOST", &"FLYING"])
+base_hp = 75
+base_attack = 70
+base_defense = 70
+base_special_attack = 98
+base_special_defense = 70
+base_speed = 93
+ev_special_attack = 2
+base_exp = 167
+gender_ratio = &"Female75Percent"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cl4ak")]([SubResource("Resource_0jj8h"), SubResource("Resource_wxqp0"), SubResource("Resource_afuia"), SubResource("Resource_1iq7a"), SubResource("Resource_mh70u"), SubResource("Resource_gbp2h"), SubResource("Resource_k6nxw"), SubResource("Resource_8nc4m"), SubResource("Resource_hlas0"), SubResource("Resource_l3y14"), SubResource("Resource_7hgwh"), SubResource("Resource_r065n"), SubResource("Resource_c8auj"), SubResource("Resource_h1pcg"), SubResource("Resource_djb6b"), SubResource("Resource_2881m")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"DEFOG", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"FACADE", &"FLY", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"ICYWIND", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"QUASH", &"REST", &"RETURN", &"ROLEPLAY", &"ROOST", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TAILWIND", &"TAUNT", &"TOXIC", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"CAPTIVATE", &"PLUCK", &"SAFEGUARD", &"TAILWIND"])
+abilities = Array[StringName]([&"DANCER"])
+wild_item_uncommon = Array[StringName]([&"HONEY"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 5120
+height = 6
+weight = 34
+color = &"Purple"
+shape = &"Winged"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 24)
+id = &"ORICORIO_3"
+display_name = "Oricorio"
+flags = Array[StringName]([&"InheritFormFromMother"])

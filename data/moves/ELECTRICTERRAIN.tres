@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4rp4v"]
+
+[resource]
+resource_name = "ELECTRICTERRAIN"
+script = ExtResource("1_4rp4v")
+type = &"ELECTRIC"
+accuracy = 0
+total_pp = 10
+target = &"BothSides"
+function_code = &"StartElectricTerrain"
+description = "The user electrifies the ground for five turns. Pokémon on the ground no longer fall asleep."
+id = &"ELECTRICTERRAIN"
+display_name = "Electric Terrain"

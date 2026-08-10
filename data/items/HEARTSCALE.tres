@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_bw5p7"]
+
+[resource]
+resource_name = "HEARTSCALE"
+script = ExtResource("1_bw5p7")
+name_plural = "Heart Scales"
+price = 100
+sell_price = 50
+description = "A pretty, heart-shaped scale that is extremely rare. It glows faintly in the colors of the rainbow."
+id = &"HEARTSCALE"
+display_name = "Heart Scale"
+flags = Array[StringName]([&"Fling_30"])

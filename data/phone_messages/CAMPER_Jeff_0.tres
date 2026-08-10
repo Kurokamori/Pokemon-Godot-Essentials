@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="PhoneMessageData" format=3]
+
+[ext_resource type="Script" path="res://src/data/phone_message_data.gd" id="1_ttvn1"]
+
+[resource]
+resource_name = "CAMPER|Jeff|0"
+script = ExtResource("1_ttvn1")
+trainer_type = &"CAMPER"
+intro = Array[String](["Hello. This is \\TN...\\mHow's it going, \\PN?"])
+body1 = Array[String](["My \\TP is looking more and more like me. It's getting cuter!"])
+body2 = Array[String](["And you know? Now we can KO \\TE easily.\\mI should challenge the Cedolan Gym.", "And you know? We just failed to beat \\TE by a tiny margin.\\mI'm guessing my Pokémon's levels aren't high enough yet..."])
+battle_request = Array[String](["You must be a lot better now, huh?\\mHow about showing me your technique in a real battle with me?\\mI'll be waiting on \\TM."])
+end = Array[String](["See you later!"])
+id = &"CAMPER|Jeff|0"
+display_name = "Jeff"

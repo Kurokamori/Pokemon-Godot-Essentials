@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EnvironmentData" format=3]
+
+[ext_resource type="Script" path="res://src/data/environment_data.gd" id="1_sosh2"]
+
+[resource]
+resource_name = "Grass"
+script = ExtResource("1_sosh2")
+battle_base = "grass"
+id = &"Grass"
+display_name = "Grass"

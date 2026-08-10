@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_yv8bq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3x7cd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_obwn5"]
+
+[sub_resource type="Resource" id="Resource_wj38h"]
+script = ExtResource("1_yv8bq")
+species = &"CRABRAWLER"
+method = &"LocationFlag"
+parameter = "IceRock"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_p2brm"]
+script = ExtResource("2_3x7cd")
+level = 0
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_a1t1v"]
+script = ExtResource("2_3x7cd")
+move = &"BUBBLE"
+
+[sub_resource type="Resource" id="Resource_qybuh"]
+script = ExtResource("2_3x7cd")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_5df4q"]
+script = ExtResource("2_3x7cd")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_qsflb"]
+script = ExtResource("2_3x7cd")
+move = &"PURSUIT"
+
+[sub_resource type="Resource" id="Resource_kje0e"]
+script = ExtResource("2_3x7cd")
+level = 5
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_d1c25"]
+script = ExtResource("2_3x7cd")
+level = 9
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_y0iv5"]
+script = ExtResource("2_3x7cd")
+level = 13
+move = &"PURSUIT"
+
+[sub_resource type="Resource" id="Resource_xckxf"]
+script = ExtResource("2_3x7cd")
+level = 17
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_p5toy"]
+script = ExtResource("2_3x7cd")
+level = 22
+move = &"POWERUPPUNCH"
+
+[sub_resource type="Resource" id="Resource_wyydc"]
+script = ExtResource("2_3x7cd")
+level = 25
+move = &"DIZZYPUNCH"
+
+[sub_resource type="Resource" id="Resource_sb0cd"]
+script = ExtResource("2_3x7cd")
+level = 29
+move = &"AVALANCHE"
+
+[sub_resource type="Resource" id="Resource_uyw14"]
+script = ExtResource("2_3x7cd")
+level = 33
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_2ugwh"]
+script = ExtResource("2_3x7cd")
+level = 37
+move = &"ICEHAMMER"
+
+[sub_resource type="Resource" id="Resource_20h0p"]
+script = ExtResource("2_3x7cd")
+level = 42
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_w28ty"]
+script = ExtResource("2_3x7cd")
+level = 45
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_f2d0v"]
+script = ExtResource("2_3x7cd")
+level = 49
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "CRABOMINABLE"
+script = ExtResource("3_obwn5")
+species = &"CRABOMINABLE"
+category = "Woolly Crab"
+pokedex_entry = "It aimed for the top but got lost and ended up on a snowy mountain. Being forced to endure the cold, this Pokémon evolved and grew fur."
+types = Array[StringName]([&"FIGHTING", &"ICE"])
+base_hp = 97
+base_attack = 132
+base_defense = 77
+base_special_attack = 62
+base_special_defense = 67
+base_speed = 43
+ev_attack = 2
+base_exp = 167
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3x7cd")]([SubResource("Resource_p2brm"), SubResource("Resource_a1t1v"), SubResource("Resource_qybuh"), SubResource("Resource_5df4q"), SubResource("Resource_qsflb"), SubResource("Resource_kje0e"), SubResource("Resource_d1c25"), SubResource("Resource_y0iv5"), SubResource("Resource_xckxf"), SubResource("Resource_p5toy"), SubResource("Resource_wyydc"), SubResource("Resource_sb0cd"), SubResource("Resource_uyw14"), SubResource("Resource_2ugwh"), SubResource("Resource_20h0p"), SubResource("Resource_w28ty"), SubResource("Resource_f2d0v")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BLOCK", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"DRAINPUNCH", &"DUALCHOP", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"THIEF", &"THUNDERPUNCH", &"TOXIC", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"HYPERCUTTER", &"IRONFIST"])
+hidden_abilities = Array[StringName]([&"ANGERPOINT"])
+wild_item_uncommon = Array[StringName]([&"CHERIBERRY"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_yv8bq")]([SubResource("Resource_wj38h")])
+height = 17
+weight = 1800
+color = &"White"
+shape = &"Insectoid"
+generation = 7
+back_sprite_offset = Vector2i(10, 44)
+front_sprite_offset = Vector2i(-4, 9)
+id = &"CRABOMINABLE"
+display_name = "Crabominable"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_i1e71"]
+
+[resource]
+resource_name = "MENTALHERB"
+script = ExtResource("1_i1e71")
+name_plural = "Mental Herbs"
+price = 4000
+sell_price = 2000
+bp_price = 15
+description = "An item to be held by a Pokémon. It snaps the holder out of infatuation. It can be used only once."
+id = &"MENTALHERB"
+display_name = "Mental Herb"
+flags = Array[StringName]([&"Fling_10"])

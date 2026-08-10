@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6rthi"]
+
+[resource]
+resource_name = "ROLLOUT"
+script = ExtResource("1_6rthi")
+type = &"ROCK"
+category = 0
+power = 30
+accuracy = 90
+total_pp = 20
+function_code = &"MultiTurnAttackPowersUpEachTurn"
+description = "The user continually rolls into the target over five turns. It becomes stronger each time it hits."
+id = &"ROLLOUT"
+display_name = "Rollout"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

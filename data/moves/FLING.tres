@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qaopc"]
+
+[resource]
+resource_name = "FLING"
+script = ExtResource("1_qaopc")
+type = &"DARK"
+category = 0
+power = 1
+total_pp = 10
+function_code = &"ThrowUserItemAtTarget"
+description = "The user flings its held item at the target to attack. Its power and effects depend on the item."
+id = &"FLING"
+display_name = "Fling"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_cx2id"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_oo3uo"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_edhpq"]
+
+[sub_resource type="Resource" id="Resource_3it87"]
+script = ExtResource("1_cx2id")
+species = &"KRABBY"
+method = &"Level"
+parameter = "28"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_oewyr"]
+script = ExtResource("2_oo3uo")
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_jctqk"]
+script = ExtResource("2_oo3uo")
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_gy2sb"]
+script = ExtResource("2_oo3uo")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_3axxb"]
+script = ExtResource("2_oo3uo")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_84p46"]
+script = ExtResource("2_oo3uo")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_8so6d"]
+script = ExtResource("2_oo3uo")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_tofv5"]
+script = ExtResource("2_oo3uo")
+level = 12
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_jmi5d"]
+script = ExtResource("2_oo3uo")
+level = 16
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_nh546"]
+script = ExtResource("2_oo3uo")
+level = 20
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_meise"]
+script = ExtResource("2_oo3uo")
+level = 24
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_vos6x"]
+script = ExtResource("2_oo3uo")
+level = 31
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_uii66"]
+script = ExtResource("2_oo3uo")
+level = 36
+move = &"RAZORSHELL"
+
+[sub_resource type="Resource" id="Resource_on2wl"]
+script = ExtResource("2_oo3uo")
+level = 42
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_d0n2q"]
+script = ExtResource("2_oo3uo")
+level = 48
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_v31ar"]
+script = ExtResource("2_oo3uo")
+level = 54
+move = &"CRABHAMMER"
+
+[sub_resource type="Resource" id="Resource_ua03e"]
+script = ExtResource("2_oo3uo")
+level = 60
+move = &"GUILLOTINE"
+
+[resource]
+resource_name = "KINGLER"
+script = ExtResource("3_edhpq")
+species = &"KINGLER"
+category = "Pincer"
+pokedex_entry = "It waves its huge, oversized claw in the air to communicate with others. But since the claw is so heavy, this Pokémon quickly tires."
+types = Array[StringName]([&"WATER"])
+base_hp = 55
+base_attack = 130
+base_defense = 115
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 75
+ev_attack = 2
+base_exp = 166
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_oo3uo")]([SubResource("Resource_oewyr"), SubResource("Resource_jctqk"), SubResource("Resource_gy2sb"), SubResource("Resource_3axxb"), SubResource("Resource_84p46"), SubResource("Resource_8so6d"), SubResource("Resource_tofv5"), SubResource("Resource_jmi5d"), SubResource("Resource_nh546"), SubResource("Resource_meise"), SubResource("Resource_vos6x"), SubResource("Resource_uii66"), SubResource("Resource_on2wl"), SubResource("Resource_d0n2q"), SubResource("Resource_v31ar"), SubResource("Resource_ua03e")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"LIQUIDATION", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"QUASH", &"RAINDANCE", &"RAZORSHELL", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"WATERPULSE", &"WHIRLPOOL", &"XSCISSOR"])
+abilities = Array[StringName]([&"HYPERCUTTER", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_cx2id")]([SubResource("Resource_3it87")])
+height = 13
+weight = 600
+shape = &"Insectoid"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 23)
+shadow_size = 3
+id = &"KINGLER"
+display_name = "Kingler"

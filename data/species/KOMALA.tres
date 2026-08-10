@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s45vg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_246d3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4sqvw"]
+
+[sub_resource type="Resource" id="Resource_5ef5l"]
+script = ExtResource("2_246d3")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_gkabn"]
+script = ExtResource("2_246d3")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_af0mf"]
+script = ExtResource("2_246d3")
+level = 6
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_kxbxc"]
+script = ExtResource("2_246d3")
+level = 6
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_xa1mn"]
+script = ExtResource("2_246d3")
+level = 6
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_wr8ry"]
+script = ExtResource("2_246d3")
+level = 11
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_d6o1g"]
+script = ExtResource("2_246d3")
+level = 16
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_yhc4l"]
+script = ExtResource("2_246d3")
+level = 21
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_aajf5"]
+script = ExtResource("2_246d3")
+level = 26
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_mk6vp"]
+script = ExtResource("2_246d3")
+level = 31
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_3i520"]
+script = ExtResource("2_246d3")
+level = 36
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_pe2if"]
+script = ExtResource("2_246d3")
+level = 41
+move = &"WOODHAMMER"
+
+[sub_resource type="Resource" id="Resource_qpcvd"]
+script = ExtResource("2_246d3")
+level = 46
+move = &"THRASH"
+
+[resource]
+resource_name = "KOMALA"
+script = ExtResource("3_4sqvw")
+species = &"KOMALA"
+category = "Drowsing"
+pokedex_entry = "It remains asleep from birth to death as a result of the sedative properties of the leaves that form its diet."
+base_hp = 65
+base_attack = 115
+base_defense = 65
+base_special_attack = 75
+base_special_defense = 95
+base_speed = 65
+ev_attack = 2
+base_exp = 168
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_246d3")]([SubResource("Resource_5ef5l"), SubResource("Resource_gkabn"), SubResource("Resource_af0mf"), SubResource("Resource_kxbxc"), SubResource("Resource_xa1mn"), SubResource("Resource_wr8ry"), SubResource("Resource_d6o1g"), SubResource("Resource_yhc4l"), SubResource("Resource_aajf5"), SubResource("Resource_mk6vp"), SubResource("Resource_3i520"), SubResource("Resource_pe2if"), SubResource("Resource_qpcvd")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"IRONHEAD", &"KNOCKOFF", &"LASTRESORT", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"QUASH", &"RETURN", &"ROCKSLIDE", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"TOXIC", &"UTURN", &"WORKUP", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CHARM", &"PLAYROUGH", &"SING", &"WISH"])
+abilities = Array[StringName]([&"COMATOSE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 4
+weight = 199
+color = &"Blue"
+shape = &"Bipedal"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(6, 29)
+shadow_size = 1
+id = &"KOMALA"
+display_name = "Komala"

@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6wb1c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kv2o3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_js41r"]
+
+[sub_resource type="Resource" id="Resource_47axc"]
+script = ExtResource("1_6wb1c")
+species = &"MIGHTYENA"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_beqqt"]
+script = ExtResource("2_kv2o3")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_eldx4"]
+script = ExtResource("2_kv2o3")
+level = 4
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_0ygxf"]
+script = ExtResource("2_kv2o3")
+level = 7
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_b1eqw"]
+script = ExtResource("2_kv2o3")
+level = 10
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_op3te"]
+script = ExtResource("2_kv2o3")
+level = 13
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_i2t27"]
+script = ExtResource("2_kv2o3")
+level = 16
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_rj68m"]
+script = ExtResource("2_kv2o3")
+level = 19
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_ykh1y"]
+script = ExtResource("2_kv2o3")
+level = 22
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_ur47p"]
+script = ExtResource("2_kv2o3")
+level = 25
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_0dwhc"]
+script = ExtResource("2_kv2o3")
+level = 28
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_nri37"]
+script = ExtResource("2_kv2o3")
+level = 31
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_yew14"]
+script = ExtResource("2_kv2o3")
+level = 34
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_vshee"]
+script = ExtResource("2_kv2o3")
+level = 37
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_8yt3e"]
+script = ExtResource("2_kv2o3")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_bekae"]
+script = ExtResource("2_kv2o3")
+level = 43
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_t4jat"]
+script = ExtResource("2_kv2o3")
+level = 46
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "POOCHYENA"
+script = ExtResource("3_js41r")
+species = &"POOCHYENA"
+category = "Bite"
+pokedex_entry = "It savagely threatens foes with bared fangs. It chases after fleeing targets tenaciously. It turns tail and runs, however, if the foe strikes back."
+types = Array[StringName]([&"DARK"])
+base_hp = 35
+base_attack = 55
+base_defense = 35
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 35
+ev_attack = 1
+base_exp = 56
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_kv2o3")]([SubResource("Resource_beqqt"), SubResource("Resource_eldx4"), SubResource("Resource_0ygxf"), SubResource("Resource_b1eqw"), SubResource("Resource_op3te"), SubResource("Resource_i2t27"), SubResource("Resource_rj68m"), SubResource("Resource_ykh1y"), SubResource("Resource_ur47p"), SubResource("Resource_0dwhc"), SubResource("Resource_nri37"), SubResource("Resource_yew14"), SubResource("Resource_vshee"), SubResource("Resource_8yt3e"), SubResource("Resource_bekae"), SubResource("Resource_t4jat")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EMBARGO", &"ENDURE", &"FACADE", &"FOULPLAY", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"HYPERVOICE", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"TAUNT", &"THIEF", &"TORMENT", &"UPROAR"])
+egg_moves = Array[StringName]([&"ASTONISH", &"COVET", &"FIREFANG", &"ICEFANG", &"LEER", &"PLAYROUGH", &"POISONFANG", &"SUCKERPUNCH", &"THUNDERFANG", &"YAWN"])
+abilities = Array[StringName]([&"RUNAWAY", &"QUICKFEET"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_6wb1c")]([SubResource("Resource_47axc")])
+height = 5
+weight = 136
+color = &"Gray"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"POOCHYENA"
+display_name = "Poochyena"

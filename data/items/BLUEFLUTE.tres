@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_o1cyo"]
+
+[resource]
+resource_name = "BLUEFLUTE"
+script = ExtResource("1_o1cyo")
+name_plural = "Blue Flutes"
+pocket = 7
+price = 20
+sell_price = 10
+field_use = 1
+battle_use = 1
+consumable = false
+description = "A blue flute made from blown glass. Its melody awakens a single Pokémon from sleep."
+id = &"BLUEFLUTE"
+display_name = "Blue Flute"
+flags = Array[StringName]([&"Fling_30"])

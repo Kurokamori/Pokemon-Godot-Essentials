@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_7wnot"]
+
+[resource]
+resource_name = "TWISTEDSPOON"
+script = ExtResource("1_7wnot")
+name_plural = "Twisted Spoons"
+price = 3000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a spoon imbued with telekinetic power that boosts Psychic-type moves."
+id = &"TWISTEDSPOON"
+display_name = "Twisted Spoon"
+flags = Array[StringName]([&"Fling_30"])

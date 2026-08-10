@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8e6vm"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_k03fp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dp1ut"]
+
+[sub_resource type="Resource" id="Resource_oedgi"]
+script = ExtResource("1_8e6vm")
+species = &"CHINCHOU"
+method = &"Level"
+parameter = "27"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_4um8g"]
+script = ExtResource("2_k03fp")
+level = 0
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_cvb84"]
+script = ExtResource("2_k03fp")
+level = 0
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_rejcf"]
+script = ExtResource("2_k03fp")
+level = 0
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_u7mt3"]
+script = ExtResource("2_k03fp")
+move = &"EERIEIMPULSE"
+
+[sub_resource type="Resource" id="Resource_ivixm"]
+script = ExtResource("2_k03fp")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_glnu8"]
+script = ExtResource("2_k03fp")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_i66w2"]
+script = ExtResource("2_k03fp")
+move = &"ELECTROBALL"
+
+[sub_resource type="Resource" id="Resource_otl8p"]
+script = ExtResource("2_k03fp")
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_2i351"]
+script = ExtResource("2_k03fp")
+level = 12
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_3nn2d"]
+script = ExtResource("2_k03fp")
+level = 16
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_c5tfv"]
+script = ExtResource("2_k03fp")
+level = 20
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_jiwbk"]
+script = ExtResource("2_k03fp")
+level = 24
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_cs6si"]
+script = ExtResource("2_k03fp")
+level = 30
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_7rf4d"]
+script = ExtResource("2_k03fp")
+level = 36
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_atllg"]
+script = ExtResource("2_k03fp")
+level = 42
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_rpos5"]
+script = ExtResource("2_k03fp")
+level = 48
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_j5vl7"]
+script = ExtResource("2_k03fp")
+level = 54
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "LANTURN"
+script = ExtResource("3_dp1ut")
+species = &"LANTURN"
+category = "Light"
+pokedex_entry = "The light-emitting orbs on its back are very bright. They are formed from a part of its dorsal fin. This Pokémon illuminates the inky darkness of deep seas."
+types = Array[StringName]([&"WATER", &"ELECTRIC"])
+base_hp = 125
+base_attack = 58
+base_defense = 58
+base_special_attack = 76
+base_special_defense = 76
+base_speed = 67
+ev_hp = 2
+base_exp = 161
+growth_rate = &"Slow"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_k03fp")]([SubResource("Resource_4um8g"), SubResource("Resource_cvb84"), SubResource("Resource_rejcf"), SubResource("Resource_u7mt3"), SubResource("Resource_ivixm"), SubResource("Resource_glnu8"), SubResource("Resource_i66w2"), SubResource("Resource_otl8p"), SubResource("Resource_2i351"), SubResource("Resource_3nn2d"), SubResource("Resource_c5tfv"), SubResource("Resource_jiwbk"), SubResource("Resource_cs6si"), SubResource("Resource_7rf4d"), SubResource("Resource_atllg"), SubResource("Resource_rpos5"), SubResource("Resource_j5vl7")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEALBELL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"VOLTSWITCH", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WILDCHARGE"])
+abilities = Array[StringName]([&"VOLTABSORB", &"ILLUMINATE"])
+hidden_abilities = Array[StringName]([&"WATERABSORB"])
+wild_item_uncommon = Array[StringName]([&"DEEPSEASCALE"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_8e6vm")]([SubResource("Resource_oedgi")])
+height = 12
+weight = 225
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 14)
+id = &"LANTURN"
+display_name = "Lanturn"

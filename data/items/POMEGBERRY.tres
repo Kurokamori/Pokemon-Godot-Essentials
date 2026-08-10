@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ldx2a"]
+
+[resource]
+resource_name = "POMEGBERRY"
+script = ExtResource("1_ldx2a")
+name_plural = "Pomeg Berries"
+pocket = 5
+price = 20
+sell_price = 10
+field_use = 1
+description = "Using it on a Pokémon makes it more friendly, but it also lowers its base HP."
+id = &"POMEGBERRY"
+display_name = "Pomeg Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_ICE_90"])

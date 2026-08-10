@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_vthxl"]
+
+[resource]
+resource_name = "MYSTICWATER"
+script = ExtResource("1_vthxl")
+name_plural = "Mystic Waters"
+price = 3000
+sell_price = 500
+description = "An item to be held by a Pokémon. It is a teardrop-shaped gem that ups the power of Water-type moves."
+id = &"MYSTICWATER"
+display_name = "Mystic Water"
+flags = Array[StringName]([&"Fling_30"])

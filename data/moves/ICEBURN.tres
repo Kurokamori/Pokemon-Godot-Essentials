@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_txcn7"]
+
+[resource]
+resource_name = "ICEBURN"
+script = ExtResource("1_txcn7")
+type = &"ICE"
+category = 1
+power = 140
+accuracy = 90
+function_code = &"TwoTurnAttackBurnTarget"
+effect_chance = 30
+description = "On the second turn, an ultracold, freezing wind surrounds the foe. This may leave it with a burn."
+id = &"ICEBURN"
+display_name = "Ice Burn"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

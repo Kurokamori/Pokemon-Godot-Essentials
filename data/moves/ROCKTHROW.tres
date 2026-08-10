@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ngkbk"]
+
+[resource]
+resource_name = "ROCKTHROW"
+script = ExtResource("1_ngkbk")
+type = &"ROCK"
+category = 0
+power = 50
+accuracy = 90
+total_pp = 15
+description = "The user picks up and throws a small rock at the target to attack."
+id = &"ROCKTHROW"
+display_name = "Rock Throw"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

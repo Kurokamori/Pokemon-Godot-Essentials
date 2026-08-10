@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_63a2u"]
+
+[resource]
+resource_name = "KARATECHOP"
+script = ExtResource("1_63a2u")
+type = &"FIGHTING"
+category = 0
+power = 50
+total_pp = 25
+description = "The target is attacked with a sharp chop. Critical hits land more easily."
+id = &"KARATECHOP"
+display_name = "Karate Chop"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

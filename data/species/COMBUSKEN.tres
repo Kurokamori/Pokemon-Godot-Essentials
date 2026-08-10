@@ -1,0 +1,139 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tvnxo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xjrta"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7u4qh"]
+
+[sub_resource type="Resource" id="Resource_03qtc"]
+script = ExtResource("1_tvnxo")
+species = &"BLAZIKEN"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_sjx3t"]
+script = ExtResource("1_tvnxo")
+species = &"TORCHIC"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fj6jo"]
+script = ExtResource("2_xjrta")
+level = 0
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_pv1nt"]
+script = ExtResource("2_xjrta")
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_kj6se"]
+script = ExtResource("2_xjrta")
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_vqmm6"]
+script = ExtResource("2_xjrta")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_4lhhb"]
+script = ExtResource("2_xjrta")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_dv7lw"]
+script = ExtResource("2_xjrta")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_3vxba"]
+script = ExtResource("2_xjrta")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_3p5rk"]
+script = ExtResource("2_xjrta")
+level = 9
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_l33o8"]
+script = ExtResource("2_xjrta")
+level = 12
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_sw67v"]
+script = ExtResource("2_xjrta")
+level = 15
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_5ur73"]
+script = ExtResource("2_xjrta")
+level = 20
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_7hl0p"]
+script = ExtResource("2_xjrta")
+level = 25
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_tgggt"]
+script = ExtResource("2_xjrta")
+level = 30
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_7errx"]
+script = ExtResource("2_xjrta")
+level = 35
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_oqu05"]
+script = ExtResource("2_xjrta")
+level = 40
+move = &"BLAZEKICK"
+
+[sub_resource type="Resource" id="Resource_xfwex"]
+script = ExtResource("2_xjrta")
+level = 45
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_61v6b"]
+script = ExtResource("2_xjrta")
+level = 50
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_dqa33"]
+script = ExtResource("2_xjrta")
+level = 55
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "COMBUSKEN"
+script = ExtResource("3_7u4qh")
+species = &"COMBUSKEN"
+category = "Young Fowl"
+pokedex_entry = "It lashes out with 10 kicks per second. Its strong fighting instinct compels it to keep up its offensive until the opponent gives up."
+types = Array[StringName]([&"FIRE", &"FIGHTING"])
+base_hp = 60
+base_attack = 85
+base_defense = 60
+base_special_attack = 85
+base_special_defense = 60
+base_speed = 55
+ev_attack = 1
+ev_special_attack = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_xjrta")]([SubResource("Resource_fj6jo"), SubResource("Resource_pv1nt"), SubResource("Resource_kj6se"), SubResource("Resource_vqmm6"), SubResource("Resource_4lhhb"), SubResource("Resource_dv7lw"), SubResource("Resource_3vxba"), SubResource("Resource_3p5rk"), SubResource("Resource_l33o8"), SubResource("Resource_sw67v"), SubResource("Resource_5ur73"), SubResource("Resource_7hl0p"), SubResource("Resource_tgggt"), SubResource("Resource_7errx"), SubResource("Resource_oqu05"), SubResource("Resource_xfwex"), SubResource("Resource_61v6b"), SubResource("Resource_dqa33")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BLAZEKICK", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"COACHING", &"CONFIDE", &"COUNTER", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"LASTRESORT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OVERHEAT", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THUNDERPUNCH", &"VACUUMWAVE", &"WILLOWISP", &"WORKUP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"SPEEDBOOST"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tvnxo")]([SubResource("Resource_03qtc"), SubResource("Resource_sjx3t")])
+height = 9
+weight = 195
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(1, 22)
+id = &"COMBUSKEN"
+display_name = "Combusken"

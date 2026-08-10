@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_05buo"]
+
+[resource]
+resource_name = "SANDVEIL"
+script = ExtResource("1_05buo")
+description = "Boosts the Pokémon's evasion in a sandstorm."
+id = &"SANDVEIL"
+display_name = "Sand Veil"

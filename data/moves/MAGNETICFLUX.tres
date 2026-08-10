@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_bps40"]
+
+[resource]
+resource_name = "MAGNETICFLUX"
+script = ExtResource("1_bps40")
+type = &"ELECTRIC"
+accuracy = 0
+total_pp = 20
+target = &"UserAndAllies"
+function_code = &"RaisePlusMinusUserAndAlliesDefSpDef1"
+description = "Manipulates magnetic fields to raise the Defense and Sp. Def stats of allies with Plus or Minus Abilities."
+id = &"MAGNETICFLUX"
+display_name = "Magnetic Flux"

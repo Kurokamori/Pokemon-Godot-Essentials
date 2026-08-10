@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8lrbg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1vfro"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mfrg4"]
+
+[sub_resource type="Resource" id="Resource_juemq"]
+script = ExtResource("1_8lrbg")
+species = &"MASQUERAIN"
+method = &"Level"
+parameter = "22"
+
+[sub_resource type="Resource" id="Resource_srqpy"]
+script = ExtResource("2_1vfro")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_lelm6"]
+script = ExtResource("2_1vfro")
+level = 6
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_hdw3a"]
+script = ExtResource("2_1vfro")
+level = 9
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_bp01a"]
+script = ExtResource("2_1vfro")
+level = 14
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_0be8l"]
+script = ExtResource("2_1vfro")
+level = 17
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_fticr"]
+script = ExtResource("2_1vfro")
+level = 22
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_078qk"]
+script = ExtResource("2_1vfro")
+level = 25
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_wh2rl"]
+script = ExtResource("2_1vfro")
+level = 25
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_oxgu5"]
+script = ExtResource("2_1vfro")
+level = 30
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_xg8m5"]
+script = ExtResource("2_1vfro")
+level = 35
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_5geee"]
+script = ExtResource("2_1vfro")
+level = 38
+move = &"STICKYWEB"
+
+[resource]
+resource_name = "SURSKIT"
+script = ExtResource("3_mfrg4")
+species = &"SURSKIT"
+category = "Pond Skater"
+pokedex_entry = "They gather on puddles after evening downpours, gliding across the surface of water as if sliding. It secretes honey with a sweet aroma from its head."
+types = Array[StringName]([&"BUG", &"WATER"])
+base_hp = 40
+base_attack = 30
+base_defense = 32
+base_special_attack = 50
+base_special_defense = 52
+base_speed = 65
+ev_speed = 1
+base_exp = 54
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1vfro")]([SubResource("Resource_srqpy"), SubResource("Resource_lelm6"), SubResource("Resource_hdw3a"), SubResource("Resource_bp01a"), SubResource("Resource_0be8l"), SubResource("Resource_fticr"), SubResource("Resource_078qk"), SubResource("Resource_wh2rl"), SubResource("Resource_oxgu5"), SubResource("Resource_xg8m5"), SubResource("Resource_5geee")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BUGBITE", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"INFESTATION", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"AQUAJET", &"BUGBITE", &"FELLSTINGER", &"HYDROPUMP", &"LUNGE", &"MINDREADER", &"MUDSHOT", &"POWERSPLIT", &"PSYBEAM"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"RAINDISH"])
+wild_item_common = Array[StringName]([&"HONEY"])
+egg_groups = Array[StringName]([&"Water1", &"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_8lrbg")]([SubResource("Resource_juemq")])
+height = 5
+weight = 17
+color = &"Blue"
+shape = &"Insectoid"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 62)
+front_sprite_offset = Vector2i(0, 33)
+id = &"SURSKIT"
+display_name = "Surskit"

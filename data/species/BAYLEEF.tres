@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_e534h"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_t8eum"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_np6rq"]
+
+[sub_resource type="Resource" id="Resource_30v7j"]
+script = ExtResource("1_e534h")
+species = &"MEGANIUM"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_h7yay"]
+script = ExtResource("1_e534h")
+species = &"CHIKORITA"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nk000"]
+script = ExtResource("2_t8eum")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_n0ykn"]
+script = ExtResource("2_t8eum")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_u87rm"]
+script = ExtResource("2_t8eum")
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_udpf8"]
+script = ExtResource("2_t8eum")
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_hon4d"]
+script = ExtResource("2_t8eum")
+level = 6
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_xxdjm"]
+script = ExtResource("2_t8eum")
+level = 9
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_bbf2p"]
+script = ExtResource("2_t8eum")
+level = 12
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_yhlcs"]
+script = ExtResource("2_t8eum")
+level = 18
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_72rom"]
+script = ExtResource("2_t8eum")
+level = 22
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_a5h3i"]
+script = ExtResource("2_t8eum")
+level = 26
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_7vw88"]
+script = ExtResource("2_t8eum")
+level = 32
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_p1gmi"]
+script = ExtResource("2_t8eum")
+level = 36
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_0t4bk"]
+script = ExtResource("2_t8eum")
+level = 40
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_tomf2"]
+script = ExtResource("2_t8eum")
+level = 46
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_gawem"]
+script = ExtResource("2_t8eum")
+level = 50
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_tr84k"]
+script = ExtResource("2_t8eum")
+level = 54
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "BAYLEEF"
+script = ExtResource("3_np6rq")
+species = &"BAYLEEF"
+category = "Leaf"
+pokedex_entry = "A Bayleef's neck is ringed by curled-up leaves. Inside each leaf is a small tree shoot. The fragrance of this shoot makes people peppy."
+types = Array[StringName]([&"GRASS"])
+base_hp = 60
+base_attack = 62
+base_defense = 80
+base_special_attack = 63
+base_special_defense = 80
+base_speed = 60
+ev_defense = 1
+ev_special_defense = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_t8eum")]([SubResource("Resource_nk000"), SubResource("Resource_n0ykn"), SubResource("Resource_u87rm"), SubResource("Resource_udpf8"), SubResource("Resource_hon4d"), SubResource("Resource_xxdjm"), SubResource("Resource_bbf2p"), SubResource("Resource_yhlcs"), SubResource("Resource_72rom"), SubResource("Resource_a5h3i"), SubResource("Resource_7vw88"), SubResource("Resource_p1gmi"), SubResource("Resource_0t4bk"), SubResource("Resource_tomf2"), SubResource("Resource_gawem"), SubResource("Resource_tr84k")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ATTRACT", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"HEADBUTT", &"HIDDENPOWER", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"LEAFGUARD"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_e534h")]([SubResource("Resource_30v7j"), SubResource("Resource_h7yay")])
+height = 12
+weight = 158
+color = &"Green"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(-1, 26)
+id = &"BAYLEEF"
+display_name = "Bayleef"

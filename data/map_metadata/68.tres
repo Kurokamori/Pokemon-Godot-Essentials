@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_84833"]
+
+[resource]
+resource_name = "68"
+script = ExtResource("1_84833")
+map_id = 68
+outdoor_map = true
+announce_location = true
+safari_map = true
+town_map_position = Array[int]([0, 12, 12])
+battle_background = "forest"
+battle_environment = &"Forest"
+id = &"68"
+display_name = "Safari Zone"

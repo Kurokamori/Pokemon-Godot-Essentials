@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_d51hd"]
+
+[resource]
+resource_name = "CHAMPION"
+script = ExtResource("1_d51hd")
+icon_position = 48
+description = "Ribbon for clearing the Pokémon League and entering the Hall of Fame in another region."
+id = &"CHAMPION"
+display_name = "Champion Ribbon"

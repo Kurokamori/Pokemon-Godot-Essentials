@@ -1,0 +1,91 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mxall"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kmwq6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_r38wi"]
+
+[sub_resource type="Resource" id="Resource_crbet"]
+script = ExtResource("1_mxall")
+species = &"SWADLOON"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_qs8ht"]
+script = ExtResource("2_kmwq6")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_gknks"]
+script = ExtResource("2_kmwq6")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_7it45"]
+script = ExtResource("2_kmwq6")
+level = 8
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_s3oss"]
+script = ExtResource("2_kmwq6")
+level = 15
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_c0noy"]
+script = ExtResource("2_kmwq6")
+level = 22
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_lncin"]
+script = ExtResource("2_kmwq6")
+level = 29
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_ggsmm"]
+script = ExtResource("2_kmwq6")
+level = 31
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_3jl1l"]
+script = ExtResource("2_kmwq6")
+level = 36
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_en6fr"]
+script = ExtResource("2_kmwq6")
+level = 43
+move = &"FLAIL"
+
+[resource]
+resource_name = "SEWADDLE"
+script = ExtResource("3_r38wi")
+species = &"SEWADDLE"
+category = "Sewing"
+pokedex_entry = "This Pokémon makes clothes for itself. It chews up leaves and sews them with sticky thread extruded from its mouth."
+types = Array[StringName]([&"BUG", &"GRASS"])
+base_hp = 45
+base_attack = 53
+base_defense = 70
+base_special_attack = 40
+base_special_defense = 60
+base_speed = 42
+ev_defense = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_kmwq6")]([SubResource("Resource_qs8ht"), SubResource("Resource_gknks"), SubResource("Resource_7it45"), SubResource("Resource_s3oss"), SubResource("Resource_c0noy"), SubResource("Resource_lncin"), SubResource("Resource_ggsmm"), SubResource("Resource_3jl1l"), SubResource("Resource_en6fr")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BUGBITE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"DREAMEATER", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"IRONDEFENSE", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SYNTHESIS", &"TOXIC", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AGILITY", &"AIRSLASH", &"BATONPASS", &"CAMOUFLAGE", &"GRASSYTERRAIN", &"MEFIRST", &"MINDREADER", &"RAZORWIND", &"SCREECH", &"SILVERWIND"])
+abilities = Array[StringName]([&"SWARM", &"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+wild_item_uncommon = Array[StringName]([&"MENTALHERB"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_mxall")]([SubResource("Resource_crbet")])
+height = 3
+weight = 25
+color = &"Yellow"
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(0, 62)
+front_sprite_offset = Vector2i(0, 34)
+shadow_size = 1
+id = &"SEWADDLE"
+display_name = "Sewaddle"

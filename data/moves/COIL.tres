@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_2rs27"]
+
+[resource]
+resource_name = "COIL"
+script = ExtResource("1_2rs27")
+type = &"POISON"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserAtkDefAcc1"
+description = "The user coils up and concentrates. This raises its Attack and Defense stats as well as its accuracy."
+id = &"COIL"
+display_name = "Coil"

@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6m6hn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_r7w0e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vgou6"]
+
+[sub_resource type="Resource" id="Resource_34w53"]
+script = ExtResource("1_6m6hn")
+species = &"URSHIFU"
+method = &"Event"
+parameter = "1"
+
+[sub_resource type="Resource" id="Resource_asbfx"]
+script = ExtResource("2_r7w0e")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_w1jjx"]
+script = ExtResource("2_r7w0e")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_bdiht"]
+script = ExtResource("2_r7w0e")
+level = 4
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_jxmft"]
+script = ExtResource("2_r7w0e")
+level = 8
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_pqlon"]
+script = ExtResource("2_r7w0e")
+level = 12
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_ne0ak"]
+script = ExtResource("2_r7w0e")
+level = 16
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_uhv1f"]
+script = ExtResource("2_r7w0e")
+level = 20
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_vyrjp"]
+script = ExtResource("2_r7w0e")
+level = 24
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_871vv"]
+script = ExtResource("2_r7w0e")
+level = 28
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_83ay8"]
+script = ExtResource("2_r7w0e")
+level = 32
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_34aiw"]
+script = ExtResource("2_r7w0e")
+level = 36
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_28g5o"]
+script = ExtResource("2_r7w0e")
+level = 40
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_4p2l4"]
+script = ExtResource("2_r7w0e")
+level = 44
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_7si11"]
+script = ExtResource("2_r7w0e")
+level = 48
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_2v6bq"]
+script = ExtResource("2_r7w0e")
+level = 52
+move = &"FOCUSPUNCH"
+
+[resource]
+resource_name = "KUBFU"
+script = ExtResource("3_vgou6")
+species = &"KUBFU"
+category = "Wushu"
+pokedex_entry = "Kubfu trains hard to perfect its moves. The moves it masters will determine which form it takes when it evolves."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 60
+base_attack = 90
+base_defense = 60
+base_special_attack = 53
+base_special_defense = 50
+base_speed = 72
+ev_attack = 1
+base_exp = 77
+growth_rate = &"Slow"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 3
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_r7w0e")]([SubResource("Resource_asbfx"), SubResource("Resource_w1jjx"), SubResource("Resource_bdiht"), SubResource("Resource_jxmft"), SubResource("Resource_pqlon"), SubResource("Resource_ne0ak"), SubResource("Resource_uhv1f"), SubResource("Resource_vyrjp"), SubResource("Resource_871vv"), SubResource("Resource_83ay8"), SubResource("Resource_34aiw"), SubResource("Resource_28g5o"), SubResource("Resource_4p2l4"), SubResource("Resource_7si11"), SubResource("Resource_2v6bq")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FOCUSENERGY", &"FRUSTRATION", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"IRONHEAD", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"THUNDERPUNCH", &"TOXIC", &"UTURN", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"INNERFOCUS"])
+hatch_steps = 30720
+evolutions = Array[ExtResource("1_6m6hn")]([SubResource("Resource_34w53")])
+height = 6
+weight = 120
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 23)
+shadow_size = 1
+id = &"KUBFU"
+display_name = "Kubfu"
+flags = Array[StringName]([&"Legendary"])

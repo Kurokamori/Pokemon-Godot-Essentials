@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ox5wd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fstq7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xx1hd"]
+
+[sub_resource type="Resource" id="Resource_7vx0v"]
+script = ExtResource("1_ox5wd")
+species = &"ARMALDO"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_ryssa"]
+script = ExtResource("2_fstq7")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_yei5b"]
+script = ExtResource("2_fstq7")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_wrqu8"]
+script = ExtResource("2_fstq7")
+level = 4
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_aqsy4"]
+script = ExtResource("2_fstq7")
+level = 8
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_h7rhn"]
+script = ExtResource("2_fstq7")
+level = 12
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_tfpfe"]
+script = ExtResource("2_fstq7")
+level = 16
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_81nb2"]
+script = ExtResource("2_fstq7")
+level = 20
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_ekxo2"]
+script = ExtResource("2_fstq7")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_j8785"]
+script = ExtResource("2_fstq7")
+level = 28
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_yeolo"]
+script = ExtResource("2_fstq7")
+level = 32
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_l3gux"]
+script = ExtResource("2_fstq7")
+level = 36
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_gmgyn"]
+script = ExtResource("2_fstq7")
+level = 41
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_aknxu"]
+script = ExtResource("2_fstq7")
+level = 44
+move = &"XSCISSOR"
+
+[resource]
+resource_name = "ANORITH"
+script = ExtResource("3_xx1hd")
+species = &"ANORITH"
+category = "Old Shrimp"
+pokedex_entry = "It was resurrected from a fossil using the power of science. It swims by undulating the wings at its sides. They were feet that adapted to life in the sea."
+types = Array[StringName]([&"ROCK", &"BUG"])
+base_hp = 45
+base_attack = 95
+base_defense = 50
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 75
+ev_attack = 1
+base_exp = 71
+growth_rate = &"Erratic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fstq7")]([SubResource("Resource_ryssa"), SubResource("Resource_yei5b"), SubResource("Resource_wrqu8"), SubResource("Resource_aqsy4"), SubResource("Resource_h7rhn"), SubResource("Resource_tfpfe"), SubResource("Resource_81nb2"), SubResource("Resource_ekxo2"), SubResource("Resource_j8785"), SubResource("Resource_yeolo"), SubResource("Resource_l3gux"), SubResource("Resource_gmgyn"), SubResource("Resource_aknxu")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BUGBITE", &"CAPTIVATE", &"CONFIDE", &"CROSSPOISON", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"KNOCKOFF", &"METEORBEAM", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"WATERPULSE", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"AQUAJET", &"CROSSPOISON", &"CURSE", &"IRONDEFENSE", &"KNOCKOFF", &"RAPIDSPIN", &"SANDATTACK", &"SCREECH", &"WATERPULSE"])
+abilities = Array[StringName]([&"BATTLEARMOR"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_ox5wd")]([SubResource("Resource_7vx0v")])
+height = 7
+weight = 125
+color = &"Gray"
+shape = &"Insectoid"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(3, 28)
+id = &"ANORITH"
+display_name = "Anorith"

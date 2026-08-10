@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_e8y3x"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q0gta"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0eooa"]
+
+[sub_resource type="Resource" id="Resource_gn0il"]
+script = ExtResource("1_e8y3x")
+species = &"CHARJABUG"
+method = &"Item"
+parameter = "THUNDERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_lpc3t"]
+script = ExtResource("2_q0gta")
+level = 0
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_eftvs"]
+script = ExtResource("2_q0gta")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_7wjrb"]
+script = ExtResource("2_q0gta")
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_14b6v"]
+script = ExtResource("2_q0gta")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_44b24"]
+script = ExtResource("2_q0gta")
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_36kxg"]
+script = ExtResource("2_q0gta")
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_u4pnk"]
+script = ExtResource("2_q0gta")
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_82fka"]
+script = ExtResource("2_q0gta")
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_0obep"]
+script = ExtResource("2_q0gta")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_cr4yx"]
+script = ExtResource("2_q0gta")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_g3fxu"]
+script = ExtResource("2_q0gta")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_4qros"]
+script = ExtResource("2_q0gta")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_b5kll"]
+script = ExtResource("2_q0gta")
+level = 23
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_m7i1a"]
+script = ExtResource("2_q0gta")
+level = 29
+move = &"STICKYWEB"
+
+[sub_resource type="Resource" id="Resource_t7gox"]
+script = ExtResource("2_q0gta")
+level = 36
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_4sxkb"]
+script = ExtResource("2_q0gta")
+level = 43
+move = &"GUILLOTINE"
+
+[sub_resource type="Resource" id="Resource_2760a"]
+script = ExtResource("2_q0gta")
+level = 50
+move = &"FLY"
+
+[sub_resource type="Resource" id="Resource_nwjqk"]
+script = ExtResource("2_q0gta")
+level = 57
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_htmkn"]
+script = ExtResource("2_q0gta")
+level = 64
+move = &"ZAPCANNON"
+
+[resource]
+resource_name = "VIKAVOLT"
+script = ExtResource("3_0eooa")
+species = &"VIKAVOLT"
+category = "Stag Beetle"
+pokedex_entry = "It zips around, on sharp lookout for an opening. It concentrates electrical energy within its large jaws and uses it to zap its enemies."
+types = Array[StringName]([&"BUG", &"ELECTRIC"])
+base_hp = 77
+base_attack = 70
+base_defense = 90
+base_special_attack = 145
+base_special_defense = 75
+base_speed = 43
+ev_special_attack = 3
+base_exp = 250
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_q0gta")]([SubResource("Resource_lpc3t"), SubResource("Resource_eftvs"), SubResource("Resource_7wjrb"), SubResource("Resource_14b6v"), SubResource("Resource_44b24"), SubResource("Resource_36kxg"), SubResource("Resource_u4pnk"), SubResource("Resource_82fka"), SubResource("Resource_0obep"), SubResource("Resource_cr4yx"), SubResource("Resource_g3fxu"), SubResource("Resource_4qros"), SubResource("Resource_b5kll"), SubResource("Resource_m7i1a"), SubResource("Resource_t7gox"), SubResource("Resource_4sxkb"), SubResource("Resource_2760a"), SubResource("Resource_nwjqk"), SubResource("Resource_htmkn")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AGILITY", &"AIRSLASH", &"ATTRACT", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DIG", &"DOUBLETEAM", &"DUALWINGBEAT", &"EERIEIMPULSE", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASHCANNON", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROOST", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SKITTERSMACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TOXIC", &"VOLTSWITCH", &"WILDCHARGE", &"XSCISSOR"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_e8y3x")]([SubResource("Resource_gn0il")])
+height = 15
+weight = 450
+color = &"Blue"
+shape = &"Insectoid"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 12)
+id = &"VIKAVOLT"
+display_name = "Vikavolt"

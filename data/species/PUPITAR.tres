@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_v0uqp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_w0xil"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wmwrb"]
+
+[sub_resource type="Resource" id="Resource_goc8u"]
+script = ExtResource("1_v0uqp")
+species = &"TYRANITAR"
+method = &"Level"
+parameter = "55"
+
+[sub_resource type="Resource" id="Resource_md774"]
+script = ExtResource("1_v0uqp")
+species = &"LARVITAR"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_y3qdy"]
+script = ExtResource("2_w0xil")
+level = 0
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_lwvrp"]
+script = ExtResource("2_w0xil")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_xls5p"]
+script = ExtResource("2_w0xil")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_1por2"]
+script = ExtResource("2_w0xil")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_fafo4"]
+script = ExtResource("2_w0xil")
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_w7thj"]
+script = ExtResource("2_w0xil")
+level = 9
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_kqgdn"]
+script = ExtResource("2_w0xil")
+level = 12
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_coa6t"]
+script = ExtResource("2_w0xil")
+level = 15
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_4p4i2"]
+script = ExtResource("2_w0xil")
+level = 18
+move = &"STOMPINGTANTRUM"
+
+[sub_resource type="Resource" id="Resource_hv577"]
+script = ExtResource("2_w0xil")
+level = 21
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_ag24f"]
+script = ExtResource("2_w0xil")
+level = 24
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_km6a6"]
+script = ExtResource("2_w0xil")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_b6ip5"]
+script = ExtResource("2_w0xil")
+level = 33
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_ase7h"]
+script = ExtResource("2_w0xil")
+level = 37
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_noqam"]
+script = ExtResource("2_w0xil")
+level = 42
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_sgw8l"]
+script = ExtResource("2_w0xil")
+level = 47
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_q2e04"]
+script = ExtResource("2_w0xil")
+level = 52
+move = &"HYPERBEAM"
+
+[resource]
+resource_name = "PUPITAR"
+script = ExtResource("3_wmwrb")
+species = &"PUPITAR"
+category = "Hard Shell"
+pokedex_entry = "A Pupitar creates a gas inside its body that it ejects under compression to propel itself like a jet. Its body can withstand a collision with solid steel."
+types = Array[StringName]([&"ROCK", &"GROUND"])
+base_hp = 70
+base_attack = 84
+base_defense = 70
+base_special_attack = 65
+base_special_defense = 70
+base_speed = 51
+ev_attack = 2
+base_exp = 144
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_w0xil")]([SubResource("Resource_y3qdy"), SubResource("Resource_lwvrp"), SubResource("Resource_xls5p"), SubResource("Resource_1por2"), SubResource("Resource_fafo4"), SubResource("Resource_w7thj"), SubResource("Resource_kqgdn"), SubResource("Resource_coa6t"), SubResource("Resource_4p4i2"), SubResource("Resource_hv577"), SubResource("Resource_ag24f"), SubResource("Resource_km6a6"), SubResource("Resource_b6ip5"), SubResource("Resource_ase7h"), SubResource("Resource_noqam"), SubResource("Resource_sgw8l"), SubResource("Resource_q2e04")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"ASSURANCE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DARKPULSE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FOCUSENERGY", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNARL", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"TORMENT", &"UPROAR"])
+abilities = Array[StringName]([&"SHEDSKIN"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_v0uqp")]([SubResource("Resource_goc8u"), SubResource("Resource_md774")])
+height = 12
+weight = 1520
+color = &"Gray"
+shape = &"Serpentine"
+habitat = &"Mountain"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 18)
+shadow_size = 1
+id = &"PUPITAR"
+display_name = "Pupitar"

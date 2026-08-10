@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ny7s3"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_55ul4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_c37mv"]
+
+[sub_resource type="Resource" id="Resource_0j0hm"]
+script = ExtResource("1_ny7s3")
+species = &"METAPOD"
+method = &"Level"
+parameter = "7"
+
+[sub_resource type="Resource" id="Resource_mdmle"]
+script = ExtResource("2_55ul4")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_egno7"]
+script = ExtResource("2_55ul4")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_i2rv0"]
+script = ExtResource("2_55ul4")
+level = 9
+move = &"BUGBITE"
+
+[resource]
+resource_name = "CATERPIE"
+script = ExtResource("3_c37mv")
+species = &"CATERPIE"
+category = "Worm"
+pokedex_entry = "Its voracious appetite compels it to devour leaves bigger than itself without hesitation. It releases a terribly strong odor from its antennae."
+types = Array[StringName]([&"BUG"])
+base_hp = 45
+base_attack = 30
+base_defense = 35
+base_special_attack = 20
+base_special_defense = 20
+base_speed = 45
+ev_hp = 1
+base_exp = 39
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_55ul4")]([SubResource("Resource_mdmle"), SubResource("Resource_egno7"), SubResource("Resource_i2rv0")])
+tutor_moves = Array[StringName]([&"BUGBITE", &"ELECTROWEB", &"STRINGSHOT"])
+abilities = Array[StringName]([&"SHIELDDUST"])
+hidden_abilities = Array[StringName]([&"RUNAWAY"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ny7s3")]([SubResource("Resource_0j0hm")])
+height = 3
+weight = 29
+color = &"Green"
+shape = &"Insectoid"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-1, 30)
+shadow_size = 1
+id = &"CATERPIE"
+display_name = "Caterpie"

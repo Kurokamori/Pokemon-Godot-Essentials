@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_yyf3e"]
+
+[resource]
+resource_name = "24"
+script = ExtResource("1_yyf3e")
+map_id = 24
+teleport_destination = Array[int]([23, 11, 15])
+town_map_position = Array[int]([0, 15, 8])
+id = &"24"
+display_name = "Lerucean Town"

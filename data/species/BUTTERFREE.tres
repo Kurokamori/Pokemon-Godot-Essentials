@@ -1,0 +1,135 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mjade"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_g5wiu"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tvre6"]
+
+[sub_resource type="Resource" id="Resource_xr4ew"]
+script = ExtResource("1_mjade")
+species = &"METAPOD"
+method = &"Level"
+parameter = "10"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_24g0h"]
+script = ExtResource("2_g5wiu")
+level = 0
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_b04bq"]
+script = ExtResource("2_g5wiu")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_pg5ex"]
+script = ExtResource("2_g5wiu")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_kjgrw"]
+script = ExtResource("2_g5wiu")
+move = &"STRINGSHOT"
+
+[sub_resource type="Resource" id="Resource_lskm4"]
+script = ExtResource("2_g5wiu")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_nts8a"]
+script = ExtResource("2_g5wiu")
+level = 4
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_c0djd"]
+script = ExtResource("2_g5wiu")
+level = 8
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_bkgpl"]
+script = ExtResource("2_g5wiu")
+level = 12
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_0kdjf"]
+script = ExtResource("2_g5wiu")
+level = 12
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_412xt"]
+script = ExtResource("2_g5wiu")
+level = 12
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_v5ghe"]
+script = ExtResource("2_g5wiu")
+level = 16
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_i4gmj"]
+script = ExtResource("2_g5wiu")
+level = 20
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_pc761"]
+script = ExtResource("2_g5wiu")
+level = 24
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_8kuho"]
+script = ExtResource("2_g5wiu")
+level = 28
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_hdojc"]
+script = ExtResource("2_g5wiu")
+level = 32
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_4yt1d"]
+script = ExtResource("2_g5wiu")
+level = 36
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_hbwla"]
+script = ExtResource("2_g5wiu")
+level = 40
+move = &"RAGEPOWDER"
+
+[sub_resource type="Resource" id="Resource_7t0qb"]
+script = ExtResource("2_g5wiu")
+level = 44
+move = &"QUIVERDANCE"
+
+[resource]
+resource_name = "BUTTERFREE"
+script = ExtResource("3_tvre6")
+species = &"BUTTERFREE"
+category = "Butterfly"
+pokedex_entry = "It has a superior ability to search for delicious honey from flowers. It can seek, extract, and carry honey from flowers blooming over six miles away."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 60
+base_attack = 45
+base_defense = 50
+base_special_attack = 90
+base_special_defense = 80
+base_speed = 70
+ev_special_attack = 2
+ev_special_defense = 1
+base_exp = 198
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_g5wiu")]([SubResource("Resource_24g0h"), SubResource("Resource_b04bq"), SubResource("Resource_pg5ex"), SubResource("Resource_kjgrw"), SubResource("Resource_lskm4"), SubResource("Resource_nts8a"), SubResource("Resource_c0djd"), SubResource("Resource_bkgpl"), SubResource("Resource_0kdjf"), SubResource("Resource_412xt"), SubResource("Resource_v5ghe"), SubResource("Resource_i4gmj"), SubResource("Resource_pc761"), SubResource("Resource_8kuho"), SubResource("Resource_hdojc"), SubResource("Resource_4yt1d"), SubResource("Resource_hbwla"), SubResource("Resource_7t0qb")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"ATTRACT", &"BATONPASS", &"BUGBITE", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"DUALWINGBEAT", &"ELECTROWEB", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"INFESTATION", &"IRONDEFENSE", &"MIMIC", &"NATURALGIFT", &"OMINOUSWIND", &"POLLENPUFF", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SIGNALBEAM", &"SILVERWIND", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UTURN", &"VENOSHOCK"])
+abilities = Array[StringName]([&"COMPOUNDEYES"])
+hidden_abilities = Array[StringName]([&"TINTEDLENS"])
+wild_item_uncommon = Array[StringName]([&"SILVERPOWDER"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_mjade")]([SubResource("Resource_xr4ew")])
+height = 11
+weight = 320
+color = &"White"
+shape = &"MultiWinged"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 13)
+id = &"BUTTERFREE"
+display_name = "Butterfree"

@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vt4od"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ohid0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_meja5"]
+
+[sub_resource type="Resource" id="Resource_827ba"]
+script = ExtResource("1_vt4od")
+species = &"TORRACAT"
+method = &"Level"
+parameter = "17"
+
+[sub_resource type="Resource" id="Resource_u0hap"]
+script = ExtResource("2_ohid0")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_o5msq"]
+script = ExtResource("2_ohid0")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_3b1iq"]
+script = ExtResource("2_ohid0")
+level = 3
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_wur2l"]
+script = ExtResource("2_ohid0")
+level = 6
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_u30pa"]
+script = ExtResource("2_ohid0")
+level = 9
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_5y1xw"]
+script = ExtResource("2_ohid0")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_qgoov"]
+script = ExtResource("2_ohid0")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_lx7bc"]
+script = ExtResource("2_ohid0")
+level = 18
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_4skmn"]
+script = ExtResource("2_ohid0")
+level = 21
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_rglxm"]
+script = ExtResource("2_ohid0")
+level = 24
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_r77xk"]
+script = ExtResource("2_ohid0")
+level = 27
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_xiuki"]
+script = ExtResource("2_ohid0")
+level = 30
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_dv862"]
+script = ExtResource("2_ohid0")
+level = 33
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_wqxsg"]
+script = ExtResource("2_ohid0")
+level = 36
+move = &"FLAREBLITZ"
+
+[resource]
+resource_name = "LITTEN"
+script = ExtResource("3_meja5")
+species = &"LITTEN"
+category = "Fire Cat"
+pokedex_entry = "Its coat regrows twice a year. When the time comes, Litten sets its own body on fire and burns away the old fur."
+types = Array[StringName]([&"FIRE"])
+base_hp = 45
+base_attack = 65
+base_defense = 40
+base_special_attack = 60
+base_special_defense = 40
+base_speed = 70
+ev_speed = 1
+base_exp = 64
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ohid0")]([SubResource("Resource_u0hap"), SubResource("Resource_o5msq"), SubResource("Resource_3b1iq"), SubResource("Resource_wur2l"), SubResource("Resource_u30pa"), SubResource("Resource_5y1xw"), SubResource("Resource_qgoov"), SubResource("Resource_lx7bc"), SubResource("Resource_4skmn"), SubResource("Resource_rglxm"), SubResource("Resource_r77xk"), SubResource("Resource_xiuki"), SubResource("Resource_dv862"), SubResource("Resource_wqxsg")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"BODYSLAM", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CRUNCH", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPLEDGE", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"LEECHLIFE", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"OUTRAGE", &"OVERHEAT", &"PAYDAY", &"PROTECT", &"REST", &"RETURN", &"REVENGE", &"ROAR", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"TAUNT", &"TORMENT", &"TOXIC", &"UTURN", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"FAKEOUT", &"PARTINGSHOT", &"POWERTRIP"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"INTIMIDATE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_vt4od")]([SubResource("Resource_827ba")])
+height = 4
+weight = 43
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-1, 31)
+shadow_size = 1
+id = &"LITTEN"
+display_name = "Litten"

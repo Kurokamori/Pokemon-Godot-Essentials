@@ -1,0 +1,147 @@
+[gd_resource type="Resource" script_class="MapConnectionSet" format=3 uid="uid://b35iqyy2twsde"]
+
+[ext_resource type="Script" uid="uid://cd68hjm5qk1gi" path="res://src/data/map_connection.gd" id="1_vkq5c"]
+[ext_resource type="Script" uid="uid://bev83t8lgb3nc" path="res://src/data/map_connection_set.gd" id="2_8di3g"]
+
+[sub_resource type="Resource" id="Resource_hqy47"]
+script = ExtResource("1_vkq5c")
+map_id = 2
+target_map_id = 5
+target_offset = 4
+
+[sub_resource type="Resource" id="Resource_8st3a"]
+script = ExtResource("1_vkq5c")
+map_id = 2
+edge = 2
+target_map_id = 66
+target_edge = 3
+
+[sub_resource type="Resource" id="Resource_jdow6"]
+script = ExtResource("1_vkq5c")
+map_id = 7
+edge = 1
+target_map_id = 5
+target_edge = 0
+target_offset = 2
+
+[sub_resource type="Resource" id="Resource_qdlvg"]
+script = ExtResource("1_vkq5c")
+map_id = 7
+edge = 3
+target_map_id = 23
+target_edge = 2
+target_offset = 78
+
+[sub_resource type="Resource" id="Resource_8pgiq"]
+script = ExtResource("1_vkq5c")
+map_id = 7
+edge = 2
+offset = 5
+target_map_id = 44
+target_edge = 3
+
+[sub_resource type="Resource" id="Resource_chdxf"]
+script = ExtResource("1_vkq5c")
+map_id = 21
+edge = 1
+target_map_id = 7
+target_edge = 0
+target_offset = 21
+
+[sub_resource type="Resource" id="Resource_12wjf"]
+script = ExtResource("1_vkq5c")
+map_id = 21
+edge = 3
+target_map_id = 23
+target_edge = 2
+target_offset = 1
+
+[sub_resource type="Resource" id="Resource_ufc0h"]
+script = ExtResource("1_vkq5c")
+map_id = 21
+edge = 3
+offset = 77
+target_map_id = 47
+target_edge = 2
+
+[sub_resource type="Resource" id="Resource_syor1"]
+script = ExtResource("1_vkq5c")
+map_id = 31
+edge = 1
+offset = 32
+target_map_id = 23
+target_edge = 0
+
+[sub_resource type="Resource" id="Resource_qmuyd"]
+script = ExtResource("1_vkq5c")
+map_id = 31
+edge = 2
+target_map_id = 35
+target_edge = 3
+target_offset = 10
+
+[sub_resource type="Resource" id="Resource_7mwgj"]
+script = ExtResource("1_vkq5c")
+map_id = 35
+edge = 2
+offset = 11
+target_map_id = 39
+target_edge = 3
+
+[sub_resource type="Resource" id="Resource_3pty7"]
+script = ExtResource("1_vkq5c")
+map_id = 41
+target_map_id = 40
+
+[sub_resource type="Resource" id="Resource_i1kt0"]
+script = ExtResource("1_vkq5c")
+map_id = 41
+edge = 1
+offset = 6
+target_map_id = 45
+target_edge = 0
+
+[sub_resource type="Resource" id="Resource_l8p53"]
+script = ExtResource("1_vkq5c")
+map_id = 44
+edge = 1
+offset = 43
+target_map_id = 5
+target_edge = 0
+
+[sub_resource type="Resource" id="Resource_nqu2y"]
+script = ExtResource("1_vkq5c")
+map_id = 47
+edge = 2
+target_map_id = 7
+target_edge = 3
+
+[sub_resource type="Resource" id="Resource_cgvc4"]
+script = ExtResource("1_vkq5c")
+map_id = 47
+edge = 3
+offset = 8
+target_map_id = 52
+target_edge = 2
+
+[sub_resource type="Resource" id="Resource_1s873"]
+script = ExtResource("1_vkq5c")
+map_id = 66
+offset = 18
+target_map_id = 5
+
+[sub_resource type="Resource" id="Resource_a34q5"]
+script = ExtResource("1_vkq5c")
+map_id = 69
+offset = 12
+target_map_id = 2
+
+[sub_resource type="Resource" id="Resource_jwkg4"]
+script = ExtResource("1_vkq5c")
+map_id = 69
+target_map_id = 66
+target_offset = 10
+
+[resource]
+script = ExtResource("2_8di3g")
+connections = Array[ExtResource("1_vkq5c")]([SubResource("Resource_hqy47"), SubResource("Resource_8st3a"), SubResource("Resource_jdow6"), SubResource("Resource_qdlvg"), SubResource("Resource_8pgiq"), SubResource("Resource_chdxf"), SubResource("Resource_12wjf"), SubResource("Resource_ufc0h"), SubResource("Resource_syor1"), SubResource("Resource_qmuyd"), SubResource("Resource_7mwgj"), SubResource("Resource_3pty7"), SubResource("Resource_i1kt0"), SubResource("Resource_l8p53"), SubResource("Resource_nqu2y"), SubResource("Resource_cgvc4"), SubResource("Resource_1s873"), SubResource("Resource_a34q5"), SubResource("Resource_jwkg4")])

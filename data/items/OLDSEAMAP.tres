@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_c84u2"]
+
+[resource]
+resource_name = "OLDSEAMAP"
+script = ExtResource("1_c84u2")
+name_plural = "Old Sea Maps"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A faded sea chart that shows the way to a certain island."
+id = &"OLDSEAMAP"
+display_name = "Old Sea Map"
+flags = Array[StringName]([&"KeyItem"])

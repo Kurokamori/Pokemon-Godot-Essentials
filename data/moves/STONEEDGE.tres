@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_e7mn8"]
+
+[resource]
+resource_name = "STONEEDGE"
+script = ExtResource("1_e7mn8")
+type = &"ROCK"
+category = 0
+power = 100
+accuracy = 80
+description = "The user stabs the foe with sharpened stones from below. It has a high critical-hit ratio."
+id = &"STONEEDGE"
+display_name = "Stone Edge"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

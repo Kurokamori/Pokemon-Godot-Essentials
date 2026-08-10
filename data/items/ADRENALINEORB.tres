@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_63v6j"]
+
+[resource]
+resource_name = "ADRENALINEORB"
+script = ExtResource("1_63v6j")
+name_plural = "Adrenaline Orbs"
+price = 300
+sell_price = 150
+bp_price = 10
+description = "An item to be held by a Pokémon. It boosts Speed when intimidated. It can be used only once."
+id = &"ADRENALINEORB"
+display_name = "Adrenaline Orb"
+flags = Array[StringName]([&"Fling_30"])

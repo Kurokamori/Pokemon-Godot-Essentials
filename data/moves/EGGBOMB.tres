@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3w0rp"]
+
+[resource]
+resource_name = "EGGBOMB"
+script = ExtResource("1_3w0rp")
+category = 0
+power = 100
+accuracy = 75
+total_pp = 10
+description = "A large egg is hurled at the target with maximum force to inflict damage."
+id = &"EGGBOMB"
+display_name = "Egg Bomb"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

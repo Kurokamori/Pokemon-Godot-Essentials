@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_y83eb"]
+
+[resource]
+resource_name = "FLATTER"
+script = ExtResource("1_y83eb")
+type = &"DARK"
+total_pp = 15
+function_code = &"RaiseTargetSpAtk1ConfuseTarget"
+description = "Flattery is used to confuse the target. However, it also raises the target's Sp. Atk stat."
+id = &"FLATTER"
+display_name = "Flatter"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

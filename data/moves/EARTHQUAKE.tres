@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_we20m"]
+
+[resource]
+resource_name = "EARTHQUAKE"
+script = ExtResource("1_we20m")
+type = &"GROUND"
+category = 0
+power = 100
+total_pp = 10
+target = &"AllNearOthers"
+function_code = &"DoublePowerIfTargetUnderground"
+description = "The user sets off an earthquake that strikes every Pokémon around it."
+id = &"EARTHQUAKE"
+display_name = "Earthquake"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

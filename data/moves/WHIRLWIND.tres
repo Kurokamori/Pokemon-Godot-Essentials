@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ng3hy"]
+
+[resource]
+resource_name = "WHIRLWIND"
+script = ExtResource("1_ng3hy")
+accuracy = 0
+total_pp = 20
+priority = -6
+function_code = &"SwitchOutTargetStatusMove"
+description = "The foe is blown away, to be replaced by another Pokémon in its party. In the wild, the battle ends."
+id = &"WHIRLWIND"
+display_name = "Whirlwind"
+flags = Array[StringName]([&"CanMirrorMove"])

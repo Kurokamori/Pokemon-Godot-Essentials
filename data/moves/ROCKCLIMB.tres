@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_y3kch"]
+
+[resource]
+resource_name = "ROCKCLIMB"
+script = ExtResource("1_y3kch")
+category = 0
+power = 90
+accuracy = 85
+total_pp = 20
+function_code = &"ConfuseTarget"
+effect_chance = 20
+description = "The user attacks the target by smashing into it with incredible force. It may also confuse the target."
+id = &"ROCKCLIMB"
+display_name = "Rock Climb"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

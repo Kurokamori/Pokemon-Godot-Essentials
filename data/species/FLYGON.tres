@@ -1,0 +1,164 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_um3ot"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_241gd"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7eusm"]
+
+[sub_resource type="Resource" id="Resource_nuwc5"]
+script = ExtResource("1_um3ot")
+species = &"VIBRAVA"
+method = &"Level"
+parameter = "45"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_je478"]
+script = ExtResource("2_241gd")
+level = 0
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_o0gob"]
+script = ExtResource("2_241gd")
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_naosx"]
+script = ExtResource("2_241gd")
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_go6ja"]
+script = ExtResource("2_241gd")
+move = &"DRAGONDANCE"
+
+[sub_resource type="Resource" id="Resource_f3fro"]
+script = ExtResource("2_241gd")
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_1gdra"]
+script = ExtResource("2_241gd")
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_2rmbt"]
+script = ExtResource("2_241gd")
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_ae6ew"]
+script = ExtResource("2_241gd")
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_qpgom"]
+script = ExtResource("2_241gd")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_qtjs8"]
+script = ExtResource("2_241gd")
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_5tnmh"]
+script = ExtResource("2_241gd")
+move = &"FISSURE"
+
+[sub_resource type="Resource" id="Resource_fq7uc"]
+script = ExtResource("2_241gd")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_n1te0"]
+script = ExtResource("2_241gd")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_og0g3"]
+script = ExtResource("2_241gd")
+move = &"SUPERSONIC"
+
+[sub_resource type="Resource" id="Resource_33oj0"]
+script = ExtResource("2_241gd")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ib8aa"]
+script = ExtResource("2_241gd")
+level = 12
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_m022f"]
+script = ExtResource("2_241gd")
+level = 16
+move = &"SANDTOMB"
+
+[sub_resource type="Resource" id="Resource_w5i38"]
+script = ExtResource("2_241gd")
+level = 20
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_tgfw5"]
+script = ExtResource("2_241gd")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_8xbrs"]
+script = ExtResource("2_241gd")
+level = 28
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_n6gn3"]
+script = ExtResource("2_241gd")
+level = 32
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_il4ds"]
+script = ExtResource("2_241gd")
+level = 38
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_25tvg"]
+script = ExtResource("2_241gd")
+level = 44
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_83c5b"]
+script = ExtResource("2_241gd")
+level = 52
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_ps5ff"]
+script = ExtResource("2_241gd")
+level = 60
+move = &"DRAGONRUSH"
+
+[sub_resource type="Resource" id="Resource_1cdyk"]
+script = ExtResource("2_241gd")
+level = 68
+move = &"BOOMBURST"
+
+[resource]
+resource_name = "FLYGON"
+script = ExtResource("3_7eusm")
+species = &"FLYGON"
+category = "Mystic"
+pokedex_entry = "The flapping of its wings sounds like singing. To prevent detection by enemies, it hides itself by flapping up a cloud of desert sand."
+types = Array[StringName]([&"GROUND", &"DRAGON"])
+base_hp = 80
+base_attack = 100
+base_defense = 80
+base_special_attack = 80
+base_special_defense = 80
+base_speed = 100
+ev_attack = 1
+ev_speed = 2
+base_exp = 260
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_241gd")]([SubResource("Resource_je478"), SubResource("Resource_o0gob"), SubResource("Resource_naosx"), SubResource("Resource_go6ja"), SubResource("Resource_f3fro"), SubResource("Resource_1gdra"), SubResource("Resource_2rmbt"), SubResource("Resource_ae6ew"), SubResource("Resource_qpgom"), SubResource("Resource_qtjs8"), SubResource("Resource_5tnmh"), SubResource("Resource_fq7uc"), SubResource("Resource_n1te0"), SubResource("Resource_og0g3"), SubResource("Resource_33oj0"), SubResource("Resource_ib8aa"), SubResource("Resource_m022f"), SubResource("Resource_w5i38"), SubResource("Resource_tgfw5"), SubResource("Resource_8xbrs"), SubResource("Resource_n6gn3"), SubResource("Resource_il4ds"), SubResource("Resource_25tvg"), SubResource("Resource_83c5b"), SubResource("Resource_ps5ff"), SubResource("Resource_1cdyk")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"AIRSLASH", &"ATTRACT", &"BODYSLAM", &"BREAKINGSWIPE", &"BRUTALSWING", &"BUGBITE", &"BUGBUZZ", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DEFOG", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DRAGONTAIL", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FIRESPIN", &"FLAMETHROWER", &"FLY", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GIGAIMPACT", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SCALESHOT", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SIGNALBEAM", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"STONEEDGE", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THROATCHOP", &"THUNDERPUNCH", &"TWISTER", &"UPROAR", &"UTURN"])
+abilities = Array[StringName]([&"LEVITATE"])
+egg_groups = Array[StringName]([&"Bug", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_um3ot")]([SubResource("Resource_nuwc5")])
+height = 20
+weight = 820
+color = &"Green"
+shape = &"Winged"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 46)
+front_sprite_offset = Vector2i(-1, 8)
+id = &"FLYGON"
+display_name = "Flygon"

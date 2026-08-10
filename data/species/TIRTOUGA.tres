@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_okood"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7kw2f"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_iiy1i"]
+
+[sub_resource type="Resource" id="Resource_q0f1k"]
+script = ExtResource("1_okood")
+species = &"CARRACOSTA"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_ri72v"]
+script = ExtResource("2_7kw2f")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_8tvqa"]
+script = ExtResource("2_7kw2f")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_1iipf"]
+script = ExtResource("2_7kw2f")
+level = 3
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_o3cvp"]
+script = ExtResource("2_7kw2f")
+level = 6
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_ptrfw"]
+script = ExtResource("2_7kw2f")
+level = 9
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_wcx1o"]
+script = ExtResource("2_7kw2f")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_luclm"]
+script = ExtResource("2_7kw2f")
+level = 15
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_f35tb"]
+script = ExtResource("2_7kw2f")
+level = 18
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_s5fh6"]
+script = ExtResource("2_7kw2f")
+level = 21
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_flstb"]
+script = ExtResource("2_7kw2f")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_nhs0x"]
+script = ExtResource("2_7kw2f")
+level = 27
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_u5src"]
+script = ExtResource("2_7kw2f")
+level = 30
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_2eog1"]
+script = ExtResource("2_7kw2f")
+level = 33
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_k3xob"]
+script = ExtResource("2_7kw2f")
+level = 36
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_jwhf1"]
+script = ExtResource("2_7kw2f")
+level = 39
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_54kcj"]
+script = ExtResource("2_7kw2f")
+level = 42
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_r26i8"]
+script = ExtResource("2_7kw2f")
+level = 45
+move = &"SHELLSMASH"
+
+[resource]
+resource_name = "TIRTOUGA"
+script = ExtResource("3_iiy1i")
+species = &"TIRTOUGA"
+category = "Prototurtle"
+pokedex_entry = "About 100 million years ago, these Pokémon swam in oceans. It is thought they also went on land to attack prey."
+types = Array[StringName]([&"WATER", &"ROCK"])
+base_hp = 54
+base_attack = 78
+base_defense = 103
+base_special_attack = 53
+base_special_defense = 45
+base_speed = 22
+ev_defense = 1
+base_exp = 71
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7kw2f")]([SubResource("Resource_ri72v"), SubResource("Resource_8tvqa"), SubResource("Resource_1iipf"), SubResource("Resource_o3cvp"), SubResource("Resource_ptrfw"), SubResource("Resource_wcx1o"), SubResource("Resource_luclm"), SubResource("Resource_f35tb"), SubResource("Resource_s5fh6"), SubResource("Resource_flstb"), SubResource("Resource_nhs0x"), SubResource("Resource_u5src"), SubResource("Resource_2eog1"), SubResource("Resource_k3xob"), SubResource("Resource_jwhf1"), SubResource("Resource_54kcj"), SubResource("Resource_r26i8")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DIG", &"DIVE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GUARDSWAP", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"IRONTAIL", &"KNOCKOFF", &"LIQUIDATION", &"METEORBEAM", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TOXIC", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BLOCK", &"KNOCKOFF", &"ROCKTHROW", &"ROLLOUT", &"SLAM", &"WATERPULSE"])
+abilities = Array[StringName]([&"SOLIDROCK", &"STURDY"])
+hidden_abilities = Array[StringName]([&"SWIFTSWIM"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_okood")]([SubResource("Resource_q0f1k")])
+height = 7
+weight = 165
+color = &"Blue"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(0, 24)
+id = &"TIRTOUGA"
+display_name = "Tirtouga"

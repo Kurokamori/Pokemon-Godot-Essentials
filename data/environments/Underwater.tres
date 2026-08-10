@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EnvironmentData" format=3]
+
+[ext_resource type="Script" path="res://src/data/environment_data.gd" id="1_tuj4u"]
+
+[resource]
+resource_name = "Underwater"
+script = ExtResource("1_tuj4u")
+id = &"Underwater"
+display_name = "Underwater"

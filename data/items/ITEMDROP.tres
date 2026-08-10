@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_2h3lv"]
+
+[resource]
+resource_name = "ITEMDROP"
+script = ExtResource("1_2h3lv")
+name_plural = "Item Drops"
+pocket = 7
+description = "When used, it causes an ally Pokémon to drop a held item."
+id = &"ITEMDROP"
+display_name = "Item Drop"
+flags = Array[StringName]([&"Fling_30"])

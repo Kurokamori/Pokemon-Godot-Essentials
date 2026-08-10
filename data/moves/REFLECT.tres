@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_7cmc6"]
+
+[resource]
+resource_name = "REFLECT"
+script = ExtResource("1_7cmc6")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 20
+target = &"UserSide"
+function_code = &"StartWeakenPhysicalDamageAgainstUserSide"
+description = "A wondrous wall of light is put up to suppress damage from physical attacks for five turns."
+id = &"REFLECT"
+display_name = "Reflect"

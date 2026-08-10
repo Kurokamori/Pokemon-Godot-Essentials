@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_7pipq"]
+
+[resource]
+resource_name = "MUMMY"
+script = ExtResource("1_7pipq")
+description = "Contact with this Pokémon spreads this Ability."
+id = &"MUMMY"
+display_name = "Mummy"

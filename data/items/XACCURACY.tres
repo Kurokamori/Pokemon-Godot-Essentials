@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_5ukb8"]
+
+[resource]
+resource_name = "XACCURACY"
+script = ExtResource("1_5ukb8")
+name_plural = "X Accuracies"
+pocket = 7
+price = 1000
+sell_price = 500
+battle_use = 3
+description = "An item that sharply boosts the accuracy of a Pokémon while it remains in battle."
+id = &"XACCURACY"
+display_name = "X Accuracy"
+flags = Array[StringName]([&"Fling_30"])

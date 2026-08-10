@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0xune"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hhbaw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_0ql35"]
+
+[sub_resource type="Resource" id="Resource_if487"]
+script = ExtResource("1_0xune")
+species = &"GURDURR"
+method = &"Trade"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_o2cd7"]
+script = ExtResource("2_hhbaw")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_8rjij"]
+script = ExtResource("2_hhbaw")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_hexxj"]
+script = ExtResource("2_hhbaw")
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_th2u3"]
+script = ExtResource("2_hhbaw")
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_dvdvp"]
+script = ExtResource("2_hhbaw")
+level = 12
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_cs6l6"]
+script = ExtResource("2_hhbaw")
+level = 16
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_kchdg"]
+script = ExtResource("2_hhbaw")
+level = 20
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_t4388"]
+script = ExtResource("2_hhbaw")
+level = 24
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_dttsk"]
+script = ExtResource("2_hhbaw")
+level = 30
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_ptdfa"]
+script = ExtResource("2_hhbaw")
+level = 36
+move = &"DYNAMICPUNCH"
+
+[sub_resource type="Resource" id="Resource_2v1jk"]
+script = ExtResource("2_hhbaw")
+level = 42
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_1loi7"]
+script = ExtResource("2_hhbaw")
+level = 48
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_uob8j"]
+script = ExtResource("2_hhbaw")
+level = 54
+move = &"SUPERPOWER"
+
+[sub_resource type="Resource" id="Resource_jnyn7"]
+script = ExtResource("2_hhbaw")
+level = 60
+move = &"FOCUSPUNCH"
+
+[resource]
+resource_name = "CONKELDURR"
+script = ExtResource("3_0ql35")
+species = &"CONKELDURR"
+category = "Muscular"
+pokedex_entry = "They use concrete pillars as walking canes. They know moves that enable them to swing the pillars freely in battle."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 105
+base_attack = 140
+base_defense = 95
+base_special_attack = 55
+base_special_defense = 65
+base_speed = 45
+ev_attack = 3
+base_exp = 253
+growth_rate = &"Parabolic"
+gender_ratio = &"Female25Percent"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hhbaw")]([SubResource("Resource_o2cd7"), SubResource("Resource_8rjij"), SubResource("Resource_hexxj"), SubResource("Resource_th2u3"), SubResource("Resource_dvdvp"), SubResource("Resource_cs6l6"), SubResource("Resource_kchdg"), SubResource("Resource_t4388"), SubResource("Resource_dttsk"), SubResource("Resource_ptdfa"), SubResource("Resource_2v1jk"), SubResource("Resource_1loi7"), SubResource("Resource_uob8j"), SubResource("Resource_jnyn7")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BRICKBREAK", &"BRUTALSWING", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HELPINGHAND", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"ICEPUNCH", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THUNDERPUNCH", &"TOXIC", &"WORKUP"])
+abilities = Array[StringName]([&"GUTS", &"SHEERFORCE"])
+hidden_abilities = Array[StringName]([&"IRONFIST"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_0xune")]([SubResource("Resource_if487")])
+height = 14
+weight = 870
+color = &"Brown"
+shape = &"Bipedal"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(6, 26)
+shadow_size = 3
+id = &"CONKELDURR"
+display_name = "Conkeldurr"

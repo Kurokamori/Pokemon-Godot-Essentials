@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rtpco"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4dc26"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gyxau"]
+
+[sub_resource type="Resource" id="Resource_bp2q7"]
+script = ExtResource("1_rtpco")
+species = &"KOFFING"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_n7yu1"]
+script = ExtResource("2_4dc26")
+level = 0
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_3b44e"]
+script = ExtResource("2_4dc26")
+move = &"STRANGESTEAM"
+
+[sub_resource type="Resource" id="Resource_e4apj"]
+script = ExtResource("2_4dc26")
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_mfwax"]
+script = ExtResource("2_4dc26")
+move = &"HEATWAVE"
+
+[sub_resource type="Resource" id="Resource_miqhm"]
+script = ExtResource("2_4dc26")
+move = &"SMOG"
+
+[sub_resource type="Resource" id="Resource_nkauj"]
+script = ExtResource("2_4dc26")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_dno58"]
+script = ExtResource("2_4dc26")
+move = &"HAZE"
+
+[sub_resource type="Resource" id="Resource_nvfsy"]
+script = ExtResource("2_4dc26")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_08s3f"]
+script = ExtResource("2_4dc26")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_t6dxc"]
+script = ExtResource("2_4dc26")
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_5f8hy"]
+script = ExtResource("2_4dc26")
+move = &"AROMATICMIST"
+
+[sub_resource type="Resource" id="Resource_pnnlb"]
+script = ExtResource("2_4dc26")
+level = 12
+move = &"CLEARSMOG"
+
+[sub_resource type="Resource" id="Resource_e54gp"]
+script = ExtResource("2_4dc26")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_gh7cx"]
+script = ExtResource("2_4dc26")
+level = 20
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_5vfao"]
+script = ExtResource("2_4dc26")
+level = 24
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_3hogy"]
+script = ExtResource("2_4dc26")
+level = 28
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_gmoie"]
+script = ExtResource("2_4dc26")
+level = 32
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_ydbay"]
+script = ExtResource("2_4dc26")
+level = 38
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_g0t5h"]
+script = ExtResource("2_4dc26")
+level = 44
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_rmrrt"]
+script = ExtResource("2_4dc26")
+level = 50
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_dubpg"]
+script = ExtResource("2_4dc26")
+level = 56
+move = &"MEMENTO"
+
+[sub_resource type="Resource" id="Resource_iv6sk"]
+script = ExtResource("2_4dc26")
+level = 62
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_gs068"]
+script = ExtResource("2_4dc26")
+level = 68
+move = &"MISTYTERRAIN"
+
+[resource]
+resource_name = "WEEZING_1"
+script = ExtResource("3_gyxau")
+species = &"WEEZING"
+form = 1
+form_name = "Galarian"
+category = "Poison Gas"
+pokedex_entry = "This Pokémon consumes particles that contaminate the air. Instead of leaving droppings, it expels clean air."
+pokedex_form = 1
+types = Array[StringName]([&"POISON", &"FAIRY"])
+base_hp = 65
+base_attack = 90
+base_defense = 120
+base_special_attack = 85
+base_special_defense = 70
+base_speed = 60
+ev_defense = 2
+base_exp = 172
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_4dc26")]([SubResource("Resource_n7yu1"), SubResource("Resource_3b44e"), SubResource("Resource_e4apj"), SubResource("Resource_mfwax"), SubResource("Resource_miqhm"), SubResource("Resource_nkauj"), SubResource("Resource_dno58"), SubResource("Resource_nvfsy"), SubResource("Resource_08s3f"), SubResource("Resource_t6dxc"), SubResource("Resource_5f8hy"), SubResource("Resource_pnnlb"), SubResource("Resource_e54gp"), SubResource("Resource_gh7cx"), SubResource("Resource_5vfao"), SubResource("Resource_3hogy"), SubResource("Resource_gmoie"), SubResource("Resource_ydbay"), SubResource("Resource_g0t5h"), SubResource("Resource_rmrrt"), SubResource("Resource_dubpg"), SubResource("Resource_iv6sk"), SubResource("Resource_gs068")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BRUTALSWING", &"CAPTIVATE", &"CONFIDE", &"CORROSIVEGAS", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GYROBALL", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"INFESTATION", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"NATURALGIFT", &"OVERHEAT", &"PAINSPLIT", &"PAYBACK", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SELFDESTRUCT", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"TORMENT", &"TOXIC", &"TOXICSPIKES", &"UPROAR", &"VENOMDRENCH", &"VENOSHOCK", &"WILLOWISP", &"WONDERROOM"])
+abilities = Array[StringName]([&"LEVITATE", &"NEUTRALIZINGGAS"])
+hidden_abilities = Array[StringName]([&"MISTYSURGE"])
+wild_item_uncommon = Array[StringName]([&"MISTYSEED"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_rtpco")]([SubResource("Resource_bp2q7")])
+height = 30
+weight = 160
+color = &"Gray"
+shape = &"MultiBody"
+habitat = &"Urban"
+generation = 8
+back_sprite_offset = Vector2i(0, 34)
+front_sprite_offset = Vector2i(7, -3)
+id = &"WEEZING_1"
+display_name = "Weezing"

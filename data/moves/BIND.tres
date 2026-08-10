@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_s5ak2"]
+
+[resource]
+resource_name = "BIND"
+script = ExtResource("1_s5ak2")
+category = 0
+power = 15
+accuracy = 85
+total_pp = 20
+function_code = &"BindTarget"
+description = "Things such as long bodies or tentacles are used to bind and squeeze the foe for four to five turns."
+id = &"BIND"
+display_name = "Bind"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

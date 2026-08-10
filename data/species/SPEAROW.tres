@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ddoay"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_yc54k"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_vm31y"]
+
+[sub_resource type="Resource" id="Resource_dxllq"]
+script = ExtResource("1_ddoay")
+species = &"FEAROW"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_1nk47"]
+script = ExtResource("2_yc54k")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_6135h"]
+script = ExtResource("2_yc54k")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_pkyfg"]
+script = ExtResource("2_yc54k")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_6mnk7"]
+script = ExtResource("2_yc54k")
+level = 8
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_q2k67"]
+script = ExtResource("2_yc54k")
+level = 11
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_fn6fv"]
+script = ExtResource("2_yc54k")
+level = 15
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_m1if5"]
+script = ExtResource("2_yc54k")
+level = 18
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_1dvrh"]
+script = ExtResource("2_yc54k")
+level = 22
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_g5isr"]
+script = ExtResource("2_yc54k")
+level = 25
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_v668k"]
+script = ExtResource("2_yc54k")
+level = 29
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_hg3d5"]
+script = ExtResource("2_yc54k")
+level = 32
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_ib4uw"]
+script = ExtResource("2_yc54k")
+level = 36
+move = &"DRILLPECK"
+
+[resource]
+resource_name = "SPEAROW"
+script = ExtResource("3_vm31y")
+species = &"SPEAROW"
+category = "Tiny Bird"
+pokedex_entry = "Its loud cry can be heard over half a mile away. If its high, keening cry is heard echoing all around, it is a sign that they are warning each other of danger."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 40
+base_attack = 60
+base_defense = 30
+base_special_attack = 31
+base_special_defense = 31
+base_speed = 70
+ev_speed = 1
+base_exp = 52
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_yc54k")]([SubResource("Resource_1nk47"), SubResource("Resource_6135h"), SubResource("Resource_pkyfg"), SubResource("Resource_6mnk7"), SubResource("Resource_q2k67"), SubResource("Resource_fn6fv"), SubResource("Resource_m1if5"), SubResource("Resource_1dvrh"), SubResource("Resource_g5isr"), SubResource("Resource_v668k"), SubResource("Resource_hg3d5"), SubResource("Resource_ib4uw")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLY", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"ASTONISH", &"FEATHERDANCE", &"QUICKATTACK", &"SCARYFACE", &"SKYATTACK", &"TRIATTACK", &"UPROAR", &"WHIRLWIND"])
+abilities = Array[StringName]([&"KEENEYE"])
+hidden_abilities = Array[StringName]([&"SNIPER"])
+wild_item_uncommon = Array[StringName]([&"SHARPBEAK"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_ddoay")]([SubResource("Resource_dxllq")])
+height = 3
+weight = 20
+color = &"Brown"
+shape = &"Winged"
+habitat = &"RoughTerrain"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(1, 33)
+shadow_size = 1
+id = &"SPEAROW"
+display_name = "Spearow"

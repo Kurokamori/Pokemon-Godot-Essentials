@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_msuw7"]
+
+[resource]
+resource_name = "TRANSISTOR"
+script = ExtResource("1_msuw7")
+description = "Powers up Electric-type moves."
+id = &"TRANSISTOR"
+display_name = "Transistor"

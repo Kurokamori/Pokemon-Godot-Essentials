@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_uwie0"]
+
+[resource]
+resource_name = "YELLOWFLUTE"
+script = ExtResource("1_uwie0")
+name_plural = "Yellow Flutes"
+pocket = 7
+price = 20
+sell_price = 10
+battle_use = 3
+consumable = false
+description = "A yellow flute made from blown glass. Its melody snaps a single Pokémon out of confusion."
+id = &"YELLOWFLUTE"
+display_name = "Yellow Flute"
+flags = Array[StringName]([&"Fling_30"])

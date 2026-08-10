@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_owo1c"]
+
+[resource]
+resource_name = "Ice"
+script = ExtResource("1_owo1c")
+tag_number = 12
+ice = true
+must_walk_or_run = true
+battle_environment = &"Ice"
+id = &"Ice"
+display_name = "Ice"

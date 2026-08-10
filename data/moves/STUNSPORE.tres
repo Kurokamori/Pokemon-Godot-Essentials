@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_w35ht"]
+
+[resource]
+resource_name = "STUNSPORE"
+script = ExtResource("1_w35ht")
+type = &"GRASS"
+accuracy = 75
+total_pp = 30
+function_code = &"ParalyzeTarget"
+description = "The user scatters a cloud of paralyzing powder. It may leave the target with paralysis."
+id = &"STUNSPORE"
+display_name = "Stun Spore"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Powder"])

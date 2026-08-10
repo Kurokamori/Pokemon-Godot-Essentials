@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3krlo"]
+
+[resource]
+resource_name = "DARKINIUMZ"
+script = ExtResource("1_3krlo")
+name_plural = "Darkinium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Dark-type Pokémon holds to turn a Dark-type move into Black Hole Eclipse."
+id = &"DARKINIUMZ"
+display_name = "Darkinium Z"
+flags = Array[StringName]([&"ZCrystal"])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_01g87"]
+
+[resource]
+resource_name = "MAXHONEY"
+script = ExtResource("1_01g87")
+name_plural = "Max Honeys"
+portion_name = "comb of Max Honey"
+portion_name_plural = "combs of Max Honey"
+pocket = 2
+price = 8000
+sell_price = 4000
+field_use = 1
+battle_use = 1
+description = "Honey that Dynamax Vespiquen produces. It has the same effect as a Max Revive."
+id = &"MAXHONEY"
+display_name = "Max Honey"
+flags = Array[StringName]([&"Fling_30"])

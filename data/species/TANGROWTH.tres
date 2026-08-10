@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_y48f2"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hyipr"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6to82"]
+
+[sub_resource type="Resource" id="Resource_krw7g"]
+script = ExtResource("1_y48f2")
+species = &"TANGELA"
+method = &"HasMove"
+parameter = "ANCIENTPOWER"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_qhgmq"]
+script = ExtResource("2_hyipr")
+move = &"BLOCK"
+
+[sub_resource type="Resource" id="Resource_6yx4e"]
+script = ExtResource("2_hyipr")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_hjg0e"]
+script = ExtResource("2_hyipr")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_1g4fu"]
+script = ExtResource("2_hyipr")
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_qn2xy"]
+script = ExtResource("2_hyipr")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_s81jp"]
+script = ExtResource("2_hyipr")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_h73wb"]
+script = ExtResource("2_hyipr")
+level = 16
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_4gxd5"]
+script = ExtResource("2_hyipr")
+level = 20
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_6fx65"]
+script = ExtResource("2_hyipr")
+level = 24
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_h31f7"]
+script = ExtResource("2_hyipr")
+level = 28
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_c886b"]
+script = ExtResource("2_hyipr")
+level = 32
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_5ldqi"]
+script = ExtResource("2_hyipr")
+level = 36
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_1veqr"]
+script = ExtResource("2_hyipr")
+level = 40
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_3m32i"]
+script = ExtResource("2_hyipr")
+level = 44
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_0rc45"]
+script = ExtResource("2_hyipr")
+level = 48
+move = &"POWERWHIP"
+
+[sub_resource type="Resource" id="Resource_5qsrt"]
+script = ExtResource("2_hyipr")
+level = 52
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_ifn2u"]
+script = ExtResource("2_hyipr")
+level = 56
+move = &"GRASSYTERRAIN"
+
+[resource]
+resource_name = "TANGROWTH"
+script = ExtResource("3_6to82")
+species = &"TANGROWTH"
+category = "Vine"
+pokedex_entry = "It ensnares prey by extending arms made of vines. Losing arms to predators does not trouble it."
+types = Array[StringName]([&"GRASS"])
+base_hp = 100
+base_attack = 100
+base_defense = 125
+base_special_attack = 110
+base_special_defense = 50
+base_speed = 50
+ev_defense = 2
+base_exp = 187
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hyipr")]([SubResource("Resource_qhgmq"), SubResource("Resource_6yx4e"), SubResource("Resource_hjg0e"), SubResource("Resource_1g4fu"), SubResource("Resource_qn2xy"), SubResource("Resource_s81jp"), SubResource("Resource_h73wb"), SubResource("Resource_4gxd5"), SubResource("Resource_6fx65"), SubResource("Resource_h31f7"), SubResource("Resource_c886b"), SubResource("Resource_5ldqi"), SubResource("Resource_1veqr"), SubResource("Resource_3m32i"), SubResource("Resource_0rc45"), SubResource("Resource_5qsrt"), SubResource("Resource_ifn2u")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BIND", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRUTALSWING", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FOCUSBLAST", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"KNOCKOFF", &"LEAFSTORM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"PAINSPLIT", &"PAYBACK", &"POISONJAB", &"POWERSWAP", &"POWERWHIP", &"PROTECT", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"LEAFGUARD"])
+hidden_abilities = Array[StringName]([&"REGENERATOR"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_y48f2")]([SubResource("Resource_krw7g")])
+height = 20
+weight = 1286
+color = &"Blue"
+shape = &"Bipedal"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 20)
+id = &"TANGROWTH"
+display_name = "Tangrowth"

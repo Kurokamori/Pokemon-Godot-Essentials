@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_lst8t"]
+
+[resource]
+resource_name = "TM15"
+script = ExtResource("1_lst8t")
+name_plural = "TM15s"
+pocket = 4
+price = 7500
+sell_price = 3750
+bp_price = 32
+field_use = 5
+move = &"HYPERBEAM"
+description = "The target is attacked with a powerful beam. The user can't move on the next turn."
+id = &"TM15"
+display_name = "TM15"
+flags = Array[StringName]([&"Fling_150"])

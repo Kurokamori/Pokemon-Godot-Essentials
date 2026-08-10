@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_2wmqy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ld6gv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_k8lot"]
+
+[sub_resource type="Resource" id="Resource_tp16g"]
+script = ExtResource("2_ld6gv")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_aocxy"]
+script = ExtResource("2_ld6gv")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_wph1o"]
+script = ExtResource("2_ld6gv")
+level = 4
+move = &"VISEGRIP"
+
+[sub_resource type="Resource" id="Resource_uy8gm"]
+script = ExtResource("2_ld6gv")
+level = 8
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_kr6qo"]
+script = ExtResource("2_ld6gv")
+level = 12
+move = &"BEATUP"
+
+[sub_resource type="Resource" id="Resource_8xm6t"]
+script = ExtResource("2_ld6gv")
+level = 16
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_152as"]
+script = ExtResource("2_ld6gv")
+level = 20
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_w504q"]
+script = ExtResource("2_ld6gv")
+level = 24
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_vow53"]
+script = ExtResource("2_ld6gv")
+level = 28
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_p1d5u"]
+script = ExtResource("2_ld6gv")
+level = 32
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_bisei"]
+script = ExtResource("2_ld6gv")
+level = 36
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_bcgmh"]
+script = ExtResource("2_ld6gv")
+level = 40
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_ljhn3"]
+script = ExtResource("2_ld6gv")
+level = 44
+move = &"IRONHEAD"
+
+[sub_resource type="Resource" id="Resource_5yv42"]
+script = ExtResource("2_ld6gv")
+level = 48
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_skqjk"]
+script = ExtResource("2_ld6gv")
+level = 52
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_5jppn"]
+script = ExtResource("2_ld6gv")
+level = 56
+move = &"GUILLOTINE"
+
+[resource]
+resource_name = "DURANT"
+script = ExtResource("3_k8lot")
+species = &"DURANT"
+category = "Iron Ant"
+pokedex_entry = "Durant dig nests in mountains. They build their complicated, interconnected tunnels in mazes."
+types = Array[StringName]([&"BUG", &"STEEL"])
+base_hp = 58
+base_attack = 109
+base_defense = 112
+base_special_attack = 48
+base_special_defense = 48
+base_speed = 109
+ev_defense = 2
+base_exp = 169
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ld6gv")]([SubResource("Resource_tp16g"), SubResource("Resource_aocxy"), SubResource("Resource_wph1o"), SubResource("Resource_uy8gm"), SubResource("Resource_kr6qo"), SubResource("Resource_8xm6t"), SubResource("Resource_152as"), SubResource("Resource_w504q"), SubResource("Resource_vow53"), SubResource("Resource_p1d5u"), SubResource("Resource_bisei"), SubResource("Resource_bcgmh"), SubResource("Resource_ljhn3"), SubResource("Resource_5yv42"), SubResource("Resource_skqjk"), SubResource("Resource_5jppn")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ATTRACT", &"BATONPASS", &"BEATUP", &"BUGBITE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DIG", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GIGAIMPACT", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"IRONHEAD", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"STEELBEAM", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"THUNDERFANG", &"THUNDERWAVE", &"TOXIC", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"FIRSTIMPRESSION", &"FLAIL", &"INFESTATION", &"METALBURST", &"STRUGGLEBUG"])
+abilities = Array[StringName]([&"SWARM", &"HUSTLE"])
+hidden_abilities = Array[StringName]([&"TRUANT"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+height = 3
+weight = 330
+color = &"Gray"
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 36)
+id = &"DURANT"
+display_name = "Durant"

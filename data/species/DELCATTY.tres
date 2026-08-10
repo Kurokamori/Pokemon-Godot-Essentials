@@ -1,0 +1,118 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7hl55"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ybva4"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dk3cc"]
+
+[sub_resource type="Resource" id="Resource_okivy"]
+script = ExtResource("1_7hl55")
+species = &"SKITTY"
+method = &"Item"
+parameter = "MOONSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3y3a3"]
+script = ExtResource("2_ybva4")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_unw7n"]
+script = ExtResource("2_ybva4")
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_01b73"]
+script = ExtResource("2_ybva4")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_3xvc0"]
+script = ExtResource("2_ybva4")
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_47s0e"]
+script = ExtResource("2_ybva4")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_71mjb"]
+script = ExtResource("2_ybva4")
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_4yqes"]
+script = ExtResource("2_ybva4")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_fboui"]
+script = ExtResource("2_ybva4")
+move = &"FACADE"
+
+[sub_resource type="Resource" id="Resource_7tdpy"]
+script = ExtResource("2_ybva4")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_muv4a"]
+script = ExtResource("2_ybva4")
+move = &"HEALBELL"
+
+[sub_resource type="Resource" id="Resource_b055g"]
+script = ExtResource("2_ybva4")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_xihu0"]
+script = ExtResource("2_ybva4")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_jqhlt"]
+script = ExtResource("2_ybva4")
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_yfl0q"]
+script = ExtResource("2_ybva4")
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_g1tvk"]
+script = ExtResource("2_ybva4")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_7q68i"]
+script = ExtResource("2_ybva4")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_jevyf"]
+script = ExtResource("2_ybva4")
+move = &"TACKLE"
+
+[resource]
+resource_name = "DELCATTY"
+script = ExtResource("3_dk3cc")
+species = &"DELCATTY"
+category = "Prim"
+pokedex_entry = "Rather than keeping a permanent lair, it habitually seeks comfortable spots and sleeps there. It is nocturnal and becomes active at dusk."
+base_hp = 70
+base_attack = 65
+base_defense = 65
+base_special_attack = 55
+base_special_defense = 55
+base_speed = 90
+ev_hp = 1
+ev_speed = 1
+base_exp = 140
+growth_rate = &"Fast"
+gender_ratio = &"Female75Percent"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ybva4")]([SubResource("Resource_3y3a3"), SubResource("Resource_unw7n"), SubResource("Resource_01b73"), SubResource("Resource_3xvc0"), SubResource("Resource_47s0e"), SubResource("Resource_71mjb"), SubResource("Resource_4yqes"), SubResource("Resource_fboui"), SubResource("Resource_7tdpy"), SubResource("Resource_muv4a"), SubResource("Resource_b055g"), SubResource("Resource_xihu0"), SubResource("Resource_jqhlt"), SubResource("Resource_yfl0q"), SubResource("Resource_g1tvk"), SubResource("Resource_7q68i"), SubResource("Resource_jevyf")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COVET", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"UPROAR", &"WATERPULSE", &"WILDCHARGE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"CUTECHARM", &"NORMALIZE"])
+hidden_abilities = Array[StringName]([&"WONDERSKIN"])
+egg_groups = Array[StringName]([&"Field", &"Fairy"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_7hl55")]([SubResource("Resource_okivy")])
+height = 11
+weight = 326
+color = &"Purple"
+shape = &"Quadruped"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 24)
+shadow_size = 1
+id = &"DELCATTY"
+display_name = "Delcatty"

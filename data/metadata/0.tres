@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/metadata_data.gd" id="1_35dd1"]
+
+[resource]
+resource_name = "0"
+script = ExtResource("1_35dd1")
+start_item_storage = Array[StringName]([&"POTION"])
+home = Array[int]([3, 7, 5, 8])
+wild_battle_bgm = "Battle wild"
+trainer_battle_bgm = "Battle trainer"
+wild_victory_bgm = "Battle victory wild"
+trainer_victory_bgm = "Battle victory trainer"
+surf_bgm = "Surfing"
+bicycle_bgm = "Bicycle"
+id = &"0"
+display_name = "Global Metadata"

@@ -1,0 +1,124 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rkrws"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_swm1r"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_h7k0x"]
+
+[sub_resource type="Resource" id="Resource_os2lu"]
+script = ExtResource("1_rkrws")
+species = &"CRADILY"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_njvxu"]
+script = ExtResource("2_swm1r")
+move = &"WRAP"
+
+[sub_resource type="Resource" id="Resource_nehki"]
+script = ExtResource("2_swm1r")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_gwvkb"]
+script = ExtResource("2_swm1r")
+level = 4
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_8gawd"]
+script = ExtResource("2_swm1r")
+level = 8
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_w88p2"]
+script = ExtResource("2_swm1r")
+level = 12
+move = &"INGRAIN"
+
+[sub_resource type="Resource" id="Resource_uc0ju"]
+script = ExtResource("2_swm1r")
+level = 16
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_0qw2y"]
+script = ExtResource("2_swm1r")
+level = 20
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_57bpb"]
+script = ExtResource("2_swm1r")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_srdsk"]
+script = ExtResource("2_swm1r")
+level = 28
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_sh0bq"]
+script = ExtResource("2_swm1r")
+level = 32
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_falsu"]
+script = ExtResource("2_swm1r")
+level = 36
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_jlgox"]
+script = ExtResource("2_swm1r")
+level = 41
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_kdtka"]
+script = ExtResource("2_swm1r")
+level = 41
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_x23v3"]
+script = ExtResource("2_swm1r")
+level = 41
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_iax5x"]
+script = ExtResource("2_swm1r")
+level = 44
+move = &"ENERGYBALL"
+
+[resource]
+resource_name = "LILEEP"
+script = ExtResource("3_h7k0x")
+species = &"LILEEP"
+category = "Sea Lily"
+pokedex_entry = "It disguises itself as seaweed by making its tentacles sway. Unsuspecting prey that come too close are swallowed whole. It became extinct 100 million years ago."
+types = Array[StringName]([&"ROCK", &"GRASS"])
+base_hp = 66
+base_attack = 41
+base_defense = 77
+base_special_attack = 61
+base_special_defense = 87
+base_speed = 23
+ev_special_defense = 1
+base_exp = 71
+growth_rate = &"Erratic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_swm1r")]([SubResource("Resource_njvxu"), SubResource("Resource_nehki"), SubResource("Resource_gwvkb"), SubResource("Resource_8gawd"), SubResource("Resource_w88p2"), SubResource("Resource_uc0ju"), SubResource("Resource_0qw2y"), SubResource("Resource_57bpb"), SubResource("Resource_srdsk"), SubResource("Resource_sh0bq"), SubResource("Resource_falsu"), SubResource("Resource_jlgox"), SubResource("Resource_kdtka"), SubResource("Resource_x23v3"), SubResource("Resource_iax5x")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"BIND", &"BODYSLAM", &"BRINE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"INFESTATION", &"METEORBEAM", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STRINGSHOT", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"BIND", &"CURSE", &"MEGADRAIN", &"MIRRORCOAT", &"RECOVER", &"TICKLE"])
+abilities = Array[StringName]([&"SUCTIONCUPS"])
+hidden_abilities = Array[StringName]([&"STORMDRAIN"])
+wild_item_uncommon = Array[StringName]([&"BIGROOT"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_rkrws")]([SubResource("Resource_os2lu")])
+height = 10
+weight = 238
+color = &"Purple"
+shape = &"HeadBase"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(-1, 25)
+shadow_size = 1
+id = &"LILEEP"
+display_name = "Lileep"

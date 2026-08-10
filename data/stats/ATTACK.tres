@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StatData" format=3]
+
+[ext_resource type="Script" path="res://src/data/stat_data.gd" id="1_ege3s"]
+
+[resource]
+resource_name = "ATTACK"
+script = ExtResource("1_ege3s")
+name_brief = "Atk"
+pbs_order = 1
+id = &"ATTACK"
+display_name = "Attack"

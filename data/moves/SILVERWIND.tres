@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_1k5am"]
+
+[resource]
+resource_name = "SILVERWIND"
+script = ExtResource("1_1k5am")
+type = &"BUG"
+category = 1
+power = 60
+function_code = &"RaiseUserMainStats1"
+effect_chance = 10
+description = "The foe is attacked with powdery scales blown by wind. It may also raise all the user's stats."
+id = &"SILVERWIND"
+display_name = "Silver Wind"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xh0wm"]
+
+[resource]
+resource_name = "ROLEPLAY"
+script = ExtResource("1_xh0wm")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+function_code = &"SetUserAbilityToTargetAbility"
+description = "The user mimics the target completely, copying the target's natural Ability."
+id = &"ROLEPLAY"
+display_name = "Role Play"

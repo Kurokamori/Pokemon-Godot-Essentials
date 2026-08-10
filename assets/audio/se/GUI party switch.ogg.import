@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bqdac45ngi4aq"
+path="res://.godot/imported/GUI party switch.ogg-3d8ab04b3ad4fbcb882719178b82327c.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/se/GUI party switch.ogg"
+dest_files=["res://.godot/imported/GUI party switch.ogg-3d8ab04b3ad4fbcb882719178b82327c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

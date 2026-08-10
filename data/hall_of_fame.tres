@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="HallOfFameData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/data/hall_of_fame_data.gd" id="1_hof"]
+
+[resource]
+script = ExtResource("1_hof")
+layout = 0
+background_graphic = "Hall of Fame/bg"
+bars_graphic = "Hall of Fame/bars"
+hides_bars_for_trainer = true
+dimmed_opacity = 0.25
+appear_seconds = 0.4
+entry_seconds = 3.0
+welcome_seconds = 4.0
+final_fade_seconds = 1.0
+animates_entrance = true
+welcome_line = "Welcome to the Hall of Fame!"
+closing_line = "League champion!
+Congratulations!"
+entry_number_label = "Hall of Fame No."
+entry_limit = 50
+records_eggs = true
+music = "Hall of Fame"
+restores_previous_music = true

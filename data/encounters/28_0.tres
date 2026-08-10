@@ -1,0 +1,239 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_qbeny"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_ebdne"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_kgb47"]
+
+[sub_resource type="Resource" id="Resource_3a3a5"]
+script = ExtResource("3_kgb47")
+weight = 20
+species = &"CATERPIE"
+min_level = 10
+max_level = 10
+
+[sub_resource type="Resource" id="Resource_53kb7"]
+script = ExtResource("3_kgb47")
+weight = 20
+species = &"SUNKERN"
+min_level = 12
+max_level = 12
+
+[sub_resource type="Resource" id="Resource_t5tex"]
+script = ExtResource("3_kgb47")
+weight = 20
+species = &"WEEDLE"
+min_level = 10
+max_level = 10
+
+[sub_resource type="Resource" id="Resource_4n7ds"]
+script = ExtResource("3_kgb47")
+weight = 15
+species = &"PIDGEY"
+min_level = 12
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_yirkb"]
+script = ExtResource("3_kgb47")
+weight = 15
+species = &"PIDGEY"
+min_level = 10
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_ct3yc"]
+script = ExtResource("3_kgb47")
+weight = 5
+species = &"KAKUNA"
+min_level = 10
+max_level = 10
+
+[sub_resource type="Resource" id="Resource_002h1"]
+script = ExtResource("3_kgb47")
+weight = 5
+species = &"METAPOD"
+min_level = 10
+max_level = 10
+
+[sub_resource type="Resource" id="Resource_m4ypg"]
+script = ExtResource("2_ebdne")
+step_chance = 21
+slots = Array[ExtResource("3_kgb47")]([SubResource("Resource_3a3a5"), SubResource("Resource_53kb7"), SubResource("Resource_t5tex"), SubResource("Resource_4n7ds"), SubResource("Resource_yirkb"), SubResource("Resource_ct3yc"), SubResource("Resource_002h1")])
+
+[sub_resource type="Resource" id="Resource_rykd0"]
+script = ExtResource("3_kgb47")
+weight = 30
+species = &"HOOTHOOT"
+min_level = 10
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_sm5cx"]
+script = ExtResource("3_kgb47")
+weight = 30
+species = &"SPINARAK"
+min_level = 10
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_1lwc1"]
+script = ExtResource("3_kgb47")
+weight = 20
+species = &"PINECO"
+min_level = 9
+max_level = 13
+
+[sub_resource type="Resource" id="Resource_sb2mb"]
+script = ExtResource("3_kgb47")
+species = &"DROWZEE"
+min_level = 9
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_6f5jo"]
+script = ExtResource("3_kgb47")
+species = &"NATU"
+min_level = 12
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_nme24"]
+script = ExtResource("2_ebdne")
+encounter_type = &"LandNight"
+step_chance = 21
+slots = Array[ExtResource("3_kgb47")]([SubResource("Resource_rykd0"), SubResource("Resource_sm5cx"), SubResource("Resource_1lwc1"), SubResource("Resource_sb2mb"), SubResource("Resource_6f5jo")])
+
+[sub_resource type="Resource" id="Resource_tfgaw"]
+script = ExtResource("3_kgb47")
+weight = 25
+species = &"CATERPIE"
+min_level = 10
+max_level = 12
+
+[sub_resource type="Resource" id="Resource_5uq5a"]
+script = ExtResource("3_kgb47")
+weight = 25
+species = &"WEEDLE"
+min_level = 10
+max_level = 12
+
+[sub_resource type="Resource" id="Resource_n0t6a"]
+script = ExtResource("3_kgb47")
+weight = 20
+species = &"PIDGEY"
+min_level = 10
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_dbuav"]
+script = ExtResource("3_kgb47")
+weight = 15
+species = &"KAKUNA"
+min_level = 10
+max_level = 10
+
+[sub_resource type="Resource" id="Resource_jx55u"]
+script = ExtResource("3_kgb47")
+weight = 15
+species = &"METAPOD"
+min_level = 10
+max_level = 10
+
+[sub_resource type="Resource" id="Resource_ky8hd"]
+script = ExtResource("2_ebdne")
+encounter_type = &"LandMorning"
+step_chance = 21
+slots = Array[ExtResource("3_kgb47")]([SubResource("Resource_tfgaw"), SubResource("Resource_5uq5a"), SubResource("Resource_n0t6a"), SubResource("Resource_dbuav"), SubResource("Resource_jx55u")])
+
+[sub_resource type="Resource" id="Resource_p6lnk"]
+script = ExtResource("3_kgb47")
+weight = 20
+species = &"CATERPIE"
+min_level = 7
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_hcjmg"]
+script = ExtResource("3_kgb47")
+weight = 20
+species = &"WEEDLE"
+min_level = 7
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_pcj47"]
+script = ExtResource("3_kgb47")
+species = &"KAKUNA"
+min_level = 9
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_7pfyy"]
+script = ExtResource("3_kgb47")
+species = &"METAPOD"
+min_level = 9
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_8rmel"]
+script = ExtResource("3_kgb47")
+species = &"PARAS"
+min_level = 10
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_crcrk"]
+script = ExtResource("3_kgb47")
+species = &"VENONAT"
+min_level = 10
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_veiju"]
+script = ExtResource("3_kgb47")
+weight = 5
+species = &"BEEDRILL"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_k64et"]
+script = ExtResource("3_kgb47")
+weight = 5
+species = &"BUTTERFREE"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_tryl5"]
+script = ExtResource("3_kgb47")
+weight = 5
+species = &"PINSIR"
+min_level = 13
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_ai277"]
+script = ExtResource("3_kgb47")
+weight = 5
+species = &"SCYTHER"
+min_level = 13
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_u1e53"]
+script = ExtResource("2_ebdne")
+encounter_type = &"BugContest"
+step_chance = 21
+slots = Array[ExtResource("3_kgb47")]([SubResource("Resource_p6lnk"), SubResource("Resource_hcjmg"), SubResource("Resource_pcj47"), SubResource("Resource_7pfyy"), SubResource("Resource_8rmel"), SubResource("Resource_crcrk"), SubResource("Resource_veiju"), SubResource("Resource_k64et"), SubResource("Resource_tryl5"), SubResource("Resource_ai277")])
+
+[sub_resource type="Resource" id="Resource_lp10o"]
+script = ExtResource("3_kgb47")
+weight = 50
+species = &"BEEDRILL"
+min_level = 15
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_dno33"]
+script = ExtResource("3_kgb47")
+weight = 50
+species = &"BUTTERFREE"
+min_level = 15
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_mhisj"]
+script = ExtResource("2_ebdne")
+encounter_type = &"PokeRadar"
+step_chance = 40
+slots = Array[ExtResource("3_kgb47")]([SubResource("Resource_lp10o"), SubResource("Resource_dno33")])
+
+[resource]
+resource_name = "28_0"
+script = ExtResource("1_qbeny")
+map_id = 28
+tables = Array[ExtResource("2_ebdne")]([SubResource("Resource_m4ypg"), SubResource("Resource_nme24"), SubResource("Resource_ky8hd"), SubResource("Resource_u1e53"), SubResource("Resource_mhisj")])
+id = &"28_0"
+display_name = "Map 28 v0"

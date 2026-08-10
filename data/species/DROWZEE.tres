@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6ap8s"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_0agi5"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_4255n"]
+
+[sub_resource type="Resource" id="Resource_rmfvl"]
+script = ExtResource("1_6ap8s")
+species = &"HYPNO"
+method = &"Level"
+parameter = "26"
+
+[sub_resource type="Resource" id="Resource_3txaj"]
+script = ExtResource("2_0agi5")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_p52tm"]
+script = ExtResource("2_0agi5")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_5te3w"]
+script = ExtResource("2_0agi5")
+level = 5
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_140dq"]
+script = ExtResource("2_0agi5")
+level = 9
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_y3x3r"]
+script = ExtResource("2_0agi5")
+level = 13
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_5rufv"]
+script = ExtResource("2_0agi5")
+level = 17
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_asdb1"]
+script = ExtResource("2_0agi5")
+level = 21
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_4dajq"]
+script = ExtResource("2_0agi5")
+level = 25
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_ylnkh"]
+script = ExtResource("2_0agi5")
+level = 29
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_b2xa4"]
+script = ExtResource("2_0agi5")
+level = 33
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_2h4gv"]
+script = ExtResource("2_0agi5")
+level = 37
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_v8b82"]
+script = ExtResource("2_0agi5")
+level = 41
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_oxrlq"]
+script = ExtResource("2_0agi5")
+level = 45
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_w2xhg"]
+script = ExtResource("2_0agi5")
+level = 49
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_mpo7n"]
+script = ExtResource("2_0agi5")
+level = 53
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_2yfhp"]
+script = ExtResource("2_0agi5")
+level = 57
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_c6fpu"]
+script = ExtResource("2_0agi5")
+level = 61
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "DROWZEE"
+script = ExtResource("3_4255n")
+species = &"DROWZEE"
+category = "Hypnosis"
+pokedex_entry = "If your nose becomes itchy while you are sleeping, it's a sure sign that a Drowzee is standing above your pillow and trying to eat your dream through your nostrils."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 60
+base_attack = 48
+base_defense = 45
+base_special_attack = 43
+base_special_defense = 90
+base_speed = 42
+ev_special_defense = 1
+base_exp = 66
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_0agi5")]([SubResource("Resource_3txaj"), SubResource("Resource_p52tm"), SubResource("Resource_5te3w"), SubResource("Resource_140dq"), SubResource("Resource_y3x3r"), SubResource("Resource_5rufv"), SubResource("Resource_asdb1"), SubResource("Resource_4dajq"), SubResource("Resource_ylnkh"), SubResource("Resource_b2xa4"), SubResource("Resource_2h4gv"), SubResource("Resource_v8b82"), SubResource("Resource_oxrlq"), SubResource("Resource_w2xhg"), SubResource("Resource_mpo7n"), SubResource("Resource_2yfhp"), SubResource("Resource_c6fpu")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"ICEPUNCH", &"LIGHTSCREEN", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRICKROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"FIREPUNCH", &"FLATTER", &"GUARDSWAP", &"ICEPUNCH", &"POWERSPLIT", &"PSYCHOCUT", &"ROLEPLAY", &"THUNDERPUNCH"])
+abilities = Array[StringName]([&"INSOMNIA", &"FOREWARN"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6ap8s")]([SubResource("Resource_rmfvl")])
+height = 10
+weight = 324
+color = &"Yellow"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-3, 26)
+id = &"DROWZEE"
+display_name = "Drowzee"

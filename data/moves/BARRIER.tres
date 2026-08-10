@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_0sd1n"]
+
+[resource]
+resource_name = "BARRIER"
+script = ExtResource("1_0sd1n")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 20
+target = &"User"
+function_code = &"RaiseUserDefense2"
+description = "The user throws up a sturdy wall that sharply raises its Defense stat."
+id = &"BARRIER"
+display_name = "Barrier"

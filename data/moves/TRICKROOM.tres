@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_a22jq"]
+
+[resource]
+resource_name = "TRICKROOM"
+script = ExtResource("1_a22jq")
+type = &"PSYCHIC"
+accuracy = 0
+target = &"BothSides"
+priority = -7
+function_code = &"StartSlowerBattlersActFirst"
+description = "The user creates a bizarre area in which slower Pokémon get to move first for five turns."
+id = &"TRICKROOM"
+display_name = "Trick Room"
+flags = Array[StringName]([&"CanMirrorMove"])

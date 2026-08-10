@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_pjc8f"]
+
+[resource]
+resource_name = "PSYCHICMEMORY"
+script = ExtResource("1_pjc8f")
+name_plural = "Psychic Memories"
+price = 1000
+sell_price = 500
+description = "A memory disc containing Psychic-type data. It changes the holder's type if held by a certain Pokémon."
+id = &"PSYCHICMEMORY"
+display_name = "Psychic Memory"
+flags = Array[StringName]([&"Fling_50"])

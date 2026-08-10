@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TerrainTagData" format=3]
+
+[ext_resource type="Script" path="res://src/data/terrain_tag_data.gd" id="1_t3wp5"]
+
+[resource]
+resource_name = "UnderwaterGrass"
+script = ExtResource("1_t3wp5")
+tag_number = 11
+land_wild_encounters = true
+id = &"UnderwaterGrass"
+display_name = "UnderwaterGrass"

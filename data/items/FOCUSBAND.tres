@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_evktc"]
+
+[resource]
+resource_name = "FOCUSBAND"
+script = ExtResource("1_evktc")
+name_plural = "Focus Bands"
+price = 3000
+sell_price = 2000
+bp_price = 48
+description = "An item to be held by a Pokémon. The holder may endure a potential KO attack, leaving it with just 1 HP."
+id = &"FOCUSBAND"
+display_name = "Focus Band"
+flags = Array[StringName]([&"Fling_10"])

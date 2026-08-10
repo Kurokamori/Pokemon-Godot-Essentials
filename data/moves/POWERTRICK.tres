@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ctmjb"]
+
+[resource]
+resource_name = "POWERTRICK"
+script = ExtResource("1_ctmjb")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 10
+target = &"User"
+function_code = &"UserSwapBaseAtkDef"
+description = "The user employs its psychic power to switch its Attack with its Defense stat."
+id = &"POWERTRICK"
+display_name = "Power Trick"

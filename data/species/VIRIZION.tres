@@ -1,0 +1,105 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1n1k4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i1u6k"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_keymn"]
+
+[sub_resource type="Resource" id="Resource_2dde0"]
+script = ExtResource("2_i1u6k")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_finns"]
+script = ExtResource("2_i1u6k")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_fctet"]
+script = ExtResource("2_i1u6k")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_vbuhm"]
+script = ExtResource("2_i1u6k")
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_7f33t"]
+script = ExtResource("2_i1u6k")
+level = 7
+move = &"MAGICALLEAF"
+
+[sub_resource type="Resource" id="Resource_ompjf"]
+script = ExtResource("2_i1u6k")
+level = 14
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_oulse"]
+script = ExtResource("2_i1u6k")
+level = 21
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_dpkbd"]
+script = ExtResource("2_i1u6k")
+level = 28
+move = &"RETALIATE"
+
+[sub_resource type="Resource" id="Resource_xv3dj"]
+script = ExtResource("2_i1u6k")
+level = 35
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_pluhn"]
+script = ExtResource("2_i1u6k")
+level = 42
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_4ak5y"]
+script = ExtResource("2_i1u6k")
+level = 49
+move = &"SACREDSWORD"
+
+[sub_resource type="Resource" id="Resource_v8fdw"]
+script = ExtResource("2_i1u6k")
+level = 56
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_i17iq"]
+script = ExtResource("2_i1u6k")
+level = 63
+move = &"LEAFBLADE"
+
+[sub_resource type="Resource" id="Resource_c0vgt"]
+script = ExtResource("2_i1u6k")
+level = 70
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "VIRIZION"
+script = ExtResource("3_keymn")
+species = &"VIRIZION"
+category = "Grassland"
+pokedex_entry = "Its head sprouts horns as sharp as blades. Using whirlwind-like movements, it confounds and swiftly cuts opponents."
+types = Array[StringName]([&"GRASS", &"FIGHTING"])
+base_hp = 91
+base_attack = 90
+base_defense = 72
+base_special_attack = 90
+base_special_defense = 129
+base_speed = 108
+ev_special_defense = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_i1u6k")]([SubResource("Resource_2dde0"), SubResource("Resource_finns"), SubResource("Resource_fctet"), SubResource("Resource_vbuhm"), SubResource("Resource_7f33t"), SubResource("Resource_ompjf"), SubResource("Resource_oulse"), SubResource("Resource_dpkbd"), SubResource("Resource_xv3dj"), SubResource("Resource_pluhn"), SubResource("Resource_4ak5y"), SubResource("Resource_v8fdw"), SubResource("Resource_i17iq"), SubResource("Resource_c0vgt")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRSLASH", &"BLOCK", &"BOUNCE", &"BRICKBREAK", &"CALMMIND", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"CUT", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FOCUSBLAST", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"GRASSYGLIDE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"LASERFOCUS", &"LEAFBLADE", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MEGAHORN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"PSYCHUP", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROAR", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"SYNTHESIS", &"TAUNT", &"TOXIC", &"WORKUP", &"WORRYSEED", &"XSCISSOR", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"JUSTIFIED"])
+hatch_steps = 20480
+height = 20
+weight = 2000
+color = &"Green"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(-4, 48)
+front_sprite_offset = Vector2i(-5, 17)
+id = &"VIRIZION"
+display_name = "Virizion"
+flags = Array[StringName]([&"Legendary"])

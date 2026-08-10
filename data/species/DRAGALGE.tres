@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_f68ju"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_3mx4v"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_o3etf"]
+
+[sub_resource type="Resource" id="Resource_tnr2f"]
+script = ExtResource("1_f68ju")
+species = &"SKRELP"
+method = &"Level"
+parameter = "48"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6guj3"]
+script = ExtResource("2_3mx4v")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_v344j"]
+script = ExtResource("2_3mx4v")
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_a8psj"]
+script = ExtResource("2_3mx4v")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_2fquj"]
+script = ExtResource("2_3mx4v")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_si3dx"]
+script = ExtResource("2_3mx4v")
+level = 15
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_1fg6l"]
+script = ExtResource("2_3mx4v")
+level = 20
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_aqcgc"]
+script = ExtResource("2_3mx4v")
+level = 25
+move = &"POISONTAIL"
+
+[sub_resource type="Resource" id="Resource_s77wa"]
+script = ExtResource("2_3mx4v")
+level = 30
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_y8dj0"]
+script = ExtResource("2_3mx4v")
+level = 35
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_16v5n"]
+script = ExtResource("2_3mx4v")
+level = 40
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_yr7r8"]
+script = ExtResource("2_3mx4v")
+level = 45
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_6oh2y"]
+script = ExtResource("2_3mx4v")
+level = 52
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_lo0sh"]
+script = ExtResource("2_3mx4v")
+level = 59
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_m5cdl"]
+script = ExtResource("2_3mx4v")
+level = 66
+move = &"OUTRAGE"
+
+[resource]
+resource_name = "DRAGALGE"
+script = ExtResource("3_o3etf")
+species = &"DRAGALGE"
+category = "Mock Kelp"
+pokedex_entry = "Their poison is strong enough to eat through the hull of a tanker, and they spit it indiscriminately at anything that enters their territory."
+types = Array[StringName]([&"POISON", &"DRAGON"])
+base_hp = 65
+base_attack = 75
+base_defense = 90
+base_special_attack = 97
+base_special_defense = 123
+base_speed = 44
+ev_special_defense = 2
+base_exp = 173
+catch_rate = 55
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_3mx4v")]([SubResource("Resource_6guj3"), SubResource("Resource_v344j"), SubResource("Resource_a8psj"), SubResource("Resource_2fquj"), SubResource("Resource_si3dx"), SubResource("Resource_1fg6l"), SubResource("Resource_aqcgc"), SubResource("Resource_s77wa"), SubResource("Resource_y8dj0"), SubResource("Resource_16v5n"), SubResource("Resource_yr7r8"), SubResource("Resource_6oh2y"), SubResource("Resource_lo0sh"), SubResource("Resource_m5cdl")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONPULSE", &"DRAGONTAIL", &"ENDURE", &"FACADE", &"FLIPTURN", &"FOCUSBLAST", &"FRUSTRATION", &"GIGAIMPACT", &"GUNKSHOT", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICYWIND", &"IRONTAIL", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PLAYROUGH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"TOXIC", &"TOXICSPIKES", &"VENOMDRENCH", &"VENOSHOCK", &"WATERFALL", &"WATERPULSE"])
+abilities = Array[StringName]([&"POISONPOINT", &"POISONTOUCH"])
+hidden_abilities = Array[StringName]([&"ADAPTABILITY"])
+egg_groups = Array[StringName]([&"Water1", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_f68ju")]([SubResource("Resource_tnr2f")])
+height = 18
+weight = 815
+color = &"Brown"
+shape = &"HeadBase"
+generation = 6
+back_sprite_offset = Vector2i(8, 54)
+front_sprite_offset = Vector2i(0, 6)
+id = &"DRAGALGE"
+display_name = "Dragalge"

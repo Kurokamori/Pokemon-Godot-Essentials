@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_08imv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_s7km7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hsgjt"]
+
+[sub_resource type="Resource" id="Resource_ygtlg"]
+script = ExtResource("1_08imv")
+species = &"MUSHARNA"
+method = &"Item"
+parameter = "MOONSTONE"
+
+[sub_resource type="Resource" id="Resource_jsnfx"]
+script = ExtResource("2_s7km7")
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_cq3lj"]
+script = ExtResource("2_s7km7")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_h0j8g"]
+script = ExtResource("2_s7km7")
+level = 4
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_wy8v4"]
+script = ExtResource("2_s7km7")
+level = 8
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_23nvw"]
+script = ExtResource("2_s7km7")
+level = 12
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_bgtqs"]
+script = ExtResource("2_s7km7")
+level = 16
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_l34r5"]
+script = ExtResource("2_s7km7")
+level = 20
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_xiijl"]
+script = ExtResource("2_s7km7")
+level = 24
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_8korv"]
+script = ExtResource("2_s7km7")
+level = 28
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_5irsg"]
+script = ExtResource("2_s7km7")
+level = 32
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_jn6v8"]
+script = ExtResource("2_s7km7")
+level = 36
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_knjqu"]
+script = ExtResource("2_s7km7")
+level = 40
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_atj7a"]
+script = ExtResource("2_s7km7")
+level = 44
+move = &"DREAMEATER"
+
+[sub_resource type="Resource" id="Resource_ojao4"]
+script = ExtResource("2_s7km7")
+level = 48
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_35cmm"]
+script = ExtResource("2_s7km7")
+level = 52
+move = &"WONDERROOM"
+
+[resource]
+resource_name = "MUNNA"
+script = ExtResource("3_hsgjt")
+species = &"MUNNA"
+category = "Dream Eater"
+pokedex_entry = "It eats the dreams of people and Pokémon. When it eats a pleasant dreams, it expels pink-colored mist."
+types = Array[StringName]([&"PSYCHIC"])
+base_hp = 76
+base_attack = 25
+base_defense = 45
+base_special_attack = 67
+base_special_defense = 55
+base_speed = 24
+ev_hp = 1
+base_exp = 58
+growth_rate = &"Fast"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_s7km7")]([SubResource("Resource_jsnfx"), SubResource("Resource_cq3lj"), SubResource("Resource_h0j8g"), SubResource("Resource_wy8v4"), SubResource("Resource_23nvw"), SubResource("Resource_bgtqs"), SubResource("Resource_l34r5"), SubResource("Resource_xiijl"), SubResource("Resource_8korv"), SubResource("Resource_5irsg"), SubResource("Resource_jn6v8"), SubResource("Resource_knjqu"), SubResource("Resource_atj7a"), SubResource("Resource_ojao4"), SubResource("Resource_35cmm")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ALLYSWITCH", &"AMNESIA", &"ATTRACT", &"CALMMIND", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FRUSTRATION", &"FUTURESIGHT", &"GRAVITY", &"GUARDSWAP", &"GYROBALL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"IMPRISON", &"LIGHTSCREEN", &"MAGICCOAT", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POWERSWAP", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERWAVE", &"TORMENT", &"TOXIC", &"TRICK", &"TRICKROOM", &"WONDERROOM", &"WORRYSEED", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"CURSE", &"HEALINGWISH"])
+abilities = Array[StringName]([&"FOREWARN", &"SYNCHRONIZE"])
+hidden_abilities = Array[StringName]([&"TELEPATHY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_08imv")]([SubResource("Resource_ygtlg")])
+height = 6
+weight = 233
+color = &"Pink"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 57)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 1
+id = &"MUNNA"
+display_name = "Munna"

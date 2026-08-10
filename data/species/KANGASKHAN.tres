@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tpo14"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_syu4a"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_f1qfu"]
+
+[sub_resource type="Resource" id="Resource_3uhhx"]
+script = ExtResource("2_syu4a")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_teg0u"]
+script = ExtResource("2_syu4a")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_r7ijm"]
+script = ExtResource("2_syu4a")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_suswg"]
+script = ExtResource("2_syu4a")
+level = 8
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_jvgc1"]
+script = ExtResource("2_syu4a")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_036uv"]
+script = ExtResource("2_syu4a")
+level = 16
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_jfi7l"]
+script = ExtResource("2_syu4a")
+level = 20
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_ky2iw"]
+script = ExtResource("2_syu4a")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_m1dt8"]
+script = ExtResource("2_syu4a")
+level = 28
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_llwcg"]
+script = ExtResource("2_syu4a")
+level = 32
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_nlr07"]
+script = ExtResource("2_syu4a")
+level = 36
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_jpi8n"]
+script = ExtResource("2_syu4a")
+level = 40
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_p2c3q"]
+script = ExtResource("2_syu4a")
+level = 44
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_w5d4c"]
+script = ExtResource("2_syu4a")
+level = 48
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_j5q2n"]
+script = ExtResource("2_syu4a")
+level = 52
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "KANGASKHAN"
+script = ExtResource("3_f1qfu")
+species = &"KANGASKHAN"
+category = "Parent"
+pokedex_entry = "If you come across a young Kangaskhan playing by itself, never try to catch it. The baby's parent is sure to be in the area, and it will become violently enraged."
+base_hp = 105
+base_attack = 95
+base_defense = 80
+base_special_attack = 40
+base_special_defense = 80
+base_speed = 90
+ev_hp = 2
+base_exp = 172
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_syu4a")]([SubResource("Resource_3uhhx"), SubResource("Resource_teg0u"), SubResource("Resource_r7ijm"), SubResource("Resource_suswg"), SubResource("Resource_jvgc1"), SubResource("Resource_036uv"), SubResource("Resource_jfi7l"), SubResource("Resource_ky2iw"), SubResource("Resource_m1dt8"), SubResource("Resource_llwcg"), SubResource("Resource_nlr07"), SubResource("Resource_jpi8n"), SubResource("Resource_p2c3q"), SubResource("Resource_w5d4c"), SubResource("Resource_j5q2n")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"AVALANCHE", &"BEATUP", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CRUNCH", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SANDSTORM", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SURF", &"SWAGGER", &"TERRAINPULSE", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+egg_moves = Array[StringName]([&"CIRCLETHROW", &"COUNTER", &"CRUSHCLAW", &"DISABLE", &"DOUBLEEDGE", &"ENDEAVOR", &"FOCUSENERGY", &"HAMMERARM", &"STOMP", &"UPROAR"])
+abilities = Array[StringName]([&"EARLYBIRD", &"SCRAPPY"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+egg_groups = Array[StringName]([&"Monster"])
+hatch_steps = 5120
+height = 22
+weight = 800
+color = &"Brown"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 20)
+shadow_size = 3
+id = &"KANGASKHAN"
+display_name = "Kangaskhan"

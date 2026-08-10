@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_srw1h"]
+
+[resource]
+resource_name = "EMBER"
+script = ExtResource("1_srw1h")
+type = &"FIRE"
+category = 1
+power = 40
+total_pp = 25
+function_code = &"BurnTarget"
+effect_chance = 10
+description = "The target is attacked with small flames. It may also leave the target with a burn."
+id = &"EMBER"
+display_name = "Ember"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_rcrls"]
+
+[resource]
+resource_name = "INFERNO"
+script = ExtResource("1_rcrls")
+type = &"FIRE"
+category = 1
+power = 100
+accuracy = 50
+function_code = &"BurnTarget"
+effect_chance = 100
+description = "The user attacks by engulfing the target in an intense fire. It leaves the target with a burn."
+id = &"INFERNO"
+display_name = "Inferno"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

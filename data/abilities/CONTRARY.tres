@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_uaxvt"]
+
+[resource]
+resource_name = "CONTRARY"
+script = ExtResource("1_uaxvt")
+description = "Makes stat changes have an opposite effect."
+id = &"CONTRARY"
+display_name = "Contrary"

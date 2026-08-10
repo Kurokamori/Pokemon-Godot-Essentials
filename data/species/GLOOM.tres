@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pgto0"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_v1717"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_auijx"]
+
+[sub_resource type="Resource" id="Resource_ab5co"]
+script = ExtResource("1_pgto0")
+species = &"VILEPLUME"
+method = &"Item"
+parameter = "LEAFSTONE"
+
+[sub_resource type="Resource" id="Resource_iauf3"]
+script = ExtResource("1_pgto0")
+species = &"BELLOSSOM"
+method = &"Item"
+parameter = "SUNSTONE"
+
+[sub_resource type="Resource" id="Resource_63sm2"]
+script = ExtResource("1_pgto0")
+species = &"ODDISH"
+method = &"Level"
+parameter = "21"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_sgq1w"]
+script = ExtResource("2_v1717")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_ruumy"]
+script = ExtResource("2_v1717")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_cbmea"]
+script = ExtResource("2_v1717")
+move = &"ACID"
+
+[sub_resource type="Resource" id="Resource_4ln24"]
+script = ExtResource("2_v1717")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_n0wvv"]
+script = ExtResource("2_v1717")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_fttle"]
+script = ExtResource("2_v1717")
+level = 14
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_llsy0"]
+script = ExtResource("2_v1717")
+level = 16
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_bdjds"]
+script = ExtResource("2_v1717")
+level = 18
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_r4g1w"]
+script = ExtResource("2_v1717")
+level = 20
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_adeks"]
+script = ExtResource("2_v1717")
+level = 26
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_epa8m"]
+script = ExtResource("2_v1717")
+level = 32
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_0sbgr"]
+script = ExtResource("2_v1717")
+level = 38
+move = &"GRASSYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_akqf2"]
+script = ExtResource("2_v1717")
+level = 44
+move = &"MOONLIGHT"
+
+[sub_resource type="Resource" id="Resource_0r7ql"]
+script = ExtResource("2_v1717")
+level = 50
+move = &"PETALDANCE"
+
+[resource]
+resource_name = "GLOOM"
+script = ExtResource("3_auijx")
+species = &"GLOOM"
+category = "Weed"
+pokedex_entry = "A horribly noxious honey drools from its mouth. One whiff of the honey can result in memory loss. Some fans are said to enjoy this overwhelming stink, however."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 60
+base_attack = 65
+base_defense = 70
+base_special_attack = 85
+base_special_defense = 75
+base_speed = 40
+ev_special_attack = 2
+base_exp = 138
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_v1717")]([SubResource("Resource_sgq1w"), SubResource("Resource_ruumy"), SubResource("Resource_cbmea"), SubResource("Resource_4ln24"), SubResource("Resource_n0wvv"), SubResource("Resource_fttle"), SubResource("Resource_llsy0"), SubResource("Resource_bdjds"), SubResource("Resource_r4g1w"), SubResource("Resource_adeks"), SubResource("Resource_epa8m"), SubResource("Resource_0sbgr"), SubResource("Resource_akqf2"), SubResource("Resource_0r7ql")])
+tutor_moves = Array[StringName]([&"AFTERYOU", &"ATTRACT", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CUT", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FLING", &"FRUSTRATION", &"GASTROACID", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HIDDENPOWER", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"VENOSHOCK", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL"])
+hidden_abilities = Array[StringName]([&"STENCH"])
+wild_item_uncommon = Array[StringName]([&"ABSORBBULB"])
+egg_groups = Array[StringName]([&"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_pgto0")]([SubResource("Resource_ab5co"), SubResource("Resource_iauf3"), SubResource("Resource_63sm2")])
+height = 8
+weight = 86
+color = &"Blue"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 27)
+shadow_size = 1
+id = &"GLOOM"
+display_name = "Gloom"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_4odgo"]
+
+[resource]
+resource_name = "STEAMERUPTION"
+script = ExtResource("1_4odgo")
+type = &"WATER"
+category = 1
+power = 110
+accuracy = 95
+function_code = &"BurnTarget"
+effect_chance = 30
+description = "The user immerses the target in superheated steam. This may also leave the target with a burn."
+id = &"STEAMERUPTION"
+display_name = "Steam Eruption"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"ThawsUser", &"CannotMetronome"])

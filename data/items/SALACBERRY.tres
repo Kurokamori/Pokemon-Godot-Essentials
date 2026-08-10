@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_sw5eo"]
+
+[resource]
+resource_name = "SALACBERRY"
+script = ExtResource("1_sw5eo")
+name_plural = "Salac Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "If held by a Pokémon, it raises its Speed stat in a pinch."
+id = &"SALACBERRY"
+display_name = "Salac Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_FIGHTING_100"])

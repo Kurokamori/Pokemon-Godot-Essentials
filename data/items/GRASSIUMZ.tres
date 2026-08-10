@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ti0th"]
+
+[resource]
+resource_name = "GRASSIUMZ"
+script = ExtResource("1_ti0th")
+name_plural = "Grassium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Grass-type Pokémon holds to turn a Grass-type move into Bloom Doom."
+id = &"GRASSIUMZ"
+display_name = "Grassium Z"
+flags = Array[StringName]([&"ZCrystal"])

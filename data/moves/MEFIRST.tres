@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_efnxq"]
+
+[resource]
+resource_name = "MEFIRST"
+script = ExtResource("1_efnxq")
+accuracy = 0
+total_pp = 20
+target = &"NearFoe"
+function_code = &"UseMoveTargetIsAboutToUse"
+description = "The user tries to cut ahead of the foe to steal and use the foe's intended move with greater power."
+id = &"MEFIRST"
+display_name = "Me First"
+flags = Array[StringName]([&"CanProtect"])

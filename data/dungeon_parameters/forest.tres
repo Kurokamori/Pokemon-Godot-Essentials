@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DungeonParametersData" format=3]
+
+[ext_resource type="Script" path="res://src/data/dungeon_parameters_data.gd" id="1_62of4"]
+
+[resource]
+resource_name = "forest"
+script = ExtResource("1_62of4")
+area = &"forest"
+room_min_width = 4
+room_min_height = 4
+room_max_width = 8
+room_max_height = 8
+random_corridor_shift = false
+floor_patch_radius = 3
+floor_patch_chance = 75
+id = &"forest"
+display_name = "forest"

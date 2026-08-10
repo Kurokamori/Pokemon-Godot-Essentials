@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_41pjj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_paj42"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_bmsru"]
+
+[sub_resource type="Resource" id="Resource_64mrh"]
+script = ExtResource("1_41pjj")
+species = &"AIPOM"
+method = &"HasMove"
+parameter = "DOUBLEHIT"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_88qx7"]
+script = ExtResource("2_paj42")
+move = &"DUALCHOP"
+
+[sub_resource type="Resource" id="Resource_t1yuk"]
+script = ExtResource("2_paj42")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_7e6a8"]
+script = ExtResource("2_paj42")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_4ljdx"]
+script = ExtResource("2_paj42")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_r322w"]
+script = ExtResource("2_paj42")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_h3eh8"]
+script = ExtResource("2_paj42")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_l5vm6"]
+script = ExtResource("2_paj42")
+level = 8
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_vudii"]
+script = ExtResource("2_paj42")
+level = 11
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_v8x8x"]
+script = ExtResource("2_paj42")
+level = 15
+move = &"TICKLE"
+
+[sub_resource type="Resource" id="Resource_gwi8j"]
+script = ExtResource("2_paj42")
+level = 18
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_u7geo"]
+script = ExtResource("2_paj42")
+level = 22
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_4wl1l"]
+script = ExtResource("2_paj42")
+level = 25
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_hqhnc"]
+script = ExtResource("2_paj42")
+level = 29
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_qoaui"]
+script = ExtResource("2_paj42")
+level = 32
+move = &"DOUBLEHIT"
+
+[sub_resource type="Resource" id="Resource_gvkc3"]
+script = ExtResource("2_paj42")
+level = 36
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_f2w2f"]
+script = ExtResource("2_paj42")
+level = 39
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_e4tya"]
+script = ExtResource("2_paj42")
+level = 43
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "AMBIPOM"
+script = ExtResource("3_bmsru")
+species = &"AMBIPOM"
+category = "Long Tail"
+pokedex_entry = "To eat, it deftly shucks nuts with its two tails. It rarely uses its arms now."
+base_hp = 75
+base_attack = 100
+base_defense = 66
+base_special_attack = 60
+base_special_defense = 66
+base_speed = 115
+ev_speed = 2
+base_exp = 169
+growth_rate = &"Fast"
+catch_rate = 45
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_paj42")]([SubResource("Resource_88qx7"), SubResource("Resource_t1yuk"), SubResource("Resource_7e6a8"), SubResource("Resource_4ljdx"), SubResource("Resource_r322w"), SubResource("Resource_h3eh8"), SubResource("Resource_l5vm6"), SubResource("Resource_vudii"), SubResource("Resource_v8x8x"), SubResource("Resource_gwi8j"), SubResource("Resource_u7geo"), SubResource("Resource_4wl1l"), SubResource("Resource_hqhnc"), SubResource("Resource_qoaui"), SubResource("Resource_gvkc3"), SubResource("Resource_f2w2f"), SubResource("Resource_e4tya")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRASSKNOT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEPUNCH", &"IRONTAIL", &"KNOCKOFF", &"LASERFOCUS", &"LASTRESORT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"UTURN", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"TECHNICIAN", &"PICKUP"])
+hidden_abilities = Array[StringName]([&"SKILLLINK"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_41pjj")]([SubResource("Resource_64mrh")])
+height = 12
+weight = 203
+color = &"Purple"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(1, 36)
+front_sprite_offset = Vector2i(7, 15)
+shadow_size = 1
+id = &"AMBIPOM"
+display_name = "Ambipom"

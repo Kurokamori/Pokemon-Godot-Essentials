@@ -1,0 +1,159 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_1ofes"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2i416"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dume2"]
+
+[sub_resource type="Resource" id="Resource_ex7q5"]
+script = ExtResource("1_1ofes")
+species = &"BRAIXEN"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3sseg"]
+script = ExtResource("2_2i416")
+level = 0
+move = &"MYSTICALFIRE"
+
+[sub_resource type="Resource" id="Resource_utlka"]
+script = ExtResource("2_2i416")
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_s3i8j"]
+script = ExtResource("2_2i416")
+move = &"ROLEPLAY"
+
+[sub_resource type="Resource" id="Resource_2sqwd"]
+script = ExtResource("2_2i416")
+move = &"SWITCHEROO"
+
+[sub_resource type="Resource" id="Resource_ttyju"]
+script = ExtResource("2_2i416")
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_thfle"]
+script = ExtResource("2_2i416")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_n3a3d"]
+script = ExtResource("2_2i416")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_471ds"]
+script = ExtResource("2_2i416")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_qyhle"]
+script = ExtResource("2_2i416")
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_0pyev"]
+script = ExtResource("2_2i416")
+level = 5
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_bvxbh"]
+script = ExtResource("2_2i416")
+level = 11
+move = &"HOWL"
+
+[sub_resource type="Resource" id="Resource_827ne"]
+script = ExtResource("2_2i416")
+level = 14
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_gmg3g"]
+script = ExtResource("2_2i416")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_8nblq"]
+script = ExtResource("2_2i416")
+level = 22
+move = &"FIRESPIN"
+
+[sub_resource type="Resource" id="Resource_xjjrk"]
+script = ExtResource("2_2i416")
+level = 28
+move = &"LUCKYCHANT"
+
+[sub_resource type="Resource" id="Resource_bj8no"]
+script = ExtResource("2_2i416")
+level = 31
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_hqug0"]
+script = ExtResource("2_2i416")
+level = 38
+move = &"PSYSHOCK"
+
+[sub_resource type="Resource" id="Resource_am74j"]
+script = ExtResource("2_2i416")
+level = 45
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_5x3ve"]
+script = ExtResource("2_2i416")
+level = 51
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_0ipjb"]
+script = ExtResource("2_2i416")
+level = 57
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_bv34k"]
+script = ExtResource("2_2i416")
+level = 62
+move = &"SUNNYDAY"
+
+[sub_resource type="Resource" id="Resource_q1tux"]
+script = ExtResource("2_2i416")
+level = 68
+move = &"MAGICROOM"
+
+[sub_resource type="Resource" id="Resource_m315l"]
+script = ExtResource("2_2i416")
+level = 74
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_r20yg"]
+script = ExtResource("2_2i416")
+level = 80
+move = &"FUTURESIGHT"
+
+[resource]
+resource_name = "DELPHOX"
+script = ExtResource("3_dume2")
+species = &"DELPHOX"
+category = "Fox"
+pokedex_entry = "It gazes into the flame at the tip of its branch to achieve a focused state, which allows it to see into the future."
+types = Array[StringName]([&"FIRE", &"PSYCHIC"])
+base_hp = 75
+base_attack = 69
+base_defense = 72
+base_special_attack = 114
+base_special_defense = 100
+base_speed = 104
+ev_special_attack = 3
+base_exp = 267
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_2i416")]([SubResource("Resource_3sseg"), SubResource("Resource_utlka"), SubResource("Resource_s3i8j"), SubResource("Resource_2sqwd"), SubResource("Resource_ttyju"), SubResource("Resource_thfle"), SubResource("Resource_n3a3d"), SubResource("Resource_471ds"), SubResource("Resource_qyhle"), SubResource("Resource_0pyev"), SubResource("Resource_bvxbh"), SubResource("Resource_827ne"), SubResource("Resource_gmg3g"), SubResource("Resource_8nblq"), SubResource("Resource_xjjrk"), SubResource("Resource_bj8no"), SubResource("Resource_hqug0"), SubResource("Resource_am74j"), SubResource("Resource_5x3ve"), SubResource("Resource_0ipjb"), SubResource("Resource_bv34k"), SubResource("Resource_q1tux"), SubResource("Resource_m315l"), SubResource("Resource_r20yg")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BLASTBURN", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DREAMEATER", &"ECHOEDVOICE", &"EMBARGO", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONTAIL", &"LASERFOCUS", &"LIGHTSCREEN", &"LOWKICK", &"MAGICCOAT", &"MAGICROOM", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"THIEF", &"THUNDERPUNCH", &"TOXIC", &"TRICK", &"TRICKROOM", &"WILLOWISP", &"WONDERROOM", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"MAGICIAN"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_1ofes")]([SubResource("Resource_ex7q5")])
+height = 15
+weight = 390
+shape = &"BipedalTail"
+generation = 6
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(0, 8)
+id = &"DELPHOX"
+display_name = "Delphox"

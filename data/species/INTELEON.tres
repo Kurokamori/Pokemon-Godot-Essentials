@@ -1,0 +1,114 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_rkj4l"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lnu1m"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_77ejx"]
+
+[sub_resource type="Resource" id="Resource_i57gx"]
+script = ExtResource("1_rkj4l")
+species = &"DRIZZILE"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_gl82j"]
+script = ExtResource("2_lnu1m")
+level = 0
+move = &"SNIPESHOT"
+
+[sub_resource type="Resource" id="Resource_6788u"]
+script = ExtResource("2_lnu1m")
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_sfpn6"]
+script = ExtResource("2_lnu1m")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_w3ihp"]
+script = ExtResource("2_lnu1m")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_bx8qi"]
+script = ExtResource("2_lnu1m")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_wqwwt"]
+script = ExtResource("2_lnu1m")
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_7r37i"]
+script = ExtResource("2_lnu1m")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_rpgi2"]
+script = ExtResource("2_lnu1m")
+level = 19
+move = &"TEARFULLOOK"
+
+[sub_resource type="Resource" id="Resource_fsjbe"]
+script = ExtResource("2_lnu1m")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_vyk8h"]
+script = ExtResource("2_lnu1m")
+level = 30
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_8vryw"]
+script = ExtResource("2_lnu1m")
+level = 38
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_ym263"]
+script = ExtResource("2_lnu1m")
+level = 46
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_1dmm7"]
+script = ExtResource("2_lnu1m")
+level = 54
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_ur4iu"]
+script = ExtResource("2_lnu1m")
+level = 62
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "INTELEON"
+script = ExtResource("3_77ejx")
+species = &"INTELEON"
+category = "Secret Agent"
+pokedex_entry = "It has many hidden capabilities, such as fingertips that can shoot water and a membrane on its back that it can use to glide through the air."
+types = Array[StringName]([&"WATER"])
+base_hp = 70
+base_attack = 85
+base_defense = 65
+base_special_attack = 125
+base_special_defense = 65
+base_speed = 120
+ev_speed = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lnu1m")]([SubResource("Resource_gl82j"), SubResource("Resource_6788u"), SubResource("Resource_sfpn6"), SubResource("Resource_w3ihp"), SubResource("Resource_bx8qi"), SubResource("Resource_wqwwt"), SubResource("Resource_7r37i"), SubResource("Resource_rpgi2"), SubResource("Resource_fsjbe"), SubResource("Resource_vyk8h"), SubResource("Resource_8vryw"), SubResource("Resource_ym263"), SubResource("Resource_1dmm7"), SubResource("Resource_ur4iu")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AGILITY", &"AIRSLASH", &"ATTRACT", &"BATONPASS", &"BLIZZARD", &"BOUNCE", &"BREAKINGSWIPE", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FLING", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYDROCANNON", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"LIGHTSCREEN", &"LIQUIDATION", &"METRONOME", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SCALD", &"SCALESHOT", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TOXIC", &"UTURN", &"WATERFALL", &"WATERPLEDGE", &"WEATHERBALL", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"SNIPER"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_rkj4l")]([SubResource("Resource_i57gx")])
+height = 19
+weight = 452
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(7, 12)
+shadow_size = 1
+id = &"INTELEON"
+display_name = "Inteleon"

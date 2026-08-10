@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_gha8r"]
+
+[resource]
+resource_name = "GALVANIZE"
+script = ExtResource("1_gha8r")
+description = "Normal-type moves become Electric-type and powered."
+id = &"GALVANIZE"
+display_name = "Galvanize"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_agq31"]
+
+[resource]
+resource_name = "DRAGONASCENT"
+script = ExtResource("1_agq31")
+type = &"FLYING"
+category = 0
+power = 120
+function_code = &"LowerUserDefSpDef1"
+description = "The user soars upward and drops at high speeds. Its Defense and Sp. Def stats are lowered."
+id = &"DRAGONASCENT"
+display_name = "Dragon Ascent"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

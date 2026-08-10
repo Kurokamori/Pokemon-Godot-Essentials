@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_s67xw"]
+
+[resource]
+resource_name = "58"
+script = ExtResource("1_s67xw")
+map_id = 58
+town_map_position = Array[int]([0, 17, 10])
+id = &"58"
+display_name = "Battle Frontier"

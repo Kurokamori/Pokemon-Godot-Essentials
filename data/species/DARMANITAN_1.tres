@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_pyehn"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_48xls"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_k0mxf"]
+
+[sub_resource type="Resource" id="Resource_3wjue"]
+script = ExtResource("1_pyehn")
+species = &"DARUMAKA"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_74g38"]
+script = ExtResource("2_48xls")
+level = 0
+move = &"HAMMERARM"
+
+[sub_resource type="Resource" id="Resource_jrgv1"]
+script = ExtResource("2_48xls")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_tcdy6"]
+script = ExtResource("2_48xls")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_2mp1v"]
+script = ExtResource("2_48xls")
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_87drd"]
+script = ExtResource("2_48xls")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_7ngco"]
+script = ExtResource("2_48xls")
+level = 12
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_arty3"]
+script = ExtResource("2_48xls")
+level = 16
+move = &"WORKUP"
+
+[sub_resource type="Resource" id="Resource_e6d3t"]
+script = ExtResource("2_48xls")
+level = 20
+move = &"FIREFANG"
+
+[sub_resource type="Resource" id="Resource_a4xo6"]
+script = ExtResource("2_48xls")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_q3il1"]
+script = ExtResource("2_48xls")
+level = 28
+move = &"FIREPUNCH"
+
+[sub_resource type="Resource" id="Resource_bu6ch"]
+script = ExtResource("2_48xls")
+level = 32
+move = &"UPROAR"
+
+[sub_resource type="Resource" id="Resource_ii0qw"]
+script = ExtResource("2_48xls")
+level = 38
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_0b7in"]
+script = ExtResource("2_48xls")
+level = 44
+move = &"FLAREBLITZ"
+
+[sub_resource type="Resource" id="Resource_a6mam"]
+script = ExtResource("2_48xls")
+level = 50
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_lwa3x"]
+script = ExtResource("2_48xls")
+level = 56
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "DARMANITAN_1"
+script = ExtResource("3_k0mxf")
+species = &"DARMANITAN"
+form = 1
+form_name = "Zen Mode"
+category = "Blazing"
+pokedex_entry = "When wounded, it stops moving. It goes as still as stone to meditate, sharpening its mind and spirit."
+pokedex_form = 1
+types = Array[StringName]([&"FIRE", &"PSYCHIC"])
+base_hp = 105
+base_attack = 30
+base_defense = 105
+base_special_attack = 140
+base_special_defense = 105
+base_speed = 55
+ev_special_attack = 2
+base_exp = 189
+growth_rate = &"Parabolic"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_48xls")]([SubResource("Resource_74g38"), SubResource("Resource_jrgv1"), SubResource("Resource_tcdy6"), SubResource("Resource_2mp1v"), SubResource("Resource_87drd"), SubResource("Resource_7ngco"), SubResource("Resource_arty3"), SubResource("Resource_e6d3t"), SubResource("Resource_a4xo6"), SubResource("Resource_q3il1"), SubResource("Resource_bu6ch"), SubResource("Resource_ii0qw"), SubResource("Resource_0b7in"), SubResource("Resource_a6mam"), SubResource("Resource_lwa3x")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"BULLDOZE", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPUNCH", &"FIRESPIN", &"FLAMECHARGE", &"FLAMETHROWER", &"FLAREBLITZ", &"FLING", &"FOCUSBLAST", &"FOCUSENERGY", &"FOCUSPUNCH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"GUARDSWAP", &"GYROBALL", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"INCINERATE", &"IRONDEFENSE", &"IRONHEAD", &"LASERFOCUS", &"LASHOUT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"POWERSWAP", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"TRICK", &"UPROAR", &"UTURN", &"WILLOWISP", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SHEERFORCE"])
+hidden_abilities = Array[StringName]([&"ZENMODE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_pyehn")]([SubResource("Resource_3wjue")])
+height = 13
+weight = 929
+color = &"Blue"
+shape = &"Quadruped"
+generation = 5
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+id = &"DARMANITAN_1"
+display_name = "Darmanitan"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_a2xnw"]
+
+[resource]
+resource_name = "RELICSILVER"
+script = ExtResource("1_a2xnw")
+name_plural = "Relic Silvers"
+portion_name = "Relic Silver coin"
+portion_name_plural = "Relic Silver coins"
+description = "A silver coin used in a civilization about 3,000 years ago. A maniac will buy it for a high price."
+id = &"RELICSILVER"
+display_name = "Relic Silver"
+flags = Array[StringName]([&"Fling_30"])

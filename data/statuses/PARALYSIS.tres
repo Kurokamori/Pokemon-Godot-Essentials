@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StatusData" format=3]
+
+[ext_resource type="Script" path="res://src/data/status_data.gd" id="1_vb3lh"]
+
+[resource]
+resource_name = "PARALYSIS"
+script = ExtResource("1_vb3lh")
+animation = &"Paralysis"
+icon_position = 3
+id = &"PARALYSIS"
+display_name = "Paralysis"

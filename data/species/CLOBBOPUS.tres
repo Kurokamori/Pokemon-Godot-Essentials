@@ -1,0 +1,100 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3gvwu"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bkxhq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_wmfu5"]
+
+[sub_resource type="Resource" id="Resource_ugw10"]
+script = ExtResource("1_3gvwu")
+species = &"GRAPPLOCT"
+method = &"HasMove"
+parameter = "TAUNT"
+
+[sub_resource type="Resource" id="Resource_j8aj7"]
+script = ExtResource("2_bkxhq")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_osu8f"]
+script = ExtResource("2_bkxhq")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_w3ug8"]
+script = ExtResource("2_bkxhq")
+level = 5
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_peipr"]
+script = ExtResource("2_bkxhq")
+level = 10
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_kbs62"]
+script = ExtResource("2_bkxhq")
+level = 15
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_jetej"]
+script = ExtResource("2_bkxhq")
+level = 20
+move = &"BRICKBREAK"
+
+[sub_resource type="Resource" id="Resource_xgn33"]
+script = ExtResource("2_bkxhq")
+level = 25
+move = &"BULKUP"
+
+[sub_resource type="Resource" id="Resource_20m37"]
+script = ExtResource("2_bkxhq")
+level = 30
+move = &"SUBMISSION"
+
+[sub_resource type="Resource" id="Resource_y821f"]
+script = ExtResource("2_bkxhq")
+level = 35
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_xxvdf"]
+script = ExtResource("2_bkxhq")
+level = 40
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_wruns"]
+script = ExtResource("2_bkxhq")
+level = 45
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "CLOBBOPUS"
+script = ExtResource("3_wmfu5")
+species = &"CLOBBOPUS"
+category = "Tantrum"
+pokedex_entry = "It's very curious, but its means of investigating things is to try to punch them with its tentacles. The search for food is what brings it onto land."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 50
+base_attack = 68
+base_defense = 60
+base_special_attack = 50
+base_special_defense = 50
+base_speed = 32
+ev_attack = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+catch_rate = 180
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bkxhq")]([SubResource("Resource_j8aj7"), SubResource("Resource_osu8f"), SubResource("Resource_w3ug8"), SubResource("Resource_peipr"), SubResource("Resource_kbs62"), SubResource("Resource_jetej"), SubResource("Resource_xgn33"), SubResource("Resource_20m37"), SubResource("Resource_y821f"), SubResource("Resource_xxvdf"), SubResource("Resource_wruns")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BULKUP", &"CAPTIVATE", &"CLOSECOMBAT", &"COACHING", &"CONFIDE", &"DIVE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FOCUSBLAST", &"FRUSTRATION", &"HIDDENPOWER", &"ICEPUNCH", &"LIQUIDATION", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TAUNT", &"TOXIC", &"WATERFALL", &"WORKUP"])
+egg_moves = Array[StringName]([&"CIRCLETHROW", &"PAINSPLIT", &"POWERUPPUNCH", &"SEISMICTOSS", &"SOAK", &"SUCKERPUNCH"])
+abilities = Array[StringName]([&"LIMBER"])
+hidden_abilities = Array[StringName]([&"TECHNICIAN"])
+egg_groups = Array[StringName]([&"Water1", &"Humanlike"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_3gvwu")]([SubResource("Resource_ugw10")])
+height = 6
+weight = 40
+color = &"Brown"
+shape = &"Multiped"
+generation = 8
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(4, 33)
+id = &"CLOBBOPUS"
+display_name = "Clobbopus"

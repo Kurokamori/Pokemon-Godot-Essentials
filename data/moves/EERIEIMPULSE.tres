@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ix500"]
+
+[resource]
+resource_name = "EERIEIMPULSE"
+script = ExtResource("1_ix500")
+type = &"ELECTRIC"
+total_pp = 15
+function_code = &"LowerTargetSpAtk2"
+description = "The user's body generates an eerie impulse. Harshly lowers the target's Sp. Atk stat."
+id = &"EERIEIMPULSE"
+display_name = "Eerie Impulse"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

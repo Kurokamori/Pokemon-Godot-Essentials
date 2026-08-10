@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ebwha"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_q578t"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_y1ehv"]
+
+[sub_resource type="Resource" id="Resource_nkbk7"]
+script = ExtResource("1_ebwha")
+species = &"VENUSAUR"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_dmv1h"]
+script = ExtResource("1_ebwha")
+species = &"BULBASAUR"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_nolyc"]
+script = ExtResource("2_q578t")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_f7kgr"]
+script = ExtResource("2_q578t")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_d3vmv"]
+script = ExtResource("2_q578t")
+move = &"VINEWHIP"
+
+[sub_resource type="Resource" id="Resource_q5un1"]
+script = ExtResource("2_q578t")
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_rd6yi"]
+script = ExtResource("2_q578t")
+level = 9
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_nss8f"]
+script = ExtResource("2_q578t")
+level = 12
+move = &"RAZORLEAF"
+
+[sub_resource type="Resource" id="Resource_grr5a"]
+script = ExtResource("2_q578t")
+level = 15
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_imsd2"]
+script = ExtResource("2_q578t")
+level = 15
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_n03de"]
+script = ExtResource("2_q578t")
+level = 20
+move = &"SEEDBOMB"
+
+[sub_resource type="Resource" id="Resource_cy3wp"]
+script = ExtResource("2_q578t")
+level = 25
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_jyr24"]
+script = ExtResource("2_q578t")
+level = 30
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_cunls"]
+script = ExtResource("2_q578t")
+level = 35
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_h562o"]
+script = ExtResource("2_q578t")
+level = 40
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_sqs8k"]
+script = ExtResource("2_q578t")
+level = 45
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_05rv7"]
+script = ExtResource("2_q578t")
+level = 50
+move = &"SOLARBEAM"
+
+[resource]
+resource_name = "IVYSAUR"
+script = ExtResource("3_y1ehv")
+species = &"IVYSAUR"
+category = "Seed"
+pokedex_entry = "To support its bulb, Ivysaur's legs grow sturdy. If it spends more time lying in the sunlight, the bud will soon bloom into a large flower."
+types = Array[StringName]([&"GRASS", &"POISON"])
+base_hp = 60
+base_attack = 62
+base_defense = 63
+base_special_attack = 80
+base_special_defense = 80
+base_speed = 60
+ev_special_attack = 1
+ev_special_defense = 1
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_q578t")]([SubResource("Resource_nolyc"), SubResource("Resource_f7kgr"), SubResource("Resource_d3vmv"), SubResource("Resource_q5un1"), SubResource("Resource_rd6yi"), SubResource("Resource_nss8f"), SubResource("Resource_grr5a"), SubResource("Resource_imsd2"), SubResource("Resource_n03de"), SubResource("Resource_cy3wp"), SubResource("Resource_jyr24"), SubResource("Resource_cunls"), SubResource("Resource_h562o"), SubResource("Resource_sqs8k"), SubResource("Resource_05rv7")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"ATTRACT", &"BIND", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CUT", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"GRASSPLEDGE", &"GRASSYGLIDE", &"GRASSYTERRAIN", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"KNOCKOFF", &"LEAFSTORM", &"LIGHTSCREEN", &"MAGICALLEAF", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"POWERWHIP", &"PROTECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"STRINGSHOT", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"TOXIC", &"VENOSHOCK", &"WEATHERBALL", &"WORKUP", &"WORRYSEED"])
+abilities = Array[StringName]([&"OVERGROW"])
+hidden_abilities = Array[StringName]([&"CHLOROPHYLL"])
+egg_groups = Array[StringName]([&"Monster", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ebwha")]([SubResource("Resource_nkbk7"), SubResource("Resource_dmv1h")])
+height = 10
+weight = 130
+color = &"Green"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 1
+back_sprite_offset = Vector2i(2, 48)
+front_sprite_offset = Vector2i(0, 28)
+id = &"IVYSAUR"
+display_name = "Ivysaur"

@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ib1a7"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_svh3w"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xsl6x"]
+
+[sub_resource type="Resource" id="Resource_y4noi"]
+script = ExtResource("1_ib1a7")
+species = &"GOLISOPOD"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_6pya3"]
+script = ExtResource("2_svh3w")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_ox628"]
+script = ExtResource("2_svh3w")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_n2q1a"]
+script = ExtResource("2_svh3w")
+move = &"DEFENSECURL"
+
+[resource]
+resource_name = "WIMPOD"
+script = ExtResource("3_xsl6x")
+species = &"WIMPOD"
+category = "Turn Tail"
+pokedex_entry = "This Pokémon is a coward. As it desperately dashes off, the flailing of its many legs leaves a sparkling clean path in its wake."
+types = Array[StringName]([&"BUG", &"WATER"])
+base_hp = 25
+base_attack = 35
+base_defense = 40
+base_special_attack = 20
+base_special_defense = 30
+base_speed = 80
+ev_speed = 1
+base_exp = 46
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_svh3w")]([SubResource("Resource_6pya3"), SubResource("Resource_ox628"), SubResource("Resource_n2q1a")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BUGBUZZ", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"LEECHLIFE", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SPIKES", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TAUNT", &"TOXIC", &"WATERFALL"])
+egg_moves = Array[StringName]([&"AQUAJET", &"HARDEN", &"METALCLAW", &"ROLLOUT", &"WIDEGUARD"])
+abilities = Array[StringName]([&"WIMPOUT"])
+egg_groups = Array[StringName]([&"Bug", &"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ib1a7")]([SubResource("Resource_y4noi")])
+height = 5
+weight = 120
+color = &"Gray"
+shape = &"Multiped"
+generation = 7
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 34)
+id = &"WIMPOD"
+display_name = "Wimpod"

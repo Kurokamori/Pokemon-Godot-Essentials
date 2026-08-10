@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_jmsbn"]
+
+[resource]
+resource_name = "ENERGYBALL"
+script = ExtResource("1_jmsbn")
+type = &"GRASS"
+category = 1
+power = 90
+total_pp = 10
+function_code = &"LowerTargetSpDef1"
+effect_chance = 10
+description = "The user draws power from nature and fires it at the target. It may also lower the target's Sp. Def."
+id = &"ENERGYBALL"
+display_name = "Energy Ball"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

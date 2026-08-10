@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_ndohq"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_1ou5d"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_7yhw4"]
+
+[sub_resource type="Resource" id="Resource_5ejfg"]
+script = ExtResource("3_7yhw4")
+weight = 40
+species = &"PIDGEY"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_32gu8"]
+script = ExtResource("3_7yhw4")
+weight = 40
+species = &"RATTATA"
+min_level = 11
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_gcotg"]
+script = ExtResource("3_7yhw4")
+weight = 9
+species = &"PIDGEY"
+min_level = 11
+max_level = 13
+
+[sub_resource type="Resource" id="Resource_e8nhj"]
+script = ExtResource("3_7yhw4")
+weight = 9
+species = &"RATTATA"
+min_level = 11
+max_level = 13
+
+[sub_resource type="Resource" id="Resource_5ywfx"]
+script = ExtResource("3_7yhw4")
+weight = 1
+species = &"PIDGEY"
+min_level = 14
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_aj0mk"]
+script = ExtResource("3_7yhw4")
+weight = 1
+species = &"RATTATA"
+min_level = 14
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_mi6r4"]
+script = ExtResource("2_1ou5d")
+step_chance = 21
+slots = Array[ExtResource("3_7yhw4")]([SubResource("Resource_5ejfg"), SubResource("Resource_32gu8"), SubResource("Resource_gcotg"), SubResource("Resource_e8nhj"), SubResource("Resource_5ywfx"), SubResource("Resource_aj0mk")])
+
+[sub_resource type="Resource" id="Resource_d36g6"]
+script = ExtResource("3_7yhw4")
+weight = 39
+species = &"RATTATA"
+min_level = 10
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_hu651"]
+script = ExtResource("3_7yhw4")
+weight = 30
+species = &"HOOTHOOT"
+min_level = 10
+max_level = 13
+
+[sub_resource type="Resource" id="Resource_lwp04"]
+script = ExtResource("3_7yhw4")
+weight = 20
+species = &"SPINARAK"
+min_level = 8
+max_level = 12
+
+[sub_resource type="Resource" id="Resource_6rung"]
+script = ExtResource("3_7yhw4")
+weight = 9
+species = &"HOOTHOOT"
+min_level = 10
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_1wond"]
+script = ExtResource("3_7yhw4")
+weight = 1
+species = &"HOOTHOOT"
+min_level = 14
+max_level = 14
+
+[sub_resource type="Resource" id="Resource_cm412"]
+script = ExtResource("3_7yhw4")
+weight = 1
+species = &"RATTATA"
+min_level = 15
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_imu1m"]
+script = ExtResource("2_1ou5d")
+encounter_type = &"LandNight"
+step_chance = 21
+slots = Array[ExtResource("3_7yhw4")]([SubResource("Resource_d36g6"), SubResource("Resource_hu651"), SubResource("Resource_lwp04"), SubResource("Resource_6rung"), SubResource("Resource_1wond"), SubResource("Resource_cm412")])
+
+[sub_resource type="Resource" id="Resource_3nhe7"]
+script = ExtResource("3_7yhw4")
+weight = 100
+species = &"STARLY"
+min_level = 12
+max_level = 15
+
+[sub_resource type="Resource" id="Resource_8m2um"]
+script = ExtResource("2_1ou5d")
+encounter_type = &"PokeRadar"
+step_chance = 20
+slots = Array[ExtResource("3_7yhw4")]([SubResource("Resource_3nhe7")])
+
+[resource]
+resource_name = "5_0"
+script = ExtResource("1_ndohq")
+map_id = 5
+tables = Array[ExtResource("2_1ou5d")]([SubResource("Resource_mi6r4"), SubResource("Resource_imu1m"), SubResource("Resource_8m2um")])
+id = &"5_0"
+display_name = "Map 5 v0"

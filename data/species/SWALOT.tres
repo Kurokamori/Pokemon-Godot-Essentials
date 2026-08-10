@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tyhoh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_175rj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ethjs"]
+
+[sub_resource type="Resource" id="Resource_uclie"]
+script = ExtResource("1_tyhoh")
+species = &"GULPIN"
+method = &"Level"
+parameter = "26"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_qayfh"]
+script = ExtResource("2_175rj")
+level = 0
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_1qnm5"]
+script = ExtResource("2_175rj")
+move = &"VENOMDRENCH"
+
+[sub_resource type="Resource" id="Resource_2lmon"]
+script = ExtResource("2_175rj")
+move = &"GUNKSHOT"
+
+[sub_resource type="Resource" id="Resource_v7k3d"]
+script = ExtResource("2_175rj")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_bml3t"]
+script = ExtResource("2_175rj")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_8wpov"]
+script = ExtResource("2_175rj")
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_n3mg5"]
+script = ExtResource("2_175rj")
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_a8bsp"]
+script = ExtResource("2_175rj")
+level = 5
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_fx0e8"]
+script = ExtResource("2_175rj")
+level = 8
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_k1wvu"]
+script = ExtResource("2_175rj")
+level = 10
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_rlxf4"]
+script = ExtResource("2_175rj")
+level = 12
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_0n8d8"]
+script = ExtResource("2_175rj")
+level = 17
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_414i2"]
+script = ExtResource("2_175rj")
+level = 20
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_71lcx"]
+script = ExtResource("2_175rj")
+level = 25
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_7sa2s"]
+script = ExtResource("2_175rj")
+level = 30
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_nabmf"]
+script = ExtResource("2_175rj")
+level = 30
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_53tkb"]
+script = ExtResource("2_175rj")
+level = 30
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_2ddfo"]
+script = ExtResource("2_175rj")
+level = 37
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_gmd5v"]
+script = ExtResource("2_175rj")
+level = 42
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_iil27"]
+script = ExtResource("2_175rj")
+level = 49
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_mx6xg"]
+script = ExtResource("2_175rj")
+level = 54
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_208qt"]
+script = ExtResource("2_175rj")
+level = 61
+move = &"GUNKSHOT"
+
+[resource]
+resource_name = "SWALOT"
+script = ExtResource("3_ethjs")
+species = &"SWALOT"
+category = "Poison Bag"
+pokedex_entry = "Its powerful stomach acid is capable of digesting almost anything. The one thing in the whole world a Swalot can't digest is its own stomach."
+types = Array[StringName]([&"POISON"])
+base_hp = 100
+base_attack = 73
+base_defense = 83
+base_special_attack = 73
+base_special_defense = 83
+base_speed = 55
+ev_hp = 2
+base_exp = 163
+growth_rate = &"Fluctuating"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_175rj")]([SubResource("Resource_qayfh"), SubResource("Resource_1qnm5"), SubResource("Resource_2lmon"), SubResource("Resource_v7k3d"), SubResource("Resource_bml3t"), SubResource("Resource_8wpov"), SubResource("Resource_n3mg5"), SubResource("Resource_a8bsp"), SubResource("Resource_fx0e8"), SubResource("Resource_k1wvu"), SubResource("Resource_rlxf4"), SubResource("Resource_0n8d8"), SubResource("Resource_414i2"), SubResource("Resource_71lcx"), SubResource("Resource_7sa2s"), SubResource("Resource_nabmf"), SubResource("Resource_53tkb"), SubResource("Resource_2ddfo"), SubResource("Resource_gmd5v"), SubResource("Resource_iil27"), SubResource("Resource_mx6xg"), SubResource("Resource_208qt")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLOCK", &"BODYSLAM", &"BULLDOZE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FRUSTRATION", &"GASTROACID", &"GIGAIMPACT", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"INFESTATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERPUNCH", &"TOXIC", &"VENOSHOCK", &"WATERPULSE"])
+abilities = Array[StringName]([&"LIQUIDOOZE", &"STICKYHOLD"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+wild_item_common = Array[StringName]([&"ORANBERRY"])
+wild_item_uncommon = Array[StringName]([&"SITRUSBERRY"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tyhoh")]([SubResource("Resource_uclie")])
+height = 17
+weight = 800
+color = &"Purple"
+shape = &"HeadArms"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-2, 23)
+shadow_size = 3
+id = &"SWALOT"
+display_name = "Swalot"

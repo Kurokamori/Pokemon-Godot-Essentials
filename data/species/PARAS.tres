@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xfmsh"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_e8bqm"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_sadmf"]
+
+[sub_resource type="Resource" id="Resource_oosgc"]
+script = ExtResource("1_xfmsh")
+species = &"PARASECT"
+method = &"Level"
+parameter = "24"
+
+[sub_resource type="Resource" id="Resource_t0f2r"]
+script = ExtResource("2_e8bqm")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_s6nju"]
+script = ExtResource("2_e8bqm")
+level = 6
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_xmjy7"]
+script = ExtResource("2_e8bqm")
+level = 6
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_dlllo"]
+script = ExtResource("2_e8bqm")
+level = 11
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_c624c"]
+script = ExtResource("2_e8bqm")
+level = 17
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_f4c7v"]
+script = ExtResource("2_e8bqm")
+level = 22
+move = &"SPORE"
+
+[sub_resource type="Resource" id="Resource_w6xn3"]
+script = ExtResource("2_e8bqm")
+level = 27
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_eydbj"]
+script = ExtResource("2_e8bqm")
+level = 33
+move = &"GROWTH"
+
+[sub_resource type="Resource" id="Resource_3ml7l"]
+script = ExtResource("2_e8bqm")
+level = 38
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_vhclg"]
+script = ExtResource("2_e8bqm")
+level = 43
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_5370b"]
+script = ExtResource("2_e8bqm")
+level = 49
+move = &"RAGEPOWDER"
+
+[sub_resource type="Resource" id="Resource_q5a8t"]
+script = ExtResource("2_e8bqm")
+level = 54
+move = &"XSCISSOR"
+
+[resource]
+resource_name = "PARAS"
+script = ExtResource("3_sadmf")
+species = &"PARAS"
+category = "Mushroom"
+pokedex_entry = "A Paras has parasitic tochukaso mushrooms growing on its back. They grow by drawing nutrients from the host. They are valued as a medicine for long life."
+types = Array[StringName]([&"BUG", &"GRASS"])
+base_hp = 35
+base_attack = 70
+base_defense = 55
+base_special_attack = 45
+base_special_defense = 55
+base_speed = 25
+ev_attack = 1
+base_exp = 57
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_e8bqm")]([SubResource("Resource_t0f2r"), SubResource("Resource_s6nju"), SubResource("Resource_xmjy7"), SubResource("Resource_dlllo"), SubResource("Resource_c624c"), SubResource("Resource_f4c7v"), SubResource("Resource_w6xn3"), SubResource("Resource_eydbj"), SubResource("Resource_3ml7l"), SubResource("Resource_vhclg"), SubResource("Resource_5370b"), SubResource("Resource_q5a8t")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BUGBITE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"GRASSKNOT", &"HIDDENPOWER", &"HONECLAWS", &"KNOCKOFF", &"LEECHLIFE", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"SOLARBEAM", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"VENOSHOCK", &"WORRYSEED", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"AGILITY", &"BUGBITE", &"COUNTER", &"CROSSPOISON", &"FELLSTINGER", &"FLAIL", &"GRASSYTERRAIN", &"LEECHSEED", &"METALCLAW", &"PSYBEAM", &"SCREECH", &"SWEETSCENT", &"WIDEGUARD"])
+abilities = Array[StringName]([&"EFFECTSPORE", &"DRYSKIN"])
+hidden_abilities = Array[StringName]([&"DAMP"])
+wild_item_common = Array[StringName]([&"TINYMUSHROOM"])
+wild_item_uncommon = Array[StringName]([&"BIGMUSHROOM"])
+egg_groups = Array[StringName]([&"Bug", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xfmsh")]([SubResource("Resource_oosgc")])
+height = 3
+weight = 54
+shape = &"Insectoid"
+habitat = &"Forest"
+generation = 1
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(3, 41)
+id = &"PARAS"
+display_name = "Paras"

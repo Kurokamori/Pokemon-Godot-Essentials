@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_oxgwb"]
+
+[resource]
+resource_name = "COINCASE"
+script = ExtResource("1_oxgwb")
+name_plural = "Coin Cases"
+pocket = 8
+field_use = 2
+consumable = false
+show_quantity = false
+description = "A case for holding coins obtained at the Game Corner. It holds up to 99,999 coins."
+id = &"COINCASE"
+display_name = "Coin Case"
+flags = Array[StringName]([&"KeyItem"])

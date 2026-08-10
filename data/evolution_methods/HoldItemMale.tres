@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EvolutionMethodData" format=3]
+
+[ext_resource type="Script" path="res://src/data/evolution_method_data.gd" id="1_05u7p"]
+
+[resource]
+resource_name = "HoldItemMale"
+script = ExtResource("1_05u7p")
+parameter_type = 2
+any_level_up = true
+on_level_up = true
+id = &"HoldItemMale"
+display_name = "HoldItemMale"

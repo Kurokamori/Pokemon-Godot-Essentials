@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_fkqsf"]
+
+[resource]
+resource_name = "SACREDASH"
+script = ExtResource("1_fkqsf")
+name_plural = "Sacred Ashes"
+portion_name = "bag of Sacred Ash"
+portion_name_plural = "bags of Sacred Ash"
+pocket = 2
+price = 50000
+sell_price = 25000
+field_use = 2
+description = "It revives all fainted Pokémon. In doing so, it also fully restores their HP."
+id = &"SACREDASH"
+display_name = "Sacred Ash"
+flags = Array[StringName]([&"Fling_30"])

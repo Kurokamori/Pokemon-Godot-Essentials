@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_lngj2"]
+
+[resource]
+resource_name = "SHINYCHARM"
+script = ExtResource("1_lngj2")
+name_plural = "Shiny Charms"
+pocket = 8
+consumable = false
+show_quantity = false
+description = "A shiny charm said to increase the chance of finding a Shiny Pokémon."
+id = &"SHINYCHARM"
+display_name = "Shiny Charm"
+flags = Array[StringName]([&"KeyItem"])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_hy3bm"]
+
+[resource]
+resource_name = "BATONPASS"
+script = ExtResource("1_hy3bm")
+accuracy = 0
+total_pp = 40
+target = &"User"
+function_code = &"SwitchOutUserPassOnEffects"
+description = "The user switches places with a party Pokémon in waiting, passing along any stat changes."
+id = &"BATONPASS"
+display_name = "Baton Pass"

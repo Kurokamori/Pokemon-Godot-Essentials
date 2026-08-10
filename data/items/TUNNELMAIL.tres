@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_he67y"]
+
+[resource]
+resource_name = "TUNNELMAIL"
+script = ExtResource("1_he67y")
+name_plural = "Tunnel Mail"
+portion_name = "piece of Tunnel Mail"
+portion_name_plural = "pieces of Tunnel Mail"
+pocket = 6
+price = 50
+sell_price = 25
+description = "Stationery featuring a print of a dimly lit coal mine. Let a Pokémon hold it for delivery."
+id = &"TUNNELMAIL"
+display_name = "Tunnel Mail"
+flags = Array[StringName]([&"IconMail"])

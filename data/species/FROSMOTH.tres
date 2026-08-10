@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_6o6tr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_uorcf"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ks0hc"]
+
+[sub_resource type="Resource" id="Resource_af78r"]
+script = ExtResource("1_6o6tr")
+species = &"SNOM"
+method = &"HappinessNight"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_qr1dv"]
+script = ExtResource("2_uorcf")
+level = 0
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_tqoyv"]
+script = ExtResource("2_uorcf")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_nv0kj"]
+script = ExtResource("2_uorcf")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_qluo2"]
+script = ExtResource("2_uorcf")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_55hrb"]
+script = ExtResource("2_uorcf")
+move = &"ATTRACT"
+
+[sub_resource type="Resource" id="Resource_6t80o"]
+script = ExtResource("2_uorcf")
+level = 4
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_l4vme"]
+script = ExtResource("2_uorcf")
+level = 8
+move = &"INFESTATION"
+
+[sub_resource type="Resource" id="Resource_2be15"]
+script = ExtResource("2_uorcf")
+level = 12
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_yed41"]
+script = ExtResource("2_uorcf")
+level = 16
+move = &"DEFOG"
+
+[sub_resource type="Resource" id="Resource_0nk4q"]
+script = ExtResource("2_uorcf")
+level = 21
+move = &"FEATHERDANCE"
+
+[sub_resource type="Resource" id="Resource_3toi4"]
+script = ExtResource("2_uorcf")
+level = 24
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_pqsc5"]
+script = ExtResource("2_uorcf")
+level = 28
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_voej2"]
+script = ExtResource("2_uorcf")
+level = 32
+move = &"BUGBUZZ"
+
+[sub_resource type="Resource" id="Resource_5m25r"]
+script = ExtResource("2_uorcf")
+level = 36
+move = &"AURORAVEIL"
+
+[sub_resource type="Resource" id="Resource_woinh"]
+script = ExtResource("2_uorcf")
+level = 40
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_jfbsi"]
+script = ExtResource("2_uorcf")
+level = 44
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_hvdoy"]
+script = ExtResource("2_uorcf")
+level = 48
+move = &"WIDEGUARD"
+
+[sub_resource type="Resource" id="Resource_laokj"]
+script = ExtResource("2_uorcf")
+level = 52
+move = &"QUIVERDANCE"
+
+[resource]
+resource_name = "FROSMOTH"
+script = ExtResource("3_ks0hc")
+species = &"FROSMOTH"
+category = "Frost Moth"
+pokedex_entry = "It shows no mercy to any who desecrate fields and mountains. It will fly around on its icy wings, causing a blizzard to chase offenders away."
+types = Array[StringName]([&"ICE", &"BUG"])
+base_hp = 70
+base_attack = 65
+base_defense = 60
+base_special_attack = 125
+base_special_defense = 90
+base_speed = 65
+ev_special_attack = 2
+base_exp = 168
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_uorcf")]([SubResource("Resource_qr1dv"), SubResource("Resource_tqoyv"), SubResource("Resource_nv0kj"), SubResource("Resource_qluo2"), SubResource("Resource_55hrb"), SubResource("Resource_6t80o"), SubResource("Resource_l4vme"), SubResource("Resource_2be15"), SubResource("Resource_yed41"), SubResource("Resource_0nk4q"), SubResource("Resource_3toi4"), SubResource("Resource_pqsc5"), SubResource("Resource_voej2"), SubResource("Resource_5m25r"), SubResource("Resource_woinh"), SubResource("Resource_jfbsi"), SubResource("Resource_hvdoy"), SubResource("Resource_laokj")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AIRSLASH", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BUGBUZZ", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"HAIL", &"HELPINGHAND", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"IMPRISON", &"LEECHLIFE", &"LIGHTSCREEN", &"MIMIC", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SKITTERSMACK", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TOXIC", &"TRIPLEAXEL", &"UTURN", &"WEATHERBALL"])
+abilities = Array[StringName]([&"SHIELDDUST"])
+hidden_abilities = Array[StringName]([&"ICESCALES"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_6o6tr")]([SubResource("Resource_af78r")])
+height = 13
+weight = 420
+color = &"White"
+shape = &"MultiWinged"
+generation = 8
+back_sprite_offset = Vector2i(8, 50)
+front_sprite_offset = Vector2i(5, 7)
+id = &"FROSMOTH"
+display_name = "Frosmoth"

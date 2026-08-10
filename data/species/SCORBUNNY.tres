@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_mo8pp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_gavah"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_e5wms"]
+
+[sub_resource type="Resource" id="Resource_ky6q0"]
+script = ExtResource("1_mo8pp")
+species = &"RABOOT"
+method = &"Level"
+parameter = "16"
+
+[sub_resource type="Resource" id="Resource_uifxc"]
+script = ExtResource("2_gavah")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_f5lsi"]
+script = ExtResource("2_gavah")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_b6xpu"]
+script = ExtResource("2_gavah")
+level = 6
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_ha2fu"]
+script = ExtResource("2_gavah")
+level = 8
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_4qors"]
+script = ExtResource("2_gavah")
+level = 12
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_7rh3l"]
+script = ExtResource("2_gavah")
+level = 17
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_8qwtj"]
+script = ExtResource("2_gavah")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_i8nhx"]
+script = ExtResource("2_gavah")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_15u5s"]
+script = ExtResource("2_gavah")
+level = 28
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_gskqw"]
+script = ExtResource("2_gavah")
+level = 32
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_r8hdm"]
+script = ExtResource("2_gavah")
+level = 36
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "SCORBUNNY"
+script = ExtResource("3_e5wms")
+species = &"SCORBUNNY"
+category = "Rabbit"
+pokedex_entry = "A warm-up of running around gets fire energy coursing through this Pokémon's body. Once that happens, it's ready to fight at full power."
+types = Array[StringName]([&"FIRE"])
+base_hp = 50
+base_attack = 71
+base_defense = 40
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 69
+ev_speed = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_gavah")]([SubResource("Resource_uifxc"), SubResource("Resource_f5lsi"), SubResource("Resource_b6xpu"), SubResource("Resource_ha2fu"), SubResource("Resource_4qors"), SubResource("Resource_7rh3l"), SubResource("Resource_8qwtj"), SubResource("Resource_i8nhx"), SubResource("Resource_15u5s"), SubResource("Resource_gskqw"), SubResource("Resource_r8hdm")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"BATONPASS", &"BLAZEKICK", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"DOUBLETEAM", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIREPLEDGE", &"FLAMETHROWER", &"FOCUSENERGY", &"FRUSTRATION", &"GUNKSHOT", &"HEATWAVE", &"HIDDENPOWER", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAUNT", &"TOXIC", &"UTURN", &"WORKUP"])
+egg_moves = Array[StringName]([&"HIGHJUMPKICK", &"SANDATTACK", &"SUCKERPUNCH", &"SUPERFANG"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"LIBERO"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_mo8pp")]([SubResource("Resource_ky6q0")])
+height = 3
+weight = 45
+color = &"White"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(2, 28)
+shadow_size = 1
+id = &"SCORBUNNY"
+display_name = "Scorbunny"

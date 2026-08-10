@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ds22m"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_4tgam"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_08an8"]
+
+[sub_resource type="Resource" id="Resource_k7wnt"]
+script = ExtResource("2_4tgam")
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_3ka62"]
+script = ExtResource("2_4tgam")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_xlcch"]
+script = ExtResource("2_4tgam")
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_hkiwy"]
+script = ExtResource("2_4tgam")
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_4b4kp"]
+script = ExtResource("2_4tgam")
+level = 9
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_ywp4m"]
+script = ExtResource("2_4tgam")
+level = 18
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_uko8v"]
+script = ExtResource("2_4tgam")
+level = 27
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_ibkj3"]
+script = ExtResource("2_4tgam")
+level = 36
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_lr7lp"]
+script = ExtResource("2_4tgam")
+level = 45
+move = &"SHEERCOLD"
+
+[sub_resource type="Resource" id="Resource_r54wd"]
+script = ExtResource("2_4tgam")
+level = 54
+move = &"AQUARING"
+
+[sub_resource type="Resource" id="Resource_5wjri"]
+script = ExtResource("2_4tgam")
+level = 63
+move = &"ORIGINPULSE"
+
+[sub_resource type="Resource" id="Resource_pqxih"]
+script = ExtResource("2_4tgam")
+level = 72
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_cv155"]
+script = ExtResource("2_4tgam")
+level = 81
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_nftho"]
+script = ExtResource("2_4tgam")
+level = 90
+move = &"WATERSPOUT"
+
+[resource]
+resource_name = "KYOGRE_1"
+script = ExtResource("3_08an8")
+species = &"KYOGRE"
+form = 1
+form_name = "Primal Kyogre"
+category = "Sea Basin"
+pokedex_entry = "Kyogre has appeared in mythology as the creator of the sea. After long years of feuding with Groudon, it took to sleep at the bottom of the sea."
+pokedex_form = 1
+types = Array[StringName]([&"WATER"])
+base_hp = 100
+base_attack = 150
+base_defense = 90
+base_special_attack = 180
+base_special_defense = 160
+base_speed = 90
+ev_special_attack = 3
+base_exp = 385
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 0
+level_up_moves = Array[ExtResource("2_4tgam")]([SubResource("Resource_k7wnt"), SubResource("Resource_3ka62"), SubResource("Resource_xlcch"), SubResource("Resource_hkiwy"), SubResource("Resource_4b4kp"), SubResource("Resource_ywp4m"), SubResource("Resource_uko8v"), SubResource("Resource_ibkj3"), SubResource("Resource_lr7lp"), SubResource("Resource_r54wd"), SubResource("Resource_5wjri"), SubResource("Resource_pqxih"), SubResource("Resource_cv155"), SubResource("Resource_nftho")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"AQUATAIL", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BULLDOZE", &"CALMMIND", &"CONFIDE", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONHEAD", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SAFEGUARD", &"SCALD", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"PRIMORDIALSEA"])
+hatch_steps = 30720
+height = 98
+weight = 4300
+color = &"Blue"
+shape = &"Finned"
+habitat = &"Sea"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 10)
+shadow_size = 3
+id = &"KYOGRE_1"
+display_name = "Kyogre"
+flags = Array[StringName]([&"Legendary"])

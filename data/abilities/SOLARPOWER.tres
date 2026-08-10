@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_x1ts6"]
+
+[resource]
+resource_name = "SOLARPOWER"
+script = ExtResource("1_x1ts6")
+description = "In sunshine, Sp. Atk is boosted but HP decreases."
+id = &"SOLARPOWER"
+display_name = "Solar Power"

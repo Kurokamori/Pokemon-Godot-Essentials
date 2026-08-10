@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_627xf"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7b4w7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_felt7"]
+
+[sub_resource type="Resource" id="Resource_1q42i"]
+script = ExtResource("1_627xf")
+species = &"WHISCASH"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_w6srd"]
+script = ExtResource("2_7b4w7")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_240w3"]
+script = ExtResource("2_7b4w7")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_lytag"]
+script = ExtResource("2_7b4w7")
+level = 6
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_3uhdr"]
+script = ExtResource("2_7b4w7")
+level = 6
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_sko8u"]
+script = ExtResource("2_7b4w7")
+level = 12
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_x6ljk"]
+script = ExtResource("2_7b4w7")
+level = 18
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_v8iyv"]
+script = ExtResource("2_7b4w7")
+level = 24
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_lfder"]
+script = ExtResource("2_7b4w7")
+level = 31
+move = &"MUDDYWATER"
+
+[sub_resource type="Resource" id="Resource_nlmdt"]
+script = ExtResource("2_7b4w7")
+level = 36
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_11k06"]
+script = ExtResource("2_7b4w7")
+level = 42
+move = &"FUTURESIGHT"
+
+[sub_resource type="Resource" id="Resource_olg4o"]
+script = ExtResource("2_7b4w7")
+level = 48
+move = &"FISSURE"
+
+[resource]
+resource_name = "BARBOACH"
+script = ExtResource("3_felt7")
+species = &"BARBOACH"
+category = "Whiskers"
+pokedex_entry = "Its body is covered with a slimy film. The film acts as a barrier to prevent germs in muddy water from entering the Barboach's body."
+types = Array[StringName]([&"WATER", &"GROUND"])
+base_hp = 50
+base_attack = 48
+base_defense = 43
+base_special_attack = 46
+base_special_defense = 41
+base_speed = 60
+ev_hp = 1
+base_exp = 58
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7b4w7")]([SubResource("Resource_w6srd"), SubResource("Resource_240w3"), SubResource("Resource_lytag"), SubResource("Resource_3uhdr"), SubResource("Resource_sko8u"), SubResource("Resource_x6ljk"), SubResource("Resource_v8iyv"), SubResource("Resource_lfder"), SubResource("Resource_nlmdt"), SubResource("Resource_11k06"), SubResource("Resource_olg4o")])
+tutor_moves = Array[StringName]([&"AMNESIA", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONDANCE", &"EARTHPOWER", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"DRAGONDANCE", &"EARTHPOWER", &"FLAIL", &"HYDROPUMP", &"MUDDYWATER", &"MUDSHOT", &"SPARK", &"TAKEDOWN", &"THRASH", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"OBLIVIOUS", &"ANTICIPATION"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_627xf")]([SubResource("Resource_1q42i")])
+height = 4
+weight = 19
+color = &"Gray"
+shape = &"Finned"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 22)
+shadow_size = 1
+id = &"BARBOACH"
+display_name = "Barboach"

@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tp7wi"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_i7ip7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_t72b7"]
+
+[sub_resource type="Resource" id="Resource_mfpg6"]
+script = ExtResource("1_tp7wi")
+species = &"ALTARIA"
+method = &"Level"
+parameter = "35"
+
+[sub_resource type="Resource" id="Resource_1hi5g"]
+script = ExtResource("2_i7ip7")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_3x6nl"]
+script = ExtResource("2_i7ip7")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_jv1om"]
+script = ExtResource("2_i7ip7")
+level = 4
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_jy72s"]
+script = ExtResource("2_i7ip7")
+level = 8
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_eq83m"]
+script = ExtResource("2_i7ip7")
+level = 12
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_ypf8h"]
+script = ExtResource("2_i7ip7")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_7r5e1"]
+script = ExtResource("2_i7ip7")
+level = 20
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_r8n4q"]
+script = ExtResource("2_i7ip7")
+level = 24
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_ob4sb"]
+script = ExtResource("2_i7ip7")
+level = 28
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_sejo6"]
+script = ExtResource("2_i7ip7")
+level = 32
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_6c4kg"]
+script = ExtResource("2_i7ip7")
+level = 36
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_8htkh"]
+script = ExtResource("2_i7ip7")
+level = 40
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_bbk1l"]
+script = ExtResource("2_i7ip7")
+level = 44
+move = &"PERISHSONG"
+
+[resource]
+resource_name = "SWABLU"
+script = ExtResource("3_t72b7")
+species = &"SWABLU"
+category = "Cotton Bird"
+pokedex_entry = "A Pokémon that has wings like cottony clouds. After enduring winter, in which little food is available, Swablu flocks move closer to towns in the spring."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 45
+base_attack = 40
+base_defense = 60
+base_special_attack = 40
+base_special_defense = 75
+base_speed = 50
+ev_special_defense = 1
+base_exp = 62
+growth_rate = &"Erratic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_i7ip7")]([SubResource("Resource_1hi5g"), SubResource("Resource_3x6nl"), SubResource("Resource_jv1om"), SubResource("Resource_jy72s"), SubResource("Resource_eq83m"), SubResource("Resource_ypf8h"), SubResource("Resource_7r5e1"), SubResource("Resource_r8n4q"), SubResource("Resource_ob4sb"), SubResource("Resource_sejo6"), SubResource("Resource_6c4kg"), SubResource("Resource_8htkh"), SubResource("Resource_bbk1l")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DREAMEATER", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLY", &"FRUSTRATION", &"HEALBELL", &"HEATWAVE", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"PLAYROUGH", &"PLUCK", &"POWERSWAP", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR"])
+egg_moves = Array[StringName]([&"AGILITY", &"ASTONISH", &"DEFOG", &"DRAGONRUSH", &"FEATHERDANCE", &"HAZE", &"HYPERVOICE", &"PLAYROUGH", &"POWERSWAP", &"ROOST", &"TAILWIND"])
+abilities = Array[StringName]([&"NATURALCURE"])
+hidden_abilities = Array[StringName]([&"CLOUDNINE"])
+egg_groups = Array[StringName]([&"Flying", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tp7wi")]([SubResource("Resource_mfpg6")])
+height = 4
+weight = 12
+color = &"Blue"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 14)
+id = &"SWABLU"
+display_name = "Swablu"

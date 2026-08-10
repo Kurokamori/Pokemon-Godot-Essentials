@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_oh83t"]
+
+[resource]
+resource_name = "TM66"
+script = ExtResource("1_oh83t")
+name_plural = "TM66s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"PAYBACK"
+description = "The user stores power, then attacks. If the user moves after the target, this attack's power will be doubled."
+id = &"TM66"
+display_name = "TM66"
+flags = Array[StringName]([&"Fling_50"])

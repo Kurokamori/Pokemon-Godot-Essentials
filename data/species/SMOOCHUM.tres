@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_540hj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_kse8y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_whfrx"]
+
+[sub_resource type="Resource" id="Resource_3kowu"]
+script = ExtResource("1_540hj")
+species = &"JYNX"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_ulwwu"]
+script = ExtResource("2_kse8y")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_d5kp4"]
+script = ExtResource("2_kse8y")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_fb8jm"]
+script = ExtResource("2_kse8y")
+level = 4
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_qtngr"]
+script = ExtResource("2_kse8y")
+level = 8
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_qgevu"]
+script = ExtResource("2_kse8y")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_ssl6q"]
+script = ExtResource("2_kse8y")
+level = 16
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_rhwy1"]
+script = ExtResource("2_kse8y")
+level = 20
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_hiex3"]
+script = ExtResource("2_kse8y")
+level = 24
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_cktvl"]
+script = ExtResource("2_kse8y")
+level = 28
+move = &"ICEPUNCH"
+
+[sub_resource type="Resource" id="Resource_v6pdu"]
+script = ExtResource("2_kse8y")
+level = 32
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_j00in"]
+script = ExtResource("2_kse8y")
+level = 36
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_p34gv"]
+script = ExtResource("2_kse8y")
+level = 40
+move = &"MEANLOOK"
+
+[sub_resource type="Resource" id="Resource_yus8n"]
+script = ExtResource("2_kse8y")
+level = 44
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_4q1ks"]
+script = ExtResource("2_kse8y")
+level = 48
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "SMOOCHUM"
+script = ExtResource("3_whfrx")
+species = &"SMOOCHUM"
+category = "Kiss"
+pokedex_entry = "It actively runs about, but also falls often. Whenever it falls, it will check its reflection on a lake's surface to make sure its face hasn't become dirty."
+types = Array[StringName]([&"ICE", &"PSYCHIC"])
+base_hp = 45
+base_attack = 30
+base_defense = 15
+base_special_attack = 85
+base_special_defense = 65
+base_speed = 65
+ev_special_attack = 1
+base_exp = 61
+gender_ratio = &"AlwaysFemale"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_kse8y")]([SubResource("Resource_ulwwu"), SubResource("Resource_d5kp4"), SubResource("Resource_fb8jm"), SubResource("Resource_qtngr"), SubResource("Resource_qgevu"), SubResource("Resource_ssl6q"), SubResource("Resource_rhwy1"), SubResource("Resource_hiex3"), SubResource("Resource_cktvl"), SubResource("Resource_v6pdu"), SubResource("Resource_j00in"), SubResource("Resource_p34gv"), SubResource("Resource_yus8n"), SubResource("Resource_4q1ks")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"AURORAVEIL", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"DYNAMICPUNCH", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLASH", &"FLING", &"FROSTBREATH", &"FRUSTRATION", &"GRASSKNOT", &"HAIL", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"LIGHTSCREEN", &"MAGICCOAT", &"MAGICROOM", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"THIEF", &"TRICK", &"TRICKROOM", &"UPROAR", &"WATERPULSE", &"WONDERROOM", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"FAKEOUT", &"ICEPUNCH", &"ROLEPLAY", &"WISH"])
+abilities = Array[StringName]([&"OBLIVIOUS", &"FOREWARN"])
+hidden_abilities = Array[StringName]([&"HYDRATION"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_540hj")]([SubResource("Resource_3kowu")])
+height = 4
+weight = 60
+color = &"Pink"
+shape = &"Bipedal"
+habitat = &"Urban"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"SMOOCHUM"
+display_name = "Smoochum"

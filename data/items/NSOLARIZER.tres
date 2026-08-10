@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xstd1"]
+
+[resource]
+resource_name = "NSOLARIZER"
+script = ExtResource("1_xstd1")
+name_plural = "N-Solarizers"
+pocket = 8
+field_use = 1
+consumable = false
+show_quantity = false
+description = "A machine to fuse Necrozma, which needs light, and Solgaleo."
+id = &"NSOLARIZER"
+display_name = "N-Solarizer"
+flags = Array[StringName]([&"KeyItem"])

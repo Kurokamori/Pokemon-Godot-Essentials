@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lccgo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jxsry"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qxxtc"]
+
+[sub_resource type="Resource" id="Resource_y0osy"]
+script = ExtResource("1_lccgo")
+species = &"LUXRAY"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_m5ct5"]
+script = ExtResource("1_lccgo")
+species = &"SHINX"
+method = &"Level"
+parameter = "15"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_vkof6"]
+script = ExtResource("2_jxsry")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_rerfa"]
+script = ExtResource("2_jxsry")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ju84w"]
+script = ExtResource("2_jxsry")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_52by0"]
+script = ExtResource("2_jxsry")
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_ellin"]
+script = ExtResource("2_jxsry")
+level = 12
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_ew2yl"]
+script = ExtResource("2_jxsry")
+level = 18
+move = &"SPARK"
+
+[sub_resource type="Resource" id="Resource_lmuny"]
+script = ExtResource("2_jxsry")
+level = 24
+move = &"ROAR"
+
+[sub_resource type="Resource" id="Resource_27jvb"]
+script = ExtResource("2_jxsry")
+level = 31
+move = &"VOLTSWITCH"
+
+[sub_resource type="Resource" id="Resource_smsog"]
+script = ExtResource("2_jxsry")
+level = 36
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_iv4eo"]
+script = ExtResource("2_jxsry")
+level = 42
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_5liej"]
+script = ExtResource("2_jxsry")
+level = 48
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_734nu"]
+script = ExtResource("2_jxsry")
+level = 54
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_ecan7"]
+script = ExtResource("2_jxsry")
+level = 60
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_hapuv"]
+script = ExtResource("2_jxsry")
+level = 68
+move = &"WILDCHARGE"
+
+[resource]
+resource_name = "LUXIO"
+script = ExtResource("3_qxxtc")
+species = &"LUXIO"
+category = "Spark"
+pokedex_entry = "Its claws loose electricity with enough amperage to cause fainting. They live in small groups."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 60
+base_attack = 85
+base_defense = 49
+base_special_attack = 60
+base_special_defense = 49
+base_speed = 60
+ev_attack = 2
+base_exp = 127
+growth_rate = &"Parabolic"
+catch_rate = 120
+base_happiness = 100
+level_up_moves = Array[ExtResource("2_jxsry")]([SubResource("Resource_vkof6"), SubResource("Resource_rerfa"), SubResource("Resource_ju84w"), SubResource("Resource_52by0"), SubResource("Resource_ellin"), SubResource("Resource_ew2yl"), SubResource("Resource_lmuny"), SubResource("Resource_27jvb"), SubResource("Resource_smsog"), SubResource("Resource_iv4eo"), SubResource("Resource_5liej"), SubResource("Resource_734nu"), SubResource("Resource_ecan7"), SubResource("Resource_hapuv")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"CRUNCH", &"DOUBLETEAM", &"EERIEIMPULSE", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREFANG", &"FLASH", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEFANG", &"IRONTAIL", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROAR", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNARL", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERWAVE", &"VOLTSWITCH", &"WILDCHARGE"])
+abilities = Array[StringName]([&"RIVALRY", &"INTIMIDATE"])
+hidden_abilities = Array[StringName]([&"GUTS"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_lccgo")]([SubResource("Resource_y0osy"), SubResource("Resource_m5ct5")])
+height = 9
+weight = 305
+color = &"Blue"
+shape = &"Quadruped"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 28)
+id = &"LUXIO"
+display_name = "Luxio"

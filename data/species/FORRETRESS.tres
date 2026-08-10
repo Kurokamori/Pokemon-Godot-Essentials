@@ -1,0 +1,158 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4ytln"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_huhlj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_70h21"]
+
+[sub_resource type="Resource" id="Resource_1b0wm"]
+script = ExtResource("1_4ytln")
+species = &"PINECO"
+method = &"Level"
+parameter = "31"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_k20r5"]
+script = ExtResource("2_huhlj")
+level = 0
+move = &"AUTOTOMIZE"
+
+[sub_resource type="Resource" id="Resource_b3pib"]
+script = ExtResource("2_huhlj")
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_rer44"]
+script = ExtResource("2_huhlj")
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_xqnqj"]
+script = ExtResource("2_huhlj")
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_run0w"]
+script = ExtResource("2_huhlj")
+move = &"TOXICSPIKES"
+
+[sub_resource type="Resource" id="Resource_jqf2i"]
+script = ExtResource("2_huhlj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_bmulh"]
+script = ExtResource("2_huhlj")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_dq80f"]
+script = ExtResource("2_huhlj")
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_4u4r8"]
+script = ExtResource("2_huhlj")
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_6bomu"]
+script = ExtResource("2_huhlj")
+level = 6
+move = &"SELFDESTRUCT"
+
+[sub_resource type="Resource" id="Resource_m372g"]
+script = ExtResource("2_huhlj")
+level = 9
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_3mdvw"]
+script = ExtResource("2_huhlj")
+level = 12
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_nkf5p"]
+script = ExtResource("2_huhlj")
+level = 17
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_jymrk"]
+script = ExtResource("2_huhlj")
+level = 20
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_yg4in"]
+script = ExtResource("2_huhlj")
+level = 23
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_80qb5"]
+script = ExtResource("2_huhlj")
+level = 28
+move = &"SPIKES"
+
+[sub_resource type="Resource" id="Resource_vswhu"]
+script = ExtResource("2_huhlj")
+level = 32
+move = &"PAYBACK"
+
+[sub_resource type="Resource" id="Resource_h0oop"]
+script = ExtResource("2_huhlj")
+level = 36
+move = &"EXPLOSION"
+
+[sub_resource type="Resource" id="Resource_w1ojy"]
+script = ExtResource("2_huhlj")
+level = 42
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_ycgd7"]
+script = ExtResource("2_huhlj")
+level = 46
+move = &"GYROBALL"
+
+[sub_resource type="Resource" id="Resource_77fj7"]
+script = ExtResource("2_huhlj")
+level = 50
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_5bekd"]
+script = ExtResource("2_huhlj")
+level = 56
+move = &"MAGNETRISE"
+
+[sub_resource type="Resource" id="Resource_853f3"]
+script = ExtResource("2_huhlj")
+level = 60
+move = &"ZAPCANNON"
+
+[sub_resource type="Resource" id="Resource_cw2o0"]
+script = ExtResource("2_huhlj")
+level = 64
+move = &"HEAVYSLAM"
+
+[resource]
+resource_name = "FORRETRESS"
+script = ExtResource("3_70h21")
+species = &"FORRETRESS"
+category = "Bagworm"
+pokedex_entry = "It keeps itself inside its steel shell. The shell is opened when it is catching prey, but it is so quick that the shell's inside cannot be seen."
+types = Array[StringName]([&"BUG", &"STEEL"])
+base_hp = 75
+base_attack = 90
+base_defense = 140
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 40
+ev_defense = 2
+base_exp = 163
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_huhlj")]([SubResource("Resource_k20r5"), SubResource("Resource_b3pib"), SubResource("Resource_rer44"), SubResource("Resource_xqnqj"), SubResource("Resource_run0w"), SubResource("Resource_jqf2i"), SubResource("Resource_bmulh"), SubResource("Resource_dq80f"), SubResource("Resource_4u4r8"), SubResource("Resource_6bomu"), SubResource("Resource_m372g"), SubResource("Resource_3mdvw"), SubResource("Resource_nkf5p"), SubResource("Resource_jymrk"), SubResource("Resource_yg4in"), SubResource("Resource_80qb5"), SubResource("Resource_vswhu"), SubResource("Resource_h0oop"), SubResource("Resource_w1ojy"), SubResource("Resource_ycgd7"), SubResource("Resource_77fj7"), SubResource("Resource_5bekd"), SubResource("Resource_853f3"), SubResource("Resource_cw2o0")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BLOCK", &"BODYSLAM", &"BUGBITE", &"BUGBUZZ", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"EARTHQUAKE", &"ENDURE", &"EXPLOSION", &"FACADE", &"FLASHCANNON", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRAVITY", &"GYROBALL", &"HEADBUTT", &"HIDDENPOWER", &"HYPERBEAM", &"IRONDEFENSE", &"LASERFOCUS", &"LIGHTSCREEN", &"MAGNETRISE", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"PAYBACK", &"PROTECT", &"REFLECT", &"REST", &"RETURN", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"STRINGSHOT", &"STRUGGLEBUG", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TELEKINESIS", &"VENOSHOCK", &"VOLTSWITCH"])
+abilities = Array[StringName]([&"STURDY"])
+hidden_abilities = Array[StringName]([&"OVERCOAT"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4ytln")]([SubResource("Resource_1b0wm")])
+height = 12
+weight = 1258
+color = &"Purple"
+habitat = &"Forest"
+generation = 2
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 18)
+id = &"FORRETRESS"
+display_name = "Forretress"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ufs23"]
+
+[resource]
+resource_name = "SHEDSHELL"
+script = ExtResource("1_ufs23")
+name_plural = "Shed Shells"
+price = 3000
+sell_price = 2000
+description = "An item to be held by a Pokémon. This discarded carapace lets the holder switch out of battle without fail."
+id = &"SHEDSHELL"
+display_name = "Shed Shell"
+flags = Array[StringName]([&"Fling_10"])

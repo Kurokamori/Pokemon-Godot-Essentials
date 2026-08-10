@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_17n6n"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_45pu6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dkqui"]
+
+[sub_resource type="Resource" id="Resource_0eu3e"]
+script = ExtResource("1_17n6n")
+species = &"POLIWHIRL"
+method = &"TradeItem"
+parameter = "KINGSROCK"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_tchx2"]
+script = ExtResource("2_45pu6")
+level = 0
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_sgw8f"]
+script = ExtResource("2_45pu6")
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_auasx"]
+script = ExtResource("2_45pu6")
+move = &"HYPERVOICE"
+
+[sub_resource type="Resource" id="Resource_5v61f"]
+script = ExtResource("2_45pu6")
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_pnf5j"]
+script = ExtResource("2_45pu6")
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_xxjkx"]
+script = ExtResource("2_45pu6")
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_tu7wb"]
+script = ExtResource("2_45pu6")
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_l2um4"]
+script = ExtResource("2_45pu6")
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_jprac"]
+script = ExtResource("2_45pu6")
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_1sit3"]
+script = ExtResource("2_45pu6")
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_n0nwa"]
+script = ExtResource("2_45pu6")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_wx35b"]
+script = ExtResource("2_45pu6")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_db3cf"]
+script = ExtResource("2_45pu6")
+move = &"HYPNOSIS"
+
+[sub_resource type="Resource" id="Resource_kaj6q"]
+script = ExtResource("2_45pu6")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_52y8l"]
+script = ExtResource("2_45pu6")
+move = &"MUDSHOT"
+
+[resource]
+resource_name = "POLITOED"
+script = ExtResource("3_dkqui")
+species = &"POLITOED"
+category = "Frog"
+pokedex_entry = "The curled hair on its head proves its status as a king. It is said that the longer and curlier the hair, the more respect it earns from its peers."
+types = Array[StringName]([&"WATER"])
+base_hp = 90
+base_attack = 75
+base_defense = 75
+base_special_attack = 90
+base_special_defense = 100
+base_speed = 70
+ev_special_defense = 3
+base_exp = 250
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_45pu6")]([SubResource("Resource_tchx2"), SubResource("Resource_sgw8f"), SubResource("Resource_auasx"), SubResource("Resource_5v61f"), SubResource("Resource_pnf5j"), SubResource("Resource_xxjkx"), SubResource("Resource_tu7wb"), SubResource("Resource_l2um4"), SubResource("Resource_jprac"), SubResource("Resource_1sit3"), SubResource("Resource_n0nwa"), SubResource("Resource_wx35b"), SubResource("Resource_db3cf"), SubResource("Resource_kaj6q"), SubResource("Resource_52y8l")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BOUNCE", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"LIQUIDATION", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"UPROAR", &"WATERFALL", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"WATERABSORB", &"DAMP"])
+hidden_abilities = Array[StringName]([&"DRIZZLE"])
+wild_item_uncommon = Array[StringName]([&"KINGSROCK"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_17n6n")]([SubResource("Resource_0eu3e")])
+height = 11
+weight = 339
+color = &"Green"
+shape = &"Bipedal"
+habitat = &"WatersEdge"
+generation = 2
+back_sprite_offset = Vector2i(3, 56)
+front_sprite_offset = Vector2i(2, 26)
+id = &"POLITOED"
+display_name = "Politoed"

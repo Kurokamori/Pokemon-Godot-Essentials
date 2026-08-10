@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xbaod"]
+
+[resource]
+resource_name = "THOUSANDARROWS"
+script = ExtResource("1_xbaod")
+type = &"GROUND"
+category = 0
+power = 90
+total_pp = 10
+target = &"AllNearFoes"
+function_code = &"HitsTargetInSkyGroundsTarget"
+description = "This move also hits Pokémon that are in the air. Those Pokémon are knocked down to the ground."
+id = &"THOUSANDARROWS"
+display_name = "Thousand Arrows"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"CannotMetronome"])

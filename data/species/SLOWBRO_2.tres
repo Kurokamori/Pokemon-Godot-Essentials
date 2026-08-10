@@ -1,0 +1,137 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_n4isl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_u1g8a"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xiboh"]
+
+[sub_resource type="Resource" id="Resource_ieagg"]
+script = ExtResource("1_n4isl")
+species = &"SLOWPOKE"
+method = &"Level"
+parameter = "37"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_bt458"]
+script = ExtResource("2_u1g8a")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_31m36"]
+script = ExtResource("2_u1g8a")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_k3ngg"]
+script = ExtResource("2_u1g8a")
+move = &"CURSE"
+
+[sub_resource type="Resource" id="Resource_uvhcx"]
+script = ExtResource("2_u1g8a")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_rn230"]
+script = ExtResource("2_u1g8a")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_0dmtg"]
+script = ExtResource("2_u1g8a")
+level = 9
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_7v3om"]
+script = ExtResource("2_u1g8a")
+level = 12
+move = &"CONFUSION"
+
+[sub_resource type="Resource" id="Resource_hwm3b"]
+script = ExtResource("2_u1g8a")
+level = 15
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_1i2bd"]
+script = ExtResource("2_u1g8a")
+level = 18
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_l6e67"]
+script = ExtResource("2_u1g8a")
+level = 21
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_mrgv6"]
+script = ExtResource("2_u1g8a")
+level = 24
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_tmqoo"]
+script = ExtResource("2_u1g8a")
+level = 27
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_3wfr2"]
+script = ExtResource("2_u1g8a")
+level = 30
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_tmpag"]
+script = ExtResource("2_u1g8a")
+level = 33
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_yqioj"]
+script = ExtResource("2_u1g8a")
+level = 36
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_t57d3"]
+script = ExtResource("2_u1g8a")
+level = 41
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_hfj01"]
+script = ExtResource("2_u1g8a")
+level = 46
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_saje0"]
+script = ExtResource("2_u1g8a")
+level = 51
+move = &"HEALPULSE"
+
+[resource]
+resource_name = "SLOWBRO_2"
+script = ExtResource("3_xiboh")
+species = &"SLOWBRO"
+form = 2
+form_name = "Mega Slowbro"
+category = "Hermit Crab"
+pokedex_entry = "Having been swallowed whole by Shellder, Slowbro now has an iron defense. It's pretty comfortable in there, too."
+pokedex_form = 2
+types = Array[StringName]([&"WATER", &"PSYCHIC"])
+base_hp = 95
+base_attack = 75
+base_defense = 180
+base_special_attack = 130
+base_special_defense = 80
+base_speed = 30
+ev_defense = 2
+base_exp = 207
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_u1g8a")]([SubResource("Resource_bt458"), SubResource("Resource_31m36"), SubResource("Resource_k3ngg"), SubResource("Resource_uvhcx"), SubResource("Resource_rn230"), SubResource("Resource_0dmtg"), SubResource("Resource_7v3om"), SubResource("Resource_hwm3b"), SubResource("Resource_1i2bd"), SubResource("Resource_l6e67"), SubResource("Resource_mrgv6"), SubResource("Resource_tmqoo"), SubResource("Resource_3wfr2"), SubResource("Resource_tmpag"), SubResource("Resource_yqioj"), SubResource("Resource_t57d3"), SubResource("Resource_hfj01"), SubResource("Resource_saje0")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BULLDOZE", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DIG", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DREAMEATER", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"IMPRISON", &"INCINERATE", &"IRONDEFENSE", &"IRONTAIL", &"LIGHTSCREEN", &"LIQUIDATION", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"PAYDAY", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RAZORSHELL", &"RECYCLE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SAFEGUARD", &"SCALD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"WATERPULSE", &"WEATHERBALL", &"WHIRLPOOL", &"WONDERROOM", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"SHELLARMOR"])
+wild_item_uncommon = Array[StringName]([&"KINGSROCK"])
+egg_groups = Array[StringName]([&"Monster", &"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_n4isl")]([SubResource("Resource_ieagg")])
+height = 20
+weight = 1200
+color = &"Pink"
+shape = &"HeadArms"
+habitat = &"WatersEdge"
+generation = 6
+mega_stone = &"SLOWBRONITE"
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 14)
+id = &"SLOWBRO_2"
+display_name = "Slowbro"

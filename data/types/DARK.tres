@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_b42fd"]
+
+[resource]
+resource_name = "DARK"
+script = ExtResource("1_b42fd")
+icon_position = 17
+special_type = true
+weaknesses = Array[StringName]([&"FIGHTING", &"BUG", &"FAIRY"])
+resistances = Array[StringName]([&"GHOST", &"DARK"])
+immunities = Array[StringName]([&"PSYCHIC"])
+id = &"DARK"
+display_name = "Dark"

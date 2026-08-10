@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SlotMachineRules" load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://src/minigames/slots/slot_machine_rules.gd" id="1_rules"]
+[ext_resource type="Script" path="res://src/minigames/slots/slot_payout_rule.gd" id="2_payout"]
+
+[sub_resource type="Resource" id="Payout_magnemite"]
+script = ExtResource("2_payout")
+display_name = "Three Magnemite"
+pattern = PackedInt32Array(1, 1, 1)
+unordered = false
+coins = 8
+grants_replay = false
+bonus_level = 0
+
+[sub_resource type="Resource" id="Payout_shellder"]
+script = ExtResource("2_payout")
+display_name = "Three Shellder"
+pattern = PackedInt32Array(2, 2, 2)
+unordered = false
+coins = 8
+grants_replay = false
+bonus_level = 0
+
+[sub_resource type="Resource" id="Payout_pikachu"]
+script = ExtResource("2_payout")
+display_name = "Three Pikachu"
+pattern = PackedInt32Array(3, 3, 3)
+unordered = false
+coins = 15
+grants_replay = false
+bonus_level = 0
+
+[sub_resource type="Resource" id="Payout_psyduck"]
+script = ExtResource("2_payout")
+display_name = "Three Psyduck"
+pattern = PackedInt32Array(4, 4, 4)
+unordered = false
+coins = 15
+grants_replay = false
+bonus_level = 0
+
+[sub_resource type="Resource" id="Payout_red_sevens"]
+script = ExtResource("2_payout")
+display_name = "Red Sevens"
+pattern = PackedInt32Array(5, 5, 5)
+unordered = false
+coins = 300
+grants_replay = false
+bonus_level = 2
+
+[sub_resource type="Resource" id="Payout_blue_sevens"]
+script = ExtResource("2_payout")
+display_name = "Blue Sevens"
+pattern = PackedInt32Array(6, 6, 6)
+unordered = false
+coins = 300
+grants_replay = false
+bonus_level = 2
+
+[sub_resource type="Resource" id="Payout_mixed_sevens_red"]
+script = ExtResource("2_payout")
+display_name = "Mixed Sevens"
+pattern = PackedInt32Array(5, 5, 6)
+unordered = true
+coins = 90
+grants_replay = false
+bonus_level = 1
+
+[sub_resource type="Resource" id="Payout_mixed_sevens_blue"]
+script = ExtResource("2_payout")
+display_name = "Mixed Sevens"
+pattern = PackedInt32Array(6, 6, 5)
+unordered = true
+coins = 90
+grants_replay = false
+bonus_level = 1
+
+[sub_resource type="Resource" id="Payout_replay"]
+script = ExtResource("2_payout")
+display_name = "Replay"
+pattern = PackedInt32Array(7, 7, 7)
+unordered = false
+coins = 0
+grants_replay = true
+bonus_level = 0
+
+[sub_resource type="Resource" id="Payout_two_cherries"]
+script = ExtResource("2_payout")
+display_name = "Two Cherries"
+pattern = PackedInt32Array(0, 0, -1)
+unordered = false
+coins = 4
+grants_replay = false
+bonus_level = 0
+
+[sub_resource type="Resource" id="Payout_one_cherry"]
+script = ExtResource("2_payout")
+display_name = "Cherry"
+pattern = PackedInt32Array(0, -1, -1)
+unordered = false
+coins = 2
+grants_replay = false
+bonus_level = 0
+
+[resource]
+script = ExtResource("1_rules")
+reel_strips = Array[PackedInt32Array]([PackedInt32Array(3, 2, 7, 6, 3, 1, 5, 2, 3, 0, 6, 4, 7, 5, 1, 3, 2, 3, 6, 0, 4, 5), PackedInt32Array(0, 4, 1, 2, 7, 4, 6, 0, 1, 5, 4, 0, 1, 3, 4, 0, 1, 6, 7, 0, 1, 5), PackedInt32Array(6, 2, 1, 4, 3, 2, 1, 4, 7, 3, 2, 1, 4, 3, 7, 2, 4, 3, 1, 2, 4, 5)])
+paylines = Array[Vector3i]([Vector3i(1, 1, 1), Vector3i(0, 0, 0), Vector3i(2, 2, 2), Vector3i(0, 1, 2), Vector3i(2, 1, 0)])
+lines_per_wager = PackedInt32Array(1, 3, 5)
+payouts = Array[ExtResource("2_payout")]([SubResource("Payout_magnemite"), SubResource("Payout_shellder"), SubResource("Payout_pikachu"), SubResource("Payout_psyduck"), SubResource("Payout_red_sevens"), SubResource("Payout_blue_sevens"), SubResource("Payout_mixed_sevens_red"), SubResource("Payout_mixed_sevens_blue"), SubResource("Payout_replay"), SubResource("Payout_two_cherries"), SubResource("Payout_one_cherry")])
+symbols_per_second = 13.0
+slipping_table = PackedInt32Array(0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 3)
+easy_speed_divisor = 1.5
+payout_coins_per_second = 20.0
+win_flourish_seconds = 2.0
+lose_flourish_seconds = 1.2

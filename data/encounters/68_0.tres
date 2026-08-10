@@ -1,0 +1,217 @@
+[gd_resource type="Resource" script_class="EncounterData" format=3]
+
+[ext_resource type="Script" path="res://src/data/encounter_data.gd" id="1_qwuby"]
+[ext_resource type="Script" path="res://src/data/encounter_table.gd" id="2_f0j0s"]
+[ext_resource type="Script" path="res://src/data/encounter_slot.gd" id="3_j2i4y"]
+
+[sub_resource type="Resource" id="Resource_6fcx0"]
+script = ExtResource("3_j2i4y")
+weight = 20
+species = &"EXEGGCUTE"
+min_level = 15
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_2x2qb"]
+script = ExtResource("3_j2i4y")
+weight = 20
+species = &"RHYHORN"
+min_level = 16
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_0o6nv"]
+script = ExtResource("3_j2i4y")
+species = &"AIPOM"
+min_level = 14
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_ydj1k"]
+script = ExtResource("3_j2i4y")
+species = &"GIRAFARIG"
+min_level = 16
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_2k6ss"]
+script = ExtResource("3_j2i4y")
+species = &"VENONAT"
+min_level = 15
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_invh0"]
+script = ExtResource("3_j2i4y")
+species = &"VENONAT"
+min_level = 15
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_7wto3"]
+script = ExtResource("3_j2i4y")
+weight = 5
+species = &"HERACROSS"
+min_level = 15
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_ou52j"]
+script = ExtResource("3_j2i4y")
+weight = 5
+species = &"TAUROS"
+min_level = 15
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_fc64d"]
+script = ExtResource("3_j2i4y")
+weight = 4
+species = &"PINSIR"
+min_level = 16
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_l437w"]
+script = ExtResource("3_j2i4y")
+weight = 4
+species = &"SCYTHER"
+min_level = 16
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_umpuu"]
+script = ExtResource("3_j2i4y")
+weight = 1
+species = &"CHANSEY"
+min_level = 17
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_kia63"]
+script = ExtResource("3_j2i4y")
+weight = 1
+species = &"KANGASKHAN"
+min_level = 19
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_23qo6"]
+script = ExtResource("2_f0j0s")
+step_chance = 21
+slots = Array[ExtResource("3_j2i4y")]([SubResource("Resource_6fcx0"), SubResource("Resource_2x2qb"), SubResource("Resource_0o6nv"), SubResource("Resource_ydj1k"), SubResource("Resource_2k6ss"), SubResource("Resource_invh0"), SubResource("Resource_7wto3"), SubResource("Resource_ou52j"), SubResource("Resource_fc64d"), SubResource("Resource_l437w"), SubResource("Resource_umpuu"), SubResource("Resource_kia63")])
+
+[sub_resource type="Resource" id="Resource_caq1r"]
+script = ExtResource("3_j2i4y")
+weight = 60
+species = &"PSYDUCK"
+min_level = 16
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_l1cts"]
+script = ExtResource("3_j2i4y")
+weight = 30
+species = &"MARILL"
+min_level = 15
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_2ninr"]
+script = ExtResource("3_j2i4y")
+weight = 5
+species = &"BUIZEL"
+min_level = 15
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_lg5li"]
+script = ExtResource("3_j2i4y")
+weight = 5
+species = &"SLOWPOKE"
+min_level = 14
+max_level = 16
+
+[sub_resource type="Resource" id="Resource_766el"]
+script = ExtResource("2_f0j0s")
+encounter_type = &"Water"
+step_chance = 2
+slots = Array[ExtResource("3_j2i4y")]([SubResource("Resource_caq1r"), SubResource("Resource_l1cts"), SubResource("Resource_2ninr"), SubResource("Resource_lg5li")])
+
+[sub_resource type="Resource" id="Resource_eold1"]
+script = ExtResource("3_j2i4y")
+weight = 70
+species = &"MAGIKARP"
+min_level = 17
+max_level = 21
+
+[sub_resource type="Resource" id="Resource_vxlf1"]
+script = ExtResource("3_j2i4y")
+weight = 30
+species = &"MAGIKARP"
+min_level = 17
+max_level = 20
+
+[sub_resource type="Resource" id="Resource_krnxa"]
+script = ExtResource("2_f0j0s")
+encounter_type = &"OldRod"
+slots = Array[ExtResource("3_j2i4y")]([SubResource("Resource_eold1"), SubResource("Resource_vxlf1")])
+
+[sub_resource type="Resource" id="Resource_0ijwh"]
+script = ExtResource("3_j2i4y")
+weight = 60
+species = &"MAGIKARP"
+min_level = 16
+max_level = 20
+
+[sub_resource type="Resource" id="Resource_vk1gu"]
+script = ExtResource("3_j2i4y")
+weight = 20
+species = &"FEEBAS"
+min_level = 16
+max_level = 20
+
+[sub_resource type="Resource" id="Resource_6tfqg"]
+script = ExtResource("3_j2i4y")
+weight = 20
+species = &"POLIWAG"
+min_level = 17
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_fbuk6"]
+script = ExtResource("2_f0j0s")
+encounter_type = &"GoodRod"
+slots = Array[ExtResource("3_j2i4y")]([SubResource("Resource_0ijwh"), SubResource("Resource_vk1gu"), SubResource("Resource_6tfqg")])
+
+[sub_resource type="Resource" id="Resource_kbxn7"]
+script = ExtResource("3_j2i4y")
+weight = 40
+species = &"GOLDEEN"
+min_level = 16
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_k4xrc"]
+script = ExtResource("3_j2i4y")
+weight = 40
+species = &"REMORAID"
+min_level = 17
+max_level = 19
+
+[sub_resource type="Resource" id="Resource_bqe5d"]
+script = ExtResource("3_j2i4y")
+weight = 15
+species = &"CARVANHA"
+min_level = 16
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_wgvqt"]
+script = ExtResource("3_j2i4y")
+weight = 4
+species = &"FINNEON"
+min_level = 15
+max_level = 18
+
+[sub_resource type="Resource" id="Resource_fc62p"]
+script = ExtResource("3_j2i4y")
+weight = 1
+species = &"DRATINI"
+min_level = 17
+max_level = 17
+
+[sub_resource type="Resource" id="Resource_lbq1i"]
+script = ExtResource("2_f0j0s")
+encounter_type = &"SuperRod"
+slots = Array[ExtResource("3_j2i4y")]([SubResource("Resource_kbxn7"), SubResource("Resource_k4xrc"), SubResource("Resource_bqe5d"), SubResource("Resource_wgvqt"), SubResource("Resource_fc62p")])
+
+[resource]
+resource_name = "68_0"
+script = ExtResource("1_qwuby")
+map_id = 68
+tables = Array[ExtResource("2_f0j0s")]([SubResource("Resource_23qo6"), SubResource("Resource_766el"), SubResource("Resource_krnxa"), SubResource("Resource_fbuk6"), SubResource("Resource_lbq1i")])
+id = &"68_0"
+display_name = "Map 68 v0"

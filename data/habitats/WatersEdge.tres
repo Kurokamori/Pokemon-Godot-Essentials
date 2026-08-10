@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SimpleNameData" format=3]
+
+[ext_resource type="Script" path="res://src/data/simple_name_data.gd" id="1_pmfy2"]
+
+[resource]
+resource_name = "WatersEdge"
+script = ExtResource("1_pmfy2")
+id = &"WatersEdge"
+display_name = "Water's Edge"

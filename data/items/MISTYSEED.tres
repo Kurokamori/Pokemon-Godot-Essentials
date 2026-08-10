@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_d6vo2"]
+
+[resource]
+resource_name = "MISTYSEED"
+script = ExtResource("1_d6vo2")
+name_plural = "Misty Seeds"
+price = 3000
+sell_price = 2000
+description = "An item to be held by a Pokémon. It boosts Sp. Def on Misty Terrain. It can only be used once."
+id = &"MISTYSEED"
+display_name = "Misty Seed"
+flags = Array[StringName]([&"Fling_10"])

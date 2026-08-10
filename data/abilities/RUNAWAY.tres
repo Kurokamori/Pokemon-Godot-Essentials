@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_kyoda"]
+
+[resource]
+resource_name = "RUNAWAY"
+script = ExtResource("1_kyoda")
+description = "Enables a sure getaway from wild Pokémon."
+id = &"RUNAWAY"
+display_name = "Run Away"

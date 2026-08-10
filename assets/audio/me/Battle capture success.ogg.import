@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ubaendnpce70"
+path="res://.godot/imported/Battle capture success.ogg-7c2d1e525b132527e4db6ea41f961d8d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/me/Battle capture success.ogg"
+dest_files=["res://.godot/imported/Battle capture success.ogg-7c2d1e525b132527e4db6ea41f961d8d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,126 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ajkq5"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1hesb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_n58w3"]
+
+[sub_resource type="Resource" id="Resource_la4qy"]
+script = ExtResource("1_ajkq5")
+species = &"GRENINJA"
+method = &"Level"
+parameter = "36"
+
+[sub_resource type="Resource" id="Resource_45x83"]
+script = ExtResource("1_ajkq5")
+species = &"FROAKIE"
+method = &"Level"
+parameter = "16"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_ba7ue"]
+script = ExtResource("2_1hesb")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_7d4ic"]
+script = ExtResource("2_1hesb")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_kfcox"]
+script = ExtResource("2_1hesb")
+move = &"BUBBLE"
+
+[sub_resource type="Resource" id="Resource_j5lms"]
+script = ExtResource("2_1hesb")
+level = 5
+move = &"BUBBLE"
+
+[sub_resource type="Resource" id="Resource_6o7s5"]
+script = ExtResource("2_1hesb")
+level = 8
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_p6quu"]
+script = ExtResource("2_1hesb")
+level = 10
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_ughu0"]
+script = ExtResource("2_1hesb")
+level = 14
+move = &"WATERPULSE"
+
+[sub_resource type="Resource" id="Resource_62p4v"]
+script = ExtResource("2_1hesb")
+level = 19
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_urynm"]
+script = ExtResource("2_1hesb")
+level = 23
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_t5e5n"]
+script = ExtResource("2_1hesb")
+level = 28
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_rtes2"]
+script = ExtResource("2_1hesb")
+level = 33
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_lj25s"]
+script = ExtResource("2_1hesb")
+level = 40
+move = &"SUBSTITUTE"
+
+[sub_resource type="Resource" id="Resource_xkap4"]
+script = ExtResource("2_1hesb")
+level = 45
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_yijrw"]
+script = ExtResource("2_1hesb")
+level = 50
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_60p4n"]
+script = ExtResource("2_1hesb")
+level = 56
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "FROGADIER"
+script = ExtResource("3_n58w3")
+species = &"FROGADIER"
+category = "Bubble Frog"
+pokedex_entry = "It can throw bubble-covered pebbles with precise control, hitting empty cans up to a hundred feet away."
+types = Array[StringName]([&"WATER"])
+base_hp = 54
+base_attack = 63
+base_defense = 52
+base_special_attack = 83
+base_special_defense = 56
+base_speed = 97
+ev_speed = 2
+base_exp = 142
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1hesb")]([SubResource("Resource_ba7ue"), SubResource("Resource_7d4ic"), SubResource("Resource_kfcox"), SubResource("Resource_j5lms"), SubResource("Resource_6o7s5"), SubResource("Resource_p6quu"), SubResource("Resource_ughu0"), SubResource("Resource_62p4v"), SubResource("Resource_urynm"), SubResource("Resource_t5e5n"), SubResource("Resource_rtes2"), SubResource("Resource_lj25s"), SubResource("Resource_xkap4"), SubResource("Resource_yijrw"), SubResource("Resource_60p4n")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BLIZZARD", &"BOUNCE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DARKPULSE", &"DIG", &"DIVE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HIDDENPOWER", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"LOWKICK", &"MIMIC", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SCALD", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNATCH", &"SNORE", &"SPITE", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"TAUNT", &"THIEF", &"TOXIC", &"UTURN", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"PROTEAN"])
+egg_groups = Array[StringName]([&"Water1"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ajkq5")]([SubResource("Resource_la4qy"), SubResource("Resource_45x83")])
+height = 6
+weight = 109
+color = &"Blue"
+shape = &"Bipedal"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(7, 28)
+id = &"FROGADIER"
+display_name = "Frogadier"

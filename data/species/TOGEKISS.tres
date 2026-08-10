@@ -1,0 +1,134 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_y37kq"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8eyd7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_xnhes"]
+
+[sub_resource type="Resource" id="Resource_ux6ps"]
+script = ExtResource("1_y37kq")
+species = &"TOGETIC"
+method = &"Item"
+parameter = "SHINYSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pw7ek"]
+script = ExtResource("2_8eyd7")
+level = 0
+move = &"AIRSLASH"
+
+[sub_resource type="Resource" id="Resource_ayebg"]
+script = ExtResource("2_8eyd7")
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_uhy7t"]
+script = ExtResource("2_8eyd7")
+move = &"SKYATTACK"
+
+[sub_resource type="Resource" id="Resource_6ivo2"]
+script = ExtResource("2_8eyd7")
+move = &"AURASPHERE"
+
+[sub_resource type="Resource" id="Resource_cpy76"]
+script = ExtResource("2_8eyd7")
+move = &"EXTREMESPEED"
+
+[sub_resource type="Resource" id="Resource_b8hfg"]
+script = ExtResource("2_8eyd7")
+move = &"TRIATTACK"
+
+[sub_resource type="Resource" id="Resource_5al70"]
+script = ExtResource("2_8eyd7")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_er3kl"]
+script = ExtResource("2_8eyd7")
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_n3pwo"]
+script = ExtResource("2_8eyd7")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_j1uox"]
+script = ExtResource("2_8eyd7")
+move = &"METRONOME"
+
+[sub_resource type="Resource" id="Resource_ecad0"]
+script = ExtResource("2_8eyd7")
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_g7qfc"]
+script = ExtResource("2_8eyd7")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_a2861"]
+script = ExtResource("2_8eyd7")
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_tc140"]
+script = ExtResource("2_8eyd7")
+move = &"FOLLOWME"
+
+[sub_resource type="Resource" id="Resource_ocuph"]
+script = ExtResource("2_8eyd7")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_8bwy5"]
+script = ExtResource("2_8eyd7")
+move = &"LASTRESORT"
+
+[sub_resource type="Resource" id="Resource_avmj8"]
+script = ExtResource("2_8eyd7")
+move = &"WISH"
+
+[sub_resource type="Resource" id="Resource_b055w"]
+script = ExtResource("2_8eyd7")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_eydt7"]
+script = ExtResource("2_8eyd7")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_465dm"]
+script = ExtResource("2_8eyd7")
+move = &"SWEETKISS"
+
+[sub_resource type="Resource" id="Resource_jcmsy"]
+script = ExtResource("2_8eyd7")
+move = &"LIFEDEW"
+
+[resource]
+resource_name = "TOGEKISS"
+script = ExtResource("3_xnhes")
+species = &"TOGEKISS"
+category = "Jubilee"
+pokedex_entry = "It will never appear where there is strife. Its sightings have become rare recently."
+types = Array[StringName]([&"FAIRY", &"FLYING"])
+base_hp = 85
+base_attack = 50
+base_defense = 95
+base_special_attack = 120
+base_special_defense = 115
+base_speed = 80
+ev_special_attack = 2
+ev_special_defense = 1
+base_exp = 273
+growth_rate = &"Fast"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 30
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8eyd7")]([SubResource("Resource_pw7ek"), SubResource("Resource_ayebg"), SubResource("Resource_uhy7t"), SubResource("Resource_6ivo2"), SubResource("Resource_cpy76"), SubResource("Resource_b8hfg"), SubResource("Resource_5al70"), SubResource("Resource_er3kl"), SubResource("Resource_n3pwo"), SubResource("Resource_j1uox"), SubResource("Resource_ecad0"), SubResource("Resource_g7qfc"), SubResource("Resource_a2861"), SubResource("Resource_tc140"), SubResource("Resource_ocuph"), SubResource("Resource_8bwy5"), SubResource("Resource_avmj8"), SubResource("Resource_b055w"), SubResource("Resource_eydt7"), SubResource("Resource_465dm"), SubResource("Resource_jcmsy")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"AIRCUTTER", &"AIRSLASH", &"ALLYSWITCH", &"AMNESIA", &"ANCIENTPOWER", &"ATTRACT", &"AURASPHERE", &"BATONPASS", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COUNTER", &"COVET", &"DEFENSECURL", &"DAZZLINGGLEAM", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"DREAMEATER", &"DUALWINGBEAT", &"ECHOEDVOICE", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FLAMETHROWER", &"FLASH", &"FLING", &"FLY", &"FOCUSPUNCH", &"FRUSTRATION", &"FUTURESIGHT", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"INCINERATE", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"MYSTICALFIRE", &"NASTYPLOT", &"NATURALGIFT", &"OMINOUSWIND", &"PLAYROUGH", &"PLUCK", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SILVERWIND", &"SKYATTACK", &"SLEEPTALK", &"SMARTSTRIKE", &"SNORE", &"SOFTBOILED", &"SOLARBEAM", &"STEELWING", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TELEKINESIS", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TWISTER", &"UPROAR", &"WATERPULSE", &"WORKUP", &"ZENHEADBUTT"])
+abilities = Array[StringName]([&"HUSTLE", &"SERENEGRACE"])
+hidden_abilities = Array[StringName]([&"SUPERLUCK"])
+egg_groups = Array[StringName]([&"Flying", &"Fairy"])
+hatch_steps = 2560
+evolutions = Array[ExtResource("1_y37kq")]([SubResource("Resource_ux6ps")])
+height = 15
+weight = 380
+color = &"White"
+shape = &"Winged"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 14)
+id = &"TOGEKISS"
+display_name = "Togekiss"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MapMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/map_metadata_data.gd" id="1_4vqgc"]
+
+[resource]
+resource_name = "41"
+script = ExtResource("1_4vqgc")
+map_id = 41
+outdoor_map = true
+announce_location = true
+always_bicycle = true
+town_map_position = Array[int]([0, 11, 7])
+town_map_size = Array[int]([1, 111])
+id = &"41"
+display_name = "Route 5"

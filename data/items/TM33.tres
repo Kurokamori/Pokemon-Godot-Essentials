@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_3wd31"]
+
+[resource]
+resource_name = "TM33"
+script = ExtResource("1_3wd31")
+name_plural = "TM33s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"REFLECT"
+description = "A wondrous wall of light is put up to reduce damage from physical attacks for five turns."
+id = &"TM33"
+display_name = "TM33"
+flags = Array[StringName]([&"Fling_10"])

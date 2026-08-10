@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_3ddc5"]
+
+[resource]
+resource_name = "NIGHTMARE"
+script = ExtResource("1_3ddc5")
+type = &"GHOST"
+total_pp = 15
+function_code = &"StartDamageTargetEachTurnIfTargetAsleep"
+description = "A sleeping target sees a nightmare that inflicts some damage every turn."
+id = &"NIGHTMARE"
+display_name = "Nightmare"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="RibbonData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ribbon_data.gd" id="1_jbpqy"]
+
+[resource]
+resource_name = "SMILE"
+script = ExtResource("1_jbpqy")
+icon_position = 62
+description = "A Ribbon for recalling that smiles enrich the quality of life."
+id = &"SMILE"
+display_name = "Smile Ribbon"

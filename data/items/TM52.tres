@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_65yrj"]
+
+[resource]
+resource_name = "TM52"
+script = ExtResource("1_65yrj")
+name_plural = "TM52s"
+pocket = 4
+price = 5500
+sell_price = 2750
+bp_price = 32
+field_use = 5
+move = &"FOCUSBLAST"
+description = "The user heightens its mental focus and unleashes its power. This may also lower the target's Sp. Def stat."
+id = &"TM52"
+display_name = "TM52"
+flags = Array[StringName]([&"Fling_120"])

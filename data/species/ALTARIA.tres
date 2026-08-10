@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_tsgit"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_vhewi"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_slmbl"]
+
+[sub_resource type="Resource" id="Resource_vi8jb"]
+script = ExtResource("1_tsgit")
+species = &"SWABLU"
+method = &"Level"
+parameter = "35"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_v05of"]
+script = ExtResource("2_vhewi")
+level = 0
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_cu1av"]
+script = ExtResource("2_vhewi")
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_oru78"]
+script = ExtResource("2_vhewi")
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_72hy7"]
+script = ExtResource("2_vhewi")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_le6qo"]
+script = ExtResource("2_vhewi")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_vuwxj"]
+script = ExtResource("2_vhewi")
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_joc21"]
+script = ExtResource("2_vhewi")
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_riptq"]
+script = ExtResource("2_vhewi")
+level = 12
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_nddpc"]
+script = ExtResource("2_vhewi")
+level = 16
+move = &"ROUND"
+
+[sub_resource type="Resource" id="Resource_vadlo"]
+script = ExtResource("2_vhewi")
+level = 20
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_8nsiq"]
+script = ExtResource("2_vhewi")
+level = 24
+move = &"SAFEGUARD"
+
+[sub_resource type="Resource" id="Resource_e4kim"]
+script = ExtResource("2_vhewi")
+level = 28
+move = &"SING"
+
+[sub_resource type="Resource" id="Resource_yrdu3"]
+script = ExtResource("2_vhewi")
+level = 32
+move = &"COTTONGUARD"
+
+[sub_resource type="Resource" id="Resource_00wnv"]
+script = ExtResource("2_vhewi")
+level = 38
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_igygy"]
+script = ExtResource("2_vhewi")
+level = 44
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_cj3m4"]
+script = ExtResource("2_vhewi")
+level = 50
+move = &"PERISHSONG"
+
+[sub_resource type="Resource" id="Resource_ade0w"]
+script = ExtResource("2_vhewi")
+level = 56
+move = &"SKYATTACK"
+
+[resource]
+resource_name = "ALTARIA"
+script = ExtResource("3_slmbl")
+species = &"ALTARIA"
+category = "Humming"
+pokedex_entry = "It hums in a beautiful soprano voice. It flies among white clouds in the blue sky. It launches intensely hot fireballs from its mouth."
+types = Array[StringName]([&"DRAGON", &"FLYING"])
+base_hp = 75
+base_attack = 70
+base_defense = 90
+base_special_attack = 70
+base_special_defense = 105
+base_speed = 80
+ev_special_defense = 2
+base_exp = 172
+growth_rate = &"Erratic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_vhewi")]([SubResource("Resource_v05of"), SubResource("Resource_cu1av"), SubResource("Resource_oru78"), SubResource("Resource_72hy7"), SubResource("Resource_le6qo"), SubResource("Resource_vuwxj"), SubResource("Resource_joc21"), SubResource("Resource_riptq"), SubResource("Resource_nddpc"), SubResource("Resource_vadlo"), SubResource("Resource_8nsiq"), SubResource("Resource_e4kim"), SubResource("Resource_yrdu3"), SubResource("Resource_00wnv"), SubResource("Resource_igygy"), SubResource("Resource_cj3m4"), SubResource("Resource_ade0w")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"ATTRACT", &"BODYSLAM", &"BREAKINGSWIPE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"DREAMEATER", &"DUALWINGBEAT", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIRESPIN", &"FLAMETHROWER", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEALBELL", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"HURRICANE", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"INCINERATE", &"IRONTAIL", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"OUTRAGE", &"PLAYROUGH", &"PLUCK", &"POWERSWAP", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROOST", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"TWISTER", &"UPROAR", &"WONDERROOM"])
+abilities = Array[StringName]([&"NATURALCURE"])
+hidden_abilities = Array[StringName]([&"CLOUDNINE"])
+egg_groups = Array[StringName]([&"Flying", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_tsgit")]([SubResource("Resource_vi8jb")])
+height = 11
+weight = 206
+color = &"Blue"
+shape = &"Winged"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(-3, 46)
+front_sprite_offset = Vector2i(0, 7)
+id = &"ALTARIA"
+display_name = "Altaria"

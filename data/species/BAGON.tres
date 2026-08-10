@@ -1,0 +1,113 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_kj11o"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_xu7k6"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_yl7q0"]
+
+[sub_resource type="Resource" id="Resource_7s20g"]
+script = ExtResource("1_kj11o")
+species = &"SHELGON"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_5yume"]
+script = ExtResource("2_xu7k6")
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_2rlkq"]
+script = ExtResource("2_xu7k6")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_u0xw0"]
+script = ExtResource("2_xu7k6")
+level = 5
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_dv02r"]
+script = ExtResource("2_xu7k6")
+level = 10
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_nuoqw"]
+script = ExtResource("2_xu7k6")
+level = 15
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_a5lpl"]
+script = ExtResource("2_xu7k6")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_6g8ub"]
+script = ExtResource("2_xu7k6")
+level = 25
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_4iqij"]
+script = ExtResource("2_xu7k6")
+level = 31
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_yjj5w"]
+script = ExtResource("2_xu7k6")
+level = 35
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_rli1g"]
+script = ExtResource("2_xu7k6")
+level = 40
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_uvwwl"]
+script = ExtResource("2_xu7k6")
+level = 45
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_mrmwn"]
+script = ExtResource("2_xu7k6")
+level = 50
+move = &"OUTRAGE"
+
+[sub_resource type="Resource" id="Resource_ff1a1"]
+script = ExtResource("2_xu7k6")
+level = 55
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "BAGON"
+script = ExtResource("3_yl7q0")
+species = &"BAGON"
+category = "Rock Head"
+pokedex_entry = "Although it is small, this Pokémon is very powerful because its body is a bundle of muscles. It launches head-butts with its ironlike skull."
+types = Array[StringName]([&"DRAGON"])
+base_hp = 45
+base_attack = 75
+base_defense = 60
+base_special_attack = 40
+base_special_defense = 30
+base_speed = 50
+ev_attack = 1
+base_exp = 60
+growth_rate = &"Slow"
+catch_rate = 45
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_xu7k6")]([SubResource("Resource_5yume"), SubResource("Resource_2rlkq"), SubResource("Resource_u0xw0"), SubResource("Resource_dv02r"), SubResource("Resource_nuoqw"), SubResource("Resource_a5lpl"), SubResource("Resource_6g8ub"), SubResource("Resource_4iqij"), SubResource("Resource_yjj5w"), SubResource("Resource_rli1g"), SubResource("Resource_uvwwl"), SubResource("Resource_mrmwn"), SubResource("Resource_ff1a1")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONDANCE", &"DRAGONPULSE", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FOCUSENERGY", &"FRUSTRATION", &"FURYCUTTER", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"HYPERVOICE", &"INCINERATE", &"IRONDEFENSE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TWISTER", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"DEFENSECURL", &"DRAGONDANCE", &"DRAGONRUSH", &"FIREFANG", &"HYDROPUMP", &"THRASH", &"TWISTER"])
+abilities = Array[StringName]([&"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+wild_item_uncommon = Array[StringName]([&"DRAGONFANG"])
+egg_groups = Array[StringName]([&"Dragon"])
+hatch_steps = 10240
+evolutions = Array[ExtResource("1_kj11o")]([SubResource("Resource_7s20g")])
+height = 6
+weight = 421
+color = &"Blue"
+shape = &"Bipedal"
+habitat = &"RoughTerrain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 27)
+shadow_size = 1
+id = &"BAGON"
+display_name = "Bagon"

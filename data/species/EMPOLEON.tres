@@ -1,0 +1,133 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_woaen"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_huuaw"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_hadvu"]
+
+[sub_resource type="Resource" id="Resource_i0e42"]
+script = ExtResource("1_woaen")
+species = &"PRINPLUP"
+method = &"Level"
+parameter = "36"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_pfp8s"]
+script = ExtResource("2_huuaw")
+level = 0
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_j3dcf"]
+script = ExtResource("2_huuaw")
+move = &"METALCLAW"
+
+[sub_resource type="Resource" id="Resource_fsqfg"]
+script = ExtResource("2_huuaw")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_vdsd0"]
+script = ExtResource("2_huuaw")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_ckevj"]
+script = ExtResource("2_huuaw")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_v0yww"]
+script = ExtResource("2_huuaw")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_v436a"]
+script = ExtResource("2_huuaw")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_t6hik"]
+script = ExtResource("2_huuaw")
+level = 8
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_27gn4"]
+script = ExtResource("2_huuaw")
+level = 11
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_t8qgx"]
+script = ExtResource("2_huuaw")
+level = 15
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_qyiyt"]
+script = ExtResource("2_huuaw")
+level = 19
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_odbfg"]
+script = ExtResource("2_huuaw")
+level = 24
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_m5ly1"]
+script = ExtResource("2_huuaw")
+level = 28
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_al05m"]
+script = ExtResource("2_huuaw")
+level = 33
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_wy33w"]
+script = ExtResource("2_huuaw")
+level = 39
+move = &"WHIRLPOOL"
+
+[sub_resource type="Resource" id="Resource_5vttq"]
+script = ExtResource("2_huuaw")
+level = 46
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_2j7nm"]
+script = ExtResource("2_huuaw")
+level = 52
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_qhc3q"]
+script = ExtResource("2_huuaw")
+level = 59
+move = &"HYDROPUMP"
+
+[resource]
+resource_name = "EMPOLEON"
+script = ExtResource("3_hadvu")
+species = &"EMPOLEON"
+category = "Emperor"
+pokedex_entry = "The three horns that extend from its beak attest to its power. The leader has the biggest horns."
+types = Array[StringName]([&"WATER", &"STEEL"])
+base_hp = 84
+base_attack = 86
+base_defense = 88
+base_special_attack = 111
+base_special_defense = 101
+base_speed = 60
+ev_special_attack = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_huuaw")]([SubResource("Resource_pfp8s"), SubResource("Resource_j3dcf"), SubResource("Resource_fsqfg"), SubResource("Resource_vdsd0"), SubResource("Resource_ckevj"), SubResource("Resource_v0yww"), SubResource("Resource_v436a"), SubResource("Resource_t6hik"), SubResource("Resource_27gn4"), SubResource("Resource_t8qgx"), SubResource("Resource_qyiyt"), SubResource("Resource_odbfg"), SubResource("Resource_m5ly1"), SubResource("Resource_al05m"), SubResource("Resource_wy33w"), SubResource("Resource_5vttq"), SubResource("Resource_2j7nm"), SubResource("Resource_qhc3q")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BRICKBREAK", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DEFOG", &"DIG", &"DIVE", &"DOUBLETEAM", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FLASHCANNON", &"FLING", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRASSKNOT", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYDROCANNON", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"LASERFOCUS", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"QUASH", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SCALD", &"SECRETPOWER", &"SHADOWCLAW", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STEELWING", &"STRENGTH", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"THROATCHOP", &"WATERFALL", &"WATERPLEDGE", &"WATERPULSE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"TORRENT"])
+hidden_abilities = Array[StringName]([&"DEFIANT"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_woaen")]([SubResource("Resource_i0e42")])
+height = 17
+weight = 845
+color = &"Blue"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(0, 14)
+id = &"EMPOLEON"
+display_name = "Empoleon"

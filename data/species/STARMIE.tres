@@ -1,0 +1,115 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gdvpj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nsopk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fw8k1"]
+
+[sub_resource type="Resource" id="Resource_vbntb"]
+script = ExtResource("1_gdvpj")
+species = &"STARYU"
+method = &"Item"
+parameter = "WATERSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_fu77c"]
+script = ExtResource("2_nsopk")
+move = &"RAPIDSPIN"
+
+[sub_resource type="Resource" id="Resource_ohq6j"]
+script = ExtResource("2_nsopk")
+move = &"MINIMIZE"
+
+[sub_resource type="Resource" id="Resource_xogpn"]
+script = ExtResource("2_nsopk")
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_31lcq"]
+script = ExtResource("2_nsopk")
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_7ivyl"]
+script = ExtResource("2_nsopk")
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_jgjsx"]
+script = ExtResource("2_nsopk")
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_l1uif"]
+script = ExtResource("2_nsopk")
+move = &"POWERGEM"
+
+[sub_resource type="Resource" id="Resource_822sd"]
+script = ExtResource("2_nsopk")
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_k7n8r"]
+script = ExtResource("2_nsopk")
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_kik2j"]
+script = ExtResource("2_nsopk")
+move = &"RECOVER"
+
+[sub_resource type="Resource" id="Resource_3itoh"]
+script = ExtResource("2_nsopk")
+move = &"COSMICPOWER"
+
+[sub_resource type="Resource" id="Resource_8kuim"]
+script = ExtResource("2_nsopk")
+move = &"HYDROPUMP"
+
+[sub_resource type="Resource" id="Resource_oy54i"]
+script = ExtResource("2_nsopk")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_6d318"]
+script = ExtResource("2_nsopk")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_a63cl"]
+script = ExtResource("2_nsopk")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_31p8i"]
+script = ExtResource("2_nsopk")
+move = &"CONFUSERAY"
+
+[resource]
+resource_name = "STARMIE"
+script = ExtResource("3_fw8k1")
+species = &"STARMIE"
+category = "Mysterious"
+pokedex_entry = "People in ancient times imagined that Starmie were transformed from the reflections of stars that twinkled on gentle waves at night."
+types = Array[StringName]([&"WATER", &"PSYCHIC"])
+base_hp = 60
+base_attack = 75
+base_defense = 85
+base_special_attack = 100
+base_special_defense = 85
+base_speed = 115
+ev_speed = 2
+base_exp = 182
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nsopk")]([SubResource("Resource_fu77c"), SubResource("Resource_ohq6j"), SubResource("Resource_xogpn"), SubResource("Resource_31lcq"), SubResource("Resource_7ivyl"), SubResource("Resource_jgjsx"), SubResource("Resource_l1uif"), SubResource("Resource_822sd"), SubResource("Resource_k7n8r"), SubResource("Resource_kik2j"), SubResource("Resource_3itoh"), SubResource("Resource_8kuim"), SubResource("Resource_oy54i"), SubResource("Resource_6d318"), SubResource("Resource_a63cl"), SubResource("Resource_31p8i")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ALLYSWITCH", &"AVALANCHE", &"BLIZZARD", &"BRINE", &"CONFIDE", &"COSMICPOWER", &"DAZZLINGGLEAM", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"ENDURE", &"EXPANDINGFORCE", &"FACADE", &"FLASH", &"FLASHCANNON", &"FLIPTURN", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"GRAVITY", &"GYROBALL", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICYWIND", &"LIGHTSCREEN", &"MAGICCOAT", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PAINSPLIT", &"POWERGEM", &"PROTECT", &"PSYCHIC", &"PSYCHOCUT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"RECYCLE", &"REFLECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SCALD", &"SECRETPOWER", &"SIGNALBEAM", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRIATTACK", &"TRICK", &"TRICKROOM", &"TWISTER", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL", &"WONDERROOM"])
+abilities = Array[StringName]([&"ILLUMINATE", &"NATURALCURE"])
+hidden_abilities = Array[StringName]([&"ANALYTIC"])
+wild_item_common = Array[StringName]([&"STARDUST"])
+wild_item_uncommon = Array[StringName]([&"STARPIECE"])
+egg_groups = Array[StringName]([&"Water3"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_gdvpj")]([SubResource("Resource_vbntb")])
+height = 11
+weight = 800
+color = &"Purple"
+shape = &"HeadBase"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 26)
+id = &"STARMIE"
+display_name = "Starmie"

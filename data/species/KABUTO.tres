@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ijadx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bsnd7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ni2i8"]
+
+[sub_resource type="Resource" id="Resource_k6qma"]
+script = ExtResource("1_ijadx")
+species = &"KABUTOPS"
+method = &"Level"
+parameter = "40"
+
+[sub_resource type="Resource" id="Resource_v7dgp"]
+script = ExtResource("2_bsnd7")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_lsnje"]
+script = ExtResource("2_bsnd7")
+move = &"HARDEN"
+
+[sub_resource type="Resource" id="Resource_orl2o"]
+script = ExtResource("2_bsnd7")
+level = 5
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_memmm"]
+script = ExtResource("2_bsnd7")
+level = 10
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_jf344"]
+script = ExtResource("2_bsnd7")
+level = 15
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_hla1x"]
+script = ExtResource("2_bsnd7")
+level = 20
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_sc5l6"]
+script = ExtResource("2_bsnd7")
+level = 25
+move = &"MUDSHOT"
+
+[sub_resource type="Resource" id="Resource_5uioe"]
+script = ExtResource("2_bsnd7")
+level = 30
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_p46vh"]
+script = ExtResource("2_bsnd7")
+level = 35
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_mxlun"]
+script = ExtResource("2_bsnd7")
+level = 41
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_a73ux"]
+script = ExtResource("2_bsnd7")
+level = 45
+move = &"LEECHLIFE"
+
+[sub_resource type="Resource" id="Resource_70ps5"]
+script = ExtResource("2_bsnd7")
+level = 50
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_iphsc"]
+script = ExtResource("2_bsnd7")
+level = 55
+move = &"METALSOUND"
+
+[sub_resource type="Resource" id="Resource_55j6t"]
+script = ExtResource("2_bsnd7")
+level = 60
+move = &"STONEEDGE"
+
+[resource]
+resource_name = "KABUTO"
+script = ExtResource("3_ni2i8")
+species = &"KABUTO"
+category = "Shellfish"
+pokedex_entry = "This Pokémon has been regenerated from a fossil. However, in rare cases, living examples have been discovered. Kabuto have not changed for 300 million years."
+types = Array[StringName]([&"ROCK", &"WATER"])
+base_hp = 30
+base_attack = 80
+base_defense = 90
+base_special_attack = 55
+base_special_defense = 45
+base_speed = 55
+ev_defense = 1
+base_exp = 71
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bsnd7")]([SubResource("Resource_v7dgp"), SubResource("Resource_lsnje"), SubResource("Resource_orl2o"), SubResource("Resource_memmm"), SubResource("Resource_jf344"), SubResource("Resource_hla1x"), SubResource("Resource_sc5l6"), SubResource("Resource_5uioe"), SubResource("Resource_p46vh"), SubResource("Resource_mxlun"), SubResource("Resource_a73ux"), SubResource("Resource_70ps5"), SubResource("Resource_iphsc"), SubResource("Resource_55j6t")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ANCIENTPOWER", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGADRAIN", &"HAIL", &"HIDDENPOWER", &"HONECLAWS", &"HYDROPUMP", &"ICEBEAM", &"ICYWIND", &"IRONDEFENSE", &"KNOCKOFF", &"LEECHLIFE", &"LIQUIDATION", &"METEORBEAM", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCALD", &"SCREECH", &"SECRETPOWER", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STONEEDGE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"THIEF", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+egg_moves = Array[StringName]([&"AURORABEAM", &"BUBBLEBEAM", &"CONFUSERAY", &"FLAIL", &"ICYWIND", &"KNOCKOFF", &"MEGADRAIN", &"MUDSHOT", &"RAPIDSPIN", &"SCREECH", &"TAKEDOWN"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"BATTLEARMOR"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+egg_groups = Array[StringName]([&"Water1", &"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_ijadx")]([SubResource("Resource_k6qma")])
+height = 5
+weight = 115
+color = &"Brown"
+shape = &"Insectoid"
+habitat = &"Sea"
+generation = 1
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 28)
+shadow_size = 1
+id = &"KABUTO"
+display_name = "Kabuto"

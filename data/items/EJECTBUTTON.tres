@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_usnp0"]
+
+[resource]
+resource_name = "EJECTBUTTON"
+script = ExtResource("1_usnp0")
+name_plural = "Eject Buttons"
+price = 3000
+sell_price = 2000
+bp_price = 20
+description = "If the holder is hit by an attack, it will switch with another Pokémon in your party."
+id = &"EJECTBUTTON"
+display_name = "Eject Button"
+flags = Array[StringName]([&"Fling_30"])

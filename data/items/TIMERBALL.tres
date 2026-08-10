@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_kgyck"]
+
+[resource]
+resource_name = "TIMERBALL"
+script = ExtResource("1_kgyck")
+name_plural = "Timer Balls"
+pocket = 3
+price = 1000
+sell_price = 500
+battle_use = 4
+description = "A somewhat different Ball that becomes progressively better the more turns there are in a battle."
+id = &"TIMERBALL"
+display_name = "Timer Ball"
+flags = Array[StringName]([&"PokeBall"])

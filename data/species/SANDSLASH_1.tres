@@ -1,0 +1,81 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_p7c5b"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_1fceh"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ag8p6"]
+
+[sub_resource type="Resource" id="Resource_agq7w"]
+script = ExtResource("1_p7c5b")
+species = &"SANDSHREW"
+method = &"Item"
+parameter = "ICESTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_j72t6"]
+script = ExtResource("2_1fceh")
+level = 0
+move = &"ICICLESPEAR"
+
+[sub_resource type="Resource" id="Resource_bnhdr"]
+script = ExtResource("2_1fceh")
+move = &"METALBURST"
+
+[sub_resource type="Resource" id="Resource_h6rxn"]
+script = ExtResource("2_1fceh")
+move = &"ICICLECRASH"
+
+[sub_resource type="Resource" id="Resource_j1qdn"]
+script = ExtResource("2_1fceh")
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_2mv42"]
+script = ExtResource("2_1fceh")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_od36u"]
+script = ExtResource("2_1fceh")
+move = &"ICEBALL"
+
+[sub_resource type="Resource" id="Resource_igde4"]
+script = ExtResource("2_1fceh")
+move = &"METALCLAW"
+
+[resource]
+resource_name = "SANDSLASH_1"
+script = ExtResource("3_ag8p6")
+species = &"SANDSLASH"
+form = 1
+form_name = "Alolan"
+category = "Mouse"
+pokedex_entry = "It runs across snow-covered plains at high speeds. It developed thick, sharp claws to plow through the snow."
+pokedex_form = 1
+types = Array[StringName]([&"ICE", &"STEEL"])
+base_hp = 75
+base_attack = 100
+base_defense = 120
+base_special_attack = 25
+base_special_defense = 65
+base_speed = 65
+ev_defense = 2
+base_exp = 158
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_1fceh")]([SubResource("Resource_j72t6"), SubResource("Resource_bnhdr"), SubResource("Resource_h6rxn"), SubResource("Resource_j1qdn"), SubResource("Resource_2mv42"), SubResource("Resource_od36u"), SubResource("Resource_igde4")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AMNESIA", &"AQUATAIL", &"ATTRACT", &"AURORAVEIL", &"AVALANCHE", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"DRILLRUN", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FROSTBREATH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GYROBALL", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"ICEPUNCH", &"ICYWIND", &"IRONDEFENSE", &"IRONHEAD", &"IRONTAIL", &"KNOCKOFF", &"LEECHLIFE", &"MIMIC", &"NATURALGIFT", &"PINMISSILE", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SPIKES", &"STEALTHROCK", &"STEELBEAM", &"STEELROLLER", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERFANG", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"THIEF", &"THROATCHOP", &"TRIPLEAXEL", &"WORKUP", &"XSCISSOR"])
+abilities = Array[StringName]([&"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"SLUSHRUSH"])
+wild_item_uncommon = Array[StringName]([&"GRIPCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_p7c5b")]([SubResource("Resource_agq7w")])
+height = 12
+weight = 550
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"RoughTerrain"
+generation = 7
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(0, 24)
+id = &"SANDSLASH_1"
+display_name = "Sandslash"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

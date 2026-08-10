@@ -1,0 +1,154 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_8scb4"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_808tv"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_7h1b5"]
+
+[sub_resource type="Resource" id="Resource_aw2v5"]
+script = ExtResource("1_8scb4")
+species = &"SKIPLOOM"
+method = &"Level"
+parameter = "27"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_b2x1f"]
+script = ExtResource("2_808tv")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_dc823"]
+script = ExtResource("2_808tv")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_tl0id"]
+script = ExtResource("2_808tv")
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_eog6i"]
+script = ExtResource("2_808tv")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_jisec"]
+script = ExtResource("2_808tv")
+level = 4
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_imtkl"]
+script = ExtResource("2_808tv")
+level = 6
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_7h7lo"]
+script = ExtResource("2_808tv")
+level = 8
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_7la45"]
+script = ExtResource("2_808tv")
+level = 10
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_3vngp"]
+script = ExtResource("2_808tv")
+level = 12
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_rb2uh"]
+script = ExtResource("2_808tv")
+level = 14
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_fuvy1"]
+script = ExtResource("2_808tv")
+level = 16
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_y77em"]
+script = ExtResource("2_808tv")
+level = 20
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_lberg"]
+script = ExtResource("2_808tv")
+level = 24
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_h3fra"]
+script = ExtResource("2_808tv")
+level = 29
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_s31we"]
+script = ExtResource("2_808tv")
+level = 34
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_lmbgr"]
+script = ExtResource("2_808tv")
+level = 39
+move = &"RAGEPOWDER"
+
+[sub_resource type="Resource" id="Resource_eaj15"]
+script = ExtResource("2_808tv")
+level = 44
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_2xc24"]
+script = ExtResource("2_808tv")
+level = 49
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_2w6ow"]
+script = ExtResource("2_808tv")
+level = 54
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_vo7rl"]
+script = ExtResource("2_808tv")
+level = 59
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_7vdas"]
+script = ExtResource("2_808tv")
+level = 64
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_kbnhb"]
+script = ExtResource("2_808tv")
+level = 69
+move = &"MEMENTO"
+
+[resource]
+resource_name = "JUMPLUFF"
+script = ExtResource("3_7h1b5")
+species = &"JUMPLUFF"
+category = "Cottonweed"
+pokedex_entry = "Jumpluff ride warm southern winds to cross the sea and fly to foreign lands. This Pokémon lands when it encounters cold air while it is floating."
+types = Array[StringName]([&"GRASS", &"FLYING"])
+base_hp = 75
+base_attack = 55
+base_defense = 70
+base_special_attack = 55
+base_special_defense = 95
+base_speed = 110
+ev_speed = 3
+base_exp = 230
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_808tv")]([SubResource("Resource_b2x1f"), SubResource("Resource_dc823"), SubResource("Resource_tl0id"), SubResource("Resource_eog6i"), SubResource("Resource_jisec"), SubResource("Resource_imtkl"), SubResource("Resource_7h7lo"), SubResource("Resource_7la45"), SubResource("Resource_3vngp"), SubResource("Resource_rb2uh"), SubResource("Resource_fuvy1"), SubResource("Resource_y77em"), SubResource("Resource_lberg"), SubResource("Resource_h3fra"), SubResource("Resource_s31we"), SubResource("Resource_lmbgr"), SubResource("Resource_eaj15"), SubResource("Resource_2xc24"), SubResource("Resource_2w6ow"), SubResource("Resource_vo7rl"), SubResource("Resource_7vdas"), SubResource("Resource_kbnhb")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BOUNCE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"UTURN", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"LEAFGUARD"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Fairy", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_8scb4")]([SubResource("Resource_aw2v5")])
+height = 8
+weight = 30
+color = &"Blue"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 12)
+id = &"JUMPLUFF"
+display_name = "Jumpluff"

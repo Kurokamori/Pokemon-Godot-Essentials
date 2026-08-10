@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_nv6tj"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ic67y"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_eqxrf"]
+
+[sub_resource type="Resource" id="Resource_esw3m"]
+script = ExtResource("1_nv6tj")
+species = &"MAKUHITA"
+method = &"Level"
+parameter = "24"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_helhf"]
+script = ExtResource("2_ic67y")
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_fatwx"]
+script = ExtResource("2_ic67y")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_xitss"]
+script = ExtResource("2_ic67y")
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_pl46w"]
+script = ExtResource("2_ic67y")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_62bb5"]
+script = ExtResource("2_ic67y")
+move = &"ARMTHRUST"
+
+[sub_resource type="Resource" id="Resource_8guo7"]
+script = ExtResource("2_ic67y")
+level = 4
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_mph5b"]
+script = ExtResource("2_ic67y")
+level = 7
+move = &"ARMTHRUST"
+
+[sub_resource type="Resource" id="Resource_scxxs"]
+script = ExtResource("2_ic67y")
+level = 10
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_glchr"]
+script = ExtResource("2_ic67y")
+level = 13
+move = &"FORCEPALM"
+
+[sub_resource type="Resource" id="Resource_4cvod"]
+script = ExtResource("2_ic67y")
+level = 16
+move = &"WHIRLWIND"
+
+[sub_resource type="Resource" id="Resource_klbuy"]
+script = ExtResource("2_ic67y")
+level = 19
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_qslgq"]
+script = ExtResource("2_ic67y")
+level = 22
+move = &"VITALTHROW"
+
+[sub_resource type="Resource" id="Resource_b8qla"]
+script = ExtResource("2_ic67y")
+level = 26
+move = &"BELLYDRUM"
+
+[sub_resource type="Resource" id="Resource_du7bh"]
+script = ExtResource("2_ic67y")
+level = 30
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_1bcrd"]
+script = ExtResource("2_ic67y")
+level = 34
+move = &"SEISMICTOSS"
+
+[sub_resource type="Resource" id="Resource_yll7v"]
+script = ExtResource("2_ic67y")
+level = 38
+move = &"FOCUSPUNCH"
+
+[sub_resource type="Resource" id="Resource_38vvw"]
+script = ExtResource("2_ic67y")
+level = 42
+move = &"ENDURE"
+
+[sub_resource type="Resource" id="Resource_fq1xc"]
+script = ExtResource("2_ic67y")
+level = 46
+move = &"CLOSECOMBAT"
+
+[sub_resource type="Resource" id="Resource_v517n"]
+script = ExtResource("2_ic67y")
+level = 50
+move = &"REVERSAL"
+
+[sub_resource type="Resource" id="Resource_w8sa7"]
+script = ExtResource("2_ic67y")
+level = 54
+move = &"HEAVYSLAM"
+
+[resource]
+resource_name = "HARIYAMA"
+script = ExtResource("3_eqxrf")
+species = &"HARIYAMA"
+category = "Arm Thrust"
+pokedex_entry = "It has the habit of challenging others without hesitation to tests of strength. It's been known to stand on train tracks and stop trains using forearm thrusts."
+types = Array[StringName]([&"FIGHTING"])
+base_hp = 144
+base_attack = 120
+base_defense = 60
+base_special_attack = 40
+base_special_defense = 60
+base_speed = 50
+ev_hp = 2
+base_exp = 166
+growth_rate = &"Fluctuating"
+gender_ratio = &"Female25Percent"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ic67y")]([SubResource("Resource_helhf"), SubResource("Resource_fatwx"), SubResource("Resource_xitss"), SubResource("Resource_pl46w"), SubResource("Resource_62bb5"), SubResource("Resource_8guo7"), SubResource("Resource_mph5b"), SubResource("Resource_scxxs"), SubResource("Resource_glchr"), SubResource("Resource_4cvod"), SubResource("Resource_klbuy"), SubResource("Resource_qslgq"), SubResource("Resource_b8qla"), SubResource("Resource_du7bh"), SubResource("Resource_1bcrd"), SubResource("Resource_yll7v"), SubResource("Resource_38vvw"), SubResource("Resource_fq1xc"), SubResource("Resource_v517n"), SubResource("Resource_w8sa7")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"BRINE", &"BULKUP", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"ICEPUNCH", &"IRONHEAD", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SURF", &"SWAGGER", &"THROATCHOP", &"THUNDERPUNCH", &"VACUUMWAVE", &"WHIRLPOOL", &"WORKUP"])
+abilities = Array[StringName]([&"THICKFAT", &"GUTS"])
+hidden_abilities = Array[StringName]([&"SHEERFORCE"])
+wild_item_uncommon = Array[StringName]([&"KINGSROCK"])
+egg_groups = Array[StringName]([&"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_nv6tj")]([SubResource("Resource_esw3m")])
+height = 23
+weight = 2538
+color = &"Brown"
+shape = &"Bipedal"
+habitat = &"Mountain"
+generation = 3
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 18)
+shadow_size = 3
+id = &"HARIYAMA"
+display_name = "Hariyama"

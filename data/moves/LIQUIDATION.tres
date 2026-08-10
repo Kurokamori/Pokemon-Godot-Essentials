@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_qdsfu"]
+
+[resource]
+resource_name = "LIQUIDATION"
+script = ExtResource("1_qdsfu")
+type = &"WATER"
+category = 0
+power = 85
+total_pp = 10
+function_code = &"LowerTargetDefense1"
+effect_chance = 20
+description = "The user slams into the target using a full-force blast of water. May lower the target's Defense."
+id = &"LIQUIDATION"
+display_name = "Liquidation"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

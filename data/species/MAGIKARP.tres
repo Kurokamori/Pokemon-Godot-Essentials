@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_be1am"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_av67e"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_x71w7"]
+
+[sub_resource type="Resource" id="Resource_ukeqt"]
+script = ExtResource("1_be1am")
+species = &"GYARADOS"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_b50ys"]
+script = ExtResource("2_av67e")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_tgslg"]
+script = ExtResource("2_av67e")
+level = 15
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_o3g86"]
+script = ExtResource("2_av67e")
+level = 25
+move = &"FLAIL"
+
+[resource]
+resource_name = "MAGIKARP"
+script = ExtResource("3_x71w7")
+species = &"MAGIKARP"
+category = "Fish"
+pokedex_entry = "Its swimming muscles are weak, so it is easily washed away by currents. In places where water pools, you can see many Magikarp deposited there by the flow."
+types = Array[StringName]([&"WATER"])
+base_hp = 20
+base_attack = 10
+base_defense = 55
+base_special_attack = 15
+base_special_defense = 20
+base_speed = 80
+ev_speed = 1
+base_exp = 40
+growth_rate = &"Slow"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_av67e")]([SubResource("Resource_b50ys"), SubResource("Resource_tgslg"), SubResource("Resource_o3g86")])
+tutor_moves = Array[StringName]([&"BOUNCE", &"HYDROPUMP"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"RATTLED"])
+egg_groups = Array[StringName]([&"Water2", &"Dragon"])
+hatch_steps = 1280
+evolutions = Array[ExtResource("1_be1am")]([SubResource("Resource_ukeqt")])
+height = 9
+weight = 100
+shape = &"Finned"
+habitat = &"WatersEdge"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 20)
+shadow_size = 1
+id = &"MAGIKARP"
+display_name = "Magikarp"

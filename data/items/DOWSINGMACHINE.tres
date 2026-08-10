@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_xm8ls"]
+
+[resource]
+resource_name = "DOWSINGMACHINE"
+script = ExtResource("1_xm8ls")
+name_plural = "Dowsing Machines"
+pocket = 8
+field_use = 2
+consumable = false
+show_quantity = false
+description = "It checks for unseen items in the area and makes noise and lights when it finds something."
+id = &"DOWSINGMACHINE"
+display_name = "Dowsing Machine"
+flags = Array[StringName]([&"KeyItem"])

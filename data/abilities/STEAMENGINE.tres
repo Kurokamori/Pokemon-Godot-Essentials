@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_xb8wg"]
+
+[resource]
+resource_name = "STEAMENGINE"
+script = ExtResource("1_xb8wg")
+description = "Boosts Speed drastically if hit by a Fire or Water move."
+id = &"STEAMENGINE"
+display_name = "Steam Engine"
+flags = Array[StringName]([&"FasterEggHatching"])

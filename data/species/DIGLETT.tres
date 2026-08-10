@@ -1,0 +1,111 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_uqqtl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dv6tb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_fj7hq"]
+
+[sub_resource type="Resource" id="Resource_0wynq"]
+script = ExtResource("1_uqqtl")
+species = &"DUGTRIO"
+method = &"Level"
+parameter = "26"
+
+[sub_resource type="Resource" id="Resource_oni36"]
+script = ExtResource("2_dv6tb")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_pw633"]
+script = ExtResource("2_dv6tb")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_cj5xi"]
+script = ExtResource("2_dv6tb")
+level = 4
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_5o8d3"]
+script = ExtResource("2_dv6tb")
+level = 8
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_a26kc"]
+script = ExtResource("2_dv6tb")
+level = 12
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_1jp1y"]
+script = ExtResource("2_dv6tb")
+level = 16
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_b72gu"]
+script = ExtResource("2_dv6tb")
+level = 20
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_p150y"]
+script = ExtResource("2_dv6tb")
+level = 24
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_cec76"]
+script = ExtResource("2_dv6tb")
+level = 28
+move = &"SANDSTORM"
+
+[sub_resource type="Resource" id="Resource_6vnac"]
+script = ExtResource("2_dv6tb")
+level = 32
+move = &"DIG"
+
+[sub_resource type="Resource" id="Resource_12e0o"]
+script = ExtResource("2_dv6tb")
+level = 36
+move = &"EARTHPOWER"
+
+[sub_resource type="Resource" id="Resource_526ap"]
+script = ExtResource("2_dv6tb")
+level = 40
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_kmqdv"]
+script = ExtResource("2_dv6tb")
+level = 44
+move = &"FISSURE"
+
+[resource]
+resource_name = "DIGLETT"
+script = ExtResource("3_fj7hq")
+species = &"DIGLETT"
+category = "Mole"
+pokedex_entry = "Diglett are raised in most farms. The reason is simple--wherever they burrow, the soil is left perfectly tilled for growing delicious crops."
+types = Array[StringName]([&"GROUND"])
+base_hp = 10
+base_attack = 55
+base_defense = 25
+base_special_attack = 35
+base_special_defense = 45
+base_speed = 95
+ev_speed = 1
+base_exp = 53
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dv6tb")]([SubResource("Resource_oni36"), SubResource("Resource_pw633"), SubResource("Resource_cj5xi"), SubResource("Resource_5o8d3"), SubResource("Resource_a26kc"), SubResource("Resource_1jp1y"), SubResource("Resource_b72gu"), SubResource("Resource_p150y"), SubResource("Resource_cec76"), SubResource("Resource_6vnac"), SubResource("Resource_12e0o"), SubResource("Resource_526ap"), SubResource("Resource_kmqdv")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"ASSURANCE", &"ATTRACT", &"BEATUP", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HIDDENPOWER", &"HONECLAWS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"REST", &"RETURN", &"REVERSAL", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SCORCHINGSANDS", &"SCREECH", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SLUDGEBOMB", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"THIEF", &"UPROAR", &"WORKUP"])
+egg_moves = Array[StringName]([&"ANCIENTPOWER", &"ASTONISH", &"BEATUP", &"FINALGAMBIT", &"HEADBUTT", &"HONECLAWS", &"MEMENTO", &"REVERSAL", &"SCREECH", &"UPROAR"])
+abilities = Array[StringName]([&"SANDVEIL", &"ARENATRAP"])
+hidden_abilities = Array[StringName]([&"SANDFORCE"])
+wild_item_uncommon = Array[StringName]([&"SOFTSAND"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_uqqtl")]([SubResource("Resource_0wynq")])
+height = 2
+weight = 8
+color = &"Brown"
+shape = &"HeadBase"
+habitat = &"Cave"
+generation = 1
+back_sprite_offset = Vector2i(0, 56)
+front_sprite_offset = Vector2i(-1, 38)
+shadow_size = 1
+id = &"DIGLETT"
+display_name = "Diglett"

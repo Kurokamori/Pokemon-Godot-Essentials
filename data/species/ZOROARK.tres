@@ -1,0 +1,122 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_gd3ty"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ii7vq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dojm4"]
+
+[sub_resource type="Resource" id="Resource_8s5w7"]
+script = ExtResource("1_gd3ty")
+species = &"ZORUA"
+method = &"Level"
+parameter = "30"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_lharn"]
+script = ExtResource("2_ii7vq")
+level = 0
+move = &"NIGHTSLASH"
+
+[sub_resource type="Resource" id="Resource_m8wyb"]
+script = ExtResource("2_ii7vq")
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_t5bre"]
+script = ExtResource("2_ii7vq")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_2qxmx"]
+script = ExtResource("2_ii7vq")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_6x4df"]
+script = ExtResource("2_ii7vq")
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_p7v0x"]
+script = ExtResource("2_ii7vq")
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_0ej0d"]
+script = ExtResource("2_ii7vq")
+level = 12
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_7rqp8"]
+script = ExtResource("2_ii7vq")
+level = 16
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_woqwe"]
+script = ExtResource("2_ii7vq")
+level = 20
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_f6bsn"]
+script = ExtResource("2_ii7vq")
+level = 24
+move = &"KNOCKOFF"
+
+[sub_resource type="Resource" id="Resource_sphg0"]
+script = ExtResource("2_ii7vq")
+level = 28
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_46mno"]
+script = ExtResource("2_ii7vq")
+level = 34
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_7o8gs"]
+script = ExtResource("2_ii7vq")
+level = 40
+move = &"IMPRISON"
+
+[sub_resource type="Resource" id="Resource_mog0f"]
+script = ExtResource("2_ii7vq")
+level = 46
+move = &"NIGHTDAZE"
+
+[sub_resource type="Resource" id="Resource_ebsm2"]
+script = ExtResource("2_ii7vq")
+level = 52
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_r31dh"]
+script = ExtResource("2_ii7vq")
+level = 58
+move = &"FOULPLAY"
+
+[resource]
+resource_name = "ZOROARK"
+script = ExtResource("3_dojm4")
+species = &"ZOROARK"
+category = "Illusion Fox"
+pokedex_entry = "Each has the ability to fool a large group of people simultaneously. They protect their lair with illusory scenery."
+types = Array[StringName]([&"DARK"])
+base_hp = 60
+base_attack = 105
+base_defense = 60
+base_special_attack = 120
+base_special_defense = 60
+base_speed = 105
+ev_special_attack = 2
+base_exp = 179
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ii7vq")]([SubResource("Resource_lharn"), SubResource("Resource_m8wyb"), SubResource("Resource_t5bre"), SubResource("Resource_2qxmx"), SubResource("Resource_6x4df"), SubResource("Resource_p7v0x"), SubResource("Resource_0ej0d"), SubResource("Resource_7rqp8"), SubResource("Resource_woqwe"), SubResource("Resource_f6bsn"), SubResource("Resource_sphg0"), SubResource("Resource_46mno"), SubResource("Resource_7o8gs"), SubResource("Resource_mog0f"), SubResource("Resource_ebsm2"), SubResource("Resource_r31dh")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"BOUNCE", &"BURNINGJEALOUSY", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DARKPULSE", &"DIG", &"DOUBLETEAM", &"EMBARGO", &"ENCORE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOULPLAY", &"FRUSTRATION", &"GIGAIMPACT", &"GRASSKNOT", &"HEX", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"HYPERVOICE", &"IMPRISON", &"INCINERATE", &"KNOCKOFF", &"LASERFOCUS", &"LASHOUT", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROAR", &"ROCKSMASH", &"ROUND", &"SCARYFACE", &"SECRETPOWER", &"SHADOWBALL", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SLUDGEBOMB", &"SNARL", &"SNATCH", &"SNORE", &"SPITE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"TORMENT", &"TOXIC", &"TRICK", &"UPROAR", &"UTURN"])
+abilities = Array[StringName]([&"ILLUSION"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_gd3ty")]([SubResource("Resource_8s5w7")])
+height = 16
+weight = 811
+color = &"Gray"
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 47)
+front_sprite_offset = Vector2i(1, 19)
+id = &"ZOROARK"
+display_name = "Zoroark"

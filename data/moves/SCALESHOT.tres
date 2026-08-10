@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_6avdi"]
+
+[resource]
+resource_name = "SCALESHOT"
+script = ExtResource("1_6avdi")
+type = &"DRAGON"
+category = 0
+power = 25
+accuracy = 90
+total_pp = 20
+function_code = &"HitTwoToFiveTimesRaiseUserSpd1LowerUserDef1"
+description = "Attacks by shooting scales two to five times in a row. Boosts the user's Speed but lowers its Defense."
+id = &"SCALESHOT"
+display_name = "Scale Shot"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

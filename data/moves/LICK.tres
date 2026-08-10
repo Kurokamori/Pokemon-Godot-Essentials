@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_h2lnq"]
+
+[resource]
+resource_name = "LICK"
+script = ExtResource("1_h2lnq")
+type = &"GHOST"
+category = 0
+power = 30
+total_pp = 30
+function_code = &"ParalyzeTarget"
+effect_chance = 30
+description = "The target is licked with a long tongue, causing damage. It may also leave the target with paralysis."
+id = &"LICK"
+display_name = "Lick"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,128 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_ysomr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_dnntq"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ow2ux"]
+
+[sub_resource type="Resource" id="Resource_sm1jf"]
+script = ExtResource("1_ysomr")
+species = &"QUILAVA"
+method = &"Level"
+parameter = "14"
+
+[sub_resource type="Resource" id="Resource_k6m8w"]
+script = ExtResource("2_dnntq")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_d48fi"]
+script = ExtResource("2_dnntq")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_kcylo"]
+script = ExtResource("2_dnntq")
+level = 6
+move = &"SMOKESCREEN"
+
+[sub_resource type="Resource" id="Resource_ge5v7"]
+script = ExtResource("2_dnntq")
+level = 10
+move = &"EMBER"
+
+[sub_resource type="Resource" id="Resource_qe2un"]
+script = ExtResource("2_dnntq")
+level = 13
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_fu2fv"]
+script = ExtResource("2_dnntq")
+level = 19
+move = &"FLAMEWHEEL"
+
+[sub_resource type="Resource" id="Resource_wfdaq"]
+script = ExtResource("2_dnntq")
+level = 22
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_pt5qg"]
+script = ExtResource("2_dnntq")
+level = 28
+move = &"FLAMECHARGE"
+
+[sub_resource type="Resource" id="Resource_we1f4"]
+script = ExtResource("2_dnntq")
+level = 31
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_2rxli"]
+script = ExtResource("2_dnntq")
+level = 37
+move = &"LAVAPLUME"
+
+[sub_resource type="Resource" id="Resource_eiq2o"]
+script = ExtResource("2_dnntq")
+level = 40
+move = &"FLAMETHROWER"
+
+[sub_resource type="Resource" id="Resource_oiwdx"]
+script = ExtResource("2_dnntq")
+level = 46
+move = &"INFERNO"
+
+[sub_resource type="Resource" id="Resource_g2kqc"]
+script = ExtResource("2_dnntq")
+level = 49
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_42kr6"]
+script = ExtResource("2_dnntq")
+level = 55
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_v7umi"]
+script = ExtResource("2_dnntq")
+level = 58
+move = &"BURNUP"
+
+[sub_resource type="Resource" id="Resource_thkif"]
+script = ExtResource("2_dnntq")
+level = 64
+move = &"ERUPTION"
+
+[resource]
+resource_name = "CYNDAQUIL"
+script = ExtResource("3_ow2ux")
+species = &"CYNDAQUIL"
+category = "Fire Mouse"
+pokedex_entry = "It flares flames from its back to protect itself. The fire burns vigorously if the Pokémon is angry. When it is tired, it sputters with incomplete combustion."
+types = Array[StringName]([&"FIRE"])
+base_hp = 39
+base_attack = 52
+base_defense = 43
+base_special_attack = 60
+base_special_defense = 50
+base_speed = 65
+ev_speed = 1
+base_exp = 62
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_dnntq")]([SubResource("Resource_k6m8w"), SubResource("Resource_d48fi"), SubResource("Resource_kcylo"), SubResource("Resource_ge5v7"), SubResource("Resource_qe2un"), SubResource("Resource_fu2fv"), SubResource("Resource_wfdaq"), SubResource("Resource_pt5qg"), SubResource("Resource_we1f4"), SubResource("Resource_2rxli"), SubResource("Resource_eiq2o"), SubResource("Resource_oiwdx"), SubResource("Resource_g2kqc"), SubResource("Resource_42kr6"), SubResource("Resource_v7umi"), SubResource("Resource_thkif")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FLAMECHARGE", &"FLAMETHROWER", &"FRUSTRATION", &"HEADBUTT", &"HEATWAVE", &"HIDDENPOWER", &"INCINERATE", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"NATUREPOWER", &"OVERHEAT", &"PROTECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"WILDCHARGE", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"COVET", &"CRUSHCLAW", &"DOUBLEEDGE", &"DOUBLEKICK", &"EXTRASENSORY", &"FLAREBLITZ", &"FURYSWIPES", &"HOWL", &"NATUREPOWER", &"QUICKATTACK", &"REVERSAL", &"THRASH"])
+abilities = Array[StringName]([&"BLAZE"])
+hidden_abilities = Array[StringName]([&"FLASHFIRE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_ysomr")]([SubResource("Resource_sm1jf")])
+height = 5
+weight = 79
+color = &"Yellow"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 34)
+shadow_size = 1
+id = &"CYNDAQUIL"
+display_name = "Cyndaquil"

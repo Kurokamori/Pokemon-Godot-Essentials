@@ -25,8 +25,11 @@ folder_colors={
 "res://addons/": "purple",
 "res://assets/": "green",
 "res://data/": "yellow",
+"res://docs/": "gray",
 "res://game/": "orange",
+"res://locale/": "teal",
 "res://scenes/": "blue",
+"res://shaders/": "pink",
 "res://src/": "red"
 }
 

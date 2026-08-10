@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_eqpyd"]
+
+[resource]
+resource_name = "WATERGEM"
+script = ExtResource("1_eqpyd")
+name_plural = "Water Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of water. When held, it strengthens the power of a Water-type move only once."
+id = &"WATERGEM"
+display_name = "Water Gem"
+flags = Array[StringName]([&"TypeGem"])

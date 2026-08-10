@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DungeonTilesetData" format=3]
+
+[ext_resource type="Script" path="res://src/data/dungeon_tileset_data.gd" id="1_asfg7"]
+
+[resource]
+resource_name = "23"
+script = ExtResource("1_asfg7")
+tileset_id = 23
+snap_to_large_grid = true
+large_void_tiles = true
+large_wall_tiles = true
+double_walls = false
+floor_patch_under_walls = false
+thin_north_wall_offset = -8
+tile_type_ids = {
+&"floor": [[426.0, false], [427.0, false], [428.0, false], [429.0, false], [430.0, false]],
+&"floor_decoration": [[48.0, false]],
+&"floor_patch": [[431.0, false]],
+&"void": [[424.0, false]],
+&"wall_1": [[416.0, true]],
+&"wall_2": [[417.0, true]],
+&"wall_3": [[419.0, true]],
+&"wall_4": [[400.0, true]],
+&"wall_6": [[403.0, true]],
+&"wall_7": [[392.0, true]],
+&"wall_8": [[393.0, true]],
+&"wall_9": [[395.0, true]],
+&"wall_in_1": [[397.0, true]],
+&"wall_in_3": [[396.0, true]],
+&"wall_in_7": [[405.0, true]],
+&"wall_in_9": [[404.0, true]],
+&"wall_top": [[409.0, false]],
+&"walls": [[392.0, false]]
+}
+id = &"23"
+display_name = "Tileset 23"

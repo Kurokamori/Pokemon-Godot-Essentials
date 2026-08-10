@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_n3ulx"]
+
+[resource]
+resource_name = "AROMAVEIL"
+script = ExtResource("1_n3ulx")
+description = "Protects against attacks that limit move choices."
+id = &"AROMAVEIL"
+display_name = "Aroma Veil"

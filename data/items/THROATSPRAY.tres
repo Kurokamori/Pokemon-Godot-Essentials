@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_sf4l0"]
+
+[resource]
+resource_name = "THROATSPRAY"
+script = ExtResource("1_sf4l0")
+name_plural = "Throat Sprays"
+portion_name = "bottle of Throat Spray"
+portion_name_plural = "bottles of Throat Spray"
+price = 4000
+sell_price = 2000
+bp_price = 10
+description = "Raises Sp. Atk when a Pokémon uses a sound-based move."
+id = &"THROATSPRAY"
+display_name = "Throat Spray"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_c748f"]
+
+[resource]
+resource_name = "DEFIANT"
+script = ExtResource("1_c748f")
+description = "When its stats are lowered its Attack increases."
+id = &"DEFIANT"
+display_name = "Defiant"

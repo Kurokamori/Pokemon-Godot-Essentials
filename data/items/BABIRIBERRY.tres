@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_0j64k"]
+
+[resource]
+resource_name = "BABIRIBERRY"
+script = ExtResource("1_0j64k")
+name_plural = "Babiri Berries"
+pocket = 5
+price = 20
+sell_price = 10
+description = "Weakens a supereffective Steel-type attack against the holding Pokémon."
+id = &"BABIRIBERRY"
+display_name = "Babiri Berry"
+flags = Array[StringName]([&"Berry", &"Fling_10", &"NaturalGift_STEEL_80"])

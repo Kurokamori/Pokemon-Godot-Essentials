@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xtmt0"]
+
+[resource]
+resource_name = "BUGBITE"
+script = ExtResource("1_xtmt0")
+type = &"BUG"
+category = 0
+power = 60
+total_pp = 20
+function_code = &"UserConsumeTargetBerry"
+description = "The user bites the target. If the target is holding a Berry, the user eats it and gains its effect."
+id = &"BUGBITE"
+display_name = "Bug Bite"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

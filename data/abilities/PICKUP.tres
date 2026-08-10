@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_yll5n"]
+
+[resource]
+resource_name = "PICKUP"
+script = ExtResource("1_yll5n")
+description = "The Pokémon may pick up items."
+id = &"PICKUP"
+display_name = "Pickup"

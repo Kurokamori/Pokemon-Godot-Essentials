@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="PlayerMetadataData" format=3]
+
+[ext_resource type="Script" path="res://src/data/player_metadata_data.gd" id="1_oulbc"]
+
+[resource]
+resource_name = "1"
+script = ExtResource("1_oulbc")
+trainer_type = &"POKEMONTRAINER_Red"
+character_name = "Boy"
+gender = 0
+intro_picture = "introBoy"
+suggested_names = Array[String](["Red", "Ash", "Jack", "Ethan", "Brendan"])
+walk_charset = "trainer_POKEMONTRAINER_Red"
+run_charset = "boy_run"
+cycle_charset = "boy_bike"
+surf_charset = "boy_surf"
+dive_charset = "boy_surf"
+fish_charset = "boy_fish_offset"
+surf_fish_charset = "boy_fish_offset"
+id = &"1"
+display_name = "Player 1"

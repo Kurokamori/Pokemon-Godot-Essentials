@@ -1,0 +1,102 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fiflt"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ec2bg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ahpkg"]
+
+[sub_resource type="Resource" id="Resource_5esqx"]
+script = ExtResource("2_ec2bg")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_e6c6x"]
+script = ExtResource("2_ec2bg")
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_73kb1"]
+script = ExtResource("2_ec2bg")
+level = 7
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_iag4k"]
+script = ExtResource("2_ec2bg")
+level = 14
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_x6pro"]
+script = ExtResource("2_ec2bg")
+level = 21
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_l0623"]
+script = ExtResource("2_ec2bg")
+level = 28
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_ixxwa"]
+script = ExtResource("2_ec2bg")
+level = 35
+move = &"DRAGONTAIL"
+
+[sub_resource type="Resource" id="Resource_wci6y"]
+script = ExtResource("2_ec2bg")
+level = 42
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_8jiqv"]
+script = ExtResource("2_ec2bg")
+level = 49
+move = &"SLAM"
+
+[sub_resource type="Resource" id="Resource_w7mc3"]
+script = ExtResource("2_ec2bg")
+level = 56
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_5p44p"]
+script = ExtResource("2_ec2bg")
+level = 63
+move = &"BOLTBEAK"
+
+[sub_resource type="Resource" id="Resource_tpoxv"]
+script = ExtResource("2_ec2bg")
+level = 70
+move = &"DRAGONPULSE"
+
+[sub_resource type="Resource" id="Resource_6dkmj"]
+script = ExtResource("2_ec2bg")
+level = 77
+move = &"DRAGONRUSH"
+
+[resource]
+resource_name = "DRACOZOLT"
+script = ExtResource("3_ahpkg")
+species = &"DRACOZOLT"
+category = "Fossil"
+pokedex_entry = "In ancient times, it was unbeatable thanks to its powerful lower body, but it went extinct anyway after it depleted all its plant-based food sources."
+types = Array[StringName]([&"ELECTRIC", &"DRAGON"])
+base_hp = 90
+base_attack = 100
+base_defense = 90
+base_special_attack = 80
+base_special_defense = 70
+base_speed = 75
+ev_attack = 2
+base_exp = 177
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ec2bg")]([SubResource("Resource_5esqx"), SubResource("Resource_e6c6x"), SubResource("Resource_73kb1"), SubResource("Resource_iag4k"), SubResource("Resource_x6pro"), SubResource("Resource_l0623"), SubResource("Resource_ixxwa"), SubResource("Resource_wci6y"), SubResource("Resource_8jiqv"), SubResource("Resource_w7mc3"), SubResource("Resource_5p44p"), SubResource("Resource_tpoxv"), SubResource("Resource_6dkmj")])
+tutor_moves = Array[StringName]([&"BODYSLAM", &"BREAKINGSWIPE", &"BRUTALSWING", &"BULLDOZE", &"CONFIDE", &"DOUBLETEAM", &"DRACOMETEOR", &"DRAGONCLAW", &"DRAGONPULSE", &"EARTHPOWER", &"EARTHQUAKE", &"ELECTROBALL", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FIRESPIN", &"FLAMETHROWER", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"HYPERBEAM", &"IRONTAIL", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"OUTRAGE", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"RISINGVOLTAGE", &"ROCKBLAST", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STOMPINGTANTRUM", &"STONEEDGE", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"THUNDERPUNCH", &"THUNDERWAVE", &"TOXIC", &"WILDCHARGE"])
+abilities = Array[StringName]([&"VOLTABSORB", &"HUSTLE"])
+hidden_abilities = Array[StringName]([&"SANDRUSH"])
+hatch_steps = 8960
+height = 18
+weight = 1900
+color = &"Green"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(4, 16)
+id = &"DRACOZOLT"
+display_name = "Dracozolt"

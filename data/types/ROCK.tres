@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TypeData" format=3]
+
+[ext_resource type="Script" path="res://src/data/type_data.gd" id="1_nfm1k"]
+
+[resource]
+resource_name = "ROCK"
+script = ExtResource("1_nfm1k")
+icon_position = 5
+weaknesses = Array[StringName]([&"FIGHTING", &"GROUND", &"STEEL", &"WATER", &"GRASS"])
+resistances = Array[StringName]([&"NORMAL", &"FLYING", &"POISON", &"FIRE"])
+id = &"ROCK"
+display_name = "Rock"

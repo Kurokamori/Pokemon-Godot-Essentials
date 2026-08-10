@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_r78ia"]
+
+[resource]
+resource_name = "GRIMNEIGH"
+script = ExtResource("1_r78ia")
+description = "When knocking out a target, raises Sp. Atk."
+id = &"GRIMNEIGH"
+display_name = "Grim Neigh"

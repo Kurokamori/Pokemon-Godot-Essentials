@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_nr4eb"]
+
+[resource]
+resource_name = "DRILLRUN"
+script = ExtResource("1_nr4eb")
+type = &"GROUND"
+category = 0
+power = 80
+accuracy = 95
+total_pp = 10
+description = "The user crashes into its target while rotating its body like a drill. Critical hits land more easily."
+id = &"DRILLRUN"
+display_name = "Drill Run"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove", &"HighCriticalHitRate"])

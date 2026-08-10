@@ -1,0 +1,107 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_38lc1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_2qhyb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_c31v6"]
+
+[sub_resource type="Resource" id="Resource_03yxe"]
+script = ExtResource("2_2qhyb")
+move = &"STOREDPOWER"
+
+[sub_resource type="Resource" id="Resource_bbpsh"]
+script = ExtResource("2_2qhyb")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_wwme7"]
+script = ExtResource("2_2qhyb")
+level = 5
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_5cv6x"]
+script = ExtResource("2_2qhyb")
+level = 10
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_nusrj"]
+script = ExtResource("2_2qhyb")
+level = 15
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_otehp"]
+script = ExtResource("2_2qhyb")
+level = 20
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_mgidl"]
+script = ExtResource("2_2qhyb")
+level = 25
+move = &"FOLLOWME"
+
+[sub_resource type="Resource" id="Resource_2raif"]
+script = ExtResource("2_2qhyb")
+level = 30
+move = &"AROMATHERAPY"
+
+[sub_resource type="Resource" id="Resource_7fpev"]
+script = ExtResource("2_2qhyb")
+level = 35
+move = &"PSYCHIC"
+
+[sub_resource type="Resource" id="Resource_wifhe"]
+script = ExtResource("2_2qhyb")
+level = 40
+move = &"CALMMIND"
+
+[sub_resource type="Resource" id="Resource_lpfo1"]
+script = ExtResource("2_2qhyb")
+level = 45
+move = &"GUARDSPLIT"
+
+[sub_resource type="Resource" id="Resource_bap8f"]
+script = ExtResource("2_2qhyb")
+level = 50
+move = &"PSYCHICTERRAIN"
+
+[sub_resource type="Resource" id="Resource_we02e"]
+script = ExtResource("2_2qhyb")
+level = 55
+move = &"HEALINGWISH"
+
+[resource]
+resource_name = "INDEEDEE_1"
+script = ExtResource("3_c31v6")
+species = &"INDEEDEE"
+form = 1
+form_name = "Female"
+category = "Emotion"
+pokedex_entry = "They diligently serve people and Pokémon so they can gather feelings of gratitude. The females are particularly good at babysitting."
+pokedex_form = 1
+types = Array[StringName]([&"PSYCHIC", &"NORMAL"])
+base_hp = 70
+base_attack = 55
+base_defense = 65
+base_special_attack = 95
+base_special_defense = 105
+base_speed = 85
+ev_special_defense = 2
+base_exp = 166
+growth_rate = &"Fast"
+catch_rate = 30
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_2qhyb")]([SubResource("Resource_03yxe"), SubResource("Resource_bbpsh"), SubResource("Resource_wwme7"), SubResource("Resource_5cv6x"), SubResource("Resource_nusrj"), SubResource("Resource_otehp"), SubResource("Resource_mgidl"), SubResource("Resource_2raif"), SubResource("Resource_7fpev"), SubResource("Resource_wifhe"), SubResource("Resource_lpfo1"), SubResource("Resource_bap8f"), SubResource("Resource_we02e")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"BATONPASS", &"CALMMIND", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"ENDURE", &"ENERGYBALL", &"EXPANDINGFORCE", &"FACADE", &"FRUSTRATION", &"FUTURESIGHT", &"GUARDSWAP", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"IMPRISON", &"LIGHTSCREEN", &"MAGICALLEAF", &"METRONOME", &"MIMIC", &"MYSTICALFIRE", &"NATURALGIFT", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHIC", &"PSYCHICTERRAIN", &"PSYSHOCK", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TERRAINPULSE", &"TOXIC", &"TRICK", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"FAKEOUT", &"HEALPULSE", &"PSYCHUP", &"PSYCHOSHIFT"])
+abilities = Array[StringName]([&"OWNTEMPO", &"SYNCHRONIZE"])
+hidden_abilities = Array[StringName]([&"PSYCHICSURGE"])
+egg_groups = Array[StringName]([&"Fairy"])
+hatch_steps = 10240
+height = 9
+weight = 280
+color = &"Purple"
+shape = &"BipedalTail"
+generation = 8
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(-2, 24)
+shadow_size = 1
+id = &"INDEEDEE_1"
+display_name = "Indeedee"

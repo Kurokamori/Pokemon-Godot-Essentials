@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_sii2m"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_502cs"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ktmjm"]
+
+[sub_resource type="Resource" id="Resource_b0ltu"]
+script = ExtResource("1_sii2m")
+species = &"ARROKUDA"
+method = &"Level"
+parameter = "26"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6avwm"]
+script = ExtResource("2_502cs")
+move = &"THROATCHOP"
+
+[sub_resource type="Resource" id="Resource_ieddr"]
+script = ExtResource("2_502cs")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_kqsiq"]
+script = ExtResource("2_502cs")
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_06vo8"]
+script = ExtResource("2_502cs")
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_d5741"]
+script = ExtResource("2_502cs")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_5iqli"]
+script = ExtResource("2_502cs")
+level = 18
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_lkxfm"]
+script = ExtResource("2_502cs")
+level = 24
+move = &"DIVE"
+
+[sub_resource type="Resource" id="Resource_s1bql"]
+script = ExtResource("2_502cs")
+level = 32
+move = &"LASERFOCUS"
+
+[sub_resource type="Resource" id="Resource_ak333"]
+script = ExtResource("2_502cs")
+level = 40
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_nruo8"]
+script = ExtResource("2_502cs")
+level = 48
+move = &"LIQUIDATION"
+
+[sub_resource type="Resource" id="Resource_0yxxa"]
+script = ExtResource("2_502cs")
+level = 56
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "BARRASKEWDA"
+script = ExtResource("3_ktmjm")
+species = &"BARRASKEWDA"
+category = "Skewer"
+pokedex_entry = "This Pokémon has a jaw that's as sharp as a spear and as strong as steel. Apparently Barraskewda's flesh is surprisingly tasty, too."
+types = Array[StringName]([&"WATER"])
+base_hp = 61
+base_attack = 123
+base_defense = 60
+base_special_attack = 60
+base_special_defense = 50
+base_speed = 136
+ev_speed = 2
+base_exp = 172
+growth_rate = &"Slow"
+catch_rate = 60
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_502cs")]([SubResource("Resource_6avwm"), SubResource("Resource_ieddr"), SubResource("Resource_kqsiq"), SubResource("Resource_06vo8"), SubResource("Resource_d5741"), SubResource("Resource_5iqli"), SubResource("Resource_lkxfm"), SubResource("Resource_s1bql"), SubResource("Resource_ak333"), SubResource("Resource_nruo8"), SubResource("Resource_0yxxa")])
+tutor_moves = Array[StringName]([&"AGILITY", &"ASSURANCE", &"ATTRACT", &"BOUNCE", &"BRICKBREAK", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"CRUNCH", &"DIVE", &"DOUBLETEAM", &"DRILLRUN", &"ENDURE", &"FACADE", &"FLIPTURN", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEFANG", &"LIQUIDATION", &"MIMIC", &"NATURALGIFT", &"POISONJAB", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SURF", &"SWAGGER", &"SWIFT", &"THROATCHOP", &"TOXIC", &"WATERFALL", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"SWIFTSWIM"])
+hidden_abilities = Array[StringName]([&"PROPELLERTAIL"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_sii2m")]([SubResource("Resource_b0ltu")])
+height = 13
+weight = 300
+color = &"Brown"
+shape = &"Finned"
+generation = 8
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(0, 20)
+id = &"BARRASKEWDA"
+display_name = "Barraskewda"

@@ -1,0 +1,116 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_61tjd"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_blbr2"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_oal7w"]
+
+[sub_resource type="Resource" id="Resource_hp3o8"]
+script = ExtResource("1_61tjd")
+species = &"RHYDON"
+method = &"Level"
+parameter = "42"
+
+[sub_resource type="Resource" id="Resource_qlf3y"]
+script = ExtResource("2_blbr2")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_rjuxd"]
+script = ExtResource("2_blbr2")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_vwxka"]
+script = ExtResource("2_blbr2")
+level = 5
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_wn4iw"]
+script = ExtResource("2_blbr2")
+level = 10
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_mq01l"]
+script = ExtResource("2_blbr2")
+level = 15
+move = &"HORNATTACK"
+
+[sub_resource type="Resource" id="Resource_0sico"]
+script = ExtResource("2_blbr2")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_djfki"]
+script = ExtResource("2_blbr2")
+level = 25
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_2rk5r"]
+script = ExtResource("2_blbr2")
+level = 30
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_no2p7"]
+script = ExtResource("2_blbr2")
+level = 35
+move = &"DRILLRUN"
+
+[sub_resource type="Resource" id="Resource_okqcl"]
+script = ExtResource("2_blbr2")
+level = 40
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_htusy"]
+script = ExtResource("2_blbr2")
+level = 45
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_erin4"]
+script = ExtResource("2_blbr2")
+level = 50
+move = &"STONEEDGE"
+
+[sub_resource type="Resource" id="Resource_n4fjg"]
+script = ExtResource("2_blbr2")
+level = 55
+move = &"MEGAHORN"
+
+[sub_resource type="Resource" id="Resource_qnynj"]
+script = ExtResource("2_blbr2")
+level = 60
+move = &"HORNDRILL"
+
+[resource]
+resource_name = "RHYHORN"
+script = ExtResource("3_oal7w")
+species = &"RHYHORN"
+category = "Spikes"
+pokedex_entry = "Once it starts running, it doesn't stop. Its tiny brain makes it so stupid that it can't remember why it started running in the first place."
+types = Array[StringName]([&"GROUND", &"ROCK"])
+base_hp = 80
+base_attack = 85
+base_defense = 95
+base_special_attack = 30
+base_special_defense = 30
+base_speed = 25
+ev_defense = 1
+base_exp = 69
+growth_rate = &"Slow"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_blbr2")]([SubResource("Resource_qlf3y"), SubResource("Resource_rjuxd"), SubResource("Resource_vwxka"), SubResource("Resource_wn4iw"), SubResource("Resource_mq01l"), SubResource("Resource_0sico"), SubResource("Resource_djfki"), SubResource("Resource_2rk5r"), SubResource("Resource_no2p7"), SubResource("Resource_okqcl"), SubResource("Resource_htusy"), SubResource("Resource_erin4"), SubResource("Resource_n4fjg"), SubResource("Resource_qnynj")])
+tutor_moves = Array[StringName]([&"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"CRUNCH", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAGONPULSE", &"DRILLRUN", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREFANG", &"FLAMETHROWER", &"FRUSTRATION", &"HEADBUTT", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"ICEBEAM", &"ICEFANG", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"MEGAHORN", &"MIMIC", &"MUDSHOT", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"REVERSAL", &"ROAR", &"ROCKBLAST", &"ROCKCLIMB", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SCORCHINGSANDS", &"SECRETPOWER", &"SHOCKWAVE", &"SLEEPTALK", &"SMACKDOWN", &"SMARTSTRIKE", &"SNORE", &"SPITE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SUPERPOWER", &"SWAGGER", &"SWORDSDANCE", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERFANG", &"UPROAR"])
+egg_moves = Array[StringName]([&"COUNTER", &"CRUNCH", &"CRUSHCLAW", &"CURSE", &"DRAGONRUSH", &"FIREFANG", &"GUARDSPLIT", &"ICEFANG", &"METALBURST", &"REVERSAL", &"ROCKPOLISH", &"SKULLBASH", &"THUNDERFANG"])
+abilities = Array[StringName]([&"LIGHTNINGROD", &"ROCKHEAD"])
+hidden_abilities = Array[StringName]([&"RECKLESS"])
+egg_groups = Array[StringName]([&"Monster", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_61tjd")]([SubResource("Resource_hp3o8")])
+height = 10
+weight = 1150
+color = &"Gray"
+shape = &"Quadruped"
+habitat = &"RoughTerrain"
+generation = 1
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 28)
+id = &"RHYHORN"
+display_name = "Rhyhorn"

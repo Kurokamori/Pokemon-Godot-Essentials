@@ -1,0 +1,143 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_x6in6"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_lely0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gffna"]
+
+[sub_resource type="Resource" id="Resource_oxbrn"]
+script = ExtResource("1_x6in6")
+species = &"SNORUNT"
+method = &"ItemFemale"
+parameter = "DAWNSTONE"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_or1x7"]
+script = ExtResource("2_lely0")
+level = 0
+move = &"HEX"
+
+[sub_resource type="Resource" id="Resource_2jn0i"]
+script = ExtResource("2_lely0")
+move = &"DESTINYBOND"
+
+[sub_resource type="Resource" id="Resource_0nkc0"]
+script = ExtResource("2_lely0")
+move = &"PROTECT"
+
+[sub_resource type="Resource" id="Resource_rg35f"]
+script = ExtResource("2_lely0")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_0hsrb"]
+script = ExtResource("2_lely0")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_vl8t0"]
+script = ExtResource("2_lely0")
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_jce80"]
+script = ExtResource("2_lely0")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_s6420"]
+script = ExtResource("2_lely0")
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_x5p30"]
+script = ExtResource("2_lely0")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_np8yf"]
+script = ExtResource("2_lely0")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_pc5u5"]
+script = ExtResource("2_lely0")
+move = &"DOUBLETEAM"
+
+[sub_resource type="Resource" id="Resource_x67qr"]
+script = ExtResource("2_lely0")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_y4l68"]
+script = ExtResource("2_lely0")
+level = 20
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_ot3gx"]
+script = ExtResource("2_lely0")
+level = 25
+move = &"ICYWIND"
+
+[sub_resource type="Resource" id="Resource_mpkyd"]
+script = ExtResource("2_lely0")
+level = 30
+move = &"FROSTBREATH"
+
+[sub_resource type="Resource" id="Resource_i6e7g"]
+script = ExtResource("2_lely0")
+level = 35
+move = &"CONFUSERAY"
+
+[sub_resource type="Resource" id="Resource_ffnct"]
+script = ExtResource("2_lely0")
+level = 40
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_7bygd"]
+script = ExtResource("2_lely0")
+level = 47
+move = &"WILLOWISP"
+
+[sub_resource type="Resource" id="Resource_a7mtb"]
+script = ExtResource("2_lely0")
+level = 54
+move = &"AURORAVEIL"
+
+[sub_resource type="Resource" id="Resource_u2dqk"]
+script = ExtResource("2_lely0")
+level = 61
+move = &"SHADOWBALL"
+
+[sub_resource type="Resource" id="Resource_stoju"]
+script = ExtResource("2_lely0")
+level = 68
+move = &"BLIZZARD"
+
+[resource]
+resource_name = "FROSLASS"
+script = ExtResource("3_gffna")
+species = &"FROSLASS"
+category = "Snow Land"
+pokedex_entry = "It freezes foes with an icy breath nearly -60 degrees F. What seems to be its body is actually hollow."
+types = Array[StringName]([&"ICE", &"GHOST"])
+base_hp = 70
+base_attack = 80
+base_defense = 70
+base_special_attack = 80
+base_special_defense = 70
+base_speed = 110
+ev_speed = 2
+base_exp = 168
+gender_ratio = &"AlwaysFemale"
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_lely0")]([SubResource("Resource_or1x7"), SubResource("Resource_2jn0i"), SubResource("Resource_0nkc0"), SubResource("Resource_rg35f"), SubResource("Resource_0hsrb"), SubResource("Resource_vl8t0"), SubResource("Resource_jce80"), SubResource("Resource_s6420"), SubResource("Resource_x5p30"), SubResource("Resource_np8yf"), SubResource("Resource_pc5u5"), SubResource("Resource_x67qr"), SubResource("Resource_y4l68"), SubResource("Resource_ot3gx"), SubResource("Resource_mpkyd"), SubResource("Resource_i6e7g"), SubResource("Resource_ffnct"), SubResource("Resource_7bygd"), SubResource("Resource_a7mtb"), SubResource("Resource_u2dqk"), SubResource("Resource_stoju")])
+tutor_moves = Array[StringName]([&"ALLYSWITCH", &"ATTRACT", &"AURORAVEIL", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYSLAM", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"CRUNCH", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"DREAMEATER", &"EMBARGO", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLASH", &"FLING", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEX", &"HIDDENPOWER", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICEPUNCH", &"ICICLESPEAR", &"ICYWIND", &"IMPRISON", &"LASERFOCUS", &"LIGHTSCREEN", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PAINSPLIT", &"PAYBACK", &"POLTERGEIST", &"PROTECT", &"PSYCHIC", &"PSYCHUP", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROLLOUT", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SPIKES", &"SPITE", &"SUBSTITUTE", &"SUCKERPUNCH", &"SWAGGER", &"TAUNT", &"TELEKINESIS", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TORMENT", &"TRICK", &"TRIPLEAXEL", &"WATERPULSE", &"WEATHERBALL", &"WILLOWISP"])
+abilities = Array[StringName]([&"SNOWCLOAK"])
+hidden_abilities = Array[StringName]([&"CURSEDBODY"])
+egg_groups = Array[StringName]([&"Fairy", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_x6in6")]([SubResource("Resource_oxbrn")])
+height = 13
+weight = 266
+color = &"White"
+shape = &"HeadArms"
+generation = 4
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(0, 16)
+shadow_size = 1
+id = &"FROSLASS"
+display_name = "Froslass"

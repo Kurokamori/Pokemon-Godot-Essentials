@@ -1,0 +1,117 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_li6wy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_hwbud"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_cqt55"]
+
+[sub_resource type="Resource" id="Resource_g7ahp"]
+script = ExtResource("1_li6wy")
+species = &"ELECTABUZZ"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_vlctj"]
+script = ExtResource("2_hwbud")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_i1kat"]
+script = ExtResource("2_hwbud")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_x2gwl"]
+script = ExtResource("2_hwbud")
+level = 4
+move = &"THUNDERSHOCK"
+
+[sub_resource type="Resource" id="Resource_mc3gu"]
+script = ExtResource("2_hwbud")
+level = 8
+move = &"CHARGE"
+
+[sub_resource type="Resource" id="Resource_bdwli"]
+script = ExtResource("2_hwbud")
+level = 12
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_8blq3"]
+script = ExtResource("2_hwbud")
+level = 16
+move = &"SHOCKWAVE"
+
+[sub_resource type="Resource" id="Resource_oqv3t"]
+script = ExtResource("2_hwbud")
+level = 20
+move = &"THUNDERWAVE"
+
+[sub_resource type="Resource" id="Resource_bt15t"]
+script = ExtResource("2_hwbud")
+level = 24
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_jowlt"]
+script = ExtResource("2_hwbud")
+level = 28
+move = &"THUNDERPUNCH"
+
+[sub_resource type="Resource" id="Resource_lsp86"]
+script = ExtResource("2_hwbud")
+level = 32
+move = &"DISCHARGE"
+
+[sub_resource type="Resource" id="Resource_yphci"]
+script = ExtResource("2_hwbud")
+level = 36
+move = &"LOWKICK"
+
+[sub_resource type="Resource" id="Resource_nxop3"]
+script = ExtResource("2_hwbud")
+level = 40
+move = &"THUNDERBOLT"
+
+[sub_resource type="Resource" id="Resource_4ppdj"]
+script = ExtResource("2_hwbud")
+level = 44
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_xqfhr"]
+script = ExtResource("2_hwbud")
+level = 48
+move = &"THUNDER"
+
+[resource]
+resource_name = "ELEKID"
+script = ExtResource("3_cqt55")
+species = &"ELEKID"
+category = "Electric"
+pokedex_entry = "If it touches metal and discharges the electricity it has stored in its body, an Elekid begins swinging its arms in circles to recharge itself."
+types = Array[StringName]([&"ELECTRIC"])
+base_hp = 45
+base_attack = 63
+base_defense = 37
+base_special_attack = 65
+base_special_defense = 55
+base_speed = 95
+ev_speed = 1
+base_exp = 72
+gender_ratio = &"Female25Percent"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_hwbud")]([SubResource("Resource_vlctj"), SubResource("Resource_i1kat"), SubResource("Resource_x2gwl"), SubResource("Resource_mc3gu"), SubResource("Resource_bdwli"), SubResource("Resource_8blq3"), SubResource("Resource_oqv3t"), SubResource("Resource_bt15t"), SubResource("Resource_jowlt"), SubResource("Resource_lsp86"), SubResource("Resource_yphci"), SubResource("Resource_nxop3"), SubResource("Resource_4ppdj"), SubResource("Resource_xqfhr")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"COVET", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALCHOP", &"DYNAMICPUNCH", &"ELECTROBALL", &"ELECTROWEB", &"ENDURE", &"FACADE", &"FIREPUNCH", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"ICEPUNCH", &"LIGHTSCREEN", &"LOWKICK", &"MAGNETRISE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHIC", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROUND", &"SCREECH", &"SECRETPOWER", &"SEISMICTOSS", &"SHOCKWAVE", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"UPROAR", &"VOLTSWITCH", &"WILDCHARGE"])
+egg_moves = Array[StringName]([&"CROSSCHOP", &"DYNAMICPUNCH", &"FEINT", &"FIREPUNCH", &"FOCUSPUNCH", &"HAMMERARM", &"ICEPUNCH"])
+abilities = Array[StringName]([&"STATIC"])
+hidden_abilities = Array[StringName]([&"VITALSPIRIT"])
+wild_item_uncommon = Array[StringName]([&"ELECTIRIZER"])
+hatch_steps = 6400
+evolutions = Array[ExtResource("1_li6wy")]([SubResource("Resource_g7ahp")])
+height = 6
+weight = 235
+color = &"Yellow"
+shape = &"Bipedal"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(3, 31)
+shadow_size = 1
+id = &"ELEKID"
+display_name = "Elekid"

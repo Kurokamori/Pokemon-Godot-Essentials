@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_ud2r0"]
+
+[resource]
+resource_name = "ROCKHEAD"
+script = ExtResource("1_ud2r0")
+description = "Protects the Pokémon from recoil damage."
+id = &"ROCKHEAD"
+display_name = "Rock Head"

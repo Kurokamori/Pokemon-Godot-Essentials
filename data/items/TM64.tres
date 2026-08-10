@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_f6o3k"]
+
+[resource]
+resource_name = "TM64"
+script = ExtResource("1_f6o3k")
+name_plural = "TM64s"
+pocket = 4
+price = 7500
+sell_price = 3750
+bp_price = 32
+field_use = 5
+move = &"EXPLOSION"
+description = "The user attacks everything around it by causing a tremendous explosion. The user faints upon using this move."
+id = &"TM64"
+display_name = "TM64"
+flags = Array[StringName]([&"Fling_250"])

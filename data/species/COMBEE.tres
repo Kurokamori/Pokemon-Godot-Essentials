@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4a6sp"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_fgl02"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_njo6r"]
+
+[sub_resource type="Resource" id="Resource_bq3fc"]
+script = ExtResource("1_4a6sp")
+species = &"VESPIQUEN"
+method = &"LevelFemale"
+parameter = "21"
+
+[sub_resource type="Resource" id="Resource_32nl7"]
+script = ExtResource("2_fgl02")
+move = &"SWEETSCENT"
+
+[sub_resource type="Resource" id="Resource_3m2ck"]
+script = ExtResource("2_fgl02")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_7pj5k"]
+script = ExtResource("2_fgl02")
+move = &"STRUGGLEBUG"
+
+[sub_resource type="Resource" id="Resource_rxj4n"]
+script = ExtResource("2_fgl02")
+move = &"BUGBITE"
+
+[resource]
+resource_name = "COMBEE"
+script = ExtResource("3_njo6r")
+species = &"COMBEE"
+category = "Tiny Bee"
+pokedex_entry = "A Pokémon formed by three others. It busily carries sweet floral honey to Vespiquen."
+types = Array[StringName]([&"BUG", &"FLYING"])
+base_hp = 30
+base_attack = 30
+base_defense = 42
+base_special_attack = 30
+base_special_defense = 42
+base_speed = 70
+ev_speed = 1
+base_exp = 49
+growth_rate = &"Parabolic"
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 120
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_fgl02")]([SubResource("Resource_32nl7"), SubResource("Resource_3m2ck"), SubResource("Resource_7pj5k"), SubResource("Resource_rxj4n")])
+tutor_moves = Array[StringName]([&"AIRCUTTER", &"BUGBITE", &"BUGBUZZ", &"DUALWINGBEAT", &"ENDEAVOR", &"MUDSLAP", &"OMINOUSWIND", &"SNORE", &"STRINGSHOT", &"TAILWIND"])
+abilities = Array[StringName]([&"HONEYGATHER"])
+hidden_abilities = Array[StringName]([&"HUSTLE"])
+wild_item_uncommon = Array[StringName]([&"HONEY"])
+egg_groups = Array[StringName]([&"Bug"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_4a6sp")]([SubResource("Resource_bq3fc")])
+height = 3
+weight = 55
+color = &"Yellow"
+shape = &"MultiBody"
+generation = 4
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 20)
+id = &"COMBEE"
+display_name = "Combee"

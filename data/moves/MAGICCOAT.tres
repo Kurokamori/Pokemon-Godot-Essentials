@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_sctqx"]
+
+[resource]
+resource_name = "MAGICCOAT"
+script = ExtResource("1_sctqx")
+type = &"PSYCHIC"
+accuracy = 0
+total_pp = 15
+target = &"User"
+priority = 4
+function_code = &"BounceBackProblemCausingStatusMoves"
+description = "A barrier reflects back to the target moves like Leech Seed and moves that damage status."
+id = &"MAGICCOAT"
+display_name = "Magic Coat"

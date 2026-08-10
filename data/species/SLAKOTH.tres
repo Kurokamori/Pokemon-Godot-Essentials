@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_7qi7k"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_j4cfs"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_tri62"]
+
+[sub_resource type="Resource" id="Resource_uh4nd"]
+script = ExtResource("1_7qi7k")
+species = &"VIGOROTH"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_5t0n3"]
+script = ExtResource("2_j4cfs")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_4b735"]
+script = ExtResource("2_j4cfs")
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_kuxo0"]
+script = ExtResource("2_j4cfs")
+level = 6
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_xl2hm"]
+script = ExtResource("2_j4cfs")
+level = 9
+move = &"SLACKOFF"
+
+[sub_resource type="Resource" id="Resource_j66lb"]
+script = ExtResource("2_j4cfs")
+level = 14
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_p8aac"]
+script = ExtResource("2_j4cfs")
+level = 17
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_41jdf"]
+script = ExtResource("2_j4cfs")
+level = 22
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_652pj"]
+script = ExtResource("2_j4cfs")
+level = 25
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_kh6dp"]
+script = ExtResource("2_j4cfs")
+level = 30
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_ccemo"]
+script = ExtResource("2_j4cfs")
+level = 33
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_k32ea"]
+script = ExtResource("2_j4cfs")
+level = 38
+move = &"PLAYROUGH"
+
+[resource]
+resource_name = "SLAKOTH"
+script = ExtResource("3_tri62")
+species = &"SLAKOTH"
+category = "Slacker"
+pokedex_entry = "It sleeps virtually all day and night long. It doesn't change its nest its entire life, but it sometimes travels great distances by swimming in rivers."
+base_hp = 60
+base_attack = 60
+base_defense = 60
+base_special_attack = 35
+base_special_defense = 35
+base_speed = 30
+ev_hp = 1
+base_exp = 56
+growth_rate = &"Slow"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_j4cfs")]([SubResource("Resource_5t0n3"), SubResource("Resource_4b735"), SubResource("Resource_kuxo0"), SubResource("Resource_xl2hm"), SubResource("Resource_j66lb"), SubResource("Resource_p8aac"), SubResource("Resource_41jdf"), SubResource("Resource_652pj"), SubResource("Resource_kh6dp"), SubResource("Resource_ccemo"), SubResource("Resource_k32ea")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"BULKUP", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"COVET", &"CUT", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"WATERPULSE", &"WORKUP"])
+egg_moves = Array[StringName]([&"AFTERYOU", &"BODYSLAM", &"CRUSHCLAW", &"CURSE", &"HAMMERARM", &"NIGHTSLASH", &"SLASH", &"SNORE", &"TICKLE"])
+abilities = Array[StringName]([&"TRUANT"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_7qi7k")]([SubResource("Resource_uh4nd")])
+height = 8
+weight = 240
+color = &"Brown"
+shape = &"Quadruped"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 60)
+front_sprite_offset = Vector2i(2, 36)
+id = &"SLAKOTH"
+display_name = "Slakoth"

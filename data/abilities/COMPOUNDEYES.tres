@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="AbilityData" format=3]
+
+[ext_resource type="Script" path="res://src/data/ability_data.gd" id="1_mpjjd"]
+
+[resource]
+resource_name = "COMPOUNDEYES"
+script = ExtResource("1_mpjjd")
+description = "The Pokémon's accuracy is boosted."
+id = &"COMPOUNDEYES"
+display_name = "Compound Eyes"

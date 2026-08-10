@@ -1,0 +1,132 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_xph7p"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_631fi"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_5q60g"]
+
+[sub_resource type="Resource" id="Resource_hu67o"]
+script = ExtResource("1_xph7p")
+species = &"SEALEO"
+method = &"Level"
+parameter = "44"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_jewm7"]
+script = ExtResource("2_631fi")
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_rak7i"]
+script = ExtResource("2_631fi")
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_rhwwp"]
+script = ExtResource("2_631fi")
+move = &"ICEFANG"
+
+[sub_resource type="Resource" id="Resource_q8c4d"]
+script = ExtResource("2_631fi")
+move = &"ROLLOUT"
+
+[sub_resource type="Resource" id="Resource_yev3p"]
+script = ExtResource("2_631fi")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_j68km"]
+script = ExtResource("2_631fi")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_riogi"]
+script = ExtResource("2_631fi")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_ex0wg"]
+script = ExtResource("2_631fi")
+level = 12
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_e3o5t"]
+script = ExtResource("2_631fi")
+level = 16
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_ginbj"]
+script = ExtResource("2_631fi")
+level = 20
+move = &"SNORE"
+
+[sub_resource type="Resource" id="Resource_sy2an"]
+script = ExtResource("2_631fi")
+level = 24
+move = &"BRINE"
+
+[sub_resource type="Resource" id="Resource_jibtu"]
+script = ExtResource("2_631fi")
+level = 28
+move = &"AURORABEAM"
+
+[sub_resource type="Resource" id="Resource_wyrua"]
+script = ExtResource("2_631fi")
+level = 35
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_x5idi"]
+script = ExtResource("2_631fi")
+level = 40
+move = &"BODYSLAM"
+
+[sub_resource type="Resource" id="Resource_2sf7b"]
+script = ExtResource("2_631fi")
+level = 48
+move = &"SURF"
+
+[sub_resource type="Resource" id="Resource_goc20"]
+script = ExtResource("2_631fi")
+level = 56
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_2erom"]
+script = ExtResource("2_631fi")
+level = 64
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_sy3ov"]
+script = ExtResource("2_631fi")
+level = 72
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "WALREIN"
+script = ExtResource("3_5q60g")
+species = &"WALREIN"
+category = "Ice Break"
+pokedex_entry = "To protect its herd, the leader battles anything that invades its territory, even at the cost of its life. Its tusks may snap off in battle."
+types = Array[StringName]([&"ICE", &"WATER"])
+base_hp = 110
+base_attack = 80
+base_defense = 90
+base_special_attack = 95
+base_special_defense = 90
+base_speed = 65
+ev_hp = 3
+base_exp = 265
+growth_rate = &"Parabolic"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_631fi")]([SubResource("Resource_jewm7"), SubResource("Resource_rak7i"), SubResource("Resource_rhwwp"), SubResource("Resource_q8c4d"), SubResource("Resource_yev3p"), SubResource("Resource_j68km"), SubResource("Resource_riogi"), SubResource("Resource_ex0wg"), SubResource("Resource_e3o5t"), SubResource("Resource_ginbj"), SubResource("Resource_sy2an"), SubResource("Resource_jibtu"), SubResource("Resource_wyrua"), SubResource("Resource_x5idi"), SubResource("Resource_2sf7b"), SubResource("Resource_goc20"), SubResource("Resource_2erom"), SubResource("Resource_sy3ov")])
+tutor_moves = Array[StringName]([&"AQUATAIL", &"ATTRACT", &"AVALANCHE", &"BLIZZARD", &"BLOCK", &"BODYPRESS", &"BODYSLAM", &"BRINE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"DEFENSECURL", &"DIVE", &"DOUBLEEDGE", &"DOUBLETEAM", &"EARTHQUAKE", &"ECHOEDVOICE", &"ENCORE", &"ENDURE", &"FACADE", &"FROSTBREATH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"HAIL", &"HEADBUTT", &"HEAVYSLAM", &"HIDDENPOWER", &"HYDROPUMP", &"HYPERBEAM", &"ICEBEAM", &"ICEFANG", &"ICICLESPEAR", &"ICYWIND", &"IRONHEAD", &"IRONTAIL", &"LIQUIDATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SIGNALBEAM", &"SLEEPTALK", &"SNORE", &"STEELROLLER", &"STOMPINGTANTRUM", &"STRENGTH", &"SUBSTITUTE", &"SUPERFANG", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"WATERFALL", &"WATERPULSE", &"WHIRLPOOL"])
+abilities = Array[StringName]([&"THICKFAT", &"ICEBODY"])
+hidden_abilities = Array[StringName]([&"OBLIVIOUS"])
+egg_groups = Array[StringName]([&"Water1", &"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_xph7p")]([SubResource("Resource_hu67o")])
+height = 14
+weight = 1506
+color = &"Blue"
+shape = &"Quadruped"
+habitat = &"Sea"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(1, 21)
+shadow_size = 3
+id = &"WALREIN"
+display_name = "Walrein"

@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_crj6d"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_37okk"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_d6pre"]
+
+[sub_resource type="Resource" id="Resource_ytin2"]
+script = ExtResource("1_crj6d")
+species = &"FLAPPLE"
+method = &"Item"
+parameter = "TARTAPPLE"
+
+[sub_resource type="Resource" id="Resource_jtgsb"]
+script = ExtResource("1_crj6d")
+species = &"APPLETUN"
+method = &"Item"
+parameter = "SWEETAPPLE"
+
+[sub_resource type="Resource" id="Resource_1pwdb"]
+script = ExtResource("2_37okk")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_qgpdo"]
+script = ExtResource("2_37okk")
+move = &"ASTONISH"
+
+[resource]
+resource_name = "APPLIN"
+script = ExtResource("3_d6pre")
+species = &"APPLIN"
+category = "Apple Core"
+pokedex_entry = "It spends its entire life inside an apple. It hides from its natural enemies, bird Pokémon, by pretending it's just an apple and nothing more."
+types = Array[StringName]([&"GRASS", &"DRAGON"])
+base_hp = 40
+base_attack = 40
+base_defense = 80
+base_special_attack = 40
+base_special_defense = 40
+base_speed = 20
+ev_defense = 1
+base_exp = 52
+growth_rate = &"Erratic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_37okk")]([SubResource("Resource_1pwdb"), SubResource("Resource_qgpdo")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"DRACOMETEOR", &"GRASSYGLIDE"])
+egg_moves = Array[StringName]([&"DEFENSECURL", &"RECYCLE", &"ROLLOUT", &"SUCKERPUNCH"])
+abilities = Array[StringName]([&"RIPEN", &"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"BULLETPROOF"])
+egg_groups = Array[StringName]([&"Grass", &"Dragon"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_crj6d")]([SubResource("Resource_ytin2"), SubResource("Resource_jtgsb")])
+height = 2
+weight = 5
+color = &"Green"
+shape = &"Serpentine"
+generation = 8
+back_sprite_offset = Vector2i(-2, 48)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"APPLIN"
+display_name = "Applin"

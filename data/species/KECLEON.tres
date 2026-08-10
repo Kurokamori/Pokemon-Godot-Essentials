@@ -1,0 +1,131 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_o0w1c"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ia0ne"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_qt8lo"]
+
+[sub_resource type="Resource" id="Resource_kftv5"]
+script = ExtResource("2_ia0ne")
+move = &"THIEF"
+
+[sub_resource type="Resource" id="Resource_e0fgc"]
+script = ExtResource("2_ia0ne")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_d6now"]
+script = ExtResource("2_ia0ne")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_jv0m6"]
+script = ExtResource("2_ia0ne")
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_up0e4"]
+script = ExtResource("2_ia0ne")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_sq3d8"]
+script = ExtResource("2_ia0ne")
+level = 4
+move = &"BIND"
+
+[sub_resource type="Resource" id="Resource_0iorv"]
+script = ExtResource("2_ia0ne")
+level = 7
+move = &"SHADOWSNEAK"
+
+[sub_resource type="Resource" id="Resource_7rexx"]
+script = ExtResource("2_ia0ne")
+level = 10
+move = &"FEINT"
+
+[sub_resource type="Resource" id="Resource_67c3o"]
+script = ExtResource("2_ia0ne")
+level = 13
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_cksdq"]
+script = ExtResource("2_ia0ne")
+level = 16
+move = &"DISABLE"
+
+[sub_resource type="Resource" id="Resource_u6tx4"]
+script = ExtResource("2_ia0ne")
+level = 18
+move = &"PSYBEAM"
+
+[sub_resource type="Resource" id="Resource_4idau"]
+script = ExtResource("2_ia0ne")
+level = 21
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_wqo5y"]
+script = ExtResource("2_ia0ne")
+level = 25
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_slfly"]
+script = ExtResource("2_ia0ne")
+level = 30
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_c0nnr"]
+script = ExtResource("2_ia0ne")
+level = 33
+move = &"SHADOWCLAW"
+
+[sub_resource type="Resource" id="Resource_yq5qg"]
+script = ExtResource("2_ia0ne")
+level = 38
+move = &"SCREECH"
+
+[sub_resource type="Resource" id="Resource_rv6ym"]
+script = ExtResource("2_ia0ne")
+level = 42
+move = &"SUBSTITUTE"
+
+[sub_resource type="Resource" id="Resource_17n6h"]
+script = ExtResource("2_ia0ne")
+level = 46
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_dw42a"]
+script = ExtResource("2_ia0ne")
+level = 50
+move = &"FOULPLAY"
+
+[resource]
+resource_name = "KECLEON"
+script = ExtResource("3_qt8lo")
+species = &"KECLEON"
+category = "Color Swap"
+pokedex_entry = "A Pokémon that has the ability to alter its body colors to match its surroundings. A Kecleon reverts to its original colors if it is startled."
+base_hp = 60
+base_attack = 90
+base_defense = 70
+base_special_attack = 60
+base_special_defense = 120
+base_speed = 40
+ev_special_defense = 1
+base_exp = 154
+growth_rate = &"Parabolic"
+catch_rate = 200
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ia0ne")]([SubResource("Resource_kftv5"), SubResource("Resource_e0fgc"), SubResource("Resource_d6now"), SubResource("Resource_jv0m6"), SubResource("Resource_up0e4"), SubResource("Resource_sq3d8"), SubResource("Resource_0iorv"), SubResource("Resource_7rexx"), SubResource("Resource_67c3o"), SubResource("Resource_cksdq"), SubResource("Resource_u6tx4"), SubResource("Resource_4idau"), SubResource("Resource_wqo5y"), SubResource("Resource_slfly"), SubResource("Resource_c0nnr"), SubResource("Resource_yq5qg"), SubResource("Resource_rv6ym"), SubResource("Resource_17n6h"), SubResource("Resource_dw42a")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AFTERYOU", &"ANCIENTPOWER", &"AQUATAIL", &"ATTRACT", &"BIND", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CHARGEBEAM", &"CONFIDE", &"COUNTER", &"CUT", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAINPUNCH", &"DYNAMICPUNCH", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLASH", &"FLING", &"FOCUSPUNCH", &"FOULPLAY", &"FRUSTRATION", &"FURYCUTTER", &"GRASSKNOT", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"LOWKICK", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"MUDSLAP", &"NASTYPLOT", &"NATURALGIFT", &"POWERUPPUNCH", &"PROTECT", &"PSYCHUP", &"RAINDANCE", &"RECYCLE", &"REST", &"RETALIATE", &"RETURN", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SKILLSWAP", &"SLEEPTALK", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STEALTHROCK", &"STRENGTH", &"SUBSTITUTE", &"SUCKERPUNCH", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRICK", &"TRICKROOM", &"WATERPULSE", &"WONDERROOM", &"WORKUP"])
+egg_moves = Array[StringName]([&"DISABLE", &"FAKEOUT", &"FOULPLAY", &"MAGICCOAT", &"POWERUPPUNCH", &"RECOVER", &"TRICK"])
+abilities = Array[StringName]([&"COLORCHANGE"])
+hidden_abilities = Array[StringName]([&"PROTEAN"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 10
+weight = 220
+color = &"Green"
+shape = &"BipedalTail"
+habitat = &"Forest"
+generation = 3
+back_sprite_offset = Vector2i(0, 42)
+front_sprite_offset = Vector2i(2, 24)
+shadow_size = 1
+id = &"KECLEON"
+display_name = "Kecleon"

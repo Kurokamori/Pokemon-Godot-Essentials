@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_8q4s7"]
+
+[resource]
+resource_name = "SUPERSONIC"
+script = ExtResource("1_8q4s7")
+accuracy = 55
+total_pp = 20
+function_code = &"ConfuseTarget"
+description = "The user generates odd sound waves from its body. It may confuse the target."
+id = &"SUPERSONIC"
+display_name = "Supersonic"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Sound"])

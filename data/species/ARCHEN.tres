@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_0elim"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_httbp"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_mo8k2"]
+
+[sub_resource type="Resource" id="Resource_lyerd"]
+script = ExtResource("1_0elim")
+species = &"ARCHEOPS"
+method = &"Level"
+parameter = "37"
+
+[sub_resource type="Resource" id="Resource_6wdh7"]
+script = ExtResource("2_httbp")
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_4ci4s"]
+script = ExtResource("2_httbp")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_s1i16"]
+script = ExtResource("2_httbp")
+level = 3
+move = &"ROCKTHROW"
+
+[sub_resource type="Resource" id="Resource_td74f"]
+script = ExtResource("2_httbp")
+level = 6
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_5ml0h"]
+script = ExtResource("2_httbp")
+level = 9
+move = &"DRAGONBREATH"
+
+[sub_resource type="Resource" id="Resource_3svfd"]
+script = ExtResource("2_httbp")
+level = 12
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_kl7fc"]
+script = ExtResource("2_httbp")
+level = 15
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_ewhge"]
+script = ExtResource("2_httbp")
+level = 18
+move = &"QUICKGUARD"
+
+[sub_resource type="Resource" id="Resource_t0ebi"]
+script = ExtResource("2_httbp")
+level = 21
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_r73lo"]
+script = ExtResource("2_httbp")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_7ltkj"]
+script = ExtResource("2_httbp")
+level = 27
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_ddoeb"]
+script = ExtResource("2_httbp")
+level = 30
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_yhrti"]
+script = ExtResource("2_httbp")
+level = 33
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_43qau"]
+script = ExtResource("2_httbp")
+level = 36
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_u8os2"]
+script = ExtResource("2_httbp")
+level = 39
+move = &"DRAGONCLAW"
+
+[sub_resource type="Resource" id="Resource_rl42o"]
+script = ExtResource("2_httbp")
+level = 42
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_l4cso"]
+script = ExtResource("2_httbp")
+level = 45
+move = &"ENDEAVOR"
+
+[resource]
+resource_name = "ARCHEN"
+script = ExtResource("3_mo8k2")
+species = &"ARCHEN"
+category = "First Bird"
+pokedex_entry = "Revived from a fossil, this Pokémon is thought to be the ancestor of all bird Pokémon."
+types = Array[StringName]([&"ROCK", &"FLYING"])
+base_hp = 55
+base_attack = 112
+base_defense = 45
+base_special_attack = 74
+base_special_defense = 45
+base_speed = 70
+ev_attack = 1
+base_exp = 71
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_httbp")]([SubResource("Resource_6wdh7"), SubResource("Resource_4ci4s"), SubResource("Resource_s1i16"), SubResource("Resource_td74f"), SubResource("Resource_5ml0h"), SubResource("Resource_3svfd"), SubResource("Resource_kl7fc"), SubResource("Resource_ewhge"), SubResource("Resource_t0ebi"), SubResource("Resource_r73lo"), SubResource("Resource_7ltkj"), SubResource("Resource_ddoeb"), SubResource("Resource_yhrti"), SubResource("Resource_43qau"), SubResource("Resource_u8os2"), SubResource("Resource_rl42o"), SubResource("Resource_l4cso")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"AGILITY", &"ALLYSWITCH", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BOUNCE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DEFOG", &"DIG", &"DOUBLETEAM", &"DRAGONCLAW", &"DRAGONPULSE", &"DUALWINGBEAT", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HEATWAVE", &"HIDDENPOWER", &"HONECLAWS", &"IRONDEFENSE", &"IRONTAIL", &"KNOCKOFF", &"LASHOUT", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"PLUCK", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROOST", &"ROUND", &"SANDSTORM", &"SCARYFACE", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"STEALTHROCK", &"STEELWING", &"STONEEDGE", &"SUBSTITUTE", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TAUNT", &"TORMENT", &"TOXIC", &"UPROAR", &"UTURN", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BITE", &"DEFOG", &"DOUBLETEAM", &"HEADSMASH", &"KNOCKOFF", &"SWITCHEROO"])
+abilities = Array[StringName]([&"DEFEATIST"])
+egg_groups = Array[StringName]([&"Flying", &"Water3"])
+hatch_steps = 7680
+evolutions = Array[ExtResource("1_0elim")]([SubResource("Resource_lyerd")])
+height = 5
+weight = 95
+color = &"Yellow"
+shape = &"Winged"
+generation = 5
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(6, 33)
+id = &"ARCHEN"
+display_name = "Archen"

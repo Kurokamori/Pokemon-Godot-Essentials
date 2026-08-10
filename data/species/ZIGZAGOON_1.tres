@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_hcp6v"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cmkvj"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_lrmcn"]
+
+[sub_resource type="Resource" id="Resource_r4ek0"]
+script = ExtResource("1_hcp6v")
+species = &"LINOONE"
+method = &"Level"
+parameter = "20"
+
+[sub_resource type="Resource" id="Resource_3wv84"]
+script = ExtResource("2_cmkvj")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_8225u"]
+script = ExtResource("2_cmkvj")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_xno8m"]
+script = ExtResource("2_cmkvj")
+level = 3
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_28jxm"]
+script = ExtResource("2_cmkvj")
+level = 6
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_yro5p"]
+script = ExtResource("2_cmkvj")
+level = 9
+move = &"SNARL"
+
+[sub_resource type="Resource" id="Resource_48hry"]
+script = ExtResource("2_cmkvj")
+level = 12
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_kgi64"]
+script = ExtResource("2_cmkvj")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_eub1l"]
+script = ExtResource("2_cmkvj")
+level = 18
+move = &"PINMISSILE"
+
+[sub_resource type="Resource" id="Resource_irkpo"]
+script = ExtResource("2_cmkvj")
+level = 21
+move = &"REST"
+
+[sub_resource type="Resource" id="Resource_3pm6f"]
+script = ExtResource("2_cmkvj")
+level = 24
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_qym0k"]
+script = ExtResource("2_cmkvj")
+level = 27
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_wdi21"]
+script = ExtResource("2_cmkvj")
+level = 30
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_ikqls"]
+script = ExtResource("2_cmkvj")
+level = 33
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_gi572"]
+script = ExtResource("2_cmkvj")
+level = 36
+move = &"DOUBLEEDGE"
+
+[resource]
+resource_name = "ZIGZAGOON_1"
+script = ExtResource("3_lrmcn")
+species = &"ZIGZAGOON"
+form = 1
+form_name = "Galarian"
+category = "Tiny Raccoon"
+pokedex_entry = "Its restlessness has it constantly running around. If it sees another Pokémon, it will purposely run into them in order to start a fight."
+pokedex_form = 1
+types = Array[StringName]([&"DARK", &"NORMAL"])
+base_hp = 38
+base_attack = 30
+base_defense = 41
+base_special_attack = 30
+base_special_defense = 41
+base_speed = 60
+ev_speed = 1
+base_exp = 56
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cmkvj")]([SubResource("Resource_3wv84"), SubResource("Resource_8225u"), SubResource("Resource_xno8m"), SubResource("Resource_28jxm"), SubResource("Resource_yro5p"), SubResource("Resource_48hry"), SubResource("Resource_kgi64"), SubResource("Resource_eub1l"), SubResource("Resource_irkpo"), SubResource("Resource_3pm6f"), SubResource("Resource_qym0k"), SubResource("Resource_wdi21"), SubResource("Resource_ikqls"), SubResource("Resource_gi572")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"CAPTIVATE", &"CONFIDE", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLING", &"FRUSTRATION", &"GRASSKNOT", &"GUNKSHOT", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERVOICE", &"ICEBEAM", &"ICYWIND", &"IRONTAIL", &"LASHOUT", &"MIMIC", &"MUDSHOT", &"NATURALGIFT", &"PAYBACK", &"PINMISSILE", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SCARYFACE", &"SCREECH", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SLEEPTALK", &"SNARL", &"SNORE", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWIFT", &"TAUNT", &"THIEF", &"THUNDER", &"THUNDERBOLT", &"THUNDERWAVE", &"TRICK", &"WHIRLPOOL", &"WORKUP"])
+egg_moves = Array[StringName]([&"KNOCKOFF", &"PARTINGSHOT", &"QUICKGUARD"])
+abilities = Array[StringName]([&"PICKUP", &"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"QUICKFEET"])
+wild_item_common = Array[StringName]([&"POTION"])
+wild_item_uncommon = Array[StringName]([&"REVIVE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_hcp6v")]([SubResource("Resource_r4ek0")])
+height = 4
+weight = 175
+color = &"White"
+shape = &"Quadruped"
+habitat = &"Grassland"
+generation = 8
+back_sprite_offset = Vector2i(0, 50)
+front_sprite_offset = Vector2i(4, 30)
+id = &"ZIGZAGOON_1"
+display_name = "Zigzagoon"
+flags = Array[StringName]([&"InheritFormWithEverStone"])

@@ -1,0 +1,146 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_fycsx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_ufmxg"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gad53"]
+
+[sub_resource type="Resource" id="Resource_82n5v"]
+script = ExtResource("1_fycsx")
+species = &"SKIPLOOM"
+method = &"Level"
+parameter = "18"
+
+[sub_resource type="Resource" id="Resource_buivb"]
+script = ExtResource("2_ufmxg")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_2kmng"]
+script = ExtResource("2_ufmxg")
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_h36la"]
+script = ExtResource("2_ufmxg")
+level = 4
+move = &"SYNTHESIS"
+
+[sub_resource type="Resource" id="Resource_m634d"]
+script = ExtResource("2_ufmxg")
+level = 6
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_610e2"]
+script = ExtResource("2_ufmxg")
+level = 8
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_du8dl"]
+script = ExtResource("2_ufmxg")
+level = 10
+move = &"FAIRYWIND"
+
+[sub_resource type="Resource" id="Resource_0fl6n"]
+script = ExtResource("2_ufmxg")
+level = 12
+move = &"POISONPOWDER"
+
+[sub_resource type="Resource" id="Resource_5hsj3"]
+script = ExtResource("2_ufmxg")
+level = 14
+move = &"STUNSPORE"
+
+[sub_resource type="Resource" id="Resource_esahx"]
+script = ExtResource("2_ufmxg")
+level = 16
+move = &"SLEEPPOWDER"
+
+[sub_resource type="Resource" id="Resource_0pwbg"]
+script = ExtResource("2_ufmxg")
+level = 19
+move = &"BULLETSEED"
+
+[sub_resource type="Resource" id="Resource_0aprq"]
+script = ExtResource("2_ufmxg")
+level = 22
+move = &"LEECHSEED"
+
+[sub_resource type="Resource" id="Resource_rrwck"]
+script = ExtResource("2_ufmxg")
+level = 25
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_jfiof"]
+script = ExtResource("2_ufmxg")
+level = 28
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_xd4g5"]
+script = ExtResource("2_ufmxg")
+level = 31
+move = &"RAGEPOWDER"
+
+[sub_resource type="Resource" id="Resource_0p5ht"]
+script = ExtResource("2_ufmxg")
+level = 34
+move = &"COTTONSPORE"
+
+[sub_resource type="Resource" id="Resource_kie6t"]
+script = ExtResource("2_ufmxg")
+level = 37
+move = &"UTURN"
+
+[sub_resource type="Resource" id="Resource_j6hkm"]
+script = ExtResource("2_ufmxg")
+level = 40
+move = &"WORRYSEED"
+
+[sub_resource type="Resource" id="Resource_0kyj5"]
+script = ExtResource("2_ufmxg")
+level = 43
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_6hly2"]
+script = ExtResource("2_ufmxg")
+level = 46
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_qlmsa"]
+script = ExtResource("2_ufmxg")
+level = 49
+move = &"MEMENTO"
+
+[resource]
+resource_name = "HOPPIP"
+script = ExtResource("3_gad53")
+species = &"HOPPIP"
+category = "Cottonweed"
+pokedex_entry = "This Pokémon drifts and floats with the wind. If it senses the approach of strong winds, a Hoppip links leaves with others to prepare against being blown away."
+types = Array[StringName]([&"GRASS", &"FLYING"])
+base_hp = 35
+base_attack = 35
+base_defense = 40
+base_special_attack = 35
+base_special_defense = 55
+base_speed = 50
+ev_special_defense = 1
+base_exp = 50
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_ufmxg")]([SubResource("Resource_buivb"), SubResource("Resource_2kmng"), SubResource("Resource_h36la"), SubResource("Resource_m634d"), SubResource("Resource_610e2"), SubResource("Resource_du8dl"), SubResource("Resource_0fl6n"), SubResource("Resource_5hsj3"), SubResource("Resource_esahx"), SubResource("Resource_0pwbg"), SubResource("Resource_0aprq"), SubResource("Resource_rrwck"), SubResource("Resource_jfiof"), SubResource("Resource_xd4g5"), SubResource("Resource_0p5ht"), SubResource("Resource_kie6t"), SubResource("Resource_j6hkm"), SubResource("Resource_0kyj5"), SubResource("Resource_6hly2"), SubResource("Resource_qlmsa")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AERIALACE", &"ATTRACT", &"BOUNCE", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DAZZLINGGLEAM", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"HEADBUTT", &"HELPINGHAND", &"HIDDENPOWER", &"INFESTATION", &"MIMIC", &"NATURALGIFT", &"PROTECT", &"PSYCHUP", &"REFLECT", &"REST", &"RETURN", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SILVERWIND", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"UTURN", &"WORRYSEED"])
+egg_moves = Array[StringName]([&"AMNESIA", &"AROMATHERAPY", &"CONFUSION", &"COTTONGUARD", &"DOUBLEEDGE", &"ENCORE", &"GRASSYTERRAIN", &"HELPINGHAND", &"SEEDBOMB", &"STRENGTHSAP", &"WORRYSEED"])
+abilities = Array[StringName]([&"CHLOROPHYLL", &"LEAFGUARD"])
+hidden_abilities = Array[StringName]([&"INFILTRATOR"])
+egg_groups = Array[StringName]([&"Fairy", &"Grass"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_fycsx")]([SubResource("Resource_82n5v")])
+height = 4
+weight = 5
+color = &"Pink"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 2
+back_sprite_offset = Vector2i(0, 58)
+front_sprite_offset = Vector2i(8, 18)
+shadow_size = 1
+id = &"HOPPIP"
+display_name = "Hoppip"

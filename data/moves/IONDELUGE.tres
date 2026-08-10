@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yc44t"]
+
+[resource]
+resource_name = "IONDELUGE"
+script = ExtResource("1_yc44t")
+type = &"ELECTRIC"
+accuracy = 0
+total_pp = 25
+target = &"BothSides"
+priority = 1
+function_code = &"NormalMovesBecomeElectric"
+description = "The user disperses electrically charged particles. Normal-type moves become Electric-type."
+id = &"IONDELUGE"
+display_name = "Ion Deluge"

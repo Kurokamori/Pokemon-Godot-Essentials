@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_h7xuj"]
+
+[resource]
+resource_name = "TM02"
+script = ExtResource("1_h7xuj")
+name_plural = "TM02s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"DRAGONCLAW"
+description = "The user slashes the target with huge sharp claws."
+id = &"TM02"
+display_name = "TM02"
+flags = Array[StringName]([&"Fling_80"])

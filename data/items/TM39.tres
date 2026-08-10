@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_546x7"]
+
+[resource]
+resource_name = "TM39"
+script = ExtResource("1_546x7")
+name_plural = "TM39s"
+pocket = 4
+price = 3000
+sell_price = 1500
+bp_price = 32
+field_use = 5
+move = &"ROCKTOMB"
+description = "Boulders are hurled at the target. This also lowers the target's Speed stat by preventing its movement."
+id = &"TM39"
+display_name = "TM39"
+flags = Array[StringName]([&"Fling_60"])

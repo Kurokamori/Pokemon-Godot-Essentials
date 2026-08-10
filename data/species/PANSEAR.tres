@@ -1,0 +1,125 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_n610y"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_m7x0c"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_1b8sg"]
+
+[sub_resource type="Resource" id="Resource_u3bhx"]
+script = ExtResource("1_n610y")
+species = &"SIMISEAR"
+method = &"Item"
+parameter = "FIRESTONE"
+
+[sub_resource type="Resource" id="Resource_p65a4"]
+script = ExtResource("2_m7x0c")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_dm13v"]
+script = ExtResource("2_m7x0c")
+move = &"PLAYNICE"
+
+[sub_resource type="Resource" id="Resource_2amjy"]
+script = ExtResource("2_m7x0c")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_oheoy"]
+script = ExtResource("2_m7x0c")
+level = 7
+move = &"LICK"
+
+[sub_resource type="Resource" id="Resource_3cfvk"]
+script = ExtResource("2_m7x0c")
+level = 10
+move = &"INCINERATE"
+
+[sub_resource type="Resource" id="Resource_l4182"]
+script = ExtResource("2_m7x0c")
+level = 13
+move = &"FURYSWIPES"
+
+[sub_resource type="Resource" id="Resource_no0d7"]
+script = ExtResource("2_m7x0c")
+level = 16
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_mq4ph"]
+script = ExtResource("2_m7x0c")
+level = 19
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_qa231"]
+script = ExtResource("2_m7x0c")
+level = 22
+move = &"FLAMEBURST"
+
+[sub_resource type="Resource" id="Resource_6rhue"]
+script = ExtResource("2_m7x0c")
+level = 25
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_yflg3"]
+script = ExtResource("2_m7x0c")
+level = 28
+move = &"FLING"
+
+[sub_resource type="Resource" id="Resource_tpqom"]
+script = ExtResource("2_m7x0c")
+level = 31
+move = &"ACROBATICS"
+
+[sub_resource type="Resource" id="Resource_iekdg"]
+script = ExtResource("2_m7x0c")
+level = 34
+move = &"FIREBLAST"
+
+[sub_resource type="Resource" id="Resource_j2sgv"]
+script = ExtResource("2_m7x0c")
+level = 37
+move = &"RECYCLE"
+
+[sub_resource type="Resource" id="Resource_sp45c"]
+script = ExtResource("2_m7x0c")
+level = 40
+move = &"NATURALGIFT"
+
+[sub_resource type="Resource" id="Resource_nlr1f"]
+script = ExtResource("2_m7x0c")
+level = 43
+move = &"CRUNCH"
+
+[resource]
+resource_name = "PANSEAR"
+script = ExtResource("3_1b8sg")
+species = &"PANSEAR"
+category = "High Temp"
+pokedex_entry = "This Pokémon lives in caves in volcanoes. The fire within the tuft on its head can reach 600º F."
+types = Array[StringName]([&"FIRE"])
+base_hp = 50
+base_attack = 53
+base_defense = 48
+base_special_attack = 53
+base_special_defense = 48
+base_speed = 64
+ev_speed = 1
+base_exp = 63
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_m7x0c")]([SubResource("Resource_p65a4"), SubResource("Resource_dm13v"), SubResource("Resource_2amjy"), SubResource("Resource_oheoy"), SubResource("Resource_3cfvk"), SubResource("Resource_l4182"), SubResource("Resource_no0d7"), SubResource("Resource_mq4ph"), SubResource("Resource_qa231"), SubResource("Resource_6rhue"), SubResource("Resource_yflg3"), SubResource("Resource_tpqom"), SubResource("Resource_iekdg"), SubResource("Resource_j2sgv"), SubResource("Resource_sp45c"), SubResource("Resource_nlr1f")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FIREBLAST", &"FIREPLEDGE", &"FIREPUNCH", &"FLAMECHARGE", &"FLAMETHROWER", &"FLING", &"FOCUSPUNCH", &"FRUSTRATION", &"GASTROACID", &"GRASSKNOT", &"GUNKSHOT", &"HEATWAVE", &"HELPINGHAND", &"HIDDENPOWER", &"HONECLAWS", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LOWKICK", &"LOWSWEEP", &"MIMIC", &"NATURALGIFT", &"OVERHEAT", &"PAYBACK", &"PROTECT", &"RECYCLE", &"REST", &"RETURN", &"ROCKSMASH", &"ROCKTOMB", &"ROLEPLAY", &"ROUND", &"SECRETPOWER", &"SHADOWCLAW", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"TAUNT", &"THIEF", &"TORMENT", &"TOXIC", &"UPROAR", &"WILLOWISP", &"WORKUP"])
+egg_moves = Array[StringName]([&"ASTONISH", &"BELCH", &"COVET", &"DISARMINGVOICE", &"FIREPUNCH", &"FIRESPIN", &"FLAREBLITZ", &"HEATWAVE", &"LOWKICK", &"NASTYPLOT", &"ROLEPLAY", &"SLEEPTALK", &"TICKLE"])
+abilities = Array[StringName]([&"GLUTTONY"])
+hidden_abilities = Array[StringName]([&"BLAZE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_n610y")]([SubResource("Resource_u3bhx")])
+height = 6
+weight = 110
+shape = &"BipedalTail"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 28)
+shadow_size = 1
+id = &"PANSEAR"
+display_name = "Pansear"

@@ -1,0 +1,152 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_3o68b"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_nf2ji"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_dfin5"]
+
+[sub_resource type="Resource" id="Resource_0hp43"]
+script = ExtResource("1_3o68b")
+species = &"EEVEE"
+method = &"HappinessMoveType"
+parameter = "FAIRY"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_3ages"]
+script = ExtResource("2_nf2ji")
+level = 0
+move = &"DISARMINGVOICE"
+
+[sub_resource type="Resource" id="Resource_egdtw"]
+script = ExtResource("2_nf2ji")
+move = &"COVET"
+
+[sub_resource type="Resource" id="Resource_j0gow"]
+script = ExtResource("2_nf2ji")
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_gab2b"]
+script = ExtResource("2_nf2ji")
+move = &"COPYCAT"
+
+[sub_resource type="Resource" id="Resource_ba7q8"]
+script = ExtResource("2_nf2ji")
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_3qbb6"]
+script = ExtResource("2_nf2ji")
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_sdmmk"]
+script = ExtResource("2_nf2ji")
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_tijnj"]
+script = ExtResource("2_nf2ji")
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_6j7pd"]
+script = ExtResource("2_nf2ji")
+move = &"HELPINGHAND"
+
+[sub_resource type="Resource" id="Resource_00f6d"]
+script = ExtResource("2_nf2ji")
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_lcodb"]
+script = ExtResource("2_nf2ji")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_7y7kh"]
+script = ExtResource("2_nf2ji")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_uxje0"]
+script = ExtResource("2_nf2ji")
+level = 5
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_68y7j"]
+script = ExtResource("2_nf2ji")
+level = 10
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_8xgt0"]
+script = ExtResource("2_nf2ji")
+level = 15
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_22fu8"]
+script = ExtResource("2_nf2ji")
+level = 20
+move = &"SWIFT"
+
+[sub_resource type="Resource" id="Resource_11xd5"]
+script = ExtResource("2_nf2ji")
+level = 25
+move = &"LIGHTSCREEN"
+
+[sub_resource type="Resource" id="Resource_m0amr"]
+script = ExtResource("2_nf2ji")
+level = 30
+move = &"DRAININGKISS"
+
+[sub_resource type="Resource" id="Resource_uud3s"]
+script = ExtResource("2_nf2ji")
+level = 35
+move = &"MISTYTERRAIN"
+
+[sub_resource type="Resource" id="Resource_286gq"]
+script = ExtResource("2_nf2ji")
+level = 40
+move = &"SKILLSWAP"
+
+[sub_resource type="Resource" id="Resource_i4dut"]
+script = ExtResource("2_nf2ji")
+level = 45
+move = &"PSYCHUP"
+
+[sub_resource type="Resource" id="Resource_xtppg"]
+script = ExtResource("2_nf2ji")
+level = 50
+move = &"MOONBLAST"
+
+[sub_resource type="Resource" id="Resource_g2ipb"]
+script = ExtResource("2_nf2ji")
+level = 55
+move = &"LASTRESORT"
+
+[resource]
+resource_name = "SYLVEON"
+script = ExtResource("3_dfin5")
+species = &"SYLVEON"
+category = "Intertwining"
+pokedex_entry = "Its ribbonlike feelers give off an aura that weakens hostility in its prey, causing them to let down their guard. Then it attacks."
+types = Array[StringName]([&"FAIRY"])
+base_hp = 95
+base_attack = 65
+base_defense = 65
+base_special_attack = 110
+base_special_defense = 130
+base_speed = 60
+ev_special_defense = 2
+base_exp = 184
+gender_ratio = &"FemaleOneEighth"
+catch_rate = 45
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_nf2ji")]([SubResource("Resource_3ages"), SubResource("Resource_egdtw"), SubResource("Resource_j0gow"), SubResource("Resource_gab2b"), SubResource("Resource_ba7q8"), SubResource("Resource_3qbb6"), SubResource("Resource_sdmmk"), SubResource("Resource_tijnj"), SubResource("Resource_6j7pd"), SubResource("Resource_00f6d"), SubResource("Resource_lcodb"), SubResource("Resource_7y7kh"), SubResource("Resource_uxje0"), SubResource("Resource_68y7j"), SubResource("Resource_8xgt0"), SubResource("Resource_22fu8"), SubResource("Resource_11xd5"), SubResource("Resource_m0amr"), SubResource("Resource_uud3s"), SubResource("Resource_286gq"), SubResource("Resource_i4dut"), SubResource("Resource_xtppg"), SubResource("Resource_g2ipb")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BATONPASS", &"BODYSLAM", &"CALMMIND", &"CAPTIVATE", &"CHARM", &"CONFIDE", &"COVET", &"CUT", &"DAZZLINGGLEAM", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRAININGKISS", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FAKETEARS", &"FLASH", &"FOCUSENERGY", &"FRUSTRATION", &"GIGAIMPACT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LIGHTSCREEN", &"MAGICALLEAF", &"MAGICCOAT", &"MIMIC", &"MISTYEXPLOSION", &"MISTYTERRAIN", &"MUDSLAP", &"MYSTICALFIRE", &"NATURALGIFT", &"PAYDAY", &"PLAYROUGH", &"PROTECT", &"PSYCHUP", &"PSYSHOCK", &"RAINDANCE", &"REFLECT", &"REST", &"RETALIATE", &"RETURN", &"ROUND", &"SAFEGUARD", &"SECRETPOWER", &"SHADOWBALL", &"SKILLSWAP", &"SLEEPTALK", &"SNORE", &"STOREDPOWER", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TELEKINESIS", &"TOXIC", &"WEATHERBALL", &"WORKUP"])
+abilities = Array[StringName]([&"CUTECHARM"])
+hidden_abilities = Array[StringName]([&"PIXILATE"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 8960
+evolutions = Array[ExtResource("1_3o68b")]([SubResource("Resource_0hp43")])
+height = 10
+weight = 235
+color = &"Pink"
+shape = &"Quadruped"
+generation = 6
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(-2, 22)
+shadow_size = 1
+id = &"SYLVEON"
+display_name = "Sylveon"

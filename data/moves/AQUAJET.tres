@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_yb8n7"]
+
+[resource]
+resource_name = "AQUAJET"
+script = ExtResource("1_yb8n7")
+type = &"WATER"
+category = 0
+power = 40
+total_pp = 20
+priority = 1
+description = "The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first."
+id = &"AQUAJET"
+display_name = "Aqua Jet"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

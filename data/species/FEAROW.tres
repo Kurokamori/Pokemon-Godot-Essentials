@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_huncx"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_8c8ch"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_g4jdg"]
+
+[sub_resource type="Resource" id="Resource_km6vg"]
+script = ExtResource("1_huncx")
+species = &"SPEAROW"
+method = &"Level"
+parameter = "20"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_dqo83"]
+script = ExtResource("2_8c8ch")
+move = &"DRILLRUN"
+
+[sub_resource type="Resource" id="Resource_7mnyw"]
+script = ExtResource("2_8c8ch")
+move = &"PLUCK"
+
+[sub_resource type="Resource" id="Resource_ex0f4"]
+script = ExtResource("2_8c8ch")
+move = &"PECK"
+
+[sub_resource type="Resource" id="Resource_6lbnq"]
+script = ExtResource("2_8c8ch")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_5nrw3"]
+script = ExtResource("2_8c8ch")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_ftdvp"]
+script = ExtResource("2_8c8ch")
+level = 4
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_4usr8"]
+script = ExtResource("2_8c8ch")
+level = 8
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_gdimf"]
+script = ExtResource("2_8c8ch")
+level = 11
+move = &"FURYATTACK"
+
+[sub_resource type="Resource" id="Resource_42qjv"]
+script = ExtResource("2_8c8ch")
+level = 15
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_c60ag"]
+script = ExtResource("2_8c8ch")
+level = 18
+move = &"WINGATTACK"
+
+[sub_resource type="Resource" id="Resource_2w2t1"]
+script = ExtResource("2_8c8ch")
+level = 23
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_gsvqs"]
+script = ExtResource("2_8c8ch")
+level = 27
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_4488y"]
+script = ExtResource("2_8c8ch")
+level = 32
+move = &"FOCUSENERGY"
+
+[sub_resource type="Resource" id="Resource_q6ebb"]
+script = ExtResource("2_8c8ch")
+level = 36
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_vl42l"]
+script = ExtResource("2_8c8ch")
+level = 41
+move = &"DRILLPECK"
+
+[sub_resource type="Resource" id="Resource_eswhy"]
+script = ExtResource("2_8c8ch")
+level = 45
+move = &"DRILLRUN"
+
+[resource]
+resource_name = "FEAROW"
+script = ExtResource("3_g4jdg")
+species = &"FEAROW"
+category = "Beak"
+pokedex_entry = "Its long neck and elongated beak are ideal for catching prey in soil or water. It deftly moves this extended and skinny beak to pluck prey."
+types = Array[StringName]([&"NORMAL", &"FLYING"])
+base_hp = 65
+base_attack = 90
+base_defense = 65
+base_special_attack = 61
+base_special_defense = 61
+base_speed = 100
+ev_speed = 2
+base_exp = 155
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_8c8ch")]([SubResource("Resource_dqo83"), SubResource("Resource_7mnyw"), SubResource("Resource_ex0f4"), SubResource("Resource_6lbnq"), SubResource("Resource_5nrw3"), SubResource("Resource_ftdvp"), SubResource("Resource_4usr8"), SubResource("Resource_gdimf"), SubResource("Resource_42qjv"), SubResource("Resource_c60ag"), SubResource("Resource_2w2t1"), SubResource("Resource_gsvqs"), SubResource("Resource_4488y"), SubResource("Resource_q6ebb"), SubResource("Resource_vl42l"), SubResource("Resource_eswhy")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AIRCUTTER", &"ATTRACT", &"CAPTIVATE", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DRILLRUN", &"ECHOEDVOICE", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FLY", &"FRUSTRATION", &"GIGAIMPACT", &"HEATWAVE", &"HIDDENPOWER", &"HYPERBEAM", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROOST", &"ROUND", &"SECRETPOWER", &"SKYATTACK", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"THIEF", &"THROATCHOP", &"TWISTER", &"UPROAR", &"UTURN", &"WORKUP"])
+abilities = Array[StringName]([&"KEENEYE"])
+hidden_abilities = Array[StringName]([&"SNIPER"])
+wild_item_uncommon = Array[StringName]([&"SHARPBEAK"])
+egg_groups = Array[StringName]([&"Flying"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_huncx")]([SubResource("Resource_km6vg")])
+height = 12
+weight = 380
+color = &"Brown"
+shape = &"Winged"
+habitat = &"RoughTerrain"
+generation = 1
+back_sprite_offset = Vector2i(5, 44)
+front_sprite_offset = Vector2i(0, 10)
+id = &"FEAROW"
+display_name = "Fearow"

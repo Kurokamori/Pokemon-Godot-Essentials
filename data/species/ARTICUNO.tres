@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_x2u1g"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h3lte"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_2wnmw"]
+
+[sub_resource type="Resource" id="Resource_3kpc2"]
+script = ExtResource("2_h3lte")
+move = &"GUST"
+
+[sub_resource type="Resource" id="Resource_8rr0w"]
+script = ExtResource("2_h3lte")
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_t4k2u"]
+script = ExtResource("2_h3lte")
+level = 5
+move = &"POWDERSNOW"
+
+[sub_resource type="Resource" id="Resource_du7jl"]
+script = ExtResource("2_h3lte")
+level = 10
+move = &"REFLECT"
+
+[sub_resource type="Resource" id="Resource_i5q74"]
+script = ExtResource("2_h3lte")
+level = 15
+move = &"ICESHARD"
+
+[sub_resource type="Resource" id="Resource_rel7q"]
+script = ExtResource("2_h3lte")
+level = 20
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_fk2ck"]
+script = ExtResource("2_h3lte")
+level = 25
+move = &"ANCIENTPOWER"
+
+[sub_resource type="Resource" id="Resource_m8cx5"]
+script = ExtResource("2_h3lte")
+level = 30
+move = &"TAILWIND"
+
+[sub_resource type="Resource" id="Resource_cn0mv"]
+script = ExtResource("2_h3lte")
+level = 35
+move = &"FREEZEDRY"
+
+[sub_resource type="Resource" id="Resource_u4xry"]
+script = ExtResource("2_h3lte")
+level = 40
+move = &"ROOST"
+
+[sub_resource type="Resource" id="Resource_bfuci"]
+script = ExtResource("2_h3lte")
+level = 45
+move = &"ICEBEAM"
+
+[sub_resource type="Resource" id="Resource_08ofi"]
+script = ExtResource("2_h3lte")
+level = 50
+move = &"HAIL"
+
+[sub_resource type="Resource" id="Resource_x0qp6"]
+script = ExtResource("2_h3lte")
+level = 55
+move = &"HURRICANE"
+
+[sub_resource type="Resource" id="Resource_uoa5b"]
+script = ExtResource("2_h3lte")
+level = 60
+move = &"MINDREADER"
+
+[sub_resource type="Resource" id="Resource_m08u8"]
+script = ExtResource("2_h3lte")
+level = 65
+move = &"BLIZZARD"
+
+[sub_resource type="Resource" id="Resource_ctyax"]
+script = ExtResource("2_h3lte")
+level = 70
+move = &"SHEERCOLD"
+
+[resource]
+resource_name = "ARTICUNO"
+script = ExtResource("3_2wnmw")
+species = &"ARTICUNO"
+category = "Freeze"
+pokedex_entry = "Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. As a result, it is said that when this Pokémon flies, snow will fall."
+types = Array[StringName]([&"ICE", &"FLYING"])
+base_hp = 90
+base_attack = 85
+base_defense = 100
+base_special_attack = 95
+base_special_defense = 125
+base_speed = 85
+ev_special_defense = 3
+base_exp = 290
+growth_rate = &"Slow"
+gender_ratio = &"Genderless"
+catch_rate = 3
+base_happiness = 35
+level_up_moves = Array[ExtResource("2_h3lte")]([SubResource("Resource_3kpc2"), SubResource("Resource_8rr0w"), SubResource("Resource_t4k2u"), SubResource("Resource_du7jl"), SubResource("Resource_i5q74"), SubResource("Resource_rel7q"), SubResource("Resource_fk2ck"), SubResource("Resource_m8cx5"), SubResource("Resource_cn0mv"), SubResource("Resource_u4xry"), SubResource("Resource_bfuci"), SubResource("Resource_08ofi"), SubResource("Resource_x0qp6"), SubResource("Resource_uoa5b"), SubResource("Resource_m08u8"), SubResource("Resource_ctyax")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"AGILITY", &"AIRCUTTER", &"AIRSLASH", &"ANCIENTPOWER", &"AURORAVEIL", &"AVALANCHE", &"BLIZZARD", &"BRAVEBIRD", &"CONFIDE", &"DEFOG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DUALWINGBEAT", &"ENDURE", &"FACADE", &"FLY", &"FROSTBREATH", &"FRUSTRATION", &"GIGAIMPACT", &"HAIL", &"HIDDENPOWER", &"HURRICANE", &"HYPERBEAM", &"ICEBEAM", &"ICICLESPEAR", &"ICYWIND", &"LASERFOCUS", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"OMINOUSWIND", &"PLUCK", &"PROTECT", &"RAINDANCE", &"REFLECT", &"REST", &"RETURN", &"ROAR", &"ROCKSMASH", &"ROOST", &"ROUND", &"SANDSTORM", &"SECRETPOWER", &"SIGNALBEAM", &"SKYATTACK", &"SKYDROP", &"SLEEPTALK", &"SNORE", &"STEELWING", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"TAILWIND", &"TRIPLEAXEL", &"TWISTER", &"UTURN", &"WATERPULSE", &"WEATHERBALL"])
+abilities = Array[StringName]([&"PRESSURE"])
+hidden_abilities = Array[StringName]([&"SNOWCLOAK"])
+hatch_steps = 20480
+height = 17
+weight = 554
+color = &"Blue"
+shape = &"Winged"
+habitat = &"Rare"
+generation = 1
+back_sprite_offset = Vector2i(0, 40)
+front_sprite_offset = Vector2i(11, 13)
+id = &"ARTICUNO"
+display_name = "Articuno"
+flags = Array[StringName]([&"Legendary"])

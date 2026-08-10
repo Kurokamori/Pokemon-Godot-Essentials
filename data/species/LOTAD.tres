@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_oejvo"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_7x7d3"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_uux7j"]
+
+[sub_resource type="Resource" id="Resource_pml0y"]
+script = ExtResource("1_oejvo")
+species = &"LOMBRE"
+method = &"Level"
+parameter = "14"
+
+[sub_resource type="Resource" id="Resource_o376t"]
+script = ExtResource("2_7x7d3")
+move = &"ASTONISH"
+
+[sub_resource type="Resource" id="Resource_lapip"]
+script = ExtResource("2_7x7d3")
+move = &"GROWL"
+
+[sub_resource type="Resource" id="Resource_eu1ab"]
+script = ExtResource("2_7x7d3")
+level = 3
+move = &"ABSORB"
+
+[sub_resource type="Resource" id="Resource_38a6w"]
+script = ExtResource("2_7x7d3")
+level = 6
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_3oq1c"]
+script = ExtResource("2_7x7d3")
+level = 9
+move = &"MIST"
+
+[sub_resource type="Resource" id="Resource_ih1o3"]
+script = ExtResource("2_7x7d3")
+level = 12
+move = &"MEGADRAIN"
+
+[sub_resource type="Resource" id="Resource_2c17x"]
+script = ExtResource("2_7x7d3")
+level = 16
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_tberp"]
+script = ExtResource("2_7x7d3")
+level = 20
+move = &"BUBBLEBEAM"
+
+[sub_resource type="Resource" id="Resource_0ojpl"]
+script = ExtResource("2_7x7d3")
+level = 24
+move = &"NATUREPOWER"
+
+[sub_resource type="Resource" id="Resource_u4wnt"]
+script = ExtResource("2_7x7d3")
+level = 28
+move = &"GIGADRAIN"
+
+[sub_resource type="Resource" id="Resource_utqyi"]
+script = ExtResource("2_7x7d3")
+level = 33
+move = &"RAINDANCE"
+
+[sub_resource type="Resource" id="Resource_2v2u1"]
+script = ExtResource("2_7x7d3")
+level = 38
+move = &"ZENHEADBUTT"
+
+[sub_resource type="Resource" id="Resource_hd070"]
+script = ExtResource("2_7x7d3")
+level = 43
+move = &"ENERGYBALL"
+
+[resource]
+resource_name = "LOTAD"
+script = ExtResource("3_uux7j")
+species = &"LOTAD"
+category = "Water Weed"
+pokedex_entry = "This Pokémon lives in ponds with clean water. It is known to ferry small Pokémon across ponds by carrying them on the broad leaf on its head."
+types = Array[StringName]([&"WATER", &"GRASS"])
+base_hp = 40
+base_attack = 30
+base_defense = 30
+base_special_attack = 40
+base_special_defense = 50
+base_speed = 30
+ev_special_defense = 1
+base_exp = 44
+growth_rate = &"Parabolic"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_7x7d3")]([SubResource("Resource_o376t"), SubResource("Resource_lapip"), SubResource("Resource_eu1ab"), SubResource("Resource_38a6w"), SubResource("Resource_3oq1c"), SubResource("Resource_ih1o3"), SubResource("Resource_2c17x"), SubResource("Resource_tberp"), SubResource("Resource_0ojpl"), SubResource("Resource_u4wnt"), SubResource("Resource_utqyi"), SubResource("Resource_2v2u1"), SubResource("Resource_hd070")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"DOUBLEEDGE", &"DOUBLETEAM", &"ECHOEDVOICE", &"ENDURE", &"ENERGYBALL", &"FACADE", &"FLASH", &"FRUSTRATION", &"GIGADRAIN", &"GRASSKNOT", &"GRASSYGLIDE", &"HAIL", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICYWIND", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROUND", &"SCALD", &"SECRETPOWER", &"SEEDBOMB", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"SUBSTITUTE", &"SUNNYDAY", &"SURF", &"SWAGGER", &"SWORDSDANCE", &"SYNTHESIS", &"THIEF", &"UPROAR", &"WATERPULSE", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"COUNTER", &"FLAIL", &"LEECHSEED", &"RAZORLEAF", &"SWEETSCENT", &"SYNTHESIS", &"TEETERDANCE", &"TICKLE", &"WATERGUN"])
+abilities = Array[StringName]([&"SWIFTSWIM", &"RAINDISH"])
+hidden_abilities = Array[StringName]([&"OWNTEMPO"])
+wild_item_uncommon = Array[StringName]([&"MENTALHERB"])
+egg_groups = Array[StringName]([&"Water1", &"Grass"])
+hatch_steps = 3840
+evolutions = Array[ExtResource("1_oejvo")]([SubResource("Resource_pml0y")])
+height = 5
+weight = 26
+color = &"Green"
+shape = &"Insectoid"
+habitat = &"WatersEdge"
+generation = 3
+back_sprite_offset = Vector2i(0, 62)
+front_sprite_offset = Vector2i(-1, 35)
+shadow_size = 1
+id = &"LOTAD"
+display_name = "Lotad"

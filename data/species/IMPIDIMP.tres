@@ -1,0 +1,109 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_bayvl"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_bnweb"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ouy2p"]
+
+[sub_resource type="Resource" id="Resource_bmk8s"]
+script = ExtResource("1_bayvl")
+species = &"MORGREM"
+method = &"Level"
+parameter = "32"
+
+[sub_resource type="Resource" id="Resource_w241v"]
+script = ExtResource("2_bnweb")
+move = &"FAKEOUT"
+
+[sub_resource type="Resource" id="Resource_kcamn"]
+script = ExtResource("2_bnweb")
+move = &"CONFIDE"
+
+[sub_resource type="Resource" id="Resource_suhns"]
+script = ExtResource("2_bnweb")
+level = 4
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_mec8x"]
+script = ExtResource("2_bnweb")
+level = 8
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_86flw"]
+script = ExtResource("2_bnweb")
+level = 12
+move = &"FAKETEARS"
+
+[sub_resource type="Resource" id="Resource_1bjv5"]
+script = ExtResource("2_bnweb")
+level = 16
+move = &"ASSURANCE"
+
+[sub_resource type="Resource" id="Resource_ta2u2"]
+script = ExtResource("2_bnweb")
+level = 20
+move = &"SWAGGER"
+
+[sub_resource type="Resource" id="Resource_c5f2m"]
+script = ExtResource("2_bnweb")
+level = 24
+move = &"SUCKERPUNCH"
+
+[sub_resource type="Resource" id="Resource_6sm83"]
+script = ExtResource("2_bnweb")
+level = 28
+move = &"TORMENT"
+
+[sub_resource type="Resource" id="Resource_cck4u"]
+script = ExtResource("2_bnweb")
+level = 33
+move = &"DARKPULSE"
+
+[sub_resource type="Resource" id="Resource_o4scf"]
+script = ExtResource("2_bnweb")
+level = 36
+move = &"NASTYPLOT"
+
+[sub_resource type="Resource" id="Resource_fa14f"]
+script = ExtResource("2_bnweb")
+level = 40
+move = &"PLAYROUGH"
+
+[sub_resource type="Resource" id="Resource_fti3i"]
+script = ExtResource("2_bnweb")
+level = 44
+move = &"FOULPLAY"
+
+[resource]
+resource_name = "IMPIDIMP"
+script = ExtResource("3_ouy2p")
+species = &"IMPIDIMP"
+category = "Wily"
+pokedex_entry = "Through its nose, it sucks in the emanations produced by people and Pokémon when they feel annoyed. It thrives off this negative energy."
+types = Array[StringName]([&"DARK", &"FAIRY"])
+base_hp = 45
+base_attack = 45
+base_defense = 30
+base_special_attack = 55
+base_special_defense = 40
+base_speed = 50
+ev_special_attack = 1
+base_exp = 53
+gender_ratio = &"AlwaysMale"
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_bnweb")]([SubResource("Resource_w241v"), SubResource("Resource_kcamn"), SubResource("Resource_suhns"), SubResource("Resource_mec8x"), SubResource("Resource_86flw"), SubResource("Resource_1bjv5"), SubResource("Resource_ta2u2"), SubResource("Resource_c5f2m"), SubResource("Resource_6sm83"), SubResource("Resource_cck4u"), SubResource("Resource_o4scf"), SubResource("Resource_fa14f"), SubResource("Resource_fti3i")])
+tutor_moves = Array[StringName]([&"ASSURANCE", &"ATTRACT", &"BURNINGJEALOUSY", &"CAPTIVATE", &"CONFIDE", &"DARKPULSE", &"DAZZLINGGLEAM", &"DOUBLETEAM", &"DRAININGKISS", &"DRAINPUNCH", &"ENDURE", &"FACADE", &"FAKETEARS", &"FOULPLAY", &"FRUSTRATION", &"HIDDENPOWER", &"LASHOUT", &"LEECHLIFE", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"METRONOME", &"MIMIC", &"NASTYPLOT", &"NATURALGIFT", &"PLAYROUGH", &"PROTECT", &"REST", &"RETALIATE", &"RETURN", &"REVENGE", &"ROUND", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SWAGGER", &"TAUNT", &"THIEF", &"THUNDERWAVE", &"TOXIC", &"TRICK", &"UPROAR"])
+abilities = Array[StringName]([&"PRANKSTER", &"FRISK"])
+hidden_abilities = Array[StringName]([&"PICKPOCKET"])
+egg_groups = Array[StringName]([&"Fairy", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_bayvl")]([SubResource("Resource_bmk8s")])
+height = 4
+weight = 55
+color = &"Pink"
+shape = &"Bipedal"
+generation = 8
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(0, 26)
+shadow_size = 1
+id = &"IMPIDIMP"
+display_name = "Impidimp"

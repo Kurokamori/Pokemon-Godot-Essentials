@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GenderRatioData" format=3]
+
+[ext_resource type="Script" path="res://src/data/gender_ratio_data.gd" id="1_0c2gd"]
+
+[resource]
+resource_name = "AlwaysFemale"
+script = ExtResource("1_0c2gd")
+female_chance = -1
+always_female = true
+id = &"AlwaysFemale"
+display_name = "Always Female"

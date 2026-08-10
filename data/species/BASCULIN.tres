@@ -1,0 +1,121 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_f68mv"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_h0x2i"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_gc0w0"]
+
+[sub_resource type="Resource" id="Resource_66dlp"]
+script = ExtResource("2_h0x2i")
+move = &"WATERGUN"
+
+[sub_resource type="Resource" id="Resource_0il54"]
+script = ExtResource("2_h0x2i")
+move = &"TAILWHIP"
+
+[sub_resource type="Resource" id="Resource_87xrc"]
+script = ExtResource("2_h0x2i")
+level = 4
+move = &"TACKLE"
+
+[sub_resource type="Resource" id="Resource_4q4a5"]
+script = ExtResource("2_h0x2i")
+level = 8
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_bea56"]
+script = ExtResource("2_h0x2i")
+level = 12
+move = &"AQUAJET"
+
+[sub_resource type="Resource" id="Resource_lmlo8"]
+script = ExtResource("2_h0x2i")
+level = 16
+move = &"BITE"
+
+[sub_resource type="Resource" id="Resource_wwfdt"]
+script = ExtResource("2_h0x2i")
+level = 20
+move = &"SCARYFACE"
+
+[sub_resource type="Resource" id="Resource_l7ueo"]
+script = ExtResource("2_h0x2i")
+level = 24
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_khofm"]
+script = ExtResource("2_h0x2i")
+level = 28
+move = &"SOAK"
+
+[sub_resource type="Resource" id="Resource_rtawl"]
+script = ExtResource("2_h0x2i")
+level = 32
+move = &"CRUNCH"
+
+[sub_resource type="Resource" id="Resource_4t7ta"]
+script = ExtResource("2_h0x2i")
+level = 36
+move = &"TAKEDOWN"
+
+[sub_resource type="Resource" id="Resource_5wiwm"]
+script = ExtResource("2_h0x2i")
+level = 40
+move = &"FINALGAMBIT"
+
+[sub_resource type="Resource" id="Resource_tx1xq"]
+script = ExtResource("2_h0x2i")
+level = 44
+move = &"AQUATAIL"
+
+[sub_resource type="Resource" id="Resource_ok0e0"]
+script = ExtResource("2_h0x2i")
+level = 48
+move = &"THRASH"
+
+[sub_resource type="Resource" id="Resource_3ecwh"]
+script = ExtResource("2_h0x2i")
+level = 52
+move = &"DOUBLEEDGE"
+
+[sub_resource type="Resource" id="Resource_40507"]
+script = ExtResource("2_h0x2i")
+level = 56
+move = &"HEADSMASH"
+
+[resource]
+resource_name = "BASCULIN"
+script = ExtResource("3_gc0w0")
+species = &"BASCULIN"
+form_name = "Red-Striped"
+category = "Hostile"
+pokedex_entry = "Savage, violent Pokémon, red and blue Basculin are always fighting each other over territory."
+types = Array[StringName]([&"WATER"])
+base_hp = 70
+base_attack = 92
+base_defense = 65
+base_special_attack = 80
+base_special_defense = 55
+base_speed = 98
+ev_speed = 2
+base_exp = 161
+catch_rate = 25
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_h0x2i")]([SubResource("Resource_66dlp"), SubResource("Resource_0il54"), SubResource("Resource_87xrc"), SubResource("Resource_4q4a5"), SubResource("Resource_bea56"), SubResource("Resource_lmlo8"), SubResource("Resource_wwfdt"), SubResource("Resource_l7ueo"), SubResource("Resource_khofm"), SubResource("Resource_rtawl"), SubResource("Resource_4t7ta"), SubResource("Resource_5wiwm"), SubResource("Resource_tx1xq"), SubResource("Resource_ok0e0"), SubResource("Resource_3ecwh"), SubResource("Resource_40507")])
+tutor_moves = Array[StringName]([&"AGILITY", &"AQUATAIL", &"ASSURANCE", &"ATTRACT", &"BOUNCE", &"BRINE", &"CAPTIVATE", &"CONFIDE", &"CRUNCH", &"CUT", &"DIVE", &"DOUBLETEAM", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FLIPTURN", &"FRUSTRATION", &"HAIL", &"HIDDENPOWER", &"HYDROPUMP", &"ICEBEAM", &"ICEFANG", &"ICYWIND", &"LIQUIDATION", &"MIMIC", &"MUDDYWATER", &"MUDSHOT", &"NATURALGIFT", &"PROTECT", &"PSYCHICFANGS", &"RAINDANCE", &"REST", &"RETURN", &"REVENGE", &"REVERSAL", &"ROUND", &"SCALD", &"SCALESHOT", &"SCARYFACE", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"SUBSTITUTE", &"SUPERPOWER", &"SURF", &"SWAGGER", &"SWIFT", &"TAUNT", &"TOXIC", &"UPROAR", &"WATERFALL", &"WHIRLPOOL", &"ZENHEADBUTT"])
+egg_moves = Array[StringName]([&"BUBBLEBEAM", &"ENDEAVOR"])
+abilities = Array[StringName]([&"RECKLESS", &"ADAPTABILITY"])
+hidden_abilities = Array[StringName]([&"MOLDBREAKER"])
+wild_item_uncommon = Array[StringName]([&"DEEPSEATOOTH"])
+egg_groups = Array[StringName]([&"Water2"])
+hatch_steps = 10240
+height = 10
+weight = 180
+color = &"Green"
+shape = &"Finned"
+generation = 5
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(0, 24)
+shadow_size = 1
+id = &"BASCULIN"
+display_name = "Basculin"
+flags = Array[StringName]([&"InheritFormFromMother"])

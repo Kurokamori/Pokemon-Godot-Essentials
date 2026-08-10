@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_vdw8a"]
+
+[resource]
+resource_name = "QUICKATTACK"
+script = ExtResource("1_vdw8a")
+category = 0
+power = 40
+total_pp = 30
+priority = 1
+description = "The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first."
+id = &"QUICKATTACK"
+display_name = "Quick Attack"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_xljaa"]
+
+[resource]
+resource_name = "BRICKBREAK"
+script = ExtResource("1_xljaa")
+type = &"FIGHTING"
+category = 0
+power = 75
+total_pp = 15
+function_code = &"RemoveScreens"
+description = "The user attacks with a swift chop. It can also break any barrier such as Light Screen and Reflect."
+id = &"BRICKBREAK"
+display_name = "Brick Break"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

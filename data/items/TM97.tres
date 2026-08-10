@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_8q5fp"]
+
+[resource]
+resource_name = "TM97"
+script = ExtResource("1_8q5fp")
+name_plural = "TM97s"
+pocket = 4
+price = 2000
+sell_price = 1000
+bp_price = 32
+field_use = 5
+move = &"DEFOG"
+description = "A strong wind blows away the target's barriers, such as Reflect, and lowers their evasiveness."
+id = &"TM97"
+display_name = "TM97"
+flags = Array[StringName]([&"Fling_10"])

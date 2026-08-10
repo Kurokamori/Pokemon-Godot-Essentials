@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_331s3"]
+
+[resource]
+script = ExtResource("1_331s3")
+category = &"types"
+record_script = "res://src/data/type_data.gd"
+paths = {
+&"BUG": "res://data/types/BUG.tres",
+&"DARK": "res://data/types/DARK.tres",
+&"DRAGON": "res://data/types/DRAGON.tres",
+&"ELECTRIC": "res://data/types/ELECTRIC.tres",
+&"FAIRY": "res://data/types/FAIRY.tres",
+&"FIGHTING": "res://data/types/FIGHTING.tres",
+&"FIRE": "res://data/types/FIRE.tres",
+&"FLYING": "res://data/types/FLYING.tres",
+&"GHOST": "res://data/types/GHOST.tres",
+&"GRASS": "res://data/types/GRASS.tres",
+&"GROUND": "res://data/types/GROUND.tres",
+&"ICE": "res://data/types/ICE.tres",
+&"NORMAL": "res://data/types/NORMAL.tres",
+&"POISON": "res://data/types/POISON.tres",
+&"PSYCHIC": "res://data/types/PSYCHIC.tres",
+&"QMARKS": "res://data/types/QMARKS.tres",
+&"ROCK": "res://data/types/ROCK.tres",
+&"STEEL": "res://data/types/STEEL.tres",
+&"WATER": "res://data/types/WATER.tres"
+}
+ordered_ids = Array[StringName]([&"NORMAL", &"FIGHTING", &"FLYING", &"POISON", &"GROUND", &"ROCK", &"BUG", &"GHOST", &"STEEL", &"QMARKS", &"FIRE", &"WATER", &"GRASS", &"ELECTRIC", &"PSYCHIC", &"ICE", &"DRAGON", &"DARK", &"FAIRY"])

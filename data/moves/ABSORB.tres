@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_ltfuw"]
+
+[resource]
+resource_name = "ABSORB"
+script = ExtResource("1_ltfuw")
+type = &"GRASS"
+category = 1
+power = 20
+total_pp = 25
+function_code = &"HealUserByHalfOfDamageDone"
+description = "A nutrient-draining attack. The user's HP is restored by half the damage taken by the target."
+id = &"ABSORB"
+display_name = "Absorb"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove"])

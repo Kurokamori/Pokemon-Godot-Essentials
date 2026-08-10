@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_qsi2k"]
+
+[resource]
+resource_name = "FAIRIUMZ"
+script = ExtResource("1_qsi2k")
+name_plural = "Fairium Zs"
+bp_price = 40
+consumable = false
+description = "A crystal a Fairy-type Pokémon holds to turn a Fairy-type move into Twinkle Tackle."
+id = &"FAIRIUMZ"
+display_name = "Fairium Z"
+flags = Array[StringName]([&"ZCrystal"])

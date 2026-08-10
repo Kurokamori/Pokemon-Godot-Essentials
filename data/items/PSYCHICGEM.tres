@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_amb6c"]
+
+[resource]
+resource_name = "PSYCHICGEM"
+script = ExtResource("1_amb6c")
+name_plural = "Psychic Gems"
+price = 4000
+sell_price = 2000
+description = "A gem with an essence of the mind. When held, it strengthens the power of a Psychic-type move only once."
+id = &"PSYCHICGEM"
+display_name = "Psychic Gem"
+flags = Array[StringName]([&"TypeGem"])

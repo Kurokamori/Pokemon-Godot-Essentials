@@ -1,0 +1,110 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_vagec"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_khw4l"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_p7tlc"]
+
+[sub_resource type="Resource" id="Resource_ob7q3"]
+script = ExtResource("1_vagec")
+species = &"MUDSDALE"
+method = &"Level"
+parameter = "30"
+
+[sub_resource type="Resource" id="Resource_86iwo"]
+script = ExtResource("2_khw4l")
+move = &"MUDSLAP"
+
+[sub_resource type="Resource" id="Resource_eqyvu"]
+script = ExtResource("2_khw4l")
+move = &"ROCKSMASH"
+
+[sub_resource type="Resource" id="Resource_0ae7h"]
+script = ExtResource("2_khw4l")
+level = 4
+move = &"IRONDEFENSE"
+
+[sub_resource type="Resource" id="Resource_g6dmt"]
+script = ExtResource("2_khw4l")
+level = 8
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_2tkog"]
+script = ExtResource("2_khw4l")
+level = 12
+move = &"BULLDOZE"
+
+[sub_resource type="Resource" id="Resource_nsrci"]
+script = ExtResource("2_khw4l")
+level = 16
+move = &"STOMP"
+
+[sub_resource type="Resource" id="Resource_tqjpe"]
+script = ExtResource("2_khw4l")
+level = 20
+move = &"STRENGTH"
+
+[sub_resource type="Resource" id="Resource_xoyu1"]
+script = ExtResource("2_khw4l")
+level = 24
+move = &"COUNTER"
+
+[sub_resource type="Resource" id="Resource_xjpmj"]
+script = ExtResource("2_khw4l")
+level = 28
+move = &"HIGHHORSEPOWER"
+
+[sub_resource type="Resource" id="Resource_ux43o"]
+script = ExtResource("2_khw4l")
+level = 32
+move = &"HEAVYSLAM"
+
+[sub_resource type="Resource" id="Resource_eje0x"]
+script = ExtResource("2_khw4l")
+level = 36
+move = &"EARTHQUAKE"
+
+[sub_resource type="Resource" id="Resource_wsucu"]
+script = ExtResource("2_khw4l")
+level = 40
+move = &"MEGAKICK"
+
+[sub_resource type="Resource" id="Resource_qyiqg"]
+script = ExtResource("2_khw4l")
+level = 44
+move = &"SUPERPOWER"
+
+[resource]
+resource_name = "MUDBRAY"
+script = ExtResource("3_p7tlc")
+species = &"MUDBRAY"
+category = "Donkey"
+pokedex_entry = "It loves playing in the mud. If it isn't showered with mud on a daily basis, it gets stressed out and stops listening to its Trainer."
+types = Array[StringName]([&"GROUND"])
+base_hp = 70
+base_attack = 100
+base_defense = 70
+base_special_attack = 45
+base_special_defense = 55
+base_speed = 45
+ev_attack = 1
+base_exp = 77
+catch_rate = 190
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_khw4l")]([SubResource("Resource_86iwo"), SubResource("Resource_eqyvu"), SubResource("Resource_0ae7h"), SubResource("Resource_g6dmt"), SubResource("Resource_2tkog"), SubResource("Resource_nsrci"), SubResource("Resource_tqjpe"), SubResource("Resource_xoyu1"), SubResource("Resource_xjpmj"), SubResource("Resource_ux43o"), SubResource("Resource_eje0x"), SubResource("Resource_wsucu"), SubResource("Resource_qyiqg")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BULLDOZE", &"CAPTIVATE", &"CLOSECOMBAT", &"CONFIDE", &"DOUBLETEAM", &"EARTHPOWER", &"EARTHQUAKE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FRUSTRATION", &"HEAVYSLAM", &"HIDDENPOWER", &"HIGHHORSEPOWER", &"IRONDEFENSE", &"IRONHEAD", &"LOWKICK", &"LOWSWEEP", &"MEGAKICK", &"MIMIC", &"NATURALGIFT", &"PAYBACK", &"PROTECT", &"REST", &"RETURN", &"ROAR", &"ROCKSLIDE", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SLEEPTALK", &"SNORE", &"STEALTHROCK", &"STOMPINGTANTRUM", &"SUBSTITUTE", &"SUPERPOWER", &"SWAGGER", &"TOXIC"])
+egg_moves = Array[StringName]([&"DOUBLEEDGE", &"FISSURE", &"ROAR", &"SMACKDOWN"])
+abilities = Array[StringName]([&"OWNTEMPO", &"STAMINA"])
+hidden_abilities = Array[StringName]([&"INNERFOCUS"])
+wild_item_uncommon = Array[StringName]([&"LIGHTCLAY"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_vagec")]([SubResource("Resource_ob7q3")])
+height = 10
+weight = 1100
+color = &"Brown"
+shape = &"Quadruped"
+generation = 7
+back_sprite_offset = Vector2i(0, 52)
+front_sprite_offset = Vector2i(-1, 24)
+id = &"MUDBRAY"
+display_name = "Mudbray"

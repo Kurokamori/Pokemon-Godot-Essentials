@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DataIndex" format=3]
+
+[ext_resource type="Script" path="res://src/data/data_index.gd" id="1_fwjxh"]
+
+[resource]
+script = ExtResource("1_fwjxh")
+category = &"battle_terrains"
+record_script = "res://src/data/battle_terrain_data.gd"
+paths = {
+&"Electric": "res://data/battle_terrains/Electric.tres",
+&"Grassy": "res://data/battle_terrains/Grassy.tres",
+&"Misty": "res://data/battle_terrains/Misty.tres",
+&"None": "res://data/battle_terrains/None.tres",
+&"Psychic": "res://data/battle_terrains/Psychic.tres"
+}
+ordered_ids = Array[StringName]([&"None", &"Electric", &"Grassy", &"Misty", &"Psychic"])

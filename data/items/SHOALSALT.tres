@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://src/data/item_data.gd" id="1_ax2s3"]
+
+[resource]
+resource_name = "SHOALSALT"
+script = ExtResource("1_ax2s3")
+name_plural = "Shoal Salts"
+portion_name = "pile of Shoal Salt"
+portion_name_plural = "piles of Shoal Salt"
+price = 20
+sell_price = 10
+description = "Pure salt that can be discovered deep inside the Shoal Cave. A maniac will buy it for a high price."
+id = &"SHOALSALT"
+display_name = "Shoal Salt"
+flags = Array[StringName]([&"Fling_30"])

@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_m7sf1"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_l4c2x"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_x1d7t"]
+
+[sub_resource type="Resource" id="Resource_5ln6c"]
+script = ExtResource("2_l4c2x")
+move = &"SCRATCH"
+
+[sub_resource type="Resource" id="Resource_e47kw"]
+script = ExtResource("2_l4c2x")
+move = &"LEER"
+
+[sub_resource type="Resource" id="Resource_1o2hx"]
+script = ExtResource("2_l4c2x")
+level = 5
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_c37gx"]
+script = ExtResource("2_l4c2x")
+level = 8
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_aluj5"]
+script = ExtResource("2_l4c2x")
+level = 12
+move = &"HONECLAWS"
+
+[sub_resource type="Resource" id="Resource_aq5lx"]
+script = ExtResource("2_l4c2x")
+level = 15
+move = &"AERIALACE"
+
+[sub_resource type="Resource" id="Resource_73x5g"]
+script = ExtResource("2_l4c2x")
+level = 19
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_w3y5p"]
+script = ExtResource("2_l4c2x")
+level = 22
+move = &"REVENGE"
+
+[sub_resource type="Resource" id="Resource_e806m"]
+script = ExtResource("2_l4c2x")
+level = 26
+move = &"CRUSHCLAW"
+
+[sub_resource type="Resource" id="Resource_uj1gq"]
+script = ExtResource("2_l4c2x")
+level = 29
+move = &"FALSESWIPE"
+
+[sub_resource type="Resource" id="Resource_4vawr"]
+script = ExtResource("2_l4c2x")
+level = 33
+move = &"FACADE"
+
+[sub_resource type="Resource" id="Resource_ww705"]
+script = ExtResource("2_l4c2x")
+level = 36
+move = &"DETECT"
+
+[sub_resource type="Resource" id="Resource_h4tnl"]
+script = ExtResource("2_l4c2x")
+level = 40
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_7sfj3"]
+script = ExtResource("2_l4c2x")
+level = 43
+move = &"TAUNT"
+
+[sub_resource type="Resource" id="Resource_mxa8l"]
+script = ExtResource("2_l4c2x")
+level = 47
+move = &"SWORDSDANCE"
+
+[sub_resource type="Resource" id="Resource_mo47t"]
+script = ExtResource("2_l4c2x")
+level = 50
+move = &"CLOSECOMBAT"
+
+[resource]
+resource_name = "ZANGOOSE"
+script = ExtResource("3_x1d7t")
+species = &"ZANGOOSE"
+category = "Cat Ferret"
+pokedex_entry = "When it battles, it stands on its hind legs and attacks with its sharply clawed forelegs. Its fur bristles if it encounters any Seviper."
+base_hp = 73
+base_attack = 115
+base_defense = 60
+base_special_attack = 60
+base_special_defense = 60
+base_speed = 90
+ev_attack = 2
+base_exp = 160
+growth_rate = &"Erratic"
+catch_rate = 90
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_l4c2x")]([SubResource("Resource_5ln6c"), SubResource("Resource_e47kw"), SubResource("Resource_1o2hx"), SubResource("Resource_c37gx"), SubResource("Resource_aluj5"), SubResource("Resource_aq5lx"), SubResource("Resource_73x5g"), SubResource("Resource_w3y5p"), SubResource("Resource_e806m"), SubResource("Resource_uj1gq"), SubResource("Resource_4vawr"), SubResource("Resource_ww705"), SubResource("Resource_h4tnl"), SubResource("Resource_7sfj3"), SubResource("Resource_mxa8l"), SubResource("Resource_mo47t")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLIZZARD", &"BODYSLAM", &"BRICKBREAK", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DIG", &"DOUBLEEDGE", &"DOUBLETEAM", &"DYNAMICPUNCH", &"EMBARGO", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FALSESWIPE", &"FIREBLAST", &"FIREPUNCH", &"FLAMETHROWER", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGADRAIN", &"HEADBUTT", &"HIDDENPOWER", &"HONECLAWS", &"ICEBEAM", &"ICEPUNCH", &"ICYWIND", &"INCINERATE", &"IRONTAIL", &"KNOCKOFF", &"LASTRESORT", &"LOWKICK", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"POISONJAB", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"ROAR", &"ROCKCLIMB", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEISMICTOSS", &"SHADOWBALL", &"SHADOWCLAW", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"SWORDSDANCE", &"TAUNT", &"THIEF", &"THROATCHOP", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"WATERPULSE", &"WORKUP", &"XSCISSOR"])
+egg_moves = Array[StringName]([&"BELLYDRUM", &"COUNTER", &"CURSE", &"DISABLE", &"DOUBLEHIT", &"DOUBLEKICK", &"FEINT", &"FINALGAMBIT", &"FLAIL", &"FURYSWIPES", &"METALCLAW", &"NIGHTSLASH", &"QUICKGUARD"])
+abilities = Array[StringName]([&"IMMUNITY"])
+hidden_abilities = Array[StringName]([&"TOXICBOOST"])
+wild_item_uncommon = Array[StringName]([&"QUICKCLAW"])
+egg_groups = Array[StringName]([&"Field"])
+hatch_steps = 5120
+height = 13
+weight = 403
+color = &"White"
+shape = &"BipedalTail"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 44)
+front_sprite_offset = Vector2i(3, 21)
+shadow_size = 1
+id = &"ZANGOOSE"
+display_name = "Zangoose"

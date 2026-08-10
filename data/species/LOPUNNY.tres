@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_4splr"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_s40u1"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_k3phd"]
+
+[sub_resource type="Resource" id="Resource_5a2ck"]
+script = ExtResource("1_4splr")
+species = &"BUNEARY"
+method = &"Happiness"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_7iwgi"]
+script = ExtResource("2_s40u1")
+move = &"MIRRORCOAT"
+
+[sub_resource type="Resource" id="Resource_plfk2"]
+script = ExtResource("2_s40u1")
+move = &"MAGICCOAT"
+
+[sub_resource type="Resource" id="Resource_7canh"]
+script = ExtResource("2_s40u1")
+move = &"SPLASH"
+
+[sub_resource type="Resource" id="Resource_6c3fu"]
+script = ExtResource("2_s40u1")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_vfv3a"]
+script = ExtResource("2_s40u1")
+move = &"DEFENSECURL"
+
+[sub_resource type="Resource" id="Resource_eql8d"]
+script = ExtResource("2_s40u1")
+move = &"BABYDOLLEYES"
+
+[sub_resource type="Resource" id="Resource_4vhj3"]
+script = ExtResource("2_s40u1")
+level = 12
+move = &"AFTERYOU"
+
+[sub_resource type="Resource" id="Resource_fqaxu"]
+script = ExtResource("2_s40u1")
+level = 16
+move = &"QUICKATTACK"
+
+[sub_resource type="Resource" id="Resource_ru36y"]
+script = ExtResource("2_s40u1")
+level = 20
+move = &"DOUBLEKICK"
+
+[sub_resource type="Resource" id="Resource_1hb4x"]
+script = ExtResource("2_s40u1")
+level = 24
+move = &"CHARM"
+
+[sub_resource type="Resource" id="Resource_i6fos"]
+script = ExtResource("2_s40u1")
+level = 28
+move = &"BATONPASS"
+
+[sub_resource type="Resource" id="Resource_k6bep"]
+script = ExtResource("2_s40u1")
+level = 32
+move = &"HEADBUTT"
+
+[sub_resource type="Resource" id="Resource_ojr6o"]
+script = ExtResource("2_s40u1")
+level = 36
+move = &"AGILITY"
+
+[sub_resource type="Resource" id="Resource_bhv2e"]
+script = ExtResource("2_s40u1")
+level = 40
+move = &"ENTRAINMENT"
+
+[sub_resource type="Resource" id="Resource_tdl3e"]
+script = ExtResource("2_s40u1")
+level = 44
+move = &"FLATTER"
+
+[sub_resource type="Resource" id="Resource_c3q4e"]
+script = ExtResource("2_s40u1")
+level = 48
+move = &"BOUNCE"
+
+[sub_resource type="Resource" id="Resource_3jfs7"]
+script = ExtResource("2_s40u1")
+level = 52
+move = &"HEALINGWISH"
+
+[sub_resource type="Resource" id="Resource_tkkg7"]
+script = ExtResource("2_s40u1")
+level = 56
+move = &"HIGHJUMPKICK"
+
+[resource]
+resource_name = "LOPUNNY"
+script = ExtResource("3_k3phd")
+species = &"LOPUNNY"
+category = "Rabbit"
+pokedex_entry = "An extremely cautious Pokémon. It cloaks its body with its fluffy ear fur when it senses danger."
+base_hp = 65
+base_attack = 76
+base_defense = 84
+base_special_attack = 54
+base_special_defense = 96
+base_speed = 105
+ev_speed = 2
+base_exp = 168
+catch_rate = 60
+base_happiness = 140
+level_up_moves = Array[ExtResource("2_s40u1")]([SubResource("Resource_7iwgi"), SubResource("Resource_plfk2"), SubResource("Resource_7canh"), SubResource("Resource_6c3fu"), SubResource("Resource_vfv3a"), SubResource("Resource_eql8d"), SubResource("Resource_4vhj3"), SubResource("Resource_fqaxu"), SubResource("Resource_ru36y"), SubResource("Resource_1hb4x"), SubResource("Resource_i6fos"), SubResource("Resource_k6bep"), SubResource("Resource_ojr6o"), SubResource("Resource_bhv2e"), SubResource("Resource_tdl3e"), SubResource("Resource_c3q4e"), SubResource("Resource_3jfs7"), SubResource("Resource_tkkg7")])
+tutor_moves = Array[StringName]([&"ACROBATICS", &"AFTERYOU", &"AGILITY", &"ASSURANCE", &"ATTRACT", &"AURASPHERE", &"BATONPASS", &"BLIZZARD", &"BOUNCE", &"BRUTALSWING", &"CAPTIVATE", &"CHARGEBEAM", &"CHARM", &"CLOSECOMBAT", &"CONFIDE", &"COSMICPOWER", &"COVET", &"CUT", &"DIG", &"DOUBLETEAM", &"DRAINPUNCH", &"ENCORE", &"ENDEAVOR", &"ENDURE", &"FACADE", &"FAKETEARS", &"FIREPUNCH", &"FLING", &"FOCUSBLAST", &"FOCUSPUNCH", &"FRUSTRATION", &"FURYCUTTER", &"GIGAIMPACT", &"GRASSKNOT", &"HEADBUTT", &"HEALBELL", &"HELPINGHAND", &"HIDDENPOWER", &"HYPERBEAM", &"HYPERVOICE", &"ICEBEAM", &"ICEPUNCH", &"IRONTAIL", &"LASERFOCUS", &"LASTRESORT", &"LOWKICK", &"LOWSWEEP", &"MAGICCOAT", &"MEGAKICK", &"MEGAPUNCH", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAYBACK", &"PLAYROUGH", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETALIATE", &"RETURN", &"REVERSAL", &"ROCKSMASH", &"ROUND", &"SECRETPOWER", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"SWIFT", &"THUNDER", &"THUNDERBOLT", &"THUNDERPUNCH", &"THUNDERWAVE", &"TRIPLEAXEL", &"UPROAR", &"UTURN", &"WATERPULSE", &"WORKUP"])
+abilities = Array[StringName]([&"CUTECHARM", &"KLUTZ"])
+hidden_abilities = Array[StringName]([&"LIMBER"])
+egg_groups = Array[StringName]([&"Field", &"Humanlike"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_4splr")]([SubResource("Resource_5a2ck")])
+height = 12
+weight = 333
+color = &"Brown"
+shape = &"BipedalTail"
+generation = 4
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(2, 19)
+shadow_size = 1
+id = &"LOPUNNY"
+display_name = "Lopunny"

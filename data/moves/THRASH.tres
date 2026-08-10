@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_f4oxu"]
+
+[resource]
+resource_name = "THRASH"
+script = ExtResource("1_f4oxu")
+category = 0
+power = 120
+total_pp = 10
+target = &"RandomNearFoe"
+function_code = &"MultiTurnAttackConfuseUserAtEnd"
+description = "The user rampages and attacks for two to three turns. It then becomes confused, however."
+id = &"THRASH"
+display_name = "Thrash"
+flags = Array[StringName]([&"Contact", &"CanProtect", &"CanMirrorMove"])

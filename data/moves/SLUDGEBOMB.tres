@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="MoveData" format=3]
+
+[ext_resource type="Script" path="res://src/data/move_data.gd" id="1_r4pdy"]
+
+[resource]
+resource_name = "SLUDGEBOMB"
+script = ExtResource("1_r4pdy")
+type = &"POISON"
+category = 1
+power = 90
+total_pp = 10
+function_code = &"PoisonTarget"
+effect_chance = 30
+description = "Unsanitary sludge is hurled at the target. It may also poison the target."
+id = &"SLUDGEBOMB"
+display_name = "Sludge Bomb"
+flags = Array[StringName]([&"CanProtect", &"CanMirrorMove", &"Bomb"])

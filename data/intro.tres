@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="IntroSequenceData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/data/intro_sequence_data.gd" id="1_intro"]
+
+[resource]
+script = ExtResource("1_intro")
+professor_name = "Oak"
+professor_picture = "introOak"
+demo_pokemon_picture = "introMarill"
+demo_pokemon_species = &"MARILL"
+rival_picture = ""
+background_picture = "introbg"
+base_picture = "introbase"
+music = ""
+greeting_lines = Array[String](["Hello there!\\nGlad to meet you!", "Welcome to the world of POKEMON!", "My name is {PROFESSOR}.\\nPeople affectionately refer to me as the POKEMON PROFESSOR."])
+world_lines = Array[String](["This world is widely inhabited by creatures known as POKEMON!", "We humans live alongside POKEMON as friends.", "At times we play together, and at other times we work together."])
+ask_character_lines = Array[String](["Now then...", "First things first. Tell me a little about yourself."])
+ask_name_lines = Array[String](["So tell me...\\nWhat is your name?"])
+confirm_name_lines = Array[String](["Right, so your name is {PLAYER}!"])
+ask_rival_lines = Array[String](["This is my grandson.", "He's been your rival since you both were babies.", "...Erm, what was his name again?"])
+confirm_rival_lines = Array[String](["That's right! I remember now! His name is {RIVAL}!"])
+farewell_lines = Array[String](["{PLAYER}!", "Your very own POKEMON legend is about to unfold!", "A world of dreams and adventures with POKEMON awaits!\\nLet's go!"])
+selectable_characters = Array[StringName]([])
+character_prompt = "Are you a boy? Or are you a girl?"
+player_name_prompt = "Your name?"
+rival_name_prompt = "Rival's name?"
+rival_name_suggestions = Array[String](["Blue", "Gary", "Silver", "Brendan", "May"])
+default_rival_name = "Blue"
+default_player_name = "Red"
+rival_name_variable = 1
+starter_species = &"BULBASAUR"
+starter_level = 5
+starting_items = Dictionary[StringName, int]({
+&"POKEBALL": 10,
+&"POTION": 5
+})
+gives_running_shoes = true

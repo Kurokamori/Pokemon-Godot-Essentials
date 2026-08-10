@@ -1,0 +1,130 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_s4uhg"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_cm6g7"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_ygt73"]
+
+[sub_resource type="Resource" id="Resource_e3joq"]
+script = ExtResource("1_s4uhg")
+species = &"SWALOT"
+method = &"Level"
+parameter = "26"
+
+[sub_resource type="Resource" id="Resource_p2mir"]
+script = ExtResource("2_cm6g7")
+move = &"POUND"
+
+[sub_resource type="Resource" id="Resource_d6k6k"]
+script = ExtResource("2_cm6g7")
+level = 5
+move = &"YAWN"
+
+[sub_resource type="Resource" id="Resource_lt45w"]
+script = ExtResource("2_cm6g7")
+level = 8
+move = &"POISONGAS"
+
+[sub_resource type="Resource" id="Resource_xtj7o"]
+script = ExtResource("2_cm6g7")
+level = 10
+move = &"SLUDGE"
+
+[sub_resource type="Resource" id="Resource_g7iyo"]
+script = ExtResource("2_cm6g7")
+level = 12
+move = &"AMNESIA"
+
+[sub_resource type="Resource" id="Resource_cqdpv"]
+script = ExtResource("2_cm6g7")
+level = 17
+move = &"ACIDSPRAY"
+
+[sub_resource type="Resource" id="Resource_v20uk"]
+script = ExtResource("2_cm6g7")
+level = 20
+move = &"ENCORE"
+
+[sub_resource type="Resource" id="Resource_ofybq"]
+script = ExtResource("2_cm6g7")
+level = 25
+move = &"TOXIC"
+
+[sub_resource type="Resource" id="Resource_yws62"]
+script = ExtResource("2_cm6g7")
+level = 28
+move = &"STOCKPILE"
+
+[sub_resource type="Resource" id="Resource_yr5t2"]
+script = ExtResource("2_cm6g7")
+level = 28
+move = &"SPITUP"
+
+[sub_resource type="Resource" id="Resource_yt7x3"]
+script = ExtResource("2_cm6g7")
+level = 28
+move = &"SWALLOW"
+
+[sub_resource type="Resource" id="Resource_wsfbh"]
+script = ExtResource("2_cm6g7")
+level = 33
+move = &"SLUDGEBOMB"
+
+[sub_resource type="Resource" id="Resource_ut54u"]
+script = ExtResource("2_cm6g7")
+level = 36
+move = &"GASTROACID"
+
+[sub_resource type="Resource" id="Resource_tn1f1"]
+script = ExtResource("2_cm6g7")
+level = 41
+move = &"BELCH"
+
+[sub_resource type="Resource" id="Resource_pwvtt"]
+script = ExtResource("2_cm6g7")
+level = 44
+move = &"PAINSPLIT"
+
+[sub_resource type="Resource" id="Resource_gsxwl"]
+script = ExtResource("2_cm6g7")
+level = 49
+move = &"GUNKSHOT"
+
+[resource]
+resource_name = "GULPIN"
+script = ExtResource("3_ygt73")
+species = &"GULPIN"
+category = "Stomach"
+pokedex_entry = "This Pokémon's stomach fluid can even digest scrap iron. In one gulp, it can swallow something that is as large as itself."
+types = Array[StringName]([&"POISON"])
+base_hp = 70
+base_attack = 43
+base_defense = 53
+base_special_attack = 43
+base_special_defense = 53
+base_speed = 40
+ev_hp = 1
+base_exp = 60
+growth_rate = &"Fluctuating"
+catch_rate = 225
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_cm6g7")]([SubResource("Resource_p2mir"), SubResource("Resource_d6k6k"), SubResource("Resource_lt45w"), SubResource("Resource_xtj7o"), SubResource("Resource_g7iyo"), SubResource("Resource_cqdpv"), SubResource("Resource_v20uk"), SubResource("Resource_ofybq"), SubResource("Resource_yws62"), SubResource("Resource_yr5t2"), SubResource("Resource_yt7x3"), SubResource("Resource_wsfbh"), SubResource("Resource_ut54u"), SubResource("Resource_tn1f1"), SubResource("Resource_pwvtt"), SubResource("Resource_gsxwl")])
+tutor_moves = Array[StringName]([&"ATTRACT", &"BODYSLAM", &"BULLETSEED", &"CAPTIVATE", &"CONFIDE", &"COUNTER", &"DEFENSECURL", &"DOUBLEEDGE", &"DOUBLETEAM", &"DREAMEATER", &"DYNAMICPUNCH", &"ENDURE", &"EXPLOSION", &"FACADE", &"FIREPUNCH", &"FRUSTRATION", &"GASTROACID", &"GUNKSHOT", &"HEADBUTT", &"HIDDENPOWER", &"ICEBEAM", &"ICEPUNCH", &"INFESTATION", &"MIMIC", &"MUDSLAP", &"NATURALGIFT", &"PAINSPLIT", &"POWERUPPUNCH", &"PROTECT", &"RAINDANCE", &"REST", &"RETURN", &"ROCKSMASH", &"ROLLOUT", &"ROUND", &"SECRETPOWER", &"SEEDBOMB", &"SHADOWBALL", &"SHOCKWAVE", &"SLEEPTALK", &"SLUDGEBOMB", &"SLUDGEWAVE", &"SNATCH", &"SNORE", &"SOLARBEAM", &"STRENGTH", &"SUBSTITUTE", &"SUNNYDAY", &"SWAGGER", &"THUNDERPUNCH", &"TOXIC", &"VENOSHOCK", &"WATERPULSE"])
+egg_moves = Array[StringName]([&"ACIDARMOR", &"CURSE", &"DESTINYBOND", &"GUNKSHOT", &"MUDSLAP", &"PAINSPLIT", &"SMOG", &"VENOMDRENCH"])
+abilities = Array[StringName]([&"LIQUIDOOZE", &"STICKYHOLD"])
+hidden_abilities = Array[StringName]([&"GLUTTONY"])
+wild_item_common = Array[StringName]([&"ORANBERRY"])
+wild_item_uncommon = Array[StringName]([&"SITRUSBERRY"])
+egg_groups = Array[StringName]([&"Amorphous"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_s4uhg")]([SubResource("Resource_e3joq")])
+height = 4
+weight = 103
+color = &"Green"
+shape = &"HeadArms"
+habitat = &"Grassland"
+generation = 3
+back_sprite_offset = Vector2i(0, 54)
+front_sprite_offset = Vector2i(0, 32)
+shadow_size = 1
+id = &"GULPIN"
+display_name = "Gulpin"

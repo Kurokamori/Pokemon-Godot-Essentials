@@ -1,0 +1,112 @@
+[gd_resource type="Resource" script_class="SpeciesData" format=3]
+
+[ext_resource type="Script" path="res://src/data/species_evolution.gd" id="1_lpquy"]
+[ext_resource type="Script" path="res://src/data/level_up_move.gd" id="2_jfrs0"]
+[ext_resource type="Script" path="res://src/data/species_data.gd" id="3_6lxse"]
+
+[sub_resource type="Resource" id="Resource_4lk6h"]
+script = ExtResource("1_lpquy")
+species = &"DWEBBLE"
+method = &"Level"
+parameter = "34"
+is_prevolution = true
+
+[sub_resource type="Resource" id="Resource_6yldl"]
+script = ExtResource("2_jfrs0")
+move = &"FURYCUTTER"
+
+[sub_resource type="Resource" id="Resource_csx81"]
+script = ExtResource("2_jfrs0")
+move = &"SANDATTACK"
+
+[sub_resource type="Resource" id="Resource_e0jky"]
+script = ExtResource("2_jfrs0")
+move = &"WITHDRAW"
+
+[sub_resource type="Resource" id="Resource_7vva6"]
+script = ExtResource("2_jfrs0")
+move = &"SMACKDOWN"
+
+[sub_resource type="Resource" id="Resource_yvwsv"]
+script = ExtResource("2_jfrs0")
+level = 12
+move = &"BUGBITE"
+
+[sub_resource type="Resource" id="Resource_n03j1"]
+script = ExtResource("2_jfrs0")
+level = 16
+move = &"FLAIL"
+
+[sub_resource type="Resource" id="Resource_sro1n"]
+script = ExtResource("2_jfrs0")
+level = 20
+move = &"SLASH"
+
+[sub_resource type="Resource" id="Resource_b5buc"]
+script = ExtResource("2_jfrs0")
+level = 24
+move = &"ROCKSLIDE"
+
+[sub_resource type="Resource" id="Resource_joft7"]
+script = ExtResource("2_jfrs0")
+level = 28
+move = &"STEALTHROCK"
+
+[sub_resource type="Resource" id="Resource_82tac"]
+script = ExtResource("2_jfrs0")
+level = 32
+move = &"ROCKBLAST"
+
+[sub_resource type="Resource" id="Resource_576ry"]
+script = ExtResource("2_jfrs0")
+level = 38
+move = &"XSCISSOR"
+
+[sub_resource type="Resource" id="Resource_vqnol"]
+script = ExtResource("2_jfrs0")
+level = 44
+move = &"ROCKPOLISH"
+
+[sub_resource type="Resource" id="Resource_0rk1x"]
+script = ExtResource("2_jfrs0")
+level = 50
+move = &"SHELLSMASH"
+
+[sub_resource type="Resource" id="Resource_d3bfa"]
+script = ExtResource("2_jfrs0")
+level = 56
+move = &"ROCKWRECKER"
+
+[resource]
+resource_name = "CRUSTLE"
+script = ExtResource("3_6lxse")
+species = &"CRUSTLE"
+category = "Stone Home"
+pokedex_entry = "It possesses legs of enormous strength, enabling it to carry heavy slabs for many days, even when crossing arid land."
+types = Array[StringName]([&"BUG", &"ROCK"])
+base_hp = 70
+base_attack = 105
+base_defense = 125
+base_special_attack = 65
+base_special_defense = 75
+base_speed = 45
+ev_defense = 2
+base_exp = 170
+catch_rate = 75
+base_happiness = 50
+level_up_moves = Array[ExtResource("2_jfrs0")]([SubResource("Resource_6yldl"), SubResource("Resource_csx81"), SubResource("Resource_e0jky"), SubResource("Resource_7vva6"), SubResource("Resource_yvwsv"), SubResource("Resource_n03j1"), SubResource("Resource_sro1n"), SubResource("Resource_b5buc"), SubResource("Resource_joft7"), SubResource("Resource_82tac"), SubResource("Resource_576ry"), SubResource("Resource_vqnol"), SubResource("Resource_0rk1x"), SubResource("Resource_d3bfa")])
+tutor_moves = Array[StringName]([&"AERIALACE", &"ATTRACT", &"BLOCK", &"BODYPRESS", &"BUGBITE", &"BULLDOZE", &"CAPTIVATE", &"CONFIDE", &"CUT", &"DIG", &"DOUBLETEAM", &"EARTHQUAKE", &"ENDURE", &"FACADE", &"FRUSTRATION", &"GIGAIMPACT", &"HEAVYSLAM", &"HIDDENPOWER", &"HONECLAWS", &"HYPERBEAM", &"IRONDEFENSE", &"KNOCKOFF", &"METEORBEAM", &"MIMIC", &"NATURALGIFT", &"NATUREPOWER", &"POISONJAB", &"PROTECT", &"REST", &"RETURN", &"ROCKBLAST", &"ROCKPOLISH", &"ROCKSLIDE", &"ROCKSMASH", &"ROCKTOMB", &"ROUND", &"SANDSTORM", &"SANDTOMB", &"SECRETPOWER", &"SHADOWCLAW", &"SKITTERSMACK", &"SLEEPTALK", &"SMACKDOWN", &"SNORE", &"SOLARBEAM", &"SOLARBLADE", &"SPIKES", &"STEALTHROCK", &"STOMPINGTANTRUM", &"STONEEDGE", &"STRENGTH", &"STRUGGLEBUG", &"SUBSTITUTE", &"SWAGGER", &"SWORDSDANCE", &"TOXIC", &"XSCISSOR"])
+abilities = Array[StringName]([&"STURDY", &"SHELLARMOR"])
+hidden_abilities = Array[StringName]([&"WEAKARMOR"])
+wild_item_uncommon = Array[StringName]([&"HARDSTONE"])
+egg_groups = Array[StringName]([&"Bug", &"Mineral"])
+hatch_steps = 5120
+evolutions = Array[ExtResource("1_lpquy")]([SubResource("Resource_4lk6h")])
+height = 14
+weight = 2000
+shape = &"Insectoid"
+generation = 5
+back_sprite_offset = Vector2i(0, 48)
+front_sprite_offset = Vector2i(1, 23)
+id = &"CRUSTLE"
+display_name = "Crustle"
