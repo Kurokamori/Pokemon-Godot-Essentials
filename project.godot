@@ -14,6 +14,10 @@ config/name="Pokemon Godot Essentials"
 config/features=PackedStringArray("4.8", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[debug]
+
+gdscript/warnings/integer_division=0
+
 [display]
 
 window/stretch/mode="canvas_items"
@@ -30,7 +34,8 @@ folder_colors={
 "res://locale/": "teal",
 "res://scenes/": "blue",
 "res://shaders/": "pink",
-"res://src/": "red"
+"res://src/": "red",
+"res://src/core/": "red"
 }
 
 [input_devices]
