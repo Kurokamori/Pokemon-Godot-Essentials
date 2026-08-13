@@ -1,3 +1,5 @@
+@tool
+class_name DataIndex
 extends Resource
 
 ## [Database] will load an index per category so that it can resolve an id to a file
