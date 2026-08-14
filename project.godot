@@ -14,6 +14,13 @@ config/name="Pokemon Godot Essentials"
 config/features=PackedStringArray("4.8", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameSettings="*uid://dcu3cm0tnnhyd"
+Database="*uid://cjgw44nx1g16o"
+AudioManager="*uid://bqt3octbiuvjf"
+GameState="*uid://bt35egkv3xog6"
+
 [debug]
 
 gdscript/warnings/integer_division=0
