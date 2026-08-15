@@ -16,6 +16,9 @@ signal variable_changed(variable_id: int, value: Variant)
 ## Emitted after the player finishes taking a step.
 signal step_taken()
 
+## Emitted when the player changes from cycling / walking / surfing / diving
+signal movement_state_changed()
+
 ## Emitted when the final step of repel is taken, allowing the game to offer a new one.
 ## Since this is a question and must stop gameplay, it is unique from [signal step_taken]
 signal repel_wore_off()
@@ -174,6 +177,22 @@ var bug_contest: BugContestSession = null
 ## The Battle Frontier record, kept by facility. 
 ## The streak in one outlasts a single run, so this survives between visits.
 var challenges: Dictionary = {}
+
+@export_group("Followers")
+## The party slot which the player chose to follow them under [constant FollowerMode.Mode.CHOSEN] or
+## [constant PokemonFollowerSettings.NOBODY_CHOSEN]
+var follower_chosen_index: int = -1
+
+## The follower mode override, either due to a script or the player's choice
+var follower_mode_override: int = -1
+
+## Temporary followers a script has added as [method FollowerPokemon.to_dict]
+## While there is anything here it is the whole line, so that a script that says who is walking with the player has all of it
+var follower_overrides: Array = []
+
+## Sets `true` while a script has removed a Pokemon follower, say for a cutscene
+## They return at the player's current place not where they were disabled
+var followers_hidden: bool = false
 
 @export_group("Shops")
 ## Buying prices an event has changed with `setPrice`, keyed by item id.

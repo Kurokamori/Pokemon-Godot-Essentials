@@ -157,6 +157,38 @@ static func poke_ball_icon(ball_id:StringName) -> Texture2D:
 static func pokemon_footprint(species_id: StringName, form: int) -> Texture2D:
 	return _first_texture(AssetIndex.CATEGORY_POKEMON_FOOTPRINTS, _sprite_name_candidates(species_id, form, false))
 	
+# === Followers Charsets ===
+
+## Folder under `graphics/characters`
+const FOLLOWER_FOLDER: String = "Followers"
+const FOLLOWER_SHINY_FOLDER: String = "Followers shiny"
+const FOLLOWER_FALLBACK: String = "000"
+const FOLLOWER_EGG: String = "Egg"
+
+## Resolves the name of the character sheet a Pokemon follower is drawn as
+## 
+## A folder relative name, not a texture, as that is what [GridCharacter] will expect
+##
+## The search starts most specific (form and gender) then just form, then gender, then bare species
+## If shiny, starts with shiny, then falls back to standard.
+static func pokemon_follower_charset(
+	species_id: StringName, form: int, shiny: bool, female: bool = false, egg: bool = false
+) -> String:
+	var names: Array[String] = []
+	if egg:
+		names.append(FOLLOWER_FOLDER.path_join(FOLLOWER_EGG))
+	else:
+		if shiny:
+			for canditate: String in _sprite_name_candidates(species_id, form, female):
+				names.append(FOLLOWER_SHINY_FOLDER.path_join(canditate))
+		for candidate: String in _sprite_name_candidates(species_id, form, female):
+			names.append(FOLLOWER_FOLDER.path_join(candidate))
+	names.append(FOLLOWER_FOLDER.path_join(FOLLOWER_FALLBACK))
+	for name: String in names:
+		if exists(AssetIndex.CATEGORY_CHARACTERS, name):
+			return name
+	return ""
+
 # === Other Sprites ===
 	
 static func item_icon(item_id: StringName) -> Texture2D:

@@ -39,9 +39,18 @@ extends Resource
 ## The pokeball the Pokemon is in
 @export var poke_ball: StringName = &""
 
+@export_group("Stats")
+## The six individual values in their canonical order (HP/ATK/DEF/SPA/SPD/SPE)
+## An empty array rolls randomly
+## A single value applies that value to all the stats
+@export var ivs: Array[int] = []
+
+## The six effort values in their canonical order (HP/ATK/DEF/SPA/SPD/SPE)
+## An empty array rolls randomly
+## A single value applies that value to all the stats
+@export var evs: Array[int] = []
+
 @export_group("Flags")
 @export var shiny: bool = false
 @export var super_shiny: bool = false
 @export var shadow: bool = false
-
-# TODO: Add user control over individual EV/IVs for difficulty control

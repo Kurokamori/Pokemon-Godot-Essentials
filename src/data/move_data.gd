@@ -112,6 +112,9 @@ func ignores_substitute() -> bool:
 	
 func thaws_user() -> bool:
 	return has_flag(&"ThawsUser")
+
+func tramples_minimize() -> bool:
+	return has_flag(&"TramplesMinimize")
 	
 
 ## The move description in the player's langauge.

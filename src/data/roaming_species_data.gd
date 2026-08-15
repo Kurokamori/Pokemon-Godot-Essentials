@@ -55,7 +55,7 @@ func is_roaming() -> bool:
 	
 ## Maps that this roaming Pokemon can move to from [param from_map]
 ## Falls back to every other area map, which assumes it's fully connected.
-func routes_fromt(from_map: int) -> Array[int]:
+func routes_from(from_map: int) -> Array[int]:
 	var destinations: Array[int] = []
 	if routes.has(from_map):
 		for entry: Variant in routes[from_map]:

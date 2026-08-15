@@ -48,7 +48,7 @@ func chooser_name() -> String:
 
 ## Art for the character chooser.
 ## The dedicated intro picture when one is otherwise the character's trainer sprite.
-func choose_texture() -> Texture2D:
+func chooser_texture() -> Texture2D:
 	if not intro_picture.is_empty():
 		var picture: Texture2D = Assets.texture(AssetIndex.CATEGORY_PICTURES, intro_picture)
 		if picture != null:

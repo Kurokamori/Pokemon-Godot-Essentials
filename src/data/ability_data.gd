@@ -9,5 +9,5 @@ extends GameDataResource
 @export_multiline("Ability Description") var description: String = ""
 
 ## The ability description in the player's language.
-func get_translated_name() -> String:
+func get_translated_description() -> String:
 	return translate_field(description)

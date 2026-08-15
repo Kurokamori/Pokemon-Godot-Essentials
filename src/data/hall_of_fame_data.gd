@@ -31,6 +31,9 @@ enum Layout {
 ## How faded a Pokemon is when the spotlight is no longer on it. From 0 to 1.
 @export_range(0.0, 1.0, 0.05) var dimmed_opacity: float = 0.25
 
+## Whether or not hide the bars for the trainer reveal
+@export var hides_bars_for_trainer: bool = true
+
 
 @export_group("Timing")
 ## Seconds a pokemon takes to slide in from off screen.
@@ -47,7 +50,7 @@ enum Layout {
 
 ## Whether the team slides on.
 ## Off, they are simply there.
-@export var animates_enterance: bool = true
+@export var animates_entrance: bool = true
 
 
 @export_group("Words")

@@ -23,8 +23,8 @@ const CEL_FIELDS: int = 13
 
 const CEL_X: int = 0
 const CEL_Y: int = 1
-const CELL_ZOOM_X: int = 2
-const CELL_ZOOM_Y: int = 3
+const CEL_ZOOM_X: int = 2
+const CEL_ZOOM_Y: int = 3
 
 ## Rotation in degrees (ANTI-clockwise)
 const CEL_ANGLE: int = 4
@@ -35,7 +35,7 @@ const CEL_MIRROR: int = 5
 ## Declares which frame of the animation's sheet to draw.
 ## `PATTERN_USER` and `PATTERN_TARGET` mean the battler sprites instead of the picture
 const CEL_PATTERN: int = 6
-const CEL_OPACTIY: int = 7
+const CEL_OPACITY: int = 7
 const CEL_TONE_RED: int = 8
 const CEL_TONE_GREEN: int = 9
 const CEL_TONE_BLUE: int = 10
@@ -79,11 +79,11 @@ const RMXP_SHEET_COLUMNS: int = 5
 ## Where the animation was authored
 ## The user stands here in ever cel's coordinates
 ## [BattleAnimationPlayer] will move it to where the battler really is
-const AUTHORED_USER_POSTION: Vector2 = Vector2(128.0, 224.0)
+const AUTHORED_USER_POSITION: Vector2 = Vector2(128.0, 224.0)
 ## Similar to AUTHORED_USER_POSTION this is where the target was authored in cel's coordinates
 ## The target stands here in ever cel
 ## [BattleAnimationPlayer] will move it to where the target really is
-const AUTHORED_TARGET_POSTION: Vector2 = Vector2(384.0, 96.0)
+const AUTHORED_TARGET_POSITION: Vector2 = Vector2(384.0, 96.0)
 
 ## Name of the sheet in the `battle_animations` asset category
 ## Omit extension
@@ -121,7 +121,7 @@ const AUTHORED_TARGET_POSTION: Vector2 = Vector2(384.0, 96.0)
 @export var flash_frames: PackedInt32Array = PackedInt32Array()
 
 ## What each flash covers (See the `FLASH_` constants)
-@export var flash_scope: PackedInt32Array = PackedInt32Array()
+@export var flash_scopes: PackedInt32Array = PackedInt32Array()
 
 ## Colour of each flash.
 ## The alpha value is how strong the flash is at its peak
@@ -129,7 +129,7 @@ const AUTHORED_TARGET_POSTION: Vector2 = Vector2(384.0, 96.0)
 @export var flash_colors: PackedColorArray = PackedColorArray()
 
 ## How many frames each flash takes to fade away
-@export var flash_duration: PackedInt32Array = PackedInt32Array()
+@export var flash_durations: PackedInt32Array = PackedInt32Array()
 
 @export_group("Shake")
 ## The frame each shake begins on for this animation
@@ -180,3 +180,19 @@ func cel_count(index: int) -> int:
 		return 0
 	return frames[index].size() / CEL_FIELDS
 	
+## Reads a single field of a single cel
+func cel_field(frame_index: int, cel_index: int, field: int) -> float:
+	if frame_index < 0 or frame_index >= frames.size():
+		return 0.0
+	var offset: int = cel_index * CEL_FIELDS + field
+	var frame: PackedFloat32Array = frames[frame_index]
+	return frame[offset] if offset >= 0 and offset < frame.size() else 0.0
+	
+## The id for a move that the animation would have,
+## [param opposing] picks the variant for opposing side, if the move has it (few do)
+static func id_for_move(move_id: StringName, opposing: bool = false) -> StringName:
+	return StringName("%s_%s" % ["OPPMOVE" if opposing else "MOVE", move_id])
+	
+## An id for a shared animation, suhc as &"COMMON_STATUP"
+static func id_for_common(name: StringName) -> StringName:
+	return String("COMMON_%s" % String(name).to_upper())

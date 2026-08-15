@@ -84,7 +84,7 @@ func is_berry() -> bool:
 func is_key_item() -> bool:
 	return has_flag(&"KeyItem")
 	
-func is_evolutiion_stone() -> bool:
+func is_evolution_stone() -> bool:
 	return has_flag(&"EvolutionStone")
 	
 func is_gem() -> bool:
@@ -96,6 +96,9 @@ func is_held_item() -> bool:
 ## Defines that an item cannot be sold, tossed, or held.
 func is_important() -> bool:
 	return is_key_item() or is_hm() or is_tm()
+	
+func can_register() -> bool:
+	return field_use == FieldUse.DIRECT
 	
 func get_fling_power() -> int:
 	var value: String = get_flag_value(&"FLing", "0")
@@ -136,3 +139,17 @@ func get_translated_display_name(quantity: int = 1) -> String:
 	if quantity == 1 or name_plural.is_empty():
 		return get_translated_name()
 	return translate_field(name_plural)
+
+## Gets the portion name (i.e. "Berry" for "Berries") in the player's language
+## Fallsback to the item's name, if no portion name exists
+func get_translated_portion_name(quantity: int = 1) -> String:
+	if quantity > 1:
+		if not portion_name_plural.is_empty():
+			return translate_field(portion_name_plural)
+		return get_translated_display_name(quantity)
+	if not portion_name.is_empty():
+		return translate_field(portion_name)
+	return get_translated_name()
+	
+func get_translated_description() -> String:
+	return translate_field(description)

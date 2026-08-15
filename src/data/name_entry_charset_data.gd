@@ -26,3 +26,22 @@ extends Resource
 ## Longest name allowed by the language.
 ## `0` to keep caller default.
 @export_range(0, 32) var max_length: int = 0
+
+
+
+## Returns `true` when a keyboard can be used
+func is_usable() -> bool:
+	if pages.is_empty():
+		return false
+	for page: String in pages:
+		if not page.is_empty():
+			return true
+	return false
+
+
+## The label for page [param index]
+## Falls back to number
+func page_name(index: int) -> String:
+	if index < page_names.size() and not page_names[index].is_empty():
+		return page_names[index]
+	return str(index + 1)

@@ -176,7 +176,7 @@ func average_session_length() -> int:
 func set_time_last_saved() -> void:
 	time_last_saved = _play_time()
 	
-func time_since_last_saved() -> int:
+func time_since_last_save() -> int:
 	if time_last_saved < 0:
 		return 0
 	return maxi(_play_time() - time_last_saved, 0)

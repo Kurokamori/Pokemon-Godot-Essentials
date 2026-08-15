@@ -45,7 +45,7 @@ extends GameDataResource
 @export var music: String = "Credits"
 
 ## Whether the track that was playing before comes back afterwards.
-@export var restore_previous_music: bool = true
+@export var restores_previous_music: bool = true
 
 @export_group("Skipping")
 ## Whether the roll can be cut short the first time it's watched.

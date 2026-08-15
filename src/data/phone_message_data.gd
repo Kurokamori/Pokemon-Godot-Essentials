@@ -39,7 +39,7 @@ extends GameDataResource
 
 @export var greeting: Array[String] = []
 @export var greeting_time: Array[String] = []
-@export var bumb: Array[String] = []
+@export var bump: Array[String] = []
 @export var end: Array[String] = []
 
 

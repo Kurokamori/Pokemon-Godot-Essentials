@@ -107,7 +107,7 @@ extends Resource
 @export var selectable_characters: Array[StringName] = []
 
 ## Prompt shown above the character chooser.
-@export var character_prompter: String = "Who are you?"
+@export var character_prompt: String = "Who are you?"
 
 
 @export_group("Naming")
@@ -149,7 +149,7 @@ extends Resource
 }
 
 ## Whether the player is able to run by the end of the intro or of they must wait until they recieve running shoes.
-@export var give_running_shoes: bool = false
+@export var gives_running_shoes: bool = false
 
 
 ## Function to fill the placeholders in [param line].

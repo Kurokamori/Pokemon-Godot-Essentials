@@ -37,6 +37,17 @@ extends Resource
 	"speech pl 18",
 ]
 
+@export_group("Fonts")
+@export var main_font: Font = null
+@export var bold_font: Font = null
+@export var narrow_font: Font = null
+@export var small_font: Font = null
+@export_range(8, 64) var font_size: int = 24
+@export_range(8, 64) var small_font_size: int = 18
+@export_range(8, 64) var heading_font_size: int = 28
+@export_range(8, 96) var title_font_size: int = 40
+@export_range(-8, 16) var line_spacing: int = 2
+
 @export_group("Text Colours")
 ## Text on light window background
 @export var dark_text: Color = Color("505058")
@@ -104,7 +115,7 @@ extends Resource
 @export_group("Audio")
 @export var select_sound: String = "GUI sel cursor"
 @export var confirm_sound: String = "GUI sel decision"
-@export var cancel_cound: String = "GUI menu close"
+@export var cancel_sound: String = "GUI menu close"
 
 
 ## Resolves [param index] within [member menu_windowskin_choices]

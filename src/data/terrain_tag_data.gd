@@ -47,7 +47,7 @@ const DEFAULT_STEP_EFFECT: StringName = &"GrassRustle"
 @export var must_walk_or_run: bool = false
 
 ## Passability data on this tile is ignored
-@export var ignore_passabilitiy: bool = false
+@export var ignore_passabalitiy: bool = false
 
 @export_group("Presentation")
 @export var shows_reflections: bool = false

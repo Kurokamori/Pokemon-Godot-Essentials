@@ -41,7 +41,7 @@ func public_id() -> int:
 func secret_id() -> int:
 	return (id >> 16) & 0xFFFF
 	
-func is_unknowned() -> bool:
+func is_unowned() -> bool:
 	return name.is_empty()
 	
 

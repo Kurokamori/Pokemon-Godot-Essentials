@@ -6,7 +6,7 @@ extends Resource
 ## Such as an island that only appears once the player knows about it
 
 ## Square that the graphic's top left corner sits on
-@export var postion: Vector2i = Vector2i.ZERO
+@export var position: Vector2i = Vector2i.ZERO
 
 ## Image under `assets/graphics/ui/Town Map/`
 ## Omits extension

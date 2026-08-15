@@ -21,7 +21,7 @@ Database="*uid://cjgw44nx1g16o"
 AudioManager="*uid://bqt3octbiuvjf"
 GameState="*uid://bt35egkv3xog6"
 SceneRouter="*uid://ccprht66gxam5"
-Rng="*uid://bjtxlmkcxq0nn"
+RNG="*uid://bjtxlmkcxq0nn"
 
 [debug]
 

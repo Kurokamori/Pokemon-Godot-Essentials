@@ -39,7 +39,7 @@ extends Resource
 @export var show_new_species_pokedex_entry: bool = true
 
 ## Offers to nickname a pokemon when it first hatches.
-@export var offer_nickname_on_htch: bool = true
+@export var offer_nickname_on_hatch: bool = true
 
 ## Chance of a wild pokemon being shiny, as a 1 in X value scaled by 65536
 @export var shiny_chance_denominator: int = 4096
@@ -71,7 +71,7 @@ extends Resource
 @export var bag_max_per_slot: int = 999
 
 ## Pokets who are automatically alphabetically sorted.
-@export var bag_auto_sorted_pokets: Array[int] = [8]
+@export var bag_auto_sorted_pockets: Array[int] = [8]
 
 @export_range(1, 999) var storage_box_count: int = 40
 @export var storage_box_width: int = 6
@@ -139,7 +139,49 @@ extends Resource
 @export var send_caught_to_boxes: bool = false
 
 ## Whether the game ever asks the "Would you like to give a nickname" question
-@export var offer_nickname: bool = false
+@export var offer_nicknames: bool = false
+
+@export_group("Followers")
+## The default follower mode
+## If you want the player to be able to change this, list valid modes in [member follower_allowed_modes]
+## List only the mode you have set here, and the player will not have the option to change it
+@export var follower_mode: FollowerMode.Mode = FollowerMode.Mode.LEAD
+
+## The modes offered by the options screen
+## Listed as the [enum FollowerMode.Mode] numbers.
+## Blank = All are available
+## Only One Option = A set option, player may not change.
+@export var follower_allowed_modes: Array[int] = [0, 1, 2, 3, 4]
+
+## The specific species that walks with the player if [constant FollowerMode.Mode.FIXED_SPECIES]
+## For example, if you were remaking Yellow you would set this to Pikachu
+@export var follower_species: StringName = &""
+
+## If there's a specific species set, this sets its form
+@export_range(0, 255) var follower_species_form: int = 0
+
+## If there's a specific set species, whether or not it needs to be in the party before it appears
+@export var follower_species_needs_party: bool = true
+
+## The maximum amount of Pokemon allowed out under setting [constant FollowerMode.Mode.WHOLE_PARTY]
+## TODO: Consider splitting this into two settings? 'Whole Party' and 'Set Amount' or something
+@export var follower_maximum: int = 6
+
+## Whether eggs follow the player,
+## This does not ship with an overworld spritesheet for eggs, but here if you want it.
+@export var follower_includes_eggs: bool = false
+
+## Whether or not fainted Pokemon still appear in the overworld as followers
+@export var follower_includes_fainted: bool = false
+
+## Whether the followers follow the player if surfing or diving
+@export var follower_hidden_while_surfing: bool = false
+
+## Whether the followers follow the player when cycling
+@export var follower_hidden_while_cycling: bool = false
+
+## Distance between the player and the first follower
+@export_range(1, 8) var follower_spacing: int = 1
 
 @export_group("Hidden Moves")
 ## How the numbers bellow are read.
@@ -176,6 +218,9 @@ extends Resource
 ## `Phone.rematch_varaint` raises to raise the maximum value
 ## This gates it from letting a first map trainer to use their end game team
 @export var phone_starting_rematch_variant: int = 0
+
+## Whether or not to colour the phone call text by the caller's gender
+@export var colour_phone_calls_by_name: bool = true
 
 @export_group("Audio")
 @export var default_bgm_volume: float = 1.0

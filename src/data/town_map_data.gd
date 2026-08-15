@@ -22,6 +22,8 @@ const FALLBACK_ROWS: int = 30
 ## Without an extension
 @export var filename: String = ""
 
+@export var background: String = ""
+
 ## Size of a square of the map image (in pixels)
 @export var square_size: Vector2i = Vector2i(16, 16)
 
@@ -37,6 +39,11 @@ func texture() -> Texture2D:
 	if filename.is_empty():
 		return null
 	return Assets.texture(AssetIndex.CATEGORY_UI, "Town Map/%s" % filename.get_basename())
+	
+func graphic(graphic_name: String) -> Texture2D:
+	if graphic_name.is_empty():
+		return null
+	return Assets.texture(AssetIndex.CATEGORY_UI, "Town Map/%s" % graphic_name.get_basename())
 	
 func columns() -> int:
 	var image: Texture2D = texture()
