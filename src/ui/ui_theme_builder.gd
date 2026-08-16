@@ -2,8 +2,8 @@ class_name UIThemeBuilder
 extends RefCounted
 ## Turns the [UISkinData] into an actual [Theme] that the game can use.
 ##
-## The theme is built instead of being a static .tres file to allow for hotswapping windowskins
-## that need to be composited before they're nine-patched.
+## The theme is built instead of being a static .tres file to allow for hotswapping windowskins.
+## Windowskins are composited before they are nine-patched.
 ##
 ## Alongside standard styles, there are `theme_type_variations` which allow for more control over the visuals.
 ##
@@ -108,8 +108,8 @@ func _build_labels() -> void:
 			WINDOW_LABEL, WINDOW_VALUE]:
 		_theme.set_type_variation(variation, &"Label")
 
-## Registers one label style. 
-## A transparent [param shadow] disables shadow.
+## Registers one label style.
+## A transparent [param shadow] disables the shadow.
 func _label_style(type: StringName, font: Font, size: int, colour: Color, shadow: Color) -> void:
 	if font != null:
 		_theme.set_font(&"font", type, _font(font, size))
@@ -140,8 +140,8 @@ func _panel_variation(name: StringName, style: StyleBox) -> void:
 	_theme.set_type_variation(name, &"PanelContainer")
 	_theme.set_stylebox(&"panel", name, style)
 
-## Loads [param skin_name] as a window and returns its stylebox
-## Falls back to a flat panel in the skin's color
+## Loads [param skin_name] as a window and returns its stylebox.
+## Falls back to a flat panel in the skin's colour.
 func _window_style(skin_name: String) -> StyleBox:
 	var skin: WindowSkin = WindowSkin.load_skin(skin_name)
 	if skin == null:
@@ -437,7 +437,7 @@ func _build_scroll_container() -> void:
 		_theme.set_stylebox(&"grabber_pressed", type, grabber)
 
 
-# === Seperators ===
+# === Separators ===
 
 func _build_separators() -> void:
 	var line: StyleBoxFlat = StyleBoxFlat.new()

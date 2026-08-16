@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://beeigm00p5npi"]
+
+[ext_resource type="Script" uid="uid://01h8jqycdjwf" path="res://src/ui/screens/intro_screen.gd" id="1_intro"]
+[ext_resource type="PackedScene" uid="uid://b1gfenk5k78l7" path="res://scenes/ui/message_box.tscn" id="2_message"]
+
+[node name="IntroScreen" type="Control" unique_id=402910078]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_intro")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=2021385023]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.878431, 0.917647, 0.905882, 1)
+
+[node name="Background" type="TextureRect" parent="." unique_id=505478971]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Stage" type="Control" parent="." unique_id=201377490]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Base" type="TextureRect" parent="Stage" unique_id=2077612043]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -88.0
+offset_top = -166.0
+offset_right = 88.0
+offset_bottom = -118.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="ActorAnchor" type="Control" parent="Stage" unique_id=1573152424]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -142.0
+offset_bottom = -142.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+
+[node name="Actor" type="TextureRect" parent="Stage/ActorAnchor" unique_id=946335991]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="CharacterChooser" type="PanelContainer" parent="." unique_id=810877953]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -128.0
+offset_right = 140.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ChooserLayout" type="VBoxContainer" parent="CharacterChooser" unique_id=51070148]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="ChooserPrompt" type="Label" parent="CharacterChooser/ChooserLayout" unique_id=815741278]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+text = "Who are you?"
+horizontal_alignment = 1
+
+[node name="ChooserList" type="HBoxContainer" parent="CharacterChooser/ChooserLayout" unique_id=1878899131]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="ChooserName" type="Label" parent="CharacterChooser/ChooserLayout" unique_id=1780935348]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+text = "Boy"
+horizontal_alignment = 1
+
+[node name="MessageBox" parent="." unique_id=2027829980 instance=ExtResource("2_message")]
+unique_name_in_owner = true
+layout_mode = 1

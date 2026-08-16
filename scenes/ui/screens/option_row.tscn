@@ -1,0 +1,43 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://src/ui/option_row.gd" id="1_row"]
+
+[node name="OptionRow" type="HBoxContainer"]
+offset_right = 448.0
+offset_bottom = 30.0
+theme_override_constants/separation = 4
+script = ExtResource("1_row")
+
+[node name="TitleLabel" type="Label" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(152, 0)
+layout_mode = 2
+size_flags_vertical = 1
+theme_type_variation = &"WindowLabel"
+text = "Option"
+vertical_alignment = 1
+
+[node name="PreviousButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+focus_mode = 0
+theme_type_variation = &"ValueEntry"
+text = "<"
+
+[node name="ValueButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_type_variation = &"ValueEntry"
+text = "Value"
+clip_text = true
+
+[node name="NextButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+focus_mode = 0
+theme_type_variation = &"ValueEntry"
+text = ">"

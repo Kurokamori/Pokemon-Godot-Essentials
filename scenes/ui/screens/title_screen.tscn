@@ -1,0 +1,623 @@
+[gd_scene format=3 uid="uid://b8ok3srhauf22"]
+
+[ext_resource type="Script" uid="uid://c4tpxifwn1j7w" path="res://src/ui/screens/title_screen.gd" id="1_tpmot"]
+[ext_resource type="Texture2D" uid="uid://sngdqc7aqsj8" path="res://assets/graphics/ui/Title/pokemon_logo.png" id="2_ef74u"]
+[ext_resource type="Texture2D" uid="uid://v7pym4v7fw0p" path="res://assets/graphics/pokemon/front/CYNDAQUIL.png" id="3_xijos"]
+[ext_resource type="Texture2D" uid="uid://b12as6h32i2au" path="res://assets/graphics/ui/Title/godot_icon.png" id="4_ir2wo"]
+[ext_resource type="FontFile" uid="uid://cn3xq6hrvx1nv" path="res://assets/fonts/power clear bold.ttf" id="5_1xofp"]
+[ext_resource type="Texture2D" uid="uid://dsnt3trc467rj" path="res://assets/graphics/titles/title.png" id="6_baeet"]
+[ext_resource type="Texture2D" uid="uid://cmq8lhlgxbte3" path="res://assets/graphics/titles/start.png" id="7_h7xfv"]
+
+[sub_resource type="Animation" id="Animation_6ik4u"]
+resource_name = "INTRO"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackStripe:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TopStrip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-529, 0), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BottomStrip:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.1, 0.46666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(528, 356), Vector2(0, 356)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PokemonLogo:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.26666668, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-423, 41), Vector2(1, 41)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Cyndaquil:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.46666667, 0.96666664),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-219, 138), Vector2(120, 138)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Godot:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.6666667, 1.2333333, 1.43, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 389), Vector2(1, 145), Vector2(1, 151), Vector2(1, 145)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Essentials:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.7, 1.3333334, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(152, -67), Vector2(152, 145), Vector2(152, 145)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Version:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.0666667, 1.5333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(261, 393), Vector2(261, 358)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("GodotIcon:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.6, 1.0333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(549, 234), Vector2(205, 234)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Godot:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(1.0666667, 1.2666667, 1.4, 1.5666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0.505), Vector2(1, 1.3), Vector2(1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Essentials:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(1.2, 1.4, 1.5666667, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0.75), Vector2(1, 1.5), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_aqu7r"]
+resource_name = "OUTRO"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackStripe:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TopStrip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BottomStrip:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 356)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PokemonLogo:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 41)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Cyndaquil:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.03333334),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(120, 138)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Godot:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 145)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Essentials:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(152, 145)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Version:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(261, 358)]
+}
+
+[sub_resource type="Animation" id="Animation_jsbfx"]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BackStripe:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TopStrip:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BottomStrip:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 356)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PokemonLogo:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 41)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Cyndaquil:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(120, 138)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Godot:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 145)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Essentials:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(152, 145)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Version:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(261, 358)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("GodotIcon:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(205, 234)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Godot:scale")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Essentials:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7oraf"]
+_data = {
+&"INTRO": SubResource("Animation_6ik4u"),
+&"OUTRO": SubResource("Animation_aqu7r"),
+&"RESET": SubResource("Animation_jsbfx")
+}
+
+[node name="TitleScreen" type="Control" unique_id=1162652459]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tpmot")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=741255268]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="BackStripe" type="ColorRect" parent="." unique_id=16736025]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.13404006, 0.17698401, 0.35285348, 1)
+
+[node name="TopStrip" type="ColorRect" parent="." unique_id=278815415]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -350.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3763151, 0.58457875, 0.72380775, 1)
+
+[node name="BottomStrip" type="ColorRect" parent="." unique_id=216952944]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -28.0
+offset_right = 0.00036621094
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.3763151, 0.58457875, 0.72380775, 1)
+
+[node name="PokemonLogo" type="TextureRect" parent="." unique_id=411206393]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 41.0
+offset_right = 513.0
+offset_bottom = 160.0
+texture = ExtResource("2_ef74u")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Cyndaquil" type="TextureRect" parent="." unique_id=99576780]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 138.0
+offset_right = 339.0
+offset_bottom = 357.0
+texture = ExtResource("3_xijos")
+
+[node name="GodotIcon" type="TextureRect" parent="." unique_id=445112533]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 234.0
+offset_right = 344.16272
+offset_bottom = 293.0
+texture = ExtResource("4_ir2wo")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Godot" type="Label" parent="." unique_id=45681196]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 145.0
+offset_right = 240.55489
+offset_bottom = 205.00056
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("5_1xofp")
+theme_override_font_sizes/font_size = 55
+text = "Godot"
+horizontal_alignment = 1
+
+[node name="Essentials" type="Label" parent="." unique_id=661027354]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 145.0
+offset_right = 512.00006
+offset_bottom = 205.0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("5_1xofp")
+theme_override_font_sizes/font_size = 55
+text = "Essentials"
+horizontal_alignment = 1
+
+[node name="Version" type="Label" parent="." unique_id=2111499058]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 358.0
+offset_right = 509.0
+offset_bottom = 383.0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("5_1xofp")
+theme_override_font_sizes/font_size = 26
+text = "Version 0.1a"
+horizontal_alignment = 2
+
+[node name="TitleArt" type="TextureRect" parent="." unique_id=593676483]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_baeet")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PressStart" type="TextureRect" parent="." unique_id=1075054427]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -78.0
+offset_right = 256.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("7_h7xfv")
+stretch_mode = 3
+
+[node name="SavePanel" type="PanelContainer" parent="." unique_id=1819752781]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -196.0
+offset_top = -140.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="SaveInfo" type="VBoxContainer" parent="SavePanel" unique_id=1396789950]
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="SaveNameLabel" type="Label" parent="SavePanel/SaveInfo" unique_id=1236565877]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+text = "Player"
+
+[node name="SaveBadgesLabel" type="Label" parent="SavePanel/SaveInfo" unique_id=494424352]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+text = "Badges  0"
+
+[node name="SaveDexLabel" type="Label" parent="SavePanel/SaveInfo" unique_id=656864584]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+text = "Pokedex  0"
+
+[node name="SaveTimeLabel" type="Label" parent="SavePanel/SaveInfo" unique_id=875727428]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+text = "Time  0:00"
+
+[node name="MenuPanel" type="PanelContainer" parent="." unique_id=1509363438]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -160.0
+offset_right = 172.0
+offset_bottom = -8.0
+grow_vertical = 0
+
+[node name="MenuList" type="VBoxContainer" parent="MenuPanel" unique_id=1597779305]
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="ContinueButton" type="Button" parent="MenuPanel/MenuList" unique_id=1651921733]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Continue"
+alignment = 0
+
+[node name="NewGameButton" type="Button" parent="MenuPanel/MenuList" unique_id=67484468]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "New Game"
+alignment = 0
+
+[node name="OptionsButton" type="Button" parent="MenuPanel/MenuList" unique_id=18676597]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Options"
+alignment = 0
+
+[node name="QuitButton" type="Button" parent="MenuPanel/MenuList" unique_id=1019312227]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Quit"
+alignment = 0
+
+[node name="Transitions" type="AnimationPlayer" parent="." unique_id=114474457]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_7oraf")
+autoplay = &"INTRO"

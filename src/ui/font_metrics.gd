@@ -1,21 +1,20 @@
 class_name FontMetrics
 extends RefCounted
 ## Adds room for descenders to fonts with incomplete metrics.
-##
-## Some of fonts report a zero descender at every size.
-## This measures the glyph outlines and store the result in the font's size cache.
+
+## Some fonts report a zero descender at every size.
+## Measures glyph outlines and stores the result in the font's size cache.
 ## Other font properties are left unchanged.
-##
+
 ## FontMetrics.repair_descent(skin.main_font, 22)
-##
+
 ## Fonts with correct metrics are left unchanged.
 
 ## Characters used to measure the font's lowest glyph outlines.
 const DESCENDING: String = "gjpqy,;()[]{}/\\Q$_"
 
-
 ## Gives [param font] enough room for descenders at [param font_size].
-##
+
 ## The correction is applied only to [FontFile] resources and is stored per font size.
 static func repair_descent(font: Font, font_size: int) -> void:
 	var file: FontFile = font as FontFile
@@ -28,7 +27,7 @@ static func repair_descent(font: Font, font_size: int) -> void:
 		file.set_cache_descent(index, font_size, needed)
 
 ## Returns how far [param font]'s glyphs extend below the baseline at [param font_size].
-## 
+
 ## The value is measured from the rasterised outlines rather than the font metrics.
 static func ink_descent(font: Font, font_size: int) -> float:
 	if font == null or font_size <= 0:

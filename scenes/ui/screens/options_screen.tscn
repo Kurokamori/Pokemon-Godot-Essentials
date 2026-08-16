@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://dbtpjmyba0fbm"]
+
+[ext_resource type="Script" uid="uid://b2t66ddlw88ur" path="res://src/ui/screens/options_screen.gd" id="1_opt"]
+[ext_resource type="PackedScene" path="res://scenes/ui/screen_background.tscn" id="2_bg"]
+[ext_resource type="PackedScene" path="res://scenes/ui/screens/option_row.tscn" id="3_row"]
+
+[node name="OptionsScreen" type="Control" unique_id=536506209]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_opt")
+
+[node name="Background" parent="." unique_id=242733570 instance=ExtResource("2_bg")]
+layout_mode = 1
+
+[node name="Layout" type="VBoxContainer" parent="." unique_id=314776442]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+
+[node name="Header" type="PanelContainer" parent="Layout" unique_id=283537696]
+layout_mode = 2
+theme_type_variation = &"HeaderPanel"
+
+[node name="HeaderLabel" type="Label" parent="Layout/Header" unique_id=894045634]
+layout_mode = 2
+theme_type_variation = &"HeadingLabel"
+text = "Options"
+
+[node name="Window" type="PanelContainer" parent="Layout" unique_id=55319002]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Layout/Window" unique_id=841057268]
+unique_name_in_owner = true
+layout_mode = 2
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="Rows" type="VBoxContainer" parent="Layout/Window/ScrollContainer" unique_id=2093201822]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="TextSpeedRow" parent="Layout/Window/ScrollContainer/Rows" unique_id=335236537 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Text speed"
+
+[node name="BGMRow" parent="Layout/Window/ScrollContainer/Rows" unique_id=348041720 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Music volume"
+wraps = false
+
+[node name="SERow" parent="Layout/Window/ScrollContainer/Rows" unique_id=667968487 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Sound volume"
+wraps = false
+
+[node name="DefaultMovementRow" parent="Layout/Window/ScrollContainer/Rows" instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Default movement"
+
+[node name="SendToBoxesRow" parent="Layout/Window/ScrollContainer/Rows" instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Send to boxes"
+
+[node name="GiveNicknamesRow" parent="Layout/Window/ScrollContainer/Rows" instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Give nicknames"
+
+[node name="FollowerRow" parent="Layout/Window/ScrollContainer/Rows" instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Walking Pokemon"
+
+[node name="BattleStyleRow" parent="Layout/Window/ScrollContainer/Rows" unique_id=773877147 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Battle style"
+
+[node name="BattleEffectsRow" parent="Layout/Window/ScrollContainer/Rows" unique_id=498689054 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Battle effects"
+
+[node name="WindowScaleRow" parent="Layout/Window/ScrollContainer/Rows" unique_id=1851914034 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Window size"
+
+[node name="LanguageRow" parent="Layout/Window/ScrollContainer/Rows" unique_id=1558129922 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Language"
+
+[node name="MenuFrameRow" parent="Layout/Window/ScrollContainer/Rows" unique_id=679171827 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Menu frame"
+shows_position = true
+
+[node name="SpeechFrameRow" parent="Layout/Window/ScrollContainer/Rows" unique_id=446170987 instance=ExtResource("3_row")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Speech frame"
+shows_position = true
+
+[node name="SpeechPreview" type="PanelContainer" parent="Layout" unique_id=1211497612]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_type_variation = &"SpeechPanel"
+
+[node name="PreviewLabel" type="Label" parent="Layout/SpeechPreview" unique_id=66291014]
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+text = "This is how a message looks."
+vertical_alignment = 1
+
+[node name="HintLabel" type="Label" parent="Layout" unique_id=1114788387]
+layout_mode = 2
+theme_type_variation = &"MutedLabel"
+text = "Up/Down choose    Left/Right change    X closes"
+horizontal_alignment = 1

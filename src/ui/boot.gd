@@ -1,17 +1,17 @@
 extends Control
-## First scene in the game
-## Confirms that the data later imports correctly adn then hands over to the title screen
+## First scene in the game.
+## Confirms that the data imports correctly before handing over to the title screen.
 
 @onready var _status_label: Label = %StatusLabel
 @onready var _detail_label: Label = %DetailLabel
 
-func _ready() -> void: 
+func _ready() -> void:
 	var problems: Array[String] = _check_data()
 	if problems.is_empty():
 		_status_label.text = Loc.line("Loading...")
 		_detail_label.text = Loc.line(
 			"{CATEGORY_SPECIES} species, {CATEGORY_MOVES} moves, {CATEGORY_ITEMS} items",
-			{"CATEGORY_SPECIES": Database.count(Database.CATEGORY_SPECIES), 
+			{"CATEGORY_SPECIES": Database.count(Database.CATEGORY_SPECIES),
 			"CATEGORY_MOVES": Database.count(Database.CATEGORY_MOVES),
 			"CATEGORY_ITEMS": Database.count(Database.CATEGORY_ITEMS) }
 		)
@@ -20,8 +20,8 @@ func _ready() -> void:
 		return
 	_status_label.text = "Game Data is Missing"
 	_detail_label.text = "\n".join(problems)
-		
-## Actual Data Check -- Returns a human-readable list of data issues
+
+## Returns a human-readable list of data issues.
 func _check_data() -> Array[String]:
 	var problems: Array[String] = []
 	if Database.count(Database.CATEGORY_SPECIES) == 0:

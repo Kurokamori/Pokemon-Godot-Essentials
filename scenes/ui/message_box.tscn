@@ -1,0 +1,193 @@
+[gd_scene format=3 uid="uid://b1gfenk5k78l7"]
+
+[ext_resource type="Script" uid="uid://pfeu67jc3sgj" path="res://src/ui/message_box.gd" id="1_msg"]
+
+[node name="MessageBox" type="Control" unique_id=1444052167]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_msg")
+
+[node name="InfoWindows" type="VBoxContainer" parent="." unique_id=1486342236]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -168.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 128.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_constants/separation = 4
+
+[node name="GoldPanel" type="PanelContainer" parent="InfoWindows" unique_id=1178675367]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"ChoicePanel"
+
+[node name="GoldLabel" type="Label" parent="InfoWindows/GoldPanel" unique_id=252424036]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+horizontal_alignment = 2
+
+[node name="CoinsPanel" type="PanelContainer" parent="InfoWindows" unique_id=560753057]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"ChoicePanel"
+
+[node name="CoinsLabel" type="Label" parent="InfoWindows/CoinsPanel" unique_id=2114398776]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+horizontal_alignment = 2
+
+[node name="BattlePointsPanel" type="PanelContainer" parent="InfoWindows" unique_id=326113272]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"ChoicePanel"
+
+[node name="BattlePointsLabel" type="Label" parent="InfoWindows/BattlePointsPanel" unique_id=1163160737]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+horizontal_alignment = 2
+
+[node name="FacePanel" type="PanelContainer" parent="." unique_id=1566239763]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -212.0
+offset_right = 112.0
+offset_bottom = -108.0
+grow_vertical = 0
+mouse_filter = 2
+theme_type_variation = &"ChoicePanel"
+
+[node name="FaceImage" type="TextureRect" parent="FacePanel" unique_id=1327558407]
+unique_name_in_owner = true
+layout_mode = 2
+stretch_mode = 3
+
+[node name="MessagePanel" type="PanelContainer" parent="." unique_id=1994097418]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -100.0
+offset_right = -4.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_type_variation = &"SpeechPanel"
+
+[node name="MessageBody" type="Control" parent="MessagePanel" unique_id=543500204]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MessageLabel" type="RichTextLabel" parent="MessagePanel/MessageBody" unique_id=1089990908]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_type_variation = &"WindowRichText"
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+visible_characters_behavior = 1
+
+[node name="ContinueArrow" type="TextureRect" parent="MessagePanel/MessageBody" unique_id=1641057895]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="ChoicePanel" type="PanelContainer" parent="." unique_id=1012677684]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -168.0
+offset_top = -232.0
+offset_right = -8.0
+offset_bottom = -108.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_type_variation = &"ChoicePanel"
+
+[node name="ChoiceBody" type="VBoxContainer" parent="ChoicePanel" unique_id=774974023]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ChoiceUpArrow" type="TextureRect" parent="ChoicePanel/ChoiceBody" unique_id=262151260]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(16, 12)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+stretch_mode = 3
+
+[node name="ChoiceViewport" type="Control" parent="ChoicePanel/ChoiceBody" unique_id=67715358]
+unique_name_in_owner = true
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="ChoiceList" type="VBoxContainer" parent="ChoicePanel/ChoiceBody/ChoiceViewport" unique_id=704467514]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_constants/separation = 2
+
+[node name="ChoiceDownArrow" type="TextureRect" parent="ChoicePanel/ChoiceBody" unique_id=714314853]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(16, 12)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+stretch_mode = 3

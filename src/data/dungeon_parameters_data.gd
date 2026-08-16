@@ -1,6 +1,6 @@
 @tool
 class_name DungeonParametersData
-extends Resource
+extends GameDataResource
 
 ## Layout rules for one style of procedurally generated dungeons.
 ## Each dungeon is laid out as a grid of cells -- each cell may contain a room,

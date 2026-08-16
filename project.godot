@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Pokemon Godot Essentials"
+run/main_scene="uid://b8ok3srhauf22"
 config/features=PackedStringArray("4.8", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -18,10 +19,13 @@ config/icon="res://icon.svg"
 
 GameSettings="*uid://dcu3cm0tnnhyd"
 Database="*uid://cjgw44nx1g16o"
+RNG="*uid://bjtxlmkcxq0nn"
 AudioManager="*uid://bqt3octbiuvjf"
 GameState="*uid://bt35egkv3xog6"
+UITheme="*uid://b5vaheq0p4tr0"
+SaveManager="*uid://b7sw8kcr0g1m6"
 SceneRouter="*uid://ccprht66gxam5"
-RNG="*uid://bjtxlmkcxq0nn"
+Localization="*uid://r3ykbq6fnjky"
 
 [debug]
 
@@ -29,6 +33,8 @@ gdscript/warnings/integer_division=0
 
 [display]
 
+window/size/viewport_width=512
+window/size/viewport_height=384
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
@@ -57,6 +63,7 @@ joypads/ignore_joypad_on_unfocused_application=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

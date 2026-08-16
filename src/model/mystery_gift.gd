@@ -21,9 +21,9 @@ static func has_pending() -> bool:
 ## Returns `false` when there's nothing to claim.
 static func claim(gift: MysteryGiftData, narrate: Callable, receipt: PokemonReceipt) -> bool:
 	if gift == null:
-		return
+		return false
 	if GameState.claimed_mystery_gifts.has(gift.gift_id):
-		return
+		return false
 	GameState.claimed_mystery_gifts.append(gift.gift_id)
 	
 	if narrate.is_valid():
