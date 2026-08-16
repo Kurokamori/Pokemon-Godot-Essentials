@@ -1,0 +1,56 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://efu2yxmi2w8f" path="res://src/ui/screens/controls_screen.gd" id="1_controls"]
+[ext_resource type="PackedScene" path="res://scenes/ui/screen_background.tscn" id="2_bg"]
+
+[node name="ControlsScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_controls")
+
+[node name="Background" parent="." instance=ExtResource("2_bg")]
+layout_mode = 1
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layout" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Title" type="Label" parent="Panel/Layout"]
+layout_mode = 2
+theme_type_variation = &"HeadingLabel"
+text = "Controls"
+
+[node name="Scroll" type="ScrollContainer" parent="Panel/Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+
+[node name="ControlsRowList" type="VBoxContainer" parent="Panel/Layout/Scroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 1
+
+[node name="ControlsStatus" type="Label" parent="Panel/Layout"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_type_variation = &"MutedLabel"
+autowrap_mode = 2
+vertical_alignment = 1

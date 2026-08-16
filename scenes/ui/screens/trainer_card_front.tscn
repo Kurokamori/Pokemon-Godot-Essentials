@@ -1,0 +1,207 @@
+[gd_scene format=3 uid="uid://cyrj27xr8nxqg"]
+
+[ext_resource type="Script" uid="uid://dth6420kibe0d" path="res://src/ui/screens/trainer_card/trainer_card_face.gd" id="1_face"]
+[ext_resource type="Script" uid="uid://d140rpia3n72j" path="res://src/ui/screens/trainer_card/trainer_card_art.gd" id="2_art"]
+[ext_resource type="Texture2D" uid="uid://dx0vw4om8u6of" path="res://assets/graphics/ui/Trainer Card/bg.png" id="2_w82jx"]
+[ext_resource type="Script" uid="uid://dgia3fvw2om1b" path="res://src/ui/screens/trainer_card/trainer_card_field.gd" id="3_field"]
+[ext_resource type="Texture2D" uid="uid://bpxakslv16m64" path="res://assets/graphics/ui/Trainer Card/card.png" id="4_jtchr"]
+[ext_resource type="Script" uid="uid://b8g6srogvpssk" path="res://src/ui/screens/trainer_card/trainer_card_portrait.gd" id="4_portrait"]
+[ext_resource type="Texture2D" uid="uid://dmjybgnycapwp" path="res://assets/graphics/trainers/POKEMONTRAINER_Red.png" id="5_4ldfi"]
+[ext_resource type="Script" uid="uid://c43pknoplp6qb" path="res://src/ui/screens/trainer_card/trainer_card_badges.gd" id="5_badges"]
+
+[node name="TrainerCardFront" type="Control" unique_id=260627337]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_face")
+title = "Trainer Card"
+
+[node name="Backdrop" type="TextureRect" parent="." unique_id=293297093]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_w82jx")
+stretch_mode = 1
+script = ExtResource("2_art")
+graphic = "Trainer Card/bg"
+female_graphic = "Trainer Card/bg_f"
+
+[node name="Card" type="TextureRect" parent="." unique_id=1532233154]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_jtchr")
+stretch_mode = 5
+script = ExtResource("2_art")
+graphic = "Trainer Card/card"
+female_graphic = "Trainer Card/card_f"
+
+[node name="Portrait" type="TextureRect" parent="." unique_id=1144964544]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 112.0
+offset_right = 464.0
+offset_bottom = 240.0
+mouse_filter = 2
+texture = ExtResource("5_4ldfi")
+stretch_mode = 5
+script = ExtResource("4_portrait")
+
+[node name="NameLabel" type="Label" parent="." unique_id=291281242]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 68.0
+offset_right = 118.0
+offset_bottom = 96.0
+theme_type_variation = &"WindowLabel"
+text = "Name"
+vertical_alignment = 1
+
+[node name="NameValue" type="Label" parent="." unique_id=2032021155]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 68.0
+offset_right = 302.0
+offset_bottom = 96.0
+theme_type_variation = &"WindowValue"
+text = "<player_name>"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("3_field")
+fallback = "?"
+
+[node name="IdLabel" type="Label" parent="." unique_id=1397387584]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 68.0
+offset_right = 386.0
+offset_bottom = 96.0
+theme_type_variation = &"WindowLabel"
+text = "ID No."
+vertical_alignment = 1
+
+[node name="IdValue" type="Label" parent="." unique_id=2006826999]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 68.0
+offset_right = 468.0
+offset_bottom = 96.0
+theme_type_variation = &"WindowValue"
+text = "<id_number>"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("3_field")
+fallback = "-----"
+
+[node name="MoneyLabel" type="Label" parent="." unique_id=846535975]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 116.0
+offset_right = 118.0
+offset_bottom = 144.0
+theme_type_variation = &"WindowLabel"
+text = "Money"
+vertical_alignment = 1
+
+[node name="MoneyValue" type="Label" parent="." unique_id=936209418]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 116.0
+offset_right = 302.0
+offset_bottom = 144.0
+theme_type_variation = &"WindowValue"
+text = "<money>"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("3_field")
+fallback = "$0"
+
+[node name="PokedexLabel" type="Label" parent="." unique_id=623597610]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 164.0
+offset_right = 118.0
+offset_bottom = 192.0
+theme_type_variation = &"WindowLabel"
+text = "Pokedex"
+vertical_alignment = 1
+
+[node name="PokedexValue" type="Label" parent="." unique_id=736808558]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 164.0
+offset_right = 302.0
+offset_bottom = 192.0
+theme_type_variation = &"WindowValue"
+text = "<pokedex_summary>"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("3_field")
+fallback = "0/0"
+
+[node name="TimeLabel" type="Label" parent="." unique_id=1436612723]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 212.0
+offset_right = 118.0
+offset_bottom = 240.0
+theme_type_variation = &"WindowLabel"
+text = "Time"
+vertical_alignment = 1
+
+[node name="TimeValue" type="Label" parent="." unique_id=405778836]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 212.0
+offset_right = 302.0
+offset_bottom = 240.0
+theme_type_variation = &"WindowValue"
+text = "<play_time>"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("3_field")
+fallback = "0m"
+
+[node name="StartedLabel" type="Label" parent="." unique_id=1859824044]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 260.0
+offset_right = 118.0
+offset_bottom = 288.0
+theme_type_variation = &"WindowLabel"
+text = "Started"
+vertical_alignment = 1
+
+[node name="StartedValue" type="Label" parent="." unique_id=927507832]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 260.0
+offset_right = 302.0
+offset_bottom = 288.0
+theme_type_variation = &"WindowValue"
+text = "<started_on>"
+horizontal_alignment = 2
+vertical_alignment = 1
+script = ExtResource("3_field")
+fallback = "--"
+
+[node name="Badges" type="Control" parent="." unique_id=937363564]
+anchors_preset = 0
+offset_left = 72.0
+offset_top = 310.0
+offset_right = 424.0
+offset_bottom = 342.0
+mouse_filter = 2
+script = ExtResource("5_badges")

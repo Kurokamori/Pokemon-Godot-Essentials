@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/ui/controls_help_row.gd" id="1_row"]
+
+[node name="ControlsHelpRow" type="HBoxContainer"]
+theme_override_constants/separation = 12
+script = ExtResource("1_row")
+
+[node name="RowKeyBadge" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(88, 0)
+layout_mode = 2
+size_flags_vertical = 0
+theme_type_variation = &"HeaderPanel"
+
+[node name="RowKey" type="Label" parent="RowKeyBadge"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+text = "C"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RowDescription" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+autowrap_mode = 2

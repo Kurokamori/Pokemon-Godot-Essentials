@@ -1,0 +1,246 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://dth6420kibe0d" path="res://src/ui/screens/trainer_card/trainer_card_face.gd" id="1_face"]
+[ext_resource type="Script" uid="uid://d140rpia3n72j" path="res://src/ui/screens/trainer_card/trainer_card_art.gd" id="2_art"]
+[ext_resource type="Script" uid="uid://dgia3fvw2om1b" path="res://src/ui/screens/trainer_card/trainer_card_field.gd" id="3_field"]
+
+[node name="TrainerCardBack" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_face")
+title = "Records"
+
+[node name="Backdrop" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stretch_mode = 1
+script = ExtResource("2_art")
+graphic = "Trainer Card/bg"
+female_graphic = "Trainer Card/bg_f"
+
+[node name="Panel" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 56.0
+offset_right = 480.0
+offset_bottom = 344.0
+
+[node name="Rows" type="VBoxContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Heading" type="Label" parent="Panel/Rows"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Records"
+horizontal_alignment = 1
+
+[node name="Grid" type="GridContainer" parent="Panel/Rows"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 2
+columns = 4
+
+[node name="BattlesWonLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Battles won"
+
+[node name="BattlesWonValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"battles_won"
+
+[node name="BattlesLostLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Battles lost"
+
+[node name="BattlesLostValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"battles_lost"
+
+[node name="StepsLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Steps taken"
+
+[node name="StepsValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"steps_taken"
+
+[node name="CaughtLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Species caught"
+
+[node name="CaughtValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"pokemon_caught"
+
+[node name="EggsLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Eggs hatched"
+
+[node name="EggsValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"eggs_hatched"
+
+[node name="EvolvedLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Evolutions"
+
+[node name="EvolvedValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"evolution_count"
+
+[node name="BoxedLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "In storage"
+
+[node name="BoxedValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"boxed_count"
+
+[node name="WhiteoutLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Whited out"
+
+[node name="WhiteoutValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"blacked_out_count"
+
+[node name="BattlePointsLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Battle Points"
+
+[node name="BattlePointsValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"battle_points"
+
+[node name="HallOfFameLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Hall of Fame"
+
+[node name="HallOfFameValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "0"
+field = &"hall_of_fame_count"
+
+[node name="RegionLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Region"
+
+[node name="RegionValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "--"
+field = &"region_name"
+
+[node name="LocationLabel" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+mouse_filter = 2
+theme_type_variation = &"WindowLabel"
+text = "Last seen"
+
+[node name="LocationValue" type="Label" parent="Panel/Rows/Grid"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2
+script = ExtResource("3_field")
+fallback = "--"
+field = &"current_location"
