@@ -38,6 +38,11 @@ const WINDOW_BOTTOM: StringName = &"window_bottom"
 
 const CANCEL_DISALLOWED: int = 0
 
+## Width and height of one cell of a face sheet
+const FACE_CELL_SIZE: int = 96
+## How many cells of face sheets sit side by side
+const FACE_CELL_COLUMNS: int = 4
+
 ## A single control code
 ## TODO : Should this be its own file? I feel like yes?
 class Directive extends RefCounted:
