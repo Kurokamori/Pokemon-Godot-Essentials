@@ -353,7 +353,7 @@ func casts_dynamic_shadow() -> bool:
 func _advance_dynamic_shadows() -> void:
 	if not casts_dynamic_shadow() or map == null:
 		return
-	var sources: Array[ShadowSources.Source] = map.shadow_sources()
+	var sources: Array[ShadowSource] = map.shadow_sources()
 	if sources.is_empty():
 		if _dynamic_shadows != null and is_instance_valid(_dynamic_shadows):
 			_dynamic_shadows.refresh(sources)

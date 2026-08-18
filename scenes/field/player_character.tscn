@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://5q3p86trolo3"]
+
+[ext_resource type="Script" uid="uid://ecji5gs1gimm" path="res://src/field/characters/player_character.gd" id="1_player"]
+[ext_resource type="Script" uid="uid://c7hw72jiincfb" path="res://src/field/characters/surf_base.gd" id="2_surf_base"]
+
+[node name="Player" type="Node2D" unique_id=82120734]
+script = ExtResource("1_player")
+
+[node name="SurfBase" type="Sprite2D" parent="." unique_id=756806755]
+unique_name_in_owner = true
+visible = false
+centered = false
+region_enabled = true
+script = ExtResource("2_surf_base")
+
+[node name="CharacterSprite" type="Sprite2D" parent="." unique_id=1395079525]
+centered = false
+
+[node name="MapCamera" type="Camera2D" parent="." unique_id=339509204]
+unique_name_in_owner = true
+position = Vector2(16, 16)
+position_smoothing_enabled = true
+position_smoothing_speed = 12.0
