@@ -50,7 +50,8 @@ folder_colors={
 "res://scenes/": "blue",
 "res://shaders/": "pink",
 "res://src/": "red",
-"res://src/core/": "red"
+"res://src/core/": "red",
+"res://tools/": "gray"
 }
 
 [input_devices]

@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dajrcd1i0ja8m"]
+
+[ext_resource type="Script" uid="uid://chht6i1eww1gk" path="res://src/field/screen_effects.gd" id="1_effects"]
+[ext_resource type="Shader" uid="uid://xxxqhwjhx6m3" path="res://shaders/cave_darkness.gdshader" id="2_dark"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dark"]
+shader = ExtResource("2_dark")
+shader_parameter/centre = Vector2(0.5, 0.5)
+shader_parameter/radius = 64.0
+shader_parameter/edge = 0.35
+shader_parameter/rect_size = Vector2(512, 384)
+shader_parameter/darkness = 1.0
+
+[node name="ScreenEffects" type="CanvasLayer" unique_id=1921507036]
+layer = 5
+script = ExtResource("1_effects")
+
+[node name="WeatherParticles" type="Node2D" parent="." unique_id=1389801841]
+unique_name_in_owner = true
+
+[node name="WeatherTile" type="TextureRect" parent="." unique_id=1438855413]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stretch_mode = 1
+
+[node name="WeatherTint" type="ColorRect" parent="." unique_id=2029347503]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="DayNightTint" type="ColorRect" parent="." unique_id=551926780]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="DarknessOverlay" type="ColorRect" parent="." unique_id=1763619722]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_dark")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ToneOverlay" type="ColorRect" parent="." unique_id=416747545]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="FlashOverlay" type="ColorRect" parent="." unique_id=176830438]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)

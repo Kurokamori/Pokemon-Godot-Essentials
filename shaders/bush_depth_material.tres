@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://blso8xsbbnydt"]
+
+[ext_resource type="Shader" uid="uid://bifiv2xh6vjdf" path="res://shaders/bush_depth.gdshader" id="1_cv186"]
+
+[resource]
+shader = ExtResource("1_cv186")
+shader_parameter/bush_depth = 0.0
+shader_parameter/frame_top = 0.0
+shader_parameter/frame_height = 32.0
+shader_parameter/sheet_height = 32.0
+shader_parameter/bush_opacity = 0.3
