@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://c6smbpau1vjif"]
 
-[ext_resource type="Script" path="res://src/minigames/duel/duel_overlay.gd" id="1_overlay"]
+[ext_resource type="Script" uid="uid://dr25tgt7xq1oc" path="res://src/minigames/duel/duel_overlay.gd" id="1_overlay"]
 
-[node name="DuelOverlay" type="Control"]
+[node name="DuelOverlay" type="Control" unique_id=475725899]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,7 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_overlay")
 
-[node name="Flash" type="ColorRect" parent="."]
+[node name="Flash" type="ColorRect" parent="." unique_id=1737641291]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
@@ -23,11 +23,10 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 1, 1, 0)
 
-[node name="OpponentPanel" type="PanelContainer" parent="."]
+[node name="OpponentPanel" type="PanelContainer" parent="." unique_id=14941117]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(160, 0)
 layout_mode = 1
-anchors_preset = 0
 offset_left = 6.0
 offset_top = 6.0
 offset_right = 166.0
@@ -35,17 +34,17 @@ offset_bottom = 64.0
 mouse_filter = 2
 theme_type_variation = &"HeaderPanel"
 
-[node name="Layout" type="VBoxContainer" parent="OpponentPanel"]
+[node name="Layout" type="VBoxContainer" parent="OpponentPanel" unique_id=967457284]
 layout_mode = 2
 mouse_filter = 2
 theme_override_constants/separation = 2
 
-[node name="Row" type="HBoxContainer" parent="OpponentPanel/Layout"]
+[node name="Row" type="HBoxContainer" parent="OpponentPanel/Layout" unique_id=2015335166]
 layout_mode = 2
 mouse_filter = 2
 theme_override_constants/separation = 4
 
-[node name="OpponentPortrait" type="TextureRect" parent="OpponentPanel/Layout/Row"]
+[node name="OpponentPortrait" type="TextureRect" parent="OpponentPanel/Layout/Row" unique_id=238700031]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(36, 36)
@@ -54,26 +53,26 @@ mouse_filter = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Text" type="VBoxContainer" parent="OpponentPanel/Layout/Row"]
+[node name="Text" type="VBoxContainer" parent="OpponentPanel/Layout/Row" unique_id=543162177]
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 2
 theme_override_constants/separation = 0
 
-[node name="OpponentNameLabel" type="Label" parent="OpponentPanel/Layout/Row/Text"]
+[node name="OpponentNameLabel" type="Label" parent="OpponentPanel/Layout/Row/Text" unique_id=815034688]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0.878431, 0.031373, 0.031373, 1)
 theme_override_font_sizes/font_size = 16
 text = "Opponent"
 
-[node name="OpponentHealthLabel" type="Label" parent="OpponentPanel/Layout/Row/Text"]
+[node name="OpponentHealthLabel" type="Label" parent="OpponentPanel/Layout/Row/Text" unique_id=1180450512]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "HP 10"
 
-[node name="OpponentHealthBar" type="ProgressBar" parent="OpponentPanel/Layout"]
+[node name="OpponentHealthBar" type="ProgressBar" parent="OpponentPanel/Layout" unique_id=617139809]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 8)
 layout_mode = 2
@@ -82,7 +81,7 @@ max_value = 10.0
 value = 10.0
 show_percentage = false
 
-[node name="PlayerPanel" type="PanelContainer" parent="."]
+[node name="PlayerPanel" type="PanelContainer" parent="." unique_id=1445703943]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(160, 0)
 layout_mode = 1
@@ -97,23 +96,23 @@ grow_horizontal = 0
 mouse_filter = 2
 theme_type_variation = &"HeaderPanel"
 
-[node name="Layout" type="VBoxContainer" parent="PlayerPanel"]
+[node name="Layout" type="VBoxContainer" parent="PlayerPanel" unique_id=1285833188]
 layout_mode = 2
 mouse_filter = 2
 theme_override_constants/separation = 2
 
-[node name="Row" type="HBoxContainer" parent="PlayerPanel/Layout"]
+[node name="Row" type="HBoxContainer" parent="PlayerPanel/Layout" unique_id=1754419820]
 layout_mode = 2
 mouse_filter = 2
 theme_override_constants/separation = 4
 
-[node name="Text" type="VBoxContainer" parent="PlayerPanel/Layout/Row"]
+[node name="Text" type="VBoxContainer" parent="PlayerPanel/Layout/Row" unique_id=204723802]
 layout_mode = 2
 size_flags_horizontal = 3
 mouse_filter = 2
 theme_override_constants/separation = 0
 
-[node name="PlayerNameLabel" type="Label" parent="PlayerPanel/Layout/Row/Text"]
+[node name="PlayerNameLabel" type="Label" parent="PlayerPanel/Layout/Row/Text" unique_id=305943826]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_colors/font_color = Color(0.188235, 0.313726, 0.784314, 1)
@@ -121,14 +120,14 @@ theme_override_font_sizes/font_size = 16
 text = "Player"
 horizontal_alignment = 2
 
-[node name="PlayerHealthLabel" type="Label" parent="PlayerPanel/Layout/Row/Text"]
+[node name="PlayerHealthLabel" type="Label" parent="PlayerPanel/Layout/Row/Text" unique_id=1968235393]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "HP 10"
 horizontal_alignment = 2
 
-[node name="PlayerPortrait" type="TextureRect" parent="PlayerPanel/Layout/Row"]
+[node name="PlayerPortrait" type="TextureRect" parent="PlayerPanel/Layout/Row" unique_id=148529896]
 unique_name_in_owner = true
 visible = false
 custom_minimum_size = Vector2(36, 36)
@@ -137,7 +136,7 @@ mouse_filter = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="PlayerHealthBar" type="ProgressBar" parent="PlayerPanel/Layout"]
+[node name="PlayerHealthBar" type="ProgressBar" parent="PlayerPanel/Layout" unique_id=1411209831]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 8)
 layout_mode = 2
