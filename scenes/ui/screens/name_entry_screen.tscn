@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dkj4nd4iinosu"]
+
+[ext_resource type="Script" uid="uid://bxhtd04qsvofk" path="res://src/ui/screens/name_entry_screen.gd" id="1_name"]
+
+[node name="NameEntryScreen" type="Control" unique_id=100224046]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_name")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=1091389565]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.55)
+
+[node name="Window" type="PanelContainer" parent="." unique_id=1772498835]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = -12.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layout" type="VBoxContainer" parent="Window" unique_id=1995410873]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="HeaderRow" type="HBoxContainer" parent="Window/Layout" unique_id=689623582]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Portrait" type="TextureRect" parent="Window/Layout/HeaderRow" unique_id=92376350]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(40, 60)
+layout_mode = 2
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HeaderColumn" type="VBoxContainer" parent="Window/Layout/HeaderRow" unique_id=1328460189]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="PromptLabel" type="Label" parent="Window/Layout/HeaderRow/HeaderColumn" unique_id=1349175277]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+text = "Your name?"
+
+[node name="NameLabel" type="Label" parent="Window/Layout/HeaderRow/HeaderColumn" unique_id=142737861]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+text = "_ _ _ _ _ _ _"
+
+[node name="SuggestionRow" type="HBoxContainer" parent="Window/Layout" unique_id=547279419]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="PageRow" type="HBoxContainer" parent="Window/Layout" unique_id=1354541218]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="GridArea" type="CenterContainer" parent="Window/Layout" unique_id=1194073610]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CharacterGrid" type="GridContainer" parent="Window/Layout/GridArea" unique_id=1895530550]
+unique_name_in_owner = true
+layout_mode = 2
+columns = 9
+
+[node name="ActionRow" type="HBoxContainer" parent="Window/Layout" unique_id=804002064]
+layout_mode = 2
+theme_override_constants/separation = 6
+alignment = 2
+
+[node name="BackspaceButton" type="Button" parent="Window/Layout/ActionRow" unique_id=1702491751]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Delete"
+
+[node name="AcceptButton" type="Button" parent="Window/Layout/ActionRow" unique_id=431061769]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "OK"

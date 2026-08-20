@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://dvqdk2gm36f7i"]
+
+[ext_resource type="Script" uid="uid://cwgdd6vto6f7v" path="res://src/ui/screens/ready_menu_screen.gd" id="1_ready"]
+[ext_resource type="PackedScene" path="res://scenes/ui/screen_background.tscn" id="2_bg"]
+[ext_resource type="PackedScene" uid="uid://b1gfenk5k78l7" path="res://scenes/ui/message_box.tscn" id="3_message"]
+
+[node name="ReadyMenuScreen" type="Control" unique_id=1288775884]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ready")
+
+[node name="Background" parent="." unique_id=297988041 instance=ExtResource("2_bg")]
+layout_mode = 1
+
+[node name="Panel" type="PanelContainer" parent="." unique_id=304760622]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -130.0
+offset_right = 150.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layout" type="VBoxContainer" parent="Panel" unique_id=1009753194]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Title" type="Label" parent="Panel/Layout" unique_id=190756802]
+layout_mode = 2
+theme_type_variation = &"HeadingLabel"
+text = "Ready Menu"
+horizontal_alignment = 1
+
+[node name="ReadyEntryList" type="VBoxContainer" parent="Panel/Layout" unique_id=369583139]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 2
+
+[node name="ReadyEmptyLabel" type="Label" parent="Panel/Layout" unique_id=11152874]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MutedLabel"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ReadyCaption" type="Label" parent="Panel/Layout" unique_id=803901139]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_type_variation = &"MutedLabel"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MessageBox" parent="." unique_id=2006517147 instance=ExtResource("3_message")]
+unique_name_in_owner = true
+layout_mode = 1

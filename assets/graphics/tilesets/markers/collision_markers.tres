@@ -1,0 +1,30 @@
+[gd_resource type="TileSet" format=3 uid="uid://b01ybrc5yc42h"]
+
+[ext_resource type="Texture2D" uid="uid://cuya28p0hn7tq" path="res://game/tilesets/markers/collision_markers.png" id="1_lgevf"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1rito"]
+texture = ExtResource("1_lgevf")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+1:0/0/custom_data_0 = 1
+2:0/0 = 0
+2:0/0/custom_data_0 = 2
+3:0/0 = 0
+3:0/0/custom_data_0 = 3
+4:0/0 = 0
+4:0/0/custom_data_0 = 4
+5:0/0 = 0
+5:0/0/custom_data_0 = 5
+6:0/0 = 0
+6:0/0/custom_data_0 = 6
+7:0/0 = 0
+7:0/0/custom_data_0 = 7
+8:0/0 = 0
+8:0/0/custom_data_0 = 8
+
+[resource]
+tile_size = Vector2i(32, 32)
+custom_data_layer_0/name = "collision_marker"
+custom_data_layer_0/type = 2
+sources/0 = SubResource("TileSetAtlasSource_1rito")

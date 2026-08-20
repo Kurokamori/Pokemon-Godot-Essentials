@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://dcdfjjmgufj36"]
+
+[ext_resource type="Script" uid="uid://vodh1jh4fk1e" path="res://src/ui/map_timer.gd" id="1_timer"]
+
+[node name="MapTimer" type="Control" unique_id=1172893356]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_timer")
+
+[node name="TimerPanel" type="PanelContainer" parent="." unique_id=656195759]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -88.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 44.0
+grow_horizontal = 0
+mouse_filter = 2
+
+[node name="TimerLabel" type="Label" parent="TimerPanel" unique_id=104158279]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0:00"
+horizontal_alignment = 1
+vertical_alignment = 1
