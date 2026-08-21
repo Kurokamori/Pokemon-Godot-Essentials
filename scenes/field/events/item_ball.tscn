@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://src/field/events/item_event.gd" id="1_item"]
+
+[node name="ItemBall" type="Node2D"]
+script = ExtResource("1_item")
+charset = "Object ball"
+
+[node name="CharacterSprite" type="Sprite2D" parent="."]
+centered = false

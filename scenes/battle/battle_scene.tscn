@@ -1,0 +1,255 @@
+[gd_scene format=3 uid="uid://ds04bvxva6q3h"]
+
+[ext_resource type="Script" uid="uid://dc0d3gyka457x" path="res://src/ui/battle/battle_scene.gd" id="1_battle"]
+
+[node name="BattleScene" type="Control" unique_id=207438533]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_battle")
+
+[node name="BackgroundFill" type="ColorRect" parent="." unique_id=1664742745]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.286275, 0.494118, 0.611765, 1)
+
+[node name="FieldHost" type="Control" parent="." unique_id=1518534101]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="MessagePanel" type="PanelContainer" parent="." unique_id=1219843271]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -100.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"SpeechPanel"
+
+[node name="BattleMessageLabel" type="RichTextLabel" parent="MessagePanel" unique_id=1827149486]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowRichText"
+bbcode_enabled = true
+
+[node name="CommandPanel" type="PanelContainer" parent="." unique_id=1806049000]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -180.0
+offset_top = -100.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="CommandGrid" type="GridContainer" parent="CommandPanel" unique_id=1364327805]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 4
+columns = 2
+
+[node name="FightButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=148447306]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Fight"
+
+[node name="BallButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=1817122943]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Ball"
+
+[node name="BaitButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=349681248]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Bait"
+
+[node name="RockButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=51699844]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Rock"
+
+[node name="CallButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=511392776]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Call"
+
+[node name="BagButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=1970060839]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Bag"
+
+[node name="PokemonButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=1787154847]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Pokemon"
+
+[node name="RunButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=1442410512]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Run"
+
+[node name="ShiftButton" type="Button" parent="CommandPanel/CommandGrid" unique_id=1621761235]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Shift"
+
+[node name="BallCountPanel" type="PanelContainer" parent="." unique_id=62602191]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -140.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="BallCountLabel" type="Label" parent="BallCountPanel" unique_id=532248777]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+text = "Balls: 0"
+horizontal_alignment = 1
+
+[node name="MovePanel" type="PanelContainer" parent="." unique_id=856820483]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -104.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Layout" type="VBoxContainer" parent="MovePanel" unique_id=1962990811]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="MoveGrid" type="GridContainer" parent="MovePanel/Layout" unique_id=65877340]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 2
+columns = 2
+
+[node name="InfoRow" type="HBoxContainer" parent="MovePanel/Layout" unique_id=902052166]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="MoveInfoLabel" type="Label" parent="MovePanel/Layout/InfoRow" unique_id=628247455]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"WindowValue"
+text_overrun_behavior = 3
+
+[node name="GimmickButton" type="Button" parent="MovePanel/Layout/InfoRow" unique_id=1288741769]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_type_variation = &"MenuEntry"
+text = "Mega Evolve"
+
+[node name="TargetPanel" type="PanelContainer" parent="." unique_id=45669271]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -136.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Layout" type="VBoxContainer" parent="TargetPanel" unique_id=1180053346]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TargetPromptLabel" type="Label" parent="TargetPanel/Layout" unique_id=1032447933]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+text = "Choose a target."
+
+[node name="TargetList" type="VBoxContainer" parent="TargetPanel/Layout" unique_id=424167772]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="PromptPanel" type="PanelContainer" parent="." unique_id=550145733]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -136.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Layout" type="VBoxContainer" parent="PromptPanel" unique_id=591284525]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="PromptLabel" type="Label" parent="PromptPanel/Layout" unique_id=652203502]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowLabel"
+autowrap_mode = 3
+
+[node name="PromptList" type="VBoxContainer" parent="PromptPanel/Layout" unique_id=1590063443]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2

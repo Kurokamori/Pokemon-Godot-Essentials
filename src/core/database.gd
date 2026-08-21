@@ -146,7 +146,7 @@ func get_all(category: StringName) -> Array[GameDataResource]:
 			result.append(record)
 	return result
 
-## Prelaods the whole [param category] into the cache
+## Preloads the whole [param category] into the cache
 ## Useful for contexts like opening the Pokedex or starting a battle.
 func preload_category(category: StringName) -> void:
 	for id: StringName in get_ids(category):

@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cop86tkktfryx"]
+
+[ext_resource type="Script" uid="uid://dnjfw1l3pk6h1" path="res://src/ui/battle/battle_list_button.gd" id="1_entry"]
+
+[node name="BattleListButton" type="Button" unique_id=1097774351]
+custom_minimum_size = Vector2(0, 20)
+offset_right = 240.0
+offset_bottom = 20.0
+size_flags_horizontal = 3
+theme_type_variation = &"MenuEntry"
+script = ExtResource("1_entry")
+
+[node name="Layout" type="HBoxContainer" parent="." unique_id=621260727]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="EntryLabel" type="Label" parent="Layout" unique_id=999823169]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"WindowLabel"
+text_overrun_behavior = 3
+
+[node name="EntryDetail" type="Label" parent="Layout" unique_id=609788607]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2

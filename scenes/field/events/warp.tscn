@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c6uu2v6urfp4k"]
+
+[ext_resource type="Script" uid="uid://c7dlgw2ewa1nt" path="res://src/field/events/warp_event.gd" id="1_warp"]
+
+[node name="Warp" type="Node2D" unique_id=334705325]
+script = ExtResource("1_warp")
+passable = true
+
+[node name="CharacterSprite" type="Sprite2D" parent="." unique_id=312370716]
+centered = false

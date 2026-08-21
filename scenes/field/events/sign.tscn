@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dtewxptpgvff6"]
+
+[ext_resource type="Script" uid="uid://c3fyh4m1oyeoh" path="res://src/field/events/sign_event.gd" id="1_sign"]
+
+[node name="Sign" type="Node2D" unique_id=98552049]
+script = ExtResource("1_sign")
+event_id = null
+event_name = null
+charset = null
+script_file = null
+script_source = null
+trigger = null
+move_type = null
+move_speed = null
+move_frequency = null
+facing = 2
+seconds_per_tile = 0.5
+passable = false
+direction_fix = false
+step_animation = false
+walk_animation = true
+
+[node name="CharacterSprite" type="Sprite2D" parent="." unique_id=1869538539]
+centered = false

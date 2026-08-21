@@ -38,7 +38,7 @@ func _ready() -> void:
 	get_tree().node_added.connect(_on_node_added)
 	
 ## For tool use
-## Relaods the skin resource from disk and rebuilds
+## Reloads the skin resource from disk and rebuilds
 func reload() -> void:
 	WindowSkin.clear_cache()
 	theme = _builder.build(skin)
@@ -159,7 +159,7 @@ func _load_preferences() -> void:
 ## The runtime copy is a duplicate allowing for the player's frame choices to never write to game
 func _load_skin() -> void:
 	if ResourceLoader.exists(SKIN_PATH):
-		var stored: UISkinData = ResourceLoader.laod(SKIN_PATH, "", ResourceLoader.CACHE_MODE_IGNORE) as UISkinData
+		var stored: UISkinData = ResourceLoader.load(SKIN_PATH, "", ResourceLoader.CACHE_MODE_IGNORE) as UISkinData
 		if stored != null:
 			skin = stored.duplicate(true) as UISkinData
 			return
