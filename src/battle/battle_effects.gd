@@ -100,3 +100,71 @@ const YAWN: StringName = &"Yawn"
 
 ## Semi-invulnerable state such as Fly or Dig, stored as the move's id
 const INVULNERABLE: StringName = &"Invulnerable"
+
+# === Side Effects ===
+const AURORA_VEIL: StringName = &"AuroraVeil"
+const LIGHT_SCREEN: StringName = &"LightScreen"
+const REFLECT: StringName = &"Reflect"
+const LUCKY_CHANT: StringName = &"LuckyChant"
+const MIST: StringName = &"Mist"
+const SAFEGUARD: StringName = &"Safeguard"
+const SPIKES: StringName = &"Spikes"
+const STEALTH_ROCK: StringName = &"StealthRock"
+const STICKY_WEB: StringName = &"StickyWeb"
+const TAILWIND: StringName = &"Tailwind"
+const TOXIC_SPIKES: StringName = &"ToxicSpikes"
+const WIDE_GUARD: StringName = &"WideGuard"
+const QUICK_GUARD: StringName = &"QuickGuard"
+const CRAFTY_SHIELD: StringName = &"CraftyShield"
+const MAT_BLOCK: StringName = &"MatBlock"
+const RAINBOW: StringName = &"Rainbow"
+const SEA_OF_FIRE: StringName = &"SeaOfFire"
+const SWAMP: StringName = &"Swamp"
+
+## How many consecutive rounds Echoed Voice has been used on this side, 1 to 5.
+const ECHOED_VOICE_COUNTER: StringName = &"EchoedVoiceCounter"
+
+## `true` when Echoed Voice was used on this side this round.
+const ECHOED_VOICE_USED: StringName = &"EchoedVoiceUsed"
+
+## `true` once Round has been used on this side this round, doubling the power of the next Round.
+const ROUND: StringName = &"Round"
+
+# === Field Effects ===
+const GRAVITY: StringName = &"Gravity"
+const MAGIC_ROOM: StringName = &"MagicRoom"
+const TRICK_ROOM: StringName = &"TrickRoom"
+const WONDER_ROOM: StringName = &"WonderRoom"
+const FAIRY_LOCK: StringName = &"FairyLock"
+const ION_DELUGE: StringName = &"IonDeluge"
+const MUD_SPORT: StringName = &"MudSport"
+const WATER_SPORT: StringName = &"WaterSport"
+
+## Set `true` for the rest of the round after Fusion Bolt hits
+const FUSION_BOLT: StringName = &"FusionBolt"
+
+## Set `true` for the rest of the round after Fusion Bolt hits
+const FUSION_FLARE: StringName = &"FusionFlare"
+
+# === Position Effects ===
+
+## Effects held by a battle position rather than by the battler in it
+
+const WISH_COUNTER: StringName = &"WishCounter"
+const WISH_AMOUNT: StringName = &"WishAmount"
+const WISH_MAKER: StringName = &"WishMaker"
+
+const FUTURE_SIGHT_COUNTER: StringName = &"FutureSightCounter"
+const FUTURE_SIGHT_MOVE: StringName = &"FutureSightMove"
+const FUTURE_SIGHT_USER_INDEX: StringName = &"FutureSightUserIndex"
+const FUTURE_SIGHT_USER_PARTY_INDEX: StringName = &"FutureSightUserPartyIndex"
+
+# === Bookkeeping ===
+
+## Battler effects whose integer value is not a turn counter
+const UNTIMED: Array[StringName] = [
+	ATTRACT, BIDE, BIDE_DAMAGE, BIDE_TARGET, CONFUSION,
+	LEECH_SEED, LOCK_ON_TARGET, OUTRAGE, PERISH_SONG, POWER_TRICK,
+	PROTECT_RATE, QUASH, ROLLOUT, SPOTLIGHT, STOCKPILE, STOCKPILE_DEFENSE,
+	STOCKPILE_SPECIAL_DEFENSE, SUBSTITUTE, TOXIC_COUNTER, TRAPPING_USER,
+]
