@@ -1,0 +1,104 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://b5yo6lx8oofms" path="res://src/ui/screens/bag_screen.gd" id="1_bag"]
+[ext_resource type="PackedScene" path="res://scenes/ui/screen_background.tscn" id="2_bg"]
+[ext_resource type="PackedScene" path="res://scenes/ui/command_menu.tscn" id="3_menu"]
+[ext_resource type="PackedScene" uid="uid://b1gfenk5k78l7" path="res://scenes/ui/message_box.tscn" id="4_message"]
+
+[node name="BagScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bag")
+
+[node name="Background" parent="." instance=ExtResource("2_bg")]
+layout_mode = 1
+
+[node name="Layout" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 6
+
+[node name="Header" type="PanelContainer" parent="Layout"]
+layout_mode = 2
+theme_type_variation = &"HeaderPanel"
+
+[node name="HeaderRow" type="HBoxContainer" parent="Layout/Header"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HeaderLabel" type="Label" parent="Layout/Header/HeaderRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"HeadingLabel"
+text = "Bag"
+
+[node name="PocketLabel" type="Label" parent="Layout/Header/HeaderRow"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HeadingLabel"
+horizontal_alignment = 2
+text = "Items"
+
+[node name="Columns" type="HBoxContainer" parent="Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="PocketList" type="VBoxContainer" parent="Layout/Columns"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(112, 0)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="ItemList" type="ItemList" parent="Layout/Columns"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DetailColumn" type="VBoxContainer" parent="Layout/Columns"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ItemIcon" type="TextureRect" parent="Layout/Columns/DetailColumn"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ItemDescription" type="RichTextLabel" parent="Layout/Columns/DetailColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="HintLabel" type="Label" parent="Layout"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MutedLabel"
+theme_override_font_sizes/font_size = 12
+text = "Up/Down: pocket    C: open    X: close"
+horizontal_alignment = 1
+
+[node name="CommandMenu" parent="." instance=ExtResource("3_menu")]
+unique_name_in_owner = true
+layout_mode = 0
+
+[node name="MessageBox" parent="." instance=ExtResource("4_message")]
+unique_name_in_owner = true
+layout_mode = 1

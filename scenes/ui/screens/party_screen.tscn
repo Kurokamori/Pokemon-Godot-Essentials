@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://ci866qdehonub"]
+
+[ext_resource type="Script" uid="uid://b5ltpo6f1811s" path="res://src/ui/screens/party_screen.gd" id="1_party"]
+[ext_resource type="PackedScene" path="res://scenes/ui/screen_background.tscn" id="2_bg"]
+[ext_resource type="PackedScene" uid="uid://b1gfenk5k78l7" path="res://scenes/ui/message_box.tscn" id="3_message"]
+
+[node name="PartyScreen" type="Control" unique_id=406466997]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_party")
+
+[node name="Background" parent="." unique_id=2020219779 instance=ExtResource("2_bg")]
+layout_mode = 1
+
+[node name="Layout" type="VBoxContainer" parent="." unique_id=706322328]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 14
+
+[node name="Header" type="PanelContainer" parent="Layout" unique_id=138641328]
+layout_mode = 2
+theme_type_variation = &"HeaderPanel"
+
+[node name="PromptLabel" type="Label" parent="Layout/Header" unique_id=1935021898]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HeadingLabel"
+text = "Your Pokemon."
+
+[node name="SlotScroll" type="ScrollContainer" parent="Layout" unique_id=1572403565]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SlotList" type="GridContainer" parent="Layout/SlotScroll" unique_id=15979034]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 4
+columns = 2
+
+[node name="ActionPanel" type="PanelContainer" parent="." unique_id=710568638]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -156.0
+offset_top = -168.0
+offset_right = -12.0
+offset_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="ActionList" type="VBoxContainer" parent="ActionPanel" unique_id=1786678327]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="MessageBox" parent="." unique_id=1165537322 instance=ExtResource("3_message")]
+unique_name_in_owner = true
+layout_mode = 1

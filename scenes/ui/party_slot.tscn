@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://c4s5mkq33ujld"]
+
+[ext_resource type="Script" uid="uid://bgrjtuqqkfhsj" path="res://src/ui/party_slot.gd" id="1_slot"]
+[ext_resource type="PackedScene" uid="uid://cq5pkmnicon0a" path="res://scenes/ui/pokemon_icon.tscn" id="2_icon"]
+[ext_resource type="PackedScene" path="res://scenes/ui/markings_strip.tscn" id="3_strip"]
+
+[node name="PartySlot" type="Button" unique_id=2028671055]
+custom_minimum_size = Vector2(180, 90)
+offset_right = 240.0
+offset_bottom = 52.0
+size_flags_horizontal = 3
+script = ExtResource("1_slot")
+
+[node name="Layout" type="HBoxContainer" parent="." unique_id=1252374147]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="SlotIcon" parent="Layout" unique_id=394486441 instance=ExtResource("2_icon")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Details" type="VBoxContainer" parent="Layout" unique_id=927933454]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_constants/separation = 2
+
+[node name="TopRow" type="HBoxContainer" parent="Layout/Details" unique_id=891036167]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SlotNameLabel" type="Label" parent="Layout/Details/TopRow" unique_id=1532606325]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"WindowLabel"
+
+[node name="SlotLevelLabel" type="Label" parent="Layout/Details/TopRow" unique_id=779435675]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+
+[node name="SlotMarkings" parent="Layout/Details/TopRow" instance=ExtResource("3_strip")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="SlotStatusLabel" type="Label" parent="Layout/Details/TopRow" unique_id=1756768172]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+
+[node name="BottomRow" type="HBoxContainer" parent="Layout/Details" unique_id=1608147764]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="SlotHPBar" type="ProgressBar" parent="Layout/Details/BottomRow" unique_id=322018568]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 8)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_type_variation = &"HPBar"
+show_percentage = false
+
+[node name="SlotHPLabel" type="Label" parent="Layout/Details/BottomRow" unique_id=523082485]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"WindowValue"
+
+[node name="SlotItemLabel" type="Label" parent="Layout/Details/BottomRow" unique_id=809047919]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"WindowValue"
+horizontal_alignment = 2

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cw72klo5xyrs7"]
+
+[ext_resource type="Script" uid="uid://bvoatcwfa3rju" path="res://src/ui/command_menu.gd" id="1_menu"]
+
+[node name="CommandMenu" type="PanelContainer" unique_id=601746395]
+visible = false
+custom_minimum_size = Vector2(112, 0)
+offset_right = 112.0
+offset_bottom = 40.0
+script = ExtResource("1_menu")
+
+[node name="CommandList" type="VBoxContainer" parent="." unique_id=1222013884]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 1

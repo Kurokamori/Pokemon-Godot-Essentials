@@ -1,0 +1,154 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://src/ui/summary_screen.gd" id="1_summary"]
+[ext_resource type="PackedScene" path="res://scenes/ui/screen_background.tscn" id="2_bg"]
+[ext_resource type="PackedScene" path="res://scenes/ui/markings_strip.tscn" id="3_strip"]
+[ext_resource type="PackedScene" path="res://scenes/ui/markings_editor.tscn" id="4_markings"]
+
+[node name="SummaryScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_summary")
+
+[node name="Background" parent="." instance=ExtResource("2_bg")]
+layout_mode = 1
+
+[node name="Layout" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+
+[node name="LeftColumn" type="VBoxContainer" parent="Layout"]
+custom_minimum_size = Vector2(148, 0)
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SummarySprite" type="TextureRect" parent="Layout/LeftColumn"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SummaryNameLabel" type="Label" parent="Layout/LeftColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HeadingLabel"
+horizontal_alignment = 1
+
+[node name="SummaryLevelLabel" type="Label" parent="Layout/LeftColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="SummaryMarkings" parent="Layout/LeftColumn" instance=ExtResource("3_strip")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="PageLabel" type="Label" parent="Layout/LeftColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="Layout/LeftColumn"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Hint" type="Label" parent="Layout/LeftColumn"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"MutedLabel"
+text = "Left / Right to change page"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="RightColumn" type="PanelContainer" parent="Layout"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Pages" type="MarginContainer" parent="Layout/RightColumn"]
+layout_mode = 2
+
+[node name="InfoPage" type="VBoxContainer" parent="Layout/RightColumn/Pages"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="InfoText" type="RichTextLabel" parent="Layout/RightColumn/Pages/InfoPage"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"WindowRichText"
+bbcode_enabled = true
+
+[node name="MemoPage" type="VBoxContainer" parent="Layout/RightColumn/Pages"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="MemoText" type="RichTextLabel" parent="Layout/RightColumn/Pages/MemoPage"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"WindowRichText"
+bbcode_enabled = true
+
+[node name="RibbonsPage" type="VBoxContainer" parent="Layout/RightColumn/Pages"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="RibbonsText" type="RichTextLabel" parent="Layout/RightColumn/Pages/RibbonsPage"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"WindowRichText"
+bbcode_enabled = true
+
+[node name="SkillsPage" type="VBoxContainer" parent="Layout/RightColumn/Pages"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="SkillsText" type="RichTextLabel" parent="Layout/RightColumn/Pages/SkillsPage"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"WindowRichText"
+bbcode_enabled = true
+
+[node name="MovesPage" type="VBoxContainer" parent="Layout/RightColumn/Pages"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="MoveList" type="VBoxContainer" parent="Layout/RightColumn/Pages/MovesPage"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="MoveDetail" type="RichTextLabel" parent="Layout/RightColumn/Pages/MovesPage"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"WindowRichText"
+bbcode_enabled = true
+
+[node name="MarkingsEditor" parent="." instance=ExtResource("4_markings")]
+unique_name_in_owner = true
+layout_mode = 1
